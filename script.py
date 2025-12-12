@@ -70,16 +70,30 @@ def load_random_question() -> dict:
     return random.choice(questions)
 
 
-async def generate_voiceover(text: str, output_path: str) -> float:
-    """Generate voiceover using edge-tts. Returns duration in seconds."""
-    communicate = edge_tts.Communicate(text, VOICE, rate=VOICE_RATE)
-    await communicate.save(output_path)
+async def generate_voiceover(text: str, output_path: str, retries: int = 3) -> float:
+    """Generate voiceover using edge-tts with retry logic. Returns duration in seconds."""
+    last_error = None
     
-    # Get audio duration
-    audio = AudioFileClip(output_path)
-    duration = audio.duration
-    audio.close()
-    return duration
+    for attempt in range(retries):
+        try:
+            communicate = edge_tts.Communicate(text, VOICE, rate=VOICE_RATE)
+            await communicate.save(output_path)
+            
+            # Get audio duration
+            audio = AudioFileClip(output_path)
+            duration = audio.duration
+            audio.close()
+            return duration
+            
+        except Exception as e:
+            last_error = e
+            print(f"   ⚠️ TTS attempt {attempt + 1}/{retries} failed: {e}")
+            if attempt < retries - 1:
+                wait_time = (attempt + 1) * 5  # 5, 10, 15 seconds
+                print(f"   Waiting {wait_time}s before retry...")
+                await asyncio.sleep(wait_time)
+    
+    raise last_error if last_error else Exception("TTS generation failed")
 
 
 def get_background_video() -> VideoFileClip:
