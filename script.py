@@ -70,7 +70,7 @@ def load_random_question() -> dict:
     return random.choice(questions)
 
 
-async def generate_voiceover(text: str, output_path: str, retries: int = 3) -> float:
+async def generate_voiceover(text: str, output_path: str, retries: int = 5) -> float:
     """Generate voiceover using edge-tts with retry logic. Returns duration in seconds."""
     last_error = None
     
@@ -89,7 +89,7 @@ async def generate_voiceover(text: str, output_path: str, retries: int = 3) -> f
             last_error = e
             print(f"   ⚠️ TTS attempt {attempt + 1}/{retries} failed: {e}")
             if attempt < retries - 1:
-                wait_time = (attempt + 1) * 5  # 5, 10, 15 seconds
+                wait_time = (attempt + 1) * 30  # 30, 60, 90, 120 seconds
                 print(f"   Waiting {wait_time}s before retry...")
                 await asyncio.sleep(wait_time)
     
