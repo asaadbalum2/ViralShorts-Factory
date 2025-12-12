@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Output files (generated videos)
+output/*.mp4
+output/*.avi
+output/*.mov
+
+# Temp files
+*.tmp
+temp_*.mp3
+temp_*.wav
+temp_*.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep asset directories but not large files
+assets/backgrounds/*.mp4
+assets/backgrounds/*.mov
+assets/backgrounds/*.avi
+assets/backgrounds/*.mkv
+assets/backgrounds/*.webm
+!assets/backgrounds/.gitkeep
+
+assets/sfx/*.mp3
+assets/sfx/*.wav
+!assets/sfx/.gitkeep
+
+# Environment variables
+.env
+.env.local
+

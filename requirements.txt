@@ -1,0 +1,23 @@
+# QuizBot - Would You Rather Video Generator
+# Zero-Cost Stack for YouTube Shorts
+
+# Core video editing
+moviepy==1.0.3
+
+# Text-to-Speech (Microsoft Edge TTS - FREE, no API key needed)
+edge-tts==6.1.9
+
+# Image processing (required by moviepy for text rendering)
+Pillow>=9.0.0
+
+# Audio processing
+pydub>=0.25.1
+
+# Async support
+aiofiles>=23.0.0
+
+# Note: You also need to install ImageMagick for TextClip to work
+# Windows: Download from https://imagemagick.org/script/download.php
+# Linux: sudo apt install imagemagick
+# Mac: brew install imagemagick
+
