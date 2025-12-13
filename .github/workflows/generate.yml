@@ -1,18 +1,24 @@
-name: Generate Quiz Videos
+name: Generate & Upload Quiz Videos
 
 on:
-  # Manual trigger from GitHub UI
+  # Manual trigger
   workflow_dispatch:
     inputs:
       count:
         description: 'Number of videos to generate'
         required: false
-        default: '3'
+        default: '1'
         type: string
+      upload:
+        description: 'Upload to YouTube'
+        required: false
+        default: true
+        type: boolean
   
-  # Scheduled run (every day at 9 AM UTC)
+  # Scheduled run (every day at 9 AM and 6 PM UTC)
   schedule:
     - cron: '0 9 * * *'
+    - cron: '0 18 * * *'
 
 jobs:
   generate:
@@ -32,7 +38,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg imagemagick
-          # Fix ImageMagick policy for MoviePy
+          # Fix ImageMagick policy
           sudo sed -i 's/rights="none" pattern="@\*"/rights="read|write" pattern="@*"/' /etc/ImageMagick-6/policy.xml || true
 
       - name: Install Python dependencies
@@ -43,33 +49,44 @@ jobs:
       - name: Download sample background video
         run: |
           mkdir -p assets/backgrounds
-          # Download a free stock video from Pexels (satisfying/abstract)
           curl -L -o assets/backgrounds/abstract_bg.mp4 \
             "https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" || \
           curl -L -o assets/backgrounds/abstract_bg.mp4 \
             "https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_30fps.mp4" || \
           echo "Using fallback solid color background"
 
-      - name: Generate videos
+      - name: Generate and Upload Videos
         run: |
-          COUNT=${{ github.event.inputs.count || '3' }}
-          python script.py --batch $COUNT
+          COUNT=${{ github.event.inputs.count || '1' }}
+          UPLOAD=${{ github.event.inputs.upload || 'true' }}
+          
+          if [ "$UPLOAD" = "true" ]; then
+            python script.py --batch $COUNT --upload
+          else
+            python script.py --batch $COUNT --no-upload
+          fi
         env:
-          IMAGEMAGICK_BINARY: /usr/bin/convert
+          AUTO_UPLOAD: "true"
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          PYTHONUNBUFFERED: "1"
 
-      - name: Upload generated videos
+      - name: Upload artifacts (backup)
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: quiz-videos-${{ github.run_number }}
           path: output/*.mp4
-          retention-days: 30
+          retention-days: 7
           if-no-files-found: warn
 
       - name: Summary
         run: |
-          echo "## 🎬 Generated Videos" >> $GITHUB_STEP_SUMMARY
+          echo "## 🎬 QuizBot Run Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Videos generated: $(ls -1 output/*.mp4 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Download from the Artifacts section above!" >> $GITHUB_STEP_SUMMARY
-
+          if [ "${{ github.event.inputs.upload }}" = "true" ]; then
+            echo "✅ Videos uploaded to YouTube!" >> $GITHUB_STEP_SUMMARY
+          fi

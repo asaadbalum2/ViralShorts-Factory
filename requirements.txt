@@ -16,6 +16,12 @@ pydub>=0.25.1
 # Async support
 aiofiles>=23.0.0
 
+# YouTube upload
+google-api-python-client>=2.100.0
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+
 # Note: You also need to install ImageMagick for TextClip to work
 # Windows: Download from https://imagemagick.org/script/download.php
 # Linux: sudo apt install imagemagick
