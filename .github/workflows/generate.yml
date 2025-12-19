@@ -31,14 +31,16 @@ on:
         options:
           - 'true'
           - 'false'
-  # DISABLED during development - uncomment when product is ready
-  # schedule:
-  #   - cron: '0 4 * * *'
-  #   - cron: '0 8 * * *'
-  #   - cron: '0 12 * * *'
-  #   - cron: '0 16 * * *'
-  #   - cron: '0 20 * * *'
-  #   - cron: '0 0 * * *'
+  # ENABLED - Autonomous video generation
+  # Runs 6 times per day at different hours (UTC time)
+  # Morning: 4 AM, 8 AM | Afternoon: 12 PM, 4 PM | Evening: 8 PM, Midnight
+  schedule:
+    - cron: '0 4 * * *'
+    - cron: '0 8 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 20 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   generate:
@@ -85,6 +87,10 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          DAILYMOTION_API_KEY: ${{ secrets.DAILYMOTION_API_KEY }}
+          DAILYMOTION_API_SECRET: ${{ secrets.DAILYMOTION_API_SECRET }}
+          DAILYMOTION_USERNAME: ${{ secrets.DAILYMOTION_USERNAME }}
+          DAILYMOTION_PASSWORD: ${{ secrets.DAILYMOTION_PASSWORD }}
         continue-on-error: true
 
       - name: Create asset directories
@@ -240,18 +246,60 @@ jobs:
             done
           fi
 
+      - name: Collect Analytics (Learn from past performance)
+        if: github.event.inputs.test_only != 'true'
+        continue-on-error: true
+        run: |
+          echo "📊 Collecting analytics data..."
+          python -c "
+          import os
+          from analytics_feedback import FeedbackLoopController
+
+          try:
+              controller = FeedbackLoopController()
+              
+              # Fetch latest performance data
+              updated = controller.update_all_performance()
+              print(f'📈 Updated performance for {updated} videos')
+              
+              # Run analysis if we have enough data
+              all_videos = controller.metadata_store.get_all()
+              if len([v for v in all_videos if v.performance]) >= 5:
+                  print('🧠 Running AI analysis...')
+                  insights = controller.run_analysis()
+                  if insights.get('key_insight'):
+                      print(f'💡 Key Insight: {insights[\"key_insight\"]}')
+              else:
+                  print('📝 Not enough data for analysis yet (need 5+ videos with views)')
+                  
+          except Exception as e:
+              print(f'⚠️ Analytics error: {e}')
+          "
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
       - name: Summary
         run: |
-          echo "## ViralShorts Factory - Run Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## 🎬 ViralShorts Factory - Run Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "**Videos Generated:** ${{ github.event.inputs.batch_size || '3' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Features" >> $GITHUB_STEP_SUMMARY
-          echo "- AI-matched B-roll (topic-specific)" >> $GITHUB_STEP_SUMMARY
-          echo "- Dynamic background music" >> $GITHUB_STEP_SUMMARY  
-          echo "- Trending content integration" >> $GITHUB_STEP_SUMMARY
-          echo "- Multiple video types support" >> $GITHUB_STEP_SUMMARY
+          echo "### 📺 Platforms" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ YouTube Shorts: Uploaded automatically" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Dailymotion: Uploaded automatically" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Channel: https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY
+          echo "### ⚡ Features Used" >> $GITHUB_STEP_SUMMARY
+          echo "- 🧠 AI-generated trending topics (GROQ)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🎬 Topic-specific B-roll (Pexels)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🎵 Dynamic background music" >> $GITHUB_STEP_SUMMARY  
+          echo "- 🛡️ Anti-ban measures (random delays, unique fingerprints)" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 Analytics feedback loop" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔗 Channels" >> $GITHUB_STEP_SUMMARY
+          echo "- YouTube: https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY
+          echo "- Dailymotion: https://www.dailymotion.com/asaadbalum2" >> $GITHUB_STEP_SUMMARY

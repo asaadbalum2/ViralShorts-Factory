@@ -169,6 +169,48 @@ class APIHealthChecker:
         except Exception as e:
             return False, f"⚠️ HuggingFace error: {str(e)[:100]}"
     
+    def check_dailymotion(self) -> Tuple[bool, str]:
+        """Check Dailymotion API credentials validity."""
+        api_key = os.environ.get("DAILYMOTION_API_KEY", "")
+        api_secret = os.environ.get("DAILYMOTION_API_SECRET", "")
+        username = os.environ.get("DAILYMOTION_USERNAME", "")
+        password = os.environ.get("DAILYMOTION_PASSWORD", "")
+        
+        if not all([api_key, api_secret, username, password]):
+            missing = []
+            if not api_key: missing.append("API_KEY")
+            if not api_secret: missing.append("API_SECRET")
+            if not username: missing.append("USERNAME")
+            if not password: missing.append("PASSWORD")
+            return False, f"❌ Dailymotion missing: {', '.join(missing)}"
+        
+        try:
+            # Try to get OAuth token
+            response = requests.post(
+                "https://api.dailymotion.com/oauth/token",
+                data={
+                    "grant_type": "password",
+                    "client_id": api_key,
+                    "client_secret": api_secret,
+                    "username": username,
+                    "password": password,
+                    "scope": "manage_videos"
+                },
+                timeout=15
+            )
+            
+            if response.status_code == 200:
+                token_data = response.json()
+                if "access_token" in token_data:
+                    return True, "✅ Dailymotion OAuth working"
+                else:
+                    return False, f"⚠️ Dailymotion: No token in response"
+            else:
+                error = response.json().get("error_description", response.text[:100])
+                return False, f"❌ Dailymotion OAuth error: {error}"
+        except Exception as e:
+            return False, f"⚠️ Dailymotion error: {str(e)[:100]}"
+    
     def run_all_checks(self) -> Dict:
         """Run all API health checks."""
         print("\n🔍 Running API Health Checks...\n")
@@ -178,6 +220,7 @@ class APIHealthChecker:
             ("Gemini", self.check_gemini),
             ("Pexels", self.check_pexels),
             ("YouTube", self.check_youtube),
+            ("Dailymotion", self.check_dailymotion),
             ("Printful", self.check_printful),
             ("HuggingFace", self.check_huggingface),
         ]
