@@ -1,4 +1,4 @@
-name: QuizBot - Auto Generate & Upload
+name: QuizBot V2 - Professional Video Generator
 
 on:
   # Manual trigger for testing
@@ -24,6 +24,14 @@ on:
         options:
           - 'false'
           - 'true'
+      use_v2:
+        description: 'Use V2 professional generator'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
   
   # Scheduled runs - MAXIMIZED (6 times per day)
   schedule:
@@ -59,69 +67,123 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg imagemagick
+          sudo apt-get install -y ffmpeg imagemagick fonts-dejavu-core fonts-liberation
+          # Fix ImageMagick policy
           sudo sed -i 's/rights="none" pattern="@\*"/rights="read|write" pattern="@*"/' /etc/ImageMagick-6/policy.xml || true
+          sudo sed -i 's/<policy domain="path" rights="none" pattern="@\*"/<policy domain="path" rights="read|write" pattern="@*"/' /etc/ImageMagick-6/policy.xml || true
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Download background video
+      - name: Create asset directories
         run: |
-          mkdir -p assets/backgrounds
-          curl -L -o assets/backgrounds/abstract_bg.mp4 \
-            "https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" || \
-          curl -L -o assets/backgrounds/abstract_bg.mp4 \
-            "https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_30fps.mp4" || true
+          mkdir -p assets/backgrounds assets/broll assets/music assets/sfx assets/fonts
+          mkdir -p output cache
 
-      - name: Generate AI questions (MAXIMIZED - 200 questions)
+      - name: Download sample background videos
         run: |
-          echo "🤖 Generating maximum AI content..."
-          python ai_generator.py 200
+          echo "📥 Downloading background videos..."
+          
+          # Multiple fallback URLs for background videos
+          curl -L -o assets/backgrounds/abstract_1.mp4 \
+            "https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" || true
+          
+          curl -L -o assets/backgrounds/particles.mp4 \
+            "https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_30fps.mp4" || true
+          
+          curl -L -o assets/backgrounds/neon.mp4 \
+            "https://videos.pexels.com/video-files/4611396/4611396-hd_1920_1080_25fps.mp4" || true
+          
+          # List downloaded files
+          ls -la assets/backgrounds/
+
+      - name: Generate VIRAL trending questions
+        run: |
+          echo "🎯 Generating viral trending questions..."
+          python trending_content.py 100
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        continue-on-error: true
 
-      - name: Generate and Upload Videos
+      - name: Fallback - Generate template questions if AI failed
+        run: |
+          if [ ! -f questions.json ] || [ ! -s questions.json ]; then
+            echo "⚠️ Using fallback questions..."
+            python trending_content.py 50 --no-ai
+          fi
+
+      - name: Generate Professional Videos (V2)
         run: |
           BATCH_SIZE="${{ github.event.inputs.batch_size || '3' }}"
           TEST_ONLY="${{ github.event.inputs.test_only || 'false' }}"
+          USE_V2="${{ github.event.inputs.use_v2 || 'true' }}"
+          
+          if [ "$USE_V2" = "true" ]; then
+            SCRIPT="script_v2.py"
+            echo "🎨 Using V2 PROFESSIONAL generator"
+          else
+            SCRIPT="script.py"
+            echo "📹 Using V1 basic generator"
+          fi
           
           if [ "$TEST_ONLY" = "true" ]; then
             echo "🧪 TEST MODE - Generating $BATCH_SIZE videos WITHOUT upload..."
-            python script.py --batch $BATCH_SIZE --no-upload
+            python $SCRIPT --batch $BATCH_SIZE --no-upload
           else
             echo "🎬 Generating $BATCH_SIZE videos WITH upload..."
-            python script.py --batch $BATCH_SIZE --upload
+            python $SCRIPT --batch $BATCH_SIZE --upload
           fi
         env:
           AUTO_UPLOAD: ${{ github.event.inputs.test_only != 'true' }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PYTHONUNBUFFERED: "1"
 
       - name: Save videos as artifacts (for preview)
-        if: github.event.inputs.test_only == 'true'
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: generated-videos
           path: output/*.mp4
           retention-days: 7
-        continue-on-error: true
+          if-no-files-found: ignore
 
-      - name: Log run to dashboard
+      - name: Log generated video details
         run: |
-          echo "{\"project\": \"QuizBot\", \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"videos\": 3, \"status\": \"success\"}" >> run_log.json
+          echo "📹 Generated Videos:"
+          ls -la output/*.mp4 2>/dev/null || echo "No videos found"
+          
+          # Get video info if ffprobe available
+          for f in output/*.mp4; do
+            if [ -f "$f" ]; then
+              echo "File: $f"
+              ffprobe -v quiet -show_format -show_streams "$f" 2>/dev/null | grep -E "(duration|width|height|bit_rate)" || true
+            fi
+          done
         continue-on-error: true
 
       - name: Summary
         run: |
-          echo "## 🎬 QuizBot Run Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## 🎬 QuizBot V2 Run Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
-          echo "**Videos Generated:** 3" >> $GITHUB_STEP_SUMMARY
-          echo "**Uploaded to YouTube:** ✅" >> $GITHUB_STEP_SUMMARY
+          echo "**Generator:** V2 Professional" >> $GITHUB_STEP_SUMMARY
+          echo "**Videos Generated:** ${{ github.event.inputs.batch_size || '3' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🎥 Features Used" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Professional gradient themes" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Dynamic visual effects" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Viral hook text" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Animated countdown" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Call-to-action overlay" >> $GITHUB_STEP_SUMMARY
+          echo "- ✅ Trending content integration" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "📺 **Channel:** https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY

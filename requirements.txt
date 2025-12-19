@@ -1,5 +1,5 @@
-# QuizBot - Would You Rather Video Generator
-# Zero-Cost Stack for YouTube Shorts
+# QuizBot V2 - Professional "Would You Rather" Video Generator
+# Zero-Cost Stack for Viral YouTube Shorts
 
 # Core video editing
 moviepy==1.0.3
@@ -7,15 +7,24 @@ moviepy==1.0.3
 # Text-to-Speech (Microsoft Edge TTS - FREE, no API key needed)
 edge-tts>=7.0.0
 
-# Image processing (required by moviepy for text rendering)
-# Pin to <10.0.0 to avoid ANTIALIAS deprecation issue with moviepy
-Pillow>=9.0.0,<10.0.0
+# Image processing (for professional graphics)
+# Script handles ANTIALIAS compatibility
+Pillow>=9.0.0
+
+# Numerical processing (required for video compositing)
+numpy>=1.24.0
 
 # Audio processing
 pydub>=0.25.1
 
 # Async support
 aiofiles>=23.0.0
+
+# HTTP requests (for Pexels API, Reddit trends)
+requests>=2.28.0
+
+# Google Trends integration
+pytrends>=4.9.0
 
 # AI Content Generation (MULTI-PROVIDER - All FREE!)
 groq>=0.4.0
@@ -31,4 +40,3 @@ google-auth-httplib2>=0.1.1
 # Windows: Download from https://imagemagick.org/script/download.php
 # Linux: sudo apt install imagemagick
 # Mac: brew install imagemagick
-
