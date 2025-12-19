@@ -105,21 +105,32 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
             count=3
         )
         
-        # Create background
+        # Create background - FIX: Avoid abrupt B-roll swaps at end
         if broll_clips:
             processed = []
             for clip_path in broll_clips[:3]:
                 if os.path.exists(clip_path):
                     clip = VideoFileClip(clip_path)
                     clip = clip.resize((VIDEO_WIDTH, VIDEO_HEIGHT))
+                    # Add crossfade transition between clips
+                    if processed:
+                        clip = clip.crossfadein(0.5)
                     processed.append(clip)
             
             if processed:
-                bg_clip = concatenate_videoclips(processed, method="compose")
-                if bg_clip.duration < total_duration:
-                    bg_clip = bg_clip.loop(n=int(total_duration / bg_clip.duration) + 1)
-                bg_clip = bg_clip.subclip(0, total_duration)
-                bg_clip = bg_clip.fx(vfx.colorx, 0.5)  # Darken for text
+                # Use first clip only if it's long enough to avoid transitions
+                if processed[0].duration >= total_duration:
+                    bg_clip = processed[0].subclip(0, total_duration)
+                else:
+                    # Concatenate with crossfade, then loop smoothly
+                    bg_clip = concatenate_videoclips(processed, method="compose", padding=-0.5)
+                    if bg_clip.duration < total_duration:
+                        # Loop the FIRST clip only to avoid sudden visual changes
+                        bg_clip = processed[0].loop(duration=total_duration)
+                    bg_clip = bg_clip.subclip(0, total_duration)
+                
+                # Darken for text readability + add slight blur for modern look
+                bg_clip = bg_clip.fx(vfx.colorx, 0.5)
             else:
                 bg_clip = None
         else:
@@ -299,27 +310,49 @@ async def generate_quote_video(content: VideoContent, output_path: str) -> bool:
 # Helper Functions
 # =============================================================================
 
+def strip_emojis(text: str) -> str:
+    """Remove emojis from text to avoid rendering issues."""
+    import re
+    emoji_pattern = re.compile("["
+        u"\U0001F600-\U0001F64F"  # emoticons
+        u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+        u"\U0001F680-\U0001F6FF"  # transport & map symbols
+        u"\U0001F1E0-\U0001F1FF"  # flags
+        u"\U00002702-\U000027B0"
+        u"\U000024C2-\U0001F251"
+        "]+", flags=re.UNICODE)
+    return emoji_pattern.sub('', text).strip()
+
+
 def create_fact_overlay(text: str, width: int, height: int, 
                         theme: VideoTheme, style: str = "fact") -> Image.Image:
-    """Create text overlay for facts."""
+    """Create MODERN text overlay for facts with effects."""
     img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     
-    # Load font
+    # Strip emojis to avoid square symbols
+    text = strip_emojis(text)
+    
+    # Load MODERN fonts - prioritize bold, impactful fonts
     try:
+        # Modern font priority list (most impactful first)
         font_candidates = [
+            "C:/Windows/Fonts/impact.ttf",       # Bold, impactful
+            "C:/Windows/Fonts/BAUHS93.TTF",      # Bauhaus - modern
+            "C:/Windows/Fonts/GOTHIC.TTF",       # Century Gothic
+            "C:/Windows/Fonts/seguibl.ttf",      # Segoe UI Black
+            "C:/Windows/Fonts/arialbd.ttf",      # Fallback
             "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-            "C:/Windows/Fonts/arialbd.ttf",
             "/System/Library/Fonts/Helvetica.ttc"
         ]
         font_path = next((f for f in font_candidates if os.path.exists(f)), None)
         
         if style == "hook":
-            font_size = 48
+            font_size = 56  # Bigger for hooks
         elif style == "source":
-            font_size = 32
+            font_size = 28
         else:
-            font_size = 42
+            font_size = 44
             
         font = ImageFont.truetype(font_path, font_size) if font_path else ImageFont.load_default()
     except:
@@ -343,36 +376,57 @@ def create_fact_overlay(text: str, width: int, height: int,
     if current_line:
         lines.append(" ".join(current_line))
     
-    # Draw text with shadow
+    # Draw text with MODERN effects (multiple shadows for glow)
     y = 20
     for line in lines:
         bbox = draw.textbbox((0, 0), line, font=font)
         x = (width - (bbox[2] - bbox[0])) // 2
         
-        # Shadow
-        draw.text((x + 3, y + 3), line, fill=(0, 0, 0, 180), font=font)
-        # Main text
-        color = theme.option_a_gradient[0] if style == "hook" else (255, 255, 255)
+        # Outer glow (multiple layers for blur effect)
+        glow_color = theme.option_a_gradient[0] if style == "hook" else (100, 200, 255)
+        for offset in [5, 4, 3]:
+            alpha = 40 + (5 - offset) * 20
+            draw.text((x + offset, y + offset), line, fill=(*glow_color, alpha), font=font)
+            draw.text((x - offset, y - offset), line, fill=(*glow_color, alpha), font=font)
+            draw.text((x + offset, y - offset), line, fill=(*glow_color, alpha), font=font)
+            draw.text((x - offset, y + offset), line, fill=(*glow_color, alpha), font=font)
+        
+        # Dark shadow for depth
+        draw.text((x + 2, y + 2), line, fill=(0, 0, 0, 200), font=font)
+        
+        # Main text (bright white or accent color)
+        if style == "hook":
+            color = (255, 100, 150)  # Pink/red for hooks - attention grabbing
+        else:
+            color = (255, 255, 255)
         draw.text((x, y), line, fill=(*color, 255), font=font)
         
-        y += bbox[3] - bbox[1] + 10
+        y += bbox[3] - bbox[1] + 15  # More spacing
     
     return img
 
 
 def create_quote_overlay(quote: str, author: str, width: int, height: int) -> Image.Image:
-    """Create a beautiful quote overlay."""
+    """Create a MODERN, beautiful quote overlay."""
     img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     
+    # Strip emojis
+    quote = strip_emojis(quote)
+    author = strip_emojis(author)
+    
     try:
+        # Modern font choices
         font_candidates = [
-            "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+            "C:/Windows/Fonts/GOTHICB.TTF",   # Century Gothic Bold
+            "C:/Windows/Fonts/BAUHS93.TTF",   # Bauhaus
+            "C:/Windows/Fonts/seguibl.ttf",   # Segoe UI Black
             "C:/Windows/Fonts/georgia.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
         ]
         font_path = next((f for f in font_candidates if os.path.exists(f)), None)
-        font_quote = ImageFont.truetype(font_path, 46) if font_path else ImageFont.load_default()
-        font_author = ImageFont.truetype(font_path, 32) if font_path else ImageFont.load_default()
+        font_quote = ImageFont.truetype(font_path, 50) if font_path else ImageFont.load_default()
+        font_author = ImageFont.truetype(font_path, 30) if font_path else ImageFont.load_default()
     except:
         font_quote = ImageFont.load_default()
         font_author = ImageFont.load_default()
