@@ -1341,7 +1341,7 @@ def main():
         sys.exit(1)
     
     import argparse
-    parser = argparse.ArgumentParser(description="QuizBot V2 - Professional Video Generator")
+    parser = argparse.ArgumentParser(description="ViralShorts V2 - Professional Video Generator")
     parser.add_argument("--batch", "-b", type=int, default=1, help="Number of videos")
     parser.add_argument("--upload", "-u", action="store_true", help="Upload to YouTube")
     parser.add_argument("--no-upload", action="store_true", help="Don't upload")

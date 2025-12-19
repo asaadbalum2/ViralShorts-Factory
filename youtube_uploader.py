@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-YouTube Upload Module for QuizBot
+YouTube Upload Module for ViralShorts
 Automatically uploads generated videos to YouTube
 """
 

@@ -80,7 +80,7 @@ def export_urls(output_file: str = "all_video_urls.txt"):
     log = load_log()
     
     with open(output_file, 'w') as f:
-        f.write(f"# All QuizBot Videos - {datetime.utcnow().isoformat()}\n\n")
+        f.write(f"# All ViralShorts Videos - {datetime.utcnow().isoformat()}\n\n")
         for video in log["videos"]:
             f.write(f"{video['url']} | {video['title']}\n")
     

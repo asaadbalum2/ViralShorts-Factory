@@ -271,7 +271,7 @@ Reply with ONLY "YES" or "NO". Nothing else."""}],
         for subreddit in subreddits:
             try:
                 headers = {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) QuizBot/2.0'
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ViralShorts/2.0'
                 }
                 response = requests.get(
                     f'https://www.reddit.com/{subreddit}/hot.json?limit=10',

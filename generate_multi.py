@@ -47,6 +47,21 @@ import moviepy.video.fx.all as vfx
 
 from PIL import Image, ImageDraw, ImageFont
 
+# Import background music
+try:
+    from background_music import get_background_music
+    HAS_MUSIC = True
+except ImportError:
+    HAS_MUSIC = False
+    print("⚠️ Background music module not available")
+
+# Import AI trend detector
+try:
+    from ai_trend_detector import get_ai_suggested_video, get_multiple_ai_suggestions, TrendingTopic
+    HAS_AI_TRENDS = True
+except ImportError:
+    HAS_AI_TRENDS = False
+
 
 # Output directory
 OUTPUT_DIR = Path("./output")
@@ -127,6 +142,18 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
         # Add voiceover
         vo_clip = AudioFileClip(str(voiceover_path))
         
+        # Get background music
+        music_clip = None
+        if HAS_MUSIC:
+            music_path = get_background_music(content.music_mood)
+            if music_path and os.path.exists(music_path):
+                try:
+                    music_clip = AudioFileClip(music_path)
+                    music_clip = music_clip.volumex(0.15)  # Low volume
+                    print(f"   🎵 Added background music ({content.music_mood})")
+                except Exception as e:
+                    print(f"   ⚠️ Music error: {e}")
+        
         # Compose
         video = CompositeVideoClip([
             bg_clip,
@@ -138,7 +165,19 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
         # Set video duration to match voiceover + buffer
         actual_duration = min(total_duration, vo_clip.duration + 3)
         video = video.set_duration(actual_duration)
-        video = video.set_audio(vo_clip.set_duration(min(vo_clip.duration, actual_duration)))
+        
+        # Mix audio: voiceover + music
+        if music_clip:
+            if music_clip.duration < actual_duration:
+                music_clip = music_clip.loop(duration=actual_duration)
+            music_clip = music_clip.subclip(0, actual_duration)
+            final_audio = CompositeAudioClip([
+                vo_clip.set_duration(min(vo_clip.duration, actual_duration)),
+                music_clip
+            ])
+            video = video.set_audio(final_audio)
+        else:
+            video = video.set_audio(vo_clip.set_duration(min(vo_clip.duration, actual_duration)))
         
         # Render
         video.write_videofile(
@@ -204,6 +243,18 @@ async def generate_quote_video(content: VideoContent, output_path: str) -> bool:
         # Compose
         vo_clip = AudioFileClip(str(voiceover_path))
         
+        # Get background music
+        music_clip = None
+        if HAS_MUSIC:
+            music_path = get_background_music("inspirational")
+            if music_path and os.path.exists(music_path):
+                try:
+                    music_clip = AudioFileClip(music_path)
+                    music_clip = music_clip.volumex(0.15)
+                    print(f"   🎵 Added inspirational music")
+                except Exception as e:
+                    print(f"   ⚠️ Music error: {e}")
+        
         video = CompositeVideoClip([
             bg_clip,
             quote_clip,
@@ -213,7 +264,19 @@ async def generate_quote_video(content: VideoContent, output_path: str) -> bool:
         # Set duration to match voiceover
         actual_duration = min(total_duration, vo_clip.duration + 3)
         video = video.set_duration(actual_duration)
-        video = video.set_audio(vo_clip.set_duration(min(vo_clip.duration, actual_duration)))
+        
+        # Mix audio
+        if music_clip:
+            if music_clip.duration < actual_duration:
+                music_clip = music_clip.loop(duration=actual_duration)
+            music_clip = music_clip.subclip(0, actual_duration)
+            final_audio = CompositeAudioClip([
+                vo_clip.set_duration(min(vo_clip.duration, actual_duration)),
+                music_clip
+            ])
+            video = video.set_audio(final_audio)
+        else:
+            video = video.set_audio(vo_clip.set_duration(min(vo_clip.duration, actual_duration)))
         
         video.write_videofile(
             output_path,
@@ -366,64 +429,117 @@ def create_quote_overlay(quote: str, author: str, width: int, height: int) -> Im
 # Main
 # =============================================================================
 
+async def generate_from_ai_topic(topic) -> bool:
+    """Generate video from AI-suggested topic."""
+    
+    # Convert AI topic to VideoContent
+    content = VideoContent(
+        video_type=VideoType.SCARY_FACTS,  # Will be overridden
+        title=topic.topic,
+        hook=topic.hook,
+        main_text=topic.content,
+        secondary_text=topic.secondary_content,
+        voiceover_script=f"{topic.hook} {topic.content}",
+        broll_keywords=topic.broll_keywords or ["abstract", "motion"],
+        music_mood=topic.music_mood
+    )
+    
+    output_path = str(OUTPUT_DIR / f"ai_{topic.video_type}_{random.randint(1000, 9999)}.mp4")
+    
+    # Route to appropriate generator based on video_type
+    if topic.video_type in ["scary_fact", "money_fact", "psychology_fact", "history_fact", "life_hack"]:
+        return await generate_fact_video(content, output_path)
+    elif topic.video_type == "quote":
+        return await generate_quote_video(content, output_path)
+    elif topic.video_type == "would_you_rather":
+        from script_v2 import generate_professional_video_v2
+        return await generate_professional_video_v2(
+            {"option_a": content.main_text, "option_b": content.secondary_text or "",
+             "percentage_a": 60},
+            output_path
+        )
+    else:
+        # Default to fact video
+        return await generate_fact_video(content, output_path)
+
+
 async def main():
     parser = argparse.ArgumentParser(description="ViralShorts Factory - Multi-Type Generator")
-    parser.add_argument("--type", choices=["wyr", "scary_facts", "money_facts", "ai_quotes", "kids", "random"],
-                        default="random", help="Video type to generate")
+    parser.add_argument("--type", choices=["wyr", "scary_facts", "money_facts", "ai_quotes", "kids", "random", "ai"],
+                        default="ai", help="Video type (use 'ai' for AI-suggested topics)")
     parser.add_argument("--count", type=int, default=1, help="Number of videos")
     parser.add_argument("--upload", action="store_true", help="Upload to YouTube")
     
     args = parser.parse_args()
     
     print("=" * 60)
-    print("🎬 ViralShorts Factory - Multi-Type Generator")
+    print("🎬 ViralShorts Factory - AI-Powered Generator")
     print("=" * 60)
     
-    generator = MultiTypeContentGenerator()
     generated = 0
     
-    for i in range(args.count):
-        print(f"\n📹 Video {i+1}/{args.count}")
+    # AI MODE - Let AI decide everything
+    if args.type == "ai" and HAS_AI_TRENDS:
+        print("\n🤖 AI Mode: Letting AI decide what videos to create...")
         
-        # Get content based on type
-        if args.type == "random":
-            vtype = get_weighted_random_type()
-        else:
-            vtype = VideoType(args.type)
+        ai_topics = get_multiple_ai_suggestions(args.count)
         
-        if vtype == VideoType.SCARY_FACTS:
-            content = generator.generate_scary_fact()
-        elif vtype == VideoType.MONEY_FACTS:
-            content = generator.generate_money_fact()
-        elif vtype == VideoType.AI_QUOTES:
-            content = generator.generate_quote()
-        elif vtype == VideoType.KIDS:
-            content = generator.generate_kids_content()
-        else:
-            content = generator.generate_wyr("Have unlimited money", "Have unlimited time")
+        for i, topic in enumerate(ai_topics, 1):
+            print(f"\n📹 Video {i}/{args.count}")
+            print(f"   🎯 AI Topic: {topic.topic}")
+            print(f"   📊 Type: {topic.video_type}")
+            print(f"   💡 Reason: {topic.reason}")
+            
+            success = await generate_from_ai_topic(topic)
+            if success:
+                generated += 1
+    
+    else:
+        # Manual mode - use specified type
+        generator = MultiTypeContentGenerator()
         
-        if not content:
-            print("   ⚠️ Could not generate content")
-            continue
-        
-        # Generate video
-        output_path = str(OUTPUT_DIR / f"{vtype.value}_{random.randint(1000, 9999)}.mp4")
-        
-        if vtype in [VideoType.SCARY_FACTS, VideoType.MONEY_FACTS]:
-            success = await generate_fact_video(content, output_path)
-        elif vtype == VideoType.AI_QUOTES:
-            success = await generate_quote_video(content, output_path)
-        else:
-            # Use WYR generator from script_v2
-            from script_v2 import generate_professional_video_v2
-            success = await generate_professional_video_v2(
-                {"option_a": content.main_text, "option_b": content.secondary_text or "",
-                 "percentage_a": content.percentage_a or 60},
-                output_path
-            )
-        
-        if success:
-            generated += 1
+        for i in range(args.count):
+            print(f"\n📹 Video {i+1}/{args.count}")
+            
+            # Get content based on type
+            if args.type == "random":
+                vtype = get_weighted_random_type()
+            else:
+                vtype = VideoType(args.type)
+            
+            if vtype == VideoType.SCARY_FACTS:
+                content = generator.generate_scary_fact()
+            elif vtype == VideoType.MONEY_FACTS:
+                content = generator.generate_money_fact()
+            elif vtype == VideoType.AI_QUOTES:
+                content = generator.generate_quote()
+            elif vtype == VideoType.KIDS:
+                content = generator.generate_kids_content()
+            else:
+                content = generator.generate_wyr("Have unlimited money", "Have unlimited time")
+            
+            if not content:
+                print("   ⚠️ Could not generate content")
+                continue
+            
+            # Generate video
+            output_path = str(OUTPUT_DIR / f"{vtype.value}_{random.randint(1000, 9999)}.mp4")
+            
+            if vtype in [VideoType.SCARY_FACTS, VideoType.MONEY_FACTS]:
+                success = await generate_fact_video(content, output_path)
+            elif vtype == VideoType.AI_QUOTES:
+                success = await generate_quote_video(content, output_path)
+            else:
+                # Use WYR generator from script_v2
+                from script_v2 import generate_professional_video_v2
+                success = await generate_professional_video_v2(
+                    {"option_a": content.main_text, "option_b": content.secondary_text or "",
+                     "percentage_a": content.percentage_a or 60},
+                    output_path
+                )
+            
+            if success:
+                generated += 1
     
     print(f"\n{'=' * 60}")
     print(f"✅ Generated {generated}/{args.count} videos")

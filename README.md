@@ -1,4 +1,4 @@
-# 🎬 QuizBot-Shorts
+# 🎬 ViralShorts-Shorts
 
 **Autonomous "Would You Rather" Video Generator for YouTube Shorts**
 
@@ -19,7 +19,7 @@ Generate engaging, viral-ready "Would You Rather" videos automatically using a *
 ## 📁 Project Structure
 
 ```
-QuizBot-Shorts/
+ViralShorts-Shorts/
 ├── script.py           # Main video generator
 ├── questions.json      # Your "Would You Rather" questions
 ├── requirements.txt    # Python dependencies
@@ -48,8 +48,8 @@ QuizBot-Shorts/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/QuizBot-Shorts.git
-cd QuizBot-Shorts
+git clone https://github.com/YOUR_USERNAME/ViralShorts-Shorts.git
+cd ViralShorts-Shorts
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -162,8 +162,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip ffmpeg imagemagick git -y
 
 # Clone and setup
-git clone https://github.com/YOUR_USERNAME/QuizBot-Shorts.git
-cd QuizBot-Shorts
+git clone https://github.com/YOUR_USERNAME/ViralShorts-Shorts.git
+cd ViralShorts-Shorts
 pip3 install -r requirements.txt
 
 # Run

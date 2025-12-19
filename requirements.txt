@@ -1,4 +1,4 @@
-# QuizBot V2 - Professional "Would You Rather" Video Generator
+# ViralShorts V2 - Professional "Would You Rather" Video Generator
 # Zero-Cost Stack for Viral YouTube Shorts
 
 # Core video editing

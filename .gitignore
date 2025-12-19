@@ -60,6 +60,11 @@ assets/sfx/*.mp3
 assets/sfx/*.wav
 !assets/sfx/.gitkeep
 
+# B-roll and music (downloaded at runtime)
+assets/broll/*.mp4
+assets/music/**/*.mp3
+workflow_output/*.mp4
+
 # Environment variables
 .env
 .env.local

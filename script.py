@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-QuizBot - Autonomous "Would You Rather" Video Generator for YouTube Shorts
+ViralShorts - Autonomous "Would You Rather" Video Generator for YouTube Shorts
 Zero-Cost Stack: edge-tts + moviepy + local assets
 """
 
@@ -565,7 +565,7 @@ def main():
     
     # Parse arguments
     import argparse
-    parser = argparse.ArgumentParser(description="QuizBot - Would You Rather Video Generator")
+    parser = argparse.ArgumentParser(description="ViralShorts - Would You Rather Video Generator")
     parser.add_argument("--batch", "-b", type=int, default=1, help="Number of videos to generate")
     parser.add_argument("--upload", "-u", action="store_true", help="Upload to YouTube after generating")
     parser.add_argument("--no-upload", action="store_true", help="Don't upload (just generate)")
