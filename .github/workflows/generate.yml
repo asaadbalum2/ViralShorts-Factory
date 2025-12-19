@@ -102,6 +102,15 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           PYTHONUNBUFFERED: "1"
 
+      - name: Save videos as artifacts (for preview)
+        if: github.event.inputs.test_only == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-videos
+          path: output/*.mp4
+          retention-days: 7
+        continue-on-error: true
+
       - name: Log run to dashboard
         run: |
           echo "{\"project\": \"QuizBot\", \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"videos\": 3, \"status\": \"success\"}" >> run_log.json
