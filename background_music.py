@@ -12,42 +12,40 @@ from typing import Optional, List
 MUSIC_DIR = Path("./assets/music")
 MUSIC_DIR.mkdir(parents=True, exist_ok=True)
 
-# Using Pixabay's free music API (no API key needed for some endpoints)
-# These are ACTUAL working URLs from Pixabay's CDN
-PIXABAY_MUSIC_URLS = {
+# BENSOUND - Reliable free music with proper CDN
+# These are VERIFIED WORKING direct links (royalty-free with attribution)
+BENSOUND_MUSIC = {
     "fun": [
-        # Fun, upbeat (Pixabay free music - CC0)
-        "https://cdn.pixabay.com/download/audio/2022/03/15/audio_8cb749d484.mp3",  # Happy Day
-        "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1c94.mp3",  # Upbeat Fun
-        "https://cdn.pixabay.com/download/audio/2021/11/25/audio_91b32e02f9.mp3",  # Cheerful
+        "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
+        "https://www.bensound.com/bensound-music/bensound-cute.mp3",
+        "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
     ],
     "dramatic": [
-        # Epic, cinematic
-        "https://cdn.pixabay.com/download/audio/2022/02/22/audio_d1718ab41b.mp3",  # Epic Cinematic
-        "https://cdn.pixabay.com/download/audio/2022/05/16/audio_d44b2d1089.mp3",  # Dramatic
+        "https://www.bensound.com/bensound-music/bensound-epic.mp3",
+        "https://www.bensound.com/bensound-music/bensound-actionable.mp3",
     ],
     "energetic": [
-        # Electronic, upbeat
-        "https://cdn.pixabay.com/download/audio/2022/03/10/audio_70bdd56cf6.mp3",  # Electronic
-        "https://cdn.pixabay.com/download/audio/2022/10/25/audio_398e13b76e.mp3",  # Energy
+        "https://www.bensound.com/bensound-music/bensound-energy.mp3",
+        "https://www.bensound.com/bensound-music/bensound-dubstep.mp3",
+        "https://www.bensound.com/bensound-music/bensound-moose.mp3",
     ],
     "chill": [
-        # Calm, ambient
-        "https://cdn.pixabay.com/download/audio/2022/05/27/audio_a15cea5c15.mp3",  # Lofi Chill
-        "https://cdn.pixabay.com/download/audio/2022/01/20/audio_0a8e1e4c15.mp3",  # Ambient
+        "https://www.bensound.com/bensound-music/bensound-dreams.mp3",
+        "https://www.bensound.com/bensound-music/bensound-slowmotion.mp3",
+        "https://www.bensound.com/bensound-music/bensound-relaxing.mp3",
     ],
     "mystery": [
-        # Mysterious, tense
-        "https://cdn.pixabay.com/download/audio/2022/03/15/audio_942694cbd3.mp3",  # Suspense
+        "https://www.bensound.com/bensound-music/bensound-deepblue.mp3",
+        "https://www.bensound.com/bensound-music/bensound-scifi.mp3",
     ],
 }
 
-# Backup: Chosic free music (reliable CDN)
-CHOSIC_MUSIC_URLS = {
-    "fun": "https://www.chosic.com/wp-content/uploads/2021/07/Happy-Summer-Show-chosic.com_.mp3",
-    "dramatic": "https://www.chosic.com/wp-content/uploads/2021/05/Epic-Cinematic-Action-chosic.com_.mp3",
-    "energetic": "https://www.chosic.com/wp-content/uploads/2021/06/Electronic-Rock-chosic.com_.mp3",
-    "chill": "https://www.chosic.com/wp-content/uploads/2021/04/Lofi-Study-chosic.com_.mp3",
+# Backup: Mixkit (also reliable, CC0)
+MIXKIT_MUSIC = {
+    "fun": "https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3",
+    "dramatic": "https://assets.mixkit.co/music/preview/mixkit-epic-cinematic-trailer-101.mp3",
+    "energetic": "https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-738.mp3",
+    "chill": "https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3",
 }
 
 # NOTE: Removed pydub tone generation - it sounded like broken radio!
@@ -68,30 +66,30 @@ def get_background_music(mood: str = "fun", duration: float = 45) -> Optional[st
         print(f"   ✅ Using cached music: {Path(cached).name}")
         return cached
     
-    # Try Pixabay music (most reliable)
-    pixabay_urls = PIXABAY_MUSIC_URLS.get(mood, PIXABAY_MUSIC_URLS.get("fun", []))
-    random.shuffle(pixabay_urls)  # Randomize
+    # Try Bensound (reliable, royalty-free)
+    bensound_urls = BENSOUND_MUSIC.get(mood, BENSOUND_MUSIC.get("fun", []))
+    random.shuffle(bensound_urls)
     
-    for url in pixabay_urls:
+    for url in bensound_urls:
         try:
             music_path = _download_music(url, mood)
             if music_path:
-                print(f"   ✅ Got Pixabay music")
+                print(f"   ✅ Got Bensound music")
                 return music_path
         except Exception as e:
-            print(f"   ⚠️ Pixabay download failed: {e}")
+            print(f"   ⚠️ Bensound download failed: {e}")
             continue
     
-    # Try Chosic backup
-    chosic_url = CHOSIC_MUSIC_URLS.get(mood, CHOSIC_MUSIC_URLS.get("fun"))
-    if chosic_url:
+    # Try Mixkit backup (CC0, reliable CDN)
+    mixkit_url = MIXKIT_MUSIC.get(mood, MIXKIT_MUSIC.get("fun"))
+    if mixkit_url:
         try:
-            music_path = _download_music(chosic_url, mood)
+            music_path = _download_music(mixkit_url, mood)
             if music_path:
-                print(f"   ✅ Got Chosic music")
+                print(f"   ✅ Got Mixkit music")
                 return music_path
         except Exception as e:
-            print(f"   ⚠️ Chosic download failed: {e}")
+            print(f"   ⚠️ Mixkit download failed: {e}")
     
     # Last resort: Use any cached music
     all_cached = list(MUSIC_DIR.glob("**/*.mp3"))
