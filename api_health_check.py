@@ -21,59 +21,52 @@ class APIHealthChecker:
         self.output_path = Path("api_health_status.json")
     
     def check_groq(self) -> Tuple[bool, str]:
-        """Check GROQ API key validity."""
+        """Check GROQ API key validity WITHOUT consuming quota."""
         api_key = os.environ.get("GROQ_API_KEY", "")
         if not api_key:
             return False, "❌ GROQ_API_KEY not set"
         
+        # Just validate key format and try to initialize client
+        # Don't make actual API calls to save quota
+        if not api_key.startswith("gsk_"):
+            return False, "❌ GROQ API key format invalid (should start with gsk_)"
+        
+        if len(api_key) < 50:
+            return False, "❌ GROQ API key too short"
+        
         try:
             from groq import Groq
+            # Just initialize - don't call API
             client = Groq(api_key=api_key)
-            # Simple test request
-            response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
-                messages=[{"role": "user", "content": "Say 'test' in one word"}],
-                max_tokens=5
-            )
-            return True, "✅ GROQ API working"
+            return True, "✅ GROQ API key format valid (quota preserved)"
         except Exception as e:
-            error_msg = str(e)
-            if "401" in error_msg or "invalid" in error_msg.lower():
-                return False, f"❌ GROQ API key INVALID - Get new key at https://console.groq.com/keys"
-            return False, f"⚠️ GROQ error: {error_msg[:100]}"
+            return False, f"⚠️ GROQ init error: {str(e)[:100]}"
     
     def check_gemini(self) -> Tuple[bool, str]:
-        """Check Gemini API key validity."""
+        """Check Gemini API key validity WITHOUT consuming quota."""
         api_key = os.environ.get("GEMINI_API_KEY", "")
         if not api_key:
             return False, "❌ GEMINI_API_KEY not set"
         
+        # Validate key format without API call
+        if not api_key.startswith("AI"):
+            return False, "❌ Gemini API key format invalid"
+        
+        if len(api_key) < 30:
+            return False, "❌ Gemini API key too short"
+        
+        # Just try to initialize, don't make API calls
         try:
-            # Try new API first
             try:
                 from google import genai
                 client = genai.Client(api_key=api_key)
-                response = client.models.generate_content(
-                    model="gemini-2.0-flash",
-                    contents="Say 'test' in one word"
-                )
-                return True, "✅ Gemini API working (new SDK)"
+                return True, "✅ Gemini API key format valid (quota preserved)"
             except ImportError:
-                pass
-            
-            # Fallback to old API
-            import google.generativeai as genai
-            genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-pro')
-            response = model.generate_content("Say 'test' in one word")
-            return True, "✅ Gemini API working (legacy SDK)"
+                import google.generativeai as genai
+                genai.configure(api_key=api_key)
+                return True, "✅ Gemini API key format valid (quota preserved)"
         except Exception as e:
-            error_msg = str(e)
-            if "401" in error_msg or "403" in error_msg or "invalid" in error_msg.lower():
-                return False, f"❌ Gemini API key INVALID - Get new key at https://aistudio.google.com/apikey"
-            if "404" in error_msg:
-                return False, f"⚠️ Gemini model not found - may need SDK update"
-            return False, f"⚠️ Gemini error: {error_msg[:100]}"
+            return False, f"⚠️ Gemini init error: {str(e)[:100]}"
     
     def check_pexels(self) -> Tuple[bool, str]:
         """Check Pexels API key validity."""

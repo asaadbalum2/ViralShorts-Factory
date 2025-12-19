@@ -283,23 +283,28 @@ class TrendingContentGenerator:
             context = trends + seasonal
             
             system = """You are an expert at creating VIRAL "Would You Rather" questions for YouTube Shorts.
-Your questions MUST:
-1. Be controversial but appropriate
-2. Make people THINK and DEBATE
-3. Have no obviously "correct" answer
-4. Be relatable to most people
-5. Create emotional response (funny, shocking, or thought-provoking)
 
-Return ONLY valid JSON: {"option_a": "...", "option_b": "...", "percentage_a": X}
-Where X is 1-99 (avoid 50 - make it interesting like 35 or 67)"""
+CRITICAL RULES:
+1. Each option MUST be 5-12 words MAX (for voiceover)
+2. Be controversial but appropriate
+3. No obviously "correct" answer
+4. Relatable to most people
+5. Funny, shocking, or thought-provoking
+
+EXAMPLES OF GOOD SHORT OPTIONS:
+- "Have $10 million but no friends"
+- "Be invisible but only when alone"
+- "Know when you die but not how"
+
+Return ONLY valid JSON: {"option_a": "SHORT 5-12 WORDS", "option_b": "SHORT 5-12 WORDS", "percentage_a": X}
+Where X is 1-99 (avoid 50)"""
 
             prompts = [
-                f"Create a viral money/wealth dilemma question. Current trending: {random.choice(context) if context else 'money'}",
-                f"Create a viral superpower question that makes people debate.",
-                f"Create a viral embarrassing situation question that's relatable.",
-                f"Create a viral life tradeoff question about relationships or time.",
-                f"Create a viral question about modern technology or social media.",
-                f"Create a controversial but appropriate question about daily life choices.",
+                "Create a SHORT viral money dilemma. Options must be under 12 words each.",
+                "Create a SHORT superpower question. Options must be under 12 words each.",
+                "Create a SHORT embarrassing situation question. Under 12 words each option.",
+                "Create a SHORT life tradeoff question. Under 12 words each option.",
+                "Create a SHORT social media dilemma. Under 12 words each option.",
             ]
             
             for i in range(count):
@@ -316,6 +321,17 @@ Where X is 1-99 (avoid 50 - make it interesting like 35 or 67)"""
                                 clean = clean[4:]
                         
                         question = json.loads(clean)
+                        
+                        # VALIDATE LENGTH - reject if too long
+                        opt_a = question.get("option_a", "")
+                        opt_b = question.get("option_b", "")
+                        if len(opt_a) > 80 or len(opt_b) > 80:
+                            print(f"   ⚠️ Question too long ({len(opt_a)}/{len(opt_b)} chars), using template")
+                            fallback = self.generate_from_template(random.choice(list(self.VIRAL_CATEGORIES.keys())))
+                            if fallback:
+                                questions.append(fallback)
+                            continue
+                        
                         question["source"] = "ai"
                         question["generated_at"] = datetime.now().isoformat()
                         questions.append(question)

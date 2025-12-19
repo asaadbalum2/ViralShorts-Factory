@@ -164,21 +164,40 @@ jobs:
           VIDEO_COUNT=$(ls output/*.mp4 2>/dev/null | wc -l)
           echo "video_count=$VIDEO_COUNT" >> $GITHUB_OUTPUT
           
-          if [ "$VIDEO_COUNT" -eq 0 ]; then
-            echo "❌ CRITICAL: No videos were generated!"
-            echo "::error::No videos were generated - check logs above for errors"
+          # Diagnose issues
+          echo "📊 Diagnostic info:"
+          echo "   - Questions file exists: $([ -f questions.json ] && echo 'YES' || echo 'NO')"
+          if [ -f questions.json ]; then
+            Q_COUNT=$(python -c "import json; print(len(json.load(open('questions.json'))))" 2>/dev/null || echo 0)
+            echo "   - Questions count: $Q_COUNT"
             
-            # Check for common issues
-            if [ -f questions.json ]; then
-              Q_COUNT=$(python -c "import json; print(len(json.load(open('questions.json'))))" 2>/dev/null || echo 0)
-              echo "📊 Questions in questions.json: $Q_COUNT"
-            else
-              echo "❌ questions.json not found!"
-            fi
-            
-            # Still exit with 0 to see full logs, but mark as failed in summary
-            echo "GENERATION_FAILED=true" >> $GITHUB_ENV
+            # Show sample question lengths
+            python -c "
+import json
+qs = json.load(open('questions.json'))[:3]
+for i, q in enumerate(qs):
+    a = q.get('option_a', '')
+    b = q.get('option_b', '')
+    print(f'   - Q{i+1}: A={len(a)} chars, B={len(b)} chars')
+" 2>/dev/null || true
+          fi
+          
+          # Check for Edge-TTS issues
+          if ls cache/*.mp3 2>/dev/null; then
+            echo "   - Audio files: $(ls cache/*.mp3 | wc -l)"
           else
+            echo "   - Audio files: 0 (TTS may have failed)"
+          fi
+          
+          if [ "$VIDEO_COUNT" -eq 0 ]; then
+            echo ""
+            echo "❌ CRITICAL: No videos were generated!"
+            echo "::error::VIDEO GENERATION FAILED - Check logs above for errors"
+            
+            # ACTUALLY FAIL THE WORKFLOW
+            exit 1
+          else
+            echo ""
             echo "✅ Generated $VIDEO_COUNT video(s)"
             for f in output/*.mp4; do
               if [ -f "$f" ]; then
