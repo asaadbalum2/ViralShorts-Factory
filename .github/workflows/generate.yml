@@ -1,8 +1,6 @@
 name: QuizBot V2 - Professional Video Generator
-# Updated: Force workflow refresh v3
 
 on:
-  # Manual trigger for testing
   workflow_dispatch:
     inputs:
       batch_size:
@@ -33,15 +31,13 @@ on:
         options:
           - 'true'
           - 'false'
-  
-  # Scheduled runs - MAXIMIZED (6 times per day)
   schedule:
-    - cron: '0 4 * * *'   # 4 AM UTC
-    - cron: '0 8 * * *'   # 8 AM UTC
-    - cron: '0 12 * * *'  # 12 PM UTC
-    - cron: '0 16 * * *'  # 4 PM UTC
-    - cron: '0 20 * * *'  # 8 PM UTC
-    - cron: '0 0 * * *'   # 12 AM UTC
+    - cron: '0 4 * * *'
+    - cron: '0 8 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 20 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   generate:
@@ -53,9 +49,9 @@ jobs:
         if: github.event.inputs.skip_delay != 'true'
         run: |
           DELAY=$((RANDOM % 2700))
-          echo "⏱️ Waiting $DELAY seconds ($(($DELAY / 60)) minutes) for randomization..."
+          echo "Waiting $DELAY seconds for randomization..."
           sleep $DELAY
-          echo "✅ Starting execution at $(date -u)"
+          echo "Starting execution at $(date -u)"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -69,7 +65,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg imagemagick fonts-dejavu-core fonts-liberation
-          # Fix ImageMagick policy
           sudo sed -i 's/rights="none" pattern="@\*"/rights="read|write" pattern="@*"/' /etc/ImageMagick-6/policy.xml || true
           sudo sed -i 's/<policy domain="path" rights="none" pattern="@\*"/<policy domain="path" rights="read|write" pattern="@*"/' /etc/ImageMagick-6/policy.xml || true
 
@@ -80,7 +75,7 @@ jobs:
 
       - name: Check API Health
         run: |
-          echo "🔍 Checking API health..."
+          echo "Checking API health..."
           python api_health_check.py || true
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -103,7 +98,7 @@ jobs:
 
       - name: Generate VIRAL trending questions
         run: |
-          echo "🎯 Generating viral trending questions..."
+          echo "Generating viral trending questions..."
           python trending_content.py 100
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -113,7 +108,7 @@ jobs:
       - name: Fallback - Generate template questions if AI failed
         run: |
           if [ ! -f questions.json ] || [ ! -s questions.json ]; then
-            echo "⚠️ Using fallback questions..."
+            echo "Using fallback questions..."
             python trending_content.py 50 --no-ai
           fi
 
@@ -125,17 +120,17 @@ jobs:
           
           if [ "$USE_V2" = "true" ]; then
             SCRIPT="script_v2.py"
-            echo "🎨 Using V2 PROFESSIONAL generator"
+            echo "Using V2 PROFESSIONAL generator"
           else
             SCRIPT="script.py"
-            echo "📹 Using V1 basic generator"
+            echo "Using V1 basic generator"
           fi
           
           if [ "$TEST_ONLY" = "true" ]; then
-            echo "🧪 TEST MODE - Generating $BATCH_SIZE videos WITHOUT upload..."
+            echo "TEST MODE - Generating $BATCH_SIZE videos WITHOUT upload..."
             python $SCRIPT --batch $BATCH_SIZE --no-upload
           else
-            echo "🎬 Generating $BATCH_SIZE videos WITH upload..."
+            echo "Generating $BATCH_SIZE videos WITH upload..."
             python $SCRIPT --batch $BATCH_SIZE --upload
           fi
         env:
@@ -160,29 +155,26 @@ jobs:
       - name: Verify video generation
         id: verify
         run: |
-          echo "📹 Checking for generated videos..."
+          echo "Checking for generated videos..."
           VIDEO_COUNT=$(ls output/*.mp4 2>/dev/null | wc -l)
           echo "video_count=$VIDEO_COUNT" >> $GITHUB_OUTPUT
           
-          # Diagnose issues
-          echo "📊 Diagnostic info:"
+          echo "Diagnostic info:"
           echo "   - Questions file exists: $([ -f questions.json ] && echo 'YES' || echo 'NO')"
           if [ -f questions.json ]; then
             Q_COUNT=$(python -c "import json; print(len(json.load(open('questions.json'))))" 2>/dev/null || echo 0)
             echo "   - Questions count: $Q_COUNT"
             
-            # Show sample question lengths
             python -c "
-import json
-qs = json.load(open('questions.json'))[:3]
-for i, q in enumerate(qs):
-    a = q.get('option_a', '')
-    b = q.get('option_b', '')
-    print(f'   - Q{i+1}: A={len(a)} chars, B={len(b)} chars')
-" 2>/dev/null || true
+          import json
+          qs = json.load(open('questions.json'))[:3]
+          for i, q in enumerate(qs):
+              a = q.get('option_a', '')
+              b = q.get('option_b', '')
+              print(f'   - Q{i+1}: A={len(a)} chars, B={len(b)} chars')
+          " 2>/dev/null || true
           fi
           
-          # Check for Edge-TTS issues
           if ls cache/*.mp3 2>/dev/null; then
             echo "   - Audio files: $(ls cache/*.mp3 | wc -l)"
           else
@@ -191,14 +183,12 @@ for i, q in enumerate(qs):
           
           if [ "$VIDEO_COUNT" -eq 0 ]; then
             echo ""
-            echo "❌ CRITICAL: No videos were generated!"
+            echo "CRITICAL: No videos were generated!"
             echo "::error::VIDEO GENERATION FAILED - Check logs above for errors"
-            
-            # ACTUALLY FAIL THE WORKFLOW
             exit 1
           else
             echo ""
-            echo "✅ Generated $VIDEO_COUNT video(s)"
+            echo "Generated $VIDEO_COUNT video(s)"
             for f in output/*.mp4; do
               if [ -f "$f" ]; then
                 SIZE=$(stat --printf="%s" "$f" 2>/dev/null || stat -f%z "$f" 2>/dev/null)
@@ -211,19 +201,19 @@ for i, q in enumerate(qs):
 
       - name: Summary
         run: |
-          echo "## 🎬 QuizBot V2 Run Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## QuizBot V2 Run Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "**Generator:** V2 Professional" >> $GITHUB_STEP_SUMMARY
           echo "**Videos Generated:** ${{ github.event.inputs.batch_size || '3' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 🎥 Features Used" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Professional gradient themes" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Dynamic visual effects" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Viral hook text" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Animated countdown" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Call-to-action overlay" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Trending content integration" >> $GITHUB_STEP_SUMMARY
+          echo "### Features Used" >> $GITHUB_STEP_SUMMARY
+          echo "- Professional gradient themes" >> $GITHUB_STEP_SUMMARY
+          echo "- Dynamic visual effects" >> $GITHUB_STEP_SUMMARY
+          echo "- Viral hook text" >> $GITHUB_STEP_SUMMARY
+          echo "- Animated countdown" >> $GITHUB_STEP_SUMMARY
+          echo "- Call-to-action overlay" >> $GITHUB_STEP_SUMMARY
+          echo "- Trending content integration" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "📺 **Channel:** https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY
+          echo "Channel: https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY
