@@ -54,55 +54,67 @@ def strip_emojis(text: str) -> str:
 # GOD-TIER PROMPT: Viral Topic Generation
 # =============================================================================
 
-VIRAL_TOPIC_PROMPT = """You are MrBeast's head content strategist combined with the psychology expertise of Robert Cialdini. You have 15 years of experience creating viral content that has generated over 50 BILLION views.
+VIRAL_TOPIC_PROMPT = """You are MrBeast's head content strategist combined with Robert Cialdini (psychology) 
+and James Clear (actionable advice). You've created content with 50 BILLION views.
 
-Your task: Generate video ideas that WILL go viral on YouTube Shorts.
+Your task: Generate video ideas that DELIVER REAL VALUE and go viral.
 
 CURRENT CONTEXT:
 - Date: {date}
-- Day: {day_of_week}
+- Day: {day_of_week}  
 - Season: {season}
 - Trending themes: {trending_themes}
 
-PSYCHOLOGICAL TRIGGERS TO USE (pick 2-3 per video):
-1. CURIOSITY GAP - Create an information gap that MUST be closed
-2. CONTROVERSY - Divisive topics that demand engagement
-3. FEAR/THREAT - Survival instinct activation
-4. SOCIAL PROOF - "Everyone is talking about..."
-5. SCARCITY - "Only 1% know this..."
-6. IDENTITY - "Are you a X or Y person?"
-7. EMOTIONAL RESONANCE - Touch deep feelings
-8. PATTERN INTERRUPT - Unexpected twists
+===== THE PROMISE-PAYOFF CONTRACT (CRITICAL!) =====
+Every viral video makes a PROMISE in the hook and DELIVERS in the content.
 
-BROLL KEYWORDS MUST BE:
-- Highly specific (not "abstract" but "neon city lights at night")
-- Visually dynamic (movement, contrast, color)
-- Emotionally evocative
-- Available on stock video sites (Pexels, Pixabay)
+❌ NEVER DO THIS:
+- "Here's an amazing strategy..." (without explaining the strategy)
+- "Learn this powerful technique..." (without teaching the technique)
+- "Scientists discovered..." (without saying what they discovered)
+- "You won't believe..." (and then not delivering the surprise)
 
-CRITICAL RULES:
-1. NO EMOJIS in any field (they don't render properly)
-2. Hooks must create INSTANT curiosity in under 2 seconds
-3. Content must be SURPRISING - not just "did you know" facts
-4. Include actionable insight or revelation
-5. B-roll keywords must be SPECIFIC and VISUAL
+✅ ALWAYS DO THIS:
+- "The 2-minute rule: Any task under 2 minutes, do it NOW. I did 47 yesterday."
+- "Your willpower crashes at 3pm. Schedule hard tasks before noon."
+- "You've walked past 36 murderers. Based on crime rates, it's mathematically certain."
 
-Generate {count} video ideas. For EACH video, provide:
+===== VALUE-FIRST CONTENT STRUCTURE =====
+HOOK (2 sec): Shocking specific claim with a NUMBER or FACT
+BUILD (5 sec): Context that increases tension
+DELIVER (10 sec): THE ACTUAL VALUE - specific steps, numbers, proof
+REINFORCE (3 sec): Why this matters to THEM personally
+CTA (2 sec): Question that makes them reflect/comment
+
+===== CONTENT REQUIREMENTS =====
+1. Include AT LEAST 2 specific numbers (percentages, times, counts)
+2. Give ONE clear actionable step they can take TODAY
+3. Explain the MECHANISM (why/how it works)
+4. Make them feel SMARTER after watching
+5. NO empty promises - if you say "here's how," you MUST explain how
+
+===== B-ROLL KEYWORDS =====
+- Highly specific ("person staring at phone in dark room" not "technology")
+- Emotionally matched to content
+- Available on stock sites
+
+Generate {count} video ideas. For EACH video:
 
 {{
     "topic": "2-4 word topic name",
     "video_type": "scary_fact|money_fact|psychology_fact|life_hack|mind_blow",
-    "hook": "7-10 word attention grabber - NO EMOJIS - pure text only",
-    "content": "The actual content. Must include: 1) A shocking claim, 2) The evidence/explanation, 3) The implications for the viewer. 60-100 words.",
-    "call_to_action": "What should viewer do after watching? Comment prompt that drives engagement.",
+    "hook": "7-10 word attention grabber with SPECIFIC CLAIM - NO EMOJIS",
+    "content": "COMPLETE content that DELIVERS VALUE. Include: 1) The specific claim with numbers, 2) The mechanism/evidence, 3) The actionable takeaway. 60-100 words. NO EMOJIS.",
+    "the_payoff": "The ONE specific thing they learn/can do after watching",
+    "call_to_action": "Reflective question that drives comments",
     "broll_keywords": ["specific visual 1", "specific visual 2", "specific visual 3", "specific visual 4"],
     "music_mood": "suspense|dramatic|inspirational|energetic|emotional",
     "virality_score": 1-10,
     "psychological_triggers": ["trigger1", "trigger2"],
-    "why_viral": "One sentence explaining the psychology of why this will spread"
+    "why_viral": "One sentence on the psychology of why this spreads"
 }}
 
-Return a JSON array of {count} objects. No markdown, no emojis, no explanations outside the JSON."""
+Return a JSON array of {count} objects. No markdown, no emojis, no explanations outside JSON."""
 
 
 # =============================================================================
@@ -191,33 +203,47 @@ Return EXACTLY 5 specific, searchable B-roll descriptions:
 # GOD-TIER PROMPT: Voiceover Script
 # =============================================================================
 
-VOICEOVER_PROMPT = """You are Morgan Freeman's dialogue coach combined with the pacing expertise of a TikTok creator with 50M followers.
+VOICEOVER_PROMPT = """You are Morgan Freeman's dialogue coach + a TikTok creator with 50M followers.
 
-Write a voiceover script that:
-1. HOOKS in first 1 second with pattern interrupt
-2. BUILDS tension/curiosity through middle
-3. DELIVERS satisfying payoff
-4. ENDS with engagement driver
+Write a voiceover that DELIVERS VALUE, not just promises it.
 
 CONTENT TO ADAPT: "{content}"
-TARGET DURATION: 15-30 seconds (about 50-80 words)
+TARGET: 15-30 seconds (50-80 words)
 
-PACING RULES:
-- Short, punchy sentences (5-10 words max)
-- Strategic pauses indicated by "..."
-- Emphasis words in CAPS
-- No filler words ("um", "like", "basically")
-- Conversational but authoritative
+===== THE VALUE TEST =====
+Before writing, ask: "What does the viewer LEARN or GAIN from this?"
+If the answer is vague ("motivation" / "awareness"), rewrite until it's SPECIFIC.
 
-BAD: "Did you know that the average person walks past 36 murderers in their lifetime?"
-GOOD: "You've walked past... 36 murderers... in YOUR lifetime. Scientists confirmed it."
+GOOD: "Viewer learns the 2-minute rule and can use it today"
+BAD: "Viewer feels inspired to be productive"
+
+===== STRUCTURE =====
+1. HOOK (1 sec): Surprising claim that STOPS the scroll
+2. BUILD (3 sec): Create anticipation for the payoff
+3. DELIVER (10 sec): THE ACTUAL VALUE - specific, actionable, memorable
+4. REINFORCE (3 sec): Why this matters to THEM
+5. CTA (2 sec): Question that drives comments
+
+===== STYLE RULES =====
+- Short sentences (5-10 words max)
+- Pauses as "..." for emphasis
+- CAPS for key words
+- NO filler words
+- Conversational but confident
+- Numbers and specifics always
+
+BAD: "There's a technique you should learn about..."
+GOOD: "The 2-minute rule. If it takes less than 2 minutes... do it NOW."
+
+BAD: "Studies show this really works for most people."
+GOOD: "MIT tested this on 1,200 students. 73% improved in just 2 weeks."
 
 Return JSON:
 {{
-    "script": "The complete voiceover script with pauses as ...",
+    "script": "Complete script with pauses as ...",
     "word_count": number,
     "estimated_duration_seconds": number,
-    "emphasis_words": ["WORD1", "WORD2"],
+    "the_value_delivered": "ONE sentence describing what viewer gains",
     "hook_line": "First line only",
     "closing_line": "Last line only"
 }}"""
