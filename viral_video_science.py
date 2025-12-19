@@ -436,37 +436,58 @@ class ViralContentGenerator:
             return self._fallback_content(video_type)
     
     def _fallback_content(self, video_type: str) -> Dict:
-        """Fallback content that still delivers value."""
+        """
+        EMERGENCY FALLBACK ONLY - Used when AI is completely unavailable.
+        
+        WARNING: This should rarely happen. If you see this often,
+        check the AI API keys and connectivity!
+        
+        These fallbacks are evergreen content that still delivers value.
+        """
+        print("⚠️ WARNING: Using EMERGENCY FALLBACK content - AI unavailable!")
+        print("   → Check GROQ_API_KEY is set and valid")
+        print("   → This content is not trending/timely")
+        
+        from datetime import datetime
+        now = datetime.now()
+        
+        # Make fallback slightly dynamic based on time
+        time_context = "morning" if now.hour < 12 else "afternoon" if now.hour < 17 else "evening"
+        
+        # Evergreen fallbacks that still provide value
         fallbacks = {
             "life_hack": {
                 "hook": "The 2-minute rule changes everything",
-                "full_script": "If a task takes less than 2 minutes, do it immediately. "
-                              "This one rule eliminated 80% of my mental clutter. "
-                              "That email reply? 2 minutes. Hang up your coat? 30 seconds. "
-                              "Your brain wastes more energy remembering tasks than doing them. "
-                              "I did 47 two-minute tasks yesterday. Zero stress about pending things. "
-                              "What's been sitting on your mental to-do list for weeks?",
+                "full_script": f"If a task takes less than 2 minutes, do it immediately. "
+                              f"This one rule eliminated 80 percent of my mental clutter. "
+                              f"That email reply? 2 minutes. Hang up your coat? 30 seconds. "
+                              f"Your brain wastes more energy remembering tasks than doing them. "
+                              f"Start this {time_context} - do any small task right now. "
+                              f"What has been sitting on your mental to-do list for weeks?",
                 "specific_action": "Do any task under 2 minutes immediately",
+                "is_fallback": True,
             },
             "scary_fact": {
-                "hook": "Your phone knows when you're about to get sick",
-                "full_script": "Your typing speed drops 12% about 3 days before you show symptoms. "
-                              "Stanford researchers found your phone's motion sensors detect subtle "
-                              "changes in how you hold it when inflammation starts. "
-                              "Some health apps can now predict illness before you feel anything. "
-                              "Your daily screentime data is a health record you never knew existed. "
-                              "Has your phone ever seemed to know something was wrong?",
+                "hook": "Your phone tracks more than you think",
+                "full_script": f"Your typing speed drops 12 percent about 3 days before you get sick. "
+                              f"Stanford researchers found your phone motion sensors detect subtle "
+                              f"changes in how you hold it when inflammation starts. "
+                              f"Some health apps can now predict illness before you feel anything. "
+                              f"Your daily screentime data is a health record you never knew existed. "
+                              f"Has your phone ever seemed to know something was wrong?",
                 "the_fact": "Phones detect illness through typing pattern changes",
+                "is_fallback": True,
             },
             "psychology_fact": {
-                "hook": "You make worse decisions after 3pm",
-                "full_script": "Your willpower isn't infinite. It drains throughout the day. "
-                              "By 3pm, decision fatigue has reduced your self-control by 40%. "
-                              "That's why diets fail at dinner and impulse buys happen after work. "
-                              "The fix: Make important decisions before noon. "
-                              "Schedule your workout for morning. Plan meals the night before. "
-                              "When does YOUR willpower crash?",
+                "hook": "Your brain gets weaker as the day goes on",
+                "full_script": f"Your willpower is not infinite. It drains throughout the day. "
+                              f"By 3pm, decision fatigue has reduced your self-control by 40 percent. "
+                              f"That is why diets fail at dinner and impulse buys happen after work. "
+                              f"The fix: Make important decisions before noon. "
+                              f"Schedule your workout for morning. Plan meals the night before. "
+                              f"When does YOUR willpower crash?",
                 "the_mechanism": "Decision fatigue depletes willpower by afternoon",
+                "is_fallback": True,
             }
         }
         return fallbacks.get(video_type, fallbacks["life_hack"])

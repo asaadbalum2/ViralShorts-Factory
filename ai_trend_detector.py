@@ -177,40 +177,63 @@ Return ONLY a JSON array of {count} objects. No other text."""
             return self._fallback_topics(count)
     
     def _fallback_topics(self, count: int) -> List[TrendingTopic]:
-        """Fallback when AI is unavailable."""
+        """
+        EMERGENCY FALLBACK ONLY - Used when AI is completely unavailable.
+        
+        WARNING: This should NEVER happen in production.
+        If you see this, check:
+        1. GROQ_API_KEY is set correctly
+        2. Internet connectivity
+        3. API rate limits
+        
+        These are evergreen topics with value - but NOT trending!
+        """
+        print("=" * 60)
+        print("🚨 CRITICAL: Using EMERGENCY FALLBACK topics!")
+        print("   → AI topic detection failed completely")
+        print("   → Check GROQ_API_KEY and internet connectivity")
+        print("   → Content will NOT be trending/timely")
+        print("=" * 60)
+        
+        from datetime import datetime
+        now = datetime.now()
+        month = now.strftime("%B")
+        
+        # Make fallback slightly contextual based on date
+        # Even in fallback, try to be somewhat relevant
         fallback_topics = [
             TrendingTopic(
-                topic="Psychology of Success",
+                topic=f"{month} Psychology Insight",
                 video_type="psychology_fact",
-                hook="Your brain is lying to you... 🧠",
-                content="Studies show that 92% of people give up on their goals within the first month. But here's the secret: successful people don't have more willpower - they have better systems.",
-                broll_keywords=["brain", "success", "motivation"],
+                hook="Your brain is working against you right now",
+                content=f"Studies show that 92 percent of people give up on their goals within the first month. But here is the secret that successful people know: they do not have more willpower than you. They have better systems. They automate their habits. They remove friction from good choices and add friction to bad ones. What system could you create today?",
+                broll_keywords=["brain", "success", "motivation", "thinking"],
                 music_mood="inspirational",
                 urgency_score=5,
                 virality_score=7,
-                reason="Evergreen self-improvement content"
+                reason="FALLBACK - Evergreen self-improvement content"
             ),
             TrendingTopic(
-                topic="Hidden Money Facts",
+                topic=f"{month} Money Secret",
                 video_type="money_fact",
-                hook="Banks don't want you to know this... 💰",
-                content="The average person loses $400 per year on unnecessary bank fees. Here's the simple trick to never pay a fee again.",
-                broll_keywords=["money", "bank", "savings"],
+                hook="You are losing money every single month",
+                content=f"The average person loses $400 per year on unnecessary bank fees alone. Here is the simple fix: Check your bank statements right now for any recurring charges. Most banks have a fee-free option if you just ask. I saved $1,200 last year just by making 3 phone calls. Which subscription have you forgotten about?",
+                broll_keywords=["money", "bank", "savings", "wallet"],
                 music_mood="dramatic",
                 urgency_score=6,
                 virality_score=8,
-                reason="Money content always performs"
+                reason="FALLBACK - Money content always performs"
             ),
             TrendingTopic(
-                topic="Creepy Science",
+                topic=f"Unexplained {month} Mystery",
                 video_type="scary_fact",
-                hook="Scientists can't explain this... 👽",
-                content="There's a place in the ocean called the 'Midnight Zone' where no sunlight ever reaches. What lives down there has evolved to look like nightmares.",
-                broll_keywords=["deep ocean", "dark water", "creatures"],
+                hook="Scientists still cannot explain this",
+                content=f"There is a place in the ocean called the Midnight Zone where no sunlight ever reaches. It is 3,000 feet below the surface. The creatures that live there have evolved in complete darkness for millions of years. They create their own light. Some have transparent bodies. Others have jaws so large they cannot close their mouths. We have explored less than 5 percent of this zone. What else is down there?",
+                broll_keywords=["deep ocean", "dark water", "mystery", "creatures"],
                 music_mood="suspense",
                 urgency_score=5,
                 virality_score=8,
-                reason="Horror/mystery content is highly shareable"
+                reason="FALLBACK - Horror/mystery content is shareable"
             ),
         ]
         return fallback_topics[:count]
