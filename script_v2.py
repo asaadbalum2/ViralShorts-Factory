@@ -696,16 +696,14 @@ async def generate_video_v2(question: dict, output_filename: str = None) -> str:
     print(f"   A: {option_a}")
     print(f"   B: {option_b}")
     
-    # Engaging voiceover scripts - VIRAL FORMULA
-    # Key: Hook + Dramatic pause + Options + CTA
+    # Short but engaging voiceover (Edge-TTS has length limits)
+    # Keep it simple but add dramatic pauses with "..."
     voiceover_templates = [
-        f"Okay this one is IMPOSSIBLE! Would you rather... {option_a}?... Or... {option_b}? You HAVE to pick one! Drop your answer in the comments!",
-        f"I bet you can't decide this one! Would you rather... {option_a}... OR... {option_b}? Most people get this WRONG! What's your choice?",
-        f"This question is tearing the internet apart! Would you rather... {option_a}?... Or would you rather... {option_b}? Comment A or B right now!",
-        f"Stop scrolling! Would you rather... {option_a}?... OR... {option_b}? Everyone's arguing about this! What do YOU think?",
-        f"Here's a tough one! Would you rather... {option_a}?... Or... {option_b}? Be honest, which one are you picking?",
-        f"No one can agree on this! Would you rather... {option_a}... OR... {option_b}? Let me know in the comments!",
-        f"This will BREAK your brain! Would you rather... {option_a}?... OR... {option_b}? There's NO right answer! Comment below!",
+        f"Would you rather... {option_a}... OR... {option_b}? Comment your choice!",
+        f"This is impossible! Would you rather... {option_a}... OR... {option_b}?",
+        f"Choose wisely! Would you rather... {option_a}... OR... {option_b}?",
+        f"Here's a tough one. Would you rather... {option_a}... OR... {option_b}?",
+        f"No one can agree! Would you rather... {option_a}... OR... {option_b}?",
     ]
     
     voiceover_text = random.choice(voiceover_templates)
