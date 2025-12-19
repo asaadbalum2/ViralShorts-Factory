@@ -31,13 +31,14 @@ on:
         options:
           - 'true'
           - 'false'
-  schedule:
-    - cron: '0 4 * * *'
-    - cron: '0 8 * * *'
-    - cron: '0 12 * * *'
-    - cron: '0 16 * * *'
-    - cron: '0 20 * * *'
-    - cron: '0 0 * * *'
+  # DISABLED during development - uncomment when product is ready
+  # schedule:
+  #   - cron: '0 4 * * *'
+  #   - cron: '0 8 * * *'
+  #   - cron: '0 12 * * *'
+  #   - cron: '0 16 * * *'
+  #   - cron: '0 20 * * *'
+  #   - cron: '0 0 * * *'
 
 jobs:
   generate:
