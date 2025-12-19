@@ -1,6 +1,14 @@
 name: QuizBot - Auto Generate & Upload
 
 on:
+  # Manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of videos to generate'
+        required: false
+        default: '1'
+  
   # Scheduled runs - MAXIMIZED (6 times per day)
   schedule:
     - cron: '0 4 * * *'   # 4 AM UTC
@@ -58,9 +66,11 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-      - name: Generate and Upload Videos (3 videos per run)
+      - name: Generate and Upload Videos
         run: |
-          python script.py --batch 3 --upload
+          BATCH_SIZE="${{ github.event.inputs.batch_size || '3' }}"
+          echo "🎬 Generating $BATCH_SIZE videos..."
+          python script.py --batch $BATCH_SIZE --upload
         env:
           AUTO_UPLOAD: "true"
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
