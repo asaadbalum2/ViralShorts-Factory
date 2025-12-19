@@ -543,6 +543,15 @@ def download_pexels_video(query: str, output_path: str) -> bool:
 
 def get_broll_for_question(question: dict) -> Optional[str]:
     """Get relevant B-roll video for the question."""
+    # FIRST: Check if we have ANY B-roll files already downloaded
+    if BROLL_DIR.exists():
+        broll_files = list(BROLL_DIR.glob("*.mp4"))
+        if broll_files:
+            # Pick a random one
+            chosen = random.choice(broll_files)
+            print(f"   ✅ Using B-roll: {chosen.name}")
+            return str(chosen)
+    
     # Extract keywords from the question
     option_a = question.get("option_a", "")
     option_b = question.get("option_b", "")
@@ -687,16 +696,19 @@ async def generate_video_v2(question: dict, output_filename: str = None) -> str:
     print(f"   A: {option_a}")
     print(f"   B: {option_b}")
     
-    # Generate engaging voiceover script
-    hooks = [
-        "This will SHOCK you...",
-        "99% of people got this WRONG...",
-        "Wait until you see the results...",
-        "You won't believe this...",
+    # Engaging voiceover scripts - VIRAL FORMULA
+    # Key: Hook + Dramatic pause + Options + CTA
+    voiceover_templates = [
+        f"Okay this one is IMPOSSIBLE! Would you rather... {option_a}?... Or... {option_b}? You HAVE to pick one! Drop your answer in the comments!",
+        f"I bet you can't decide this one! Would you rather... {option_a}... OR... {option_b}? Most people get this WRONG! What's your choice?",
+        f"This question is tearing the internet apart! Would you rather... {option_a}?... Or would you rather... {option_b}? Comment A or B right now!",
+        f"Stop scrolling! Would you rather... {option_a}?... OR... {option_b}? Everyone's arguing about this! What do YOU think?",
+        f"Here's a tough one! Would you rather... {option_a}?... Or... {option_b}? Be honest, which one are you picking?",
+        f"No one can agree on this! Would you rather... {option_a}... OR... {option_b}? Let me know in the comments!",
+        f"This will BREAK your brain! Would you rather... {option_a}?... OR... {option_b}? There's NO right answer! Comment below!",
     ]
-    hook = random.choice(hooks)
     
-    voiceover_text = f"Would you rather... {option_a}... OR... {option_b}? Make your choice NOW!"
+    voiceover_text = random.choice(voiceover_templates)
     
     # Generate voiceover
     voiceover_path = str(OUTPUT_DIR / "temp_voiceover.mp3")

@@ -35,92 +35,95 @@ class TrendingContentGenerator:
     based on current trends and proven viral formats.
     """
     
-    # Proven viral question categories
+    # VIRAL question categories - designed to maximize engagement/comments
     VIRAL_CATEGORIES = {
-        "money_dilemma": {
-            "weight": 20,  # Higher weight = more likely to be selected
+        "money_vs_everything": {
+            "weight": 25,  # Money topics always go viral
             "templates": [
-                ("Have ${low_amount} right now", "Have ${high_amount} in {years} years"),
-                ("Win ${amount} but lose all your friends", "Keep your friends but never win more than $100"),
-                ("Be a millionaire but work 80 hours a week", "Make ${medium} but work 20 hours a week"),
-                ("Get ${amount} every month for life", "Get ${lump_sum} one time only"),
-                ("Have unlimited money but no one can know", "Have ${modest} but everyone thinks you're rich"),
-            ],
-            "variables": {
-                "low_amount": ["1 million", "500,000", "100,000"],
-                "high_amount": ["10 million", "50 million", "100 million"],
-                "medium": ["75,000/year", "50,000/year", "60,000/year"],
-                "amount": ["10,000", "5,000", "25,000"],
-                "lump_sum": ["1 million", "2 million", "500,000"],
-                "modest": ["100,000/year", "80,000/year"],
-                "years": ["10", "5", "20"],
-            }
-        },
-        "superpower": {
-            "weight": 15,
-            "templates": [
-                ("Be able to fly", "Be able to teleport anywhere instantly"),
-                ("Read everyone's mind", "Be invisible whenever you want"),
-                ("Have super strength", "Have super speed"),
-                ("Control time", "Control weather"),
-                ("Never need to sleep", "Never need to eat"),
-                ("Speak every language fluently", "Talk to any animal"),
-                ("Have perfect memory", "Be able to forget anything instantly"),
+                ("Get $10 million but you can never see your family again", "Stay with your family but struggle financially forever"),
+                ("Win $1 million today", "Get $100 guaranteed every day for the rest of your life"),
+                ("Be a billionaire but die at 50", "Live to 100 but always be middle class"),
+                ("Have $50 million but everyone you know hates you", "Be broke but loved by everyone"),
+                ("Never work again but live on $40k/year", "Work 60 hours/week but make $500k/year"),
+                ("Inherit $5 million from a stranger", "Have your parents live 20 extra years"),
+                ("Double your salary but lose your best friend", "Keep your friend but never get a raise"),
+                ("Win the lottery but can never travel", "Stay average income but go anywhere free"),
             ],
             "variables": {}
         },
-        "life_tradeoff": {
+        "impossible_powers": {
+            "weight": 20,
+            "templates": [
+                ("Read minds but everyone can read yours too", "Be invisible but only when alone"),
+                ("Fly at walking speed", "Run at 200mph but can't stop for 10 minutes"),
+                ("Pause time but you age while frozen", "Rewind time but lose all memories of that time"),
+                ("Teleport anywhere but arrive naked", "Fly but only 3 feet off the ground"),
+                ("See the future but can't change it", "Change the past but forget you did"),
+                ("Be immune to all diseases but feel double the pain", "Never feel pain but get sick constantly"),
+                ("Control fire but be freezing cold forever", "Control ice but be burning hot forever"),
+            ],
+            "variables": {}
+        },
+        "social_nightmare": {
+            "weight": 20,
+            "templates": [
+                ("Everyone can see your screen at all times", "Everyone can hear your thoughts"),
+                ("Your crush sees all your old posts about them", "Your boss sees everything you've said about work"),
+                ("Your parents read all your DMs", "Your DMs get posted publicly every month"),
+                ("Everyone knows your exact bank balance", "Everyone knows your search history"),
+                ("Your Spotify gets broadcast wherever you go", "Your location is always visible to everyone"),
+                ("Accidentally like your ex's old photo every week", "Auto-send your last screenshot to your boss"),
+                ("Your Amazon purchases are public", "Your Netflix history is public"),
+            ],
+            "variables": {}
+        },
+        "relationship_chaos": {
             "weight": 18,
             "templates": [
-                ("Live to 200 but alone", "Live to 80 with the love of your life"),
-                ("Know how you die", "Know when you die"),
-                ("Relive the same day forever", "Fast forward 10 years"),
-                ("Never feel physical pain", "Never feel emotional pain"),
-                ("Be famous but everyone hates you", "Be unknown but everyone who meets you loves you"),
-                ("Live in the past with modern knowledge", "Live in the future knowing nothing"),
+                ("Know your partner is 'the one' but they don't feel the same", "Never know for sure but they're obsessed with you"),
+                ("Date your celebrity crush but they're super boring", "Date someone average but they're your perfect match"),
+                ("Have a perfect relationship that ends in 5 years", "Have a difficult relationship that lasts forever"),
+                ("Know exactly when you'll meet your soulmate", "Meet them tomorrow but not know it's them"),
+                ("Your ex becomes your boss", "Your boss becomes your ex"),
+                ("Marry for money and eventually fall in love", "Marry for love and eventually go broke"),
+                ("Have a partner who's brutally honest", "Have a partner who's always supportive but lies"),
             ],
             "variables": {}
         },
-        "embarrassing": {
+        "life_gamble": {
             "weight": 15,
             "templates": [
-                ("Have your browser history made public", "Have all your texts made public"),
-                ("Accidentally send a mean text to that person", "Trip in front of your crush every day"),
-                ("Always have food in your teeth", "Always have your fly down"),
-                ("Burp loudly during every silence", "Fart silently in every elevator"),
-                ("Have everyone see your camera roll", "Have everyone hear your Spotify history"),
+                ("Know exactly when you'll die", "Die randomly at any moment"),
+                ("Live your dream life for 10 years then forget everything", "Live an average life but remember it all"),
+                ("Be the smartest person alive but everyone finds you annoying", "Be average intelligence but everyone loves you"),
+                ("Experience your happiest day every week", "Never feel sad again but also never feel extreme joy"),
+                ("Everyone remembers you after you die", "No one remembers you but you live 50 extra years"),
+                ("Redo your life from age 10 with current knowledge", "Skip to age 60 with guaranteed success"),
+                ("Live in a perfect simulation forever", "Live in the real world for 10 more years"),
             ],
             "variables": {}
         },
-        "tech_modern": {
-            "weight": 12,
-            "templates": [
-                ("Have unlimited WiFi everywhere forever", "Have unlimited phone battery forever"),
-                ("Only use TikTok for the rest of your life", "Only use Instagram for the rest of your life"),
-                ("Have the latest iPhone forever", "Have $5000 cash"),
-                ("Delete all your social media", "Delete all your photos"),
-                ("Have AI do all your work", "Have AI plan all your meals and exercise"),
-            ],
-            "variables": {}
-        },
-        "relationship": {
+        "gen_z_specific": {
             "weight": 15,
             "templates": [
-                ("Find your soulmate but they live across the world", "Marry someone okay who lives next door"),
-                ("Have 100 friends but no best friend", "Have 1 best friend but no other friends"),
-                ("Date someone 10 years older", "Date someone 10 years younger"),
-                ("Know if your partner is 'the one' on day one", "Never know until you break up"),
+                ("Go viral for something embarrassing", "Never have any social media presence"),
+                ("Have 10 million followers but no real friends", "Have 5 close friends but no online presence"),
+                ("Be permanently banned from TikTok", "Be permanently banned from YouTube"),
+                ("Have unlimited Uber Eats but can't cook", "Be an amazing chef but no delivery apps exist"),
+                ("Always have the latest tech but no one to share it with", "Outdated tech but always with friends"),
+                ("Free Spotify Premium forever but only one playlist", "Free Netflix but only random shows"),
+                ("Go back to flip phones forever", "Go back to dial-up internet forever"),
             ],
             "variables": {}
         },
-        "extreme_choice": {
-            "weight": 5,
+        "dark_humor": {
+            "weight": 7,
             "templates": [
-                ("Only eat pizza for every meal", "Never eat pizza again"),
-                ("Only watch one movie for the rest of your life", "Never watch movies again"),
-                ("Give up music forever", "Give up TV/movies forever"),
-                ("Have summer all year", "Have winter all year"),
-                ("Only wear one color forever", "Wear a different random outfit every day"),
+                ("Know how your friends really feel about you", "Live happily in ignorance"),
+                ("Have everyone you meet tell you one honest thing", "Never hear anything negative about yourself"),
+                ("See exactly how you look to others", "See exactly how others see your personality"),
+                ("Know every lie anyone tells you", "Be an undetectable liar yourself"),
+                ("Know if someone is thinking about you right now", "Never know who's talking about you"),
             ],
             "variables": {}
         },
