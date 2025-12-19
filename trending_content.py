@@ -155,47 +155,79 @@ class TrendingContentGenerator:
                 print(f"⚠️ PyTrends init failed: {e}")
     
     def get_google_trends(self) -> List[str]:
-        """Fetch current Google Trends."""
+        """Fetch current Google Trends with retry logic."""
         if not self.pytrends:
-            return []
+            return self._get_fallback_trends()
         
-        try:
-            trending = self.pytrends.trending_searches(pn='united_states')
-            return trending[0].tolist()[:10]
-        except Exception as e:
-            print(f"⚠️ Google Trends fetch failed: {e}")
-            return []
+        for attempt in range(3):
+            try:
+                trending = self.pytrends.trending_searches(pn='united_states')
+                topics = trending[0].tolist()[:10]
+                if topics:
+                    print(f"✅ Got {len(topics)} Google Trends topics")
+                    return topics
+            except Exception as e:
+                if attempt < 2:
+                    import time
+                    time.sleep(2)
+                    continue
+                print(f"⚠️ Google Trends failed after 3 attempts: {e}")
+        
+        return self._get_fallback_trends()
+    
+    def _get_fallback_trends(self) -> List[str]:
+        """Get AI-generated 'trending' topics when real trends unavailable."""
+        # Current events and evergreen viral topics
+        return [
+            "2024 trends", "viral challenges", "celebrity drama",
+            "tech news", "money tips", "relationship advice",
+            "social media", "gaming", "fitness goals", "AI technology"
+        ]
     
     def get_reddit_trends(self) -> List[str]:
-        """Fetch trending topics from Reddit."""
+        """Fetch trending topics from Reddit with better handling."""
         if not REQUESTS_AVAILABLE:
             return []
         
-        try:
-            headers = {'User-Agent': 'QuizBot/1.0'}
-            # Get hot posts from r/all
-            response = requests.get(
-                'https://www.reddit.com/r/all/hot.json?limit=20',
-                headers=headers,
-                timeout=10
-            )
-            
-            if response.status_code != 200:
-                return []
-            
-            data = response.json()
-            topics = []
-            
-            for post in data.get('data', {}).get('children', []):
-                title = post.get('data', {}).get('title', '')
-                # Extract key words
-                if len(title) > 10:
-                    topics.append(title[:50])
-            
-            return topics[:10]
-        except Exception as e:
-            print(f"⚠️ Reddit fetch failed: {e}")
-            return []
+        # Try multiple subreddits for viral content
+        subreddits = [
+            'r/WouldYouRather',  # Perfect for our format!
+            'r/polls',
+            'r/AskReddit', 
+            'r/unpopularopinion'
+        ]
+        
+        topics = []
+        
+        for subreddit in subreddits:
+            try:
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) QuizBot/2.0'
+                }
+                response = requests.get(
+                    f'https://www.reddit.com/{subreddit}/hot.json?limit=10',
+                    headers=headers,
+                    timeout=10
+                )
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    for post in data.get('data', {}).get('children', []):
+                        title = post.get('data', {}).get('title', '')
+                        if len(title) > 10 and len(title) < 200:
+                            topics.append(title[:80])
+                    
+                    if topics:
+                        print(f"✅ Got {len(topics)} topics from Reddit")
+                        break  # Got enough
+                        
+            except Exception as e:
+                continue  # Try next subreddit
+        
+        if not topics:
+            print("⚠️ Reddit fetch failed, using fallback")
+        
+        return topics[:10]
     
     def generate_from_template(self, category: str) -> Dict:
         """Generate a question from a template."""
