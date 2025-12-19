@@ -84,64 +84,7 @@ jobs:
           mkdir -p output cache
 
       - name: Fetch B-roll via Pexels API
-        run: |
-          echo "📥 Fetching B-roll videos via Pexels API..."
-          
-          # Use Pexels API to get reliable video URLs
-          python -c "
-import os
-import requests
-import random
-
-api_key = os.environ.get('PEXELS_API_KEY', '')
-if not api_key:
-    print('⚠️ No Pexels API key, will use gradient backgrounds')
-    exit(0)
-
-headers = {'Authorization': api_key}
-queries = ['abstract', 'colorful particles', 'neon lights', 'motion graphics']
-
-for i, query in enumerate(queries[:3]):
-    try:
-        url = f'https://api.pexels.com/videos/search?query={query}&orientation=portrait&per_page=5'
-        response = requests.get(url, headers=headers, timeout=15)
-        if response.status_code != 200:
-            print(f'⚠️ API error for {query}: {response.status_code}')
-            continue
-        
-        videos = response.json().get('videos', [])
-        if not videos:
-            continue
-        
-        video = random.choice(videos)
-        video_files = video.get('video_files', [])
-        
-        # Find HD quality
-        best = None
-        for vf in video_files:
-            if vf.get('height', 0) >= 720:
-                if best is None or vf.get('height', 0) < best.get('height', 9999):
-                    best = vf
-        
-        if not best and video_files:
-            best = video_files[0]
-        
-        if best:
-            video_url = best.get('link')
-            print(f'📥 Downloading: {query}...')
-            vid_response = requests.get(video_url, timeout=60)
-            with open(f'assets/broll/{query.replace(\" \", \"_\")}.mp4', 'wb') as f:
-                f.write(vid_response.content)
-            print(f'✅ Downloaded: {query}')
-    except Exception as e:
-        print(f'⚠️ Error fetching {query}: {e}')
-        continue
-
-print('📁 B-roll files:')
-import os
-for f in os.listdir('assets/broll'):
-    print(f'  - {f}')
-"
+        run: python fetch_broll.py
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
