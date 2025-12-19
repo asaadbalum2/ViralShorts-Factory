@@ -29,6 +29,7 @@ pytrends>=4.9.0
 # AI Content Generation (MULTI-PROVIDER - All FREE!)
 groq>=0.4.0
 google-generativeai>=0.3.0
+google-genai>=1.0.0
 
 # YouTube upload
 google-api-python-client>=2.100.0

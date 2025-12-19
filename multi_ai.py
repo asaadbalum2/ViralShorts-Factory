@@ -44,19 +44,36 @@ class MultiAIGenerator:
                 print(f"⚠️ Groq init failed: {e}")
     
     def _init_gemini(self):
-        """Initialize Google Gemini (high quality)"""
+        """Initialize Google Gemini (high quality) - using new google.genai"""
         api_key = os.environ.get("GEMINI_API_KEY")
         if api_key:
             try:
+                # Try new google.genai first
+                try:
+                    from google import genai
+                    client = genai.Client(api_key=api_key)
+                    self.providers.append({
+                        "name": "Gemini",
+                        "client": client,
+                        "type": "gemini_new",
+                        "model": "gemini-2.0-flash",
+                        "priority": 2
+                    })
+                    print("✅ Gemini initialized (New API)")
+                    return
+                except ImportError:
+                    pass
+                
+                # Fallback to old API with correct model
                 import google.generativeai as genai
                 genai.configure(api_key=api_key)
                 self.providers.append({
                     "name": "Gemini",
-                    "client": genai.GenerativeModel('gemini-1.5-flash'),
+                    "client": genai.GenerativeModel('gemini-pro'),
                     "type": "gemini",
                     "priority": 2
                 })
-                print("✅ Gemini initialized (High Quality)")
+                print("✅ Gemini initialized (Legacy API)")
             except Exception as e:
                 print(f"⚠️ Gemini init failed: {e}")
     
@@ -117,11 +134,22 @@ class MultiAIGenerator:
             return self._call_groq(provider, prompt, system)
         elif provider["type"] == "gemini":
             return self._call_gemini(provider, prompt, system)
+        elif provider["type"] == "gemini_new":
+            return self._call_gemini_new(provider, prompt, system)
         elif provider["type"] == "together":
             return self._call_together(provider, prompt, system)
         elif provider["type"] == "cloudflare":
             return self._call_cloudflare(provider, prompt, system)
         return None
+    
+    def _call_gemini_new(self, provider: Dict, prompt: str, system: str) -> str:
+        """Call new Google Gemini API"""
+        full_prompt = f"{system}\n\n{prompt}" if system else prompt
+        response = provider["client"].models.generate_content(
+            model=provider["model"],
+            contents=full_prompt
+        )
+        return response.text
     
     def _call_groq(self, provider: Dict, prompt: str, system: str) -> str:
         messages = []
@@ -215,5 +243,6 @@ if __name__ == "__main__":
     gen = MultiAIGenerator()
     question = gen.generate_wyr_question()
     print(f"Generated question: {json.dumps(question, indent=2)}")
+
 
 

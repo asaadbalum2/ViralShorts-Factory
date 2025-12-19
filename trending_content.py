@@ -335,16 +335,26 @@ Where X is 1-99 (avoid 50 - make it interesting like 35 or 67)"""
         """Refresh the questions.json file with fresh content."""
         print(f"\n🔄 Refreshing questions file with {count} new questions...")
         
+        questions = []
+        
         if use_ai:
-            # Mix of AI and template questions
-            ai_count = int(count * 0.7)  # 70% AI
-            template_count = count - ai_count
-            
-            questions = []
-            questions.extend(self.generate_ai_enhanced_batch(ai_count))
-            questions.extend(self.generate_batch(template_count))
-        else:
-            questions = self.generate_batch(count)
+            # Try AI first (70% AI if available)
+            ai_count = int(count * 0.7)
+            ai_questions = self.generate_ai_enhanced_batch(ai_count)
+            questions.extend(ai_questions)
+            print(f"✅ Generated {len(ai_questions)} AI-enhanced questions")
+        
+        # ALWAYS add template questions as fallback/supplement
+        needed = count - len(questions)
+        if needed > 0:
+            template_questions = self.generate_batch(needed)
+            questions.extend(template_questions)
+            print(f"✅ Added {len(template_questions)} template questions")
+        
+        # SAFETY CHECK: If still no questions, use hardcoded emergency fallbacks
+        if len(questions) < 5:
+            print("⚠️ Using emergency fallback questions...")
+            questions.extend(self._emergency_fallback())
         
         # Shuffle final mix
         random.shuffle(questions)
@@ -356,6 +366,26 @@ Where X is 1-99 (avoid 50 - make it interesting like 35 or 67)"""
         
         print(f"✅ Saved {len(questions)} questions to {output_path}")
         return questions
+    
+    def _emergency_fallback(self) -> List[Dict]:
+        """Emergency fallback questions - NEVER fails."""
+        return [
+            {"option_a": "Have $1 million right now", "option_b": "Have $10 million in 10 years", "percentage_a": 62},
+            {"option_a": "Be able to fly", "option_b": "Be able to teleport anywhere instantly", "percentage_a": 38},
+            {"option_a": "Read everyone's mind", "option_b": "Be invisible whenever you want", "percentage_a": 45},
+            {"option_a": "Live to 200 but alone", "option_b": "Live to 80 with the love of your life", "percentage_a": 23},
+            {"option_a": "Have your browser history made public", "option_b": "Have all your texts made public", "percentage_a": 41},
+            {"option_a": "Know how you die", "option_b": "Know when you die", "percentage_a": 55},
+            {"option_a": "Have unlimited WiFi everywhere forever", "option_b": "Have unlimited phone battery forever", "percentage_a": 48},
+            {"option_a": "Never need to sleep again", "option_b": "Never need to eat again", "percentage_a": 67},
+            {"option_a": "Be famous but everyone hates you", "option_b": "Be unknown but loved by everyone you meet", "percentage_a": 28},
+            {"option_a": "Only eat pizza for every meal", "option_b": "Never eat pizza again", "percentage_a": 35},
+            {"option_a": "Have summer all year round", "option_b": "Have winter all year round", "percentage_a": 72},
+            {"option_a": "Speak every language fluently", "option_b": "Talk to any animal", "percentage_a": 58},
+            {"option_a": "Relive the same perfect day forever", "option_b": "Fast forward 10 years into the future", "percentage_a": 44},
+            {"option_a": "Win $50,000 but lose all your friends", "option_b": "Keep friends but never win more than $100", "percentage_a": 31},
+            {"option_a": "Be a millionaire but work 80 hours/week", "option_b": "Make $60k but work only 20 hours/week", "percentage_a": 39},
+        ]
 
 
 def main():
@@ -373,5 +403,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
