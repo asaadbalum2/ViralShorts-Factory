@@ -649,45 +649,73 @@ def get_broll_for_question(question: dict) -> Optional[str]:
 
 async def generate_voiceover_v2(text: str, output_path: str, 
                                  voice: str = None, retries: int = 5) -> float:
-    """Generate ENGAGING voiceover with dynamic voice and style."""
+    """Generate ENGAGING voiceover with dynamic voice and style. Includes fallback."""
     if voice is None:
         voice = random.choice(VOICES)
     
-    # Get voice style for more personality
-    style = VOICE_STYLES.get(voice, None)
-    
     last_error = None
     
-    for attempt in range(retries):
-        try:
-            # Energetic delivery settings for viral content
-            rate = random.choice(["-3%", "-5%", "+0%"])  # Vary pace slightly
-            pitch = random.choice(["+3Hz", "+5Hz", "+8Hz"])  # Higher = more energetic
-            
-            # Create communicate object with style if supported
-            communicate = edge_tts.Communicate(
-                text, 
-                voice,
-                rate=rate,
-                pitch=pitch
-            )
-            await communicate.save(output_path)
-            
-            # Get duration
-            audio = AudioFileClip(output_path)
-            duration = audio.duration
-            audio.close()
-            return duration
-            
-        except Exception as e:
-            last_error = e
-            print(f"   ⚠️ TTS attempt {attempt + 1}/{retries} failed: {e}")
-            if attempt < retries - 1:
-                wait_time = (attempt + 1) * 30
-                print(f"   Waiting {wait_time}s before retry...")
-                await asyncio.sleep(wait_time)
+    # Try different voices if one fails (Edge-TTS rate limiting)
+    voices_to_try = [voice] + [v for v in VOICES if v != voice][:2]
     
-    raise last_error if last_error else Exception("TTS generation failed")
+    for voice_attempt in voices_to_try:
+        for attempt in range(retries):
+            try:
+                # Simpler settings - avoid rate limits
+                rate = "+0%" if attempt > 1 else "-3%"  # Use default on retries
+                pitch = "+0Hz" if attempt > 1 else "+5Hz"  # Use default on retries
+                
+                # Create communicate object - use minimal params on retries
+                if attempt <= 1:
+                    communicate = edge_tts.Communicate(
+                        text, 
+                        voice_attempt,
+                        rate=rate,
+                        pitch=pitch
+                    )
+                else:
+                    # Minimal params on later retries
+                    communicate = edge_tts.Communicate(text, voice_attempt)
+                
+                await communicate.save(output_path)
+                
+                # Get duration
+                audio = AudioFileClip(output_path)
+                duration = audio.duration
+                audio.close()
+                
+                print(f"   ✅ TTS success with {voice_attempt}")
+                return duration
+                
+            except Exception as e:
+                last_error = e
+                print(f"   ⚠️ TTS attempt {attempt + 1}/{retries} with {voice_attempt} failed: {e}")
+                if attempt < retries - 1:
+                    wait_time = (attempt + 1) * 45  # Longer wait (45s per retry)
+                    print(f"   Waiting {wait_time}s before retry...")
+                    await asyncio.sleep(wait_time)
+        
+        # If all retries with this voice failed, try next voice
+        print(f"   ⚠️ All retries with {voice_attempt} failed, trying next voice...")
+    
+    # FALLBACK: Try gTTS (Google TTS) - more reliable but less engaging
+    print("   🔄 Trying gTTS fallback...")
+    try:
+        from gtts import gTTS
+        tts = gTTS(text=text, lang='en', slow=False)
+        tts.save(output_path)
+        
+        # Get duration
+        audio = AudioFileClip(output_path)
+        duration = audio.duration
+        audio.close()
+        
+        print(f"   ✅ gTTS fallback success")
+        return duration
+    except Exception as gtts_error:
+        print(f"   ⚠️ gTTS also failed: {gtts_error}")
+    
+    raise last_error if last_error else Exception("TTS generation failed after trying all options")
 
 
 def pil_to_moviepy_clip(pil_image: Image.Image, duration: float) -> ImageClip:

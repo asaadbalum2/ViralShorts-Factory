@@ -6,6 +6,8 @@ moviepy==1.0.3
 
 # Text-to-Speech (Microsoft Edge TTS - FREE, no API key needed)
 edge-tts>=7.0.0
+# Fallback TTS (Google TTS - more reliable but less engaging)
+gTTS>=2.4.0
 
 # Image processing (for professional graphics)
 # Script handles ANTIALIAS compatibility
