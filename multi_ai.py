@@ -48,32 +48,45 @@ class MultiAIGenerator:
         api_key = os.environ.get("GEMINI_API_KEY")
         if api_key:
             try:
-                # Try new google.genai first
+                # Try new google.genai first with Gemini 2.0 Flash
                 try:
                     from google import genai
                     client = genai.Client(api_key=api_key)
                     self.providers.append({
-                        "name": "Gemini",
+                        "name": "Gemini 2.0 Flash",
                         "client": client,
                         "type": "gemini_new",
-                        "model": "gemini-2.0-flash",
+                        "model": "gemini-2.0-flash-exp",  # Latest experimental model
                         "priority": 2
                     })
-                    print("✅ Gemini initialized (New API)")
+                    print("✅ Gemini 2.0 Flash initialized (Latest)")
                     return
                 except ImportError:
                     pass
                 
-                # Fallback to old API with correct model
+                # Fallback to old API with Gemini 2.0 or 1.5 Flash
                 import google.generativeai as genai
                 genai.configure(api_key=api_key)
-                self.providers.append({
-                    "name": "Gemini",
-                    "client": genai.GenerativeModel('gemini-pro'),
-                    "type": "gemini",
-                    "priority": 2
-                })
-                print("✅ Gemini initialized (Legacy API)")
+                try:
+                    # Try 2.0 Flash first
+                    model = genai.GenerativeModel('gemini-2.0-flash-exp')
+                    self.providers.append({
+                        "name": "Gemini 2.0 Flash",
+                        "client": model,
+                        "type": "gemini",
+                        "priority": 2
+                    })
+                    print("✅ Gemini 2.0 Flash initialized")
+                except:
+                    # Fallback to 1.5 Flash
+                    model = genai.GenerativeModel('gemini-1.5-flash')
+                    self.providers.append({
+                        "name": "Gemini 1.5 Flash",
+                        "client": model,
+                        "type": "gemini",
+                        "priority": 2
+                    })
+                    print("✅ Gemini 1.5 Flash initialized (fallback)")
             except Exception as e:
                 print(f"⚠️ Gemini init failed: {e}")
     

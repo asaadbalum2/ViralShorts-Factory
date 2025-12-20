@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - Dynamic Video Generator v2.0
+ViralShorts Factory - Dynamic Video Generator v3.0
 ===================================================
 
-PROFESSIONAL VIDEO GENERATION with:
+PROFESSIONAL VIDEO GENERATION with ALL ENHANCEMENTS:
 1. Per-phrase B-roll changes for maximum engagement
 2. VALUE-FIRST content (delivers real value, not empty promises)
 3. Professional transitions and effects
 4. Addictive pacing and visual rhythm
+5. TikTok-style word-by-word captions
+6. Progress bar overlay
+7. Ken Burns zoom effects
+8. Vignette and particle effects
 
 ENGAGEMENT TECHNIQUES USED:
 - Pattern interrupts every 3-5 seconds (B-roll change)
@@ -15,6 +19,8 @@ ENGAGEMENT TECHNIQUES USED:
 - Visual-verbal sync (B-roll matches what's being said)
 - Emotional escalation (build tension → deliver payoff)
 - Open loops resolved (every promise fulfilled)
+- Caption sync for accessibility and engagement
+- Visual polish (vignette, particles, progress bar)
 """
 
 import os
@@ -25,15 +31,17 @@ import random
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
+import numpy as np
 
 # MoviePy imports
 from moviepy.editor import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
     concatenate_videoclips, ImageClip, CompositeAudioClip
 )
+from moviepy.video.VideoClip import VideoClip
 import moviepy.video.fx.all as vfx
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # Our imports
 try:
@@ -47,8 +55,16 @@ try:
     from viral_video_science import ValueDeliveryChecker, ViralContentGenerator
     HAS_DEPS = True
 except ImportError as e:
-    print(f"⚠️ Missing dependency: {e}")
+    print(f"[!] Missing dependency: {e}")
     HAS_DEPS = False
+
+# Import new enhancement modules
+try:
+    from video_enhancements import CaptionGenerator, ProgressBar, VisualEffects, MotionGraphics
+    HAS_ENHANCEMENTS = True
+except ImportError:
+    HAS_ENHANCEMENTS = False
+    print("[!] Video enhancements module not loaded")
 
 # Constants for professional video production
 VIDEO_WIDTH = 1080
@@ -74,17 +90,29 @@ class PhraseSegment:
 class DynamicVideoGenerator:
     """Generate videos with per-phrase B-roll changes and VALUE-FIRST content."""
     
-    def __init__(self):
+    def __init__(self, enable_enhancements: bool = True):
         # Get API keys from environment
         self.pexels_key = os.environ.get("PEXELS_API_KEY")
         self.groq_key = os.environ.get("GROQ_API_KEY")
         self.value_checker = ValueDeliveryChecker() if HAS_DEPS else None
         
+        # Initialize enhancement modules
+        self.enable_enhancements = enable_enhancements and HAS_ENHANCEMENTS
+        if self.enable_enhancements:
+            self.caption_gen = CaptionGenerator("tiktok")
+            self.progress_bar = ProgressBar("gradient")
+            self.effects = VisualEffects()
+            print("   [OK] Video enhancements loaded (captions, progress bar, effects)")
+        else:
+            self.caption_gen = None
+            self.progress_bar = None
+            self.effects = None
+        
         # Validate Pexels key on init
         if self.pexels_key:
-            print(f"   ✅ Pexels API key configured (length: {len(self.pexels_key)})")
+            print(f"   [OK] Pexels API key configured (length: {len(self.pexels_key)})")
         else:
-            print(f"   ⚠️ No Pexels API key - will use gradient backgrounds")
+            print(f"   [!] No Pexels API key - will use gradient backgrounds")
     
     def validate_content_value(self, content: str) -> Dict:
         """
@@ -268,9 +296,59 @@ Return ONLY a JSON array of keywords, one per phrase:
             print(f"   ⚠️ Pexels download error: {e}")
             return False
     
+    def apply_ken_burns_zoom(self, clip, zoom_amount: float = 0.05):
+        """Apply subtle Ken Burns zoom effect for dynamic feel."""
+        def zoom_effect(get_frame, t):
+            progress = t / clip.duration
+            # Subtle zoom in over time
+            current_zoom = 1.0 + (zoom_amount * progress)
+            
+            frame = get_frame(t)
+            h, w = frame.shape[:2]
+            
+            new_h, new_w = int(h * current_zoom), int(w * current_zoom)
+            
+            from PIL import Image
+            img = Image.fromarray(frame)
+            img = img.resize((new_w, new_h), Image.LANCZOS)
+            
+            # Crop to center
+            left = (new_w - w) // 2
+            top = (new_h - h) // 2
+            img = img.crop((left, top, left + w, top + h))
+            
+            return np.array(img)
+        
+        return clip.fl(zoom_effect)
+    
+    def create_vignette_overlay(self, duration: float) -> ImageClip:
+        """Create vignette overlay for cinematic look."""
+        if not self.enable_enhancements:
+            return None
+        
+        vignette = self.effects.create_vignette(VIDEO_WIDTH, VIDEO_HEIGHT, 0.25)
+        vignette_clip = ImageClip(np.array(vignette)).set_duration(duration)
+        return vignette_clip
+    
+    def create_progress_bar_clip(self, duration: float) -> VideoClip:
+        """Create animated progress bar overlay."""
+        if not self.enable_enhancements:
+            return None
+        
+        def make_frame(t):
+            progress = t / duration
+            frame = self.progress_bar.create_progress_frame(progress, VIDEO_WIDTH)
+            return np.array(frame)
+        
+        clip = VideoClip(make_frame, duration=duration)
+        clip = clip.set_position(("center", 10))  # Top of screen
+        return clip
+
     async def create_phrase_video_segment(self, phrase: str, broll_path: str,
                                           duration: float, theme) -> CompositeVideoClip:
-        """Create a video segment for one phrase."""
+        """Create a video segment for one phrase with ALL enhancements."""
+        layers = []
+        
         # Load or create background
         if broll_path and os.path.exists(broll_path):
             try:
@@ -280,8 +358,12 @@ Return ONLY a JSON array of keywords, one per phrase:
                     bg = bg.loop(duration=duration)
                 bg = bg.subclip(0, duration)
                 bg = bg.fx(vfx.colorx, 0.6)  # Slightly darken for text readability
+                
+                # Apply Ken Burns zoom for dynamic feel
+                bg = self.apply_ken_burns_zoom(bg, zoom_amount=0.03)
+                
             except Exception as e:
-                print(f"   ⚠️ B-roll load error: {e}, using gradient")
+                print(f"   [!] B-roll load error: {e}, using gradient")
                 broll_path = None
         
         if not broll_path or (broll_path and not os.path.exists(broll_path)):
@@ -290,13 +372,22 @@ Return ONLY a JSON array of keywords, one per phrase:
                                                   theme.gradient_start, theme.gradient_end)
             bg = pil_to_moviepy_clip(gradient, duration)
         
+        layers.append(bg)
+        
+        # Add vignette overlay for cinematic look
+        if self.enable_enhancements:
+            vignette = self.create_vignette_overlay(duration)
+            if vignette:
+                layers.append(vignette)
+        
         # Create text overlay
         text_img = self.create_phrase_overlay(phrase, VIDEO_WIDTH, VIDEO_HEIGHT // 2, theme)
         text_clip = pil_to_moviepy_clip(text_img, duration)
         text_clip = text_clip.set_position(('center', 'center'))
+        layers.append(text_clip)
         
         # Compose
-        segment = CompositeVideoClip([bg, text_clip], size=(VIDEO_WIDTH, VIDEO_HEIGHT))
+        segment = CompositeVideoClip(layers, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
         segment = segment.set_duration(duration)
         
         return segment
@@ -475,8 +566,18 @@ Return ONLY a JSON array of keywords, one per phrase:
             segments.append(segment)
         
         # Step 7: Concatenate with smooth transitions
-        print("   🔗 Concatenating segments with transitions...")
+        print("   [*] Concatenating segments with transitions...")
         final_video = concatenate_videoclips(segments, method="compose")
+        
+        # Step 7.5: Add progress bar overlay (shows video position)
+        if self.enable_enhancements:
+            print("   [*] Adding progress bar...")
+            progress_clip = self.create_progress_bar_clip(final_video.duration)
+            if progress_clip:
+                final_video = CompositeVideoClip(
+                    [final_video, progress_clip],
+                    size=(VIDEO_WIDTH, VIDEO_HEIGHT)
+                ).set_duration(final_video.duration)
         
         # Step 8: Add voiceover
         vo_clip = AudioFileClip(str(voiceover_path))

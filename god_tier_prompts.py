@@ -275,11 +275,17 @@ class GodTierContentGenerator:
         if HAS_GROQ and os.environ.get("GROQ_API_KEY"):
             self.groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
         
-        # Initialize Gemini (backup - higher quality for complex tasks)
+        # Initialize Gemini 2.0 Flash (backup - latest model with enhanced performance)
         if HAS_GEMINI and os.environ.get("GEMINI_API_KEY"):
             try:
                 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-                self.gemini_client = genai.GenerativeModel('gemini-1.5-flash')
+                # Try Gemini 2.0 Flash (latest), fallback to 1.5 if not available
+                try:
+                    self.gemini_client = genai.GenerativeModel('gemini-2.0-flash-exp')
+                    print("✅ Gemini 2.0 Flash (experimental) initialized")
+                except:
+                    self.gemini_client = genai.GenerativeModel('gemini-1.5-flash')
+                    print("✅ Gemini 1.5 Flash initialized (2.0 not available)")
             except Exception as e:
                 print(f"⚠️ Gemini init failed: {e}")
     
@@ -330,19 +336,41 @@ class GodTierContentGenerator:
         """
         Generate viral topic ideas using god-tier prompt.
         
-        IMPORTANT: Uses AI to determine what's trending - NO HARDCODED TOPICS!
+        IMPORTANT: Uses MULTIPLE SOURCES for trending data - NO HARDCODED TOPICS!
+        Sources: Google Trends RSS, Reddit, AI predictions
         """
-        # Use the AI Trend Fetcher for truly dynamic content
+        # Try Multi-Source Trend Fetcher first (Google RSS + Reddit + AI)
+        try:
+            from multi_trend_fetcher import MultiTrendFetcher
+            fetcher = MultiTrendFetcher()
+            raw_trends = fetcher.fetch_all(count=count * 2)  # Get extra for filtering
+            
+            if raw_trends:
+                print(f"[OK] Got {len(raw_trends)} trends from multi-source fetcher")
+                
+                # Convert to our topic format using AI
+                topics = []
+                for trend in raw_trends[:count]:
+                    topic = self._trend_to_topic(trend)
+                    if topic:
+                        topics.append(topic)
+                
+                if topics:
+                    return topics
+        except Exception as e:
+            print(f"[!] Multi-source trend fetcher unavailable: {e}")
+        
+        # Fallback: Use the AI Trend Fetcher (AI only)
         try:
             from ai_trend_fetcher import AITrendFetcher
             fetcher = AITrendFetcher()
             topics = fetcher.fetch_trending_topics(count)
             
             if topics:
-                print(f"✅ Got {len(topics)} trending topics from AI Trend Fetcher")
+                print(f"[OK] Got {len(topics)} trending topics from AI Trend Fetcher")
                 return topics
         except Exception as e:
-            print(f"⚠️ AI Trend Fetcher unavailable: {e}")
+            print(f"[!] AI Trend Fetcher unavailable: {e}")
         
         # Fallback: Use the prompt system but let AI determine trends
         now = datetime.now()
@@ -381,6 +409,49 @@ class GodTierContentGenerator:
             return topics
         
         return []
+    
+    def _trend_to_topic(self, trend) -> Optional[Dict]:
+        """Convert a trending topic to our video topic format using AI."""
+        prompt = f"""Convert this trending topic into a viral short video script.
+
+TRENDING TOPIC: {trend.topic}
+SOURCE: {trend.source}
+CATEGORY: {trend.category}
+KEYWORDS: {', '.join(trend.keywords) if trend.keywords else 'N/A'}
+
+Create a video that:
+1. Uses this trend to deliver REAL VALUE
+2. Includes specific numbers/facts
+3. Has an actionable takeaway
+
+Return JSON:
+{{
+    "topic": "{trend.topic[:50]}",
+    "video_type": "{trend.category}_fact",
+    "hook": "7-10 word attention grabber - NO EMOJIS",
+    "content": "50-80 words of VALUE - NO EMOJIS",
+    "the_payoff": "What viewer learns",
+    "call_to_action": "Question for comments",
+    "broll_keywords": ["visual1", "visual2", "visual3", "visual4"],
+    "music_mood": "dramatic|suspense|inspirational",
+    "virality_score": 8,
+    "psychological_triggers": ["trigger1", "trigger2"],
+    "why_viral": "Why this spreads"
+}}
+
+Only return valid JSON."""
+
+        result = self._call_ai(prompt, max_tokens=800)
+        topic = self._parse_json(result)
+        
+        if topic:
+            # Strip emojis
+            for key in ["hook", "content", "topic", "call_to_action"]:
+                if key in topic and topic[key]:
+                    topic[key] = strip_emojis(str(topic[key]))
+            return topic
+        
+        return None
     
     def generate_broll_keywords(self, content: str, mood: str) -> Dict:
         """Generate specific B-roll keywords."""
