@@ -31,6 +31,10 @@ on:
         options:
           - 'true'
           - 'false'
+      dailymotion_extra:
+        description: 'Extra videos for Dailymotion only (DM has higher limit)'
+        required: false
+        default: '7'
   # ENABLED - Production mode active!
   # Runs 6 times per day (UTC time)
   # v7.0: 100% AI-driven video generation
@@ -109,21 +113,25 @@ jobs:
 
       - name: Generate PROFESSIONAL Viral Videos (v7.0 - 100% AI-Driven)
         run: |
-          # MAXIMIZED: 3 videos per run × 6 runs = 18 videos/day per platform!
-          BATCH_SIZE="${{ github.event.inputs.batch_size || '3' }}"
+          # PLATFORM LIMITS:
+          # - YouTube: ~6 videos/day (safe limit) = 1 per run × 6 runs
+          # - Dailymotion: ~50 videos/day = 8 per run × 6 runs
+          
+          YOUTUBE_BATCH="${{ github.event.inputs.batch_size || '1' }}"
+          DAILYMOTION_EXTRA="${{ github.event.inputs.dailymotion_extra || '7' }}"
           TEST_ONLY="${{ github.event.inputs.test_only || 'false' }}"
           
           echo "=============================================="
           echo "   VIRALSHORTS FACTORY v7.0"
-          echo "   100% AI-DRIVEN - No Hardcoding"
-          echo "   AI decides: type, length, voice, music"
+          echo "   100% AI-DRIVEN - Platform Optimized"
+          echo "   YouTube: $YOUTUBE_BATCH videos (safe limit)"
+          echo "   Dailymotion: +$DAILYMOTION_EXTRA extra videos"
           echo "=============================================="
           
-          # v7.0: AI decides EVERYTHING - no hardcoded types
-          for i in $(seq 1 $BATCH_SIZE); do
+          # Generate videos for YouTube (uploaded to BOTH platforms)
+          for i in $(seq 1 $YOUTUBE_BATCH); do
             echo ""
-            echo "=== Generating video $i of $BATCH_SIZE ==="
-            echo "AI will decide: category, topic, phrase count, voice, music..."
+            echo "=== Video $i (YouTube + Dailymotion) ==="
             
             if [ "$TEST_ONLY" = "true" ]; then
               python pro_video_generator.py --count 1 --no-upload
@@ -131,6 +139,52 @@ jobs:
               python pro_video_generator.py --count 1 --upload
             fi
           done
+          
+          # Generate EXTRA videos for Dailymotion ONLY (maximize DM uploads)
+          if [ "$TEST_ONLY" != "true" ] && [ "$DAILYMOTION_EXTRA" -gt 0 ]; then
+            echo ""
+            echo "=== Generating $DAILYMOTION_EXTRA extra videos for Dailymotion ==="
+            
+            for i in $(seq 1 $DAILYMOTION_EXTRA); do
+              echo ""
+              echo "=== Dailymotion-only video $i of $DAILYMOTION_EXTRA ==="
+              
+              # Generate video
+              python pro_video_generator.py --count 1 --no-upload
+              
+              # Upload to Dailymotion ONLY (skip YouTube)
+              LATEST_VIDEO=$(ls -t output/*.mp4 2>/dev/null | head -1)
+              if [ -n "$LATEST_VIDEO" ]; then
+                python -c "
+import sys
+sys.path.insert(0, '.')
+from dailymotion_uploader import DailymotionUploader
+import json
+import os
+
+video_path = '$LATEST_VIDEO'
+meta_path = video_path.replace('.mp4', '_meta.json')
+
+title = 'Amazing Fact'
+description = 'Follow for more!'
+tags = ['shorts', 'viral', 'facts']
+
+if os.path.exists(meta_path):
+    with open(meta_path) as f:
+        data = json.load(f)
+        metadata = data.get('metadata', {})
+        title = metadata.get('title', title)[:100]
+        description = metadata.get('description', description)
+        tags = [h.replace('#','') for h in metadata.get('hashtags', tags)]
+
+dm = DailymotionUploader()
+if dm.is_configured:
+    result = dm.upload_video(video_path, title=title, description=description, tags=tags, channel='lifestyle')
+    print(f'[OK] Dailymotion: {result}')
+"
+              fi
+            done
+          fi
         env:
           AUTO_UPLOAD: ${{ github.event.inputs.test_only != 'true' }}
           DEV_EVALUATE: ${{ github.event.inputs.test_only }}
