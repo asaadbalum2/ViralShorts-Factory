@@ -227,14 +227,12 @@ Reply with ONLY "YES" or "NO". Nothing else."""}],
         self.pytrends = None
         if PYTRENDS_AVAILABLE:
             try:
-                # Simple initialization - let pytrends handle defaults
-                # More complex options can cause compatibility issues
+                # Simple initialization - minimal parameters to avoid compatibility issues
+                # Note: retries and backoff_factor removed due to urllib3 version conflicts
                 self.pytrends = TrendReq(
                     hl='en-US', 
                     tz=360,
-                    timeout=(10, 25),
-                    retries=2,
-                    backoff_factor=0.3
+                    timeout=(10, 25)
                 )
             except Exception as e:
                 safe_print(f"[!] PyTrends init failed: {str(e)[:50]}")
