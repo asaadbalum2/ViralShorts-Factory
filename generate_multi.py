@@ -78,6 +78,51 @@ except ImportError as e:
     HAS_DYNAMIC_GEN = False
     print(f"⚠️ DynamicVideoGenerator not available: {e}")
 
+# Import VIRAL OPTIMIZER (AI-powered titles, hashtags, SEO)
+try:
+    from viral_optimizer import ViralOptimizer, generate_viral_title_ai
+    HAS_VIRAL_OPT = True
+    print("✅ ViralOptimizer loaded - AI titles/hashtags enabled!")
+except ImportError as e:
+    HAS_VIRAL_OPT = False
+    print(f"⚠️ ViralOptimizer not available: {e}")
+
+# Import AI EVALUATOR (content quality check before generation)
+try:
+    from ai_evaluator import AIContentEvaluator
+    HAS_EVALUATOR = True
+    print("✅ AIContentEvaluator loaded - quality checks enabled!")
+except ImportError as e:
+    HAS_EVALUATOR = False
+    print(f"⚠️ AIContentEvaluator not available: {e}")
+
+# Import VALUE DELIVERY checker
+try:
+    from viral_video_science import ValueDeliveryChecker
+    HAS_VALUE_CHECK = True
+    print("✅ ValueDeliveryChecker loaded - empty promise detection enabled!")
+except ImportError as e:
+    HAS_VALUE_CHECK = False
+    print(f"⚠️ ValueDeliveryChecker not available: {e}")
+
+# Import PLATFORM SAFETY (anti-ban measures)
+try:
+    from platform_safety import AntiBanSystem, PlatformVideoSpecs
+    HAS_ANTI_BAN = True
+    print("✅ AntiBanSystem loaded - anti-ban measures enabled!")
+except ImportError as e:
+    HAS_ANTI_BAN = False
+    print(f"⚠️ AntiBanSystem not available: {e}")
+
+# Import ANALYTICS FEEDBACK (learning from views)
+try:
+    from analytics_feedback import FeedbackLoopController
+    HAS_ANALYTICS = True
+    print("✅ FeedbackLoopController loaded - learning enabled!")
+except ImportError as e:
+    HAS_ANALYTICS = False
+    print(f"⚠️ FeedbackLoopController not available: {e}")
+
 
 # Output directory
 OUTPUT_DIR = Path("./output")
@@ -582,6 +627,12 @@ async def main():
             if gen.client:
                 topics = gen.generate_viral_topics(args.count)
                 
+                # Initialize value checker
+                value_checker = None
+                if HAS_VALUE_CHECK:
+                    value_checker = ValueDeliveryChecker()
+                    print("   ✅ Value delivery checker active!")
+                
                 for i, topic in enumerate(topics, 1):
                     print(f"\n📹 Video {i}/{args.count}")
                     print(f"   🎯 Topic: {topic.get('topic', 'N/A')}")
@@ -589,6 +640,17 @@ async def main():
                     print(f"   🧠 Triggers: {topic.get('psychological_triggers', [])}")
                     print(f"   🎬 B-roll: {topic.get('broll_keywords', [])}")
                     print(f"   💡 Why viral: {topic.get('why_viral', 'N/A')}")
+                    
+                    # VALUE CHECK: Ensure content delivers real value, not empty promises
+                    if value_checker and HAS_VALUE_CHECK:
+                        content_to_check = f"{topic.get('hook', '')} {topic.get('content', '')}"
+                        check = value_checker.check_value_delivery(content_to_check)
+                        if not check.get('delivers_value', True):
+                            print(f"   ⚠️ VALUE CHECK FAILED: {check.get('issues', [])}")
+                            print(f"   🔄 Skipping this topic (empty promises detected)")
+                            continue
+                        else:
+                            print(f"   ✅ Value check passed: {check.get('value_score', 0)}/10")
                     
                     # Convert to VideoContent
                     content = VideoContent(
@@ -675,54 +737,119 @@ async def main():
     print(f"✅ Generated {generated}/{args.count} videos")
     print(f"{'=' * 60}")
     
+    # Track generated videos THIS RUN (to avoid uploading old ones)
+    import glob
+    import time
+    
+    # Get only videos created in the last 30 minutes (this run)
+    current_time = time.time()
+    all_videos = glob.glob(str(OUTPUT_DIR / "*.mp4"))
+    videos_this_run = []
+    for v in all_videos:
+        if os.path.exists(v):
+            mtime = os.path.getmtime(v)
+            if current_time - mtime < 1800:  # 30 minutes
+                videos_this_run.append(v)
+    
+    print(f"   📁 Videos this run: {len(videos_this_run)}")
+    
     # Upload if requested
-    if should_upload and generated > 0:
+    if should_upload and len(videos_this_run) > 0:
         print("\n📤 Uploading videos to platforms...")
         
-        import glob
-        videos = glob.glob(str(OUTPUT_DIR / "*.mp4"))
+        # Initialize viral optimizer for better titles
+        viral_opt = None
+        if HAS_VIRAL_OPT:
+            viral_opt = ViralOptimizer()
+            print("   🎯 Using AI-powered titles and hashtags!")
         
-        # YouTube Upload
-        try:
-            from youtube_uploader import upload_to_youtube
-            for video_path in videos:
-                filename = os.path.basename(video_path)
-                title = filename.replace('.mp4', '').replace('_', ' ').title()[:100]
-                
+        # Initialize anti-ban system
+        anti_ban = None
+        if HAS_ANTI_BAN:
+            anti_ban = AntiBanSystem()
+            print("   🛡️ Anti-ban measures active!")
+        
+        uploaded_count = 0
+        
+        for video_path in videos_this_run:
+            filename = os.path.basename(video_path)
+            
+            # Extract topic info from filename for better title
+            base_name = filename.replace('.mp4', '').replace('_', ' ')
+            video_type = base_name.split()[0] if ' ' in base_name else 'fact'
+            
+            # Use AI to generate viral title if available
+            if viral_opt and HAS_VIRAL_OPT:
+                try:
+                    metadata = generate_viral_title_ai(
+                        hook=base_name,
+                        content=base_name,
+                        video_type=video_type
+                    )
+                    title = metadata.get('title', base_name.title())[:100]
+                    description = metadata.get('description', 'Follow for more!')[:5000]
+                    hashtags = metadata.get('hashtags', ['#shorts', '#viral', '#facts'])
+                    tags = [h.replace('#', '') for h in hashtags]
+                except Exception as e:
+                    print(f"   ⚠️ AI title failed, using basic: {e}")
+                    title = base_name.title()[:100]
+                    description = "Follow for more viral content! #shorts #viral #facts"
+                    tags = ["shorts", "viral", "facts", "trending"]
+            else:
+                title = base_name.title()[:100]
+                description = "Follow for more viral content! #shorts #viral #facts"
+                tags = ["shorts", "viral", "facts", "trending"]
+            
+            # Anti-ban delay between uploads
+            if anti_ban and HAS_ANTI_BAN and uploaded_count > 0:
+                delay = anti_ban.get_random_delay()
+                print(f"   ⏳ Anti-ban delay: {delay:.1f}s")
+                time.sleep(delay)
+            
+            # YouTube Upload
+            try:
+                from youtube_uploader import upload_to_youtube
                 print(f"\n   📺 Uploading to YouTube: {title}")
                 result = upload_to_youtube(
                     video_path,
                     title=title,
-                    description="Follow for more viral content! #shorts #viral #facts",
-                    tags=["shorts", "viral", "facts", "trending"]
+                    description=description,
+                    tags=tags
                 )
                 if result:
                     print(f"   ✅ YouTube: {result}")
-        except Exception as e:
-            print(f"   ⚠️ YouTube upload error: {e}")
-        
-        # Dailymotion Upload
-        try:
-            from dailymotion_uploader import DailymotionUploader
-            dm = DailymotionUploader()
-            if dm.is_configured:
-                for video_path in videos:
-                    filename = os.path.basename(video_path)
-                    title = filename.replace('.mp4', '').replace('_', ' ').title()[:100]
-                    
-                    print(f"\n   📺 Uploading to Dailymotion: {title}")
-                    result = dm.upload_video(
-                        video_path,
-                        title=title,
-                        description="Follow for more viral content! #shorts #viral",
-                        tags=["viral", "shorts", "facts"]
-                    )
-                    if result:
-                        print(f"   ✅ Dailymotion: {result}")
-            else:
-                print("   ⚠️ Dailymotion not configured")
-        except Exception as e:
-            print(f"   ⚠️ Dailymotion upload error: {e}")
+                    uploaded_count += 1
+            except Exception as e:
+                print(f"   ⚠️ YouTube upload error: {e}")
+            
+            # Dailymotion Upload (with anti-ban delay)
+            if anti_ban and HAS_ANTI_BAN:
+                delay = anti_ban.get_random_delay()
+                print(f"   ⏳ Anti-ban delay: {delay:.1f}s")
+                time.sleep(delay)
+            
+            try:
+                from dailymotion_uploader import DailymotionUploader
+                dm = DailymotionUploader()
+                if dm.is_configured:
+                    # Check connectivity first (no quota used)
+                    conn = dm.check_connectivity()
+                    if conn.get('status') == 'ok':
+                        print(f"\n   📺 Uploading to Dailymotion: {title}")
+                        result = dm.upload_video(
+                            video_path,
+                            title=title,
+                            description=description,
+                            tags=tags
+                        )
+                        if result:
+                            print(f"   ✅ Dailymotion: {result}")
+                    else:
+                        print(f"   ⚠️ Dailymotion: {conn.get('message')}")
+                else:
+                    print("   ⚠️ Dailymotion not configured")
+            except Exception as e:
+                print(f"   ⚠️ Dailymotion upload error: {e}")
     
     elif not should_upload:
         print("\n📁 Videos saved locally (upload skipped)")
