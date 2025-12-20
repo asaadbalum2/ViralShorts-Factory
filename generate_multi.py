@@ -644,7 +644,7 @@ async def main():
                     # VALUE CHECK: Ensure content delivers real value, not empty promises
                     if value_checker and HAS_VALUE_CHECK:
                         content_to_check = f"{topic.get('hook', '')} {topic.get('content', '')}"
-                        check = value_checker.check_value_delivery(content_to_check)
+                        check = value_checker.check_content(content_to_check)
                         if not check.get('delivers_value', True):
                             print(f"   ⚠️ VALUE CHECK FAILED: {check.get('issues', [])}")
                             print(f"   🔄 Skipping this topic (empty promises detected)")
