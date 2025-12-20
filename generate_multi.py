@@ -69,6 +69,15 @@ try:
 except ImportError:
     HAS_GOD_TIER = False
 
+# Import DYNAMIC video generator (per-phrase B-roll!)
+try:
+    from dynamic_video_generator import DynamicVideoGenerator
+    HAS_DYNAMIC_GEN = True
+    print("✅ DynamicVideoGenerator loaded - per-phrase B-roll enabled!")
+except ImportError as e:
+    HAS_DYNAMIC_GEN = False
+    print(f"⚠️ DynamicVideoGenerator not available: {e}")
+
 
 # Output directory
 OUTPUT_DIR = Path("./output")
@@ -80,16 +89,55 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # =============================================================================
 
 async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
-    """Generate a fact-based video (scary facts, money facts)."""
+    """
+    Generate a fact-based video (scary facts, money facts, psychology facts, life hacks).
+    
+    USES DYNAMIC VIDEO GENERATOR for:
+    - Per-phrase B-roll changes (more engaging!)
+    - AI-generated B-roll keywords for each phrase
+    - Smooth transitions between segments
+    """
     print(f"\n🎬 Generating {content.video_type.value} video...")
     print(f"   Hook: {content.hook}")
-    print(f"   Fact: {content.main_text[:50]}...")
+    print(f"   Content: {content.main_text[:50]}...")
     
+    # =========================================================================
+    # USE DYNAMIC VIDEO GENERATOR (per-phrase B-roll!)
+    # =========================================================================
+    if HAS_DYNAMIC_GEN:
+        try:
+            print("   🎯 Using DynamicVideoGenerator (per-phrase B-roll!)")
+            
+            # Prepare topic dict for dynamic generator
+            topic = {
+                "hook": content.hook,
+                "content": content.main_text,
+                "video_type": content.video_type.value,
+                "broll_keywords": content.broll_keywords or [],
+                "music_mood": content.music_mood or "suspense",
+                "call_to_action": content.call_to_action or "Follow for more!"
+            }
+            
+            # Create dynamic generator and generate
+            video_gen = DynamicVideoGenerator()
+            success = await video_gen.generate_dynamic_video(topic, output_path)
+            
+            if success:
+                print(f"   ✅ Generated with per-phrase B-roll: {output_path}")
+                return True
+            else:
+                print("   ⚠️ Dynamic generator failed, falling back to basic...")
+        except Exception as e:
+            print(f"   ⚠️ Dynamic generator error: {e}, falling back to basic...")
+            import traceback
+            traceback.print_exc()
+    
+    # =========================================================================
+    # FALLBACK: Basic generation (if dynamic fails)
+    # =========================================================================
     try:
-        # THEMES is a dict, get values list
         themes_list = list(THEMES.values())
         
-        # Pick theme based on type
         if content.video_type == VideoType.SCARY_FACTS:
             theme = next((t for t in themes_list if "night" in t.name.lower()), random.choice(themes_list))
         elif content.video_type == VideoType.MONEY_FACTS:
@@ -97,19 +145,13 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
         else:
             theme = random.choice(themes_list)
         
-        print(f"   🎨 Theme: {theme.name}")
+        print(f"   🎨 Theme: {theme.name} (fallback mode)")
         
-        # Generate voiceover
         voiceover_path = OUTPUT_DIR / "temp_vo.mp3"
         duration = await generate_voiceover_v2(content.voiceover_script, str(voiceover_path))
+        total_duration = max(duration + 5, 15)
         
-        # Calculate timing
-        total_duration = max(duration + 5, 15)  # At least 15 seconds
-        
-        # Get B-roll using SPECIFIC keywords from content (not generic extraction)
-        # Use the broll_keywords from the content directly
         if content.broll_keywords and len(content.broll_keywords) >= 3:
-            print(f"   🎯 Using specific B-roll keywords: {content.broll_keywords}")
             broll_clips = get_multiple_broll_clips(
                 {"option_a": " ".join(content.broll_keywords), "option_b": ""},
                 count=3
@@ -120,31 +162,24 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
                 count=3
             )
         
-        # Create background - FIX: Avoid abrupt B-roll swaps at end
         if broll_clips:
             processed = []
             for clip_path in broll_clips[:3]:
                 if os.path.exists(clip_path):
                     clip = VideoFileClip(clip_path)
                     clip = clip.resize((VIDEO_WIDTH, VIDEO_HEIGHT))
-                    # Add crossfade transition between clips
                     if processed:
                         clip = clip.crossfadein(0.5)
                     processed.append(clip)
             
             if processed:
-                # Use first clip only if it's long enough to avoid transitions
                 if processed[0].duration >= total_duration:
                     bg_clip = processed[0].subclip(0, total_duration)
                 else:
-                    # Concatenate with crossfade, then loop smoothly
                     bg_clip = concatenate_videoclips(processed, method="compose", padding=-0.5)
                     if bg_clip.duration < total_duration:
-                        # Loop the FIRST clip only to avoid sudden visual changes
                         bg_clip = processed[0].loop(duration=total_duration)
                     bg_clip = bg_clip.subclip(0, total_duration)
-                
-                # Darken for text readability + add slight blur for modern look
                 bg_clip = bg_clip.fx(vfx.colorx, 0.5)
             else:
                 bg_clip = None
@@ -152,11 +187,9 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
             bg_clip = None
         
         if bg_clip is None:
-            # Fallback gradient
             gradient_img = create_gradient_background(VIDEO_WIDTH, VIDEO_HEIGHT, theme.background_gradient)
             bg_clip = pil_to_moviepy_clip(gradient_img, total_duration)
         
-        # Create text overlays
         hook_img = create_fact_overlay(content.hook, VIDEO_WIDTH, 200, theme, "hook")
         fact_img = create_fact_overlay(content.main_text, VIDEO_WIDTH, 600, theme, "fact")
         source_img = create_fact_overlay(content.secondary_text or "", VIDEO_WIDTH, 100, theme, "source")
@@ -165,34 +198,22 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
         fact_clip = pil_to_moviepy_clip(fact_img, total_duration - 3).set_position(('center', 'center')).set_start(3)
         source_clip = pil_to_moviepy_clip(source_img, 3).set_position(('center', VIDEO_HEIGHT - 200)).set_start(total_duration - 3)
         
-        # Add voiceover
         vo_clip = AudioFileClip(str(voiceover_path))
         
-        # Get background music
         music_clip = None
         if HAS_MUSIC:
             music_path = get_background_music(content.music_mood)
             if music_path and os.path.exists(music_path):
                 try:
                     music_clip = AudioFileClip(music_path)
-                    music_clip = music_clip.volumex(0.15)  # Low volume
-                    print(f"   🎵 Added background music ({content.music_mood})")
-                except Exception as e:
-                    print(f"   ⚠️ Music error: {e}")
+                    music_clip = music_clip.volumex(0.15)
+                except Exception:
+                    pass
         
-        # Compose
-        video = CompositeVideoClip([
-            bg_clip,
-            hook_clip,
-            fact_clip,
-            source_clip,
-        ], size=(VIDEO_WIDTH, VIDEO_HEIGHT))
-        
-        # Set video duration to match voiceover + buffer
+        video = CompositeVideoClip([bg_clip, hook_clip, fact_clip, source_clip], size=(VIDEO_WIDTH, VIDEO_HEIGHT))
         actual_duration = min(total_duration, vo_clip.duration + 3)
         video = video.set_duration(actual_duration)
         
-        # Mix audio: voiceover + music
         if music_clip:
             if music_clip.duration < actual_duration:
                 music_clip = music_clip.loop(duration=actual_duration)
@@ -205,17 +226,8 @@ async def generate_fact_video(content: VideoContent, output_path: str) -> bool:
         else:
             video = video.set_audio(vo_clip.set_duration(min(vo_clip.duration, actual_duration)))
         
-        # Render
-        video.write_videofile(
-            output_path,
-            fps=24,
-            codec='libx264',
-            audio_codec='aac',
-            preset='ultrafast',
-            threads=4
-        )
-        
-        print(f"   ✅ Generated: {output_path}")
+        video.write_videofile(output_path, fps=24, codec='libx264', audio_codec='aac', preset='ultrafast', threads=4)
+        print(f"   ✅ Generated (fallback): {output_path}")
         return True
         
     except Exception as e:
