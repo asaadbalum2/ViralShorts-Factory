@@ -109,7 +109,8 @@ jobs:
 
       - name: Generate PROFESSIONAL Viral Videos (v7.0 - 100% AI-Driven)
         run: |
-          BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
+          # MAXIMIZED: 3 videos per run × 6 runs = 18 videos/day per platform!
+          BATCH_SIZE="${{ github.event.inputs.batch_size || '3' }}"
           TEST_ONLY="${{ github.event.inputs.test_only || 'false' }}"
           
           echo "=============================================="
