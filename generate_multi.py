@@ -669,6 +669,46 @@ async def main():
                     success = await generate_fact_video(content, output_path)
                     if success:
                         generated += 1
+                        
+                        # RECORD METADATA for analytics feedback (v3.0)
+                        if HAS_ANALYTICS:
+                            try:
+                                from analytics_feedback import FeedbackLoopController
+                                feedback = FeedbackLoopController()
+                                
+                                # Calculate phrase/word count
+                                full_content = f"{topic.get('hook', '')} {topic.get('content', '')}"
+                                word_count = len(full_content.split())
+                                phrase_count = len([p for p in full_content.split('.') if p.strip()])
+                                
+                                # Record with v3.0 generation metadata
+                                generation_data = {
+                                    "trend_source": topic.get("_source", "ai"),  # Track where topic came from
+                                    "has_captions": True,  # v3.0 feature
+                                    "caption_style": "tiktok",
+                                    "has_progress_bar": True,  # v3.0 feature
+                                    "progress_bar_style": "gradient",
+                                    "has_ken_burns_zoom": True,  # v3.0 feature
+                                    "zoom_intensity": 0.03,
+                                    "has_vignette": True,  # v3.0 feature
+                                    "has_particles": False,  # Optional
+                                    "phrase_count": phrase_count,
+                                    "total_word_count": word_count,
+                                    "viral_optimizer_used": HAS_VIRAL_OPT,
+                                    "ai_title_generated": HAS_VIRAL_OPT,
+                                    "ai_hashtags_generated": HAS_VIRAL_OPT,
+                                }
+                                
+                                video_id = Path(output_path).stem
+                                feedback.record_video_generation(
+                                    video_id=video_id,
+                                    local_path=output_path,
+                                    topic_data=topic,
+                                    generation_data=generation_data
+                                )
+                                print(f"   [OK] Metadata recorded for analytics")
+                            except Exception as me:
+                                print(f"   [!] Metadata recording failed: {me}")
             else:
                 print("⚠️ No AI client, falling back to basic AI trends")
                 # Fallback to old method

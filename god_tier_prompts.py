@@ -353,6 +353,8 @@ class GodTierContentGenerator:
                 for trend in raw_trends[:count]:
                     topic = self._trend_to_topic(trend)
                     if topic:
+                        # Track source for analytics
+                        topic["_source"] = trend.source  # "google", "reddit", "ai"
                         topics.append(topic)
                 
                 if topics:

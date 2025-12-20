@@ -31,7 +31,7 @@ import requests
 
 @dataclass
 class VideoMetadata:
-    """Complete metadata for a generated video."""
+    """Complete metadata for a generated video - v3.0 Enhanced."""
     # Identification
     video_id: str
     local_path: str
@@ -65,6 +65,37 @@ class VideoMetadata:
     
     # Performance (updated later)
     performance: Optional[Dict] = None
+    
+    # ===== v3.0 ENHANCEMENT TRACKING =====
+    # Trend source (for analyzing which sources work best)
+    trend_source: Optional[str] = None  # "google_rss", "reddit", "ai", "combined"
+    
+    # Visual enhancements (for A/B testing)
+    has_captions: bool = False
+    caption_style: Optional[str] = None  # "tiktok", "netflix", "minimal"
+    has_progress_bar: bool = False
+    progress_bar_style: Optional[str] = None  # "gradient", "minimal", "youtube"
+    has_ken_burns_zoom: bool = False
+    zoom_intensity: float = 0.0
+    has_vignette: bool = False
+    has_particles: bool = False
+    
+    # Thumbnail (for A/B testing)
+    thumbnail_generated: bool = False
+    thumbnail_style: Optional[str] = None  # "fire", "electric", "gold", "viral", "money"
+    thumbnail_headline: Optional[str] = None
+    
+    # A/B test variant tracking
+    ab_test_variants: Optional[Dict] = None  # {"title_style": "question", "thumbnail": "fire"}
+    
+    # Phrase count (for analyzing optimal content length)
+    phrase_count: int = 0
+    total_word_count: int = 0
+    
+    # Optimization applied
+    viral_optimizer_used: bool = False
+    ai_title_generated: bool = False
+    ai_hashtags_generated: bool = False
 
 
 class VideoMetadataStore:
@@ -312,7 +343,7 @@ class AnalyticsAnalyzer:
         if not self.client:
             return self._basic_analysis(videos)
         
-        # Prepare data for AI analysis
+        # Prepare data for AI analysis (v3.0 enhanced)
         video_data = []
         for v in videos:
             if v.performance:
@@ -325,6 +356,17 @@ class AnalyticsAnalyzer:
                     "likes": v.performance.get("likes", 0),
                     "comments": v.performance.get("comments", 0),
                     "virality_score": v.virality_score,
+                    # v3.0 enhancement data for correlation analysis
+                    "trend_source": v.trend_source or "unknown",
+                    "has_captions": v.has_captions,
+                    "caption_style": v.caption_style,
+                    "has_progress_bar": v.has_progress_bar,
+                    "has_ken_burns_zoom": v.has_ken_burns_zoom,
+                    "has_vignette": v.has_vignette,
+                    "thumbnail_style": v.thumbnail_style,
+                    "phrase_count": v.phrase_count,
+                    "word_count": v.total_word_count,
+                    "ai_title_used": v.ai_title_generated,
                 })
         
         if not video_data:
@@ -347,9 +389,21 @@ Analyze the data and provide:
 
 5. MUSIC MOOD ANALYSIS: Does music mood affect performance?
 
-6. RECOMMENDATIONS:
+6. TREND SOURCE ANALYSIS: Do videos from certain sources (google_rss, reddit, ai) perform better?
+
+7. ENHANCEMENT CORRELATION: Do videos WITH these features perform better?
+   - TikTok-style captions (has_captions)
+   - Progress bar (has_progress_bar)
+   - Ken Burns zoom (has_ken_burns_zoom)
+   - Vignette effect (has_vignette)
+   - AI-generated titles (ai_title_used)
+
+8. CONTENT LENGTH: Is there an optimal phrase_count or word_count?
+
+9. RECOMMENDATIONS:
    - What should we do MORE of?
    - What should we AVOID?
+   - Which enhancements to enable/disable?
    - Specific topic suggestions for next videos
 
 Return as JSON:
@@ -358,8 +412,22 @@ Return as JSON:
     "best_video_types": ["type1", "type2"],
     "best_hooks_patterns": ["pattern1", "pattern2"],
     "best_music_moods": ["mood1", "mood2"],
+    "best_trend_source": "google_rss|reddit|ai|combined",
+    "enhancement_analysis": {{
+        "captions_impact": "positive|negative|neutral",
+        "progress_bar_impact": "positive|negative|neutral",
+        "zoom_impact": "positive|negative|neutral",
+        "vignette_impact": "positive|negative|neutral",
+        "ai_title_impact": "positive|negative|neutral"
+    }},
+    "optimal_content_length": {{
+        "ideal_phrase_count": 4,
+        "ideal_word_count": 60
+    }},
     "do_more": ["recommendation1", "recommendation2"],
     "do_less": ["thing_to_avoid1", "thing_to_avoid2"],
+    "enhancements_to_enable": ["captions", "progress_bar"],
+    "enhancements_to_disable": [],
     "next_video_suggestions": ["suggestion1", "suggestion2", "suggestion3"],
     "key_insight": "One sentence summary of most important finding"
 }}"""
@@ -483,12 +551,21 @@ class FeedbackLoopController:
     def record_video_generation(self, 
                                   video_id: str,
                                   local_path: str,
-                                  topic_data: Dict) -> VideoMetadata:
+                                  topic_data: Dict,
+                                  generation_data: Optional[Dict] = None) -> VideoMetadata:
         """
         Record metadata when a video is generated.
         
         Call this right after video generation!
+        
+        Args:
+            video_id: Unique identifier for the video
+            local_path: Path to the generated video file
+            topic_data: The topic/content data used for generation
+            generation_data: v3.0 enhancement tracking data
         """
+        gen = generation_data or {}
+        
         metadata = VideoMetadata(
             video_id=video_id,
             local_path=local_path,
@@ -499,8 +576,8 @@ class FeedbackLoopController:
             content_summary=topic_data.get("content", "")[:200],
             broll_keywords=topic_data.get("broll_keywords", []),
             music_mood=topic_data.get("music_mood", "dramatic"),
-            voiceover_style="energetic",  # Could be customized
-            theme_name="dynamic",
+            voiceover_style=gen.get("voiceover_style", "energetic"),
+            theme_name=gen.get("theme_name", "dynamic"),
             value_check_score=topic_data.get("value_check", {}).get("score", 0),
             virality_score=topic_data.get("virality_score", 0),
             timeliness_score=topic_data.get("timeliness_score", 0),
@@ -510,6 +587,26 @@ class FeedbackLoopController:
             generated_at=datetime.now().isoformat(),
             uploaded_at=None,
             performance=None,
+            
+            # v3.0 Enhancement Tracking
+            trend_source=gen.get("trend_source"),  # Where topic came from
+            has_captions=gen.get("has_captions", False),
+            caption_style=gen.get("caption_style"),
+            has_progress_bar=gen.get("has_progress_bar", False),
+            progress_bar_style=gen.get("progress_bar_style"),
+            has_ken_burns_zoom=gen.get("has_ken_burns_zoom", False),
+            zoom_intensity=gen.get("zoom_intensity", 0.0),
+            has_vignette=gen.get("has_vignette", False),
+            has_particles=gen.get("has_particles", False),
+            thumbnail_generated=gen.get("thumbnail_generated", False),
+            thumbnail_style=gen.get("thumbnail_style"),
+            thumbnail_headline=gen.get("thumbnail_headline"),
+            ab_test_variants=gen.get("ab_test_variants"),
+            phrase_count=gen.get("phrase_count", 0),
+            total_word_count=gen.get("total_word_count", 0),
+            viral_optimizer_used=gen.get("viral_optimizer_used", False),
+            ai_title_generated=gen.get("ai_title_generated", False),
+            ai_hashtags_generated=gen.get("ai_hashtags_generated", False),
         )
         
         self.metadata_store.add(metadata)
