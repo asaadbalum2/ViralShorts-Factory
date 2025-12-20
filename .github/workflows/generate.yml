@@ -118,24 +118,25 @@ jobs:
             python trending_content.py 50 --no-ai
           fi
 
-      - name: Generate PROFESSIONAL Viral Videos (v4.0)
+      - name: Generate PROFESSIONAL Viral Videos (v6.0)
         run: |
           BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
           TEST_ONLY="${{ github.event.inputs.test_only || 'false' }}"
           USE_V2="${{ github.event.inputs.use_v2 || 'true' }}"
           
           echo "=============================================="
-          echo "   PROFESSIONAL VIDEO GENERATOR v4.0"
-          echo "   Multi-Stage AI Chaining for Maximum Quality"
+          echo "   PROFESSIONAL VIDEO GENERATOR v6.0"
+          echo "   6 Video Types with Analytics-Driven Weights"
+          echo "   Longer videos (30-45s) with GLOBAL focus"
           echo "=============================================="
           
           if [ "$USE_V2" = "true" ]; then
-            # Use PRO generator - multi-stage AI chaining
-            # Rotate through video types for variety
-            TYPES=("psychology_fact" "money_fact" "life_hack" "scary_fact")
+            # Use PRO generator v6.0 with 6 video types
+            # Types: psychology_fact, money_fact, life_hack, statistics_fact, science_fact, motivation
+            TYPES=("psychology_fact" "money_fact" "life_hack" "statistics_fact" "science_fact" "motivation")
             
             for i in $(seq 1 $BATCH_SIZE); do
-              IDX=$((($i - 1) % 4))
+              IDX=$((($i - 1) % 6))
               TYPE=${TYPES[$IDX]}
               
               echo ""

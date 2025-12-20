@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - PROFESSIONAL Video Generator v5.0
+ViralShorts Factory - PROFESSIONAL Video Generator v6.0
 ========================================================
 
-FULLY REWRITTEN to address ALL issues:
-1. Multi-stage AI chaining with FRESH generation per video
-2. Hook gets B-roll (no more red background at start)
-3. Proper narration-text sync with word-level timing
-4. Different voices per video type
-5. REAL VALUE content with SPECIFIC actionable solutions
-6. No duplicate phrases
-7. Different music per video type
-8. Better TTS voice selection
+MAJOR IMPROVEMENTS:
+1. 6 Video Types with Weighting System (analytics-driven)
+2. Longer videos (30-45 seconds) with more value
+3. GLOBAL focus (not US-only)
+4. Music plays from START (fixed)
+5. Multi-stage AI for maximum quality
+6. Analytics feedback integration for type weighting
 
-Each video is UNIQUE - no parameter reuse!
+VIDEO TYPES (6 categories):
+1. psychology_fact - Mind-blowing psychology insights
+2. money_fact - Financial wisdom (global)
+3. life_hack - Practical life tips
+4. statistics_fact - Surprising statistics
+5. science_fact - Amazing science facts
+6. motivation - Inspiring/motivational content
 """
 
 import os
@@ -55,6 +59,7 @@ BROLL_DIR = Path("./assets/broll")
 BROLL_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR = Path("./cache")
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+WEIGHTS_FILE = Path("./type_weights.json")
 
 
 def safe_print(msg: str):
@@ -79,44 +84,126 @@ def strip_emojis(text: str) -> str:
     return emoji_pattern.sub('', text).strip()
 
 
-# Voice configurations per video type - each type gets unique voice!
-# Using stable voice settings that work reliably with edge-tts
-VOICE_CONFIG = {
+# ============================================================================
+# 6 VIDEO TYPES WITH CONFIGURATIONS
+# ============================================================================
+
+VIDEO_TYPES = {
     "psychology_fact": {
+        "name": "Psychology Fact",
         "voice": "en-US-AriaNeural",
         "rate": "+5%",
-        "pitch": "+0Hz",
+        "music_mood": "mystery",
+        "gradient": [(40, 20, 60), (80, 40, 100)],
+        "description": "Mind-blowing psychology insights that change behavior",
     },
     "money_fact": {
-        "voice": "en-US-GuyNeural",  # Changed from DavisNeural (more reliable)
-        "rate": "+10%",
-        "pitch": "+0Hz",
+        "name": "Money Fact", 
+        "voice": "en-US-GuyNeural",
+        "rate": "+8%",
+        "music_mood": "energetic",
+        "gradient": [(20, 50, 30), (40, 100, 60)],
+        "description": "Financial wisdom applicable GLOBALLY (not US-only)",
     },
     "life_hack": {
+        "name": "Life Hack",
         "voice": "en-US-JennyNeural",
-        "rate": "+8%",
-        "pitch": "+0Hz",
+        "rate": "+10%",
+        "music_mood": "fun",
+        "gradient": [(60, 60, 20), (100, 100, 40)],
+        "description": "Practical life tips anyone can use immediately",
     },
-    "scary_fact": {
-        "voice": "en-US-ChristopherNeural",  # Deep voice for scary content
-        "rate": "-3%",
-        "pitch": "+0Hz",
+    "statistics_fact": {
+        "name": "Statistics Fact",
+        "voice": "en-US-DavisNeural",
+        "rate": "+5%",
+        "music_mood": "mystery",
+        "gradient": [(30, 40, 60), (60, 80, 120)],
+        "description": "Surprising statistics that shock and educate",
+    },
+    "science_fact": {
+        "name": "Science Fact",
+        "voice": "en-US-ChristopherNeural",
+        "rate": "+3%",
+        "music_mood": "dramatic",
+        "gradient": [(20, 30, 50), (50, 70, 110)],
+        "description": "Amazing science facts that blow minds",
+    },
+    "motivation": {
+        "name": "Motivation",
+        "voice": "en-US-AriaNeural",
+        "rate": "+0%",
+        "music_mood": "energetic",
+        "gradient": [(50, 30, 20), (100, 60, 40)],
+        "description": "Inspiring content that motivates action",
     },
 }
 
-# Music moods per video type - each type gets different music!
-MUSIC_MOODS = {
-    "psychology_fact": "mystery",
-    "money_fact": "energetic",
-    "life_hack": "fun",
-    "scary_fact": "dramatic",
-}
+
+class TypeWeightManager:
+    """
+    Manages weights for video types based on analytics performance.
+    Starts with equal weights (1/6), adjusts based on views/engagement.
+    """
+    
+    def __init__(self):
+        self.weights = self._load_weights()
+    
+    def _load_weights(self) -> Dict[str, float]:
+        """Load weights from file or create default."""
+        if WEIGHTS_FILE.exists():
+            try:
+                with open(WEIGHTS_FILE) as f:
+                    return json.load(f)
+            except:
+                pass
+        
+        # Default: equal weights
+        types = list(VIDEO_TYPES.keys())
+        return {t: 1.0 / len(types) for t in types}
+    
+    def save_weights(self):
+        """Save weights to file."""
+        with open(WEIGHTS_FILE, 'w') as f:
+            json.dump(self.weights, f, indent=2)
+    
+    def get_weighted_type(self) -> str:
+        """Select a video type based on weights."""
+        types = list(self.weights.keys())
+        weights = list(self.weights.values())
+        return random.choices(types, weights=weights, k=1)[0]
+    
+    def update_from_analytics(self, analytics_data: Dict):
+        """
+        Update weights based on analytics performance.
+        Higher views/engagement = higher weight.
+        """
+        if not analytics_data:
+            return
+        
+        # Calculate performance scores per type
+        type_scores = {}
+        for video_type in VIDEO_TYPES:
+            type_videos = [v for v in analytics_data if v.get('type') == video_type]
+            if type_videos:
+                avg_views = sum(v.get('views', 0) for v in type_videos) / len(type_videos)
+                avg_engagement = sum(v.get('engagement', 0) for v in type_videos) / len(type_videos)
+                type_scores[video_type] = avg_views + (avg_engagement * 10)
+            else:
+                type_scores[video_type] = 1  # Minimum score
+        
+        # Normalize to weights
+        total = sum(type_scores.values())
+        if total > 0:
+            self.weights = {t: max(0.05, s / total) for t, s in type_scores.items()}
+            self.save_weights()
+            safe_print(f"[WEIGHTS] Updated: {self.weights}")
 
 
 class MultiStageAI:
     """
     Multi-stage AI content generation with chained prompts.
-    FRESH generation for EACH video - no parameter reuse!
+    FRESH generation for EACH video!
     """
     
     def __init__(self):
@@ -125,7 +212,6 @@ class MultiStageAI:
         self.client = None
         self.gemini_model = None
         
-        # Initialize Groq
         if self.groq_key:
             try:
                 from groq import Groq
@@ -134,323 +220,210 @@ class MultiStageAI:
             except Exception as e:
                 safe_print(f"[!] Groq init failed: {e}")
         
-        # Initialize Gemini as fallback
         if self.gemini_key:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
                 self.gemini_model = genai.GenerativeModel('gemini-2.0-flash')
-                safe_print("[OK] Gemini AI initialized (fallback)")
+                safe_print("[OK] Gemini AI initialized")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")
     
-    def _call_groq(self, prompt: str, max_tokens: int = 1500, temperature: float = 0.9) -> Optional[str]:
-        """Call Groq API with varied temperature for uniqueness."""
-        if not self.client:
-            return None
-        try:
-            response = self.client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=max_tokens,
-                temperature=temperature
-            )
-            return response.choices[0].message.content
-        except Exception as e:
-            safe_print(f"[!] Groq error: {e}")
-            return None
-    
-    def _call_gemini(self, prompt: str) -> Optional[str]:
-        """Call Gemini API as fallback."""
-        if not self.gemini_model:
-            return None
-        try:
-            response = self.gemini_model.generate_content(prompt)
-            return response.text
-        except Exception as e:
-            safe_print(f"[!] Gemini error: {e}")
-            return None
-    
-    def call_ai(self, prompt: str, max_tokens: int = 1500, temperature: float = 0.9) -> str:
+    def call_ai(self, prompt: str, max_tokens: int = 2000, temperature: float = 0.9) -> str:
         """Call AI with automatic fallback."""
-        result = self._call_groq(prompt, max_tokens, temperature)
-        if not result:
-            result = self._call_gemini(prompt)
-        if not result:
-            return ""
-        return result
+        # Try Groq
+        if self.client:
+            try:
+                response = self.client.chat.completions.create(
+                    model="llama-3.3-70b-versatile",
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=max_tokens,
+                    temperature=temperature
+                )
+                return response.choices[0].message.content
+            except Exception as e:
+                safe_print(f"[!] Groq error: {e}")
+        
+        # Fallback to Gemini
+        if self.gemini_model:
+            try:
+                response = self.gemini_model.generate_content(prompt)
+                return response.text
+            except Exception as e:
+                safe_print(f"[!] Gemini error: {e}")
+        
+        return ""
     
     def parse_json(self, text: str) -> Dict:
         """Extract JSON from AI response."""
         try:
-            # Find JSON in response
             if "```json" in text:
                 text = text.split("```json")[1].split("```")[0]
             elif "```" in text:
                 text = text.split("```")[1].split("```")[0]
-            
-            # Clean and parse
-            text = text.strip()
-            return json.loads(text)
+            return json.loads(text.strip())
         except:
             return {}
     
-    # =========================================================================
-    # STAGE 1: Generate VALUE-DRIVEN Topic (SPECIFIC solutions required!)
-    # =========================================================================
-    def stage1_generate_topic(self, video_type: str, run_id: int) -> Dict:
+    def generate_content(self, video_type: str, run_id: int) -> Dict:
         """
-        Stage 1: Generate a viral, engaging topic with REAL VALUE.
-        Uses unique seed per run to ensure different content each time!
+        Generate viral content with 6 phrases for 30-45 second videos.
+        GLOBAL focus - not country-specific.
         """
-        safe_print(f"\n[STAGE 1] Generating viral {video_type} topic (run #{run_id})...")
+        safe_print(f"\n[AI] Generating {video_type} content (run #{run_id})...")
         
-        # Unique seed for this run
-        unique_seed = f"{video_type}_{run_id}_{time.time()}_{random.random()}"
-        
-        type_specific = {
-            "psychology_fact": """
-TOPIC REQUIREMENTS:
-- A surprising psychological fact that changes behavior
-- Must include a SPECIFIC technique viewers can use TODAY
-- Example: "The 5-second rule for breaking bad habits" (specific, actionable)
-- NOT vague like "psychology is interesting" (no value)""",
-            "money_fact": """
-TOPIC REQUIREMENTS:
-- A surprising money/finance fact with ACTIONABLE takeaway
-- Must include SPECIFIC numbers or percentages
-- Example: "The 50/30/20 rule can save you $10,000 per year" (specific)
-- NOT vague like "save money" (no value)""",
-            "life_hack": """
-TOPIC REQUIREMENTS:
-- A practical life hack with STEP-BY-STEP instructions
-- Must be something viewer can do in under 5 minutes
-- Example: "The 2-minute email rule that clears your inbox" (specific)
-- NOT vague like "be more productive" (no value)""",
-            "scary_fact": """
-TOPIC REQUIREMENTS:
-- A creepy/unsettling fact that surprises
-- Must include a SPECIFIC real-world example or statistic
-- Example: "92% of home intruders check this first" (specific, useful)
-- NOT vague like "scary things exist" (no value)"""
-        }
+        type_config = VIDEO_TYPES.get(video_type, VIDEO_TYPES["psychology_fact"])
+        unique_seed = f"{video_type}_{run_id}_{time.time()}"
         
         prompt = f"""You are a VIRAL CONTENT MASTERMIND creating SHORT-FORM video content.
-Your content gets MILLIONS of views because you deliver SPECIFIC, ACTIONABLE value.
+Your videos get MILLIONS of views because you deliver REAL, ACTIONABLE value.
 
-UNIQUE GENERATION ID: {unique_seed}
-CONTENT TYPE: {video_type}
+=== GENERATION PARAMETERS ===
+UNIQUE ID: {unique_seed}
+TYPE: {video_type} - {type_config['description']}
 DATE: {time.strftime('%B %d, %Y')}
 
-{type_specific.get(video_type, type_specific["psychology_fact"])}
+=== CRITICAL REQUIREMENTS ===
 
-=== CRITICAL RULES ===
-1. HOOK: First phrase MUST create curiosity gap (pattern interrupt)
-2. VALUE: Deliver SPECIFIC, actionable information (numbers, steps, techniques)
-3. FORMAT: Use DIGITS for numbers (500$, 92%, 3x) - NOT words
-4. LENGTH: 4 phrases, each 8-15 words MAX
-5. FLOW: Hook -> Problem -> Solution -> Reinforcement
-6. NO EMPTY PROMISES: Every phrase must add real value
+1. **GLOBAL FOCUS**: Content must be relevant WORLDWIDE, not specific to any country.
+   - BAD: "In the US, taxes work like..."
+   - GOOD: "Globally, 73% of people..."
+   
+2. **LONGER FORMAT (30-45 seconds)**: Create 6 phrases that build a complete story:
+   - Phrase 1: HOOK (pattern interrupt, curiosity gap)
+   - Phrase 2: PROBLEM (relatable pain point)
+   - Phrase 3: CONTEXT (why this matters)
+   - Phrase 4: SOLUTION PART 1 (the technique/method)
+   - Phrase 5: SOLUTION PART 2 (how to apply it)
+   - Phrase 6: PAYOFF (transformation/result + subtle CTA)
 
-=== STRUCTURE ===
-Phrase 1 (HOOK): Pattern interrupt that demands attention
-Phrase 2 (PROBLEM): Relate to viewer's pain point
-Phrase 3 (SOLUTION): The SPECIFIC technique/method/number
-Phrase 4 (PAYOFF): Reinforce value + subtle call to action
+3. **REAL VALUE**: Every phrase must add information. No fluff!
+   - Include SPECIFIC numbers, percentages, timeframes
+   - Include ACTIONABLE steps viewers can take TODAY
+   
+4. **FORMAT**: 
+   - Use DIGITS for numbers (500$, 92%, 3x)
+   - Each phrase: 10-18 words
+   - Total: ~90-110 words for 30-45 second video
 
 === OUTPUT JSON ===
 {{
     "topic": "5-word topic description",
-    "hook": "8-12 word hook phrase (MUST create curiosity)",
-    "problem": "8-15 word problem phrase (relatable pain)",
-    "solution": "8-15 word solution phrase (SPECIFIC technique)",
-    "payoff": "8-12 word payoff phrase (value reinforcement)",
-    "value_type": "what specific value does viewer get?",
-    "unique_angle": "what makes this different from generic content?"
+    "phrases": [
+        "Phrase 1: Hook (10-15 words)",
+        "Phrase 2: Problem (12-18 words)",
+        "Phrase 3: Context (12-18 words)",
+        "Phrase 4: Solution Part 1 (12-18 words)",
+        "Phrase 5: Solution Part 2 (12-18 words)",
+        "Phrase 6: Payoff (10-15 words)"
+    ],
+    "value_delivered": "What specific action can viewer take?",
+    "global_relevance": "Why this works worldwide"
 }}
 
-OUTPUT JSON ONLY. Make this TRULY unique - not a generic template!"""
+OUTPUT JSON ONLY. Make this UNIQUE and VALUABLE!"""
 
-        response = self.call_ai(prompt, 1000, temperature=0.95)  # High temp for variety
+        response = self.call_ai(prompt, 1500, temperature=0.95)
         result = self.parse_json(response)
         
-        if result:
+        if result and result.get('phrases'):
             result['video_type'] = video_type
             result['run_id'] = run_id
             safe_print(f"   Topic: {result.get('topic', 'N/A')}")
-            safe_print(f"   Hook: {result.get('hook', 'N/A')}")
-            safe_print(f"   Value: {result.get('value_type', 'N/A')}")
+            safe_print(f"   Phrases: {len(result.get('phrases', []))}")
+            safe_print(f"   Value: {result.get('value_delivered', 'N/A')}")
         
         return result
     
-    # =========================================================================
-    # STAGE 2: Validate and Enhance Content Quality
-    # =========================================================================
-    def stage2_enhance_content(self, stage1_result: Dict) -> Dict:
-        """
-        Stage 2: AI validates Stage 1 output and enhances quality.
-        Ensures REAL value and fixes any issues.
-        """
-        safe_print("\n[STAGE 2] AI validating and enhancing content...")
+    def enhance_content(self, content: Dict) -> Dict:
+        """Stage 2: Validate and enhance content quality."""
+        safe_print("\n[AI] Enhancing content...")
         
-        if not stage1_result:
-            return {}
+        if not content or not content.get('phrases'):
+            return content
         
-        prompt = f"""You are a VIRAL CONTENT QUALITY CONTROLLER.
-Your job is to take content and make it EXCEPTIONAL with REAL VALUE.
+        prompt = f"""You are a VIRAL CONTENT OPTIMIZER.
+Improve this content for MAXIMUM engagement and value.
 
 === ORIGINAL CONTENT ===
-Hook: {stage1_result.get('hook', '')}
-Problem: {stage1_result.get('problem', '')}
-Solution: {stage1_result.get('solution', '')}
-Payoff: {stage1_result.get('payoff', '')}
-Claimed Value: {stage1_result.get('value_type', '')}
+{json.dumps(content.get('phrases', []), indent=2)}
 
-=== YOUR VALIDATION TASKS ===
-
-1. VALUE CHECK (CRITICAL):
-   - Is there a SPECIFIC, actionable takeaway?
-   - Can the viewer DO something after watching?
-   - If the solution is vague, MAKE IT SPECIFIC with numbers/steps
-   
-2. HOOK QUALITY:
-   - Does it create a TRUE curiosity gap?
-   - Would YOU stop scrolling for this?
-   
-3. READABILITY:
-   - All numbers as DIGITS (500$, 92%, 3x)
-   - No jargon - 8th grade reading level
-   - Each phrase is self-contained
-
-4. FLOW:
-   - Hook leads naturally to problem?
-   - Problem naturally leads to solution?
-   - Solution delivers on hook's promise?
-
-=== IF CONTENT LACKS VALUE ===
-You MUST add specific details. Examples:
-- Add a percentage: "92% of people..."
-- Add a time frame: "In just 3 days..."
-- Add a technique name: "The 2-minute rule..."
-- Add a specific action: "Write down 3 things..."
+=== YOUR TASKS ===
+1. Ensure GLOBAL relevance (no country-specific content)
+2. Verify each phrase adds VALUE (not fluff)
+3. Check numbers are DIGITS (500$, 92%)
+4. Ensure phrases build on each other
+5. Make hook IRRESISTIBLE
 
 === OUTPUT JSON ===
 {{
-    "hook": "improved hook (8-12 words)",
-    "problem": "improved problem phrase (8-15 words)",
-    "solution": "improved solution with SPECIFIC details (8-15 words)",
-    "payoff": "improved payoff (8-12 words)",
-    "improvements_made": ["list of specific improvements"],
+    "phrases": ["improved phrase 1", "improved phrase 2", ...],
     "value_score": 1-10,
-    "specific_takeaway": "what exact action can viewer take?"
+    "improvements": ["what you improved"]
 }}
 
-OUTPUT JSON ONLY."""
+JSON ONLY."""
 
         response = self.call_ai(prompt, 800, temperature=0.7)
         result = self.parse_json(response)
         
-        if result:
+        if result and result.get('phrases'):
+            content['phrases'] = result['phrases']
+            content['value_score'] = result.get('value_score', 7)
             safe_print(f"   Value Score: {result.get('value_score', 'N/A')}/10")
-            safe_print(f"   Takeaway: {result.get('specific_takeaway', 'N/A')}")
-            
-            # Update stage1 with enhanced content
-            stage1_result['hook'] = result.get('hook', stage1_result.get('hook', ''))
-            stage1_result['problem'] = result.get('problem', stage1_result.get('problem', ''))
-            stage1_result['solution'] = result.get('solution', stage1_result.get('solution', ''))
-            stage1_result['payoff'] = result.get('payoff', stage1_result.get('payoff', ''))
-            stage1_result['value_score'] = result.get('value_score', 5)
-            stage1_result['specific_takeaway'] = result.get('specific_takeaway', '')
         
-        return stage1_result
+        return content
     
-    # =========================================================================
-    # STAGE 3: Generate B-Roll Keywords for EVERY Phrase (including hook!)
-    # =========================================================================
-    def stage3_broll_keywords(self, content: Dict) -> List[str]:
-        """
-        Stage 3: Generate SPECIFIC B-roll keywords for EACH phrase.
-        Hook gets B-roll too - no more blank backgrounds!
-        """
-        safe_print("\n[STAGE 3] Generating B-roll keywords for ALL phrases...")
+    def generate_broll_keywords(self, phrases: List[str]) -> List[str]:
+        """Generate B-roll keywords for each phrase."""
+        safe_print("\n[AI] Generating B-roll keywords...")
         
-        phrases = [
-            content.get('hook', ''),
-            content.get('problem', ''),
-            content.get('solution', ''),
-            content.get('payoff', '')
-        ]
-        phrases = [p for p in phrases if p]  # Remove empty
-        
-        if not phrases:
-            return ["dramatic landscape", "city lights", "success moment", "celebration"]
-        
-        prompt = f"""You are a VISUAL DIRECTOR for viral short videos.
-Select the PERFECT B-roll visual for EACH phrase.
+        prompt = f"""Select the PERFECT B-roll visual for EACH phrase.
 
 === PHRASES ===
-1. HOOK: "{phrases[0] if len(phrases) > 0 else ''}"
-2. PROBLEM: "{phrases[1] if len(phrases) > 1 else ''}"
-3. SOLUTION: "{phrases[2] if len(phrases) > 2 else ''}"
-4. PAYOFF: "{phrases[3] if len(phrases) > 3 else ''}"
+{json.dumps(phrases, indent=2)}
 
-=== VISUAL SELECTION RULES ===
-1. Be SPECIFIC: "close up hands typing on laptop" > "technology"
-2. Match EMOTION: tense visuals for problem, bright for solution
-3. Include PEOPLE when possible: "person celebrating" > "abstract shapes"
-4. Think MOVEMENT: dynamic clips keep attention
+=== RULES ===
+- Be SPECIFIC: "person holding phone in dark room" > "technology"
+- Include EMOTION: tense visuals for problems, bright for solutions
+- Match the CONTENT meaning
 
 === OUTPUT ===
-Return EXACTLY {len(phrases)} keywords as a JSON array:
-["specific keyword for phrase 1", "specific keyword for phrase 2", ...]
+Return exactly {len(phrases)} keywords as JSON array:
+["keyword 1", "keyword 2", ...]
 
 JSON ARRAY ONLY."""
 
-        response = self.call_ai(prompt, 300, temperature=0.8)
+        response = self.call_ai(prompt, 400, temperature=0.8)
         
         try:
             if "[" in response:
                 start = response.index("[")
                 end = response.rindex("]") + 1
                 keywords = json.loads(response[start:end])
-                safe_print(f"   Keywords: {keywords}")
+                safe_print(f"   Keywords: {len(keywords)}")
                 return keywords[:len(phrases)]
         except:
             pass
         
         # Fallback
-        return ["dramatic close up", "person stressed", "solution moment", "success celebration"][:len(phrases)]
+        return ["dramatic scene"] * len(phrases)
     
-    # =========================================================================
-    # STAGE 4: Generate Viral Metadata (Title, Description, Tags)
-    # =========================================================================
-    def stage4_viral_metadata(self, content: Dict) -> Dict:
-        """
-        Stage 4: Generate viral-optimized title, description, hashtags.
-        """
-        safe_print("\n[STAGE 4] Generating viral metadata...")
+    def generate_metadata(self, content: Dict) -> Dict:
+        """Generate viral title, description, hashtags."""
+        safe_print("\n[AI] Generating metadata...")
         
-        prompt = f"""You are a YOUTUBE SHORTS ALGORITHM EXPERT.
-Create metadata that MAXIMIZES discovery and clicks.
+        prompt = f"""Create viral metadata for this content.
 
-=== CONTENT ===
 Topic: {content.get('topic', '')}
-Hook: {content.get('hook', '')}
-Value: {content.get('specific_takeaway', '')}
 Type: {content.get('video_type', 'fact')}
-
-=== TITLE RULES ===
-1. Create CURIOSITY (incomplete loop)
-2. Include NUMBERS when possible
-3. Use POWER WORDS (shocking, secret, always, never)
-4. Under 50 characters
-5. Front-load compelling part
+First phrase: {content.get('phrases', [''])[0]}
 
 === OUTPUT JSON ===
 {{
-    "title": "viral title under 50 chars",
-    "description": "2-3 sentence description with CTA",
-    "hashtags": ["#tag1", "#tag2", "#tag3", "#shorts", "#viral"]
+    "title": "viral title under 50 chars (include numbers if possible)",
+    "description": "2-3 sentence description with global appeal",
+    "hashtags": ["#shorts", "#viral", "#facts", "#mindblown", "#fyp", "#trending"]
 }}
 
 JSON ONLY."""
@@ -465,9 +438,7 @@ JSON ONLY."""
 
 
 class ProVideoRenderer:
-    """
-    Professional video rendering with ALL fixes applied.
-    """
+    """Professional video rendering with all enhancements."""
     
     def __init__(self):
         self.pexels_key = os.environ.get("PEXELS_API_KEY")
@@ -479,7 +450,7 @@ class ProVideoRenderer:
             return None
         
         safe_keyword = "".join(c if c.isalnum() or c == '_' else '_' for c in keyword)[:30]
-        cache_file = BROLL_DIR / f"pro_{safe_keyword}_{index}_{random.randint(1000,9999)}.mp4"
+        cache_file = BROLL_DIR / f"v6_{safe_keyword}_{index}_{random.randint(1000,9999)}.mp4"
         
         try:
             headers = {"Authorization": self.pexels_key}
@@ -487,19 +458,15 @@ class ProVideoRenderer:
             
             response = requests.get(url, headers=headers, timeout=15)
             if response.status_code != 200:
-                safe_print(f"   [!] Pexels error {response.status_code} for '{keyword}'")
                 return None
             
             videos = response.json().get("videos", [])
             if not videos:
-                safe_print(f"   [!] No videos for '{keyword}'")
                 return None
             
-            # Random selection for variety
             video = random.choice(videos)
             video_files = video.get("video_files", [])
             
-            # Get HD quality
             best = None
             for vf in video_files:
                 if vf.get("quality") == "hd" and vf.get("height", 0) >= 720:
@@ -511,7 +478,6 @@ class ProVideoRenderer:
             if not best:
                 return None
             
-            # Download
             video_url = best.get("link")
             video_response = requests.get(video_url, timeout=60, stream=True)
             
@@ -519,7 +485,7 @@ class ProVideoRenderer:
                 for chunk in video_response.iter_content(chunk_size=8192):
                     f.write(chunk)
             
-            safe_print(f"   [OK] B-roll: {keyword[:30]}")
+            safe_print(f"   [OK] B-roll: {keyword[:25]}...")
             return str(cache_file)
             
         except Exception as e:
@@ -527,14 +493,12 @@ class ProVideoRenderer:
             return None
     
     def create_text_overlay(self, text: str, width: int, height: int) -> Image.Image:
-        """Create professional text overlay with clean styling."""
+        """Create professional text overlay."""
         img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
         
-        # Clean text
         text = strip_emojis(text)
         
-        # Find font
         font_paths = [
             "C:/Windows/Fonts/impact.ttf",
             "C:/Windows/Fonts/ariblk.ttf",
@@ -544,11 +508,10 @@ class ProVideoRenderer:
         font_path = next((f for f in font_paths if os.path.exists(f)), None)
         
         try:
-            font = ImageFont.truetype(font_path, 68) if font_path else ImageFont.load_default()
+            font = ImageFont.truetype(font_path, 64) if font_path else ImageFont.load_default()
         except:
             font = ImageFont.load_default()
         
-        # Word wrap
         words = text.split()
         lines = []
         current = []
@@ -566,8 +529,7 @@ class ProVideoRenderer:
         if current:
             lines.append(" ".join(current))
         
-        # Draw centered
-        line_height = 85
+        line_height = 80
         total_height = len(lines) * line_height
         y = (height - total_height) // 2
         
@@ -575,13 +537,11 @@ class ProVideoRenderer:
             bbox = draw.textbbox((0, 0), line, font=font)
             x = (width - (bbox[2] - bbox[0])) // 2
             
-            # Black outline
             for ox in range(-4, 5):
                 for oy in range(-4, 5):
                     if ox != 0 or oy != 0:
                         draw.text((x + ox, y + oy), line, fill=(0, 0, 0, 255), font=font)
             
-            # White text
             draw.text((x, y), line, fill=(255, 255, 255, 255), font=font)
             y += line_height
         
@@ -612,24 +572,17 @@ class ProVideoRenderer:
         return ImageClip(arr, duration=duration, ismask=False)
 
 
-async def generate_voiceover(text: str, voice_config: Dict, output_path: str) -> float:
-    """Generate voiceover using Edge TTS with specific voice config."""
-    voice = voice_config.get("voice", "en-US-AriaNeural")
-    rate = voice_config.get("rate", "+0%")
-    pitch = voice_config.get("pitch", "+0Hz")
+async def generate_voiceover(text: str, video_type: str, output_path: str) -> float:
+    """Generate voiceover using Edge TTS with type-specific voice."""
+    config = VIDEO_TYPES.get(video_type, VIDEO_TYPES["psychology_fact"])
+    voice = config.get("voice", "en-US-AriaNeural")
+    rate = config.get("rate", "+0%")
     
-    safe_print(f"   [TTS] Using voice: {voice} (rate: {rate}, pitch: {pitch})")
+    safe_print(f"   [TTS] Voice: {voice} (rate: {rate})")
     
-    communicate = edge_tts.Communicate(
-        text,
-        voice=voice,
-        rate=rate,
-        pitch=pitch
-    )
-    
+    communicate = edge_tts.Communicate(text, voice=voice, rate=rate, pitch="+0Hz")
     await communicate.save(output_path)
     
-    from moviepy.editor import AudioFileClip
     audio = AudioFileClip(output_path)
     duration = audio.duration
     audio.close()
@@ -639,44 +592,42 @@ async def generate_voiceover(text: str, voice_config: Dict, output_path: str) ->
 
 async def render_video(content: Dict, broll_paths: List[str], video_type: str, output_path: str) -> bool:
     """Render the final video with all enhancements."""
-    safe_print("\n[RENDER] Starting professional video render...")
+    safe_print("\n[RENDER] Starting video render...")
     
-    # Build phrase list - NO DUPLICATES
-    phrases = []
-    for key in ['hook', 'problem', 'solution', 'payoff']:
-        phrase = content.get(key, '')
-        if phrase and phrase not in phrases:  # Prevent duplicates!
-            phrases.append(phrase)
-    
+    phrases = content.get('phrases', [])
     if not phrases:
-        safe_print("[!] No content phrases")
+        safe_print("[!] No phrases")
         return False
     
-    safe_print(f"   Phrases: {len(phrases)}")
-    for i, p in enumerate(phrases):
-        safe_print(f"     {i+1}. {p[:50]}...")
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_phrases = []
+    for p in phrases:
+        if p not in seen:
+            seen.add(p)
+            unique_phrases.append(p)
+    phrases = unique_phrases
     
-    # Generate voiceover with type-specific voice
+    safe_print(f"   Phrases: {len(phrases)}")
+    
+    # Generate voiceover
     full_text = ". ".join(phrases)
     voiceover_path = str(CACHE_DIR / f"vo_{random.randint(1000,9999)}.mp3")
-    voice_config = VOICE_CONFIG.get(video_type, VOICE_CONFIG["psychology_fact"])
     
     try:
-        duration = await generate_voiceover(full_text, voice_config, voiceover_path)
+        duration = await generate_voiceover(full_text, video_type, voiceover_path)
         safe_print(f"   [OK] Voiceover: {duration:.1f}s")
     except Exception as e:
         safe_print(f"   [!] Voiceover failed: {e}")
         return False
     
-    # Calculate ACCURATE phrase timings based on character count
-    # (more accurate than word count for TTS)
+    # Calculate phrase timings
     total_chars = sum(len(p) for p in phrases)
-    
     phrase_durations = []
     for phrase in phrases:
         char_ratio = len(phrase) / total_chars
         phrase_dur = char_ratio * duration
-        phrase_dur = max(phrase_dur, 1.8)  # Minimum 1.8s per phrase
+        phrase_dur = max(phrase_dur, 2.0)
         phrase_durations.append(phrase_dur)
     
     # Scale to exact duration
@@ -685,27 +636,38 @@ async def render_video(content: Dict, broll_paths: List[str], video_type: str, o
         scale = duration / total_calc
         phrase_durations = [d * scale for d in phrase_durations]
     
-    safe_print(f"   Phrase timings: {[f'{d:.1f}s' for d in phrase_durations]}")
+    safe_print(f"   Timings: {[f'{d:.1f}s' for d in phrase_durations]}")
     
-    # Ensure we have B-roll for EVERY phrase
+    # Ensure B-roll for every phrase
     while len(broll_paths) < len(phrases):
         broll_paths.append(None)
+    
+    # Get background music FIRST (before video segments)
+    music_path = None
+    music_mood = VIDEO_TYPES.get(video_type, {}).get("music_mood", "fun")
+    try:
+        from background_music import get_background_music
+        music_path = get_background_music(music_mood)
+        if music_path:
+            safe_print(f"   [OK] Music: {music_mood}")
+    except Exception as e:
+        safe_print(f"   [!] Music error: {e}")
     
     # Create video segments
     renderer = ProVideoRenderer()
     segments = []
+    type_config = VIDEO_TYPES.get(video_type, VIDEO_TYPES["psychology_fact"])
     
     for i, (phrase, broll_path, dur) in enumerate(zip(phrases, broll_paths, phrase_durations)):
-        safe_print(f"   [*] Segment {i+1}/{len(phrases)}: {phrase[:30]}...")
+        safe_print(f"   [*] Segment {i+1}/{len(phrases)}")
         
         layers = []
         
-        # Background - ALWAYS try B-roll first
+        # Background
         if broll_path and os.path.exists(broll_path):
             try:
                 bg = VideoFileClip(broll_path)
                 
-                # Resize to cover
                 bg_ratio = bg.size[0] / bg.size[1]
                 target_ratio = VIDEO_WIDTH / VIDEO_HEIGHT
                 
@@ -718,17 +680,13 @@ async def render_video(content: Dict, broll_paths: List[str], video_type: str, o
                 
                 bg = bg.resize((new_width, new_height))
                 
-                # Center crop
                 x_offset = (new_width - VIDEO_WIDTH) // 2
                 y_offset = (new_height - VIDEO_HEIGHT) // 2
                 bg = bg.crop(x1=x_offset, y1=y_offset, x2=x_offset+VIDEO_WIDTH, y2=y_offset+VIDEO_HEIGHT)
                 
-                # Handle duration
                 if bg.duration < dur:
                     bg = bg.loop(duration=dur)
                 bg = bg.subclip(0, dur)
-                
-                # Darken for text readability
                 bg = bg.fx(vfx.colorx, 0.5)
                 
                 layers.append(bg)
@@ -736,17 +694,8 @@ async def render_video(content: Dict, broll_paths: List[str], video_type: str, o
                 safe_print(f"   [!] B-roll error: {e}")
                 broll_path = None
         
-        # Fallback to gradient if no B-roll
         if not broll_path or not layers:
-            # Type-specific gradients
-            gradients = {
-                "psychology_fact": [(40, 20, 60), (80, 40, 100)],
-                "money_fact": [(20, 50, 30), (40, 100, 60)],
-                "life_hack": [(60, 60, 20), (100, 100, 40)],
-                "scary_fact": [(30, 20, 20), (60, 30, 30)],
-            }
-            colors = gradients.get(video_type, [(40, 40, 60), (80, 80, 100)])
-            
+            colors = type_config.get("gradient", [(40, 40, 60), (80, 80, 100)])
             gradient = Image.new('RGB', (VIDEO_WIDTH, VIDEO_HEIGHT))
             for y in range(VIDEO_HEIGHT):
                 ratio = y / VIDEO_HEIGHT
@@ -765,7 +714,6 @@ async def render_video(content: Dict, broll_paths: List[str], video_type: str, o
         text_clip = text_clip.set_position(('center', 'center'))
         layers.append(text_clip)
         
-        # Compose segment
         segment = CompositeVideoClip(layers, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
         segment = segment.set_duration(dur)
         segments.append(segment)
@@ -783,28 +731,24 @@ async def render_video(content: Dict, broll_paths: List[str], video_type: str, o
         size=(VIDEO_WIDTH, VIDEO_HEIGHT)
     ).set_duration(final_video.duration)
     
-    # Add audio
+    # Add audio - MUSIC FROM START
     vo_clip = AudioFileClip(voiceover_path)
     
-    # Type-specific background music
-    music_clip = None
-    try:
-        from background_music import get_background_music
-        mood = MUSIC_MOODS.get(video_type, "fun")
-        music_path = get_background_music(mood)
-        if music_path and os.path.exists(music_path):
+    if music_path and os.path.exists(music_path):
+        try:
             music_clip = AudioFileClip(music_path)
-            music_clip = music_clip.volumex(0.10)  # Quieter for clarity
-            safe_print(f"   [OK] Music: {mood}")
-    except Exception as e:
-        safe_print(f"   [!] Music error: {e}")
-    
-    # Mix audio
-    if music_clip:
-        if music_clip.duration < final_video.duration:
-            music_clip = music_clip.loop(duration=final_video.duration)
-        music_clip = music_clip.subclip(0, final_video.duration)
-        final_audio = CompositeAudioClip([vo_clip, music_clip])
+            # Set consistent volume from start
+            music_clip = music_clip.volumex(0.15)
+            
+            if music_clip.duration < final_video.duration:
+                music_clip = music_clip.loop(duration=final_video.duration)
+            music_clip = music_clip.subclip(0, final_video.duration)
+            
+            # Mix voiceover and music - both start at 0
+            final_audio = CompositeAudioClip([vo_clip, music_clip])
+        except Exception as e:
+            safe_print(f"   [!] Music mix error: {e}")
+            final_audio = vo_clip
     else:
         final_audio = vo_clip
     
@@ -826,52 +770,49 @@ async def render_video(content: Dict, broll_paths: List[str], video_type: str, o
     # Cleanup
     final_video.close()
     vo_clip.close()
-    if music_clip:
-        music_clip.close()
     
     safe_print(f"   [OK] Created: {output_path}")
     return True
 
 
-async def generate_pro_video(video_type: str = "psychology_fact", run_id: int = None) -> Optional[str]:
-    """
-    Generate a professional video using multi-stage AI chaining.
-    Each video is UNIQUE with fresh AI generation!
-    """
+async def generate_pro_video(video_type: str = None, run_id: int = None) -> Optional[str]:
+    """Generate a professional video using multi-stage AI."""
     if run_id is None:
-        run_id = random.randint(1000, 9999)
+        run_id = random.randint(10000, 99999)
+    
+    # Use weight manager for type selection if not specified
+    if video_type is None:
+        weight_manager = TypeWeightManager()
+        video_type = weight_manager.get_weighted_type()
     
     safe_print("=" * 70)
-    safe_print(f"   PROFESSIONAL VIDEO GENERATOR v5.0")
+    safe_print(f"   PROFESSIONAL VIDEO GENERATOR v6.0")
     safe_print(f"   Type: {video_type} | Run: #{run_id}")
     safe_print("=" * 70)
     
     # Initialize AI
     ai = MultiStageAI()
     if not ai.client and not ai.gemini_model:
-        safe_print("[!] No AI available - check GROQ_API_KEY or GEMINI_API_KEY")
+        safe_print("[!] No AI available")
         return None
     
-    # Stage 1: Generate Topic (FRESH for each video!)
-    stage1 = ai.stage1_generate_topic(video_type, run_id)
-    if not stage1:
-        safe_print("[!] Stage 1 failed")
+    # Stage 1: Generate content
+    content = ai.generate_content(video_type, run_id)
+    if not content or not content.get('phrases'):
+        safe_print("[!] Content generation failed")
         return None
     
-    # Stage 2: Validate and Enhance
-    stage2 = ai.stage2_enhance_content(stage1)
-    if not stage2:
-        safe_print("[!] Stage 2 failed")
-        return None
+    # Stage 2: Enhance content
+    content = ai.enhance_content(content)
     
-    # Stage 3: B-roll Keywords (for ALL phrases including hook!)
-    broll_keywords = ai.stage3_broll_keywords(stage2)
+    # Stage 3: B-roll keywords
+    broll_keywords = ai.generate_broll_keywords(content.get('phrases', []))
     
-    # Stage 4: Viral Metadata
-    metadata = ai.stage4_viral_metadata(stage2)
+    # Stage 4: Metadata
+    metadata = ai.generate_metadata(content)
     
-    # Download B-roll for EVERY phrase
-    safe_print("\n[BROLL] Downloading visuals for ALL phrases...")
+    # Download B-roll
+    safe_print("\n[BROLL] Downloading visuals...")
     renderer = ProVideoRenderer()
     broll_paths = []
     for i, keyword in enumerate(broll_keywords):
@@ -881,14 +822,14 @@ async def generate_pro_video(video_type: str = "psychology_fact", run_id: int = 
     # Render video
     output_path = str(OUTPUT_DIR / f"pro_{video_type}_{run_id}.mp4")
     
-    success = await render_video(stage2, broll_paths, video_type, output_path)
+    success = await render_video(content, broll_paths, video_type, output_path)
     
     if success:
         # Save metadata
         meta_path = output_path.replace('.mp4', '_meta.json')
         with open(meta_path, 'w') as f:
             json.dump({
-                'content': stage2,
+                'content': content,
                 'metadata': metadata,
                 'broll_keywords': broll_keywords,
                 'video_type': video_type,
@@ -896,7 +837,7 @@ async def generate_pro_video(video_type: str = "psychology_fact", run_id: int = 
             }, f, indent=2)
         
         safe_print("\n" + "=" * 70)
-        safe_print("   VIDEO GENERATED SUCCESSFULLY!")
+        safe_print("   VIDEO GENERATED!")
         safe_print(f"   File: {output_path}")
         if metadata:
             safe_print(f"   Title: {metadata.get('title', 'N/A')}")
@@ -908,17 +849,16 @@ async def generate_pro_video(video_type: str = "psychology_fact", run_id: int = 
 
 
 async def upload_video(video_path: str, metadata: Dict) -> Dict:
-    """Upload video to YouTube and Dailymotion."""
+    """Upload video to platforms."""
     results = {"youtube": None, "dailymotion": None}
     
-    title = metadata.get('title', 'Amazing Fact You Need to Know')[:100]
+    title = metadata.get('title', 'Amazing Fact')[:100]
     description = metadata.get('description', 'Follow for more!')[:5000]
-    hashtags = metadata.get('hashtags', ['#shorts', '#viral', '#facts'])
+    hashtags = metadata.get('hashtags', ['#shorts', '#viral'])
     tags = [h.replace('#', '').strip() for h in hashtags if h]
     
     safe_print(f"\n[UPLOAD] Title: {title}")
     
-    # YouTube
     try:
         from youtube_uploader import upload_to_youtube
         result = upload_to_youtube(video_path, title=title, description=description, tags=tags)
@@ -928,18 +868,13 @@ async def upload_video(video_path: str, metadata: Dict) -> Dict:
     except Exception as e:
         safe_print(f"[!] YouTube error: {e}")
     
-    # Dailymotion  
     try:
         from dailymotion_uploader import DailymotionUploader
         dm = DailymotionUploader()
         if dm.is_configured:
             result = dm.upload_video(
-                video_path, 
-                title=title, 
-                description=description, 
-                tags=tags,
-                channel='lifestyle',
-                ai_generated=False
+                video_path, title=title, description=description,
+                tags=tags, channel='lifestyle', ai_generated=False
             )
             if result:
                 results["dailymotion"] = result
@@ -951,12 +886,11 @@ async def upload_video(video_path: str, metadata: Dict) -> Dict:
 
 
 async def main():
-    """Generate professional videos."""
+    """Generate professional videos with type weighting."""
     import argparse
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--type", default="psychology_fact",
-                       choices=["psychology_fact", "money_fact", "life_hack", "scary_fact"])
+    parser.add_argument("--type", default=None, choices=list(VIDEO_TYPES.keys()) + [None])
     parser.add_argument("--count", type=int, default=1)
     parser.add_argument("--upload", action="store_true")
     parser.add_argument("--no-upload", action="store_true")
@@ -964,19 +898,26 @@ async def main():
     
     should_upload = args.upload and not args.no_upload
     
-    safe_print(f"\nGenerating {args.count} professional video(s) of type: {args.type}")
+    safe_print(f"\n{'='*70}")
+    safe_print("   VIRALSHORTS FACTORY v6.0")
+    safe_print(f"   Generating {args.count} video(s)")
+    safe_print(f"   Types: {list(VIDEO_TYPES.keys())}")
+    safe_print(f"{'='*70}")
     
     generated = []
+    weight_manager = TypeWeightManager()
     
     for i in range(args.count):
-        # Each video gets UNIQUE run ID for fresh AI generation
         run_id = int(time.time() * 1000) % 100000 + i
         
+        # Use specified type or weighted selection
+        video_type = args.type if args.type else weight_manager.get_weighted_type()
+        
         safe_print(f"\n{'='*70}")
-        safe_print(f"   VIDEO {i+1}/{args.count}")
+        safe_print(f"   VIDEO {i+1}/{args.count} - Type: {video_type}")
         safe_print(f"{'='*70}")
         
-        path = await generate_pro_video(args.type, run_id)
+        path = await generate_pro_video(video_type, run_id)
         if path:
             meta_path = path.replace('.mp4', '_meta.json')
             metadata = {}
@@ -986,7 +927,6 @@ async def main():
                     metadata = data.get('metadata', {})
             generated.append((path, metadata))
     
-    # Upload if requested
     if should_upload and generated:
         safe_print("\n" + "=" * 70)
         safe_print("   UPLOADING TO PLATFORMS")

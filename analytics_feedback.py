@@ -677,6 +677,82 @@ class FeedbackLoopController:
             "avoid": self.preferences.get("avoid_topics", []),
             "preferred_moods": self.preferences.get("preferred_music_moods", []),
         }
+    
+    def update_type_weights(self) -> Dict[str, float]:
+        """
+        Calculate and update video type weights based on performance.
+        
+        This is the core of our analytics-driven content strategy:
+        - Higher views/engagement = higher weight
+        - More videos of that type will be generated
+        
+        Returns updated weights dict.
+        """
+        from pro_video_generator import VIDEO_TYPES
+        
+        all_videos = self.metadata_store.get_all()
+        
+        if not all_videos:
+            # No data yet - equal weights
+            types = list(VIDEO_TYPES.keys())
+            return {t: 1.0 / len(types) for t in types}
+        
+        # Calculate performance score per type
+        type_scores = {}
+        type_counts = {}
+        
+        for video in all_videos:
+            video_type = video.video_type
+            if not video_type:
+                continue
+            
+            if video_type not in type_scores:
+                type_scores[video_type] = 0
+                type_counts[video_type] = 0
+            
+            type_counts[video_type] += 1
+            
+            # Calculate score from performance
+            if video.performance:
+                views = video.performance.get('views', 0)
+                likes = video.performance.get('likes', 0)
+                comments = video.performance.get('comments', 0)
+                engagement = likes + (comments * 5)  # Comments are more valuable
+                score = views + (engagement * 10)
+                type_scores[video_type] += score
+        
+        # Calculate average scores
+        avg_scores = {}
+        for video_type in type_scores:
+            if type_counts[video_type] > 0:
+                avg_scores[video_type] = type_scores[video_type] / type_counts[video_type]
+            else:
+                avg_scores[video_type] = 1
+        
+        # Include types with no videos yet (give them minimum weight)
+        for video_type in VIDEO_TYPES:
+            if video_type not in avg_scores:
+                avg_scores[video_type] = 1  # Minimum score
+        
+        # Normalize to weights (sum = 1)
+        total = sum(avg_scores.values())
+        weights = {}
+        for video_type, score in avg_scores.items():
+            # Ensure minimum 5% weight for exploration
+            weights[video_type] = max(0.05, score / total) if total > 0 else 1.0 / len(VIDEO_TYPES)
+        
+        # Re-normalize after applying minimums
+        total_weights = sum(weights.values())
+        weights = {t: w / total_weights for t, w in weights.items()}
+        
+        # Save weights file for pro_video_generator to use
+        weights_file = Path("type_weights.json")
+        with open(weights_file, 'w') as f:
+            json.dump(weights, f, indent=2)
+        
+        print(f"📊 Updated type weights: {weights}")
+        
+        return weights
 
 
 # =============================================================================
