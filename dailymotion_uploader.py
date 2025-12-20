@@ -80,12 +80,15 @@ class DailymotionUploader:
         ])
     
     def authenticate(self) -> bool:
-        """Get access token."""
+        """Get access token using password grant (required for uploads)."""
         if not self.is_configured:
-            print("❌ Dailymotion not configured")
+            safe_print("[X] Dailymotion not configured")
             return False
         
         try:
+            # Use password grant for user-level access (required for uploads)
+            safe_print(f"[*] Authenticating with Dailymotion (user: {self.username})...")
+            
             response = requests.post(self.AUTH_URL, data={
                 "grant_type": "password",
                 "client_id": self.api_key,
@@ -99,18 +102,23 @@ class DailymotionUploader:
             
             if response.status_code == 200 and "access_token" in data:
                 self.access_token = data["access_token"]
-                print(f"✅ Dailymotion authenticated (token length: {len(self.access_token)})")
+                safe_print(f"[OK] Dailymotion authenticated (token: {self.access_token[:15]}...)")
                 return True
             else:
-                error = data.get("error_description", data.get("error", response.text[:200]))
-                print(f"❌ Dailymotion auth failed: {error}")
+                error = data.get("error_description", data.get("error", "Unknown error"))
+                safe_print(f"[X] Dailymotion auth failed: {error}")
+                
+                # If password grant fails, try client_credentials as test
+                if "invalid_grant" in str(error).lower():
+                    safe_print("[!] Username/password may be incorrect. Check DAILYMOTION_USERNAME and DAILYMOTION_PASSWORD secrets.")
+                
                 return False
                 
         except requests.exceptions.Timeout:
-            print("❌ Dailymotion auth timeout")
+            safe_print("[X] Dailymotion auth timeout")
             return False
         except Exception as e:
-            print(f"❌ Auth error: {e}")
+            safe_print(f"[X] Auth error: {e}")
             return False
     
     def upload_video(self, video_path: str, title: str, description: str,
