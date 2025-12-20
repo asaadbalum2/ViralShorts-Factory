@@ -211,19 +211,18 @@ class DailymotionUploader:
             else:
                 tags_str = "viral,shorts,trending,facts,lifehacks"
             
+            # Add AI disclosure to description (API doesn't support is_ai_generated field)
+            ai_disclosure = "\n\n[This video was created with AI assistance]" if ai_generated else ""
+            
             video_data = {
                 "url": file_url,
                 "title": title[:255],  # Dailymotion limit
-                "description": description[:3000],
+                "description": (description + ai_disclosure)[:3000],
                 "tags": tags_str,
                 "channel": channel,  # lifestyle, news, music, fun, etc.
                 "published": "true",
                 "is_created_for_kids": "false"
             }
-            
-            # Add AI-generated label if applicable (ethical disclosure)
-            if ai_generated:
-                video_data["is_ai_generated"] = "true"
             
             response = requests.post(
                 self.VIDEO_URL,
