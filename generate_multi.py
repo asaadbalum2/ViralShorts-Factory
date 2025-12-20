@@ -948,7 +948,7 @@ async def main():
                             description=description,
                             tags=tags,
                             channel=dm_channel,  # Proper category!
-                            ai_generated=True  # Ethical disclosure
+                            ai_generated=False  # User preference: no AI disclosure in description
                         )
                         if dm_result:
                             print(f"   ✅ Dailymotion: {dm_result}")

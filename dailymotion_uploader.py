@@ -152,7 +152,7 @@ class DailymotionUploader:
     
     def upload_video(self, video_path: str, title: str, description: str,
                     tags: list = None, channel: str = "lifestyle", 
-                    ai_generated: bool = True) -> Optional[str]:
+                    ai_generated: bool = False) -> Optional[str]:
         """
         Upload video to Dailymotion.
         

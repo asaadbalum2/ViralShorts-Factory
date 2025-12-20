@@ -326,23 +326,65 @@ Return ONLY a JSON array of keywords, one per phrase:
         if not self.enable_enhancements:
             return None
         
-        vignette = self.effects.create_vignette(VIDEO_WIDTH, VIDEO_HEIGHT, 0.25)
-        vignette_clip = ImageClip(np.array(vignette)).set_duration(duration)
-        return vignette_clip
+        try:
+            # Create vignette as RGB (not RGBA) to avoid compositing issues
+            vignette_rgba = self.effects.create_vignette(VIDEO_WIDTH, VIDEO_HEIGHT, 0.25)
+            vignette_array = np.array(vignette_rgba)
+            
+            # Convert RGBA to RGB with alpha pre-multiplication
+            if vignette_array.shape[-1] == 4:
+                alpha = vignette_array[:, :, 3:4] / 255.0
+                rgb = vignette_array[:, :, :3]
+                # Pre-multiply: dark areas become visible, transparent areas become black
+                vignette_rgb = (rgb * alpha).astype(np.uint8)
+            else:
+                vignette_rgb = vignette_array
+            
+            vignette_clip = ImageClip(vignette_rgb).set_duration(duration)
+            return vignette_clip
+        except Exception as e:
+            print(f"   [!] Vignette creation failed: {e}")
+            return None
     
-    def create_progress_bar_clip(self, duration: float) -> VideoClip:
-        """Create animated progress bar overlay."""
+    def create_progress_bar_clip(self, duration: float) -> ImageClip:
+        """Create animated progress bar overlay using pre-rendered frames."""
         if not self.enable_enhancements:
             return None
         
-        def make_frame(t):
-            progress = t / duration
-            frame = self.progress_bar.create_progress_frame(progress, VIDEO_WIDTH)
-            return np.array(frame)
-        
-        clip = VideoClip(make_frame, duration=duration)
-        clip = clip.set_position(("center", 10))  # Top of screen
-        return clip
+        try:
+            # Create a simple colored progress bar using ImageClip approach
+            # Get the progress bar height from style
+            bar_height = 4
+            
+            def make_frame(t):
+                progress = t / duration
+                
+                # Create a simple RGB frame (no alpha to avoid compatibility issues)
+                frame = np.zeros((bar_height + 4, VIDEO_WIDTH, 3), dtype=np.uint8)
+                
+                # Calculate fill width
+                fill_width = int(VIDEO_WIDTH * progress)
+                
+                # Draw background (dark gray)
+                frame[2:bar_height+2, :, :] = [30, 30, 30]
+                
+                # Draw progress fill (gradient from purple to pink)
+                if fill_width > 0:
+                    for x in range(fill_width):
+                        ratio = x / max(fill_width, 1)
+                        r = int(99 + (236 - 99) * ratio)
+                        g = int(102 + (72 - 102) * ratio)
+                        b = int(241 + (153 - 241) * ratio)
+                        frame[2:bar_height+2, x, :] = [r, g, b]
+                
+                return frame
+            
+            clip = VideoClip(make_frame, duration=duration)
+            clip = clip.set_position(("center", 10))  # Top of screen
+            return clip
+        except Exception as e:
+            print(f"   [!] Progress bar creation failed: {e}")
+            return None
 
     async def create_phrase_video_segment(self, phrase: str, broll_path: str,
                                           duration: float, theme) -> CompositeVideoClip:
@@ -393,41 +435,35 @@ Return ONLY a JSON array of keywords, one per phrase:
         return segment
     
     def create_phrase_overlay(self, phrase: str, width: int, height: int, theme) -> Image.Image:
-        """Create MODERN, APPEALING text overlay for a phrase."""
+        """Create CLEAN, READABLE text overlay for short-form video."""
         img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
         
-        # Modern font candidates (prioritize modern, clean fonts)
+        # Bold, impactful fonts (prioritize readability)
         font_candidates = [
-            # Modern sans-serif fonts (Windows)
-            "C:/Windows/Fonts/segoeui.ttf",        # Segoe UI - clean modern
-            "C:/Windows/Fonts/segoeuib.ttf",       # Segoe UI Bold
-            "C:/Windows/Fonts/calibrib.ttf",       # Calibri Bold
-            "C:/Windows/Fonts/verdanab.ttf",       # Verdana Bold
+            "C:/Windows/Fonts/impact.ttf",         # Impact - BEST for short video
             "C:/Windows/Fonts/ariblk.ttf",         # Arial Black
+            "C:/Windows/Fonts/segoeuib.ttf",       # Segoe UI Bold
             # Linux fallbacks
             "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-            "/usr/share/fonts/truetype/ubuntu/Ubuntu-Bold.ttf",
             "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-            # Last resort
-            "C:/Windows/Fonts/arialbd.ttf",
         ]
         font_path = next((f for f in font_candidates if os.path.exists(f)), None)
         
-        # Larger, bolder font for better visibility
+        # Large font for mobile readability (65pt for 1080p)
         try:
-            font = ImageFont.truetype(font_path, 58) if font_path else ImageFont.load_default()
+            font = ImageFont.truetype(font_path, 65) if font_path else ImageFont.load_default()
         except:
             font = ImageFont.load_default()
         
         # Strip emojis
         phrase = strip_emojis(phrase)
         
-        # Word wrap with more padding
+        # Word wrap - shorter lines for mobile
         words = phrase.split()
         lines = []
         current = []
-        max_width = width - 100  # More padding for cleaner look
+        max_width = width - 150  # Wide margins for clean look
         
         for word in words:
             current.append(word)
@@ -441,38 +477,25 @@ Return ONLY a JSON array of keywords, one per phrase:
         if current:
             lines.append(" ".join(current))
         
-        # Get theme accent color (or use default gradient)
-        accent_color = getattr(theme, 'accent_color', (255, 200, 50))  # Golden yellow default
-        
-        # Draw centered with MODERN GLOW EFFECT
-        line_height = 75
-        y = (height - len(lines) * line_height) // 2
+        # Calculate positioning
+        line_height = 85
+        total_text_height = len(lines) * line_height
+        y = (height - total_text_height) // 2
         
         for line in lines:
             bbox = draw.textbbox((0, 0), line, font=font)
             x = (width - (bbox[2] - bbox[0])) // 2
             
-            # MODERN GLOW - Outer glow (accent color)
-            for offset in [5, 4, 3]:
-                glow_alpha = 30 + (5 - offset) * 15
-                glow_color = (accent_color[0], accent_color[1], accent_color[2], glow_alpha)
-                draw.text((x + offset, y + offset), line, fill=glow_color, font=font)
-                draw.text((x - offset, y + offset), line, fill=glow_color, font=font)
-                draw.text((x + offset, y - offset), line, fill=glow_color, font=font)
-                draw.text((x - offset, y - offset), line, fill=glow_color, font=font)
+            # CLEAN TEXT STYLE (no messy glow)
+            # 1. Strong black outline for readability on any background
+            outline_width = 4
+            for ox in range(-outline_width, outline_width + 1):
+                for oy in range(-outline_width, outline_width + 1):
+                    if ox != 0 or oy != 0:
+                        draw.text((x + ox, y + oy), line, fill=(0, 0, 0, 255), font=font)
             
-            # Inner shadow (for depth)
-            draw.text((x + 2, y + 3), line, fill=(0, 0, 0, 200), font=font)
-            
-            # Main text (bright white)
+            # 2. White text on top
             draw.text((x, y), line, fill=(255, 255, 255, 255), font=font)
-            
-            # Highlight effect (top edge shine)
-            try:
-                small_font = ImageFont.truetype(font_path, 56) if font_path else font
-                draw.text((x, y - 1), line, fill=(255, 255, 255, 80), font=small_font)
-            except:
-                pass
             
             y += line_height
         

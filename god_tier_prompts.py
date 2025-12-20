@@ -100,6 +100,19 @@ CTA (2 sec): Question that makes them reflect/comment
 4. Make them feel SMARTER after watching
 5. NO empty promises - if you say "here's how," you MUST explain how
 
+===== SHORT-FORM VIDEO READABILITY (CRITICAL!) =====
+This content will be displayed as TEXT on mobile screens. Optimize for VISUAL READABILITY:
+
+1. NUMBERS AS DIGITS: Always use "500" not "five hundred", "3pm" not "three pm", "$50" not "fifty dollars"
+2. SHORT SENTENCES: Maximum 12 words per sentence. Viewers read while watching.
+3. NO COMPLEX WORDS: Use "use" not "utilize", "get" not "obtain", "show" not "demonstrate"
+4. CONVERSATIONAL: Write like texting a friend, not writing an essay
+5. PUNCHY PHRASES: Each sentence should hit hard. No filler words.
+6. SCANNABLE: Viewer should understand the point in 2 seconds of reading
+
+BAD: "Studies have demonstrated that approximately five hundred individuals..."
+GOOD: "500 people tested this. 73% saw results in 2 weeks."
+
 ===== B-ROLL KEYWORDS =====
 - Highly specific ("person staring at phone in dark room" not "technology")
 - Emotionally matched to content
@@ -243,11 +256,22 @@ BAD: "Viewer feels inspired to be productive"
 - Conversational but confident
 - Numbers and specifics always
 
+===== MOBILE READABILITY (CRITICAL!) =====
+The script will be displayed as TEXT OVERLAY on mobile screens:
+- ALWAYS use digits: "500" not "five hundred", "$20" not "twenty dollars"
+- ALWAYS use symbols: "$", "%", "&" - they're shorter and scannable
+- Keep each phrase under 10 words - this becomes one text screen
+- Use everyday words: "use" not "utilize", "buy" not "purchase"
+- Be specific: "3pm" not "afternoon", "47 people" not "many people"
+
 BAD: "There's a technique you should learn about..."
 GOOD: "The 2-minute rule. If it takes less than 2 minutes... do it NOW."
 
 BAD: "Studies show this really works for most people."
-GOOD: "MIT tested this on 1,200 students. 73% improved in just 2 weeks."
+GOOD: "MIT tested 1,200 students. 73% improved in 2 weeks."
+
+BAD: "You could save approximately five hundred dollars annually."
+GOOD: "Save $500/year with this 1 trick."
 
 Return JSON:
 {{

@@ -161,39 +161,9 @@ jobs:
           DAILYMOTION_PASSWORD: ${{ secrets.DAILYMOTION_PASSWORD }}
           PYTHONUNBUFFERED: "1"
 
-      - name: Upload to Dailymotion (Multi-Platform)
-        if: github.event.inputs.test_only != 'true'
-        continue-on-error: true
-        run: |
-          echo "Uploading to Dailymotion for multi-platform reach..."
-          python -c "
-          import os
-          import glob
-          from dailymotion_uploader import DailymotionUploader
-
-          uploader = DailymotionUploader()
-          if not uploader.is_configured:
-              print('⚠️ Dailymotion not configured - skipping')
-              exit(0)
-
-          videos = glob.glob('output/*.mp4')
-          for video in videos:
-              filename = os.path.basename(video)
-              title = filename.replace('.mp4', '').replace('_', ' ').title()
-              result = uploader.upload_video(
-                  video,
-                  title=title[:255],
-                  description='Follow for more viral content! #shorts #viral',
-                  tags=['viral', 'shorts', 'facts', 'trending']
-              )
-              if result:
-                  print(f'✅ Uploaded to Dailymotion: {result}')
-          "
-        env:
-          DAILYMOTION_API_KEY: ${{ secrets.DAILYMOTION_API_KEY }}
-          DAILYMOTION_API_SECRET: ${{ secrets.DAILYMOTION_API_SECRET }}
-          DAILYMOTION_USERNAME: ${{ secrets.DAILYMOTION_USERNAME }}
-          DAILYMOTION_PASSWORD: ${{ secrets.DAILYMOTION_PASSWORD }}
+      # NOTE: Dailymotion upload is now handled INSIDE generate_multi.py 
+      # with proper AI-generated titles. Removed duplicate step that was
+      # causing duplicate uploads with bad filename-based titles.
 
       - name: Save videos as artifacts (for preview)
         if: always()
