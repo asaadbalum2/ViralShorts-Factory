@@ -97,65 +97,38 @@ jobs:
           mkdir -p assets/backgrounds assets/broll assets/music assets/sfx assets/fonts
           mkdir -p output cache
 
-      - name: Fetch B-roll via Pexels API
-        run: python fetch_broll.py
+      - name: Pre-fetch some B-roll (optional cache)
+        run: python fetch_broll.py || true
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-
-      - name: Generate VIRAL trending questions
-        run: |
-          echo "Generating viral trending questions..."
-          python trending_content.py 100
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         continue-on-error: true
 
-      - name: Fallback - Generate template questions if AI failed
-        run: |
-          if [ ! -f questions.json ] || [ ! -s questions.json ]; then
-            echo "Using fallback questions..."
-            python trending_content.py 50 --no-ai
-          fi
+      # NOTE: Legacy "questions" generation removed
+      # v7.0 is 100% AI-driven - AI decides everything dynamically
 
-      - name: Generate PROFESSIONAL Viral Videos (v6.0)
+      - name: Generate PROFESSIONAL Viral Videos (v7.0 - 100% AI-Driven)
         run: |
           BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
           TEST_ONLY="${{ github.event.inputs.test_only || 'false' }}"
-          USE_V2="${{ github.event.inputs.use_v2 || 'true' }}"
           
           echo "=============================================="
-          echo "   PROFESSIONAL VIDEO GENERATOR v6.0"
-          echo "   6 Video Types with Analytics-Driven Weights"
-          echo "   Longer videos (30-45s) with GLOBAL focus"
+          echo "   VIRALSHORTS FACTORY v7.0"
+          echo "   100% AI-DRIVEN - No Hardcoding"
+          echo "   AI decides: type, length, voice, music"
           echo "=============================================="
           
-          if [ "$USE_V2" = "true" ]; then
-            # Use PRO generator v6.0 with 6 video types
-            # Types: psychology_fact, money_fact, life_hack, statistics_fact, science_fact, motivation
-            TYPES=("psychology_fact" "money_fact" "life_hack" "statistics_fact" "science_fact" "motivation")
+          # v7.0: AI decides EVERYTHING - no hardcoded types
+          for i in $(seq 1 $BATCH_SIZE); do
+            echo ""
+            echo "=== Generating video $i of $BATCH_SIZE ==="
+            echo "AI will decide: category, topic, phrase count, voice, music..."
             
-            for i in $(seq 1 $BATCH_SIZE); do
-              IDX=$((($i - 1) % 6))
-              TYPE=${TYPES[$IDX]}
-              
-              echo ""
-              echo "=== Generating video $i of $BATCH_SIZE (type: $TYPE) ==="
-              
-              if [ "$TEST_ONLY" = "true" ]; then
-                python pro_video_generator.py --type $TYPE --count 1 --no-upload
-              else
-                python pro_video_generator.py --type $TYPE --count 1 --upload
-              fi
-            done
-          else
-            # Fallback to old generator
             if [ "$TEST_ONLY" = "true" ]; then
-              python generate_multi.py --type ai --count $BATCH_SIZE --no-upload
+              python pro_video_generator.py --count 1 --no-upload
             else
-              python generate_multi.py --type ai --count $BATCH_SIZE --upload
+              python pro_video_generator.py --count 1 --upload
             fi
-          fi
+          done
         env:
           AUTO_UPLOAD: ${{ github.event.inputs.test_only != 'true' }}
           DEV_EVALUATE: ${{ github.event.inputs.test_only }}

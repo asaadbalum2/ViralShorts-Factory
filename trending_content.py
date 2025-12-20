@@ -22,13 +22,9 @@ def safe_print(msg):
     except UnicodeEncodeError:
         print(msg.encode('ascii', 'replace').decode('ascii'))
 
-# Try to import trending sources
-try:
-    from pytrends.request import TrendReq
-    PYTRENDS_AVAILABLE = True
-except ImportError:
-    PYTRENDS_AVAILABLE = False
-    safe_print("[!] pytrends not installed. Google Trends disabled.")
+# PyTrends REMOVED - causes compatibility issues
+# Using RSS feed instead (more reliable)
+PYTRENDS_AVAILABLE = False
 
 try:
     import requests
