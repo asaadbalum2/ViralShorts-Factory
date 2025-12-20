@@ -778,17 +778,72 @@ async def generate_pro_video(video_type: str = "psychology_fact") -> Optional[st
     return None
 
 
+async def upload_video(video_path: str, metadata: Dict) -> Dict:
+    """Upload video to YouTube and Dailymotion."""
+    results = {"youtube": None, "dailymotion": None}
+    
+    title = metadata.get('title', 'Amazing Fact You Need to Know')[:100]
+    description = metadata.get('description', 'Follow for more amazing content!')[:5000]
+    hashtags = metadata.get('hashtags', ['#shorts', '#viral', '#facts', '#fyp'])
+    tags = [h.replace('#', '').strip() for h in hashtags if h]
+    
+    safe_print(f"\n[UPLOAD] Title: {title}")
+    
+    # YouTube
+    try:
+        from youtube_uploader import upload_to_youtube
+        result = upload_to_youtube(video_path, title=title, description=description, tags=tags)
+        if result:
+            results["youtube"] = result
+            safe_print(f"[OK] YouTube: {result}")
+    except Exception as e:
+        safe_print(f"[!] YouTube error: {e}")
+    
+    # Dailymotion
+    try:
+        from dailymotion_uploader import DailymotionUploader
+        dm = DailymotionUploader()
+        if dm.is_configured:
+            conn = dm.check_connectivity()
+            if conn.get('status') == 'ok':
+                result = dm.upload_video(
+                    video_path, 
+                    title=title, 
+                    description=description, 
+                    tags=tags,
+                    channel='lifestyle',
+                    ai_generated=False
+                )
+                if result:
+                    results["dailymotion"] = result
+                    safe_print(f"[OK] Dailymotion: {result}")
+    except Exception as e:
+        safe_print(f"[!] Dailymotion error: {e}")
+    
+    return results
+
+
 async def main():
-    """Generate demo videos for review."""
+    """Generate and optionally upload professional videos."""
     import argparse
     
     parser = argparse.ArgumentParser()
     parser.add_argument("--type", default="psychology_fact", 
                        choices=["psychology_fact", "money_fact", "life_hack", "scary_fact"])
     parser.add_argument("--count", type=int, default=1)
+    parser.add_argument("--upload", action="store_true", help="Upload to platforms")
+    parser.add_argument("--no-upload", action="store_true", help="Skip upload")
     args = parser.parse_args()
     
+    should_upload = args.upload and not args.no_upload
+    
     safe_print(f"\nGenerating {args.count} professional video(s)...")
+    if should_upload:
+        safe_print("[MODE] Will upload after generation")
+    else:
+        safe_print("[MODE] Local generation only (no upload)")
+    
+    generated_videos = []
     
     for i in range(args.count):
         safe_print(f"\n{'='*70}")
@@ -798,8 +853,37 @@ async def main():
         path = await generate_pro_video(args.type)
         if path:
             safe_print(f"\n[DONE] Video saved: {path}")
+            
+            # Load metadata
+            meta_path = path.replace('.mp4', '_meta.json')
+            metadata = {}
+            if os.path.exists(meta_path):
+                with open(meta_path) as f:
+                    data = json.load(f)
+                    metadata = data.get('metadata', {})
+            
+            generated_videos.append((path, metadata))
         else:
             safe_print("\n[FAIL] Video generation failed")
+    
+    # Upload if requested
+    if should_upload and generated_videos:
+        safe_print("\n" + "=" * 70)
+        safe_print("   UPLOADING TO PLATFORMS")
+        safe_print("=" * 70)
+        
+        for video_path, metadata in generated_videos:
+            await upload_video(video_path, metadata)
+            
+            # Anti-ban delay between uploads
+            if len(generated_videos) > 1:
+                delay = random.randint(30, 90)
+                safe_print(f"[WAIT] Anti-ban delay: {delay}s")
+                time.sleep(delay)
+    
+    safe_print("\n" + "=" * 70)
+    safe_print(f"   COMPLETE: {len(generated_videos)} videos generated")
+    safe_print("=" * 70)
 
 
 if __name__ == "__main__":

@@ -118,30 +118,41 @@ jobs:
             python trending_content.py 50 --no-ai
           fi
 
-      - name: Generate AI Viral Videos (Multi-Type)
+      - name: Generate PROFESSIONAL Viral Videos (v4.0)
         run: |
-          BATCH_SIZE="${{ github.event.inputs.batch_size || '3' }}"
+          BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
           TEST_ONLY="${{ github.event.inputs.test_only || 'false' }}"
           USE_V2="${{ github.event.inputs.use_v2 || 'true' }}"
           
-          echo "🧠 Generating $BATCH_SIZE AI-powered viral videos..."
-          echo "   Using GOD-TIER prompts for trending, viral topics!"
+          echo "=============================================="
+          echo "   PROFESSIONAL VIDEO GENERATOR v4.0"
+          echo "   Multi-Stage AI Chaining for Maximum Quality"
+          echo "=============================================="
           
           if [ "$USE_V2" = "true" ]; then
-            # Use AI mode - generates TRENDING topics with god-tier prompts
+            # Use PRO generator - multi-stage AI chaining
+            # Rotate through video types for variety
+            TYPES=("psychology_fact" "money_fact" "life_hack" "scary_fact")
+            
+            for i in $(seq 1 $BATCH_SIZE); do
+              IDX=$((($i - 1) % 4))
+              TYPE=${TYPES[$IDX]}
+              
+              echo ""
+              echo "=== Generating video $i of $BATCH_SIZE (type: $TYPE) ==="
+              
+              if [ "$TEST_ONLY" = "true" ]; then
+                python pro_video_generator.py --type $TYPE --count 1 --no-upload
+              else
+                python pro_video_generator.py --type $TYPE --count 1 --upload
+              fi
+            done
+          else
+            # Fallback to old generator
             if [ "$TEST_ONLY" = "true" ]; then
-              echo "TEST MODE - Generating WITHOUT upload..."
               python generate_multi.py --type ai --count $BATCH_SIZE --no-upload
             else
-              echo "Generating WITH upload..."
               python generate_multi.py --type ai --count $BATCH_SIZE --upload
-            fi
-          else
-            # Fallback to quiz-only V1
-            if [ "$TEST_ONLY" = "true" ]; then
-              python script_v2.py --batch $BATCH_SIZE --no-upload
-            else
-              python script_v2.py --batch $BATCH_SIZE --upload
             fi
           fi
         env:
