@@ -658,10 +658,11 @@ async def main():
                         title=strip_emojis(topic.get("topic", "")),
                         hook=strip_emojis(topic.get("hook", "")),
                         main_text=strip_emojis(topic.get("content", "")),
-                        secondary_text=topic.get("call_to_action"),
+                        secondary_text=None,
                         voiceover_script=strip_emojis(f"{topic.get('hook', '')} {topic.get('content', '')}"),
                         broll_keywords=topic.get("broll_keywords", []),
-                        music_mood=topic.get("music_mood", "dramatic")
+                        music_mood=topic.get("music_mood", "dramatic"),
+                        call_to_action=topic.get("call_to_action", "Follow for more!")
                     )
                     
                     output_path = str(OUTPUT_DIR / f"viral_{topic.get('video_type', 'fact')}_{random.randint(1000, 9999)}.mp4")

@@ -39,6 +39,7 @@ class VideoContent:
     music_mood: str = "dramatic"
     percentage_a: int = 0  # Only for WYR
     percentage_b: int = 0  # Only for WYR
+    call_to_action: str = "Follow for more!"  # CTA for engagement
 
 
 # =============================================================================
