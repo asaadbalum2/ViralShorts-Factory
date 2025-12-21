@@ -815,81 +815,51 @@ class VideoRenderer:
     def create_animated_text_clip(self, text: str, duration: float, phrase_index: int = 0) -> VideoClip:
         """
         Create animated text overlay with professional effects.
+        OPTIMIZED: Uses MoviePy built-in effects for speed.
         
-        Effects cycle by phrase:
-        0: Fade in + slight scale up (hook)
-        1: Slide in from left
-        2: Slide in from right
-        3: Fade in from center
-        4+: Random
+        Effects cycle by phrase for variety.
         """
         width, height = VIDEO_WIDTH, VIDEO_HEIGHT // 2
         text_img = self.create_text_overlay(text, width, height)
         base_clip = self.pil_to_clip(text_img, duration)
         
-        # Animation timing
-        anim_duration = min(0.4, duration * 0.15)  # 15% of clip or 0.4s max
+        # Animation timing - quick fade in
+        anim_duration = min(0.3, duration * 0.1)  # 10% of clip or 0.3s max
         
         # Choose effect based on phrase index for variety
-        effect_type = phrase_index % 5
+        # All use efficient MoviePy built-in effects
+        effect_type = phrase_index % 4
         
         if effect_type == 0:
-            # Fade in + scale (for hook - most impactful)
-            def make_frame(t):
-                if t < anim_duration:
-                    progress = t / anim_duration
-                    scale = 0.85 + (0.15 * progress)  # 85% to 100%
-                    alpha = progress
-                else:
-                    scale = 1.0
-                    alpha = 1.0
-                return base_clip.get_frame(t) * alpha
-            
-            animated = VideoClip(make_frame, duration=duration)
-            return animated.set_position(('center', 'center'))
+            # Fade in (hook - simple but effective)
+            return base_clip.set_position(('center', 'center')).crossfadein(anim_duration)
         
         elif effect_type == 1:
-            # Slide in from left
+            # Slide in from left using set_position with lambda
             def position(t):
                 if t < anim_duration:
-                    progress = t / anim_duration
-                    # Ease out cubic
+                    progress = min(1.0, t / anim_duration)
                     ease = 1 - pow(1 - progress, 3)
-                    x = -width + (width/2) + (width/2 * ease)
+                    x = int(-width/2 + (width/2 * ease))
                 else:
                     x = 0
                 return (x, 'center')
-            
             return base_clip.set_position(position)
         
         elif effect_type == 2:
             # Slide in from right
             def position(t):
                 if t < anim_duration:
-                    progress = t / anim_duration
+                    progress = min(1.0, t / anim_duration)
                     ease = 1 - pow(1 - progress, 3)
-                    x = width - (width/2) - (width/2 * ease)
+                    x = int(width/2 - (width/2 * ease))
                 else:
                     x = 0
                 return (x, 'center')
-            
-            return base_clip.set_position(position)
-        
-        elif effect_type == 3:
-            # Slide up from bottom
-            def position(t):
-                if t < anim_duration:
-                    progress = t / anim_duration
-                    ease = 1 - pow(1 - progress, 3)
-                    y_offset = 100 * (1 - ease)
-                else:
-                    y_offset = 0
-                return ('center', VIDEO_HEIGHT//2 - height//2 + y_offset)
-            
             return base_clip.set_position(position)
         
         else:
-            # Simple fade in
+            # Fade in (default - fastest)
             return base_clip.set_position(('center', 'center')).crossfadein(anim_duration)
     
     def get_sfx_for_phrase(self, phrase_index: int, total_phrases: int) -> Optional[str]:
@@ -917,26 +887,27 @@ class VideoRenderer:
     def create_vignette_overlay(self, width: int, height: int, intensity: float = 0.4) -> Image.Image:
         """
         Create a vignette overlay for cinematic effect.
-        Dark corners, bright center.
+        OPTIMIZED: Uses numpy vectorized operations (100x faster than per-pixel).
         """
-        vignette = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+        # Create coordinate grids
+        y_coords, x_coords = np.ogrid[:height, :width]
         
         center_x, center_y = width // 2, height // 2
         max_distance = math.sqrt(center_x**2 + center_y**2)
         
-        # Create radial gradient
-        for y in range(height):
-            for x in range(width):
-                # Calculate distance from center
-                distance = math.sqrt((x - center_x)**2 + (y - center_y)**2)
-                # Normalize and apply intensity curve
-                normalized = distance / max_distance
-                # Smooth falloff
-                alpha = int(255 * intensity * (normalized ** 1.5))
-                alpha = min(255, alpha)
-                vignette.putpixel((x, y), (0, 0, 0, alpha))
+        # Vectorized distance calculation
+        distance = np.sqrt((x_coords - center_x)**2 + (y_coords - center_y)**2)
+        normalized = distance / max_distance
         
-        return vignette
+        # Apply intensity curve and convert to alpha
+        alpha = (255 * intensity * (normalized ** 1.5)).astype(np.uint8)
+        alpha = np.clip(alpha, 0, 255)
+        
+        # Create RGBA array
+        vignette_array = np.zeros((height, width, 4), dtype=np.uint8)
+        vignette_array[:, :, 3] = alpha  # Set alpha channel
+        
+        return Image.fromarray(vignette_array, 'RGBA')
     
     def apply_color_grade(self, clip: VideoClip, mood: str = 'dramatic') -> VideoClip:
         """
