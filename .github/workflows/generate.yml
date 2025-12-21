@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       batch_size:
-        description: 'Number of videos to generate'
+        description: 'Total videos per batch (BEST goes to YouTube)'
         required: false
-        default: '1'
+        default: '8'
       test_only:
         description: 'Test mode - generate but DO NOT upload (saves quota)'
         required: false
@@ -23,21 +23,10 @@ on:
         options:
           - 'false'
           - 'true'
-      use_v2:
-        description: 'Use V2 professional generator'
-        required: false
-        default: 'true'
-        type: choice
-        options:
-          - 'true'
-          - 'false'
-      dailymotion_extra:
-        description: 'Extra videos for Dailymotion only (DM has higher limit)'
-        required: false
-        default: '7'
+
   # ENABLED - Production mode active!
   # Runs 6 times per day (UTC time)
-  # v7.0: 100% AI-driven video generation
+  # v7.1: Batch generation with strategic YouTube selection
   schedule:
     - cron: '0 4 * * *'   # 4 AM UTC
     - cron: '0 8 * * *'   # 8 AM UTC
@@ -108,63 +97,38 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         continue-on-error: true
 
-      # NOTE: Legacy "questions" generation removed
-      # v7.0 is 100% AI-driven - AI decides everything dynamically
-
-      - name: Generate PROFESSIONAL Viral Videos (v7.0 - 100% AI-Driven)
+      # ====================================================================
+      # v7.1: BATCH GENERATION WITH STRATEGIC YOUTUBE SELECTION
+      # - Generate 8 videos with ENFORCED VARIETY (different categories/topics/voices/music)
+      # - AI scores each video (1-10)
+      # - BEST video is selected for YouTube (strategic selection)
+      # - ALL videos go to Dailymotion
+      # ====================================================================
+      - name: Generate Videos (v7.1 - Batch with Strategic YouTube Selection)
         run: |
-          # PLATFORM LIMITS:
-          # - YouTube: ~6 videos/day (safe limit) = 1 per run × 6 runs
-          # - Dailymotion: ~50 videos/day = 8 per run × 6 runs
-          
-          # Set defaults for scheduled runs (inputs are empty on schedule trigger)
-          YOUTUBE_BATCH="${BATCH_SIZE:-1}"
-          DAILYMOTION_EXTRA="${DM_EXTRA:-7}"
-          TEST_ONLY="${TEST_MODE:-false}"
+          # Set defaults for scheduled runs
+          BATCH="${{ github.event.inputs.batch_size }}"
+          BATCH="${BATCH:-8}"
+          TEST_ONLY="${{ github.event.inputs.test_only }}"
+          TEST_ONLY="${TEST_ONLY:-false}"
           
           echo "=============================================="
-          echo "   VIRALSHORTS FACTORY v7.0"
-          echo "   100% AI-DRIVEN - Platform Optimized"
-          echo "   YouTube: $YOUTUBE_BATCH videos (safe limit)"
-          echo "   Dailymotion: +$DAILYMOTION_EXTRA extra videos"
+          echo "   VIRALSHORTS FACTORY v7.1"
+          echo "   100% AI-DRIVEN + VARIETY ENFORCED"
+          echo "   Batch: $BATCH videos"
+          echo "   Strategic YouTube: BEST video by AI score"
           echo "=============================================="
           
-          # Generate videos for YouTube (uploaded to BOTH platforms)
-          for i in $(seq 1 $YOUTUBE_BATCH); do
-            echo ""
-            echo "=== Video $i (YouTube + Dailymotion) ==="
-            
-            if [ "$TEST_ONLY" = "true" ]; then
-              python pro_video_generator.py --count 1 --no-upload
-            else
-              python pro_video_generator.py --count 1 --upload
-            fi
-          done
-          
-          # Generate EXTRA videos for Dailymotion ONLY (maximize DM uploads)
-          if [ "$TEST_ONLY" != "true" ] && [ "$DAILYMOTION_EXTRA" -gt 0 ]; then
-            echo ""
-            echo "=== Generating $DAILYMOTION_EXTRA extra videos for Dailymotion ==="
-            
-            for i in $(seq 1 $DAILYMOTION_EXTRA); do
-              echo ""
-              echo "=== Dailymotion-only video $i of $DAILYMOTION_EXTRA ==="
-              
-              # Generate video
-              python pro_video_generator.py --count 1 --no-upload
-              
-              # Upload to Dailymotion ONLY (skip YouTube)
-              python upload_to_dailymotion_only.py
-            done
+          if [ "$TEST_ONLY" = "true" ]; then
+            echo "TEST MODE: Generating without uploads"
+            python pro_video_generator.py --count $BATCH --no-upload
+          else
+            echo "PRODUCTION MODE: Generating with strategic uploads"
+            # --strategic-youtube: AI picks the BEST video for YouTube
+            # All videos go to Dailymotion
+            python pro_video_generator.py --count $BATCH --upload --strategic-youtube
           fi
         env:
-          # Input parameters (with defaults for scheduled runs)
-          BATCH_SIZE: ${{ github.event.inputs.batch_size }}
-          DM_EXTRA: ${{ github.event.inputs.dailymotion_extra }}
-          TEST_MODE: ${{ github.event.inputs.test_only }}
-          # API Keys
-          AUTO_UPLOAD: ${{ github.event.inputs.test_only != 'true' }}
-          DEV_EVALUATE: ${{ github.event.inputs.test_only }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
@@ -177,17 +141,13 @@ jobs:
           DAILYMOTION_PASSWORD: ${{ secrets.DAILYMOTION_PASSWORD }}
           PYTHONUNBUFFERED: "1"
 
-      # NOTE: Dailymotion upload is now handled INSIDE generate_multi.py 
-      # with proper AI-generated titles. Removed duplicate step that was
-      # causing duplicate uploads with bad filename-based titles.
-
       - name: Save videos as artifacts (for preview)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: generated-videos
           path: output/*.mp4
-          retention-days: 3  # Reduced to save storage (auto-cleanup)
+          retention-days: 3
           if-no-files-found: ignore
 
       - name: Verify video generation
@@ -197,30 +157,7 @@ jobs:
           VIDEO_COUNT=$(ls output/*.mp4 2>/dev/null | wc -l)
           echo "video_count=$VIDEO_COUNT" >> $GITHUB_OUTPUT
           
-          echo "Diagnostic info:"
-          echo "   - Questions file exists: $([ -f questions.json ] && echo 'YES' || echo 'NO')"
-          if [ -f questions.json ]; then
-            Q_COUNT=$(python -c "import json; print(len(json.load(open('questions.json'))))" 2>/dev/null || echo 0)
-            echo "   - Questions count: $Q_COUNT"
-            
-            python -c "
-          import json
-          qs = json.load(open('questions.json'))[:3]
-          for i, q in enumerate(qs):
-              a = q.get('option_a', '')
-              b = q.get('option_b', '')
-              print(f'   - Q{i+1}: A={len(a)} chars, B={len(b)} chars')
-          " 2>/dev/null || true
-          fi
-          
-          if ls cache/*.mp3 2>/dev/null; then
-            echo "   - Audio files: $(ls cache/*.mp3 | wc -l)"
-          else
-            echo "   - Audio files: 0 (TTS may have failed)"
-          fi
-          
           if [ "$VIDEO_COUNT" -eq 0 ]; then
-            echo ""
             echo "CRITICAL: No videos were generated!"
             echo "::error::VIDEO GENERATION FAILED - Check logs above for errors"
             exit 1
@@ -241,7 +178,7 @@ jobs:
         if: github.event.inputs.test_only != 'true'
         continue-on-error: true
         run: |
-          echo "📊 Collecting analytics data..."
+          echo "Collecting analytics data..."
           python -c "
           import os
           from analytics_feedback import FeedbackLoopController
@@ -251,20 +188,20 @@ jobs:
               
               # Fetch latest performance data
               updated = controller.update_all_performance()
-              print(f'📈 Updated performance for {updated} videos')
+              print(f'Updated performance for {updated} videos')
               
               # Run analysis if we have enough data
               all_videos = controller.metadata_store.get_all()
               if len([v for v in all_videos if v.performance]) >= 5:
-                  print('🧠 Running AI analysis...')
+                  print('Running AI analysis...')
                   insights = controller.run_analysis()
                   if insights.get('key_insight'):
-                      print(f'💡 Key Insight: {insights[\"key_insight\"]}')
+                      print(f'Key Insight: {insights[\"key_insight\"]}')
               else:
-                  print('📝 Not enough data for analysis yet (need 5+ videos with views)')
+                  print('Not enough data for analysis yet (need 5+ videos with views)')
                   
           except Exception as e:
-              print(f'⚠️ Analytics error: {e}')
+              print(f'Analytics error: {e}')
           "
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -274,23 +211,22 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## 🎬 ViralShorts Factory - Run Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## ViralShorts Factory v7.1 - Run Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
-          echo "**Videos Generated:** ${{ github.event.inputs.batch_size || '3' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Batch Size:** ${{ github.event.inputs.batch_size || '8' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 📺 Platforms" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ YouTube Shorts: Uploaded automatically" >> $GITHUB_STEP_SUMMARY
-          echo "- ✅ Dailymotion: Uploaded automatically" >> $GITHUB_STEP_SUMMARY
+          echo "### v7.1 Features" >> $GITHUB_STEP_SUMMARY
+          echo "- Batch generation with VARIETY ENFORCEMENT" >> $GITHUB_STEP_SUMMARY
+          echo "- Strategic YouTube selection (BEST video by AI score)" >> $GITHUB_STEP_SUMMARY
+          echo "- All videos to Dailymotion" >> $GITHUB_STEP_SUMMARY
+          echo "- 100% AI-driven (category, topic, voice, music)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### ⚡ Features Used" >> $GITHUB_STEP_SUMMARY
-          echo "- 🧠 AI-generated trending topics (GROQ)" >> $GITHUB_STEP_SUMMARY
-          echo "- 🎬 Topic-specific B-roll (Pexels)" >> $GITHUB_STEP_SUMMARY
-          echo "- 🎵 Dynamic background music" >> $GITHUB_STEP_SUMMARY  
-          echo "- 🛡️ Anti-ban measures (random delays, unique fingerprints)" >> $GITHUB_STEP_SUMMARY
-          echo "- 📊 Analytics feedback loop" >> $GITHUB_STEP_SUMMARY
+          echo "### Platforms" >> $GITHUB_STEP_SUMMARY
+          echo "- YouTube Shorts: Best video selected by AI" >> $GITHUB_STEP_SUMMARY
+          echo "- Dailymotion: All videos uploaded" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 🔗 Channels" >> $GITHUB_STEP_SUMMARY
+          echo "### Channels" >> $GITHUB_STEP_SUMMARY
           echo "- YouTube: https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY
           echo "- Dailymotion: https://www.dailymotion.com/asaadbalum2" >> $GITHUB_STEP_SUMMARY

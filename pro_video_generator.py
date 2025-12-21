@@ -1,17 +1,16 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
-ViralShorts Factory - PROFESSIONAL Video Generator v7.0
+ViralShorts Factory - PROFESSIONAL Video Generator v7.1
 ========================================================
 
 100% AI-DRIVEN - NO HARDCODING!
+ENFORCED VARIETY - Every video in a batch MUST be different!
 
 Core Philosophy:
 - Master Prompt -> AI -> Answer -> Evaluation -> AI -> Refined Answer
 - AI decides: video type, phrase count, content length, music mood, voice style
-- AI evaluates: value delivery, viral potential, comprehensiveness
-- Everything flows through AI, nothing is hardcoded
-
-This system asks AI for EVERYTHING and only uses hardcoded values as absolute fallbacks.
+- VARIETY ENFORCED: Track generated topics/voices/music to prevent repetition
+- Strategic Selection: Score all videos and pick BEST for YouTube
 """
 
 import os
@@ -23,7 +22,7 @@ import random
 import time
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import numpy as np
 import requests
 
@@ -53,6 +52,42 @@ CACHE_DIR = Path("./cache")
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 
+# ========================================================================
+# BATCH VARIETY TRACKER - Prevents repetition across batch runs
+# ========================================================================
+@dataclass
+class BatchTracker:
+    """Tracks what's been generated in this batch to enforce variety."""
+    used_categories: List[str] = field(default_factory=list)
+    used_topics: List[str] = field(default_factory=list)
+    used_voices: List[str] = field(default_factory=list)
+    used_music: List[str] = field(default_factory=list)
+    video_scores: List[Tuple[str, float, Dict]] = field(default_factory=list)
+    
+    def add_video(self, path: str, score: float, metadata: Dict):
+        """Add a generated video with its score."""
+        self.video_scores.append((path, score, metadata))
+    
+    def get_best_video_for_youtube(self) -> Optional[Tuple[str, Dict]]:
+        """Get the highest-scoring video for YouTube upload."""
+        if not self.video_scores:
+            return None
+        # Sort by score descending
+        sorted_videos = sorted(self.video_scores, key=lambda x: x[1], reverse=True)
+        best_path, best_score, best_meta = sorted_videos[0]
+        safe_print(f"\n[SELECTION] Best video for YouTube: score={best_score}/10")
+        safe_print(f"   Path: {best_path}")
+        return (best_path, best_meta)
+    
+    def get_all_videos(self) -> List[Tuple[str, Dict]]:
+        """Get all videos for Dailymotion upload."""
+        return [(path, meta) for path, score, meta in self.video_scores]
+
+
+# Global batch tracker (reset for each batch run)
+BATCH_TRACKER = BatchTracker()
+
+
 def safe_print(msg: str):
     """Print with fallback for Windows encoding issues."""
     try:
@@ -75,11 +110,41 @@ def strip_emojis(text: str) -> str:
     return emoji_pattern.sub('', text).strip()
 
 
+# ========================================================================
+# ALL AVAILABLE OPTIONS - AI picks from these, variety enforced
+# ========================================================================
+ALL_CATEGORIES = [
+    "psychology", "finance", "productivity", "health", 
+    "relationships", "science", "technology", "motivation",
+    "life_hacks", "history", "statistics", "mysteries"
+]
+
+ALL_VOICES = {
+    'en-US-AriaNeural': {'rate': '+8%', 'style': 'energetic'},
+    'en-US-JennyNeural': {'rate': '-3%', 'style': 'calm'},
+    'en-US-GuyNeural': {'rate': '-5%', 'style': 'mysterious'},
+    'en-US-DavisNeural': {'rate': '+0%', 'style': 'authoritative'},
+    'en-US-ChristopherNeural': {'rate': '-3%', 'style': 'dramatic'},
+    'en-AU-WilliamNeural': {'rate': '+3%', 'style': 'friendly'},
+    'en-GB-RyanNeural': {'rate': '+0%', 'style': 'professional'},
+    'en-CA-LiamNeural': {'rate': '+5%', 'style': 'upbeat'},
+}
+
+ALL_MUSIC = {
+    'upbeat': 'bensound-happyrock.mp3',
+    'dramatic': 'bensound-epic.mp3',
+    'mysterious': 'bensound-ukulele.mp3',
+    'inspirational': 'bensound-energy.mp3',
+    'chill': 'bensound-creativeminds.mp3',
+    'intense': 'bensound-actionable.mp3',
+}
+
+
 class MasterAI:
     """
-    100% AI-Driven Content System
+    100% AI-Driven Content System with ENFORCED VARIETY
     
-    NO HARDCODING. Everything is decided by AI through chained prompts.
+    Uses BatchTracker to ensure no repetition in category/topic/voice/music.
     """
     
     def __init__(self):
@@ -139,18 +204,35 @@ class MasterAI:
         except:
             return {}
     
-    # =========================================================================
-    # STAGE 1: AI Decides What Type of Video to Create
-    # =========================================================================
-    def stage1_decide_video_concept(self, hint: str = None) -> Dict:
+    # ========================================================================
+    # STAGE 1: AI Decides What Type of Video to Create (with VARIETY ENFORCEMENT)
+    # ========================================================================
+    def stage1_decide_video_concept(self, hint: str = None, batch_tracker: BatchTracker = None) -> Dict:
         """
         AI decides EVERYTHING about the video concept.
-        No hardcoded types - AI generates based on what's trending/viral.
+        VARIETY ENFORCED: Avoids categories/topics already used in this batch.
         """
         safe_print("\n[STAGE 1] AI deciding video concept...")
         
-        unique_seed = f"{time.time()}_{random.random()}"
+        # Build exclusion list from batch tracker
+        exclude_categories = []
+        exclude_topics = []
+        if batch_tracker:
+            exclude_categories = batch_tracker.used_categories[-5:]  # Last 5 used
+            exclude_topics = batch_tracker.used_topics[-10:]  # Last 10 topics
+        
+        available_categories = [c for c in ALL_CATEGORIES if c not in exclude_categories]
+        if not available_categories:
+            available_categories = ALL_CATEGORIES  # Reset if all used
+        
+        unique_seed = f"{time.time()}_{random.random()}_{random.randint(10000,99999)}"
         hint_text = f"User hint: {hint}" if hint else "No specific hint - create something viral and valuable"
+        
+        exclude_text = ""
+        if exclude_categories:
+            exclude_text += f"\n\n**CRITICAL - DO NOT USE these categories (already used in batch):** {exclude_categories}"
+        if exclude_topics:
+            exclude_text += f"\n**DO NOT USE these topics (already used):** {exclude_topics[:5]}"
         
         prompt = f"""You are a VIRAL CONTENT STRATEGIST for short-form video (YouTube Shorts, TikTok).
 Your job is to decide what video to create that will get MAXIMUM views while delivering REAL value.
@@ -158,20 +240,21 @@ Your job is to decide what video to create that will get MAXIMUM views while del
 UNIQUE GENERATION ID: {unique_seed}
 DATE: {time.strftime('%B %d, %Y, %A')}
 {hint_text}
+{exclude_text}
+
+=== AVAILABLE CATEGORIES (pick ONE from this list ONLY) ===
+{available_categories}
 
 === YOUR DECISION TASKS ===
 
-1. **VIDEO CATEGORY**: What category will perform best right now?
-   Consider: psychology, finance, life hacks, science, motivation, relationships, 
-   productivity, health, technology, history, statistics, mysteries, etc.
-   Pick ONE that you believe will be most viral TODAY.
-
+1. **VIDEO CATEGORY**: Pick from the AVAILABLE list above (NOT the excluded ones!)
+   
 2. **SPECIFIC TOPIC**: Within that category, what specific topic?
-   Must be: Surprising, valuable, shareable, globally relevant
+   - Must be: Surprising, valuable, shareable, globally relevant
+   - MUST BE UNIQUE - no generic topics!
 
-3. **CONTENT LENGTH**: How many phrases/sections should the video have?
-   Consider: For simple facts = 4-5 phrases, for tutorials = 6-8 phrases
-   Match length to content complexity. Longer = more value, but must stay engaging.
+3. **CONTENT LENGTH**: How many phrases/sections? (4-8)
+   - Match length to content complexity
 
 4. **VOICE STYLE**: What voice/energy for the narration?
    Options: energetic, calm, mysterious, authoritative, friendly, dramatic
@@ -184,36 +267,49 @@ DATE: {time.strftime('%B %d, %Y, %A')}
 
 === OUTPUT JSON ===
 {{
-    "category": "the video category",
-    "specific_topic": "the specific topic (5-10 words)",
+    "category": "MUST be from available list",
+    "specific_topic": "the specific topic (5-10 words) - BE CREATIVE AND UNIQUE",
     "why_this_topic": "why this will be viral and valuable",
-    "phrase_count": 5,  // number between 4-8 based on content needs
+    "phrase_count": 5,
     "voice_style": "energetic/calm/mysterious/etc",
     "music_mood": "upbeat/dramatic/mysterious/etc",
     "target_duration_seconds": 30,
     "global_relevance": "why this works worldwide"
 }}
 
-OUTPUT JSON ONLY. Be creative and strategic!"""
+OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
 
-        response = self.call_ai(prompt, 800, temperature=0.95)
+        response = self.call_ai(prompt, 800, temperature=0.98)  # Higher temp for variety
         result = self.parse_json(response)
         
         if result:
+            category = result.get('category', '')
+            topic = result.get('specific_topic', '')
+            
+            # Force variety if AI ignored exclusions
+            if category in exclude_categories and available_categories:
+                result['category'] = random.choice(available_categories)
+                safe_print(f"   [VARIETY] Forced category change: {category} -> {result['category']}")
+            
+            # Track what we're using
+            if batch_tracker:
+                batch_tracker.used_categories.append(result.get('category', ''))
+                batch_tracker.used_topics.append(result.get('specific_topic', ''))
+            
             safe_print(f"   Category: {result.get('category', 'N/A')}")
             safe_print(f"   Topic: {result.get('specific_topic', 'N/A')}")
             safe_print(f"   Phrases: {result.get('phrase_count', 'N/A')}")
+            safe_print(f"   Voice: {result.get('voice_style', 'N/A')}")
+            safe_print(f"   Music: {result.get('music_mood', 'N/A')}")
             safe_print(f"   Duration: ~{result.get('target_duration_seconds', 'N/A')}s")
         
         return result
     
-    # =========================================================================
+    # ========================================================================
     # STAGE 2: AI Creates the Content Based on Its Own Decisions
-    # =========================================================================
+    # ========================================================================
     def stage2_create_content(self, concept: Dict) -> Dict:
-        """
-        AI creates the actual content based on the concept it decided.
-        """
+        """AI creates the actual content based on the concept it decided."""
         safe_print("\n[STAGE 2] AI creating content...")
         
         phrase_count = concept.get('phrase_count', 5)
@@ -276,14 +372,11 @@ OUTPUT JSON ONLY. Make every phrase count!"""
         
         return result
     
-    # =========================================================================
+    # ========================================================================
     # STAGE 3: AI Evaluates and Enhances the Content
-    # =========================================================================
+    # ========================================================================
     def stage3_evaluate_enhance(self, content: Dict) -> Dict:
-        """
-        AI evaluates its own content and improves it.
-        Master Prompt -> AI -> Answer -> Evaluation Prompt -> AI -> Better Answer
-        """
+        """AI evaluates its own content and improves it."""
         safe_print("\n[STAGE 3] AI evaluating and enhancing...")
         
         phrases = content.get('phrases', [])
@@ -350,9 +443,9 @@ OUTPUT JSON ONLY."""
         
         return content
     
-    # =========================================================================
+    # ========================================================================
     # STAGE 4: AI Generates B-Roll Keywords
-    # =========================================================================
+    # ========================================================================
     def stage4_broll_keywords(self, phrases: List[str]) -> List[str]:
         """AI generates visual keywords for each phrase."""
         safe_print("\n[STAGE 4] AI generating visual keywords...")
@@ -389,9 +482,9 @@ JSON ARRAY ONLY."""
         
         return ["dramatic scene"] * len(phrases)
     
-    # =========================================================================
+    # ========================================================================
     # STAGE 5: AI Generates Metadata
-    # =========================================================================
+    # ========================================================================
     def stage5_metadata(self, content: Dict) -> Dict:
         """AI generates viral metadata."""
         safe_print("\n[STAGE 5] AI generating metadata...")
@@ -423,25 +516,63 @@ JSON ONLY."""
         
         return result
     
-    # =========================================================================
-    # STAGE 6: AI Decides Voice and Music Based on Content
-    # =========================================================================
-    def get_voice_config(self, concept: Dict) -> Dict:
-        """Get voice configuration based on AI-decided style."""
+    # ========================================================================
+    # STAGE 6: Get Voice and Music with VARIETY ENFORCEMENT
+    # ========================================================================
+    def get_voice_config(self, concept: Dict, batch_tracker: BatchTracker = None) -> Dict:
+        """Get voice configuration with variety enforcement."""
         voice_style = concept.get('voice_style', 'energetic').lower()
         
-        # Map styles to voices (these are technical mappings, not content)
-        voice_map = {
-            'energetic': ('en-US-AriaNeural', '+8%'),
-            'calm': ('en-US-JennyNeural', '-3%'),
-            'mysterious': ('en-US-GuyNeural', '-5%'),
-            'authoritative': ('en-US-DavisNeural', '+0%'),
-            'friendly': ('en-US-AriaNeural', '+5%'),
-            'dramatic': ('en-US-ChristopherNeural', '-3%'),
+        # Map styles to preferred voices
+        style_to_voices = {
+            'energetic': ['en-US-AriaNeural', 'en-CA-LiamNeural'],
+            'calm': ['en-US-JennyNeural', 'en-GB-RyanNeural'],
+            'mysterious': ['en-US-GuyNeural', 'en-US-DavisNeural'],
+            'authoritative': ['en-US-DavisNeural', 'en-GB-RyanNeural'],
+            'friendly': ['en-AU-WilliamNeural', 'en-US-AriaNeural'],
+            'dramatic': ['en-US-ChristopherNeural', 'en-US-GuyNeural'],
         }
         
-        voice, rate = voice_map.get(voice_style, ('en-US-AriaNeural', '+0%'))
-        return {'voice': voice, 'rate': rate}
+        candidates = style_to_voices.get(voice_style, list(ALL_VOICES.keys()))
+        
+        # Enforce variety: avoid recently used voices
+        if batch_tracker and batch_tracker.used_voices:
+            unused = [v for v in candidates if v not in batch_tracker.used_voices[-3:]]
+            if unused:
+                candidates = unused
+        
+        selected_voice = random.choice(candidates)
+        voice_config = ALL_VOICES.get(selected_voice, {'rate': '+0%', 'style': 'neutral'})
+        
+        # Track usage
+        if batch_tracker:
+            batch_tracker.used_voices.append(selected_voice)
+        
+        return {'voice': selected_voice, 'rate': voice_config['rate']}
+    
+    def get_music_path(self, concept: Dict, batch_tracker: BatchTracker = None) -> Optional[str]:
+        """Get music path with variety enforcement."""
+        music_mood = concept.get('music_mood', 'dramatic').lower()
+        
+        # Enforce variety: avoid recently used music
+        available_moods = list(ALL_MUSIC.keys())
+        if batch_tracker and batch_tracker.used_music:
+            unused = [m for m in available_moods if ALL_MUSIC[m] not in batch_tracker.used_music[-3:]]
+            if unused:
+                # Prefer the AI-requested mood if available
+                if music_mood in unused:
+                    available_moods = [music_mood]
+                else:
+                    available_moods = unused
+        
+        selected_mood = music_mood if music_mood in available_moods else random.choice(available_moods)
+        music_file = ALL_MUSIC.get(selected_mood, 'bensound-epic.mp3')
+        
+        # Track usage
+        if batch_tracker:
+            batch_tracker.used_music.append(music_file)
+        
+        return music_file
 
 
 class VideoRenderer:
@@ -574,19 +705,21 @@ class VideoRenderer:
         return ImageClip(arr, duration=duration, ismask=False)
 
 
-def get_background_music_with_skip(mood: str, skip_seconds: float = 3.0) -> Optional[Tuple[str, float]]:
-    """
-    Get background music and skip the silent intro.
-    Returns (path, skip_seconds) to skip silent beginning.
-    """
+def get_background_music_with_skip(music_file: str, skip_seconds: float = 3.0) -> Optional[Tuple[str, float]]:
+    """Get background music and skip the silent intro."""
     try:
         from background_music import get_background_music
+        
+        # Map music file to mood for the lookup
+        mood_map = {v: k for k, v in ALL_MUSIC.items()}
+        mood = mood_map.get(music_file, 'dramatic')
+        
         music_path = get_background_music(mood)
         if music_path:
-            # Skip first 3 seconds to avoid silent intro
+            safe_print(f"   [OK] Music: {music_file} (skipping first {skip_seconds}s)")
             return (music_path, skip_seconds)
-    except:
-        pass
+    except Exception as e:
+        safe_print(f"   [!] Music lookup failed: {e}")
     return None
 
 
@@ -607,7 +740,8 @@ async def generate_voiceover(text: str, voice_config: Dict, output_path: str) ->
     return duration
 
 
-async def render_video(content: Dict, broll_paths: List[str], output_path: str) -> bool:
+async def render_video(content: Dict, broll_paths: List[str], output_path: str, 
+                       voice_config: Dict, music_file: str) -> bool:
     """Render the final video."""
     safe_print("\n[RENDER] Starting video render...")
     
@@ -627,10 +761,6 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str) 
     phrases = unique_phrases
     
     safe_print(f"   Phrases: {len(phrases)}")
-    
-    # Get AI-decided voice config
-    ai = MasterAI()
-    voice_config = ai.get_voice_config(concept)
     
     # Generate voiceover
     full_text = ". ".join(phrases)
@@ -663,10 +793,7 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str) 
         broll_paths.append(None)
     
     # Get music with intro skip
-    music_mood = concept.get('music_mood', 'dramatic')
-    music_result = get_background_music_with_skip(music_mood, skip_seconds=3.0)
-    if music_result:
-        safe_print(f"   [OK] Music: {music_mood} (skipping first 3s)")
+    music_result = get_background_music_with_skip(music_file, skip_seconds=3.0)
     
     # Create segments
     renderer = VideoRenderer()
@@ -787,15 +914,15 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str) 
     return True
 
 
-async def generate_pro_video(hint: str = None) -> Optional[str]:
+async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = None) -> Optional[str]:
     """
     Generate a video with 100% AI-driven decisions.
-    No hardcoding - AI decides everything.
+    VARIETY ENFORCED through batch_tracker.
     """
     run_id = random.randint(10000, 99999)
     
     safe_print("=" * 70)
-    safe_print(f"   VIRALSHORTS FACTORY v7.0 - 100% AI-DRIVEN")
+    safe_print(f"   VIRALSHORTS FACTORY v7.1 - 100% AI-DRIVEN + VARIETY ENFORCED")
     safe_print(f"   Run: #{run_id}")
     safe_print("=" * 70)
     
@@ -804,8 +931,8 @@ async def generate_pro_video(hint: str = None) -> Optional[str]:
         safe_print("[!] No AI available")
         return None
     
-    # Stage 1: AI decides concept
-    concept = ai.stage1_decide_video_concept(hint)
+    # Stage 1: AI decides concept (with variety enforcement)
+    concept = ai.stage1_decide_video_concept(hint, batch_tracker)
     if not concept:
         safe_print("[!] Concept generation failed")
         return None
@@ -825,6 +952,10 @@ async def generate_pro_video(hint: str = None) -> Optional[str]:
     # Stage 5: AI generates metadata
     metadata = ai.stage5_metadata(content)
     
+    # Get voice and music with variety enforcement
+    voice_config = ai.get_voice_config(concept, batch_tracker)
+    music_file = ai.get_music_path(concept, batch_tracker)
+    
     # Download B-roll
     safe_print("\n[BROLL] Downloading visuals...")
     renderer = VideoRenderer()
@@ -838,24 +969,36 @@ async def generate_pro_video(hint: str = None) -> Optional[str]:
     safe_cat = "".join(c if c.isalnum() else '_' for c in category)[:20]
     output_path = str(OUTPUT_DIR / f"pro_{safe_cat}_{run_id}.mp4")
     
-    success = await render_video(content, broll_paths, output_path)
+    success = await render_video(content, broll_paths, output_path, voice_config, music_file)
     
     if success:
+        # Save metadata
         meta_path = output_path.replace('.mp4', '_meta.json')
+        full_metadata = {
+            'concept': concept,
+            'content': content,
+            'metadata': metadata,
+            'broll_keywords': broll_keywords,
+            'voice_config': voice_config,
+            'music_file': music_file,
+            'run_id': run_id
+        }
         with open(meta_path, 'w') as f:
-            json.dump({
-                'concept': concept,
-                'content': content,
-                'metadata': metadata,
-                'broll_keywords': broll_keywords,
-                'run_id': run_id
-            }, f, indent=2)
+            json.dump(full_metadata, f, indent=2)
+        
+        # Track in batch with score
+        score = content.get('evaluation_score', 7)
+        if batch_tracker:
+            batch_tracker.add_video(output_path, score, metadata or {})
         
         safe_print("\n" + "=" * 70)
         safe_print("   VIDEO GENERATED!")
         safe_print(f"   File: {output_path}")
         safe_print(f"   Category: {concept.get('category', 'N/A')}")
-        safe_print(f"   Score: {content.get('evaluation_score', 'N/A')}/10")
+        safe_print(f"   Topic: {concept.get('specific_topic', 'N/A')}")
+        safe_print(f"   Voice: {voice_config.get('voice', 'N/A')}")
+        safe_print(f"   Music: {music_file}")
+        safe_print(f"   Score: {score}/10")
         if metadata:
             safe_print(f"   Title: {metadata.get('title', 'N/A')}")
         safe_print("=" * 70)
@@ -865,7 +1008,7 @@ async def generate_pro_video(hint: str = None) -> Optional[str]:
     return None
 
 
-async def upload_video(video_path: str, metadata: Dict) -> Dict:
+async def upload_video(video_path: str, metadata: Dict, youtube: bool = True, dailymotion: bool = True) -> Dict:
     """Upload to platforms."""
     results = {"youtube": None, "dailymotion": None}
     
@@ -876,41 +1019,45 @@ async def upload_video(video_path: str, metadata: Dict) -> Dict:
     
     safe_print(f"\n[UPLOAD] Title: {title}")
     
-    try:
-        from youtube_uploader import upload_to_youtube
-        result = upload_to_youtube(video_path, title=title, description=description, tags=tags)
-        if result:
-            results["youtube"] = result
-            safe_print(f"[OK] YouTube: {result}")
-    except Exception as e:
-        safe_print(f"[!] YouTube error: {e}")
-    
-    try:
-        from dailymotion_uploader import DailymotionUploader
-        dm = DailymotionUploader()
-        if dm.is_configured:
-            result = dm.upload_video(
-                video_path, title=title, description=description,
-                tags=tags, channel='lifestyle', ai_generated=False
-            )
+    if youtube:
+        try:
+            from youtube_uploader import upload_to_youtube
+            result = upload_to_youtube(video_path, title=title, description=description, tags=tags)
             if result:
-                results["dailymotion"] = result
-                safe_print(f"[OK] Dailymotion: {result}")
-    except Exception as e:
-        safe_print(f"[!] Dailymotion error: {e}")
+                results["youtube"] = result
+                safe_print(f"[OK] YouTube: {result}")
+        except Exception as e:
+            safe_print(f"[!] YouTube error: {e}")
+    
+    if dailymotion:
+        try:
+            from dailymotion_uploader import DailymotionUploader
+            dm = DailymotionUploader()
+            if dm.is_configured:
+                result = dm.upload_video(
+                    video_path, title=title, description=description,
+                    tags=tags, channel='lifestyle', ai_generated=False
+                )
+                if result:
+                    results["dailymotion"] = result
+                    safe_print(f"[OK] Dailymotion: {result}")
+        except Exception as e:
+            safe_print(f"[!] Dailymotion error: {e}")
     
     return results
 
 
 async def main():
-    """Generate videos with 100% AI decision-making."""
+    """Generate videos with 100% AI decision-making and VARIETY ENFORCEMENT."""
     import argparse
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--hint", default=None, help="Optional hint for AI (e.g., 'psychology', 'money')")
+    parser.add_argument("--hint", default=None, help="Optional hint for AI")
     parser.add_argument("--count", type=int, default=1)
     parser.add_argument("--upload", action="store_true")
     parser.add_argument("--no-upload", action="store_true")
+    parser.add_argument("--strategic-youtube", action="store_true", 
+                        help="Upload BEST video to YouTube, all to Dailymotion")
     # Legacy support - these are IGNORED, AI decides
     parser.add_argument("--type", default=None, help="IGNORED - AI decides type")
     args = parser.parse_args()
@@ -918,46 +1065,89 @@ async def main():
     should_upload = args.upload and not args.no_upload
     
     safe_print(f"\n{'='*70}")
-    safe_print("   VIRALSHORTS FACTORY v7.0 - 100% AI-DRIVEN")
+    safe_print("   VIRALSHORTS FACTORY v7.1 - 100% AI-DRIVEN + VARIETY ENFORCED")
     safe_print(f"   Generating {args.count} video(s)")
     safe_print("   AI decides: category, topic, length, voice, music")
+    safe_print("   VARIETY ENFORCED: Each video will be DIFFERENT!")
+    if args.strategic_youtube:
+        safe_print("   STRATEGIC YOUTUBE: Best video selected by score")
     safe_print(f"{'='*70}")
     
-    # Use hint if provided (or from legacy --type)
-    hint = args.hint or args.type
+    # Reset batch tracker for new batch
+    global BATCH_TRACKER
+    BATCH_TRACKER = BatchTracker()
     
-    generated = []
+    hint = args.hint or args.type
     
     for i in range(args.count):
         safe_print(f"\n{'='*70}")
         safe_print(f"   VIDEO {i+1}/{args.count}")
         safe_print(f"{'='*70}")
         
-        path = await generate_pro_video(hint)
-        if path:
-            meta_path = path.replace('.mp4', '_meta.json')
-            metadata = {}
-            if os.path.exists(meta_path):
-                with open(meta_path) as f:
-                    data = json.load(f)
-                    metadata = data.get('metadata', {})
-            generated.append((path, metadata))
+        path = await generate_pro_video(hint, BATCH_TRACKER)
     
-    if should_upload and generated:
+    # Upload phase
+    if should_upload and BATCH_TRACKER.video_scores:
         safe_print("\n" + "=" * 70)
         safe_print("   UPLOADING")
         safe_print("=" * 70)
         
-        for video_path, metadata in generated:
-            await upload_video(video_path, metadata)
-            if len(generated) > 1:
-                delay = random.randint(45, 120)
+        if args.strategic_youtube:
+            # Strategic: Best video to YouTube, all to Dailymotion
+            best = BATCH_TRACKER.get_best_video_for_youtube()
+            if best:
+                best_path, best_meta = best
+                safe_print(f"\n[YOUTUBE] Uploading BEST video (score-based selection)")
+                await upload_video(best_path, best_meta, youtube=True, dailymotion=True)
+            
+            # All other videos to Dailymotion only
+            for video_path, metadata in BATCH_TRACKER.get_all_videos():
+                if best and video_path == best[0]:
+                    continue  # Already uploaded
+                safe_print(f"\n[DAILYMOTION ONLY] {video_path}")
+                await upload_video(video_path, metadata, youtube=False, dailymotion=True)
+                delay = random.randint(30, 60)
                 safe_print(f"[WAIT] Anti-ban delay: {delay}s")
                 time.sleep(delay)
+        else:
+            # Legacy: Upload all to both platforms
+            for video_path, metadata in BATCH_TRACKER.get_all_videos():
+                await upload_video(video_path, metadata)
+                if len(BATCH_TRACKER.video_scores) > 1:
+                    delay = random.randint(45, 120)
+                    safe_print(f"[WAIT] Anti-ban delay: {delay}s")
+                    time.sleep(delay)
     
+    # Print summary
     safe_print(f"\n{'='*70}")
-    safe_print(f"   COMPLETE: {len(generated)} videos")
+    safe_print(f"   COMPLETE: {len(BATCH_TRACKER.video_scores)} videos")
     safe_print(f"{'='*70}")
+    
+    # Print the table of all videos
+    safe_print("\n=== VIDEO DETAILS TABLE ===")
+    safe_print("-" * 100)
+    safe_print(f"{'#':>2} | {'Category':<15} | {'Topic':<25} | {'Voice':<20} | {'Music':<20} | {'Score':>5}")
+    safe_print("-" * 100)
+    
+    for i, (path, score, meta) in enumerate(BATCH_TRACKER.video_scores, 1):
+        # Load full metadata from file
+        meta_path = path.replace('.mp4', '_meta.json')
+        full_meta = {}
+        if os.path.exists(meta_path):
+            with open(meta_path) as f:
+                full_meta = json.load(f)
+        
+        concept = full_meta.get('concept', {})
+        voice_config = full_meta.get('voice_config', {})
+        
+        category = concept.get('category', 'N/A')[:15]
+        topic = concept.get('specific_topic', 'N/A')[:25]
+        voice = voice_config.get('voice', 'N/A').split('-')[-1].replace('Neural', '')[:20]
+        music = full_meta.get('music_file', 'N/A')[:20]
+        
+        safe_print(f"{i:>2} | {category:<15} | {topic:<25} | {voice:<20} | {music:<20} | {score:>5}/10")
+    
+    safe_print("-" * 100)
 
 
 if __name__ == "__main__":

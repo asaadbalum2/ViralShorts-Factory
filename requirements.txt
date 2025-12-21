@@ -1,11 +1,12 @@
-# ViralShorts V2 - Professional "Would You Rather" Video Generator
-# Zero-Cost Stack for Viral YouTube Shorts
+# ViralShorts Factory v7.1 - Professional Video Generator
+# 100% AI-Driven + Variety Enforced
 
 # Core video editing
 moviepy==1.0.3
 
 # Text-to-Speech (Microsoft Edge TTS - FREE, no API key needed)
 edge-tts>=7.0.0
+
 # Fallback TTS (Google TTS - more reliable but less engaging)
 gTTS>=2.4.0
 
@@ -27,7 +28,7 @@ requests>=2.28.0
 
 # Google Trends integration
 # pytrends REMOVED - causes compatibility issues with urllib3
-# Using RSS feed instead (more reliable, no rate limits)
+# Using RSS feed + AI trends instead (more reliable, no rate limits)
 
 # AI Content Generation (MULTI-PROVIDER - All FREE!)
 groq>=0.4.0
