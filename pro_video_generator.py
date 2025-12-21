@@ -256,7 +256,10 @@ class MasterAI:
                 safe_print(f"[!] Gemini init failed: {e}")
     
     def call_ai(self, prompt: str, max_tokens: int = 2000, temperature: float = 0.9) -> str:
-        """Call AI with automatic fallback chain: Groq -> Gemini 2.0 -> Gemini 1.5."""
+        """Call AI with automatic fallback chain: Groq -> Gemini 2.0 -> Gemini 1.5 -> Gemini Pro."""
+        import time
+        time.sleep(1.5)  # Rate limit protection between AI calls (v7.13)
+        
         # Primary: Groq (fastest, 100K tokens/day)
         if self.client:
             try:
@@ -281,11 +284,21 @@ class MasterAI:
         # Tertiary: Gemini 1.5 Flash (more stable, higher limits)
         try:
             import google.generativeai as genai
-            fallback = genai.GenerativeModel('gemini-1.5-flash')
+            # Use correct model name for v1beta API
+            fallback = genai.GenerativeModel('gemini-1.5-flash-latest')
             response = fallback.generate_content(prompt)
             return response.text
         except Exception as e:
             safe_print(f"[!] Gemini 1.5 fallback error: {e}")
+        
+        # Quaternary: Try Gemini Pro as last resort
+        try:
+            import google.generativeai as genai
+            last_resort = genai.GenerativeModel('gemini-pro')
+            response = last_resort.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            safe_print(f"[!] Gemini Pro fallback error: {e}")
         
         return ""
     

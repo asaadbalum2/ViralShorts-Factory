@@ -220,6 +220,7 @@ class DailymotionUploader:
                 "tags": tags_str,
                 "channel": "lifestyle",  # Use fixed channel
                 "published": "true",
+                "is_created_for_kids": "false",  # Required field! (v7.13 fix)
             }
             
             # Only add description if not empty
