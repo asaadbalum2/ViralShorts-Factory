@@ -1393,6 +1393,15 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     # Stage 5: AI generates metadata
     metadata = ai.stage5_metadata(content)
     
+    # FALLBACK: Ensure we always have a title (v7.13 fix)
+    if not metadata or not metadata.get('title'):
+        fallback_title = concept.get('specific_topic', 'Amazing Fact')[:100]
+        safe_print(f"   [FALLBACK] Using topic as title: {fallback_title}")
+        metadata = metadata or {}
+        metadata['title'] = fallback_title
+        metadata['description'] = f"{fallback_title} #shorts #viral #facts"
+        metadata['hashtags'] = ['#shorts', '#viral', '#facts', '#trending']
+    
     # Get voice and music with variety enforcement
     voice_config = ai.get_voice_config(concept, batch_tracker)
     music_file = ai.get_music_path(concept, batch_tracker)
