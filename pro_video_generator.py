@@ -181,21 +181,23 @@ ALL_CATEGORIES = BASE_CATEGORIES  # Fallback, gets updated at runtime
 # NOTE: Voice names are Edge TTS technical identifiers (cannot be AI-generated)
 # AI selects the STYLE (energetic, calm, etc.), which maps to these voices
 # The rate adjustments are tuned for optimal narration pacing
-# Expanded voice pool for maximum variety (12 unique voices)
-ALL_VOICES = {
-    'en-US-AriaNeural': {'rate': '+8%', 'style': 'energetic'},
-    'en-US-JennyNeural': {'rate': '-3%', 'style': 'calm'},
-    'en-US-GuyNeural': {'rate': '-5%', 'style': 'mysterious'},
-    'en-US-DavisNeural': {'rate': '+0%', 'style': 'authoritative'},
-    'en-US-ChristopherNeural': {'rate': '-3%', 'style': 'dramatic'},
-    'en-AU-WilliamNeural': {'rate': '+3%', 'style': 'friendly'},
-    'en-GB-RyanNeural': {'rate': '+0%', 'style': 'professional'},
-    'en-CA-LiamNeural': {'rate': '+5%', 'style': 'upbeat'},
-    # Additional voices for better variety
-    'en-US-EricNeural': {'rate': '+3%', 'style': 'casual'},
-    'en-US-MichelleNeural': {'rate': '+0%', 'style': 'warm'},
-    'en-US-RogerNeural': {'rate': '-2%', 'style': 'serious'},
-    'en-US-SteffanNeural': {'rate': '+5%', 'style': 'dynamic'},
+# Edge TTS Available Voices - AI will select dynamically based on content
+# This is just a reference list for validation, NOT the selection logic
+EDGE_TTS_VOICES = [
+    'en-US-AriaNeural', 'en-US-JennyNeural', 'en-US-GuyNeural', 'en-US-DavisNeural',
+    'en-US-ChristopherNeural', 'en-US-EricNeural', 'en-US-MichelleNeural', 
+    'en-US-RogerNeural', 'en-US-SteffanNeural', 'en-US-SaraNeural',
+    'en-AU-WilliamNeural', 'en-AU-NatashaNeural',
+    'en-GB-RyanNeural', 'en-GB-SoniaNeural', 'en-GB-LibbyNeural',
+    'en-CA-LiamNeural', 'en-CA-ClaraNeural',
+    'en-IE-ConnorNeural', 'en-IN-NeerjaNeural', 'en-NZ-MitchellNeural',
+]
+
+# Default rate adjustments (AI can override)
+DEFAULT_VOICE_RATES = {
+    'energetic': '+8%', 'calm': '-5%', 'mysterious': '-3%', 
+    'authoritative': '+0%', 'friendly': '+3%', 'dramatic': '-2%',
+    'professional': '+0%', 'casual': '+5%', 'warm': '+0%',
 }
 
 # NOTE: These are MOOD LABELS, not hardcoded tracks!
@@ -628,44 +630,70 @@ JSON ONLY."""
     # STAGE 6: Get Voice and Music with VARIETY ENFORCEMENT
     # ========================================================================
     def get_voice_config(self, concept: Dict, batch_tracker: BatchTracker = None) -> Dict:
-        """Get voice configuration with STRONG variety enforcement."""
+        """AI-DRIVEN voice selection with variety enforcement."""
+        category = concept.get('category', 'general')
+        topic = concept.get('specific_topic', '')
         voice_style = concept.get('voice_style', 'energetic').lower()
         
-        # Map styles to preferred voices - NO OVERLAP between styles!
-        style_to_voices = {
-            'energetic': ['en-US-AriaNeural', 'en-US-SteffanNeural'],
-            'calm': ['en-US-JennyNeural', 'en-US-MichelleNeural'],
-            'mysterious': ['en-US-GuyNeural', 'en-US-RogerNeural'],
-            'authoritative': ['en-US-DavisNeural', 'en-GB-RyanNeural'],
-            'friendly': ['en-AU-WilliamNeural', 'en-US-EricNeural'],
-            'dramatic': ['en-US-ChristopherNeural', 'en-CA-LiamNeural'],
-        }
-        
-        candidates = style_to_voices.get(voice_style, list(ALL_VOICES.keys()))
-        
-        # STRONG variety enforcement: avoid ALL used voices in this batch
+        # Build exclusion list from batch tracker
+        exclude_voices = []
         if batch_tracker and batch_tracker.used_voices:
-            # First try: exclude all previously used voices
-            unused = [v for v in candidates if v not in batch_tracker.used_voices]
-            if unused:
-                candidates = unused
-            else:
-                # Fallback: pick from ALL voices that haven't been used
-                all_unused = [v for v in ALL_VOICES.keys() if v not in batch_tracker.used_voices]
-                if all_unused:
-                    candidates = all_unused
-                # If all voices used (8+ videos), just avoid last 4
-                else:
-                    candidates = [v for v in ALL_VOICES.keys() if v not in batch_tracker.used_voices[-4:]]
+            exclude_voices = batch_tracker.used_voices.copy()
         
-        selected_voice = random.choice(candidates) if candidates else random.choice(list(ALL_VOICES.keys()))
-        voice_config = ALL_VOICES.get(selected_voice, {'rate': '+0%', 'style': 'neutral'})
+        # AI selects the best voice for this content
+        safe_print(f"   🎤 AI selecting voice for {category}/{voice_style}...")
+        
+        prompt = f"""You are a CASTING DIRECTOR for viral short videos.
+Select the PERFECT narrator voice for this video.
+
+=== VIDEO DETAILS ===
+Category: {category}
+Topic: {topic}
+Desired Style: {voice_style}
+
+=== AVAILABLE VOICES ===
+{json.dumps(EDGE_TTS_VOICES, indent=2)}
+
+=== VOICES TO AVOID (already used in this batch) ===
+{json.dumps(exclude_voices) if exclude_voices else "None - all voices available"}
+
+=== SELECTION CRITERIA ===
+- Match voice CHARACTER to content (male/female, accent, energy)
+- NEVER pick a voice from the "avoid" list
+- Consider: US voices for general, AU/GB for variety, CA for friendly
+- Female voices: Aria, Jenny, Michelle, Sara, Natasha, Sonia, Libby, Clara, Neerja
+- Male voices: Guy, Davis, Christopher, Eric, Roger, Steffan, William, Ryan, Liam, Connor, Mitchell
+
+=== OUTPUT JSON ===
+{{"voice": "exact-voice-name-from-list", "rate": "+X%" or "-X%", "reasoning": "brief why"}}
+
+JSON ONLY."""
+
+        response = self.call_ai(prompt, 200, temperature=0.8)
+        result = self.parse_json(response)
+        
+        if result and result.get('voice') in EDGE_TTS_VOICES:
+            selected_voice = result['voice']
+            rate = result.get('rate', '+0%')
+            # Ensure not in exclusion list
+            if selected_voice in exclude_voices:
+                # AI ignored exclusion, pick random unused
+                unused = [v for v in EDGE_TTS_VOICES if v not in exclude_voices]
+                selected_voice = random.choice(unused) if unused else random.choice(EDGE_TTS_VOICES)
+                rate = DEFAULT_VOICE_RATES.get(voice_style, '+0%')
+            safe_print(f"   ✅ AI selected: {selected_voice}")
+        else:
+            # Fallback: random unused voice
+            unused = [v for v in EDGE_TTS_VOICES if v not in exclude_voices]
+            selected_voice = random.choice(unused) if unused else random.choice(EDGE_TTS_VOICES)
+            rate = DEFAULT_VOICE_RATES.get(voice_style, '+0%')
+            safe_print(f"   ⚠️ Fallback voice: {selected_voice}")
         
         # Track usage
         if batch_tracker:
             batch_tracker.used_voices.append(selected_voice)
         
-        return {'voice': selected_voice, 'rate': voice_config['rate']}
+        return {'voice': selected_voice, 'rate': rate}
     
     def get_music_path(self, concept: Dict, batch_tracker: BatchTracker = None) -> Optional[str]:
         """Get music path with variety enforcement."""
@@ -823,9 +851,21 @@ class VideoRenderer:
         return VideoClip(make_frame, duration=duration)
     
     def pil_to_clip(self, pil_img: Image.Image, duration: float) -> ImageClip:
-        """Convert PIL to MoviePy clip."""
-        arr = np.array(pil_img.convert('RGBA'))
-        return ImageClip(arr, duration=duration, ismask=False)
+        """Convert PIL RGBA to MoviePy clip with proper transparency."""
+        rgba_arr = np.array(pil_img.convert('RGBA'))
+        
+        # Extract RGB and Alpha channels separately
+        rgb_arr = rgba_arr[:, :, :3]
+        alpha_arr = rgba_arr[:, :, 3] / 255.0  # Normalize alpha to 0-1
+        
+        # Create the main clip from RGB
+        clip = ImageClip(rgb_arr, duration=duration)
+        
+        # Create mask from alpha channel
+        mask_clip = ImageClip(alpha_arr, duration=duration, ismask=True)
+        clip = clip.set_mask(mask_clip)
+        
+        return clip
     
     def create_animated_text_clip(self, text: str, duration: float, phrase_index: int = 0) -> VideoClip:
         """
