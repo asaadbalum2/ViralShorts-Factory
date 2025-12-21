@@ -344,28 +344,38 @@ Phrase Count: {phrase_count} phrases
 
 === CREATE EXACTLY {phrase_count} PHRASES ===
 Structure:
-- Phrase 1: HOOK (pattern interrupt, curiosity)
-- Phrases 2-{phrase_count-1}: BUILD (problem, context, solution parts)
-- Phrase {phrase_count}: PAYOFF (transformation, call to action)
+1. HOOK (pattern interrupt, curiosity)
+2-{phrase_count-1}. BUILD (problem, context, solution parts)
+{phrase_count}. PAYOFF (transformation, call to action)
 
 === OUTPUT JSON ===
 {{
     "phrases": [
-        "Phrase 1: The hook...",
-        "Phrase 2: ...",
-        // ... exactly {phrase_count} phrases
+        "Your attention-grabbing hook here",
+        "The problem or context explained",
+        "More detail or the solution",
+        "The payoff or call to action"
     ],
     "specific_value": "What SPECIFIC action can viewer take after watching?",
     "problem_solved": "What problem did we solve?",
     "solution_given": "What specific solution did we provide?"
 }}
 
+CRITICAL: Do NOT include "Phrase 1:", "Phrase 2:" etc. in the phrases - just the text itself!
 OUTPUT JSON ONLY. Make every phrase count!"""
 
         response = self.call_ai(prompt, 1200, temperature=0.85)
         result = self.parse_json(response)
         
         if result and result.get('phrases'):
+            # Clean up any "Phrase X:" prefixes the AI might add
+            cleaned_phrases = []
+            for phrase in result.get('phrases', []):
+                # Remove "Phrase 1:", "Phrase1:", "1:", "1." etc. prefixes
+                import re
+                cleaned = re.sub(r'^(Phrase\s*\d+\s*[:.]?\s*|\d+\s*[:.]?\s*)', '', phrase, flags=re.IGNORECASE).strip()
+                cleaned_phrases.append(cleaned)
+            result['phrases'] = cleaned_phrases
             result['concept'] = concept
             safe_print(f"   Created {len(result.get('phrases', []))} phrases")
             safe_print(f"   Value: {result.get('specific_value', 'N/A')[:60]}...")
@@ -421,20 +431,28 @@ If the solution is vague, make it SPECIFIC with numbers/steps/techniques.
     "weaknesses_found": ["list of issues found"],
     "improvements_made": ["list of improvements"],
     "improved_phrases": [
-        "Improved phrase 1",
-        "Improved phrase 2",
-        // same count as input
+        "The improved hook text here",
+        "The improved second phrase here",
+        "And so on for each phrase"
     ],
     "final_value_delivered": "What specific value does viewer get now?"
 }}
 
+CRITICAL: Do NOT include "Phrase 1:", "Improved phrase 1:" etc. - just the actual text!
 OUTPUT JSON ONLY."""
 
         response = self.call_ai(prompt, 1000, temperature=0.7)
         result = self.parse_json(response)
         
         if result:
-            content['phrases'] = result.get('improved_phrases', content.get('phrases', []))
+            # Clean up any prefixes from improved phrases
+            improved = result.get('improved_phrases', content.get('phrases', []))
+            cleaned_phrases = []
+            for phrase in improved:
+                import re
+                cleaned = re.sub(r'^(Phrase\s*\d+\s*[:.]?\s*|Improved\s*(phrase)?\s*\d*\s*[:.]?\s*|\d+\s*[:.]?\s*)', '', phrase, flags=re.IGNORECASE).strip()
+                cleaned_phrases.append(cleaned)
+            content['phrases'] = cleaned_phrases
             content['evaluation_score'] = result.get('evaluation_score', 7)
             content['value_delivered'] = result.get('final_value_delivered', '')
             safe_print(f"   Score: {result.get('evaluation_score', 'N/A')}/10")
