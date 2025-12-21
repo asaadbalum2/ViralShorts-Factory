@@ -256,7 +256,8 @@ class MasterAI:
                 safe_print(f"[!] Gemini init failed: {e}")
     
     def call_ai(self, prompt: str, max_tokens: int = 2000, temperature: float = 0.9) -> str:
-        """Call AI with automatic fallback."""
+        """Call AI with automatic fallback chain: Groq -> Gemini 2.0 -> Gemini 1.5."""
+        # Primary: Groq (fastest, 100K tokens/day)
         if self.client:
             try:
                 response = self.client.chat.completions.create(
@@ -269,12 +270,22 @@ class MasterAI:
             except Exception as e:
                 safe_print(f"[!] Groq error: {e}")
         
+        # Secondary: Gemini 2.0 Flash (experimental, stricter limits)
         if self.gemini_model:
             try:
                 response = self.gemini_model.generate_content(prompt)
                 return response.text
             except Exception as e:
-                safe_print(f"[!] Gemini error: {e}")
+                safe_print(f"[!] Gemini 2.0 error: {e}")
+        
+        # Tertiary: Gemini 1.5 Flash (more stable, higher limits)
+        try:
+            import google.generativeai as genai
+            fallback = genai.GenerativeModel('gemini-1.5-flash')
+            response = fallback.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            safe_print(f"[!] Gemini 1.5 fallback error: {e}")
         
         return ""
     
@@ -1445,19 +1456,27 @@ async def main():
                 safe_print(f"[WAIT] Initial cooldown: {initial_delay}s before Dailymotion batch")
                 time.sleep(initial_delay)
             
-            # All other videos to Dailymotion only (SEQUENTIAL with longer delays)
+            # All other videos to Dailymotion only
+            # IMPORTANT: Dailymotion allows only 4 uploads per HOUR!
             remaining_videos = [(p, m) for p, m in BATCH_TRACKER.get_all_videos() 
                                if not best or p != best[0]]
             
-            for idx, (video_path, metadata) in enumerate(remaining_videos):
-                safe_print(f"\n[DAILYMOTION ONLY] ({idx+1}/{len(remaining_videos)}) {video_path}")
+            # Only upload first 3 to stay within 4/hour limit (1 already uploaded with YouTube)
+            max_dm_uploads = 3
+            dm_to_upload = remaining_videos[:max_dm_uploads]
+            
+            if len(remaining_videos) > max_dm_uploads:
+                safe_print(f"[!] Dailymotion limit: Only uploading {max_dm_uploads} more (4/hour API limit)")
+            
+            for idx, (video_path, metadata) in enumerate(dm_to_upload):
+                safe_print(f"\n[DAILYMOTION ONLY] ({idx+1}/{len(dm_to_upload)}) {video_path}")
                 await upload_video(video_path, metadata, youtube=False, dailymotion=True)
                 
                 # Skip delay after last video
-                if idx < len(remaining_videos) - 1:
-                    # Longer delays to prevent Dailymotion 403 rate limiting
-                    delay = random.randint(150, 240)  # 2.5-4 minutes between uploads
-                    safe_print(f"[WAIT] Anti-ban delay: {delay}s (prevents 403 errors)")
+                if idx < len(dm_to_upload) - 1:
+                    # 15-20 min delay to spread 4 uploads across 1 hour
+                    delay = random.randint(900, 1200)  # 15-20 minutes
+                    safe_print(f"[WAIT] Dailymotion cooldown: {delay//60}m (4/hour API limit)")
                     time.sleep(delay)
         else:
             # Legacy: Upload all to both platforms
