@@ -114,12 +114,73 @@ def strip_emojis(text: str) -> str:
 # ========================================================================
 # ALL AVAILABLE OPTIONS - AI picks from these, variety enforced
 # ========================================================================
-ALL_CATEGORIES = [
+# Base categories - AI will expand/suggest from these + current trends
+BASE_CATEGORIES = [
     "psychology", "finance", "productivity", "health", 
     "relationships", "science", "technology", "motivation",
     "life_hacks", "history", "statistics", "mysteries"
 ]
 
+def get_ai_trending_categories(groq_key: str = None) -> List[str]:
+    """
+    Ask AI for currently trending content categories.
+    Combines base categories with AI-suggested trending ones.
+    """
+    if not groq_key:
+        groq_key = os.environ.get("GROQ_API_KEY")
+    
+    if not groq_key:
+        return BASE_CATEGORIES
+    
+    try:
+        response = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {groq_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "llama-3.1-8b-instant",
+                "messages": [{"role": "user", "content": f"""What are the TOP 5 trending content categories for viral short-form videos RIGHT NOW?
+
+Consider:
+- Current events and news cycles
+- Seasonal trends
+- Social media trending topics
+- What's capturing attention today
+
+Base categories (keep if still relevant): {BASE_CATEGORIES}
+
+Return a JSON array of 8-12 category names (single words or short phrases, lowercase, underscores for spaces).
+Example: ["ai_news", "psychology", "money_hacks", "relationship_tips", "health", "productivity"]
+
+Return ONLY the JSON array, nothing else."""}],
+                "temperature": 0.8,
+                "max_tokens": 200
+            },
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            content = response.json()["choices"][0]["message"]["content"]
+            import re
+            json_match = re.search(r'\[[\s\S]*\]', content)
+            if json_match:
+                categories = json.loads(json_match.group())
+                if isinstance(categories, list) and len(categories) >= 5:
+                    safe_print(f"   [OK] AI suggested categories: {categories[:5]}...")
+                    return categories
+    except Exception as e:
+        pass
+    
+    return BASE_CATEGORIES
+
+# Will be populated dynamically by AI
+ALL_CATEGORIES = BASE_CATEGORIES  # Fallback, gets updated at runtime
+
+# NOTE: Voice names are Edge TTS technical identifiers (cannot be AI-generated)
+# AI selects the STYLE (energetic, calm, etc.), which maps to these voices
+# The rate adjustments are tuned for optimal narration pacing
 ALL_VOICES = {
     'en-US-AriaNeural': {'rate': '+8%', 'style': 'energetic'},
     'en-US-JennyNeural': {'rate': '-3%', 'style': 'calm'},
@@ -131,19 +192,24 @@ ALL_VOICES = {
     'en-CA-LiamNeural': {'rate': '+5%', 'style': 'upbeat'},
 }
 
-ALL_MUSIC = {
-    # Primary moods (matched to content types)
-    'upbeat': 'upbeat',           # Fun, positive content
-    'dramatic': 'dramatic',       # Scary facts, shocking reveals
-    'mysterious': 'mysterious',   # Mysteries, unknown facts
-    'inspirational': 'inspirational',  # Motivation, success
-    'chill': 'chill',             # Calm explanations, tips
-    'intense': 'intense',         # Urgent, action-oriented
-    'energetic': 'energetic',     # High energy, productivity
-    'emotional': 'emotional',     # Personal stories, psychology
-    'tech': 'tech',               # Technology, science
-    'professional': 'professional',  # Finance, business
-}
+# NOTE: These are MOOD LABELS, not hardcoded tracks!
+# AI selects the mood → ai_music_selector.py uses AI to find matching music
+# The actual track selection is dynamic and AI-driven
+ALL_MUSIC_MOODS = [
+    'upbeat',        # Fun, positive content
+    'dramatic',      # Scary facts, shocking reveals
+    'mysterious',    # Mysteries, unknown facts
+    'inspirational', # Motivation, success
+    'chill',         # Calm explanations, tips
+    'intense',       # Urgent, action-oriented
+    'energetic',     # High energy, productivity
+    'emotional',     # Personal stories, psychology
+    'tech',          # Technology, science
+    'professional',  # Finance, business
+]
+
+# Keep for backward compatibility
+ALL_MUSIC = {mood: mood for mood in ALL_MUSIC_MOODS}
 
 
 class MasterAI:
@@ -222,8 +288,12 @@ class MasterAI:
         """
         AI decides EVERYTHING about the video concept.
         VARIETY ENFORCED: Avoids categories/topics already used in this batch.
+        CATEGORIES: AI-suggested based on current trends.
         """
         safe_print("\n[STAGE 1] AI deciding video concept...")
+        
+        # Get AI-suggested trending categories (dynamic, not hardcoded!)
+        trending_categories = get_ai_trending_categories(self.groq_key)
         
         # Build exclusion list from batch tracker
         exclude_categories = []
@@ -232,9 +302,9 @@ class MasterAI:
             exclude_categories = batch_tracker.used_categories[-5:]  # Last 5 used
             exclude_topics = batch_tracker.used_topics[-10:]  # Last 10 topics
         
-        available_categories = [c for c in ALL_CATEGORIES if c not in exclude_categories]
+        available_categories = [c for c in trending_categories if c not in exclude_categories]
         if not available_categories:
-            available_categories = ALL_CATEGORIES  # Reset if all used
+            available_categories = trending_categories  # Reset if all used
         
         unique_seed = f"{time.time()}_{random.random()}_{random.randint(10000,99999)}"
         hint_text = f"User hint: {hint}" if hint else "No specific hint - create something viral and valuable"
@@ -244,6 +314,9 @@ class MasterAI:
             exclude_text += f"\n\n**CRITICAL - DO NOT USE these categories (already used in batch):** {exclude_categories}"
         if exclude_topics:
             exclude_text += f"\n**DO NOT USE these topics (already used):** {exclude_topics[:5]}"
+        
+        # Build dynamic options from AI-driven lists
+        music_options = ", ".join(ALL_MUSIC_MOODS)
         
         prompt = f"""You are a VIRAL CONTENT STRATEGIST for short-form video (YouTube Shorts, TikTok).
 Your job is to decide what video to create that will get MAXIMUM views while delivering REAL value.
@@ -271,7 +344,7 @@ DATE: {time.strftime('%B %d, %Y, %A')}
    Options: energetic, calm, mysterious, authoritative, friendly, dramatic
 
 5. **MUSIC MOOD**: What background music mood? (Match to content emotion!)
-   Options: upbeat, dramatic, mysterious, inspirational, chill, intense, energetic, emotional, tech, professional
+   Options: {music_options}
 
 6. **TARGET DURATION**: How long should the video be?
    Options: 15-20s (quick fact), 25-35s (explained fact), 40-50s (mini-tutorial)
@@ -894,12 +967,28 @@ class VideoRenderer:
         return clip.fl_image(apply_grade)
 
 
-def get_background_music_with_skip(music_mood: str, skip_seconds: float = 3.0) -> Optional[Tuple[str, float]]:
-    """Get background music and skip the silent intro."""
+def get_background_music_with_skip(music_mood: str, skip_seconds: float = 3.0,
+                                   category: str = "", content_summary: str = "") -> Optional[Tuple[str, float]]:
+    """
+    Get AI-selected background music and skip the silent intro.
+    
+    Uses AI to analyze content and find the best matching music.
+    """
+    try:
+        # Try AI-driven music selection first
+        from ai_music_selector import get_ai_selected_music
+        music_path = get_ai_selected_music(category, music_mood, content_summary)
+        if music_path:
+            safe_print(f"   [OK] AI-selected music: {music_mood} (skipping first {skip_seconds}s)")
+            return (music_path, skip_seconds)
+    except ImportError:
+        pass  # Fall back to legacy
+    except Exception as e:
+        safe_print(f"   [!] AI music selection failed: {e}")
+    
+    # Fallback to legacy system
     try:
         from background_music import get_background_music
-        
-        # music_mood is now directly the mood string (upbeat, dramatic, etc.)
         music_path = get_background_music(music_mood)
         if music_path:
             safe_print(f"   [OK] Music: {music_mood} (skipping first {skip_seconds}s)")
@@ -978,8 +1067,16 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
     while len(broll_paths) < len(phrases):
         broll_paths.append(None)
     
-    # Get music with intro skip
-    music_result = get_background_music_with_skip(music_file, skip_seconds=3.0)
+    # Get AI-selected music with intro skip
+    # Pass content context for better AI selection
+    category = concept.get('category', 'general')
+    content_summary = phrases[0] if phrases else ''  # Use hook as summary
+    music_result = get_background_music_with_skip(
+        music_file, 
+        skip_seconds=3.0,
+        category=category,
+        content_summary=content_summary
+    )
     
     # Create segments
     renderer = VideoRenderer()
