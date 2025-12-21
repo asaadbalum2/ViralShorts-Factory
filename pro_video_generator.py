@@ -308,9 +308,41 @@ class MasterAI:
         AI decides EVERYTHING about the video concept.
         VARIETY ENFORCED: Avoids categories/topics already used in this batch.
         CATEGORIES: AI-suggested based on current trends.
+        OPTIMIZATION: Uses pre-generated concepts if available (saves 50% quota!)
         """
         safe_print("\n[STAGE 1] AI deciding video concept...")
         
+        # TRY to use pre-generated concept (saves API quota!)
+        try:
+            from pre_work_fetcher import get_next_concept, has_valid_data
+            if has_valid_data():
+                concept = get_next_concept()
+                if concept:
+                    safe_print("   [CACHED] Using pre-generated concept (saves quota!)")
+                    # Map pre-generated concept to expected format
+                    result = {
+                        'category': concept.get('category', 'psychology'),
+                        'specific_topic': concept.get('topic', 'Amazing Fact'),
+                        'phrase_count': 6,
+                        'voice_style': concept.get('voice_style', 'energetic'),
+                        'music_mood': concept.get('music_mood', 'upbeat'),
+                        'target_duration_seconds': concept.get('target_duration', 30),
+                        'hook': concept.get('hook', '')
+                    }
+                    # Track usage
+                    if batch_tracker:
+                        batch_tracker.used_categories.append(result['category'])
+                        batch_tracker.used_topics.append(result['specific_topic'])
+                    
+                    safe_print(f"   Category: {result['category']}")
+                    safe_print(f"   Topic: {result['specific_topic']}")
+                    return result
+        except ImportError:
+            pass  # pre_work_fetcher not available
+        except Exception as e:
+            safe_print(f"   [!] Pre-generated concept error: {e}")
+        
+        # Fallback: Generate concept with AI (original behavior)
         # Get AI-suggested trending categories (dynamic, not hardcoded!)
         trending_categories = get_ai_trending_categories(self.groq_key)
         
