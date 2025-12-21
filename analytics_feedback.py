@@ -96,6 +96,24 @@ class VideoMetadata:
     viral_optimizer_used: bool = False
     ai_title_generated: bool = False
     ai_hashtags_generated: bool = False
+    
+    # ===== v7.x AI-DRIVEN TRACKING =====
+    # Voice selection (for analyzing which voices perform best)
+    voice_name: Optional[str] = None  # e.g., "en-US-AriaNeural"
+    voice_style: Optional[str] = None  # e.g., "energetic", "calm"
+    
+    # Music selection (AI-driven in v7.2+)
+    music_file: Optional[str] = None  # Actual file used
+    music_source: Optional[str] = None  # "bensound", "pixabay", "ai_selected"
+    
+    # AI evaluation (Stage 3)
+    ai_evaluation_score: int = 0  # 1-10 score from AI
+    ai_improvements: Optional[List[str]] = None  # What AI improved
+    
+    # Batch tracking (v7.1+)
+    batch_id: Optional[str] = None  # Which batch this video belongs to
+    batch_position: int = 0  # Position in batch (1-8)
+    was_youtube_selected: bool = False  # Was this the "best" video for YouTube?
 
 
 class VideoMetadataStore:
@@ -607,6 +625,17 @@ class FeedbackLoopController:
             viral_optimizer_used=gen.get("viral_optimizer_used", False),
             ai_title_generated=gen.get("ai_title_generated", False),
             ai_hashtags_generated=gen.get("ai_hashtags_generated", False),
+            
+            # v7.x AI-Driven Fields
+            voice_name=gen.get("voice_name"),
+            voice_style=gen.get("voiceover_style"),
+            music_file=gen.get("music_file"),
+            music_source=gen.get("music_source", "bensound"),
+            ai_evaluation_score=topic_data.get("value_check", {}).get("score", 0),
+            ai_improvements=gen.get("ai_improvements"),
+            batch_id=gen.get("batch_id"),
+            batch_position=gen.get("batch_position", 0),
+            was_youtube_selected=gen.get("was_youtube_selected", False),
         )
         
         self.metadata_store.add(metadata)

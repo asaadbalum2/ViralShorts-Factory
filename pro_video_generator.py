@@ -1419,6 +1419,41 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         if batch_tracker:
             batch_tracker.add_video(output_path, score, metadata or {})
         
+        # === ANALYTICS FEEDBACK INTEGRATION (v7.11) ===
+        try:
+            from analytics_feedback import FeedbackLoopController
+            feedback = FeedbackLoopController()
+            
+            # Record video generation for learning
+            feedback.record_video_generation(
+                video_id=run_id,
+                local_path=output_path,
+                topic_data={
+                    'topic': concept.get('specific_topic', 'Unknown'),
+                    'video_type': concept.get('category', 'unknown'),
+                    'hook': content.get('phrases', [''])[0] if content.get('phrases') else '',
+                    'content': ' '.join(content.get('phrases', [])),
+                    'broll_keywords': broll_keywords,
+                    'music_mood': concept.get('music_mood', 'dramatic'),
+                    'value_check': {'score': score},
+                    'virality_score': score,
+                },
+                generation_data={
+                    'voiceover_style': voice_config.get('style', 'energetic'),
+                    'voice_name': voice_config.get('voice', 'AriaNeural'),
+                    'music_file': music_file,
+                    'phrase_count': len(content.get('phrases', [])),
+                    'total_word_count': sum(len(p.split()) for p in content.get('phrases', [])),
+                    'ai_title_generated': True,
+                    'ai_hashtags_generated': True,
+                    'has_vignette': True,  # v7.5 optimized
+                    'trend_source': 'ai_generated',  # v7.x AI-driven
+                }
+            )
+            safe_print("   [ANALYTICS] Video recorded for learning")
+        except Exception as e:
+            pass  # Non-critical, don't break video generation
+        
         safe_print("\n" + "=" * 70)
         safe_print("   VIDEO GENERATED!")
         safe_print(f"   File: {output_path}")
@@ -1447,6 +1482,9 @@ async def upload_video(video_path: str, metadata: Dict, youtube: bool = True, da
     
     safe_print(f"\n[UPLOAD] Title: {title}")
     
+    # Get video ID from path for analytics tracking
+    video_id = Path(video_path).stem.split('_')[-1] if video_path else None
+    
     if youtube:
         try:
             from youtube_uploader import upload_video as yt_upload
@@ -1454,6 +1492,15 @@ async def upload_video(video_path: str, metadata: Dict, youtube: bool = True, da
             if result:
                 results["youtube"] = result
                 safe_print(f"[OK] YouTube: {result}")
+                
+                # Record upload in analytics (v7.11)
+                try:
+                    from analytics_feedback import FeedbackLoopController
+                    feedback = FeedbackLoopController()
+                    yt_id = result.get('id') if isinstance(result, dict) else str(result)
+                    feedback.record_upload(video_id, 'youtube', yt_id)
+                except:
+                    pass
         except Exception as e:
             safe_print(f"[!] YouTube error: {e}")
     
@@ -1469,6 +1516,15 @@ async def upload_video(video_path: str, metadata: Dict, youtube: bool = True, da
                 if result:
                     results["dailymotion"] = result
                     safe_print(f"[OK] Dailymotion: {result}")
+                    
+                    # Record upload in analytics (v7.11)
+                    try:
+                        from analytics_feedback import FeedbackLoopController
+                        feedback = FeedbackLoopController()
+                        dm_id = result.get('id') if isinstance(result, dict) else str(result)
+                        feedback.record_upload(video_id, 'dailymotion', dm_id)
+                    except:
+                        pass
         except Exception as e:
             safe_print(f"[!] Dailymotion error: {e}")
     
