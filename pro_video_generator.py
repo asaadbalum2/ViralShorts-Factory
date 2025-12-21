@@ -165,8 +165,13 @@ class MasterAI:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                self.gemini_model = genai.GenerativeModel('gemini-2.0-flash')
-                safe_print("[OK] Gemini AI initialized")
+                # Try latest experimental model first, fallback to stable
+                try:
+                    self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
+                    safe_print("[OK] Gemini AI initialized (2.0-flash-exp)")
+                except:
+                    self.gemini_model = genai.GenerativeModel('gemini-2.0-flash')
+                    safe_print("[OK] Gemini AI initialized (2.0-flash)")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")
     
