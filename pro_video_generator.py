@@ -20,6 +20,7 @@ import json
 import asyncio
 import random
 import time
+import math
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, field
@@ -131,12 +132,17 @@ ALL_VOICES = {
 }
 
 ALL_MUSIC = {
-    'upbeat': 'bensound-happyrock.mp3',
-    'dramatic': 'bensound-epic.mp3',
-    'mysterious': 'bensound-ukulele.mp3',
-    'inspirational': 'bensound-energy.mp3',
-    'chill': 'bensound-creativeminds.mp3',
-    'intense': 'bensound-actionable.mp3',
+    # Primary moods (matched to content types)
+    'upbeat': 'upbeat',           # Fun, positive content
+    'dramatic': 'dramatic',       # Scary facts, shocking reveals
+    'mysterious': 'mysterious',   # Mysteries, unknown facts
+    'inspirational': 'inspirational',  # Motivation, success
+    'chill': 'chill',             # Calm explanations, tips
+    'intense': 'intense',         # Urgent, action-oriented
+    'energetic': 'energetic',     # High energy, productivity
+    'emotional': 'emotional',     # Personal stories, psychology
+    'tech': 'tech',               # Technology, science
+    'professional': 'professional',  # Finance, business
 }
 
 
@@ -264,8 +270,8 @@ DATE: {time.strftime('%B %d, %Y, %A')}
 4. **VOICE STYLE**: What voice/energy for the narration?
    Options: energetic, calm, mysterious, authoritative, friendly, dramatic
 
-5. **MUSIC MOOD**: What background music mood?
-   Options: upbeat, dramatic, mysterious, inspirational, chill, intense
+5. **MUSIC MOOD**: What background music mood? (Match to content emotion!)
+   Options: upbeat, dramatic, mysterious, inspirational, chill, intense, energetic, emotional, tech, professional
 
 6. **TARGET DURATION**: How long should the video be?
    Options: 15-20s (quick fact), 25-35s (explained fact), 40-50s (mini-tutorial)
@@ -604,6 +610,12 @@ class VideoRenderer:
     def __init__(self):
         self.pexels_key = os.environ.get("PEXELS_API_KEY")
     
+    def clean_phrase_prefix(self, phrase: str) -> str:
+        """Removes 'Phrase X:' or similar prefixes from the start of a phrase."""
+        # Regex to match "Phrase 1:", "Phrase 2.", "Phrase 3 -", etc.
+        cleaned = re.sub(r'^(Phrase\s*\d+\s*[:.\-]?\s*)', '', phrase, flags=re.IGNORECASE).strip()
+        return cleaned
+    
     def download_broll(self, keyword: str, index: int) -> Optional[str]:
         """Download B-roll from Pexels."""
         if not self.pexels_key:
@@ -726,20 +738,171 @@ class VideoRenderer:
         """Convert PIL to MoviePy clip."""
         arr = np.array(pil_img.convert('RGBA'))
         return ImageClip(arr, duration=duration, ismask=False)
+    
+    def create_animated_text_clip(self, text: str, duration: float, phrase_index: int = 0) -> VideoClip:
+        """
+        Create animated text overlay with professional effects.
+        
+        Effects cycle by phrase:
+        0: Fade in + slight scale up (hook)
+        1: Slide in from left
+        2: Slide in from right
+        3: Fade in from center
+        4+: Random
+        """
+        width, height = VIDEO_WIDTH, VIDEO_HEIGHT // 2
+        text_img = self.create_text_overlay(text, width, height)
+        base_clip = self.pil_to_clip(text_img, duration)
+        
+        # Animation timing
+        anim_duration = min(0.4, duration * 0.15)  # 15% of clip or 0.4s max
+        
+        # Choose effect based on phrase index for variety
+        effect_type = phrase_index % 5
+        
+        if effect_type == 0:
+            # Fade in + scale (for hook - most impactful)
+            def make_frame(t):
+                if t < anim_duration:
+                    progress = t / anim_duration
+                    scale = 0.85 + (0.15 * progress)  # 85% to 100%
+                    alpha = progress
+                else:
+                    scale = 1.0
+                    alpha = 1.0
+                return base_clip.get_frame(t) * alpha
+            
+            animated = VideoClip(make_frame, duration=duration)
+            return animated.set_position(('center', 'center'))
+        
+        elif effect_type == 1:
+            # Slide in from left
+            def position(t):
+                if t < anim_duration:
+                    progress = t / anim_duration
+                    # Ease out cubic
+                    ease = 1 - pow(1 - progress, 3)
+                    x = -width + (width/2) + (width/2 * ease)
+                else:
+                    x = 0
+                return (x, 'center')
+            
+            return base_clip.set_position(position)
+        
+        elif effect_type == 2:
+            # Slide in from right
+            def position(t):
+                if t < anim_duration:
+                    progress = t / anim_duration
+                    ease = 1 - pow(1 - progress, 3)
+                    x = width - (width/2) - (width/2 * ease)
+                else:
+                    x = 0
+                return (x, 'center')
+            
+            return base_clip.set_position(position)
+        
+        elif effect_type == 3:
+            # Slide up from bottom
+            def position(t):
+                if t < anim_duration:
+                    progress = t / anim_duration
+                    ease = 1 - pow(1 - progress, 3)
+                    y_offset = 100 * (1 - ease)
+                else:
+                    y_offset = 0
+                return ('center', VIDEO_HEIGHT//2 - height//2 + y_offset)
+            
+            return base_clip.set_position(position)
+        
+        else:
+            # Simple fade in
+            return base_clip.set_position(('center', 'center')).crossfadein(anim_duration)
+    
+    def get_sfx_for_phrase(self, phrase_index: int, total_phrases: int) -> Optional[str]:
+        """
+        Get appropriate sound effect for a phrase.
+        
+        - Hook (0): dramatic hit
+        - Last phrase: ding (payoff)
+        - Others: occasional whoosh for transitions
+        """
+        try:
+            from sound_effects import get_all_sfx
+            sfx = get_all_sfx()
+            
+            if phrase_index == 0:
+                return sfx.get('hit')  # Dramatic hit for hook
+            elif phrase_index == total_phrases - 1:
+                return sfx.get('ding')  # Ding for payoff/CTA
+            elif phrase_index % 2 == 1:
+                return sfx.get('whoosh')  # Whoosh for some transitions
+            return None
+        except Exception as e:
+            return None
+    
+    def create_vignette_overlay(self, width: int, height: int, intensity: float = 0.4) -> Image.Image:
+        """
+        Create a vignette overlay for cinematic effect.
+        Dark corners, bright center.
+        """
+        vignette = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+        
+        center_x, center_y = width // 2, height // 2
+        max_distance = math.sqrt(center_x**2 + center_y**2)
+        
+        # Create radial gradient
+        for y in range(height):
+            for x in range(width):
+                # Calculate distance from center
+                distance = math.sqrt((x - center_x)**2 + (y - center_y)**2)
+                # Normalize and apply intensity curve
+                normalized = distance / max_distance
+                # Smooth falloff
+                alpha = int(255 * intensity * (normalized ** 1.5))
+                alpha = min(255, alpha)
+                vignette.putpixel((x, y), (0, 0, 0, alpha))
+        
+        return vignette
+    
+    def apply_color_grade(self, clip: VideoClip, mood: str = 'dramatic') -> VideoClip:
+        """
+        Apply cinematic color grading based on mood.
+        """
+        # Color grade multipliers for different moods
+        grades = {
+            'dramatic': (1.0, 0.95, 1.1),      # Slightly blue, desaturated
+            'energetic': (1.1, 1.0, 0.95),     # Warm, punchy
+            'mysterious': (0.95, 0.95, 1.15),  # Cool blue
+            'inspirational': (1.05, 1.05, 1.0), # Warm, uplifting
+            'chill': (0.98, 1.02, 1.02),       # Cool, calm
+            'emotional': (1.0, 0.92, 1.05),    # Desaturated, moody
+            'tech': (0.95, 1.0, 1.1),          # Cool tech blue
+            'default': (1.0, 1.0, 1.0),        # No change
+        }
+        
+        r_mult, g_mult, b_mult = grades.get(mood, grades['default'])
+        
+        def apply_grade(frame):
+            # Apply RGB multipliers (clip to valid range)
+            graded = frame.astype(float)
+            graded[:, :, 0] = np.clip(graded[:, :, 0] * r_mult, 0, 255)
+            graded[:, :, 1] = np.clip(graded[:, :, 1] * g_mult, 0, 255)
+            graded[:, :, 2] = np.clip(graded[:, :, 2] * b_mult, 0, 255)
+            return graded.astype(np.uint8)
+        
+        return clip.fl_image(apply_grade)
 
 
-def get_background_music_with_skip(music_file: str, skip_seconds: float = 3.0) -> Optional[Tuple[str, float]]:
+def get_background_music_with_skip(music_mood: str, skip_seconds: float = 3.0) -> Optional[Tuple[str, float]]:
     """Get background music and skip the silent intro."""
     try:
         from background_music import get_background_music
         
-        # Map music file to mood for the lookup
-        mood_map = {v: k for k, v in ALL_MUSIC.items()}
-        mood = mood_map.get(music_file, 'dramatic')
-        
-        music_path = get_background_music(mood)
+        # music_mood is now directly the mood string (upbeat, dramatic, etc.)
+        music_path = get_background_music(music_mood)
         if music_path:
-            safe_print(f"   [OK] Music: {music_file} (skipping first {skip_seconds}s)")
+            safe_print(f"   [OK] Music: {music_mood} (skipping first {skip_seconds}s)")
             return (music_path, skip_seconds)
     except Exception as e:
         safe_print(f"   [!] Music lookup failed: {e}")
@@ -850,9 +1013,26 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
                 if bg.duration < dur:
                     bg = bg.loop(duration=dur)
                 bg = bg.subclip(0, dur)
-                bg = bg.fx(vfx.colorx, 0.5)
+                
+                # Apply cinematic effects
+                bg = bg.fx(vfx.colorx, 0.6)  # Slight darken for text readability
+                
+                # Apply color grading based on music mood
+                try:
+                    bg = renderer.apply_color_grade(bg, music_file)
+                except:
+                    pass  # Skip if color grading fails
                 
                 layers.append(bg)
+                
+                # Add vignette overlay for cinematic look
+                try:
+                    vignette_img = renderer.create_vignette_overlay(VIDEO_WIDTH, VIDEO_HEIGHT, intensity=0.3)
+                    vignette_clip = renderer.pil_to_clip(vignette_img, dur)
+                    layers.append(vignette_clip)
+                except:
+                    pass  # Skip if vignette fails
+                    
             except Exception as e:
                 broll_path = None
         
@@ -871,9 +1051,9 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
             bg = renderer.pil_to_clip(gradient, dur)
             layers.append(bg)
         
-        text_img = renderer.create_text_overlay(phrase, VIDEO_WIDTH, VIDEO_HEIGHT // 2)
-        text_clip = renderer.pil_to_clip(text_img, dur)
-        text_clip = text_clip.set_position(('center', 'center'))
+        # Use animated text instead of static (clean any "Phrase X:" prefixes)
+        clean_phrase = renderer.clean_phrase_prefix(phrase)
+        text_clip = renderer.create_animated_text_clip(clean_phrase, dur, phrase_index=i)
         layers.append(text_clip)
         
         segment = CompositeVideoClip(layers, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
@@ -891,9 +1071,29 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
         size=(VIDEO_WIDTH, VIDEO_HEIGHT)
     ).set_duration(final_video.duration)
     
-    # Audio mixing - skip music intro
+    # Audio mixing - skip music intro + add sound effects
     vo_clip = AudioFileClip(voiceover_path)
+    audio_layers = [vo_clip]
     
+    # Add sound effects at phrase transitions
+    try:
+        sfx_clips = []
+        cumulative_time = 0
+        for i, dur in enumerate(phrase_durations):
+            sfx_path = renderer.get_sfx_for_phrase(i, len(phrases))
+            if sfx_path and os.path.exists(sfx_path):
+                sfx = AudioFileClip(sfx_path).volumex(0.4)  # 40% volume
+                # Position SFX at start of each phrase
+                sfx = sfx.set_start(cumulative_time)
+                sfx_clips.append(sfx)
+            cumulative_time += dur
+        if sfx_clips:
+            audio_layers.extend(sfx_clips)
+            safe_print(f"   [OK] Added {len(sfx_clips)} sound effects")
+    except Exception as e:
+        safe_print(f"   [!] SFX error (continuing without): {e}")
+    
+    # Add background music
     if music_result:
         music_path, skip_seconds = music_result
         try:
@@ -909,12 +1109,11 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
                 music_clip = music_clip.loop(duration=final_video.duration)
             music_clip = music_clip.subclip(0, final_video.duration)
             
-            final_audio = CompositeAudioClip([vo_clip, music_clip])
+            audio_layers.append(music_clip)
         except Exception as e:
             safe_print(f"   [!] Music error: {e}")
-            final_audio = vo_clip
-    else:
-        final_audio = vo_clip
+    
+    final_audio = CompositeAudioClip(audio_layers)
     
     final_video = final_video.set_audio(final_audio)
     

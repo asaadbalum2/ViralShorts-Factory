@@ -13,39 +13,111 @@ MUSIC_DIR = Path("./assets/music")
 MUSIC_DIR.mkdir(parents=True, exist_ok=True)
 
 # BENSOUND - Reliable free music with proper CDN
-# These are VERIFIED WORKING direct links (royalty-free with attribution)
+# EXPANDED LIBRARY - 40+ tracks across 10 moods for maximum variety
 BENSOUND_MUSIC = {
+    # === UPBEAT / FUN ===
     "fun": [
         "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
         "https://www.bensound.com/bensound-music/bensound-cute.mp3",
         "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+        "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3",
+        "https://www.bensound.com/bensound-music/bensound-littleidea.mp3",
     ],
+    "upbeat": [
+        "https://www.bensound.com/bensound-music/bensound-happyrock.mp3",
+        "https://www.bensound.com/bensound-music/bensound-ukulele.mp3",
+        "https://www.bensound.com/bensound-music/bensound-buddy.mp3",
+        "https://www.bensound.com/bensound-music/bensound-groovyhiphop.mp3",
+        "https://www.bensound.com/bensound-music/bensound-jazzcomedy.mp3",
+    ],
+    # === DRAMATIC / INTENSE ===
     "dramatic": [
         "https://www.bensound.com/bensound-music/bensound-epic.mp3",
         "https://www.bensound.com/bensound-music/bensound-actionable.mp3",
+        "https://www.bensound.com/bensound-music/bensound-instinct.mp3",
+        "https://www.bensound.com/bensound-music/bensound-betterdays.mp3",
     ],
+    "intense": [
+        "https://www.bensound.com/bensound-music/bensound-actionable.mp3",
+        "https://www.bensound.com/bensound-music/bensound-epic.mp3",
+        "https://www.bensound.com/bensound-music/bensound-extremeaction.mp3",
+        "https://www.bensound.com/bensound-music/bensound-punky.mp3",
+    ],
+    # === ENERGETIC ===
     "energetic": [
         "https://www.bensound.com/bensound-music/bensound-energy.mp3",
         "https://www.bensound.com/bensound-music/bensound-dubstep.mp3",
         "https://www.bensound.com/bensound-music/bensound-moose.mp3",
+        "https://www.bensound.com/bensound-music/bensound-dance.mp3",
+        "https://www.bensound.com/bensound-music/bensound-funkyelement.mp3",
+        "https://www.bensound.com/bensound-music/bensound-popdance.mp3",
     ],
+    # === CHILL / RELAXING ===
     "chill": [
         "https://www.bensound.com/bensound-music/bensound-dreams.mp3",
         "https://www.bensound.com/bensound-music/bensound-slowmotion.mp3",
         "https://www.bensound.com/bensound-music/bensound-relaxing.mp3",
+        "https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3",
+        "https://www.bensound.com/bensound-music/bensound-tenderness.mp3",
+        "https://www.bensound.com/bensound-music/bensound-tomorrow.mp3",
     ],
+    # === MYSTERIOUS / SUSPENSE ===
     "mystery": [
         "https://www.bensound.com/bensound-music/bensound-deepblue.mp3",
         "https://www.bensound.com/bensound-music/bensound-scifi.mp3",
+        "https://www.bensound.com/bensound-music/bensound-evolution.mp3",
+        "https://www.bensound.com/bensound-music/bensound-newdawn.mp3",
+    ],
+    "mysterious": [
+        "https://www.bensound.com/bensound-music/bensound-deepblue.mp3",
+        "https://www.bensound.com/bensound-music/bensound-scifi.mp3",
+        "https://www.bensound.com/bensound-music/bensound-evolution.mp3",
+    ],
+    # === INSPIRATIONAL / MOTIVATIONAL ===
+    "inspirational": [
+        "https://www.bensound.com/bensound-music/bensound-energy.mp3",
+        "https://www.bensound.com/bensound-music/bensound-inspire.mp3",
+        "https://www.bensound.com/bensound-music/bensound-newdawn.mp3",
+        "https://www.bensound.com/bensound-music/bensound-creativeminds.mp3",
+        "https://www.bensound.com/bensound-music/bensound-goinghigher.mp3",
+    ],
+    # === CORPORATE / PROFESSIONAL ===
+    "professional": [
+        "https://www.bensound.com/bensound-music/bensound-thejazzpiano.mp3",
+        "https://www.bensound.com/bensound-music/bensound-creativeminds.mp3",
+        "https://www.bensound.com/bensound-music/bensound-corporate.mp3",
+        "https://www.bensound.com/bensound-music/bensound-photoalbum.mp3",
+    ],
+    # === EMOTIONAL / CINEMATIC ===
+    "emotional": [
+        "https://www.bensound.com/bensound-music/bensound-memories.mp3",
+        "https://www.bensound.com/bensound-music/bensound-sadday.mp3",
+        "https://www.bensound.com/bensound-music/bensound-pianomoment.mp3",
+        "https://www.bensound.com/bensound-music/bensound-love.mp3",
+    ],
+    # === TECHNOLOGY / MODERN ===
+    "tech": [
+        "https://www.bensound.com/bensound-music/bensound-scifi.mp3",
+        "https://www.bensound.com/bensound-music/bensound-dubstep.mp3",
+        "https://www.bensound.com/bensound-music/bensound-evolution.mp3",
+        "https://www.bensound.com/bensound-music/bensound-highoctane.mp3",
     ],
 }
 
-# Backup: Mixkit (also reliable, CC0)
+# Backup: Mixkit (also reliable, CC0) - EXPANDED
 MIXKIT_MUSIC = {
     "fun": "https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3",
+    "upbeat": "https://assets.mixkit.co/music/preview/mixkit-raising-me-higher-34.mp3",
     "dramatic": "https://assets.mixkit.co/music/preview/mixkit-epic-cinematic-trailer-101.mp3",
+    "intense": "https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3",
     "energetic": "https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-738.mp3",
     "chill": "https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3",
+    "mystery": "https://assets.mixkit.co/music/preview/mixkit-complicated-712.mp3",
+    "mysterious": "https://assets.mixkit.co/music/preview/mixkit-complicated-712.mp3",
+    "inspirational": "https://assets.mixkit.co/music/preview/mixkit-a-very-happy-christmas-897.mp3",
+    "emotional": "https://assets.mixkit.co/music/preview/mixkit-life-is-a-dream-837.mp3",
+    "tech": "https://assets.mixkit.co/music/preview/mixkit-games-worldbeat-466.mp3",
+    "professional": "https://assets.mixkit.co/music/preview/mixkit-sleepy-cat-135.mp3",
 }
 
 # NOTE: Removed pydub tone generation - it sounded like broken radio!
