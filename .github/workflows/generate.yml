@@ -6,7 +6,7 @@ on:
       batch_size:
         description: 'Total videos per batch (BEST goes to YouTube)'
         required: false
-        default: '8'
+        default: '4'
       test_only:
         description: 'Test mode - generate but DO NOT upload (saves quota)'
         required: false
@@ -25,15 +25,13 @@ on:
           - 'true'
 
   # ENABLED - Production mode active!
-  # Runs 6 times per day (UTC time)
-  # v7.1: Batch generation with strategic YouTube selection
+  # Runs 4 times per day (every 6 hours) - optimized for API quotas
+  # v7.8: 4 videos/batch × 4 runs = 16 videos/day within 100K token limit
   schedule:
-    - cron: '0 4 * * *'   # 4 AM UTC
-    - cron: '0 8 * * *'   # 8 AM UTC
-    - cron: '0 12 * * *'  # 12 PM UTC
-    - cron: '0 16 * * *'  # 4 PM UTC
-    - cron: '0 20 * * *'  # 8 PM UTC
     - cron: '0 0 * * *'   # Midnight UTC
+    - cron: '0 6 * * *'   # 6 AM UTC
+    - cron: '0 12 * * *'  # 12 PM UTC
+    - cron: '0 18 * * *'  # 6 PM UTC
 
 jobs:
   generate:

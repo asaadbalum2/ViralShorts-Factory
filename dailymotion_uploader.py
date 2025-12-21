@@ -207,27 +207,32 @@ class DailymotionUploader:
             # Clean and format tags properly
             if tags:
                 clean_tags = [t.replace('#', '').strip() for t in tags if t.strip()]
-                tags_str = ",".join(clean_tags[:20])
+                # Dailymotion requires tags without special chars
+                clean_tags = [t for t in clean_tags if t.isalnum() or ' ' in t]
+                tags_str = ",".join(clean_tags[:10])  # Max 10 tags
             else:
-                tags_str = "viral,shorts,trending,facts,lifehacks"
+                tags_str = "viral,shorts,trending,facts"
             
-            # Add AI disclosure to description (API doesn't support is_ai_generated field)
-            ai_disclosure = "\n\n[This video was created with AI assistance]" if ai_generated else ""
-            
+            # Simplified video data - some fields may cause 403
             video_data = {
                 "url": file_url,
-                "title": title[:255],  # Dailymotion limit
-                "description": (description + ai_disclosure)[:3000],
+                "title": title[:100],  # Keep shorter for safety
                 "tags": tags_str,
-                "channel": channel,  # lifestyle, news, music, fun, etc.
+                "channel": "lifestyle",  # Use fixed channel
                 "published": "true",
-                "is_created_for_kids": "false"
             }
+            
+            # Only add description if not empty
+            if description:
+                # Remove special chars that might cause issues
+                clean_desc = description[:500].replace('\n', ' ').strip()
+                video_data["description"] = clean_desc
             
             response = requests.post(
                 self.VIDEO_URL,
                 headers=headers,
-                data=video_data
+                data=video_data,
+                timeout=60  # Add timeout
             )
             
             if response.status_code in [200, 201]:
@@ -236,7 +241,14 @@ class DailymotionUploader:
                 safe_print(f"[OK] Uploaded to Dailymotion: {video_url}")
                 return video_id
             else:
-                safe_print(f"[X] Failed to create video: {response.text[:100]}")
+                # Log FULL error for debugging
+                try:
+                    error_data = response.json()
+                    error_msg = error_data.get('error', {}).get('message', response.text[:200])
+                    error_code = error_data.get('error', {}).get('code', response.status_code)
+                    safe_print(f"[X] Dailymotion error {error_code}: {error_msg}")
+                except:
+                    safe_print(f"[X] Failed to create video (HTTP {response.status_code}): {response.text[:200]}")
                 return None
                 
         except Exception as e:

@@ -630,9 +630,8 @@ JSON ONLY."""
     # STAGE 6: Get Voice and Music with VARIETY ENFORCEMENT
     # ========================================================================
     def get_voice_config(self, concept: Dict, batch_tracker: BatchTracker = None) -> Dict:
-        """AI-DRIVEN voice selection with variety enforcement."""
+        """AI-DRIVEN voice selection with variety enforcement. OPTIMIZED for token usage."""
         category = concept.get('category', 'general')
-        topic = concept.get('specific_topic', '')
         voice_style = concept.get('voice_style', 'energetic').lower()
         
         # Build exclusion list from batch tracker
@@ -640,54 +639,51 @@ JSON ONLY."""
         if batch_tracker and batch_tracker.used_voices:
             exclude_voices = batch_tracker.used_voices.copy()
         
-        # AI selects the best voice for this content
+        # Get available voices (not in exclusion list)
+        available = [v for v in EDGE_TTS_VOICES if v not in exclude_voices]
+        if not available:
+            available = EDGE_TTS_VOICES  # Reset if all used
+        
         safe_print(f"   🎤 AI selecting voice for {category}/{voice_style}...")
         
-        prompt = f"""You are a CASTING DIRECTOR for viral short videos.
-Select the PERFECT narrator voice for this video.
+        # OPTIMIZED prompt - much shorter to save tokens
+        prompt = f"""Pick voice for {category} video, style: {voice_style}.
+Available: {', '.join([v.split('-')[2].replace('Neural','') for v in available[:10]])}
+Return JSON: {{"voice": "full-voice-name", "rate": "+X%"}}"""
 
-=== VIDEO DETAILS ===
-Category: {category}
-Topic: {topic}
-Desired Style: {voice_style}
-
-=== AVAILABLE VOICES ===
-{json.dumps(EDGE_TTS_VOICES, indent=2)}
-
-=== VOICES TO AVOID (already used in this batch) ===
-{json.dumps(exclude_voices) if exclude_voices else "None - all voices available"}
-
-=== SELECTION CRITERIA ===
-- Match voice CHARACTER to content (male/female, accent, energy)
-- NEVER pick a voice from the "avoid" list
-- Consider: US voices for general, AU/GB for variety, CA for friendly
-- Female voices: Aria, Jenny, Michelle, Sara, Natasha, Sonia, Libby, Clara, Neerja
-- Male voices: Guy, Davis, Christopher, Eric, Roger, Steffan, William, Ryan, Liam, Connor, Mitchell
-
-=== OUTPUT JSON ===
-{{"voice": "exact-voice-name-from-list", "rate": "+X%" or "-X%", "reasoning": "brief why"}}
-
-JSON ONLY."""
-
-        response = self.call_ai(prompt, 200, temperature=0.8)
+        response = self.call_ai(prompt, 80, temperature=0.8)
         result = self.parse_json(response)
         
-        if result and result.get('voice') in EDGE_TTS_VOICES:
-            selected_voice = result['voice']
-            rate = result.get('rate', '+0%')
-            # Ensure not in exclusion list
-            if selected_voice in exclude_voices:
-                # AI ignored exclusion, pick random unused
-                unused = [v for v in EDGE_TTS_VOICES if v not in exclude_voices]
-                selected_voice = random.choice(unused) if unused else random.choice(EDGE_TTS_VOICES)
-                rate = DEFAULT_VOICE_RATES.get(voice_style, '+0%')
-            safe_print(f"   ✅ AI selected: {selected_voice}")
-        else:
-            # Fallback: random unused voice
-            unused = [v for v in EDGE_TTS_VOICES if v not in exclude_voices]
-            selected_voice = random.choice(unused) if unused else random.choice(EDGE_TTS_VOICES)
-            rate = DEFAULT_VOICE_RATES.get(voice_style, '+0%')
-            safe_print(f"   ⚠️ Fallback voice: {selected_voice}")
+        selected_voice = None
+        if result and result.get('voice'):
+            # Try to match the voice name
+            voice_hint = result['voice'].lower()
+            for v in available:
+                if voice_hint in v.lower() or v.lower() in voice_hint:
+                    selected_voice = v
+                    break
+        
+        if not selected_voice:
+            # Smart fallback based on style
+            style_preferences = {
+                'energetic': ['Aria', 'Steffan', 'Liam'],
+                'calm': ['Jenny', 'Sara', 'Sonia'],
+                'mysterious': ['Guy', 'Davis', 'Roger'],
+                'authoritative': ['Ryan', 'Christopher', 'Davis'],
+                'friendly': ['William', 'Eric', 'Clara'],
+                'dramatic': ['Christopher', 'Guy', 'Roger'],
+            }
+            prefs = style_preferences.get(voice_style, ['Aria', 'Guy', 'Jenny'])
+            for pref in prefs:
+                match = next((v for v in available if pref in v), None)
+                if match:
+                    selected_voice = match
+                    break
+            if not selected_voice:
+                selected_voice = random.choice(available)
+        
+        rate = result.get('rate', DEFAULT_VOICE_RATES.get(voice_style, '+0%')) if result else DEFAULT_VOICE_RATES.get(voice_style, '+0%')
+        safe_print(f"   ✅ Selected: {selected_voice}")
         
         # Track usage
         if batch_tracker:
