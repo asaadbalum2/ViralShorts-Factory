@@ -1021,8 +1021,8 @@ async def upload_video(video_path: str, metadata: Dict, youtube: bool = True, da
     
     if youtube:
         try:
-            from youtube_uploader import upload_to_youtube
-            result = upload_to_youtube(video_path, title=title, description=description, tags=tags)
+            from youtube_uploader import upload_video as yt_upload
+            result = yt_upload(video_path, title=title, description=description, tags=tags)
             if result:
                 results["youtube"] = result
                 safe_print(f"[OK] YouTube: {result}")
@@ -1100,14 +1100,15 @@ async def main():
                 safe_print(f"\n[YOUTUBE] Uploading BEST video (score-based selection)")
                 await upload_video(best_path, best_meta, youtube=True, dailymotion=True)
             
-            # All other videos to Dailymotion only
-            for video_path, metadata in BATCH_TRACKER.get_all_videos():
+            # All other videos to Dailymotion only (with longer delays to prevent 403)
+            for idx, (video_path, metadata) in enumerate(BATCH_TRACKER.get_all_videos()):
                 if best and video_path == best[0]:
                     continue  # Already uploaded
                 safe_print(f"\n[DAILYMOTION ONLY] {video_path}")
                 await upload_video(video_path, metadata, youtube=False, dailymotion=True)
-                delay = random.randint(30, 60)
-                safe_print(f"[WAIT] Anti-ban delay: {delay}s")
+                # Longer delays to prevent Dailymotion 403 rate limiting
+                delay = random.randint(90, 180)  # 1.5-3 minutes between uploads
+                safe_print(f"[WAIT] Anti-ban delay: {delay}s (prevents 403 errors)")
                 time.sleep(delay)
         else:
             # Legacy: Upload all to both platforms
