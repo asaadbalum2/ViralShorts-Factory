@@ -876,18 +876,27 @@ class VideoRenderer:
             return None
     
     def create_text_overlay(self, text: str, width: int, height: int) -> Image.Image:
-        """Create text overlay."""
+        """Create text overlay with dynamic font selection."""
         img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
         text = strip_emojis(text)
         
-        font_paths = [
-            "C:/Windows/Fonts/impact.ttf",
-            "C:/Windows/Fonts/ariblk.ttf",
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-            "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-        ]
-        font_path = next((f for f in font_paths if os.path.exists(f)), None)
+        # Try dynamic font system first (downloads Google Fonts if needed)
+        try:
+            from dynamic_fonts import get_impact_font
+            font_path = get_impact_font()
+        except ImportError:
+            font_path = None
+        
+        # Fallback to system fonts if dynamic fonts unavailable
+        if not font_path or not os.path.exists(font_path):
+            font_paths = [
+                "C:/Windows/Fonts/impact.ttf",
+                "C:/Windows/Fonts/ariblk.ttf",
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+                "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+            ]
+            font_path = next((f for f in font_paths if os.path.exists(f)), None)
         
         try:
             font = ImageFont.truetype(font_path, 64) if font_path else ImageFont.load_default()
@@ -919,11 +928,22 @@ class VideoRenderer:
             bbox = draw.textbbox((0, 0), line, font=font)
             x = (width - (bbox[2] - bbox[0])) // 2
             
-            for ox in range(-4, 5):
-                for oy in range(-4, 5):
+            # ENHANCED v7.15: Professional glow effect
+            # Layer 1: Outer glow (larger, softer)
+            for ox in range(-6, 7):
+                for oy in range(-6, 7):
+                    distance = (ox*ox + oy*oy) ** 0.5
+                    if distance > 3 and distance <= 6:
+                        alpha = int(80 * (1 - distance/6))
+                        draw.text((x + ox, y + oy), line, fill=(0, 0, 0, alpha), font=font)
+            
+            # Layer 2: Sharp outline (for readability)
+            for ox in range(-3, 4):
+                for oy in range(-3, 4):
                     if ox != 0 or oy != 0:
                         draw.text((x + ox, y + oy), line, fill=(0, 0, 0, 255), font=font)
             
+            # Layer 3: Main text with slight inner glow
             draw.text((x, y), line, fill=(255, 255, 255, 255), font=font)
             y += line_height
         
@@ -965,40 +985,46 @@ class VideoRenderer:
     
     def create_animated_text_clip(self, text: str, duration: float, phrase_index: int = 0) -> VideoClip:
         """
-        Create animated text overlay with professional effects.
-        OPTIMIZED: Uses MoviePy built-in effects for speed.
+        Create animated text overlay with PROFESSIONAL effects.
+        v7.15: Enhanced with 6 animation types for maximum variety.
         
-        Effects cycle by phrase for variety.
+        Effects cycle by phrase for variety:
+        0: Fade in (hook)
+        1: Slide from left
+        2: Slide from right  
+        3: Pop/scale up
+        4: Slide from bottom
+        5: Elastic bounce in
         """
         width, height = VIDEO_WIDTH, VIDEO_HEIGHT // 2
         text_img = self.create_text_overlay(text, width, height)
         base_clip = self.pil_to_clip(text_img, duration)
         
-        # Animation timing - quick fade in
-        anim_duration = min(0.3, duration * 0.1)  # 10% of clip or 0.3s max
+        # Animation timing - quick but noticeable
+        anim_duration = min(0.4, duration * 0.12)  # 12% of clip or 0.4s max
         
-        # Choose effect based on phrase index for variety
-        # All use efficient MoviePy built-in effects
-        effect_type = phrase_index % 4
+        # v7.15: 6 different effects for maximum variety
+        effect_type = phrase_index % 6
         
         if effect_type == 0:
-            # Fade in (hook - simple but effective)
+            # Fade in with slight scale (hook - attention grabbing)
             return base_clip.set_position(('center', 'center')).crossfadein(anim_duration)
         
         elif effect_type == 1:
-            # Slide in from left using set_position with lambda
+            # Slide in from left with ease-out
             def position(t):
                 if t < anim_duration:
                     progress = min(1.0, t / anim_duration)
+                    # Ease-out cubic
                     ease = 1 - pow(1 - progress, 3)
                     x = int(-width/2 + (width/2 * ease))
                 else:
                     x = 0
                 return (x, 'center')
-            return base_clip.set_position(position)
+            return base_clip.set_position(position).crossfadein(anim_duration * 0.5)
         
         elif effect_type == 2:
-            # Slide in from right
+            # Slide in from right with ease-out
             def position(t):
                 if t < anim_duration:
                     progress = min(1.0, t / anim_duration)
@@ -1007,11 +1033,52 @@ class VideoRenderer:
                 else:
                     x = 0
                 return (x, 'center')
-            return base_clip.set_position(position)
+            return base_clip.set_position(position).crossfadein(anim_duration * 0.5)
+        
+        elif effect_type == 3:
+            # Pop in / Scale up (popular on TikTok)
+            def resize_func(t):
+                if t < anim_duration:
+                    progress = min(1.0, t / anim_duration)
+                    # Ease-out back (slight overshoot for "pop" effect)
+                    c1 = 1.70158
+                    c3 = c1 + 1
+                    ease = 1 + c3 * pow(progress - 1, 3) + c1 * pow(progress - 1, 2)
+                    scale = 0.5 + 0.5 * ease
+                    return min(1.1, max(0.5, scale))  # Cap at 1.1 to prevent artifacts
+                return 1.0
+            try:
+                return base_clip.resize(resize_func).set_position(('center', 'center')).crossfadein(anim_duration * 0.3)
+            except:
+                # Fallback if resize fails
+                return base_clip.set_position(('center', 'center')).crossfadein(anim_duration)
+        
+        elif effect_type == 4:
+            # Slide up from bottom
+            def position(t):
+                if t < anim_duration:
+                    progress = min(1.0, t / anim_duration)
+                    ease = 1 - pow(1 - progress, 3)
+                    y_offset = int(height/3 * (1 - ease))
+                    return ('center', VIDEO_HEIGHT//4 + y_offset)
+                return ('center', VIDEO_HEIGHT//4)
+            return base_clip.set_position(position).crossfadein(anim_duration * 0.5)
         
         else:
-            # Fade in (default - fastest)
-            return base_clip.set_position(('center', 'center')).crossfadein(anim_duration)
+            # Elastic bounce (subtle, professional)
+            def position(t):
+                if t < anim_duration * 1.5:
+                    progress = min(1.0, t / anim_duration)
+                    # Elastic ease-out
+                    if progress == 0 or progress == 1:
+                        ease = progress
+                    else:
+                        p = 0.3
+                        ease = pow(2, -10 * progress) * math.sin((progress - p/4) * (2 * math.pi) / p) + 1
+                    y_offset = int(50 * (1 - ease))
+                    return ('center', VIDEO_HEIGHT//4 - y_offset)
+                return ('center', VIDEO_HEIGHT//4)
+            return base_clip.set_position(position).crossfadein(anim_duration * 0.3)
     
     def get_sfx_for_phrase(self, phrase_index: int, total_phrases: int) -> Optional[str]:
         """
@@ -1034,6 +1101,92 @@ class VideoRenderer:
             return None
         except Exception as e:
             return None
+    
+    def create_subscribe_cta(self, duration: float = 2.0) -> VideoClip:
+        """
+        Create an animated subscribe CTA overlay.
+        v7.15: Adds channel growth driver at end of video.
+        
+        Appears in bottom portion with subtle animation.
+        """
+        width, height = VIDEO_WIDTH, 200  # Smaller overlay at bottom
+        
+        # Create transparent image
+        img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(img)
+        
+        # Get font
+        try:
+            from dynamic_fonts import get_impact_font
+            font_path = get_impact_font()
+        except ImportError:
+            font_path = None
+        
+        if not font_path or not os.path.exists(font_path):
+            font_paths = [
+                "C:/Windows/Fonts/impact.ttf",
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+            ]
+            font_path = next((f for f in font_paths if os.path.exists(f)), None)
+        
+        try:
+            font = ImageFont.truetype(font_path, 48) if font_path else ImageFont.load_default()
+        except:
+            font = ImageFont.load_default()
+        
+        # CTA text
+        cta_text = "SUBSCRIBE FOR MORE"
+        
+        # Get text size
+        try:
+            bbox = draw.textbbox((0, 0), cta_text, font=font)
+            text_width = bbox[2] - bbox[0]
+            text_height = bbox[3] - bbox[1]
+        except:
+            text_width, text_height = 400, 50
+        
+        x = (width - text_width) // 2
+        y = (height - text_height) // 2
+        
+        # Draw semi-transparent background pill
+        pill_padding = 30
+        pill_left = x - pill_padding
+        pill_right = x + text_width + pill_padding
+        pill_top = y - pill_padding // 2
+        pill_bottom = y + text_height + pill_padding // 2
+        
+        # Red subscribe button style
+        try:
+            draw.rounded_rectangle(
+                [(pill_left, pill_top), (pill_right, pill_bottom)],
+                radius=20,
+                fill=(204, 0, 0, 230)  # YouTube red with slight transparency
+            )
+        except:
+            # Fallback for older PIL
+            draw.rectangle(
+                [(pill_left, pill_top), (pill_right, pill_bottom)],
+                fill=(204, 0, 0, 230)
+            )
+        
+        # Draw text
+        draw.text((x, y), cta_text, fill=(255, 255, 255, 255), font=font)
+        
+        # Convert to clip
+        base_clip = self.pil_to_clip(img, duration)
+        
+        # Position at bottom with fade animation
+        def position(t):
+            # Slide up from below
+            anim_time = 0.3
+            if t < anim_time:
+                progress = t / anim_time
+                ease = 1 - pow(1 - progress, 3)
+                y_pos = VIDEO_HEIGHT - 150 + 50 * (1 - ease)
+                return ('center', y_pos)
+            return ('center', VIDEO_HEIGHT - 150)
+        
+        return base_clip.set_position(position).crossfadein(0.2)
     
     def create_vignette_overlay(self, width: int, height: int, intensity: float = 0.4) -> Image.Image:
         """
@@ -1274,6 +1427,17 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
         clean_phrase = renderer.clean_phrase_prefix(phrase)
         text_clip = renderer.create_animated_text_clip(clean_phrase, dur, phrase_index=i)
         layers.append(text_clip)
+        
+        # v7.15: Add subscribe CTA to LAST segment for monetization
+        is_last_segment = (i == len(phrases) - 1)
+        if is_last_segment and dur >= 3.0:
+            try:
+                cta_clip = renderer.create_subscribe_cta(duration=min(2.0, dur - 0.5))
+                cta_clip = cta_clip.set_start(dur - 2.5)  # Appear near end
+                layers.append(cta_clip)
+                safe_print("   [OK] Added subscribe CTA to final segment")
+            except Exception as e:
+                safe_print(f"   [!] CTA error (continuing without): {e}")
         
         segment = CompositeVideoClip(layers, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
         segment = segment.set_duration(dur)
