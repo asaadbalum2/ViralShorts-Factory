@@ -181,6 +181,7 @@ ALL_CATEGORIES = BASE_CATEGORIES  # Fallback, gets updated at runtime
 # NOTE: Voice names are Edge TTS technical identifiers (cannot be AI-generated)
 # AI selects the STYLE (energetic, calm, etc.), which maps to these voices
 # The rate adjustments are tuned for optimal narration pacing
+# Expanded voice pool for maximum variety (12 unique voices)
 ALL_VOICES = {
     'en-US-AriaNeural': {'rate': '+8%', 'style': 'energetic'},
     'en-US-JennyNeural': {'rate': '-3%', 'style': 'calm'},
@@ -190,6 +191,11 @@ ALL_VOICES = {
     'en-AU-WilliamNeural': {'rate': '+3%', 'style': 'friendly'},
     'en-GB-RyanNeural': {'rate': '+0%', 'style': 'professional'},
     'en-CA-LiamNeural': {'rate': '+5%', 'style': 'upbeat'},
+    # Additional voices for better variety
+    'en-US-EricNeural': {'rate': '+3%', 'style': 'casual'},
+    'en-US-MichelleNeural': {'rate': '+0%', 'style': 'warm'},
+    'en-US-RogerNeural': {'rate': '-2%', 'style': 'serious'},
+    'en-US-SteffanNeural': {'rate': '+5%', 'style': 'dynamic'},
 }
 
 # NOTE: These are MOOD LABELS, not hardcoded tracks!
@@ -622,28 +628,37 @@ JSON ONLY."""
     # STAGE 6: Get Voice and Music with VARIETY ENFORCEMENT
     # ========================================================================
     def get_voice_config(self, concept: Dict, batch_tracker: BatchTracker = None) -> Dict:
-        """Get voice configuration with variety enforcement."""
+        """Get voice configuration with STRONG variety enforcement."""
         voice_style = concept.get('voice_style', 'energetic').lower()
         
-        # Map styles to preferred voices
+        # Map styles to preferred voices - NO OVERLAP between styles!
         style_to_voices = {
-            'energetic': ['en-US-AriaNeural', 'en-CA-LiamNeural'],
-            'calm': ['en-US-JennyNeural', 'en-GB-RyanNeural'],
-            'mysterious': ['en-US-GuyNeural', 'en-US-DavisNeural'],
+            'energetic': ['en-US-AriaNeural', 'en-US-SteffanNeural'],
+            'calm': ['en-US-JennyNeural', 'en-US-MichelleNeural'],
+            'mysterious': ['en-US-GuyNeural', 'en-US-RogerNeural'],
             'authoritative': ['en-US-DavisNeural', 'en-GB-RyanNeural'],
-            'friendly': ['en-AU-WilliamNeural', 'en-US-AriaNeural'],
-            'dramatic': ['en-US-ChristopherNeural', 'en-US-GuyNeural'],
+            'friendly': ['en-AU-WilliamNeural', 'en-US-EricNeural'],
+            'dramatic': ['en-US-ChristopherNeural', 'en-CA-LiamNeural'],
         }
         
         candidates = style_to_voices.get(voice_style, list(ALL_VOICES.keys()))
         
-        # Enforce variety: avoid recently used voices
+        # STRONG variety enforcement: avoid ALL used voices in this batch
         if batch_tracker and batch_tracker.used_voices:
-            unused = [v for v in candidates if v not in batch_tracker.used_voices[-3:]]
+            # First try: exclude all previously used voices
+            unused = [v for v in candidates if v not in batch_tracker.used_voices]
             if unused:
                 candidates = unused
+            else:
+                # Fallback: pick from ALL voices that haven't been used
+                all_unused = [v for v in ALL_VOICES.keys() if v not in batch_tracker.used_voices]
+                if all_unused:
+                    candidates = all_unused
+                # If all voices used (8+ videos), just avoid last 4
+                else:
+                    candidates = [v for v in ALL_VOICES.keys() if v not in batch_tracker.used_voices[-4:]]
         
-        selected_voice = random.choice(candidates)
+        selected_voice = random.choice(candidates) if candidates else random.choice(list(ALL_VOICES.keys()))
         voice_config = ALL_VOICES.get(selected_voice, {'rate': '+0%', 'style': 'neutral'})
         
         # Track usage
@@ -1389,17 +1404,25 @@ async def main():
                 best_path, best_meta = best
                 safe_print(f"\n[YOUTUBE] Uploading BEST video (score-based selection)")
                 await upload_video(best_path, best_meta, youtube=True, dailymotion=True)
+                # IMPORTANT: Wait after first upload before starting Dailymotion batch
+                initial_delay = random.randint(120, 180)  # 2-3 minutes after first
+                safe_print(f"[WAIT] Initial cooldown: {initial_delay}s before Dailymotion batch")
+                time.sleep(initial_delay)
             
-            # All other videos to Dailymotion only (with longer delays to prevent 403)
-            for idx, (video_path, metadata) in enumerate(BATCH_TRACKER.get_all_videos()):
-                if best and video_path == best[0]:
-                    continue  # Already uploaded
-                safe_print(f"\n[DAILYMOTION ONLY] {video_path}")
+            # All other videos to Dailymotion only (SEQUENTIAL with longer delays)
+            remaining_videos = [(p, m) for p, m in BATCH_TRACKER.get_all_videos() 
+                               if not best or p != best[0]]
+            
+            for idx, (video_path, metadata) in enumerate(remaining_videos):
+                safe_print(f"\n[DAILYMOTION ONLY] ({idx+1}/{len(remaining_videos)}) {video_path}")
                 await upload_video(video_path, metadata, youtube=False, dailymotion=True)
-                # Longer delays to prevent Dailymotion 403 rate limiting
-                delay = random.randint(90, 180)  # 1.5-3 minutes between uploads
-                safe_print(f"[WAIT] Anti-ban delay: {delay}s (prevents 403 errors)")
-                time.sleep(delay)
+                
+                # Skip delay after last video
+                if idx < len(remaining_videos) - 1:
+                    # Longer delays to prevent Dailymotion 403 rate limiting
+                    delay = random.randint(150, 240)  # 2.5-4 minutes between uploads
+                    safe_print(f"[WAIT] Anti-ban delay: {delay}s (prevents 403 errors)")
+                    time.sleep(delay)
         else:
             # Legacy: Upload all to both platforms
             for video_path, metadata in BATCH_TRACKER.get_all_videos():
