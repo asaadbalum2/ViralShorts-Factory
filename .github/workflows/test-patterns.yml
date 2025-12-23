@@ -6,25 +6,40 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Restore persistent state
-        uses: dawidd6/action-download-artifact@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          name: persistent-state
-          path: data/persistent/
-          if_no_artifact_found: warn
-          search_artifacts: true
-        continue-on-error: true
+      
+      - name: Download artifact via API
+        run: |
+          mkdir -p data/persistent
+          
+          # Get the latest artifact ID
+          ARTIFACT_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/artifacts?name=persistent-state&per_page=1" \
+            | jq -r '.artifacts[0].id')
+          
+          echo "Found artifact ID: $ARTIFACT_ID"
+          
+          if [ "$ARTIFACT_ID" != "null" ] && [ -n "$ARTIFACT_ID" ]; then
+            # Download the artifact
+            curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID/zip" \
+              -o artifact.zip
+            
+            unzip -o artifact.zip -d data/persistent/
+            echo "Artifact downloaded successfully!"
+            ls -la data/persistent/
+          else
+            echo "No artifact found"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: Test pattern loading
         run: |
-          echo "=== FILES DOWNLOADED ==="
-          ls -la data/persistent/ || echo "No persistent dir"
+          echo "=== FILES IN PERSISTENT ==="
+          ls -la data/persistent/ 2>/dev/null || echo "No persistent dir"
           echo ""
           echo "=== VIRAL PATTERNS CONTENT ==="
-          cat data/persistent/viral_patterns.json 2>/dev/null || echo "No viral_patterns.json"
+          cat data/persistent/viral_patterns.json 2>/dev/null | head -50 || echo "No viral_patterns.json"
           echo ""
           echo "=== VARIETY STATE CONTENT ==="
-          cat data/persistent/variety_state.json 2>/dev/null || echo "No variety_state.json"
+          cat data/persistent/variety_state.json 2>/dev/null | head -50 || echo "No variety_state.json"
