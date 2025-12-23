@@ -12,12 +12,17 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-# API Keys
-YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY")
+# API Keys - Use OAuth credentials (same as upload)
+YOUTUBE_CLIENT_ID = os.environ.get("YOUTUBE_CLIENT_ID")
+YOUTUBE_CLIENT_SECRET = os.environ.get("YOUTUBE_CLIENT_SECRET")
+YOUTUBE_REFRESH_TOKEN = os.environ.get("YOUTUBE_REFRESH_TOKEN")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 ANALYSIS_FILE = Path("data/persistent/monthly_analysis.json")
 VIRAL_PATTERNS_FILE = Path("data/persistent/viral_patterns.json")
+
+# YouTube access token (refreshed at runtime)
+_youtube_access_token = None
 
 
 def safe_print(msg):
@@ -28,15 +33,47 @@ def safe_print(msg):
         print(msg.encode('ascii', 'ignore').decode())
 
 
+def get_youtube_access_token():
+    """Get YouTube access token using OAuth refresh token."""
+    global _youtube_access_token
+    if _youtube_access_token:
+        return _youtube_access_token
+    
+    if not all([YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN]):
+        safe_print("[!] Missing YouTube OAuth credentials")
+        return None
+    
+    try:
+        response = requests.post(
+            "https://oauth2.googleapis.com/token",
+            data={
+                "client_id": YOUTUBE_CLIENT_ID,
+                "client_secret": YOUTUBE_CLIENT_SECRET,
+                "refresh_token": YOUTUBE_REFRESH_TOKEN,
+                "grant_type": "refresh_token"
+            },
+            timeout=10
+        )
+        if response.status_code == 200:
+            _youtube_access_token = response.json().get("access_token")
+            safe_print("[OK] YouTube OAuth token refreshed")
+            return _youtube_access_token
+        else:
+            safe_print(f"[!] Token refresh failed: {response.status_code}")
+    except Exception as e:
+        safe_print(f"[!] Token refresh error: {e}")
+    return None
+
+
 def youtube_search(query, max_results=10):
-    """Search YouTube for videos."""
-    if not YOUTUBE_API_KEY:
-        safe_print("[!] No YouTube API key")
+    """Search YouTube for videos using OAuth."""
+    token = get_youtube_access_token()
+    if not token:
+        safe_print("[!] No YouTube access token")
         return []
     
     url = "https://www.googleapis.com/youtube/v3/search"
     params = {
-        "key": YOUTUBE_API_KEY,
         "q": query,
         "part": "snippet",
         "type": "video",
@@ -45,32 +82,38 @@ def youtube_search(query, max_results=10):
         "maxResults": max_results,
         "publishedAfter": "2024-01-01T00:00:00Z"
     }
+    headers = {"Authorization": f"Bearer {token}"}
     
     try:
-        response = requests.get(url, params=params, timeout=15)
+        response = requests.get(url, params=params, headers=headers, timeout=15)
         if response.status_code == 200:
             return response.json().get("items", [])
+        else:
+            safe_print(f"[!] Search failed: {response.status_code}")
     except Exception as e:
         safe_print(f"[!] Search error: {e}")
     return []
 
 
 def get_video_details(video_ids):
-    """Get detailed stats for videos."""
-    if not YOUTUBE_API_KEY or not video_ids:
+    """Get detailed stats for videos using OAuth."""
+    token = get_youtube_access_token()
+    if not token or not video_ids:
         return []
     
     url = "https://www.googleapis.com/youtube/v3/videos"
     params = {
-        "key": YOUTUBE_API_KEY,
         "id": ",".join(video_ids),
         "part": "statistics,snippet,contentDetails"
     }
+    headers = {"Authorization": f"Bearer {token}"}
     
     try:
-        response = requests.get(url, params=params, timeout=15)
+        response = requests.get(url, params=params, headers=headers, timeout=15)
         if response.status_code == 200:
             return response.json().get("items", [])
+        else:
+            safe_print(f"[!] Details failed: {response.status_code}")
     except Exception as e:
         safe_print(f"[!] Details error: {e}")
     return []
