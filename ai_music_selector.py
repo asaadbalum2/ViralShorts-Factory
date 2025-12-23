@@ -79,49 +79,104 @@ class AIMusicSelector:
                                   content_summary: str = "") -> Dict:
         """
         Ask AI to describe the ideal background music.
-        OPTIMIZED: Uses smaller model + shorter prompt to save tokens.
+        v8.8: FULL PROMPT using Gemini (free tokens available!)
         """
-        if not self.groq_key:
-            return self._fallback_description(content_mood)
+        # v8.8: FULL comprehensive prompt - no more token saving!
+        prompt = f"""You are an expert music director for viral short-form videos.
+
+VIDEO DETAILS:
+- Category: {content_category}
+- Mood: {content_mood}
+- Content: {content_summary if content_summary else 'viral short video about ' + content_category}
+
+YOUR TASK:
+Select the PERFECT background music that will:
+1. Amplify the emotional impact of the content
+2. Match the pacing (short videos need engaging music from the start)
+3. Not distract from the voiceover (instrumental only)
+4. Enhance watch time and engagement
+
+Consider:
+- What emotion should viewers feel?
+- Should it build tension or maintain energy?
+- What genre matches viral short content?
+
+Return comprehensive JSON:
+{{
+    "search_query": "specific search query for royalty-free music API",
+    "genre": "specific genre (cinematic/electronic/ambient/pop/hip-hop/orchestral)",
+    "tempo": "slow/medium/fast",
+    "energy": "low/medium/high",
+    "instruments": ["main instruments that would work"],
+    "mood_keywords": ["descriptive mood words"],
+    "why_this_works": "brief explanation of why this music choice enhances the video"
+}}
+
+JSON ONLY."""
+
+        # Try Gemini first (free tokens!)
+        gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+        if gemini_key:
+            try:
+                response = requests.post(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={gemini_key}",
+                    headers={"Content-Type": "application/json"},
+                    json={
+                        "contents": [{"parts": [{"text": prompt}]}],
+                        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 300}
+                    },
+                    timeout=15
+                )
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    content = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "")
+                    import re
+                    json_match = re.search(r'\{[\s\S]*\}', content)
+                    if json_match:
+                        result = json.loads(json_match.group())
+                        safe_print(f"   [OK] Gemini music selection: {result.get('genre', 'N/A')}, {result.get('tempo', 'N/A')}")
+                        return {
+                            "search_terms": [result.get("search_query", f"{content_mood} instrumental")],
+                            "genre": result.get("genre", "electronic"),
+                            "tempo": result.get("tempo", "medium"),
+                            "energy": result.get("energy", "medium"),
+                            "mood_keywords": result.get("mood_keywords", [content_mood])
+                        }
+            except Exception as e:
+                safe_print(f"   [!] Gemini music selection failed: {e}")
         
-        # OPTIMIZED shorter prompt (saves ~50% tokens)
-        prompt = f"""Describe ideal music for a {content_mood} {content_category} video.
-Content: {content_summary[:100] if content_summary else 'viral short video'}
-
-Return JSON:
-{{"search_query": "one search query for music API", "genre": "genre", "tempo": "slow/medium/fast"}}
-JSON only."""
-
-        try:
-            response = requests.post(
-                "https://api.groq.com/openai/v1/chat/completions",
-                headers={
-                    "Authorization": f"Bearer {self.groq_key}",
-                    "Content-Type": "application/json"
-                },
-                json={
-                    "model": "llama-3.1-8b-instant",  # Fastest, cheapest model
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.7,
-                    "max_tokens": 100  # Much shorter response needed
-                },
-                timeout=10
-            )
-            
-            if response.status_code == 200:
-                content = response.json()["choices"][0]["message"]["content"]
-                import re
-                json_match = re.search(r'\{[\s\S]*\}', content)
-                if json_match:
-                    result = json.loads(json_match.group())
-                    # Convert to our format
-                    return {
-                        "search_terms": [result.get("search_query", f"{content_mood} instrumental")],
-                        "genre": result.get("genre", "electronic"),
-                        "tempo": result.get("tempo", "medium")
-                    }
-        except Exception as e:
-            safe_print(f"   [!] AI music description failed: {e}")
+        # Fallback to Groq
+        if self.groq_key:
+            try:
+                response = requests.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers={
+                        "Authorization": f"Bearer {self.groq_key}",
+                        "Content-Type": "application/json"
+                    },
+                    json={
+                        "model": "llama-3.1-8b-instant",
+                        "messages": [{"role": "user", "content": prompt}],
+                        "temperature": 0.7,
+                        "max_tokens": 200
+                    },
+                    timeout=10
+                )
+                
+                if response.status_code == 200:
+                    content = response.json()["choices"][0]["message"]["content"]
+                    import re
+                    json_match = re.search(r'\{[\s\S]*\}', content)
+                    if json_match:
+                        result = json.loads(json_match.group())
+                        return {
+                            "search_terms": [result.get("search_query", f"{content_mood} instrumental")],
+                            "genre": result.get("genre", "electronic"),
+                            "tempo": result.get("tempo", "medium")
+                        }
+            except Exception as e:
+                safe_print(f"   [!] Groq music selection failed: {e}")
         
         return self._fallback_description(content_mood)
     

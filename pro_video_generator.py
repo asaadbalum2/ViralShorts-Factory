@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 ViralShorts Factory - PROFESSIONAL Video Generator v8.0
 =========================================================
@@ -933,13 +933,39 @@ JSON ONLY."""
         
         safe_print(f"   AI selecting voice for {category}/{voice_style}...")
         
-        # OPTIMIZED prompt - much shorter to save tokens
-        # v8.2: Use Gemini for voice selection to save Groq quota
-        prompt = f"""Pick voice for {category} video, style: {voice_style}.
-Available: {', '.join([v.split('-')[2].replace('Neural','') for v in available[:10]])}
-Return JSON: {{"voice": "full-voice-name", "rate": "+X%"}}"""
+        # v8.8: FULL PROMPT - using free Gemini tokens!
+        prompt = f"""You are a voice casting director for viral short-form videos.
 
-        response = self.call_ai(prompt, 80, temperature=0.8, prefer_gemini=True)
+VIDEO DETAILS:
+- Category: {category}
+- Desired Style: {voice_style}
+- Content Type: Educational/Entertainment short (15-25 seconds)
+
+AVAILABLE VOICES (Microsoft Edge TTS):
+{chr(10).join([f"- {v} ({v.split('-')[1]} accent)" for v in available[:12]])}
+
+YOUR TASK:
+Select the BEST voice that will:
+1. Match the {voice_style} energy perfectly
+2. Keep viewers engaged (not boring or annoying)
+3. Be clear and easy to understand
+4. Suit the {category} content
+
+Also determine the optimal speaking rate:
+- Energetic content: +5% to +10%
+- Calm content: -5% to +0%
+- Dramatic content: +0% to +5%
+
+Return JSON:
+{{
+    "voice": "exact-voice-name-from-list",
+    "rate": "+X%" or "-X%",
+    "why": "brief reason for this choice"
+}}
+
+JSON ONLY."""
+
+        response = self.call_ai(prompt, 150, temperature=0.8, prefer_gemini=True)
         result = self.parse_json(response)
         
         selected_voice = None
