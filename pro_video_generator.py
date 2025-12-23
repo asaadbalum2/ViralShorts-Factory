@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 ViralShorts Factory - PROFESSIONAL Video Generator v8.0
 =========================================================
@@ -200,6 +200,45 @@ Return ONLY the JSON array, nothing else."""}],
 
 # Will be populated dynamically by AI
 ALL_CATEGORIES = BASE_CATEGORIES  # Fallback, gets updated at runtime
+
+
+def get_learned_optimal_metrics() -> Dict:
+    """
+    Get optimal video metrics from analytics feedback (with safe guardrails).
+    
+    This is HYBRID: Uses AI-learned values but within proven safe bounds.
+    
+    Returns: {duration, phrases, words_per_phrase}
+    """
+    defaults = {"duration": 20, "phrases": 4, "words_per_phrase": 12}
+    
+    try:
+        if PERSISTENT_STATE_AVAILABLE:
+            viral_mgr = get_viral_manager()
+            patterns = viral_mgr.patterns if hasattr(viral_mgr, 'patterns') else {}
+            
+            # Duration: Learn from analytics, but keep within proven range
+            learned_duration = patterns.get("optimal_duration", 20)
+            if isinstance(learned_duration, (int, float)):
+                # Guardrails: 15-30 seconds (never below 15, never above 30)
+                defaults["duration"] = max(15, min(30, int(learned_duration)))
+            
+            # Phrases: Learn from analytics, but keep within safe range
+            learned_phrases = patterns.get("optimal_phrase_count", 4)
+            if isinstance(learned_phrases, (int, float)):
+                # Guardrails: 3-6 phrases (proven range)
+                defaults["phrases"] = max(3, min(6, int(learned_phrases)))
+            
+            # Words per phrase: Could also be learned
+            learned_words = patterns.get("optimal_words_per_phrase", 12)
+            if isinstance(learned_words, (int, float)):
+                # Guardrails: 8-18 words (for readability and pacing)
+                defaults["words_per_phrase"] = max(8, min(18, int(learned_words)))
+            
+    except Exception as e:
+        pass  # Use defaults on any error
+    
+    return defaults
 
 # NOTE: Voice names are Edge TTS technical identifiers (cannot be AI-generated)
 # AI selects the STYLE (energetic, calm, etc.), which maps to these voices
@@ -579,12 +618,18 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
     def stage2_create_content(self, concept: Dict) -> Dict:
         """AI creates the actual content based on the concept it decided.
         v8.0: Shorter content (3-5 phrases), stronger hooks, engagement baits.
+        v8.5: HYBRID - uses analytics-learned optimal metrics with guardrails.
         """
         safe_print("\n[STAGE 2] AI creating content...")
         
-        # v8.0: Cap phrase count for optimal length (15-25 seconds)
-        phrase_count = min(concept.get('phrase_count', 4), 5)  # Max 5 phrases!
-        target_duration = min(concept.get('target_duration_seconds', 20), 25)  # Max 25s!
+        # v8.5: HYBRID approach - learn from analytics but with guardrails
+        learned_metrics = get_learned_optimal_metrics()
+        max_phrases = learned_metrics["phrases"]  # From analytics (3-6, default 4)
+        max_duration = learned_metrics["duration"]  # From analytics (15-30, default 20)
+        
+        # Use concept values but cap at learned optimal
+        phrase_count = min(concept.get('phrase_count', max_phrases), max_phrases)
+        target_duration = min(concept.get('target_duration_seconds', max_duration), max_duration)
         
         # v8.0: Get viral hook patterns
         viral_boost = get_viral_prompt_boost() if VIRAL_PATTERNS_AVAILABLE else ""

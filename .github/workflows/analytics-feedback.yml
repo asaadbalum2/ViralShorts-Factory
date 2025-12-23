@@ -206,6 +206,9 @@ jobs:
               "title_tricks_that_work": ["use numbers", "curiosity gaps", ...],
               "best_title_patterns": ["pattern with {{placeholder}}", ...],
               "optimal_title_word_count": number,
+              "optimal_duration": number (ideal video length in seconds, 15-30),
+              "optimal_phrase_count": number (ideal phrases per video, 3-6),
+              "optimal_words_per_phrase": number (ideal words, 8-18),
               "hook_types_that_work": ["question hook", "shocking statement", ...],
               "psychological_triggers": ["curiosity", "fomo", ...],
               "engagement_baits": ["comment if...", "type 1 if...", ...],
@@ -376,6 +379,16 @@ jobs:
               
               if analysis.get("optimal_title_word_count"):
                   viral_patterns["optimal_title_word_count"] = analysis["optimal_title_word_count"]
+              
+              # HYBRID LEARNING: Optimal video metrics (with guardrails applied in generator)
+              if analysis.get("optimal_duration"):
+                  viral_patterns["optimal_duration"] = analysis["optimal_duration"]
+              
+              if analysis.get("optimal_phrase_count"):
+                  viral_patterns["optimal_phrase_count"] = analysis["optimal_phrase_count"]
+              
+              if analysis.get("optimal_words_per_phrase"):
+                  viral_patterns["optimal_words_per_phrase"] = analysis["optimal_words_per_phrase"]
               
               viral_patterns["last_performance_update"] = datetime.now().isoformat()
               viral_patterns["key_insight"] = analysis.get("key_insight", "")
