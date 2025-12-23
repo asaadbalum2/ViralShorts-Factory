@@ -177,40 +177,46 @@ jobs:
 
           def analyze_performance_with_ai(videos_with_stats):
               """AI performs MICRO-LEVEL analysis of OUR performance.
-              Analyzes every element: topics, titles, timing, engagement patterns.
+              Analyzes EVERYTHING: topics, titles, tricks, baits, hacks, engagement patterns.
               """
               if not GROQ_API_KEY or not videos_with_stats:
                   return {}
               
-              prompt = f"""You are our performance analyst. Perform DEEP MICRO-ANALYSIS of our YouTube Shorts:
+              prompt = f"""You are our viral video expert. Perform DEEP MICRO-ANALYSIS of our YouTube Shorts:
 
           OUR VIDEO DATA (with performance stats):
           {json.dumps(videos_with_stats[:15], indent=2)}
 
-          MICRO-ANALYZE every aspect:
+          MICRO-ANALYZE EVERYTHING for maximum virality:
 
-          1. **CATEGORY PERFORMANCE**: Which categories got most views? Calculate view/category ratio
-          2. **TITLE ANALYSIS**: What title structures performed best? Word count, numbers, emotion words
-          3. **TIMING PATTERNS**: Any patterns in publish time vs performance?
-          4. **ENGAGEMENT ANALYSIS**: Views to likes ratio, views to comments ratio - what drives engagement?
-          5. **CONTENT THEMES**: What specific themes within categories work?
-          6. **MUSIC MOOD CORRELATION**: If detectable from titles, what moods correlate with success?
-          7. **HOOK EFFECTIVENESS**: Based on titles, what hook types performed best?
-          8. **OPTIMIZATION PRIORITIES**: Ranked list of what to improve
+          1. **CATEGORY PERFORMANCE**: Which categories got most views?
+          2. **TITLE TRICKS**: What title structures performed best? Numbers, power words, curiosity gaps
+          3. **HOOK PATTERNS**: What hooks stopped the scroll? Questions? Shocking statements? Countdowns?
+          4. **ENGAGEMENT BAITS**: What drove comments? Questions? Challenges? Controversies?
+          5. **PSYCHOLOGICAL TRIGGERS**: Fear of missing out? Curiosity? Surprise? Validation?
+          6. **MUSIC MOOD CORRELATION**: What moods correlate with high engagement?
+          7. **VOICE STYLES**: Energetic? Calm? Mysterious? Which worked best?
+          8. **CONTENT THEMES**: What specific angles within categories work?
+          9. **VIRALITY HACKS**: Any patterns in our best videos that made them spread?
+          10. **CALL-TO-ACTIONS**: What CTAs drove most engagement?
 
-          Return comprehensive JSON:
+          Return comprehensive JSON with GOLD-VALUE insights:
           {{
               "best_performing_categories": ["category1", "category2"],
+              "title_tricks_that_work": ["use numbers", "curiosity gaps", ...],
               "best_title_patterns": ["pattern with {{placeholder}}", ...],
               "optimal_title_word_count": number,
-              "best_music_moods": ["mood1", "mood2"],
-              "best_voice_styles": ["style1", "style2"],
-              "best_content_themes": ["theme1", "theme2"],
+              "hook_types_that_work": ["question hook", "shocking statement", ...],
+              "psychological_triggers": ["curiosity", "fomo", ...],
+              "engagement_baits": ["comment if...", "type 1 if...", ...],
+              "best_music_moods": ["dramatic", "mysterious", ...],
+              "best_voice_styles": ["energetic", "calm", ...],
+              "best_content_themes": ["money secrets", "psychology tricks", ...],
+              "virality_hacks": ["specific hack 1", "specific hack 2", ...],
               "do_more": ["specific action 1", "specific action 2"],
               "avoid": ["specific thing to avoid 1", ...],
               "next_video_suggestions": ["very specific topic 1", "topic 2", "topic 3"],
               "category_weights": {{"category1": 0.3, "category2": 0.25, ...}},
-              "engagement_insights": ["what drives comments", "what drives likes"],
               "key_insight": "One sentence summary of most important finding",
               "priority_improvements": ["highest priority", "second priority", ...]
           }}
@@ -324,6 +330,22 @@ jobs:
               
               if analysis.get("priority_improvements"):
                   variety_state["priority_improvements"] = analysis["priority_improvements"]
+              
+              # GOLD-VALUE: Tricks, Baits, Hacks
+              if analysis.get("title_tricks_that_work"):
+                  variety_state["title_tricks"] = analysis["title_tricks_that_work"]
+              
+              if analysis.get("hook_types_that_work"):
+                  variety_state["hook_types"] = analysis["hook_types_that_work"]
+              
+              if analysis.get("psychological_triggers"):
+                  variety_state["psych_triggers"] = analysis["psychological_triggers"]
+              
+              if analysis.get("engagement_baits"):
+                  variety_state["engagement_baits"] = analysis["engagement_baits"]
+              
+              if analysis.get("virality_hacks"):
+                  variety_state["virality_hacks"] = analysis["virality_hacks"]
               
               variety_state["last_feedback"] = datetime.now().isoformat()
               

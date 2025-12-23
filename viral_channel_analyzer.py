@@ -542,7 +542,7 @@ def get_viral_prompt_boost() -> str:
     Combines:
     - Viral patterns from other successful channels (monthly)
     - Our own performance analytics (weekly)
-    - Micro-level preferences (music, voice, themes)
+    - GOLD-VALUE: Tricks, baits, hacks, psychological triggers
     """
     analyzer = ViralChannelAnalyzer()
     viral_additions = analyzer.get_optimized_prompt_additions()
@@ -557,7 +557,7 @@ def get_viral_prompt_boost() -> str:
         
         # Add learned preferences from our own analytics
         if state.get("preferred_categories"):
-            analytics_boost += f"\nOUR BEST CATEGORIES (from analytics): {', '.join(state['preferred_categories'][:5])}"
+            analytics_boost += f"\nOUR BEST CATEGORIES: {', '.join(state['preferred_categories'][:5])}"
         
         if state.get("preferred_music_moods"):
             analytics_boost += f"\nPREFERRED MUSIC MOODS: {', '.join(state['preferred_music_moods'][:4])}"
@@ -568,11 +568,27 @@ def get_viral_prompt_boost() -> str:
         if state.get("preferred_themes"):
             analytics_boost += f"\nTHEMES THAT PERFORM: {', '.join(state['preferred_themes'][:5])}"
         
+        # GOLD-VALUE: Tricks, baits, hacks
+        if state.get("title_tricks"):
+            analytics_boost += f"\n\nTITLE TRICKS THAT WORK: {', '.join(state['title_tricks'][:4])}"
+        
+        if state.get("hook_types"):
+            analytics_boost += f"\nHOOK TYPES THAT CONVERT: {', '.join(state['hook_types'][:3])}"
+        
+        if state.get("psych_triggers"):
+            analytics_boost += f"\nPSYCH TRIGGERS TO USE: {', '.join(state['psych_triggers'][:3])}"
+        
+        if state.get("engagement_baits"):
+            analytics_boost += f"\nENGAGEMENT BAITS: {', '.join(state['engagement_baits'][:3])}"
+        
+        if state.get("virality_hacks"):
+            analytics_boost += f"\nVIRALITY HACKS: {', '.join(state['virality_hacks'][:3])}"
+        
         if state.get("priority_improvements"):
-            analytics_boost += f"\nIMPROVEMENT PRIORITIES: {', '.join(state['priority_improvements'][:3])}"
+            analytics_boost += f"\n\nPRIORITY IMPROVEMENTS: {', '.join(state['priority_improvements'][:3])}"
         
         if analytics_boost:
-            viral_additions += f"\n\n=== OUR ANALYTICS INSIGHTS ==={analytics_boost}\n"
+            viral_additions += f"\n\n=== OUR ANALYTICS INSIGHTS (GOLD-VALUE) ==={analytics_boost}\n"
         
     except Exception as e:
         pass  # Analytics not available yet

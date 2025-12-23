@@ -128,43 +128,50 @@ jobs:
 
           def analyze_with_ai(videos_data):
               """Use AI for MICRO-LEVEL analysis of successful videos.
-              Analyzes: titles, hooks, music, visuals, effects, pacing, etc.
+              Extracts GOLD-VALUE: tricks, baits, hacks, psychological triggers.
               """
               if not GROQ_API_KEY or not videos_data:
                   return {}
               
-              prompt = f"""You are a viral video analyst. Perform DEEP MICRO-ANALYSIS of these successful YouTube Shorts:
+              prompt = f"""You are a viral video reverse-engineer. Extract EVERY secret from these successful YouTube Shorts:
 
-          VIDEO DATA:
+          VIDEO DATA (from viral competitors):
           {json.dumps(videos_data, indent=2)}
 
-          Analyze EVERY aspect that could contribute to virality:
+          Extract GOLD-VALUE patterns - the TRICKS, BAITS, and HACKS that made these go viral:
 
-          1. **TITLE PATTERNS**: Structure, word count, use of numbers, emotion words, curiosity gaps
-          2. **TOPIC CATEGORIES**: What niches/categories dominate? Sub-niches?
-          3. **HOOK TECHNIQUES**: First 1-3 seconds - what grabs attention?
-          4. **MUSIC/AUDIO MOODS**: Based on titles, what music moods likely work? (dramatic, upbeat, mysterious, etc.)
-          5. **VISUAL STYLE HINTS**: What visual keywords would match these topics?
-          6. **PACING**: Fast cuts or slow? Based on view/engagement ratio
-          7. **ENGAGEMENT TACTICS**: How do they drive comments? Questions? Challenges?
-          8. **OPTIMAL METRICS**: Duration, word count per title, engagement rate
+          1. **TITLE TRICKS**: Numbers? Power words? Curiosity gaps? Click-bait techniques?
+          2. **HOOK HACKS**: What grabs attention in first 1-2 seconds? Shocking statements? Questions?
+          3. **PSYCHOLOGICAL TRIGGERS**: FOMO? Curiosity? Controversy? Social proof? Fear? Greed?
+          4. **ENGAGEMENT BAITS**: How do they farm comments? "Comment 1 if...", "Tag someone who..."
+          5. **CONTENT SECRETS**: What makes the content irresistible? Secrets? Hacks? Hidden truths?
+          6. **RETENTION TRICKS**: How do they keep viewers watching? Open loops? Countdowns?
+          7. **VIRALITY HACKS**: Shareability factors? Controversy? Relatability?
+          8. **MUSIC/MOOD**: Dramatic? Mysterious? Upbeat? What amplifies emotion?
+          9. **TOPIC ANGLES**: What specific angles within categories work best?
+          10. **CTA TRICKS**: How do they convert viewers to subscribers/commenters?
 
-          Return comprehensive JSON:
+          Return comprehensive GOLD-VALUE JSON:
           {{
+              "title_tricks": ["use X number", "curiosity gap with...", ...],
               "title_patterns": ["pattern with {{placeholder}}", ...],
+              "hook_hacks": ["start with question", "shocking first word", ...],
+              "psychological_triggers": ["fomo", "curiosity", "controversy", ...],
+              "engagement_baits": ["comment 1 if you...", "tag someone who...", ...],
+              "retention_tricks": ["open loop", "countdown", ...],
+              "virality_hacks": ["make it shareable by...", ...],
               "top_categories": ["category1", "category2", ...],
               "hook_patterns": ["specific hook technique", ...],
-              "music_moods_that_work": ["mood1", "mood2", ...],
+              "music_moods_that_work": ["dramatic", "mysterious", ...],
               "visual_keywords": ["keyword for b-roll", ...],
-              "engagement_baits": ["comment-driving tactic", ...],
-              "voice_styles": ["energetic", "calm", etc based on content],
+              "voice_styles": ["energetic", "calm", ...],
               "optimal_phrase_count": number,
               "optimal_duration_seconds": number,
-              "insights": ["micro-level insight 1", "insight 2", ...],
-              "content_themes": ["theme that works", ...]
+              "content_themes": ["secrets about X", "hacks for Y", ...],
+              "insights": ["key gold-value insight 1", "insight 2", ...]
           }}
 
-          Be SPECIFIC based on ACTUAL data. Extract learnable patterns. JSON ONLY."""
+          Be SPECIFIC. Extract the SECRETS that make these videos viral. JSON ONLY."""
 
               try:
                   response = requests.post(
@@ -328,11 +335,14 @@ JSON ARRAY ONLY."""
                   except:
                       pass
               
-              # Merge ALL micro-level patterns
+              # Merge ALL micro-level patterns including GOLD-VALUE fields
               array_keys = [
                   "title_patterns", "hook_patterns", "engagement_baits",
                   "music_moods_that_work", "visual_keywords", "voice_styles",
-                  "content_themes"
+                  "content_themes",
+                  # GOLD-VALUE fields
+                  "title_tricks", "hook_hacks", "psychological_triggers",
+                  "retention_tricks", "virality_hacks"
               ]
               for key in array_keys:
                   if key in analysis:
