@@ -34,10 +34,10 @@ jobs:
         uses: dawidd6/action-download-artifact@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: generate.yml
           name: persistent-state
           path: data/persistent/
           if_no_artifact_found: ignore
+          search_artifacts: true
         continue-on-error: true
 
       - name: Create data directories

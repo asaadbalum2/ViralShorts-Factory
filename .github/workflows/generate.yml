@@ -103,15 +103,15 @@ jobs:
           mkdir -p assets/backgrounds assets/broll assets/music assets/sfx assets/fonts
           mkdir -p output cache data/persistent
       
-      # v8.0: Download persistent state from previous runs
+      # v8.0: Download persistent state from previous runs (ANY workflow)
       - name: Restore persistent state
         uses: dawidd6/action-download-artifact@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: generate.yml
           name: persistent-state
           path: data/persistent/
           if_no_artifact_found: ignore
+          search_artifacts: true
         continue-on-error: true
 
       - name: Pre-fetch some B-roll (optional cache)
