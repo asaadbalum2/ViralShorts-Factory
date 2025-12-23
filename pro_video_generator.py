@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 ViralShorts Factory - PROFESSIONAL Video Generator v8.0
 =========================================================
@@ -831,27 +831,38 @@ JSON ARRAY ONLY."""
         return ["dramatic scene"] * len(phrases)
     
     # ========================================================================
-    # STAGE 5: AI Generates Metadata
+    # STAGE 5: AI Generates Metadata with A/B Title Variants
     # ========================================================================
     def stage5_metadata(self, content: Dict) -> Dict:
-        """AI generates viral metadata.
-        v8.2: Uses Gemini to save Groq quota (non-critical task).
+        """AI generates viral metadata with title variants for A/B testing.
+        v8.5: Generates 3 title variants, picks one randomly, tracks style.
         """
-        safe_print("\n[STAGE 5] AI generating metadata...")
+        safe_print("\n[STAGE 5] AI generating metadata with A/B title variants...")
         
         concept = content.get('concept', {})
         phrases = content.get('phrases', [])
         
-        prompt = f"""Create viral metadata for this video.
+        # v8.5: Ask AI for multiple title variants in different styles
+        prompt = f"""Create viral metadata for this video with 3 TITLE VARIANTS.
 
 Category: {concept.get('category', '')}
 Topic: {concept.get('specific_topic', '')}
 First phrase: {phrases[0] if phrases else ''}
 Value: {content.get('value_delivered', '')}
 
+=== TITLE VARIANTS (for A/B testing) ===
+Create 3 different title styles - all under 50 chars:
+1. NUMBER_HOOK: Uses a specific number ("3 Signs...", "Why 90%...", "The 5 Second...")
+2. CURIOSITY_GAP: Creates curiosity ("The Truth About...", "What They Don't...", "The Secret...")
+3. SHOCKING: Strong statement ("This Changes Everything", "You've Been Doing It Wrong")
+
 === OUTPUT JSON ===
 {{
-    "title": "viral title under 50 chars (include numbers if relevant)",
+    "title_variants": [
+        {{"style": "number_hook", "title": "the number-based title"}},
+        {{"style": "curiosity_gap", "title": "the curiosity title"}},
+        {{"style": "shocking", "title": "the shocking title"}}
+    ],
     "description": "2-3 sentence description with CTA",
     "hashtags": ["#shorts", "#viral", plus 5-8 relevant hashtags]
 }}
@@ -859,10 +870,21 @@ Value: {content.get('value_delivered', '')}
 JSON ONLY."""
 
         # v8.2: Use Gemini for this task to save Groq quota
-        response = self.call_ai(prompt, 300, temperature=0.8, prefer_gemini=True)
+        response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True)
         result = self.parse_json(response)
         
-        if result:
+        if result and result.get('title_variants'):
+            variants = result.get('title_variants', [])
+            if variants:
+                # Pick a random variant (A/B testing)
+                import random
+                chosen = random.choice(variants)
+                result['title'] = chosen.get('title', variants[0].get('title', ''))
+                result['title_style'] = chosen.get('style', 'unknown')
+                safe_print(f"   Title (style={result['title_style']}): {result.get('title', 'N/A')}")
+                safe_print(f"   A/B: Generated {len(variants)} variants, picked '{result['title_style']}'")
+        elif result and result.get('title'):
+            result['title_style'] = 'single'
             safe_print(f"   Title: {result.get('title', 'N/A')}")
         
         return result

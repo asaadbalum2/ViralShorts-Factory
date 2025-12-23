@@ -199,6 +199,8 @@ jobs:
           8. **CONTENT THEMES**: What specific angles within categories work?
           9. **VIRALITY HACKS**: Any patterns in our best videos that made them spread?
           10. **CALL-TO-ACTIONS**: What CTAs drove most engagement?
+          11. **POSTING TIME ANALYSIS**: Based on publish dates, what day/time seems to work best?
+          12. **TITLE STYLE ANALYSIS**: If detectable, which title styles (number_hook, curiosity_gap, shocking) perform best?
 
           Return comprehensive JSON with GOLD-VALUE insights:
           {{
@@ -221,7 +223,10 @@ jobs:
               "next_video_suggestions": ["very specific topic 1", "topic 2", "topic 3"],
               "category_weights": {{"category1": 0.3, "category2": 0.25, ...}},
               "key_insight": "One sentence summary of most important finding",
-              "priority_improvements": ["highest priority", "second priority", ...]
+              "priority_improvements": ["highest priority", "second priority", ...],
+              "best_posting_days": ["Monday", "Friday", ...],
+              "best_posting_hours_utc": [14, 18, ...],
+              "best_title_styles": ["number_hook", "curiosity_gap", ...]
           }}
 
           Be SPECIFIC and ACTIONABLE based on ACTUAL numbers. JSON ONLY."""
@@ -349,6 +354,17 @@ jobs:
               
               if analysis.get("virality_hacks"):
                   variety_state["virality_hacks"] = analysis["virality_hacks"]
+              
+              # AUDIENCE TARGETING: Optimal posting times
+              if analysis.get("best_posting_days"):
+                  variety_state["best_posting_days"] = analysis["best_posting_days"]
+              
+              if analysis.get("best_posting_hours_utc"):
+                  variety_state["best_posting_hours_utc"] = analysis["best_posting_hours_utc"]
+              
+              # A/B TITLE TESTING: Learn which title styles work
+              if analysis.get("best_title_styles"):
+                  variety_state["best_title_styles"] = analysis["best_title_styles"]
               
               variety_state["last_feedback"] = datetime.now().isoformat()
               

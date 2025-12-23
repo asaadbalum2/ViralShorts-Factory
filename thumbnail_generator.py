@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """
-Thumbnail Generator for ViralShorts Factory v7.15
-==================================================
+Thumbnail Generator for ViralShorts Factory v8.5
+=================================================
 
-Generates high-CTR thumbnails automatically:
-- AI generates thumbnail text/concept
-- High-contrast colors
-- Clean, readable design
-- Matches video content
+100% AI-DRIVEN Thumbnails:
+- AI generates thumbnail headline (not just shortened topic)
+- AI selects color scheme based on content emotion
+- AI suggests visual style elements
+- High-CTR optimization
 
-FREE: Uses PIL (no paid services)
+FREE: Uses PIL + Groq AI (no paid image services)
 """
 
 import os
 import random
+import requests
+import json
+import re
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Optional, Tuple, Dict
 
 try:
     from PIL import Image, ImageDraw, ImageFont
@@ -28,14 +31,94 @@ except ImportError:
 THUMBNAIL_WIDTH = 1280
 THUMBNAIL_HEIGHT = 720
 
-# Color schemes that work for thumbnails (high contrast)
-COLOR_SCHEMES = [
-    {"bg": (30, 30, 30), "text": (255, 255, 0), "accent": (255, 50, 50)},  # Dark + Yellow
-    {"bg": (20, 20, 80), "text": (255, 255, 255), "accent": (0, 255, 255)},  # Navy + White
-    {"bg": (80, 20, 20), "text": (255, 255, 255), "accent": (255, 200, 0)},  # Dark Red + White
-    {"bg": (20, 60, 20), "text": (255, 255, 255), "accent": (50, 255, 50)},  # Dark Green + White
-    {"bg": (50, 0, 80), "text": (255, 255, 255), "accent": (255, 100, 255)},  # Purple + White
-]
+# Color schemes mapped to emotions/content types
+# AI will select based on content analysis
+COLOR_SCHEMES = {
+    "shocking": {"bg": (180, 20, 20), "text": (255, 255, 255), "accent": (255, 200, 0)},
+    "mysterious": {"bg": (20, 20, 60), "text": (255, 255, 255), "accent": (150, 100, 255)},
+    "money": {"bg": (20, 80, 40), "text": (255, 255, 255), "accent": (255, 215, 0)},
+    "psychology": {"bg": (60, 20, 80), "text": (255, 255, 255), "accent": (255, 100, 255)},
+    "motivation": {"bg": (255, 140, 0), "text": (0, 0, 0), "accent": (255, 255, 255)},
+    "facts": {"bg": (30, 30, 30), "text": (255, 255, 0), "accent": (0, 200, 255)},
+    "scary": {"bg": (10, 10, 10), "text": (255, 0, 0), "accent": (255, 255, 255)},
+    "health": {"bg": (0, 120, 100), "text": (255, 255, 255), "accent": (200, 255, 200)},
+    "default": {"bg": (30, 30, 30), "text": (255, 255, 0), "accent": (255, 50, 50)},
+}
+
+def get_ai_thumbnail_concept(topic: str, category: str, groq_key: str = None) -> Dict:
+    """
+    AI generates the thumbnail concept - headline, color mood, emphasis.
+    
+    Returns: {headline, color_mood, emphasis_word}
+    """
+    if not groq_key:
+        groq_key = os.environ.get("GROQ_API_KEY")
+    
+    if not groq_key:
+        # Fallback to simple shortening
+        return {
+            "headline": shorten_for_thumbnail(topic),
+            "color_mood": "default",
+            "emphasis_word": ""
+        }
+    
+    prompt = f"""Create a HIGH-CTR YouTube thumbnail concept for this video:
+
+Topic: {topic}
+Category: {category}
+
+Generate:
+1. HEADLINE: A punchy 3-5 word text that makes people CLICK (not the full topic!)
+   - Use power words: SECRET, TRUTH, NEVER, ALWAYS, WHY, HOW
+   - Use numbers if relevant
+   - Create curiosity gap
+   
+2. COLOR_MOOD: Which emotion does this content evoke?
+   Options: shocking, mysterious, money, psychology, motivation, facts, scary, health, default
+   
+3. EMPHASIS_WORD: Which ONE word should be visually emphasized (different color)?
+
+Return JSON:
+{{
+    "headline": "SHORT PUNCHY TEXT",
+    "color_mood": "emotion_name",
+    "emphasis_word": "ONE_WORD"
+}}
+
+JSON ONLY."""
+
+    try:
+        response = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {groq_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "llama-3.1-8b-instant",
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.8,
+                "max_tokens": 150
+            },
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            content = response.json()["choices"][0]["message"]["content"]
+            match = re.search(r'\{[\s\S]*\}', content)
+            if match:
+                result = json.loads(match.group())
+                if result.get("headline"):
+                    return result
+    except Exception as e:
+        print(f"   [!] AI thumbnail concept failed: {e}")
+    
+    # Fallback
+    return {
+        "headline": shorten_for_thumbnail(topic),
+        "color_mood": category.lower() if category.lower() in COLOR_SCHEMES else "default",
+        "emphasis_word": ""
+    }
 
 
 def get_thumbnail_font(size: int = 72) -> Optional[ImageFont.FreeTypeFont]:
@@ -66,15 +149,22 @@ def get_thumbnail_font(size: int = 72) -> Optional[ImageFont.FreeTypeFont]:
 def generate_thumbnail(
     topic: str,
     category: str = "",
-    output_path: Optional[str] = None
+    output_path: Optional[str] = None,
+    groq_key: str = None
 ) -> Optional[str]:
     """
-    Generate a high-CTR thumbnail for a video.
+    Generate a high-CTR thumbnail using AI.
+    
+    v8.5: AI generates:
+    - Punchy headline (not just shortened topic)
+    - Optimal color scheme based on emotion
+    - Emphasis word for visual pop
     
     Args:
-        topic: The video topic (used for thumbnail text)
-        category: Optional category for color scheme selection
-        output_path: Where to save (defaults to assets/thumbnails/)
+        topic: The video topic
+        category: Video category for context
+        output_path: Where to save
+        groq_key: Optional API key
     
     Returns:
         Path to generated thumbnail or None
@@ -92,15 +182,24 @@ def generate_thumbnail(
         hash_id = hashlib.md5(topic.encode()).hexdigest()[:8]
         output_path = str(thumb_dir / f"thumb_{hash_id}.png")
     
-    # Select color scheme
-    color_scheme = random.choice(COLOR_SCHEMES)
+    # v8.5: AI generates the thumbnail concept!
+    print(f"   [AI] Generating thumbnail concept...")
+    concept = get_ai_thumbnail_concept(topic, category, groq_key)
+    
+    # Select color scheme based on AI analysis
+    color_mood = concept.get("color_mood", "default")
+    color_scheme = COLOR_SCHEMES.get(color_mood, COLOR_SCHEMES["default"])
+    emphasis_word = concept.get("emphasis_word", "").upper()
+    
+    print(f"   [OK] Headline: {concept.get('headline', topic)}")
+    print(f"   [OK] Color mood: {color_mood}")
     
     # Create thumbnail
     img = Image.new('RGB', (THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT), color_scheme["bg"])
     draw = ImageDraw.Draw(img)
     
-    # Generate thumbnail text (shortened topic)
-    thumb_text = shorten_for_thumbnail(topic)
+    # Use AI-generated headline (not just shortened topic!)
+    thumb_text = concept.get("headline", shorten_for_thumbnail(topic))
     
     # Draw text
     font_large = get_thumbnail_font(96)
@@ -146,13 +245,30 @@ def generate_thumbnail(
             x = (THUMBNAIL_WIDTH - text_width) // 2
             y = start_y + i * line_height
             
-            # Draw outline
-            for ox in range(-4, 5, 2):
-                for oy in range(-4, 5, 2):
+            # Draw outline (thicker for better visibility)
+            for ox in range(-5, 6, 2):
+                for oy in range(-5, 6, 2):
                     draw.text((x + ox, y + oy), line, fill=(0, 0, 0), font=font_large)
             
-            # Draw main text
-            draw.text((x, y), line, fill=color_scheme["text"], font=font_large)
+            # v8.5: Check if this line contains the emphasis word
+            if emphasis_word and emphasis_word in line:
+                # Draw word-by-word with emphasis
+                words = line.split()
+                word_x = x
+                for word in words:
+                    word_bbox = draw.textbbox((0, 0), word + " ", font=font_large)
+                    word_width = word_bbox[2] - word_bbox[0]
+                    
+                    # Use accent color for emphasis word
+                    if word == emphasis_word:
+                        draw.text((word_x, y), word, fill=color_scheme["accent"], font=font_large)
+                    else:
+                        draw.text((word_x, y), word, fill=color_scheme["text"], font=font_large)
+                    
+                    word_x += word_width
+            else:
+                # Draw entire line in text color
+                draw.text((x, y), line, fill=color_scheme["text"], font=font_large)
         except Exception as e:
             print(f"Text drawing error: {e}")
     
