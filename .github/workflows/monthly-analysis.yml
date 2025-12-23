@@ -10,19 +10,6 @@ on:
   
   # Manual trigger for testing
   workflow_dispatch:
-    inputs:
-      max_channels:
-        description: 'Max channels to analyze'
-        required: false
-        default: '5'
-      skip_upload_day:
-        description: 'Skip video generation today (save quota for analysis)'
-        required: false
-        default: 'true'
-        type: choice
-        options:
-          - 'true'
-          - 'false'
 
 jobs:
   analyze-viral-channels:
