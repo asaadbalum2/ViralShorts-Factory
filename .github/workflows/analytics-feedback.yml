@@ -31,13 +31,17 @@ jobs:
           pip install requests
 
       - name: Restore persistent state
-        uses: dawidd6/action-download-artifact@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          name: persistent-state
-          path: data/persistent/
-          if_no_artifact_found: ignore
-          search_artifacts: true
+        run: |
+          mkdir -p data/persistent
+          ARTIFACT_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/artifacts?name=persistent-state&per_page=1" \
+            | jq -r '.artifacts[0].id')
+          if [ "$ARTIFACT_ID" != "null" ] && [ -n "$ARTIFACT_ID" ]; then
+            curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID/zip" \
+              -o /tmp/state.zip && unzip -o /tmp/state.zip -d data/persistent/ 2>/dev/null || true
+            echo "[OK] Restored state"
+          fi
         continue-on-error: true
 
       - name: Create directories
