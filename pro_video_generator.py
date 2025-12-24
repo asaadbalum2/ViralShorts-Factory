@@ -560,8 +560,11 @@ class MasterAI:
         # Tertiary: Gemini 1.5 Flash (more stable, higher limits)
         try:
             import google.generativeai as genai
-            # Use correct model names - updated Dec 2024
-            fallback = genai.GenerativeModel('gemini-1.5-flash')
+            # Re-configure for fallback models (in case config was lost)
+            if self.gemini_key:
+                genai.configure(api_key=self.gemini_key)
+            # Use correct model names - models/ prefix required for v1beta
+            fallback = genai.GenerativeModel('models/gemini-1.5-flash')
             response = fallback.generate_content(prompt)
             return response.text
         except Exception as e:
@@ -570,18 +573,26 @@ class MasterAI:
                 retry_delay = extract_retry_delay(error_str)
                 safe_print(f"[!] Gemini 1.5 rate limit - waiting {min(retry_delay, 30)}s...")
                 time.sleep(min(retry_delay, 30))
+            elif '404' in error_str:
+                safe_print(f"[!] Gemini 1.5-flash not available, trying next...")
             else:
                 safe_print(f"[!] Gemini 1.5 fallback error: {e}")
         
         # Quaternary: Try Gemini 1.5 Pro as last resort
         try:
             import google.generativeai as genai
-            # Updated model name - gemini-pro is deprecated
-            last_resort = genai.GenerativeModel('gemini-1.5-pro')
+            if self.gemini_key:
+                genai.configure(api_key=self.gemini_key)
+            # Updated model name with models/ prefix
+            last_resort = genai.GenerativeModel('models/gemini-1.5-pro')
             response = last_resort.generate_content(prompt)
             return response.text
         except Exception as e:
-            safe_print(f"[!] Gemini Pro fallback error: {e}")
+            error_str = str(e)
+            if '404' in error_str:
+                safe_print(f"[!] Gemini 1.5-pro not available either")
+            else:
+                safe_print(f"[!] Gemini Pro fallback error: {e}")
         
         return ""
     
