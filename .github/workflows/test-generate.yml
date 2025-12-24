@@ -38,7 +38,7 @@ jobs:
           python-version: '3.11'
       
       - name: Cache Python Dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
@@ -59,7 +59,7 @@ jobs:
           sudo sed -i 's/<policy domain="path" rights="none" pattern="@\*"/<policy domain="path" rights="read|write" pattern="@*"/' /etc/ImageMagick-6/policy.xml || true
       
       - name: Restore Persistent State
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         continue-on-error: true
         with:
           name: persistent-state
@@ -99,14 +99,14 @@ jobs:
           ls -la test_output/
       
       - name: Upload Generated Video
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-video-${{ github.run_number }}
           path: test_output/*.mp4
           retention-days: 7
       
       - name: Upload Video Metadata
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-video-metadata-${{ github.run_number }}
           path: |
