@@ -602,9 +602,11 @@ class MasterAI:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
         # v13.5: Quinary - OpenRouter as final fallback (free tier models)
+        safe_print("[*] Trying OpenRouter fallback...")
         if self.openrouter_available:
             try:
                 import requests
+                safe_print(f"[*] OpenRouter: Calling API...")
                 response = requests.post(
                     "https://openrouter.ai/api/v1/chat/completions",
                     headers={
@@ -620,13 +622,21 @@ class MasterAI:
                     },
                     timeout=60
                 )
+                safe_print(f"[*] OpenRouter: Status {response.status_code}")
                 if response.status_code == 200:
                     result = response.json()
-                    return result.get("choices", [{}])[0].get("message", {}).get("content", "")
+                    content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+                    if content:
+                        safe_print(f"[OK] OpenRouter succeeded!")
+                        return content
+                    else:
+                        safe_print(f"[!] OpenRouter: Empty response")
                 else:
-                    safe_print(f"[!] OpenRouter error: {response.status_code}")
+                    safe_print(f"[!] OpenRouter error: {response.status_code} - {response.text[:200]}")
             except Exception as e:
                 safe_print(f"[!] OpenRouter fallback error: {e}")
+        else:
+            safe_print("[!] OpenRouter not available (no key)")
         
         return ""
     

@@ -4139,6 +4139,11 @@ class WatchTimeMaximizer:
                     best_pct = stats["avg_watch_pct"]
                     best = strat
         return best
+    
+    def get_watch_time_instruction(self) -> str:
+        """AI-driven instruction for maximizing watch time."""
+        best = self.get_best_strategy()
+        return f"WATCH TIME STRATEGY: Use '{best}' technique. Best strategies: progressive_reveal (reveal info gradually), countdown (build anticipation), story_arc (narrative tension), challenge_format (engagement), before_after (transformation)."
 
 
 class CompletionRateTracker:
@@ -4171,6 +4176,11 @@ class CompletionRateTracker:
     
     def get_optimal_duration(self) -> int:
         return self.data.get("optimal_duration", 18)
+    
+    def get_completion_instruction(self) -> str:
+        """AI-driven instruction for boosting completion rate."""
+        optimal = self.get_optimal_duration()
+        return f"COMPLETION RATE: Target duration is {optimal} seconds. Keep content punchy, no filler. End with a strong payoff to encourage re-watch."
 
 
 class CommentBaitOptimizer:
@@ -4216,6 +4226,11 @@ class CommentBaitOptimizer:
                     best_avg = avg
                     best = bait
         return best
+    
+    def get_comment_bait_instruction(self) -> str:
+        """AI-driven instruction for driving comments."""
+        best = self.get_best_bait_type()
+        return f"COMMENT BAIT: Use '{best}' technique. Types: opinion_ask ('Do you agree?'), experience_ask ('Has this happened to you?'), choice_ask ('Type 1 or 2'), challenge ('Bet you can't...'), fill_blank ('The best ___ is ___')."
 
 
 class ShareTriggerTracker:
@@ -4250,6 +4265,11 @@ class ShareTriggerTracker:
         self.data["last_updated"] = datetime.now().isoformat()
         with open(self.SHARE_FILE, 'w') as f:
             json.dump(self.data, f, indent=2)
+    
+    def get_share_instruction(self) -> str:
+        """AI-driven instruction for driving shares."""
+        triggers = list(self.data.get("triggers", {}).keys())[:3]
+        return f"SHARE TRIGGERS: Create content that drives shares via: mind_blown ('I never knew this!'), relatable ('This is so me'), useful ('My friend needs to see this'), funny, emotional, controversial."
 
 
 class ReWatchHookTracker:
@@ -4283,6 +4303,10 @@ class ReWatchHookTracker:
         self.data["last_updated"] = datetime.now().isoformat()
         with open(self.REWATCH_FILE, 'w') as f:
             json.dump(self.data, f, indent=2)
+    
+    def get_rewatch_instruction(self) -> str:
+        """AI-driven instruction for driving re-watches."""
+        return "REWATCH HOOKS: Include re-watch triggers: hidden_detail ('Did you catch...'), loop_seamless (perfect video loop), easter_egg (hidden message), count_something ('How many did you count?'), spot_difference ('Spot what's wrong')."
 
 
 def generate_algorithm_signals(content: str, category: str) -> Dict:
