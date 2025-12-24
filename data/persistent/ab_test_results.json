@@ -1,0 +1,40 @@
+{
+  "title_styles": {
+    "curiosity_gap": {
+      "videos": [
+        {
+          "video_id": "integration_test_123",
+          "title": "Why You Feel Exhausted (It's Not Sleep)",
+          "recorded_at": "2025-12-24T19:20:00.267278"
+        }
+      ],
+      "total_views": 0,
+      "total_engagement": 0
+    }
+  },
+  "cta_variants": {},
+  "thumbnail_styles": {},
+  "test_type": {
+    "test_variant": {
+      "videos": [
+        {
+          "video_id": "test_123",
+          "title": "Test Title",
+          "recorded_at": "2025-12-24T19:17:29.235525"
+        },
+        {
+          "video_id": "test_123",
+          "title": "Test Title",
+          "recorded_at": "2025-12-24T19:17:52.347073"
+        },
+        {
+          "video_id": "test_123",
+          "title": "Test Title",
+          "recorded_at": "2025-12-24T19:18:34.672005"
+        }
+      ],
+      "total_views": 0,
+      "total_engagement": 0
+    }
+  }
+}

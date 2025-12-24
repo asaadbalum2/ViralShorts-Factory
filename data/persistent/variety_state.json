@@ -1,0 +1,88 @@
+{
+  "categories": [],
+  "topics": [],
+  "voices": [],
+  "music_moods": [],
+  "hooks": [],
+  "last_updated": "2025-12-24T19:20:00.267699",
+  "preferred_categories": [
+    "psychology",
+    "money"
+  ],
+  "title_tricks": [
+    "use numbers",
+    "curiosity gap"
+  ],
+  "best_title_styles": [
+    "number_hook",
+    "curiosity_gap"
+  ],
+  "best_performing_categories": [
+    "psychology",
+    "money",
+    "life_hack"
+  ],
+  "title_tricks_that_work": [
+    "use numbers",
+    "curiosity gaps",
+    "promise reveal"
+  ],
+  "best_title_patterns": [
+    "{number} {topic} You Didn't Know",
+    "Why {topic} Changes Everything"
+  ],
+  "optimal_title_word_count": 8,
+  "optimal_duration": 22,
+  "optimal_phrase_count": 5,
+  "hook_types_that_work": [
+    "question hook",
+    "shocking statement",
+    "number reveal"
+  ],
+  "psychological_triggers": [
+    "curiosity",
+    "fomo",
+    "social proof"
+  ],
+  "engagement_baits": [
+    "Comment if you agree",
+    "Save this for later"
+  ],
+  "best_music_moods": [
+    "dramatic",
+    "mysterious"
+  ],
+  "best_voice_styles": [
+    "energetic",
+    "calm authority"
+  ],
+  "virality_hacks": [
+    "end with question",
+    "use round numbers"
+  ],
+  "best_posting_hours_utc": [
+    14,
+    18,
+    22
+  ],
+  "best_posting_days": [
+    "Tuesday",
+    "Thursday",
+    "Saturday"
+  ],
+  "comment_insights": {
+    "viewer_loves": [
+      "psychology content",
+      "money tips"
+    ],
+    "viewer_requests": [
+      "more life hacks",
+      "tech content"
+    ],
+    "quality_concerns": [],
+    "engagement_drivers": [
+      "relatable topics"
+    ]
+  },
+  "weekly_last_updated": "2025-12-24T19:29:52.539320"
+}

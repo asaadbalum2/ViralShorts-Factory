@@ -425,6 +425,14 @@ class ViralPatternsManager:
         except Exception as e:
             safe_print(f"[!] Error saving viral patterns: {e}")
     
+    def get_patterns(self) -> Dict:
+        """
+        v9.0: Get all viral patterns.
+        
+        Used by daily workflow to access monthly-learned patterns.
+        """
+        return self.patterns
+    
     def get_random_title_pattern(self) -> str:
         """Get a random title pattern for AI to fill in."""
         import random
