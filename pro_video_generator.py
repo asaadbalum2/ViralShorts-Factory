@@ -135,86 +135,6 @@ def strip_emojis(text: str) -> str:
 
 
 # ========================================================================
-# v8.9: CONTENT PROMISE VALIDATOR - Catches numbered promise violations
-# ========================================================================
-def validate_numbered_promise(hook: str, content: str) -> Tuple[bool, str, Optional[str]]:
-    """
-    Validate that if hook promises N items, content delivers N items.
-    
-    Returns: (is_valid, message, suggested_fix)
-    """
-    # Extract numbers from hook that imply a list (e.g., "7 Weird", "5 Tips", "3 Signs")
-    # Pattern: number followed by plural nouns that imply lists
-    list_pattern = r'(\d+)\s+(?:weird|strange|secret|tip|sign|way|hack|trick|reason|thing|fact|rule|step|method|mistake|idea|habit|lesson)'
-    matches = re.findall(list_pattern, hook.lower())
-    
-    if not matches:
-        return True, "No numbered list promise detected", None
-    
-    promised_count = int(matches[0])
-    
-    # Count distinct items in content using various markers
-    # Look for: numbered items, "First/Second/Third", bullet-like transitions
-    content_lower = content.lower()
-    
-    # Count explicit numbering
-    explicit_numbers = len(re.findall(r'\b(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth)\b', content_lower))
-    digit_numbers = len(re.findall(r'\b[1-9][\.\):]', content))
-    
-    # Count transition phrases that indicate new items
-    transitions = len(re.findall(r'\b(?:next|another|also|finally|lastly|plus|and then|then there\'s)\b', content_lower))
-    
-    # Estimate item count (take the max of different counting methods)
-    estimated_items = max(explicit_numbers, digit_numbers, transitions + 1)
-    
-    # If we can't detect clear structure, give benefit of doubt if content is long enough
-    if estimated_items < 2 and len(content.split('.')) >= promised_count:
-        estimated_items = len(content.split('.'))  # Rough estimate by sentences
-    
-    if estimated_items >= promised_count:
-        return True, f"Content appears to deliver {estimated_items}/{promised_count} items", None
-    
-    # VIOLATION DETECTED
-    safe_fix = re.sub(r'^\d+\s+', 'The ', hook)  # Remove number, add "The"
-    safe_fix = re.sub(r'^(\w)', lambda m: m.group(1).upper(), safe_fix)  # Capitalize
-    
-    return (
-        False, 
-        f"[!] PROMISE VIOLATION: Hook promises {promised_count} items but content has ~{estimated_items}",
-        f"Suggested fix: Change hook to '{safe_fix}' or add more items to content"
-    )
-
-
-def fix_numbered_promise_violation(hook: str, content: str) -> Tuple[str, str]:
-    """
-    If a numbered promise violation is detected, fix it by modifying the hook.
-    Returns: (fixed_hook, fixed_content)
-    """
-    is_valid, message, fix = validate_numbered_promise(hook, content)
-    
-    if is_valid:
-        return hook, content
-    
-    safe_print(f"   {message}")
-    
-    # Fix the hook by removing the specific number and making it generic
-    # "7 Weird Traditions" → "The Weirdest Tradition" or "A Strange Tradition"
-    fixed_hook = re.sub(r'^\d+\s+', '', hook)  # Remove leading number
-    
-    # Make singular and add "This" or "The"
-    words = fixed_hook.split()
-    if words:
-        # Handle plural → singular
-        if words[0].endswith('s') and len(words[0]) > 3:
-            words[0] = words[0].rstrip('s')
-        fixed_hook = "This " + ' '.join(words)
-    
-    safe_print(f"   [AUTO-FIX] Changed hook: '{hook}' → '{fixed_hook}'")
-    
-    return fixed_hook, content
-
-
-# ========================================================================
 # ALL AVAILABLE OPTIONS - AI picks from these, variety enforced
 # ========================================================================
 # Base categories - AI will expand/suggest from these + current trends
@@ -798,45 +718,67 @@ OUTPUT JSON ONLY."""
         
         phrases = content.get('phrases', [])
         
+        # v8.9.1: Get the hook/topic from concept for promise validation
+        concept = content.get('concept', {})
+        hook_or_topic = concept.get('hook', concept.get('specific_topic', 'Unknown topic'))
+        
         prompt = f"""You are a VIRAL CONTENT QUALITY CONTROLLER.
 Evaluate this content and IMPROVE any weaknesses.
 
-=== CONTENT TO EVALUATE ===
+=== HOOK/TITLE ===
+{hook_or_topic}
+
+=== CONTENT PHRASES ===
 {json.dumps(phrases, indent=2)}
 
 Claimed Value: {content.get('specific_value', '')}
-Problem Solved: {content.get('problem_solved', '')}
-Solution Given: {content.get('solution_given', '')}
 
 === EVALUATION CRITERIA ===
 
-1. **VALUE COMPLETENESS** (Critical!)
+1. **PROMISE-PAYOFF CHECK** (CRITICAL - Check FIRST!)
+   - Does the hook mention a NUMBER of items? (e.g., "7 Weird Things", "5 Tips", "3 Signs")
+   - If YES: Count how many distinct items are actually in the content
+   - If content has FEWER items than promised: THIS IS A MAJOR FAILURE
+   - FIX: Either add more items to match the promise, OR change the hook to not promise a number
+   - Example fix: "7 Weird Traditions" with only 1 item → change to "This Weird Tradition" or add 6 more
+
+2. **VALUE COMPLETENESS**
    - Does it deliver SPECIFIC, ACTIONABLE value?
    - Is the solution COMPLETE, not vague?
    - Can the viewer DO something specific after watching?
    
-2. **HOOK STRENGTH**
+3. **HOOK STRENGTH**
    - Does phrase 1 create IRRESISTIBLE curiosity?
-   - Would YOU stop scrolling for this?
+   - Does it include a SPECIFIC benefit (not vague)?
+   - Does it have a NUMBER for credibility?
    
-3. **NARRATIVE FLOW**
+4. **NARRATIVE FLOW**
    - Does each phrase build on the previous?
    - Is there a satisfying payoff?
    
-4. **READABILITY**
+5. **READABILITY**
    - All numbers as DIGITS?
    - Short, punchy sentences?
    - No jargon?
 
 === YOUR TASK ===
-If ANY weakness is found, FIX IT in the improved phrases.
-If the solution is vague, make it SPECIFIC with numbers/steps/techniques.
+1. FIRST check for numbered promise violations - this is the #1 issue!
+2. If ANY weakness is found, FIX IT in the improved phrases
+3. If the hook is vague (no benefit, no number), improve it
+4. If the solution is vague, make it SPECIFIC with numbers/steps/techniques
 
 === OUTPUT JSON ===
 {{
     "evaluation_score": 1-10,
+    "promise_check": {{
+        "number_promised": null or the number (e.g., 7),
+        "items_delivered": count of distinct items in content,
+        "promise_kept": true or false,
+        "fix_applied": "what you changed to fix it" or null
+    }},
     "weaknesses_found": ["list of issues found"],
     "improvements_made": ["list of improvements"],
+    "improved_hook": "The improved first phrase with specific benefit + number",
     "improved_phrases": [
         "The improved hook text here",
         "The improved second phrase here",
@@ -848,15 +790,31 @@ If the solution is vague, make it SPECIFIC with numbers/steps/techniques.
 CRITICAL: Do NOT include "Phrase 1:", "Improved phrase 1:" etc. - just the actual text!
 OUTPUT JSON ONLY."""
 
-        response = self.call_ai(prompt, 1000, temperature=0.7)
+        response = self.call_ai(prompt, 1200, temperature=0.7)
         result = self.parse_json(response)
         
         if result:
+            # v8.9.1: Log promise check results (AI-driven validation)
+            promise_check = result.get('promise_check', {})
+            if promise_check:
+                if promise_check.get('promise_kept') == False:
+                    safe_print(f"   [AI-FIX] Promise violation detected: {promise_check.get('number_promised')} promised, {promise_check.get('items_delivered')} delivered")
+                    if promise_check.get('fix_applied'):
+                        safe_print(f"   [AI-FIX] Applied: {promise_check.get('fix_applied')}")
+                else:
+                    safe_print(f"   [OK] Promise check passed")
+            
+            # v8.9.1: Use improved hook if provided
+            if result.get('improved_hook'):
+                concept = content.get('concept', {})
+                concept['hook'] = result.get('improved_hook')
+                content['concept'] = concept
+                safe_print(f"   [AI] Improved hook: {result.get('improved_hook')[:50]}...")
+            
             # Clean up any prefixes from improved phrases
             improved = result.get('improved_phrases', content.get('phrases', []))
             cleaned_phrases = []
             for phrase in improved:
-                import re
                 cleaned = re.sub(r'^(Phrase\s*\d+\s*[:.]?\s*|Improved\s*(phrase)?\s*\d*\s*[:.]?\s*|\d+\s*[:.]?\s*)', '', phrase, flags=re.IGNORECASE).strip()
                 cleaned_phrases.append(cleaned)
             content['phrases'] = cleaned_phrases
@@ -916,39 +874,52 @@ JSON ARRAY ONLY."""
     def stage5_metadata(self, content: Dict) -> Dict:
         """AI generates viral metadata with title variants for A/B testing.
         v8.5: Generates 3 title variants, picks one randomly, tracks style.
+        v8.9.1: Uses LEARNED viral patterns (not hardcoded examples).
         """
         safe_print("\n[STAGE 5] AI generating metadata with A/B title variants...")
         
         concept = content.get('concept', {})
         phrases = content.get('phrases', [])
         
-        # v8.9: Enhanced title generation with SPECIFIC benefit-driven titles
+        # v8.9.1: Get learned viral patterns for title generation (AI-driven, not hardcoded!)
+        viral_title_guidance = ""
+        try:
+            viral_boost = get_viral_prompt_boost() if VIRAL_PATTERNS_AVAILABLE else ""
+            if viral_boost:
+                viral_title_guidance = f"""
+=== LEARNED VIRAL PATTERNS (from analysis of successful videos) ===
+{viral_boost}
+
+Use these LEARNED patterns to create titles that have PROVEN to work.
+"""
+        except Exception as e:
+            safe_print(f"   [!] Viral patterns unavailable: {e}")
+        
         prompt = f"""Create viral metadata for this video with 3 TITLE VARIANTS.
 
 Category: {concept.get('category', '')}
 Topic: {concept.get('specific_topic', '')}
+Hook: {concept.get('hook', '')}
 First phrase: {phrases[0] if phrases else ''}
 Value delivered: {content.get('value_delivered', '')}
 
-=== TITLE RULES (CRITICAL!) ===
-❌ BAD TITLES (too vague, no benefit):
-- "The Art Secret" → What art? What secret? Why care?
-- "5s AI Art" → What happens in 5s? What's the benefit?
-- "Amazing Hack" → What's amazing about it?
+{viral_title_guidance}
 
-✅ GOOD TITLES (specific benefit, clear value):
-- "Make $500 Art in 5 Seconds with AI"
-- "Why 83% of Artists Use THIS Trick"  
-- "The 3-Second Fix That Doubles Your Art Sales"
+=== TITLE QUALITY RULES ===
+Every title MUST have:
+1. A SPECIFIC benefit (what the viewer gets: saves time, makes money, fixes problem)
+2. A NUMBER (percentage, time, count, dollar amount) for credibility
+3. UNDER 50 characters (for mobile readability)
+
+Titles that are VAGUE or lack a clear benefit will FAIL.
+Ask yourself: "Would I click this? Does it tell me what I'll learn?"
 
 === TITLE VARIANTS (for A/B testing) ===
-Create 3 different title styles - all under 50 chars, ALL must include:
-- A SPECIFIC benefit (saves time, makes money, fixes problem)
-- A NUMBER (percentage, time, count, or dollar amount)
+Create 3 different styles based on the learned patterns above:
 
-1. NUMBER_HOOK: Lead with number ("3 Signs...", "Why 90%...", "The 5 Second...")
-2. CURIOSITY_GAP: Mystery + benefit ("The $500 Trick They Hide", "What 99% Don't Know About...")
-3. RESULT_FOCUSED: Clear outcome ("Double Your [X] in 3 Days", "Stop Losing $X Monthly")
+1. NUMBER_HOOK: Lead with a compelling number
+2. CURIOSITY_GAP: Create mystery while showing benefit
+3. RESULT_FOCUSED: Clearly state the outcome/result
 
 === OUTPUT JSON ===
 {{
@@ -1907,28 +1878,11 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         return None
     
     # Stage 3: AI evaluates and enhances (non-critical - continue on failure)
+    # v8.9.1: Moved promise validation INTO the AI evaluation prompt (not hardcoded)
     try:
         content = ai.stage3_evaluate_enhance(content)
     except Exception as e:
         safe_print(f"[!] Enhancement skipped: {e}")
-    
-    # v8.9: Validate numbered promises BEFORE generating video
-    # This catches "7 Weird Things" hooks that only deliver 1 thing
-    try:
-        hook = concept.get('hook', '')
-        full_content = ' '.join(content.get('phrases', []))
-        hook, full_content = fix_numbered_promise_violation(hook, full_content)
-        # Update concept with potentially fixed hook
-        concept['hook'] = hook
-        # Update first phrase if hook was changed (hook is usually phrase 1)
-        phrases = content.get('phrases', [])
-        if phrases:
-            # If the hook doesn't appear in phrases, it's used as a separate intro
-            # Either way, we validated and potentially fixed the promise
-            pass
-        safe_print(f"   [OK] Content promise validated")
-    except Exception as e:
-        safe_print(f"[!] Promise validation skipped: {e}")
     
     # Stage 4: AI generates B-roll keywords
     try:
