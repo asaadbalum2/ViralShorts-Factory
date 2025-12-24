@@ -722,8 +722,8 @@ OUTPUT JSON ONLY."""
         concept = content.get('concept', {})
         hook_or_topic = concept.get('hook', concept.get('specific_topic', 'Unknown topic'))
         
-        prompt = f"""You are a VIRAL CONTENT QUALITY CONTROLLER.
-Evaluate this content and IMPROVE any weaknesses.
+        prompt = f"""You are a RUTHLESS QUALITY CONTROLLER watching this video as a SKEPTICAL VIEWER.
+Your job: Find ANYTHING that feels off, fake, awkward, or low-quality - and FIX it.
 
 === HOOK/TITLE ===
 {hook_or_topic}
@@ -733,52 +733,49 @@ Evaluate this content and IMPROVE any weaknesses.
 
 Claimed Value: {content.get('specific_value', '')}
 
-=== EVALUATION CRITERIA ===
+=== BE A SKEPTICAL VIEWER ===
+Watch this content as if YOU are scrolling and decide: "Would I keep watching? Does anything feel OFF?"
 
-1. **PROMISE-PAYOFF CHECK** (CRITICAL - Check FIRST!)
-   - Does the hook mention a NUMBER of items? (e.g., "7 Weird Things", "5 Tips", "3 Signs")
-   - If YES: Count how many distinct items are actually in the content
-   - If content has FEWER items than promised: THIS IS A MAJOR FAILURE
-   - FIX: Either add more items to match the promise, OR change the hook to not promise a number
-   - Example fix: "7 Weird Traditions" with only 1 item → change to "This Weird Tradition" or add 6 more
+Ask yourself these questions for EACH phrase:
+- Does this sound BELIEVABLE or does it feel made up?
+- Would a real person say this, or does it sound robotic/awkward?
+- Are the numbers REALISTIC and MEMORABLE? (e.g., "$500" feels real, "$3333" feels fake)
+- Does anything make me cringe or roll my eyes?
+- Is there anything that would make viewers comment "this is AI garbage"?
 
-2. **VALUE COMPLETENESS**
-   - Does it deliver SPECIFIC, ACTIONABLE value?
-   - Is the solution COMPLETE, not vague?
-   - Can the viewer DO something specific after watching?
-   
-3. **HOOK STRENGTH**
-   - Does phrase 1 create IRRESISTIBLE curiosity?
-   - Does it include a SPECIFIC benefit (not vague)?
-   - Does it have a NUMBER for credibility?
-   
-4. **NARRATIVE FLOW**
-   - Does each phrase build on the previous?
-   - Is there a satisfying payoff?
-   
-5. **READABILITY**
-   - All numbers as DIGITS?
-   - Short, punchy sentences?
-   - No jargon?
+=== RED FLAGS TO CATCH (examples, but catch ANY quality issue) ===
+- Awkward/random numbers that look fake (e.g., $3333, 47.3%, 1847 people)
+- Numbers that are too precise to be believable (use round numbers: $500, 80%, 1000+)
+- Promises in hook not delivered in content (e.g., "7 tips" but only 2 given)
+- Vague claims with no specifics ("amazing results" - what results?)
+- Robotic phrasing that no human would say
+- Sentences that are too long for short-form video
+- Claims that sound too good to be true without proof
+- Anything that breaks immersion or trust
+
+=== YOUR QUALITY STANDARDS ===
+1. BELIEVABILITY: Every claim must sound real and trustworthy
+2. SPECIFICITY: Vague content fails. Give real numbers, steps, examples
+3. NATURAL FLOW: Must sound like a human speaking, not AI text
+4. PROMISE-PAYOFF: If you promise X things, you deliver X things
+5. MEMORABLE NUMBERS: Use round, sticky numbers ($500, 90%, 30 days) not random ones
 
 === YOUR TASK ===
-1. FIRST check for numbered promise violations - this is the #1 issue!
-2. If ANY weakness is found, FIX IT in the improved phrases
-3. If the hook is vague (no benefit, no number), improve it
-4. If the solution is vague, make it SPECIFIC with numbers/steps/techniques
+1. Read the content as a skeptical viewer
+2. Flag ANYTHING that feels off (be harsh - this protects quality)
+3. FIX every issue in the improved version
+4. Make sure the improved version passes YOUR own skeptical test
 
 === OUTPUT JSON ===
 {{
     "evaluation_score": 1-10,
-    "promise_check": {{
-        "number_promised": null or the number (e.g., 7),
-        "items_delivered": count of distinct items in content,
-        "promise_kept": true or false,
-        "fix_applied": "what you changed to fix it" or null
-    }},
-    "weaknesses_found": ["list of issues found"],
-    "improvements_made": ["list of improvements"],
-    "improved_hook": "The improved first phrase with specific benefit + number",
+    "quality_issues": [
+        {{"issue": "description of problem", "fix": "how you fixed it"}}
+    ],
+    "believability_score": 1-10,
+    "would_you_watch": true or false,
+    "improvements_made": ["list of all changes"],
+    "improved_hook": "The improved first phrase",
     "improved_phrases": [
         "The improved hook text here",
         "The improved second phrase here",

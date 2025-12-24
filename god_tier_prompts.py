@@ -116,6 +116,29 @@ CTA (2 sec): Question that makes them reflect/comment
 4. Make them feel SMARTER after watching
 5. NO empty promises - if you say "here's how," you MUST explain how
 
+===== BELIEVABILITY & QUALITY (CRITICAL!) =====
+You are creating content for SKEPTICAL viewers. Everything must feel REAL and TRUSTWORTHY.
+
+NUMBERS MUST BE:
+- REALISTIC: Use believable, commonly-cited numbers (not random like $3333 or 47.3%)
+- ROUND & MEMORABLE: $500, 80%, 1000+, 30 days (NOT $487, 83.7%, 947, 29 days)
+- VERIFIABLE: Could someone Google this? If not, soften the claim.
+- STICKY: Easy to remember and share
+
+❌ AWKWARD NUMBERS (feel fake/AI-generated):
+- "You're losing $3333 every year" (why that random number?)
+- "47.3% of people experience this" (too precise to be believable)
+- "In 1847, scientists discovered..." (random year)
+
+✅ BELIEVABLE NUMBERS (feel researched/real):
+- "You're losing $500+ every year" (round, memorable)
+- "Nearly half of people experience this" (natural phrasing)
+- "In the 1990s, scientists discovered..." (believable range)
+
+THE SKEPTICAL VIEWER TEST:
+Before using ANY claim, ask: "Would a skeptical viewer think 'this sounds made up'?"
+If yes → use softer language, round numbers, or cite a source type ("Harvard study")
+
 ===== SHORT-FORM VIDEO READABILITY (CRITICAL!) =====
 This content will be displayed as TEXT on mobile screens. Optimize for VISUAL READABILITY:
 
@@ -125,9 +148,13 @@ This content will be displayed as TEXT on mobile screens. Optimize for VISUAL RE
 4. CONVERSATIONAL: Write like texting a friend, not writing an essay
 5. PUNCHY PHRASES: Each sentence should hit hard. No filler words.
 6. SCANNABLE: Viewer should understand the point in 2 seconds of reading
+7. NATURAL HUMAN SPEECH: Would a real person say this? If it sounds robotic, rewrite it.
 
 BAD: "Studies have demonstrated that approximately five hundred individuals..."
 GOOD: "500 people tested this. 73% saw results in 2 weeks."
+
+BAD: "You are losing exactly $3,847.52 per year on hidden fees..."
+GOOD: "You're losing $500+ a year on hidden fees. Here's how to stop it."
 
 ===== B-ROLL KEYWORDS =====
 - Highly specific ("person staring at phone in dark room" not "technology")
@@ -272,6 +299,23 @@ BAD: "Viewer feels inspired to be productive"
 - Conversational but confident
 - Numbers and specifics always
 
+===== BELIEVABILITY CHECK (CRITICAL!) =====
+Before writing, pass EVERY claim through the SKEPTICAL VIEWER test:
+- Would someone watching think "this sounds made up"?
+- Are the numbers REALISTIC and MEMORABLE? (round numbers: $500, 80%, 30 days)
+- Does anything sound robotic or awkward when read aloud?
+- Would a human naturally say this in conversation?
+
+❌ FAILS THE TEST:
+- "You're losing $3,847 every year" (random number = fake)
+- "Studies from 1847 proved..." (random year = suspicious)  
+- "This affects exactly 47.3% of people" (too precise = AI garbage)
+
+✅ PASSES THE TEST:
+- "You're losing over $500 a year" (round, believable)
+- "For decades, scientists have known..." (natural phrasing)
+- "Nearly half of people experience this" (conversational)
+
 ===== MOBILE READABILITY (CRITICAL!) =====
 The script will be displayed as TEXT OVERLAY on mobile screens:
 - ALWAYS use digits: "500" not "five hundred", "$20" not "twenty dollars"
@@ -288,6 +332,9 @@ GOOD: "MIT tested 1,200 students. 73% improved in 2 weeks."
 
 BAD: "You could save approximately five hundred dollars annually."
 GOOD: "Save $500/year with this 1 trick."
+
+BAD: "You are losing exactly $3,333 on crypto fees every year."
+GOOD: "Crypto fees are eating $500+ of your money. Here's the fix."
 
 Return JSON:
 {{
