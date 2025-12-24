@@ -496,10 +496,23 @@ class MasterAI:
         - prefer_gemini=True: Use Gemini first (for non-critical tasks)
         - prefer_gemini=False: Use Groq first (for time-sensitive tasks)
         
+        v13.2: Smart backoff on 429 errors - wait and retry
+        
         Fallback chain: Primary -> Secondary -> Tertiary -> Quaternary
         """
         import time
-        time.sleep(1.0)  # Rate limit protection between AI calls
+        import re
+        
+        # v13.2: Track retry state
+        base_delay = 1.0
+        time.sleep(base_delay)  # Rate limit protection between AI calls
+        
+        def extract_retry_delay(error_msg: str) -> int:
+            """Extract retry delay from 429 error message."""
+            match = re.search(r'retry in (\d+(?:\.\d+)?)', str(error_msg), re.IGNORECASE)
+            if match:
+                return int(float(match.group(1))) + 2  # Add buffer
+            return 60  # Default 60s if not found
         
         # v8.2: Smart load balancing
         if prefer_gemini and self.gemini_model:
@@ -522,7 +535,13 @@ class MasterAI:
                 )
                 return response.choices[0].message.content
             except Exception as e:
-                safe_print(f"[!] Groq error: {e}")
+                error_str = str(e)
+                if '429' in error_str:
+                    retry_delay = extract_retry_delay(error_str)
+                    safe_print(f"[!] Groq rate limit hit - waiting {retry_delay}s before fallback...")
+                    time.sleep(min(retry_delay, 30))  # Cap at 30s to avoid long waits
+                else:
+                    safe_print(f"[!] Groq error: {e}")
         
         # Secondary: Gemini 2.0 Flash (experimental, stricter limits)
         if self.gemini_model:
@@ -530,22 +549,35 @@ class MasterAI:
                 response = self.gemini_model.generate_content(prompt)
                 return response.text
             except Exception as e:
-                safe_print(f"[!] Gemini 2.0 error: {e}")
+                error_str = str(e)
+                if '429' in error_str:
+                    retry_delay = extract_retry_delay(error_str)
+                    safe_print(f"[!] Gemini 2.0 rate limit - waiting {min(retry_delay, 30)}s...")
+                    time.sleep(min(retry_delay, 30))
+                else:
+                    safe_print(f"[!] Gemini 2.0 error: {e}")
         
         # Tertiary: Gemini 1.5 Flash (more stable, higher limits)
         try:
             import google.generativeai as genai
-            # Use correct model name for v1beta API
-            fallback = genai.GenerativeModel('gemini-1.5-flash-latest')
+            # Use correct model names - updated Dec 2024
+            fallback = genai.GenerativeModel('gemini-1.5-flash')
             response = fallback.generate_content(prompt)
             return response.text
         except Exception as e:
-            safe_print(f"[!] Gemini 1.5 fallback error: {e}")
+            error_str = str(e)
+            if '429' in error_str:
+                retry_delay = extract_retry_delay(error_str)
+                safe_print(f"[!] Gemini 1.5 rate limit - waiting {min(retry_delay, 30)}s...")
+                time.sleep(min(retry_delay, 30))
+            else:
+                safe_print(f"[!] Gemini 1.5 fallback error: {e}")
         
-        # Quaternary: Try Gemini Pro as last resort
+        # Quaternary: Try Gemini 1.5 Pro as last resort
         try:
             import google.generativeai as genai
-            last_resort = genai.GenerativeModel('gemini-pro')
+            # Updated model name - gemini-pro is deprecated
+            last_resort = genai.GenerativeModel('gemini-1.5-pro')
             response = last_resort.generate_content(prompt)
             return response.text
         except Exception as e:
