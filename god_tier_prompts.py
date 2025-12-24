@@ -797,6 +797,294 @@ JSON ONLY."""
 
 
 # =============================================================================
+# GOD-TIER PROMPT: Emotional Arc Design (#37 - v10.0)
+# =============================================================================
+
+EMOTIONAL_ARC_PROMPT = """You are an EMOTIONAL STORYTELLING expert for viral short-form video.
+
+=== VIDEO CONTENT ===
+{content}
+
+=== VIDEO TYPE ===
+{video_type}
+
+=== DESIGN THE EMOTIONAL JOURNEY ===
+Map the viewer's emotional state across the video:
+
+PHASE 1: HOOK (0-2 seconds)
+- What emotion STOPS the scroll? (shock, curiosity, fear, confusion)
+- How intense should it be? (1-10)
+
+PHASE 2: BUILD (2-8 seconds)
+- How does tension ESCALATE?
+- What keeps them watching? (mystery, stakes, anticipation)
+
+PHASE 3: PEAK (8-15 seconds)
+- The emotional CLIMAX
+- The "wow" or "aha" moment
+- Maximum intensity point
+
+PHASE 4: RESOLUTION (15-20 seconds)
+- How do they FEEL after?
+- Satisfied? Motivated? Curious for more?
+- What action do they take?
+
+=== OUTPUT JSON ===
+{{
+    "emotional_journey": [
+        {{"phase": "hook", "emotion": "curiosity", "intensity": 7, "technique": "open loop"}},
+        {{"phase": "build", "emotion": "anticipation", "intensity": 8, "technique": "raising stakes"}},
+        {{"phase": "peak", "emotion": "surprise", "intensity": 10, "technique": "unexpected reveal"}},
+        {{"phase": "resolution", "emotion": "satisfaction", "intensity": 6, "technique": "clear takeaway"}}
+    ],
+    "peak_moment_second": 12,
+    "energy_curve": [6, 7, 8, 9, 10, 8, 7],
+    "music_mood": "building_tension",
+    "voice_direction": "start intrigued, build excitement, end confident",
+    "pacing_notes": "quick cuts during build, slower at peak for impact"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Competitor Gap Analysis (#38 - v10.0)
+# =============================================================================
+
+COMPETITOR_GAP_PROMPT = """You are a COMPETITIVE INTELLIGENCE analyst for viral short-form content.
+
+=== OUR RECENT TOPICS ===
+{our_topics}
+
+=== COMPETITOR TOPICS (from top viral channels) ===
+{competitor_topics}
+
+=== FIND THE GAPS ===
+Identify content opportunities competitors are MISSING:
+
+1. UNTAPPED NICHES
+   - Subcategories no one is covering
+   - Angles that are overlooked
+   - Audiences being ignored
+
+2. FRESH PERSPECTIVES
+   - New takes on popular topics
+   - Contrarian viewpoints
+   - Unique combinations
+
+3. TIMING OPPORTUNITIES
+   - Topics that SHOULD be trending
+   - Upcoming events no one is preparing for
+   - Seasonal gaps
+
+4. FORMAT INNOVATIONS
+   - Styles competitors aren't using
+   - Hook types that are underutilized
+
+=== OUTPUT JSON ===
+{{
+    "untapped_niches": [
+        {{"niche": "specific niche", "why_valuable": "reason", "hook_idea": "example hook"}}
+    ],
+    "fresh_angles": [
+        {{"existing_topic": "what competitors do", "our_angle": "how we differentiate"}}
+    ],
+    "timing_opportunities": [
+        {{"topic": "time-sensitive topic", "deadline": "when to post", "reason": "why now"}}
+    ],
+    "content_recommendations": [
+        {{"topic": "specific topic", "priority": "high/medium/low", "confidence": 0.8}}
+    ],
+    "saturated_topics_to_avoid": ["topic1", "topic2"]
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Description SEO (#39 - v10.0)
+# =============================================================================
+
+DESCRIPTION_SEO_PROMPT = """You are a YOUTUBE SEO expert specializing in Shorts optimization.
+
+=== VIDEO INFO ===
+Title: {title}
+Category: {category}
+Content Summary: {content_summary}
+
+=== OPTIMIZE FOR YOUTUBE SEARCH ===
+Create a description that:
+1. Includes PRIMARY KEYWORD in first 25 characters
+2. Contains 3-5 RELATED KEYWORDS naturally
+3. Has a clear CALL-TO-ACTION
+4. Is UNDER 200 characters (Shorts sweet spot)
+5. Includes RELEVANT HASHTAGS
+
+=== SEO PRINCIPLES ===
+- YouTube reads the first 125 characters most heavily
+- Keywords should flow naturally, not stuffed
+- Hashtags at end, max 3-5
+- Include channel CTA if space permits
+
+=== OUTPUT JSON ===
+{{
+    "optimized_description": "The full SEO-optimized description",
+    "primary_keyword": "main search term",
+    "secondary_keywords": ["keyword2", "keyword3", "keyword4"],
+    "cta": "the call-to-action used",
+    "hashtags": ["#tag1", "#tag2", "#tag3"],
+    "character_count": 150,
+    "seo_score": 8,
+    "reasoning": "why this description ranks well"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Viral Velocity Prediction (#45 - v10.0)
+# =============================================================================
+
+VIRAL_VELOCITY_PROMPT = """You are a VIRAL PREDICTION expert who has analyzed 10 million YouTube Shorts.
+
+=== VIDEO TO ANALYZE ===
+Title: {title}
+Hook: {hook}
+Category: {category}
+Content Preview: {content_preview}
+Channel Average Views: {avg_views}
+
+=== PREDICT VIRAL VELOCITY ===
+Analyze these viral factors:
+
+1. SCROLL-STOP POWER (1-10)
+   - Does the title/hook DEMAND attention?
+   - Pattern interrupt? Curiosity gap? Shock value?
+
+2. SHAREABILITY (1-10)
+   - Would someone SEND this to a friend?
+   - "You have to see this" factor?
+
+3. COMMENT BAIT (1-10)
+   - Does it PROVOKE discussion?
+   - Easy to have an opinion?
+
+4. TREND ALIGNMENT (1-10)
+   - Is this topic CURRENTLY trending?
+   - Riding a wave or creating one?
+
+5. ALGORITHM FRIENDLINESS (1-10)
+   - Will YouTube PUSH this?
+   - High completion rate likely?
+
+=== OUTPUT JSON ===
+{{
+    "viral_score": 7.5,
+    "velocity_tier": "slow_burn" or "moderate" or "fast" or "explosive",
+    "scores": {{
+        "scroll_stop": 8,
+        "shareability": 7,
+        "comment_bait": 6,
+        "trend_alignment": 8,
+        "algorithm_friendly": 7
+    }},
+    "predicted_first_hour": 500,
+    "predicted_first_day": 5000,
+    "predicted_week_1": 25000,
+    "confidence": 0.7,
+    "strength_factors": ["strong hook", "trending topic"],
+    "risk_factors": ["saturated category", "weak CTA"],
+    "recommendation": "upload" or "improve_first",
+    "improvements_if_needed": ["specific improvement"]
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Thumbnail Text Optimization (#36 - v10.0)
+# =============================================================================
+
+THUMBNAIL_TEXT_PROMPT = """You are a THUMBNAIL OPTIMIZATION expert who has tested thousands of click-through variations.
+
+=== VIDEO INFO ===
+Title: {title}
+Hook: {hook}
+Category: {category}
+
+=== LEARNED PATTERNS ===
+Best performing style: {best_style}
+Optimal word count: {optimal_words}
+Top power words: {power_words}
+
+=== DESIGN THUMBNAIL TEXT ===
+Create text overlay that:
+1. Is NOT the same as the title (adds new information)
+2. Creates CURIOSITY or URGENCY
+3. Uses proven power words
+4. Is READABLE on mobile (short, bold)
+5. Complements the visual
+
+=== OUTPUT JSON ===
+{{
+    "primary_text": "THE MAIN TEXT",
+    "secondary_text": "optional smaller text",
+    "style": "ALL_CAPS" or "Title_Case",
+    "word_count": 3,
+    "power_words_used": ["SECRET"],
+    "color_suggestion": "yellow on dark" or "white with shadow",
+    "placement": "top" or "center" or "bottom",
+    "reasoning": "why this text drives clicks"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Comment Sentiment Analysis (#40 - v10.0)
+# =============================================================================
+
+COMMENT_SENTIMENT_PROMPT = """You are a SENTIMENT ANALYSIS expert for YouTube comment sections.
+
+=== COMMENTS TO ANALYZE ===
+{comments}
+
+=== ANALYZE SENTIMENT ===
+Categorize each comment:
+- POSITIVE: praise, thanks, love, support
+- NEGATIVE: criticism, hate, accusations, complaints
+- NEUTRAL: questions, observations, neither
+
+=== EXTRACT INSIGHTS ===
+1. What do viewers LOVE? (do more)
+2. What do viewers CRITICIZE? (fix or avoid)
+3. Any "AI detection" accusations? (quality red flag)
+4. What are viewers REQUESTING?
+
+=== OUTPUT JSON ===
+{{
+    "counts": {{
+        "positive": 15,
+        "negative": 3,
+        "neutral": 7
+    }},
+    "sentiment_ratio": 5.0,
+    "overall_sentiment": "positive" or "negative" or "mixed",
+    "notable_positive": [
+        {{"comment": "exact comment", "why_valuable": "insight"}}
+    ],
+    "notable_negative": [
+        {{"comment": "exact comment", "issue": "what to fix"}}
+    ],
+    "audience_requests": ["topic they want", "feature they want"],
+    "quality_concerns": ["any AI accusations or fake claims"],
+    "actionable_insights": ["do more X", "avoid Y"]
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
 # Main Class
 # =============================================================================
 

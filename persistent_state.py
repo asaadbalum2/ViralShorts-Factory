@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - Persistent State Manager v1.5
+ViralShorts Factory - Persistent State Manager v2.0
 =====================================================
 
 Solves the ephemeral storage problem in GitHub Actions:
@@ -9,12 +9,17 @@ Solves the ephemeral storage problem in GitHub Actions:
 - Prevents Dailymotion rate limit issues by tracking hourly uploads
 - Maintains variety history across batches (not just within batch)
 
+v2.0 Additions (v10.0 enhancements):
+- Thumbnail text optimization tracking
+- Comment sentiment aggregation
+- Peak publishing time learning
+- Title length optimization
+- Music BPM matching
+- Intro pattern learning
+- Viral velocity prediction
+
 v1.5 Additions:
-- Series tracking (for continuation detection)
-- Cross-platform analytics integration
-- Hook word performance aggregation
-- Voice speed optimization data
-- Category decay tracking
+- Series tracking, Cross-platform analytics, Hook words, Voice speed, Category decay
 
 This is the CORE fix for analytics feedback and upload management!
 """
@@ -674,6 +679,35 @@ class PerformanceAggregator:
             insights["v95_trackers"]["category_weights"] = decay.get_decayed_weights()
         except:
             insights["v95_trackers"]["status"] = "not initialized"
+        
+        # v10.0 Trackers
+        insights["v10_trackers"] = {}
+        try:
+            from enhancements_v9 import (
+                get_thumbnail_optimizer, get_sentiment_tracker,
+                get_publishing_optimizer, get_title_length_optimizer,
+                get_bpm_matcher, get_intro_learner
+            )
+            
+            thumb = get_thumbnail_optimizer()
+            insights["v10_trackers"]["thumbnail_settings"] = thumb.get_optimal_settings()
+            
+            sentiment = get_sentiment_tracker()
+            insights["v10_trackers"]["best_sentiment_categories"] = sentiment.get_best_sentiment_categories()
+            
+            publishing = get_publishing_optimizer()
+            insights["v10_trackers"]["best_publishing_times"] = publishing.get_best_publishing_times()
+            
+            title_len = get_title_length_optimizer()
+            insights["v10_trackers"]["optimal_title_length"] = title_len.get_optimal_length()
+            
+            bpm = get_bpm_matcher()
+            insights["v10_trackers"]["bpm_matches"] = len(bpm.data.get("best_matches", {}))
+            
+            intro = get_intro_learner()
+            insights["v10_trackers"]["best_intro_pattern"] = intro.get_recommended_pattern()
+        except Exception as e:
+            insights["v10_trackers"]["status"] = f"not initialized: {e}"
         
         return insights
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - Comprehensive Enhancements Module v9.5
+ViralShorts Factory - Comprehensive Enhancements Module v10.0
 ==============================================================
 
-Implements ALL 35 enhancements through AI-driven prompts (not hardcoded logic).
+Implements ALL 45 enhancements through AI-driven prompts (not hardcoded logic).
 
 ENHANCEMENT CATEGORIES:
 1. CORE QUALITY (#1-4): Post-render validation, comment mining, semantic duplicates, voice pacing
@@ -12,18 +12,25 @@ ENHANCEMENT CATEGORIES:
 4. OPERATIONAL (#16-21): Notifications, watch time, SEO, cross-promo, posting time, shadow-ban
 5. GROWTH (#22-25): Localization, recycling, competitor tracking, engagement automation
 
-NEW v9.5 ENHANCEMENTS:
-6. ADVANCED (#26-35):
-   - #26: Face Detection for thumbnails (OpenCV - free)
-   - #27: Seasonal Content Calendar (AI-driven)
-   - #28: Hook Word Performance Tracking
-   - #29: Voice Speed Optimization with A/B testing
-   - #30: Auto-Hashtag Rotation
-   - #31: B-Roll Relevance Scoring before download
-   - #32: Cross-Platform Performance Split (YouTube vs Dailymotion)
-   - #33: Series Detection & Continuation
-   - #34: Engagement Reply Generator
-   - #35: Category Performance Decay (time-weighted)
+v9.5 ENHANCEMENTS (#26-35):
+6. ADVANCED:
+   - #26: Face Detection, #27: Seasonal Calendar, #28: Hook Word Tracking
+   - #29: Voice Speed, #30: Hashtag Rotation, #31: B-Roll Scoring
+   - #32: Cross-Platform Split, #33: Series Detection, #34: Reply Generator
+   - #35: Category Decay
+
+NEW v10.0 ENHANCEMENTS (#36-45):
+7. INTELLIGENCE:
+   - #36: Thumbnail Text Optimization (AI picks best overlay text)
+   - #37: Emotional Arc Mapping (design emotional journey per video)
+   - #38: Competitor Gap Analysis (find untapped topics)
+   - #39: Description SEO Optimizer (AI optimizes for search)
+   - #40: Comment Sentiment Tracker (positive vs negative ratios)
+   - #41: Peak Publishing Optimizer (learn best posting times)
+   - #42: Title Length Optimizer (track optimal character count)
+   - #43: Music BPM Matcher (match content energy to music tempo)
+   - #44: Intro Pattern Learner (which opening styles work)
+   - #45: Viral Velocity Predictor (estimate viral potential before upload)
 
 QUOTA MANAGEMENT:
 - Groq: Primary for time-sensitive tasks (faster)
@@ -1974,12 +1981,839 @@ def get_category_decay() -> CategoryDecayTracker:
 
 
 # =============================================================================
+# v10.0 ENHANCEMENT #36: Thumbnail Text Optimization
+# =============================================================================
+
+class ThumbnailTextOptimizer:
+    """
+    AI learns which thumbnail text overlays drive the most clicks.
+    Tracks word count, style, and capitalization patterns.
+    """
+    
+    THUMB_TEXT_FILE = STATE_DIR / "thumbnail_text_performance.json"
+    
+    def __init__(self):
+        self.data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.THUMB_TEXT_FILE.exists():
+                with open(self.THUMB_TEXT_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {
+            "text_patterns": {},  # {"ALL_CAPS": {"videos": 5, "total_ctr": 0.08}}
+            "word_counts": {},    # {"3": {"videos": 10, "avg_ctr": 0.07}}
+            "power_words": {},    # {"SECRET": {"uses": 5, "avg_ctr": 0.09}}
+            "last_updated": None
+        }
+    
+    def _save(self):
+        self.data["last_updated"] = datetime.now().isoformat()
+        with open(self.THUMB_TEXT_FILE, 'w') as f:
+            json.dump(self.data, f, indent=2)
+    
+    def record_thumbnail_performance(self, text: str, ctr: float):
+        """Record a thumbnail text's click-through rate."""
+        if not text:
+            return
+        
+        # Detect pattern (ALL_CAPS, Title Case, lowercase)
+        if text.isupper():
+            pattern = "ALL_CAPS"
+        elif text.istitle():
+            pattern = "Title_Case"
+        else:
+            pattern = "mixed"
+        
+        if pattern not in self.data["text_patterns"]:
+            self.data["text_patterns"][pattern] = {"videos": 0, "total_ctr": 0}
+        self.data["text_patterns"][pattern]["videos"] += 1
+        self.data["text_patterns"][pattern]["total_ctr"] += ctr
+        
+        # Track word count
+        word_count = str(len(text.split()))
+        if word_count not in self.data["word_counts"]:
+            self.data["word_counts"][word_count] = {"videos": 0, "total_ctr": 0}
+        self.data["word_counts"][word_count]["videos"] += 1
+        self.data["word_counts"][word_count]["total_ctr"] += ctr
+        
+        # Track power words
+        words = text.upper().split()
+        power_candidates = ["SECRET", "TRUTH", "NEVER", "ALWAYS", "SHOCKING", "HIDDEN", "FREE", "NOW"]
+        for word in words:
+            if word in power_candidates:
+                if word not in self.data["power_words"]:
+                    self.data["power_words"][word] = {"uses": 0, "total_ctr": 0}
+                self.data["power_words"][word]["uses"] += 1
+                self.data["power_words"][word]["total_ctr"] += ctr
+        
+        self._save()
+    
+    def get_optimal_settings(self) -> Dict:
+        """Get the optimal thumbnail text settings based on learning."""
+        best_pattern = "ALL_CAPS"
+        best_pattern_ctr = 0
+        
+        for pattern, stats in self.data["text_patterns"].items():
+            if stats["videos"] >= 3:
+                avg_ctr = stats["total_ctr"] / stats["videos"]
+                if avg_ctr > best_pattern_ctr:
+                    best_pattern_ctr = avg_ctr
+                    best_pattern = pattern
+        
+        best_word_count = 3
+        best_wc_ctr = 0
+        for wc, stats in self.data["word_counts"].items():
+            if stats["videos"] >= 3:
+                avg_ctr = stats["total_ctr"] / stats["videos"]
+                if avg_ctr > best_wc_ctr:
+                    best_wc_ctr = avg_ctr
+                    best_word_count = int(wc)
+        
+        top_power_words = []
+        for word, stats in self.data["power_words"].items():
+            if stats["uses"] >= 2:
+                avg_ctr = stats["total_ctr"] / stats["uses"]
+                top_power_words.append((word, avg_ctr))
+        top_power_words.sort(key=lambda x: x[1], reverse=True)
+        
+        return {
+            "best_pattern": best_pattern,
+            "best_word_count": best_word_count,
+            "top_power_words": [w[0] for w in top_power_words[:5]]
+        }
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #37: Emotional Arc Mapping
+# =============================================================================
+
+def design_emotional_arc(content: str, video_type: str) -> Dict:
+    """
+    AI designs the emotional journey for optimal engagement.
+    Maps: Hook emotion -> Build tension -> Peak -> Resolution
+    """
+    ai = get_ai_caller()
+    
+    prompt = f"""You are an EMOTIONAL STORYTELLING expert for short-form video.
+
+=== CONTENT ===
+{content[:500]}
+
+=== VIDEO TYPE ===
+{video_type}
+
+=== DESIGN THE EMOTIONAL ARC ===
+Map the emotional journey across the video:
+
+1. HOOK (0-2s): What emotion grabs attention?
+   - Options: shock, curiosity, fear, excitement, confusion
+
+2. BUILD (2-8s): How does tension increase?
+   - Building anticipation, raising stakes, creating mystery
+
+3. PEAK (8-15s): The emotional climax
+   - The big reveal, the payoff, the wow moment
+
+4. RESOLUTION (15-20s): How do they feel after?
+   - Satisfied, motivated, curious for more, validated
+
+=== OUTPUT JSON ===
+{{
+    "emotional_journey": [
+        {{"phase": "hook", "emotion": "curiosity", "intensity": 7, "technique": "open loop"}}
+    ],
+    "peak_moment_timing": 12,
+    "energy_curve": [5, 6, 7, 8, 9, 10, 8, 7],
+    "music_mood_suggestion": "building_tension",
+    "voice_energy": "start calm, build to excited, end confident",
+    "pacing_notes": "slow at start, accelerate through middle"
+}}
+
+JSON ONLY."""
+
+    result = ai.call(prompt, max_tokens=400, priority="bulk")
+    return ai.parse_json(result) or {
+        "emotional_journey": [{"phase": "hook", "emotion": "curiosity", "intensity": 7}],
+        "peak_moment_timing": 12
+    }
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #38: Competitor Gap Analysis
+# =============================================================================
+
+def analyze_competitor_gaps(our_topics: List[str], competitor_topics: List[str]) -> Dict:
+    """
+    AI identifies topics competitors haven't covered that we could.
+    Finds untapped niches and angles.
+    """
+    ai = get_ai_caller()
+    
+    prompt = f"""You are a COMPETITIVE INTELLIGENCE analyst for viral content.
+
+=== OUR RECENT TOPICS ===
+{json.dumps(our_topics[:15], indent=2)}
+
+=== COMPETITOR TOPICS (from top channels) ===
+{json.dumps(competitor_topics[:20], indent=2)}
+
+=== FIND THE GAPS ===
+Identify content opportunities competitors are MISSING:
+
+1. UNTAPPED NICHES: Subcategories no one is covering
+2. FRESH ANGLES: New perspectives on popular topics
+3. UNDERSERVED AUDIENCES: Demographics being ignored
+4. TIMING OPPORTUNITIES: Topics that should be trending but aren't covered
+
+=== OUTPUT JSON ===
+{{
+    "untapped_niches": [
+        {{"niche": "specific niche", "why_valuable": "reason", "hook_idea": "hook"}}
+    ],
+    "fresh_angles": [
+        {{"existing_topic": "what competitors do", "our_angle": "how we differentiate"}}
+    ],
+    "content_recommendations": [
+        {{"topic": "specific topic", "priority": "high/medium", "reason": "why now"}}
+    ],
+    "avoid_saturated": ["topic 1", "topic 2"]
+}}
+
+JSON ONLY."""
+
+    result = ai.call(prompt, max_tokens=500, priority="bulk")
+    return ai.parse_json(result) or {"untapped_niches": [], "content_recommendations": []}
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #39: Description SEO Optimizer
+# =============================================================================
+
+def optimize_description_seo(title: str, content: str, category: str) -> Dict:
+    """
+    AI optimizes video descriptions for YouTube search.
+    Includes keywords, timestamps, and call-to-actions.
+    """
+    ai = get_ai_caller()
+    
+    prompt = f"""You are a YOUTUBE SEO expert specializing in Shorts.
+
+=== VIDEO INFO ===
+Title: {title}
+Category: {category}
+Content Summary: {content[:200]}
+
+=== OPTIMIZE DESCRIPTION FOR SEARCH ===
+Create an SEO-optimized description that:
+1. Includes primary keyword in first 25 characters
+2. Contains 3-5 related keywords naturally
+3. Has a clear call-to-action
+4. Is under 200 characters (Shorts sweet spot)
+5. Includes relevant hashtags
+
+=== OUTPUT JSON ===
+{{
+    "optimized_description": "The full description text",
+    "primary_keyword": "main search term",
+    "secondary_keywords": ["keyword2", "keyword3"],
+    "cta_used": "the call to action",
+    "hashtags": ["#tag1", "#tag2", "#tag3"],
+    "seo_score": 8,
+    "improvement_notes": "what makes this SEO-strong"
+}}
+
+JSON ONLY."""
+
+    result = ai.call(prompt, max_tokens=300, priority="bulk")
+    return ai.parse_json(result) or {
+        "optimized_description": f"{title} #shorts #viral",
+        "seo_score": 5
+    }
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #40: Comment Sentiment Tracker
+# =============================================================================
+
+class CommentSentimentTracker:
+    """
+    Tracks positive vs negative comment ratios per video.
+    Learns which content types generate better sentiment.
+    """
+    
+    SENTIMENT_FILE = STATE_DIR / "comment_sentiment.json"
+    
+    def __init__(self):
+        self.data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.SENTIMENT_FILE.exists():
+                with open(self.SENTIMENT_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {
+            "videos": [],  # {"video_id": str, "positive": int, "negative": int, "category": str}
+            "category_sentiment": {},  # {"psychology": {"positive": 100, "negative": 20}}
+            "last_updated": None
+        }
+    
+    def _save(self):
+        self.data["last_updated"] = datetime.now().isoformat()
+        with open(self.SENTIMENT_FILE, 'w') as f:
+            json.dump(self.data, f, indent=2)
+    
+    def record_video_sentiment(self, video_id: str, category: str, positive: int, negative: int):
+        """Record sentiment counts for a video."""
+        self.data["videos"].append({
+            "video_id": video_id,
+            "positive": positive,
+            "negative": negative,
+            "category": category,
+            "ratio": positive / max(negative, 1),
+            "date": datetime.now().isoformat()
+        })
+        self.data["videos"] = self.data["videos"][-100:]  # Keep last 100
+        
+        # Update category aggregates
+        if category not in self.data["category_sentiment"]:
+            self.data["category_sentiment"][category] = {"positive": 0, "negative": 0}
+        self.data["category_sentiment"][category]["positive"] += positive
+        self.data["category_sentiment"][category]["negative"] += negative
+        
+        self._save()
+    
+    def get_category_sentiment_scores(self) -> Dict[str, float]:
+        """Get sentiment ratio per category."""
+        scores = {}
+        for cat, counts in self.data["category_sentiment"].items():
+            pos = counts.get("positive", 0)
+            neg = counts.get("negative", 1)
+            scores[cat] = round(pos / max(neg, 1), 2)
+        return scores
+    
+    def get_best_sentiment_categories(self) -> List[str]:
+        """Get categories with best sentiment ratios."""
+        scores = self.get_category_sentiment_scores()
+        sorted_cats = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+        return [c[0] for c in sorted_cats[:5]]
+
+
+def analyze_comment_sentiment(comments: List[str]) -> Dict:
+    """AI analyzes comments to determine sentiment breakdown."""
+    if not comments:
+        return {"positive": 0, "negative": 0, "neutral": 0}
+    
+    ai = get_ai_caller()
+    
+    prompt = f"""Analyze these YouTube comments for sentiment.
+
+COMMENTS:
+{json.dumps(comments[:20], indent=2)}
+
+Count how many are:
+- POSITIVE (praise, thanks, love it, great, etc.)
+- NEGATIVE (criticism, hate, fake, wrong, etc.)
+- NEUTRAL (questions, observations, neither positive nor negative)
+
+OUTPUT JSON:
+{{
+    "positive": count,
+    "negative": count,
+    "neutral": count,
+    "notable_positive": ["best positive comment"],
+    "notable_negative": ["worst negative comment"],
+    "overall_sentiment": "positive" or "negative" or "mixed"
+}}
+
+JSON ONLY."""
+
+    result = ai.call(prompt, max_tokens=200, priority="bulk")
+    return ai.parse_json(result) or {"positive": 0, "negative": 0, "neutral": len(comments)}
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #41: Peak Publishing Optimizer
+# =============================================================================
+
+class PeakPublishingOptimizer:
+    """
+    Learns optimal posting times from actual performance data.
+    Tracks hour and day correlations with views.
+    """
+    
+    PUBLISHING_FILE = STATE_DIR / "publishing_times.json"
+    
+    def __init__(self):
+        self.data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.PUBLISHING_FILE.exists():
+                with open(self.PUBLISHING_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {
+            "hourly_performance": {str(h): {"videos": 0, "total_views": 0} for h in range(24)},
+            "daily_performance": {d: {"videos": 0, "total_views": 0} for d in 
+                                  ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
+            "best_slots": [],
+            "last_updated": None
+        }
+    
+    def _save(self):
+        self.data["last_updated"] = datetime.now().isoformat()
+        with open(self.PUBLISHING_FILE, 'w') as f:
+            json.dump(self.data, f, indent=2)
+    
+    def record_publishing_performance(self, publish_hour: int, publish_day: str, views: int):
+        """Record performance for a publishing time."""
+        hour_key = str(publish_hour)
+        
+        if hour_key not in self.data["hourly_performance"]:
+            self.data["hourly_performance"][hour_key] = {"videos": 0, "total_views": 0}
+        self.data["hourly_performance"][hour_key]["videos"] += 1
+        self.data["hourly_performance"][hour_key]["total_views"] += views
+        
+        if publish_day not in self.data["daily_performance"]:
+            self.data["daily_performance"][publish_day] = {"videos": 0, "total_views": 0}
+        self.data["daily_performance"][publish_day]["videos"] += 1
+        self.data["daily_performance"][publish_day]["total_views"] += views
+        
+        self._update_best_slots()
+        self._save()
+    
+    def _update_best_slots(self):
+        """Calculate best publishing slots."""
+        hour_avgs = []
+        for hour, stats in self.data["hourly_performance"].items():
+            if stats["videos"] >= 3:
+                avg = stats["total_views"] / stats["videos"]
+                hour_avgs.append((int(hour), avg))
+        
+        hour_avgs.sort(key=lambda x: x[1], reverse=True)
+        self.data["best_slots"] = [h[0] for h in hour_avgs[:5]]
+    
+    def get_best_publishing_times(self) -> Dict:
+        """Get optimal publishing times."""
+        best_hours = self.data.get("best_slots", [14, 18, 20])[:3]
+        
+        # Best days
+        day_avgs = []
+        for day, stats in self.data["daily_performance"].items():
+            if stats["videos"] >= 2:
+                avg = stats["total_views"] / stats["videos"]
+                day_avgs.append((day, avg))
+        day_avgs.sort(key=lambda x: x[1], reverse=True)
+        best_days = [d[0] for d in day_avgs[:3]]
+        
+        return {
+            "best_hours_utc": best_hours if best_hours else [14, 18, 20],
+            "best_days": best_days if best_days else ["Friday", "Saturday", "Sunday"]
+        }
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #42: Title Length Optimizer
+# =============================================================================
+
+class TitleLengthOptimizer:
+    """
+    Tracks optimal title character count for CTR.
+    """
+    
+    TITLE_LENGTH_FILE = STATE_DIR / "title_length_performance.json"
+    
+    def __init__(self):
+        self.data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.TITLE_LENGTH_FILE.exists():
+                with open(self.TITLE_LENGTH_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {
+            "length_buckets": {},  # {"30-40": {"videos": 5, "total_ctr": 0.4}}
+            "optimal_range": [35, 50],
+            "last_updated": None
+        }
+    
+    def _save(self):
+        self.data["last_updated"] = datetime.now().isoformat()
+        with open(self.TITLE_LENGTH_FILE, 'w') as f:
+            json.dump(self.data, f, indent=2)
+    
+    def _get_bucket(self, length: int) -> str:
+        """Get the length bucket for a title."""
+        if length < 20:
+            return "0-20"
+        elif length < 30:
+            return "20-30"
+        elif length < 40:
+            return "30-40"
+        elif length < 50:
+            return "40-50"
+        elif length < 60:
+            return "50-60"
+        else:
+            return "60+"
+    
+    def record_title_performance(self, title: str, ctr: float):
+        """Record a title's performance."""
+        length = len(title)
+        bucket = self._get_bucket(length)
+        
+        if bucket not in self.data["length_buckets"]:
+            self.data["length_buckets"][bucket] = {"videos": 0, "total_ctr": 0}
+        
+        self.data["length_buckets"][bucket]["videos"] += 1
+        self.data["length_buckets"][bucket]["total_ctr"] += ctr
+        
+        self._update_optimal_range()
+        self._save()
+    
+    def _update_optimal_range(self):
+        """Update the optimal title length range."""
+        best_bucket = "30-40"
+        best_avg = 0
+        
+        for bucket, stats in self.data["length_buckets"].items():
+            if stats["videos"] >= 3:
+                avg = stats["total_ctr"] / stats["videos"]
+                if avg > best_avg:
+                    best_avg = avg
+                    best_bucket = bucket
+        
+        # Convert bucket to range
+        ranges = {
+            "0-20": [15, 20],
+            "20-30": [25, 30],
+            "30-40": [35, 40],
+            "40-50": [40, 50],
+            "50-60": [45, 55],
+            "60+": [50, 60]
+        }
+        self.data["optimal_range"] = ranges.get(best_bucket, [35, 50])
+    
+    def get_optimal_length(self) -> Dict:
+        """Get the optimal title length range."""
+        return {
+            "min_chars": self.data["optimal_range"][0],
+            "max_chars": self.data["optimal_range"][1],
+            "target": sum(self.data["optimal_range"]) // 2
+        }
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #43: Music BPM Matcher
+# =============================================================================
+
+class MusicBPMMatcher:
+    """
+    Matches content energy to music tempo.
+    Tracks which BPM ranges work for different content types.
+    """
+    
+    BPM_FILE = STATE_DIR / "music_bpm_performance.json"
+    
+    # BPM ranges for different moods (typical stock music)
+    BPM_RANGES = {
+        "calm": (60, 80),
+        "moderate": (80, 110),
+        "energetic": (110, 140),
+        "intense": (140, 180)
+    }
+    
+    def __init__(self):
+        self.data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.BPM_FILE.exists():
+                with open(self.BPM_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {
+            "category_bpm": {},  # {"psychology": {"calm": 5, "energetic": 2}}
+            "best_matches": {},
+            "last_updated": None
+        }
+    
+    def _save(self):
+        self.data["last_updated"] = datetime.now().isoformat()
+        with open(self.BPM_FILE, 'w') as f:
+            json.dump(self.data, f, indent=2)
+    
+    def record_music_performance(self, category: str, bpm_range: str, views: int, avg_views: int):
+        """Record how a BPM range performed for a category."""
+        if category not in self.data["category_bpm"]:
+            self.data["category_bpm"][category] = {}
+        
+        if bpm_range not in self.data["category_bpm"][category]:
+            self.data["category_bpm"][category][bpm_range] = {"uses": 0, "total_performance": 0}
+        
+        performance = views / max(avg_views, 1)
+        self.data["category_bpm"][category][bpm_range]["uses"] += 1
+        self.data["category_bpm"][category][bpm_range]["total_performance"] += performance
+        
+        self._update_best_matches()
+        self._save()
+    
+    def _update_best_matches(self):
+        """Update best BPM matches per category."""
+        for category, bpm_data in self.data["category_bpm"].items():
+            best_range = "moderate"
+            best_perf = 0
+            
+            for bpm_range, stats in bpm_data.items():
+                if stats["uses"] >= 2:
+                    avg_perf = stats["total_performance"] / stats["uses"]
+                    if avg_perf > best_perf:
+                        best_perf = avg_perf
+                        best_range = bpm_range
+            
+            self.data["best_matches"][category] = best_range
+    
+    def get_recommended_bpm(self, category: str) -> Dict:
+        """Get recommended BPM range for a category."""
+        best_match = self.data.get("best_matches", {}).get(category, "moderate")
+        bpm_range = self.BPM_RANGES.get(best_match, (80, 110))
+        
+        return {
+            "range_name": best_match,
+            "bpm_min": bpm_range[0],
+            "bpm_max": bpm_range[1],
+            "target_bpm": (bpm_range[0] + bpm_range[1]) // 2
+        }
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #44: Intro Pattern Learner
+# =============================================================================
+
+class IntroPatternLearner:
+    """
+    Learns which opening styles (intro patterns) drive retention.
+    """
+    
+    INTRO_FILE = STATE_DIR / "intro_pattern_performance.json"
+    
+    INTRO_PATTERNS = [
+        "question",        # "Did you know...?"
+        "shocking_stat",   # "73% of people..."
+        "direct_claim",    # "This will change..."
+        "you_statement",   # "You're probably..."
+        "story_tease",     # "Last week I..."
+        "countdown",       # "Number 3 is..."
+        "challenge"        # "I bet you can't..."
+    ]
+    
+    def __init__(self):
+        self.data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.INTRO_FILE.exists():
+                with open(self.INTRO_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {
+            "pattern_performance": {p: {"uses": 0, "total_retention": 0} for p in self.INTRO_PATTERNS},
+            "best_patterns": [],
+            "last_updated": None
+        }
+    
+    def _save(self):
+        self.data["last_updated"] = datetime.now().isoformat()
+        with open(self.INTRO_FILE, 'w') as f:
+            json.dump(self.data, f, indent=2)
+    
+    def detect_intro_pattern(self, hook: str) -> str:
+        """Detect the intro pattern used in a hook."""
+        hook_lower = hook.lower()
+        
+        if hook_lower.startswith(("did you", "have you", "do you", "can you", "what if")):
+            return "question"
+        elif any(c.isdigit() for c in hook[:20]) and "%" in hook:
+            return "shocking_stat"
+        elif hook_lower.startswith(("you ", "your ")):
+            return "you_statement"
+        elif hook_lower.startswith(("number ", "#", "first", "1.")):
+            return "countdown"
+        elif hook_lower.startswith(("i bet", "bet you", "try this")):
+            return "challenge"
+        elif any(word in hook_lower for word in ["last week", "yesterday", "once", "my friend"]):
+            return "story_tease"
+        else:
+            return "direct_claim"
+    
+    def record_intro_performance(self, hook: str, retention_percent: float):
+        """Record how an intro pattern performed."""
+        pattern = self.detect_intro_pattern(hook)
+        
+        if pattern not in self.data["pattern_performance"]:
+            self.data["pattern_performance"][pattern] = {"uses": 0, "total_retention": 0}
+        
+        self.data["pattern_performance"][pattern]["uses"] += 1
+        self.data["pattern_performance"][pattern]["total_retention"] += retention_percent
+        
+        self._update_best_patterns()
+        self._save()
+    
+    def _update_best_patterns(self):
+        """Update the ranked list of best patterns."""
+        pattern_scores = []
+        
+        for pattern, stats in self.data["pattern_performance"].items():
+            if stats["uses"] >= 3:
+                avg = stats["total_retention"] / stats["uses"]
+                pattern_scores.append((pattern, avg))
+        
+        pattern_scores.sort(key=lambda x: x[1], reverse=True)
+        self.data["best_patterns"] = [p[0] for p in pattern_scores]
+    
+    def get_recommended_pattern(self) -> str:
+        """Get the best performing intro pattern."""
+        if self.data["best_patterns"]:
+            return self.data["best_patterns"][0]
+        return "shocking_stat"  # Default
+
+
+# =============================================================================
+# v10.0 ENHANCEMENT #45: Viral Velocity Predictor
+# =============================================================================
+
+def predict_viral_velocity(title: str, hook: str, category: str, historical_avg: int) -> Dict:
+    """
+    AI predicts viral potential before upload.
+    Estimates first-hour, first-day, and week-1 views.
+    """
+    ai = get_ai_caller()
+    
+    prompt = f"""You are a VIRAL PREDICTION expert who has analyzed millions of YouTube Shorts.
+
+=== VIDEO TO ANALYZE ===
+Title: {title}
+Hook: {hook}
+Category: {category}
+Channel Average Views: {historical_avg:,}
+
+=== PREDICT VIRAL VELOCITY ===
+Based on these factors, predict performance:
+
+1. SCROLL-STOP POWER: Does the title/hook stop scrolling?
+2. SHAREABILITY: Would someone share this with friends?
+3. COMMENT BAIT: Does it provoke discussion?
+4. TREND ALIGNMENT: Is this topic trending?
+5. ALGORITHM FRIENDLINESS: Will YouTube promote this?
+
+=== OUTPUT JSON ===
+{{
+    "viral_score": 1-10,
+    "velocity_tier": "slow_burn" or "moderate" or "fast" or "explosive",
+    "predicted_first_hour": {int(historical_avg * 0.1)},
+    "predicted_first_day": {int(historical_avg * 0.5)},
+    "predicted_week_1": {int(historical_avg)},
+    "confidence": 0.7,
+    "strength_factors": ["what makes it viral"],
+    "risk_factors": ["what could limit it"],
+    "recommendation": "upload" or "improve_first"
+}}
+
+Be realistic based on the channel's historical average. JSON ONLY."""
+
+    result = ai.call(prompt, max_tokens=300, priority="bulk")
+    parsed = ai.parse_json(result)
+    
+    if parsed:
+        return parsed
+    
+    return {
+        "viral_score": 6,
+        "velocity_tier": "moderate",
+        "predicted_first_hour": int(historical_avg * 0.1),
+        "predicted_first_day": int(historical_avg * 0.5),
+        "predicted_week_1": historical_avg,
+        "recommendation": "upload"
+    }
+
+
+# =============================================================================
+# v10.0 SINGLETON ACCESSORS
+# =============================================================================
+
+_thumbnail_optimizer = None
+_sentiment_tracker = None
+_publishing_optimizer = None
+_title_length_optimizer = None
+_bpm_matcher = None
+_intro_learner = None
+
+
+def get_thumbnail_optimizer() -> ThumbnailTextOptimizer:
+    """Get the singleton thumbnail text optimizer."""
+    global _thumbnail_optimizer
+    if _thumbnail_optimizer is None:
+        _thumbnail_optimizer = ThumbnailTextOptimizer()
+    return _thumbnail_optimizer
+
+
+def get_sentiment_tracker() -> CommentSentimentTracker:
+    """Get the singleton comment sentiment tracker."""
+    global _sentiment_tracker
+    if _sentiment_tracker is None:
+        _sentiment_tracker = CommentSentimentTracker()
+    return _sentiment_tracker
+
+
+def get_publishing_optimizer() -> PeakPublishingOptimizer:
+    """Get the singleton peak publishing optimizer."""
+    global _publishing_optimizer
+    if _publishing_optimizer is None:
+        _publishing_optimizer = PeakPublishingOptimizer()
+    return _publishing_optimizer
+
+
+def get_title_length_optimizer() -> TitleLengthOptimizer:
+    """Get the singleton title length optimizer."""
+    global _title_length_optimizer
+    if _title_length_optimizer is None:
+        _title_length_optimizer = TitleLengthOptimizer()
+    return _title_length_optimizer
+
+
+def get_bpm_matcher() -> MusicBPMMatcher:
+    """Get the singleton music BPM matcher."""
+    global _bpm_matcher
+    if _bpm_matcher is None:
+        _bpm_matcher = MusicBPMMatcher()
+    return _bpm_matcher
+
+
+def get_intro_learner() -> IntroPatternLearner:
+    """Get the singleton intro pattern learner."""
+    global _intro_learner
+    if _intro_learner is None:
+        _intro_learner = IntroPatternLearner()
+    return _intro_learner
+
+
+# =============================================================================
 # TEST
 # =============================================================================
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Enhancement Module v9.5 - Test")
+    print("Enhancement Module v10.0 - Test")
     print("=" * 60)
     
     # Test AI caller

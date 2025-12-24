@@ -1,14 +1,13 @@
-name: Weekly Analytics Feedback - Learn from Our Performance (v9.5)
+name: Weekly Analytics Feedback - Learn from Our Performance (v10.0)
 
 # Runs weekly to analyze OUR video performance and adjust strategy
-# v9.5: Now includes:
-#   - Comment mining & audience insights
-#   - Shadow-ban detection
-#   - Hook word performance tracking
-#   - Cross-platform analytics (YouTube vs Dailymotion)
-#   - Category performance decay
-#   - Series detection for high performers
-#   - Voice speed correlation
+# v10.0: Now includes:
+#   - Comment sentiment analysis (positive/negative ratios)
+#   - Peak publishing time learning
+#   - Title length optimization
+#   - Intro pattern learning
+#   - Thumbnail text performance
+# v9.5: Hook words, category decay, series detection, shadow-ban
 # Fully autonomous - no human intervention needed!
 
 on:
@@ -679,7 +678,7 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## Weekly Analytics Feedback Complete (v9.5)" >> $GITHUB_STEP_SUMMARY
+          echo "## Weekly Analytics Feedback Complete (v10.0)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### The Autonomous Feedback Loop" >> $GITHUB_STEP_SUMMARY
           echo "1. Fetched performance data from our YouTube channel" >> $GITHUB_STEP_SUMMARY
@@ -688,12 +687,14 @@ jobs:
           echo "4. Updated viral patterns (best title patterns)" >> $GITHUB_STEP_SUMMARY
           echo "5. Next video generation will use these automatically!" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### v10.0 Enhancements Active" >> $GITHUB_STEP_SUMMARY
+          echo "- Comment sentiment tracking" >> $GITHUB_STEP_SUMMARY
+          echo "- Peak publishing time learning" >> $GITHUB_STEP_SUMMARY
+          echo "- Title length optimization" >> $GITHUB_STEP_SUMMARY
+          echo "- Intro pattern analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
           echo "### v9.5 Enhancements Active" >> $GITHUB_STEP_SUMMARY
-          echo "- Hook word performance tracking" >> $GITHUB_STEP_SUMMARY
-          echo "- Category performance decay" >> $GITHUB_STEP_SUMMARY
-          echo "- Series candidate detection" >> $GITHUB_STEP_SUMMARY
-          echo "- Shadow-ban monitoring" >> $GITHUB_STEP_SUMMARY
-          echo "- Comment mining for insights" >> $GITHUB_STEP_SUMMARY
+          echo "- Hook word tracking, Category decay, Series detection" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### No Human Intervention Needed!" >> $GITHUB_STEP_SUMMARY
           echo "This workflow runs every Sunday and feeds learnings back." >> $GITHUB_STEP_SUMMARY
