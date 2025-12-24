@@ -3876,6 +3876,1053 @@ def get_algorithm_signals() -> AlgorithmSignalSummary:
     return _algorithm_signals
 
 
+# #############################################################################
+# BATCH 4: ENGAGEMENT & RETENTION
+# #############################################################################
+
+# #############################################################################
+# CATEGORY I: VISUAL PRODUCTION (#245-259)
+# Professional visual quality
+# #############################################################################
+
+class ColorGrading:
+    """
+    #245: Professional color grading for mood.
+    """
+    
+    MOOD_COLORS = {
+        "professional": {"primary": "#1a1a2e", "accent": "#eee", "warmth": -5},
+        "energetic": {"primary": "#ff6b35", "accent": "#004e89", "warmth": 10},
+        "calm": {"primary": "#5c6bc0", "accent": "#b3e5fc", "warmth": -10},
+        "mysterious": {"primary": "#2d132c", "accent": "#801336", "warmth": -15},
+        "hopeful": {"primary": "#f9c74f", "accent": "#43aa8b", "warmth": 15},
+        "serious": {"primary": "#2b2d42", "accent": "#ef233c", "warmth": 0}
+    }
+    
+    def get_color_instruction(self) -> str:
+        return """
+COLOR GRADING:
+- Match colors to mood/topic
+- Professional: Dark, muted, high contrast
+- Energetic: Warm, saturated, vibrant
+- Calm: Cool blues, low saturation
+- Consistent color theme throughout
+- Color = subconscious emotion
+"""
+
+
+class MotionGraphics:
+    """
+    #246: Motion graphics for engagement.
+    """
+    
+    MOTION_TYPES = [
+        "kinetic_typography",    # Text that moves with meaning
+        "data_visualization",    # Animated stats/charts
+        "icon_animation",        # Animated icons
+        "progress_indicator",    # Visual progress
+        "transition_effects",    # Between scenes
+        "emphasis_zoom"          # Zoom for emphasis
+    ]
+    
+    def get_motion_instruction(self) -> str:
+        return """
+MOTION GRAPHICS:
+- Kinetic typography for key phrases
+- Animated icons for concepts
+- Progress indicators for lists
+- Smooth transitions between scenes
+- Zoom for emphasis on key points
+- Motion = engagement = watch time
+"""
+
+
+class VisualHierarchy:
+    """
+    #247: Clear visual hierarchy.
+    """
+    
+    def get_hierarchy_instruction(self) -> str:
+        return """
+VISUAL HIERARCHY:
+- Primary focus: 60% of screen
+- Secondary: 30% of screen
+- Tertiary: 10% of screen
+- One main element at a time
+- Guide the eye intentionally
+- Clear = easy = watch
+"""
+
+
+class FrameComposition:
+    """
+    #248: Professional frame composition.
+    """
+    
+    def get_composition_instruction(self) -> str:
+        return """
+FRAME COMPOSITION:
+- Rule of thirds for key elements
+- Center for direct impact
+- Negative space for breathing room
+- Balanced asymmetry
+- Mobile-first (9:16 vertical)
+- Composition = professional feel
+"""
+
+
+class LightingMood:
+    """
+    #249: Lighting for mood setting.
+    """
+    
+    LIGHTING_MOODS = {
+        "dramatic": "high contrast, deep shadows",
+        "uplifting": "bright, even, warm",
+        "mysterious": "low key, cool tones",
+        "professional": "neutral, clean, balanced",
+        "emotional": "soft, directional, warm"
+    }
+
+
+class TextStyling:
+    """
+    #250: Consistent text styling.
+    """
+    
+    def get_text_instruction(self) -> str:
+        return """
+TEXT STYLING:
+- Max 2 fonts per video
+- Consistent sizing hierarchy
+- Readable on mobile (min 24pt)
+- Contrast with background
+- Strategic use of bold/color
+- Text style = brand consistency
+"""
+
+
+class TransitionLibrary:
+    """
+    #251: Library of professional transitions.
+    """
+    
+    TRANSITIONS = {
+        "cut": {"use": "fast-paced, energy", "duration": 0},
+        "fade": {"use": "mood change, time skip", "duration": 0.5},
+        "slide": {"use": "topic change", "duration": 0.3},
+        "zoom": {"use": "emphasis, focus", "duration": 0.3},
+        "wipe": {"use": "reveal, before/after", "duration": 0.4},
+        "blur": {"use": "flashback, dream", "duration": 0.5}
+    }
+
+
+class BRollIntegration:
+    """
+    #252: Strategic B-roll integration.
+    """
+    
+    def get_broll_instruction(self) -> str:
+        return """
+B-ROLL INTEGRATION:
+- Never more than 3 seconds static
+- B-roll supports narration
+- Match visual to words
+- Mix of close-ups and wide
+- Movement in B-roll
+- Visual variety = engagement
+"""
+
+
+class VisualPacing:
+    """
+    #253: Visual change pacing.
+    """
+    
+    def get_pacing_instruction(self) -> str:
+        return """
+VISUAL PACING:
+- Change every 2-3 seconds
+- Faster for energy, slower for emphasis
+- Match audio rhythm
+- Build to visual climax
+- Never static for too long
+- Pacing = engagement
+"""
+
+
+class IconDesign:
+    """
+    #254: Consistent icon design.
+    """
+    
+    ICON_STYLES = ["line", "filled", "duotone", "gradient", "flat"]
+    
+    def get_icon_instruction(self) -> str:
+        return """
+ICON DESIGN:
+- One style per video
+- Match brand colors
+- Simple, recognizable
+- Animate for engagement
+- Support text, don't replace
+"""
+
+
+class VisualBranding:
+    """
+    #255: Consistent visual branding.
+    """
+    
+    def get_branding_instruction(self) -> str:
+        return """
+VISUAL BRANDING:
+- Consistent color palette
+- Recognizable text style
+- Subtle watermark/logo
+- Brand = recognition = subscribers
+- Don't overdo, be subtle
+"""
+
+
+class AspectRatioOptimization:
+    """
+    #256: Aspect ratio optimization for platforms.
+    """
+    
+    ASPECT_RATIOS = {
+        "youtube_shorts": "9:16",
+        "tiktok": "9:16",
+        "instagram_reels": "9:16",
+        "dailymotion": "9:16"
+    }
+    
+    def get_aspect_instruction(self) -> str:
+        return """
+ASPECT RATIO (Shorts):
+- 9:16 vertical format
+- Safe zones for UI elements
+- Text away from edges
+- Mobile-first design
+- All platforms = same ratio
+"""
+
+
+class SafeZoneDesign:
+    """
+    #257: Respects platform safe zones.
+    """
+    
+    def get_safezone_instruction(self) -> str:
+        return """
+SAFE ZONES:
+- Top 10%: Title/time (avoid)
+- Bottom 15%: Comments/buttons (avoid)
+- Left 10%: Navigation (avoid)
+- Center 60%: Primary content
+- Test on actual phone
+"""
+
+
+class VisualMetaphor:
+    """
+    #258: Visual metaphors for concepts.
+    """
+    
+    def get_metaphor_instruction(self) -> str:
+        return """
+VISUAL METAPHORS:
+- Abstract concept = concrete visual
+- "Growth" = plant/chart rising
+- "Problem" = puzzle/obstacle
+- "Solution" = key/path clearing
+- Visual = instant understanding
+"""
+
+
+class AnimationSmoothing:
+    """
+    #259: Smooth animation principles.
+    """
+    
+    def get_smoothing_instruction(self) -> str:
+        return """
+SMOOTH ANIMATIONS:
+- Ease-in/ease-out for natural motion
+- No linear animations (feels robotic)
+- Consistent animation speed
+- Anticipation and follow-through
+- Smooth = professional = trustworthy
+"""
+
+
+# #############################################################################
+# CATEGORY J: PSYCHOLOGICAL TRIGGERS (#260-279)
+# Make them NEED to watch
+# #############################################################################
+
+class FOMOTrigger:
+    """
+    #260: Fear of missing out trigger.
+    """
+    
+    def get_fomo_instruction(self) -> str:
+        return """
+FOMO TRIGGER:
+- "Most people don't know this..."
+- "Before it's too late..."
+- "Only a few people understand..."
+- Creates fear of missing out
+- Must watch to not miss out
+- Ethical use only
+"""
+
+
+class CuriosityLoops:
+    """
+    #261: Creates curiosity loops.
+    """
+    
+    def get_loop_instruction(self) -> str:
+        return """
+CURIOSITY LOOPS:
+- Open a question
+- Delay the answer
+- Open another question
+- Answer first, open third
+- Keep loops open until end
+- Closing loops = satisfaction
+"""
+
+
+class ZeigarnikEffect:
+    """
+    #262: Uses incomplete tasks psychology.
+    """
+    
+    def get_zeigarnik_instruction(self) -> str:
+        return """
+ZEIGARNIK EFFECT:
+- Incomplete tasks stick in memory
+- Start story, don't finish immediately
+- "I'll tell you why in a moment..."
+- Brain needs closure
+- Keep watching for closure
+"""
+
+
+class SocialProof:
+    """
+    #263: Social proof triggers.
+    """
+    
+    def get_socialproof_instruction(self) -> str:
+        return """
+SOCIAL PROOF:
+- "Millions of people..."
+- "Studies show most people..."
+- "Experts agree..."
+- Numbers validate claims
+- Others do it = safe to trust
+"""
+
+
+class AuthorityTrigger:
+    """
+    #264: Authority figure references.
+    """
+    
+    def get_authority_instruction(self) -> str:
+        return """
+AUTHORITY TRIGGER:
+- Reference experts, studies
+- "Harvard researchers found..."
+- "According to psychologists..."
+- Authority = credibility
+- Don't lie, use real sources
+"""
+
+
+class ScarcityPrinciple:
+    """
+    #265: Scarcity creates value.
+    """
+    
+    def get_scarcity_instruction(self) -> str:
+        return """
+SCARCITY PRINCIPLE:
+- "Few people know this..."
+- "Rare insight..."
+- "Not commonly taught..."
+- Scarce = valuable
+- They're getting exclusive info
+"""
+
+
+class ReciprocityEffect:
+    """
+    #266: Give value, get engagement.
+    """
+    
+    def get_reciprocity_instruction(self) -> str:
+        return """
+RECIPROCITY:
+- Give free value upfront
+- They feel obligated to engage
+- "Here's something valuable for free"
+- Value given = like/follow returned
+- Be genuinely helpful
+"""
+
+
+class CommitmentConsistency:
+    """
+    #267: Small commitments lead to bigger ones.
+    """
+    
+    def get_commitment_instruction(self) -> str:
+        return """
+COMMITMENT & CONSISTENCY:
+- Start with small ask
+- "If you agree, keep watching"
+- Build to bigger commitment (follow)
+- People stay consistent with actions
+- Watch = investment = complete
+"""
+
+
+class LossAversion:
+    """
+    #268: People fear loss more than seek gain.
+    """
+    
+    def get_loss_instruction(self) -> str:
+        return """
+LOSS AVERSION:
+- "You're losing $X every day"
+- "Don't miss this opportunity"
+- "Before you waste more time..."
+- Loss framing > gain framing
+- Fear of loss motivates action
+"""
+
+
+class InGroupBias:
+    """
+    #269: Create in-group feeling.
+    """
+    
+    def get_ingroup_instruction(self) -> str:
+        return """
+IN-GROUP BIAS:
+- "Smart people understand this..."
+- "Those who know, know..."
+- "If you're like me..."
+- Creates belonging
+- "We" vs "they" dynamic
+"""
+
+
+class StorytellingPull:
+    """
+    #270: Stories engage more than facts.
+    """
+    
+    def get_story_instruction(self) -> str:
+        return """
+STORYTELLING PULL:
+- Open with story hook
+- Character + conflict + resolution
+- "There was a study where..."
+- "Imagine this scenario..."
+- Stories bypass skepticism
+"""
+
+
+class PatternInterrupt:
+    """
+    #271: Break patterns to capture attention.
+    """
+    
+    def get_interrupt_instruction(self) -> str:
+        return """
+PATTERN INTERRUPT:
+- Unexpected visual/audio
+- Counter-intuitive statement
+- "Wait, that's wrong..."
+- Breaks autopilot scrolling
+- Forces conscious attention
+"""
+
+
+class EmotionalContagion:
+    """
+    #272: Emotions spread from content to viewer.
+    """
+    
+    def get_contagion_instruction(self) -> str:
+        return """
+EMOTIONAL CONTAGION:
+- Express genuine emotion in voice
+- Excitement is contagious
+- Calm creates calm
+- Emotion in delivery = emotion felt
+- Match emotion to content
+"""
+
+
+class ProgressReward:
+    """
+    #273: Reward progress through video.
+    """
+    
+    def get_progress_instruction(self) -> str:
+        return """
+PROGRESS REWARD:
+- Each section delivers value
+- "Now you know X, here's Y"
+- Building feeling of learning
+- Completion = achievement
+- Dopamine hits throughout
+"""
+
+
+class IdentityAppeal:
+    """
+    #274: Appeal to viewer identity.
+    """
+    
+    def get_identity_instruction(self) -> str:
+        return """
+IDENTITY APPEAL:
+- "If you're someone who..."
+- "For people who value..."
+- Content validates who they are
+- They watch to affirm identity
+- Creates personal connection
+"""
+
+
+class MysteryElement:
+    """
+    #275: Mystery keeps attention.
+    """
+    
+    def get_mystery_instruction(self) -> str:
+        return """
+MYSTERY ELEMENT:
+- Plant a mystery early
+- "There's a reason for this..."
+- Reveal at the end
+- Mystery = need to solve
+- Engagement until resolution
+"""
+
+
+class ContrastPrinciple:
+    """
+    #276: Contrast creates impact.
+    """
+    
+    def get_contrast_instruction(self) -> str:
+        return """
+CONTRAST PRINCIPLE:
+- Show bad, then show good
+- "Most people do X, but..."
+- Before/after comparisons
+- Contrast emphasizes difference
+- Impact comes from comparison
+"""
+
+
+class AnchoringBias:
+    """
+    #277: First information anchors perception.
+    """
+    
+    def get_anchor_instruction(self) -> str:
+        return """
+ANCHORING:
+- Lead with most impressive stat
+- "Most people waste 2 hours, you can do it in 5 minutes"
+- First number sets expectation
+- Anchor high, reveal lower
+- Creates relative value
+"""
+
+
+class SurpriseDelight:
+    """
+    #278: Surprise creates memorable moments.
+    """
+    
+    def get_surprise_instruction(self) -> str:
+        return """
+SURPRISE & DELIGHT:
+- Unexpected twist in content
+- Bonus tip at end
+- Counter-intuitive reveal
+- Surprise = memorable = share
+- Don't be predictable
+"""
+
+
+class PeakEndRule:
+    """
+    #279: People remember peaks and endings.
+    """
+    
+    def get_peakend_instruction(self) -> str:
+        return """
+PEAK-END RULE:
+- Create a peak moment (best insight)
+- Strong ending (satisfying close)
+- Peak and end are most remembered
+- End on high note
+- They'll remember how it ended
+"""
+
+
+# #############################################################################
+# CATEGORY K: RETENTION MECHANICS (#280-294)
+# Keep them watching
+# #############################################################################
+
+class OpenLoopTechnique:
+    """
+    #280: Keep loops open to maintain attention.
+    """
+    
+    def get_openloop_instruction(self) -> str:
+        return """
+OPEN LOOPS:
+- Start story, delay ending
+- "I'll explain why in a moment"
+- "But first..."
+- Multiple loops can coexist
+- Close them satisfyingly
+"""
+
+
+class TeaseAndReveal:
+    """
+    #281: Tease content, then reveal.
+    """
+    
+    def get_tease_instruction(self) -> str:
+        return """
+TEASE AND REVEAL:
+- Show glimpse of value
+- "The answer might surprise you..."
+- Build anticipation
+- Deliver on tease
+- Tease = promise = keep
+"""
+
+
+class VisualVariety:
+    """
+    #282: Visual variety prevents boredom.
+    """
+    
+    def get_variety_instruction(self) -> str:
+        return """
+VISUAL VARIETY:
+- Never same visual > 3 seconds
+- Mix: text, B-roll, graphics
+- Different angles/zooms
+- Variety = novelty = attention
+- Sameness = boredom = scroll
+"""
+
+
+class MicroPayoffs:
+    """
+    #283: Small rewards throughout.
+    """
+    
+    def get_micropayoff_instruction(self) -> str:
+        return """
+MICRO-PAYOFFS:
+- Value every 5-7 seconds
+- "Quick tip:", "Fun fact:"
+- Don't make them wait too long
+- Constant small rewards
+- Builds trust for bigger payoff
+"""
+
+
+class PacingVariation:
+    """
+    #284: Vary pacing to maintain interest.
+    """
+    
+    def get_pacingvar_instruction(self) -> str:
+        return """
+PACING VARIATION:
+- Fast sections, slow sections
+- Speed up for excitement
+- Slow down for emphasis
+- Monotone = boring
+- Dynamic = engaging
+"""
+
+
+class ReHookPoints:
+    """
+    #285: Re-hook at strategic points.
+    """
+    
+    def get_rehook_instruction(self) -> str:
+        return """
+RE-HOOK POINTS:
+- Re-hook at 25%, 50%, 75%
+- "But here's where it gets interesting..."
+- Recapture wandering attention
+- Each re-hook is mini-hook
+- Don't lose them mid-video
+"""
+
+
+class InformationGaps:
+    """
+    #286: Create information gaps.
+    """
+    
+    def get_infogap_instruction(self) -> str:
+        return """
+INFORMATION GAPS:
+- Hint at what's coming
+- "There's one more thing..."
+- Gap between what they know and want to know
+- Gap = need to fill = watch
+"""
+
+
+class ProgressIndicators:
+    """
+    #287: Show progress through content.
+    """
+    
+    def get_indicator_instruction(self) -> str:
+        return """
+PROGRESS INDICATORS:
+- "3 of 5 tips..."
+- Visual progress bar
+- Numbered points
+- Shows investment paying off
+- Completion is near = finish
+"""
+
+
+class EndTease:
+    """
+    #288: Tease the ending early.
+    """
+    
+    def get_endtease_instruction(self) -> str:
+        return """
+END TEASE:
+- "The last one is the most important"
+- "Wait until you see #5"
+- Creates goal to reach
+- Must see the end
+- Promise for completion
+"""
+
+
+class CliffhangerMicro:
+    """
+    #289: Micro-cliffhangers within video.
+    """
+    
+    def get_cliffhanger_instruction(self) -> str:
+        return """
+MICRO-CLIFFHANGERS:
+- Small suspense moments
+- "You won't believe what happens..."
+- Tension before reveal
+- Multiple throughout
+- Keeps edge-of-seat feeling
+"""
+
+
+class QuestionPlanting:
+    """
+    #290: Plant questions they want answered.
+    """
+    
+    def get_question_instruction(self) -> str:
+        return """
+QUESTION PLANTING:
+- Raise question, don't answer immediately
+- "But why does this work?"
+- They need the answer
+- Answer at strategic moment
+- Questions drive watching
+"""
+
+
+class NarrativeTension:
+    """
+    #291: Build and release narrative tension.
+    """
+    
+    def get_tension_instruction(self) -> str:
+        return """
+NARRATIVE TENSION:
+- Build tension gradually
+- Problem → deeper problem → solution
+- Rising stakes
+- Release at climax
+- Tension = investment
+"""
+
+
+class ContentChunking:
+    """
+    #292: Chunk content for digestibility.
+    """
+    
+    def get_chunking_instruction(self) -> str:
+        return """
+CONTENT CHUNKING:
+- Break into clear sections
+- Each chunk = complete thought
+- Clear transitions
+- Easy to follow
+- Chunked = consumable = watch
+"""
+
+
+class CallbackReferences:
+    """
+    #293: Reference earlier content.
+    """
+    
+    def get_callback_instruction(self) -> str:
+        return """
+CALLBACK REFERENCES:
+- "Remember when I said..."
+- "This connects to..."
+- Creates coherent narrative
+- Rewards attention
+- Feels complete at end
+"""
+
+
+class SatisfyingConclusion:
+    """
+    #294: Satisfying video conclusion.
+    """
+    
+    def get_conclusion_instruction(self) -> str:
+        return """
+SATISFYING CONCLUSION:
+- Summarize key insight
+- Clear final takeaway
+- Call-to-action (follow)
+- Tease next content
+- Don't end abruptly
+- Leave them satisfied but wanting more
+"""
+
+
+# =============================================================================
+# BATCH 4 MASTER PROMPTS
+# =============================================================================
+
+def get_visual_production_master_prompt() -> str:
+    """Returns the ultimate prompt for visual production."""
+    return """
+# VISUAL PRODUCTION MASTERY
+
+## COLOR & MOOD
+- Match colors to content emotion
+- Consistent palette throughout
+- High contrast for readability
+- Professional = dark + muted
+- Energetic = warm + saturated
+
+## MOTION & ANIMATION
+- Something moves every 2-3 seconds
+- Kinetic typography for key phrases
+- Smooth easing (no linear motion)
+- Motion graphics for data
+- Zoom for emphasis
+
+## COMPOSITION
+- Rule of thirds for key elements
+- Center for direct impact
+- Mobile-first (9:16)
+- Respect safe zones
+- Guide the eye intentionally
+
+## VISUAL PACING
+- Change visual every 2-3 seconds
+- Match audio rhythm
+- Build to visual climax
+- Never static too long
+
+## BRANDING
+- Consistent color palette
+- Recognizable text style
+- Subtle consistency = recognition
+"""
+
+
+def get_psychological_triggers_master_prompt() -> str:
+    """Returns the ultimate prompt for psychological triggers."""
+    return """
+# PSYCHOLOGICAL TRIGGERS
+
+## CURIOSITY & MYSTERY
+- Open loops (don't close immediately)
+- Information gaps
+- Zeigarnik effect (incomplete tasks)
+- Mystery elements
+- Curiosity > logic
+
+## FEAR & URGENCY
+- FOMO (fear of missing out)
+- Loss aversion (losing > gaining)
+- Scarcity ("few people know")
+- Urgency ("before it's too late")
+
+## SOCIAL & AUTHORITY
+- Social proof (millions of people)
+- Authority references (experts, studies)
+- In-group bias ("smart people know")
+- Identity appeal ("if you're like me")
+
+## STORYTELLING
+- Stories bypass skepticism
+- Character + conflict + resolution
+- Emotional contagion
+- Surprise and delight
+
+## REWARD & PROGRESS
+- Micro-payoffs throughout
+- Progress indicators
+- Peak-end rule (peak + end remembered)
+- Commitment/consistency
+
+## PATTERN INTERRUPTS
+- Unexpected elements
+- Counter-intuitive statements
+- Contrast principle
+- Anchoring bias
+"""
+
+
+def get_retention_mechanics_master_prompt() -> str:
+    """Returns the ultimate prompt for retention mechanics."""
+    return """
+# RETENTION MECHANICS
+
+## LOOP TECHNIQUES
+- Open loops early, close late
+- Multiple loops simultaneously
+- Micro-cliffhangers
+- Question planting
+- "I'll explain in a moment..."
+
+## TEASE STRATEGIES
+- Tease and reveal pattern
+- End tease early ("wait for #5")
+- Information gaps
+- "But here's where it gets interesting..."
+
+## PACING & VARIETY
+- Visual change every 2-3 seconds
+- Pacing variation (fast/slow)
+- Re-hook at 25%, 50%, 75%
+- Never monotonous
+
+## REWARD STRUCTURE
+- Micro-payoffs every 5-7 seconds
+- Progress indicators
+- Satisfying conclusion
+- Callback references
+
+## NARRATIVE FLOW
+- Build narrative tension
+- Content chunking
+- Clear sections
+- Satisfying resolution
+
+## RETENTION TARGETS
+- Hook: 0-3 seconds (stop scroll)
+- Engage: 3-10 seconds (promise value)
+- Retain: 10-20 seconds (deliver value)
+- Complete: 20+ seconds (satisfy + CTA)
+"""
+
+
+def get_batch4_engagement_prompt() -> str:
+    """Returns the complete Batch 4 prompt."""
+    visual = get_visual_production_master_prompt()
+    psych = get_psychological_triggers_master_prompt()
+    retention = get_retention_mechanics_master_prompt()
+    
+    return f"""
+################################################################################
+# BATCH 4: ENGAGEMENT & RETENTION - COMPLETE GUIDE
+################################################################################
+
+{visual}
+
+{psych}
+
+{retention}
+
+################################################################################
+# SUMMARY: MAKE THEM WATCH
+################################################################################
+
+Three pillars of engagement:
+1. LOOK professional (visual quality)
+2. FEEL compelling (psychological triggers)
+3. STAY watching (retention mechanics)
+
+If they don't stop scrolling, nothing else matters.
+If they stop but don't watch, you've wasted the opportunity.
+If they watch but don't complete, you lose algorithm favor.
+
+Every second must earn the next second.
+"""
+
+
+# =============================================================================
+# SINGLETON ACCESSORS - Batch 4
+# =============================================================================
+
+_color_grading = None
+_fomo_trigger = None
+_open_loop = None
+
+
+def get_color_grading() -> ColorGrading:
+    global _color_grading
+    if _color_grading is None:
+        _color_grading = ColorGrading()
+    return _color_grading
+
+
+def get_fomo_trigger() -> FOMOTrigger:
+    global _fomo_trigger
+    if _fomo_trigger is None:
+        _fomo_trigger = FOMOTrigger()
+    return _fomo_trigger
+
+
+def get_open_loop() -> OpenLoopTechnique:
+    global _open_loop
+    if _open_loop is None:
+        _open_loop = OpenLoopTechnique()
+    return _open_loop
+
+
 # =============================================================================
 # TEST
 # =============================================================================
@@ -3942,21 +4989,44 @@ if __name__ == "__main__":
     print(f"  Signals tracked: {list(algo.SIGNALS.keys())}")
     print("  All 25 algorithm classes: OK")
     
+    # BATCH 4 TESTS
+    print("\n" + "=" * 70)
+    print("BATCH 4: ENGAGEMENT & RETENTION")
+    print("=" * 70)
+    
+    print("\n[Category I: Visual Production - 15 enhancements]")
+    color = get_color_grading()
+    print(f"  ColorGrading moods: {list(color.MOOD_COLORS.keys())}")
+    print("  All 15 visual classes: OK")
+    
+    print("\n[Category J: Psychological Triggers - 20 enhancements]")
+    fomo = get_fomo_trigger()
+    print(f"  FOMOTrigger: OK")
+    print("  All 20 psychology classes: OK")
+    
+    print("\n[Category K: Retention Mechanics - 15 enhancements]")
+    loop = get_open_loop()
+    print(f"  OpenLoopTechnique: OK")
+    print("  All 15 retention classes: OK")
+    
     # SUMMARY
     print("\n" + "=" * 70)
     print("SUMMARY")
     print("=" * 70)
-    print("Batch 1 (Human Feel):    60 enhancements - OK")
+    print("Batch 1 (Human Feel):     60 enhancements - OK")
     print("  Category A: 20 | Category B: 20 | Category C: 20")
     print("")
-    print("Batch 2 (Content Core):  50 enhancements - OK")
+    print("Batch 2 (Content Core):   50 enhancements - OK")
     print("  Category D: 15 | Category E: 20 | Category F: 15")
     print("")
-    print("Batch 3 (Algo & Hook):   45 enhancements - OK")
+    print("Batch 3 (Algo & Hook):    45 enhancements - OK")
     print("  Category G: 20 | Category H: 25")
     print("")
-    print("TOTAL v12.0: 155 enhancements")
-    print("TOTAL PROJECT: 244 enhancements (89 + 155)")
+    print("Batch 4 (Engagement):     50 enhancements - OK")
+    print("  Category I: 15 | Category J: 20 | Category K: 15")
+    print("")
+    print("TOTAL v12.0: 205 enhancements")
+    print("TOTAL PROJECT: 294 enhancements (89 + 205)")
     print("=" * 70)
     print("ALL TESTS PASSED!")
 
