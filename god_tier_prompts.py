@@ -348,6 +348,154 @@ Return JSON:
 
 
 # =============================================================================
+# GOD-TIER PROMPT: Platform-Specific Optimization (#6)
+# =============================================================================
+
+PLATFORM_OPTIMIZATION_PROMPT = """You are a MULTI-PLATFORM STRATEGIST who knows the differences between platforms.
+
+=== ORIGINAL CONTENT ===
+Title: {title}
+Hook: {hook}
+CTA: {cta}
+Platform: {platform}
+
+=== PLATFORM DIFFERENCES ===
+YOUTUBE SHORTS:
+- Formal-ish, educational tone works well
+- Subscribe CTAs are effective
+- Hashtags: #shorts required, 3-5 relevant tags
+- Longer hooks OK (2-3 seconds)
+
+DAILYMOTION:
+- More casual, entertainment-focused audience
+- Lower competition = can be more niche
+- Less emphasis on subscribe CTAs
+- Similar format to YouTube
+
+TIKTOK (future):
+- Very casual, trend-driven
+- "Duet this" / "Stitch this" CTAs
+- Trending sounds matter
+- Hook must be < 1 second
+
+=== OUTPUT JSON ===
+{{
+    "optimized_title": "platform-specific title",
+    "optimized_hook": "adjusted hook for platform",
+    "optimized_cta": "platform-appropriate CTA",
+    "hashtags": ["#shorts", "#relevant", "#tags"],
+    "platform_tips": ["tip for this platform"]
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Contextual Event Awareness (#15)
+# =============================================================================
+
+CONTEXTUAL_AWARENESS_PROMPT = """You are a CULTURAL SENSITIVITY and TIMING expert.
+
+=== CONTENT ===
+Topic: {topic}
+Hook: {hook}
+Date: {current_date}
+
+=== CHECK FOR ===
+1. SENSITIVE DATES: Is today a day we should avoid certain topics?
+   - Memorial days, tragedies anniversaries, religious holidays
+   
+2. OPPORTUNITY DATES: Is there an event we can leverage?
+   - Sports events, award shows, product launches, holidays
+   
+3. REGIONAL SENSITIVITY: Global audience considerations
+   - Avoid US-centric assumptions
+   - Be aware of international events
+
+4. TRENDING OPPORTUNITIES: Any current events to reference?
+
+=== OUTPUT JSON ===
+{{
+    "is_sensitive": true/false,
+    "sensitivity_reason": "why sensitive" or null,
+    "is_opportunity": true/false,
+    "opportunity_reason": "event to leverage" or null,
+    "modifications_needed": ["change 1"] or [],
+    "proceed": true/false,
+    "timing_score": 1-10
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Cross-Promotion Network (#19)
+# =============================================================================
+
+CROSS_PROMOTION_PROMPT = """You are a CONTENT NETWORK STRATEGIST.
+
+=== CURRENT VIDEO ===
+Topic: {current_topic}
+Category: {category}
+
+=== RECENT VIDEOS (for cross-promotion) ===
+{recent_videos}
+
+=== TASK ===
+Suggest how to connect this video to our other content:
+1. Related video to mention in description
+2. Series/theme to establish
+3. "Watch next" suggestion for end screen
+
+=== OUTPUT JSON ===
+{{
+    "related_video": "title of related video from list" or null,
+    "description_mention": "Check out our video on [X] for more!" or null,
+    "series_opportunity": "This could be part of [X] series" or null,
+    "end_screen_suggestion": "Pair with [video] for end screen"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Failed Content Recycling (#23)
+# =============================================================================
+
+CONTENT_RECYCLING_PROMPT = """You are a CONTENT RESURRECTION SPECIALIST.
+This video underperformed. Diagnose WHY and prescribe a FIX.
+
+=== FAILED VIDEO ===
+Title: {title}
+Hook: {hook}
+Topic: {topic}
+Views: {views} (our average: {avg_views})
+Engagement: {engagement}
+
+=== AUTOPSY - Find the cause of death ===
+1. Was the hook weak?
+2. Was the topic stale?
+3. Was the title unclickable?
+4. Was the content thin?
+5. Was timing bad?
+
+=== RESURRECTION PLAN ===
+{{
+    "diagnosis": "why it failed",
+    "salvageable": true/false,
+    "resurrection_plan": {{
+        "new_angle": "fresh approach to same topic",
+        "new_hook": "stronger hook",
+        "new_title": "more clickable title",
+        "timing_suggestion": "when to republish"
+    }},
+    "effort_score": 1-10 (10 = too much work)
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
 # Main Class
 # =============================================================================
 

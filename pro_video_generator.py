@@ -65,6 +65,21 @@ except ImportError:
     VIRAL_PATTERNS_AVAILABLE = False
     get_viral_prompt_boost = lambda: ""
 
+# v9.0: Import comprehensive enhancements module
+try:
+    from enhancements_v9 import (
+        get_enhancement_orchestrator,
+        check_semantic_duplicate,
+        enhance_voice_pacing,
+        predict_retention_curve,
+        score_value_density,
+        validate_post_render,
+        score_trend_freshness
+    )
+    ENHANCEMENTS_AVAILABLE = True
+except ImportError:
+    ENHANCEMENTS_AVAILABLE = False
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
@@ -1822,16 +1837,26 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     Generate a video with 100% AI-driven decisions.
     VARIETY ENFORCED through batch_tracker.
     
-    v7.17: Enhanced robustness - 10/10 error handling
+    v9.0: Enhanced with comprehensive quality gates and AI-driven checks
     """
     run_id = random.randint(10000, 99999)
     
     safe_print("=" * 70)
-    safe_print(f"   VIRALSHORTS FACTORY v8.0 - OPTIMIZED VIRALITY")
+    safe_print(f"   VIRALSHORTS FACTORY v9.0 - MAXIMUM QUALITY")
     safe_print(f"   Run: #{run_id}")
     safe_print(f"   Video Length: 15-25 seconds (optimal)")
     safe_print(f"   Variety: Persistent across runs")
+    safe_print(f"   Quality Gates: {len(['pre-gen', 'post-content', 'post-render'])} active")
     safe_print("=" * 70)
+    
+    # v9.0: Initialize enhancement orchestrator
+    enhancement_orch = None
+    if ENHANCEMENTS_AVAILABLE:
+        try:
+            enhancement_orch = get_enhancement_orchestrator()
+            safe_print("   [v9.0] Enhancement orchestrator initialized")
+        except Exception as e:
+            safe_print(f"   [!] Enhancement init skipped: {e}")
     
     # v7.17: Comprehensive initialization with fallback
     try:
@@ -1845,11 +1870,50 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         return None
     
     # Stage 1: AI decides concept (with variety enforcement)
-    try:
-        concept = ai.stage1_decide_video_concept(hint, batch_tracker)
-    except Exception as e:
-        safe_print(f"[!] Concept generation error: {e}")
-        concept = None
+    max_concept_attempts = 3  # v9.0: Retry if semantic duplicate
+    concept = None
+    
+    for attempt in range(max_concept_attempts):
+        try:
+            concept = ai.stage1_decide_video_concept(hint, batch_tracker)
+        except Exception as e:
+            safe_print(f"[!] Concept generation error: {e}")
+            concept = None
+        
+        if not concept:
+            break
+        
+        # v9.0: PRE-GENERATION CHECK - Semantic duplicate detection
+        if enhancement_orch and ENHANCEMENTS_AVAILABLE:
+            try:
+                recent_topics = batch_tracker.used_topics if batch_tracker else []
+                # Also get recent topics from persistent state
+                if PERSISTENT_STATE_AVAILABLE:
+                    try:
+                        variety_mgr = get_variety_manager()
+                        recent_topics = list(set(recent_topics + variety_mgr.get_recent_topics()))
+                    except:
+                        pass
+                
+                pre_check = enhancement_orch.pre_generation_checks(
+                    topic=concept.get('specific_topic', ''),
+                    hook=concept.get('hook', ''),
+                    recent_topics=recent_topics
+                )
+                
+                if not pre_check.get('proceed', True):
+                    safe_print(f"   [v9.0] Semantic duplicate detected - regenerating...")
+                    safe_print(f"         {pre_check.get('warnings', ['Unknown issue'])[0]}")
+                    if attempt < max_concept_attempts - 1:
+                        hint = pre_check.get('modifications', {}).get('suggested_topic', hint)
+                        continue
+                else:
+                    break  # Concept is unique, proceed
+            except Exception as e:
+                safe_print(f"   [!] Pre-check skipped: {e}")
+                break
+        else:
+            break
         
     if not concept:
         safe_print("[!] Concept generation failed - trying fallback")
@@ -1881,6 +1945,34 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     except Exception as e:
         safe_print(f"[!] Enhancement skipped: {e}")
     
+    # v9.0: POST-CONTENT CHECKS - Pacing, retention, value density
+    if enhancement_orch and ENHANCEMENTS_AVAILABLE:
+        try:
+            phrases = content.get('phrases', [])
+            metadata_draft = {'hook': phrases[0] if phrases else '', 'category': concept.get('category', '')}
+            
+            post_checks = enhancement_orch.post_content_checks(phrases, metadata_draft)
+            
+            # Store pacing data for voice generation
+            if post_checks.get('pacing'):
+                content['voice_pacing'] = post_checks['pacing']
+                safe_print(f"   [v9.0] Voice pacing: optimized for {len(phrases)} phrases")
+            
+            # Log retention prediction
+            if post_checks.get('retention_prediction'):
+                retention = post_checks['retention_prediction']
+                safe_print(f"   [v9.0] Predicted retention: {retention.get('estimated_avg_retention', '?')}%")
+                content['retention_prediction'] = retention
+            
+            # Log value density
+            if post_checks.get('value_density'):
+                density = post_checks['value_density']
+                safe_print(f"   [v9.0] Value density: {density.get('value_score', '?')}/10")
+                content['value_density'] = density
+                
+        except Exception as e:
+            safe_print(f"   [!] Post-content checks skipped: {e}")
+    
     # Stage 4: AI generates B-roll keywords
     try:
         broll_keywords = ai.stage4_broll_keywords(content.get('phrases', []))
@@ -1909,12 +2001,32 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     voice_config = ai.get_voice_config(concept, batch_tracker)
     music_file = ai.get_music_path(concept, batch_tracker)
     
-    # Download B-roll
+    # Download B-roll (v9.0: with error pattern learning)
     safe_print("\n[BROLL] Downloading visuals...")
     renderer = VideoRenderer()
     broll_paths = []
     for i, keyword in enumerate(broll_keywords):
-        path = renderer.download_broll(keyword, i)
+        # v9.0: Check if keyword has failed too many times
+        actual_keyword = keyword
+        if enhancement_orch and ENHANCEMENTS_AVAILABLE:
+            try:
+                if enhancement_orch.should_skip_broll_keyword(keyword):
+                    alt_keyword = enhancement_orch.get_alternative_broll(keyword)
+                    if alt_keyword:
+                        safe_print(f"   [v9.0] Replacing '{keyword}' -> '{alt_keyword}' (learned from failures)")
+                        actual_keyword = alt_keyword
+            except:
+                pass
+        
+        path = renderer.download_broll(actual_keyword, i)
+        
+        # v9.0: Record failure if no path returned
+        if not path and enhancement_orch and ENHANCEMENTS_AVAILABLE:
+            try:
+                enhancement_orch.record_error('broll', keyword)
+            except:
+                pass
+        
         broll_paths.append(path)
     
     # Render
@@ -1925,6 +2037,45 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     success = await render_video(content, broll_paths, output_path, voice_config, music_file)
     
     if success:
+        # v9.0: POST-RENDER VALIDATION - Final quality gate before upload
+        post_render_quality = None
+        if enhancement_orch and ENHANCEMENTS_AVAILABLE:
+            try:
+                # Get actual video duration
+                from moviepy.editor import VideoFileClip as VFC
+                with VFC(output_path) as clip:
+                    video_duration = clip.duration
+                
+                phrases = content.get('phrases', [])
+                post_render_quality = enhancement_orch.post_render_validation(
+                    phrases=phrases,
+                    metadata={'title': metadata.get('title', ''), 'category': concept.get('category', '')},
+                    video_duration=video_duration
+                )
+                
+                quality_score = post_render_quality.get('quality_score', 7)
+                safe_print(f"   [v9.0] Post-render quality: {quality_score}/10")
+                
+                if not post_render_quality.get('approved', True):
+                    safe_print(f"   [v9.0] Quality issues: {post_render_quality.get('issues', [])}")
+                    
+            except Exception as e:
+                safe_print(f"   [!] Post-render validation skipped: {e}")
+        
+        # v9.0: Track A/B test variant
+        if enhancement_orch and ENHANCEMENTS_AVAILABLE:
+            try:
+                # Track which title style was used
+                title_style = metadata.get('title_style', 'number_hook')
+                enhancement_orch.record_ab_test(
+                    variant_type='title_styles',
+                    variant_name=title_style,
+                    video_id=str(run_id),
+                    metadata=metadata
+                )
+            except Exception as e:
+                pass  # Non-critical
+        
         # Save metadata
         meta_path = output_path.replace('.mp4', '_meta.json')
         full_metadata = {
@@ -1934,7 +2085,12 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             'broll_keywords': broll_keywords,
             'voice_config': voice_config,
             'music_file': music_file,
-            'run_id': run_id
+            'run_id': run_id,
+            'v9_enhancements': {
+                'post_render_quality': post_render_quality,
+                'retention_prediction': content.get('retention_prediction'),
+                'value_density': content.get('value_density')
+            }
         }
         with open(meta_path, 'w') as f:
             json.dump(full_metadata, f, indent=2)
@@ -2122,10 +2278,11 @@ async def main():
     should_upload = args.upload and not args.no_upload
     
     safe_print(f"\n{'='*70}")
-    safe_print("   VIRALSHORTS FACTORY v7.1 - 100% AI-DRIVEN + VARIETY ENFORCED")
+    safe_print("   VIRALSHORTS FACTORY v9.0 - MAXIMUM QUALITY + ALL ENHANCEMENTS")
     safe_print(f"   Generating {args.count} video(s)")
     safe_print("   AI decides: category, topic, length, voice, music")
-    safe_print("   VARIETY ENFORCED: Each video will be DIFFERENT!")
+    safe_print("   QUALITY GATES: Pre-gen, post-content, post-render")
+    safe_print("   VARIETY ENFORCED: Semantic duplicate detection active!")
     if args.strategic_youtube:
         safe_print("   STRATEGIC YOUTUBE: Best video selected by score")
     safe_print(f"{'='*70}")

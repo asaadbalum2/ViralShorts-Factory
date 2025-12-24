@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Monthly Viral Analysis Script
+Monthly Viral Analysis Script v9.0
 Analyzes top-performing AI-generated YouTube Shorts and extracts patterns
 for the ViralShorts Factory to use.
+
+v9.0 Enhancements:
+- Competitor tracking (#24) - Track specific competitor channels over time
+- Better pattern extraction with expanded analysis
+- Content recycling identification (#23) - Find our underperforming content to recycle
 """
 
 import os
@@ -17,9 +22,12 @@ YOUTUBE_CLIENT_ID = os.environ.get("YOUTUBE_CLIENT_ID")
 YOUTUBE_CLIENT_SECRET = os.environ.get("YOUTUBE_CLIENT_SECRET")
 YOUTUBE_REFRESH_TOKEN = os.environ.get("YOUTUBE_REFRESH_TOKEN")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 ANALYSIS_FILE = Path("data/persistent/monthly_analysis.json")
 VIRAL_PATTERNS_FILE = Path("data/persistent/viral_patterns.json")
+COMPETITOR_TRACKING_FILE = Path("data/persistent/competitor_tracking.json")
+RECYCLE_CANDIDATES_FILE = Path("data/persistent/recycle_candidates.json")
 
 # YouTube access token (refreshed at runtime)
 _youtube_access_token = None
@@ -242,11 +250,120 @@ JSON ARRAY ONLY."""
     return ["viral shorts 2024 million views", "trending facts shorts"]
 
 
+def identify_recycle_candidates(analytics_file=Path("data/persistent/analytics_state.json")):
+    """v9.0: Find our underperforming videos that could be recycled with a new angle.
+    Enhancement #23: Failed content recycling.
+    """
+    if not analytics_file.exists():
+        return []
+    
+    try:
+        with open(analytics_file, 'r') as f:
+            analytics = json.load(f)
+        
+        videos = analytics.get("videos", [])
+        avg_views = analytics.get("avg_views", 100)
+        
+        # Find videos with less than 25% of average views
+        threshold = avg_views * 0.25
+        underperformers = [
+            v for v in videos 
+            if v.get("views", 0) < threshold and v.get("title")
+        ]
+        
+        safe_print(f"[RECYCLE] Found {len(underperformers)} underperforming videos")
+        return underperformers[:5]  # Return top 5 candidates
+        
+    except Exception as e:
+        safe_print(f"[!] Recycle identification error: {e}")
+        return []
+
+
+def generate_recycle_suggestions(underperformers, groq_key):
+    """v9.0: AI suggests how to recycle underperforming content."""
+    if not groq_key or not underperformers:
+        return {}
+    
+    prompt = f"""You are a content recycling expert. These videos underperformed - diagnose WHY and suggest a FRESH ANGLE:
+
+UNDERPERFORMING VIDEOS:
+{json.dumps(underperformers, indent=2)}
+
+For each video, provide:
+1. DIAGNOSIS: Why did it likely fail? (weak hook? boring topic? bad timing?)
+2. SALVAGEABLE?: Is the core idea worth recycling?
+3. FRESH ANGLE: A completely new approach to the same topic
+4. NEW HOOK: A more compelling first sentence
+5. NEW TITLE: A more clickable title
+
+Return JSON:
+{{
+    "recycle_suggestions": [
+        {{
+            "original_title": "...",
+            "diagnosis": "why it failed",
+            "salvageable": true/false,
+            "fresh_angle": "new approach",
+            "new_hook": "better hook",
+            "new_title": "better title"
+        }}
+    ]
+}}
+
+JSON ONLY."""
+
+    try:
+        response = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {groq_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "llama-3.1-8b-instant",
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.7,
+                "max_tokens": 500
+            },
+            timeout=20
+        )
+        
+        if response.status_code == 200:
+            content = response.json()["choices"][0]["message"]["content"]
+            match = re.search(r'\{[\s\S]*\}', content)
+            if match:
+                return json.loads(match.group())
+    except Exception as e:
+        safe_print(f"[!] Recycle suggestion error: {e}")
+    return {}
+
+
+def track_competitors():
+    """v9.0: Track competitor channels over time to spot trends.
+    Enhancement #24: Competitor monitoring.
+    """
+    competitor_data = {}
+    
+    if COMPETITOR_TRACKING_FILE.exists():
+        try:
+            with open(COMPETITOR_TRACKING_FILE, 'r') as f:
+                competitor_data = json.load(f)
+        except:
+            pass
+    
+    # AI identifies potential competitors from our search results
+    # (channels that appear frequently in viral searches)
+    safe_print("[COMPETITORS] Tracking competitor trends...")
+    
+    return competitor_data
+
+
 def main():
-    """Main analysis flow."""
+    """Main analysis flow (v9.0 enhanced)."""
     safe_print("=" * 60)
-    safe_print("MONTHLY VIRAL ANALYSIS")
+    safe_print("MONTHLY VIRAL ANALYSIS v9.0")
     safe_print(f"Date: {datetime.now().isoformat()}")
+    safe_print("Enhancements: Competitor tracking, Content recycling")
     safe_print("=" * 60)
 
     # Ensure directories exist
@@ -371,8 +488,41 @@ def main():
     else:
         safe_print("[!] AI analysis returned no results")
 
+    # v9.0: Content recycling analysis
+    safe_print("\n[RECYCLE ANALYSIS]")
+    underperformers = identify_recycle_candidates()
+    if underperformers:
+        recycle_data = generate_recycle_suggestions(underperformers, GROQ_API_KEY)
+        if recycle_data.get("recycle_suggestions"):
+            with open(RECYCLE_CANDIDATES_FILE, 'w') as f:
+                json.dump({
+                    "date": datetime.now().isoformat(),
+                    "candidates": recycle_data["recycle_suggestions"]
+                }, f, indent=2)
+            safe_print(f"  Found {len(recycle_data['recycle_suggestions'])} recycle candidates")
+    
+    # v9.0: Competitor tracking
+    competitor_data = track_competitors()
+    
+    # Update with new competitor sightings from this analysis
+    for video in top_videos:
+        channel = video.get("channel", "Unknown")
+        if channel not in competitor_data:
+            competitor_data[channel] = {
+                "first_seen": datetime.now().isoformat(),
+                "videos_seen": 0,
+                "total_views": 0
+            }
+        competitor_data[channel]["videos_seen"] += 1
+        competitor_data[channel]["total_views"] += video.get("views", 0)
+        competitor_data[channel]["last_seen"] = datetime.now().isoformat()
+    
+    with open(COMPETITOR_TRACKING_FILE, 'w') as f:
+        json.dump(competitor_data, f, indent=2)
+    safe_print(f"\n[COMPETITORS] Tracking {len(competitor_data)} channels")
+
     safe_print("\n" + "=" * 60)
-    safe_print("ANALYSIS COMPLETE")
+    safe_print("ANALYSIS COMPLETE (v9.0)")
     safe_print("=" * 60)
 
 

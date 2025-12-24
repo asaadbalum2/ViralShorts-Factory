@@ -1,6 +1,7 @@
-name: Weekly Analytics Feedback - Learn from Our Performance
+name: Weekly Analytics Feedback - Learn from Our Performance (v9.0)
 
 # Runs weekly to analyze OUR video performance and adjust strategy
+# v9.0: Now includes comment mining, A/B test results, and shadow-ban detection
 # Fully autonomous - no human intervention needed!
 
 on:
@@ -178,18 +179,96 @@ jobs:
               except Exception as e:
                   safe_print(f"[!] Stats error: {e}")
               return {}
+          
+          def get_video_comments(access_token, video_id, max_results=25):
+              """v9.0: Get comments for a video for mining insights."""
+              if not access_token:
+                  return []
+              
+              headers = {"Authorization": f"Bearer {access_token}"}
+              
+              try:
+                  response = requests.get(
+                      "https://www.googleapis.com/youtube/v3/commentThreads",
+                      params={
+                          "part": "snippet",
+                          "videoId": video_id,
+                          "maxResults": max_results,
+                          "order": "relevance"
+                      },
+                      headers=headers,
+                      timeout=15
+                  )
+                  
+                  if response.status_code == 200:
+                      comments = []
+                      for item in response.json().get("items", []):
+                          comment = item["snippet"]["topLevelComment"]["snippet"]["textOriginal"]
+                          comments.append(comment)
+                      return comments
+              except Exception as e:
+                  safe_print(f"[!] Comments error: {e}")
+              return []
+          
+          def check_shadow_ban_indicators(videos_with_stats):
+              """v9.0: Check for potential shadow-ban indicators."""
+              if len(videos_with_stats) < 5:
+                  return {"status": "insufficient_data"}
+              
+              # Sort by date (newest first)
+              sorted_videos = sorted(videos_with_stats, 
+                                     key=lambda x: x.get("published", ""), 
+                                     reverse=True)
+              
+              # Compare recent 5 vs older 5
+              recent_5 = sorted_videos[:5]
+              older_5 = sorted_videos[5:10] if len(sorted_videos) >= 10 else sorted_videos[5:]
+              
+              if not older_5:
+                  return {"status": "insufficient_data"}
+              
+              recent_avg = sum(v.get("views", 0) for v in recent_5) / len(recent_5)
+              older_avg = sum(v.get("views", 0) for v in older_5) / len(older_5)
+              
+              if older_avg > 0:
+                  ratio = recent_avg / older_avg
+              else:
+                  ratio = 1.0
+              
+              return {
+                  "status": "concerning" if ratio < 0.2 else "normal",
+                  "recent_avg_views": int(recent_avg),
+                  "older_avg_views": int(older_avg),
+                  "ratio": round(ratio, 2),
+                  "action": "PAUSE AND INVESTIGATE" if ratio < 0.2 else "Continue normal operation"
+              }
 
-          def analyze_performance_with_ai(videos_with_stats):
+          def analyze_performance_with_ai(videos_with_stats, comments=None):
               """AI performs MICRO-LEVEL analysis of OUR performance.
-              Analyzes EVERYTHING: topics, titles, tricks, baits, hacks, engagement patterns.
+              v9.0: Now also analyzes comments for audience insights.
               """
               if not GROQ_API_KEY or not videos_with_stats:
                   return {}
+              
+              comment_section = ""
+              if comments:
+                  comment_section = f"""
+          
+          VIEWER COMMENTS (mine these for insights!):
+          {json.dumps(comments[:30], indent=2)}
+          
+          COMMENT ANALYSIS REQUIRED:
+          - What do viewers LOVE? (do more of this)
+          - What do viewers CRITICIZE? (avoid this)
+          - Any "this is AI" or fake accusations? (quality red flags)
+          - What topics do viewers REQUEST?
+          """
               
               prompt = f"""You are our viral video expert. Perform DEEP MICRO-ANALYSIS of our YouTube Shorts:
 
           OUR VIDEO DATA (with performance stats):
           {json.dumps(videos_with_stats[:15], indent=2)}
+          {comment_section}
 
           MICRO-ANALYZE EVERYTHING for maximum virality:
 
@@ -230,7 +309,13 @@ jobs:
               "priority_improvements": ["highest priority", "second priority", ...],
               "best_posting_days": ["Monday", "Friday", ...],
               "best_posting_hours_utc": [14, 18, ...],
-              "best_title_styles": ["number_hook", "curiosity_gap", ...]
+              "best_title_styles": ["number_hook", "curiosity_gap", ...],
+              "comment_insights": {{
+                  "viewer_loves": ["what viewers praise"],
+                  "viewer_requests": ["what viewers want to see"],
+                  "quality_concerns": ["any AI detection or fake accusations"],
+                  "engagement_drivers": ["topics that spark discussion"]
+              }}
           }}
 
           Be SPECIFIC and ACTIONABLE based on ACTUAL numbers. JSON ONLY."""
@@ -301,10 +386,30 @@ jobs:
           safe_print("\n[TOP PERFORMERS]")
           for i, v in enumerate(our_videos[:5], 1):
               safe_print(f"  {i}. {v.get('views', 0):,} views - {v.get('title', 'N/A')[:50]}")
+          
+          # v9.0: Shadow-ban check
+          safe_print("\n[SHADOW-BAN CHECK]")
+          shadow_check = check_shadow_ban_indicators(our_videos)
+          safe_print(f"  Status: {shadow_check.get('status', 'unknown')}")
+          if shadow_check.get('status') == 'concerning':
+              safe_print(f"  WARNING: Recent avg {shadow_check.get('recent_avg_views')} vs older {shadow_check.get('older_avg_views')}")
+              safe_print(f"  Action: {shadow_check.get('action')}")
+          
+          # v9.0: Comment mining for top videos (cost-effective: only top 3)
+          safe_print("\n[COMMENT MINING]")
+          all_comments = []
+          for video in our_videos[:3]:  # Top 3 only to save quota
+              video_id = video.get("id")
+              if video_id:
+                  comments = get_video_comments(access_token, video_id, max_results=10)
+                  all_comments.extend(comments)
+                  safe_print(f"  Mined {len(comments)} comments from '{video.get('title', 'N/A')[:30]}...'")
+          
+          safe_print(f"  Total comments collected: {len(all_comments)}")
 
-          # AI Analysis
+          # AI Analysis (v9.0: includes comments)
           safe_print("\n[AI ANALYSIS]")
-          analysis = analyze_performance_with_ai(our_videos)
+          analysis = analyze_performance_with_ai(our_videos, comments=all_comments)
 
           if analysis:
               safe_print(f"  Key insight: {analysis.get('key_insight', 'N/A')}")
@@ -416,19 +521,26 @@ jobs:
               with open(VIRAL_PATTERNS_FILE, 'w') as f:
                   json.dump(viral_patterns, f, indent=2)
               
+              # v9.0: Save comment insights
+              if analysis.get("comment_insights"):
+                  variety_state["comment_insights"] = analysis["comment_insights"]
+                  safe_print(f"  -> Comment insights saved")
+              
               # Save full analytics
               analytics_state = {
                   "videos": our_videos[:50],
                   "analysis": analysis,
                   "last_updated": datetime.now().isoformat(),
                   "total_views": sum(v.get("views", 0) for v in our_videos),
-                  "avg_views": sum(v.get("views", 0) for v in our_videos) / len(our_videos) if our_videos else 0
+                  "avg_views": sum(v.get("views", 0) for v in our_videos) / len(our_videos) if our_videos else 0,
+                  "shadow_ban_check": shadow_check,
+                  "comment_count_analyzed": len(all_comments)
               }
               
               with open(ANALYTICS_FILE, 'w') as f:
                   json.dump(analytics_state, f, indent=2)
               
-              safe_print("\n[SAVED] Analytics feedback saved!")
+              safe_print("\n[SAVED] Analytics feedback saved (v9.0)!")
               safe_print("  -> variety_state.json updated with learned preferences")
               safe_print("  -> viral_patterns.json updated with best patterns")
               safe_print("  -> Video generator will use these automatically!")

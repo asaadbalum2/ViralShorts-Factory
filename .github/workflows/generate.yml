@@ -128,14 +128,16 @@ jobs:
         continue-on-error: true
 
       # ====================================================================
-      # v8.0: OPTIMIZED VIRALITY
-      # - Shorter videos (15-25s) - proven optimal length
-      # - Viral hooks from successful channel analysis
-      # - Persistent variety tracking (survives across runs!)
-      # - Smart rate limiting (no more Dailymotion 403s)
+      # v9.0: MAXIMUM QUALITY - 25 Enhancements Active
+      # - 3-Layer quality gates (pre-gen, post-content, post-render)
+      # - Semantic duplicate detection
+      # - Retention curve prediction
+      # - A/B test tracking
+      # - Error pattern learning
+      # - Voice pacing intelligence
       # - YouTube: 6/day (max) | Dailymotion: 24/day (rate-aware)
       # ====================================================================
-      - name: Generate Videos (v8.0 - Optimized Virality)
+      - name: Generate Videos (v9.0 - Maximum Quality)
         run: |
           # Set defaults for scheduled runs
           BATCH="${{ github.event.inputs.batch_size }}"
@@ -144,13 +146,13 @@ jobs:
           TEST_ONLY="${TEST_ONLY:-false}"
           
           echo "=============================================="
-          echo "   VIRALSHORTS FACTORY v8.0"
-          echo "   OPTIMIZED FOR VIRALITY"
+          echo "   VIRALSHORTS FACTORY v9.0"
+          echo "   MAXIMUM QUALITY - 25 ENHANCEMENTS"
           echo "   Batch: $BATCH videos"
-          echo "   Video Length: 15-25 seconds (optimal!)"
+          echo "   Quality Gates: Pre-gen, Post-content, Post-render"
           echo "   YouTube: BEST video (6/day MAX)"
           echo "   Dailymotion: Rate-limit aware (4/hour)"
-          echo "   Variety: Persistent across all runs"
+          echo "   Variety: Semantic duplicate detection active"
           echo "=============================================="
           
           if [ "$TEST_ONLY" = "true" ]; then
@@ -256,18 +258,29 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## ViralShorts Factory v8.0 - OPTIMIZED VIRALITY" >> $GITHUB_STEP_SUMMARY
+          echo "## ViralShorts Factory v9.0 - MAXIMUM QUALITY" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "**Batch Size:** ${{ github.event.inputs.batch_size || '4' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### v8.0 UPGRADES" >> $GITHUB_STEP_SUMMARY
-          echo "- **Persistent State**: Variety & upload tracking survives across runs" >> $GITHUB_STEP_SUMMARY
-          echo "- **Shorter Videos**: 15-25 seconds (proven optimal)" >> $GITHUB_STEP_SUMMARY
-          echo "- **Viral Hooks**: Learned patterns from successful channels" >> $GITHUB_STEP_SUMMARY
-          echo "- **Smart Rate Limiting**: No more Dailymotion 403 errors" >> $GITHUB_STEP_SUMMARY
-          echo "- **Better Variety**: Enforced across ALL runs, not just batches" >> $GITHUB_STEP_SUMMARY
+          echo "### v9.0 ENHANCEMENTS (25 Total!)" >> $GITHUB_STEP_SUMMARY
+          echo "- **3-Layer Quality Gates**: Pre-gen, post-content, post-render validation" >> $GITHUB_STEP_SUMMARY
+          echo "- **Semantic Duplicate Detection**: AI checks for similar recent topics" >> $GITHUB_STEP_SUMMARY
+          echo "- **Retention Curve Prediction**: AI predicts where viewers drop off" >> $GITHUB_STEP_SUMMARY
+          echo "- **A/B Test Tracking**: Learns which title styles perform best" >> $GITHUB_STEP_SUMMARY
+          echo "- **Error Pattern Learning**: Learns from B-roll failures" >> $GITHUB_STEP_SUMMARY
+          echo "- **Voice Pacing Intelligence**: Optimal pacing per phrase" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Weekly Analytics (Sundays)" >> $GITHUB_STEP_SUMMARY
+          echo "- Comment mining for insights" >> $GITHUB_STEP_SUMMARY
+          echo "- Shadow-ban detection" >> $GITHUB_STEP_SUMMARY
+          echo "- Performance pattern analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Monthly Analysis (1st of month)" >> $GITHUB_STEP_SUMMARY
+          echo "- Competitor tracking" >> $GITHUB_STEP_SUMMARY
+          echo "- Content recycling suggestions" >> $GITHUB_STEP_SUMMARY
+          echo "- Viral pattern extraction" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Daily Output" >> $GITHUB_STEP_SUMMARY
           echo "- **YouTube: 6 uploads/day (MAXIMUM!)**" >> $GITHUB_STEP_SUMMARY

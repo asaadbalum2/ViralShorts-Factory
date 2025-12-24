@@ -248,6 +248,37 @@ class VarietyStateManager:
         probs = [p/total for p in probs]
         
         return random.choices(items, weights=probs, k=1)[0]
+    
+    def get_recent_topics(self, limit: int = 15) -> List[str]:
+        """
+        v9.0: Get recent topics for semantic duplicate detection.
+        
+        Returns the last N topics generated to check for duplicates.
+        """
+        topics = self.state.get("topics", [])
+        return topics[-limit:] if topics else []
+    
+    def get_learned_preferences(self) -> Dict:
+        """
+        v9.0: Get all learned preferences from analytics feedback.
+        
+        Used by video generator to apply learned insights.
+        """
+        return {
+            "preferred_categories": self.state.get("preferred_categories", []),
+            "preferred_music_moods": self.state.get("preferred_music_moods", []),
+            "preferred_voice_styles": self.state.get("preferred_voice_styles", []),
+            "preferred_themes": self.state.get("preferred_themes", []),
+            "title_tricks": self.state.get("title_tricks", []),
+            "hook_types": self.state.get("hook_types", []),
+            "psych_triggers": self.state.get("psych_triggers", []),
+            "engagement_baits": self.state.get("engagement_baits", []),
+            "virality_hacks": self.state.get("virality_hacks", []),
+            "best_posting_hours_utc": self.state.get("best_posting_hours_utc", []),
+            "best_posting_days": self.state.get("best_posting_days", []),
+            "best_title_styles": self.state.get("best_title_styles", []),
+            "comment_insights": self.state.get("comment_insights", {})
+        }
 
 
 # =============================================================================
