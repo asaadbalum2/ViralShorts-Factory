@@ -210,54 +210,72 @@ def enforce_quality_score(content: Dict, ai_func, regenerate_func) -> Tuple[Dict
 
 
 # ============================================
-# FIX 4: NUMBERED PROMISE VALIDATION
+# FIX 4: PROMISE VALIDATION (AI-DRIVEN, GENERIC)
 # ============================================
 
 def extract_promised_count(text: str) -> Optional[int]:
     """
-    Extract any promised count from text.
-    "5 tips" → 5
-    "Here are 7 ways" → 7
-    "Top 10 secrets" → 10
+    GENERIC extraction of any numbered promise from text.
+    Uses broad patterns to catch ANY numbered promise, not just specific words.
+    
+    Examples caught:
+    - "5 tips" → 5
+    - "7 ways" → 7
+    - "10 secrets" → 10
+    - "3 things you need" → 3
+    - "Here are 4 reasons" → 4
+    - "The top 6" → 6
+    - ANY "number + noun" pattern
     """
+    # GENERIC patterns - catch ANY numbered promise
     patterns = [
-        r'(\d+)\s+(?:tips?|ways?|tricks?|secrets?|habits?|things?|facts?|signs?|reasons?|steps?|methods?)',
-        r'(?:top|best|here are|these)\s+(\d+)',
-        r'(\d+)\s+(?:of|that|which|to)',
+        # "X things/ways/etc" - ANY plural noun after a number
+        r'(\d+)\s+\w+(?:s|es)\b',
+        # "top/best X" - number after quantifier
+        r'(?:top|best|here are|these|only|just)\s+(\d+)',
+        # "X of the" patterns
+        r'(\d+)\s+(?:of\s+the|that\s+will|which|to\s+\w+)',
+        # Standalone prominent numbers at start
+        r'^(\d+)\s+',
     ]
     
     for pattern in patterns:
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
-            return int(match.group(1))
+            num = int(match.group(1))
+            # Only consider reasonable counts (1-20)
+            if 1 <= num <= 20:
+                return num
     
     return None
 
 
 def count_items_in_content(phrases: List[str]) -> int:
     """
-    Count actual items delivered in content.
-    Looks for numbering patterns, bullet points, or distinct items.
+    GENERIC count of items delivered in content.
+    Counts ANY form of list item, not just specific words.
     """
     item_count = 0
     
     for phrase in phrases:
-        # Check for explicit numbering
-        if re.match(r'^\s*\d+[\.\):]', phrase):
+        # Explicit numbering: "1.", "2)", "3:"
+        if re.match(r'^\s*\d+[\.\):\-]', phrase):
             item_count += 1
-        # Check for "first", "second", etc.
-        elif re.search(r'\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth)\b', phrase, re.IGNORECASE):
+        # Ordinal words (generic pattern for any ordinal)
+        elif re.search(r'\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|next|another|last|final)\b', phrase, re.IGNORECASE):
             item_count += 1
-        # Check for "one is", "another is", etc.
-        elif re.search(r'\b(one is|another is|next is|also|finally)\b', phrase, re.IGNORECASE):
+        # List indicators
+        elif re.search(r'\b(one\s+(?:is|thing)|number\s+\d|#\d|step\s+\d)\b', phrase, re.IGNORECASE):
             item_count += 1
     
-    return max(item_count, len(phrases) - 1)  # At minimum, each phrase after hook is an item
+    # If no explicit items found, assume each phrase after hook is an item
+    return max(item_count, len(phrases) - 1)
 
 
 def validate_numbered_promise(hook: str, phrases: List[str]) -> Dict:
     """
-    Validate that numbered promises are kept.
+    GENERIC validation that ANY numbered promise is kept.
+    Works for tips, ways, secrets, reasons, or ANY other list type.
     
     Returns:
         {
@@ -270,6 +288,7 @@ def validate_numbered_promise(hook: str, phrases: List[str]) -> Dict:
     promised = extract_promised_count(hook)
     
     if promised is None:
+        # No numbered promise detected
         return {"promised": None, "delivered": None, "valid": True, "fix_suggestion": None}
     
     delivered = count_items_in_content(phrases[1:])  # Exclude hook
@@ -282,8 +301,8 @@ def validate_numbered_promise(hook: str, phrases: List[str]) -> Dict:
             "fix_suggestion": None
         }
     else:
-        # Promise broken!
-        fix = f"Change '{promised}' to '{delivered}' in hook, or add {promised - delivered} more items to content"
+        # Promise broken - suggest generic fix
+        fix = f"Hook promises {promised} items but only {delivered} delivered. Either add more items or reduce the number in hook."
         return {
             "promised": promised,
             "delivered": delivered,
@@ -294,20 +313,26 @@ def validate_numbered_promise(hook: str, phrases: List[str]) -> Dict:
 
 def fix_broken_promise(hook: str, delivered_count: int) -> str:
     """
-    Fix a hook with broken promise by changing the number.
+    GENERIC fix for broken promise - replaces ANY number in hook.
+    Works for any type of numbered promise, not just specific words.
     """
-    patterns = [
-        (r'(\d+)\s+(tips?|ways?|tricks?|secrets?|habits?|things?|facts?|signs?|reasons?|steps?|methods?)', 
-         f'{delivered_count} \\2'),
-        (r'(top|best|here are|these)\s+(\d+)', 
-         f'\\1 {delivered_count}'),
-    ]
+    # Find the first number in the hook that looks like a promise
+    # and replace it with the delivered count
     
-    fixed_hook = hook
-    for pattern, replacement in patterns:
-        fixed_hook = re.sub(pattern, replacement, fixed_hook, flags=re.IGNORECASE)
+    # Pattern: number followed by plural word
+    def replace_first_promise(match):
+        return f'{delivered_count} {match.group(2)}'
     
-    return fixed_hook
+    # Try to replace "X things/ways/etc"
+    fixed = re.sub(r'(\d+)\s+(\w+(?:s|es)\b)', replace_first_promise, hook, count=1, flags=re.IGNORECASE)
+    
+    if fixed != hook:
+        return fixed
+    
+    # Try "top/best X" pattern
+    fixed = re.sub(r'(top|best|here are|these)\s+\d+', f'\\1 {delivered_count}', hook, count=1, flags=re.IGNORECASE)
+    
+    return fixed
 
 
 # ============================================

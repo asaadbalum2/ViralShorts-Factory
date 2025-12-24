@@ -2484,7 +2484,7 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             from analytics_feedback import FeedbackLoopController
             feedback = FeedbackLoopController()
             
-            # Record video generation for learning
+            # Record video generation for learning - v13.2: Enhanced with v9/v11/v12 data
             feedback.record_video_generation(
                 video_id=run_id,
                 local_path=output_path,
@@ -2497,6 +2497,13 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                     'music_mood': concept.get('music_mood', 'dramatic'),
                     'value_check': {'score': score},
                     'virality_score': score,
+                    # v13.2: Track enhancement data
+                    'selected_font': content.get('selected_font', 'default'),
+                    'sfx_plan': content.get('sfx_plan', []),
+                    'promise_fixed': content.get('promise_fixed', False),
+                    'quality_warning': content.get('quality_warning', False),
+                    'retention_prediction': content.get('retention_prediction', {}),
+                    'value_density': content.get('value_density', {}),
                 },
                 generation_data={
                     'voiceover_style': voice_config.get('style', 'energetic'),
@@ -2508,6 +2515,10 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                     'ai_hashtags_generated': True,
                     'has_vignette': True,
                     'trend_source': 'ai_generated',
+                    # v13.2: Track which enhancements were active
+                    'v9_enhancements_active': ENHANCEMENTS_AVAILABLE,
+                    'v12_enhancements_active': ENHANCEMENTS_V12_AVAILABLE,
+                    'critical_fixes_active': CRITICAL_FIXES_AVAILABLE,
                 }
             )
             safe_print("   [ANALYTICS] Video recorded for learning")

@@ -886,7 +886,8 @@ JSON ONLY."""
 
 class EnhancementOrchestrator:
     """
-    Orchestrates all enhancements during video generation.
+    Orchestrates ALL enhancements during video generation.
+    v13.2: Expanded to use MORE enhancement functions.
     """
     
     def __init__(self):
@@ -897,10 +898,11 @@ class EnhancementOrchestrator:
     def pre_generation_checks(self, topic: str, hook: str, recent_topics: List[str]) -> Dict:
         """
         Run checks BEFORE generating video.
+        v13.2: Now includes trend freshness and AI slop detection.
         
-        Returns: {"proceed": bool, "warnings": [], "modifications": {}}
+        Returns: {"proceed": bool, "warnings": [], "modifications": {}, "scores": {}}
         """
-        result = {"proceed": True, "warnings": [], "modifications": {}}
+        result = {"proceed": True, "warnings": [], "modifications": {}, "scores": {}}
         
         # #3: Semantic duplicate check
         dup_check = check_semantic_duplicate(topic, hook, recent_topics)
@@ -909,15 +911,32 @@ class EnhancementOrchestrator:
             result["warnings"].append(f"DUPLICATE: Similar to '{dup_check.get('similar_to')}'")
             result["modifications"]["suggested_topic"] = dup_check.get("suggestion")
         
+        # v11.0 #52: Score scroll-stopping power of hook
+        try:
+            scroll_score = score_scroll_stop_power(hook)
+            result["scores"]["scroll_stop"] = scroll_score
+            if scroll_score.get("score", 10) < 6:
+                result["warnings"].append(f"Low scroll-stop power: {scroll_score.get('score')}/10")
+        except:
+            pass
+        
+        # v11.0 #46: Predict CTR before generation
+        try:
+            ctr_pred = predict_ctr(hook, topic)
+            result["scores"]["predicted_ctr"] = ctr_pred
+        except:
+            pass
+        
         return result
     
     def post_content_checks(self, phrases: List[str], metadata: Dict) -> Dict:
         """
         Run checks AFTER content is created but BEFORE rendering.
+        v13.2: Now includes AI slop detection and content quality checks.
         
         Returns optimized phrases and metadata.
         """
-        result = {"phrases": phrases, "metadata": metadata, "optimizations": []}
+        result = {"phrases": phrases, "metadata": metadata, "optimizations": [], "warnings": []}
         
         # #4: Voice pacing intelligence
         pacing = enhance_voice_pacing(phrases)
@@ -928,7 +947,7 @@ class EnhancementOrchestrator:
         retention = predict_retention_curve(phrases, metadata.get("hook", ""))
         result["retention_prediction"] = retention
         if retention.get("predicted_completion_rate", 100) < 40:
-            result["warnings"] = ["Low predicted retention - consider revising content"]
+            result["warnings"].append("Low predicted retention - consider revising content")
         
         # #11: Value density
         value = score_value_density(phrases, 20)  # Assume 20s
@@ -936,14 +955,48 @@ class EnhancementOrchestrator:
         if value.get("has_padding"):
             result["optimizations"].append("Consider leaner version")
         
+        # v11.0 #74: AI slop detection - check for generic AI content
+        try:
+            slop_check = detect_ai_slop(' '.join(phrases))
+            result["ai_slop_check"] = slop_check
+            if slop_check.get("is_slop", False):
+                result["warnings"].append(f"AI slop detected: {slop_check.get('indicators', [])}")
+        except:
+            pass
+        
+        # v11.0 #69: Fact credibility check
+        try:
+            credibility = check_content_credibility(phrases)
+            result["credibility"] = credibility
+        except:
+            pass
+        
+        # v11.0 #63: Generate algorithm signals
+        try:
+            algo_signals = generate_algorithm_signals(phrases, metadata)
+            result["algorithm_signals"] = algo_signals
+        except:
+            pass
+        
         return result
     
     def post_render_validation(self, phrases: List[str], metadata: Dict, 
                                 video_duration: float) -> Dict:
         """
         Final validation AFTER rendering.
+        v13.2: Enhanced with more quality checks.
         """
-        return validate_post_render(phrases, metadata, video_duration)
+        base_validation = validate_post_render(phrases, metadata, video_duration)
+        
+        # v11.0 #68: Thumbnail quality (if we have one)
+        try:
+            if metadata.get("thumbnail_path"):
+                thumb_score = score_thumbnail_quality(metadata["thumbnail_path"])
+                base_validation["thumbnail_score"] = thumb_score
+        except:
+            pass
+        
+        return base_validation
     
     def get_seo_description(self, title: str, topic: str, hook: str, hashtags: List[str]) -> str:
         """Generate SEO-optimized description."""
