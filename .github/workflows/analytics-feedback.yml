@@ -1,7 +1,14 @@
-name: Weekly Analytics Feedback - Learn from Our Performance (v9.0)
+name: Weekly Analytics Feedback - Learn from Our Performance (v9.5)
 
 # Runs weekly to analyze OUR video performance and adjust strategy
-# v9.0: Now includes comment mining, A/B test results, and shadow-ban detection
+# v9.5: Now includes:
+#   - Comment mining & audience insights
+#   - Shadow-ban detection
+#   - Hook word performance tracking
+#   - Cross-platform analytics (YouTube vs Dailymotion)
+#   - Category performance decay
+#   - Series detection for high performers
+#   - Voice speed correlation
 # Fully autonomous - no human intervention needed!
 
 on:
@@ -540,10 +547,114 @@ jobs:
               with open(ANALYTICS_FILE, 'w') as f:
                   json.dump(analytics_state, f, indent=2)
               
-              safe_print("\n[SAVED] Analytics feedback saved (v9.0)!")
+              # v9.5: Update hook word performance tracker
+              avg_views = analytics_state["avg_views"]
+              hook_word_file = Path("data/persistent/hook_word_performance.json")
+              hook_data = {"words": {}, "last_updated": datetime.now().isoformat()}
+              if hook_word_file.exists():
+                  try:
+                      with open(hook_word_file, 'r') as f:
+                          hook_data = json.load(f)
+                  except:
+                      pass
+              
+              # Extract and score words from high-performing titles
+              import re
+              for video in our_videos[:20]:  # Top 20 for learning
+                  title = video.get("title", "")
+                  views = video.get("views", 0)
+                  if title and avg_views > 0:
+                      performance = views / avg_views
+                      words = re.findall(r'\b[a-zA-Z]{3,}\b', title.lower())
+                      for word in words:
+                          if word not in hook_data["words"]:
+                              hook_data["words"][word] = {"total_performance": 0, "count": 0}
+                          hook_data["words"][word]["total_performance"] += performance
+                          hook_data["words"][word]["count"] += 1
+              
+              with open(hook_word_file, 'w') as f:
+                  json.dump(hook_data, f, indent=2)
+              safe_print("  -> hook_word_performance.json updated")
+              
+              # v9.5: Update category decay tracker
+              category_decay_file = Path("data/persistent/category_decay.json")
+              decay_data = {"category_history": {}, "last_updated": datetime.now().isoformat()}
+              if category_decay_file.exists():
+                  try:
+                      with open(category_decay_file, 'r') as f:
+                          decay_data = json.load(f)
+                  except:
+                      pass
+              
+              # Extract categories from titles and record performance
+              for video in our_videos[:30]:
+                  title = video.get("title", "").lower()
+                  views = video.get("views", 0)
+                  # Try to detect category from title
+                  categories_detected = []
+                  if "money" in title or "save" in title or "$" in title:
+                      categories_detected.append("finance")
+                  if "brain" in title or "mind" in title or "think" in title:
+                      categories_detected.append("psychology")
+                  if "hack" in title or "trick" in title:
+                      categories_detected.append("life_hacks")
+                  if "fact" in title or "true" in title:
+                      categories_detected.append("shocking_facts")
+                  if "health" in title or "body" in title:
+                      categories_detected.append("health")
+                  
+                  for cat in categories_detected:
+                      if cat not in decay_data["category_history"]:
+                          decay_data["category_history"][cat] = []
+                      decay_data["category_history"][cat].append({
+                          "date": datetime.now().isoformat(),
+                          "performance": views / avg_views if avg_views > 0 else 1.0
+                      })
+              
+              decay_data["last_updated"] = datetime.now().isoformat()
+              with open(category_decay_file, 'w') as f:
+                  json.dump(decay_data, f, indent=2)
+              safe_print("  -> category_decay.json updated")
+              
+              # v9.5: Check for series candidates (high performers)
+              series_file = Path("data/persistent/series_state.json")
+              series_data = {"active_series": [], "completed_series": [], "series_candidates": [], "last_updated": None}
+              if series_file.exists():
+                  try:
+                      with open(series_file, 'r') as f:
+                          series_data = json.load(f)
+                  except:
+                      pass
+              
+              # Videos performing 1.5x+ average are series candidates
+              for video in our_videos:
+                  views = video.get("views", 0)
+                  if avg_views > 0 and views >= avg_views * 1.5:
+                      title = video.get("title", "Unknown")
+                      # Check if already a candidate
+                      existing = [c.get("original_title") for c in series_data.get("series_candidates", [])]
+                      if title not in existing:
+                          series_data["series_candidates"].append({
+                              "original_title": title,
+                              "views": views,
+                              "performance_multiplier": round(views / avg_views, 2),
+                              "detected_at": datetime.now().isoformat(),
+                              "series_started": False
+                          })
+                          safe_print(f"  -> Series candidate: {title[:40]}... ({views / avg_views:.1f}x avg)")
+              
+              series_data["series_candidates"] = series_data.get("series_candidates", [])[-20:]  # Keep 20
+              series_data["last_updated"] = datetime.now().isoformat()
+              with open(series_file, 'w') as f:
+                  json.dump(series_data, f, indent=2)
+              
+              safe_print("\n[SAVED] Analytics feedback saved (v9.5)!")
               safe_print("  -> variety_state.json updated with learned preferences")
               safe_print("  -> viral_patterns.json updated with best patterns")
-              safe_print("  -> Video generator will use these automatically!")
+              safe_print("  -> hook_word_performance.json updated with word scores")
+              safe_print("  -> category_decay.json updated with time-weighted data")
+              safe_print("  -> series_state.json updated with candidates")
+              safe_print("  -> Video generator will use ALL of these automatically!")
           else:
               safe_print("[!] AI analysis returned no results")
 
@@ -568,7 +679,7 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## Weekly Analytics Feedback Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## Weekly Analytics Feedback Complete (v9.5)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### The Autonomous Feedback Loop" >> $GITHUB_STEP_SUMMARY
           echo "1. Fetched performance data from our YouTube channel" >> $GITHUB_STEP_SUMMARY
@@ -576,6 +687,13 @@ jobs:
           echo "3. Updated variety preferences (category weights)" >> $GITHUB_STEP_SUMMARY
           echo "4. Updated viral patterns (best title patterns)" >> $GITHUB_STEP_SUMMARY
           echo "5. Next video generation will use these automatically!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### v9.5 Enhancements Active" >> $GITHUB_STEP_SUMMARY
+          echo "- Hook word performance tracking" >> $GITHUB_STEP_SUMMARY
+          echo "- Category performance decay" >> $GITHUB_STEP_SUMMARY
+          echo "- Series candidate detection" >> $GITHUB_STEP_SUMMARY
+          echo "- Shadow-ban monitoring" >> $GITHUB_STEP_SUMMARY
+          echo "- Comment mining for insights" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### No Human Intervention Needed!" >> $GITHUB_STEP_SUMMARY
           echo "This workflow runs every Sunday and feeds learnings back." >> $GITHUB_STEP_SUMMARY

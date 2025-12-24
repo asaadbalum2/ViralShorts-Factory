@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """
-Monthly Viral Analysis Script v9.0
+Monthly Viral Analysis Script v9.5
 Analyzes top-performing AI-generated YouTube Shorts and extracts patterns
 for the ViralShorts Factory to use.
+
+v9.5 Enhancements:
+- Seasonal content calendar integration (#27)
+- Cross-platform analytics (#32)
+- Series detection for high performers (#33)
+- Enhanced hook word analysis (#28)
 
 v9.0 Enhancements:
 - Competitor tracking (#24) - Track specific competitor channels over time
@@ -359,11 +365,12 @@ def track_competitors():
 
 
 def main():
-    """Main analysis flow (v9.0 enhanced)."""
+    """Main analysis flow (v9.5 enhanced)."""
     safe_print("=" * 60)
-    safe_print("MONTHLY VIRAL ANALYSIS v9.0")
+    safe_print("MONTHLY VIRAL ANALYSIS v9.5")
     safe_print(f"Date: {datetime.now().isoformat()}")
-    safe_print("Enhancements: Competitor tracking, Content recycling")
+    safe_print("v9.5: Seasonal, Cross-platform, Series, Hook words")
+    safe_print("v9.0: Competitor tracking, Content recycling")
     safe_print("=" * 60)
 
     # Ensure directories exist
@@ -521,8 +528,81 @@ def main():
         json.dump(competitor_data, f, indent=2)
     safe_print(f"\n[COMPETITORS] Tracking {len(competitor_data)} channels")
 
+    # v9.5: Extract hook words from top-performing titles
+    safe_print("\n[v9.5] Hook Word Analysis")
+    hook_word_file = Path("data/persistent/hook_word_performance.json")
+    hook_data = {"words": {}, "last_updated": datetime.now().isoformat()}
+    if hook_word_file.exists():
+        try:
+            with open(hook_word_file, 'r') as f:
+                hook_data = json.load(f)
+        except:
+            pass
+    
+    # Learn from competitor hook words
+    avg_views = sum(v.get("views", 0) for v in top_videos) / len(top_videos) if top_videos else 1
+    for video in top_videos:
+        title = video.get("title", "")
+        views = video.get("views", 0)
+        if title and avg_views > 0:
+            performance = views / avg_views
+            words = re.findall(r'\b[a-zA-Z]{3,}\b', title.lower())
+            for word in words:
+                if word not in hook_data["words"]:
+                    hook_data["words"][word] = {"total_performance": 0, "count": 0, "source": "competitor"}
+                hook_data["words"][word]["total_performance"] += performance
+                hook_data["words"][word]["count"] += 1
+    
+    hook_data["last_updated"] = datetime.now().isoformat()
+    with open(hook_word_file, 'w') as f:
+        json.dump(hook_data, f, indent=2)
+    safe_print(f"  Updated hook words from {len(top_videos)} competitor videos")
+    
+    # v9.5: Seasonal content suggestions for next month
+    safe_print("\n[v9.5] Seasonal Content Calendar")
+    try:
+        from god_tier_prompts import SEASONAL_CALENDAR_PROMPT
+        # Generate seasonal suggestions using AI
+        prompt = SEASONAL_CALENDAR_PROMPT.format(
+            current_date=datetime.now().strftime("%A, %B %d, %Y")
+        )
+        
+        if GROQ_API_KEY:
+            response = requests.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {GROQ_API_KEY}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": "llama-3.3-70b-versatile",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.7,
+                    "max_tokens": 500
+                },
+                timeout=30
+            )
+            
+            if response.status_code == 200:
+                content = response.json()["choices"][0]["message"]["content"]
+                match = re.search(r'\{[\s\S]*\}', content)
+                if match:
+                    seasonal_data = json.loads(match.group())
+                    seasonal_file = Path("data/persistent/seasonal_calendar.json")
+                    seasonal_data["generated_at"] = datetime.now().isoformat()
+                    with open(seasonal_file, 'w') as f:
+                        json.dump(seasonal_data, f, indent=2)
+                    safe_print(f"  Generated seasonal content for {len(seasonal_data.get('content_opportunities', []))} opportunities")
+    except Exception as e:
+        safe_print(f"  [!] Seasonal calendar error: {e}")
+
     safe_print("\n" + "=" * 60)
-    safe_print("ANALYSIS COMPLETE (v9.0)")
+    safe_print("ANALYSIS COMPLETE (v9.5)")
+    safe_print("Files updated:")
+    safe_print("  - viral_patterns.json")
+    safe_print("  - competitor_tracking.json")
+    safe_print("  - hook_word_performance.json")
+    safe_print("  - seasonal_calendar.json")
     safe_print("=" * 60)
 
 

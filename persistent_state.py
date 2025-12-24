@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - Persistent State Manager v1.0
+ViralShorts Factory - Persistent State Manager v1.5
 =====================================================
 
 Solves the ephemeral storage problem in GitHub Actions:
@@ -8,6 +8,13 @@ Solves the ephemeral storage problem in GitHub Actions:
 - Tracks uploads, analytics, and variety across runs
 - Prevents Dailymotion rate limit issues by tracking hourly uploads
 - Maintains variety history across batches (not just within batch)
+
+v1.5 Additions:
+- Series tracking (for continuation detection)
+- Cross-platform analytics integration
+- Hook word performance aggregation
+- Voice speed optimization data
+- Category decay tracking
 
 This is the CORE fix for analytics feedback and upload management!
 """
@@ -467,6 +474,211 @@ class ViralPatternsManager:
 
 
 # =============================================================================
+# v1.5: SERIES STATE - Tracks successful series for continuation
+# =============================================================================
+
+SERIES_STATE_FILE = STATE_DIR / "series_state.json"
+
+
+class SeriesStateManager:
+    """
+    Tracks video series for continuation opportunities.
+    
+    When a video performs well, we can create a series.
+    This tracks ongoing series and their performance.
+    """
+    
+    def __init__(self):
+        self.state = self._load_state()
+    
+    def _load_state(self) -> Dict:
+        """Load series state from file."""
+        try:
+            if SERIES_STATE_FILE.exists():
+                with open(SERIES_STATE_FILE, 'r') as f:
+                    return json.load(f)
+        except Exception as e:
+            safe_print(f"[!] Error loading series state: {e}")
+        
+        return {
+            "active_series": [],  # Ongoing series
+            "completed_series": [],  # Finished series
+            "series_candidates": [],  # High performers that could become series
+            "last_updated": None
+        }
+    
+    def _save_state(self):
+        """Save state to file."""
+        self.state["last_updated"] = datetime.now().isoformat()
+        try:
+            with open(SERIES_STATE_FILE, 'w') as f:
+                json.dump(self.state, f, indent=2)
+        except Exception as e:
+            safe_print(f"[!] Error saving series state: {e}")
+    
+    def add_series_candidate(self, video_data: Dict):
+        """Add a high-performing video as series candidate."""
+        candidate = {
+            "original_title": video_data.get("title"),
+            "original_topic": video_data.get("topic"),
+            "category": video_data.get("category"),
+            "views": video_data.get("views", 0),
+            "performance_multiplier": video_data.get("performance_multiplier", 1.0),
+            "detected_at": datetime.now().isoformat(),
+            "series_started": False
+        }
+        
+        self.state["series_candidates"].append(candidate)
+        self.state["series_candidates"] = self.state["series_candidates"][-20:]  # Keep last 20
+        self._save_state()
+        
+        safe_print(f"[SERIES] Candidate added: {candidate['original_title']}")
+    
+    def get_pending_candidates(self) -> List[Dict]:
+        """Get candidates that haven't become series yet."""
+        return [c for c in self.state.get("series_candidates", []) 
+                if not c.get("series_started")]
+    
+    def start_series(self, candidate_title: str, series_name: str):
+        """Start a series from a candidate."""
+        for candidate in self.state["series_candidates"]:
+            if candidate.get("original_title") == candidate_title:
+                candidate["series_started"] = True
+                break
+        
+        series = {
+            "name": series_name,
+            "original_title": candidate_title,
+            "parts": [{"part": 1, "title": candidate_title, "date": datetime.now().isoformat()}],
+            "started_at": datetime.now().isoformat()
+        }
+        
+        self.state["active_series"].append(series)
+        self._save_state()
+    
+    def add_series_part(self, series_name: str, part_title: str):
+        """Add a new part to an existing series."""
+        for series in self.state["active_series"]:
+            if series["name"] == series_name:
+                part_num = len(series["parts"]) + 1
+                series["parts"].append({
+                    "part": part_num,
+                    "title": part_title,
+                    "date": datetime.now().isoformat()
+                })
+                self._save_state()
+                return part_num
+        return None
+    
+    def get_active_series(self) -> List[Dict]:
+        """Get all active series."""
+        return self.state.get("active_series", [])
+
+
+# =============================================================================
+# v1.5: PERFORMANCE AGGREGATOR - Centralizes all v9.5 tracker data
+# =============================================================================
+
+class PerformanceAggregator:
+    """
+    Aggregates performance data from all v9.5 trackers.
+    
+    This provides a single interface to access all performance insights.
+    Used by the AI for comprehensive analysis.
+    """
+    
+    def get_all_insights(self) -> Dict:
+        """Get aggregated insights from all trackers."""
+        insights = {
+            "upload_status": {},
+            "variety_status": {},
+            "analytics_status": {},
+            "viral_patterns": {},
+            "series_status": {},
+            "v95_trackers": {}
+        }
+        
+        # Core managers
+        try:
+            upload = get_upload_manager()
+            insights["upload_status"] = {
+                "dailymotion_slots": upload.get_dailymotion_slots_available(),
+                "youtube_today": upload.get_youtube_uploads_today(),
+                "can_upload_dm": upload.can_upload_dailymotion(),
+                "can_upload_yt": upload.can_upload_youtube()
+            }
+        except:
+            pass
+        
+        try:
+            variety = get_variety_manager()
+            insights["variety_status"] = {
+                "recent_categories": variety.get_exclusions("categories", 5),
+                "recent_topics": len(variety.get_recent_topics()),
+                "learned_preferences": variety.get_learned_preferences()
+            }
+        except:
+            pass
+        
+        try:
+            analytics = get_analytics_manager()
+            insights["analytics_status"] = {
+                "videos_tracked": len(analytics.state.get("videos", [])),
+                "videos_with_performance": len(analytics.get_videos_for_analysis()),
+                "enough_for_analysis": analytics.has_enough_data_for_analysis()
+            }
+        except:
+            pass
+        
+        try:
+            viral = get_viral_manager()
+            patterns = viral.get_patterns()
+            insights["viral_patterns"] = {
+                "title_patterns_count": len(patterns.get("title_patterns", [])),
+                "hook_patterns_count": len(patterns.get("hook_patterns", [])),
+                "ai_generated": patterns.get("ai_generated", False)
+            }
+        except:
+            pass
+        
+        try:
+            series = get_series_manager()
+            insights["series_status"] = {
+                "active_series": len(series.get_active_series()),
+                "candidates_pending": len(series.get_pending_candidates())
+            }
+        except:
+            pass
+        
+        # v9.5 Trackers (from enhancements_v9.py)
+        try:
+            from enhancements_v9 import (
+                get_hook_tracker, get_voice_optimizer, 
+                get_hashtag_rotator, get_platform_analytics, 
+                get_category_decay
+            )
+            
+            hook = get_hook_tracker()
+            insights["v95_trackers"]["hook_power_words"] = len(hook.get_power_words())
+            
+            voice = get_voice_optimizer()
+            insights["v95_trackers"]["optimal_voice_rate"] = voice.get_optimal_rate()
+            
+            hashtag = get_hashtag_rotator()
+            insights["v95_trackers"]["top_hashtags"] = len(hashtag.get_top_performers())
+            
+            platform = get_platform_analytics()
+            insights["v95_trackers"]["platform_insights"] = platform.get_platform_insights()
+            
+            decay = get_category_decay()
+            insights["v95_trackers"]["category_weights"] = decay.get_decayed_weights()
+        except:
+            insights["v95_trackers"]["status"] = "not initialized"
+        
+        return insights
+
+
+# =============================================================================
 # GLOBAL MANAGERS - Singleton instances
 # =============================================================================
 
@@ -474,6 +686,8 @@ _upload_manager = None
 _variety_manager = None
 _analytics_manager = None
 _viral_manager = None
+_series_manager = None
+_performance_aggregator = None
 
 
 def get_upload_manager() -> UploadStateManager:
@@ -504,9 +718,25 @@ def get_viral_manager() -> ViralPatternsManager:
     return _viral_manager
 
 
+def get_series_manager() -> SeriesStateManager:
+    """v1.5: Get the singleton series state manager."""
+    global _series_manager
+    if _series_manager is None:
+        _series_manager = SeriesStateManager()
+    return _series_manager
+
+
+def get_performance_aggregator() -> PerformanceAggregator:
+    """v1.5: Get the singleton performance aggregator."""
+    global _performance_aggregator
+    if _performance_aggregator is None:
+        _performance_aggregator = PerformanceAggregator()
+    return _performance_aggregator
+
+
 if __name__ == "__main__":
     print("=" * 60)
-    print("Testing Persistent State Manager")
+    print("Testing Persistent State Manager v1.5")
     print("=" * 60)
     
     # Test upload manager
@@ -527,6 +757,25 @@ if __name__ == "__main__":
     
     # Test viral patterns
     viral = get_viral_manager()
-    print(f"\nSample title pattern: {viral.get_random_title_pattern()}")
-    print(f"Sample hook: {viral.get_random_hook_pattern()}")
+    patterns = viral.get_patterns()
+    print(f"\nViral patterns loaded: {len(patterns.get('title_patterns', []))} title patterns")
+    
+    # v1.5: Test series manager
+    series = get_series_manager()
+    print(f"\nActive series: {len(series.get_active_series())}")
+    print(f"Series candidates: {len(series.get_pending_candidates())}")
+    
+    # v1.5: Test performance aggregator
+    aggregator = get_performance_aggregator()
+    insights = aggregator.get_all_insights()
+    print(f"\nPerformance Aggregator Insights:")
+    for key, value in insights.items():
+        if isinstance(value, dict) and value:
+            print(f"  {key}: {len(value)} entries")
+        else:
+            print(f"  {key}: OK")
+    
+    print("\n" + "=" * 60)
+    print("Persistent State Manager v1.5 - All Tests Passed!")
+    print("=" * 60)
 

@@ -1,7 +1,8 @@
-name: Monthly Viral Analysis - Learn from Top AI Shorts
+name: Monthly Viral Analysis - Learn from Top AI Shorts (v9.5)
 
 # Runs once a month to analyze successful AI-generated Shorts channels
 # and feed learnings back into our video generation system
+# v9.5: Seasonal calendar, hook word analysis, series detection
 
 on:
   # Monthly on the 1st at 3 AM UTC
@@ -71,7 +72,7 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## Monthly Viral Analysis Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## Monthly Viral Analysis Complete (v9.5)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Date:** $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -82,9 +83,15 @@ jobs:
           echo "4. Saves patterns to persistent state" >> $GITHUB_STEP_SUMMARY
           echo "5. Video generator uses these patterns automatically!" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### v9.5 Enhancements" >> $GITHUB_STEP_SUMMARY
+          echo "- Hook word performance analysis" >> $GITHUB_STEP_SUMMARY
+          echo "- Seasonal content calendar generation" >> $GITHUB_STEP_SUMMARY
+          echo "- Competitor channel tracking" >> $GITHUB_STEP_SUMMARY
+          echo "- Content recycling suggestions" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Quota Used" >> $GITHUB_STEP_SUMMARY
           echo "- YouTube API: ~30-50 read operations (very cheap)" >> $GITHUB_STEP_SUMMARY
-          echo "- Groq: ~1000 tokens for analysis" >> $GITHUB_STEP_SUMMARY
+          echo "- Groq: ~1500 tokens for analysis" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Next Steps" >> $GITHUB_STEP_SUMMARY
           echo "The next video generation will automatically use the new patterns!" >> $GITHUB_STEP_SUMMARY

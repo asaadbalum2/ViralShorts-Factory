@@ -496,6 +496,307 @@ JSON ONLY."""
 
 
 # =============================================================================
+# GOD-TIER PROMPT: Seasonal Content Calendar (#27 - v9.5)
+# =============================================================================
+
+SEASONAL_CALENDAR_PROMPT = """You are a CONTENT CALENDAR strategist for viral short-form video.
+
+=== TODAY'S DATE ===
+{current_date}
+
+=== YOUR TASK ===
+Identify the TOP 5 content opportunities for the NEXT 7 DAYS based on:
+
+1. UPCOMING HOLIDAYS & EVENTS
+   - Major holidays (Christmas, New Year, Valentine's, Halloween, etc.)
+   - Awareness days/months (Mental Health Month, Earth Day, etc.)
+   - Sports events (Super Bowl, Olympics, World Cup, etc.)
+   - Pop culture (award shows, movie releases, etc.)
+
+2. SEASONAL RELEVANCE
+   - Weather changes, seasonal activities
+   - Back-to-school, summer vacation, etc.
+   - Year-end content (lists, resolutions, reviews)
+
+3. PREDICTABLE VIRAL PATTERNS
+   - End of week: "Weekend plans" content
+   - Mondays: Motivation/productivity content
+   - Pay days: Money/finance content
+   - Full moon: Astrology/weird content
+
+=== OUTPUT REQUIREMENTS ===
+For each opportunity, provide:
+- Specific content angle (not just "Christmas content")
+- Why it will work NOW (timing is everything)
+- Hook idea
+
+{{
+    "content_opportunities": [
+        {{
+            "event": "specific event/date",
+            "days_until": number,
+            "content_angle": "specific viral angle",
+            "hook_idea": "hook line",
+            "urgency": "high/medium/low",
+            "category": "psychology/money/life_hack/etc"
+        }}
+    ],
+    "seasonal_mood": "festive/reflective/energetic/cozy",
+    "avoid_topics": ["topics to avoid right now"],
+    "overall_strategy": "one sentence on content approach this week"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Series Detection & Continuation (#33 - v9.5)
+# =============================================================================
+
+SERIES_CONTINUATION_PROMPT = """You are a CONTENT STRATEGIST specializing in SERIES and FRANCHISES.
+
+=== HIGH-PERFORMING VIDEO ===
+Title: {title}
+Topic: {topic}
+Category: {category}
+Views: {views} (average: {avg_views})
+Performance: {performance_multiplier}x average
+
+=== THE SERIES OPPORTUNITY ===
+When content performs well, there's hidden demand for MORE. Your job is to identify:
+1. What specifically resonated (the "magic ingredient")
+2. How to capture that magic again WITHOUT being repetitive
+3. Whether this should be a "Part 2" or a new angle
+
+=== SERIES TYPES ===
+1. NUMBERED SERIES: "Part 1", "Part 2" (for cliffhangers, deep topics)
+2. THEMED SERIES: Same category, different examples ("More Money Hacks")
+3. DEPTH SERIES: Go deeper on one aspect ("Deep Dive: [Subtopic]")
+4. FLIP SERIES: Opposite angle ("Why This DOESN'T Work")
+5. AUDIENCE SERIES: "What You Asked For: [Viewer Questions]"
+
+=== OUTPUT JSON ===
+{{
+    "magic_ingredient": "what specifically worked",
+    "series_type": "numbered/themed/depth/flip/audience",
+    "should_continue": true/false,
+    "continuation_plan": {{
+        "part2_topic": "specific topic for sequel",
+        "part2_hook": "hook that references success",
+        "part2_angle": "how it's different but related",
+        "timing": "when to release (days from now)",
+        "reference_original": true/false
+    }},
+    "series_name": "if this becomes a series, what to call it",
+    "potential_parts": 3-5 (how many videos in this series),
+    "confidence": "high/medium/low"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Engagement Reply Templates (#34 - v9.5)
+# =============================================================================
+
+ENGAGEMENT_REPLY_PROMPT = """You are a COMMUNITY MANAGER for a viral YouTube Shorts channel.
+
+=== SAMPLE COMMENTS FROM OUR VIDEOS ===
+{sample_comments}
+
+=== YOUR TASK ===
+Create reply templates that:
+1. Sound HUMAN (not robotic/corporate)
+2. Encourage FURTHER engagement (more replies, follows)
+3. Build COMMUNITY (make people feel seen)
+4. Are EFFICIENT (we can copy-paste and slightly customize)
+
+=== COMMENT CATEGORIES ===
+Identify which of these categories appear in the comments:
+
+1. PRAISE: "Great video!", "Love this!", "So helpful!"
+   - Acknowledge, ask follow-up question
+
+2. QUESTIONS: "How do I...?", "What about...?"
+   - Answer briefly, point to more content
+
+3. DISAGREEMENT: "Actually...", "This is wrong..."
+   - Stay curious, not defensive
+
+4. REQUESTS: "Can you make a video about...?"
+   - Validate, ask for more details
+
+5. PERSONAL STORIES: "This happened to me..."
+   - Empathize, ask how it turned out
+
+6. TROLLS: "Fake", "AI slop", negative spam
+   - Usually ignore, but sometimes humor works
+
+=== OUTPUT JSON ===
+{{
+    "comment_categories_found": ["praise", "questions", "etc"],
+    "templates": [
+        {{
+            "category": "praise",
+            "trigger_phrases": ["great video", "love this"],
+            "reply_templates": [
+                "Thanks! 🙏 What topic should I cover next?",
+                "Glad you liked it! Drop a follow for more"
+            ]
+        }}
+    ],
+    "high_priority_comments": [
+        {{
+            "comment": "exact comment to prioritize",
+            "why_priority": "high engagement potential",
+            "suggested_reply": "specific reply"
+        }}
+    ],
+    "engagement_tips": ["tip 1", "tip 2"]
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: B-Roll Relevance Scoring (#31 - v9.5)
+# =============================================================================
+
+BROLL_RELEVANCE_PROMPT = """You are a VIDEO EDITOR selecting B-roll for a short video.
+
+=== PHRASE TO ILLUSTRATE ===
+"{phrase}"
+
+=== CONTENT CONTEXT ===
+Topic: {topic}
+Mood: {mood}
+Video Type: {video_type}
+
+=== B-ROLL OPTIONS FROM PEXELS ===
+{broll_options}
+
+=== SCORING CRITERIA ===
+Rate each option 1-10:
+
+10 = PERFECT: Directly shows what the phrase describes
+8-9 = GREAT: Strongly related, enhances understanding
+6-7 = GOOD: Related, adds visual interest
+4-5 = OK: Loosely related, generic but acceptable
+1-3 = BAD: Unrelated or distracting
+
+=== WHAT MAKES GOOD B-ROLL ===
+✅ SHOWS the concept (not just illustrates it)
+✅ Has MOVEMENT and energy
+✅ Matches MOOD (dark for scary, bright for inspirational)
+✅ HIGH QUALITY (not blurry or low-res)
+
+❌ AVOID:
+- Too literal (if talking about money, don't just show coins)
+- Too abstract (random shapes, stock graphics)
+- Wrong mood (happy people for a serious topic)
+- Cliché (handshake for "partnership")
+
+=== OUTPUT JSON ===
+{{
+    "scores": [
+        {{"index": 1, "score": 8, "reason": "short reason"}}
+    ],
+    "best_option": index number,
+    "avoid_options": [indices to skip],
+    "alternative_search": "better search term if all options are poor"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Hook Word Analysis (#28 - v9.5)
+# =============================================================================
+
+HOOK_WORD_ANALYSIS_PROMPT = """You are a LINGUISTIC ANALYST studying viral video hooks.
+
+=== HOOK PERFORMANCE DATA ===
+{hook_data}
+
+=== YOUR TASK ===
+Analyze these hooks to find patterns:
+
+1. POWER WORDS: Which words correlate with high views?
+   - Emotional triggers (shocking, secret, hidden)
+   - Urgency words (now, today, immediately)
+   - Curiosity words (why, how, what if)
+
+2. WEAK WORDS: Which words correlate with low views?
+   - Vague words (thing, stuff, really)
+   - Overused words (amazing, incredible)
+   - Passive words (might, could, maybe)
+
+3. STRUCTURAL PATTERNS: What hook structures work?
+   - Question hooks: "Why do...?"
+   - Statement hooks: "This is the..."
+   - Challenge hooks: "You can't..."
+   - Secret hooks: "The secret to..."
+
+=== OUTPUT JSON ===
+{{
+    "power_words": ["word1", "word2"],
+    "weak_words": ["avoid1", "avoid2"],
+    "best_structures": [
+        {{
+            "pattern": "Why [X] is [unexpected thing]",
+            "example": "Why your alarm is making you tired",
+            "avg_performance": 1.5
+        }}
+    ],
+    "recommendations": [
+        "Always start with why/how/what",
+        "Include a number in first 3 words"
+    ]
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
+# GOD-TIER PROMPT: Category Decay Analysis (#35 - v9.5)
+# =============================================================================
+
+CATEGORY_DECAY_PROMPT = """You are a TREND ANALYST tracking content category performance over time.
+
+=== CATEGORY PERFORMANCE HISTORY ===
+{category_history}
+
+=== YOUR TASK ===
+Analyze which categories are:
+1. TRENDING UP: Growing in performance
+2. STABLE: Consistent performance
+3. DECLINING: Dropping in performance
+4. SATURATED: Too much similar content
+
+=== FACTORS TO CONSIDER ===
+- Recent (last 7 days) performance vs. older
+- Seasonal effects (holiday topics spike, then crash)
+- Market saturation (everyone making same content)
+- Algorithm changes (platform pushing certain types)
+
+=== OUTPUT JSON ===
+{{
+    "category_status": {{
+        "psychology": {{
+            "trend": "up/stable/down",
+            "recent_performance": 1.2,
+            "recommendation": "increase/maintain/decrease output"
+        }}
+    }},
+    "hot_categories": ["trending up categories"],
+    "cool_categories": ["declining categories"],
+    "rotation_suggestion": "which category to focus on next"
+}}
+
+JSON ONLY."""
+
+
+# =============================================================================
 # Main Class
 # =============================================================================
 
