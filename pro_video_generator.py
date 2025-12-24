@@ -176,37 +176,32 @@ ENHANCEMENTS_AVAILABLE = ENHANCEMENTS_V11_AVAILABLE
 # v12.0: Import ULTIMATE enhancements module (330 NEW enhancements!)
 try:
     from enhancements_v12 import (
-        # Batch 1: Human Feel
-        get_natural_rhythm, get_filler_injector, get_breathing_pause,
-        get_colloquial, get_contractions_enforcer,
-        get_font_psychology, get_text_animation,
-        get_voice_matcher,
-        # Batch 2: Content Core
+        # MASTER INTEGRATION - THE KEY FUNCTION
+        get_v12_complete_master_prompt,
+        # Helper functions for specific enhancements
+        get_v12_hook_boost,
+        get_v12_voice_settings,
+        get_v12_font_settings,
+        get_v12_music_settings,
+        get_v12_color_settings,
+        apply_v12_text_humanization,
+        get_v12_algorithm_checklist,
+        get_v12_compliance_rules,
+        # Individual getters (for specific use cases)
+        get_natural_rhythm, get_filler_injector, get_contractions_enforcer,
+        get_font_psychology, get_text_animation, get_voice_matcher,
         get_sound_library, get_tempo_matcher, get_genre_matcher,
-        get_sound_music_master_prompt, get_topic_generation_master_prompt,
-        get_value_delivery_master_prompt,
-        # Batch 3: Algorithm & Hook
         get_shock_opener, get_algorithm_signals,
-        get_first_3_seconds_master_prompt, get_algorithm_master_prompt,
-        # Batch 4: Engagement
-        get_color_grading, get_fomo_trigger, get_open_loop,
-        get_visual_production_master_prompt, get_psychological_triggers_master_prompt,
-        get_retention_mechanics_master_prompt,
-        # Batch 5: Polish
+        get_color_grading, get_fomo_trigger,
         get_source_citation, get_yt_optimization, get_hook_body_payoff,
-        get_authenticity_master_prompt, get_platform_optimization_master_prompt,
-        get_content_structure_master_prompt,
-        # Batch 6: Intelligence
-        get_performance_correlator, get_token_budget, get_master_prompt_design,
-        get_yt_compliance,
-        get_analytics_master_prompt, get_selftuning_master_prompt,
-        get_quota_master_prompt, get_prompting_master_prompt,
-        get_compliance_master_prompt
+        get_performance_correlator, get_token_budget, get_yt_compliance
     )
     ENHANCEMENTS_V12_AVAILABLE = True
-    print("[OK] v12.0 Ultimate Enhancements loaded: 330 new enhancements!")
+    V12_MASTER_PROMPT = get_v12_complete_master_prompt()
+    print("[OK] v12.0 Ultimate Enhancements loaded: 330 enhancements ACTIVE!")
 except ImportError as e:
     ENHANCEMENTS_V12_AVAILABLE = False
+    V12_MASTER_PROMPT = ""
     print(f"[!] v12.0 enhancements not available: {e}")
 
 # v9.5: Import persistent state with series tracking
@@ -605,6 +600,9 @@ class MasterAI:
         # v8.0: Get viral patterns to inject into prompt
         viral_boost = get_viral_prompt_boost() if VIRAL_PATTERNS_AVAILABLE else ""
         
+        # v12.0: Get v12 master prompt with ALL 330 enhancements
+        v12_guidelines = V12_MASTER_PROMPT if ENHANCEMENTS_V12_AVAILABLE else ""
+        
         prompt = f"""You are a VIRAL CONTENT STRATEGIST for short-form video (YouTube Shorts, TikTok).
 Your job is to decide what video to create that will get MAXIMUM views while delivering REAL value.
 
@@ -617,6 +615,8 @@ DATE: {time.strftime('%B %d, %Y, %A')}
 {available_categories}
 
 {viral_boost}
+
+{v12_guidelines}
 
 === YOUR DECISION TASKS ===
 
@@ -791,6 +791,9 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         # v8.0: Get viral hook patterns
         viral_boost = get_viral_prompt_boost() if VIRAL_PATTERNS_AVAILABLE else ""
         
+        # v12.0: Get v12 master prompt with ALL 330 enhancements
+        v12_guidelines = V12_MASTER_PROMPT if ENHANCEMENTS_V12_AVAILABLE else ""
+        
         prompt = f"""You are a VIRAL CONTENT CREATOR. Create SCROLL-STOPPING content for this video.
 
 === VIDEO CONCEPT ===
@@ -801,6 +804,8 @@ Target Duration: {target_duration} seconds (CRITICAL - keep it SHORT!)
 Phrase Count: {phrase_count} phrases ONLY
 
 {viral_boost}
+
+{v12_guidelines}
 
 === v8.0 CONTENT RULES ===
 
@@ -1139,6 +1144,15 @@ JSON ONLY."""
         """AI-DRIVEN voice selection with variety enforcement. OPTIMIZED for token usage."""
         category = concept.get('category', 'general')
         voice_style = concept.get('voice_style', 'energetic').lower()
+        
+        # v12.0: Get optimized voice settings from v12 enhancements
+        v12_voice_guidance = ""
+        if ENHANCEMENTS_V12_AVAILABLE:
+            try:
+                v12_settings = get_v12_voice_settings(category)
+                v12_voice_guidance = f"\nv12.0 Recommended profile: {v12_settings.get('profile', 'energetic')}"
+            except:
+                pass
         
         # Build exclusion list from batch tracker
         exclude_voices = []
@@ -1742,6 +1756,18 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
             seen.add(p)
             unique_phrases.append(p)
     phrases = unique_phrases
+    
+    # v12.0: Apply text humanization (contractions, colloquial language)
+    if ENHANCEMENTS_V12_AVAILABLE:
+        try:
+            humanized_phrases = []
+            for p in phrases:
+                humanized = apply_v12_text_humanization(p)
+                humanized_phrases.append(humanized)
+            phrases = humanized_phrases
+            safe_print(f"   [v12.0] Text humanization applied")
+        except Exception as e:
+            safe_print(f"   [!] Humanization skipped: {e}")
     
     safe_print(f"   Phrases: {len(phrases)}")
     

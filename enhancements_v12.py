@@ -7464,6 +7464,229 @@ def get_yt_compliance() -> YouTubeGuidelinesCompliance:
 
 
 # =============================================================================
+# MASTER INTEGRATION - ALL v12 ENHANCEMENTS IN ONE PROMPT
+# =============================================================================
+
+def get_v12_complete_master_prompt() -> str:
+    """
+    Returns the COMPLETE v12 master prompt combining ALL 330 enhancements.
+    This should be injected into AI calls for content generation.
+    """
+    return """
+################################################################################
+# VIRALSHORTS FACTORY v12.0 - ULTIMATE CONTENT GUIDELINES
+# 330 Enhancements | 20 Categories | 6 Batches
+################################################################################
+
+## BATCH 1: HUMAN FEEL (Categories A-C)
+
+### Anti-AI Detection
+- Vary sentence lengths (short, medium, long)
+- Use filler words naturally: "you know", "basically", "right"
+- Add breathing pauses with commas and ellipses
+- Include self-corrections: "actually, let me rephrase..."
+- Use contractions: "don't", "can't", "won't" (never "do not")
+- Inject personal opinions: "I think", "In my experience"
+- Add rhetorical questions
+- Use colloquial language, not formal
+- Include minor imperfections (makes it human)
+
+### Typography & Text
+- Match font style to category (serif=authority, sans=modern)
+- Dynamic sizing: BIG for key words, smaller for context
+- Highlight power words with color
+- Animate text (word-by-word, pop, slide)
+- Mobile-first: readable on small screens
+- High contrast for visibility
+
+### Voice & Audio
+- Match voice energy to topic
+- Vary speech speed (faster for excitement, slower for emphasis)
+- Strategic pauses before reveals
+- Emphasize power words with tone
+- Natural breathing between sentences
+
+## BATCH 2: CONTENT CORE (Categories D-F)
+
+### Sound & Music
+- Match tempo to content energy (calm=60-80bpm, energetic=130-160bpm)
+- Use sound effects sparingly (whoosh, ding, pop)
+- Sync music drops with content reveals
+- Strategic silence before big reveals
+- Satisfying audio resolution at end
+
+### Topic Generation
+- Counter-intuitive topics work best
+- "Why X actually helps Y" format
+- Myth-busting is highly shareable
+- Specific numbers over vague claims
+- Answer real questions people ask
+- Mix 60% evergreen + 40% trending
+
+### Value Delivery
+- Every video needs a clear ACTION
+- Problem-Solution-Benefit structure
+- Quantify the value: "Save $500/year"
+- One key takeaway per video
+- Real-world examples, not abstract
+- "Try this today..." ending
+
+## BATCH 3: ALGORITHM & HOOK (Categories G-H)
+
+### First 3 Seconds (CRITICAL)
+- SHOCK opener: "93% of people don't know..."
+- CHALLENGE viewer: "You're doing this wrong"
+- QUESTION that haunts: "What if everything you learned..."
+- URGENCY: "Before your next meal, know this..."
+- Movement in frame 1
+- Audio starts immediately (no fade-in)
+- Specific numbers: "93.7%" not "most"
+- Visual pattern interrupt (unexpected color/motion)
+
+### Algorithm Signals
+- Optimize for WATCH TIME (most important)
+- Target 90%+ completion rate
+- Ask for comments: "Type 1 if you knew, 2 if you didn't"
+- Create share-worthy moments
+- Save-worthy content (tips, hacks)
+- Re-hook at 25%, 50%, 75%
+- Strong ending (satisfying close)
+- #Shorts always, 2-3 topic hashtags
+
+## BATCH 4: ENGAGEMENT (Categories I-K)
+
+### Visual Production
+- Consistent color palette matching mood
+- Change visual every 2-3 seconds
+- Motion graphics for data/stats
+- Rule of thirds composition
+- Safe zones (avoid top 10%, bottom 15%)
+- Smooth animations (ease-in/out)
+
+### Psychological Triggers
+- FOMO: "Most people miss this..."
+- Curiosity loops: Open question, delay answer
+- Loss aversion: "You're losing $X..."
+- Social proof: "Millions of people..."
+- Pattern interrupt: Unexpected statement
+- Peak-end rule: Best insight + strong ending
+
+### Retention Mechanics
+- Open loops (don't close immediately)
+- Micro-payoffs every 5-7 seconds
+- Progress indicators for lists
+- Tease the ending early
+- Visual variety (never static > 3s)
+- Satisfying conclusion
+
+## BATCH 5: POLISH (Categories L-N)
+
+### Authenticity
+- Cite sources when possible
+- Acknowledge limitations honestly
+- Genuine enthusiasm (not hype)
+- Humble expertise
+- No hidden agenda
+- Accuracy over speed
+
+### Platform Optimization
+- YouTube Shorts: #Shorts, 9:16, <60s
+- First frame = thumbnail
+- Title: 40-50 chars, curiosity gap
+- Description: Hook + keywords + hashtags
+- Consistent posting schedule
+
+### Content Structure
+- HOOK (0-3s): Stop the scroll
+- BODY (3-17s): Deliver value
+- PAYOFF (17-20s): Satisfy + CTA
+- Most important info first
+- Clear transitions
+- One soft CTA at end
+
+## BATCH 6: INTELLIGENCE (Categories O-T)
+
+### Self-Improvement
+- Learn from every video performance
+- Replicate successful patterns
+- Avoid failure patterns
+- Continuous A/B testing
+- Weekly analysis, monthly deep dive
+
+### Platform Compliance
+- No misleading metadata
+- Deliver on all promises
+- Original content only
+- No spam behavior
+- Respect all rate limits
+- Stay advertiser-friendly
+
+################################################################################
+# APPLY ALL ABOVE TO EVERY VIDEO
+################################################################################
+"""
+
+
+def get_v12_hook_boost() -> str:
+    """Returns hook-specific enhancements for first 3 seconds."""
+    shock = get_shock_opener()
+    return shock.SHOCK_TYPES.get("stat_shock", "") + "\n" + shock.get_shock_instruction()
+
+
+def get_v12_voice_settings(category: str) -> Dict:
+    """Returns optimized voice settings for a category."""
+    matcher = get_voice_matcher()
+    return matcher.get_voice_for_category(category)
+
+
+def get_v12_font_settings(category: str, mood: str = "neutral") -> Dict:
+    """Returns optimized font settings for a category."""
+    font = get_font_psychology()
+    return font.get_recommended_font(category, mood)
+
+
+def get_v12_music_settings(category: str) -> Dict:
+    """Returns optimized music settings for a category."""
+    tempo = get_tempo_matcher()
+    genre = get_genre_matcher()
+    return {
+        "tempo": tempo.get_tempo_for_category(category),
+        "genres": genre.get_genre_for_category(category)
+    }
+
+
+def get_v12_color_settings(mood: str) -> Dict:
+    """Returns color grading settings for a mood."""
+    color = get_color_grading()
+    return color.MOOD_COLORS.get(mood, color.MOOD_COLORS.get("professional"))
+
+
+def apply_v12_text_humanization(text: str) -> str:
+    """Applies anti-AI detection to text."""
+    # Apply contractions
+    contractions = get_contractions_enforcer()
+    text = contractions.apply_contractions(text)
+    
+    # Apply colloquial language
+    colloquial = get_colloquial()
+    text = colloquial.make_casual(text)
+    
+    return text
+
+
+def get_v12_algorithm_checklist() -> List[str]:
+    """Returns algorithm optimization checklist."""
+    signals = get_algorithm_signals()
+    return list(signals.SIGNALS.keys())
+
+
+def get_v12_compliance_rules() -> List[str]:
+    """Returns platform compliance rules."""
+    compliance = get_yt_compliance()
+    return compliance.YOUTUBE_RULES
+
+
+# =============================================================================
 # TEST
 # =============================================================================
 
