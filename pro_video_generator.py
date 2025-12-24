@@ -794,8 +794,14 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         """AI creates the actual content based on the concept it decided.
         v8.0: Shorter content (3-5 phrases), stronger hooks, engagement baits.
         v8.5: HYBRID - uses analytics-learned optimal metrics with guardrails.
+        v13.1: Added regeneration feedback support for quality enforcement.
         """
-        safe_print("\n[STAGE 2] AI creating content...")
+        # Check if this is a regeneration attempt
+        is_regeneration = concept.get('attempt_number', 0) > 0
+        if is_regeneration:
+            safe_print(f"\n[STAGE 2] AI REGENERATING content (attempt {concept.get('attempt_number')})...")
+        else:
+            safe_print("\n[STAGE 2] AI creating content...")
         
         # v8.5: HYBRID approach - learn from analytics but with guardrails
         learned_metrics = get_learned_optimal_metrics()
@@ -812,7 +818,24 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         # v12.0: Get v12 master prompt with ALL 330 enhancements
         v12_guidelines = V12_MASTER_PROMPT if ENHANCEMENTS_V12_AVAILABLE else ""
         
+        # v13.1: Handle regeneration feedback for quality enforcement
+        regen_feedback = ""
+        if concept.get('regeneration_feedback'):
+            regen_feedback = f"""
+=== CRITICAL: QUALITY IMPROVEMENT REQUIRED ===
+{concept.get('regeneration_feedback')}
+
+YOU MUST CREATE BETTER CONTENT THIS TIME:
+- More SPECIFIC numbers and claims
+- More ENGAGING and surprising hooks
+- More VALUABLE and actionable content
+- HIGHER quality that scores 8+/10
+==============================================
+
+"""
+        
         prompt = f"""You are a VIRAL CONTENT CREATOR. Create SCROLL-STOPPING content for this video.
+{regen_feedback}
 
 === VIDEO CONCEPT ===
 Category: {concept.get('category', 'educational')}
@@ -1352,8 +1375,7 @@ class VideoRenderer:
             try:
                 from dynamic_fonts import get_font_by_key
                 font_path = get_font_by_key(font_key)
-                if font_path:
-                    safe_print(f"   [*] Downloading font: {font_key.replace('-', ' ').title()}...")
+                # Only log when font is actually loaded
             except ImportError:
                 pass
         
@@ -2207,14 +2229,49 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     # ==========================================================================
     if CRITICAL_FIXES_AVAILABLE:
         try:
-            # 1. Check and enforce minimum quality score
+            # 1. Check and ENFORCE minimum quality score with REGENERATION
             score = content.get('evaluation_score', 5)
-            if score < MINIMUM_ACCEPTABLE_SCORE:
-                safe_print(f"   [QUALITY WARNING] Score {score}/10 below minimum {MINIMUM_ACCEPTABLE_SCORE}/10")
-                # Log for analytics - we want to track low scores
-                content['quality_warning'] = True
-            else:
+            regeneration_attempts = 0
+            max_regen = 3
+            
+            while score < MINIMUM_ACCEPTABLE_SCORE and regeneration_attempts < max_regen:
+                regeneration_attempts += 1
+                safe_print(f"   [QUALITY] Score {score}/10 BELOW minimum {MINIMUM_ACCEPTABLE_SCORE}/10 - REGENERATING (attempt {regeneration_attempts}/{max_regen})")
+                
+                # Build feedback for AI to improve
+                quality_issues = content.get('quality_issues', [])
+                feedback = f"Previous attempt scored {score}/10 - UNACCEPTABLE. "
+                if quality_issues:
+                    feedback += f"Issues: {', '.join([i.get('issue', '') for i in quality_issues[:3]])}. "
+                feedback += f"Make it MORE engaging, MORE specific, MORE valuable. MINIMUM score needed: {MINIMUM_ACCEPTABLE_SCORE}/10."
+                
+                # Regenerate content with feedback
+                try:
+                    # Add feedback to concept for regeneration
+                    concept['regeneration_feedback'] = feedback
+                    concept['attempt_number'] = regeneration_attempts
+                    
+                    new_content = ai.stage2_create_content(concept)
+                    if new_content and new_content.get('phrases'):
+                        # Re-evaluate new content
+                        new_content = ai.stage3_evaluate_enhance(new_content)
+                        new_score = new_content.get('evaluation_score', 0)
+                        
+                        if new_score > score:
+                            safe_print(f"   [QUALITY] Improved: {score}/10 -> {new_score}/10")
+                            content = new_content
+                            score = new_score
+                        else:
+                            safe_print(f"   [QUALITY] No improvement: {new_score}/10 (keeping previous)")
+                except Exception as e:
+                    safe_print(f"   [!] Regeneration attempt {regeneration_attempts} failed: {e}")
+            
+            if score >= MINIMUM_ACCEPTABLE_SCORE:
                 safe_print(f"   [QUALITY] Score {score}/10 - ACCEPTABLE")
+                content['quality_warning'] = False
+            else:
+                safe_print(f"   [QUALITY] WARNING: Could not reach {MINIMUM_ACCEPTABLE_SCORE}/10 after {regeneration_attempts} attempts. Best: {score}/10")
+                content['quality_warning'] = True
             
             # 2. Validate and fix numbered promises
             phrases = content.get('phrases', [])
@@ -2237,14 +2294,17 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             content['selected_font'] = selected_font
             safe_print(f"   [FONT] Selected: {selected_font} (based on {category}/{mood})")
             
-            # 4. Plan varied SFX for this video
+            # 4. Plan varied SFX for this video with detailed logging
             sfx_plan = []
+            sfx_details = []
             for i in range(len(phrases)):
                 sfx = get_varied_sfx_for_phrase(i, len(phrases), run_id)
                 sfx_plan.append(sfx)
+                position = "HOOK" if i == 0 else ("END" if i == len(phrases) - 1 else f"P{i}")
+                sfx_details.append(f"{position}:{sfx or 'silent'}")
             content['sfx_plan'] = sfx_plan
-            sfx_used = [s for s in sfx_plan if s]
-            safe_print(f"   [SFX] Plan: {sfx_used if sfx_used else 'minimal (silent emphasis)'}")
+            # Show exact SFX pattern for this video
+            safe_print(f"   [SFX] Pattern: {' -> '.join(sfx_details)}")
             
         except Exception as e:
             safe_print(f"   [!] Critical fixes error: {e}")
@@ -2503,6 +2563,14 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         safe_print(f"   Score: {score}/10")
         if metadata:
             safe_print(f"   Title: {metadata.get('title', 'N/A')}")
+        # Show enhancements applied
+        safe_print("   ---")
+        safe_print(f"   Font: {content.get('selected_font', 'default')}")
+        sfx_plan = content.get('sfx_plan', [])
+        sfx_summary = [s for s in sfx_plan if s]
+        safe_print(f"   SFX: {sfx_summary if sfx_summary else 'minimal'}")
+        safe_print(f"   Promise Fixed: {'Yes' if content.get('promise_fixed') else 'No'}")
+        safe_print(f"   Quality Warning: {'Yes' if content.get('quality_warning') else 'No'}")
         safe_print("=" * 70)
         
         return output_path

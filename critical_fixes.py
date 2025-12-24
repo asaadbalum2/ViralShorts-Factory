@@ -134,28 +134,30 @@ def get_varied_sfx_for_phrase(phrase_index: int, total_phrases: int, video_id: i
     """
     Get varied sound effect - NOT the same pattern every time.
     Uses video_id as seed for per-video consistency but cross-video variety.
+    
+    IMPROVED: More balanced weights for TRUE variety across videos.
     """
     # Use video ID to seed randomness for this video
     if video_id:
-        random.seed(video_id + phrase_index)
+        random.seed(video_id + phrase_index * 7)  # Multiply by prime for better distribution
     
     if phrase_index == 0:
-        # Hook: 70% hit, 20% whoosh, 10% silent
+        # Hook: More balanced - 40% hit, 30% whoosh, 15% ding, 15% silent
         sfx = random.choices(
-            ["hit", "whoosh", None],
-            weights=[70, 20, 10]
+            ["hit", "whoosh", "ding", None],
+            weights=[40, 30, 15, 15]
         )[0]
     elif phrase_index == total_phrases - 1:
-        # Payoff: 60% ding, 30% silent, 10% hit
+        # Payoff: More balanced - 35% ding, 25% hit, 25% whoosh, 15% silent
         sfx = random.choices(
-            ["ding", None, "hit"],
-            weights=[60, 30, 10]
+            ["ding", "hit", "whoosh", None],
+            weights=[35, 25, 25, 15]
         )[0]
     else:
-        # Middle phrases: 40% whoosh, 40% silent, 20% tick
+        # Middle phrases: More balanced - 30% whoosh, 25% tick, 25% silent, 20% ding
         sfx = random.choices(
-            ["whoosh", None, "tick"],
-            weights=[40, 40, 20]
+            ["whoosh", "tick", None, "ding"],
+            weights=[30, 25, 25, 20]
         )[0]
     
     # Reset random state
@@ -425,4 +427,5 @@ if __name__ == "__main__":
     if not result['valid']:
         fixed = fix_broken_promise(hook, result['delivered'])
         print(f"Fixed hook: {fixed}")
+
 
