@@ -2000,13 +2000,19 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
     return True
 
 
-async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = None) -> Optional[str]:
+async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = None, output_dir: str = None) -> Optional[str]:
     """
     Generate a video with 100% AI-driven decisions.
     VARIETY ENFORCED through batch_tracker.
     
     v9.0: Enhanced with comprehensive quality gates and AI-driven checks
+    
+    Args:
+        output_dir: Custom output directory (defaults to OUTPUT_DIR if None)
     """
+    # Use custom output dir or default
+    video_output_dir = Path(output_dir) if output_dir else OUTPUT_DIR
+    video_output_dir.mkdir(parents=True, exist_ok=True)
     run_id = random.randint(10000, 99999)
     
     safe_print("=" * 70)
@@ -2200,7 +2206,7 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     # Render
     category = concept.get('category', 'fact')
     safe_cat = "".join(c if c.isalnum() else '_' for c in category)[:20]
-    output_path = str(OUTPUT_DIR / f"pro_{safe_cat}_{run_id}.mp4")
+    output_path = str(video_output_dir / f"pro_{safe_cat}_{run_id}.mp4")
     
     success = await render_video(content, broll_paths, output_path, voice_config, music_file)
     
@@ -2550,7 +2556,7 @@ async def main():
         safe_print(f"   VIDEO {i+1}/{args.count}")
         safe_print(f"{'='*70}")
         
-        path = await generate_pro_video(hint, BATCH_TRACKER)
+        path = await generate_pro_video(hint, BATCH_TRACKER, args.output_dir)
     
     # Upload phase
     if should_upload and BATCH_TRACKER.video_scores:
