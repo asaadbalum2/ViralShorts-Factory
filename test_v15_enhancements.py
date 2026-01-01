@@ -265,6 +265,40 @@ def test_god_tier_prompts():
         return False
 
 
+def test_performance_dashboard():
+    """Test the Performance Dashboard."""
+    safe_print("\n" + "="*60)
+    safe_print("TEST 6: Performance Dashboard")
+    safe_print("="*60)
+    
+    try:
+        from performance_dashboard import get_dashboard
+        
+        dashboard = get_dashboard()
+        safe_print("[OK] PerformanceDashboard initialized")
+        
+        # Test metrics collection
+        metrics = dashboard.collect_metrics()
+        safe_print(f"   Metrics collected: {len(metrics)} categories")
+        
+        # Test summary string
+        summary = dashboard.get_summary_string()
+        safe_print(f"   Summary length: {len(summary)} chars")
+        
+        # Test HTML export
+        html = dashboard.export_html()
+        safe_print(f"   HTML export length: {len(html)} chars")
+        
+        safe_print("\n[OK] Performance Dashboard: ALL TESTS PASSED")
+        return True
+        
+    except Exception as e:
+        safe_print(f"[FAIL] Performance Dashboard: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+
 def main():
     """Run all tests."""
     safe_print("\n" + "="*70)
@@ -278,6 +312,7 @@ def main():
     results.append(("Pro Video Generator Integration", test_pro_video_generator_integration()))
     results.append(("Workflow Configurations", test_workflow_configurations()))
     results.append(("God-Tier Prompts", test_god_tier_prompts()))
+    results.append(("Performance Dashboard", test_performance_dashboard()))
     
     safe_print("\n" + "="*70)
     safe_print("   FINAL RESULTS")
