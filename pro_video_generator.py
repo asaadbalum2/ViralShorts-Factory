@@ -540,10 +540,29 @@ class MasterAI:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                # v16.6: Use gemini-1.5-flash which HAS free tier quota
-                # gemini-2.0-flash-exp has ZERO free quota!
-                self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
-                safe_print("[OK] Gemini AI initialized (1.5-flash - has free quota)")
+                
+                # v16.7: DYNAMIC Gemini model selection - no hardcoding!
+                # Uses QuotaOptimizer to discover available models
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                available_models = optimizer.get_gemini_models(self.gemini_key)
+                
+                # Try models in priority order (flash > pro)
+                self.gemini_model = None
+                self.gemini_models_list = available_models  # Store for fallback attempts
+                for model_name in available_models:
+                    try:
+                        self.gemini_model = genai.GenerativeModel(model_name)
+                        safe_print(f"[OK] Gemini AI initialized ({model_name} - dynamic selection)")
+                        break
+                    except Exception as model_err:
+                        safe_print(f"[!] Gemini model {model_name} failed: {model_err}")
+                        continue
+                
+                if not self.gemini_model:
+                    # Last resort fallback
+                    self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+                    safe_print("[OK] Gemini AI initialized (fallback: gemini-1.5-flash)")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")
         
@@ -652,52 +671,48 @@ class MasterAI:
                 else:
                     safe_print(f"[!] Groq error: {e}")
         
-        # Secondary: Gemini 2.0 Flash (experimental, stricter limits)
-        if self.gemini_model:
+        # Secondary: Gemini - v16.7 DYNAMIC model selection
+        # Try all available Gemini models in priority order
+        if self.gemini_key:
             try:
-                response = self.gemini_model.generate_content(prompt)
-                return response.text
+                import google.generativeai as genai
+                genai.configure(api_key=self.gemini_key)
+                
+                # Get dynamically discovered models
+                gemini_models_to_try = getattr(self, 'gemini_models_list', [
+                    'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.0-pro'
+                ])
+                
+                for model_name in gemini_models_to_try:
+                    try:
+                        # Try with and without models/ prefix
+                        model = genai.GenerativeModel(f'models/{model_name}')
+                        response = model.generate_content(prompt)
+                        if self.budget_manager:
+                            self.budget_manager.record_usage("gemini", max_tokens)
+                        return response.text
+                    except Exception as model_err:
+                        error_str = str(model_err)
+                        if '429' in error_str:
+                            safe_print(f"[!] Gemini {model_name} rate limit, trying next...")
+                            continue
+                        elif '404' in error_str:
+                            # Try without prefix
+                            try:
+                                model = genai.GenerativeModel(model_name)
+                                response = model.generate_content(prompt)
+                                if self.budget_manager:
+                                    self.budget_manager.record_usage("gemini", max_tokens)
+                                return response.text
+                            except:
+                                safe_print(f"[!] Gemini {model_name} not available, trying next...")
+                                continue
+                        else:
+                            safe_print(f"[!] Gemini {model_name} error: {model_err}")
+                            continue
+                            
             except Exception as e:
                 error_str = str(e)
-                if '429' in error_str:
-                    retry_delay = extract_retry_delay(error_str)
-                    safe_print(f"[!] Gemini 2.0 rate limit - waiting {min(retry_delay, 30)}s...")
-                    time.sleep(min(retry_delay, 30))
-                else:
-                    safe_print(f"[!] Gemini 2.0 error: {e}")
-        
-        # Tertiary: Gemini 1.5 Flash (more stable, higher limits)
-        try:
-            import google.generativeai as genai
-            # Re-configure for fallback models (in case config was lost)
-            if self.gemini_key:
-                genai.configure(api_key=self.gemini_key)
-            # Use correct model names - models/ prefix required for v1beta
-            fallback = genai.GenerativeModel('models/gemini-1.5-flash')
-            response = fallback.generate_content(prompt)
-            return response.text
-        except Exception as e:
-            error_str = str(e)
-            if '429' in error_str:
-                retry_delay = extract_retry_delay(error_str)
-                safe_print(f"[!] Gemini 1.5 rate limit - waiting {min(retry_delay, 30)}s...")
-                time.sleep(min(retry_delay, 30))
-            elif '404' in error_str:
-                safe_print(f"[!] Gemini 1.5-flash not available, trying next...")
-            else:
-                safe_print(f"[!] Gemini 1.5 fallback error: {e}")
-        
-        # Quaternary: Try Gemini 1.5 Pro as last resort
-        try:
-            import google.generativeai as genai
-            if self.gemini_key:
-                genai.configure(api_key=self.gemini_key)
-            # Updated model name with models/ prefix
-            last_resort = genai.GenerativeModel('models/gemini-1.5-pro')
-            response = last_resort.generate_content(prompt)
-            return response.text
-        except Exception as e:
-            error_str = str(e)
             if '404' in error_str:
                 safe_print(f"[!] Gemini 1.5-pro not available either")
             else:

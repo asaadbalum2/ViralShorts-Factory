@@ -153,6 +153,64 @@ class QuotaOptimizer:
         return []
     
     # ========================================================================
+    # GEMINI MODELS - Dynamic discovery with free tier priority
+    # ========================================================================
+    def get_gemini_models(self, api_key: str = None) -> List[str]:
+        """
+        Get available Gemini models, prioritizing those with free tier.
+        
+        Uses genai.list_models() to discover available models dynamically.
+        Cached for 24 hours.
+        """
+        if self._is_valid("gemini_models", self.TTL_MODELS):
+            safe_print("[CACHE] Using cached Gemini models")
+            return self.cache["gemini_models"]["data"]
+        
+        # Default fallback models (known working free tier models)
+        # Priority: 1.5-flash (free) > 1.5-pro (limited free) > experimental
+        default_models = [
+            "gemini-1.5-flash",
+            "gemini-1.5-pro", 
+            "gemini-1.0-pro"
+        ]
+        
+        if not api_key:
+            return default_models
+        
+        try:
+            import google.generativeai as genai
+            genai.configure(api_key=api_key)
+            
+            # List all available models
+            models = genai.list_models()
+            
+            # Filter for generative models with free tier
+            free_models = []
+            for model in models:
+                model_name = model.name.replace("models/", "")
+                # Check if it supports generateContent
+                if "generateContent" in getattr(model, "supported_generation_methods", []):
+                    # Prioritize flash models (more quota)
+                    if "flash" in model_name.lower():
+                        free_models.insert(0, model_name)
+                    elif "pro" in model_name.lower():
+                        free_models.append(model_name)
+            
+            if free_models:
+                self.cache["gemini_models"] = {
+                    "data": free_models[:5],  # Keep top 5
+                    "timestamp": time.time()
+                }
+                self._save_cache()
+                safe_print(f"[CACHE] Found {len(free_models)} Gemini models")
+                return free_models[:5]
+                
+        except Exception as e:
+            safe_print(f"[!] Gemini model discovery failed: {e}")
+        
+        return default_models
+    
+    # ========================================================================
     # OPENROUTER FREE MODELS - Cached for 24 hours
     # ========================================================================
     def get_openrouter_free_models(self, api_key: str = None) -> List[str]:
