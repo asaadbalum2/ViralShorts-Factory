@@ -458,6 +458,12 @@ class MasterAI:
     
     Uses BatchTracker to ensure no repetition in category/topic/voice/music.
     Multi-provider fallback: Groq -> Gemini -> OpenRouter
+    
+    v15.0: Smart Token Budget Management
+    - Tracks token usage across all providers
+    - Distributes load to avoid rate limits
+    - Reserves Groq for critical tasks
+    - Uses FirstAttemptMaximizer to reduce regenerations
     """
     
     def __init__(self):
@@ -468,6 +474,27 @@ class MasterAI:
         self.client = None
         self.gemini_model = None
         self.openrouter_available = bool(self.openrouter_key)
+        
+        # v15.0: Initialize token budget manager
+        try:
+            from token_budget_manager import get_budget_manager, get_first_attempt_maximizer
+            self.budget_manager = get_budget_manager()
+            self.first_attempt = get_first_attempt_maximizer()
+            self.budget_manager.print_status()
+            safe_print(f"[OK] Token Budget Manager initialized - {self.budget_manager.estimate_videos_remaining()} videos remaining today")
+        except Exception as e:
+            safe_print(f"[!] Token Budget Manager not available: {e}")
+            self.budget_manager = None
+            self.first_attempt = None
+        
+        # v15.0: Initialize self-learning engine
+        try:
+            from self_learning_engine import get_learning_engine
+            self.learning_engine = get_learning_engine()
+            safe_print(f"[OK] Self-Learning Engine initialized - {self.learning_engine.data['stats']['total_videos']} videos analyzed")
+        except Exception as e:
+            safe_print(f"[!] Self-Learning Engine not available: {e}")
+            self.learning_engine = None
         
         if self.groq_key:
             try:
@@ -495,7 +522,7 @@ class MasterAI:
             safe_print("[OK] OpenRouter AI initialized (fallback)")
     
     def call_ai(self, prompt: str, max_tokens: int = 2000, temperature: float = 0.9, 
-                 prefer_gemini: bool = False) -> str:
+                 prefer_gemini: bool = False, task: str = "general") -> str:
         """
         Call AI with smart load balancing: Groq for speed, Gemini for capacity.
         
@@ -504,14 +531,24 @@ class MasterAI:
         - prefer_gemini=False: Use Groq first (for time-sensitive tasks)
         
         v13.2: Smart backoff on 429 errors - wait and retry
+        v15.0: Budget-aware provider selection with token tracking
         
         Fallback chain: Primary -> Secondary -> Tertiary -> Quaternary
+        
+        Args:
+            task: Task type for budget tracking ("concept", "content", "evaluate", etc.)
         """
         import time
         import re
         
+        # v15.0: Use budget manager for provider selection if available
+        chosen_provider = None
+        if self.budget_manager:
+            chosen_provider = self.budget_manager.choose_provider(task, prefer_quality=not prefer_gemini)
+            safe_print(f"   [Budget] Task '{task}' -> Provider: {chosen_provider}")
+        
         # v13.2: Track retry state
-        base_delay = 1.0
+        base_delay = 0.5 if chosen_provider else 1.0  # Reduced delay with budget awareness
         time.sleep(base_delay)  # Rate limit protection between AI calls
         
         def extract_retry_delay(error_msg: str) -> int:
@@ -521,8 +558,26 @@ class MasterAI:
                 return int(float(match.group(1))) + 2  # Add buffer
             return 60  # Default 60s if not found
         
-        # v8.2: Smart load balancing
-        if prefer_gemini and self.gemini_model:
+        # v15.0: Budget-aware provider selection
+        if chosen_provider == "gemini" and self.gemini_model:
+            try:
+                response = self.gemini_model.generate_content(prompt)
+                if self.budget_manager:
+                    self.budget_manager.record_usage("gemini", max_tokens)
+                return response.text
+            except Exception as e:
+                error_str = str(e)
+                if '429' in error_str:
+                    delay = extract_retry_delay(error_str)
+                    if self.budget_manager:
+                        self.budget_manager.record_429("gemini", delay)
+                    safe_print(f"[!] Gemini 429 - switching to fallback...")
+                else:
+                    safe_print(f"[!] Gemini error: {e}")
+                # Fall through to other providers
+        
+        # v8.2: Smart load balancing (original logic as fallback)
+        if prefer_gemini and self.gemini_model and chosen_provider != "gemini":
             # Try Gemini first to save Groq quota
             try:
                 response = self.gemini_model.generate_content(prompt)
@@ -532,7 +587,9 @@ class MasterAI:
                 # Fall through to Groq
         
         # Primary: Groq (fastest, 100K tokens/day)
-        if self.client:
+        # v15.0: Skip if budget says to use different provider and not in fallback mode
+        use_groq = self.client and (chosen_provider == "groq" or chosen_provider is None)
+        if use_groq:
             try:
                 response = self.client.chat.completions.create(
                     model="llama-3.3-70b-versatile",
@@ -540,12 +597,18 @@ class MasterAI:
                     max_tokens=max_tokens,
                     temperature=temperature
                 )
+                # v15.0: Record token usage
+                if self.budget_manager:
+                    self.budget_manager.record_usage("groq", max_tokens)
                 return response.choices[0].message.content
             except Exception as e:
                 error_str = str(e)
                 if '429' in error_str:
                     retry_delay = extract_retry_delay(error_str)
-                    safe_print(f"[!] Groq rate limit hit - waiting {retry_delay}s before fallback...")
+                    # v15.0: Record 429 in budget manager
+                    if self.budget_manager:
+                        self.budget_manager.record_429("groq", retry_delay)
+                    safe_print(f"[!] Groq rate limit hit - waiting {min(retry_delay, 30)}s before fallback...")
                     time.sleep(min(retry_delay, 30))  # Cap at 30s to avoid long waits
                 else:
                     safe_print(f"[!] Groq error: {e}")
@@ -627,6 +690,9 @@ class MasterAI:
                     result = response.json()
                     content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
                     if content:
+                        # v15.0: Record OpenRouter usage
+                        if self.budget_manager:
+                            self.budget_manager.record_usage("openrouter", max_tokens)
                         safe_print(f"[OK] OpenRouter succeeded!")
                         return content
                     else:
@@ -708,6 +774,16 @@ class MasterAI:
         # v12.0: Get v12 master prompt with ALL 330 enhancements
         v12_guidelines = V12_MASTER_PROMPT if ENHANCEMENTS_V12_AVAILABLE else ""
         
+        # v15.0: Get first-attempt quality boost to avoid regenerations
+        first_attempt_boost = ""
+        if self.first_attempt:
+            first_attempt_boost = self.first_attempt.get_quality_boost_prompt()
+        
+        # v15.0: Get self-learning insights
+        learning_boost = ""
+        if self.learning_engine:
+            learning_boost = self.learning_engine.get_prompt_boost()
+        
         prompt = f"""You are a VIRAL CONTENT STRATEGIST for short-form video (YouTube Shorts, TikTok).
 Your job is to decide what video to create that will get MAXIMUM views while delivering REAL value.
 
@@ -722,6 +798,10 @@ DATE: {time.strftime('%B %d, %Y, %A')}
 {viral_boost}
 
 {v12_guidelines}
+
+{first_attempt_boost}
+
+{learning_boost}
 
 === YOUR DECISION TASKS ===
 
@@ -761,7 +841,8 @@ DATE: {time.strftime('%B %d, %Y, %A')}
 
 OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
 
-        response = self.call_ai(prompt, 800, temperature=0.98)  # Higher temp for variety
+        # v15.0: Use task-specific call for budget tracking
+        response = self.call_ai(prompt, 800, temperature=0.98, task="concept")  # Higher temp for variety
         result = self.parse_json(response)
         
         if result:
@@ -905,6 +986,11 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         # v12.0: Get v12 master prompt with ALL 330 enhancements
         v12_guidelines = V12_MASTER_PROMPT if ENHANCEMENTS_V12_AVAILABLE else ""
         
+        # v15.0: Get first-attempt quality boost to avoid regenerations
+        first_attempt_boost = ""
+        if self.first_attempt and not is_regeneration:
+            first_attempt_boost = self.first_attempt.get_quality_boost_prompt()
+        
         # v13.1: Handle regeneration feedback for quality enforcement
         regen_feedback = ""
         if concept.get('regeneration_feedback'):
@@ -934,6 +1020,8 @@ Phrase Count: {phrase_count} phrases ONLY
 {viral_boost}
 
 {v12_guidelines}
+
+{first_attempt_boost}
 
 === v8.0 CONTENT RULES ===
 
@@ -981,7 +1069,8 @@ CRITICAL:
 - UNDER 15 words per phrase
 OUTPUT JSON ONLY."""
 
-        response = self.call_ai(prompt, 1200, temperature=0.85)
+        # v15.0: Task-specific call for budget tracking
+        response = self.call_ai(prompt, 1200, temperature=0.85, task="content")
         result = self.parse_json(response)
         
         if result and result.get('phrases'):
@@ -1077,7 +1166,8 @@ Ask yourself these questions for EACH phrase:
 CRITICAL: Do NOT include "Phrase 1:", "Improved phrase 1:" etc. - just the actual text!
 OUTPUT JSON ONLY."""
 
-        response = self.call_ai(prompt, 1200, temperature=0.7)
+        # v15.0: Task-specific call for budget tracking
+        response = self.call_ai(prompt, 1200, temperature=0.7, task="evaluate")
         result = self.parse_json(response)
         
         if result:
@@ -1141,7 +1231,8 @@ Return exactly {len(phrases)} keywords as JSON array:
 JSON ARRAY ONLY."""
 
         # v8.2: Use Gemini for this task to save Groq quota
-        response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True)
+        # v15.0: Task-specific call for budget tracking
+        response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True, task="broll")
         
         try:
             if "[" in response:
@@ -1222,7 +1313,8 @@ Create 3 different styles based on the learned patterns above:
 JSON ONLY."""
 
         # v8.2: Use Gemini for this task to save Groq quota
-        response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True)
+        # v15.0: Task-specific call for budget tracking
+        response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True, task="metadata")
         result = self.parse_json(response)
         
         if result and result.get('title_variants'):
@@ -1326,7 +1418,8 @@ Return JSON:
 
 JSON ONLY."""
 
-        response = self.call_ai(prompt, 150, temperature=0.8, prefer_gemini=True)
+        # v15.0: Task-specific call for budget tracking (voice selection is part of metadata)
+        response = self.call_ai(prompt, 150, temperature=0.8, prefer_gemini=True, task="metadata")
         result = self.parse_json(response)
         
         selected_voice = None
@@ -2359,6 +2452,27 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             else:
                 safe_print(f"   [QUALITY] WARNING: Could not reach {MINIMUM_ACCEPTABLE_SCORE}/10 after {regeneration_attempts} attempts. Best: {score}/10")
                 content['quality_warning'] = True
+            
+            # v15.0: Record result for FirstAttemptMaximizer learning
+            if self.first_attempt:
+                self.first_attempt.record_result(
+                    score=score,
+                    category=concept.get('category', 'unknown'),
+                    hook=content.get('phrases', [''])[0] if content.get('phrases') else '',
+                    was_regeneration=regeneration_attempts > 0
+                )
+                safe_print(f"   [LEARNING] Recorded quality result for future optimization")
+            
+            # v15.0: Record to self-learning engine for pattern analysis
+            if self.learning_engine and content.get('phrases'):
+                self.learning_engine.learn_from_video(
+                    score=score,
+                    category=concept.get('category', 'unknown'),
+                    topic=concept.get('specific_topic', 'unknown'),
+                    hook=content.get('phrases', [''])[0],
+                    phrases=content.get('phrases', []),
+                    was_regeneration=regeneration_attempts > 0
+                )
             
             # 2. Validate and fix numbered promises
             phrases = content.get('phrases', [])
