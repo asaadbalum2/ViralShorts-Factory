@@ -1026,8 +1026,27 @@ YOU MUST CREATE BETTER CONTENT THIS TIME:
 
 """
         
+        # v16.0 FIX: Convert enhancement instructions to actionable prompt text
+        enhancement_boost = ""
+        if concept.get('enhancement_instructions'):
+            enhancements = concept['enhancement_instructions']
+            enhancement_lines = []
+            for key, value in enhancements.items():
+                if value and isinstance(value, str):
+                    enhancement_lines.append(f"- {key.replace('_', ' ').upper()}: {value}")
+                elif value and isinstance(value, dict) and value.get('instruction'):
+                    enhancement_lines.append(f"- {key.replace('_', ' ').upper()}: {value['instruction']}")
+            if enhancement_lines:
+                enhancement_boost = f"""
+=== v16.0 QUALITY ENHANCEMENTS (MUST FOLLOW!) ===
+{chr(10).join(enhancement_lines[:8])}
+=================================================
+
+"""
+        
         prompt = f"""You are a VIRAL CONTENT CREATOR. Create SCROLL-STOPPING content for this video.
 {regen_feedback}
+{enhancement_boost}
 
 === VIDEO CONCEPT ===
 Category: {concept.get('category', 'educational')}
@@ -2358,6 +2377,11 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                         hint = pre_check.get('modifications', {}).get('suggested_topic', hint)
                         continue
                 else:
+                    # v16.0 FIX: INJECT enhancement instructions into concept!
+                    # These were calculated but NEVER used before!
+                    if pre_check.get('enhancements'):
+                        concept['enhancement_instructions'] = pre_check['enhancements']
+                        safe_print(f"   [v16.0] Injecting {len(pre_check['enhancements'])} enhancement instructions!")
                     break  # Concept is unique, proceed
             except Exception as e:
                 safe_print(f"   [!] Pre-check skipped: {e}")
@@ -2473,8 +2497,8 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                 content['quality_warning'] = True
             
             # v15.0: Record result for FirstAttemptMaximizer learning
-            if self.first_attempt:
-                self.first_attempt.record_result(
+            if ai.first_attempt:
+                ai.first_attempt.record_result(
                     score=score,
                     category=concept.get('category', 'unknown'),
                     hook=content.get('phrases', [''])[0] if content.get('phrases') else '',
@@ -2483,8 +2507,8 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                 safe_print(f"   [LEARNING] Recorded quality result for future optimization")
             
             # v15.0: Record to self-learning engine for pattern analysis
-            if self.learning_engine and content.get('phrases'):
-                self.learning_engine.learn_from_video(
+            if ai.learning_engine and content.get('phrases'):
+                ai.learning_engine.learn_from_video(
                     score=score,
                     category=concept.get('category', 'unknown'),
                     topic=concept.get('specific_topic', 'unknown'),
