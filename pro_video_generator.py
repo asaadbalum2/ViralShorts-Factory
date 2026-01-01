@@ -706,44 +706,57 @@ class MasterAI:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
         # v13.5: Quinary - OpenRouter as final fallback (free tier models)
+        # v16.4: Try multiple free models in case one is rate limited
+        free_models = [
+            "meta-llama/llama-3.2-3b-instruct:free",
+            "google/gemma-2-9b-it:free",
+            "mistralai/mistral-7b-instruct:free",
+            "huggingfaceh4/zephyr-7b-beta:free",
+            "openchat/openchat-7b:free"
+        ]
+        
         safe_print("[*] Trying OpenRouter fallback...")
         if self.openrouter_available:
-            try:
-                import requests
-                safe_print(f"[*] OpenRouter: Calling API...")
-                response = requests.post(
-                    "https://openrouter.ai/api/v1/chat/completions",
-                    headers={
-                        "Authorization": f"Bearer {self.openrouter_key}",
-                        "HTTP-Referer": "https://github.com/viralshorts-factory",
-                        "X-Title": "ViralShorts Factory"
-                    },
-                    json={
-                        "model": "meta-llama/llama-3.2-3b-instruct:free",  # Free model
-                        "messages": [{"role": "user", "content": prompt}],
-                        "max_tokens": max_tokens,
-                        "temperature": temperature
-                    },
-                    timeout=60
-                )
-                safe_print(f"[*] OpenRouter: Status {response.status_code}")
-                if response.status_code == 200:
-                    result = response.json()
-                    content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
-                    if content:
-                        # v15.0: Record OpenRouter usage
-                        if self.budget_manager:
-                            self.budget_manager.record_usage("openrouter", max_tokens)
-                        if self.quota_monitor:
-                            self.quota_monitor.record_usage("openrouter", max_tokens)
-                        safe_print(f"[OK] OpenRouter succeeded!")
-                        return content
+            import requests
+            for model in free_models:
+                try:
+                    safe_print(f"[*] OpenRouter: Trying {model.split('/')[1][:20]}...")
+                    response = requests.post(
+                        "https://openrouter.ai/api/v1/chat/completions",
+                        headers={
+                            "Authorization": f"Bearer {self.openrouter_key}",
+                            "HTTP-Referer": "https://github.com/viralshorts-factory",
+                            "X-Title": "ViralShorts Factory"
+                        },
+                        json={
+                            "model": model,
+                            "messages": [{"role": "user", "content": prompt}],
+                            "max_tokens": max_tokens,
+                            "temperature": temperature
+                        },
+                        timeout=60
+                    )
+                    if response.status_code == 200:
+                        result = response.json()
+                        content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+                        if content:
+                            # v15.0: Record OpenRouter usage
+                            if self.budget_manager:
+                                self.budget_manager.record_usage("openrouter", max_tokens)
+                            if self.quota_monitor:
+                                self.quota_monitor.record_usage("openrouter", max_tokens)
+                            safe_print(f"[OK] OpenRouter succeeded with {model.split('/')[1][:20]}!")
+                            return content
+                        else:
+                            safe_print(f"[!] OpenRouter: Empty response")
+                    elif response.status_code == 429:
+                        safe_print(f"[!] {model.split('/')[1][:15]} rate limited, trying next...")
+                        continue  # Try next model
                     else:
-                        safe_print(f"[!] OpenRouter: Empty response")
-                else:
-                    safe_print(f"[!] OpenRouter error: {response.status_code} - {response.text[:200]}")
-            except Exception as e:
-                safe_print(f"[!] OpenRouter fallback error: {e}")
+                        safe_print(f"[!] OpenRouter error: {response.status_code}")
+                except Exception as e:
+                    safe_print(f"[!] OpenRouter error: {e}")
+                    continue  # Try next model
         else:
             safe_print("[!] OpenRouter not available (no key)")
         
