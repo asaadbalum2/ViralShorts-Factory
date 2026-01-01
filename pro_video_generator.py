@@ -935,7 +935,6 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
                 if concept:
                     safe_print("   [FALLBACK] Using pre-generated concept")
                     # v16.2: Dynamic defaults instead of hardcoded
-                    import random
                     random_cat = random.choice(BASE_CATEGORIES)
                     result = {
                         'category': concept.get('category', random_cat),
@@ -961,7 +960,6 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         # Ultimate fallback - v16.2: Dynamic even in fallback mode!
         safe_print("   [!] Concept generation failed completely - using dynamic fallback")
         # Rotate through categories to maintain variety even in failures
-        import random
         fallback_categories = BASE_CATEGORIES.copy()
         random.shuffle(fallback_categories)
         fallback_cat = fallback_categories[0]
@@ -1401,7 +1399,6 @@ JSON ONLY."""
             variants = result.get('title_variants', [])
             if variants:
                 # FULL A/B Testing: Weight toward learned best styles
-                import random
                 
                 # Try to get learned best styles from analytics
                 best_styles = []
@@ -2434,7 +2431,6 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     if not concept:
         safe_print("[!] Concept generation failed - trying dynamic fallback")
         # v16.2: Dynamic fallback - no hardcoded topics!
-        import random
         fallback_categories = BASE_CATEGORIES.copy()
         random.shuffle(fallback_categories)
         fallback_cat = fallback_categories[0]
