@@ -934,13 +934,16 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
                 concept = get_next_concept()
                 if concept:
                     safe_print("   [FALLBACK] Using pre-generated concept")
+                    # v16.2: Dynamic defaults instead of hardcoded
+                    import random
+                    random_cat = random.choice(BASE_CATEGORIES)
                     result = {
-                        'category': concept.get('category', 'psychology'),
-                        'specific_topic': concept.get('topic', 'Amazing Fact'),
-                        'phrase_count': 6,
-                        'voice_style': concept.get('voice_style', 'energetic'),
-                        'music_mood': concept.get('music_mood', 'upbeat'),
-                        'target_duration_seconds': concept.get('target_duration', 30),
+                        'category': concept.get('category', random_cat),
+                        'specific_topic': concept.get('topic', f'{random_cat.replace("_", " ").title()} Insight'),
+                        'phrase_count': concept.get('phrase_count', random.randint(4, 6)),
+                        'voice_style': concept.get('voice_style', random.choice(['energetic', 'dramatic', 'confident'])),
+                        'music_mood': concept.get('music_mood', random.choice(['upbeat', 'dramatic', 'mysterious'])),
+                        'target_duration_seconds': concept.get('target_duration', random.randint(25, 35)),
                     }
                     if batch_tracker:
                         batch_tracker.used_categories.append(result['category'])
@@ -955,15 +958,30 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
             safe_print("   [LAST RESORT] Using saved backup concept")
             return backup
         
-        # Ultimate fallback
-        safe_print("   [!] Concept generation failed completely")
+        # Ultimate fallback - v16.2: Dynamic even in fallback mode!
+        safe_print("   [!] Concept generation failed completely - using dynamic fallback")
+        # Rotate through categories to maintain variety even in failures
+        import random
+        fallback_categories = BASE_CATEGORIES.copy()
+        random.shuffle(fallback_categories)
+        fallback_cat = fallback_categories[0]
+        
+        # Dynamic topic templates that work for any category
+        topic_templates = [
+            f"Shocking {fallback_cat.replace('_', ' ').title()} Fact Most People Miss",
+            f"The {fallback_cat.replace('_', ' ').title()} Truth Nobody Talks About",
+            f"Why Your {fallback_cat.replace('_', ' ').title()} Approach is Wrong",
+            f"3 {fallback_cat.replace('_', ' ').title()} Secrets That Change Everything",
+            f"The Hidden {fallback_cat.replace('_', ' ').title()} Rule Experts Use"
+        ]
+        
         return {
-            'category': 'psychology',
-            'specific_topic': 'Mind-Blowing Fact',
-            'phrase_count': 5,
-            'voice_style': 'energetic',
-            'music_mood': 'dramatic',
-            'target_duration_seconds': 30
+            'category': fallback_cat,
+            'specific_topic': random.choice(topic_templates),
+            'phrase_count': random.randint(4, 6),
+            'voice_style': random.choice(['energetic', 'dramatic', 'confident', 'curious']),
+            'music_mood': random.choice(['dramatic', 'upbeat', 'mysterious', 'intense']),
+            'target_duration_seconds': random.randint(25, 35)
         }
     
     def _save_concept_backup(self, concept: Dict):
@@ -2414,15 +2432,26 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             break
         
     if not concept:
-        safe_print("[!] Concept generation failed - trying fallback")
-        # v7.17: Emergency fallback concept
+        safe_print("[!] Concept generation failed - trying dynamic fallback")
+        # v16.2: Dynamic fallback - no hardcoded topics!
+        import random
+        fallback_categories = BASE_CATEGORIES.copy()
+        random.shuffle(fallback_categories)
+        fallback_cat = fallback_categories[0]
+        
+        topic_templates = [
+            f"Mind-Blowing {fallback_cat.replace('_', ' ').title()} Secret",
+            f"The {fallback_cat.replace('_', ' ').title()} Trick That Works Every Time",
+            f"What 99% Get Wrong About {fallback_cat.replace('_', ' ').title()}",
+        ]
+        
         concept = {
-            'category': 'psychology',
-            'specific_topic': 'Surprising Human Behavior Fact',
-            'phrase_count': 5,
-            'voice_style': 'energetic',
-            'music_mood': 'upbeat',
-            'target_duration_seconds': 30
+            'category': fallback_cat,
+            'specific_topic': random.choice(topic_templates),
+            'phrase_count': random.randint(4, 6),
+            'voice_style': random.choice(['energetic', 'dramatic', 'confident']),
+            'music_mood': random.choice(['dramatic', 'upbeat', 'mysterious']),
+            'target_duration_seconds': random.randint(25, 35)
         }
     
     # Stage 2: AI creates content
