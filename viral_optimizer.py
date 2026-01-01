@@ -261,8 +261,18 @@ def generate_viral_title_ai(hook: str, content: str, video_type: str) -> Dict:
     
     try:
         client = Groq(api_key=api_key)
+        
+        # v16.8: DYNAMIC MODEL - No hardcoded model names
+        try:
+            from quota_optimizer import get_quota_optimizer
+            optimizer = get_quota_optimizer()
+            groq_models = optimizer.get_groq_models(api_key)
+            model_to_use = groq_models[0] if groq_models else "llama-3.3-70b-versatile"
+        except:
+            model_to_use = "llama-3.3-70b-versatile"
+        
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model=model_to_use,
             messages=[{
                 "role": "user",
                 "content": f"""You are a YouTube SEO expert with 10M+ subscribers.

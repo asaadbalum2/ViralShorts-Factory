@@ -1,0 +1,35 @@
+{
+  "groq": {
+    "name": "groq",
+    "daily_limit": 90000,
+    "used_today": 0,
+    "reserved": 30000,
+    "last_reset": "2026-01-02T00:07:39.739873",
+    "calls_today": 0,
+    "avg_tokens_per_call": 2000,
+    "last_429_time": null,
+    "cooldown_until": null
+  },
+  "gemini": {
+    "name": "gemini",
+    "daily_limit": 900000,
+    "used_today": 0,
+    "reserved": 0,
+    "last_reset": "2026-01-02T00:07:39.739873",
+    "calls_today": 0,
+    "avg_tokens_per_call": 1500,
+    "last_429_time": null,
+    "cooldown_until": null
+  },
+  "openrouter": {
+    "name": "openrouter",
+    "daily_limit": 200000,
+    "used_today": 0,
+    "reserved": 0,
+    "last_reset": "2026-01-02T00:07:39.739873",
+    "calls_today": 0,
+    "avg_tokens_per_call": 1500,
+    "last_429_time": null,
+    "cooldown_until": null
+  }
+}

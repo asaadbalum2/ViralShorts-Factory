@@ -1,0 +1,94 @@
+{
+  "patterns": {
+    "hooks": [
+      {
+        "value": "pattern_interrupt",
+        "success_count": 3,
+        "failure_count": 0,
+        "last_used": "2026-01-01T22:11:27.565694",
+        "examples": [
+          "STOP - This is a test hook that works"
+        ]
+      }
+    ],
+    "topics": [],
+    "categories": [
+      {
+        "value": "test_category",
+        "success_count": 3,
+        "failure_count": 0,
+        "last_used": "2026-01-01T22:11:27.565712",
+        "examples": [
+          "Test topic for verification"
+        ]
+      }
+    ],
+    "phrases": [
+      {
+        "value": "punchy",
+        "success_count": 3,
+        "failure_count": 0,
+        "last_used": "2026-01-01T22:11:27.565717",
+        "examples": [
+          "STOP - This is a test hook that works"
+        ]
+      }
+    ],
+    "numbers": [
+      {
+        "value": "round_number",
+        "success_count": 3,
+        "failure_count": 0,
+        "last_used": "2026-01-01T22:11:27.565720",
+        "examples": [
+          "$500"
+        ]
+      }
+    ],
+    "failures": [
+      {
+        "value": "specific_number",
+        "success_count": 0,
+        "failure_count": 3,
+        "last_used": "2026-01-01T22:11:27.566355",
+        "examples": [
+          "You're losing $3333 every year"
+        ]
+      },
+      {
+        "value": "bad_category",
+        "success_count": 0,
+        "failure_count": 3,
+        "last_used": "2026-01-01T22:11:27.566362",
+        "examples": [
+          "Bad topic with weird $3333 num"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "total_videos": 6,
+    "avg_first_attempt_score": 5.0,
+    "regeneration_rate": 0.84375,
+    "top_categories": [
+      "test_category"
+    ],
+    "worst_categories": [
+      "bad_category"
+    ]
+  },
+  "recommendations": {
+    "boost_phrases": [
+      "punchy"
+    ],
+    "avoid_phrases": [
+      "specific_number",
+      "bad_category"
+    ],
+    "best_hook_styles": [
+      "pattern_interrupt"
+    ],
+    "optimal_length": 4
+  },
+  "last_updated": "2026-01-01T22:11:27.566373"
+}

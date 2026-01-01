@@ -1,0 +1,120 @@
+{
+  "concept": {
+    "category": "productivity",
+    "specific_topic": "Morning Routines for Students to Boost Focus",
+    "why_this_topic": "This topic is viral and valuable because it targets a specific demographic (students) and provides a unique twist on morning habits by focusing on boosting focus, which is a highly relevant and shareable topic for students and young adults",
+    "phrase_count": 4,
+    "voice_style": "energetic",
+    "music_mood": "upbeat",
+    "target_duration_seconds": 20,
+    "global_relevance": "Improving productivity and focus is a universal goal for students worldwide, making this topic globally relevant and relatable",
+    "hook": "Want to make the most of your mornings? Start by avoiding these common mistakes",
+    "regeneration_feedback": "Previous attempt scored 4/10 - UNACCEPTABLE. Make it MORE engaging, MORE specific, MORE valuable. MINIMUM score needed: 8/10.",
+    "attempt_number": 3
+  },
+  "content": {
+    "phrases": [
+      "Want to make the most of your mornings? Start by avoiding these common mistakes",
+      "Improve focus with 3 simple 10-minute morning routines",
+      "Save up to 1 hour daily with effective prioritization",
+      "Ready to give it a try? Let us know in the comments!"
+    ],
+    "specific_value": "2 hours saved daily",
+    "hook_technique": "Pattern interrupt",
+    "engagement_bait": "Comment YES",
+    "concept": {
+      "category": "productivity",
+      "specific_topic": "Morning Routines for Students to Boost Focus",
+      "why_this_topic": "This topic is viral and valuable because it targets a specific demographic (students) and provides a unique twist on morning habits by focusing on boosting focus, which is a highly relevant and shareable topic for students and young adults",
+      "phrase_count": 4,
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration_seconds": 20,
+      "global_relevance": "Improving productivity and focus is a universal goal for students worldwide, making this topic globally relevant and relatable",
+      "hook": "Want to make the most of your mornings? Start by avoiding these common mistakes",
+      "regeneration_feedback": "Previous attempt scored 4/10 - UNACCEPTABLE. Make it MORE engaging, MORE specific, MORE valuable. MINIMUM score needed: 8/10.",
+      "attempt_number": 3
+    },
+    "evaluation_score": 4,
+    "value_delivered": "Viewers will learn 3 simple morning routines to improve their focus and save up to 1 hour daily",
+    "voice_pacing": [
+      {
+        "text": "Want to make the most of your mornings? Start by avoiding these common mistakes",
+        "rate": "+0%",
+        "emphasis_words": []
+      },
+      {
+        "text": "Improve focus with 3 simple 10-minute morning routines",
+        "rate": "+0%",
+        "emphasis_words": []
+      },
+      {
+        "text": "Save up to 1 hour daily with effective prioritization",
+        "rate": "+0%",
+        "emphasis_words": []
+      },
+      {
+        "text": "Ready to give it a try? Let us know in the comments!",
+        "rate": "+0%",
+        "emphasis_words": []
+      }
+    ],
+    "value_density": {
+      "value_score": 7,
+      "has_padding": false
+    },
+    "quality_warning": true,
+    "promise_fixed": false,
+    "selected_font": "poppins-bold",
+    "sfx_plan": [
+      "whoosh",
+      null,
+      "whoosh",
+      "whoosh"
+    ]
+  },
+  "metadata": {
+    "title": "Morning Routines for Students to Boost Focus",
+    "description": "Morning Routines for Students to Boost Focus #shorts #viral #facts",
+    "hashtags": [
+      "#shorts",
+      "#viral",
+      "#facts",
+      "#trending"
+    ]
+  },
+  "broll_keywords": [
+    "close up of person hitting snooze button",
+    "woman meditating in a sunny backyard",
+    "busy office worker efficiently organizing tasks on laptop",
+    "smiling person typing on phone with morning coffee"
+  ],
+  "voice_config": {
+    "voice": "en-US-AriaNeural",
+    "rate": "+8%"
+  },
+  "music_file": "upbeat",
+  "run_id": 38885,
+  "v9_enhancements": {
+    "post_render_quality": {
+      "approved": true,
+      "quality_score": 8,
+      "hook_strength": 7,
+      "readability": 9,
+      "payoff_satisfaction": 6,
+      "issues": [
+        "Pacing might be too fast for all viewers to read and understand the text"
+      ],
+      "suggestions": [
+        "Consider adding a brief pause or slowing down the text animation to improve readability"
+      ],
+      "predicted_retention": "medium",
+      "upload_recommendation": "upload"
+    },
+    "retention_prediction": null,
+    "value_density": {
+      "value_score": 7,
+      "has_padding": false
+    }
+  }
+}

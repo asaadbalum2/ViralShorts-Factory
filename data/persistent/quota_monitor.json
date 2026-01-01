@@ -1,0 +1,47 @@
+{
+  "groq": {
+    "name": "groq",
+    "daily_limit": 100000,
+    "hourly_limit": 15000,
+    "minute_limit": 400,
+    "used_today": 0,
+    "used_this_hour": 0,
+    "used_this_minute": 0,
+    "last_reset_day": "2026-01-01",
+    "last_reset_hour": "2026-01-01 22",
+    "last_reset_minute": "2026-01-01 22:07",
+    "last_429_time": null,
+    "is_exhausted": false,
+    "estimated_recovery_time": null
+  },
+  "gemini": {
+    "name": "gemini",
+    "daily_limit": 1000000,
+    "hourly_limit": 100000,
+    "minute_limit": 1600,
+    "used_today": 0,
+    "used_this_hour": 0,
+    "used_this_minute": 0,
+    "last_reset_day": "2026-01-01",
+    "last_reset_hour": "2026-01-01 22",
+    "last_reset_minute": "2026-01-01 22:07",
+    "last_429_time": null,
+    "is_exhausted": false,
+    "estimated_recovery_time": null
+  },
+  "openrouter": {
+    "name": "openrouter",
+    "daily_limit": 200000,
+    "hourly_limit": 20000,
+    "minute_limit": 500,
+    "used_today": 0,
+    "used_this_hour": 0,
+    "used_this_minute": 0,
+    "last_reset_day": "2026-01-01",
+    "last_reset_hour": "2026-01-01 22",
+    "last_reset_minute": "2026-01-01 22:07",
+    "last_429_time": null,
+    "is_exhausted": false,
+    "estimated_recovery_time": null
+  }
+}

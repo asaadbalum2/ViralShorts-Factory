@@ -125,8 +125,17 @@ Return 10 trending topics as JSON array:
 
 Only return valid JSON."""
 
+            # v16.8: DYNAMIC MODEL - No hardcoded model names
+            try:
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                groq_models = optimizer.get_groq_models()
+                model_to_use = groq_models[0] if groq_models else "llama-3.3-70b-versatile"
+            except:
+                model_to_use = "llama-3.3-70b-versatile"
+            
             response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=model_to_use,
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=500
             )
@@ -242,8 +251,17 @@ Keep it under 80 words. Make it punchy and viral.
 Return JSON:
 {{"enhanced_content": "The rewritten content", "emotional_hooks": ["hook1", "hook2"], "framework_used": "{framework}"}}"""
 
+            # v16.8: DYNAMIC MODEL - No hardcoded model names
+            try:
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                groq_models = optimizer.get_groq_models()
+                model_to_use = groq_models[0] if groq_models else "llama-3.3-70b-versatile"
+            except:
+                model_to_use = "llama-3.3-70b-versatile"
+            
             response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=model_to_use,
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=300
             )

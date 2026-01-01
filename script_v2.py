@@ -104,8 +104,17 @@ def extract_broll_keywords(text: str) -> List[str]:
             from groq import Groq
             client = Groq(api_key=GROQ_API_KEY)
             
+            # v16.8: DYNAMIC MODEL - No hardcoded model names
+            try:
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                groq_models = optimizer.get_groq_models(GROQ_API_KEY)
+                model_to_use = groq_models[0] if groq_models else "llama-3.1-8b-instant"
+            except:
+                model_to_use = "llama-3.1-8b-instant"
+            
             response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
+                model=model_to_use,
                 messages=[{
                     "role": "user",
                     "content": f"""Extract 3 visual keywords for finding stock video footage for this text:

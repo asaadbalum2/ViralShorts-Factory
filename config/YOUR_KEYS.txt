@@ -1,0 +1,22 @@
+# PASTE YOUR API KEYS HERE AS WE GO THROUGH STEPS
+# I'll guide you step by step
+
+# Step 1: Groq API Key ✅ DONE
+GROQ_API_KEY=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
+
+# Step 2: Reddit API ✅ DONE
+REDDIT_CLIENT_ID=xYQpnTvdFazG5Kj4NAYJ_Q
+REDDIT_CLIENT_SECRET=YE-cUcxK8CZ3GN0ubS9SuIC-8n059Q
+
+# Step 3: YouTube OAuth ✅ DONE (need Channel ID)
+YOUTUBE_CLIENT_ID=545895166701-g9qft1iae4tb24mf0t2br3dm2j89deip.apps.googleusercontent.com
+YOUTUBE_CLIENT_SECRET=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
+YOUTUBE_REFRESH_TOKEN=1//03jBFWhalGDg2CgYIARAAGAMSNwF-L9IrqF8PhucH0z4c3fLJQ8bL10d27Mj17b4Aa4qAvGJ7mbFH2w7V9KOWqePnsjdVglVfJxs
+YOUTUBE_CHANNEL_ID=4Y6O0ubwl0_ZQsLq2EteTQ
+
+# Step 4: Gmail - SKIPPED FOR NOW (optional, can add later)
+# To add later: Enable 2FA → App passwords → Generate → Add here
+EMAIL_ADDRESS=
+EMAIL_PASSWORD=
+REPORT_RECIPIENT=
+

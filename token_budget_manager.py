@@ -369,25 +369,42 @@ class BudgetAwareAICaller:
             return 60
         
         # Try the chosen provider
+        # v16.8: DYNAMIC MODEL - No hardcoded model names
         if provider == "groq" and self.groq_client:
+            # Get dynamic model list
             try:
-                response = self.groq_client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
-                    messages=[{"role": "user", "content": prompt}],
-                    max_tokens=max_tokens,
-                    temperature=temperature
-                )
-                result = response.choices[0].message.content
-                self.budget.record_usage("groq", max_tokens)
-                return result
-            except Exception as e:
-                error_str = str(e)
-                if '429' in error_str:
-                    delay = extract_retry_delay(error_str)
-                    self.budget.record_429("groq", delay)
-                    print(f"[BudgetAI] Groq 429 - falling back")
-                else:
-                    print(f"[BudgetAI] Groq error: {e}")
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                groq_models = optimizer.get_groq_models()
+            except:
+                groq_models = ["llama-3.3-70b-versatile"]  # Last resort fallback
+            
+            for model_name in groq_models:
+                try:
+                    response = self.groq_client.chat.completions.create(
+                        model=model_name,
+                        messages=[{"role": "user", "content": prompt}],
+                        max_tokens=max_tokens,
+                        temperature=temperature
+                    )
+                    result = response.choices[0].message.content
+                    self.budget.record_usage("groq", max_tokens)
+                    return result
+                except Exception as e:
+                    error_str = str(e)
+                    if '429' in error_str:
+                        print(f"[BudgetAI] Groq {model_name} 429 - trying next...")
+                        continue
+                    elif '404' in error_str:
+                        print(f"[BudgetAI] Groq {model_name} not found - trying next...")
+                        continue
+                    else:
+                        print(f"[BudgetAI] Groq {model_name} error: {e}")
+                        continue
+            
+            # All Groq models failed
+            self.budget.record_429("groq", 60)
+            print(f"[BudgetAI] All Groq models exhausted - falling back")
         
         if provider == "gemini" or provider == "groq":  # Fallback from Groq
             if self.gemini_model:

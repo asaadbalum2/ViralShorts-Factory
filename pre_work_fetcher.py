@@ -57,23 +57,43 @@ class PreWorkFetcher:
             except Exception as e:
                 safe_print(f"[!] Groq init failed: {e}")
         
-        # Gemini
+        # Gemini - v16.8: DYNAMIC MODEL
         gemini_key = os.environ.get("GEMINI_API_KEY")
         if gemini_key:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=gemini_key)
-                self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
-                safe_print("[OK] Gemini initialized")
+                
+                # v16.8: Get dynamic model list
+                try:
+                    from quota_optimizer import get_quota_optimizer
+                    optimizer = get_quota_optimizer()
+                    gemini_models = optimizer.get_gemini_models(gemini_key)
+                    model_to_use = gemini_models[0] if gemini_models else 'gemini-1.5-flash'
+                except:
+                    model_to_use = 'gemini-1.5-flash'
+                
+                self.gemini_model = genai.GenerativeModel(model_to_use)
+                self.gemini_models_list = gemini_models if 'gemini_models' in dir() else ['gemini-1.5-flash']
+                safe_print(f"[OK] Gemini initialized ({model_to_use})")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")
     
     def call_ai(self, prompt: str, max_tokens: int = 2000) -> str:
         """Call AI with fallback."""
+        # v16.8: DYNAMIC MODEL - No hardcoded model names
         if self.client:
             try:
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                groq_models = optimizer.get_groq_models()
+                model_to_use = groq_models[0] if groq_models else "llama-3.3-70b-versatile"
+            except:
+                model_to_use = "llama-3.3-70b-versatile"
+            
+            try:
                 response = self.client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model=model_to_use,
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=max_tokens,
                     temperature=0.9

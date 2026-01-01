@@ -1,0 +1,285 @@
+{
+  "last_updated": "2026-01-01T20:11:35.728357+00:00",
+  "summary": {
+    "total_videos_generated": 6,
+    "total_tokens_used": 0,
+    "avg_quality_score": 5.0,
+    "regeneration_rate": 0.84375
+  },
+  "history": [
+    {
+      "timestamp": "2026-01-01T16:45:48.241142+00:00",
+      "token_budget": {
+        "videos_remaining": 85,
+        "status": {
+          "groq": {
+            "available": 60000,
+            "used": 0,
+            "limit": 90000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "gemini": {
+            "available": 900000,
+            "used": 0,
+            "limit": 900000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "openrouter": {
+            "available": 200000,
+            "used": 0,
+            "limit": 200000,
+            "calls": 0,
+            "in_cooldown": false
+          }
+        }
+      },
+      "self_learning": {
+        "total_videos": 2,
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.75,
+        "top_categories": [
+          "test_category"
+        ],
+        "worst_categories": [
+          "bad_category"
+        ]
+      },
+      "quota_monitor": {
+        "can_run_now": true,
+        "best_provider": "gemini",
+        "videos_possible": 74,
+        "reason": "gemini available"
+      },
+      "first_attempt": {
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.5,
+        "total_videos": 0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T16:46:50.139879+00:00",
+      "token_budget": {
+        "videos_remaining": 85,
+        "status": {
+          "groq": {
+            "available": 60000,
+            "used": 0,
+            "limit": 90000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "gemini": {
+            "available": 900000,
+            "used": 0,
+            "limit": 900000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "openrouter": {
+            "available": 200000,
+            "used": 0,
+            "limit": 200000,
+            "calls": 0,
+            "in_cooldown": false
+          }
+        }
+      },
+      "self_learning": {
+        "total_videos": 4,
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.8125,
+        "top_categories": [
+          "test_category"
+        ],
+        "worst_categories": [
+          "bad_category"
+        ]
+      },
+      "quota_monitor": {
+        "can_run_now": true,
+        "best_provider": "gemini",
+        "videos_possible": 74,
+        "reason": "gemini available"
+      },
+      "first_attempt": {
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.5,
+        "total_videos": 0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T16:49:04.805885+00:00",
+      "token_budget": {
+        "videos_remaining": 85,
+        "status": {
+          "groq": {
+            "available": 60000,
+            "used": 0,
+            "limit": 90000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "gemini": {
+            "available": 900000,
+            "used": 0,
+            "limit": 900000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "openrouter": {
+            "available": 200000,
+            "used": 0,
+            "limit": 200000,
+            "calls": 0,
+            "in_cooldown": false
+          }
+        }
+      },
+      "self_learning": {
+        "total_videos": 4,
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.8125,
+        "top_categories": [
+          "test_category"
+        ],
+        "worst_categories": [
+          "bad_category"
+        ]
+      },
+      "quota_monitor": {
+        "can_run_now": true,
+        "best_provider": "gemini",
+        "videos_possible": 74,
+        "reason": "gemini available"
+      },
+      "first_attempt": {
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.5,
+        "total_videos": 0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T20:11:28.034631+00:00",
+      "token_budget": {
+        "videos_remaining": 85,
+        "status": {
+          "groq": {
+            "available": 60000,
+            "used": 0,
+            "limit": 90000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "gemini": {
+            "available": 900000,
+            "used": 0,
+            "limit": 900000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "openrouter": {
+            "available": 200000,
+            "used": 0,
+            "limit": 200000,
+            "calls": 0,
+            "in_cooldown": false
+          }
+        }
+      },
+      "self_learning": {
+        "total_videos": 6,
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.84375,
+        "top_categories": [
+          "test_category"
+        ],
+        "worst_categories": [
+          "bad_category"
+        ]
+      },
+      "quota_monitor": {
+        "can_run_now": true,
+        "best_provider": "gemini",
+        "videos_possible": 74,
+        "reason": "gemini available"
+      },
+      "first_attempt": {
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.5,
+        "total_videos": 0
+      }
+    },
+    {
+      "timestamp": "2026-01-01T20:11:35.671238+00:00",
+      "token_budget": {
+        "videos_remaining": 85,
+        "status": {
+          "groq": {
+            "available": 60000,
+            "used": 0,
+            "limit": 90000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "gemini": {
+            "available": 900000,
+            "used": 0,
+            "limit": 900000,
+            "calls": 0,
+            "in_cooldown": false
+          },
+          "openrouter": {
+            "available": 200000,
+            "used": 0,
+            "limit": 200000,
+            "calls": 0,
+            "in_cooldown": false
+          }
+        }
+      },
+      "self_learning": {
+        "total_videos": 6,
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.84375,
+        "top_categories": [
+          "test_category"
+        ],
+        "worst_categories": [
+          "bad_category"
+        ]
+      },
+      "quota_monitor": {
+        "can_run_now": true,
+        "best_provider": "gemini",
+        "videos_possible": 74,
+        "reason": "gemini available"
+      },
+      "first_attempt": {
+        "avg_first_attempt_score": 5.0,
+        "regeneration_rate": 0.5,
+        "total_videos": 0
+      }
+    }
+  ],
+  "provider_stats": {
+    "groq": {
+      "calls": 0,
+      "tokens": 0,
+      "errors": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "tokens": 0,
+      "errors": 0
+    },
+    "openrouter": {
+      "calls": 0,
+      "tokens": 0,
+      "errors": 0
+    }
+  },
+  "quality_trend": [],
+  "learning_progress": []
+}

@@ -324,6 +324,7 @@ def get_ai_trending_categories(groq_key: str = None) -> List[str]:
     Combines base categories with AI-suggested trending ones.
     
     v16.1: QUOTA OPTIMIZATION - Cache results for 1 hour
+    v16.8: DYNAMIC MODEL - No hardcoded model names
     """
     global _trending_cache
     
@@ -338,6 +339,15 @@ def get_ai_trending_categories(groq_key: str = None) -> List[str]:
     if not groq_key:
         return BASE_CATEGORIES
     
+    # v16.8: Get dynamic model list - no hardcoding!
+    try:
+        from quota_optimizer import get_quota_optimizer
+        optimizer = get_quota_optimizer()
+        groq_models = optimizer.get_groq_models(groq_key)
+        model_to_use = groq_models[0] if groq_models else "llama-3.1-8b-instant"
+    except:
+        model_to_use = "llama-3.1-8b-instant"  # Last resort fallback
+    
     try:
         response = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
@@ -346,7 +356,7 @@ def get_ai_trending_categories(groq_key: str = None) -> List[str]:
                 "Content-Type": "application/json"
             },
             json={
-                "model": "llama-3.1-8b-instant",
+                "model": model_to_use,
                 "messages": [{"role": "user", "content": f"""What are the TOP 5 trending content categories for viral short-form videos RIGHT NOW?
 
 Consider:
