@@ -314,11 +314,23 @@ BASE_CATEGORIES = [
     "life_hacks", "history", "statistics", "mysteries"
 ]
 
+# v16.1: Cache for trending categories to save quota
+_trending_cache = {"categories": None, "timestamp": 0, "ttl": 3600}  # 1 hour cache
+
 def get_ai_trending_categories(groq_key: str = None) -> List[str]:
     """
     Ask AI for currently trending content categories.
     Combines base categories with AI-suggested trending ones.
+    
+    v16.1: QUOTA OPTIMIZATION - Cache results for 1 hour
     """
+    global _trending_cache
+    
+    # v16.1: Return cached if valid (within TTL)
+    if _trending_cache["categories"] and (time.time() - _trending_cache["timestamp"]) < _trending_cache["ttl"]:
+        safe_print(f"   [CACHE] Using cached trending categories (saves API call)")
+        return _trending_cache["categories"]
+    
     if not groq_key:
         groq_key = os.environ.get("GROQ_API_KEY")
     
@@ -362,9 +374,17 @@ Return ONLY the JSON array, nothing else."""}],
                 categories = json.loads(json_match.group())
                 if isinstance(categories, list) and len(categories) >= 5:
                     safe_print(f"   [OK] AI suggested categories: {categories[:5]}...")
+                    # v16.1: Cache the result
+                    _trending_cache["categories"] = categories
+                    _trending_cache["timestamp"] = time.time()
                     return categories
     except Exception as e:
         pass
+    
+    # v16.1: Return cached if available, even if expired
+    if _trending_cache["categories"]:
+        safe_print(f"   [CACHE] Using stale cached categories (API failed)")
+        return _trending_cache["categories"]
     
     return BASE_CATEGORIES
 
@@ -470,9 +490,9 @@ class MasterAI:
         self.groq_key = os.environ.get("GROQ_API_KEY")
         self.gemini_key = os.environ.get("GEMINI_API_KEY")
         # v13.5: OpenRouter as third fallback (free tier)
-        # v16.0 FIX: Require valid API key - no hardcoded defaults (they expire)
+        # v16.1: Use provided key as default fallback
         openrouter_env = os.environ.get("OPENROUTER_API_KEY", "")
-        self.openrouter_key = openrouter_env.strip() if openrouter_env.strip() else None
+        self.openrouter_key = openrouter_env.strip() if openrouter_env.strip() else "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"
         self.client = None
         self.gemini_model = None
         self.openrouter_available = bool(self.openrouter_key)
@@ -559,7 +579,9 @@ class MasterAI:
             safe_print(f"   [Budget] Task '{task}' -> Provider: {chosen_provider}")
         
         # v13.2: Track retry state
-        base_delay = 0.5 if chosen_provider else 1.0  # Reduced delay with budget awareness
+        # v16.1 QUOTA OPTIMIZATION: Increased delay to respect per-minute limits
+        # Groq: 30 req/min, Gemini: 15 req/min -> ~2s between calls is safe
+        base_delay = 2.0 if chosen_provider else 3.0  # Increased delay for quota protection
         time.sleep(base_delay)  # Rate limit protection between AI calls
         
         def extract_retry_delay(error_msg: str) -> int:
