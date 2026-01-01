@@ -149,13 +149,21 @@ prompt = f"""You are a VIRAL CONTENT CREATOR...
    - Groq daily limit resets at midnight UTC
    - Gemini has per-minute and per-day limits
 
-## Current API Status (as of last test)
+## Current API Status (as of v16.6)
 
-| Provider | Status | Notes |
-|----------|--------|-------|
-| Groq | ❌ Rate Limited | Daily 100K tokens exhausted |
-| Gemini | ❌ Rate Limited | Per-minute + daily limits hit |
-| OpenRouter | ❌ Invalid Key | 401: User not found |
+| Provider | Free Tier Limit | Status | Notes |
+|----------|----------------|--------|-------|
+| Groq | 100K tokens/day | ⚠️ Exhausted | Resets at midnight UTC |
+| Gemini 2.0-flash-exp | **0 quota** | ❌ Wrong model | No longer using |
+| Gemini 1.5-flash | Has quota | ✅ NOW USING | Fixed in v16.6 |
+| OpenRouter | 50 req/day | ⚠️ Very limited | Backup only |
+
+## v16.6 Fixes Applied
+
+1. **Gemini model changed** from `2.0-flash-exp` (no quota) to `1.5-flash` (has quota)
+2. **Trending categories cache** extended from 1h to 24h (saves ~23 API calls/day)
+3. **Dynamic OpenRouter models** - fetches from API instead of hardcoded list
+4. **quota_optimizer.py created** - centralized caching and anti-hardcoding guide
 
 ---
 
