@@ -88,6 +88,14 @@ class VideoMetadata:
     # A/B test variant tracking
     ab_test_variants: Optional[Dict] = None  # {"title_style": "question", "thumbnail": "fire"}
     
+    # ===== v16.11 ENHANCEMENT TRACKING =====
+    # Track which enhancements were active and their effectiveness
+    v12_enhancements_active: bool = False  # Were v12 enhancements enabled?
+    v9_enhancements_active: bool = False   # Were v9 enhancements enabled?
+    quality_score: Optional[int] = None    # Post-render quality score (1-10)
+    enhancement_boosts_applied: Optional[List[str]] = None  # List of boosts applied
+    regeneration_count: int = 0            # How many times video was regenerated
+    
     # Phrase count (for analyzing optimal content length)
     phrase_count: int = 0
     total_word_count: int = 0
