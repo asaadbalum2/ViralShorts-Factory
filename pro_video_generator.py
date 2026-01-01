@@ -314,8 +314,9 @@ BASE_CATEGORIES = [
     "life_hacks", "history", "statistics", "mysteries"
 ]
 
-# v16.1: Cache for trending categories to save quota
-_trending_cache = {"categories": None, "timestamp": 0, "ttl": 3600}  # 1 hour cache
+# v16.6: Cache for trending categories to save quota
+# Extended to 24 hours - trending categories don't change hourly
+_trending_cache = {"categories": None, "timestamp": 0, "ttl": 86400}  # 24 hour cache
 
 def get_ai_trending_categories(groq_key: str = None) -> List[str]:
     """
@@ -539,13 +540,10 @@ class MasterAI:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                # Try latest experimental model first, fallback to stable
-                try:
-                    self.gemini_model = genai.GenerativeModel('gemini-2.0-flash-exp')
-                    safe_print("[OK] Gemini AI initialized (2.0-flash-exp)")
-                except:
-                    self.gemini_model = genai.GenerativeModel('gemini-2.0-flash')
-                    safe_print("[OK] Gemini AI initialized (2.0-flash)")
+                # v16.6: Use gemini-1.5-flash which HAS free tier quota
+                # gemini-2.0-flash-exp has ZERO free quota!
+                self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+                safe_print("[OK] Gemini AI initialized (1.5-flash - has free quota)")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")
         
@@ -706,14 +704,18 @@ class MasterAI:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
         # v13.5: Quinary - OpenRouter as final fallback (free tier models)
-        # v16.4: Try multiple free models in case one is rate limited
-        free_models = [
-            "meta-llama/llama-3.2-3b-instruct:free",
-            "google/gemma-2-9b-it:free",
-            "mistralai/mistral-7b-instruct:free",
-            "huggingfaceh4/zephyr-7b-beta:free",
-            "openchat/openchat-7b:free"
-        ]
+        # v16.6: Dynamically fetch free models instead of hardcoded list
+        try:
+            from quota_optimizer import get_quota_optimizer
+            quota_opt = get_quota_optimizer()
+            free_models = quota_opt.get_openrouter_free_models(self.openrouter_key)
+        except:
+            # Fallback seed list - used only if dynamic fetch fails
+            free_models = [
+                "meta-llama/llama-3.2-3b-instruct:free",
+                "google/gemma-2-9b-it:free", 
+                "mistralai/mistral-7b-instruct:free"
+            ]
         
         safe_print("[*] Trying OpenRouter fallback...")
         if self.openrouter_available:
