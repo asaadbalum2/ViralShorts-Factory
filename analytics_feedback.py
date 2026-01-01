@@ -451,8 +451,17 @@ Return as JSON:
 }}"""
 
         try:
+            # v16.10: DYNAMIC MODEL - No hardcoding
+            try:
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                groq_models = optimizer.get_groq_models()
+                model_to_use = groq_models[0] if groq_models else "llama-3.3-70b-versatile"
+            except:
+                model_to_use = "llama-3.3-70b-versatile"
+            
             response = self.client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=model_to_use,
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=1000,
                 temperature=0.7
