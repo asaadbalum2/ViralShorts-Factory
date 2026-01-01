@@ -196,6 +196,8 @@ response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True, task="
 1. `token_budget_manager.py` - Smart token distribution
 2. `self_learning_engine.py` - Pattern learning
 3. `test_v15_enhancements.py` - Verification test suite
+4. `quota_monitor.py` - Real-time quota tracking
+5. `smart_orchestrator.py` - Unified interface for all v15.0 systems
 
 ### Modified Files:
 1. `pro_video_generator.py` - v15.0 integration
@@ -229,6 +231,9 @@ response = self.call_ai(prompt, 400, temperature=0.8, prefer_gemini=True, task="
 
 1. `764cc29` - v15.0: Smart Token Budget Manager + Self-Learning Engine
 2. `6a589ff` - Add v15.0 enhancement verification test suite
+3. `ccb7308` - Add v15.0 Enhancement Report - 3-hour session documentation
+4. `a083a90` - Add Quota Monitor for real-time quota tracking and scheduling
+5. `bf0c081` - Add Smart Orchestrator - unified interface for v15.0 systems
 
 ---
 
