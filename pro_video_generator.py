@@ -490,9 +490,9 @@ class MasterAI:
         self.groq_key = os.environ.get("GROQ_API_KEY")
         self.gemini_key = os.environ.get("GEMINI_API_KEY")
         # v13.5: OpenRouter as third fallback (free tier)
-        # v16.1: Use provided key as default fallback
+        # v16.2: No hardcoded keys - user MUST provide via secrets
         openrouter_env = os.environ.get("OPENROUTER_API_KEY", "")
-        self.openrouter_key = openrouter_env.strip() if openrouter_env.strip() else "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"
+        self.openrouter_key = openrouter_env.strip() if openrouter_env.strip() else None
         self.client = None
         self.gemini_model = None
         self.openrouter_available = bool(self.openrouter_key)

@@ -130,15 +130,32 @@ prompt = f"""You are a VIRAL CONTENT CREATOR...
 
 ---
 
-## Required User Action
+## Required User Action (CRITICAL!)
 
-1. **Add OpenRouter API Key** to GitHub Secrets:
+⚠️ **The provided OpenRouter key is INVALID** (401: User not found)
+
+1. **Get a VALID OpenRouter API Key**:
+   - Go to: https://openrouter.ai/
+   - Create account or log in
+   - Navigate to Keys section (profile → Keys)
+   - Create a new key
+   - Copy and save it
+
+2. **Add to GitHub Secrets**:
    - Go to: https://github.com/asaadbalum2/ViralShorts-Factory/settings/secrets/actions
-   - Add: `OPENROUTER_API_KEY` with a valid key from https://openrouter.ai/
+   - Add: `OPENROUTER_API_KEY` with your VALID key
 
-2. **Wait for API Quotas to Reset**:
+3. **OR Wait for Quotas to Reset**:
    - Groq daily limit resets at midnight UTC
    - Gemini has per-minute and per-day limits
+
+## Current API Status (as of last test)
+
+| Provider | Status | Notes |
+|----------|--------|-------|
+| Groq | ❌ Rate Limited | Daily 100K tokens exhausted |
+| Gemini | ❌ Rate Limited | Per-minute + daily limits hit |
+| OpenRouter | ❌ Invalid Key | 401: User not found |
 
 ---
 
