@@ -496,6 +496,15 @@ class MasterAI:
             safe_print(f"[!] Self-Learning Engine not available: {e}")
             self.learning_engine = None
         
+        # v15.0: Initialize quota monitor
+        try:
+            from quota_monitor import get_quota_monitor
+            self.quota_monitor = get_quota_monitor()
+            safe_print(f"[OK] Quota Monitor initialized")
+        except Exception as e:
+            safe_print(f"[!] Quota Monitor not available: {e}")
+            self.quota_monitor = None
+        
         if self.groq_key:
             try:
                 from groq import Groq
@@ -564,6 +573,8 @@ class MasterAI:
                 response = self.gemini_model.generate_content(prompt)
                 if self.budget_manager:
                     self.budget_manager.record_usage("gemini", max_tokens)
+                if self.quota_monitor:
+                    self.quota_monitor.record_usage("gemini", max_tokens)
                 return response.text
             except Exception as e:
                 error_str = str(e)
@@ -571,6 +582,8 @@ class MasterAI:
                     delay = extract_retry_delay(error_str)
                     if self.budget_manager:
                         self.budget_manager.record_429("gemini", delay)
+                    if self.quota_monitor:
+                        self.quota_monitor.record_429("gemini", delay)
                     safe_print(f"[!] Gemini 429 - switching to fallback...")
                 else:
                     safe_print(f"[!] Gemini error: {e}")
@@ -600,14 +613,18 @@ class MasterAI:
                 # v15.0: Record token usage
                 if self.budget_manager:
                     self.budget_manager.record_usage("groq", max_tokens)
+                if self.quota_monitor:
+                    self.quota_monitor.record_usage("groq", max_tokens)
                 return response.choices[0].message.content
             except Exception as e:
                 error_str = str(e)
                 if '429' in error_str:
                     retry_delay = extract_retry_delay(error_str)
-                    # v15.0: Record 429 in budget manager
+                    # v15.0: Record 429 in budget manager and quota monitor
                     if self.budget_manager:
                         self.budget_manager.record_429("groq", retry_delay)
+                    if self.quota_monitor:
+                        self.quota_monitor.record_429("groq", retry_delay)
                     safe_print(f"[!] Groq rate limit hit - waiting {min(retry_delay, 30)}s before fallback...")
                     time.sleep(min(retry_delay, 30))  # Cap at 30s to avoid long waits
                 else:
@@ -693,6 +710,8 @@ class MasterAI:
                         # v15.0: Record OpenRouter usage
                         if self.budget_manager:
                             self.budget_manager.record_usage("openrouter", max_tokens)
+                        if self.quota_monitor:
+                            self.quota_monitor.record_usage("openrouter", max_tokens)
                         safe_print(f"[OK] OpenRouter succeeded!")
                         return content
                     else:
