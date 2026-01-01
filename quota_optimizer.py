@@ -153,18 +153,87 @@ class QuotaOptimizer:
         return []
     
     # ========================================================================
+    # GROQ MODELS - Dynamic discovery with LAZY LOADING
+    # ========================================================================
+    def get_groq_models(self, api_key: str = None, force_refresh: bool = False) -> List[str]:
+        """
+        Get available Groq models dynamically.
+        
+        Uses Groq API to discover available models.
+        Cached for 24 hours.
+        
+        LAZY LOADING: Only fetches when current model fails, not on every call.
+        Set force_refresh=True when a model returns 404.
+        """
+        if not force_refresh and self._is_valid("groq_models", self.TTL_MODELS):
+            safe_print("[CACHE] Using cached Groq models")
+            return self.cache["groq_models"]["data"]
+        
+        if force_refresh:
+            safe_print("[CACHE] Force refreshing Groq models (model not found)")
+        
+        # Default fallback models (known working free tier models)
+        # Priority: versatile > other variants
+        default_models = [
+            "llama-3.3-70b-versatile",
+            "llama-3.1-70b-versatile",
+            "llama-3.1-8b-instant",
+            "mixtral-8x7b-32768",
+            "gemma2-9b-it"
+        ]
+        
+        if not api_key:
+            return default_models
+        
+        try:
+            from groq import Groq
+            client = Groq(api_key=api_key)
+            
+            # Groq SDK has models.list() method
+            models_response = client.models.list()
+            
+            # Extract model IDs
+            available_models = []
+            for model in models_response.data:
+                model_id = model.id
+                # Prioritize larger/versatile models
+                if "70b" in model_id or "versatile" in model_id:
+                    available_models.insert(0, model_id)
+                else:
+                    available_models.append(model_id)
+            
+            if available_models:
+                self.cache["groq_models"] = {
+                    "data": available_models[:10],
+                    "timestamp": time.time()
+                }
+                self._save_cache()
+                safe_print(f"[CACHE] Found {len(available_models)} Groq models")
+                return available_models[:10]
+                
+        except Exception as e:
+            safe_print(f"[!] Groq model discovery failed: {e}")
+        
+        return default_models
+    
+    # ========================================================================
     # GEMINI MODELS - Dynamic discovery with free tier priority
     # ========================================================================
-    def get_gemini_models(self, api_key: str = None) -> List[str]:
+    def get_gemini_models(self, api_key: str = None, force_refresh: bool = False) -> List[str]:
         """
         Get available Gemini models, prioritizing those with free tier.
         
         Uses genai.list_models() to discover available models dynamically.
         Cached for 24 hours.
+        
+        LAZY LOADING: Set force_refresh=True when a model returns 404.
         """
-        if self._is_valid("gemini_models", self.TTL_MODELS):
+        if not force_refresh and self._is_valid("gemini_models", self.TTL_MODELS):
             safe_print("[CACHE] Using cached Gemini models")
             return self.cache["gemini_models"]["data"]
+        
+        if force_refresh:
+            safe_print("[CACHE] Force refreshing Gemini models (model not found)")
         
         # Default fallback models (known working free tier models)
         # Priority: 1.5-flash (free) > 1.5-pro (limited free) > experimental
@@ -213,16 +282,21 @@ class QuotaOptimizer:
     # ========================================================================
     # OPENROUTER FREE MODELS - Cached for 24 hours
     # ========================================================================
-    def get_openrouter_free_models(self, api_key: str = None) -> List[str]:
+    def get_openrouter_free_models(self, api_key: str = None, force_refresh: bool = False) -> List[str]:
         """
         Get list of free OpenRouter models from API.
         
         This queries the /models endpoint to find models with `:free` suffix.
         Cached for 24 hours to avoid wasting the limited 50 req/day quota.
+        
+        LAZY LOADING: Set force_refresh=True when a model returns 404.
         """
-        if self._is_valid("openrouter_free_models", self.TTL_MODELS):
+        if not force_refresh and self._is_valid("openrouter_free_models", self.TTL_MODELS):
             safe_print("[CACHE] Using cached OpenRouter free models")
             return self.cache["openrouter_free_models"]["data"]
+        
+        if force_refresh:
+            safe_print("[CACHE] Force refreshing OpenRouter models (model not found)")
         
         # Default fallback models (known free models as of 2024)
         default_models = [
@@ -292,6 +366,122 @@ def get_quota_optimizer() -> QuotaOptimizer:
     if _optimizer is None:
         _optimizer = QuotaOptimizer()
     return _optimizer
+
+
+# ========================================================================
+# DYNAMIC SCHEDULE ADVISOR
+# ========================================================================
+
+class ScheduleAdvisor:
+    """
+    AI-driven schedule recommendations for periodic workflows.
+    
+    GitHub cron schedules are fixed, but workflows can check this advisor
+    to decide IF they should actually run on a given trigger.
+    
+    LEARNING: Analyzes performance data to recommend optimal frequencies.
+    """
+    
+    SCHEDULE_FILE = CACHE_DIR / "schedule_advisor.json"
+    
+    # Default recommendations (AI will update based on learning)
+    DEFAULTS = {
+        "analytics_feedback": {
+            "frequency": "twice_weekly",  # Could be: daily, twice_weekly, weekly, biweekly
+            "skip_if_no_new_videos": True,
+            "min_videos_for_analysis": 5
+        },
+        "monthly_analysis": {
+            "frequency": "biweekly",  # Could be: weekly, biweekly, monthly
+            "skip_if_no_views": True
+        },
+        "model_refresh": {
+            "frequency": "daily",  # How often to refresh available AI models
+            "lazy_load": True  # Only refresh when a model fails
+        }
+    }
+    
+    def __init__(self):
+        self.recommendations = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.SCHEDULE_FILE.exists():
+                with open(self.SCHEDULE_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return self.DEFAULTS.copy()
+    
+    def _save(self):
+        try:
+            with open(self.SCHEDULE_FILE, 'w') as f:
+                json.dump(self.recommendations, f, indent=2)
+        except:
+            pass
+    
+    def should_run(self, workflow: str, context: Dict = None) -> bool:
+        """
+        Check if a workflow should run based on AI recommendations.
+        
+        Args:
+            workflow: Name of workflow (e.g., 'analytics_feedback')
+            context: Current context (e.g., {'videos_since_last': 3})
+        
+        Returns:
+            True if workflow should execute, False to skip
+        """
+        rec = self.recommendations.get(workflow, {})
+        context = context or {}
+        
+        # Check skip conditions
+        if rec.get("skip_if_no_new_videos") and context.get("videos_since_last", 0) == 0:
+            safe_print(f"[SCHEDULE] Skipping {workflow}: No new videos")
+            return False
+        
+        if rec.get("skip_if_no_views") and context.get("total_views", 0) == 0:
+            safe_print(f"[SCHEDULE] Skipping {workflow}: No views yet")
+            return False
+        
+        min_videos = rec.get("min_videos_for_analysis", 0)
+        if context.get("total_videos", 0) < min_videos:
+            safe_print(f"[SCHEDULE] Skipping {workflow}: Need {min_videos} videos")
+            return False
+        
+        return True
+    
+    def update_from_performance(self, metrics: Dict):
+        """
+        AI-driven update of schedule recommendations based on performance.
+        
+        Called by analytics workflow after analyzing performance data.
+        """
+        # Example learning: If videos are getting more views lately, 
+        # increase analytics frequency to learn faster
+        avg_views = metrics.get("avg_views_per_video", 0)
+        
+        if avg_views > 1000:
+            # High performance - analyze more frequently
+            self.recommendations["analytics_feedback"]["frequency"] = "daily"
+            safe_print("[SCHEDULE] Increasing analytics to daily (high performance)")
+        elif avg_views > 100:
+            self.recommendations["analytics_feedback"]["frequency"] = "twice_weekly"
+        else:
+            self.recommendations["analytics_feedback"]["frequency"] = "weekly"
+        
+        self._save()
+    
+    def get_frequency(self, workflow: str) -> str:
+        """Get recommended frequency for a workflow."""
+        return self.recommendations.get(workflow, {}).get("frequency", "weekly")
+
+
+def get_schedule_advisor() -> ScheduleAdvisor:
+    """Get singleton ScheduleAdvisor instance."""
+    global _schedule_advisor
+    if '_schedule_advisor' not in globals() or _schedule_advisor is None:
+        _schedule_advisor = ScheduleAdvisor()
+    return _schedule_advisor
 
 
 # ========================================================================

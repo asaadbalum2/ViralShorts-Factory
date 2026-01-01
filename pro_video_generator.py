@@ -532,8 +532,15 @@ class MasterAI:
             try:
                 from groq import Groq
                 self.client = Groq(api_key=self.groq_key)
-                safe_print("[OK] Groq AI initialized")
+                
+                # v16.8: DYNAMIC Groq model selection - no hardcoding!
+                # Uses QuotaOptimizer to discover available models
+                from quota_optimizer import get_quota_optimizer
+                optimizer = get_quota_optimizer()
+                self.groq_models_list = optimizer.get_groq_models(self.groq_key)
+                safe_print(f"[OK] Groq AI initialized ({len(self.groq_models_list)} models available)")
             except Exception as e:
+                self.groq_models_list = ["llama-3.3-70b-versatile"]  # Fallback
                 safe_print(f"[!] Groq init failed: {e}")
         
         if self.gemini_key:
@@ -641,35 +648,54 @@ class MasterAI:
                 # Fall through to Groq
         
         # Primary: Groq (fastest, 100K tokens/day)
-        # v15.0: Skip if budget says to use different provider and not in fallback mode
+        # v16.8: DYNAMIC model selection - tries all available models
         use_groq = self.client and (chosen_provider == "groq" or chosen_provider is None)
         if use_groq:
-            try:
-                response = self.client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
-                    messages=[{"role": "user", "content": prompt}],
-                    max_tokens=max_tokens,
-                    temperature=temperature
-                )
-                # v15.0: Record token usage
-                if self.budget_manager:
-                    self.budget_manager.record_usage("groq", max_tokens)
-                if self.quota_monitor:
-                    self.quota_monitor.record_usage("groq", max_tokens)
-                return response.choices[0].message.content
-            except Exception as e:
-                error_str = str(e)
-                if '429' in error_str:
-                    retry_delay = extract_retry_delay(error_str)
-                    # v15.0: Record 429 in budget manager and quota monitor
+            # Get dynamically discovered models
+            groq_models_to_try = getattr(self, 'groq_models_list', [
+                "llama-3.3-70b-versatile", "llama-3.1-70b-versatile", 
+                "llama-3.1-8b-instant", "mixtral-8x7b-32768"
+            ])
+            
+            for model_name in groq_models_to_try:
+                try:
+                    response = self.client.chat.completions.create(
+                        model=model_name,
+                        messages=[{"role": "user", "content": prompt}],
+                        max_tokens=max_tokens,
+                        temperature=temperature
+                    )
+                    # v15.0: Record token usage
                     if self.budget_manager:
-                        self.budget_manager.record_429("groq", retry_delay)
+                        self.budget_manager.record_usage("groq", max_tokens)
                     if self.quota_monitor:
-                        self.quota_monitor.record_429("groq", retry_delay)
-                    safe_print(f"[!] Groq rate limit hit - waiting {min(retry_delay, 30)}s before fallback...")
-                    time.sleep(min(retry_delay, 30))  # Cap at 30s to avoid long waits
-                else:
-                    safe_print(f"[!] Groq error: {e}")
+                        self.quota_monitor.record_usage("groq", max_tokens)
+                    return response.choices[0].message.content
+                except Exception as e:
+                    error_str = str(e)
+                    if '429' in error_str:
+                        safe_print(f"[!] Groq {model_name} rate limit, trying next model...")
+                        continue  # Try next model
+                    elif '404' in error_str or 'not found' in error_str.lower():
+                        safe_print(f"[!] Groq model {model_name} not available, refreshing models...")
+                        # v16.8: LAZY LOAD - refresh models list only when needed
+                        try:
+                            from quota_optimizer import get_quota_optimizer
+                            optimizer = get_quota_optimizer()
+                            self.groq_models_list = optimizer.get_groq_models(self.groq_key, force_refresh=True)
+                        except:
+                            pass
+                        continue  # Try next model with updated list
+                    else:
+                        safe_print(f"[!] Groq {model_name} error: {e}")
+                        continue  # Try next model
+            
+            # All Groq models failed - record and continue to fallback
+            if self.budget_manager:
+                self.budget_manager.record_429("groq", 60)
+            if self.quota_monitor:
+                self.quota_monitor.record_429("groq", 60)
+            safe_print(f"[!] All Groq models exhausted, falling back...")
         
         # Secondary: Gemini - v16.7 DYNAMIC model selection
         # Try all available Gemini models in priority order
@@ -705,7 +731,14 @@ class MasterAI:
                                     self.budget_manager.record_usage("gemini", max_tokens)
                                 return response.text
                             except:
-                                safe_print(f"[!] Gemini {model_name} not available, trying next...")
+                                safe_print(f"[!] Gemini {model_name} not available, refreshing models...")
+                                # v16.8: LAZY LOAD - refresh models list only when needed
+                                try:
+                                    from quota_optimizer import get_quota_optimizer
+                                    optimizer = get_quota_optimizer()
+                                    self.gemini_models_list = optimizer.get_gemini_models(self.gemini_key, force_refresh=True)
+                                except:
+                                    pass
                                 continue
                         else:
                             safe_print(f"[!] Gemini {model_name} error: {model_err}")

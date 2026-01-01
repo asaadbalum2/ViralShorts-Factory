@@ -55,9 +55,65 @@ jobs:
         run: mkdir -p data/persistent
 
       # ================================================================
+      # v16.8: AI-DRIVEN SCHEDULE CHECK
+      # Decide if we should actually run based on learning
+      # ================================================================
+      - name: Check Schedule Advisor
+        id: schedule_check
+        run: |
+          python << 'EOF'
+          import json
+          from pathlib import Path
+          
+          SCHEDULE_FILE = Path("data/persistent/schedule_advisor.json")
+          VARIETY_FILE = Path("data/persistent/variety_state.json")
+          
+          # Count videos since last analytics
+          videos_since_last = 0
+          try:
+              if VARIETY_FILE.exists():
+                  with open(VARIETY_FILE) as f:
+                      variety = json.load(f)
+                      videos_since_last = len(variety.get("recent_topics", []))
+          except:
+              pass
+          
+          # Check schedule advisor recommendation
+          should_run = True  # Default to yes
+          try:
+              if SCHEDULE_FILE.exists():
+                  with open(SCHEDULE_FILE) as f:
+                      advisor = json.load(f)
+                      rec = advisor.get("analytics_feedback", {})
+                      
+                      # Check if we should skip
+                      if rec.get("skip_if_no_new_videos", False) and videos_since_last == 0:
+                          print("[SCHEDULE] AI recommends skipping: No new videos")
+                          should_run = False
+                      
+                      min_videos = rec.get("min_videos_for_analysis", 3)
+                      if videos_since_last < min_videos:
+                          print(f"[SCHEDULE] AI recommends skipping: Need {min_videos} videos, have {videos_since_last}")
+                          should_run = False
+          except Exception as e:
+              print(f"[SCHEDULE] Advisor check failed: {e}")
+          
+          # Output decision
+          print(f"should_run={'true' if should_run else 'false'}")
+          with open("schedule_decision.txt", "w") as f:
+              f.write("true" if should_run else "false")
+          EOF
+          
+          SHOULD_RUN=$(cat schedule_decision.txt || echo "true")
+          echo "should_run=$SHOULD_RUN" >> $GITHUB_OUTPUT
+          echo "Schedule decision: $SHOULD_RUN"
+        continue-on-error: true
+
+      # ================================================================
       # FETCH PERFORMANCE DATA FROM OUR YOUTUBE CHANNEL
       # ================================================================
       - name: Fetch Our Video Performance
+        if: steps.schedule_check.outputs.should_run != 'false'
         run: |
           python << 'EOF'
           import os

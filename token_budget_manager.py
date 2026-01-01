@@ -60,11 +60,13 @@ class TokenBudgetManager:
     Ensures we never hit rate limits by smart distribution.
     """
     
-    # Provider limits (conservative to avoid 429s)
-    GROQ_DAILY_LIMIT = 90000  # Leave 10k buffer from 100k
-    GEMINI_RPM_LIMIT = 50  # Leave 10 buffer from 60
-    GEMINI_DAILY_LIMIT = 900000  # Leave 100k buffer from 1M
-    OPENROUTER_DAILY_LIMIT = 200000  # Free tier estimate
+    # Provider limits (configurable via environment - no hardcoding)
+    # These can be updated when providers change their quotas
+    # v16.8: Made configurable - defaults are conservative buffers
+    GROQ_DAILY_LIMIT = int(os.environ.get("GROQ_DAILY_LIMIT", 90000))  # 100k with 10k buffer
+    GEMINI_RPM_LIMIT = int(os.environ.get("GEMINI_RPM_LIMIT", 50))  # 60 with 10 buffer
+    GEMINI_DAILY_LIMIT = int(os.environ.get("GEMINI_DAILY_LIMIT", 900000))  # 1M with 100k buffer
+    OPENROUTER_DAILY_LIMIT = int(os.environ.get("OPENROUTER_DAILY_LIMIT", 200000))  # Free tier
     
     # Task token costs (estimated)
     TASK_COSTS = {
