@@ -425,6 +425,37 @@ def main():
         test("AI Audience Persona Generator works", False, str(e))
     
     # =========================================================================
+    # TEST 24: AI Voice Script Optimizer
+    # =========================================================================
+    print("\n[24] AI VOICE SCRIPT OPTIMIZER")
+    try:
+        from ai_voice_script import get_voice_optimizer
+        opt = get_voice_optimizer()
+        test("Import success", True)
+        test("Has optimize_script", hasattr(opt, 'optimize_script'))
+        result = opt.optimize_script({"hook": "Test", "phrases": ["P1"], "cta": "C"})
+        test("optimize_script returns dict", isinstance(result, dict))
+        test("Has timing", "timing" in result)
+    except Exception as e:
+        test("AI Voice Script Optimizer works", False, str(e))
+    
+    # =========================================================================
+    # TEST 25: AI Comment Response Generator
+    # =========================================================================
+    print("\n[25] AI COMMENT RESPONSE GENERATOR")
+    try:
+        from ai_comment_response import get_comment_generator
+        gen = get_comment_generator()
+        test("Import success", True)
+        test("Has generate_response", hasattr(gen, 'generate_response'))
+        result = gen.generate_response("Great video!")
+        test("generate_response returns dict", isinstance(result, dict))
+        test("Has sentiment", "sentiment" in result)
+        test("Has response", "response" in result)
+    except Exception as e:
+        test("AI Comment Response Generator works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
