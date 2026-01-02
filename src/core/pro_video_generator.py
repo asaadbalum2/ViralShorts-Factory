@@ -270,6 +270,14 @@ except ImportError:
     ERROR_LOGGER_AVAILABLE = False
     def log_error(e, ctx="", comp=""): pass  # No-op fallback
 
+# v17.7.8: Import competitor analyzer for differentiated content
+try:
+    from competitor_analyzer import get_competitor_analyzer
+    COMPETITOR_ANALYZER_AVAILABLE = True
+    print("[OK] Competitor Analyzer loaded: Differentiation ACTIVE!")
+except ImportError:
+    COMPETITOR_ANALYZER_AVAILABLE = False
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
