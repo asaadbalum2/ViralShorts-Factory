@@ -333,7 +333,7 @@ class BudgetAwareAICaller:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                self.gemini_model = genai.GenerativeModel('models/gemini-2.0-flash')
+                self.gemini_model = genai.GenerativeModel('models/gemini-1.5-flash')
             except Exception as e:
                 print(f"[BudgetAI] Gemini init error: {e}")
     

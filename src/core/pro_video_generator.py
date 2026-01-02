@@ -1344,14 +1344,22 @@ Your job: Evaluate content fairly, identify improvements, and enhance it.
 Claimed Value: {content.get('specific_value', '')}
 
 === SCORING GUIDELINES ===
-Be FAIR, not harsh. Score based on ACTUAL quality:
-- 9-10: Exceptional, viral-worthy, perfect execution
-- 7-8: Good quality, engaging, minor improvements possible (MOST content should be here)
-- 5-6: Average, needs work but has potential
-- 3-4: Poor, major issues, needs complete rewrite
-- 1-2: Unusable
+CRITICAL: You MUST score fairly. Do NOT be overly harsh. Most content is 7-8/10.
 
-IMPORTANT: If content is coherent, provides value, and has a decent hook, it's AT LEAST 7/10.
+SCORING RULES (FOLLOW EXACTLY):
+- 9-10: Exceptional, would go viral, perfect execution
+- 7-8: STANDARD GOOD QUALITY - coherent, provides value, decent hook (DEFAULT SCORE)
+- 5-6: Has issues but salvageable
+- 3-4: ONLY if content is completely broken/incoherent/makes no sense
+- 1-2: ONLY if content is gibberish or harmful
+
+MANDATORY: If the content:
+✓ Makes logical sense
+✓ Has a clear topic/hook
+✓ Provides any useful information
+→ SCORE IT 7/10 OR HIGHER. Do NOT score below 7 unless content is genuinely broken.
+
+Most AI-generated content that follows a structure = 7-8/10. DO NOT be harsh.
 
 === QUICK QUALITY CHECK ===
 For each phrase, ask:
