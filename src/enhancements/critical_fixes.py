@@ -170,7 +170,7 @@ def get_varied_sfx_for_phrase(phrase_index: int, total_phrases: int, video_id: i
 # FIX 3: MINIMUM QUALITY ENFORCEMENT
 # ============================================
 
-MINIMUM_ACCEPTABLE_SCORE = 8
+MINIMUM_ACCEPTABLE_SCORE = 7  # v17.1: Lowered from 8 - 7/10 is acceptable quality
 MAX_REGENERATION_ATTEMPTS = 3
 
 
