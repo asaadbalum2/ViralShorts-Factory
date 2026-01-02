@@ -2,20 +2,18 @@
 """
 AI Visual Generator
 Uses HuggingFace FLUX to generate dynamic visuals instead of hardcoded ones.
+v17.5: Updated to use huggingface_hub library (REST API deprecated)
 """
 
 import os
-import requests
 from pathlib import Path
 from typing import Optional
 from PIL import Image
-import io
 import hashlib
 
 # HuggingFace settings
-HF_TOKEN = os.getenv("HF_TOKEN", "")
+HF_TOKEN = os.getenv("HF_TOKEN", "") or os.getenv("HUGGINGFACE_API_KEY", "")
 HF_MODEL = "black-forest-labs/FLUX.1-schnell"
-HF_API_URL = f"https://router.huggingface.co/hf-inference/models/{HF_MODEL}"
 
 # Cache directory for generated visuals
 VISUALS_CACHE = Path("./assets/ai_visuals")
@@ -25,7 +23,7 @@ VISUALS_CACHE.mkdir(parents=True, exist_ok=True)
 def generate_visual(prompt: str, size: tuple = (512, 512), 
                    cache: bool = True) -> Optional[Image.Image]:
     """
-    Generate a visual using HuggingFace FLUX.
+    Generate a visual using HuggingFace FLUX via huggingface_hub library.
     
     Args:
         prompt: Text description of the visual
@@ -36,7 +34,7 @@ def generate_visual(prompt: str, size: tuple = (512, 512),
         PIL Image or None if failed
     """
     if not HF_TOKEN:
-        print("   ⚠️ No HF_TOKEN, cannot generate AI visuals")
+        print("   [!] No HF_TOKEN/HUGGINGFACE_API_KEY, cannot generate AI visuals")
         return None
     
     # Create cache key from prompt
@@ -45,42 +43,37 @@ def generate_visual(prompt: str, size: tuple = (512, 512),
     
     # Check cache first
     if cache and cache_path.exists():
-        print(f"   ✅ Using cached AI visual: {cache_key}")
+        print(f"   [OK] Using cached AI visual: {cache_key}")
         return Image.open(cache_path)
     
     try:
-        headers = {"Authorization": f"Bearer {HF_TOKEN}"}
-        payload = {
-            "inputs": prompt,
-            "parameters": {
-                "width": size[0],
-                "height": size[1],
-                "num_inference_steps": 4,  # FLUX.1-schnell is fast
-            }
-        }
+        from huggingface_hub import InferenceClient
         
-        print(f"   🎨 Generating AI visual: {prompt[:50]}...")
-        response = requests.post(HF_API_URL, headers=headers, json=payload, timeout=60)
+        client = InferenceClient(token=HF_TOKEN)
         
-        if response.status_code == 200:
-            img = Image.open(io.BytesIO(response.content))
-            
-            # Resize to requested size if needed
-            if img.size != size:
-                img = img.resize(size, Image.LANCZOS)
-            
-            # Cache the result
-            if cache:
-                img.save(cache_path, "PNG")
-                print(f"   ✅ Cached AI visual: {cache_key}")
-            
-            return img
-        else:
-            print(f"   ⚠️ HF API error: {response.status_code} - {response.text[:100]}")
-            return None
+        print(f"   [*] Generating AI visual: {prompt[:50]}...")
+        
+        # Use text_to_image method (new API)
+        img = client.text_to_image(
+            prompt=prompt,
+            model=HF_MODEL,
+            width=size[0],
+            height=size[1]
+        )
+        
+        # Resize if needed
+        if img.size != size:
+            img = img.resize(size, Image.LANCZOS)
+        
+        # Cache the result
+        if cache:
+            img.save(cache_path, "PNG")
+            print(f"   [OK] Cached AI visual: {cache_key}")
+        
+        return img
             
     except Exception as e:
-        print(f"   ⚠️ AI visual generation failed: {e}")
+        print(f"   [!] AI visual generation failed: {e}")
         return None
 
 
