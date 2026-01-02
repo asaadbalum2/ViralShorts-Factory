@@ -1,34 +1,52 @@
 {
   "title_tricks": [
-    "use numbers",
-    "curiosity gaps",
-    "promise reveal",
+    "use specific numbers (not round)",
+    "curiosity gaps - don't reveal everything",
+    "promise reveal at end",
     "controversy opener",
-    "authority claim"
+    "authority claim",
+    "before/after contrast",
+    "time urgency (limited time)",
+    "social proof (millions know this)",
+    "challenge viewer's knowledge",
+    "reveal hidden truth"
   ],
   "hook_types": [
     "question hook",
     "shocking statement",
     "number reveal",
-    "pattern interrupt",
-    "loss aversion",
+    "pattern interrupt (STOP/WAIT)",
+    "loss aversion (you're losing X)",
     "challenge viewer",
-    "myth buster"
+    "myth buster",
+    "personal story (I did X for Y days)",
+    "authority reveal",
+    "controversial claim"
   ],
   "engagement_baits": [
     "Comment if you agree",
     "Save this for later",
     "Type 1 if you knew, 2 if you didn't",
     "Would you try this? Yes or No",
-    "Tag someone who needs this"
+    "Tag someone who needs this",
+    "Share your experience in comments",
+    "What would you do differently?",
+    "Do you agree or disagree? Comment below",
+    "Follow for part 2",
+    "Like if this helped you"
   ],
-  "weekly_updated": "2026-01-02T15:40:00.000000",
+  "weekly_updated": "2026-01-02T16:30:00.000000",
   "title_patterns": [
     "The {adj} Truth About {topic}",
     "{number} Signs You're {state}",
     "Why {topic} Is Secretly {outcome}",
     "Stop Doing {action} - Here's Why",
-    "I Tested {thing} for {time} - Results"
+    "I Tested {thing} for {time} - Results",
+    "{number} Things {group} Won't Tell You",
+    "The Hidden Cost of {action}",
+    "What Happens When You {action} for {time}",
+    "{topic} Is Changing Everything - Here's Proof",
+    "You're {status} If You {action}"
   ],
   "hook_patterns": [
     "Start with a question",
@@ -37,7 +55,10 @@
     "What they don't teach you about {topic}",
     "You've been doing {action} wrong your whole life",
     "{number}% of people fail this - are you one of them?",
-    "Scientists just discovered {finding}"
+    "Scientists just discovered {finding}",
+    "I was today years old when I learned {fact}",
+    "This will blow your mind in 3 seconds",
+    "POV: You just learned {insight}"
   ],
   "scroll_stop_openers": [
     "STOP - this could save you {value}",
@@ -45,35 +66,97 @@
     "I bet you didn't know this about {topic}",
     "Here's what {authority} won't tell you",
     "This one trick {outcome} in just {time}",
-    "You're losing {value} every {time} doing this"
+    "You're losing {value} every {time} doing this",
+    "Warning: This might change your perspective on {topic}",
+    "Nobody talks about this, but {fact}",
+    "The {topic} hack that changed my life",
+    "3 seconds to change how you think about {topic}"
   ],
   "psychological_triggers": [
-    "curiosity",
-    "fomo",
-    "controversy"
+    "curiosity - open loops that MUST be closed",
+    "fomo - fear of missing out on value",
+    "controversy - challenges existing beliefs",
+    "social proof - others are doing/knowing this",
+    "authority - experts/science backs this",
+    "scarcity - limited info few people know",
+    "reciprocity - free value creates obligation",
+    "loss aversion - what you're losing > what you gain",
+    "novelty - new information dopamine hit",
+    "relatability - mirrors viewer's experience"
   ],
   "retention_tricks": [
-    "open loop",
-    "promise payoff"
+    "open loop - tease payoff at start, deliver at end",
+    "promise payoff - make clear what they'll learn",
+    "mini reveals - small satisfying moments throughout",
+    "visual changes - new scene every 2-3 seconds",
+    "sound effects - audio cues for emphasis",
+    "countdown - build anticipation",
+    "challenge - give viewer something to do",
+    "story arc - beginning, middle, satisfying end",
+    "pattern break - unexpected twist in middle",
+    "recap hint - remind them of the value they got"
   ],
   "virality_hacks": [
-    "make shareable",
-    "trigger comments"
+    "make shareable - content worth sending to friend",
+    "trigger comments - ask divisive question",
+    "create debate - two valid perspectives",
+    "save-worthy - practical value to return to",
+    "relatability - 'this is SO me' moment",
+    "surprise factor - unexpected information",
+    "transformation story - before/after journey",
+    "list format - easy to follow and share",
+    "challenge format - dare viewer to try",
+    "controversial take - opinion that sparks discussion"
   ],
   "proven_categories": [
-    "psychology",
-    "money",
-    "relationships"
+    "psychology - how the mind works",
+    "money - saving/making/investing",
+    "relationships - love/dating/friends",
+    "productivity - getting more done",
+    "health - wellness/fitness/sleep",
+    "tech - tools and tips",
+    "career - work/success",
+    "lifestyle - daily improvements"
   ],
   "content_themes": [
-    "hidden truths",
-    "life hacks",
-    "money secrets"
+    "hidden truths most don't know",
+    "life hacks that actually work",
+    "money secrets wealthy use",
+    "psychology of success",
+    "morning routines that work",
+    "habits of top performers",
+    "mistakes to avoid",
+    "science-backed tips",
+    "personal experience lessons",
+    "counterintuitive insights"
   ],
-  "optimal_duration": 20,
+  "optimal_duration": 22,
   "optimal_phrase_count": 5,
+  "optimal_words_per_phrase": 12,
   "ai_generated": true,
   "source": "monthly_youtube_analysis",
-  "last_updated": "2025-12-24T19:29:23.641840",
-  "monthly_updated": "2025-12-24T19:50:22.490035"
+  "last_updated": "2026-01-02T16:30:00.000000",
+  "monthly_updated": "2026-01-02T16:30:00.000000",
+  "cta_formulas": [
+    "What's your experience with {topic}?",
+    "Which tip will you try first?",
+    "Comment your {category} below",
+    "Save this before {platform} removes it",
+    "Follow for daily {category} tips"
+  ],
+  "title_power_words": [
+    "secret", "truth", "shocking", "proven",
+    "instant", "free", "guaranteed", "hidden",
+    "finally", "exposed", "revealed", "ultimate"
+  ],
+  "hook_formulas": {
+    "question": "Did you know {fact}?",
+    "shock": "{Shocking statement} - here's why",
+    "challenge": "Most people can't {action}",
+    "fomo": "You're missing out on {benefit}",
+    "authority": "Experts confirm {claim}",
+    "story": "I {action} for {time} and {result}",
+    "contrast": "Before: {bad}. After: {good}.",
+    "mystery": "The {adj} secret nobody talks about"
+  }
 }
