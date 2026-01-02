@@ -504,13 +504,13 @@ class MasterAI:
         # v16.2: No hardcoded keys - user MUST provide via secrets
         openrouter_env = os.environ.get("OPENROUTER_API_KEY", "")
         self.openrouter_key = openrouter_env.strip() if openrouter_env.strip() else None
-        # v17.4: Mistral as additional fallback (free tier, 1 req/sec)
-        mistral_env = os.environ.get("MISTRAL_API_KEY", "")
-        self.mistral_key = mistral_env.strip() if mistral_env.strip() else None
+        # v17.4.1: HuggingFace Inference API as fallback (truly free, no phone/CC)
+        huggingface_env = os.environ.get("HUGGINGFACE_API_KEY", "")
+        self.huggingface_key = huggingface_env.strip() if huggingface_env.strip() else None
         self.client = None
         self.gemini_model = None
         self.openrouter_available = bool(self.openrouter_key)
-        self.mistral_available = bool(self.mistral_key)
+        self.huggingface_available = bool(self.huggingface_key)
         
         # v15.0: Initialize token budget manager
         try:
@@ -765,37 +765,51 @@ class MasterAI:
             else:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
-        # v17.4: Mistral as fallback (free tier, generous quota)
-        if self.mistral_available:
-            safe_print("[*] Trying Mistral fallback...")
+        # v17.4.1: HuggingFace Inference API as fallback (truly free, no phone/CC)
+        # Sign up at huggingface.co - just email, no phone verification!
+        if self.huggingface_available:
+            safe_print("[*] Trying HuggingFace fallback...")
             try:
                 import requests
-                response = requests.post(
-                    "https://api.mistral.ai/v1/chat/completions",
-                    headers={
-                        "Authorization": f"Bearer {self.mistral_key}",
-                        "Content-Type": "application/json"
-                    },
-                    json={
-                        "model": "mistral-small-latest",  # Best free tier model
-                        "messages": [{"role": "user", "content": prompt}],
-                        "max_tokens": max_tokens,
-                        "temperature": temperature
-                    },
-                    timeout=60
-                )
-                if response.status_code == 200:
-                    result = response.json()
-                    content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
-                    if content:
-                        safe_print("[OK] Mistral succeeded!")
-                        return content
-                elif response.status_code == 429:
-                    safe_print("[!] Mistral rate limited, trying OpenRouter...")
-                else:
-                    safe_print(f"[!] Mistral error: {response.status_code}")
+                # Use Llama 3.2 or Mistral via HuggingFace (free inference)
+                hf_models = [
+                    "meta-llama/Llama-3.2-3B-Instruct",
+                    "mistralai/Mistral-7B-Instruct-v0.3",
+                    "microsoft/Phi-3-mini-4k-instruct"
+                ]
+                for hf_model in hf_models:
+                    try:
+                        response = requests.post(
+                            f"https://api-inference.huggingface.co/models/{hf_model}",
+                            headers={"Authorization": f"Bearer {self.huggingface_key}"},
+                            json={
+                                "inputs": prompt,
+                                "parameters": {
+                                    "max_new_tokens": min(max_tokens, 1024),
+                                    "temperature": temperature,
+                                    "return_full_text": False
+                                }
+                            },
+                            timeout=60
+                        )
+                        if response.status_code == 200:
+                            result = response.json()
+                            if isinstance(result, list) and result:
+                                content = result[0].get("generated_text", "")
+                                if content:
+                                    safe_print(f"[OK] HuggingFace succeeded with {hf_model.split('/')[-1]}!")
+                                    return content
+                        elif response.status_code == 503:
+                            # Model loading, try next
+                            continue
+                        elif response.status_code == 429:
+                            safe_print(f"[!] HuggingFace rate limited, trying next model...")
+                            continue
+                    except:
+                        continue
+                safe_print("[!] All HuggingFace models failed, trying OpenRouter...")
             except Exception as e:
-                safe_print(f"[!] Mistral fallback error: {e}")
+                safe_print(f"[!] HuggingFace fallback error: {e}")
         
         # v13.5: OpenRouter as final fallback (free tier models)
         # v16.6: Dynamically fetch free models instead of hardcoded list
