@@ -569,11 +569,49 @@ class VersionVerifier:
         return missing == 0
     
     # ========================================================================
-    # CHECK 10: v17.9.5 YOUTUBE-ONLY MODE
+    # CHECK 10: AI MODULE INTEGRATION (v17.9.6)
+    # ========================================================================
+    def check_ai_module_integration(self) -> bool:
+        """Check that all AI modules are actually INTEGRATED (not just existing)."""
+        print("\n[10] AI MODULE INTEGRATION CHECK (v17.9.6)...")
+        
+        generator = self._read_file("src/core/pro_video_generator.py")
+        
+        # These modules must be imported AND used in the generator
+        required_integrations = [
+            ("AIQualityGate", "AI_QUALITY_GATE_AVAILABLE"),
+            ("ContentOptimizer", "CONTENT_OPTIMIZER_AVAILABLE"),
+            ("RetentionPredictor", "RETENTION_PREDICTOR_AVAILABLE"),
+            ("EngagementPredictor", "ENGAGEMENT_PREDICTOR_AVAILABLE"),
+            ("ViralityCalculator", "VIRALITY_CALCULATOR_AVAILABLE"),
+            ("ScriptAnalyzer", "SCRIPT_ANALYZER_AVAILABLE"),
+            ("AIDescriptionGenerator", "AI_DESCRIPTION_GENERATOR_AVAILABLE"),
+            ("AIHashtagGenerator", "AI_HASHTAG_GENERATOR_AVAILABLE"),
+            ("DashboardGenerator", "DASHBOARD_GENERATOR_AVAILABLE"),
+        ]
+        
+        integrated = 0
+        for class_name, flag_name in required_integrations:
+            if class_name in generator and flag_name in generator:
+                integrated += 1
+                print(f"   [OK] {class_name}")
+            else:
+                self.errors.append(f"{class_name} not integrated in generator")
+                print(f"   [X] {class_name} NOT INTEGRATED")
+        
+        if integrated == len(required_integrations):
+            self.passed.append(f"All {len(required_integrations)} AI modules integrated")
+            return True
+        else:
+            return False
+    
+    # ========================================================================
+    # CHECK 11: v17.9.5 YOUTUBE-ONLY MODE
     # ========================================================================
     def check_youtube_only_mode(self) -> bool:
         """Check v17.9.5 YouTube-only features are properly configured."""
-        print("\n[10] YOUTUBE-ONLY MODE CHECK (v17.9.5)...")
+        print("\n[11] YOUTUBE-ONLY MODE CHECK (v17.9.5)...")
+        # Note: Check numbers updated for v17.9.6
         
         issues = []
         
@@ -670,6 +708,7 @@ class VersionVerifier:
             self.check_workflows(),
             self.check_enhancements_integrated(),
             self.check_ai_first_architecture(),  # v17.8: New check
+            self.check_ai_module_integration(),  # v17.9.6: All modules integrated
             self.check_youtube_only_mode(),  # v17.9.5: YouTube-only mode
             self.check_ai_modules(),  # v17.8.27: All AI modules
             self.check_test_suite(),  # v17.8.27: Test suite

@@ -289,6 +289,18 @@ jobs:
                       print(f'Key Insight: {insights[\"key_insight\"]}')
               else:
                   print('Not enough data for analysis yet (need 5+ videos with views)')
+              
+              # v17.9.6: Generate analytics dashboard
+              try:
+                  from dashboard_generator import DashboardGenerator
+                  dashboard = DashboardGenerator()
+                  html = dashboard.generate_dashboard()
+                  if html:
+                      with open('data/persistent/dashboard.html', 'w') as f:
+                          f.write(html)
+                      print('Generated analytics dashboard')
+              except Exception as de:
+                  print(f'Dashboard generation skipped: {de}')
                   
           except Exception as e:
               print(f'Analytics error: {e}')

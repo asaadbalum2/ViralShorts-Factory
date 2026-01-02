@@ -360,6 +360,61 @@ except ImportError:
     AI_TITLE_OPTIMIZER_AVAILABLE = False
     def optimize_title(topic, cat, existing=None): return f"The Truth About {topic}"
 
+# v17.9.6: Import ALL remaining AI modules that were defined but never used!
+try:
+    from ai_quality_gate import AIQualityGate
+    AI_QUALITY_GATE_AVAILABLE = True
+except ImportError:
+    AI_QUALITY_GATE_AVAILABLE = False
+
+try:
+    from content_optimizer import ContentOptimizer
+    CONTENT_OPTIMIZER_AVAILABLE = True
+except ImportError:
+    CONTENT_OPTIMIZER_AVAILABLE = False
+
+try:
+    from retention_predictor import RetentionPredictor
+    RETENTION_PREDICTOR_AVAILABLE = True
+except ImportError:
+    RETENTION_PREDICTOR_AVAILABLE = False
+
+try:
+    from engagement_predictor import EngagementPredictor
+    ENGAGEMENT_PREDICTOR_AVAILABLE = True
+except ImportError:
+    ENGAGEMENT_PREDICTOR_AVAILABLE = False
+
+try:
+    from virality_calculator import ViralityCalculator
+    VIRALITY_CALCULATOR_AVAILABLE = True
+except ImportError:
+    VIRALITY_CALCULATOR_AVAILABLE = False
+
+try:
+    from script_analyzer import ScriptAnalyzer
+    SCRIPT_ANALYZER_AVAILABLE = True
+except ImportError:
+    SCRIPT_ANALYZER_AVAILABLE = False
+
+try:
+    from ai_description_generator import AIDescriptionGenerator
+    AI_DESCRIPTION_GENERATOR_AVAILABLE = True
+except ImportError:
+    AI_DESCRIPTION_GENERATOR_AVAILABLE = False
+
+try:
+    from ai_hashtag_generator import AIHashtagGenerator
+    AI_HASHTAG_GENERATOR_AVAILABLE = True
+except ImportError:
+    AI_HASHTAG_GENERATOR_AVAILABLE = False
+
+try:
+    from dashboard_generator import DashboardGenerator
+    DASHBOARD_GENERATOR_AVAILABLE = True
+except ImportError:
+    DASHBOARD_GENERATOR_AVAILABLE = False
+
 # Log AI module availability
 _ai_modules = [
     ("Hook Generator", AI_HOOK_GENERATOR_AVAILABLE),
@@ -369,6 +424,15 @@ _ai_modules = [
     ("B-Roll Keywords", AI_BROLL_KEYWORDS_AVAILABLE),
     ("Music Mood", AI_MUSIC_MOOD_AVAILABLE),
     ("Title Optimizer", AI_TITLE_OPTIMIZER_AVAILABLE),
+    ("Quality Gate", AI_QUALITY_GATE_AVAILABLE),
+    ("Content Optimizer", CONTENT_OPTIMIZER_AVAILABLE),
+    ("Retention Predictor", RETENTION_PREDICTOR_AVAILABLE),
+    ("Engagement Predictor", ENGAGEMENT_PREDICTOR_AVAILABLE),
+    ("Virality Calculator", VIRALITY_CALCULATOR_AVAILABLE),
+    ("Script Analyzer", SCRIPT_ANALYZER_AVAILABLE),
+    ("Description Generator", AI_DESCRIPTION_GENERATOR_AVAILABLE),
+    ("Hashtag Generator", AI_HASHTAG_GENERATOR_AVAILABLE),
+    ("Dashboard Generator", DASHBOARD_GENERATOR_AVAILABLE),
 ]
 _available = sum(1 for _, a in _ai_modules if a)
 print(f"[OK] AI Modules loaded: {_available}/{len(_ai_modules)} available")
@@ -1775,6 +1839,72 @@ Return ONLY the improved hook, nothing else."""
                     safe_print(f"   [HOOK TIP] {hook_quality['suggestions'][0]}")
             except Exception as e:
                 safe_print(f"   [!] Hook scoring skipped: {e}")
+        
+        # v17.9.6: INTEGRATE ALL NEW AI MODULES
+        # These were defined but NEVER called - now activating them!
+        
+        # 1. Script Analyzer - Analyze script quality
+        if SCRIPT_ANALYZER_AVAILABLE and phrases:
+            try:
+                analyzer = ScriptAnalyzer()
+                script_analysis = analyzer.analyze_script(
+                    hook=phrases[0] if phrases else "",
+                    content_phrases=phrases[1:] if len(phrases) > 1 else [],
+                    cta=content.get('cta', ''),
+                    category=content.get('concept', {}).get('category', 'educational'),
+                    voice_config={'rate': 1.0}
+                )
+                content['script_analysis'] = script_analysis
+                safe_print(f"   [SCRIPT] Quality: {script_analysis.get('overall_score', 0)}/100")
+            except Exception as e:
+                safe_print(f"   [!] Script analysis skipped: {e}")
+        
+        # 2. Retention Predictor - Predict viewer drop-off points
+        if RETENTION_PREDICTOR_AVAILABLE and phrases:
+            try:
+                predictor = RetentionPredictor()
+                retention = predictor.predict_retention(
+                    hook=phrases[0] if phrases else "",
+                    content_phrases=phrases[1:] if len(phrases) > 1 else [],
+                    video_duration=content.get('concept', {}).get('target_duration', 50),
+                    category=content.get('concept', {}).get('category', 'educational')
+                )
+                content['retention_prediction'] = retention
+                safe_print(f"   [RETENTION] Predicted avg: {retention.get('predicted_avg_retention', 0):.0f}%")
+            except Exception as e:
+                safe_print(f"   [!] Retention prediction skipped: {e}")
+        
+        # 3. Engagement Predictor - Predict likes/comments/shares
+        if ENGAGEMENT_PREDICTOR_AVAILABLE and phrases:
+            try:
+                predictor = EngagementPredictor()
+                engagement = predictor.predict_engagement(
+                    hook=phrases[0] if phrases else "",
+                    content_phrases=phrases[1:] if len(phrases) > 1 else [],
+                    cta=content.get('cta', ''),
+                    category=content.get('concept', {}).get('category', 'educational')
+                )
+                content['engagement_prediction'] = engagement
+                safe_print(f"   [ENGAGEMENT] Score: {engagement.get('overall_score', 0)}/100")
+            except Exception as e:
+                safe_print(f"   [!] Engagement prediction skipped: {e}")
+        
+        # 4. Virality Calculator - Calculate overall virality potential
+        if VIRALITY_CALCULATOR_AVAILABLE:
+            try:
+                calculator = ViralityCalculator()
+                virality = calculator.calculate_virality_score(
+                    hook_score=content.get('hook_quality_score', 5) * 10,
+                    engagement_score=content.get('engagement_prediction', {}).get('overall_score', 50),
+                    retention_score=content.get('retention_prediction', {}).get('predicted_avg_retention', 50),
+                    trending_score=70,  # Base trending score
+                    platform_fit_score=80,  # YouTube Shorts fit
+                    shareability_score=content.get('script_analysis', {}).get('shareability', 60)
+                )
+                content['virality_score'] = virality
+                safe_print(f"   [VIRALITY] Overall: {virality.get('overall_score', 0):.0f}/100 - {virality.get('verdict', 'N/A')}")
+            except Exception as e:
+                safe_print(f"   [!] Virality calculation skipped: {e}")
         
         # v8.9.1: Get the hook/topic from concept for promise validation
         concept = content.get('concept', {})
@@ -3233,6 +3363,28 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             'target_duration_seconds': random.randint(25, 35)
         }
     
+    # v17.9.6: AI Quality Gate - Pre-generation quality check
+    if AI_QUALITY_GATE_AVAILABLE:
+        try:
+            quality_gate = AIQualityGate()
+            gate_result = quality_gate.run_quality_checks({
+                'topic': concept.get('specific_topic', ''),
+                'hook': concept.get('hook', ''),
+                'category': concept.get('category', 'educational'),
+                'target_duration': concept.get('target_duration_seconds', 50)
+            })
+            safe_print(f"   [QUALITY GATE] Pre-check: {gate_result.get('overall_score', 0)}/100 - {gate_result.get('verdict', 'N/A')}")
+            
+            # Store gate result for later analysis
+            concept['quality_gate_result'] = gate_result
+            
+            # If concept is poor quality, try to improve it
+            if gate_result.get('verdict') == 'FAIL' and gate_result.get('recommendations'):
+                safe_print(f"   [QUALITY GATE] Improving concept: {gate_result['recommendations'][0][:50]}...")
+                concept['improvement_needed'] = gate_result.get('recommendations', [])[:2]
+        except Exception as e:
+            safe_print(f"   [!] Quality gate skipped: {e}")
+    
     # Stage 2: AI creates content
     try:
         content = ai.stage2_create_content(concept)
@@ -3352,6 +3504,18 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                     safe_print(f"   [QUALITY] WARNING: Could not reach {MINIMUM_ACCEPTABLE_SCORE}/10 after {regeneration_attempts} attempts. Best: {score}/10")
                     content['quality_warning'] = True
             
+            # v17.9.6: ContentOptimizer - Final unified optimization pass
+            if CONTENT_OPTIMIZER_AVAILABLE and score < 9:
+                try:
+                    optimizer = ContentOptimizer()
+                    optimized = optimizer.optimize_content(concept, content)
+                    if optimized and optimized.get('optimized_score', 0) > score:
+                        content.update(optimized.get('optimized_content', {}))
+                        safe_print(f"   [OPTIMIZER] Content improved: {score}/10 -> {optimized.get('optimized_score', score)}/10")
+                        score = optimized.get('optimized_score', score)
+                except Exception as e:
+                    safe_print(f"   [!] Content optimizer skipped: {e}")
+            
             # v15.0: Record result for FirstAttemptMaximizer learning
             if ai.first_attempt:
                 ai.first_attempt.record_result(
@@ -3432,6 +3596,46 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         metadata['title'] = fallback_title
         metadata['description'] = f"{fallback_title} #shorts #viral #facts"
         metadata['hashtags'] = ['#shorts', '#viral', '#facts', '#trending']
+    
+    # v17.9.6: Use AI modules to enhance description and hashtags
+    topic = concept.get('specific_topic', metadata.get('title', ''))
+    category = concept.get('category', 'educational')
+    video_summary = " ".join(content.get('phrases', [])[:3]) if content else topic
+    
+    # AI Description Generator
+    if AI_DESCRIPTION_GENERATOR_AVAILABLE:
+        try:
+            desc_gen = AIDescriptionGenerator()
+            ai_description = desc_gen.generate_description(
+                topic=topic,
+                category=category,
+                video_summary=video_summary,
+                hashtags=metadata.get('hashtags', [])
+            )
+            if ai_description and len(ai_description) > 50:
+                metadata['description'] = ai_description
+                safe_print(f"   [AI DESC] Generated SEO description ({len(ai_description)} chars)")
+        except Exception as e:
+            safe_print(f"   [!] AI description skipped: {e}")
+    
+    # AI Hashtag Generator
+    if AI_HASHTAG_GENERATOR_AVAILABLE:
+        try:
+            hash_gen = AIHashtagGenerator()
+            ai_hashtags = hash_gen.generate_hashtags(
+                topic=topic,
+                category=category,
+                video_summary=video_summary,
+                count=8
+            )
+            if ai_hashtags and len(ai_hashtags) >= 3:
+                # Ensure #shorts is included
+                if '#shorts' not in ai_hashtags:
+                    ai_hashtags.insert(0, '#shorts')
+                metadata['hashtags'] = ai_hashtags
+                safe_print(f"   [AI TAGS] Generated {len(ai_hashtags)} optimized hashtags")
+        except Exception as e:
+            safe_print(f"   [!] AI hashtags skipped: {e}")
     
     # Get voice and music with variety enforcement
     voice_config = ai.get_voice_config(concept, batch_tracker)

@@ -1,6 +1,6 @@
 {
-  "version": "17.8",
-  "timestamp": "2026-01-02T21:55:03.734079",
+  "version": "17.9",
+  "timestamp": "2026-01-03T00:55:30.868675",
   "passed": [
     "Analytics: Tracks v12 enhancements",
     "Analytics: Tracks quality scores",
@@ -32,6 +32,11 @@
     "variety_state.json is AI-learned",
     "AI pattern generator implemented",
     "self_learning.json marked for real analytics",
+    "Workflow uses --youtube-only flag",
+    "Batch size default is 1",
+    "Dailymotion disabled in youtube-only mode",
+    "Learned metrics function exists",
+    "Metrics learning integrated in workflow",
     "All 15 AI modules present",
     "Test suite has 27 test sections"
   ],
