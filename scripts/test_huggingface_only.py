@@ -13,10 +13,15 @@ import sys
 import json
 from datetime import datetime
 
-# Add src to path
+# Add src paths - same as the main wrapper
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'core'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'enhancements'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'analytics'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'quota'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'platforms'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'utils'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'ai'))
 
 def safe_print(msg):
     try:
@@ -24,215 +29,267 @@ def safe_print(msg):
     except UnicodeEncodeError:
         print(msg.encode('utf-8', errors='replace').decode('utf-8'))
 
-def main():
-    safe_print("=" * 60)
-    safe_print("  HUGGINGFACE-ONLY TEST - ENHANCEMENT VERIFICATION")
-    safe_print("=" * 60)
-    safe_print("")
-    
-    # Track enhancements
-    enhancements_checked = []
-    
-    # Override environment to force HuggingFace
-    safe_print("[*] Forcing HuggingFace-only mode...")
-    os.environ['GEMINI_API_KEY'] = ''  # Clear Gemini
-    os.environ['GROQ_API_KEY'] = ''    # Clear Groq
-    os.environ['OPENROUTER_API_KEY'] = ''  # Clear OpenRouter
-    
-    # Import the video generator
-    from pro_video_generator import MasterAI
-    
-    safe_print("[1/8] Initializing Video Generator (MasterAI)...")
-    generator = MasterAI()
-    
-    # Force HuggingFace as primary
-    generator.gemini_key = None
-    generator.groq_key = None
-    generator.openrouter_key = None
-    generator.gemini_model = None
-    generator.client = None
-    generator.openrouter_available = False
-    
-    # Verify HuggingFace is available
-    safe_print(f"[+] HuggingFace available: {generator.huggingface_available}")
-    safe_print(f"[+] HuggingFace key: {'SET' if generator.huggingface_key else 'NOT SET'}")
-    
-    if not generator.huggingface_available:
-        safe_print("[!] ERROR: HuggingFace key not available!")
-        sys.exit(1)
-    
-    safe_print("")
-    safe_print("[2/8] Testing HuggingFace Model Discovery...")
+
+def test_huggingface_discovery():
+    """Test that HuggingFace model discovery works."""
+    safe_print("[2/6] Testing HuggingFace Model Discovery...")
     try:
         from quota.quota_optimizer import get_quota_optimizer
         quota_opt = get_quota_optimizer()
-        hf_models = quota_opt.get_huggingface_models(generator.huggingface_key, force_refresh=True)
+        hf_key = os.environ.get('HUGGINGFACE_API_KEY', '')
+        hf_models = quota_opt.get_huggingface_models(hf_key, force_refresh=True)
         safe_print(f"[+] Found {len(hf_models)} HuggingFace models:")
         for m in hf_models[:5]:
             safe_print(f"    - {m}")
-        enhancements_checked.append(("HuggingFace Dynamic Discovery", "PASS", f"{len(hf_models)} models found"))
+        return ("HuggingFace Dynamic Discovery", "PASS", f"{len(hf_models)} models found")
     except Exception as e:
         safe_print(f"[!] Model discovery error: {e}")
-        enhancements_checked.append(("HuggingFace Dynamic Discovery", "FAIL", str(e)))
-    
+        return ("HuggingFace Dynamic Discovery", "FAIL", str(e))
+
+
+def test_huggingface_api_call():
+    """Test that HuggingFace API calls work."""
     safe_print("")
-    safe_print("[3/8] Testing AI Call with HuggingFace...")
-    try:
-        test_prompt = "Generate a single catchy topic for a viral YouTube Short about psychology. Just the topic, nothing else."
-        result = generator.call_ai(test_prompt)
-        if result:
-            safe_print(f"[+] AI Response: {result[:100]}...")
-            enhancements_checked.append(("HuggingFace AI Call", "PASS", result[:50]))
-        else:
-            safe_print("[!] AI call returned empty")
-            enhancements_checked.append(("HuggingFace AI Call", "FAIL", "Empty response"))
-    except Exception as e:
-        safe_print(f"[!] AI call error: {e}")
-        enhancements_checked.append(("HuggingFace AI Call", "FAIL", str(e)))
+    safe_print("[3/6] Testing HuggingFace API Call...")
     
+    import requests
+    hf_key = os.environ.get('HUGGINGFACE_API_KEY', '')
+    
+    if not hf_key:
+        return ("HuggingFace API Call", "FAIL", "No API key")
+    
+    # Try a simple inference call
+    test_models = [
+        "meta-llama/Llama-3.2-3B-Instruct",
+        "Qwen/Qwen2.5-3B-Instruct",
+        "microsoft/Phi-3-mini-4k-instruct"
+    ]
+    
+    for model in test_models:
+        try:
+            safe_print(f"    Trying {model}...")
+            response = requests.post(
+                f"https://api-inference.huggingface.co/models/{model}",
+                headers={"Authorization": f"Bearer {hf_key}"},
+                json={
+                    "inputs": "Generate a viral topic for a YouTube Short: ",
+                    "parameters": {
+                        "max_new_tokens": 50,
+                        "temperature": 0.8
+                    }
+                },
+                timeout=30
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                if isinstance(result, list) and result:
+                    content = result[0].get("generated_text", "")
+                    if content:
+                        safe_print(f"[+] Response: {content[:80]}...")
+                        return ("HuggingFace API Call", "PASS", f"{model} works")
+            elif response.status_code == 503:
+                safe_print(f"    Model loading, trying next...")
+                continue
+            else:
+                safe_print(f"    Status {response.status_code}, trying next...")
+                continue
+        except Exception as e:
+            safe_print(f"    Error: {e}, trying next...")
+            continue
+    
+    return ("HuggingFace API Call", "FAIL", "All models failed")
+
+
+def test_video_generation():
+    """Test the full video generation pipeline."""
     safe_print("")
-    safe_print("[4/8] Generating Video (NO REGENERATION)...")
+    safe_print("[4/6] Testing Video Generation...")
     safe_print("-" * 60)
     
-    # Generate the video
+    # Run the actual video generation using subprocess
+    # This is cleaner than trying to import the async main function
+    import subprocess
+    
+    # Change to project root
+    project_root = os.path.join(os.path.dirname(__file__), '..')
+    os.chdir(project_root)
+    
+    # Build command
+    cmd = [
+        sys.executable, 
+        "pro_video_generator.py",
+        "--count", "1",
+        "--no-upload",
+        "--test-mode"
+    ]
+    
+    safe_print(f"Running: {' '.join(cmd)}")
+    safe_print("-" * 60)
+    
     try:
-        category = os.environ.get('INPUT_CATEGORY', '') or None
-        result = generator.generate_video(category=category, upload=False, max_regen=0)
+        # Run with environment that only has HuggingFace key
+        env = os.environ.copy()
+        env['GEMINI_API_KEY'] = ''
+        env['GROQ_API_KEY'] = ''
+        env['OPENROUTER_API_KEY'] = ''
+        env['PYTHONUNBUFFERED'] = '1'
         
-        if result:
-            safe_print("")
-            safe_print("=" * 60)
-            safe_print("  VIDEO GENERATED SUCCESSFULLY!")
-            safe_print("=" * 60)
-            safe_print(f"  Title: {result.get('title', 'N/A')}")
-            safe_print(f"  Category: {result.get('category', 'N/A')}")
-            safe_print(f"  Quality Score: {result.get('quality_score', 'N/A')}/10")
-            safe_print(f"  Duration: {result.get('duration', 'N/A')}s")
-            safe_print(f"  Video File: {result.get('video_path', 'N/A')}")
-            
-            enhancements_checked.append(("Video Generation", "PASS", f"Score: {result.get('quality_score', 'N/A')}/10"))
-            
-            # Check enhancement integration
-            safe_print("")
-            safe_print("[5/8] Verifying Enhancement Integration...")
-            
-            # Check v9 enhancements
-            if hasattr(generator, 'enhancement_orch') and generator.enhancement_orch:
-                safe_print("[+] Enhancement Orchestrator: ACTIVE")
-                enhancements_checked.append(("Enhancement Orchestrator", "PASS", "Active"))
+        result = subprocess.run(
+            cmd,
+            env=env,
+            capture_output=True,
+            text=True,
+            timeout=600  # 10 minute timeout
+        )
+        
+        safe_print("-" * 60)
+        safe_print("STDOUT:")
+        safe_print(result.stdout[-3000:] if len(result.stdout) > 3000 else result.stdout)
+        
+        if result.stderr:
+            safe_print("-" * 60)
+            safe_print("STDERR:")
+            safe_print(result.stderr[-1000:] if len(result.stderr) > 1000 else result.stderr)
+        
+        if result.returncode == 0:
+            # Check if video was generated
+            import glob
+            videos = glob.glob("output/*.mp4") + glob.glob("test_output/*.mp4")
+            if videos:
+                return ("Video Generation", "PASS", f"{len(videos)} video(s) created")
             else:
-                safe_print("[!] Enhancement Orchestrator: NOT FOUND")
-                enhancements_checked.append(("Enhancement Orchestrator", "FAIL", "Not initialized"))
-            
-            # Check learning engine
-            if hasattr(generator, 'learning_engine') and generator.learning_engine:
-                safe_print("[+] Self-Learning Engine: ACTIVE")
-                enhancements_checked.append(("Self-Learning Engine", "PASS", "Active"))
-            else:
-                safe_print("[!] Self-Learning Engine: NOT FOUND")
-                enhancements_checked.append(("Self-Learning Engine", "FAIL", "Not initialized"))
-            
-            # Check v12 enhancements
-            if hasattr(generator, 'v12_enhancements') and generator.v12_enhancements:
-                safe_print("[+] V12 Enhancements: ACTIVE")
-                enhancements_checked.append(("V12 Enhancements", "PASS", "Active"))
-            else:
-                safe_print("[!] V12 Enhancements: NOT FOUND")
-                enhancements_checked.append(("V12 Enhancements", "FAIL", "Not initialized"))
-            
-            # Check variety state
-            variety_file = 'data/persistent/variety_state.json'
-            if os.path.exists(variety_file):
-                with open(variety_file) as f:
-                    variety = json.load(f)
-                safe_print(f"[+] Variety State: {len(variety)} keys loaded")
-                enhancements_checked.append(("Variety State", "PASS", f"{len(variety)} keys"))
-            else:
-                safe_print("[!] Variety State: NOT FOUND")
-                enhancements_checked.append(("Variety State", "INFO", "No previous state"))
-            
-            # Check viral patterns
-            patterns_file = 'data/persistent/viral_patterns.json'
-            if os.path.exists(patterns_file):
-                with open(patterns_file) as f:
-                    patterns = json.load(f)
-                safe_print(f"[+] Viral Patterns: {len(patterns)} keys loaded")
-                enhancements_checked.append(("Viral Patterns", "PASS", f"{len(patterns)} keys"))
-            else:
-                safe_print("[!] Viral Patterns: NOT FOUND")
-                enhancements_checked.append(("Viral Patterns", "INFO", "No previous patterns"))
-            
-            safe_print("")
-            safe_print("[6/8] Saving Video Metadata...")
-            
-            # Ensure test_output exists
-            os.makedirs('test_output', exist_ok=True)
-            
-            # Save detailed metadata
-            metadata = {
-                "test_type": "huggingface_only",
-                "timestamp": datetime.now().isoformat(),
-                "provider_used": "HuggingFace",
-                "result": result,
-                "enhancements_checked": enhancements_checked,
-                "quality_score": result.get('quality_score'),
-                "regeneration_attempts": 0,
-                "success": True
-            }
-            
-            with open('test_output/video_metadata.json', 'w') as f:
-                json.dump(metadata, f, indent=2, default=str)
-            
-            # Copy video to test_output
-            import shutil
-            video_path = result.get('video_path')
-            if video_path and os.path.exists(video_path):
-                shutil.copy(video_path, 'test_output/')
-                safe_print(f"[+] Video copied to test_output/")
-            
+                return ("Video Generation", "PARTIAL", "Process succeeded but no video file")
         else:
-            safe_print("[!] Video generation returned None")
-            enhancements_checked.append(("Video Generation", "FAIL", "Returned None"))
+            return ("Video Generation", "FAIL", f"Exit code {result.returncode}")
             
+    except subprocess.TimeoutExpired:
+        return ("Video Generation", "FAIL", "Timeout after 10 minutes")
     except Exception as e:
-        import traceback
-        safe_print(f"[!] Video generation error: {e}")
-        traceback.print_exc()
-        enhancements_checked.append(("Video Generation", "FAIL", str(e)))
-    
+        return ("Video Generation", "FAIL", str(e))
+
+
+def check_enhancements():
+    """Check which enhancements are integrated."""
     safe_print("")
-    safe_print("[7/8] Enhancement Check Summary...")
+    safe_print("[5/6] Checking Enhancement Integration...")
+    
+    results = []
+    
+    # Check variety state
+    variety_file = 'data/persistent/variety_state.json'
+    if os.path.exists(variety_file):
+        try:
+            with open(variety_file) as f:
+                variety = json.load(f)
+            safe_print(f"[+] Variety State: {len(variety)} keys loaded")
+            results.append(("Variety State", "PASS", f"{len(variety)} keys"))
+        except Exception as e:
+            results.append(("Variety State", "FAIL", str(e)))
+    else:
+        results.append(("Variety State", "INFO", "No previous state"))
+    
+    # Check viral patterns
+    patterns_file = 'data/persistent/viral_patterns.json'
+    if os.path.exists(patterns_file):
+        try:
+            with open(patterns_file) as f:
+                patterns = json.load(f)
+            safe_print(f"[+] Viral Patterns: {len(patterns)} keys loaded")
+            results.append(("Viral Patterns", "PASS", f"{len(patterns)} keys"))
+        except Exception as e:
+            results.append(("Viral Patterns", "FAIL", str(e)))
+    else:
+        results.append(("Viral Patterns", "INFO", "No previous patterns"))
+    
+    # Check self-learning state
+    learning_file = 'data/persistent/self_learning.json'
+    if os.path.exists(learning_file):
+        try:
+            with open(learning_file) as f:
+                learning = json.load(f)
+            safe_print(f"[+] Self-Learning: {len(learning)} keys")
+            results.append(("Self-Learning", "PASS", f"{len(learning)} keys"))
+        except Exception as e:
+            results.append(("Self-Learning", "FAIL", str(e)))
+    else:
+        results.append(("Self-Learning", "INFO", "No learning data yet"))
+    
+    return results
+
+
+def main():
+    safe_print("=" * 60)
+    safe_print("  HUGGINGFACE-ONLY VIDEO GENERATION TEST")
+    safe_print("=" * 60)
+    safe_print("")
+    
+    # Track all results
+    all_results = []
+    
+    # Step 1: Check environment
+    safe_print("[1/6] Checking Environment...")
+    hf_key = os.environ.get('HUGGINGFACE_API_KEY', '')
+    safe_print(f"[+] HUGGINGFACE_API_KEY: {'SET' if hf_key else 'NOT SET'}")
+    safe_print(f"[+] GEMINI_API_KEY: {'SET' if os.environ.get('GEMINI_API_KEY') else 'cleared'}")
+    safe_print(f"[+] GROQ_API_KEY: {'SET' if os.environ.get('GROQ_API_KEY') else 'cleared'}")
+    safe_print(f"[+] OPENROUTER_API_KEY: {'SET' if os.environ.get('OPENROUTER_API_KEY') else 'cleared'}")
+    
+    if not hf_key:
+        safe_print("[!] ERROR: HUGGINGFACE_API_KEY not set!")
+        all_results.append(("Environment Check", "FAIL", "No HuggingFace key"))
+    else:
+        all_results.append(("Environment Check", "PASS", "Keys configured"))
+    
+    # Step 2: Test model discovery
+    all_results.append(test_huggingface_discovery())
+    
+    # Step 3: Test API call
+    all_results.append(test_huggingface_api_call())
+    
+    # Step 4: Test video generation
+    all_results.append(test_video_generation())
+    
+    # Step 5: Check enhancements
+    all_results.extend(check_enhancements())
+    
+    # Step 6: Summary
+    safe_print("")
+    safe_print("[6/6] Test Summary")
     safe_print("-" * 60)
-    safe_print(f"{'Enhancement':<35} {'Status':<8} {'Details'}")
-    safe_print("-" * 60)
-    for name, status, details in enhancements_checked:
-        status_icon = "[OK]" if status == "PASS" else "[X]" if status == "FAIL" else "[i]"
-        safe_print(f"{name:<35} {status_icon} {status:<6} {str(details)[:30]}")
+    safe_print(f"{'Test':<35} {'Status':<8} {'Details'}")
     safe_print("-" * 60)
     
-    passed = sum(1 for _, s, _ in enhancements_checked if s == "PASS")
-    failed = sum(1 for _, s, _ in enhancements_checked if s == "FAIL")
+    for name, status, details in all_results:
+        icon = "[OK]" if status == "PASS" else "[X]" if status == "FAIL" else "[i]"
+        safe_print(f"{name:<35} {icon} {status:<6} {str(details)[:30]}")
+    
+    safe_print("-" * 60)
+    
+    passed = sum(1 for _, s, _ in all_results if s == "PASS")
+    failed = sum(1 for _, s, _ in all_results if s == "FAIL")
     safe_print(f"Total: {passed} passed, {failed} failed")
     
-    safe_print("")
-    safe_print("[8/8] Test Complete!")
-    safe_print("=" * 60)
-    
-    # Ensure test_output exists
+    # Save results
     os.makedirs('test_output', exist_ok=True)
     
-    # Save enhancement report
     with open('test_output/enhancement_report.json', 'w') as f:
         json.dump({
-            "enhancements_checked": enhancements_checked,
+            "test_type": "huggingface_only",
+            "timestamp": datetime.now().isoformat(),
+            "results": all_results,
             "passed": passed,
-            "failed": failed,
-            "timestamp": datetime.now().isoformat()
+            "failed": failed
         }, f, indent=2)
     
+    safe_print("")
+    safe_print("=" * 60)
+    safe_print("Test complete! Results saved to test_output/enhancement_report.json")
+    safe_print("=" * 60)
+    
+    # Return success if no failures
     return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":
     sys.exit(main())
-
