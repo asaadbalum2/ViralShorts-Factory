@@ -1914,7 +1914,19 @@ JSON ONLY."""
                 selected_voice = random.choice(available)
         
         rate = result.get('rate', DEFAULT_VOICE_RATES.get(voice_style, '+0%')) if result else DEFAULT_VOICE_RATES.get(voice_style, '+0%')
-        safe_print(f"   ✅ Selected: {selected_voice}")
+        
+        # v17.7.11: Use VoiceSpeedOptimizer for A/B tested optimal rate
+        if ENHANCEMENTS_V11_AVAILABLE:
+            try:
+                voice_optimizer = get_voice_optimizer()
+                optimized_rate = voice_optimizer.get_rate_for_ab_test()
+                if optimized_rate != rate:
+                    safe_print(f"   [VOICE OPT] Using learned rate: {optimized_rate} (was: {rate})")
+                    rate = optimized_rate
+            except:
+                pass
+        
+        safe_print(f"   [OK] Selected: {selected_voice} @ {rate}")
         
         # Track usage
         if batch_tracker:
