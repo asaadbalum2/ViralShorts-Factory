@@ -40,10 +40,10 @@ def main():
     os.environ['OPENROUTER_API_KEY'] = ''  # Clear OpenRouter
     
     # Import the video generator
-    from pro_video_generator import ProVideoGenerator
+    from pro_video_generator import MasterAI
     
-    safe_print("[1/8] Initializing Video Generator...")
-    generator = ProVideoGenerator()
+    safe_print("[1/8] Initializing Video Generator (MasterAI)...")
+    generator = MasterAI()
     
     # Force HuggingFace as primary
     generator.gemini_key = None
