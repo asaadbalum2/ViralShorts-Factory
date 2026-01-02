@@ -1449,14 +1449,16 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
             except Exception as e:
                 pass  # Non-critical enhancement
         
-        # v8.5: HYBRID approach - learn from analytics but with guardrails
+        # v17.9.4: Get learned optimal metrics (8-12 phrases, 45-60s)
         learned_metrics = get_learned_optimal_metrics()
-        max_phrases = learned_metrics["phrases"]  # From analytics (3-6, default 4)
-        max_duration = learned_metrics["duration"]  # From analytics (15-30, default 20)
+        max_phrases = learned_metrics["phrases"]  # From analytics (8-12, default 10)
+        max_duration = learned_metrics["duration"]  # From analytics (45-60, default 50)
         
-        # Use concept values but cap at learned optimal
-        phrase_count = min(concept.get('phrase_count', max_phrases), max_phrases)
-        target_duration = min(concept.get('target_duration_seconds', max_duration), max_duration)
+        # v17.9.4: ALWAYS use learned optimal values
+        # The AI concept often suggests short videos (4 phrases), but we know longer delivers more value
+        phrase_count = max_phrases  # Force learned optimal
+        target_duration = max_duration  # Force learned optimal
+        safe_print(f"   [v17.9.4] Using learned optimal: {phrase_count} phrases, {target_duration}s")
         
         # v8.0: Get viral hook patterns
         viral_boost = get_viral_prompt_boost() if VIRAL_PATTERNS_AVAILABLE else ""
