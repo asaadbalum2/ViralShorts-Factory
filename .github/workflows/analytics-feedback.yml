@@ -11,10 +11,10 @@ name: Weekly Analytics Feedback - Learn from Our Performance (v10.0)
 # Fully autonomous - no human intervention needed!
 
 on:
-  # DISABLED TEMPORARILY - Waiting for quota reset
+  # v17.5.2: Auto-skip if quota exhausted (no manual enable/disable needed)
   # Twice weekly: Sunday + Wednesday at 2 AM UTC (faster learning)
-  # schedule:
-  #   - cron: '0 2 * * 0,3'
+  schedule:
+    - cron: '0 2 * * 0,3'
   
   # Manual trigger for testing
   workflow_dispatch:
@@ -25,6 +25,21 @@ jobs:
     timeout-minutes: 20
 
     steps:
+      - name: Check quota before starting
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          HTTP_CODE=$(curl -s -w "%{http_code}" -o /dev/null \
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{"contents":[{"parts":[{"text":"Hi"}]}],"generationConfig":{"maxOutputTokens":1}}' \
+            2>/dev/null || echo "000")
+          if [ "$HTTP_CODE" = "429" ]; then
+            echo "::warning::QUOTA EXHAUSTED - Skipping. Will retry at next scheduled time."
+            exit 78
+          fi
+          echo "Quota OK - proceeding"
+
       - name: Checkout code
         uses: actions/checkout@v4
 

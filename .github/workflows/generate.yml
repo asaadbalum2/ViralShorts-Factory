@@ -24,28 +24,21 @@ on:
           - 'false'
           - 'true'
 
-  # DISABLED TEMPORARILY - Waiting for quota reset
   # v7.17: MAXIMUM THROUGHPUT CONFIGURATION
+  # v17.5.2: Auto-skip if quota exhausted (no manual enable/disable needed)
   # =====================================================
   # HARD LIMITS:
   #   - YouTube: 10,000 units/day ÷ 1,600 = 6 uploads/day MAX
   #   - Groq: 100K tokens/day ÷ 3,900 = 25 videos/day MAX
-  #   - Dailymotion: 4 uploads/hour = 96/day (not the bottleneck)
-  #
-  # MAXIMUM CONFIG (v7.17):
-  #   - 6 batches per day (every 4 hours)
-  #   - 4 videos per batch = 24 videos/day
-  #   - YouTube: 6 uploads/day (MAXIMUM!)
-  #   - Dailymotion: 24 uploads/day
-  #   - Groq: 93,600 tokens (93.6% of quota)
+  #   - Gemini: 1M tokens/day (primary provider)
   # =====================================================
-  # schedule:
-  #   - cron: '0 0 * * *'   # 00:00 UTC - Midnight batch
-  #   - cron: '0 4 * * *'   # 04:00 UTC - Early morning batch
-  #   - cron: '0 8 * * *'   # 08:00 UTC - Morning batch
-  #   - cron: '0 12 * * *'  # 12:00 UTC - Noon batch
-  #   - cron: '0 16 * * *'  # 16:00 UTC - Afternoon batch
-  #   - cron: '0 20 * * *'  # 20:00 UTC - Evening batch
+  schedule:
+    - cron: '0 0 * * *'   # 00:00 UTC - Midnight batch
+    - cron: '0 4 * * *'   # 04:00 UTC - Early morning batch
+    - cron: '0 8 * * *'   # 08:00 UTC - Morning batch
+    - cron: '0 12 * * *'  # 12:00 UTC - Noon batch
+    - cron: '0 16 * * *'  # 16:00 UTC - Afternoon batch
+    - cron: '0 20 * * *'  # 20:00 UTC - Evening batch
 
 jobs:
   generate:
@@ -53,6 +46,30 @@ jobs:
     timeout-minutes: 120
 
     steps:
+      - name: Check quota before starting
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Checking if we have quota available..."
+          # Quick Gemini API test (minimal tokens)
+          HTTP_CODE=$(curl -s -w "%{http_code}" -o /tmp/quota_test.json \
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{"contents":[{"parts":[{"text":"Hi"}]}],"generationConfig":{"maxOutputTokens":1}}' \
+            2>/dev/null || echo "000")
+          
+          if [ "$HTTP_CODE" = "429" ]; then
+            echo "::warning::QUOTA EXHAUSTED - Skipping this run. Will retry at next scheduled time."
+            echo "Gemini quota resets daily at midnight Pacific Time."
+            # Cancel this workflow run gracefully
+            exit 78  # Special exit code for "skip"
+          elif [ "$HTTP_CODE" = "200" ]; then
+            echo "Quota available - proceeding with video generation"
+          else
+            echo "API returned HTTP $HTTP_CODE - proceeding anyway (might recover)"
+            cat /tmp/quota_test.json 2>/dev/null || true
+          fi
+
       - name: Random delay for stealth (0-45 min)
         if: github.event.inputs.skip_delay != 'true'
         run: |
