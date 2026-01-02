@@ -799,6 +799,120 @@ class FeedbackLoopController:
         print(f"📊 Updated type weights: {weights}")
         
         return weights
+    
+    def update_hook_word_performance(self) -> Dict:
+        """
+        v17.7.7: Analyze hook words that correlate with high performance.
+        
+        Integrates with HookWordTracker from enhancements_v9 to learn
+        which words in hooks drive engagement.
+        
+        Returns: Dict of power words and words to avoid
+        """
+        try:
+            from enhancements_v9 import get_hook_tracker
+            hook_tracker = get_hook_tracker()
+            
+            all_videos = self.metadata_store.get_all()
+            
+            for video in all_videos:
+                if video.performance and video.hook:
+                    views = video.performance.get('views', 0)
+                    avg_views = self.preferences.get('avg_views', 100)
+                    
+                    hook_tracker.record_hook_performance(
+                        hook=video.hook,
+                        views=views,
+                        avg_views=avg_views
+                    )
+            
+            power_words = hook_tracker.get_power_words()
+            avoid_words = hook_tracker.get_words_to_avoid()
+            
+            print(f"📊 Hook word analysis: {len(power_words)} power words, {len(avoid_words)} to avoid")
+            
+            return {
+                "power_words": power_words,
+                "avoid_words": avoid_words
+            }
+            
+        except ImportError:
+            print("   [!] HookWordTracker not available")
+            return {}
+        except Exception as e:
+            print(f"   [!] Hook word analysis failed: {e}")
+            return {}
+    
+    def calculate_engagement_rate(self, video: VideoMetadata) -> float:
+        """
+        v17.7.7: Calculate engagement rate for a video.
+        
+        Engagement Rate = (Likes + Comments*3 + Shares*5) / Views * 100
+        """
+        if not video.performance:
+            return 0.0
+        
+        views = video.performance.get('views', 1)
+        likes = video.performance.get('likes', 0)
+        comments = video.performance.get('comments', 0)
+        shares = video.performance.get('shares', 0)
+        
+        if views < 1:
+            return 0.0
+        
+        engagement = likes + (comments * 3) + (shares * 5)
+        return (engagement / views) * 100
+    
+    def get_best_posting_times(self) -> Dict:
+        """
+        v17.7.7: Analyze which posting times perform best.
+        
+        Returns: Dict with best hours and days for posting
+        """
+        all_videos = self.metadata_store.get_all()
+        
+        hour_performance = {}
+        day_performance = {}
+        
+        for video in all_videos:
+            if video.uploaded_at and video.performance:
+                try:
+                    upload_dt = datetime.fromisoformat(video.uploaded_at)
+                    hour = upload_dt.hour
+                    day = upload_dt.strftime("%A")
+                    
+                    engagement = self.calculate_engagement_rate(video)
+                    
+                    if hour not in hour_performance:
+                        hour_performance[hour] = []
+                    hour_performance[hour].append(engagement)
+                    
+                    if day not in day_performance:
+                        day_performance[day] = []
+                    day_performance[day].append(engagement)
+                except:
+                    pass
+        
+        # Calculate averages
+        best_hours = sorted(
+            [(h, sum(e)/len(e)) for h, e in hour_performance.items() if len(e) >= 2],
+            key=lambda x: x[1], reverse=True
+        )[:3]
+        
+        best_days = sorted(
+            [(d, sum(e)/len(e)) for d, e in day_performance.items() if len(e) >= 2],
+            key=lambda x: x[1], reverse=True
+        )[:3]
+        
+        result = {
+            "best_hours": [h for h, _ in best_hours],
+            "best_days": [d for d, _ in best_days],
+            "sample_size": len(all_videos)
+        }
+        
+        print(f"📊 Best posting times: Hours {result['best_hours']}, Days {result['best_days']}")
+        
+        return result
 
 
 # =============================================================================
