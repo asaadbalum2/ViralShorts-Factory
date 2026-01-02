@@ -1829,6 +1829,21 @@ JSON ONLY."""
             except:
                 pass
         
+        # v17.7.15: Optimize description for SEO
+        if ENHANCEMENTS_V10_AVAILABLE and result and result.get('description'):
+            try:
+                title = result.get('title', '')
+                content_summary = result.get('description', '')
+                category = content.get('concept', {}).get('category', 'general')
+                
+                seo_result = optimize_description_seo(title, content_summary, category)
+                if seo_result and seo_result.get('optimized_description'):
+                    result['description'] = seo_result['optimized_description']
+                    result['seo_keywords'] = seo_result.get('secondary_keywords', [])
+                    safe_print(f"   [SEO] Description optimized (score: {seo_result.get('seo_score', '?')}/10)")
+            except:
+                pass
+        
         return result
     
     # ========================================================================
