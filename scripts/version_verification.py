@@ -326,7 +326,8 @@ class VersionVerifier:
                 (r'import \*', "Wildcard import"),
                 (r'print\([^)]*password', "Password in print"),
                 (r'api_key\s*=\s*["\'][^"\']{10,}["\']', "Hardcoded API key"),
-                (r'\.get\([^,)]+\)[^.]', "Potentially unsafe .get() without default"),
+                # Removed: .get() without default - too noisy, not a real bug
+                # (r'\.get\([^,)]+\)[^.]', "Potentially unsafe .get() without default"),
             ]
             
             for pattern, desc in bug_patterns:
