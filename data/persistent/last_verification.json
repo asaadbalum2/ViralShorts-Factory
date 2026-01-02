@@ -1,7 +1,9 @@
 {
-  "version": "16.10",
-  "timestamp": "2026-01-02T00:48:03.200324",
+  "version": "17.5",
+  "timestamp": "2026-01-02T15:10:26.356777",
   "passed": [
+    "Analytics: Tracks v12 enhancements",
+    "Analytics: Tracks quality scores",
     "Analytics: Tracks performance metrics",
     "Analytics: Recording integrated in main flow",
     "No hardcoding issues found",
@@ -20,13 +22,11 @@
     "Enhancement: Self-learning engine active"
   ],
   "warnings": [
-    "Analytics missing: Tracks v12 enhancements",
-    "Analytics missing: Tracks quality scores",
-    "pro_video_generator.py: Potentially unsafe .get() without default",
-    "enhancements_v9.py: Potentially unsafe .get() without default",
-    "enhancements_v12.py: Potentially unsafe .get() without default",
-    "quota_optimizer.py: Potentially unsafe .get() without default",
-    "token_budget_manager.py: Potentially unsafe .get() without default",
+    "src/core/pro_video_generator.py: Potentially unsafe .get() without default",
+    "src/enhancements/enhancements_v9.py: Potentially unsafe .get() without default",
+    "src/enhancements/enhancements_v12.py: Potentially unsafe .get() without default",
+    "src/quota/quota_optimizer.py: Potentially unsafe .get() without default",
+    "src/quota/token_budget_manager.py: Potentially unsafe .get() without default",
     ".github/workflows/analytics-feedback.yml: Missing PEXELS_API_KEY",
     ".github/workflows/monthly-analysis.yml: Missing PEXELS_API_KEY",
     ".github/workflows/pre-work.yml: Missing PEXELS_API_KEY"

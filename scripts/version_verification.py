@@ -35,13 +35,14 @@ from datetime import datetime
 # ============================================================================
 
 CRITICAL_FILES = [
-    "pro_video_generator.py",
-    "enhancements_v9.py",
-    "enhancements_v12.py",
-    "quota_optimizer.py",
-    "token_budget_manager.py",
-    "analytics_feedback.py",
-    "persistent_state.py",
+    "pro_video_generator.py",  # Wrapper
+    "src/core/pro_video_generator.py",  # Main generator
+    "src/enhancements/enhancements_v9.py",
+    "src/enhancements/enhancements_v12.py",
+    "src/quota/quota_optimizer.py",
+    "src/quota/token_budget_manager.py",
+    "src/analytics/analytics_feedback.py",
+    "src/utils/persistent_state.py",
 ]
 
 WORKFLOW_FILES = [
@@ -103,6 +104,13 @@ class VersionVerifier:
         except:
             return ""
     
+    def _read_main_generator(self) -> str:
+        """Read the main pro_video_generator.py (handles both old and new structure)."""
+        content = self._read_file("src/core/pro_video_generator.py")
+        if not content:
+            content = self._read_main_generator()
+        return content
+    
     # ========================================================================
     # CHECK 1: Analytics Feedback Updated
     # ========================================================================
@@ -110,9 +118,12 @@ class VersionVerifier:
         """Verify analytics feedback includes latest enhancement tracking."""
         print("\n[1] ANALYTICS FEEDBACK CHECK...")
         
-        content = self._read_file("analytics_feedback.py")
+        # Check both possible paths (old and new structure)
+        content = self._read_file("src/analytics/analytics_feedback.py")
         if not content:
-            self.errors.append("analytics_feedback.py not found")
+            content = self._read_file("analytics_feedback.py")
+        if not content:
+            self.errors.append("analytics_feedback.py not found in src/analytics/")
             return False
         
         # Check for v12 enhancement tracking
@@ -131,7 +142,9 @@ class VersionVerifier:
                 self.warnings.append(f"Analytics missing: {desc}")
         
         # Check if analytics is used in main flow
-        main_content = self._read_file("pro_video_generator.py")
+        main_content = self._read_file("src/core/pro_video_generator.py")
+        if not main_content:
+            main_content = self._read_main_generator()
         if "analytics" in main_content.lower() and "record" in main_content.lower():
             self.passed.append("Analytics: Recording integrated in main flow")
             passed += 1
@@ -182,7 +195,7 @@ class VersionVerifier:
         """Verify quota management is in place."""
         print("\n[3] QUOTA SAFETY CHECK...")
         
-        main_content = self._read_file("pro_video_generator.py")
+        main_content = self._read_main_generator()
         
         checks = [
             ("budget_manager" in main_content, "Token budget manager used"),
@@ -214,7 +227,7 @@ class VersionVerifier:
         issues = []
         
         # Check for duplicate function definitions
-        main_content = self._read_file("pro_video_generator.py")
+        main_content = self._read_main_generator()
         func_defs = re.findall(r'^def (\w+)\(', main_content, re.MULTILINE)
         duplicates = [f for f in func_defs if func_defs.count(f) > 1]
         if duplicates:
@@ -258,7 +271,7 @@ class VersionVerifier:
         """Verify all imported functions are actually used."""
         print("\n[5] IMPORT USAGE CHECK...")
         
-        main_content = self._read_file("pro_video_generator.py")
+        main_content = self._read_main_generator()
         
         # Find all imports from enhancements_v12
         v12_imports = re.findall(r'from enhancements_v12 import \(([\s\S]*?)\)', main_content)
@@ -378,7 +391,7 @@ class VersionVerifier:
         """Verify all enhancement systems are integrated."""
         print("\n[8] ENHANCEMENT INTEGRATION CHECK...")
         
-        main_content = self._read_file("pro_video_generator.py")
+        main_content = self._read_main_generator()
         
         checks = [
             ("V12_MASTER_PROMPT" in main_content, "V12 master prompt loaded"),
