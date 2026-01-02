@@ -324,6 +324,49 @@ def main():
         test("Engagement Predictor works", False, str(e))
     
     # =========================================================================
+    # TEST 18: Virality Calculator
+    # =========================================================================
+    print("\n[18] VIRALITY CALCULATOR")
+    try:
+        from virality_calculator import get_virality_calculator
+        calc = get_virality_calculator()
+        test("Import success", True)
+        test("Has calculate_virality", hasattr(calc, 'calculate_virality'))
+        result = calc.calculate_virality({
+            "hook": "Test hook",
+            "phrases": ["Phrase 1", "Phrase 2"],
+            "cta": "Comment!",
+            "category": "test",
+            "topic": "test topic"
+        })
+        test("calculate_virality returns dict", isinstance(result, dict))
+        test("Has overall_score", "overall_score" in result)
+        test("Has grade", "grade" in result)
+    except Exception as e:
+        test("Virality Calculator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 19: Script Analyzer
+    # =========================================================================
+    print("\n[19] SCRIPT ANALYZER")
+    try:
+        from script_analyzer import get_script_analyzer
+        analyzer = get_script_analyzer()
+        test("Import success", True)
+        test("Has analyze_script", hasattr(analyzer, 'analyze_script'))
+        result = analyzer.analyze_script({
+            "hook": "Test hook",
+            "phrases": ["Phrase 1", "Phrase 2"],
+            "cta": "Comment!"
+        })
+        test("analyze_script returns dict", isinstance(result, dict))
+        test("Has overall_score", "overall_score" in result)
+        test("Has metrics", "metrics" in result)
+        test("Has suggestions", "suggestions" in result)
+    except Exception as e:
+        test("Script Analyzer works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
