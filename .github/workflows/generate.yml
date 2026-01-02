@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       batch_size:
-        description: 'Total videos per batch (BEST goes to YouTube)'
+        description: 'Videos to generate (1 per workflow = 6/day for YouTube)'
         required: false
-        default: '4'  # v7.15: Optimized for max throughput within rate limits
+        default: '1'  # v17.9.5: YouTube-only focus (6 runs/day × 1 video = 6/day)
       test_only:
         description: 'Test mode - generate but DO NOT upload (saves quota)'
         required: false
@@ -24,21 +24,20 @@ on:
           - 'false'
           - 'true'
 
-  # v7.17: MAXIMUM THROUGHPUT CONFIGURATION
-  # v17.5.2: Auto-skip if quota exhausted (no manual enable/disable needed)
+  # v17.9.5: YOUTUBE-ONLY CONFIGURATION
   # =====================================================
-  # HARD LIMITS:
-  #   - YouTube: 10,000 units/day ÷ 1,600 = 6 uploads/day MAX
-  #   - Groq: 100K tokens/day ÷ 3,900 = 25 videos/day MAX
-  #   - Gemini: 1M tokens/day (primary provider)
+  # YouTube focus (Dailymotion DISABLED)
+  # LIMITS:
+  #   - YouTube: 6 uploads/day (10,000 units ÷ 1,600)
+  #   - 6 runs/day × 1 video each = 6 videos
   # =====================================================
   schedule:
-    - cron: '0 0 * * *'   # 00:00 UTC - Midnight batch
-    - cron: '0 4 * * *'   # 04:00 UTC - Early morning batch
-    - cron: '0 8 * * *'   # 08:00 UTC - Morning batch
-    - cron: '0 12 * * *'  # 12:00 UTC - Noon batch
-    - cron: '0 16 * * *'  # 16:00 UTC - Afternoon batch
-    - cron: '0 20 * * *'  # 20:00 UTC - Evening batch
+    - cron: '0 0 * * *'   # 00:00 UTC - Video 1/6
+    - cron: '0 4 * * *'   # 04:00 UTC - Video 2/6
+    - cron: '0 8 * * *'   # 08:00 UTC - Video 3/6
+    - cron: '0 12 * * *'  # 12:00 UTC - Video 4/6
+    - cron: '0 16 * * *'  # 16:00 UTC - Video 5/6
+    - cron: '0 20 * * *'  # 20:00 UTC - Video 6/6
 
 jobs:
   generate:
@@ -173,32 +172,30 @@ jobs:
       # - Voice pacing intelligence
       # - YouTube: 6/day (max) | Dailymotion: 24/day (rate-aware)
       # ====================================================================
-      - name: Generate Videos (v17.8 - Maximum Quality)
+      - name: Generate Videos (v17.9.5 - YouTube Focus)
         run: |
-          # Set defaults for scheduled runs
+          # v17.9.5: YouTube-only focus (Dailymotion disabled)
+          # 6 scheduled runs/day × 1 video = 6 videos/day = YouTube daily limit
           BATCH="${{ github.event.inputs.batch_size }}"
-          BATCH="${BATCH:-4}"  # Default to 4 for optimal throughput
+          BATCH="${BATCH:-1}"  # Default to 1 for YouTube-only strategy
           TEST_ONLY="${{ github.event.inputs.test_only }}"
           TEST_ONLY="${TEST_ONLY:-false}"
           
           echo "=============================================="
-          echo "   VIRALSHORTS FACTORY v17.8"
-          echo "   MAXIMUM QUALITY - 25 ENHANCEMENTS"
-          echo "   Batch: $BATCH videos"
-          echo "   Quality Gates: Pre-gen, Post-content, Post-render"
-          echo "   YouTube: BEST video (6/day MAX)"
-          echo "   Dailymotion: Rate-limit aware (4/hour)"
-          echo "   Variety: Semantic duplicate detection active"
+          echo "   VIRALSHORTS FACTORY v17.9.5"
+          echo "   YOUTUBE-ONLY FOCUS"
+          echo "   Videos: $BATCH per run (6 runs/day)"
+          echo "   Quality: 10 phrases, 50s duration"
+          echo "   Dailymotion: DISABLED"
           echo "=============================================="
           
           if [ "$TEST_ONLY" = "true" ]; then
             echo "TEST MODE: Generating without uploads"
             python pro_video_generator.py --count $BATCH --no-upload
           else
-            echo "PRODUCTION MODE: Generating with strategic uploads"
-            # --strategic-youtube: AI picks the BEST video for YouTube
-            # All videos go to Dailymotion
-            python pro_video_generator.py --count $BATCH --upload --strategic-youtube
+            echo "PRODUCTION MODE: YouTube upload only"
+            # v17.9.5: YouTube only, no Dailymotion
+            python pro_video_generator.py --count $BATCH --upload --youtube-only
           fi
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -209,9 +206,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
-          DAILYMOTION_API_KEY: ${{ secrets.DAILYMOTION_API_KEY }}
-          DAILYMOTION_API_SECRET: ${{ secrets.DAILYMOTION_API_SECRET }}
-          DAILYMOTION_USERNAME: ${{ secrets.DAILYMOTION_USERNAME }}
           DAILYMOTION_PASSWORD: ${{ secrets.DAILYMOTION_PASSWORD }}
           PYTHONUNBUFFERED: "1"
 
@@ -257,8 +251,10 @@ jobs:
           import os
           import sys
           sys.path.insert(0, 'src/analytics')
+          sys.path.insert(0, 'src/core')
           sys.path.insert(0, 'src')
           from analytics_feedback import FeedbackLoopController
+          from pro_video_generator import update_learned_metrics_from_performance
 
           try:
               controller = FeedbackLoopController()
@@ -267,8 +263,25 @@ jobs:
               updated = controller.update_all_performance()
               print(f'Updated performance for {updated} videos')
               
-              # Run analysis if we have enough data
+              # v17.9.5: Update learned video metrics from performance
               all_videos = controller.metadata_store.get_all()
+              for video in all_videos:
+                  if video.performance and video.performance.views > 0:
+                      perf = {
+                          'views': video.performance.views,
+                          'likes': video.performance.likes,
+                          'comments': video.performance.comments,
+                          'avg_watch_percentage': getattr(video.performance, 'avg_watch_percentage', 50)
+                      }
+                      metrics = {
+                          'duration': video.duration,
+                          'phrase_count': video.phrase_count,
+                          'words_per_phrase': 12  # Default if not tracked
+                      }
+                      update_learned_metrics_from_performance(video.video_id, perf, metrics)
+              print('Updated learned video metrics from performance')
+              
+              # Run analysis if we have enough data
               if len([v for v in all_videos if v.performance]) >= 5:
                   print('Running AI analysis...')
                   insights = controller.run_analysis()
@@ -302,31 +315,23 @@ jobs:
           echo "## ViralShorts Factory v17.8 - MAXIMUM QUALITY" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
-          echo "**Batch Size:** ${{ github.event.inputs.batch_size || '4' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Videos per run:** ${{ github.event.inputs.batch_size || '1' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### v17.8 ENHANCEMENTS (27 AI Modules!)" >> $GITHUB_STEP_SUMMARY
-          echo "- **3-Layer Quality Gates**: Pre-gen, post-content, post-render validation" >> $GITHUB_STEP_SUMMARY
-          echo "- **Semantic Duplicate Detection**: AI checks for similar recent topics" >> $GITHUB_STEP_SUMMARY
-          echo "- **Retention Curve Prediction**: AI predicts where viewers drop off" >> $GITHUB_STEP_SUMMARY
-          echo "- **A/B Test Tracking**: Learns which title styles perform best" >> $GITHUB_STEP_SUMMARY
-          echo "- **Error Pattern Learning**: Learns from B-roll failures" >> $GITHUB_STEP_SUMMARY
-          echo "- **Voice Pacing Intelligence**: Optimal pacing per phrase" >> $GITHUB_STEP_SUMMARY
+          echo "### v17.9.5 - YouTube Focus" >> $GITHUB_STEP_SUMMARY
+          echo "- **Platform**: YouTube Shorts ONLY (Dailymotion disabled)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Schedule**: 6 runs/day × 1 video = 6 videos/day" >> $GITHUB_STEP_SUMMARY
+          echo "- **Content**: 10 phrases, 50s duration, full value delivery" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Weekly Analytics (Sundays)" >> $GITHUB_STEP_SUMMARY
-          echo "- Comment mining for insights" >> $GITHUB_STEP_SUMMARY
-          echo "- Shadow-ban detection" >> $GITHUB_STEP_SUMMARY
-          echo "- Performance pattern analysis" >> $GITHUB_STEP_SUMMARY
+          echo "### AI Enhancements Active" >> $GITHUB_STEP_SUMMARY
+          echo "- Dynamic model discovery (Gemini/Groq)" >> $GITHUB_STEP_SUMMARY
+          echo "- Learned optimal video length" >> $GITHUB_STEP_SUMMARY
+          echo "- A/B test tracking for hooks/titles" >> $GITHUB_STEP_SUMMARY
+          echo "- Value delivery verification" >> $GITHUB_STEP_SUMMARY
+          echo "- Rate limiting (4s Gemini, 2.5s Groq)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Monthly Analysis (1st of month)" >> $GITHUB_STEP_SUMMARY
-          echo "- Competitor tracking" >> $GITHUB_STEP_SUMMARY
-          echo "- Content recycling suggestions" >> $GITHUB_STEP_SUMMARY
-          echo "- Viral pattern extraction" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Daily Output" >> $GITHUB_STEP_SUMMARY
-          echo "- **YouTube: 6 uploads/day (MAXIMUM!)**" >> $GITHUB_STEP_SUMMARY
-          echo "- **Dailymotion: 24 uploads/day (rate-limit aware)**" >> $GITHUB_STEP_SUMMARY
-          echo "- Schedule: Every 4 hours (6 runs/day)" >> $GITHUB_STEP_SUMMARY
+          echo "### Schedule (6 runs/day)" >> $GITHUB_STEP_SUMMARY
+          echo "- Every 4 hours: 00, 04, 08, 12, 16, 20 UTC" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Channels" >> $GITHUB_STEP_SUMMARY
           echo "- YouTube: https://www.youtube.com/channel/UC4Y6O0ubwl0_ZQsLq2EteTQ" >> $GITHUB_STEP_SUMMARY

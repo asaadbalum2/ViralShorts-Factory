@@ -569,11 +569,65 @@ class VersionVerifier:
         return missing == 0
     
     # ========================================================================
-    # CHECK 10: TEST SUITE STATUS
+    # CHECK 10: v17.9.5 YOUTUBE-ONLY MODE
+    # ========================================================================
+    def check_youtube_only_mode(self) -> bool:
+        """Check v17.9.5 YouTube-only features are properly configured."""
+        print("\n[10] YOUTUBE-ONLY MODE CHECK (v17.9.5)...")
+        
+        issues = []
+        
+        # Check workflow has --youtube-only flag
+        workflow = self._read_file(".github/workflows/generate.yml")
+        if "--youtube-only" in workflow:
+            self.passed.append("Workflow uses --youtube-only flag")
+            print("   [OK] --youtube-only flag in workflow")
+        else:
+            issues.append("Workflow missing --youtube-only flag")
+            print("   [X] --youtube-only flag NOT FOUND in workflow")
+        
+        # Check batch_size default is 1
+        if "default: '1'" in workflow and "Videos to generate (1 per workflow" in workflow:
+            self.passed.append("Batch size default is 1")
+            print("   [OK] Batch size default = 1")
+        else:
+            issues.append("Batch size default should be 1 for YouTube-only")
+            print("   [!] Batch size default not set to 1")
+        
+        # Check Dailymotion is not in upload command
+        if "dailymotion=False" in self._read_file("src/core/pro_video_generator.py"):
+            self.passed.append("Dailymotion disabled in youtube-only mode")
+            print("   [OK] Dailymotion disabled")
+        
+        # Check learned metrics function exists
+        generator = self._read_file("src/core/pro_video_generator.py")
+        if "get_learned_optimal_metrics" in generator:
+            self.passed.append("Learned metrics function exists")
+            print("   [OK] get_learned_optimal_metrics() exists")
+        else:
+            issues.append("Missing get_learned_optimal_metrics function")
+            print("   [X] get_learned_optimal_metrics NOT FOUND")
+        
+        # Check update_learned_metrics is called in workflow
+        if "update_learned_metrics_from_performance" in workflow:
+            self.passed.append("Metrics learning integrated in workflow")
+            print("   [OK] Metrics learning in workflow")
+        else:
+            issues.append("update_learned_metrics not called in workflow")
+            print("   [X] Metrics learning NOT in workflow")
+        
+        if issues:
+            for issue in issues:
+                self.errors.append(issue)
+            return False
+        return True
+    
+    # ========================================================================
+    # CHECK 11: TEST SUITE STATUS
     # ========================================================================
     def check_test_suite(self) -> bool:
         """Check that the test suite exists and passes."""
-        print("\n[10] TEST SUITE CHECK...")
+        print("\n[11] TEST SUITE CHECK...")
         
         test_file = "scripts/test_all_ai_modules.py"
         
@@ -616,6 +670,7 @@ class VersionVerifier:
             self.check_workflows(),
             self.check_enhancements_integrated(),
             self.check_ai_first_architecture(),  # v17.8: New check
+            self.check_youtube_only_mode(),  # v17.9.5: YouTube-only mode
             self.check_ai_modules(),  # v17.8.27: All AI modules
             self.check_test_suite(),  # v17.8.27: Test suite
         ]

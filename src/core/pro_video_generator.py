@@ -3133,7 +3133,7 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     run_id = random.randint(10000, 99999)
     
     safe_print("=" * 70)
-    safe_print(f"   VIRALSHORTS FACTORY v9.0 - MAXIMUM QUALITY")
+    safe_print(f"   VIRALSHORTS FACTORY v17.9.5 - YOUTUBE FOCUS")
     safe_print(f"   Run: #{run_id}")
     safe_print(f"   Video Length: 15-25 seconds (optimal)")
     safe_print(f"   Variety: Persistent across runs")
@@ -3868,6 +3868,8 @@ async def main():
     parser.add_argument("--no-upload", action="store_true")
     parser.add_argument("--strategic-youtube", action="store_true", 
                         help="Upload BEST video to YouTube, all to Dailymotion")
+    parser.add_argument("--youtube-only", action="store_true",
+                        help="v17.9.5: Upload to YouTube only, skip Dailymotion entirely")
     parser.add_argument("--test-mode", action="store_true",
                         help="Test mode: skip delays, extra logging")
     parser.add_argument("--output-dir", default="output",
@@ -3885,7 +3887,7 @@ async def main():
     should_upload = args.upload and not args.no_upload
     
     safe_print(f"\n{'='*70}")
-    safe_print("   VIRALSHORTS FACTORY v11.0 - 89 ENHANCEMENTS INTEGRATED")
+    safe_print("   VIRALSHORTS FACTORY v17.9.5 - YOUTUBE FOCUS")
     safe_print(f"   Generating {args.count} video(s)")
     safe_print("   AI decides: category, topic, length, voice, music")
     safe_print("   QUALITY GATES: Pre-gen, post-content, post-render")
@@ -3924,7 +3926,17 @@ async def main():
         safe_print("   UPLOADING")
         safe_print("=" * 70)
         
-        if args.strategic_youtube:
+        if args.youtube_only:
+            # v17.9.5: YouTube-only mode - skip Dailymotion entirely
+            safe_print("[v17.9.5] YouTube-only mode - Dailymotion disabled")
+            for video_path, metadata in BATCH_TRACKER.get_all_videos():
+                safe_print(f"\n[YOUTUBE] Uploading: {video_path}")
+                await upload_video(video_path, metadata, youtube=True, dailymotion=False)
+                if len(BATCH_TRACKER.video_scores) > 1:
+                    delay = random.randint(60, 120)
+                    safe_print(f"[WAIT] Anti-ban delay: {delay}s")
+                    time.sleep(delay)
+        elif args.strategic_youtube:
             # Strategic: Best video to YouTube, all to Dailymotion
             best = BATCH_TRACKER.get_best_video_for_youtube()
             if best:
