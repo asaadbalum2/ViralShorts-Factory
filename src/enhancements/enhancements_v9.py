@@ -165,7 +165,8 @@ class SmartAICaller:
                 safe_print(f"[!] Gemini init: {e}")
     
     def call(self, prompt: str, max_tokens: int = 1000, 
-             priority: str = "normal", temperature: float = 0.8) -> Optional[str]:
+             priority: str = "normal", temperature: float = 0.8,
+             use_cache: bool = True) -> Optional[str]:
         """
         Make AI call with smart routing.
         
@@ -173,8 +174,22 @@ class SmartAICaller:
         - "critical": Use Groq first (faster, for real-time decisions)
         - "normal": Use Gemini first (save Groq quota)
         - "bulk": Always use Gemini (high token tasks)
+        
+        v17.8: Added prompt caching to reduce quota usage.
         """
         import time
+        
+        # v17.8: Check cache first (saves quota!)
+        if use_cache and temperature < 0.5:  # Only cache deterministic responses
+            try:
+                from prompt_cache import cached_ai_call, cache_ai_response
+                cached = cached_ai_call(prompt, context=priority)
+                if cached:
+                    safe_print("   [CACHE HIT] Using cached response")
+                    return cached
+            except ImportError:
+                pass
+        
         time.sleep(0.5)  # Rate limit protection
         
         # Determine order based on priority
@@ -191,6 +206,15 @@ class SmartAICaller:
                         self.groq_calls_today += 1
                     else:
                         self.gemini_calls_today += 1
+                    
+                    # v17.8: Cache the response
+                    if use_cache and temperature < 0.5:
+                        try:
+                            from prompt_cache import cache_ai_response
+                            cache_ai_response(prompt, result, context=priority)
+                        except ImportError:
+                            pass
+                    
                     return result
             except Exception as e:
                 safe_print(f"[!] {name} failed: {e}")
