@@ -156,7 +156,7 @@ jobs:
       # - Voice pacing intelligence
       # - YouTube: 6/day (max) | Dailymotion: 24/day (rate-aware)
       # ====================================================================
-      - name: Generate Videos (v9.0 - Maximum Quality)
+      - name: Generate Videos (v17.8 - Maximum Quality)
         run: |
           # Set defaults for scheduled runs
           BATCH="${{ github.event.inputs.batch_size }}"
@@ -165,7 +165,7 @@ jobs:
           TEST_ONLY="${TEST_ONLY:-false}"
           
           echo "=============================================="
-          echo "   VIRALSHORTS FACTORY v9.0"
+          echo "   VIRALSHORTS FACTORY v17.8"
           echo "   MAXIMUM QUALITY - 25 ENHANCEMENTS"
           echo "   Batch: $BATCH videos"
           echo "   Quality Gates: Pre-gen, Post-content, Post-render"
@@ -279,13 +279,13 @@ jobs:
 
       - name: Summary
         run: |
-          echo "## ViralShorts Factory v9.0 - MAXIMUM QUALITY" >> $GITHUB_STEP_SUMMARY
+          echo "## ViralShorts Factory v17.8 - MAXIMUM QUALITY" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "**Batch Size:** ${{ github.event.inputs.batch_size || '4' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### v9.0 ENHANCEMENTS (25 Total!)" >> $GITHUB_STEP_SUMMARY
+          echo "### v17.8 ENHANCEMENTS (27 AI Modules!)" >> $GITHUB_STEP_SUMMARY
           echo "- **3-Layer Quality Gates**: Pre-gen, post-content, post-render validation" >> $GITHUB_STEP_SUMMARY
           echo "- **Semantic Duplicate Detection**: AI checks for similar recent topics" >> $GITHUB_STEP_SUMMARY
           echo "- **Retention Curve Prediction**: AI predicts where viewers drop off" >> $GITHUB_STEP_SUMMARY
