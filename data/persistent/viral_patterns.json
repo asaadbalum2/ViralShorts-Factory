@@ -2,25 +2,50 @@
   "title_tricks": [
     "use numbers",
     "curiosity gaps",
-    "promise reveal"
+    "promise reveal",
+    "controversy opener",
+    "authority claim"
   ],
   "hook_types": [
     "question hook",
     "shocking statement",
-    "number reveal"
+    "number reveal",
+    "pattern interrupt",
+    "loss aversion",
+    "challenge viewer",
+    "myth buster"
   ],
   "engagement_baits": [
     "Comment if you agree",
-    "Save this for later"
+    "Save this for later",
+    "Type 1 if you knew, 2 if you didn't",
+    "Would you try this? Yes or No",
+    "Tag someone who needs this"
   ],
-  "weekly_updated": "2025-12-24T19:50:22.471326",
+  "weekly_updated": "2026-01-02T15:40:00.000000",
   "title_patterns": [
     "The {adj} Truth About {topic}",
-    "{number} Signs You're {state}"
+    "{number} Signs You're {state}",
+    "Why {topic} Is Secretly {outcome}",
+    "Stop Doing {action} - Here's Why",
+    "I Tested {thing} for {time} - Results"
   ],
   "hook_patterns": [
     "Start with a question",
-    "Shocking first statement"
+    "Shocking first statement",
+    "Stop scrolling - this changes everything",
+    "What they don't teach you about {topic}",
+    "You've been doing {action} wrong your whole life",
+    "{number}% of people fail this - are you one of them?",
+    "Scientists just discovered {finding}"
+  ],
+  "scroll_stop_openers": [
+    "STOP - this could save you {value}",
+    "Wait - before you {action}, know this",
+    "I bet you didn't know this about {topic}",
+    "Here's what {authority} won't tell you",
+    "This one trick {outcome} in just {time}",
+    "You're losing {value} every {time} doing this"
   ],
   "psychological_triggers": [
     "curiosity",

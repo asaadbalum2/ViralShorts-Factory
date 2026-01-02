@@ -17,11 +17,49 @@ def fetch_broll_videos():
     os.makedirs(broll_dir, exist_ok=True)
     
     headers = {'Authorization': api_key}
-    queries = ['abstract motion', 'colorful particles', 'neon lights', 'geometric patterns', 'gradient flow']
+    
+    # v17.6: Category-specific B-roll for better content matching
+    # These are organized by our most popular content categories
+    CATEGORY_BROLL = {
+        'psychology': [
+            'person thinking deeply', 'brain visualization', 'meditation mindfulness',
+            'stressed person working', 'happy person smiling'
+        ],
+        'money': [
+            'money bills counting', 'stock market trading', 'business success celebration',
+            'piggy bank savings', 'entrepreneur working laptop'
+        ],
+        'productivity': [
+            'person typing laptop', 'organized desk workspace', 'morning routine coffee',
+            'to do list checking', 'time management clock'
+        ],
+        'health': [
+            'healthy food salad', 'person exercising gym', 'running outdoor fitness',
+            'yoga stretching', 'sleeping peacefully'
+        ],
+        'relationships': [
+            'couple holding hands', 'friends laughing together', 'family dinner table',
+            'conversation coffee shop', 'emotional connection'
+        ],
+        'generic': [
+            'abstract motion', 'colorful particles', 'neon lights',
+            'geometric patterns', 'gradient flow'
+        ]
+    }
+    
+    # Get queries from multiple categories for variety
+    all_queries = []
+    for category in ['psychology', 'money', 'productivity', 'generic']:
+        all_queries.extend(CATEGORY_BROLL.get(category, [])[:2])
+    
+    # Shuffle for variety
+    import random
+    random.shuffle(all_queries)
+    queries = all_queries[:10]  # Take top 10
     
     downloaded = 0
     for query in queries:
-        if downloaded >= 3:  # Limit to 3 videos
+        if downloaded >= 10:  # v17.6: Increased from 3 to 10 for more variety
             break
             
         try:
