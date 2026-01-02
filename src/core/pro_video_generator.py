@@ -2751,14 +2751,21 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
     final_video = final_video.set_audio(final_audio)
     
     safe_print("   [*] Rendering final video...")
+    # v17.7.9: Enhanced rendering settings for professional quality
     final_video.write_videofile(
         output_path,
         fps=30,
         codec='libx264',
         audio_codec='aac',
-        preset='medium',
-        bitrate='8M',
+        preset='slow',  # v17.7.9: Better quality (was 'medium')
+        bitrate='12M',  # v17.7.9: Higher bitrate (was '8M')
         threads=4,
+        ffmpeg_params=[
+            '-crf', '18',           # v17.7.9: High quality CRF
+            '-profile:v', 'high',   # v17.7.9: H.264 High Profile
+            '-pix_fmt', 'yuv420p',  # v17.7.9: Compatibility
+            '-movflags', '+faststart',  # v17.7.9: Web optimization
+        ],
         logger=None
     )
     
