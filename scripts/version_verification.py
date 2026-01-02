@@ -489,6 +489,30 @@ class VersionVerifier:
             all_good = False
             print("   [X] AI pattern generator: MISSING")
         
+        # Check self_learning.json
+        learning_file = "data/persistent/self_learning.json"
+        try:
+            if os.path.exists(learning_file):
+                with open(learning_file, 'r') as f:
+                    data = json.load(f)
+                
+                if data.get("source") == "REAL_ANALYTICS":
+                    self.passed.append("self_learning.json marked for real analytics")
+                    print("   [OK] self_learning.json: Real analytics only")
+                elif data.get("awaiting_real_data"):
+                    self.passed.append("self_learning.json awaiting real data")
+                    print("   [OK] self_learning.json: Awaiting real data")
+                else:
+                    # Check if it looks seeded
+                    if data.get("stats", {}).get("total_videos", 0) > 10:
+                        self.warnings.append("self_learning.json may contain seeded data")
+                        print("   [!] self_learning.json: May have seeded data (review)")
+                    else:
+                        self.passed.append("self_learning.json structure OK")
+                        print("   [OK] self_learning.json: Structure OK")
+        except Exception as e:
+            self.warnings.append(f"Could not check self_learning.json: {e}")
+        
         return all_good
     
     # ========================================================================

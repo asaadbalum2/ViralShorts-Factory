@@ -1,201 +1,39 @@
 {
+  "source": "REAL_ANALYTICS",
+  "note": "This file is populated ONLY by actual video performance data. DO NOT SEED!",
+  
   "patterns": {
-    "hooks": [
-      {
-        "value": "pattern_interrupt",
-        "success_count": 8,
-        "failure_count": 1,
-        "last_used": "2026-01-02T16:00:00.000000",
-        "examples": [
-          "STOP - This simple habit changed my life",
-          "Wait - before you scroll, you need to see this"
-        ]
-      },
-      {
-        "value": "question",
-        "success_count": 5,
-        "failure_count": 2,
-        "last_used": "2026-01-02T15:30:00.000000",
-        "examples": [
-          "Did you know 93% of people make this mistake?",
-          "Why do successful people wake up at 5 AM?"
-        ]
-      },
-      {
-        "value": "specific_number",
-        "success_count": 6,
-        "failure_count": 1,
-        "last_used": "2026-01-02T15:00:00.000000",
-        "examples": [
-          "93% of people don't know this about their brain",
-          "This 2-minute habit saves you 3 hours daily"
-        ]
-      },
-      {
-        "value": "mystery",
-        "success_count": 4,
-        "failure_count": 2,
-        "last_used": "2026-01-02T14:00:00.000000",
-        "examples": [
-          "The secret morning routine billionaires won't tell you",
-          "Hidden trick that saves $500 per month"
-        ]
-      }
-    ],
-    "topics": [
-      {
-        "value": "morning_routines",
-        "success_count": 5,
-        "failure_count": 1,
-        "last_used": "2026-01-02T16:00:00.000000",
-        "examples": ["Morning habits that actually work"]
-      },
-      {
-        "value": "money_saving",
-        "success_count": 4,
-        "failure_count": 1,
-        "last_used": "2026-01-02T15:30:00.000000",
-        "examples": ["Save $500 monthly with this trick"]
-      },
-      {
-        "value": "psychology_facts",
-        "success_count": 6,
-        "failure_count": 1,
-        "last_used": "2026-01-02T15:00:00.000000",
-        "examples": ["Why your brain sabotages you"]
-      }
-    ],
-    "categories": [
-      {
-        "value": "productivity",
-        "success_count": 8,
-        "failure_count": 2,
-        "last_used": "2026-01-02T16:00:00.000000",
-        "examples": ["Morning routines for students"]
-      },
-      {
-        "value": "psychology",
-        "success_count": 7,
-        "failure_count": 1,
-        "last_used": "2026-01-02T15:30:00.000000",
-        "examples": ["Signs of high intelligence"]
-      },
-      {
-        "value": "money",
-        "success_count": 6,
-        "failure_count": 2,
-        "last_used": "2026-01-02T15:00:00.000000",
-        "examples": ["Money mistakes to avoid in your 20s"]
-      },
-      {
-        "value": "health",
-        "success_count": 4,
-        "failure_count": 3,
-        "last_used": "2026-01-02T14:00:00.000000",
-        "examples": ["Sleep hacks that work"]
-      }
-    ],
-    "phrases": [
-      {
-        "value": "punchy",
-        "success_count": 10,
-        "failure_count": 2,
-        "last_used": "2026-01-02T16:00:00.000000",
-        "examples": ["Short, impactful sentences"]
-      },
-      {
-        "value": "actionable",
-        "success_count": 7,
-        "failure_count": 1,
-        "last_used": "2026-01-02T15:30:00.000000",
-        "examples": ["Try this tonight", "Do this for 30 days"]
-      }
-    ],
-    "numbers": [
-      {
-        "value": "round_number",
-        "success_count": 8,
-        "failure_count": 1,
-        "last_used": "2026-01-02T16:00:00.000000",
-        "examples": ["$500", "80%", "30 days"]
-      },
-      {
-        "value": "contextual_number",
-        "success_count": 5,
-        "failure_count": 1,
-        "last_used": "2026-01-02T15:30:00.000000",
-        "examples": ["2 minutes", "5 steps", "3x faster"]
-      }
-    ],
-    "failures": [
-      {
-        "value": "awkward_number",
-        "success_count": 0,
-        "failure_count": 5,
-        "last_used": "2026-01-02T14:00:00.000000",
-        "examples": ["$3333", "47.3%", "$1847"]
-      },
-      {
-        "value": "vague_promise",
-        "success_count": 0,
-        "failure_count": 4,
-        "last_used": "2026-01-02T13:00:00.000000",
-        "examples": ["This will change your life", "You need to know this"]
-      },
-      {
-        "value": "verbose",
-        "success_count": 0,
-        "failure_count": 3,
-        "last_used": "2026-01-02T12:00:00.000000",
-        "examples": ["Long sentences with too many words that lose attention"]
-      }
-    ]
+    "hooks": [],
+    "topics": [],
+    "categories": [],
+    "phrases": [],
+    "numbers": [],
+    "failures": []
   },
+  
   "stats": {
-    "total_videos": 50,
-    "avg_first_attempt_score": 6.5,
-    "regeneration_rate": 0.35,
-    "top_categories": [
-      "productivity",
-      "psychology",
-      "money"
-    ],
-    "worst_categories": [
-      "crypto",
-      "politics"
-    ]
+    "total_videos": 0,
+    "avg_first_attempt_score": null,
+    "regeneration_rate": null,
+    "top_categories": [],
+    "worst_categories": []
   },
+  
   "recommendations": {
-    "boost_phrases": [
-      "punchy",
-      "actionable",
-      "specific_number"
-    ],
-    "avoid_phrases": [
-      "awkward_number",
-      "vague_promise",
-      "verbose"
-    ],
-    "best_hook_styles": [
-      "pattern_interrupt",
-      "question",
-      "specific_number"
-    ],
-    "optimal_length": 4,
-    "best_posting_hours": [14, 18, 22],
-    "best_posting_days": ["Tuesday", "Thursday", "Saturday"]
+    "note": "Populated by SelfLearningEngine after analyzing real performance",
+    "boost_phrases": [],
+    "avoid_phrases": [],
+    "best_hook_styles": [],
+    "optimal_length": null,
+    "best_posting_hours": [],
+    "best_posting_days": []
   },
+  
   "timing_performance": {
-    "hours": {
-      "14": {"videos": 8, "avg_score": 7.5},
-      "18": {"videos": 12, "avg_score": 8.0},
-      "22": {"videos": 6, "avg_score": 7.2}
-    },
-    "days": {
-      "Tuesday": {"videos": 10, "avg_score": 7.8},
-      "Thursday": {"videos": 8, "avg_score": 8.1},
-      "Saturday": {"videos": 7, "avg_score": 7.5}
-    }
+    "hours": {},
+    "days": {}
   },
-  "last_updated": "2026-01-02T16:00:00.000000"
+  
+  "last_updated": null,
+  "awaiting_real_data": true
 }
