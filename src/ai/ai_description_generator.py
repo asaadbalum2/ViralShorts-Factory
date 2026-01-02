@@ -13,6 +13,7 @@ Descriptions are important for:
 """
 
 import os
+from src.ai.model_helper import get_dynamic_gemini_model
 import json
 import re
 from datetime import datetime
@@ -143,7 +144,7 @@ Return ONLY the description text, no quotes, no formatting."""
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel(get_dynamic_gemini_model())
                 response = model.generate_content(prompt)
                 return response.text.strip()
             except Exception as e:
@@ -247,4 +248,5 @@ if __name__ == "__main__":
     safe_print("-" * 40)
     
     safe_print("\nTest complete!")
+
 

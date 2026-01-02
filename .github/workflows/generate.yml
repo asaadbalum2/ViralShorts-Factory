@@ -51,23 +51,40 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           echo "Checking if we have quota available..."
-          # Quick Gemini API test (minimal tokens)
-          HTTP_CODE=$(curl -s -w "%{http_code}" -o /tmp/quota_test.json \
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
-            -H "Content-Type: application/json" \
-            -d '{"contents":[{"parts":[{"text":"Hi"}]}],"generationConfig":{"maxOutputTokens":1}}' \
-            2>/dev/null || echo "000")
           
+          # v17.9.2: DYNAMIC model discovery - try multiple models
+          # Model names change over time, so we try several in priority order
+          MODELS="gemini-2.0-flash-exp gemini-2.0-flash gemini-1.5-flash-latest gemini-1.5-pro gemini-pro"
+          
+          for MODEL in $MODELS; do
+            echo "Trying model: $MODEL"
+            HTTP_CODE=$(curl -s -w "%{http_code}" -o /tmp/quota_test.json \
+              "https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${GEMINI_API_KEY}" \
+              -H "Content-Type: application/json" \
+              -d '{"contents":[{"parts":[{"text":"Hi"}]}],"generationConfig":{"maxOutputTokens":1}}' \
+              2>/dev/null || echo "000")
+            
+            if [ "$HTTP_CODE" = "200" ]; then
+              echo "✓ Model $MODEL available with quota"
+              echo "GEMINI_BEST_MODEL=$MODEL" >> $GITHUB_ENV
+              break
+            elif [ "$HTTP_CODE" = "429" ]; then
+              echo "✗ Model $MODEL quota exhausted"
+            elif [ "$HTTP_CODE" = "404" ]; then
+              echo "✗ Model $MODEL not found, trying next..."
+            else
+              echo "? Model $MODEL returned HTTP $HTTP_CODE"
+            fi
+          done
+          
+          # Check final result
           if [ "$HTTP_CODE" = "429" ]; then
-            echo "::warning::QUOTA EXHAUSTED - Skipping this run. Will retry at next scheduled time."
-            echo "Gemini quota resets daily at midnight Pacific Time."
-            # Cancel this workflow run gracefully
-            exit 78  # Special exit code for "skip"
+            echo "::warning::ALL MODELS QUOTA EXHAUSTED - Skipping this run."
+            exit 78
           elif [ "$HTTP_CODE" = "200" ]; then
             echo "Quota available - proceeding with video generation"
           else
-            echo "API returned HTTP $HTTP_CODE - proceeding anyway (might recover)"
-            cat /tmp/quota_test.json 2>/dev/null || true
+            echo "Proceeding anyway (Python will handle model discovery)"
           fi
 
       - name: Random delay for stealth (0-45 min)

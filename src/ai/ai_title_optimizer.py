@@ -14,6 +14,7 @@ This uses AI to generate and optimize titles based on performance data.
 """
 
 import os
+from src.ai.model_helper import get_dynamic_gemini_model
 import json
 import re
 from datetime import datetime
@@ -172,7 +173,7 @@ Return ONLY the title text, no quotes, no explanation."""
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel(get_dynamic_gemini_model())
                 response = model.generate_content(prompt)
                 return response.text.strip()
             except Exception as e:
@@ -333,4 +334,5 @@ if __name__ == "__main__":
         safe_print(f"Title: {title}")
     
     safe_print("\nTest complete!")
+
 

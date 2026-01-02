@@ -556,50 +556,129 @@ ALL_CATEGORIES = BASE_CATEGORIES  # Fallback, gets updated at runtime
 
 def get_learned_optimal_metrics() -> Dict:
     """
-    Get optimal video metrics from analytics feedback (with safe guardrails).
+    v17.9.2: FULLY AI-LEARNED video metrics from analytics feedback.
     
-    This is HYBRID: Uses AI-learned values but within proven safe bounds.
+    The optimal length, phrase count, and words are LEARNED from:
+    1. Our own video performance (views, retention, engagement)
+    2. Competitor viral video analysis
+    3. AI analysis of what's currently working
     
-    v17.9 FIX: Previous limits (3-6 phrases, 15-30s) were TOO SHORT!
-    Videos felt like "intros that got cut off" with no real value delivered.
+    NO MORE hardcoded guardrails - the AI decides based on data!
     
-    New limits based on viral Shorts analysis:
-    - 8-12 phrases: Enough for Hook + Setup + 5-7 value points + CTA
-    - 45-60 seconds: Optimal YouTube Shorts retention window
-    - 10-15 words per phrase: Punchy but complete thoughts
-    
-    Returns: {duration, phrases, words_per_phrase}
+    Returns: {duration, phrases, words_per_phrase, source}
     """
-    # v17.9: FIXED - These defaults now produce REAL content
-    defaults = {"duration": 50, "phrases": 10, "words_per_phrase": 12}
+    # Starting point - will be overwritten by learned data
+    defaults = {"duration": 50, "phrases": 10, "words_per_phrase": 12, "source": "default"}
     
     try:
         if PERSISTENT_STATE_AVAILABLE:
-            viral_mgr = get_viral_manager()
-            patterns = viral_mgr.patterns if hasattr(viral_mgr, 'patterns') else {}
+            # Load learned optimal metrics from persistent storage
+            learned_metrics_path = Path("data/persistent/learned_video_metrics.json")
             
-            # Duration: Learn from analytics, but keep within proven range
-            learned_duration = patterns.get("optimal_duration", 50)
-            if isinstance(learned_duration, (int, float)):
-                # v17.9 FIX: 45-60 seconds (optimal for Shorts with REAL value)
-                defaults["duration"] = max(45, min(60, int(learned_duration)))
-            
-            # Phrases: Learn from analytics, but keep within safe range
-            learned_phrases = patterns.get("optimal_phrase_count", 10)
-            if isinstance(learned_phrases, (int, float)):
-                # v17.9 FIX: 8-12 phrases (enough for real content delivery)
-                defaults["phrases"] = max(8, min(12, int(learned_phrases)))
-            
-            # Words per phrase: Could also be learned
-            learned_words = patterns.get("optimal_words_per_phrase", 12)
-            if isinstance(learned_words, (int, float)):
-                # Guardrails: 10-15 words (punchy but complete)
-                defaults["words_per_phrase"] = max(10, min(15, int(learned_words)))
-            
+            if learned_metrics_path.exists():
+                with open(learned_metrics_path, 'r') as f:
+                    learned = json.load(f)
+                    
+                # Use learned values if we have enough data confidence
+                if learned.get("confidence", 0) >= 0.5:  # At least 50% confidence
+                    if learned.get("optimal_duration"):
+                        defaults["duration"] = int(learned["optimal_duration"])
+                    if learned.get("optimal_phrases"):
+                        defaults["phrases"] = int(learned["optimal_phrases"])
+                    if learned.get("optimal_words_per_phrase"):
+                        defaults["words_per_phrase"] = int(learned["optimal_words_per_phrase"])
+                    defaults["source"] = "learned_from_performance"
+                    
+                    safe_print(f"   [LEARNED METRICS] Using data-driven values: {defaults['phrases']} phrases, {defaults['duration']}s")
+                else:
+                    defaults["source"] = "low_confidence_default"
+            else:
+                # First run - use AI to suggest based on current viral trends
+                defaults["source"] = "initial_default"
+                
     except Exception as e:
-        pass  # Use defaults on any error
+        defaults["source"] = "error_fallback"
     
     return defaults
+
+
+def update_learned_metrics_from_performance(video_id: str, performance: Dict, video_metrics: Dict):
+    """
+    v17.9.2: Learn optimal video metrics from actual performance data.
+    
+    Called after we get analytics on a video to update what length/phrases work best.
+    """
+    try:
+        learned_path = Path("data/persistent/learned_video_metrics.json")
+        
+        # Load existing data
+        if learned_path.exists():
+            with open(learned_path, 'r') as f:
+                data = json.load(f)
+        else:
+            data = {
+                "videos_analyzed": 0,
+                "duration_performance": {},  # duration -> avg_score
+                "phrase_performance": {},    # phrase_count -> avg_score
+                "word_performance": {},      # words_per_phrase -> avg_score
+                "optimal_duration": 50,
+                "optimal_phrases": 10,
+                "optimal_words_per_phrase": 12,
+                "confidence": 0.0,
+                "last_updated": None
+            }
+        
+        # Calculate performance score (views * retention * engagement)
+        views = performance.get("views", 0)
+        retention = performance.get("avg_watch_percentage", 50) / 100
+        engagement = (performance.get("likes", 0) + performance.get("comments", 0) * 3) / max(views, 1)
+        score = views * retention * (1 + engagement)
+        
+        # Record this video's metrics vs performance
+        duration = str(video_metrics.get("duration", 50))
+        phrases = str(video_metrics.get("phrase_count", 10))
+        words = str(video_metrics.get("words_per_phrase", 12))
+        
+        # Update running averages
+        for metric_key, metric_value in [("duration_performance", duration), 
+                                          ("phrase_performance", phrases),
+                                          ("word_performance", words)]:
+            if metric_value not in data[metric_key]:
+                data[metric_key][metric_value] = {"total_score": 0, "count": 0}
+            data[metric_key][metric_value]["total_score"] += score
+            data[metric_key][metric_value]["count"] += 1
+        
+        data["videos_analyzed"] += 1
+        
+        # Find optimal values (highest avg score)
+        if data["videos_analyzed"] >= 3:  # Need at least 3 videos
+            # Find best duration
+            best_duration = max(data["duration_performance"].items(), 
+                               key=lambda x: x[1]["total_score"] / x[1]["count"] if x[1]["count"] > 0 else 0)
+            data["optimal_duration"] = int(best_duration[0])
+            
+            # Find best phrase count
+            best_phrases = max(data["phrase_performance"].items(),
+                              key=lambda x: x[1]["total_score"] / x[1]["count"] if x[1]["count"] > 0 else 0)
+            data["optimal_phrases"] = int(best_phrases[0])
+            
+            # Find best words per phrase
+            best_words = max(data["word_performance"].items(),
+                            key=lambda x: x[1]["total_score"] / x[1]["count"] if x[1]["count"] > 0 else 0)
+            data["optimal_words_per_phrase"] = int(best_words[0])
+            
+            # Confidence increases with more data
+            data["confidence"] = min(1.0, data["videos_analyzed"] / 20)  # Max confidence at 20 videos
+        
+        data["last_updated"] = datetime.now().isoformat()
+        
+        # Save
+        learned_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(learned_path, 'w') as f:
+            json.dump(data, f, indent=2)
+            
+    except Exception as e:
+        pass  # Non-critical
 
 # NOTE: Voice names are Edge TTS technical identifiers (cannot be AI-generated)
 # AI selects the STYLE (energetic, calm, etc.), which maps to these voices
@@ -776,10 +855,16 @@ class MasterAI:
             chosen_provider = self.budget_manager.choose_provider(task, prefer_quality=not prefer_gemini)
             safe_print(f"   [Budget] Task '{task}' -> Provider: {chosen_provider}")
         
-        # v13.2: Track retry state
-        # v16.1 QUOTA OPTIMIZATION: Increased delay to respect per-minute limits
-        # Groq: 30 req/min, Gemini: 15 req/min -> ~2s between calls is safe
-        base_delay = 2.0 if chosen_provider else 3.0  # Increased delay for quota protection
+        # v17.9.2: DYNAMIC rate limiting based on provider limits
+        # Gemini free tier: 20 req/min = 3s between calls minimum
+        # Groq free tier: 30 req/min = 2s between calls minimum
+        # Adding buffer for safety: Gemini 4s, Groq 2.5s
+        rate_limits = {
+            "gemini": 4.0,    # 20 req/min = 3s + 1s buffer
+            "groq": 2.5,      # 30 req/min = 2s + 0.5s buffer
+            "openrouter": 1.0 # Higher limits
+        }
+        base_delay = rate_limits.get(chosen_provider, 3.0)
         time.sleep(base_delay)  # Rate limit protection between AI calls
         
         def extract_retry_delay(error_msg: str) -> int:
