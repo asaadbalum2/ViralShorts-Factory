@@ -213,10 +213,11 @@ try:
         fix_broken_promise,
         apply_all_critical_fixes,
         MINIMUM_ACCEPTABLE_SCORE,
-        CONTENT_CONSTRAINTS
+        CONTENT_CONSTRAINTS,
+        score_hook_quality  # v17.6: Hook quality scoring
     )
     CRITICAL_FIXES_AVAILABLE = True
-    print("[OK] Critical Fixes loaded: Font/SFX/Quality/Promise enforcement ACTIVE!")
+    print("[OK] Critical Fixes loaded: Font/SFX/Quality/Promise/Hook-scoring ACTIVE!")
 except ImportError as e:
     CRITICAL_FIXES_AVAILABLE = False
     MINIMUM_ACCEPTABLE_SCORE = 7  # Fallback
@@ -1424,6 +1425,17 @@ OUTPUT JSON ONLY."""
                     safe_print(f"   [ISSUES] {', '.join(value_check['issues'][:2])}")
             except Exception as e:
                 safe_print(f"   [!] Value check skipped: {e}")
+        
+        # v17.6: Check hook scroll-stop power
+        if CRITICAL_FIXES_AVAILABLE and phrases:
+            try:
+                hook_quality = score_hook_quality(phrases[0])
+                content['hook_quality_score'] = hook_quality['score']
+                safe_print(f"   [HOOK SCORE] Scroll-stop power: {hook_quality['score']}/10 ({len(hook_quality['patterns_found'])} patterns)")
+                if hook_quality['suggestions']:
+                    safe_print(f"   [HOOK TIP] {hook_quality['suggestions'][0]}")
+            except Exception as e:
+                safe_print(f"   [!] Hook scoring skipped: {e}")
         
         # v8.9.1: Get the hook/topic from concept for promise validation
         concept = content.get('concept', {})
