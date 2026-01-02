@@ -633,8 +633,9 @@ class FontPsychologyOptimizer:
     
     FONT_FILE = STATE_DIR / "font_psychology.json"
     
-    # Font categories and their psychological effects
-    FONT_PSYCHOLOGY = {
+    # v17.8: Default font psychology - can be overridden by AI-generated mappings
+    # These are design constants, but AI can learn better mappings over time
+    _DEFAULT_FONT_PSYCHOLOGY = {
         "bold_sans": {
             "fonts": ["Impact", "Arial Black", "Bebas Neue"],
             "emotions": ["power", "urgency", "modern", "confident"],
@@ -661,6 +662,22 @@ class FontPsychologyOptimizer:
             "best_for": ["stories", "personal", "advice"]
         }
     }
+    
+    @property
+    def FONT_PSYCHOLOGY(self) -> Dict:
+        """v17.8: Get font psychology - AI-learned overrides default."""
+        if hasattr(self, '_font_psychology_cache'):
+            return self._font_psychology_cache
+        
+        # Try to load AI-learned mappings
+        learned = self.data.get("ai_font_mappings")
+        if learned and len(learned) > 0:
+            self._font_psychology_cache = learned
+            return learned
+        
+        # Use default
+        self._font_psychology_cache = self._DEFAULT_FONT_PSYCHOLOGY
+        return self._DEFAULT_FONT_PSYCHOLOGY
     
     def __init__(self):
         self.data = self._load()
@@ -915,9 +932,11 @@ SUBTITLE STYLING:
 class EmojiIntegration:
     """
     #118: Strategically integrates emojis.
+    v17.8: Can be AI-learned for better performance.
     """
     
-    CATEGORY_EMOJIS = {
+    # v17.8: Default emojis - AI can learn better mappings
+    _DEFAULT_CATEGORY_EMOJIS = {
         "money": ["💰", "💵", "📈", "🤑"],
         "psychology": ["🧠", "💭", "🤔", "💡"],
         "health": ["💪", "❤️", "🏃", "🥗"],
@@ -926,6 +945,28 @@ class EmojiIntegration:
         "tip": ["✅", "💡", "👍", "✨"],
         "shocking": ["😱", "🤯", "😮", "❗"]
     }
+    
+    EMOJI_FILE = STATE_DIR / "emoji_performance.json"
+    
+    def __init__(self):
+        self._data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.EMOJI_FILE.exists():
+                with open(self.EMOJI_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {"learned_mappings": {}, "performance": {}}
+    
+    @property
+    def CATEGORY_EMOJIS(self) -> Dict:
+        """v17.8: Get emojis - AI-learned overrides default."""
+        learned = self._data.get("learned_mappings")
+        if learned and len(learned) > 0:
+            return learned
+        return self._DEFAULT_CATEGORY_EMOJIS
     
     def get_emoji_instruction(self) -> str:
         return """
