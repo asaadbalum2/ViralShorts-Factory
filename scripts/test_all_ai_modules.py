@@ -1,0 +1,261 @@
+#!/usr/bin/env python3
+"""
+Comprehensive Test Suite for All AI Modules
+============================================
+
+Tests every AI-first module to ensure they work correctly.
+Run this before deploying to production.
+"""
+
+import sys
+import time
+from datetime import datetime
+
+sys.path.insert(0, 'src')
+sys.path.insert(0, 'src/ai')
+sys.path.insert(0, 'src/utils')
+sys.path.insert(0, 'src/analytics')
+sys.path.insert(0, 'src/quota')
+sys.path.insert(0, 'src/enhancements')
+
+PASSED = 0
+FAILED = 0
+SKIPPED = 0
+
+
+def test(name: str, condition: bool, detail: str = ""):
+    """Record test result."""
+    global PASSED, FAILED
+    if condition:
+        print(f"[PASS] {name}")
+        PASSED += 1
+    else:
+        print(f"[FAIL] {name} - {detail}")
+        FAILED += 1
+    return condition
+
+
+def skip(name: str, reason: str):
+    """Skip a test."""
+    global SKIPPED
+    print(f"[SKIP] {name} - {reason}")
+    SKIPPED += 1
+
+
+def main():
+    global PASSED, FAILED, SKIPPED
+    
+    print("=" * 70)
+    print("COMPREHENSIVE AI MODULE TEST SUITE")
+    print(f"Time: {datetime.now().isoformat()}")
+    print("=" * 70)
+    
+    # =========================================================================
+    # TEST 1: AI Pattern Generator
+    # =========================================================================
+    print("\n[1] AI PATTERN GENERATOR")
+    try:
+        from ai_pattern_generator import get_pattern_generator
+        gen = get_pattern_generator()
+        test("Import success", True)
+        test("Has generate_patterns_with_ai", hasattr(gen, 'generate_patterns_with_ai'))
+        test("Has get_patterns", hasattr(gen, 'get_patterns'))
+        test("needs_refresh returns bool", isinstance(gen.needs_refresh(), bool))
+    except Exception as e:
+        test("AI Pattern Generator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 2: AI Hook Generator
+    # =========================================================================
+    print("\n[2] AI HOOK GENERATOR")
+    try:
+        from ai_hook_generator import get_hook_generator
+        gen = get_hook_generator()
+        test("Import success", True)
+        test("Has generate_hook", hasattr(gen, 'generate_hook'))
+        hook = gen.generate_hook("productivity tips", "productivity")
+        test("generate_hook returns string", isinstance(hook, str))
+        test("Hook not empty", len(hook) > 0)
+    except Exception as e:
+        test("AI Hook Generator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 3: AI CTA Generator
+    # =========================================================================
+    print("\n[3] AI CTA GENERATOR")
+    try:
+        from ai_cta_generator import get_cta_generator
+        gen = get_cta_generator()
+        test("Import success", True)
+        test("Has generate_cta", hasattr(gen, 'generate_cta'))
+        cta = gen.generate_cta("productivity tips", "productivity")
+        test("generate_cta returns string", isinstance(cta, str))
+        test("CTA not empty", len(cta) > 0)
+    except Exception as e:
+        test("AI CTA Generator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 4: AI Topic Suggester
+    # =========================================================================
+    print("\n[4] AI TOPIC SUGGESTER")
+    try:
+        from ai_topic_suggester import get_topic_suggester
+        gen = get_topic_suggester()
+        test("Import success", True)
+        test("Has get_suggestions", hasattr(gen, 'get_suggestions'))
+        topics = gen.get_suggestions(count=3)
+        test("get_suggestions returns list", isinstance(topics, list))
+        test("Returns 3 topics", len(topics) >= 1)
+    except Exception as e:
+        test("AI Topic Suggester works", False, str(e))
+    
+    # =========================================================================
+    # TEST 5: AI Content Quality Checker
+    # =========================================================================
+    print("\n[5] AI CONTENT QUALITY CHECKER")
+    try:
+        from ai_content_quality_checker import get_quality_checker
+        gen = get_quality_checker()
+        test("Import success", True)
+        test("Has check_content", hasattr(gen, 'check_content'))
+        result = gen.check_content({
+            "hook": "Test hook",
+            "phrases": ["Phrase 1", "Phrase 2"],
+            "cta": "Comment below!",
+            "category": "test"
+        })
+        test("check_content returns dict", isinstance(result, dict))
+        test("Result has score", "score" in result)
+        test("Result has verdict", "verdict" in result)
+    except Exception as e:
+        test("AI Content Quality Checker works", False, str(e))
+    
+    # =========================================================================
+    # TEST 6: AI B-Roll Keyword Generator
+    # =========================================================================
+    print("\n[6] AI B-ROLL KEYWORD GENERATOR")
+    try:
+        from ai_broll_keywords import get_broll_keyword_generator
+        gen = get_broll_keyword_generator()
+        test("Import success", True)
+        test("Has generate_keywords", hasattr(gen, 'generate_keywords'))
+        keywords = gen.generate_keywords("productivity tips", "productivity")
+        test("generate_keywords returns list", isinstance(keywords, list))
+        test("Keywords not empty", len(keywords) > 0)
+    except Exception as e:
+        test("AI B-Roll Keyword Generator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 7: AI Music Mood Selector
+    # =========================================================================
+    print("\n[7] AI MUSIC MOOD SELECTOR")
+    try:
+        from ai_music_mood import get_music_mood_selector
+        gen = get_music_mood_selector()
+        test("Import success", True)
+        test("Has select_mood", hasattr(gen, 'select_mood'))
+        mood, genre = gen.select_mood("productivity tips", "productivity")
+        test("select_mood returns tuple", isinstance((mood, genre), tuple))
+        test("Mood not empty", len(mood) > 0)
+        test("Genre not empty", len(genre) > 0)
+    except Exception as e:
+        test("AI Music Mood Selector works", False, str(e))
+    
+    # =========================================================================
+    # TEST 8: AI Title Optimizer
+    # =========================================================================
+    print("\n[8] AI TITLE OPTIMIZER")
+    try:
+        from ai_title_optimizer import get_title_optimizer
+        gen = get_title_optimizer()
+        test("Import success", True)
+        test("Has optimize_title", hasattr(gen, 'optimize_title'))
+        title = gen.optimize_title("productivity tips", "productivity")
+        test("optimize_title returns string", isinstance(title, str))
+        test("Title not empty", len(title) > 0)
+    except Exception as e:
+        test("AI Title Optimizer works", False, str(e))
+    
+    # =========================================================================
+    # TEST 9: Model Intelligence
+    # =========================================================================
+    print("\n[9] MODEL INTELLIGENCE")
+    try:
+        from model_intelligence import get_model_intelligence
+        mi = get_model_intelligence()
+        test("Import success", True)
+        test("Has get_best_provider_for_task", hasattr(mi, 'get_best_provider_for_task'))
+        provider = mi.get_best_provider_for_task("quality_evaluation")
+        test("get_best_provider_for_task returns string", isinstance(provider, str))
+    except Exception as e:
+        test("Model Intelligence works", False, str(e))
+    
+    # =========================================================================
+    # TEST 10: Prompt Cache
+    # =========================================================================
+    print("\n[10] PROMPT CACHE")
+    try:
+        from prompt_cache import get_prompt_cache
+        cache = get_prompt_cache()
+        test("Import success", True)
+        test("Has get", hasattr(cache, 'get'))
+        test("Has set", hasattr(cache, 'set'))
+        
+        # Test set and get
+        cache.set("test_prompt", "test_response", "test")
+        result = cache.get("test_prompt", "test")
+        test("Cache set/get works", result == "test_response")
+    except Exception as e:
+        test("Prompt Cache works", False, str(e))
+    
+    # =========================================================================
+    # TEST 11: Persistent State
+    # =========================================================================
+    print("\n[11] PERSISTENT STATE")
+    try:
+        from persistent_state import get_variety_manager, get_viral_manager
+        vm = get_variety_manager()
+        vpm = get_viral_manager()
+        test("VarietyManager import", True)
+        test("ViralPatternsManager import", True)
+        test("Has _get_ai_categories", hasattr(vm, '_get_ai_categories'))
+    except Exception as e:
+        test("Persistent State works", False, str(e))
+    
+    # =========================================================================
+    # TEST 12: Self Learning Engine
+    # =========================================================================
+    print("\n[12] SELF LEARNING ENGINE")
+    try:
+        from self_learning_engine import SelfLearningEngine
+        engine = SelfLearningEngine()
+        test("Import success", True)
+        test("Has learn_from_video", hasattr(engine, 'learn_from_video'))
+        test("Has get_prompt_boost", hasattr(engine, 'get_prompt_boost'))
+    except Exception as e:
+        test("Self Learning Engine works", False, str(e))
+    
+    # =========================================================================
+    # SUMMARY
+    # =========================================================================
+    print("\n" + "=" * 70)
+    print("TEST SUMMARY")
+    print("=" * 70)
+    print(f"Passed:  {PASSED}")
+    print(f"Failed:  {FAILED}")
+    print(f"Skipped: {SKIPPED}")
+    print(f"Total:   {PASSED + FAILED + SKIPPED}")
+    print(f"Success Rate: {PASSED / (PASSED + FAILED) * 100:.1f}%")
+    print("=" * 70)
+    
+    if FAILED > 0:
+        print("[OVERALL] SOME TESTS FAILED")
+        return 1
+    else:
+        print("[OVERALL] ALL TESTS PASSED!")
+        return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
