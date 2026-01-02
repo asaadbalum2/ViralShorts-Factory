@@ -504,9 +504,13 @@ class MasterAI:
         # v16.2: No hardcoded keys - user MUST provide via secrets
         openrouter_env = os.environ.get("OPENROUTER_API_KEY", "")
         self.openrouter_key = openrouter_env.strip() if openrouter_env.strip() else None
+        # v17.4: Mistral as additional fallback (free tier, 1 req/sec)
+        mistral_env = os.environ.get("MISTRAL_API_KEY", "")
+        self.mistral_key = mistral_env.strip() if mistral_env.strip() else None
         self.client = None
         self.gemini_model = None
         self.openrouter_available = bool(self.openrouter_key)
+        self.mistral_available = bool(self.mistral_key)
         
         # v15.0: Initialize token budget manager
         try:
@@ -761,7 +765,39 @@ class MasterAI:
             else:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
-        # v13.5: Quinary - OpenRouter as final fallback (free tier models)
+        # v17.4: Mistral as fallback (free tier, generous quota)
+        if self.mistral_available:
+            safe_print("[*] Trying Mistral fallback...")
+            try:
+                import requests
+                response = requests.post(
+                    "https://api.mistral.ai/v1/chat/completions",
+                    headers={
+                        "Authorization": f"Bearer {self.mistral_key}",
+                        "Content-Type": "application/json"
+                    },
+                    json={
+                        "model": "mistral-small-latest",  # Best free tier model
+                        "messages": [{"role": "user", "content": prompt}],
+                        "max_tokens": max_tokens,
+                        "temperature": temperature
+                    },
+                    timeout=60
+                )
+                if response.status_code == 200:
+                    result = response.json()
+                    content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+                    if content:
+                        safe_print("[OK] Mistral succeeded!")
+                        return content
+                elif response.status_code == 429:
+                    safe_print("[!] Mistral rate limited, trying OpenRouter...")
+                else:
+                    safe_print(f"[!] Mistral error: {response.status_code}")
+            except Exception as e:
+                safe_print(f"[!] Mistral fallback error: {e}")
+        
+        # v13.5: OpenRouter as final fallback (free tier models)
         # v16.6: Dynamically fetch free models instead of hardcoded list
         try:
             from quota_optimizer import get_quota_optimizer
@@ -1235,7 +1271,20 @@ YOU MUST CREATE BETTER CONTENT THIS TIME:
 
 """
         
-        prompt = f"""You are a VIRAL CONTENT CREATOR. Create SCROLL-STOPPING content for this video.
+        prompt = f"""You are a VIRAL CONTENT CREATOR aiming for 10/10 PERFECT viral potential.
+
+=== YOUR MISSION: CREATE 10/10 CONTENT ===
+To score 10/10, you MUST include ALL of these elements:
+✓ HOOK (first 1.5s): Pattern interrupt that STOPS scrolling
+✓ NUMBERS: Specific figures (not vague - "$500" not "money")
+✓ EMOTION: Trigger curiosity, shock, FOMO, or satisfaction
+✓ VALUE: Clear benefit by second 3
+✓ VOICE: Punchy, conversational, NOT robotic
+✓ CTA: End with question that FORCES comments
+✓ PAYOFF: Satisfying conclusion that delivers on promise
+
+Missing ANY element = less than 10/10. Include ALL for perfection!
+
 {regen_feedback}
 {enhancement_boost}
 
