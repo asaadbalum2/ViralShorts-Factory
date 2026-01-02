@@ -1414,6 +1414,30 @@ OUTPUT JSON ONLY."""
             result['concept'] = concept
             safe_print(f"   Created {len(result.get('phrases', []))} phrases")
             safe_print(f"   Value: {result.get('specific_value', 'N/A')[:60]}...")
+            
+            # v17.7.4: A/B test hook selection using learned patterns
+            if ENHANCEMENTS_V11_AVAILABLE and cleaned_phrases and self.learning_engine:
+                try:
+                    original_hook = cleaned_phrases[0]
+                    hook_tracker = get_hook_tracker()
+                    
+                    # Get power words that work and words to avoid
+                    power_words = hook_tracker.get_power_words()
+                    avoid_words = hook_tracker.get_words_to_avoid()
+                    
+                    # Check if hook contains power words
+                    hook_lower = original_hook.lower()
+                    has_power = any(pw in hook_lower for pw in power_words)
+                    has_avoid = any(aw in hook_lower for aw in avoid_words)
+                    
+                    if has_avoid and not has_power:
+                        safe_print(f"   [A/B HOOK] Hook contains weak words - flagging for improvement")
+                        result['hook_needs_improvement'] = True
+                        result['power_words_available'] = power_words[:5]
+                    elif has_power:
+                        safe_print(f"   [A/B HOOK] Hook contains learned power words - GOOD!")
+                except Exception as e:
+                    pass  # Non-critical
         
         return result
     
