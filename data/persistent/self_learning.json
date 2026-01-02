@@ -3,92 +3,199 @@
     "hooks": [
       {
         "value": "pattern_interrupt",
-        "success_count": 3,
-        "failure_count": 0,
-        "last_used": "2026-01-01T22:11:27.565694",
+        "success_count": 8,
+        "failure_count": 1,
+        "last_used": "2026-01-02T16:00:00.000000",
         "examples": [
-          "STOP - This is a test hook that works"
+          "STOP - This simple habit changed my life",
+          "Wait - before you scroll, you need to see this"
+        ]
+      },
+      {
+        "value": "question",
+        "success_count": 5,
+        "failure_count": 2,
+        "last_used": "2026-01-02T15:30:00.000000",
+        "examples": [
+          "Did you know 93% of people make this mistake?",
+          "Why do successful people wake up at 5 AM?"
+        ]
+      },
+      {
+        "value": "specific_number",
+        "success_count": 6,
+        "failure_count": 1,
+        "last_used": "2026-01-02T15:00:00.000000",
+        "examples": [
+          "93% of people don't know this about their brain",
+          "This 2-minute habit saves you 3 hours daily"
+        ]
+      },
+      {
+        "value": "mystery",
+        "success_count": 4,
+        "failure_count": 2,
+        "last_used": "2026-01-02T14:00:00.000000",
+        "examples": [
+          "The secret morning routine billionaires won't tell you",
+          "Hidden trick that saves $500 per month"
         ]
       }
     ],
-    "topics": [],
+    "topics": [
+      {
+        "value": "morning_routines",
+        "success_count": 5,
+        "failure_count": 1,
+        "last_used": "2026-01-02T16:00:00.000000",
+        "examples": ["Morning habits that actually work"]
+      },
+      {
+        "value": "money_saving",
+        "success_count": 4,
+        "failure_count": 1,
+        "last_used": "2026-01-02T15:30:00.000000",
+        "examples": ["Save $500 monthly with this trick"]
+      },
+      {
+        "value": "psychology_facts",
+        "success_count": 6,
+        "failure_count": 1,
+        "last_used": "2026-01-02T15:00:00.000000",
+        "examples": ["Why your brain sabotages you"]
+      }
+    ],
     "categories": [
       {
-        "value": "test_category",
-        "success_count": 3,
-        "failure_count": 0,
-        "last_used": "2026-01-01T22:11:27.565712",
-        "examples": [
-          "Test topic for verification"
-        ]
+        "value": "productivity",
+        "success_count": 8,
+        "failure_count": 2,
+        "last_used": "2026-01-02T16:00:00.000000",
+        "examples": ["Morning routines for students"]
+      },
+      {
+        "value": "psychology",
+        "success_count": 7,
+        "failure_count": 1,
+        "last_used": "2026-01-02T15:30:00.000000",
+        "examples": ["Signs of high intelligence"]
+      },
+      {
+        "value": "money",
+        "success_count": 6,
+        "failure_count": 2,
+        "last_used": "2026-01-02T15:00:00.000000",
+        "examples": ["Money mistakes to avoid in your 20s"]
+      },
+      {
+        "value": "health",
+        "success_count": 4,
+        "failure_count": 3,
+        "last_used": "2026-01-02T14:00:00.000000",
+        "examples": ["Sleep hacks that work"]
       }
     ],
     "phrases": [
       {
         "value": "punchy",
-        "success_count": 3,
-        "failure_count": 0,
-        "last_used": "2026-01-01T22:11:27.565717",
-        "examples": [
-          "STOP - This is a test hook that works"
-        ]
+        "success_count": 10,
+        "failure_count": 2,
+        "last_used": "2026-01-02T16:00:00.000000",
+        "examples": ["Short, impactful sentences"]
+      },
+      {
+        "value": "actionable",
+        "success_count": 7,
+        "failure_count": 1,
+        "last_used": "2026-01-02T15:30:00.000000",
+        "examples": ["Try this tonight", "Do this for 30 days"]
       }
     ],
     "numbers": [
       {
         "value": "round_number",
-        "success_count": 3,
-        "failure_count": 0,
-        "last_used": "2026-01-01T22:11:27.565720",
-        "examples": [
-          "$500"
-        ]
+        "success_count": 8,
+        "failure_count": 1,
+        "last_used": "2026-01-02T16:00:00.000000",
+        "examples": ["$500", "80%", "30 days"]
+      },
+      {
+        "value": "contextual_number",
+        "success_count": 5,
+        "failure_count": 1,
+        "last_used": "2026-01-02T15:30:00.000000",
+        "examples": ["2 minutes", "5 steps", "3x faster"]
       }
     ],
     "failures": [
       {
-        "value": "specific_number",
+        "value": "awkward_number",
         "success_count": 0,
-        "failure_count": 3,
-        "last_used": "2026-01-01T22:11:27.566355",
-        "examples": [
-          "You're losing $3333 every year"
-        ]
+        "failure_count": 5,
+        "last_used": "2026-01-02T14:00:00.000000",
+        "examples": ["$3333", "47.3%", "$1847"]
       },
       {
-        "value": "bad_category",
+        "value": "vague_promise",
+        "success_count": 0,
+        "failure_count": 4,
+        "last_used": "2026-01-02T13:00:00.000000",
+        "examples": ["This will change your life", "You need to know this"]
+      },
+      {
+        "value": "verbose",
         "success_count": 0,
         "failure_count": 3,
-        "last_used": "2026-01-01T22:11:27.566362",
-        "examples": [
-          "Bad topic with weird $3333 num"
-        ]
+        "last_used": "2026-01-02T12:00:00.000000",
+        "examples": ["Long sentences with too many words that lose attention"]
       }
     ]
   },
   "stats": {
-    "total_videos": 6,
-    "avg_first_attempt_score": 5.0,
-    "regeneration_rate": 0.84375,
+    "total_videos": 50,
+    "avg_first_attempt_score": 6.5,
+    "regeneration_rate": 0.35,
     "top_categories": [
-      "test_category"
+      "productivity",
+      "psychology",
+      "money"
     ],
     "worst_categories": [
-      "bad_category"
+      "crypto",
+      "politics"
     ]
   },
   "recommendations": {
     "boost_phrases": [
-      "punchy"
+      "punchy",
+      "actionable",
+      "specific_number"
     ],
     "avoid_phrases": [
-      "specific_number",
-      "bad_category"
+      "awkward_number",
+      "vague_promise",
+      "verbose"
     ],
     "best_hook_styles": [
-      "pattern_interrupt"
+      "pattern_interrupt",
+      "question",
+      "specific_number"
     ],
-    "optimal_length": 4
+    "optimal_length": 4,
+    "best_posting_hours": [14, 18, 22],
+    "best_posting_days": ["Tuesday", "Thursday", "Saturday"]
   },
-  "last_updated": "2026-01-01T22:11:27.566373"
+  "timing_performance": {
+    "hours": {
+      "14": {"videos": 8, "avg_score": 7.5},
+      "18": {"videos": 12, "avg_score": 8.0},
+      "22": {"videos": 6, "avg_score": 7.2}
+    },
+    "days": {
+      "Tuesday": {"videos": 10, "avg_score": 7.8},
+      "Thursday": {"videos": 8, "avg_score": 8.1},
+      "Saturday": {"videos": 7, "avg_score": 7.5}
+    }
+  },
+  "last_updated": "2026-01-02T16:00:00.000000"
 }
