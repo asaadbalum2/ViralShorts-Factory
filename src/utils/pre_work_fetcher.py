@@ -128,11 +128,31 @@ class PreWorkFetcher:
         return {}
     
     def fetch_trending_categories(self) -> List[str]:
-        """AI suggests trending categories."""
+        """AI suggests trending categories.
+        v17.7.14: Now also fetches from Google Trends via multi_trend_fetcher.
+        """
         safe_print("\n[1/3] Fetching trending categories...")
         
+        # v17.7.14: Try to get real trending topics first
+        real_trends = []
+        try:
+            from multi_trend_fetcher import GoogleTrendsFetcher
+            gtrends = GoogleTrendsFetcher()
+            topics = gtrends.fetch(region="us", count=10)
+            real_trends = [t.topic for t in topics if t.topic]
+            if real_trends:
+                safe_print(f"   [TRENDS] Got {len(real_trends)} real trending topics from Google")
+        except Exception as e:
+            safe_print(f"   [!] Google Trends fetch failed: {e}")
+        
         today = datetime.now().strftime("%B %d, %Y")
-        prompt = f"""You are a viral content strategist. Today is {today}.
+        
+        # Include real trends in prompt if available
+        trends_hint = ""
+        if real_trends:
+            trends_hint = f"\n\nREAL TRENDING TOPICS RIGHT NOW:\n{', '.join(real_trends[:8])}\n\nIncorporate these trends into your categories!"
+        
+        prompt = f"""You are a viral content strategist. Today is {today}.{trends_hint}
 
 What are the TOP 15 trending content categories for short-form video RIGHT NOW?
 
