@@ -69,6 +69,10 @@ except ImportError:
 # v11.0: Import comprehensive enhancements module (89 enhancements!)
 try:
     from enhancements_v9 import (
+        # v17.7: Core AI caller and tracking (previously unused!)
+        get_ai_caller,
+        ABTestTracker,
+        ErrorPatternLearner,
         # Core orchestrator
         get_enhancement_orchestrator,
         # v9.0 functions
@@ -1682,7 +1686,17 @@ JSON ONLY."""
         if result and result.get('title_variants'):
             variants = result.get('title_variants', [])
             if variants:
-                # FULL A/B Testing: Weight toward learned best styles
+                # v17.7: Use ABTestTracker for proper A/B testing with performance data
+                ab_tracker = None
+                try:
+                    if ENHANCEMENTS_V11_AVAILABLE:
+                        ab_tracker = ABTestTracker()
+                        # Get performance-weighted selection
+                        best_variant = ab_tracker.get_best_variant("title_styles")
+                        if best_variant:
+                            safe_print(f"   [A/B] Best performer: {best_variant}")
+                except Exception as e:
+                    safe_print(f"   [!] A/B tracker error: {e}")
                 
                 # Try to get learned best styles from analytics
                 best_styles = []
@@ -1712,6 +1726,18 @@ JSON ONLY."""
                 result['title'] = chosen.get('title', variants[0].get('title', ''))
                 result['title_style'] = chosen.get('style', 'unknown')
                 safe_print(f"   Title (style={result['title_style']}): {result.get('title', 'N/A')}")
+                
+                # v17.7: Record this variant selection in A/B tracker
+                if ab_tracker:
+                    try:
+                        ab_tracker.record_variant(
+                            "title_styles", 
+                            result['title_style'],
+                            str(random.randint(10000, 99999)),  # temp video ID
+                            {"title": result['title']}
+                        )
+                    except:
+                        pass
         elif result and result.get('title'):
             result['title_style'] = 'single'
             safe_print(f"   Title: {result.get('title', 'N/A')}")
@@ -1858,9 +1884,25 @@ class VideoRenderer:
         return cleaned
     
     def download_broll(self, keyword: str, index: int) -> Optional[str]:
-        """Download B-roll from Pexels."""
+        """Download B-roll from Pexels.
+        v17.7: Added ErrorPatternLearner integration.
+        """
         if not self.pexels_key:
             return None
+        
+        # v17.7: Check if this keyword has failed before
+        error_learner = None
+        if ENHANCEMENTS_V11_AVAILABLE:
+            try:
+                error_learner = ErrorPatternLearner()
+                if error_learner.should_skip_keyword(keyword):
+                    # Try to get an alternative keyword
+                    alt = error_learner.get_alternative_keyword(keyword)
+                    if alt:
+                        safe_print(f"   [LEARN] Skipping failed keyword '{keyword}', using '{alt}'")
+                        keyword = alt
+            except:
+                pass
         
         safe_keyword = "".join(c if c.isalnum() or c == '_' else '_' for c in keyword)[:30]
         cache_file = BROLL_DIR / f"v7_{safe_keyword}_{index}_{random.randint(1000,9999)}.mp4"
@@ -1871,10 +1913,16 @@ class VideoRenderer:
             
             response = requests.get(url, headers=headers, timeout=15)
             if response.status_code != 200:
+                # v17.7: Record the failure
+                if error_learner:
+                    error_learner.record_broll_failure(keyword)
                 return None
             
             videos = response.json().get("videos", [])
             if not videos:
+                # v17.7: Record the failure
+                if error_learner:
+                    error_learner.record_broll_failure(keyword)
                 return None
             
             video = random.choice(videos)
