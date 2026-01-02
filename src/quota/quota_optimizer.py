@@ -45,7 +45,7 @@ class QuotaOptimizer:
     # Cache TTL in seconds
     TTL_CATEGORIES = 24 * 3600  # 24 hours
     TTL_TOPICS = 12 * 3600      # 12 hours
-    TTL_MODELS = 24 * 3600      # 24 hours
+    TTL_MODELS = 6 * 3600       # 6 hours (reduced - models can change)
     
     def __init__(self):
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -80,6 +80,22 @@ class QuotaOptimizer:
         if key not in self.cache or not self.cache[key].get("data"):
             return False
         return (time.time() - self.cache[key].get("timestamp", 0)) < ttl
+    
+    def clear_model_cache(self, provider: str = None):
+        """
+        Clear stale model cache. Call this when you get a 404 error.
+        
+        Args:
+            provider: "gemini", "groq", "openrouter", or None for all
+        """
+        if provider is None or provider == "gemini":
+            self.cache["gemini_models"] = {"data": None, "timestamp": 0}
+        if provider is None or provider == "groq":
+            self.cache["groq_models"] = {"data": None, "timestamp": 0}
+        if provider is None or provider == "openrouter":
+            self.cache["openrouter_free_models"] = {"data": None, "timestamp": 0}
+        self._save_cache()
+        safe_print(f"[CACHE] Cleared model cache for: {provider or 'all'}")
     
     # ========================================================================
     # TRENDING CATEGORIES - Cached for 24 hours
@@ -235,12 +251,14 @@ class QuotaOptimizer:
         if force_refresh:
             safe_print("[CACHE] Force refreshing Gemini models (model not found)")
         
-        # Default fallback models (known working free tier models)
-        # Priority: 1.5-flash (free) > 1.5-pro (limited free) > experimental
+        # Default fallback models - DYNAMIC DISCOVERY PREFERRED
+        # These are ONLY used if API discovery fails completely
+        # Updated 2026-01: Added newer models, ordered by free tier priority
         default_models = [
-            "gemini-1.5-flash",
-            "gemini-1.5-pro", 
-            "gemini-1.0-pro"
+            "gemini-2.0-flash",      # Newest free tier flash
+            "gemini-1.5-flash-8b",   # Smaller, more quota
+            "gemini-1.5-flash",      # Standard free tier
+            "gemini-1.5-pro",        # Limited free tier
         ]
         
         if not api_key:

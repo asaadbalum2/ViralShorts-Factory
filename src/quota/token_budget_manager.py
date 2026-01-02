@@ -218,32 +218,29 @@ class TokenBudgetManager:
         """
         task_cost = self.TASK_COSTS.get(task, 2000)
         
-        # Critical tasks that need Groq quality (if available)
-        critical_tasks = ["concept", "evaluate", "content"]
+        # v17.3: GEMINI FIRST - has 10x more quota (1M vs 100K)
+        # Groq is now BACKUP only to preserve its limited quota
         
         # Check each provider
-        groq_available = (
-            self.get_available_tokens("groq") >= task_cost and
-            not self.is_in_cooldown("groq")
-        )
         gemini_available = (
             self.get_available_tokens("gemini") >= task_cost and
             not self.is_in_cooldown("gemini")
+        )
+        groq_available = (
+            self.get_available_tokens("groq") >= task_cost and
+            not self.is_in_cooldown("groq")
         )
         openrouter_available = (
             self.get_available_tokens("openrouter") >= task_cost and
             not self.is_in_cooldown("openrouter")
         )
         
-        # Decision logic
-        if task in critical_tasks and prefer_quality and groq_available:
-            # Use Groq for critical tasks
-            return "groq"
-        elif gemini_available:
-            # Gemini is our workhorse
+        # Decision logic - GEMINI FIRST (more quota)
+        if gemini_available:
+            # Gemini is PRIMARY - 1M tokens/day
             return "gemini"
         elif groq_available:
-            # Use Groq if Gemini is down
+            # Groq is BACKUP - only 100K tokens/day
             return "groq"
         elif openrouter_available:
             # OpenRouter as last resort
