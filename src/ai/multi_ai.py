@@ -55,8 +55,8 @@ class MultiAIGenerator:
                     self.providers.append({
                         "name": "Gemini 2.0 Flash",
                         "client": client,
-                        "type": "gemini_new",
-                        "model": "gemini-2.0-flash-exp",  # Latest experimental model
+                        "type": "gemini",
+                        "model": "gemini-1.5-flash",  # Free tier model
                         "priority": 2
                     })
                     print("✅ Gemini 2.0 Flash initialized (Latest)")
@@ -68,8 +68,8 @@ class MultiAIGenerator:
                 import google.generativeai as genai
                 genai.configure(api_key=api_key)
                 try:
-                    # Try 2.0 Flash first
-                    model = genai.GenerativeModel('gemini-2.0-flash-exp')
+                    # Use 1.5 Flash (has free tier)
+                    model = genai.GenerativeModel('gemini-1.5-flash')
                     self.providers.append({
                         "name": "Gemini 2.0 Flash",
                         "client": model,

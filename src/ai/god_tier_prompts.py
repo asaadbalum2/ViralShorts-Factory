@@ -1511,8 +1511,8 @@ class GodTierContentGenerator:
                 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
                 # Try Gemini 2.0 Flash (latest), fallback to 1.5 if not available
                 try:
-                    self.gemini_client = genai.GenerativeModel('gemini-2.0-flash-exp')
-                    print("✅ Gemini 2.0 Flash (experimental) initialized")
+                    self.gemini_client = genai.GenerativeModel('gemini-1.5-flash')
+                    print("✅ Gemini 1.5 Flash (free tier) initialized")
                 except:
                     self.gemini_client = genai.GenerativeModel('gemini-1.5-flash')
                     print("✅ Gemini 1.5 Flash initialized (2.0 not available)")

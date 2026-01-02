@@ -148,8 +148,8 @@ class SmartAICaller:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                # Try multiple Gemini models in order of preference
-                for model_name in ['gemini-2.0-flash-exp', 'gemini-2.0-flash', 'gemini-1.5-flash']:
+                # Try multiple Gemini models in order of preference (1.5-flash has free tier)
+                for model_name in ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.0-pro']:
                     try:
                         self.gemini_model = genai.GenerativeModel(model_name)
                         safe_print(f"[OK] Gemini model: {model_name}")

@@ -1332,8 +1332,8 @@ OUTPUT JSON ONLY."""
         concept = content.get('concept', {})
         hook_or_topic = concept.get('hook', concept.get('specific_topic', 'Unknown topic'))
         
-        prompt = f"""You are a RUTHLESS QUALITY CONTROLLER watching this video as a SKEPTICAL VIEWER.
-Your job: Find ANYTHING that feels off, fake, awkward, or low-quality - and FIX it.
+        prompt = f"""You are a CONTENT QUALITY REVIEWER for viral YouTube Shorts.
+Your job: Evaluate content fairly, identify improvements, and enhance it.
 
 === HOOK/TITLE ===
 {hook_or_topic}
@@ -1343,15 +1343,22 @@ Your job: Find ANYTHING that feels off, fake, awkward, or low-quality - and FIX 
 
 Claimed Value: {content.get('specific_value', '')}
 
-=== BE A SKEPTICAL VIEWER ===
-Watch this content as if YOU are scrolling and decide: "Would I keep watching? Does anything feel OFF?"
+=== SCORING GUIDELINES ===
+Be FAIR, not harsh. Score based on ACTUAL quality:
+- 9-10: Exceptional, viral-worthy, perfect execution
+- 7-8: Good quality, engaging, minor improvements possible (MOST content should be here)
+- 5-6: Average, needs work but has potential
+- 3-4: Poor, major issues, needs complete rewrite
+- 1-2: Unusable
 
-Ask yourself these questions for EACH phrase:
-- Does this sound BELIEVABLE or does it feel made up?
-- Would a real person say this, or does it sound robotic/awkward?
-- Are the numbers REALISTIC and MEMORABLE? (e.g., "$500" feels real, "$3333" feels fake)
-- Does anything make me cringe or roll my eyes?
-- Is there anything that would make viewers comment "this is AI garbage"?
+IMPORTANT: If content is coherent, provides value, and has a decent hook, it's AT LEAST 7/10.
+
+=== QUICK QUALITY CHECK ===
+For each phrase, ask:
+- Is it clear and easy to understand?
+- Does it sound natural (not robotic)?
+- Does it provide value to the viewer?
+- Are numbers believable (e.g., "$500" not "$3333")?
 
 === RED FLAGS TO CATCH (examples, but catch ANY quality issue) ===
 - Awkward/random numbers that look fake (e.g., $3333, 47.3%, 1847 people)
