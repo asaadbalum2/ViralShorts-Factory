@@ -15,7 +15,7 @@ import hashlib
 # HuggingFace settings
 HF_TOKEN = os.getenv("HF_TOKEN", "")
 HF_MODEL = "black-forest-labs/FLUX.1-schnell"
-HF_API_URL = f"https://api-inference.huggingface.co/models/{HF_MODEL}"
+HF_API_URL = f"https://router.huggingface.co/hf-inference/models/{HF_MODEL}"
 
 # Cache directory for generated visuals
 VISUALS_CACHE = Path("./assets/ai_visuals")

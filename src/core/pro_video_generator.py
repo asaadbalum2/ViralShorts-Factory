@@ -766,55 +766,40 @@ class MasterAI:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
         # v17.4.2: HuggingFace Inference API as fallback (truly free, no phone/credit card)
-        # Sign up at huggingface.co - just email, no phone verification!
+        # v17.5: Uses huggingface_hub library (REST API is deprecated)
         if self.huggingface_available:
             safe_print("[*] Trying HuggingFace fallback...")
             try:
-                import requests
+                from huggingface_hub import InferenceClient
                 
                 # DYNAMIC MODEL DISCOVERY for HuggingFace
-                # Get available text-generation models from quota optimizer
                 try:
                     from quota_optimizer import get_quota_optimizer
                     quota_opt = get_quota_optimizer()
                     hf_models = quota_opt.get_huggingface_models(self.huggingface_key)
                 except:
-                    # Fallback only if dynamic discovery completely fails
+                    # Non-gated fallback models
                     hf_models = [
-                        "meta-llama/Llama-3.2-3B-Instruct",
-                        "mistralai/Mistral-7B-Instruct-v0.3",
-                        "microsoft/Phi-3-mini-4k-instruct"
+                        "google/gemma-2-2b-it",
+                        "Qwen/Qwen2.5-1.5B-Instruct",
+                        "HuggingFaceH4/zephyr-7b-beta"
                     ]
+                
+                client = InferenceClient(token=self.huggingface_key)
                 
                 for hf_model in hf_models:
                     try:
-                        response = requests.post(
-                            f"https://api-inference.huggingface.co/models/{hf_model}",
-                            headers={"Authorization": f"Bearer {self.huggingface_key}"},
-                            json={
-                                "inputs": prompt,
-                                "parameters": {
-                                    "max_new_tokens": min(max_tokens, 1024),
-                                    "temperature": temperature,
-                                    "return_full_text": False
-                                }
-                            },
-                            timeout=60
+                        response = client.chat_completion(
+                            messages=[{"role": "user", "content": prompt}],
+                            model=hf_model,
+                            max_tokens=min(max_tokens, 1024)
                         )
-                        if response.status_code == 200:
-                            result = response.json()
-                            if isinstance(result, list) and result:
-                                content = result[0].get("generated_text", "")
-                                if content:
-                                    safe_print(f"[OK] HuggingFace succeeded with {hf_model.split('/')[-1]}!")
-                                    return content
-                        elif response.status_code == 503:
-                            # Model loading, try next
-                            continue
-                        elif response.status_code == 429:
-                            safe_print(f"[!] HuggingFace rate limited, trying next model...")
-                            continue
-                    except:
+                        content = response.choices[0].message.content
+                        if content:
+                            safe_print(f"[OK] HuggingFace succeeded with {hf_model.split('/')[-1]}!")
+                            return content
+                    except Exception as model_err:
+                        safe_print(f"[!] {hf_model.split('/')[-1]}: {str(model_err)[:50]}")
                         continue
                 safe_print("[!] All HuggingFace models failed, trying OpenRouter...")
             except Exception as e:
