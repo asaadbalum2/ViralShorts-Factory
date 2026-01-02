@@ -1,0 +1,64 @@
+name: Refresh AI Patterns
+
+on:
+  schedule:
+    # Run weekly on Sunday at 6 AM UTC
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: 'Force refresh even if patterns are fresh'
+        required: false
+        default: 'false'
+
+jobs:
+  refresh-patterns:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install google-generativeai groq
+
+    - name: Check quota before refresh
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        HTTP_CODE=$(curl -s -w "%{http_code}" -o /dev/null \
+          -H "Content-Type: application/json" \
+          -d '{"contents":[{"parts":[{"text":"Hi"}]}]}' \
+          "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$GEMINI_API_KEY")
+        
+        if [ "$HTTP_CODE" -eq 429 ]; then
+          echo "Quota exhausted. Skipping pattern refresh."
+          exit 0
+        fi
+        echo "Quota available. Proceeding with refresh."
+
+    - name: Refresh viral patterns with AI
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        PYTHONPATH: src:src/ai
+      run: python scripts/refresh_ai_patterns.py
+
+    - name: Commit updated patterns
+      run: |
+        git config user.name "ViralShorts Bot"
+        git config user.email "bot@viralshorts.factory"
+        
+        if git diff --quiet data/persistent/viral_patterns.json; then
+          echo "No changes to patterns"
+        else
+          git add data/persistent/viral_patterns.json
+          git commit -m "chore: Weekly AI pattern refresh"
+          git push
+          echo "Patterns updated and pushed!"
+        fi
