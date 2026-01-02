@@ -77,8 +77,7 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           # Explicitly NOT providing: GEMINI_API_KEY, GROQ_API_KEY, OPENROUTER_API_KEY
           PYTHONUNBUFFERED: "1"
-          # Disable regeneration
-          MAX_REGEN_ATTEMPTS: "0"
+          INPUT_CATEGORY: ${{ github.event.inputs.category }}
         run: |
           echo "=============================================="
           echo "  HUGGINGFACE-ONLY VIDEO GENERATION TEST"
@@ -89,230 +88,8 @@ jobs:
           echo "=============================================="
           echo ""
           
-          # Create a wrapper script that forces HuggingFace and no regen
-          python << 'PYTHON_SCRIPT'
-import os
-import sys
-import json
-from datetime import datetime
-
-# Add src to path
-sys.path.insert(0, 'src')
-sys.path.insert(0, 'src/core')
-sys.path.insert(0, 'src/quota')
-
-print("=" * 60)
-print("  HUGGINGFACE-ONLY TEST - ENHANCEMENT VERIFICATION")
-print("=" * 60)
-print()
-
-# Track enhancements
-enhancements_checked = []
-
-# Import the video generator
-from pro_video_generator import ProVideoGenerator, safe_print
-
-# Override environment to force HuggingFace
-os.environ['GEMINI_API_KEY'] = ''  # Clear Gemini
-os.environ['GROQ_API_KEY'] = ''    # Clear Groq
-os.environ['OPENROUTER_API_KEY'] = ''  # Clear OpenRouter
-
-# Initialize generator
-print("[1/8] Initializing Video Generator...")
-generator = ProVideoGenerator()
-
-# Force HuggingFace as primary
-generator.gemini_key = None
-generator.groq_key = None
-generator.openrouter_key = None
-generator.gemini_model = None
-generator.client = None
-generator.openrouter_available = False
-
-# Verify HuggingFace is available
-print(f"[+] HuggingFace available: {generator.huggingface_available}")
-print(f"[+] HuggingFace key: {'SET' if generator.huggingface_key else 'NOT SET'}")
-
-if not generator.huggingface_available:
-    print("[!] ERROR: HuggingFace key not available!")
-    sys.exit(1)
-
-print()
-print("[2/8] Testing HuggingFace Model Discovery...")
-try:
-    from quota.quota_optimizer import get_quota_optimizer
-    quota_opt = get_quota_optimizer()
-    hf_models = quota_opt.get_huggingface_models(generator.huggingface_key, force_refresh=True)
-    print(f"[+] Found {len(hf_models)} HuggingFace models:")
-    for m in hf_models[:5]:
-        print(f"    - {m}")
-    enhancements_checked.append(("HuggingFace Dynamic Discovery", "PASS", f"{len(hf_models)} models found"))
-except Exception as e:
-    print(f"[!] Model discovery error: {e}")
-    enhancements_checked.append(("HuggingFace Dynamic Discovery", "FAIL", str(e)))
-
-print()
-print("[3/8] Testing AI Call with HuggingFace...")
-try:
-    test_prompt = "Generate a single catchy topic for a viral YouTube Short about psychology. Just the topic, nothing else."
-    result = generator.call_ai(test_prompt)
-    if result:
-        print(f"[+] AI Response: {result[:100]}...")
-        enhancements_checked.append(("HuggingFace AI Call", "PASS", result[:50]))
-    else:
-        print("[!] AI call returned empty")
-        enhancements_checked.append(("HuggingFace AI Call", "FAIL", "Empty response"))
-except Exception as e:
-    print(f"[!] AI call error: {e}")
-    enhancements_checked.append(("HuggingFace AI Call", "FAIL", str(e)))
-
-print()
-print("[4/8] Generating Video (NO REGENERATION)...")
-print("-" * 60)
-
-# Override max_regen to 0
-import types
-original_generate = generator.generate_video
-
-def generate_no_regen(*args, **kwargs):
-    """Wrapper to disable regeneration"""
-    kwargs['max_regen'] = 0
-    return original_generate(*args, **kwargs)
-
-generator.generate_video = types.MethodType(lambda self, *a, **kw: generate_no_regen(*a, **kw), generator)
-
-# Generate the video
-try:
-    category = os.environ.get('INPUT_CATEGORY', '') or None
-    result = generator.generate_video(category=category, upload=False, max_regen=0)
-    
-    if result:
-        print()
-        print("=" * 60)
-        print("  VIDEO GENERATED SUCCESSFULLY!")
-        print("=" * 60)
-        print(f"  Title: {result.get('title', 'N/A')}")
-        print(f"  Category: {result.get('category', 'N/A')}")
-        print(f"  Quality Score: {result.get('quality_score', 'N/A')}/10")
-        print(f"  Duration: {result.get('duration', 'N/A')}s")
-        print(f"  Video File: {result.get('video_path', 'N/A')}")
-        
-        enhancements_checked.append(("Video Generation", "PASS", f"Score: {result.get('quality_score', 'N/A')}/10"))
-        
-        # Check enhancement integration
-        print()
-        print("[5/8] Verifying Enhancement Integration...")
-        
-        # Check v9 enhancements
-        if hasattr(generator, 'enhancement_orch') and generator.enhancement_orch:
-            print("[+] Enhancement Orchestrator: ACTIVE")
-            enhancements_checked.append(("Enhancement Orchestrator", "PASS", "Active"))
-        else:
-            print("[!] Enhancement Orchestrator: NOT FOUND")
-            enhancements_checked.append(("Enhancement Orchestrator", "FAIL", "Not initialized"))
-        
-        # Check learning engine
-        if hasattr(generator, 'learning_engine') and generator.learning_engine:
-            print("[+] Self-Learning Engine: ACTIVE")
-            enhancements_checked.append(("Self-Learning Engine", "PASS", "Active"))
-        else:
-            print("[!] Self-Learning Engine: NOT FOUND")
-            enhancements_checked.append(("Self-Learning Engine", "FAIL", "Not initialized"))
-        
-        # Check v12 enhancements
-        if hasattr(generator, 'v12_enhancements') and generator.v12_enhancements:
-            print("[+] V12 Enhancements: ACTIVE")
-            enhancements_checked.append(("V12 Enhancements", "PASS", "Active"))
-        else:
-            print("[!] V12 Enhancements: NOT FOUND")
-            enhancements_checked.append(("V12 Enhancements", "FAIL", "Not initialized"))
-        
-        # Check variety state
-        variety_file = 'data/persistent/variety_state.json'
-        if os.path.exists(variety_file):
-            with open(variety_file) as f:
-                variety = json.load(f)
-            print(f"[+] Variety State: {len(variety)} keys loaded")
-            enhancements_checked.append(("Variety State", "PASS", f"{len(variety)} keys"))
-        else:
-            print("[!] Variety State: NOT FOUND")
-            enhancements_checked.append(("Variety State", "INFO", "No previous state"))
-        
-        # Check viral patterns
-        patterns_file = 'data/persistent/viral_patterns.json'
-        if os.path.exists(patterns_file):
-            with open(patterns_file) as f:
-                patterns = json.load(f)
-            print(f"[+] Viral Patterns: {len(patterns)} keys loaded")
-            enhancements_checked.append(("Viral Patterns", "PASS", f"{len(patterns)} keys"))
-        else:
-            print("[!] Viral Patterns: NOT FOUND")
-            enhancements_checked.append(("Viral Patterns", "INFO", "No previous patterns"))
-        
-        print()
-        print("[6/8] Saving Video Metadata...")
-        
-        # Save detailed metadata
-        metadata = {
-            "test_type": "huggingface_only",
-            "timestamp": datetime.now().isoformat(),
-            "provider_used": "HuggingFace",
-            "result": result,
-            "enhancements_checked": enhancements_checked,
-            "quality_score": result.get('quality_score'),
-            "regeneration_attempts": 0,
-            "success": True
-        }
-        
-        with open('test_output/video_metadata.json', 'w') as f:
-            json.dump(metadata, f, indent=2, default=str)
-        
-        # Copy video to test_output
-        import shutil
-        video_path = result.get('video_path')
-        if video_path and os.path.exists(video_path):
-            shutil.copy(video_path, 'test_output/')
-            print(f"[+] Video copied to test_output/")
-        
-    else:
-        print("[!] Video generation returned None")
-        enhancements_checked.append(("Video Generation", "FAIL", "Returned None"))
-        
-except Exception as e:
-    import traceback
-    print(f"[!] Video generation error: {e}")
-    traceback.print_exc()
-    enhancements_checked.append(("Video Generation", "FAIL", str(e)))
-
-print()
-print("[7/8] Enhancement Check Summary...")
-print("-" * 60)
-print(f"{'Enhancement':<35} {'Status':<8} {'Details'}")
-print("-" * 60)
-for name, status, details in enhancements_checked:
-    status_icon = "✓" if status == "PASS" else "✗" if status == "FAIL" else "ℹ"
-    print(f"{name:<35} {status_icon} {status:<6} {details[:30]}")
-print("-" * 60)
-
-passed = sum(1 for _, s, _ in enhancements_checked if s == "PASS")
-failed = sum(1 for _, s, _ in enhancements_checked if s == "FAIL")
-print(f"Total: {passed} passed, {failed} failed")
-
-print()
-print("[8/8] Test Complete!")
-print("=" * 60)
-
-# Save enhancement report
-with open('test_output/enhancement_report.json', 'w') as f:
-    json.dump({
-        "enhancements_checked": enhancements_checked,
-        "passed": passed,
-        "failed": failed,
-        "timestamp": datetime.now().isoformat()
-    }, f, indent=2)
-
-sys.exit(0 if failed == 0 else 1)
-PYTHON_SCRIPT
+          # Run the test script
+          python scripts/test_huggingface_only.py
 
       - name: Upload Generated Video
         uses: actions/upload-artifact@v4
@@ -325,7 +102,7 @@ PYTHON_SCRIPT
           retention-days: 7
           if-no-files-found: ignore
       
-      - name: Upload Video Metadata & Logs
+      - name: Upload Video Metadata and Logs
         uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -350,7 +127,7 @@ PYTHON_SCRIPT
       - name: Summary
         if: always()
         run: |
-          echo "## 🤗 HuggingFace-Only Test Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "## HuggingFace-Only Test Complete!" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Test Configuration" >> $GITHUB_STEP_SUMMARY
           echo "- **Provider:** HuggingFace Inference API ONLY" >> $GITHUB_STEP_SUMMARY
@@ -358,7 +135,7 @@ PYTHON_SCRIPT
           echo "- **Purpose:** Test enhancements with fresh API quota" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Download Results" >> $GITHUB_STEP_SUMMARY
-          echo "1. Go to **Actions** → **This workflow run**" >> $GITHUB_STEP_SUMMARY
+          echo "1. Go to **Actions** -> **This workflow run**" >> $GITHUB_STEP_SUMMARY
           echo "2. Scroll down to **Artifacts**" >> $GITHUB_STEP_SUMMARY
           echo "3. Download **huggingface-test-video-${{ github.run_number }}**" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -384,4 +161,3 @@ PYTHON_SCRIPT
           ls -la test_output/ 2>/dev/null || echo "No files in test_output"
           ls -la output/*.mp4 2>/dev/null || echo "No videos in output"
           echo '```' >> $GITHUB_STEP_SUMMARY
-
