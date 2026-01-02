@@ -519,6 +519,84 @@ class VersionVerifier:
         return all_good
     
     # ========================================================================
+    # CHECK 9: NEW AI MODULES (v17.8.27)
+    # ========================================================================
+    def check_ai_modules(self) -> bool:
+        """Check that all new AI modules exist and are functional."""
+        print("\n[9] AI MODULES CHECK (v17.8.27)...")
+        
+        # All AI modules that should exist
+        ai_modules = [
+            ("src/ai/ai_description_generator.py", "get_description_generator"),
+            ("src/ai/ai_hashtag_generator.py", "get_hashtag_generator"),
+            ("src/ai/ai_thumbnail_text.py", "get_thumbnail_optimizer"),
+            ("src/ai/ai_trend_analyzer.py", "get_trend_analyzer"),
+            ("src/ai/ai_audience_persona.py", "get_persona_generator"),
+            ("src/ai/ai_voice_script.py", "get_voice_optimizer"),
+            ("src/ai/ai_comment_response.py", "get_comment_generator"),
+            ("src/analytics/retention_predictor.py", "get_retention_predictor"),
+            ("src/analytics/engagement_predictor.py", "get_engagement_predictor"),
+            ("src/analytics/virality_calculator.py", "get_virality_calculator"),
+            ("src/analytics/script_analyzer.py", "get_script_analyzer"),
+            ("src/analytics/competitor_gap_analyzer.py", "get_gap_analyzer"),
+            ("src/analytics/dashboard_generator.py", "get_dashboard_generator"),
+            ("src/core/content_optimizer.py", "get_content_optimizer"),
+            ("src/core/ai_quality_gate.py", "get_quality_gate"),
+        ]
+        
+        passed = 0
+        missing = 0
+        
+        for filepath, function_name in ai_modules:
+            if os.path.exists(filepath):
+                content = self._read_file(filepath)
+                if function_name in content:
+                    passed += 1
+                else:
+                    self.warnings.append(f"{filepath}: Missing {function_name}")
+            else:
+                self.errors.append(f"Missing AI module: {filepath}")
+                missing += 1
+        
+        if missing == 0:
+            self.passed.append(f"All {len(ai_modules)} AI modules present")
+            print(f"   [OK] All {len(ai_modules)} AI modules found")
+        else:
+            print(f"   [X] Missing {missing} AI modules")
+        
+        print(f"   Modules verified: {passed}/{len(ai_modules)}")
+        
+        return missing == 0
+    
+    # ========================================================================
+    # CHECK 10: TEST SUITE STATUS
+    # ========================================================================
+    def check_test_suite(self) -> bool:
+        """Check that the test suite exists and passes."""
+        print("\n[10] TEST SUITE CHECK...")
+        
+        test_file = "scripts/test_all_ai_modules.py"
+        
+        if not os.path.exists(test_file):
+            self.errors.append("Test suite missing: scripts/test_all_ai_modules.py")
+            print("   [X] Test suite NOT FOUND")
+            return False
+        
+        content = self._read_file(test_file)
+        
+        # Count test sections
+        test_count = content.count("# TEST ")
+        
+        if test_count >= 20:
+            self.passed.append(f"Test suite has {test_count} test sections")
+            print(f"   [OK] Test suite has {test_count} test sections")
+        else:
+            self.warnings.append(f"Test suite only has {test_count} tests (expected 20+)")
+            print(f"   [!] Only {test_count} test sections (expected 20+)")
+        
+        return True
+    
+    # ========================================================================
     # MAIN VERIFICATION
     # ========================================================================
     def run_all_checks(self) -> bool:
@@ -538,6 +616,8 @@ class VersionVerifier:
             self.check_workflows(),
             self.check_enhancements_integrated(),
             self.check_ai_first_architecture(),  # v17.8: New check
+            self.check_ai_modules(),  # v17.8.27: All AI modules
+            self.check_test_suite(),  # v17.8.27: Test suite
         ]
         
         print("\n" + "=" * 60)
