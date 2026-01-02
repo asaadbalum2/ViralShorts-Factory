@@ -3,6 +3,7 @@
 import os
 import requests
 import random
+import time
 
 
 def fetch_broll_videos():
@@ -11,6 +12,13 @@ def fetch_broll_videos():
     if not api_key:
         print('⚠️ No Pexels API key, will use gradient backgrounds')
         return
+    
+    # v17.9.3: Rate limiting for Pexels (200 req/hour = 18s between calls)
+    try:
+        from src.ai.model_helper import get_rate_limits
+        PEXELS_DELAY = get_rate_limits().get("pexels", 18.0)
+    except ImportError:
+        PEXELS_DELAY = 18.0  # 200 requests/hour = 1 every 18 seconds
     
     # Create broll directory
     broll_dir = 'assets/broll'
@@ -61,6 +69,9 @@ def fetch_broll_videos():
     for query in queries:
         if downloaded >= 10:  # v17.6: Increased from 3 to 10 for more variety
             break
+        
+        # v17.9.3: Rate limiting - wait between API calls
+        time.sleep(PEXELS_DELAY)
             
         try:
             # Search for portrait/vertical videos

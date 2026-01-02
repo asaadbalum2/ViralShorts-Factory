@@ -855,15 +855,19 @@ class MasterAI:
             chosen_provider = self.budget_manager.choose_provider(task, prefer_quality=not prefer_gemini)
             safe_print(f"   [Budget] Task '{task}' -> Provider: {chosen_provider}")
         
-        # v17.9.2: DYNAMIC rate limiting based on provider limits
-        # Gemini free tier: 20 req/min = 3s between calls minimum
-        # Groq free tier: 30 req/min = 2s between calls minimum
-        # Adding buffer for safety: Gemini 4s, Groq 2.5s
-        rate_limits = {
-            "gemini": 4.0,    # 20 req/min = 3s + 1s buffer
-            "groq": 2.5,      # 30 req/min = 2s + 0.5s buffer
-            "openrouter": 1.0 # Higher limits
-        }
+        # v17.9.3: DYNAMIC rate limiting from centralized config
+        # All providers now have proper rate limiting
+        try:
+            from src.ai.model_helper import get_rate_limits
+            rate_limits = get_rate_limits()
+        except ImportError:
+            rate_limits = {
+                "gemini": 4.0,
+                "groq": 2.5,
+                "openrouter": 1.0,
+                "huggingface": 2.0,
+                "pexels": 18.0
+            }
         base_delay = rate_limits.get(chosen_provider, 3.0)
         time.sleep(base_delay)  # Rate limit protection between AI calls
         
