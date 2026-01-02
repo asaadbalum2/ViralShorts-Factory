@@ -53,50 +53,67 @@ def test_huggingface_api_call():
     safe_print("[3/6] Testing HuggingFace API Call...")
     
     import requests
+    import time as time_module
     hf_key = os.environ.get('HUGGINGFACE_API_KEY', '')
     
     if not hf_key:
         return ("HuggingFace API Call", "FAIL", "No API key")
     
-    # Try a simple inference call
-    test_models = [
-        "meta-llama/Llama-3.2-3B-Instruct",
-        "Qwen/Qwen2.5-3B-Instruct",
-        "microsoft/Phi-3-mini-4k-instruct"
-    ]
+    # Use dynamically discovered models instead of hardcoded ones
+    try:
+        from quota.quota_optimizer import get_quota_optimizer
+        quota_opt = get_quota_optimizer()
+        test_models = quota_opt.get_huggingface_models(hf_key)
+        safe_print(f"    Using {len(test_models)} discovered models")
+    except Exception as e:
+        safe_print(f"    Discovery failed, using fallbacks: {e}")
+        test_models = [
+            "google/gemma-2-2b-it",
+            "microsoft/Phi-3-mini-4k-instruct",
+            "meta-llama/Llama-3.2-3B-Instruct"
+        ]
     
-    for model in test_models:
-        try:
-            safe_print(f"    Trying {model}...")
-            response = requests.post(
-                f"https://api-inference.huggingface.co/models/{model}",
-                headers={"Authorization": f"Bearer {hf_key}"},
-                json={
-                    "inputs": "Generate a viral topic for a YouTube Short: ",
-                    "parameters": {
-                        "max_new_tokens": 50,
-                        "temperature": 0.8
-                    }
-                },
-                timeout=30
-            )
-            
-            if response.status_code == 200:
-                result = response.json()
-                if isinstance(result, list) and result:
-                    content = result[0].get("generated_text", "")
-                    if content:
-                        safe_print(f"[+] Response: {content[:80]}...")
-                        return ("HuggingFace API Call", "PASS", f"{model} works")
-            elif response.status_code == 503:
-                safe_print(f"    Model loading, trying next...")
-                continue
-            else:
-                safe_print(f"    Status {response.status_code}, trying next...")
-                continue
-        except Exception as e:
-            safe_print(f"    Error: {e}, trying next...")
-            continue
+    for model in test_models[:5]:  # Try top 5 models
+        # Try each model up to 3 times (with wait for loading)
+        for attempt in range(3):
+            try:
+                safe_print(f"    Trying {model} (attempt {attempt+1})...")
+                response = requests.post(
+                    f"https://api-inference.huggingface.co/models/{model}",
+                    headers={"Authorization": f"Bearer {hf_key}"},
+                    json={
+                        "inputs": "Generate a viral topic for a YouTube Short: ",
+                        "parameters": {
+                            "max_new_tokens": 50,
+                            "temperature": 0.8
+                        }
+                    },
+                    timeout=60  # Longer timeout for cold models
+                )
+                
+                if response.status_code == 200:
+                    result = response.json()
+                    if isinstance(result, list) and result:
+                        content = result[0].get("generated_text", "")
+                        if content:
+                            safe_print(f"[+] Response: {content[:80]}...")
+                            return ("HuggingFace API Call", "PASS", f"{model} works")
+                elif response.status_code == 503:
+                    # Model is loading - wait and retry
+                    try:
+                        wait_time = response.json().get("estimated_time", 20)
+                        safe_print(f"    Model loading, waiting {int(wait_time)}s...")
+                        time_module.sleep(min(wait_time, 30))  # Wait up to 30s
+                        continue
+                    except:
+                        time_module.sleep(15)
+                        continue
+                else:
+                    safe_print(f"    Status {response.status_code}")
+                    break  # Try next model
+            except Exception as e:
+                safe_print(f"    Error: {e}")
+                break  # Try next model
     
     return ("HuggingFace API Call", "FAIL", "All models failed")
 
