@@ -303,6 +303,28 @@ def get_budget_manager() -> TokenBudgetManager:
     return _budget_manager
 
 
+def print_quota_health_report():
+    """Print a quick quota health report for workflow logs.
+    v17.6: Added for better monitoring in workflow logs.
+    """
+    mgr = get_budget_manager()
+    print("\n" + "="*50)
+    print("QUOTA HEALTH REPORT - v17.6")
+    print("="*50)
+    
+    for provider in ["gemini", "groq", "openrouter"]:
+        available = mgr.get_available_tokens(provider)
+        budget = mgr.budgets.get(provider)
+        if budget:
+            used_pct = (budget.used_today / budget.daily_limit * 100) if budget.daily_limit > 0 else 0
+            status = "OK" if available > 10000 else "LOW" if available > 0 else "EXHAUSTED"
+            print(f"  {provider.upper()}: {available:,} available ({used_pct:.1f}% used) [{status}]")
+    
+    videos_remaining = mgr.get_videos_remaining()
+    print(f"\n  Videos Possible: {videos_remaining}")
+    print("="*50 + "\n")
+
+
 # =============================================================================
 # SMART AI CALLER WITH BUDGET AWARENESS
 # =============================================================================
