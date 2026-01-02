@@ -560,9 +560,18 @@ def get_learned_optimal_metrics() -> Dict:
     
     This is HYBRID: Uses AI-learned values but within proven safe bounds.
     
+    v17.9 FIX: Previous limits (3-6 phrases, 15-30s) were TOO SHORT!
+    Videos felt like "intros that got cut off" with no real value delivered.
+    
+    New limits based on viral Shorts analysis:
+    - 8-12 phrases: Enough for Hook + Setup + 5-7 value points + CTA
+    - 45-60 seconds: Optimal YouTube Shorts retention window
+    - 10-15 words per phrase: Punchy but complete thoughts
+    
     Returns: {duration, phrases, words_per_phrase}
     """
-    defaults = {"duration": 20, "phrases": 4, "words_per_phrase": 12}
+    # v17.9: FIXED - These defaults now produce REAL content
+    defaults = {"duration": 50, "phrases": 10, "words_per_phrase": 12}
     
     try:
         if PERSISTENT_STATE_AVAILABLE:
@@ -570,22 +579,22 @@ def get_learned_optimal_metrics() -> Dict:
             patterns = viral_mgr.patterns if hasattr(viral_mgr, 'patterns') else {}
             
             # Duration: Learn from analytics, but keep within proven range
-            learned_duration = patterns.get("optimal_duration", 20)
+            learned_duration = patterns.get("optimal_duration", 50)
             if isinstance(learned_duration, (int, float)):
-                # Guardrails: 15-30 seconds (never below 15, never above 30)
-                defaults["duration"] = max(15, min(30, int(learned_duration)))
+                # v17.9 FIX: 45-60 seconds (optimal for Shorts with REAL value)
+                defaults["duration"] = max(45, min(60, int(learned_duration)))
             
             # Phrases: Learn from analytics, but keep within safe range
-            learned_phrases = patterns.get("optimal_phrase_count", 4)
+            learned_phrases = patterns.get("optimal_phrase_count", 10)
             if isinstance(learned_phrases, (int, float)):
-                # Guardrails: 3-6 phrases (proven range)
-                defaults["phrases"] = max(3, min(6, int(learned_phrases)))
+                # v17.9 FIX: 8-12 phrases (enough for real content delivery)
+                defaults["phrases"] = max(8, min(12, int(learned_phrases)))
             
             # Words per phrase: Could also be learned
             learned_words = patterns.get("optimal_words_per_phrase", 12)
             if isinstance(learned_words, (int, float)):
-                # Guardrails: 8-18 words (for readability and pacing)
-                defaults["words_per_phrase"] = max(8, min(18, int(learned_words)))
+                # Guardrails: 10-15 words (punchy but complete)
+                defaults["words_per_phrase"] = max(10, min(15, int(learned_words)))
             
     except Exception as e:
         pass  # Use defaults on any error
@@ -1481,7 +1490,7 @@ Phrase Count: {phrase_count} phrases ONLY
 
 {first_attempt_boost}
 
-=== v8.0 CONTENT RULES ===
+=== v17.9 CONTENT RULES (FIXED - REAL VALUE REQUIRED) ===
 
 1. **HOOK IS EVERYTHING**: First phrase = 90% of success!
    - Pattern interrupts: "STOP!", "Wait...", "This will shock you"
@@ -1489,36 +1498,53 @@ Phrase Count: {phrase_count} phrases ONLY
    - Challenges: "99% of people get this wrong"
    - Controversy: "What they don't want you to know..."
 
-2. **ULTRA-CONCISE**: This is NOT a long video!
-   - Each phrase: 8-15 words MAX (shorter = better)
-   - Total word count: ~60 words for whole video
-   - Cut fluff - every word must earn its place
+2. **DELIVER REAL VALUE**: This is NOT an intro - it's the FULL video!
+   - Each phrase: 10-15 words (complete thoughts, not teasers)
+   - Total word count: 100-150 words minimum
+   - Include SPECIFIC examples, numbers, steps, or techniques
+   - NO empty promises - if you say "learn this secret" TELL THE SECRET!
    
-3. **SPECIFIC > VAGUE**: Numbers and specifics win
-   - Bad: "save money" → Good: "save $500 in 30 days"
-   - Bad: "be productive" → Good: "finish 3x more tasks"
+3. **SPECIFIC > VAGUE**: Concrete examples WIN
+   - Bad: "save money" → Good: "cancel 3 subscriptions: gym $30, streaming $15, apps $10 = $55/month"
+   - Bad: "be productive" → Good: "Use the 2-minute rule: if it takes under 2 minutes, do it NOW"
+   - Bad: "5 hidden fees" → Good: "Bank ATM fee $3, foreign transaction 3%, account maintenance $12..."
    
-4. **ENGAGEMENT BAIT**: Last phrase MUST drive action
+4. **STRUCTURE FOR VALUE**:
+   - Phrase 1: HOOK - Stop the scroll
+   - Phrases 2-3: SETUP - The problem/context
+   - Phrases 4-8: VALUE - The actual tips/facts/steps (BE SPECIFIC!)
+   - Phrase 9: SUMMARY - Key takeaway
+   - Phrase 10: CTA - Force engagement
+
+5. **ENGAGEMENT BAIT**: Last phrase MUST drive action
    - Questions that FORCE comments: "A or B?", "Would you try this?"
    - Predictions: "Comment your guess before I reveal!"
    - Save hooks: "Save this before it's gone!"
 
-=== CREATE EXACTLY {phrase_count} PHRASES ===
-1. HOOK (1-3 seconds) - Pattern interrupt, make them STOP scrolling!
-2-{phrase_count-1}. CONTENT (8-12 seconds) - Fast, punchy, valuable
-{phrase_count}. PAYOFF + BAIT (3-5 seconds) - Answer + force engagement
+=== CREATE EXACTLY {phrase_count} PHRASES WITH REAL CONTENT ===
+1. HOOK (2-3 sec) - Pattern interrupt, make them STOP scrolling!
+2-3. SETUP (5-8 sec) - Why this matters, the problem
+4-8. VALUE (25-35 sec) - THE ACTUAL CONTENT! Specific tips, steps, examples!
+9. SUMMARY (3-5 sec) - The key insight
+{phrase_count}. CTA (3-5 sec) - Force engagement
 
 === OUTPUT JSON ===
 {{
     "phrases": [
-        "STOP scrolling - this changes everything",
-        "The problem explained in one punchy sentence",
-        "The solution with a specific number or result",
-        "The payoff PLUS: Would you try this? Comment YES or NO!"
+        "STOP scrolling - this one trick saves you $500 every month",
+        "Most people waste money on 3 things without even realizing it",
+        "Here's what I canceled and the exact savings",
+        "First: that gym membership you use twice a month - $40 saved",
+        "Second: premium streaming bundles - switch to ads tier, save $25",
+        "Third: food delivery fees - cook batch meals on Sunday, save $200",
+        "The total? That's $265 monthly going back in your pocket",
+        "In one year, you'd save $3,180 - enough for a vacation",
+        "The secret isn't making more money, it's stopping the leaks",
+        "Which of these three will YOU cancel first? Comment below!"
     ],
-    "specific_value": "What SPECIFIC result does viewer get?",
-    "hook_technique": "Which viral hook pattern was used?",
-    "engagement_bait": "The exact question/CTA at the end"
+    "specific_value": "Save $265/month ($3,180/year) by canceling 3 specific subscriptions",
+    "hook_technique": "curiosity_gap_with_number",
+    "engagement_bait": "Which of these three will YOU cancel first?"
 }}
 
 CRITICAL: 
@@ -1579,7 +1605,40 @@ OUTPUT JSON ONLY."""
         
         phrases = content.get('phrases', [])
         
+        # v17.9: ACTUALLY improve hooks when flagged (was flagging but never fixing!)
+        if content.get('hook_needs_improvement') and phrases:
+            try:
+                power_words = content.get('power_words_available', ['instantly', 'secret', 'shocking', 'never', 'always'])
+                original_hook = phrases[0]
+                
+                # Ask AI to rewrite hook using power words
+                hook_improve_prompt = f"""Rewrite this video hook to be MORE viral:
+
+Original hook: "{original_hook}"
+
+Use these PROVEN power words: {power_words}
+
+Rules:
+1. Keep it under 15 words
+2. Must stop the scroll IMMEDIATELY
+3. Use a pattern interrupt (STOP!, Wait..., etc.) or shocking stat
+4. Add curiosity gap - make them NEED to watch
+
+Return ONLY the improved hook, nothing else."""
+
+                improved_hook = self.call_ai(hook_improve_prompt, 100, temperature=0.9, task="hook_improve")
+                if improved_hook and len(improved_hook.strip()) > 5 and len(improved_hook.strip()) < 100:
+                    phrases[0] = improved_hook.strip().strip('"').strip("'")
+                    content['phrases'] = phrases
+                    content['hook_was_improved'] = True
+                    safe_print(f"   [v17.9 HOOK FIX] Improved weak hook with power words!")
+                    safe_print(f"   [OLD] {original_hook[:50]}...")
+                    safe_print(f"   [NEW] {phrases[0][:50]}...")
+            except Exception as e:
+                safe_print(f"   [!] Hook improvement failed: {e}")
+        
         # v17.6: Pre-check value delivery BEFORE AI evaluation
+        # v17.9: Now with REJECTION for truly empty content
         if VIRAL_SCIENCE_AVAILABLE:
             try:
                 checker = ValueDeliveryChecker()
@@ -1589,6 +1648,15 @@ OUTPUT JSON ONLY."""
                 safe_print(f"   [VIRAL SCIENCE] Value delivery: {value_check['verdict']} ({value_check['score']}/100)")
                 if value_check['issues']:
                     safe_print(f"   [ISSUES] {', '.join(value_check['issues'][:2])}")
+                
+                # v17.9: REJECT truly valueless content - mark for regeneration
+                if value_check['verdict'] == 'REJECT':
+                    content['needs_regeneration'] = True
+                    content['regen_reason'] = f"Value check FAILED: {value_check['issues'][0] if value_check['issues'] else 'No value'}"
+                    safe_print(f"   [!] CONTENT REJECTED - Will regenerate with more depth!")
+                elif value_check['verdict'] == 'NEEDS_WORK' and value_check['score'] < 60:
+                    content['content_weak'] = True
+                    safe_print(f"   [!] Content weak ({value_check['score']}/100) - Flagged for AI improvement")
             except Exception as e:
                 safe_print(f"   [!] Value check skipped: {e}")
         

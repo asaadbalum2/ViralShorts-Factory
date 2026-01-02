@@ -451,25 +451,58 @@ class ValueDeliveryChecker:
         
         if not has_numbers:
             issues.append("No specific numbers or data")
-            score -= 10
+            score -= 20  # v17.9: Increased penalty
         
         if not has_action:
             issues.append("No actionable advice")
-            score -= 10
+            score -= 20  # v17.9: Increased penalty
+        
+        # v17.9 FIX: Check for ACTUAL value delivery, not just promises
+        # These patterns indicate content that TELLS without SHOWING
+        vague_patterns = [
+            r'you (can|could|should|might|will)',  # Vague future promises
+            r'(this|it) (will|can|could) (help|change|improve)',  # Generic claims
+            r'(many|some|most) people',  # Non-specific audience
+            r'(great|amazing|incredible|powerful) (way|method|technique)',  # Hype words
+        ]
+        vague_count = sum(1 for p in vague_patterns if re.search(p, content_lower))
+        if vague_count >= 2:
+            issues.append(f"Too vague ({vague_count} hype patterns) - lacks concrete examples")
+            score -= 15
+        
+        # v17.9 FIX: Check for CONCRETE examples/steps
+        concrete_patterns = [
+            r'for example',
+            r'here\'s (how|what)',
+            r'step \d|first.*then.*finally',
+            r'specifically',
+            r'called the|named|known as',
+            r'\d+ (minutes|seconds|days|hours)',
+            r'(example|instance):',
+        ]
+        concrete_count = sum(1 for p in concrete_patterns if re.search(p, content_lower))
+        if concrete_count == 0:
+            issues.append("No concrete examples or step-by-step instructions")
+            score -= 20
         
         # Check length - too short = probably not enough value
+        # v17.9 FIX: Minimum 80 words (was 40) for real content
         word_count = len(content.split())
-        if word_count < 40:
-            issues.append(f"Too short ({word_count} words) - probably lacks depth")
-            score -= 15
+        if word_count < 80:
+            issues.append(f"Too short ({word_count} words) - needs 80+ for real value")
+            score -= 25  # v17.9: Increased penalty
+        elif word_count < 60:
+            issues.append(f"Critically short ({word_count} words) - intro without content")
+            score -= 35
         
         return {
             "score": max(0, score),
             "issues": issues,
-            "verdict": "GOOD" if score >= 70 else "NEEDS_WORK" if score >= 50 else "REJECT",
+            "verdict": "GOOD" if score >= 75 else "NEEDS_WORK" if score >= 55 else "REJECT",  # v17.9: Higher thresholds
             "word_count": word_count,
             "has_numbers": has_numbers,
-            "has_action": has_action
+            "has_action": has_action,
+            "concrete_examples": concrete_count  # v17.9: Track this
         }
     
     def improve_content(self, content: str, video_type: str) -> str:
