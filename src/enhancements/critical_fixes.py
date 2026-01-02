@@ -430,6 +430,86 @@ def apply_all_critical_fixes(
     return fixed_content
 
 
+# ============================================
+# v17.6: HOOK QUALITY SCORER
+# ============================================
+
+SCROLL_STOP_PATTERNS = [
+    r'\bSTOP\b',           # Pattern interrupt
+    r'\bWait\b',           # Pause command
+    r'^\d+%',              # Leading percentage
+    r'^\$\d+',             # Leading dollar amount
+    r'\?$',                # Ends with question
+    r'!$',                 # Ends with exclamation
+    r'\bdid\s+you\s+know\b',  # Curiosity trigger
+    r'\bdon\'t\s+\w+\s+without\b',  # Loss aversion
+    r'\bwrong\b',          # Challenge
+    r'\bsecret\b',         # Mystery
+    r'\btruth\b',          # Revelation
+    r'\bshock\b',          # Emotion
+]
+
+def score_hook_quality(hook: str) -> Dict:
+    """
+    v17.6: Score a hook for scroll-stop power.
+    
+    Returns:
+        score: 1-10 (10 = maximum scroll-stop power)
+        patterns_found: list of patterns that matched
+        suggestions: improvements if score is low
+    """
+    score = 0
+    patterns_found = []
+    
+    hook_lower = hook.lower()
+    
+    # Check for scroll-stop patterns
+    for pattern in SCROLL_STOP_PATTERNS:
+        if re.search(pattern, hook, re.IGNORECASE):
+            score += 1
+            patterns_found.append(pattern)
+    
+    # Check for numbers (specificity)
+    if re.search(r'\d+', hook):
+        score += 1
+        patterns_found.append("has_number")
+    
+    # Check for short hook (<=15 words is optimal)
+    word_count = len(hook.split())
+    if word_count <= 15:
+        score += 1
+        patterns_found.append("short_hook")
+    elif word_count > 25:
+        score -= 1  # Penalty for too long
+    
+    # Check for personal pronoun (engagement)
+    if re.search(r'\b(you|your|we|our)\b', hook_lower):
+        score += 1
+        patterns_found.append("personal_pronoun")
+    
+    # Cap at 10
+    score = min(max(score, 1), 10)
+    
+    # Generate suggestions for low scores
+    suggestions = []
+    if score < 6:
+        if 'has_number' not in patterns_found:
+            suggestions.append("Add a specific number (e.g., 93% instead of 'most')")
+        if 'personal_pronoun' not in patterns_found:
+            suggestions.append("Make it personal (use 'you' or 'your')")
+        if word_count > 15:
+            suggestions.append(f"Shorten hook ({word_count} words → aim for 10-15)")
+        if len(patterns_found) < 2:
+            suggestions.append("Add pattern interrupt (STOP, Wait, Did you know...?)")
+    
+    return {
+        "score": score,
+        "patterns_found": patterns_found,
+        "suggestions": suggestions,
+        "word_count": word_count
+    }
+
+
 if __name__ == "__main__":
     # Test the fixes
     print("Testing Critical Fixes...")
