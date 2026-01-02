@@ -253,6 +253,15 @@ except ImportError:
     get_series_manager = lambda: None
     get_performance_aggregator = lambda: None
 
+# v17.7.3: Import thumbnail generator for video thumbnails
+try:
+    from thumbnail_generator import generate_thumbnail, get_ai_thumbnail_concept
+    THUMBNAIL_GENERATOR_AVAILABLE = True
+    print("[OK] Thumbnail Generator loaded: AI-driven thumbnails ACTIVE!")
+except ImportError as e:
+    THUMBNAIL_GENERATOR_AVAILABLE = False
+    print(f"[!] Thumbnail Generator not available: {e}")
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
@@ -3156,6 +3165,22 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         }
         with open(meta_path, 'w') as f:
             json.dump(full_metadata, f, indent=2)
+        
+        # v17.7.3: Generate AI-driven thumbnail
+        thumbnail_path = None
+        if THUMBNAIL_GENERATOR_AVAILABLE:
+            try:
+                topic = concept.get('specific_topic', 'Viral Short')
+                category = concept.get('category', 'motivation')
+                thumbnail_path = output_path.replace('.mp4', '_thumbnail.png')
+                
+                # Get AI-driven thumbnail concept
+                success = generate_thumbnail(topic, category, thumbnail_path)
+                if success:
+                    safe_print(f"   [THUMBNAIL] Generated: {thumbnail_path}")
+                    full_metadata['thumbnail_path'] = thumbnail_path
+            except Exception as e:
+                safe_print(f"   [!] Thumbnail generation failed: {e}")
         
         # Track in batch with score
         score = content.get('evaluation_score', 7)
