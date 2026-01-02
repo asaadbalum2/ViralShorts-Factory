@@ -24,6 +24,14 @@ import xml.etree.ElementTree as ET
 import re
 
 
+def safe_print(msg: str):
+    """Print with Unicode fallback for Windows."""
+    try:
+        print(msg)
+    except UnicodeEncodeError:
+        print(re.sub(r'[^\x00-\x7F]+', '', msg))
+
+
 @dataclass
 class TrendingTopic:
     """A trending topic with metadata."""
@@ -75,21 +83,24 @@ class GoogleTrendsFetcher:
                         # Extract keywords
                         keywords = [w.lower() for w in topic_text.split() if len(w) > 3]
                         
+                        # v17.7.17: Fix None description bug
+                        safe_desc = (desc_text or topic_text)[:200]
+                        
                         topics.append(TrendingTopic(
                             topic=topic_text,
                             source="google",
                             score=90 - len(topics) * 5,  # Higher score for top trends
                             category=self._categorize(topic_text),
-                            description=desc_text[:200],
+                            description=safe_desc,
                             keywords=keywords[:5]
                         ))
                 
-                print(f"✅ Fetched {len(topics)} trends from Google RSS")
+                safe_print(f"[OK] Fetched {len(topics)} trends from Google RSS")
             else:
-                print(f"⚠️ Google RSS returned {response.status_code}")
+                safe_print(f"[!] Google RSS returned {response.status_code}")
                 
         except Exception as e:
-            print(f"⚠️ Google Trends RSS error: {e}")
+            safe_print(f"[!] Google Trends RSS error: {e}")
         
         return topics
     

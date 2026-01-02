@@ -25,6 +25,17 @@
       ],
       "total_views": 0,
       "total_engagement": 0
+    },
+    "number_hook": {
+      "videos": [
+        {
+          "video_id": "test123",
+          "title": "Test",
+          "recorded_at": "2026-01-02T16:25:52.010126"
+        }
+      ],
+      "total_views": 0,
+      "total_engagement": 0
     }
   },
   "cta_variants": {},

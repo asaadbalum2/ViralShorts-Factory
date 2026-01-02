@@ -1,0 +1,19 @@
+{
+  "trending_topics": [],
+  "content_gaps": [
+    {
+      "topic": "trending1",
+      "reason": "Trending but not covered",
+      "priority": "high"
+    },
+    {
+      "topic": "trending2",
+      "reason": "Trending but not covered",
+      "priority": "high"
+    }
+  ],
+  "unique_angles": [],
+  "competitor_patterns": [],
+  "last_analysis": "2026-01-02T16:25:13.119651",
+  "our_differentiators": []
+}

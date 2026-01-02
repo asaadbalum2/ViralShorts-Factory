@@ -7,6 +7,10 @@
     "obscure_test_keyword_xyz": {
       "count": 4,
       "last_fail": "2025-12-24T20:26:36.007074"
+    },
+    "bad_keyword_test": {
+      "count": 1,
+      "last_fail": "2026-01-02T16:25:52.010869"
     }
   },
   "tts_failures": {},
