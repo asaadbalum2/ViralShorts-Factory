@@ -3,7 +3,8 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'utils'))
-from src.utils.api_health_check import *
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'quota'))
+from src.utils.api_health_check import main
 if __name__ == "__main__":
     main()
 

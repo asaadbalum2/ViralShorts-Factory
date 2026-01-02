@@ -7,6 +7,7 @@ This is a wrapper that imports from the reorganized structure.
 
 import sys
 import os
+import asyncio
 
 # Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
@@ -18,9 +19,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'platforms'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'utils'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'ai'))
 
-# Import and run the actual generator
-from src.core.pro_video_generator import *
+# Import the actual generator
+from src.core.pro_video_generator import main
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
 

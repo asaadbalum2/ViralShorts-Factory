@@ -5,7 +5,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'utils'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'ai'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'quota'))
-from src.utils.pre_work_fetcher import *
+from src.utils.pre_work_fetcher import PreWorkFetcher
 if __name__ == "__main__":
-    main()
+    fetcher = PreWorkFetcher()
+    fetcher.run()
 

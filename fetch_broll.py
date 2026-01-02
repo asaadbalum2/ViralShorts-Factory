@@ -3,7 +3,7 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'utils'))
-from src.utils.fetch_broll import *
+from src.utils.fetch_broll import fetch_broll_videos
 if __name__ == "__main__":
-    main()
+    fetch_broll_videos()
 
