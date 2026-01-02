@@ -278,6 +278,20 @@ try:
 except ImportError:
     COMPETITOR_ANALYZER_AVAILABLE = False
 
+# v17.8: Import AI Pattern Generator for AI-first architecture
+try:
+    from ai_pattern_generator import get_pattern_generator, refresh_patterns_if_needed
+    AI_PATTERN_GENERATOR_AVAILABLE = True
+    print("[OK] AI Pattern Generator loaded: AI-first patterns ACTIVE!")
+except ImportError:
+    try:
+        from src.ai.ai_pattern_generator import get_pattern_generator, refresh_patterns_if_needed
+        AI_PATTERN_GENERATOR_AVAILABLE = True
+        print("[OK] AI Pattern Generator loaded: AI-first patterns ACTIVE!")
+    except ImportError:
+        AI_PATTERN_GENERATOR_AVAILABLE = False
+        print("[!] AI Pattern Generator not available - using fallback patterns")
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920

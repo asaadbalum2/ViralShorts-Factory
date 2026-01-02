@@ -32,6 +32,17 @@ from typing import Dict, List, Optional
 from dataclasses import dataclass, asdict, field
 import hashlib
 
+# v17.8: Import AI Pattern Generator for AI-first architecture
+try:
+    from src.ai.ai_pattern_generator import get_pattern_generator, AIPatternGenerator
+    AI_PATTERN_GENERATOR_AVAILABLE = True
+except ImportError:
+    try:
+        from ai_pattern_generator import get_pattern_generator, AIPatternGenerator
+        AI_PATTERN_GENERATOR_AVAILABLE = True
+    except ImportError:
+        AI_PATTERN_GENERATOR_AVAILABLE = False
+
 # State files - these MUST persist between runs
 STATE_DIR = Path("./data/persistent")
 STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -400,32 +411,53 @@ class ViralPatternsManager:
         self.state = self.patterns  # Alias for consistency with other managers
     
     def _load_patterns(self) -> Dict:
-        """Load viral patterns from file."""
+        """
+        v17.8: Load viral patterns - AI-FIRST architecture!
+        
+        Priority:
+        1. Use AIPatternGenerator to get/refresh patterns
+        2. Fall back to file cache
+        3. Last resort: minimal fallback
+        """
+        # v17.8: AI-FIRST - use AIPatternGenerator
+        if AI_PATTERN_GENERATOR_AVAILABLE:
+            try:
+                generator = get_pattern_generator()
+                patterns = generator.get_patterns()
+                if patterns.get("ai_generated") or patterns.get("title_patterns"):
+                    safe_print("[OK] Viral patterns loaded from AI generator")
+                    return patterns
+            except Exception as e:
+                safe_print(f"[!] AI pattern generator error: {e}")
+        
+        # Fall back to file cache
         try:
             if VIRAL_PATTERNS_FILE.exists():
                 with open(VIRAL_PATTERNS_FILE, 'r') as f:
                     data = json.load(f)
-                    # Return if we have valid AI-generated patterns
                     if data.get("title_patterns") and len(data.get("title_patterns", [])) > 0:
+                        safe_print("[OK] Viral patterns loaded from cache")
                         return data
         except Exception as e:
             safe_print(f"[!] Error loading viral patterns: {e}")
         
-        # v8.1: Empty default - patterns will be AI-generated on first use
-        # NO HARDCODED PATTERNS - see viral_channel_analyzer._generate_viral_patterns_ai()
+        # Last resort: minimal fallback (NOT source of truth!)
+        safe_print("[!] No patterns available - using minimal fallback")
         return {
-            "title_patterns": [],  # AI will populate
-            "hook_patterns": [],   # AI will populate
-            "engagement_baits": [], # AI will populate
+            "patterns_source": "MINIMAL_FALLBACK",
+            "title_patterns": [],
+            "hook_patterns": [],
+            "engagement_baits": [],
             "optimal_lengths": {
                 "hook": "7-12 words",
                 "total_video": "15-25 seconds",
                 "phrases": "3-5",
                 "cta": "5-10 words"
             },
-            "proven_categories": [],  # AI will learn from performance
+            "proven_categories": [],
             "last_updated": None,
-            "ai_generated": False  # Will be True after AI populates
+            "ai_generated": False,
+            "needs_ai_refresh": True
         }
     
     def _save_patterns(self):

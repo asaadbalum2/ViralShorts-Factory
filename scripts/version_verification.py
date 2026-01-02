@@ -402,6 +402,7 @@ class VersionVerifier:
             ("learning_engine" in main_content, "Self-learning engine active"),
             ("VIRAL_SCIENCE_AVAILABLE" in main_content, "Viral video science integrated"),
             ("ValueDeliveryChecker" in main_content, "Value delivery checking active"),
+            ("AI_PATTERN_GENERATOR_AVAILABLE" in main_content or "ai_pattern_generator" in main_content, "AI pattern generator integrated"),
         ]
         
         passed = 0
@@ -414,6 +415,81 @@ class VersionVerifier:
         
         print(f"   Passed: {passed}/{len(checks)}")
         return passed == len(checks)
+    
+    # ========================================================================
+    # CHECK: AI-FIRST ARCHITECTURE
+    # ========================================================================
+    def check_ai_first_architecture(self) -> bool:
+        """
+        v17.8: Check that all content patterns are AI-generated, not hardcoded.
+        
+        This enforces the 'prompt-AI based architecture' principle:
+        - Data files should be populated by AI, not hardcoded
+        - Hardcoded data should be marked as fallback only
+        """
+        print("\n[8] AI-FIRST ARCHITECTURE CHECK")
+        
+        all_good = True
+        
+        # Check viral_patterns.json
+        patterns_file = "data/persistent/viral_patterns.json"
+        try:
+            if os.path.exists(patterns_file):
+                with open(patterns_file, 'r') as f:
+                    data = json.load(f)
+                
+                if data.get("ai_generated") == True:
+                    self.passed.append("viral_patterns.json is AI-generated")
+                    print("   [OK] viral_patterns.json: AI-generated")
+                elif data.get("patterns_source") == "NEEDS_AI_GENERATION":
+                    self.passed.append("viral_patterns.json marked for AI generation")
+                    print("   [OK] viral_patterns.json: Awaiting AI generation")
+                else:
+                    # Check if it looks hardcoded
+                    if len(data.get("title_patterns", [])) > 3 and not data.get("ai_generated"):
+                        self.warnings.append("viral_patterns.json appears hardcoded - should be AI-generated")
+                        print("   [!] viral_patterns.json: May be hardcoded (review needed)")
+                    else:
+                        self.passed.append("viral_patterns.json structure OK")
+                        print("   [OK] viral_patterns.json: Structure OK")
+        except Exception as e:
+            self.warnings.append(f"Could not check viral_patterns.json: {e}")
+        
+        # Check variety_state.json
+        variety_file = "data/persistent/variety_state.json"
+        try:
+            if os.path.exists(variety_file):
+                with open(variety_file, 'r') as f:
+                    data = json.load(f)
+                
+                if data.get("source") in ["AI_LEARNED", "AI_GENERATED", "ANALYTICS"]:
+                    self.passed.append("variety_state.json is AI-learned")
+                    print("   [OK] variety_state.json: AI-learned")
+                elif data.get("weekly_last_updated"):
+                    self.passed.append("variety_state.json updated by analytics")
+                    print("   [OK] variety_state.json: Updated by analytics")
+                else:
+                    self.passed.append("variety_state.json exists")
+                    print("   [INFO] variety_state.json: Exists (source not specified)")
+        except Exception as e:
+            self.warnings.append(f"Could not check variety_state.json: {e}")
+        
+        # Check for AIPatternGenerator in codebase
+        generator_file = "src/ai/ai_pattern_generator.py"
+        if os.path.exists(generator_file):
+            content = self._read_file(generator_file)
+            if "generate_patterns_with_ai" in content:
+                self.passed.append("AI pattern generator implemented")
+                print("   [OK] AI pattern generator: Implemented")
+            else:
+                self.errors.append("AI pattern generator missing generate_patterns_with_ai")
+                all_good = False
+        else:
+            self.errors.append("Missing src/ai/ai_pattern_generator.py")
+            all_good = False
+            print("   [X] AI pattern generator: MISSING")
+        
+        return all_good
     
     # ========================================================================
     # MAIN VERIFICATION
@@ -434,6 +510,7 @@ class VersionVerifier:
             self.check_for_bugs(),
             self.check_workflows(),
             self.check_enhancements_integrated(),
+            self.check_ai_first_architecture(),  # v17.8: New check
         ]
         
         print("\n" + "=" * 60)
