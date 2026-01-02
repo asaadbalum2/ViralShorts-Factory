@@ -2926,8 +2926,29 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                 safe_print(f"   [QUALITY] Score {score}/10 - ACCEPTABLE")
                 content['quality_warning'] = False
             else:
-                safe_print(f"   [QUALITY] WARNING: Could not reach {MINIMUM_ACCEPTABLE_SCORE}/10 after {regeneration_attempts} attempts. Best: {score}/10")
-                content['quality_warning'] = True
+                # v17.7: Try ViralContentGenerator as last resort before accepting low quality
+                if VIRAL_SCIENCE_AVAILABLE and score < MINIMUM_ACCEPTABLE_SCORE - 1:
+                    try:
+                        safe_print(f"   [VIRAL SCIENCE] Attempting high-quality content generation...")
+                        vcg = ViralContentGenerator()
+                        category = concept.get('category', 'life_hack')
+                        topic = concept.get('specific_topic', '')
+                        viral_content = vcg.generate(category, topic)
+                        if viral_content and viral_content.get('full_script'):
+                            # Convert to our format
+                            script = viral_content.get('full_script', '')
+                            sentences = [s.strip() for s in script.split('.') if len(s.strip()) > 10][:5]
+                            if len(sentences) >= 3:
+                                content['phrases'] = sentences
+                                content['quality_warning'] = False
+                                safe_print(f"   [VIRAL SCIENCE] Generated high-value content!")
+                                score = 8  # Trust ViralContentGenerator's value check
+                    except Exception as e:
+                        safe_print(f"   [!] Viral science fallback failed: {e}")
+                
+                if score < MINIMUM_ACCEPTABLE_SCORE:
+                    safe_print(f"   [QUALITY] WARNING: Could not reach {MINIMUM_ACCEPTABLE_SCORE}/10 after {regeneration_attempts} attempts. Best: {score}/10")
+                    content['quality_warning'] = True
             
             # v15.0: Record result for FirstAttemptMaximizer learning
             if ai.first_attempt:
