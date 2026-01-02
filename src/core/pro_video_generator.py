@@ -262,6 +262,14 @@ except ImportError as e:
     THUMBNAIL_GENERATOR_AVAILABLE = False
     print(f"[!] Thumbnail Generator not available: {e}")
 
+# v17.7.6: Import error logger for centralized logging
+try:
+    from error_logger import get_error_logger, log_error
+    ERROR_LOGGER_AVAILABLE = True
+except ImportError:
+    ERROR_LOGGER_AVAILABLE = False
+    def log_error(e, ctx="", comp=""): pass  # No-op fallback
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
@@ -674,8 +682,13 @@ class MasterAI:
                     if self.quota_monitor:
                         self.quota_monitor.record_429("gemini", delay)
                     safe_print(f"[!] Gemini 429 - switching to fallback...")
+                    # v17.7.6: Log quota exhaustion for tracking
+                    if ERROR_LOGGER_AVAILABLE:
+                        log_error(e, f"Gemini 429 - delay {delay}s", "ai_gemini")
                 else:
                     safe_print(f"[!] Gemini error: {e}")
+                    if ERROR_LOGGER_AVAILABLE:
+                        log_error(e, "Gemini API failure", "ai_gemini")
                 # Fall through to other providers
         
         # v8.2: Smart load balancing (original logic as fallback)
