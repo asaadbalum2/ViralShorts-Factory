@@ -233,16 +233,15 @@ class VarietyStateManager:
         self._save_state()
     
     def get_category_weights(self) -> Dict[str, float]:
-        """Get weighted probabilities for categories based on recency."""
+        """
+        v17.8: Get weighted probabilities for categories based on:
+        1. AI-learned performance data
+        2. Recency (avoid repetition)
+        """
         recent_categories = self.state.get("categories", [])[-10:]
         
-        # All available categories
-        all_categories = [
-            "psychology", "finance", "productivity", "health", 
-            "relationships", "science", "technology", "motivation",
-            "life_hacks", "history", "statistics", "mysteries",
-            "shocking_facts", "would_you_rather", "mind_tricks"
-        ]
+        # v17.8: Get categories from AI/analytics, NOT hardcoded!
+        all_categories = self._get_ai_categories()
         
         weights = {}
         for cat in all_categories:
@@ -251,8 +250,36 @@ class VarietyStateManager:
             weights[cat] = max(0.1, 1.0 - (recency_count * 0.3))
         
         # Normalize
-        total = sum(weights.values())
-        return {k: v/total for k, v in weights.items()}
+        total = sum(weights.values()) if weights else 1
+        return {k: v/total for k, v in weights.items()} if weights else {}
+    
+    def _get_ai_categories(self) -> List[str]:
+        """
+        v17.8: Get categories from AI or learned performance data.
+        """
+        # First try: Get from learned performance
+        learned = self.state.get("learned_from_performance", {})
+        if learned.get("best_performing_categories"):
+            return learned["best_performing_categories"]
+        
+        # Second try: Get from AI recommendations
+        ai_recs = self.state.get("ai_recommendations", {})
+        if ai_recs.get("recommended_categories"):
+            return ai_recs["recommended_categories"]
+        
+        # Third try: Ask AI to generate categories
+        if AI_PATTERN_GENERATOR_AVAILABLE:
+            try:
+                gen = get_pattern_generator()
+                patterns = gen.get_patterns()
+                if patterns.get("proven_categories"):
+                    return patterns["proven_categories"]
+            except:
+                pass
+        
+        # Last resort: minimal fallback (used only until AI runs)
+        safe_print("[!] Using minimal category fallback - AI generation needed")
+        return ["general", "facts", "tips"]
     
     def pick_category_weighted(self, available: List[str]) -> str:
         """Pick a category with weighting to favor less-used ones."""

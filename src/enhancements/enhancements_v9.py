@@ -1748,16 +1748,46 @@ def get_optimal_posting_time(variety_state_file: Path = None) -> Dict:
     except:
         pass
     
-    # Return learned preferences if available
-    best_hours = variety_state.get("best_posting_hours_utc", [14, 18, 22])  # Default: afternoon/evening UTC
-    best_days = variety_state.get("best_posting_days", ["Tuesday", "Thursday", "Saturday"])
+    # v17.8: Return learned preferences if available, otherwise ask AI
+    if "best_posting_hours_utc" in variety_state:
+        best_hours = variety_state["best_posting_hours_utc"]
+        best_days = variety_state.get("best_posting_days", [])
+        source = "learned"
+        confidence = 0.6
+    else:
+        # Ask AI for optimal posting times instead of hardcoding
+        best_hours, best_days = _get_ai_posting_times()
+        source = "ai_recommended"
+        confidence = 0.4
     
     return {
         "best_hours_utc": best_hours,
         "best_days": best_days,
-        "confidence": 0.6 if "best_posting_hours_utc" in variety_state else 0.3,
-        "source": "learned" if "best_posting_hours_utc" in variety_state else "default"
+        "confidence": confidence,
+        "source": source
     }
+
+
+def _get_ai_posting_times() -> Tuple[List[int], List[str]]:
+    """v17.8: Ask AI for optimal posting times."""
+    try:
+        ai = get_ai_caller()
+        prompt = """You are a YouTube Shorts analytics expert.
+What are the best times (hours in UTC) and days to post for maximum reach?
+Consider: US, UK, India audiences, typical scroll times.
+Return JSON: {"hours_utc": [14, 18], "days": ["Tuesday", "Friday"]}
+JSON ONLY."""
+        result = ai.call(prompt, max_tokens=100, priority="bulk")
+        parsed = ai.parse_json(result)
+        if parsed:
+            return (
+                parsed.get("hours_utc", [14, 18]),
+                parsed.get("days", ["Tuesday", "Thursday"])
+            )
+    except:
+        pass
+    # Minimal fallback
+    return [14, 18], ["Tuesday", "Thursday"]
 
 
 # =============================================================================
@@ -2674,6 +2704,31 @@ class ThumbnailTextOptimizer:
         with open(self.THUMB_TEXT_FILE, 'w') as f:
             json.dump(self.data, f, indent=2)
     
+    def _get_power_word_candidates(self) -> List[str]:
+        """
+        v17.8: Get power word candidates from AI or learned data.
+        """
+        # First try: Get from already-tracked power words
+        if self.data.get("power_words"):
+            return list(self.data["power_words"].keys())
+        
+        # Second try: Ask AI for power words
+        try:
+            ai = get_ai_caller()
+            prompt = """List 15 power words that make YouTube Shorts thumbnails/titles irresistible.
+            Words that create urgency, curiosity, or shock.
+            Return ONLY a JSON array of uppercase words: ["WORD1", "WORD2", ...]
+            JSON ONLY."""
+            result = ai.call(prompt, max_tokens=100, priority="bulk")
+            parsed = ai.parse_json(result)
+            if isinstance(parsed, list) and len(parsed) > 0:
+                return [w.upper() for w in parsed]
+        except:
+            pass
+        
+        # Minimal fallback
+        return ["SECRET", "TRUTH", "SHOCKING", "FREE", "NOW"]
+    
     def record_thumbnail_performance(self, text: str, ctr: float):
         """Record a thumbnail text's click-through rate."""
         if not text:
@@ -2699,9 +2754,9 @@ class ThumbnailTextOptimizer:
         self.data["word_counts"][word_count]["videos"] += 1
         self.data["word_counts"][word_count]["total_ctr"] += ctr
         
-        # Track power words
+        # Track power words - v17.8: Get from AI pattern generator
         words = text.upper().split()
-        power_candidates = ["SECRET", "TRUTH", "NEVER", "ALWAYS", "SHOCKING", "HIDDEN", "FREE", "NOW"]
+        power_candidates = self._get_power_word_candidates()
         for word in words:
             if word in power_candidates:
                 if word not in self.data["power_words"]:

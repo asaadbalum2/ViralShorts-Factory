@@ -1,117 +1,48 @@
 {
-  "categories": [],
-  "topics": [],
-  "voices": [],
-  "music_moods": [],
-  "hooks": [],
-  "last_updated": "2026-01-02T16:00:00.000000",
-  "preferred_categories": [
-    "psychology",
-    "money",
-    "productivity",
-    "health",
-    "relationships"
-  ],
-  "trending_topics_2026": [
-    "AI tools for productivity",
-    "new year habits that stick",
-    "mental health red flags",
-    "money mistakes in your 20s",
-    "psychology of successful people",
-    "morning routines that actually work",
-    "signs of high intelligence"
-  ],
-  "title_tricks": [
-    "use numbers",
-    "curiosity gap"
-  ],
-  "best_title_styles": [
-    "number_hook",
-    "curiosity_gap"
-  ],
-  "best_performing_categories": [
-    "psychology",
-    "money",
-    "life_hack"
-  ],
-  "title_tricks_that_work": [
-    "use numbers",
-    "curiosity gaps",
-    "promise reveal"
-  ],
-  "best_title_patterns": [
-    "{number} {topic} You Didn't Know",
-    "Why {topic} Changes Everything"
-  ],
-  "optimal_title_word_count": 8,
-  "optimal_duration": 22,
-  "optimal_phrase_count": 5,
-  "hook_types_that_work": [
-    "question hook",
-    "shocking statement",
-    "number reveal",
-    "pattern interrupt",
-    "challenge hook",
-    "story tease"
-  ],
-  "proven_hook_formulas": [
-    "Did you know {fact}?",
-    "{number}% of people don't know this...",
-    "STOP - this will change how you {action}",
-    "You're doing {action} wrong if you {mistake}",
-    "The {topic} secret nobody talks about",
-    "I tried {thing} for {time} - here's what happened",
-    "What {group} won't tell you about {topic}"
-  ],
-  "psychological_triggers": [
-    "curiosity",
-    "fomo",
-    "social proof",
-    "loss aversion",
-    "controversy"
-  ],
-  "engagement_baits": [
-    "Comment if you agree",
-    "Save this for later",
-    "Type 1 or 2 in comments",
-    "Tag someone who needs this",
-    "What would you do?"
-  ],
-  "best_music_moods": [
-    "dramatic",
-    "mysterious"
-  ],
-  "best_voice_styles": [
-    "energetic",
-    "calm authority"
-  ],
-  "virality_hacks": [
-    "end with question",
-    "use round numbers"
-  ],
-  "best_posting_hours_utc": [
-    14,
-    18,
-    22
-  ],
-  "best_posting_days": [
-    "Tuesday",
-    "Thursday",
-    "Saturday"
-  ],
-  "comment_insights": {
-    "viewer_loves": [
-      "psychology content",
-      "money tips"
-    ],
-    "viewer_requests": [
-      "more life hacks",
-      "tech content"
-    ],
-    "quality_concerns": [],
-    "engagement_drivers": [
-      "relatable topics"
-    ]
+  "source": "ANALYTICS_LEARNED",
+  "note": "This file is populated by analytics feedback. DO NOT HARDCODE!",
+  
+  "usage_tracking": {
+    "categories": [],
+    "topics": [],
+    "voices": [],
+    "music_moods": [],
+    "hooks": []
   },
-  "weekly_last_updated": "2025-12-24T19:50:22.470694"
+  
+  "learned_from_performance": {
+    "best_performing_categories": [],
+    "best_title_patterns": [],
+    "best_hook_types": [],
+    "best_music_moods": [],
+    "best_voice_styles": [],
+    "best_posting_hours_utc": [],
+    "best_posting_days": []
+  },
+  
+  "analytics_insights": {
+    "optimal_title_word_count": null,
+    "optimal_duration": null,
+    "optimal_phrase_count": null,
+    "avg_views_by_category": {},
+    "avg_engagement_by_hook_type": {},
+    "comment_insights": {
+      "viewer_loves": [],
+      "viewer_requests": [],
+      "quality_concerns": [],
+      "engagement_drivers": []
+    }
+  },
+  
+  "ai_recommendations": {
+    "note": "Populated by AI based on performance analysis",
+    "trending_topics": [],
+    "recommended_categories": [],
+    "recommended_hooks": [],
+    "recommended_triggers": []
+  },
+  
+  "last_updated": null,
+  "last_analytics_run": null,
+  "needs_ai_refresh": true
 }

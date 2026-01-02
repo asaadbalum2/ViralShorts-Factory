@@ -462,7 +462,7 @@ class VersionVerifier:
                 with open(variety_file, 'r') as f:
                     data = json.load(f)
                 
-                if data.get("source") in ["AI_LEARNED", "AI_GENERATED", "ANALYTICS"]:
+                if data.get("source") in ["AI_LEARNED", "AI_GENERATED", "ANALYTICS", "ANALYTICS_LEARNED"]:
                     self.passed.append("variety_state.json is AI-learned")
                     print("   [OK] variety_state.json: AI-learned")
                 elif data.get("weekly_last_updated"):
