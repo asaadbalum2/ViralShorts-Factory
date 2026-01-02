@@ -384,6 +384,47 @@ def main():
         test("Content Optimizer works", False, str(e))
     
     # =========================================================================
+    # TEST 21: Competitor Gap Analyzer
+    # =========================================================================
+    print("\n[21] COMPETITOR GAP ANALYZER")
+    try:
+        from competitor_gap_analyzer import get_gap_analyzer
+        analyzer = get_gap_analyzer()
+        test("Import success", True)
+        test("Has analyze_gap", hasattr(analyzer, 'analyze_gap'))
+        test("Has identify_opportunities", hasattr(analyzer, 'identify_opportunities'))
+    except Exception as e:
+        test("Competitor Gap Analyzer works", False, str(e))
+    
+    # =========================================================================
+    # TEST 22: AI Trend Analyzer
+    # =========================================================================
+    print("\n[22] AI TREND ANALYZER")
+    try:
+        from ai_trend_analyzer import get_trend_analyzer
+        analyzer = get_trend_analyzer()
+        test("Import success", True)
+        test("Has analyze_trend", hasattr(analyzer, 'analyze_trend'))
+        test("Has get_trending_topics", hasattr(analyzer, 'get_trending_topics'))
+    except Exception as e:
+        test("AI Trend Analyzer works", False, str(e))
+    
+    # =========================================================================
+    # TEST 23: AI Audience Persona Generator
+    # =========================================================================
+    print("\n[23] AI AUDIENCE PERSONA GENERATOR")
+    try:
+        from ai_audience_persona import get_persona_generator
+        gen = get_persona_generator()
+        test("Import success", True)
+        test("Has generate_persona", hasattr(gen, 'generate_persona'))
+        persona = gen.generate_persona("productivity")
+        test("generate_persona returns dict", isinstance(persona, dict))
+        test("Has name", "name" in persona)
+    except Exception as e:
+        test("AI Audience Persona Generator works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
