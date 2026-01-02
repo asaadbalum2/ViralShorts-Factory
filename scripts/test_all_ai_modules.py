@@ -367,6 +367,23 @@ def main():
         test("Script Analyzer works", False, str(e))
     
     # =========================================================================
+    # TEST 20: Content Optimizer (Integration)
+    # =========================================================================
+    print("\n[20] CONTENT OPTIMIZER (INTEGRATION)")
+    try:
+        sys.path.insert(0, 'src/core')
+        from content_optimizer import get_content_optimizer
+        opt = get_content_optimizer()
+        test("Import success", True)
+        test("Has optimize", hasattr(opt, 'optimize'))
+        test("Has quick_score", hasattr(opt, 'quick_score'))
+        status = opt.get_module_status()
+        modules_available = sum(1 for v in status.values() if v)
+        test(f"Modules available: {modules_available}/10", modules_available >= 6)
+    except Exception as e:
+        test("Content Optimizer works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
