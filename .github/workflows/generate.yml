@@ -24,7 +24,7 @@ on:
           - 'false'
           - 'true'
 
-  # ENABLED - Production mode active!
+  # DISABLED TEMPORARILY - Waiting for quota reset
   # v7.17: MAXIMUM THROUGHPUT CONFIGURATION
   # =====================================================
   # HARD LIMITS:
@@ -39,13 +39,13 @@ on:
   #   - Dailymotion: 24 uploads/day
   #   - Groq: 93,600 tokens (93.6% of quota)
   # =====================================================
-  schedule:
-    - cron: '0 0 * * *'   # 00:00 UTC - Midnight batch
-    - cron: '0 4 * * *'   # 04:00 UTC - Early morning batch
-    - cron: '0 8 * * *'   # 08:00 UTC - Morning batch
-    - cron: '0 12 * * *'  # 12:00 UTC - Noon batch
-    - cron: '0 16 * * *'  # 16:00 UTC - Afternoon batch
-    - cron: '0 20 * * *'  # 20:00 UTC - Evening batch
+  # schedule:
+  #   - cron: '0 0 * * *'   # 00:00 UTC - Midnight batch
+  #   - cron: '0 4 * * *'   # 04:00 UTC - Early morning batch
+  #   - cron: '0 8 * * *'   # 08:00 UTC - Morning batch
+  #   - cron: '0 12 * * *'  # 12:00 UTC - Noon batch
+  #   - cron: '0 16 * * *'  # 16:00 UTC - Afternoon batch
+  #   - cron: '0 20 * * *'  # 20:00 UTC - Evening batch
 
 jobs:
   generate:

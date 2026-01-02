@@ -11,9 +11,10 @@ name: Weekly Analytics Feedback - Learn from Our Performance (v10.0)
 # Fully autonomous - no human intervention needed!
 
 on:
+  # DISABLED TEMPORARILY - Waiting for quota reset
   # Twice weekly: Sunday + Wednesday at 2 AM UTC (faster learning)
-  schedule:
-    - cron: '0 2 * * 0,3'
+  # schedule:
+  #   - cron: '0 2 * * 0,3'
   
   # Manual trigger for testing
   workflow_dispatch:

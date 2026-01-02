@@ -11,9 +11,10 @@ on:
         required: false
         default: '20'
 
+  # DISABLED TEMPORARILY - Waiting for quota reset
   # Run once per day, early morning (before video generation starts)
-  schedule:
-    - cron: '30 5 * * *'  # 5:30 AM UTC (30 min before first video workflow)
+  # schedule:
+  #   - cron: '30 5 * * *'  # 5:30 AM UTC (30 min before first video workflow)
 
 jobs:
   pre-work:
