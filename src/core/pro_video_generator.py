@@ -1818,6 +1818,17 @@ JSON ONLY."""
             result['title_style'] = 'single'
             safe_print(f"   Title: {result.get('title', 'N/A')}")
         
+        # v17.7.13: Add optimal publishing time recommendation
+        if ENHANCEMENTS_V10_AVAILABLE and result:
+            try:
+                pub_optimizer = get_publishing_optimizer()
+                best_times = pub_optimizer.get_best_publishing_times()
+                result['recommended_publish_hours'] = best_times.get('best_hours_utc', [14, 18, 20])
+                result['recommended_publish_days'] = best_times.get('best_days', ['Saturday'])
+                safe_print(f"   [PUBLISH] Best times: {best_times['best_hours_utc'][:3]}:00 UTC on {best_times['best_days'][:2]}")
+            except:
+                pass
+        
         return result
     
     # ========================================================================
