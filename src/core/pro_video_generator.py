@@ -222,6 +222,19 @@ except ImportError as e:
     MINIMUM_ACCEPTABLE_SCORE = 7  # Fallback
     print(f"[!] Critical fixes not available: {e}")
 
+# v17.6: Import viral video science for better content quality
+try:
+    from viral_video_science import (
+        ValueDeliveryChecker,
+        ViralContentGenerator,
+        CONTENT_TEMPLATES
+    )
+    VIRAL_SCIENCE_AVAILABLE = True
+    print("[OK] Viral Video Science loaded: Value delivery checking ACTIVE!")
+except ImportError as e:
+    VIRAL_SCIENCE_AVAILABLE = False
+    print(f"[!] Viral Video Science not available: {e}")
+
 # v9.5: Import persistent state with series tracking
 try:
     from persistent_state import (
@@ -1173,6 +1186,7 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         v8.0: Shorter content (3-5 phrases), stronger hooks, engagement baits.
         v8.5: HYBRID - uses analytics-learned optimal metrics with guardrails.
         v13.1: Added regeneration feedback support for quality enforcement.
+        v17.6: Pre-validates hook quality before content generation.
         """
         # Check if this is a regeneration attempt
         is_regeneration = concept.get('attempt_number', 0) > 0
@@ -1180,6 +1194,19 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
             safe_print(f"\n[STAGE 2] AI REGENERATING content (attempt {concept.get('attempt_number')})...")
         else:
             safe_print("\n[STAGE 2] AI creating content...")
+        
+        # v17.6: PRE-VALIDATE HOOK using viral science patterns
+        if not is_regeneration and ENHANCEMENTS_V11_AVAILABLE:
+            try:
+                topic = concept.get('specific_topic', '')
+                # Use scroll-stop power scoring
+                stop_power = score_scroll_stop_power(topic) if callable(score_scroll_stop_power) else None
+                if stop_power and stop_power < 6:
+                    safe_print(f"   [HOOK BOOST] Topic needs stronger hook (score: {stop_power}/10)")
+                    # Add instruction to concept for stronger hook
+                    concept['hook_boost_needed'] = True
+            except Exception as e:
+                pass  # Non-critical enhancement
         
         # v8.5: HYBRID approach - learn from analytics but with guardrails
         learned_metrics = get_learned_optimal_metrics()
@@ -1384,6 +1411,19 @@ OUTPUT JSON ONLY."""
         safe_print("\n[STAGE 3] AI evaluating and enhancing...")
         
         phrases = content.get('phrases', [])
+        
+        # v17.6: Pre-check value delivery BEFORE AI evaluation
+        if VIRAL_SCIENCE_AVAILABLE:
+            try:
+                checker = ValueDeliveryChecker()
+                full_content = " ".join(phrases)
+                value_check = checker.check_content(full_content)
+                content['value_delivery_score'] = value_check['score']
+                safe_print(f"   [VIRAL SCIENCE] Value delivery: {value_check['verdict']} ({value_check['score']}/100)")
+                if value_check['issues']:
+                    safe_print(f"   [ISSUES] {', '.join(value_check['issues'][:2])}")
+            except Exception as e:
+                safe_print(f"   [!] Value check skipped: {e}")
         
         # v8.9.1: Get the hook/topic from concept for promise validation
         concept = content.get('concept', {})
