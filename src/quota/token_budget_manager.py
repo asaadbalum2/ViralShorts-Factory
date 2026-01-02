@@ -33,6 +33,13 @@ from pathlib import Path
 from typing import Dict, Optional, Tuple
 from dataclasses import dataclass, asdict
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_best_gemini_model
+except ImportError:
+    def get_best_gemini_model(api_key=None):
+        return "gemini-1.5-flash"  # Fallback only if import fails
+
 # State directory
 STATE_DIR = Path("data/persistent")
 STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -333,7 +340,9 @@ class BudgetAwareAICaller:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                self.gemini_model = genai.GenerativeModel('models/gemini-1.5-flash')
+                # DYNAMIC MODEL SELECTION - no hardcoded model names
+                model_name = get_best_gemini_model(self.gemini_key)
+                self.gemini_model = genai.GenerativeModel(f'models/{model_name}')
             except Exception as e:
                 print(f"[BudgetAI] Gemini init error: {e}")
     

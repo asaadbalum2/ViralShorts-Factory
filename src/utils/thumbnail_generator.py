@@ -26,6 +26,13 @@ except ImportError:
     print("PIL not available")
     Image = None
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_gemini_model_for_rest_api
+except ImportError:
+    def get_gemini_model_for_rest_api(api_key=None):
+        return "gemini-1.5-flash"  # Fallback only if import fails
+
 
 # Thumbnail settings
 THUMBNAIL_WIDTH = 1280
@@ -82,8 +89,10 @@ Return JSON ONLY:
     # Try Gemini first (free quota!)
     if gemini_key:
         try:
+            # DYNAMIC MODEL SELECTION - no hardcoded model names
+            gemini_model = get_gemini_model_for_rest_api(gemini_key)
             response = requests.post(
-                f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={gemini_key}",
+                f"https://generativelanguage.googleapis.com/v1beta/models/{gemini_model}:generateContent?key={gemini_key}",
                 headers={"Content-Type": "application/json"},
                 json={
                     "contents": [{"parts": [{"text": prompt}]}],

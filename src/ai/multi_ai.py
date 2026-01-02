@@ -8,6 +8,15 @@ import json
 import random
 from typing import Optional, Dict, Any
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_best_gemini_model, get_best_groq_model
+except ImportError:
+    def get_best_gemini_model(api_key=None):
+        return "gemini-1.5-flash"
+    def get_best_groq_model(api_key=None):
+        return "llama-3.3-70b-versatile"
+
 
 class MultiAIGenerator:
     """
@@ -44,51 +53,26 @@ class MultiAIGenerator:
                 print(f"⚠️ Groq init failed: {e}")
     
     def _init_gemini(self):
-        """Initialize Google Gemini (high quality) - using new google.genai"""
+        """Initialize Google Gemini (high quality) - DYNAMIC model selection"""
         api_key = os.environ.get("GEMINI_API_KEY")
         if api_key:
             try:
-                # Try new google.genai first with Gemini 2.0 Flash
-                try:
-                    from google import genai
-                    client = genai.Client(api_key=api_key)
-                    self.providers.append({
-                        "name": "Gemini 2.0 Flash",
-                        "client": client,
-                        "type": "gemini",
-                        "model": "gemini-1.5-flash",  # Free tier model
-                        "priority": 2
-                    })
-                    print("✅ Gemini 2.0 Flash initialized (Latest)")
-                    return
-                except ImportError:
-                    pass
-                
-                # Fallback to old API with Gemini 2.0 or 1.5 Flash
                 import google.generativeai as genai
                 genai.configure(api_key=api_key)
-                try:
-                    # Use 1.5 Flash (has free tier)
-                    model = genai.GenerativeModel('gemini-1.5-flash')
-                    self.providers.append({
-                        "name": "Gemini 2.0 Flash",
-                        "client": model,
-                        "type": "gemini",
-                        "priority": 2
-                    })
-                    print("✅ Gemini 2.0 Flash initialized")
-                except:
-                    # Fallback to 1.5 Flash
-                    model = genai.GenerativeModel('gemini-1.5-flash')
-                    self.providers.append({
-                        "name": "Gemini 1.5 Flash",
-                        "client": model,
-                        "type": "gemini",
-                        "priority": 2
-                    })
-                    print("✅ Gemini 1.5 Flash initialized (fallback)")
+                
+                # DYNAMIC MODEL SELECTION - no hardcoded model names
+                model_name = get_best_gemini_model(api_key)
+                model = genai.GenerativeModel(model_name)
+                self.providers.append({
+                    "name": f"Gemini ({model_name})",
+                    "client": model,
+                    "type": "gemini",
+                    "model": model_name,
+                    "priority": 2
+                })
+                print(f"[OK] Gemini initialized ({model_name})")
             except Exception as e:
-                print(f"⚠️ Gemini init failed: {e}")
+                print(f"[!] Gemini init failed: {e}")
     
     def _init_together(self):
         """Initialize Together AI (backup)"""

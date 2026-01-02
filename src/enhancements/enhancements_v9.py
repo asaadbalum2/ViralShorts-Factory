@@ -91,6 +91,15 @@ from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, asdict
 import requests
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_best_gemini_model, get_best_groq_model
+except ImportError:
+    def get_best_gemini_model(api_key=None):
+        return "gemini-1.5-flash"
+    def get_best_groq_model(api_key=None):
+        return "llama-3.3-70b-versatile"
+
 # State directory
 STATE_DIR = Path("./data/persistent")
 STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -148,14 +157,10 @@ class SmartAICaller:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
-                # Try multiple Gemini models in order of preference (1.5-flash has free tier)
-                for model_name in ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.0-pro']:
-                    try:
-                        self.gemini_model = genai.GenerativeModel(model_name)
-                        safe_print(f"[OK] Gemini model: {model_name}")
-                        break
-                    except:
-                        continue
+                # DYNAMIC MODEL SELECTION - no hardcoded model names
+                model_name = get_best_gemini_model(self.gemini_key)
+                self.gemini_model = genai.GenerativeModel(model_name)
+                safe_print(f"[OK] Gemini model: {model_name}")
             except Exception as e:
                 safe_print(f"[!] Gemini init: {e}")
     

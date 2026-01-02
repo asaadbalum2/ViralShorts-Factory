@@ -23,6 +23,13 @@ try:
 except ImportError:
     GEMINI_AVAILABLE = False
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_best_gemini_model
+except ImportError:
+    def get_best_gemini_model(api_key=None):
+        return "gemini-1.5-flash"  # Fallback only if import fails
+
 
 def get_groq_client():
     """Get Groq client if available."""
@@ -33,15 +40,17 @@ def get_groq_client():
 
 
 def get_gemini_model():
-    """Get Gemini model if available."""
+    """Get Gemini model if available - uses DYNAMIC model selection."""
     api_key = os.environ.get('GEMINI_API_KEY')
     if not api_key or not GEMINI_AVAILABLE:
         return None
     try:
         genai.configure(api_key=api_key)
-        return genai.GenerativeModel('gemini-1.5-flash')
+        # DYNAMIC MODEL SELECTION - no hardcoded model names
+        model_name = get_best_gemini_model(api_key)
+        return genai.GenerativeModel(model_name)
     except Exception as e:
-        print(f"⚠️ Gemini init failed: {e}")
+        print(f"[!] Gemini init failed: {e}")
         return None
 
 

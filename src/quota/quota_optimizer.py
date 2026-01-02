@@ -542,6 +542,72 @@ def check_for_hardcoding(code: str) -> List[str]:
     return warnings
 
 
+# =============================================================================
+# CENTRALIZED MODEL GETTERS - ALL FILES MUST USE THESE
+# =============================================================================
+
+def get_best_gemini_model(api_key: str = None, for_rest_api: bool = False) -> str:
+    """
+    Get the best available Gemini model with free quota.
+    
+    DYNAMIC DISCOVERY: Queries the API to find models with quota.
+    Falls back through multiple models if one fails.
+    
+    Args:
+        api_key: Gemini API key (uses env if not provided)
+        for_rest_api: If True, returns model name for REST API calls (e.g., URL construction)
+    
+    Returns:
+        Best model name string (e.g., "gemini-1.5-flash" or could be "gemini-2.0-flash" if available)
+    
+    Usage:
+        from src.quota.quota_optimizer import get_best_gemini_model
+        model = genai.GenerativeModel(get_best_gemini_model())
+    """
+    optimizer = get_quota_optimizer()
+    api_key = api_key or os.getenv("GEMINI_API_KEY")
+    
+    # Get dynamically discovered models (cached for 24h)
+    models = optimizer.get_gemini_models(api_key=api_key)
+    
+    if models:
+        return models[0]  # Return best available
+    
+    # Ultimate fallback (should never reach here)
+    return "gemini-1.5-flash"
+
+
+def get_best_groq_model(api_key: str = None) -> str:
+    """
+    Get the best available Groq model.
+    
+    DYNAMIC DISCOVERY: Queries the API to find available models.
+    Prioritizes large versatile models.
+    
+    Returns:
+        Best model name string (e.g., "llama-3.3-70b-versatile")
+    """
+    optimizer = get_quota_optimizer()
+    api_key = api_key or os.getenv("GROQ_API_KEY")
+    
+    models = optimizer.get_groq_models(api_key=api_key)
+    
+    if models:
+        return models[0]
+    
+    return "llama-3.3-70b-versatile"
+
+
+def get_gemini_model_for_rest_api(api_key: str = None) -> str:
+    """
+    Get Gemini model name formatted for REST API URL construction.
+    
+    Example: Returns "gemini-1.5-flash" for use in URLs like:
+    f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    """
+    return get_best_gemini_model(api_key=api_key)
+
+
 if __name__ == "__main__":
     # Test the optimizer
     optimizer = get_quota_optimizer()
@@ -550,6 +616,10 @@ if __name__ == "__main__":
     # Get categories
     categories = optimizer.get_trending_categories()
     print(f"Categories: {categories[:5]}...")
+    
+    # Test dynamic model getters
+    print(f"\nBest Gemini model: {get_best_gemini_model()}")
+    print(f"Best Groq model: {get_best_groq_model()}")
     
     # Print hardcoding guide
     print(HARDCODE_WARNINGS)

@@ -21,6 +21,13 @@ from pathlib import Path
 from typing import Optional, Dict, List
 from datetime import datetime
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_gemini_model_for_rest_api
+except ImportError:
+    def get_gemini_model_for_rest_api(api_key=None):
+        return "gemini-1.5-flash"  # Fallback only if import fails
+
 # Cache directory
 MUSIC_DIR = Path("./assets/music")
 MUSIC_DIR.mkdir(parents=True, exist_ok=True)
@@ -118,8 +125,10 @@ JSON ONLY."""
         gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
         if gemini_key:
             try:
+                # DYNAMIC MODEL SELECTION - no hardcoded model names
+                gemini_model = get_gemini_model_for_rest_api(gemini_key)
                 response = requests.post(
-                    f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={gemini_key}",
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{gemini_model}:generateContent?key={gemini_key}",
                     headers={"Content-Type": "application/json"},
                     json={
                         "contents": [{"parts": [{"text": prompt}]}],

@@ -25,6 +25,15 @@ try:
 except ImportError:
     HAS_GROQ = False
 
+# Dynamic model selection
+try:
+    from src.quota.quota_optimizer import get_best_gemini_model, get_best_groq_model
+except ImportError:
+    def get_best_gemini_model(api_key=None):
+        return "gemini-1.5-flash"
+    def get_best_groq_model(api_key=None):
+        return "llama-3.3-70b-versatile"
+
 # Gemini as fallback for when Groq fails
 try:
     import google.generativeai as genai
@@ -1505,28 +1514,27 @@ class GodTierContentGenerator:
         if HAS_GROQ and os.environ.get("GROQ_API_KEY"):
             self.groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
         
-        # Initialize Gemini 2.0 Flash (backup - latest model with enhanced performance)
+        # Initialize Gemini (backup - uses DYNAMIC model selection)
         if HAS_GEMINI and os.environ.get("GEMINI_API_KEY"):
             try:
-                genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-                # Try Gemini 2.0 Flash (latest), fallback to 1.5 if not available
-                try:
-                    self.gemini_client = genai.GenerativeModel('gemini-1.5-flash')
-                    print("✅ Gemini 1.5 Flash (free tier) initialized")
-                except:
-                    self.gemini_client = genai.GenerativeModel('gemini-1.5-flash')
-                    print("✅ Gemini 1.5 Flash initialized (2.0 not available)")
+                api_key = os.environ.get("GEMINI_API_KEY")
+                genai.configure(api_key=api_key)
+                # DYNAMIC MODEL SELECTION - no hardcoded model names
+                model_name = get_best_gemini_model(api_key)
+                self.gemini_client = genai.GenerativeModel(model_name)
+                print(f"[OK] Gemini initialized ({model_name})")
             except Exception as e:
-                print(f"⚠️ Gemini init failed: {e}")
+                print(f"[!] Gemini init failed: {e}")
     
     def _call_ai(self, prompt: str, max_tokens: int = 2000) -> Optional[str]:
         """Make AI call with automatic fallback (Groq -> Gemini)."""
         
-        # Try Groq first (faster)
+        # Try Groq first (faster) - DYNAMIC MODEL SELECTION
         if self.groq_client:
             try:
+                groq_model = get_best_groq_model()
                 response = self.groq_client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model=groq_model,
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=max_tokens,
                     temperature=0.85  # High creativity

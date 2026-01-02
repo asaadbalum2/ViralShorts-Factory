@@ -2719,9 +2719,12 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     if CRITICAL_FIXES_AVAILABLE:
         try:
             # 1. Check and ENFORCE minimum quality score with REGENERATION
+            # v17.2: Reduced max_regen from 3 to 1 - focus on getting it right FIRST TIME
+            # Regeneration wastes quota and rarely improves significantly
+            # Instead, we fixed the scoring prompt to be more accurate
             score = content.get('evaluation_score', 5)
             regeneration_attempts = 0
-            max_regen = 3
+            max_regen = 1  # v17.2: Only 1 retry for occasional failures
             
             while score < MINIMUM_ACCEPTABLE_SCORE and regeneration_attempts < max_regen:
                 regeneration_attempts += 1
