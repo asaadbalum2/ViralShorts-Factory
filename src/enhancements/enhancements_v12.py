@@ -1963,9 +1963,12 @@ SATISFYING CONCLUSIONS:
 class GenreMatching:
     """
     #157: Matches music genre to content category.
+    v17.8: AI-overridable genre mappings.
     """
     
-    GENRE_MAP = {
+    MUSIC_FILE = STATE_DIR / "music_genre_performance.json"
+    
+    _DEFAULT_GENRE_MAP = {
         "finance": ["corporate", "electronic_soft", "piano"],
         "psychology": ["ambient", "mysterious", "atmospheric"],
         "motivation": ["epic", "inspirational", "cinematic"],
@@ -1974,6 +1977,26 @@ class GenreMatching:
         "entertainment": ["pop", "upbeat", "fun"],
         "shocking_facts": ["dramatic", "tense", "mysterious"]
     }
+    
+    def __init__(self):
+        self._data = self._load()
+    
+    def _load(self) -> Dict:
+        try:
+            if self.MUSIC_FILE.exists():
+                with open(self.MUSIC_FILE, 'r') as f:
+                    return json.load(f)
+        except:
+            pass
+        return {"learned_mappings": {}}
+    
+    @property
+    def GENRE_MAP(self) -> Dict:
+        """v17.8: Get genre map - AI-learned overrides default."""
+        learned = self._data.get("learned_mappings")
+        if learned and len(learned) > 0:
+            return learned
+        return self._DEFAULT_GENRE_MAP
     
     def get_genre_for_category(self, category: str) -> List[str]:
         return self.GENRE_MAP.get(category.lower(), ["cinematic", "electronic_soft"])

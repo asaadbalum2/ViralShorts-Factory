@@ -364,12 +364,25 @@ def strip_emojis(text: str) -> str:
 # ========================================================================
 # ALL AVAILABLE OPTIONS - AI picks from these, variety enforced
 # ========================================================================
-# Base categories - AI will expand/suggest from these + current trends
-BASE_CATEGORIES = [
-    "psychology", "finance", "productivity", "health", 
-    "relationships", "science", "technology", "motivation",
-    "life_hacks", "history", "statistics", "mysteries"
-]
+# v17.8: Categories come from AI pattern generator, not hardcoded
+def get_base_categories() -> List[str]:
+    """
+    v17.8: Get categories from AI or learned data, not hardcoded.
+    """
+    if AI_PATTERN_GENERATOR_AVAILABLE:
+        try:
+            gen = get_pattern_generator()
+            patterns = gen.get_patterns()
+            if patterns.get("proven_categories"):
+                return patterns["proven_categories"]
+        except:
+            pass
+    
+    # Minimal fallback only if AI unavailable
+    return ["general", "facts", "tips", "trending"]
+
+# For backward compatibility
+BASE_CATEGORIES = get_base_categories()
 
 # v16.6: Cache for trending categories to save quota
 # Extended to 24 hours - trending categories don't change hourly
