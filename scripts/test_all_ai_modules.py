@@ -456,6 +456,21 @@ def main():
         test("AI Comment Response Generator works", False, str(e))
     
     # =========================================================================
+    # TEST 26: AI Quality Gate
+    # =========================================================================
+    print("\n[26] AI QUALITY GATE")
+    try:
+        sys.path.insert(0, 'src/core')
+        from ai_quality_gate import get_quality_gate
+        gate = get_quality_gate()
+        test("Import success", True)
+        test("Has check", hasattr(gate, 'check'))
+        test("Has get_stats", hasattr(gate, 'get_stats'))
+        test("Has THRESHOLDS", hasattr(gate, 'THRESHOLDS'))
+    except Exception as e:
+        test("AI Quality Gate works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
