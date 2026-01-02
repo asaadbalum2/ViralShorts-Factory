@@ -236,6 +236,57 @@ def main():
         test("Self Learning Engine works", False, str(e))
     
     # =========================================================================
+    # TEST 13: AI Description Generator
+    # =========================================================================
+    print("\n[13] AI DESCRIPTION GENERATOR")
+    try:
+        from ai_description_generator import get_description_generator
+        gen = get_description_generator()
+        test("Import success", True)
+        test("Has generate_description", hasattr(gen, 'generate_description'))
+        desc = gen.generate_description("Test Title", "test topic", "productivity")
+        test("generate_description returns string", isinstance(desc, str))
+        test("Description not empty", len(desc) > 0)
+    except Exception as e:
+        test("AI Description Generator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 14: AI Hashtag Generator
+    # =========================================================================
+    print("\n[14] AI HASHTAG GENERATOR")
+    try:
+        from ai_hashtag_generator import get_hashtag_generator
+        gen = get_hashtag_generator()
+        test("Import success", True)
+        test("Has generate_hashtags", hasattr(gen, 'generate_hashtags'))
+        tags = gen.generate_hashtags("test topic", "productivity")
+        test("generate_hashtags returns list", isinstance(tags, list))
+        test("Contains #shorts", "#shorts" in tags)
+    except Exception as e:
+        test("AI Hashtag Generator works", False, str(e))
+    
+    # =========================================================================
+    # TEST 15: Retention Predictor
+    # =========================================================================
+    print("\n[15] RETENTION PREDICTOR")
+    try:
+        from retention_predictor import get_retention_predictor
+        pred = get_retention_predictor()
+        test("Import success", True)
+        test("Has predict_retention", hasattr(pred, 'predict_retention'))
+        result = pred.predict_retention({
+            "hook": "Test hook",
+            "phrases": ["Phrase 1", "Phrase 2"],
+            "cta": "Comment!",
+            "category": "test"
+        })
+        test("predict_retention returns dict", isinstance(result, dict))
+        test("Has overall_retention", "overall_retention" in result)
+        test("Has predicted_curve", "predicted_curve" in result)
+    except Exception as e:
+        test("Retention Predictor works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
