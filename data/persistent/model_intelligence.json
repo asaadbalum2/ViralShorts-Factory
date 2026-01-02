@@ -1,0 +1,18 @@
+{
+  "performance": {
+    "quality_evaluation": {
+      "groq": {
+        "calls": 2,
+        "total_latency_ms": 270,
+        "successes": 2
+      },
+      "gemini": {
+        "calls": 1,
+        "total_latency_ms": 450,
+        "successes": 1
+      }
+    }
+  },
+  "preferences": {},
+  "last_updated": "2026-01-02T16:46:30.373094"
+}

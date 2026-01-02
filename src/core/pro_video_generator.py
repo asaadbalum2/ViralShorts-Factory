@@ -292,6 +292,24 @@ except ImportError:
         AI_PATTERN_GENERATOR_AVAILABLE = False
         print("[!] AI Pattern Generator not available - using fallback patterns")
 
+# v17.8: Import Model Intelligence for smart provider selection
+try:
+    from model_intelligence import get_provider_for_task, record_task_performance
+    MODEL_INTELLIGENCE_AVAILABLE = True
+    print("[OK] Model Intelligence loaded: Smart provider selection ACTIVE!")
+except ImportError:
+    try:
+        from src.ai.model_intelligence import get_provider_for_task, record_task_performance
+        MODEL_INTELLIGENCE_AVAILABLE = True
+        print("[OK] Model Intelligence loaded: Smart provider selection ACTIVE!")
+    except ImportError:
+        MODEL_INTELLIGENCE_AVAILABLE = False
+        # Fallback functions
+        def get_provider_for_task(task_type: str) -> str:
+            return "gemini"
+        def record_task_performance(*args, **kwargs):
+            pass
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920

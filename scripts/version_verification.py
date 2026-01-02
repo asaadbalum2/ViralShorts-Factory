@@ -403,6 +403,7 @@ class VersionVerifier:
             ("VIRAL_SCIENCE_AVAILABLE" in main_content, "Viral video science integrated"),
             ("ValueDeliveryChecker" in main_content, "Value delivery checking active"),
             ("AI_PATTERN_GENERATOR_AVAILABLE" in main_content or "ai_pattern_generator" in main_content, "AI pattern generator integrated"),
+            ("MODEL_INTELLIGENCE_AVAILABLE" in main_content or "model_intelligence" in main_content, "Model intelligence integrated"),
         ]
         
         passed = 0
