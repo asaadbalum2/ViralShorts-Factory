@@ -244,6 +244,141 @@ Output JSON:
     "deeper_meaning": "The philosophical/practical implication",
     "call_to_action": "Deep reflection question"
 }}
+""",
+
+    # v17.7.5: Additional high-performing content templates
+    "productivity_hack": """
+You are a productivity expert sharing SPECIFIC techniques that actually work.
+
+CRITICAL RULE: Give an exact technique with steps, not vague advice.
+Instead of "be more focused" say "the 2-minute rule: if it takes less 
+than 2 minutes, do it now instead of adding it to your list."
+
+TEMPLATE:
+HOOK: Surprising productivity claim (2 seconds)
+THE PROBLEM: What most people do wrong (3 seconds)
+THE TECHNIQUE: Exact method with steps (10 seconds)
+THE RESULT: Specific outcome (3 seconds)
+CTA: Challenge to try today (2 seconds)
+
+Generate a productivity hack:
+TOPIC: {topic}
+
+Output JSON:
+{{
+    "hook": "Productivity truth that stops scrolling (max 10 words)",
+    "full_script": "Complete technique with exact steps (50-80 words)",
+    "technique_name": "What this method is called",
+    "steps": ["step 1", "step 2", "step 3"],
+    "call_to_action": "Challenge to start today"
+}}
+""",
+
+    "relationship_insight": """
+You are a relationship psychology expert sharing insights that help people.
+
+CRITICAL RULE: Explain WHY the insight works psychologically. Not just 
+"do this" but "do this BECAUSE the brain responds to X."
+
+TEMPLATE:
+HOOK: Surprising relationship truth (2 seconds)
+CONTEXT: Common situation (3 seconds)
+THE INSIGHT: Why this happens + the psychology (8 seconds)
+THE FIX: What to do differently (4 seconds)
+CTA: Relate to their experience (2 seconds)
+
+Generate a relationship insight:
+TOPIC: {topic}
+
+Output JSON:
+{{
+    "hook": "Relationship truth that intrigues (max 10 words)",
+    "full_script": "Complete insight with psychology (50-80 words)",
+    "the_psychology": "Why this happens in relationships",
+    "actionable_advice": "What they can do differently",
+    "call_to_action": "Personal reflection question"
+}}
+""",
+
+    "health_tip": """
+You are a health educator sharing EVIDENCE-BASED tips, not trends.
+
+CRITICAL RULE: Include specific numbers or mechanisms. Not "sleep is good"
+but "7 hours of sleep reduces cortisol by 30%, which is why weight loss
+is 3x harder when sleep deprived."
+
+TEMPLATE:
+HOOK: Surprising health truth (2 seconds)
+THE SCIENCE: What happens in your body (5 seconds)
+THE NUMBERS: Specific data (5 seconds)
+THE ACTION: Exact what to do (4 seconds)
+CTA: Health check question (2 seconds)
+
+Generate a health tip:
+TOPIC: {topic}
+
+Output JSON:
+{{
+    "hook": "Health truth that surprises (max 10 words)",
+    "full_script": "Complete health tip with science (50-80 words)",
+    "the_mechanism": "What happens in the body",
+    "specific_numbers": ["statistics or measurements"],
+    "call_to_action": "Health-related question"
+}}
+""",
+
+    "success_secret": """
+You are sharing real insights from successful people that viewers can apply.
+
+CRITICAL RULE: Be specific about WHO does this and WHAT the result is.
+Not "successful people wake up early" but "Jeff Bezos makes all decisions
+by 10am because willpower depletes 40% by afternoon."
+
+TEMPLATE:
+HOOK: What successful people do differently (2 seconds)
+THE PERSON: Who does this (or common pattern) (3 seconds)
+THE REASON: Why it works (6 seconds)
+HOW TO APPLY: Viewer's version of this (5 seconds)
+CTA: Challenge them (2 seconds)
+
+Generate a success insight:
+TOPIC: {topic}
+
+Output JSON:
+{{
+    "hook": "Success secret that intrigues (max 10 words)",
+    "full_script": "Complete insight with example (50-80 words)",
+    "who_does_this": "Example of successful person/people",
+    "why_it_works": "The mechanism behind the success",
+    "call_to_action": "Challenge to try this"
+}}
+""",
+
+    "tech_hack": """
+You are sharing hidden tech features that save time and impress people.
+
+CRITICAL RULE: Be EXACT about where to find it and what it does.
+Not "there's a cool feature" but "Press Ctrl+Shift+T to reopen your 
+last closed browser tab. Works on Chrome, Firefox, and Edge."
+
+TEMPLATE:
+HOOK: Claim about what most people don't know (2 seconds)
+THE FEATURE: Exact location and steps (6 seconds)
+THE BENEFIT: What this saves/enables (4 seconds)
+BONUS: Extra related tip (3 seconds)
+CTA: Save for later prompt (2 seconds)
+
+Generate a tech hack:
+TOPIC: {topic}
+
+Output JSON:
+{{
+    "hook": "Tech secret claim (max 10 words)",
+    "full_script": "Complete tutorial with steps (50-80 words)",
+    "exact_steps": ["step 1", "step 2"],
+    "works_on": ["platforms/devices this works on"],
+    "call_to_action": "Save this prompt"
+}}
 """
 }
 
