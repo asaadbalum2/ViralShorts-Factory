@@ -693,6 +693,7 @@ class FeedbackLoopController:
     def run_analysis(self) -> Dict:
         """
         Run full analytics analysis and update preferences.
+        v17.8: Now refreshes AI patterns based on insights!
         """
         # Get videos with performance data
         all_videos = self.metadata_store.get_all()
@@ -706,10 +707,34 @@ class FeedbackLoopController:
         self.preferences.update(recommendations)
         self._save_preferences()
         
-        print("\n📈 Analytics Analysis Complete!")
+        # v17.8: Refresh AI patterns with new insights
+        self._update_ai_patterns_from_insights(insights)
+        
+        print("\n[ANALYTICS] Analytics Analysis Complete!")
         print(f"   Key Insight: {insights.get('key_insight', 'N/A')}")
         
         return insights
+    
+    def _update_ai_patterns_from_insights(self, insights: Dict):
+        """
+        v17.8: Update AI patterns based on analytics insights.
+        This ensures our viral patterns stay fresh and data-driven.
+        """
+        try:
+            from ai_pattern_generator import get_pattern_generator
+            gen = get_pattern_generator()
+            
+            # Check if patterns need refresh (e.g., more than 24 hours old)
+            if gen.needs_refresh():
+                print("   [AI PATTERNS] Refreshing patterns based on analytics...")
+                gen.generate_patterns_with_ai()
+                print("   [AI PATTERNS] Patterns refreshed!")
+            else:
+                print("   [AI PATTERNS] Patterns are fresh (less than 24h old)")
+        except ImportError:
+            pass  # AI pattern generator not available
+        except Exception as e:
+            print(f"   [!] AI pattern refresh failed: {e}")
     
     def get_content_guidance(self) -> Dict:
         """
