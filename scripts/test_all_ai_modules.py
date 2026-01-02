@@ -471,6 +471,20 @@ def main():
         test("AI Quality Gate works", False, str(e))
     
     # =========================================================================
+    # TEST 27: Dashboard Generator
+    # =========================================================================
+    print("\n[27] DASHBOARD GENERATOR")
+    try:
+        from dashboard_generator import get_dashboard_generator
+        gen = get_dashboard_generator()
+        test("Import success", True)
+        test("Has generate_html", hasattr(gen, 'generate_html'))
+        test("Has save_dashboard", hasattr(gen, 'save_dashboard'))
+        test("Has get_summary", hasattr(gen, 'get_summary'))
+    except Exception as e:
+        test("Dashboard Generator works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
