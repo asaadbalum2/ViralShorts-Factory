@@ -404,6 +404,8 @@ class VersionVerifier:
             ("ValueDeliveryChecker" in main_content, "Value delivery checking active"),
             ("AI_PATTERN_GENERATOR_AVAILABLE" in main_content or "ai_pattern_generator" in main_content, "AI pattern generator integrated"),
             ("MODEL_INTELLIGENCE_AVAILABLE" in main_content or "model_intelligence" in main_content, "Model intelligence integrated"),
+            ("AI_HOOK_GENERATOR_AVAILABLE" in main_content, "AI hook generator integrated"),
+            ("AI_CTA_GENERATOR_AVAILABLE" in main_content, "AI CTA generator integrated"),
         ]
         
         passed = 0

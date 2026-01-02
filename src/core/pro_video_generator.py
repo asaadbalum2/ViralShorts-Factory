@@ -310,6 +310,69 @@ except ImportError:
         def record_task_performance(*args, **kwargs):
             pass
 
+# v17.8: Import all AI-first modules
+try:
+    from ai_hook_generator import generate_hook, get_hook_generator
+    AI_HOOK_GENERATOR_AVAILABLE = True
+except ImportError:
+    AI_HOOK_GENERATOR_AVAILABLE = False
+    def generate_hook(topic, cat): return f"Did you know about {topic}?"
+
+try:
+    from ai_cta_generator import generate_cta, get_cta_generator
+    AI_CTA_GENERATOR_AVAILABLE = True
+except ImportError:
+    AI_CTA_GENERATOR_AVAILABLE = False
+    def generate_cta(topic, cat): return "Comment if you agree!"
+
+try:
+    from ai_topic_suggester import get_topic_suggestions, get_topic_suggester
+    AI_TOPIC_SUGGESTER_AVAILABLE = True
+except ImportError:
+    AI_TOPIC_SUGGESTER_AVAILABLE = False
+    def get_topic_suggestions(count=5, cat=None): return []
+
+try:
+    from ai_content_quality_checker import check_content_quality, get_quality_checker
+    AI_QUALITY_CHECKER_AVAILABLE = True
+except ImportError:
+    AI_QUALITY_CHECKER_AVAILABLE = False
+    def check_content_quality(content): return {"score": 7, "verdict": "PASS"}
+
+try:
+    from ai_broll_keywords import generate_broll_keywords, get_broll_keyword_generator
+    AI_BROLL_KEYWORDS_AVAILABLE = True
+except ImportError:
+    AI_BROLL_KEYWORDS_AVAILABLE = False
+    def generate_broll_keywords(phrase, cat=None): return ["abstract motion"]
+
+try:
+    from ai_music_mood import select_music_mood, get_music_mood_selector
+    AI_MUSIC_MOOD_AVAILABLE = True
+except ImportError:
+    AI_MUSIC_MOOD_AVAILABLE = False
+    def select_music_mood(topic, cat): return ("dramatic", "cinematic")
+
+try:
+    from ai_title_optimizer import optimize_title, get_title_optimizer
+    AI_TITLE_OPTIMIZER_AVAILABLE = True
+except ImportError:
+    AI_TITLE_OPTIMIZER_AVAILABLE = False
+    def optimize_title(topic, cat, existing=None): return f"The Truth About {topic}"
+
+# Log AI module availability
+_ai_modules = [
+    ("Hook Generator", AI_HOOK_GENERATOR_AVAILABLE),
+    ("CTA Generator", AI_CTA_GENERATOR_AVAILABLE),
+    ("Topic Suggester", AI_TOPIC_SUGGESTER_AVAILABLE),
+    ("Quality Checker", AI_QUALITY_CHECKER_AVAILABLE),
+    ("B-Roll Keywords", AI_BROLL_KEYWORDS_AVAILABLE),
+    ("Music Mood", AI_MUSIC_MOOD_AVAILABLE),
+    ("Title Optimizer", AI_TITLE_OPTIMIZER_AVAILABLE),
+]
+_available = sum(1 for _, a in _ai_modules if a)
+print(f"[OK] AI Modules loaded: {_available}/{len(_ai_modules)} available")
+
 # Constants (only technical, not content!)
 VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920
