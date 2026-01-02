@@ -361,6 +361,73 @@ class QuotaOptimizer:
         return default_models
     
     # ========================================================================
+    # HUGGINGFACE MODELS - Dynamic discovery
+    # ========================================================================
+    def get_huggingface_models(self, api_key: str = None, force_refresh: bool = False) -> List[str]:
+        """
+        Get available HuggingFace text-generation models.
+        
+        Uses HuggingFace API to discover popular instruction-tuned models.
+        Cached for 6 hours.
+        """
+        if not force_refresh and self._is_valid("huggingface_models", self.TTL_MODELS):
+            safe_print("[CACHE] Using cached HuggingFace models")
+            return self.cache["huggingface_models"]["data"]
+        
+        # Default fallback models (popular free inference models)
+        default_models = [
+            "meta-llama/Llama-3.2-3B-Instruct",
+            "mistralai/Mistral-7B-Instruct-v0.3",
+            "microsoft/Phi-3-mini-4k-instruct",
+            "google/gemma-2-2b-it",
+            "Qwen/Qwen2.5-3B-Instruct"
+        ]
+        
+        if not api_key:
+            return default_models
+        
+        try:
+            import requests
+            # Query HuggingFace for popular text-generation models
+            response = requests.get(
+                "https://huggingface.co/api/models",
+                params={
+                    "pipeline_tag": "text-generation",
+                    "sort": "downloads",
+                    "direction": -1,
+                    "limit": 50,
+                    "filter": "conversational"
+                },
+                headers={"Authorization": f"Bearer {api_key}"},
+                timeout=15
+            )
+            
+            if response.status_code == 200:
+                models_data = response.json()
+                # Filter for instruction-tuned models that support inference
+                good_models = []
+                for model in models_data:
+                    model_id = model.get("modelId", "")
+                    # Prefer instruction-tuned models
+                    if any(kw in model_id.lower() for kw in ["instruct", "chat", "-it"]):
+                        # Check if inference is available
+                        if model.get("inference") != "error":
+                            good_models.append(model_id)
+                
+                if good_models:
+                    self.cache["huggingface_models"] = {
+                        "data": good_models[:10],  # Keep top 10
+                        "timestamp": time.time()
+                    }
+                    self._save_cache()
+                    safe_print(f"[CACHE] Found {len(good_models)} HuggingFace models")
+                    return good_models[:10]
+        except Exception as e:
+            safe_print(f"[!] HuggingFace model discovery failed: {e}")
+        
+        return default_models
+    
+    # ========================================================================
     # QUOTA STATUS
     # ========================================================================
     def print_status(self):

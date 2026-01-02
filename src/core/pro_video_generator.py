@@ -765,18 +765,27 @@ class MasterAI:
             else:
                 safe_print(f"[!] Gemini Pro fallback error: {e}")
         
-        # v17.4.1: HuggingFace Inference API as fallback (truly free, no phone/CC)
+        # v17.4.2: HuggingFace Inference API as fallback (truly free, no phone/credit card)
         # Sign up at huggingface.co - just email, no phone verification!
         if self.huggingface_available:
             safe_print("[*] Trying HuggingFace fallback...")
             try:
                 import requests
-                # Use Llama 3.2 or Mistral via HuggingFace (free inference)
-                hf_models = [
-                    "meta-llama/Llama-3.2-3B-Instruct",
-                    "mistralai/Mistral-7B-Instruct-v0.3",
-                    "microsoft/Phi-3-mini-4k-instruct"
-                ]
+                
+                # DYNAMIC MODEL DISCOVERY for HuggingFace
+                # Get available text-generation models from quota optimizer
+                try:
+                    from quota_optimizer import get_quota_optimizer
+                    quota_opt = get_quota_optimizer()
+                    hf_models = quota_opt.get_huggingface_models(self.huggingface_key)
+                except:
+                    # Fallback only if dynamic discovery completely fails
+                    hf_models = [
+                        "meta-llama/Llama-3.2-3B-Instruct",
+                        "mistralai/Mistral-7B-Instruct-v0.3",
+                        "microsoft/Phi-3-mini-4k-instruct"
+                    ]
+                
                 for hf_model in hf_models:
                     try:
                         response = requests.post(
