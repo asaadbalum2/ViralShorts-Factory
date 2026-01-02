@@ -122,7 +122,7 @@ jobs:
           mkdir -p assets/backgrounds assets/broll assets/music assets/sfx assets/fonts
           mkdir -p output cache data/persistent
       
-      # v9.0: Download persistent state via API (reliable cross-workflow)
+      # v17.9: Download persistent state via API (reliable cross-workflow)
       - name: Restore persistent state
         run: |
           ARTIFACT_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
@@ -147,7 +147,7 @@ jobs:
         continue-on-error: true
 
       # ====================================================================
-      # v9.0: MAXIMUM QUALITY - 25 Enhancements Active
+      # v17.9: MAXIMUM QUALITY - 27+ AI Modules Active
       # - 3-Layer quality gates (pre-gen, post-content, post-render)
       # - Semantic duplicate detection
       # - Retention curve prediction
@@ -238,6 +238,9 @@ jobs:
           echo "Collecting analytics data..."
           python -c "
           import os
+          import sys
+          sys.path.insert(0, 'src/analytics')
+          sys.path.insert(0, 'src')
           from analytics_feedback import FeedbackLoopController
 
           try:

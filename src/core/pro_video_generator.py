@@ -1608,20 +1608,34 @@ OUTPUT JSON ONLY."""
         # v17.9: ACTUALLY improve hooks when flagged (was flagging but never fixing!)
         if content.get('hook_needs_improvement') and phrases:
             try:
-                power_words = content.get('power_words_available', ['instantly', 'secret', 'shocking', 'never', 'always'])
+                # v17.9.1: Get power words from learned data, not hardcoded
+                default_power_words = []
+                if ENHANCEMENTS_V11_AVAILABLE:
+                    try:
+                        hook_tracker = get_hook_tracker()
+                        default_power_words = hook_tracker.get_power_words()[:5] if hasattr(hook_tracker, 'get_power_words') else []
+                    except:
+                        pass
+                power_words = content.get('power_words_available', default_power_words if default_power_words else None)
                 original_hook = phrases[0]
                 
-                # Ask AI to rewrite hook using power words
+                # Ask AI to rewrite hook - dynamically based on available data
+                power_words_instruction = ""
+                if power_words and len(power_words) > 0:
+                    power_words_instruction = f"Use these PROVEN power words from past successful videos: {power_words}"
+                else:
+                    power_words_instruction = "Use viral psychology: curiosity gaps, specific numbers, or emotional triggers"
+                
                 hook_improve_prompt = f"""Rewrite this video hook to be MORE viral:
 
 Original hook: "{original_hook}"
 
-Use these PROVEN power words: {power_words}
+{power_words_instruction}
 
 Rules:
 1. Keep it under 15 words
 2. Must stop the scroll IMMEDIATELY
-3. Use a pattern interrupt (STOP!, Wait..., etc.) or shocking stat
+3. Use a pattern interrupt or a surprising statistic
 4. Add curiosity gap - make them NEED to watch
 
 Return ONLY the improved hook, nothing else."""
