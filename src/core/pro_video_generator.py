@@ -1343,23 +1343,30 @@ Your job: Evaluate content fairly, identify improvements, and enhance it.
 
 Claimed Value: {content.get('specific_value', '')}
 
-=== SCORING GUIDELINES ===
-CRITICAL: You MUST score fairly. Do NOT be overly harsh. Most content is 7-8/10.
+=== SCORING FOR 10/10 VIRAL POTENTIAL ===
+Your job is to MAXIMIZE virality. Score based on VIRAL POTENTIAL:
 
-SCORING RULES (FOLLOW EXACTLY):
-- 9-10: Exceptional, would go viral, perfect execution
-- 7-8: STANDARD GOOD QUALITY - coherent, provides value, decent hook (DEFAULT SCORE)
-- 5-6: Has issues but salvageable
-- 3-4: ONLY if content is completely broken/incoherent/makes no sense
-- 1-2: ONLY if content is gibberish or harmful
+SCORING (be accurate, aim for perfection):
+- 10/10: PERFECT - Would absolutely go viral. Scroll-stopping hook, surprising value, comment-driving CTA
+- 9/10: EXCELLENT - Very strong viral potential, minor tweaks possible
+- 8/10: GREAT - Solid content with good hook and value (our TARGET minimum)
+- 7/10: GOOD - Acceptable quality, could perform well
+- 6/10: FAIR - Missing key viral elements
+- 5 or below: WEAK - Needs significant work
 
-MANDATORY: If the content:
-✓ Makes logical sense
-✓ Has a clear topic/hook
-✓ Provides any useful information
-→ SCORE IT 7/10 OR HIGHER. Do NOT score below 7 unless content is genuinely broken.
+VIRAL ELEMENTS TO CHECK (each adds points):
+✓ First 1.5 seconds = pattern interrupt (stop scrolling)
+✓ Specific numbers (not vague promises)
+✓ Emotional trigger (curiosity, shock, FOMO, satisfaction)
+✓ Clear value proposition by second 3
+✓ Punchy, conversational language (not robotic)
+✓ Engagement CTA (forces comments/shares/saves)
+✓ Satisfying payoff at the end
 
-Most AI-generated content that follows a structure = 7-8/10. DO NOT be harsh.
+If content has 5+ of these elements = 8/10+
+If content has ALL elements = 9-10/10
+
+BE ACCURATE: Score what you see. We WANT high scores for good content.
 
 === QUICK QUALITY CHECK ===
 For each phrase, ask:
