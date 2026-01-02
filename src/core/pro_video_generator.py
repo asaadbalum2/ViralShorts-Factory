@@ -1629,8 +1629,24 @@ OUTPUT JSON ONLY."""
     def stage4_broll_keywords(self, phrases: List[str]) -> List[str]:
         """AI generates visual keywords for each phrase.
         v8.2: Uses Gemini to save Groq quota (non-critical task).
+        v17.7.10: Uses error pattern learning to avoid failed keywords.
         """
         safe_print("\n[STAGE 4] AI generating visual keywords...")
+        
+        # v17.7.10: Get learned failed keywords to avoid
+        avoid_keywords = []
+        if ENHANCEMENTS_V11_AVAILABLE:
+            try:
+                error_learner = ErrorPatternLearner()
+                for kw in error_learner.data.get("broll_failures", {}).keys():
+                    if error_learner.should_skip_keyword(kw):
+                        avoid_keywords.append(kw)
+            except:
+                pass
+        
+        avoid_hint = ""
+        if avoid_keywords:
+            avoid_hint = f"\n\nAVOID THESE KEYWORDS (known to fail on Pexels):\n{', '.join(avoid_keywords[:10])}\n"
         
         prompt = f"""You are a VISUAL DIRECTOR for viral short videos.
 Select the PERFECT B-roll visual for EACH phrase.
@@ -1643,6 +1659,12 @@ Select the PERFECT B-roll visual for EACH phrase.
 - Match EMOTION to content
 - Include PEOPLE when possible (more engaging)
 - Think about MOVEMENT and COLOR
+- Use COMMON stock video terms that work on Pexels
+{avoid_hint}
+=== HIGH-CONVERTING KEYWORDS (proven to work on Pexels) ===
+- "business meeting", "woman working laptop", "man phone walking"
+- "hands typing keyboard", "coffee shop morning", "sunset city"
+- "friends laughing", "person meditation", "money finance success"
 
 === OUTPUT ===
 Return exactly {len(phrases)} keywords as JSON array:
