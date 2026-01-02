@@ -67,10 +67,12 @@ def test_huggingface_api_call():
         safe_print(f"    Using {len(test_models)} discovered models")
     except Exception as e:
         safe_print(f"    Discovery failed, using fallbacks: {e}")
+        # Use NON-GATED models only (meta-llama/mistralai are gated!)
         test_models = [
+            "HuggingFaceH4/zephyr-7b-beta",
             "google/gemma-2-2b-it",
-            "microsoft/Phi-3-mini-4k-instruct",
-            "meta-llama/Llama-3.2-3B-Instruct"
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
         ]
     
     for model in test_models[:5]:  # Try top 5 models

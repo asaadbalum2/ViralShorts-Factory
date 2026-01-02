@@ -374,13 +374,14 @@ class QuotaOptimizer:
             safe_print("[CACHE] Using cached HuggingFace models")
             return self.cache["huggingface_models"]["data"]
         
-        # Default fallback models (popular free inference models)
+        # Default fallback models - NON-GATED models only!
+        # Note: meta-llama and mistralai models are GATED (require license acceptance)
         default_models = [
-            "meta-llama/Llama-3.2-3B-Instruct",
-            "mistralai/Mistral-7B-Instruct-v0.3",
-            "microsoft/Phi-3-mini-4k-instruct",
-            "google/gemma-2-2b-it",
-            "Qwen/Qwen2.5-3B-Instruct"
+            "HuggingFaceH4/zephyr-7b-beta",      # Non-gated, good quality
+            "google/gemma-2-2b-it",               # Non-gated, Google
+            "Qwen/Qwen2.5-1.5B-Instruct",         # Non-gated, small & fast
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0", # Non-gated, very fast
+            "microsoft/Phi-3-mini-4k-instruct",   # Non-gated, Microsoft
         ]
         
         if not api_key:
@@ -404,12 +405,18 @@ class QuotaOptimizer:
             
             if response.status_code == 200:
                 models_data = response.json()
-                # Filter for instruction-tuned models that support inference
+                # Filter for instruction-tuned, NON-GATED models that support inference
                 good_models = []
                 for model in models_data:
                     model_id = model.get("modelId", "")
+                    # Skip gated models (require license acceptance)
+                    if model.get("gated"):
+                        continue
+                    # Skip models that require special auth
+                    if "meta-llama" in model_id.lower() or "mistralai" in model_id.lower():
+                        continue
                     # Prefer instruction-tuned models
-                    if any(kw in model_id.lower() for kw in ["instruct", "chat", "-it"]):
+                    if any(kw in model_id.lower() for kw in ["instruct", "chat", "-it", "zephyr"]):
                         # Check if inference is available
                         if model.get("inference") != "error":
                             good_models.append(model_id)
