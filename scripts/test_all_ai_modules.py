@@ -287,6 +287,43 @@ def main():
         test("Retention Predictor works", False, str(e))
     
     # =========================================================================
+    # TEST 16: AI Thumbnail Text Optimizer
+    # =========================================================================
+    print("\n[16] AI THUMBNAIL TEXT OPTIMIZER")
+    try:
+        from ai_thumbnail_text import get_thumbnail_optimizer
+        opt = get_thumbnail_optimizer()
+        test("Import success", True)
+        test("Has generate_thumbnail_text", hasattr(opt, 'generate_thumbnail_text'))
+        result = opt.generate_thumbnail_text("Test Title", "test topic", "productivity")
+        test("generate_thumbnail_text returns dict", isinstance(result, dict))
+        test("Has main_text", "main_text" in result)
+        test("Has emphasis_word", "emphasis_word" in result)
+    except Exception as e:
+        test("AI Thumbnail Text Optimizer works", False, str(e))
+    
+    # =========================================================================
+    # TEST 17: Engagement Predictor
+    # =========================================================================
+    print("\n[17] ENGAGEMENT PREDICTOR")
+    try:
+        from engagement_predictor import get_engagement_predictor
+        pred = get_engagement_predictor()
+        test("Import success", True)
+        test("Has predict_engagement", hasattr(pred, 'predict_engagement'))
+        result = pred.predict_engagement({
+            "hook": "Test hook",
+            "phrases": ["Phrase 1", "Phrase 2"],
+            "cta": "Comment!",
+            "category": "test"
+        })
+        test("predict_engagement returns dict", isinstance(result, dict))
+        test("Has overall_engagement", "overall_engagement" in result)
+        test("Has comment_rate", "comment_rate" in result)
+    except Exception as e:
+        test("Engagement Predictor works", False, str(e))
+    
+    # =========================================================================
     # SUMMARY
     # =========================================================================
     print("\n" + "=" * 70)
