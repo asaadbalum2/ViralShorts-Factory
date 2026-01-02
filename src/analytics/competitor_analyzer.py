@@ -138,9 +138,16 @@ JSON ONLY."""
                 result = response.text
             elif self.groq_key:
                 from groq import Groq
+                # v17.8: Dynamic model selection
+                try:
+                    from quota_optimizer import get_best_groq_model
+                    model = get_best_groq_model(self.groq_key)
+                except ImportError:
+                    model = "llama-3.3-70b-versatile"
+                
                 client = Groq(api_key=self.groq_key)
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model=model,
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=300
                 )

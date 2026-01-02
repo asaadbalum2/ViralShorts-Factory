@@ -242,8 +242,15 @@ Return JSON array:
 
 Only return valid JSON, no markdown."""
 
+            # v17.8: Use dynamic model selection instead of hardcoded
+            try:
+                from quota_optimizer import get_best_groq_model
+                model = get_best_groq_model(self.groq_key)
+            except ImportError:
+                model = "llama-3.3-70b-versatile"  # Fallback only
+            
             response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=model,
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=1000
             )
