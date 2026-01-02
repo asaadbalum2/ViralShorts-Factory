@@ -49,16 +49,33 @@
   "hook_types_that_work": [
     "question hook",
     "shocking statement",
-    "number reveal"
+    "number reveal",
+    "pattern interrupt",
+    "challenge hook",
+    "story tease"
+  ],
+  "proven_hook_formulas": [
+    "Did you know {fact}?",
+    "{number}% of people don't know this...",
+    "STOP - this will change how you {action}",
+    "You're doing {action} wrong if you {mistake}",
+    "The {topic} secret nobody talks about",
+    "I tried {thing} for {time} - here's what happened",
+    "What {group} won't tell you about {topic}"
   ],
   "psychological_triggers": [
     "curiosity",
     "fomo",
-    "social proof"
+    "social proof",
+    "loss aversion",
+    "controversy"
   ],
   "engagement_baits": [
     "Comment if you agree",
-    "Save this for later"
+    "Save this for later",
+    "Type 1 or 2 in comments",
+    "Tag someone who needs this",
+    "What would you do?"
   ],
   "best_music_moods": [
     "dramatic",
