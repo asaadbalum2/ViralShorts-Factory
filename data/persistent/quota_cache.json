@@ -1,0 +1,48 @@
+{
+  "trending_categories": {
+    "data": null,
+    "timestamp": 0
+  },
+  "trending_topics": {
+    "data": null,
+    "timestamp": 0
+  },
+  "openrouter_free_models": {
+    "data": [
+      "allenai/olmo-3.1-32b-think:free",
+      "xiaomi/mimo-v2-flash:free",
+      "nvidia/nemotron-3-nano-30b-a3b:free",
+      "mistralai/devstral-2512:free",
+      "nex-agi/deepseek-v3.1-nex-n1:free",
+      "arcee-ai/trinity-mini:free",
+      "tngtech/tng-r1t-chimera:free",
+      "allenai/olmo-3-32b-think:free",
+      "kwaipilot/kat-coder-pro:free",
+      "nvidia/nemotron-nano-12b-v2-vl:free"
+    ],
+    "timestamp": 1767353633.5849319
+  },
+  "groq_models": {
+    "data": null,
+    "timestamp": 0
+  },
+  "gemini_models": {
+    "data": null,
+    "timestamp": 0
+  },
+  "huggingface_models": {
+    "data": [
+      "meta-llama/Llama-3.1-8B-Instruct",
+      "Qwen/Qwen2.5-3B-Instruct",
+      "Qwen/Qwen2.5-7B-Instruct",
+      "Qwen/Qwen2.5-1.5B-Instruct",
+      "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "Qwen/Qwen3-4B-Instruct-2507",
+      "Qwen/Qwen2.5-14B-Instruct",
+      "meta-llama/Llama-3.2-1B-Instruct",
+      "Qwen/Qwen2.5-32B-Instruct"
+    ],
+    "timestamp": 1767353633.4940937
+  }
+}
