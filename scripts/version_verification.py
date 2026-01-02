@@ -400,6 +400,8 @@ class VersionVerifier:
             ("enhancement_orch" in main_content, "V9 orchestrator used"),
             ("ENHANCEMENTS_V12_AVAILABLE" in main_content, "V12 availability check"),
             ("learning_engine" in main_content, "Self-learning engine active"),
+            ("VIRAL_SCIENCE_AVAILABLE" in main_content, "Viral video science integrated"),
+            ("ValueDeliveryChecker" in main_content, "Value delivery checking active"),
         ]
         
         passed = 0
