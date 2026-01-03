@@ -3582,11 +3582,27 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             # Instead, we fixed the scoring prompt to be more accurate
             score = content.get('evaluation_score', 5)
             regeneration_attempts = 0
-            max_regen = 1  # v17.2: Only 1 retry for occasional failures
+            max_regen = 2  # v17.9.9: Allow 2 retries with oscillation detection
+            
+            # v17.9.9: OSCILLATION DETECTION - track score history to prevent 7-8-7-8 loops
+            score_history = [score]
+            best_content = content  # Track best content seen
+            best_score = score
             
             while score < MINIMUM_ACCEPTABLE_SCORE and regeneration_attempts < max_regen:
                 regeneration_attempts += 1
                 safe_print(f"   [QUALITY] Score {score}/10 BELOW minimum {MINIMUM_ACCEPTABLE_SCORE}/10 - REGENERATING (attempt {regeneration_attempts}/{max_regen})")
+                
+                # v17.9.9: Check for oscillation (same score seen before)
+                if len(score_history) >= 2:
+                    # Oscillation = returning to a previously seen score
+                    if score in score_history[:-1]:
+                        safe_print(f"   [OSCILLATION] Detected score {score} repeated - breaking loop")
+                        break
+                    # Plateau = no improvement for 2 attempts
+                    if len(set(score_history[-2:])) == 1:
+                        safe_print(f"   [PLATEAU] Score stuck at {score} - breaking loop")
+                        break
                 
                 # Build feedback for AI to improve
                 quality_issues = content.get('quality_issues', [])
@@ -3607,6 +3623,15 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                         new_content = ai.stage3_evaluate_enhance(new_content)
                         new_score = new_content.get('evaluation_score', 0)
                         
+                        # v17.9.9: Track all scores for oscillation detection
+                        score_history.append(new_score)
+                        
+                        # v17.9.9: Always keep the BEST content seen
+                        if new_score > best_score:
+                            best_score = new_score
+                            best_content = new_content
+                            safe_print(f"   [QUALITY] New best: {score}/10 -> {new_score}/10")
+                        
                         if new_score > score:
                             safe_print(f"   [QUALITY] Improved: {score}/10 -> {new_score}/10")
                             content = new_content
@@ -3615,6 +3640,12 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                             safe_print(f"   [QUALITY] No improvement: {new_score}/10 (keeping previous)")
                 except Exception as e:
                     safe_print(f"   [!] Regeneration attempt {regeneration_attempts} failed: {e}")
+            
+            # v17.9.9: Use best content from all attempts (not just last)
+            if best_score > score:
+                safe_print(f"   [QUALITY] Using best content from attempts: {best_score}/10")
+                content = best_content
+                score = best_score
             
             if score >= MINIMUM_ACCEPTABLE_SCORE:
                 safe_print(f"   [QUALITY] Score {score}/10 - ACCEPTABLE")

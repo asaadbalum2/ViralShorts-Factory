@@ -49,16 +49,52 @@ jobs:
         PYTHONPATH: src:src/ai
       run: python scripts/refresh_ai_patterns.py
 
-    - name: Commit updated patterns
+    # v17.9.9: Scan for new prompts and update registry
+    - name: Scan and Update Prompts Registry
+      env:
+        PYTHONPATH: src:src/ai
+      run: |
+        python -c "
+import sys
+sys.path.insert(0, 'src/ai')
+from prompts_registry import get_prompts_registry
+registry = get_prompts_registry()
+registry.scan_and_update()
+print('Prompts registry updated!')
+"
+        
+    # v17.9.9: Refresh Smart Model Router rankings
+    - name: Refresh Smart Model Router
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
+        PYTHONPATH: src:src/ai
+      run: |
+        python -c "
+import sys
+sys.path.insert(0, 'src/ai')
+from smart_model_router import get_smart_router
+router = get_smart_router()
+router.refresh_rankings()
+print('Smart Model Router rankings refreshed!')
+"
+
+    - name: Commit updated patterns and registry
       run: |
         git config user.name "ViralShorts Bot"
         git config user.email "bot@viralshorts.factory"
         
-        if git diff --quiet data/persistent/viral_patterns.json; then
-          echo "No changes to patterns"
+        # Add all persistent data files that may have changed
+        git add data/persistent/viral_patterns.json || true
+        git add data/persistent/prompts_registry.json || true
+        git add data/persistent/smart_router_cache.json || true
+        
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
         else
-          git add data/persistent/viral_patterns.json
-          git commit -m "chore: Weekly AI pattern refresh"
+          git commit -m "chore: Weekly AI refresh - patterns, prompts, models"
           git push
-          echo "Patterns updated and pushed!"
+          echo "Updates committed and pushed!"
         fi
