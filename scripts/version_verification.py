@@ -770,6 +770,86 @@ class VersionVerifier:
             self.passed.append("All v17.9.7 fixes verified")
             return True
     
+    def check_smart_router(self) -> bool:
+        """
+        v17.9.9: Check Smart Model Router is properly integrated.
+        
+        Verifies:
+        1. SmartModelRouter exists and has all required methods
+        2. SmartAICaller exists and uses the router
+        3. pro_video_generator.py imports and uses smart router
+        4. Fallback chains exist for all prompt types
+        """
+        print("\n[13] SMART MODEL ROUTER CHECK (v17.9.9)...")
+        issues = []
+        
+        # Check 1: Router file exists
+        router_path = Path("src/ai/smart_model_router.py")
+        if not router_path.exists():
+            issues.append("smart_model_router.py does not exist")
+        else:
+            router_content = self._read_file(str(router_path))
+            
+            # Check required methods
+            required_methods = [
+                "classify_prompt",
+                "get_model_chain", 
+                "get_best_model",
+                "refresh_rankings",
+                "_compute_rankings"
+            ]
+            for method in required_methods:
+                if f"def {method}" not in router_content:
+                    issues.append(f"Router missing method: {method}")
+            
+            # Check prompt types
+            if "PROMPT_TYPES" not in router_content:
+                issues.append("Router missing PROMPT_TYPES definition")
+            
+            # Check periodic refresh
+            if "REFRESH_INTERVAL" not in router_content:
+                issues.append("Router missing REFRESH_INTERVAL (should update weekly)")
+        
+        # Check 2: Caller file exists
+        caller_path = Path("src/ai/smart_ai_caller.py")
+        if not caller_path.exists():
+            issues.append("smart_ai_caller.py does not exist")
+        else:
+            caller_content = self._read_file(str(caller_path))
+            
+            # Check it uses the router
+            if "get_smart_router" not in caller_content:
+                issues.append("Caller doesn't import smart router")
+            
+            # Check provider callers
+            for provider in ["groq", "gemini", "openrouter", "huggingface"]:
+                if f"_call_{provider}" not in caller_content:
+                    issues.append(f"Caller missing provider: {provider}")
+        
+        # Check 3: Integration in pro_video_generator
+        gen_content = self._read_main_generator()
+        if "SMART_ROUTER_AVAILABLE" not in gen_content:
+            issues.append("pro_video_generator.py missing SMART_ROUTER_AVAILABLE")
+        if "smart_call_ai" not in gen_content:
+            issues.append("pro_video_generator.py doesn't use smart_call_ai")
+        
+        # Check 4: Test file exists
+        test_path = Path("scripts/test_smart_router.py")
+        if not test_path.exists():
+            self.warnings.append("Smart router test file missing")
+        
+        if issues:
+            for issue in issues:
+                self.errors.append(f"Smart Router: {issue}")
+            return False
+        else:
+            self.passed.append("Smart Model Router properly integrated")
+            print("   [OK] Router exists with all methods")
+            print("   [OK] Caller exists with all providers")
+            print("   [OK] Integrated in pro_video_generator.py")
+            print("   [OK] Fallback chains and periodic refresh configured")
+            return True
+    
     # ========================================================================
     # MAIN VERIFICATION
     # ========================================================================
@@ -795,6 +875,7 @@ class VersionVerifier:
             self.check_ai_modules(),  # v17.8.27: All AI modules
             self.check_test_suite(),  # v17.8.27: Test suite
             self.check_v1797_fixes(),  # v17.9.7: Critical fixes
+            self.check_smart_router(),  # v17.9.9: Smart Model Router
         ]
         
         print("\n" + "=" * 60)

@@ -310,6 +310,24 @@ except ImportError:
         def record_task_performance(*args, **kwargs):
             pass
 
+# v17.9.9: Import Smart Model Router for optimal model selection per prompt type
+try:
+    from smart_model_router import get_smart_router
+    from smart_ai_caller import smart_call_ai, get_smart_caller
+    SMART_ROUTER_AVAILABLE = True
+    print("[OK] Smart Model Router loaded: Optimal model selection per prompt ACTIVE!")
+except ImportError:
+    try:
+        from src.ai.smart_model_router import get_smart_router
+        from src.ai.smart_ai_caller import smart_call_ai, get_smart_caller
+        SMART_ROUTER_AVAILABLE = True
+        print("[OK] Smart Model Router loaded: Optimal model selection per prompt ACTIVE!")
+    except ImportError:
+        SMART_ROUTER_AVAILABLE = False
+        smart_call_ai = None
+        get_smart_caller = None
+        print("[!] Smart Model Router not available - using legacy call_ai")
+
 # v17.8: Import all AI-first modules
 try:
     from ai_hook_generator import generate_hook, get_hook_generator
@@ -911,6 +929,7 @@ class MasterAI:
         
         v13.2: Smart backoff on 429 errors - wait and retry
         v15.0: Budget-aware provider selection with token tracking
+        v17.9.9: Smart Model Router - routes each prompt to BEST model for its type
         
         Fallback chain: Primary -> Secondary -> Tertiary -> Quaternary
         
@@ -919,6 +938,41 @@ class MasterAI:
         """
         import time
         import re
+        
+        # v17.9.9: USE SMART MODEL ROUTER (if available)
+        # Routes each prompt to the BEST model based on prompt classification
+        # Automatically handles fallbacks through entire chain
+        if SMART_ROUTER_AVAILABLE and smart_call_ai:
+            try:
+                # Map task to hint for better classification
+                task_hint_map = {
+                    "concept": "topic",
+                    "content": "content",
+                    "evaluate": "evaluation",
+                    "title": "content",
+                    "hook": "hook",
+                    "cta": "cta",
+                    "description": "description",
+                    "hashtag": "hashtag",
+                    "broll": "broll",
+                    "seo": "seo",
+                    "analysis": "analysis"
+                }
+                hint = task_hint_map.get(task, task)
+                
+                result = smart_call_ai(prompt, hint=hint, max_tokens=max_tokens, 
+                                        temperature=temperature)
+                if result:
+                    # Record to budget manager if available
+                    if self.budget_manager:
+                        self.budget_manager.record_usage("smart_router", max_tokens)
+                    return result
+                else:
+                    safe_print("[!] Smart router failed, falling back to legacy logic...")
+            except Exception as e:
+                safe_print(f"[!] Smart router error: {e}, falling back to legacy...")
+        
+        # === LEGACY LOGIC (fallback when smart router unavailable) ===
         
         # v15.0: Use budget manager for provider selection if available
         chosen_provider = None
