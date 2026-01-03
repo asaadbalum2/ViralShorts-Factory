@@ -5,10 +5,10 @@ name: Monthly Viral Analysis - Learn from Top AI Shorts (v9.5)
 # v9.5: Seasonal calendar, hook word analysis, series detection
 
 on:
-  # DISABLED TEMPORARILY - Waiting for quota reset
+  # v17.9.9: RE-ENABLED - Smart router provides 4100+ calls/day
   # Bi-weekly: 1st and 15th of each month at 3 AM UTC (catch trends faster)
-  # schedule:
-  #   - cron: '0 3 1,15 * *'
+  schedule:
+    - cron: '0 3 1,15 * *'
   
   # Manual trigger for testing
   workflow_dispatch:

@@ -88,16 +88,30 @@ You have seen millions of viral videos. You know EXACTLY what makes content go v
    - 5 = "Standard CTA"
    - 1 = "No CTA or ineffective"
 
+=== BONUS POINTS FOR AGGRESSIVE (BUT TRUTHFUL) CONTENT (v17.9.9) ===
+
+Add +0.5 for each of these VIRAL BOOSTERS:
++ Names an ENEMY: "Banks", "Your boss", "Doctors", "Traditional advice"
++ Takes a BOLD STANCE: "Everyone says X, but they're wrong"
++ Creates DEBATE: Viewers will argue about this
++ Uses URGENCY: "Before your next paycheck", "Starting tonight"
++ Creates SUPERIORITY: "The 10% who succeed know this"
++ CHALLENGES BELIEFS: Makes viewer question something they assumed true
+
+These are what separate 8/10 from 10/10. Safe content = 7-8. Bold content = 9-10.
+
 === HARDCODED REQUIREMENTS FOR 10/10 ===
 
 A PERFECT 10/10 video MUST have ALL of these:
 ✓ Hook uses pattern interrupt (STOP, WAIT, DON'T) or intriguing question
+✓ Hook ATTACKS or CHALLENGES something (not just informs)
 ✓ At least 3 specific, actionable tips/insights with real numbers
-✓ Delivers EXACTLY what the hook promises
+✓ Delivers EXACTLY what the hook promises - OVER-delivers
 ✓ Uses round, memorable numbers ($500, 90%, 30 days)
 ✓ Sounds like a real human, not AI-generated text
-✓ Creates urgency or FOMO
-✓ Has a CTA that drives comments (asks a question)
+✓ Creates STRONG urgency or FOMO
+✓ Has a POLARIZING CTA that forces debate (not generic "comment below")
+✓ Takes a STANCE that some people will disagree with (but is truthful)
 ✓ Total content feels complete, not like an intro that was cut off
 
 Missing ANY = Maximum 9/10

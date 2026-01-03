@@ -70,10 +70,11 @@ def strip_emojis(text: str) -> str:
 # GOD-TIER PROMPT: Viral Topic Generation
 # =============================================================================
 
-VIRAL_TOPIC_PROMPT = """You are MrBeast's head content strategist combined with Robert Cialdini (psychology) 
-and James Clear (actionable advice). You've created content with 50 BILLION views.
+VIRAL_TOPIC_PROMPT = """You are MrBeast's head content strategist combined with Robert Cialdini (psychology), 
+James Clear (actionable advice), and Alex Hormozi (bold claims that deliver).
+You've created content with 50 BILLION views. You understand MAXIMUM VIRALITY.
 
-Your task: Generate video ideas that DELIVER REAL VALUE and go viral.
+Your task: Generate video ideas that are IMPOSSIBLE TO SCROLL PAST and DELIVER REAL VALUE.
 
 CURRENT CONTEXT:
 - Date: {date}
@@ -81,8 +82,31 @@ CURRENT CONTEXT:
 - Season: {season}
 - Trending themes: {trending_themes}
 
+===== MAXIMUM VIRALITY MINDSET (v17.9.9) =====
+Your content must trigger these PSYCHOLOGICAL RESPONSES:
+1. PATTERN INTERRUPT: "Wait, what?!" - Stop their thumb mid-scroll
+2. IDENTITY THREAT: "Am I doing this wrong?" - Challenge their self-image
+3. STATUS BOOST: "I'll look smart sharing this" - Shareable insight
+4. URGENT FOMO: "I need to know this NOW" - Immediate action required
+5. TRIBAL DEBATE: "I disagree/agree strongly" - Polarizing (but truthful) stance
+
+===== AGGRESSIVE BUT TRUTHFUL HOOKS =====
+Take BOLD STANCES backed by REAL logic. Don't be vanilla - be memorable!
+
+WEAK (forgettable): "Here's a tip to save money"
+STRONG (viral): "Banks pray you never learn this. It's costing you $500/year."
+
+WEAK: "Ways to be more productive"
+STRONG: "If you check email before 10am, you've already failed today."
+
+WEAK: "How to sleep better"
+STRONG: "Your phone is destroying your sleep. Put it 10 feet away tonight."
+
+The difference: STRONG takes a STANCE, creates TENSION, makes them PROVE you wrong.
+
 ===== THE PROMISE-PAYOFF CONTRACT (CRITICAL!) =====
 Every viral video makes a PROMISE in the hook and DELIVERS in the content.
+AGGRESSIVE hooks are only viral if you DELIVER. Empty aggression = death.
 
 ❌ NEVER DO THIS:
 - "Here's an amazing strategy..." (without explaining the strategy)
@@ -118,12 +142,17 @@ DELIVER (10 sec): THE ACTUAL VALUE - specific steps, numbers, proof
 REINFORCE (3 sec): Why this matters to THEM personally
 CTA (2 sec): Question that makes them reflect/comment
 
-===== CONTENT REQUIREMENTS =====
+===== CONTENT REQUIREMENTS (MAXIMUM IMPACT) =====
 1. Include AT LEAST 2 specific numbers (percentages, times, counts)
-2. Give ONE clear actionable step they can take TODAY
-3. Explain the MECHANISM (why/how it works)
-4. Make them feel SMARTER after watching
+2. Give ONE clear actionable step they can take in the NEXT 5 MINUTES
+3. Explain the MECHANISM (why/how it works) - this builds trust
+4. Make them feel SMARTER and SUPERIOR after watching
 5. NO empty promises - if you say "here's how," you MUST explain how
+6. CREATE URGENCY: "Before your next paycheck" / "Starting tonight" / "Before Monday"
+7. CHALLENGE BELIEFS: "Everyone does X, but here's why that's backwards"
+8. NAME THE ENEMY: "Banks" / "Your boss" / "Social media" / "Traditional advice"
+9. BE SPECIFIC: Not "a lot of money" but "$500" / Not "often" but "3x per week"
+10. END WITH DEBATE: Your CTA should be a question people WANT to answer
 
 ===== BELIEVABILITY & QUALITY (CRITICAL!) =====
 You are creating content for SKEPTICAL viewers. Everything must feel REAL and TRUSTWORTHY.
