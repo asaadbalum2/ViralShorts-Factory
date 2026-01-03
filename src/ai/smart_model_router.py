@@ -8,11 +8,13 @@ INTELLIGENT model selection that:
 2. Updates model rankings PERIODICALLY (weekly by default)
 3. Has FALLBACK CHAINS for every prompt type
 4. GUARANTEES eventual success (never runs out of quota)
+5. Uses PROMPTS REGISTRY to learn optimal models per prompt
 
 ARCHITECTURE:
 - NOT hardcoded - model rankings are discovered and cached
 - Periodic re-evaluation (weekly) to adapt to new models
 - Prompt classification -> Model selection -> Fallback chain
+- Prompts Registry tracks which models work best for which prompts
 
 PROMPT TYPES:
 - CREATIVE: Topics, scripts, hooks, CTAs (need human-like creativity)
@@ -541,17 +543,32 @@ class SmartModelRouter:
         
         return chain
     
-    def get_best_model(self, prompt: str, hint: str = None) -> Tuple[str, ModelInfo]:
+    def get_best_model(self, prompt: str, hint: str = None, 
+                       prompt_name: str = None) -> Tuple[str, ModelInfo]:
         """
         Get the best model for a prompt.
         
         Args:
             prompt: The prompt text
             hint: Optional hint about prompt type
+            prompt_name: Optional specific prompt name (e.g., "VIRAL_TOPIC_PROMPT")
         
         Returns:
             (model_key, ModelInfo) for the best model
         """
+        # v17.9.9: Check prompts registry for per-prompt recommendations
+        if prompt_name:
+            try:
+                from prompts_registry import get_best_model_for_prompt
+                recommended = get_best_model_for_prompt(prompt_name)
+                if recommended and recommended in self.models:
+                    return (recommended, self.models[recommended])
+            except ImportError:
+                pass
+            except Exception:
+                pass
+        
+        # Fall back to type-based selection
         prompt_type = self.classify_prompt(prompt, hint)
         chain = self.get_model_chain(prompt_type)
         
