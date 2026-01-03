@@ -1,22 +1,87 @@
 {
-  "patterns_source": "NEEDS_AI_GENERATION",
-  "ai_generated": false,
-  "last_ai_update": null,
-  "note": "This file is populated by AI via ai_pattern_generator.py. DO NOT HARDCODE!",
-  
-  "title_patterns": [],
-  "hook_patterns": [],
-  "engagement_baits": [],
-  "psychological_triggers": [],
-  "scroll_stop_openers": [],
-  "proven_categories": [],
-  "retention_tricks": [],
-  "cta_formulas": [],
-  
-  "emergency_fallback": {
-    "note": "ONLY used if AI completely unavailable",
-    "title_patterns": ["{number} {topic}"],
-    "hook_patterns": ["Did you know?"],
-    "engagement_baits": ["Comment below"]
-  }
+  "title_patterns": [
+    "{number} Secrets {topic} Doesn't Want You to Know",
+    "The Shocking Truth About {topic}",
+    "What {topic} Really Means for Your {aspect}",
+    "You Won't Believe What Happens When {action}",
+    "{topic} Hacks: {number} Ways to {benefit}",
+    "The {adjective} Guide to {topic}",
+    "{number} {topic} Myths Busted",
+    "Why {topic} Is {adjective} Than You Think",
+    "The {number} Biggest {topic} Mistakes You're Making",
+    "Uncovering the Hidden {topic} of {industry}"
+  ],
+  "hook_patterns": [
+    "What if I told you {secret}?",
+    "You'll never guess what happened when {event}",
+    "The one thing {expert} won't tell you about {topic}",
+    "I tried {challenge} for {time} and here's what happened",
+    "The #1 {topic} mistake that's costing you {resource}",
+    "Warning: {topic} may be {adjective} than you think",
+    "The surprising reason {phenomenon} is happening",
+    "I spent {time} studying {topic} and here's what I found",
+    "The {adjective} truth about {common belief}",
+    "What your {authority figure} isn't telling you about {topic}"
+  ],
+  "engagement_baits": [
+    "Comment below with your favorite {topic}!",
+    "Share your worst {experience} in the comments",
+    "Who else is {emotion} about {topic}?",
+    "Tag a friend who needs to see this {topic}!",
+    "What's the most {adjective} {topic} you've ever seen?",
+    "Do you agree or disagree with this {statement}?",
+    "Share your own {topic} story in the comments",
+    "Like if you're {emotion} about {topic}!"
+  ],
+  "psychological_triggers": [
+    "curiosity",
+    "fomo",
+    "scarcity",
+    "socialproof",
+    "authority",
+    "urgency",
+    "novelty",
+    "empathy"
+  ],
+  "scroll_stop_openers": [
+    "I just discovered a {secret} that will change everything",
+    "You won't believe the {surprising fact} I just found out",
+    "The {experts} are all wrong about {topic}",
+    "I tried {unconventional method} and it actually worked",
+    "The {hidden truth} about {industry} will shock you",
+    "What if I told you {counterintuitive fact}?",
+    "I spent {extreme amount of time} studying {topic} and here's what I found",
+    "The {common myth} about {topic} has been debunked"
+  ],
+  "proven_categories": [
+    "psychology",
+    "money",
+    "relationships",
+    "health",
+    "technology",
+    "travel",
+    "food",
+    "productivity"
+  ],
+  "retention_tricks": [
+    "start with a personal story",
+    "use surprising statistics",
+    "create a sense of anticipation",
+    "use humor to break the ice",
+    "ask rhetorical questions",
+    "use storytelling techniques"
+  ],
+  "cta_formulas": [
+    "Get instant access to {resource} now at {link}",
+    "Download your free {guide} here: {link}",
+    "Join our {community} to stay updated on {topic}",
+    "Take the {quiz} to discover your {result}",
+    "Get {exclusive offer} by signing up at {link}",
+    "Learn more about {topic} in our upcoming {event}"
+  ],
+  "ai_generated": true,
+  "patterns_source": "AI_GENERATED",
+  "last_ai_update": "2026-01-03T22:22:28.685374",
+  "generation_model": "gemini/groq",
+  "last_saved": "2026-01-03T22:22:28.685384"
 }
