@@ -73,12 +73,16 @@ def get_dynamic_gemini_model() -> str:
         "gemini-pro",              # Fallback
     ]
     
-    # Try quota_optimizer first
+    # Try quota_optimizer first (both import styles)
     try:
-        from src.quota.quota_optimizer import get_best_gemini_model
+        from quota_optimizer import get_best_gemini_model
         return get_best_gemini_model()
     except ImportError:
-        pass
+        try:
+            from src.quota.quota_optimizer import get_best_gemini_model
+            return get_best_gemini_model()
+        except ImportError:
+            pass
     
     # Query API to see which models are available
     try:
@@ -123,12 +127,16 @@ def get_dynamic_groq_model() -> str:
     """
     Get the best available Groq model dynamically.
     """
-    # Try quota_optimizer first
+    # Try quota_optimizer first (both import styles)
     try:
-        from src.quota.quota_optimizer import get_best_groq_model
+        from quota_optimizer import get_best_groq_model
         return get_best_groq_model()
     except ImportError:
-        pass
+        try:
+            from src.quota.quota_optimizer import get_best_groq_model
+            return get_best_groq_model()
+        except ImportError:
+            pass
     
     # Check cache
     cached = _load_cache("groq")

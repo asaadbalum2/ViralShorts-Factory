@@ -7,7 +7,13 @@ Analyzes trends using AI to identify content opportunities.
 """
 
 import os
-from src.ai.model_helper import get_dynamic_gemini_model
+try:
+    from model_helper import get_dynamic_gemini_model
+except ImportError:
+    try:
+        from src.ai.model_helper import get_dynamic_gemini_model
+    except ImportError:
+        def get_dynamic_gemini_model(): return "gemini-1.5-flash"
 import json
 import re
 from datetime import datetime

@@ -14,8 +14,18 @@ NO HARDCODED PATTERNS - Everything comes from AI!
 """
 
 import os
-from src.ai.model_helper import get_dynamic_gemini_model
 import json
+
+# Try both import styles for compatibility
+try:
+    from model_helper import get_dynamic_gemini_model
+except ImportError:
+    try:
+        from src.ai.model_helper import get_dynamic_gemini_model
+    except ImportError:
+        # Fallback if model_helper not available
+        def get_dynamic_gemini_model():
+            return "gemini-1.5-flash"
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
