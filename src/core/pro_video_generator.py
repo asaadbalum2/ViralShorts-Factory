@@ -367,6 +367,13 @@ try:
 except ImportError:
     AI_QUALITY_GATE_AVAILABLE = False
 
+# v17.9.7: God-Tier Master Evaluator - THE definitive quality scoring system
+try:
+    from god_tier_evaluator import GodTierEvaluator, get_god_tier_evaluator
+    GOD_TIER_EVALUATOR_AVAILABLE = True
+except ImportError:
+    GOD_TIER_EVALUATOR_AVAILABLE = False
+
 try:
     from content_optimizer import ContentOptimizer
     CONTENT_OPTIMIZER_AVAILABLE = True
@@ -1910,6 +1917,37 @@ Return ONLY the improved hook, nothing else."""
                 safe_print(f"   [VIRALITY] Score: {virality.get('overall_score', 0):.0f}/100 ({virality.get('grade', 'N/A')}) - {virality.get('viral_potential', 'N/A')}")
             except Exception as e:
                 safe_print(f"   [!] Virality calculation skipped: {e}")
+        
+        # 5. v17.9.7: GOD-TIER EVALUATOR - The ULTIMATE quality scoring system
+        if GOD_TIER_EVALUATOR_AVAILABLE and phrases:
+            try:
+                evaluator = get_god_tier_evaluator()
+                god_tier_content = {
+                    "hook": phrases[0] if phrases else "",
+                    "phrases": phrases[1:] if len(phrases) > 1 else phrases,
+                    "cta": content.get('cta', ''),
+                    "topic": content.get('concept', {}).get('specific_topic', ''),
+                    "category": content.get('concept', {}).get('category', 'educational')
+                }
+                god_tier_result = evaluator.evaluate(god_tier_content)
+                content['god_tier_evaluation'] = god_tier_result
+                
+                final_score = god_tier_result.get('final_score', 0)
+                verdict = god_tier_result.get('verdict', 'N/A')
+                checks = f"{god_tier_result.get('checks_passed', 0)}/{god_tier_result.get('checks_total', 7)}"
+                
+                safe_print(f"   [GOD-TIER] Score: {final_score:.1f}/10 | Verdict: {verdict} | Checks: {checks}")
+                
+                # If score < 8 and we have improvement suggestions, log them
+                if final_score < 8 and god_tier_result.get('specific_improvements'):
+                    safe_print(f"   [GOD-TIER] To improve: {god_tier_result['specific_improvements'][0][:60]}...")
+                
+                # Store rewritten hook suggestion for potential use
+                if god_tier_result.get('rewritten_hook'):
+                    content['suggested_hook'] = god_tier_result['rewritten_hook']
+                    
+            except Exception as e:
+                safe_print(f"   [!] God-tier evaluation skipped: {e}")
         
         # v8.9.1: Get the hook/topic from concept for promise validation
         concept = content.get('concept', {})

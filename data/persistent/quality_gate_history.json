@@ -4,9 +4,14 @@
       "passed": true,
       "score": 75.9,
       "timestamp": "2026-01-02T21:40:30.736828"
+    },
+    {
+      "passed": true,
+      "score": 59.0,
+      "timestamp": "2026-01-03T20:34:12.091218"
     }
   ],
   "pass_rate": 1.0,
-  "avg_score": 75.9,
-  "last_updated": "2026-01-02T21:40:30.736844"
+  "avg_score": 67.45,
+  "last_updated": "2026-01-03T20:34:12.091228"
 }

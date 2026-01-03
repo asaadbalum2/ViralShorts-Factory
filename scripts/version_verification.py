@@ -755,6 +755,12 @@ class VersionVerifier:
         else:
             issues.append("Version not updated to v17.9.7")
         
+        # 6. God Tier Evaluator integrated
+        if "GOD_TIER_EVALUATOR_AVAILABLE" in generator and "god_tier_evaluator" in generator:
+            print("   [OK] God Tier Evaluator integrated")
+        else:
+            issues.append("God Tier Evaluator not integrated")
+        
         if issues:
             for issue in issues:
                 self.errors.append(f"v17.9.7: {issue}")
