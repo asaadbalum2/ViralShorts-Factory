@@ -1,0 +1,7 @@
+﻿gh : failed to get run log: log not found
+At C:\Users\SoulsTaker7\AppData\Local\Temp\ps-script-8da1f502-30d6-41d3-b269-a58f9c8d5657.ps1:80 char:37
++ ... rs\SoulsTaker7\YShortsGen; gh run view 20683006784 --log 2>&1 | Out-F ...
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (failed to get run log: log not found:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

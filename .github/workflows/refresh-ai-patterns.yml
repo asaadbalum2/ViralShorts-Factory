@@ -53,15 +53,7 @@ jobs:
     - name: Scan and Update Prompts Registry
       env:
         PYTHONPATH: src:src/ai
-      run: |
-        python -c "
-import sys
-sys.path.insert(0, 'src/ai')
-from prompts_registry import get_prompts_registry
-registry = get_prompts_registry()
-registry.scan_and_update()
-print('Prompts registry updated!')
-"
+      run: python scripts/scan_prompts_registry.py
         
     # v17.9.9: Refresh Smart Model Router rankings
     - name: Refresh Smart Model Router
@@ -71,15 +63,7 @@ print('Prompts registry updated!')
         OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
         PYTHONPATH: src:src/ai
-      run: |
-        python -c "
-import sys
-sys.path.insert(0, 'src/ai')
-from smart_model_router import get_smart_router
-router = get_smart_router()
-router.refresh_rankings()
-print('Smart Model Router rankings refreshed!')
-"
+      run: python scripts/refresh_model_router.py
 
     - name: Commit updated patterns and registry
       run: |
