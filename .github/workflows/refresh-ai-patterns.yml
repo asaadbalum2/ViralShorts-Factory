@@ -11,6 +11,10 @@ on:
         required: false
         default: 'false'
 
+# v17.9.9: Required permissions for git push
+permissions:
+  contents: write
+
 jobs:
   refresh-patterns:
     runs-on: ubuntu-latest
@@ -18,6 +22,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Setup Python
       uses: actions/setup-python@v5
