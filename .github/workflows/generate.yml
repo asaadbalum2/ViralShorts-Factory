@@ -6,7 +6,7 @@ on:
       batch_size:
         description: 'Videos to generate (1 per workflow = 6/day for YouTube)'
         required: false
-        default: '1'  # v17.9.5: YouTube-only focus (6 runs/day × 1 video = 6/day)
+        default: '1'  # v17.9.7: YouTube-only focus (6 runs/day × 1 video = 6/day)
       test_only:
         description: 'Test mode - generate but DO NOT upload (saves quota)'
         required: false
@@ -24,7 +24,7 @@ on:
           - 'false'
           - 'true'
 
-  # v17.9.5: YOUTUBE-ONLY CONFIGURATION
+  # v17.9.7: YOUTUBE-ONLY CONFIGURATION
   # =====================================================
   # YouTube focus (Dailymotion DISABLED)
   # LIMITS:
@@ -172,9 +172,9 @@ jobs:
       # - Voice pacing intelligence
       # - YouTube: 6/day (max) | Dailymotion: 24/day (rate-aware)
       # ====================================================================
-      - name: Generate Videos (v17.9.5 - YouTube Focus)
+      - name: Generate Videos (v17.9.7 - YouTube Focus)
         run: |
-          # v17.9.5: YouTube-only focus (Dailymotion disabled)
+          # v17.9.7: YouTube-only focus (Dailymotion disabled)
           # 6 scheduled runs/day × 1 video = 6 videos/day = YouTube daily limit
           BATCH="${{ github.event.inputs.batch_size }}"
           BATCH="${BATCH:-1}"  # Default to 1 for YouTube-only strategy
@@ -182,7 +182,7 @@ jobs:
           TEST_ONLY="${TEST_ONLY:-false}"
           
           echo "=============================================="
-          echo "   VIRALSHORTS FACTORY v17.9.5"
+          echo "   VIRALSHORTS FACTORY v17.9.7"
           echo "   YOUTUBE-ONLY FOCUS"
           echo "   Videos: $BATCH per run (6 runs/day)"
           echo "   Quality: 10 phrases, 50s duration"
@@ -194,7 +194,7 @@ jobs:
             python pro_video_generator.py --count $BATCH --no-upload
           else
             echo "PRODUCTION MODE: YouTube upload only"
-            # v17.9.5: YouTube only, no Dailymotion
+            # v17.9.7: YouTube only, no Dailymotion
             python pro_video_generator.py --count $BATCH --upload --youtube-only
           fi
         env:
@@ -263,7 +263,7 @@ jobs:
               updated = controller.update_all_performance()
               print(f'Updated performance for {updated} videos')
               
-              # v17.9.5: Update learned video metrics from performance
+              # v17.9.7: Update learned video metrics from performance
               all_videos = controller.metadata_store.get_all()
               for video in all_videos:
                   if video.performance and video.performance.views > 0:
@@ -330,7 +330,7 @@ jobs:
           echo "**Videos per run:** ${{ github.event.inputs.batch_size || '1' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Test Mode:** ${{ github.event.inputs.test_only || 'false' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### v17.9.5 - YouTube Focus" >> $GITHUB_STEP_SUMMARY
+          echo "### v17.9.7 - YouTube Focus" >> $GITHUB_STEP_SUMMARY
           echo "- **Platform**: YouTube Shorts ONLY (Dailymotion disabled)" >> $GITHUB_STEP_SUMMARY
           echo "- **Schedule**: 6 runs/day × 1 video = 6 videos/day" >> $GITHUB_STEP_SUMMARY
           echo "- **Content**: 10 phrases, 50s duration, full value delivery" >> $GITHUB_STEP_SUMMARY

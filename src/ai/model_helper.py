@@ -248,10 +248,13 @@ def get_rate_limits() -> Dict[str, float]:
     """
     Get rate limit delays for all providers.
     Returns seconds to wait between API calls.
+    
+    v17.9.7: Increased Gemini delay to 5s (safer for 20 req/min limit)
+    With 6 runs/day and ~30 calls/run, we need to be conservative.
     """
     return {
-        "gemini": 4.0,       # 20 req/min = 3s + buffer
-        "groq": 2.5,         # 30 req/min = 2s + buffer  
+        "gemini": 5.0,       # 20 req/min = 3s minimum, 5s for safety across runs
+        "groq": 2.0,         # 30 req/min = 2s, Groq is now primary so optimize
         "openrouter": 1.0,   # Higher limits
         "huggingface": 2.0,  # ~30 req/min on free tier
         "pexels": 18.0       # 200 req/hour = 18s between calls

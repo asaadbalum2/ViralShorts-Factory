@@ -689,6 +689,82 @@ class VersionVerifier:
         return True
     
     # ========================================================================
+    # CHECK 14: v17.9.7 FIXES VERIFICATION
+    # ========================================================================
+    def check_v1797_fixes(self) -> bool:
+        """Check v17.9.7 critical fixes are properly implemented."""
+        print("\n[14] v17.9.7 FIXES CHECK...")
+        
+        issues = []
+        generator = self._read_file("src/core/pro_video_generator.py")
+        model_helper = self._read_file("src/ai/model_helper.py")
+        budget_manager = self._read_file("src/quota/token_budget_manager.py")
+        
+        # 1. AI module method fixes - correct method names used
+        if "analyzer.analyze_script(script_content)" in generator:
+            print("   [OK] ScriptAnalyzer uses correct analyze_script(content) call")
+        else:
+            issues.append("ScriptAnalyzer may have wrong method call")
+        
+        if "predictor.predict_retention(retention_content)" in generator:
+            print("   [OK] RetentionPredictor uses correct predict_retention(content) call")
+        else:
+            issues.append("RetentionPredictor may have wrong method call")
+        
+        if "calculator.calculate_virality(virality_content)" in generator:
+            print("   [OK] ViralityCalculator uses correct calculate_virality(content) call")
+        else:
+            issues.append("ViralityCalculator may have wrong method call")
+        
+        if "quality_gate.check(gate_content)" in generator:
+            print("   [OK] AIQualityGate uses correct check(content) call")
+        else:
+            issues.append("AIQualityGate may have wrong method call")
+        
+        if "optimizer.optimize(opt_content)" in generator:
+            print("   [OK] ContentOptimizer uses correct optimize(content) call")
+        else:
+            issues.append("ContentOptimizer may have wrong method call")
+        
+        # 2. Rate limiter optimization
+        if '"groq": 2.0' in model_helper or "'groq': 2.0" in model_helper:
+            print("   [OK] Groq rate limit is 2.0s (optimized)")
+        else:
+            issues.append("Groq rate limit not optimized to 2.0s")
+        
+        if '"gemini": 5.0' in model_helper or "'gemini': 5.0" in model_helper:
+            print("   [OK] Gemini rate limit is 5.0s (safe)")
+        else:
+            issues.append("Gemini rate limit not set to 5.0s")
+        
+        # 3. Provider priority - Groq should be primary
+        if "Groq is PRIMARY" in budget_manager or "GROQ FIRST" in budget_manager:
+            print("   [OK] Groq is PRIMARY provider")
+        else:
+            issues.append("Groq not set as primary provider")
+        
+        # 4. TTS retry logic
+        if "fallback_voices" in generator and "for retry in range(3)" in generator:
+            print("   [OK] TTS has retry logic with fallback voices")
+        else:
+            issues.append("TTS missing retry logic or fallback voices")
+        
+        # 5. Version is 17.9.7
+        if "v17.9.7" in generator:
+            print("   [OK] Version is v17.9.7")
+        else:
+            issues.append("Version not updated to v17.9.7")
+        
+        if issues:
+            for issue in issues:
+                self.errors.append(f"v17.9.7: {issue}")
+                print(f"   [X] {issue}")
+            return False
+        else:
+            self.passed.append("All v17.9.7 fixes verified")
+            return True
+    
+    # ========================================================================
     # MAIN VERIFICATION
     # ========================================================================
     def run_all_checks(self) -> bool:
@@ -712,6 +788,7 @@ class VersionVerifier:
             self.check_youtube_only_mode(),  # v17.9.5: YouTube-only mode
             self.check_ai_modules(),  # v17.8.27: All AI modules
             self.check_test_suite(),  # v17.8.27: Test suite
+            self.check_v1797_fixes(),  # v17.9.7: Critical fixes
         ]
         
         print("\n" + "=" * 60)

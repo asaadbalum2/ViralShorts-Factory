@@ -1847,15 +1847,15 @@ Return ONLY the improved hook, nothing else."""
         if SCRIPT_ANALYZER_AVAILABLE and phrases:
             try:
                 analyzer = ScriptAnalyzer()
-                script_analysis = analyzer.analyze_script(
-                    hook=phrases[0] if phrases else "",
-                    content_phrases=phrases[1:] if len(phrases) > 1 else [],
-                    cta=content.get('cta', ''),
-                    category=content.get('concept', {}).get('category', 'educational'),
-                    voice_config={'rate': 1.0}
-                )
+                # v17.9.7: Fixed - method takes content Dict, not keyword args
+                script_content = {
+                    "hook": phrases[0] if phrases else "",
+                    "phrases": phrases[1:] if len(phrases) > 1 else phrases,
+                    "cta": content.get('cta', '')
+                }
+                script_analysis = analyzer.analyze_script(script_content)
                 content['script_analysis'] = script_analysis
-                safe_print(f"   [SCRIPT] Quality: {script_analysis.get('overall_score', 0)}/100")
+                safe_print(f"   [SCRIPT] Quality: {script_analysis.get('overall_score', 0)}/100, Grade: {script_analysis.get('grade', 'N/A')}")
             except Exception as e:
                 safe_print(f"   [!] Script analysis skipped: {e}")
         
@@ -1863,14 +1863,16 @@ Return ONLY the improved hook, nothing else."""
         if RETENTION_PREDICTOR_AVAILABLE and phrases:
             try:
                 predictor = RetentionPredictor()
-                retention = predictor.predict_retention(
-                    hook=phrases[0] if phrases else "",
-                    content_phrases=phrases[1:] if len(phrases) > 1 else [],
-                    video_duration=content.get('concept', {}).get('target_duration', 50),
-                    category=content.get('concept', {}).get('category', 'educational')
-                )
+                # v17.9.7: Fixed - method takes content Dict with hook, phrases, cta, category
+                retention_content = {
+                    "hook": phrases[0] if phrases else "",
+                    "phrases": phrases[1:] if len(phrases) > 1 else phrases,
+                    "cta": content.get('cta', ''),
+                    "category": content.get('concept', {}).get('category', 'educational')
+                }
+                retention = predictor.predict_retention(retention_content)
                 content['retention_prediction'] = retention
-                safe_print(f"   [RETENTION] Predicted avg: {retention.get('predicted_avg_retention', 0):.0f}%")
+                safe_print(f"   [RETENTION] Predicted: {retention.get('overall_retention', 0):.0f}%")
             except Exception as e:
                 safe_print(f"   [!] Retention prediction skipped: {e}")
         
@@ -1878,14 +1880,16 @@ Return ONLY the improved hook, nothing else."""
         if ENGAGEMENT_PREDICTOR_AVAILABLE and phrases:
             try:
                 predictor = EngagementPredictor()
-                engagement = predictor.predict_engagement(
-                    hook=phrases[0] if phrases else "",
-                    content_phrases=phrases[1:] if len(phrases) > 1 else [],
-                    cta=content.get('cta', ''),
-                    category=content.get('concept', {}).get('category', 'educational')
-                )
+                # v17.9.7: Fixed - method takes content Dict with hook, phrases, cta, category
+                engagement_content = {
+                    "hook": phrases[0] if phrases else "",
+                    "phrases": phrases[1:] if len(phrases) > 1 else phrases,
+                    "cta": content.get('cta', ''),
+                    "category": content.get('concept', {}).get('category', 'educational')
+                }
+                engagement = predictor.predict_engagement(engagement_content)
                 content['engagement_prediction'] = engagement
-                safe_print(f"   [ENGAGEMENT] Score: {engagement.get('overall_score', 0)}/100")
+                safe_print(f"   [ENGAGEMENT] Score: {engagement.get('overall_engagement', 0)}/100, Strongest: {engagement.get('strongest', 'N/A')}")
             except Exception as e:
                 safe_print(f"   [!] Engagement prediction skipped: {e}")
         
@@ -1893,16 +1897,17 @@ Return ONLY the improved hook, nothing else."""
         if VIRALITY_CALCULATOR_AVAILABLE:
             try:
                 calculator = ViralityCalculator()
-                virality = calculator.calculate_virality_score(
-                    hook_score=content.get('hook_quality_score', 5) * 10,
-                    engagement_score=content.get('engagement_prediction', {}).get('overall_score', 50),
-                    retention_score=content.get('retention_prediction', {}).get('predicted_avg_retention', 50),
-                    trending_score=70,  # Base trending score
-                    platform_fit_score=80,  # YouTube Shorts fit
-                    shareability_score=content.get('script_analysis', {}).get('shareability', 60)
-                )
+                # v17.9.7: Fixed - method is calculate_virality (not calculate_virality_score), takes content Dict
+                virality_content = {
+                    "hook": phrases[0] if phrases else "",
+                    "phrases": phrases[1:] if len(phrases) > 1 else phrases,
+                    "cta": content.get('cta', ''),
+                    "category": content.get('concept', {}).get('category', 'educational'),
+                    "topic": content.get('concept', {}).get('specific_topic', '')
+                }
+                virality = calculator.calculate_virality(virality_content)
                 content['virality_score'] = virality
-                safe_print(f"   [VIRALITY] Overall: {virality.get('overall_score', 0):.0f}/100 - {virality.get('verdict', 'N/A')}")
+                safe_print(f"   [VIRALITY] Score: {virality.get('overall_score', 0):.0f}/100 ({virality.get('grade', 'N/A')}) - {virality.get('viral_potential', 'N/A')}")
             except Exception as e:
                 safe_print(f"   [!] Virality calculation skipped: {e}")
         
@@ -2888,20 +2893,58 @@ def get_background_music_with_skip(music_mood: str, skip_seconds: float = 3.0,
 
 
 async def generate_voiceover(text: str, voice_config: Dict, output_path: str) -> float:
-    """Generate voiceover."""
+    """
+    Generate voiceover with retry logic and fallback voices.
+    
+    v17.9.7: Added retry logic and voice fallback to prevent workflow failures
+    """
     voice = voice_config.get('voice', 'en-US-AriaNeural')
     rate = voice_config.get('rate', '+0%')
     
-    safe_print(f"   [TTS] Voice: {voice} (rate: {rate})")
+    # v17.9.7: Fallback voices in case primary fails
+    fallback_voices = [
+        voice,  # Primary
+        'en-US-AriaNeural',
+        'en-US-JennyNeural', 
+        'en-US-GuyNeural',
+        'en-US-ChristopherNeural'
+    ]
+    # Remove duplicates while preserving order
+    seen = set()
+    fallback_voices = [v for v in fallback_voices if not (v in seen or seen.add(v))]
     
-    communicate = edge_tts.Communicate(text, voice=voice, rate=rate, pitch="+0Hz")
-    await communicate.save(output_path)
+    last_error = None
     
-    audio = AudioFileClip(output_path)
-    duration = audio.duration
-    audio.close()
+    for attempt, try_voice in enumerate(fallback_voices):
+        for retry in range(3):  # 3 retries per voice
+            try:
+                safe_print(f"   [TTS] Voice: {try_voice} (rate: {rate})" + (f" [attempt {retry+1}]" if retry > 0 else ""))
+                
+                communicate = edge_tts.Communicate(text, voice=try_voice, rate=rate, pitch="+0Hz")
+                await communicate.save(output_path)
+                
+                # Verify file was created and has content
+                if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
+                    audio = AudioFileClip(output_path)
+                    duration = audio.duration
+                    audio.close()
+                    
+                    if duration > 0.5:  # Must be at least 0.5 seconds
+                        if attempt > 0 or retry > 0:
+                            safe_print(f"   [TTS] Recovered with voice: {try_voice}")
+                        return duration
+                    else:
+                        raise Exception(f"Audio too short: {duration}s")
+                else:
+                    raise Exception("Audio file empty or not created")
+                    
+            except Exception as e:
+                last_error = e
+                safe_print(f"   [!] TTS attempt failed: {str(e)[:50]}")
+                await asyncio.sleep(1 + retry)  # Exponential backoff
     
-    return duration
+    # All attempts failed - raise the last error
+    raise Exception(f"TTS failed after {len(fallback_voices) * 3} attempts: {last_error}")
 
 
 async def render_video(content: Dict, broll_paths: List[str], output_path: str, 
@@ -3263,7 +3306,7 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     run_id = random.randint(10000, 99999)
     
     safe_print("=" * 70)
-    safe_print(f"   VIRALSHORTS FACTORY v17.9.5 - YOUTUBE FOCUS")
+    safe_print(f"   VIRALSHORTS FACTORY v17.9.7 - YOUTUBE FOCUS")
     safe_print(f"   Run: #{run_id}")
     safe_print(f"   Video Length: 15-25 seconds (optimal)")
     safe_print(f"   Variety: Persistent across runs")
@@ -3363,23 +3406,28 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
             'target_duration_seconds': random.randint(25, 35)
         }
     
-    # v17.9.6: AI Quality Gate - Pre-generation quality check
+    # v17.9.7: AI Quality Gate - Pre-generation quality check
     if AI_QUALITY_GATE_AVAILABLE:
         try:
             quality_gate = AIQualityGate()
-            gate_result = quality_gate.run_quality_checks({
-                'topic': concept.get('specific_topic', ''),
-                'hook': concept.get('hook', ''),
+            # v17.9.7: Fixed - method is check(content: Dict), returns (passed: bool, report: Dict)
+            gate_content = {
+                'hook': concept.get('hook', concept.get('specific_topic', '')),
+                'phrases': [],  # Not available yet in pre-gen
+                'cta': '',
                 'category': concept.get('category', 'educational'),
-                'target_duration': concept.get('target_duration_seconds', 50)
-            })
-            safe_print(f"   [QUALITY GATE] Pre-check: {gate_result.get('overall_score', 0)}/100 - {gate_result.get('verdict', 'N/A')}")
+                'topic': concept.get('specific_topic', '')
+            }
+            passed, gate_result = quality_gate.check(gate_content)
+            verdict = 'PASS' if passed else 'FAIL'
+            safe_print(f"   [QUALITY GATE] Pre-check: {gate_result.get('overall_score', 0)}/100 - {verdict}")
             
             # Store gate result for later analysis
             concept['quality_gate_result'] = gate_result
+            concept['quality_gate_passed'] = passed
             
             # If concept is poor quality, try to improve it
-            if gate_result.get('verdict') == 'FAIL' and gate_result.get('recommendations'):
+            if not passed and gate_result.get('recommendations'):
                 safe_print(f"   [QUALITY GATE] Improving concept: {gate_result['recommendations'][0][:50]}...")
                 concept['improvement_needed'] = gate_result.get('recommendations', [])[:2]
         except Exception as e:
@@ -3504,15 +3552,31 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
                     safe_print(f"   [QUALITY] WARNING: Could not reach {MINIMUM_ACCEPTABLE_SCORE}/10 after {regeneration_attempts} attempts. Best: {score}/10")
                     content['quality_warning'] = True
             
-            # v17.9.6: ContentOptimizer - Final unified optimization pass
+            # v17.9.7: ContentOptimizer - Final unified optimization pass
             if CONTENT_OPTIMIZER_AVAILABLE and score < 9:
                 try:
                     optimizer = ContentOptimizer()
-                    optimized = optimizer.optimize_content(concept, content)
-                    if optimized and optimized.get('optimized_score', 0) > score:
-                        content.update(optimized.get('optimized_content', {}))
-                        safe_print(f"   [OPTIMIZER] Content improved: {score}/10 -> {optimized.get('optimized_score', score)}/10")
-                        score = optimized.get('optimized_score', score)
+                    # v17.9.7: Fixed - method is optimize(content: Dict), not optimize_content(concept, content)
+                    opt_content = {
+                        'hook': content.get('phrases', [''])[0] if content.get('phrases') else '',
+                        'phrases': content.get('phrases', [])[1:] if len(content.get('phrases', [])) > 1 else content.get('phrases', []),
+                        'cta': content.get('cta', ''),
+                        'topic': concept.get('specific_topic', ''),
+                        'category': concept.get('category', 'educational'),
+                        'title': content.get('metadata', {}).get('title', '')
+                    }
+                    optimized = optimizer.optimize(opt_content)
+                    if optimized and optimized.get('predictions', {}).get('final_virality', 0) > score * 10:
+                        # Apply optimizations to content
+                        if optimized.get('optimized', {}).get('hook'):
+                            content['hook_improved'] = optimized['optimized']['hook']
+                        if optimized.get('optimized', {}).get('cta'):
+                            content['cta'] = optimized['optimized']['cta']
+                        new_score = optimized.get('predictions', {}).get('final_virality', score * 10) / 10
+                        safe_print(f"   [OPTIMIZER] Content improved: {score}/10 -> {new_score:.1f}/10")
+                        if optimized.get('improvements'):
+                            safe_print(f"   [OPTIMIZER] Improvements: {', '.join(optimized['improvements'][:2])}")
+                        score = max(score, new_score)
                 except Exception as e:
                     safe_print(f"   [!] Content optimizer skipped: {e}")
             
@@ -3606,10 +3670,12 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     if AI_DESCRIPTION_GENERATOR_AVAILABLE:
         try:
             desc_gen = AIDescriptionGenerator()
+            # v17.9.7: Fixed - correct method signature: (title, topic, category, hook=None, hashtags=None, music_credit=None)
             ai_description = desc_gen.generate_description(
+                title=metadata.get('title', topic),
                 topic=topic,
                 category=category,
-                video_summary=video_summary,
+                hook=content.get('phrases', [''])[0] if content else None,
                 hashtags=metadata.get('hashtags', [])
             )
             if ai_description and len(ai_description) > 50:
@@ -3622,10 +3688,11 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     if AI_HASHTAG_GENERATOR_AVAILABLE:
         try:
             hash_gen = AIHashtagGenerator()
+            # v17.9.7: Fixed - correct method signature: (topic, category, title=None, count=5)
             ai_hashtags = hash_gen.generate_hashtags(
                 topic=topic,
                 category=category,
-                video_summary=video_summary,
+                title=metadata.get('title', topic),
                 count=8
             )
             if ai_hashtags and len(ai_hashtags) >= 3:
@@ -4091,7 +4158,7 @@ async def main():
     should_upload = args.upload and not args.no_upload
     
     safe_print(f"\n{'='*70}")
-    safe_print("   VIRALSHORTS FACTORY v17.9.5 - YOUTUBE FOCUS")
+    safe_print("   VIRALSHORTS FACTORY v17.9.7 - YOUTUBE FOCUS")
     safe_print(f"   Generating {args.count} video(s)")
     safe_print("   AI decides: category, topic, length, voice, music")
     safe_print("   QUALITY GATES: Pre-gen, post-content, post-render")

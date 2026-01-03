@@ -218,37 +218,42 @@ class TokenBudgetManager:
         """
         task_cost = self.TASK_COSTS.get(task, 2000)
         
-        # v17.3: GEMINI FIRST - has 10x more quota (1M vs 100K)
-        # Groq is now BACKUP only to preserve its limited quota
+        # v17.9.7: GROQ FIRST - Gemini FREE tier has strict per-minute limits (20 req/min)
+        # Groq has more generous limits and faster response times
+        # Use Gemini as backup to preserve its limited quota across 6 daily runs
         
         # Check each provider
-        gemini_available = (
-            self.get_available_tokens("gemini") >= task_cost and
-            not self.is_in_cooldown("gemini")
-        )
         groq_available = (
             self.get_available_tokens("groq") >= task_cost and
             not self.is_in_cooldown("groq")
+        )
+        gemini_available = (
+            self.get_available_tokens("gemini") >= task_cost and
+            not self.is_in_cooldown("gemini")
         )
         openrouter_available = (
             self.get_available_tokens("openrouter") >= task_cost and
             not self.is_in_cooldown("openrouter")
         )
+        huggingface_available = not self.is_in_cooldown("huggingface")
         
-        # Decision logic - GEMINI FIRST (more quota)
-        if gemini_available:
-            # Gemini is PRIMARY - 1M tokens/day
-            return "gemini"
-        elif groq_available:
-            # Groq is BACKUP - only 100K tokens/day
+        # v17.9.7: Decision logic - GROQ FIRST (better free tier limits)
+        if groq_available:
+            # Groq is PRIMARY - fast and generous limits
             return "groq"
-        elif openrouter_available:
-            # OpenRouter as last resort
-            return "openrouter"
-        else:
-            # All providers exhausted - return Gemini anyway (might recover)
-            print("[TokenBudget] WARNING: All providers exhausted, trying Gemini")
+        elif gemini_available:
+            # Gemini is SECONDARY - preserve for when Groq fails
             return "gemini"
+        elif openrouter_available:
+            # OpenRouter as tertiary
+            return "openrouter"
+        elif huggingface_available:
+            # HuggingFace as last resort
+            return "huggingface"
+        else:
+            # All providers exhausted - try Groq anyway (might recover faster)
+            print("[TokenBudget] WARNING: All providers exhausted, trying Groq")
+            return "groq"
     
     def get_status(self) -> Dict:
         """Get current budget status."""
