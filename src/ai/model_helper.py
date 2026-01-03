@@ -56,7 +56,23 @@ def _save_cache(provider: str, data: Dict):
 def get_dynamic_gemini_model() -> str:
     """
     Get the best available Gemini model dynamically.
+    
+    v17.9.8: Prioritize by QUOTA SIZE, not recency!
+    - gemini-1.5-flash: 1,500/day (BEST for our use)
+    - gemini-2.0-flash: 500/day (stable, good quality)
+    - gemini-1.5-pro: ~50/day (high quality for complex tasks)
+    - gemini-2.0-flash-exp: 50-100/day (experimental - avoid as primary)
     """
+    # Priority order: HIGH QUOTA first!
+    MODEL_PRIORITY = [
+        "gemini-1.5-flash",        # 1,500/day - HIGHEST quota
+        "gemini-2.0-flash",        # 500/day - stable
+        "gemini-1.5-flash-latest", # Same as 1.5-flash
+        "gemini-1.5-pro",          # ~50/day but good quality
+        "gemini-2.0-flash-exp",    # 50-100/day - experimental
+        "gemini-pro",              # Fallback
+    ]
+    
     # Try quota_optimizer first
     try:
         from src.quota.quota_optimizer import get_best_gemini_model
@@ -64,12 +80,7 @@ def get_dynamic_gemini_model() -> str:
     except ImportError:
         pass
     
-    # Check cache
-    cached = _load_cache("gemini")
-    if cached and cached.get("models"):
-        return cached["models"][0]
-    
-    # Query API
+    # Query API to see which models are available
     try:
         import requests
         api_key = os.environ.get("GEMINI_API_KEY")
@@ -80,18 +91,28 @@ def get_dynamic_gemini_model() -> str:
             )
             if response.status_code == 200:
                 models_data = response.json()
-                generative_models = [
+                available_models = [
                     m["name"].replace("models/", "") 
                     for m in models_data.get("models", [])
                     if "generateContent" in m.get("supportedGenerationMethods", [])
                 ]
-                if generative_models:
-                    _save_cache("gemini", {"models": generative_models})
-                    return generative_models[0]
+                
+                # Return first available model from our priority list
+                for preferred in MODEL_PRIORITY:
+                    for available in available_models:
+                        if preferred in available:
+                            _save_cache("gemini", {"models": [available] + available_models})
+                            return available
+                
+                # If none from priority list, return first available
+                if available_models:
+                    _save_cache("gemini", {"models": available_models})
+                    return available_models[0]
     except:
         pass
     
-    return "gemini-pro"
+    # Default to high-quota model
+    return "gemini-1.5-flash"
 
 
 # =============================================================================

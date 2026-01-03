@@ -53,7 +53,12 @@ jobs:
           
           # v17.9.2: DYNAMIC model discovery - try multiple models
           # Model names change over time, so we try several in priority order
-          MODELS="gemini-2.0-flash-exp gemini-2.0-flash gemini-1.5-flash-latest gemini-1.5-pro gemini-pro"
+          # v17.9.8: Reordered by QUOTA SIZE (highest first!)
+          # gemini-1.5-flash: 1,500/day (BEST for quota)
+          # gemini-2.0-flash: 500/day (stable)
+          # gemini-1.5-pro: varies (good quality)
+          # gemini-2.0-flash-exp: 50-100/day (experimental - lowest!)
+          MODELS="gemini-1.5-flash gemini-2.0-flash gemini-1.5-pro gemini-2.0-flash-exp gemini-pro"
           
           for MODEL in $MODELS; do
             echo "Trying model: $MODEL"
