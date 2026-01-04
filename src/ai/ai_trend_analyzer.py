@@ -124,9 +124,20 @@ JSON ONLY."""
         if self.groq_key:
             try:
                 from groq import Groq
+                # v17.9.10: Dynamic model selection
+                try:
+                    from model_helper import get_dynamic_groq_model
+                    model = get_dynamic_groq_model()
+                except ImportError:
+                    try:
+                        from src.ai.model_helper import get_dynamic_groq_model
+                        model = get_dynamic_groq_model()
+                    except:
+                        model = "llama-3.3-70b-versatile"  # Emergency fallback
+                
                 client = Groq(api_key=self.groq_key)
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model=model,
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=250,
                     temperature=0.7

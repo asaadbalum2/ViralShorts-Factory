@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """
-v17.9.3: Universal Dynamic Model Helper
-========================================
+v17.9.10: Universal Dynamic Model Helper
+=========================================
 
-NO HARDCODING - discovers models dynamically for ALL providers:
-- Gemini (Google)
-- Groq
-- OpenRouter
-- HuggingFace
+ZERO HARDCODING - discovers models dynamically for ALL providers.
 
-Each provider has different discovery methods.
+Fallback Strategy (in order):
+1. Dynamic API discovery (real-time)
+2. Fresh cache (< 24 hours old)
+3. Emergency cache (ANY age - from last successful discovery)
+4. OpenRouter free models (no key needed - universal backup)
+5. EXPLICIT ERROR (never silently use hardcoded values)
+
+This ensures:
+- We always try to get real models
+- We never silently fail with outdated hardcoded lists
+- OpenRouter provides a guaranteed backup (no key needed)
 """
 
 import os
@@ -20,33 +26,84 @@ from typing import List, Optional, Dict
 
 # Cache directory
 CACHE_DIR = Path("cache/models")
+EMERGENCY_CACHE_DIR = Path("data/persistent/model_cache")  # Persists across runs
 
 
-def _load_cache(provider: str) -> Optional[Dict]:
-    """Load cached models for a provider."""
-    cache_file = CACHE_DIR / f"{provider}_models.json"
-    if cache_file.exists():
-        try:
-            with open(cache_file, 'r') as f:
-                data = json.load(f)
-                # Check if cache is still valid (24 hours)
-                cached_time = datetime.fromisoformat(data.get("cached_at", "2000-01-01"))
-                if datetime.now() - cached_time < timedelta(hours=24):
-                    return data
-        except:
-            pass
+def _safe_print(msg: str):
+    """Print with fallback for encoding issues."""
+    try:
+        print(msg)
+    except UnicodeEncodeError:
+        print(msg.encode('ascii', 'replace').decode())
+
+
+def _load_cache(provider: str, allow_expired: bool = False) -> Optional[Dict]:
+    """
+    Load cached models for a provider.
+    
+    Args:
+        provider: The AI provider name
+        allow_expired: If True, return cache even if >24h old (emergency fallback)
+    """
+    # Try main cache first
+    for cache_dir in [CACHE_DIR, EMERGENCY_CACHE_DIR]:
+        cache_file = cache_dir / f"{provider}_models.json"
+        if cache_file.exists():
+            try:
+                with open(cache_file, 'r') as f:
+                    data = json.load(f)
+                    cached_time = datetime.fromisoformat(data.get("cached_at", "2000-01-01"))
+                    age_hours = (datetime.now() - cached_time).total_seconds() / 3600
+                    
+                    if age_hours < 24:
+                        return data
+                    elif allow_expired:
+                        _safe_print(f"[MODEL] Using expired cache for {provider} ({age_hours:.1f}h old)")
+                        return data
+            except:
+                pass
     return None
 
 
 def _save_cache(provider: str, data: Dict):
-    """Save models to cache."""
+    """Save models to cache (both regular and emergency)."""
+    data["cached_at"] = datetime.now().isoformat()
+    
+    for cache_dir in [CACHE_DIR, EMERGENCY_CACHE_DIR]:
+        try:
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            with open(cache_dir / f"{provider}_models.json", 'w') as f:
+                json.dump(data, f, indent=2)
+        except:
+            pass
+
+
+def _get_openrouter_backup() -> List[str]:
+    """
+    Get free OpenRouter models as universal backup.
+    OpenRouter doesn't require an API key for model listing.
+    """
     try:
-        CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        data["cached_at"] = datetime.now().isoformat()
-        with open(CACHE_DIR / f"{provider}_models.json", 'w') as f:
-            json.dump(data, f, indent=2)
-    except:
-        pass
+        import requests
+        response = requests.get("https://openrouter.ai/api/v1/models", timeout=10)
+        if response.status_code == 200:
+            models_data = response.json().get("data", [])
+            free_models = [
+                m["id"] for m in models_data 
+                if m.get("pricing", {}).get("prompt") == "0" or ":free" in m.get("id", "")
+            ]
+            if free_models:
+                _save_cache("openrouter_backup", {"models": free_models})
+                return free_models
+    except Exception as e:
+        _safe_print(f"[MODEL] OpenRouter backup fetch failed: {e}")
+    
+    # Try emergency cache for OpenRouter
+    cached = _load_cache("openrouter_backup", allow_expired=True)
+    if cached and cached.get("models"):
+        return cached["models"]
+    
+    return []
 
 
 # =============================================================================
@@ -57,23 +114,20 @@ def get_dynamic_gemini_model() -> str:
     """
     Get the best available Gemini model dynamically.
     
-    v17.9.8: Prioritize by QUOTA SIZE, not recency!
-    - gemini-1.5-flash: 1,500/day (BEST for our use)
-    - gemini-2.0-flash: 500/day (stable, good quality)
-    - gemini-1.5-pro: ~50/day (high quality for complex tasks)
-    - gemini-2.0-flash-exp: 50-100/day (experimental - avoid as primary)
+    Priority (by daily quota):
+    - gemini-1.5-flash: 1,500/day
+    - gemini-2.0-flash: 500/day
+    - gemini-1.5-pro: ~50/day
     """
-    # Priority order: HIGH QUOTA first!
     MODEL_PRIORITY = [
-        "gemini-1.5-flash",        # 1,500/day - HIGHEST quota
-        "gemini-2.0-flash",        # 500/day - stable
-        "gemini-1.5-flash-latest", # Same as 1.5-flash
-        "gemini-1.5-pro",          # ~50/day but good quality
-        "gemini-2.0-flash-exp",    # 50-100/day - experimental
-        "gemini-pro",              # Fallback
+        "gemini-1.5-flash",
+        "gemini-2.0-flash",
+        "gemini-1.5-flash-latest",
+        "gemini-1.5-pro",
+        "gemini-2.0-flash-exp",
     ]
     
-    # Try quota_optimizer first (both import styles)
+    # 1. Try quota_optimizer first
     try:
         from quota_optimizer import get_best_gemini_model
         return get_best_gemini_model()
@@ -84,39 +138,57 @@ def get_dynamic_gemini_model() -> str:
         except ImportError:
             pass
     
-    # Query API to see which models are available
+    # 2. Try fresh cache
+    cached = _load_cache("gemini")
+    if cached and cached.get("models"):
+        return cached["models"][0]
+    
+    # 3. Try API discovery
     try:
         import requests
         api_key = os.environ.get("GEMINI_API_KEY")
         if api_key:
             response = requests.get(
                 f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
-                timeout=5
+                timeout=10
             )
             if response.status_code == 200:
                 models_data = response.json()
-                available_models = [
+                available = [
                     m["name"].replace("models/", "") 
                     for m in models_data.get("models", [])
                     if "generateContent" in m.get("supportedGenerationMethods", [])
                 ]
                 
-                # Return first available model from our priority list
+                # Match priority order
                 for preferred in MODEL_PRIORITY:
-                    for available in available_models:
-                        if preferred in available:
-                            _save_cache("gemini", {"models": [available] + available_models})
-                            return available
+                    for avail in available:
+                        if preferred in avail:
+                            _save_cache("gemini", {"models": [avail] + available})
+                            return avail
                 
-                # If none from priority list, return first available
-                if available_models:
-                    _save_cache("gemini", {"models": available_models})
-                    return available_models[0]
-    except:
-        pass
+                if available:
+                    _save_cache("gemini", {"models": available})
+                    return available[0]
+    except Exception as e:
+        _safe_print(f"[MODEL] Gemini discovery failed: {e}")
     
-    # Default to high-quota model
-    return "gemini-1.5-flash"
+    # 4. Try emergency cache (any age)
+    cached = _load_cache("gemini", allow_expired=True)
+    if cached and cached.get("models"):
+        return cached["models"][0]
+    
+    # 5. Use OpenRouter as backup provider
+    _safe_print("[MODEL] WARNING: No Gemini models available, using OpenRouter backup")
+    backup = _get_openrouter_backup()
+    if backup:
+        # Find a good LLM from OpenRouter
+        for model in backup:
+            if "llama" in model.lower() or "mistral" in model.lower():
+                return f"openrouter:{model}"  # Prefix indicates backup provider
+        return f"openrouter:{backup[0]}"
+    
+    raise RuntimeError("CRITICAL: No AI models available - check API keys and network")
 
 
 # =============================================================================
@@ -124,10 +196,10 @@ def get_dynamic_gemini_model() -> str:
 # =============================================================================
 
 def get_dynamic_groq_model() -> str:
-    """
-    Get the best available Groq model dynamically.
-    """
-    # Try quota_optimizer first (both import styles)
+    """Get the best available Groq model dynamically."""
+    MODEL_PRIORITY = ["llama-3.3-70b", "llama-3.1-8b", "mixtral-8x7b", "gemma2"]
+    
+    # 1. Try quota_optimizer first
     try:
         from quota_optimizer import get_best_groq_model
         return get_best_groq_model()
@@ -138,40 +210,48 @@ def get_dynamic_groq_model() -> str:
         except ImportError:
             pass
     
-    # Check cache
+    # 2. Try fresh cache
     cached = _load_cache("groq")
     if cached and cached.get("models"):
         return cached["models"][0]
     
-    # Query Groq API for available models
+    # 3. Try API discovery
     try:
-        import requests
         api_key = os.environ.get("GROQ_API_KEY")
         if api_key:
-            response = requests.get(
-                "https://api.groq.com/openai/v1/models",
-                headers={"Authorization": f"Bearer {api_key}"},
-                timeout=5
-            )
-            if response.status_code == 200:
-                models_data = response.json()
-                # Prefer larger models
-                model_priority = ["llama-3.3-70b", "llama-3.1-70b", "llama-3-70b", "mixtral-8x7b", "llama3-8b"]
-                available = [m["id"] for m in models_data.get("data", [])]
-                
-                for preferred in model_priority:
+            from groq import Groq
+            client = Groq(api_key=api_key)
+            models_response = client.models.list()
+            available = [m.id for m in models_response.data if hasattr(m, 'id')]
+            
+            if available:
+                # Match priority order
+                for preferred in MODEL_PRIORITY:
                     for avail in available:
                         if preferred in avail:
                             _save_cache("groq", {"models": [avail] + available})
                             return avail
                 
-                if available:
-                    _save_cache("groq", {"models": available})
-                    return available[0]
-    except:
-        pass
+                _save_cache("groq", {"models": available})
+                return available[0]
+    except Exception as e:
+        _safe_print(f"[MODEL] Groq discovery failed: {e}")
     
-    return "llama-3.3-70b-versatile"
+    # 4. Try emergency cache
+    cached = _load_cache("groq", allow_expired=True)
+    if cached and cached.get("models"):
+        return cached["models"][0]
+    
+    # 5. Use OpenRouter backup
+    _safe_print("[MODEL] WARNING: No Groq models available, using OpenRouter backup")
+    backup = _get_openrouter_backup()
+    if backup:
+        for model in backup:
+            if "llama" in model.lower():
+                return f"openrouter:{model}"
+        return f"openrouter:{backup[0]}"
+    
+    raise RuntimeError("CRITICAL: No AI models available - check API keys and network")
 
 
 # =============================================================================
@@ -179,35 +259,34 @@ def get_dynamic_groq_model() -> str:
 # =============================================================================
 
 def get_dynamic_openrouter_model() -> str:
-    """
-    Get the best FREE OpenRouter model dynamically.
-    """
-    # Check cache
+    """Get a free OpenRouter model (no key needed for listing)."""
+    # 1. Try fresh cache
     cached = _load_cache("openrouter")
     if cached and cached.get("models"):
         return cached["models"][0]
     
-    # Query OpenRouter for free models
+    # 2. Try API discovery (no key needed!)
     try:
         import requests
-        response = requests.get(
-            "https://openrouter.ai/api/v1/models",
-            timeout=5
-        )
+        response = requests.get("https://openrouter.ai/api/v1/models", timeout=10)
         if response.status_code == 200:
-            models_data = response.json()
-            # Find free models (pricing.prompt == "0")
+            models_data = response.json().get("data", [])
             free_models = [
-                m["id"] for m in models_data.get("data", [])
-                if m.get("pricing", {}).get("prompt") == "0"
+                m["id"] for m in models_data 
+                if m.get("pricing", {}).get("prompt") == "0" or ":free" in m.get("id", "")
             ]
             if free_models:
                 _save_cache("openrouter", {"models": free_models})
                 return free_models[0]
-    except:
-        pass
+    except Exception as e:
+        _safe_print(f"[MODEL] OpenRouter discovery failed: {e}")
     
-    return "meta-llama/llama-3.2-3b-instruct:free"
+    # 3. Emergency cache
+    cached = _load_cache("openrouter", allow_expired=True)
+    if cached and cached.get("models"):
+        return cached["models"][0]
+    
+    raise RuntimeError("CRITICAL: Cannot discover any OpenRouter models")
 
 
 # =============================================================================
@@ -215,24 +294,22 @@ def get_dynamic_openrouter_model() -> str:
 # =============================================================================
 
 def get_dynamic_huggingface_model() -> str:
-    """
-    Get a working HuggingFace text-generation model.
-    """
-    # Check cache
+    """Get a working HuggingFace text-generation model."""
+    # HuggingFace doesn't have easy model listing API
+    # Use known good models that work with Inference API
+    
+    # 1. Try cache
     cached = _load_cache("huggingface")
     if cached and cached.get("models"):
         return cached["models"][0]
     
-    # HuggingFace doesn't have easy model listing, use known good models
-    # These are non-gated, instruction-tuned models that work with Inference API
+    # 2. Test known models
     models = [
         "mistralai/Mistral-7B-Instruct-v0.3",
         "HuggingFaceH4/zephyr-7b-beta",
         "microsoft/Phi-3-mini-4k-instruct",
-        "google/flan-t5-xl"
     ]
     
-    # Test which one works
     try:
         import requests
         api_key = os.environ.get("HUGGINGFACE_API_KEY") or os.environ.get("HF_TOKEN")
@@ -247,51 +324,22 @@ def get_dynamic_huggingface_model() -> str:
                 if response.status_code == 200:
                     _save_cache("huggingface", {"models": [model] + models})
                     return model
-    except:
-        pass
+    except Exception as e:
+        _safe_print(f"[MODEL] HuggingFace test failed: {e}")
     
-    return models[0]
-
-
-# =============================================================================
-# PEXELS (for rate limiting info)
-# =============================================================================
-
-def get_pexels_rate_limit() -> Dict:
-    """
-    Get Pexels rate limit info.
-    Pexels: 200 requests/hour, 20,000 requests/month
-    """
-    return {
-        "requests_per_hour": 200,
-        "requests_per_month": 20000,
-        "delay_between_calls": 18.0  # 200/hour = 1 every 18 seconds to be safe
-    }
-
-
-# =============================================================================
-# UNIVERSAL RATE LIMITS
-# =============================================================================
-
-def get_rate_limits() -> Dict[str, float]:
-    """
-    Get rate limit delays for all providers.
-    Returns seconds to wait between API calls.
+    # 3. Use OpenRouter backup
+    backup = _get_openrouter_backup()
+    if backup:
+        for model in backup:
+            if "mistral" in model.lower():
+                return f"openrouter:{model}"
+        return f"openrouter:{backup[0]}"
     
-    v17.9.7: Increased Gemini delay to 5s (safer for 20 req/min limit)
-    With 6 runs/day and ~30 calls/run, we need to be conservative.
-    """
-    return {
-        "gemini": 5.0,       # 20 req/min = 3s minimum, 5s for safety across runs
-        "groq": 2.0,         # 30 req/min = 2s, Groq is now primary so optimize
-        "openrouter": 1.0,   # Higher limits
-        "huggingface": 2.0,  # ~30 req/min on free tier
-        "pexels": 18.0       # 200 req/hour = 18s between calls
-    }
+    raise RuntimeError("CRITICAL: No HuggingFace models available")
 
 
 # =============================================================================
-# CONVENIENCE FUNCTIONS
+# UNIVERSAL FUNCTIONS
 # =============================================================================
 
 def get_best_model(provider: str) -> str:
@@ -310,16 +358,13 @@ def get_best_model(provider: str) -> str:
 
 def get_all_models(provider: str) -> List[str]:
     """
-    v17.9.10: Get ALL available models for a provider (for fallback chains).
-    
-    Uses dynamic discovery with caching. Other files should call THIS
-    instead of hardcoding their own model lists!
+    Get ALL available models for a provider (for fallback chains).
     
     Returns: List of model IDs, ordered by priority (best first)
     """
     provider = provider.lower()
     
-    # Check cache first
+    # Try fresh cache
     cached = _load_cache(provider)
     if cached and cached.get("models"):
         return cached["models"]
@@ -333,30 +378,34 @@ def get_all_models(provider: str) -> List[str]:
         return _discover_openrouter_models()
     elif provider == "huggingface":
         return _discover_huggingface_models()
-    else:
-        return []
+    
+    # Emergency cache
+    cached = _load_cache(provider, allow_expired=True)
+    if cached and cached.get("models"):
+        return cached["models"]
+    
+    return []
 
 
 def _discover_groq_models() -> List[str]:
     """Discover all available Groq models."""
     try:
         api_key = os.environ.get("GROQ_API_KEY")
-        if not api_key:
-            return ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"]
-        
-        from groq import Groq
-        client = Groq(api_key=api_key)
-        models_response = client.models.list()
-        models = [m.id for m in models_response.data if hasattr(m, 'id')]
-        
-        if models:
-            _save_cache("groq", {"models": models})
-            print(f"[CACHE] Found {len(models)} Groq models")
-            return models
+        if api_key:
+            from groq import Groq
+            client = Groq(api_key=api_key)
+            models_response = client.models.list()
+            models = [m.id for m in models_response.data if hasattr(m, 'id')]
+            
+            if models:
+                _save_cache("groq", {"models": models})
+                return models
     except Exception as e:
-        print(f"[!] Groq discovery failed: {e}")
+        _safe_print(f"[MODEL] Groq discovery failed: {e}")
     
-    return ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"]
+    # Emergency cache
+    cached = _load_cache("groq", allow_expired=True)
+    return cached.get("models", []) if cached else []
 
 
 def _discover_gemini_models() -> List[str]:
@@ -364,36 +413,35 @@ def _discover_gemini_models() -> List[str]:
     try:
         import requests
         api_key = os.environ.get("GEMINI_API_KEY")
-        if not api_key:
-            return ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
-        
-        response = requests.get(
-            f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
-            timeout=10
-        )
-        if response.status_code == 200:
-            models_data = response.json().get("models", [])
-            models = [m["name"].replace("models/", "") for m in models_data 
-                      if "generateContent" in m.get("supportedGenerationMethods", [])]
-            
-            if models:
-                # Sort by quota priority
-                priority_order = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
-                sorted_models = []
-                for p in priority_order:
-                    matching = [m for m in models if p in m]
-                    sorted_models.extend(matching)
-                for m in models:
-                    if m not in sorted_models:
-                        sorted_models.append(m)
+        if api_key:
+            response = requests.get(
+                f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
+                timeout=10
+            )
+            if response.status_code == 200:
+                models_data = response.json().get("models", [])
+                models = [m["name"].replace("models/", "") for m in models_data 
+                          if "generateContent" in m.get("supportedGenerationMethods", [])]
                 
-                _save_cache("gemini", {"models": sorted_models})
-                print(f"[CACHE] Found {len(sorted_models)} Gemini models")
-                return sorted_models
+                if models:
+                    # Sort by quota priority
+                    priority = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+                    sorted_models = []
+                    for p in priority:
+                        matching = [m for m in models if p in m]
+                        sorted_models.extend(matching)
+                    for m in models:
+                        if m not in sorted_models:
+                            sorted_models.append(m)
+                    
+                    _save_cache("gemini", {"models": sorted_models})
+                    return sorted_models
     except Exception as e:
-        print(f"[!] Gemini discovery failed: {e}")
+        _safe_print(f"[MODEL] Gemini discovery failed: {e}")
     
-    return ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+    # Emergency cache
+    cached = _load_cache("gemini", allow_expired=True)
+    return cached.get("models", []) if cached else []
 
 
 def _discover_openrouter_models() -> List[str]:
@@ -408,19 +456,45 @@ def _discover_openrouter_models() -> List[str]:
             
             if free_models:
                 _save_cache("openrouter", {"models": free_models})
-                print(f"[CACHE] Found {len(free_models)} free OpenRouter models")
                 return free_models
     except Exception as e:
-        print(f"[!] OpenRouter discovery failed: {e}")
+        _safe_print(f"[MODEL] OpenRouter discovery failed: {e}")
     
-    return ["meta-llama/llama-3.2-3b-instruct:free", "mistralai/mistral-7b-instruct:free"]
+    cached = _load_cache("openrouter", allow_expired=True)
+    return cached.get("models", []) if cached else []
 
 
 def _discover_huggingface_models() -> List[str]:
-    """Get known good HuggingFace models (HF doesn't have easy listing)."""
+    """Get known good HuggingFace models."""
     return [
         "mistralai/Mistral-7B-Instruct-v0.3",
         "HuggingFaceH4/zephyr-7b-beta",
         "microsoft/Phi-3-mini-4k-instruct",
-        "google/flan-t5-xl"
     ]
+
+
+# =============================================================================
+# RATE LIMITS
+# =============================================================================
+
+def get_rate_limits() -> Dict[str, float]:
+    """
+    Get rate limit delays for all providers.
+    Returns seconds to wait between API calls.
+    """
+    return {
+        "gemini": 5.0,       # 20 req/min = 3s min, 5s for safety
+        "groq": 2.0,         # 30 req/min = 2s
+        "openrouter": 1.0,   # Higher limits
+        "huggingface": 2.0,  # ~30 req/min on free tier
+        "pexels": 18.0       # 200 req/hour
+    }
+
+
+def get_pexels_rate_limit() -> Dict:
+    """Pexels rate limit info: 200 req/hour, 20,000 req/month."""
+    return {
+        "requests_per_hour": 200,
+        "requests_per_month": 20000,
+        "delay_between_calls": 18.0
+    }

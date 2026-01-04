@@ -158,7 +158,11 @@ Return ONLY the description text, no quotes, no formatting."""
                     from quota_optimizer import get_best_groq_model
                     model = get_best_groq_model(self.groq_key)
                 except ImportError:
-                    model = "llama-3.3-70b-versatile"
+                    try:
+                        from src.ai.model_helper import get_dynamic_groq_model
+                        model = get_dynamic_groq_model()
+                    except:
+                        model = "llama-3.3-70b-versatile"  # Emergency only
                 
                 client = Groq(api_key=self.groq_key)
                 response = client.chat.completions.create(

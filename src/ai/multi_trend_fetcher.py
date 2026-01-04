@@ -247,7 +247,11 @@ Only return valid JSON, no markdown."""
                 from quota_optimizer import get_best_groq_model
                 model = get_best_groq_model(self.groq_key)
             except ImportError:
-                model = "llama-3.3-70b-versatile"  # Fallback only
+                try:
+                    from src.ai.model_helper import get_dynamic_groq_model
+                    model = get_dynamic_groq_model()
+                except:
+                    model = "llama-3.3-70b-versatile"  # Emergency only
             
             response = client.chat.completions.create(
                 model=model,

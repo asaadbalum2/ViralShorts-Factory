@@ -26,10 +26,26 @@ class AIEvaluator:
     
     def __init__(self):
         self.groq_client = None
+        self._model = None  # v17.9.10: Cache dynamic model
         if HAS_GROQ:
             api_key = os.environ.get("GROQ_API_KEY")
             if api_key:
                 self.groq_client = Groq(api_key=api_key)
+    
+    def _get_model(self) -> str:
+        """v17.9.10: Get model dynamically with caching."""
+        if self._model:
+            return self._model
+        try:
+            from model_helper import get_dynamic_groq_model
+            self._model = get_dynamic_groq_model()
+        except ImportError:
+            try:
+                from src.ai.model_helper import get_dynamic_groq_model
+                self._model = get_dynamic_groq_model()
+            except:
+                self._model = "llama-3.3-70b-versatile"  # Emergency fallback
+        return self._model
     
     def evaluate_question(self, option_a: str, option_b: str) -> Dict:
         """
@@ -66,7 +82,7 @@ Return ONLY valid JSON:
 
         try:
             response = self.groq_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=self._get_model(),
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=500,
                 temperature=0.3
@@ -123,7 +139,7 @@ Return ONLY valid JSON:
 
         try:
             response = self.groq_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=self._get_model(),
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=500,
                 temperature=0.3
@@ -167,7 +183,7 @@ Return ONLY valid JSON:
 
         try:
             response = self.groq_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model=self._get_model(),
                 messages=[{"role": "user", "content": prompt}],
                 max_tokens=300,
                 temperature=0.7
@@ -303,7 +319,7 @@ Return ONLY valid JSON:
 }}'''
                 
                 response = self.evaluator.groq_client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model=self._get_model(),
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=150,
                     temperature=0.1
