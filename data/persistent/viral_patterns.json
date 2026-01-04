@@ -1,37 +1,37 @@
 {
   "title_patterns": [
     "{number} Secrets {topic} Doesn't Want You to Know",
-    "The Shocking Truth About {topic}",
-    "What {topic} Really Means for Your {aspect}",
-    "You Won't Believe What Happens When {action}",
-    "{topic} Hacks: {number} Ways to {benefit}",
-    "The {adjective} Guide to {topic}",
-    "{number} {topic} Myths Busted",
-    "Why {topic} Is {adjective} Than You Think",
-    "The {number} Biggest {topic} Mistakes You're Making",
-    "Uncovering the Hidden {topic} of {industry}"
+    "You Won't Believe What Happens When You {action}",
+    "{topic} vs {opponent}: The Ultimate Showdown",
+    "What {expert} Doesn't Want You to Know About {topic}",
+    "{number} Life-Changing {topic} Hacks You Need to Try",
+    "The {topic} {problem} No One Talks About",
+    "The #1 {topic} Mistake You're Making (And How to Fix It)",
+    "{topic}: The Good, the Bad, and the Ugly Truth",
+    "Why {topic} is the Key to Unlocking {desirable_outcome}",
+    "The Surprising Truth About {topic} That Will Change Everything"
   ],
   "hook_patterns": [
-    "What if I told you {secret}?",
-    "You'll never guess what happened when {event}",
-    "The one thing {expert} won't tell you about {topic}",
-    "I tried {challenge} for {time} and here's what happened",
-    "The #1 {topic} mistake that's costing you {resource}",
-    "Warning: {topic} may be {adjective} than you think",
-    "The surprising reason {phenomenon} is happening",
-    "I spent {time} studying {topic} and here's what I found",
-    "The {adjective} truth about {common belief}",
-    "What your {authority figure} isn't telling you about {topic}"
+    "What if I told you {shocking_statement}?",
+    "You're doing {common_action} all wrong!",
+    "The #1 thing {expert} doesn't want you to know is...",
+    "I tried {unconventional_method} and you won't believe what happened",
+    "Are you making this {common_mistake}?",
+    "The truth about {controversial_topic} will shock you",
+    "What {influencer} doesn't want you to know about {topic}",
+    "I spent {amount_of_time} studying {topic} and here's what I found",
+    "The one thing {successful_person} does that you don't",
+    "You're about to learn the {secret} that will change everything"
   ],
   "engagement_baits": [
-    "Comment below with your favorite {topic}!",
-    "Share your worst {experience} in the comments",
-    "Who else is {emotion} about {topic}?",
-    "Tag a friend who needs to see this {topic}!",
-    "What's the most {adjective} {topic} you've ever seen?",
-    "Do you agree or disagree with this {statement}?",
-    "Share your own {topic} story in the comments",
-    "Like if you're {emotion} about {topic}!"
+    "What's your favorite {topic} of all time? Let me know in the comments!",
+    "Can you guess what happens next? Share your predictions!",
+    "Who else is struggling with {common_problem}?",
+    "What's the most {adjective} thing that's happened to you recently?",
+    "Share this video with someone who needs to see it!",
+    "Tag a friend who loves {topic}!",
+    "What's your take on {controversial_topic}?",
+    "Save this video for later and let me know what you think!"
   ],
   "psychological_triggers": [
     "curiosity",
@@ -40,48 +40,48 @@
     "socialproof",
     "authority",
     "urgency",
-    "novelty",
-    "empathy"
+    "emotionalconnection",
+    "novelty"
   ],
   "scroll_stop_openers": [
-    "I just discovered a {secret} that will change everything",
-    "You won't believe the {surprising fact} I just found out",
-    "The {experts} are all wrong about {topic}",
-    "I tried {unconventional method} and it actually worked",
-    "The {hidden truth} about {industry} will shock you",
-    "What if I told you {counterintuitive fact}?",
-    "I spent {extreme amount of time} studying {topic} and here's what I found",
-    "The {common myth} about {topic} has been debunked"
+    "I just discovered a {secret} that will change everything!",
+    "You won't believe what happened when I tried {unconventional_method}!",
+    "The #1 thing {expert} doesn't want you to know is about to be revealed!",
+    "What if I told you that {common_belief} is actually {opposite}?",
+    "I spent {amount_of_time} studying {topic} and here's what I found!",
+    "The truth about {controversial_topic} will shock you!",
+    "I just learned the {secret} to {desirable_outcome} and I'm sharing it with you!",
+    "You're about to learn the {skill} that will give you an unfair advantage!"
   ],
   "proven_categories": [
     "psychology",
     "money",
     "relationships",
-    "health",
+    "selfimprovement",
     "technology",
-    "travel",
-    "food",
+    "health",
+    "fitness",
     "productivity"
   ],
   "retention_tricks": [
-    "start with a personal story",
-    "use surprising statistics",
-    "create a sense of anticipation",
-    "use humor to break the ice",
-    "ask rhetorical questions",
-    "use storytelling techniques"
+    "Use a mix of fast-paced and slow-paced segments",
+    "Ask viewers to participate in a challenge or quiz",
+    "Use humor and wit to keep viewers engaged",
+    "Create a sense of anticipation and suspense",
+    "Use storytelling techniques to make the content more relatable",
+    "Provide valuable and actionable information"
   ],
   "cta_formulas": [
-    "Get instant access to {resource} now at {link}",
-    "Download your free {guide} here: {link}",
-    "Join our {community} to stay updated on {topic}",
-    "Take the {quiz} to discover your {result}",
-    "Get {exclusive offer} by signing up at {link}",
-    "Learn more about {topic} in our upcoming {event}"
+    "Don't forget to {action} and {benefit}!",
+    "Get instant access to {resource} by {action}!",
+    "Take the first step towards {desirable_outcome} by {action}!",
+    "Unlock {exclusive_content} by {action} now!",
+    "Join the {community} and {benefit} by {action}!",
+    "Start your {journey} today by {action}!"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-01-03T22:22:28.685374",
+  "last_ai_update": "2026-01-04T06:22:17.870759",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-01-03T22:22:28.685384"
+  "last_saved": "2026-01-04T06:22:17.870766"
 }
