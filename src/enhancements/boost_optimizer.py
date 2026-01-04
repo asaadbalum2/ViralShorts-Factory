@@ -67,15 +67,36 @@ class HashtagOptimizer:
     
     @staticmethod
     def generate_hashtags(include_day_tag: bool = True) -> List[str]:
-        """Generate optimized hashtag set."""
-        tags = list(HashtagOptimizer.CORE_HASHTAGS)
+        """
+        Generate optimized hashtag set.
         
-        # Add rotating hashtags
-        rotating = random.choice(HashtagOptimizer.ROTATING_HASHTAGS)
-        tags.extend(rotating[:2])
+        v17.9.11: Uses LEARNED hashtags first (from analytics performance),
+        then falls back to default hashtags if no learned data.
+        """
+        tags = ["#shorts"]  # Always include
+        
+        # v17.9.11: TRY LEARNED HASHTAGS FIRST
+        try:
+            from src.analytics.self_learning_engine import get_learning_engine
+            engine = get_learning_engine()
+            learned_tags = engine.get_best_hashtags()
+            if learned_tags and len(learned_tags) >= 3:
+                # Use learned hashtags (they performed well!)
+                tags.extend([t for t in learned_tags if t not in tags][:4])
+        except:
+            pass
+        
+        # Fill in with defaults if not enough learned tags
+        if len(tags) < 4:
+            tags.extend([t for t in HashtagOptimizer.CORE_HASHTAGS if t not in tags])
+        
+        # Add rotating hashtags for variety
+        if len(tags) < 6:
+            rotating = random.choice(HashtagOptimizer.ROTATING_HASHTAGS)
+            tags.extend([t for t in rotating[:2] if t not in tags])
         
         # Add day-specific hashtag
-        if include_day_tag:
+        if include_day_tag and len(tags) < 8:
             day = datetime.now().weekday()
             day_tags = HashtagOptimizer.DAY_HASHTAGS.get(day, [])
             if day_tags:

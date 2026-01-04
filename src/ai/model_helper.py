@@ -115,16 +115,26 @@ def get_dynamic_gemini_model() -> str:
     Get the best available Gemini model dynamically.
     
     Priority (by daily quota):
-    - gemini-1.5-flash: 1,500/day
+    - gemini-1.5-flash: 1,500/day (BEST!)
     - gemini-2.0-flash: 500/day
     - gemini-1.5-pro: ~50/day
+    
+    v17.9.11: ONLY use high-quota models, skip experimental/low-quota ones
     """
+    # HIGH-QUOTA MODELS ONLY (sorted by daily limit)
     MODEL_PRIORITY = [
-        "gemini-1.5-flash",
-        "gemini-2.0-flash",
-        "gemini-1.5-flash-latest",
-        "gemini-1.5-pro",
-        "gemini-2.0-flash-exp",
+        "gemini-1.5-flash",         # 1,500/day - HIGHEST QUOTA!
+        "gemini-1.5-flash-latest",  # Same as 1.5-flash
+        "gemini-2.0-flash",         # 500/day
+        "gemini-1.5-pro",           # 50/day but good quality
+    ]
+    
+    # Models to AVOID (experimental, low quota, or problematic)
+    SKIP_MODELS = [
+        "gemini-3",         # Experimental, 20/day limit!
+        "gemini-2.0-flash-exp",  # Experimental
+        "exp",              # Any experimental
+        "preview",          # Preview models often have low limits
     ]
     
     # 1. Try quota_optimizer first
@@ -154,21 +164,30 @@ def get_dynamic_gemini_model() -> str:
             )
             if response.status_code == 200:
                 models_data = response.json()
-                available = [
+                all_available = [
                     m["name"].replace("models/", "") 
                     for m in models_data.get("models", [])
                     if "generateContent" in m.get("supportedGenerationMethods", [])
                 ]
                 
-                # Match priority order
+                # v17.9.11: Filter out low-quota/experimental models
+                available = [
+                    m for m in all_available 
+                    if not any(skip in m.lower() for skip in SKIP_MODELS)
+                ]
+                
+                # Match priority order (high-quota first)
                 for preferred in MODEL_PRIORITY:
                     for avail in available:
                         if preferred in avail:
                             _save_cache("gemini", {"models": [avail] + available})
+                            _safe_print(f"[MODEL] Selected Gemini: {avail} (high-quota)")
                             return avail
                 
+                # If no priority match, use first available (non-experimental)
                 if available:
                     _save_cache("gemini", {"models": available})
+                    _safe_print(f"[MODEL] Selected Gemini: {available[0]} (fallback)")
                     return available[0]
     except Exception as e:
         _safe_print(f"[MODEL] Gemini discovery failed: {e}")
