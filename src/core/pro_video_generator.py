@@ -3253,6 +3253,11 @@ async def render_video(content: Dict, broll_paths: List[str], output_path: str,
         # v13.0: Pass AI-selected font for content-appropriate typography
         selected_font = content.get('selected_font', None)
         text_clip = renderer.create_animated_text_clip(clean_phrase, dur, phrase_index=i, font_key=selected_font)
+        # v17.9.10: Add small delay to text to better sync with audio
+        # Text appears 150ms after segment starts (matches audio lead-time)
+        TEXT_SYNC_DELAY = 0.15  # 150ms delay
+        if dur > TEXT_SYNC_DELAY + 0.5:  # Only apply if segment long enough
+            text_clip = text_clip.set_start(TEXT_SYNC_DELAY)
         layers.append(text_clip)
         
         # v7.15: Add subscribe CTA to LAST segment for monetization
