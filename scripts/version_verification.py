@@ -262,7 +262,49 @@ class VersionVerifier:
             self.passed.append("No contradictions found")
             print("   No issues found")
         
+        # v17.9.10: Check for duration/phrase count contradictions
+        duration_issues = self._check_duration_consistency()
+        issues.extend(duration_issues)
+        
         return len(issues) == 0
+    
+    def _check_duration_consistency(self) -> list:
+        """v17.9.10: Check for inconsistent duration/phrase values across files."""
+        print("   [4b] Duration consistency check...")
+        
+        issues = []
+        old_patterns = [
+            r'15-25\s*second',      # Old wrong duration
+            r'25-45\s*second',      # Old wrong duration
+            r'3-5\s*phrase',        # Old wrong phrase count
+            r'4-6\s*phrase',        # Old wrong phrase count
+        ]
+        
+        correct_patterns = [
+            '40-50 second',         # Correct duration
+            '8-10 phrase',          # Correct phrase count
+        ]
+        
+        # Check all Python files in src/
+        src_path = Path("src")
+        if src_path.exists():
+            for py_file in src_path.rglob("*.py"):
+                try:
+                    content = py_file.read_text(encoding='utf-8')
+                    for pattern in old_patterns:
+                        if re.search(pattern, content, re.IGNORECASE):
+                            issues.append(f"{py_file.name}: Found outdated '{pattern}' pattern")
+                except:
+                    pass
+        
+        if issues:
+            print(f"      WARNING: {len(issues)} outdated duration/phrase values found!")
+            for issue in issues[:3]:  # Show first 3
+                self.warnings.append(issue)
+        else:
+            print("      Duration/phrase values consistent [OK]")
+        
+        return issues
     
     # ========================================================================
     # CHECK 5: All Imports Are Used

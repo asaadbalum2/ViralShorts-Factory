@@ -335,7 +335,7 @@ class ViralityCalculator:
             "engagement": (engage, "Add question or clear CTA to boost engagement"),
             "retention": (retain, "Use numbered points and curiosity gaps"),
             "trending": (trend, "Align with trending topics or hot categories"),
-            "platform": (platform, "Optimize length: 3-5 phrases, 60-150 words total")
+            "platform": (platform, "Optimize length: 8-10 phrases, 80-150 words total")
         }
         
         # Get top 3 weakest areas

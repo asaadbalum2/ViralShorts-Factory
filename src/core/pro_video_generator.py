@@ -1044,12 +1044,15 @@ class MasterAI:
         # v16.8: DYNAMIC model selection - tries all available models
         use_groq = self.client and (chosen_provider == "groq" or chosen_provider is None)
         if use_groq:
-            # Get dynamically discovered models
-            # NOTE: llama-3.1-70b-versatile DECOMMISSIONED by Groq (Jan 2026)
-            groq_models_to_try = getattr(self, 'groq_models_list', [
-                "llama-3.3-70b-versatile", "llama-3.1-8b-instant", 
-                "mixtral-8x7b-32768", "gemma2-9b-it"
-            ])
+            # v17.9.10: Use DYNAMIC model discovery - no hardcoding!
+            groq_models_to_try = getattr(self, 'groq_models_list', None)
+            if not groq_models_to_try:
+                try:
+                    from model_helper import get_all_models
+                    groq_models_to_try = get_all_models("groq")
+                except:
+                    # Ultimate fallback only if discovery completely fails
+                    groq_models_to_try = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
             
             for model_name in groq_models_to_try:
                 try:
@@ -1098,10 +1101,14 @@ class MasterAI:
                 import google.generativeai as genai
                 genai.configure(api_key=self.gemini_key)
                 
-                # Get dynamically discovered models
-                gemini_models_to_try = getattr(self, 'gemini_models_list', [
-                    'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.0-pro'
-                ])
+                # v17.9.10: Use DYNAMIC model discovery - no hardcoding!
+                gemini_models_to_try = getattr(self, 'gemini_models_list', None)
+                if not gemini_models_to_try:
+                    try:
+                        from model_helper import get_all_models
+                        gemini_models_to_try = get_all_models("gemini")
+                    except:
+                        gemini_models_to_try = ['gemini-1.5-flash', 'gemini-2.0-flash']
                 
                 for model_name in gemini_models_to_try:
                     try:
@@ -1551,10 +1558,11 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
     # ========================================================================
     def stage2_create_content(self, concept: Dict) -> Dict:
         """AI creates the actual content based on the concept it decided.
-        v8.0: Shorter content (3-5 phrases), stronger hooks, engagement baits.
+        v8.0: Content optimized for engagement with strong hooks.
         v8.5: HYBRID - uses analytics-learned optimal metrics with guardrails.
         v13.1: Added regeneration feedback support for quality enforcement.
         v17.6: Pre-validates hook quality before content generation.
+        v17.9.10: Optimal length is 8-10 phrases (40-50 seconds) - proven sweet spot.
         """
         # Check if this is a regeneration attempt
         is_regeneration = concept.get('attempt_number', 0) > 0
@@ -2391,7 +2399,7 @@ JSON ONLY."""
 VIDEO DETAILS:
 - Category: {category}
 - Desired Style: {voice_style}
-- Content Type: Educational/Entertainment short (15-25 seconds)
+- Content Type: Educational/Entertainment short (40-50 seconds, 8-10 phrases)
 
 AVAILABLE VOICES (Microsoft Edge TTS):
 {chr(10).join([f"- {v} ({v.split('-')[1]} accent)" for v in available[:12]])}

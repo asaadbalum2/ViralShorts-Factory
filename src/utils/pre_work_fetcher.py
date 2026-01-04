@@ -194,7 +194,7 @@ For EACH concept provide:
 - hook: attention-grabbing first line
 - voice_style: energetic/calm/mysterious/authoritative/friendly/dramatic
 - music_mood: upbeat/dramatic/mysterious/inspirational/chill/intense
-- target_duration: 25-45 seconds
+- target_duration: 40-50 seconds
 
 IMPORTANT:
 - Each concept must be UNIQUE

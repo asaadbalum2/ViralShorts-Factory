@@ -255,7 +255,7 @@ class RetentionPredictor:
             recs.append("Strengthen hook with pattern interrupt (STOP, WAIT) or question")
         
         if pacing_score < 70:
-            recs.append("Adjust pacing: aim for 3-5 phrases, 8-15 words each")
+            recs.append("Adjust pacing: aim for 8-10 phrases, 8-15 words each")
         
         if structure_score < 70:
             recs.append("Add clear CTA and ensure payoff delivers value")

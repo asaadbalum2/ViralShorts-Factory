@@ -306,3 +306,121 @@ def get_best_model(provider: str) -> str:
     if func:
         return func()
     raise ValueError(f"Unknown provider: {provider}")
+
+
+def get_all_models(provider: str) -> List[str]:
+    """
+    v17.9.10: Get ALL available models for a provider (for fallback chains).
+    
+    Uses dynamic discovery with caching. Other files should call THIS
+    instead of hardcoding their own model lists!
+    
+    Returns: List of model IDs, ordered by priority (best first)
+    """
+    provider = provider.lower()
+    
+    # Check cache first
+    cached = _load_cache(provider)
+    if cached and cached.get("models"):
+        return cached["models"]
+    
+    # Discover dynamically
+    if provider == "groq":
+        return _discover_groq_models()
+    elif provider == "gemini":
+        return _discover_gemini_models()
+    elif provider == "openrouter":
+        return _discover_openrouter_models()
+    elif provider == "huggingface":
+        return _discover_huggingface_models()
+    else:
+        return []
+
+
+def _discover_groq_models() -> List[str]:
+    """Discover all available Groq models."""
+    try:
+        api_key = os.environ.get("GROQ_API_KEY")
+        if not api_key:
+            return ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"]
+        
+        from groq import Groq
+        client = Groq(api_key=api_key)
+        models_response = client.models.list()
+        models = [m.id for m in models_response.data if hasattr(m, 'id')]
+        
+        if models:
+            _save_cache("groq", {"models": models})
+            print(f"[CACHE] Found {len(models)} Groq models")
+            return models
+    except Exception as e:
+        print(f"[!] Groq discovery failed: {e}")
+    
+    return ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"]
+
+
+def _discover_gemini_models() -> List[str]:
+    """Discover all available Gemini models."""
+    try:
+        import requests
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            return ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+        
+        response = requests.get(
+            f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
+            timeout=10
+        )
+        if response.status_code == 200:
+            models_data = response.json().get("models", [])
+            models = [m["name"].replace("models/", "") for m in models_data 
+                      if "generateContent" in m.get("supportedGenerationMethods", [])]
+            
+            if models:
+                # Sort by quota priority
+                priority_order = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+                sorted_models = []
+                for p in priority_order:
+                    matching = [m for m in models if p in m]
+                    sorted_models.extend(matching)
+                for m in models:
+                    if m not in sorted_models:
+                        sorted_models.append(m)
+                
+                _save_cache("gemini", {"models": sorted_models})
+                print(f"[CACHE] Found {len(sorted_models)} Gemini models")
+                return sorted_models
+    except Exception as e:
+        print(f"[!] Gemini discovery failed: {e}")
+    
+    return ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
+
+
+def _discover_openrouter_models() -> List[str]:
+    """Discover all free OpenRouter models."""
+    try:
+        import requests
+        response = requests.get("https://openrouter.ai/api/v1/models", timeout=10)
+        if response.status_code == 200:
+            models_data = response.json().get("data", [])
+            free_models = [m["id"] for m in models_data 
+                          if m.get("pricing", {}).get("prompt") == "0" or ":free" in m.get("id", "")]
+            
+            if free_models:
+                _save_cache("openrouter", {"models": free_models})
+                print(f"[CACHE] Found {len(free_models)} free OpenRouter models")
+                return free_models
+    except Exception as e:
+        print(f"[!] OpenRouter discovery failed: {e}")
+    
+    return ["meta-llama/llama-3.2-3b-instruct:free", "mistralai/mistral-7b-instruct:free"]
+
+
+def _discover_huggingface_models() -> List[str]:
+    """Get known good HuggingFace models (HF doesn't have easy listing)."""
+    return [
+        "mistralai/Mistral-7B-Instruct-v0.3",
+        "HuggingFaceH4/zephyr-7b-beta",
+        "microsoft/Phi-3-mini-4k-instruct",
+        "google/flan-t5-xl"
+    ]
