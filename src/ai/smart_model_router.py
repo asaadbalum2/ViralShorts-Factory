@@ -133,6 +133,10 @@ class ModelInfo:
     quality_speed: float  # Speed rating (1-10, 10=fastest)
     robustness: float  # Success rate (0-1)
     available: bool  # Currently available?
+    # v17.9.10: Usage tracking to prevent quota exhaustion
+    calls_today: int = 0  # Track calls made today
+    last_call_date: str = ""  # Date of last call (YYYY-MM-DD)
+    consecutive_failures: int = 0  # Track failures to deprioritize broken models
 
 
 # Default model pool (discovered dynamically, this is fallback)
@@ -144,12 +148,8 @@ DEFAULT_MODELS = {
         quality_general=8.5, quality_creative=9.0, quality_structured=8.0, quality_speed=9.0,
         robustness=0.98, available=True
     ),
-    "groq:llama-3.1-70b-versatile": ModelInfo(
-        provider="groq", model_id="llama-3.1-70b-versatile",
-        daily_limit=300, rate_limit=30, delay=2.0,
-        quality_general=8.0, quality_creative=8.5, quality_structured=8.0, quality_speed=9.0,
-        robustness=0.97, available=True
-    ),
+    # REMOVED: llama-3.1-70b-versatile - DECOMMISSIONED by Groq (Jan 2026)
+    # "groq:llama-3.1-70b-versatile": ModelInfo(...)
     "groq:llama-3.1-8b-instant": ModelInfo(
         provider="groq", model_id="llama-3.1-8b-instant",
         daily_limit=600, rate_limit=60, delay=1.0,
@@ -443,7 +443,13 @@ class SmartModelRouter:
         - Evaluation: prioritize quality_structured
         - Simple: prioritize quality_speed + robustness
         - Analysis: prioritize quality_general + quality_structured
+        
+        v17.9.10: Also considers:
+        - Remaining daily quota (avoid exhausted models)
+        - Consecutive failures (deprioritize failing models)
         """
+        today = datetime.now().strftime("%Y-%m-%d")
+        
         for prompt_type_name, prompt_type in PROMPT_TYPES.items():
             scored_models = []
             
@@ -478,6 +484,24 @@ class SmartModelRouter:
                 # Always factor in robustness
                 score += model.robustness * 5.0
                 
+                # v17.9.10: QUOTA-AWARE SCORING
+                # Penalize models that are close to exhaustion
+                calls_today = model.calls_today if model.last_call_date == today else 0
+                remaining_quota = max(0, model.daily_limit - calls_today)
+                quota_ratio = remaining_quota / max(1, model.daily_limit)
+                
+                # If < 20% quota remaining, heavily penalize
+                if quota_ratio < 0.2:
+                    score *= 0.3  # Reduce score by 70%
+                elif quota_ratio < 0.5:
+                    score *= 0.7  # Reduce score by 30%
+                
+                # Penalize models with consecutive failures (likely broken/down)
+                if model.consecutive_failures >= 3:
+                    score *= 0.1  # Almost disable after 3 failures
+                elif model.consecutive_failures >= 1:
+                    score *= 0.5  # Reduce after any failure
+                
                 scored_models.append((key, score))
             
             # Sort by score (highest first)
@@ -486,7 +510,7 @@ class SmartModelRouter:
             # Store ranking (ordered list of model keys)
             self.rankings[prompt_type_name] = [key for key, _ in scored_models]
         
-        safe_print("[ROUTER] Rankings computed for all prompt types")
+        safe_print("[ROUTER] Rankings computed for all prompt types (quota-aware)")
     
     def classify_prompt(self, prompt: str, hint: str = None) -> str:
         """
@@ -598,6 +622,21 @@ class SmartModelRouter:
         if success:
             model_stats[model_key]["successes"] += 1
         self.stats["models"] = model_stats
+        
+        # v17.9.10: Track daily usage per model to prevent quota exhaustion
+        if model_key in self.models:
+            model = self.models[model_key]
+            today = datetime.now().strftime("%Y-%m-%d")
+            # Reset daily counter if new day
+            if model.last_call_date != today:
+                model.calls_today = 0
+                model.last_call_date = today
+            model.calls_today += 1
+            # Track consecutive failures for deprioritization
+            if success:
+                model.consecutive_failures = 0
+            else:
+                model.consecutive_failures += 1
         
         # Save periodically (every 10 calls)
         if self.stats["calls"] % 10 == 0:

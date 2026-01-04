@@ -6,7 +6,7 @@ ViralShorts Factory - PROFESSIONAL Video Generator v12.0
 100% AI-DRIVEN - NO HARDCODING!
 ENFORCED VARIETY - Across ALL runs, not just single batch!
 VIRAL PATTERNS - Learned from successful channels!
-OPTIMAL LENGTH - 15-25 seconds (proven sweet spot)!
+OPTIMAL LENGTH - 40-50 seconds with 8-10 phrases (proven sweet spot)!
 
 v12.0 ULTIMATE ENHANCEMENTS - 330 NEW (419 TOTAL!):
 - Batch 1: Human Feel (60) - Anti-AI, Typography, Voice
@@ -1045,9 +1045,10 @@ class MasterAI:
         use_groq = self.client and (chosen_provider == "groq" or chosen_provider is None)
         if use_groq:
             # Get dynamically discovered models
+            # NOTE: llama-3.1-70b-versatile DECOMMISSIONED by Groq (Jan 2026)
             groq_models_to_try = getattr(self, 'groq_models_list', [
-                "llama-3.3-70b-versatile", "llama-3.1-70b-versatile", 
-                "llama-3.1-8b-instant", "mixtral-8x7b-32768"
+                "llama-3.3-70b-versatile", "llama-3.1-8b-instant", 
+                "mixtral-8x7b-32768", "gemma2-9b-it"
             ])
             
             for model_name in groq_models_to_try:
@@ -1386,8 +1387,9 @@ DATE: {time.strftime('%B %d, %Y, %A')}
    - Use patterns from VIRAL PATTERNS section above!
 
 3. **CONTENT LENGTH**: How many phrases/sections?
-   - MUST be 3-5 phrases (15-25 second video is OPTIMAL!)
-   - Fewer phrases = tighter content = better retention
+   - MUST be 8-10 phrases (40-50 second video is OPTIMAL!)
+   - Each phrase = one screen of text with b-roll
+   - This allows complete value delivery
 
 4. **VOICE STYLE**: What voice/energy for the narration?
    Options: energetic, calm, mysterious, authoritative, friendly, dramatic
@@ -1395,20 +1397,20 @@ DATE: {time.strftime('%B %d, %Y, %A')}
 5. **MUSIC MOOD**: What background music mood? (Match to content emotion!)
    Options: {music_options}
 
-6. **TARGET DURATION**: CRITICAL - Must be 15-25 seconds!
-   - 15-20s: Quick fact (3-4 phrases) - BEST for virality!
-   - 20-25s: Explained fact (4-5 phrases) - Good balance
-   - NEVER over 30 seconds - viewers drop off!
+6. **TARGET DURATION**: CRITICAL - Must be 40-50 seconds!
+   - 40-45s: Standard fact (8 phrases) - OPTIMAL for engagement!
+   - 45-50s: Deep dive (10 phrases) - Good for complex topics
+   - Under 60 seconds keeps YouTube Shorts format
 
 === OUTPUT JSON ===
 {{
     "category": "MUST be from available list",
     "specific_topic": "the specific topic (5-10 words) - BE CREATIVE AND UNIQUE",
     "why_this_topic": "why this will be viral and valuable",
-    "phrase_count": 4,
+    "phrase_count": 8,
     "voice_style": "energetic/calm/mysterious/etc",
     "music_mood": "upbeat/dramatic/mysterious/etc",
-    "target_duration_seconds": 20,
+    "target_duration_seconds": 45,
     "global_relevance": "why this works worldwide"
 }}
 
@@ -1469,10 +1471,10 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
                     result = {
                         'category': concept.get('category', random_cat),
                         'specific_topic': concept.get('topic', f'{random_cat.replace("_", " ").title()} Insight'),
-                        'phrase_count': concept.get('phrase_count', random.randint(4, 6)),
+                        'phrase_count': concept.get('phrase_count', random.randint(8, 10)),
                         'voice_style': concept.get('voice_style', random.choice(['energetic', 'dramatic', 'confident'])),
                         'music_mood': concept.get('music_mood', random.choice(['upbeat', 'dramatic', 'mysterious'])),
-                        'target_duration_seconds': concept.get('target_duration', random.randint(25, 35)),
+                        'target_duration_seconds': concept.get('target_duration', random.randint(40, 50)),
                     }
                     if batch_tracker:
                         batch_tracker.used_categories.append(result['category'])
@@ -1506,10 +1508,10 @@ OUTPUT JSON ONLY. Be creative and strategic - NO REPETITION!"""
         return {
             'category': fallback_cat,
             'specific_topic': random.choice(topic_templates),
-            'phrase_count': random.randint(4, 6),
+            'phrase_count': random.randint(8, 10),
             'voice_style': random.choice(['energetic', 'dramatic', 'confident', 'curious']),
             'music_mood': random.choice(['dramatic', 'upbeat', 'mysterious', 'intense']),
-            'target_duration_seconds': random.randint(25, 35)
+            'target_duration_seconds': random.randint(40, 50)
         }
     
     def _save_concept_backup(self, concept: Dict):
@@ -3400,7 +3402,7 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
     safe_print("=" * 70)
     safe_print(f"   VIRALSHORTS FACTORY v17.9.7 - YOUTUBE FOCUS")
     safe_print(f"   Run: #{run_id}")
-    safe_print(f"   Video Length: 15-25 seconds (optimal)")
+    safe_print(f"   Video Length: 40-50 seconds (optimal)")
     safe_print(f"   Variety: Persistent across runs")
     safe_print(f"   Quality Gates: {len(['pre-gen', 'post-content', 'post-render'])} active")
     safe_print("=" * 70)
@@ -3492,10 +3494,10 @@ async def generate_pro_video(hint: str = None, batch_tracker: BatchTracker = Non
         concept = {
             'category': fallback_cat,
             'specific_topic': random.choice(topic_templates),
-            'phrase_count': random.randint(4, 6),
+            'phrase_count': random.randint(8, 10),
             'voice_style': random.choice(['energetic', 'dramatic', 'confident']),
             'music_mood': random.choice(['dramatic', 'upbeat', 'mysterious']),
-            'target_duration_seconds': random.randint(25, 35)
+            'target_duration_seconds': random.randint(40, 50)
         }
     
     # v17.9.7: AI Quality Gate - Pre-generation quality check

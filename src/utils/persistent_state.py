@@ -477,8 +477,8 @@ class ViralPatternsManager:
             "engagement_baits": [],
             "optimal_lengths": {
                 "hook": "7-12 words",
-                "total_video": "15-25 seconds",
-                "phrases": "3-5",
+                "total_video": "40-50 seconds",
+                "phrases": "8-10",
                 "cta": "5-10 words"
             },
             "proven_categories": [],
@@ -534,7 +534,7 @@ class ViralPatternsManager:
     
     def get_optimal_video_length(self) -> int:
         """Get optimal video length in seconds."""
-        return 20  # 15-25 second sweet spot
+        return 45  # 40-50 second sweet spot (8-10 phrases)
 
 
 # =============================================================================

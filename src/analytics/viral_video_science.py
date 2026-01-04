@@ -64,7 +64,7 @@ class ViralVideoStructure:
 
 CONTENT_TEMPLATES = {
     "life_hack": """
-You are a productivity expert creating a SHORT video (15-25 seconds).
+You are a productivity expert creating a SHORT video (40-50 seconds, 8-10 phrases).
 
 CRITICAL RULE: You must provide a SPECIFIC, ACTIONABLE hack that viewers 
 can USE IMMEDIATELY. No vague advice. No "there's a method..." without 

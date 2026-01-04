@@ -255,8 +255,14 @@ jobs:
           python -c "
           import os
           import sys
+          # Add ALL src subdirectories for proper imports
           sys.path.insert(0, 'src/analytics')
           sys.path.insert(0, 'src/core')
+          sys.path.insert(0, 'src/enhancements')
+          sys.path.insert(0, 'src/quota')
+          sys.path.insert(0, 'src/utils')
+          sys.path.insert(0, 'src/ai')
+          sys.path.insert(0, 'src/platforms')
           sys.path.insert(0, 'src')
           from analytics_feedback import FeedbackLoopController
           from pro_video_generator import update_learned_metrics_from_performance
@@ -299,7 +305,7 @@ jobs:
               try:
                   from dashboard_generator import DashboardGenerator
                   dashboard = DashboardGenerator()
-                  html = dashboard.generate_dashboard()
+                  html = dashboard.generate_html()  # Fixed: was generate_dashboard()
                   if html:
                       with open('data/persistent/dashboard.html', 'w') as f:
                           f.write(html)

@@ -61,7 +61,30 @@
     "technology",
     "health",
     "fitness",
-    "productivity"
+    "productivity",
+    "travel",
+    "food",
+    "science_facts",
+    "history_mysteries",
+    "space_universe",
+    "animals_nature",
+    "weird_laws",
+    "conspiracy_theories",
+    "unsolved_mysteries",
+    "sports_records",
+    "gaming_facts",
+    "music_trivia",
+    "movie_secrets",
+    "celebrity_facts",
+    "urban_legends",
+    "survival_tips",
+    "world_records",
+    "optical_illusions",
+    "brain_teasers",
+    "would_you_rather",
+    "this_or_that",
+    "fun_polls",
+    "crazy_experiments"
   ],
   "retention_tricks": [
     "Use a mix of fast-paced and slow-paced segments",
@@ -81,7 +104,7 @@
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-01-04T06:22:17.870759",
+  "last_ai_update": "2026-01-04T21:55:00.000000",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-01-04T06:22:17.870766"
+  "last_saved": "2026-01-04T21:55:00.000000"
 }

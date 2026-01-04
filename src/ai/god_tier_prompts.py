@@ -207,7 +207,7 @@ CRITICAL: The "hook" and "content" are SEPARATE! Do NOT repeat the hook inside t
 
 {{
     "topic": "2-4 word topic name",
-    "video_type": "scary_fact|money_fact|psychology_fact|life_hack|mind_blow",
+    "video_type": "scary_fact|money_fact|psychology_fact|life_hack|mind_blow|science_fact|history_mystery|space_fact|animal_fact|weird_law|unsolved_mystery|would_you_rather|this_or_that|crazy_experiment|world_record|optical_illusion",
     "hook": "7-10 word attention grabber - this is spoken FIRST - NO EMOJIS",
     "content": "The REST of the video AFTER the hook. Do NOT repeat the hook here! Include: mechanism/evidence, actionable takeaway. 50-80 words. NO EMOJIS.",
     "the_payoff": "The ONE specific thing they learn/can do after watching",

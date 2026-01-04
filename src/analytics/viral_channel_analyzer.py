@@ -450,7 +450,7 @@ JSON ONLY."""
         result += """
 
 OPTIMAL METRICS:
-- Video length: 15-25 seconds (CRITICAL!)
+- Video length: 40-50 seconds with 8-10 phrases (CRITICAL!)
 - Hook: First 1-3 seconds must grab attention
 - Phrases: 3-5 short phrases (8-15 words each)
 - End with engagement question

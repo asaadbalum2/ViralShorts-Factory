@@ -3333,7 +3333,7 @@ class CompletionRateOptimizer:
         return """
 COMPLETION RATE:
 - Algorithm LOVES high completion
-- Optimal length: 15-25 seconds
+- Optimal length: 40-50 seconds (8-10 phrases)
 - No filler, no boring parts
 - Build to satisfying conclusion
 - End exactly when needed
@@ -3854,7 +3854,7 @@ def get_algorithm_master_prompt() -> str:
 - Make completion feel rewarding
 
 ### COMPLETION RATE
-- Optimal length: 15-25 seconds
+- Optimal length: 40-50 seconds (8-10 phrases)
 - No filler, no boring moments
 - Strong hook, satisfying ending
 - Target 90%+ completion
@@ -6909,9 +6909,10 @@ class GroqIntegration:
     #395: Optimal Groq integration.
     """
     
+    # NOTE: llama-3.1-70b-versatile DECOMMISSIONED by Groq (Jan 2026)
     GROQ_INFO = {
-        "model": "llama-3.1-70b-versatile",
-        "daily_limit": "~500k tokens",
+        "model": "llama-3.3-70b-versatile",
+        "daily_limit": "~100k tokens",
         "speed": "Very fast",
         "best_for": ["topic gen", "evaluation", "metadata"]
     }
