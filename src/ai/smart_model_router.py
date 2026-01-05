@@ -598,8 +598,10 @@ class SmartModelRouter:
         for key, model in self.models.items():
             return (key, model)
         
-        # Should never reach here
-        return ("groq:llama-3.3-70b-versatile", DEFAULT_MODELS["groq:llama-3.3-70b-versatile"])
+        # Should never reach here - use first available model
+        for key, model in DEFAULT_MODELS.items():
+            return (key, model)
+        raise ValueError("No models available - check API keys and network connection")
     
     def record_result(self, model_key: str, success: bool, was_fallback: bool = False):
         """Record the result of a model call for stats."""

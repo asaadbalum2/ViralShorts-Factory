@@ -579,14 +579,18 @@ def get_ai_trending_categories(groq_key: str = None) -> List[str]:
     if not groq_key:
         return BASE_CATEGORIES
     
-    # v16.8: Get dynamic model list - no hardcoding!
+    # v17.9.12: DYNAMIC model discovery - no hardcoding!
     try:
-        from quota_optimizer import get_quota_optimizer
-        optimizer = get_quota_optimizer()
-        groq_models = optimizer.get_groq_models(groq_key)
-        model_to_use = groq_models[0] if groq_models else "llama-3.1-8b-instant"
+        from src.ai.model_helper import get_dynamic_groq_model
+        model_to_use = get_dynamic_groq_model()
     except:
-        model_to_use = "llama-3.1-8b-instant"  # Last resort fallback
+        try:
+            from quota_optimizer import get_quota_optimizer
+            optimizer = get_quota_optimizer()
+            groq_models = optimizer.get_groq_models(groq_key)
+            model_to_use = groq_models[0] if groq_models else None
+        except:
+            model_to_use = None  # Will use OpenRouter fallback
     
     try:
         response = requests.post(
@@ -882,7 +886,7 @@ class MasterAI:
                 self.groq_models_list = optimizer.get_groq_models(self.groq_key)
                 safe_print(f"[OK] Groq AI initialized ({len(self.groq_models_list)} models available)")
             except Exception as e:
-                self.groq_models_list = ["llama-3.3-70b-versatile"]  # Fallback
+                self.groq_models_list = []  # Dynamic discovery will handle
                 safe_print(f"[!] Groq init failed: {e}")
         
         if self.gemini_key:
@@ -1051,8 +1055,8 @@ class MasterAI:
                     from model_helper import get_all_models
                     groq_models_to_try = get_all_models("groq")
                 except:
-                    # Ultimate fallback only if discovery completely fails
-                    groq_models_to_try = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+                    # v17.9.12: If discovery fails, fall through to OpenRouter
+                    groq_models_to_try = []
             
             for model_name in groq_models_to_try:
                 try:
@@ -1108,7 +1112,8 @@ class MasterAI:
                         from model_helper import get_all_models
                         gemini_models_to_try = get_all_models("gemini")
                     except:
-                        gemini_models_to_try = ['gemini-1.5-flash', 'gemini-2.0-flash']
+                        # v17.9.12: If discovery fails, fall through to OpenRouter
+                        gemini_models_to_try = []
                 
                 for model_name in gemini_models_to_try:
                     try:

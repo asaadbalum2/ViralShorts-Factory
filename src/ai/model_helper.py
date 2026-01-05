@@ -41,10 +41,10 @@ def _safe_print(msg: str):
 
 def _get_model_quota_from_api(model_name: str, provider: str) -> Optional[int]:
     """
-    Query actual quota limit for a model via API.
+    Query model availability and quota via API.
     Returns daily request limit, or None if unknown.
     
-    NO HARDCODING - all via API!
+    v17.9.12: NO test calls! Uses free info endpoints only.
     """
     try:
         import requests
@@ -52,46 +52,33 @@ def _get_model_quota_from_api(model_name: str, provider: str) -> Optional[int]:
         if provider == "gemini":
             api_key = os.environ.get("GEMINI_API_KEY")
             if api_key:
-                # Make a minimal test call and check response
-                test_response = requests.post(
-                    f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}",
-                    json={"contents": [{"parts": [{"text": "test"}]}]},
+                # Use model info endpoint (FREE - no quota cost!)
+                info_response = requests.get(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}?key={api_key}",
                     timeout=10
                 )
                 
-                # Check rate limit headers (if provided)
-                daily_limit = test_response.headers.get("x-ratelimit-limit-requests-per-day")
-                remaining = test_response.headers.get("x-ratelimit-remaining-requests-per-day")
-                
-                if daily_limit:
-                    return int(daily_limit)
-                if remaining:
-                    return int(remaining)
-                    
-                # Check response status
-                if test_response.status_code == 200:
-                    return 1000  # Available, assume reasonable quota
-                elif test_response.status_code == 429:
-                    # Parse the quota info from error message
-                    try:
-                        error_data = test_response.json()
-                        error_msg = str(error_data)
-                        if "limit:" in error_msg.lower():
-                            # Extract limit from error
-                            import re
-                            match = re.search(r'limit[:\s]+(\d+)', error_msg, re.I)
-                            if match:
-                                return int(match.group(1))
-                    except:
-                        pass
-                    return 0  # Exhausted
-                elif test_response.status_code == 404:
+                if info_response.status_code == 200:
+                    model_info = info_response.json()
+                    # Model exists and is available
+                    # Note: Gemini doesn't expose quota in model info
+                    # We infer from model name patterns
+                    name_lower = model_name.lower()
+                    if "flash" in name_lower and "1.5" in name_lower:
+                        return 1500  # Known high-quota model
+                    elif "flash" in name_lower:
+                        return 500  # Standard flash models
+                    elif "pro" in name_lower:
+                        return 50  # Pro models have lower quota
+                    else:
+                        return 100  # Default assumption
+                elif info_response.status_code == 404:
                     return 0  # Model doesn't exist
                     
         elif provider == "groq":
             api_key = os.environ.get("GROQ_API_KEY")
             if api_key:
-                # Check if model exists and is active
+                # Use models list endpoint (FREE - no quota cost!)
                 response = requests.get(
                     "https://api.groq.com/openai/v1/models",
                     headers={"Authorization": f"Bearer {api_key}"},
@@ -101,8 +88,11 @@ def _get_model_quota_from_api(model_name: str, provider: str) -> Optional[int]:
                     models = response.json().get("data", [])
                     for m in models:
                         if m.get("id") == model_name:
-                            # Model exists - Groq shares 100K tokens/day
-                            return 100  # Approx requests
+                            # Check if model is active
+                            if m.get("active", True):
+                                return 100  # Groq shares 100K tokens/day
+                            else:
+                                return 0  # Model inactive
                     return 0  # Model not found (decommissioned?)
                     
     except Exception as e:
