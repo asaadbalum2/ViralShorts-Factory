@@ -237,13 +237,15 @@ class TokenBudgetManager:
         )
         huggingface_available = not self.is_in_cooldown("huggingface")
         
-        # v17.9.7: Decision logic - GROQ FIRST (better free tier limits)
-        if groq_available:
-            # Groq is PRIMARY - fast and generous limits
-            return "groq"
-        elif gemini_available:
-            # Gemini is SECONDARY - preserve for when Groq fails
+        # v17.9.11: Decision logic - GEMINI FIRST (higher request quota!)
+        # Gemini 1.5-flash: 1,500 requests/day
+        # Groq: 100K tokens/day (but each call uses ~500-1000 tokens)
+        if gemini_available:
+            # Gemini is PRIMARY - 1,500+ requests/day!
             return "gemini"
+        elif groq_available:
+            # Groq is SECONDARY - good but token-limited (100K/day)
+            return "groq"
         elif openrouter_available:
             # OpenRouter as tertiary
             return "openrouter"

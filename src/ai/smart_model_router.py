@@ -156,12 +156,7 @@ DEFAULT_MODELS = {
         quality_general=7.0, quality_creative=6.5, quality_structured=7.0, quality_speed=10.0,
         robustness=0.99, available=True
     ),
-    "groq:mixtral-8x7b-32768": ModelInfo(
-        provider="groq", model_id="mixtral-8x7b-32768",
-        daily_limit=400, rate_limit=40, delay=1.5,
-        quality_general=7.5, quality_creative=7.5, quality_structured=7.5, quality_speed=8.5,
-        robustness=0.96, available=True
-    ),
+    # REMOVED: mixtral-8x7b-32768 - DECOMMISSIONED by Groq (Jan 2026)
     # Gemini
     "gemini:gemini-1.5-flash": ModelInfo(
         provider="gemini", model_id="gemini-1.5-flash",

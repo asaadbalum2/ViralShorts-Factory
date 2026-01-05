@@ -191,10 +191,10 @@ class QuotaOptimizer:
         # Default fallback models (known working free tier models)
         # Priority: versatile > other variants
         # NOTE: llama-3.1-70b-versatile DECOMMISSIONED by Groq (Jan 2026)
+        # v17.9.11: Removed decommissioned models
         default_models = [
             "llama-3.3-70b-versatile",
             "llama-3.1-8b-instant",
-            "mixtral-8x7b-32768",
             "gemma2-9b-it",
             "llama-guard-3-8b"
         ]

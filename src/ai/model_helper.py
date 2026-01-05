@@ -216,7 +216,8 @@ def get_dynamic_gemini_model() -> str:
 
 def get_dynamic_groq_model() -> str:
     """Get the best available Groq model dynamically."""
-    MODEL_PRIORITY = ["llama-3.3-70b", "llama-3.1-8b", "mixtral-8x7b", "gemma2"]
+    # v17.9.11: Removed decommissioned models (llama-3.1-70b, mixtral-8x7b)
+    MODEL_PRIORITY = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "gemma2-9b-it"]
     
     # 1. Try quota_optimizer first
     try:
