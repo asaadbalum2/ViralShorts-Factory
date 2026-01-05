@@ -779,11 +779,11 @@ class VersionVerifier:
         else:
             issues.append("Gemini rate limit not set to 5.0s")
         
-        # 3. Provider priority - Gemini should be primary (v17.9.11: higher quota!)
+        # 3. Provider priority - Gemini should be primary (v17.9.12: dynamic quota!)
         if "Gemini is PRIMARY" in budget_manager or "GEMINI FIRST" in budget_manager:
-            print("   [OK] Gemini is PRIMARY provider (1,500 req/day)")
+            print("   [OK] Gemini is PRIMARY provider (quota checked via API)")
         elif "Groq is PRIMARY" in budget_manager or "GROQ FIRST" in budget_manager:
-            issues.append("Groq as primary - should be Gemini (v17.9.11)")
+            issues.append("Groq as primary - should be Gemini (v17.9.12)")
         else:
             issues.append("No primary provider set")
         

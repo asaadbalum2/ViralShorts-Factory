@@ -188,36 +188,29 @@ class QuotaOptimizer:
         if force_refresh:
             safe_print("[CACHE] Force refreshing Groq models (model not found)")
         
-        # Default fallback models (known working free tier models)
-        # Priority: versatile > other variants
-        # NOTE: llama-3.1-70b-versatile DECOMMISSIONED by Groq (Jan 2026)
-        # v17.9.11: Removed decommissioned models
-        default_models = [
-            "llama-3.3-70b-versatile",
-            "llama-3.1-8b-instant",
-            "gemma2-9b-it",
-            "llama-guard-3-8b"
-        ]
+        # v17.9.12: NO hardcoded fallbacks! All via API discovery.
         
         if not api_key:
-            return default_models
+            safe_print("[!] No GROQ_API_KEY - cannot discover models")
+            # Return empty - caller should handle gracefully
+            return []
         
         try:
             from groq import Groq
             client = Groq(api_key=api_key)
             
-            # Groq SDK has models.list() method
+            # Get ONLY active models from API (no hardcoding!)
             models_response = client.models.list()
             
-            # Extract model IDs
+            # Extract active model IDs
             available_models = []
             for model in models_response.data:
-                model_id = model.id
-                # Prioritize larger/versatile models
-                if "70b" in model_id or "versatile" in model_id:
-                    available_models.insert(0, model_id)
-                else:
-                    available_models.append(model_id)
+                if hasattr(model, 'id'):
+                    model_id = model.id
+                    # Check if model is active (if the API provides this info)
+                    is_active = getattr(model, 'active', True)
+                    if is_active:
+                        available_models.append(model_id)
             
             if available_models:
                 self.cache["groq_models"] = {
@@ -225,13 +218,15 @@ class QuotaOptimizer:
                     "timestamp": time.time()
                 }
                 self._save_cache()
-                safe_print(f"[CACHE] Found {len(available_models)} Groq models")
+                safe_print(f"[CACHE] Found {len(available_models)} Groq models via API")
                 return available_models[:10]
                 
         except Exception as e:
             safe_print(f"[!] Groq model discovery failed: {e}")
         
-        return default_models
+        # Return empty - caller should try OpenRouter or other fallback
+        safe_print("[!] Groq: No models discovered, will use fallback provider")
+        return []
     
     # ========================================================================
     # GEMINI MODELS - Dynamic discovery with free tier priority
@@ -252,51 +247,42 @@ class QuotaOptimizer:
         if force_refresh:
             safe_print("[CACHE] Force refreshing Gemini models (model not found)")
         
-        # Default fallback models - DYNAMIC DISCOVERY PREFERRED
-        # These are ONLY used if API discovery fails completely
-        # Updated 2026-01: Added newer models, ordered by free tier priority
-        default_models = [
-            "gemini-2.0-flash",      # Newest free tier flash
-            "gemini-1.5-flash-8b",   # Smaller, more quota
-            "gemini-1.5-flash",      # Standard free tier
-            "gemini-1.5-pro",        # Limited free tier
-        ]
+        # v17.9.12: NO hardcoded fallbacks! All via API discovery.
         
         if not api_key:
-            return default_models
+            safe_print("[!] No GEMINI_API_KEY - cannot discover models")
+            return []
         
         try:
             import google.generativeai as genai
             genai.configure(api_key=api_key)
             
-            # List all available models
+            # List all available models from API
             models = genai.list_models()
             
-            # Filter for generative models with free tier
-            free_models = []
+            # Get models with quota info - NO hardcoded priority!
+            available_models = []
             for model in models:
                 model_name = model.name.replace("models/", "")
                 # Check if it supports generateContent
                 if "generateContent" in getattr(model, "supported_generation_methods", []):
-                    # Prioritize flash models (more quota)
-                    if "flash" in model_name.lower():
-                        free_models.insert(0, model_name)
-                    elif "pro" in model_name.lower():
-                        free_models.append(model_name)
+                    available_models.append(model_name)
             
-            if free_models:
+            if available_models:
                 self.cache["gemini_models"] = {
-                    "data": free_models[:5],  # Keep top 5
+                    "data": available_models[:10],
                     "timestamp": time.time()
                 }
                 self._save_cache()
-                safe_print(f"[CACHE] Found {len(free_models)} Gemini models")
-                return free_models[:5]
+                safe_print(f"[CACHE] Found {len(available_models)} Gemini models via API")
+                return available_models[:10]
                 
         except Exception as e:
             safe_print(f"[!] Gemini model discovery failed: {e}")
         
-        return default_models
+        # Return empty - caller should try OpenRouter or other fallback
+        safe_print("[!] Gemini: No models discovered, will use fallback provider")
+        return []
     
     # ========================================================================
     # OPENROUTER FREE MODELS - Cached for 24 hours

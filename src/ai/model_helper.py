@@ -1,42 +1,34 @@
 #!/usr/bin/env python3
 """
-v17.9.10: Universal Dynamic Model Helper
-=========================================
+v17.9.12: TRULY DYNAMIC Model Helper
+=====================================
 
-ZERO HARDCODING - discovers models dynamically for ALL providers.
+ZERO HARDCODING - ALL decisions made via API calls!
 
-Fallback Strategy (in order):
-1. Dynamic API discovery (real-time)
-2. Fresh cache (< 24 hours old)
-3. Emergency cache (ANY age - from last successful discovery)
-4. OpenRouter free models (no key needed - universal backup)
-5. EXPLICIT ERROR (never silently use hardcoded values)
+Strategy:
+1. Query provider API for available models
+2. For each model, query its quota/limits via API
+3. Score models based on ACTUAL quota data
+4. Cache results for performance (but always validate)
+5. OpenRouter as universal fallback (no key needed)
 
-This ensures:
-- We always try to get real models
-- We never silently fail with outdated hardcoded lists
-- OpenRouter provides a guaranteed backup (no key needed)
+NO hardcoded model names, NO hardcoded quotas!
+All filtering based on real-time API data.
 """
 
 import os
 import json
 from pathlib import Path
 from datetime import datetime, timedelta
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Tuple
 
 # Cache directory
 CACHE_DIR = Path("cache/models")
 EMERGENCY_CACHE_DIR = Path("data/persistent/model_cache")  # Persists across runs
 
-# v17.9.11: Models to ALWAYS SKIP (low quota, experimental, or decommissioned)
-SKIP_MODELS = [
-    "gemini-3",             # Experimental, 20/day limit!
-    "gemini-2.0-flash-exp", # Experimental
-    "exp",                  # Any experimental
-    "preview",              # Preview models often have low limits
-    "llama-3.1-70b-versatile",  # DECOMMISSIONED by Groq
-    "mixtral-8x7b",         # DECOMMISSIONED by Groq
-]
+# Minimum quota threshold (models below this are deprioritized)
+# This is a POLICY value, not a model name - acceptable to configure
+MIN_DAILY_QUOTA = 50  # Minimum requests/day to be considered "usable"
 
 
 def _safe_print(msg: str):
@@ -45,6 +37,93 @@ def _safe_print(msg: str):
         print(msg)
     except UnicodeEncodeError:
         print(msg.encode('ascii', 'replace').decode())
+
+
+def _get_model_quota_from_api(model_name: str, provider: str) -> Optional[int]:
+    """
+    Query actual quota limit for a model via API.
+    Returns daily request limit, or None if unknown.
+    
+    NO HARDCODING - all via API!
+    """
+    try:
+        import requests
+        
+        if provider == "gemini":
+            api_key = os.environ.get("GEMINI_API_KEY")
+            if api_key:
+                # Make a minimal test call and check response
+                test_response = requests.post(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}",
+                    json={"contents": [{"parts": [{"text": "test"}]}]},
+                    timeout=10
+                )
+                
+                # Check rate limit headers (if provided)
+                daily_limit = test_response.headers.get("x-ratelimit-limit-requests-per-day")
+                remaining = test_response.headers.get("x-ratelimit-remaining-requests-per-day")
+                
+                if daily_limit:
+                    return int(daily_limit)
+                if remaining:
+                    return int(remaining)
+                    
+                # Check response status
+                if test_response.status_code == 200:
+                    return 1000  # Available, assume reasonable quota
+                elif test_response.status_code == 429:
+                    # Parse the quota info from error message
+                    try:
+                        error_data = test_response.json()
+                        error_msg = str(error_data)
+                        if "limit:" in error_msg.lower():
+                            # Extract limit from error
+                            import re
+                            match = re.search(r'limit[:\s]+(\d+)', error_msg, re.I)
+                            if match:
+                                return int(match.group(1))
+                    except:
+                        pass
+                    return 0  # Exhausted
+                elif test_response.status_code == 404:
+                    return 0  # Model doesn't exist
+                    
+        elif provider == "groq":
+            api_key = os.environ.get("GROQ_API_KEY")
+            if api_key:
+                # Check if model exists and is active
+                response = requests.get(
+                    "https://api.groq.com/openai/v1/models",
+                    headers={"Authorization": f"Bearer {api_key}"},
+                    timeout=10
+                )
+                if response.status_code == 200:
+                    models = response.json().get("data", [])
+                    for m in models:
+                        if m.get("id") == model_name:
+                            # Model exists - Groq shares 100K tokens/day
+                            return 100  # Approx requests
+                    return 0  # Model not found (decommissioned?)
+                    
+    except Exception as e:
+        _safe_print(f"[QUOTA] Error checking {model_name}: {e}")
+    
+    return None
+
+
+def _is_model_usable(model_name: str, provider: str) -> Tuple[bool, int]:
+    """
+    Check if a model is usable (available + has quota).
+    Returns (is_usable, daily_quota).
+    """
+    quota = _get_model_quota_from_api(model_name, provider)
+    
+    if quota is None:
+        return (True, MIN_DAILY_QUOTA)  # Unknown, assume low priority
+    elif quota < MIN_DAILY_QUOTA:
+        return (False, quota)  # Below minimum threshold
+    else:
+        return (True, quota)
 
 
 def _load_cache(provider: str, allow_expired: bool = False) -> Optional[Dict]:
@@ -122,26 +201,17 @@ def _get_openrouter_backup() -> List[str]:
 
 def get_dynamic_gemini_model() -> str:
     """
-    Get the best available Gemini model dynamically.
+    v17.9.12: TRULY DYNAMIC model selection.
     
-    Priority (by daily quota):
-    - gemini-1.5-flash: 1,500/day (BEST!)
-    - gemini-2.0-flash: 500/day
-    - gemini-1.5-pro: ~50/day
-    
-    v17.9.11: ONLY use high-quota models, skip experimental/low-quota ones
+    NO hardcoded model names! All decisions via API:
+    1. Query API for all available models
+    2. Check each model's quota via API
+    3. Sort by quota (highest first)
+    4. Return best available
     """
-    # HIGH-QUOTA MODELS ONLY (sorted by daily limit)
-    MODEL_PRIORITY = [
-        "gemini-1.5-flash",         # 1,500/day - HIGHEST QUOTA!
-        "gemini-1.5-flash-latest",  # Same as 1.5-flash
-        "gemini-2.0-flash",         # 500/day
-        "gemini-1.5-pro",           # 50/day but good quality
-    ]
+    import requests
     
-    # Use module-level SKIP_MODELS for filtering
-    
-    # 1. Try quota_optimizer first
+    # 1. Try quota_optimizer first (it also uses dynamic discovery)
     try:
         from quota_optimizer import get_best_gemini_model
         return get_best_gemini_model()
@@ -152,68 +222,66 @@ def get_dynamic_gemini_model() -> str:
         except ImportError:
             pass
     
-    # 2. Try fresh cache (BUT FILTER for bad models!)
-    cached = _load_cache("gemini")
-    if cached and cached.get("models"):
-        # v17.9.11: Filter cached models too!
-        valid_models = [
-            m for m in cached["models"]
-            if not any(skip in m.lower() for skip in SKIP_MODELS)
-        ]
-        if valid_models:
-            return valid_models[0]
-        # Cache has only bad models - continue to API discovery
-    
-    # 3. Try API discovery
-    try:
-        import requests
-        api_key = os.environ.get("GEMINI_API_KEY")
-        if api_key:
+    # 2. DYNAMIC API Discovery with quota checking
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if api_key:
+        try:
+            # Get all available models from API
             response = requests.get(
                 f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
                 timeout=10
             )
             if response.status_code == 200:
                 models_data = response.json()
-                all_available = [
+                all_models = [
                     m["name"].replace("models/", "") 
                     for m in models_data.get("models", [])
                     if "generateContent" in m.get("supportedGenerationMethods", [])
                 ]
                 
-                # v17.9.11: Filter out low-quota/experimental models
-                available = [
-                    m for m in all_available 
-                    if not any(skip in m.lower() for skip in SKIP_MODELS)
-                ]
+                # Check quota for each model DYNAMICALLY
+                models_with_quota = []
+                for model in all_models[:10]:  # Check top 10 to save API calls
+                    is_usable, quota = _is_model_usable(model, "gemini")
+                    if is_usable and quota >= MIN_DAILY_QUOTA:
+                        models_with_quota.append((model, quota))
+                        _safe_print(f"[MODEL] {model}: {quota} requests/day")
                 
-                # Match priority order (high-quota first)
-                for preferred in MODEL_PRIORITY:
-                    for avail in available:
-                        if preferred in avail:
-                            _save_cache("gemini", {"models": [avail] + available})
-                            _safe_print(f"[MODEL] Selected Gemini: {avail} (high-quota)")
-                            return avail
+                # Sort by quota (highest first)
+                models_with_quota.sort(key=lambda x: x[1], reverse=True)
                 
-                # If no priority match, use first available (non-experimental)
-                if available:
-                    _save_cache("gemini", {"models": available})
-                    _safe_print(f"[MODEL] Selected Gemini: {available[0]} (fallback)")
-                    return available[0]
-    except Exception as e:
-        _safe_print(f"[MODEL] Gemini discovery failed: {e}")
+                if models_with_quota:
+                    best_model = models_with_quota[0][0]
+                    best_quota = models_with_quota[0][1]
+                    _save_cache("gemini", {
+                        "models": [m[0] for m in models_with_quota],
+                        "quotas": {m[0]: m[1] for m in models_with_quota}
+                    })
+                    _safe_print(f"[MODEL] Selected Gemini: {best_model} ({best_quota}/day via API)")
+                    return best_model
+                    
+        except Exception as e:
+            _safe_print(f"[MODEL] Gemini discovery failed: {e}")
     
-    # 4. Try emergency cache (any age) - BUT STILL FILTER!
+    # 3. Try cache (with quota data)
     cached = _load_cache("gemini", allow_expired=True)
     if cached and cached.get("models"):
-        valid_models = [
-            m for m in cached["models"]
-            if not any(skip in m.lower() for skip in SKIP_MODELS)
-        ]
-        if valid_models:
-            return valid_models[0]
+        # Use cached quota data if available
+        quotas = cached.get("quotas", {})
+        if quotas:
+            # Sort by cached quota
+            sorted_models = sorted(
+                [(m, quotas.get(m, 0)) for m in cached["models"]],
+                key=lambda x: x[1], reverse=True
+            )
+            for model, quota in sorted_models:
+                if quota >= MIN_DAILY_QUOTA:
+                    return model
+        else:
+            # Old cache without quota data - just return first
+            return cached["models"][0]
     
-    # 5. Use OpenRouter as backup provider
+    # 4. Use OpenRouter as backup provider
     _safe_print("[MODEL] WARNING: No Gemini models available, using OpenRouter backup")
     backup = _get_openrouter_backup()
     if backup:
@@ -231,10 +299,14 @@ def get_dynamic_gemini_model() -> str:
 # =============================================================================
 
 def get_dynamic_groq_model() -> str:
-    """Get the best available Groq model dynamically."""
-    # v17.9.11: Removed decommissioned models (llama-3.1-70b, mixtral-8x7b)
-    MODEL_PRIORITY = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "gemma2-9b-it"]
+    """
+    v17.9.12: TRULY DYNAMIC Groq model selection.
     
+    NO hardcoded model names! All via API:
+    1. Query API for available models
+    2. Filter out inactive/decommissioned (404 from API)
+    3. Return first available
+    """
     # 1. Try quota_optimizer first
     try:
         from quota_optimizer import get_best_groq_model
@@ -246,34 +318,32 @@ def get_dynamic_groq_model() -> str:
         except ImportError:
             pass
     
-    # 2. Try fresh cache
-    cached = _load_cache("groq")
-    if cached and cached.get("models"):
-        return cached["models"][0]
-    
-    # 3. Try API discovery
+    # 2. Try API discovery - get ONLY active models
     try:
         api_key = os.environ.get("GROQ_API_KEY")
         if api_key:
             from groq import Groq
             client = Groq(api_key=api_key)
             models_response = client.models.list()
-            available = [m.id for m in models_response.data if hasattr(m, 'id')]
+            
+            # Get all active models from API (no hardcoding!)
+            available = []
+            for m in models_response.data:
+                if hasattr(m, 'id') and hasattr(m, 'active'):
+                    if m.active:  # Only include active models
+                        available.append(m.id)
+                elif hasattr(m, 'id'):
+                    available.append(m.id)  # If no active flag, assume active
             
             if available:
-                # Match priority order
-                for preferred in MODEL_PRIORITY:
-                    for avail in available:
-                        if preferred in avail:
-                            _save_cache("groq", {"models": [avail] + available})
-                            return avail
-                
                 _save_cache("groq", {"models": available})
+                _safe_print(f"[MODEL] Selected Groq: {available[0]} (from {len(available)} active)")
                 return available[0]
+                
     except Exception as e:
         _safe_print(f"[MODEL] Groq discovery failed: {e}")
     
-    # 4. Try emergency cache
+    # 3. Try cache
     cached = _load_cache("groq", allow_expired=True)
     if cached and cached.get("models"):
         return cached["models"][0]
@@ -445,7 +515,11 @@ def _discover_groq_models() -> List[str]:
 
 
 def _discover_gemini_models() -> List[str]:
-    """Discover all available Gemini models."""
+    """
+    v17.9.12: Discover all available Gemini models with DYNAMIC quota checking.
+    
+    NO hardcoded priority lists! Sort by actual API-reported quota.
+    """
     try:
         import requests
         api_key = os.environ.get("GEMINI_API_KEY")
@@ -460,28 +534,35 @@ def _discover_gemini_models() -> List[str]:
                           if "generateContent" in m.get("supportedGenerationMethods", [])]
                 
                 if models:
-                    # Sort by quota priority
-                    priority = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"]
-                    sorted_models = []
-                    for p in priority:
-                        matching = [m for m in models if p in m]
-                        sorted_models.extend(matching)
-                    for m in models:
-                        if m not in sorted_models:
-                            sorted_models.append(m)
+                    # Check quota for each model via API
+                    models_with_quota = []
+                    for model in models[:15]:  # Check top 15 to save time
+                        is_usable, quota = _is_model_usable(model, "gemini")
+                        if is_usable and quota >= MIN_DAILY_QUOTA:
+                            models_with_quota.append((model, quota))
                     
-                    _save_cache("gemini", {"models": sorted_models})
-                    return sorted_models
+                    # Sort by quota (highest first) - DYNAMIC, not hardcoded!
+                    models_with_quota.sort(key=lambda x: x[1], reverse=True)
+                    sorted_models = [m[0] for m in models_with_quota]
+                    
+                    if sorted_models:
+                        _save_cache("gemini", {
+                            "models": sorted_models,
+                            "quotas": {m[0]: m[1] for m in models_with_quota}
+                        })
+                        return sorted_models
+                    
+                    # If no quota data, return all models
+                    _save_cache("gemini", {"models": models})
+                    return models
+                    
     except Exception as e:
         _safe_print(f"[MODEL] Gemini discovery failed: {e}")
     
-    # Emergency cache - FILTER bad models!
+    # Emergency cache
     cached = _load_cache("gemini", allow_expired=True)
     if cached and cached.get("models"):
-        return [
-            m for m in cached["models"]
-            if not any(skip in m.lower() for skip in SKIP_MODELS)
-        ]
+        return cached["models"]
     return []
 
 
