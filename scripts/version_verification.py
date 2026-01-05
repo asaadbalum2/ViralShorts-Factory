@@ -779,11 +779,13 @@ class VersionVerifier:
         else:
             issues.append("Gemini rate limit not set to 5.0s")
         
-        # 3. Provider priority - Groq should be primary
-        if "Groq is PRIMARY" in budget_manager or "GROQ FIRST" in budget_manager:
-            print("   [OK] Groq is PRIMARY provider")
+        # 3. Provider priority - Gemini should be primary (v17.9.11: higher quota!)
+        if "Gemini is PRIMARY" in budget_manager or "GEMINI FIRST" in budget_manager:
+            print("   [OK] Gemini is PRIMARY provider (1,500 req/day)")
+        elif "Groq is PRIMARY" in budget_manager or "GROQ FIRST" in budget_manager:
+            issues.append("Groq as primary - should be Gemini (v17.9.11)")
         else:
-            issues.append("Groq not set as primary provider")
+            issues.append("No primary provider set")
         
         # 4. TTS retry logic
         if "fallback_voices" in generator and "for retry in range(3)" in generator:
@@ -880,6 +882,20 @@ class VersionVerifier:
         if not test_path.exists():
             self.warnings.append("Smart router test file missing")
         
+        # Check 5: Decommissioned models only in SKIP_MODELS (v17.9.11)
+        decommissioned = ["llama-3.1-70b-versatile", "mixtral-8x7b-32768"]
+        # Check in quota_optimizer (should NOT have decommissioned models in active use)
+        quota_path = Path("src/quota/quota_optimizer.py")
+        if quota_path.exists():
+            quota_content = quota_path.read_text(encoding='utf-8', errors='ignore')
+            for model in decommissioned:
+                # Check if model is in default_models list (bad)
+                if f'"{model}"' in quota_content and "default_models" in quota_content:
+                    # Check if it's on a line with default_models
+                    for line in quota_content.split('\n'):
+                        if model in line and "NOTE" not in line and "#" not in line.split(model)[0]:
+                            issues.append(f"Decommissioned model {model} in quota_optimizer")
+        
         if issues:
             for issue in issues:
                 self.errors.append(f"Smart Router: {issue}")
@@ -890,6 +906,7 @@ class VersionVerifier:
             print("   [OK] Caller exists with all providers")
             print("   [OK] Integrated in pro_video_generator.py")
             print("   [OK] Fallback chains and periodic refresh configured")
+            print("   [OK] No decommissioned models in active code")
             return True
     
     # ========================================================================
