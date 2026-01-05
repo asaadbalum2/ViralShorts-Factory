@@ -28,6 +28,16 @@ from typing import List, Optional, Dict
 CACHE_DIR = Path("cache/models")
 EMERGENCY_CACHE_DIR = Path("data/persistent/model_cache")  # Persists across runs
 
+# v17.9.11: Models to ALWAYS SKIP (low quota, experimental, or decommissioned)
+SKIP_MODELS = [
+    "gemini-3",             # Experimental, 20/day limit!
+    "gemini-2.0-flash-exp", # Experimental
+    "exp",                  # Any experimental
+    "preview",              # Preview models often have low limits
+    "llama-3.1-70b-versatile",  # DECOMMISSIONED by Groq
+    "mixtral-8x7b",         # DECOMMISSIONED by Groq
+]
+
 
 def _safe_print(msg: str):
     """Print with fallback for encoding issues."""
@@ -129,13 +139,7 @@ def get_dynamic_gemini_model() -> str:
         "gemini-1.5-pro",           # 50/day but good quality
     ]
     
-    # Models to AVOID (experimental, low quota, or problematic)
-    SKIP_MODELS = [
-        "gemini-3",         # Experimental, 20/day limit!
-        "gemini-2.0-flash-exp",  # Experimental
-        "exp",              # Any experimental
-        "preview",          # Preview models often have low limits
-    ]
+    # Use module-level SKIP_MODELS for filtering
     
     # 1. Try quota_optimizer first
     try:
@@ -148,10 +152,17 @@ def get_dynamic_gemini_model() -> str:
         except ImportError:
             pass
     
-    # 2. Try fresh cache
+    # 2. Try fresh cache (BUT FILTER for bad models!)
     cached = _load_cache("gemini")
     if cached and cached.get("models"):
-        return cached["models"][0]
+        # v17.9.11: Filter cached models too!
+        valid_models = [
+            m for m in cached["models"]
+            if not any(skip in m.lower() for skip in SKIP_MODELS)
+        ]
+        if valid_models:
+            return valid_models[0]
+        # Cache has only bad models - continue to API discovery
     
     # 3. Try API discovery
     try:
@@ -192,10 +203,15 @@ def get_dynamic_gemini_model() -> str:
     except Exception as e:
         _safe_print(f"[MODEL] Gemini discovery failed: {e}")
     
-    # 4. Try emergency cache (any age)
+    # 4. Try emergency cache (any age) - BUT STILL FILTER!
     cached = _load_cache("gemini", allow_expired=True)
     if cached and cached.get("models"):
-        return cached["models"][0]
+        valid_models = [
+            m for m in cached["models"]
+            if not any(skip in m.lower() for skip in SKIP_MODELS)
+        ]
+        if valid_models:
+            return valid_models[0]
     
     # 5. Use OpenRouter as backup provider
     _safe_print("[MODEL] WARNING: No Gemini models available, using OpenRouter backup")
@@ -459,9 +475,14 @@ def _discover_gemini_models() -> List[str]:
     except Exception as e:
         _safe_print(f"[MODEL] Gemini discovery failed: {e}")
     
-    # Emergency cache
+    # Emergency cache - FILTER bad models!
     cached = _load_cache("gemini", allow_expired=True)
-    return cached.get("models", []) if cached else []
+    if cached and cached.get("models"):
+        return [
+            m for m in cached["models"]
+            if not any(skip in m.lower() for skip in SKIP_MODELS)
+        ]
+    return []
 
 
 def _discover_openrouter_models() -> List[str]:
