@@ -232,24 +232,41 @@ class SmartAICaller:
             else:
                 safe_print(f"   [AI] Using {model_key}")
             
-            # Make the call
-            try:
-                result = caller(model_id, prompt, max_tokens, temperature)
-                
-                if result:
-                    # Success!
-                    self.router.record_result(model_key, success=True, 
-                                              was_fallback=(i > 0))
-                    if i > 0:
-                        safe_print(f"   [OK] Fallback succeeded with {model_key}")
-                    return result
-                else:
-                    # Failed, try next
-                    self.router.record_result(model_key, success=False)
+            # Make the call with retry for transient errors
+            # v17.9.12: Exponential backoff for network/rate limit errors
+            max_retries = 3
+            retry_delay = 5  # Start with 5 seconds
+            
+            for attempt in range(max_retries):
+                try:
+                    result = caller(model_id, prompt, max_tokens, temperature)
                     
-            except Exception as e:
-                safe_print(f"   [!] {model_key} exception: {e}")
-                self.router.record_result(model_key, success=False)
+                    if result:
+                        # Success!
+                        self.router.record_result(model_key, success=True, 
+                                                  was_fallback=(i > 0))
+                        if i > 0:
+                            safe_print(f"   [OK] Fallback succeeded with {model_key}")
+                        return result
+                    else:
+                        # Empty response, try next model
+                        self.router.record_result(model_key, success=False)
+                        break  # Don't retry empty responses
+                        
+                except Exception as e:
+                    error_str = str(e)
+                    # Retry for rate limits (429) and network errors
+                    is_retryable = '429' in error_str or 'timeout' in error_str.lower() or \
+                                   'connection' in error_str.lower() or 'network' in error_str.lower()
+                    
+                    if is_retryable and attempt < max_retries - 1:
+                        safe_print(f"   [!] {model_key}: {error_str[:50]}... retrying in {retry_delay}s")
+                        time.sleep(retry_delay)
+                        retry_delay *= 2  # Exponential backoff
+                    else:
+                        safe_print(f"   [!] {model_key} exception: {e}")
+                        self.router.record_result(model_key, success=False)
+                        break  # Move to next model
         
         # All models failed
         safe_print(f"   [FAIL] All {len(chain)} models failed!")

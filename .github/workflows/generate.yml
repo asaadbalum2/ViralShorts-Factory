@@ -45,51 +45,52 @@ jobs:
     timeout-minutes: 120
 
     steps:
-      - name: Check quota before starting
+      - name: Check API availability (FREE - no quota cost)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          echo "Checking if we have quota available..."
+          echo "v17.9.12: Checking API availability (FREE endpoints only)..."
           
-          # v17.9.2: DYNAMIC model discovery - try multiple models
-          # Model names change over time, so we try several in priority order
-          # v17.9.8: Reordered by QUOTA SIZE (highest first!)
-          # gemini-1.5-flash: 1,500/day (BEST for quota)
-          # gemini-2.0-flash: 500/day (stable)
-          # gemini-1.5-pro: varies (good quality)
-          # gemini-2.0-flash-exp: 50-100/day (experimental - lowest!)
-          MODELS="gemini-1.5-flash gemini-2.0-flash gemini-1.5-pro gemini-2.0-flash-exp gemini-pro"
+          # Use model INFO endpoint (FREE - no quota cost!)
+          # This just checks if the API is reachable and model exists
+          MAX_RETRIES=3
+          RETRY_DELAY=30
           
-          for MODEL in $MODELS; do
-            echo "Trying model: $MODEL"
-            HTTP_CODE=$(curl -s -w "%{http_code}" -o /tmp/quota_test.json \
-              "https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${GEMINI_API_KEY}" \
-              -H "Content-Type: application/json" \
-              -d '{"contents":[{"parts":[{"text":"Hi"}]}],"generationConfig":{"maxOutputTokens":1}}' \
+          for ATTEMPT in $(seq 1 $MAX_RETRIES); do
+            echo "Attempt $ATTEMPT of $MAX_RETRIES..."
+            
+            # Check if API is reachable using FREE models list endpoint
+            HTTP_CODE=$(curl -s -w "%{http_code}" -o /tmp/models.json \
+              "https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}" \
               2>/dev/null || echo "000")
             
             if [ "$HTTP_CODE" = "200" ]; then
-              echo "✓ Model $MODEL available with quota"
-              echo "GEMINI_BEST_MODEL=$MODEL" >> $GITHUB_ENV
+              echo "✓ Gemini API reachable"
+              # Parse available models from response
+              MODELS=$(cat /tmp/models.json | grep -o '"name": "models/[^"]*"' | head -5 | sed 's/"name": "models\///g' | tr -d '"')
+              echo "Available models: $MODELS"
+              echo "GEMINI_AVAILABLE=true" >> $GITHUB_ENV
               break
             elif [ "$HTTP_CODE" = "429" ]; then
-              echo "✗ Model $MODEL quota exhausted"
-            elif [ "$HTTP_CODE" = "404" ]; then
-              echo "✗ Model $MODEL not found, trying next..."
-            else
-              echo "? Model $MODEL returned HTTP $HTTP_CODE"
+              echo "⚠ Rate limited, waiting ${RETRY_DELAY}s before retry..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))  # Exponential backoff
+            elif [ "$HTTP_CODE" = "000" ]; then
+              echo "⚠ Network error, waiting ${RETRY_DELAY}s before retry..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+              echo "? API returned HTTP $HTTP_CODE, waiting ${RETRY_DELAY}s..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
             fi
           done
           
-          # Check final result
-          if [ "$HTTP_CODE" = "429" ]; then
-            echo "::warning::ALL MODELS QUOTA EXHAUSTED - Skipping this run."
-            exit 78
-          elif [ "$HTTP_CODE" = "200" ]; then
-            echo "Quota available - proceeding with video generation"
-          else
-            echo "Proceeding anyway (Python will handle model discovery)"
+          # After all retries, proceed anyway - Python has its own fallback chain
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::warning::Gemini API check failed, but proceeding - Python has fallback providers"
+            echo "GEMINI_AVAILABLE=false" >> $GITHUB_ENV
           fi
+          echo "✓ Proceeding with video generation (Python handles provider selection)"
 
       - name: Random delay for stealth (0-45 min)
         if: github.event.inputs.skip_delay != 'true'
