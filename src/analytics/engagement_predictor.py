@@ -36,33 +36,59 @@ ENGAGEMENT_FILE = STATE_DIR / "engagement_patterns.json"
 
 class EngagementPredictor:
     """
-    Predicts engagement rates for video content.
+    v17.9.16: Predicts engagement rates for video content.
+    
+    Now uses HYBRID approach:
+    - Baseline triggers (algorithm patterns)
+    - Learned triggers from analytics
+    - AI-discovered triggers (periodically refreshed)
     """
     
-    # Engagement triggers
-    COMMENT_TRIGGERS = [
-        "comment", "tell me", "what do you think", "share your",
-        "agree", "disagree", "opinion", "experience", "happened to you",
-        "try this", "let me know", "?", "wrong", "right"
-    ]
-    
-    SHARE_TRIGGERS = [
-        "share this", "tell a friend", "save for later", "tag someone",
-        "someone needs to see", "send this to", "everyone should know"
-    ]
-    
-    LIKE_TRIGGERS = [
-        "like if", "double tap", "smash like", "hit like",
-        "if you agree", "if this helped"
-    ]
-    
-    SAVE_TRIGGERS = [
-        "save this", "bookmark", "come back", "reference",
-        "steps", "guide", "how to", "tutorial"
-    ]
+    # v17.9.16: Minimal baseline patterns (algorithm will look for these)
+    # Extended dynamically by learned patterns from self_learning_engine
+    _BASELINE_COMMENT = ["comment", "tell me", "what do you think", "?"]
+    _BASELINE_SHARE = ["share this", "tag someone", "send this to"]
+    _BASELINE_LIKE = ["like if", "if you agree"]
+    _BASELINE_SAVE = ["save this", "bookmark", "how to"]
     
     def __init__(self):
         self.data = self._load()
+        
+        # v17.9.16: Initialize triggers with baseline + learned
+        self._init_dynamic_triggers()
+    
+    def _init_dynamic_triggers(self):
+        """Initialize triggers from baseline + learned patterns."""
+        # Start with baseline
+        self.COMMENT_TRIGGERS = list(self._BASELINE_COMMENT)
+        self.SHARE_TRIGGERS = list(self._BASELINE_SHARE)
+        self.LIKE_TRIGGERS = list(self._BASELINE_LIKE)
+        self.SAVE_TRIGGERS = list(self._BASELINE_SAVE)
+        
+        # Try to extend with learned patterns
+        try:
+            from self_learning_engine import get_learning_engine
+            engine = get_learning_engine()
+            triggers = engine.get_viral_triggers()
+            
+            if triggers.get("source") != "none_available":
+                # Extend with learned engagement triggers
+                engagement = triggers.get("engagement_triggers", [])
+                for t in engagement:
+                    t_lower = t.lower()
+                    if "comment" in t_lower and t_lower not in self.COMMENT_TRIGGERS:
+                        self.COMMENT_TRIGGERS.append(t_lower)
+                    elif "share" in t_lower or "tag" in t_lower:
+                        if t_lower not in self.SHARE_TRIGGERS:
+                            self.SHARE_TRIGGERS.append(t_lower)
+                    elif "like" in t_lower:
+                        if t_lower not in self.LIKE_TRIGGERS:
+                            self.LIKE_TRIGGERS.append(t_lower)
+                    elif "save" in t_lower:
+                        if t_lower not in self.SAVE_TRIGGERS:
+                            self.SAVE_TRIGGERS.append(t_lower)
+        except:
+            pass  # Use baseline only
     
     def _load(self) -> Dict:
         try:

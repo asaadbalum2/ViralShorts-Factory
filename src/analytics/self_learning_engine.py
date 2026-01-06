@@ -487,6 +487,135 @@ PERFORMANCE STATS:
         return [c.get("value") for c in self.data["cta_effectiveness"].get("best", [])][:5]
 
 
+    def get_viral_triggers(self) -> Dict:
+        """
+        v17.9.16: Get viral triggers - dynamic, not hardcoded!
+        
+        Priority:
+        1. Learned from analytics (best patterns)
+        2. AI-generated (ask AI for current viral triggers)
+        3. Never returns hardcoded defaults
+        
+        Returns dict with hook_triggers, engagement_triggers, etc.
+        """
+        # Try to get learned triggers first
+        if self.data.get("patterns", {}).get("hooks"):
+            learned_hook_triggers = [
+                p.get("value", "") for p in self.data["patterns"]["hooks"]
+                if p.get("success_count", 0) > p.get("failure_count", 0)
+            ]
+            if len(learned_hook_triggers) >= 3:
+                return self._build_triggers_from_learned(learned_hook_triggers)
+        
+        # Otherwise, ask AI for current viral triggers
+        return self._get_triggers_from_ai()
+    
+    def _build_triggers_from_learned(self, hook_patterns: List[str]) -> Dict:
+        """Build triggers dict from learned patterns."""
+        return {
+            "source": "learned_from_analytics",
+            "hook_triggers": hook_patterns[:5],
+            "engagement_triggers": self.data.get("cta_effectiveness", {}).get("best", [])[:5],
+            "power_words": self.data.get("recommendations", {}).get("boost_phrases", [])[:10],
+            "avoid_words": self.data.get("recommendations", {}).get("avoid_phrases", [])[:5],
+        }
+    
+    def _get_triggers_from_ai(self) -> Dict:
+        """Ask AI for current viral triggers."""
+        import os
+        
+        prompt = """You are a viral content expert. What are the TOP viral triggers for YouTube Shorts RIGHT NOW?
+
+Based on current trends and algorithm behavior, provide:
+
+1. HOOK TRIGGERS: 5 words/phrases that STOP the scroll (e.g., "STOP", "Wait", "Did you know")
+2. ENGAGEMENT TRIGGERS: 5 phrases that drive comments/likes (e.g., "Comment below", "Like if you agree")
+3. POWER WORDS: 10 words that boost CTR (e.g., "secret", "truth", "hidden")
+4. AVOID WORDS: 5 words that hurt performance (overused, spam-flagged)
+
+CRITICAL: Base this on CURRENT trends, not generic advice. What's working NOW?
+
+Return JSON ONLY:
+{
+    "hook_triggers": ["trigger1", "trigger2", "trigger3", "trigger4", "trigger5"],
+    "engagement_triggers": ["phrase1", "phrase2", "phrase3", "phrase4", "phrase5"],
+    "power_words": ["word1", "word2", "word3", "word4", "word5", "word6", "word7", "word8", "word9", "word10"],
+    "avoid_words": ["word1", "word2", "word3", "word4", "word5"]
+}"""
+        
+        result = None
+        
+        # Try Groq first
+        groq_key = os.environ.get("GROQ_API_KEY")
+        if groq_key:
+            try:
+                from groq import Groq
+                try:
+                    from src.ai.model_helper import get_dynamic_groq_model
+                    model = get_dynamic_groq_model()
+                except:
+                    model = "llama-3.3-70b-versatile"
+                
+                client = Groq(api_key=groq_key)
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=300,
+                    temperature=0.5
+                )
+                result = response.choices[0].message.content
+            except:
+                pass
+        
+        # Try Gemini
+        if not result:
+            gemini_key = os.environ.get("GEMINI_API_KEY")
+            if gemini_key:
+                try:
+                    import google.generativeai as genai
+                    genai.configure(api_key=gemini_key)
+                    from src.ai.model_helper import get_dynamic_gemini_model
+                    model = genai.GenerativeModel(get_dynamic_gemini_model())
+                    response = model.generate_content(prompt)
+                    result = response.text
+                except:
+                    pass
+        
+        # Parse result
+        if result:
+            try:
+                import json
+                start = result.find('{')
+                end = result.rfind('}') + 1
+                if start >= 0 and end > start:
+                    parsed = json.loads(result[start:end])
+                    parsed["source"] = "ai_generated"
+                    
+                    # Cache the AI-generated triggers
+                    self.data["ai_triggers"] = parsed
+                    self.data["ai_triggers"]["generated_at"] = datetime.now().isoformat()
+                    self._save()
+                    
+                    return parsed
+            except:
+                pass
+        
+        # If AI fails, use cached AI triggers if available
+        if self.data.get("ai_triggers"):
+            cached = self.data["ai_triggers"].copy()
+            cached["source"] = "cached_ai"
+            return cached
+        
+        # Ultimate fallback: empty (the caller should handle this)
+        return {
+            "source": "none_available",
+            "hook_triggers": [],
+            "engagement_triggers": [],
+            "power_words": [],
+            "avoid_words": []
+        }
+
+
 # Singleton instance
 _learning_engine = None
 

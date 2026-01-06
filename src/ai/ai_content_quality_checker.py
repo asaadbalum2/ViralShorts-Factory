@@ -194,59 +194,88 @@ Return ONLY valid JSON."""
         return None
     
     def _fallback_check(self, hook: str, phrases: List[str], cta: str) -> Dict:
-        """Simple heuristic quality check."""
-        score = 5  # Start at 5
+        """
+        v17.9.16: Use REAL scoring components when AI fails.
+        
+        Instead of fake heuristic scores, use the virality calculator,
+        engagement predictor, and retention predictor for real scores!
+        """
+        content = {
+            "hook": hook,
+            "phrases": phrases,
+            "cta": cta,
+            "category": "unknown",
+            "topic": ""
+        }
+        
         issues = []
         suggestions = []
+        component_scores = {}
         
-        # Hook checks
-        if len(hook) < 10:
-            issues.append("Hook too short")
-            suggestions.append("Add more words to hook for impact")
-        elif len(hook) > 100:
-            issues.append("Hook too long")
-            suggestions.append("Shorten hook to under 15 words")
-        else:
-            score += 1
+        # v17.9.16: Use REAL calculators for actual scores
+        try:
+            from virality_calculator import get_virality_calculator
+            virality = get_virality_calculator().calculate_virality(content)
+            component_scores["virality"] = virality.get("overall_score", 50)
+            component_scores["hook_strength"] = virality.get("components", {}).get("hook_strength", 50)
+            issues.extend(virality.get("recommendations", [])[:2])
+        except:
+            component_scores["virality"] = 50
+            component_scores["hook_strength"] = 50
         
-        # Hook patterns
-        hook_lower = hook.lower()
-        if any(w in hook_lower for w in ["stop", "wait", "did you know", "?", "secret"]):
-            score += 1
-        else:
-            suggestions.append("Add scroll-stopping pattern (question, STOP, etc)")
+        try:
+            from engagement_predictor import get_engagement_predictor
+            engagement = get_engagement_predictor().predict_engagement(content)
+            component_scores["engagement"] = engagement.get("overall_engagement", 50)
+            issues.extend(engagement.get("recommendations", [])[:2])
+        except:
+            component_scores["engagement"] = 50
         
-        # Phrase count
-        if 3 <= len(phrases) <= 6:
-            score += 1
-        elif len(phrases) < 3:
-            issues.append("Not enough phrases for value")
-            suggestions.append("Add more content phrases")
+        try:
+            from retention_predictor import get_retention_predictor
+            retention = get_retention_predictor().predict_retention(content)
+            component_scores["retention"] = retention.get("overall_retention", 50)
+            issues.extend(retention.get("recommendations", [])[:2])
+        except:
+            component_scores["retention"] = 50
         
-        # CTA check
-        if cta:
-            if "?" in cta or "comment" in cta.lower():
-                score += 1
-            else:
-                suggestions.append("Add engagement-driving CTA")
-        else:
-            issues.append("Missing CTA")
-            suggestions.append("Add a call-to-action at the end")
+        try:
+            from script_analyzer import get_script_analyzer
+            script = get_script_analyzer().analyze_script(content)
+            component_scores["script"] = script.get("overall_score", 50)
+            suggestions.extend(script.get("suggestions", [])[:2])
+        except:
+            component_scores["script"] = 50
         
-        # Cap at 10
-        score = min(score, 10)
+        # Calculate REAL overall score (weighted average)
+        weights = {
+            "virality": 0.30,
+            "hook_strength": 0.25,
+            "engagement": 0.25,
+            "retention": 0.10,
+            "script": 0.10
+        }
+        
+        overall_100 = sum(
+            component_scores.get(k, 50) * w 
+            for k, w in weights.items()
+        )
+        
+        # Convert from 0-100 to 1-10 scale
+        score = max(1, min(10, round(overall_100 / 10)))
         
         return {
             "score": score,
-            "hook_score": min(score + 1, 10),
-            "value_score": score,
-            "pacing_score": score,
-            "cta_score": score if cta else 4,
-            "virality_score": score,
-            "issues": issues,
-            "suggestions": suggestions,
+            "hook_score": round(component_scores.get("hook_strength", 50) / 10),
+            "value_score": round(component_scores.get("script", 50) / 10),
+            "pacing_score": round(component_scores.get("retention", 50) / 10),
+            "cta_score": round(component_scores.get("engagement", 50) / 10),
+            "virality_score": round(component_scores.get("virality", 50) / 10),
+            "issues": issues[:5],
+            "suggestions": suggestions[:5],
             "verdict": "PASS" if score >= 7 else "NEEDS_WORK",
-            "source": "heuristic_fallback"
+            "source": "real_calculators",  # No longer fake!
+            "component_scores": component_scores
         }
     
     def _record_check(self, result: Dict):

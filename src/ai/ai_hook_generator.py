@@ -153,17 +153,39 @@ Return ONLY the new hook (7-10 words max), no explanation."""
     
     def _generate_with_ai(self, topic: str, category: str, 
                          style: str) -> Optional[str]:
-        """Generate hook using AI with HIGH-QUALITY model for best results."""
+        """
+        v17.9.16: Generate hook using AI with DYNAMIC triggers from learning engine.
         
-        # v17.9.15: Get learned patterns for enhanced prompting
+        NO HARDCODED TRIGGERS! All triggers come from:
+        1. Self-learning engine (learned from analytics)
+        2. AI-generated (asks AI for current viral triggers)
+        """
+        
+        # v17.9.16: Get DYNAMIC triggers from learning engine
+        triggers = self._get_dynamic_triggers()
+        
+        # Build dynamic context from triggers
+        hook_triggers = triggers.get("hook_triggers", [])
+        power_words = triggers.get("power_words", [])
+        avoid_words = triggers.get("avoid_words", [])
+        
+        triggers_context = ""
+        if hook_triggers:
+            triggers_context += f"\nHOOK TRIGGERS (proven to work): {', '.join(hook_triggers)}"
+        if power_words:
+            triggers_context += f"\nPOWER WORDS (boost CTR): {', '.join(power_words)}"
+        if avoid_words:
+            triggers_context += f"\nAVOID WORDS (hurt performance): {', '.join(avoid_words)}"
+        
+        # Get learned patterns
         best_patterns = self.data.get("best_patterns", [])
         worst_patterns = self.data.get("worst_patterns", [])
         
         patterns_context = ""
         if best_patterns:
-            patterns_context = f"\n\nPATTERNS THAT WORK (from analytics): {', '.join(best_patterns[:5])}"
+            patterns_context = f"\n\nPATTERNS THAT WORK (from our analytics): {', '.join(best_patterns[:5])}"
         if worst_patterns:
-            patterns_context += f"\nPATTERNS TO AVOID: {', '.join(worst_patterns[:3])}"
+            patterns_context += f"\nPATTERNS TO AVOID (from our analytics): {', '.join(worst_patterns[:3])}"
         
         prompt = f"""You are MrBeast's hook writer. You've written 1000+ viral hooks with 10B+ views.
 
@@ -172,45 +194,62 @@ TASK: Create ONE hook that will score 10/10 on our virality algorithm.
 Topic: {topic}
 Category: {category}
 {patterns_context}
+{triggers_context}
 
-===== MANDATORY SCORING REQUIREMENTS (ALL must be met!) =====
-Our algorithm scores hooks on these EXACT criteria. Your hook MUST include:
+===== SCORING ALGORITHM (what our system checks!) =====
+Our algorithm scores hooks based on:
+- Pattern interrupt words (+20 points)
+- Questions or specific numbers (+15 points each)
+- Curiosity/power words (+15 points)
+- Short & punchy: 10 words max (+10 points)
+- Identity challenge: Make them question themselves (bonus)
 
-1. PATTERN INTERRUPT (Required for +20 points)
-   Start with one of: "STOP", "Wait", "Hold on", "Listen"
-   Example: "STOP - this changes everything"
+===== YOUR FORMULA =====
+[PATTERN INTERRUPT] + [NUMBER/QUESTION] + [POWER WORD] + [IDENTITY HOOK]
 
-2. QUESTION OR NUMBER (Required for +15 points each)
-   Include a "?" OR a specific number
-   Example: "Did you know 97% of people..." or "3 things no one tells you..."
-
-3. CURIOSITY TRIGGER (Required for +15 points)
-   Include one of: "secret", "truth", "why", "how", "hidden", "actually"
-   Example: "The hidden truth about..."
-
-4. SHORT & PUNCHY (Required for +10 points)
-   MAXIMUM 10 words. Less is more!
-
-5. IDENTITY CHALLENGE (Bonus virality)
-   Make them question themselves: "You're doing this wrong"
-
-===== WINNING FORMULA =====
-[PATTERN INTERRUPT] + [NUMBER/QUESTION] + [CURIOSITY WORD] + [IDENTITY HOOK]
-
-PERFECT EXAMPLES (score 95-100):
-- "STOP - the secret 3-step trick that 99% don't know"
-- "Wait, why do 87% of people get this wrong?"
-- "Hold on - the hidden truth about {topic} will shock you"
-- "STOP scrolling - here's the real reason why..."
-
-BAD EXAMPLES (score 20-40):
-- "Here's a tip about {topic}" (no interrupt, no curiosity)
-- "Let me tell you something interesting" (boring, no hook)
-- "This video is about {topic}" (zero hook power)
-
-CRITICAL: Your hook must be 10 words or less and include at least 3 of the 5 requirements above!
+===== REQUIREMENTS =====
+- MUST use at least one hook trigger from above (if provided)
+- MUST include a number OR question mark
+- MUST include at least one power word (if provided)
+- MAXIMUM 10 words
+- Do NOT use any avoid words
 
 Return ONLY the hook text, no quotes, no explanation."""
+
+        result = self._call_gemini(prompt)
+        if result:
+            return self._clean_hook(result)
+        
+        result = self._call_groq(prompt)
+        if result:
+            return self._clean_hook(result)
+        
+        return None
+    
+    def _get_dynamic_triggers(self) -> Dict:
+        """
+        v17.9.16: Get dynamic triggers from learning engine.
+        NO HARDCODING - all from analytics or AI!
+        """
+        try:
+            from self_learning_engine import get_learning_engine
+            engine = get_learning_engine()
+            return engine.get_viral_triggers()
+        except ImportError:
+            try:
+                from src.analytics.self_learning_engine import get_learning_engine
+                engine = get_learning_engine()
+                return engine.get_viral_triggers()
+            except:
+                pass
+        
+        # Empty fallback - no hardcoded defaults!
+        return {
+            "source": "none",
+            "hook_triggers": [],
+            "power_words": [],
+            "avoid_words": []
+        }
 
         # Try Gemini first (more creative)
         hook = self._call_gemini(prompt)

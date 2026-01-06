@@ -117,7 +117,13 @@ class AICTAGenerator:
     
     def _generate_with_ai(self, topic: str, category: str,
                          style: str) -> Optional[str]:
-        """Generate CTA with AI."""
+        """
+        v17.9.16: Generate CTA with AI using DYNAMIC triggers from learning engine.
+        
+        NO HARDCODED TRIGGERS! All triggers come from:
+        1. Self-learning engine (learned from analytics)
+        2. AI-generated (asks AI for current engagement triggers)
+        """
         style_hint = ""
         if style == "comment":
             style_hint = "Focus on driving comments - ask a question that DEMANDS a response."
@@ -130,7 +136,22 @@ class AICTAGenerator:
         else:
             style_hint = "Choose the best style for maximum engagement."
         
-        # v17.9.15: Get learned best CTAs for enhanced prompting
+        # v17.9.16: Get DYNAMIC triggers from learning engine
+        triggers = self._get_dynamic_triggers()
+        
+        engagement_triggers = triggers.get("engagement_triggers", [])
+        power_words = triggers.get("power_words", [])
+        avoid_words = triggers.get("avoid_words", [])
+        
+        triggers_context = ""
+        if engagement_triggers:
+            triggers_context += f"\nENGAGEMENT TRIGGERS (proven to work): {', '.join(engagement_triggers)}"
+        if power_words:
+            triggers_context += f"\nPOWER WORDS (boost engagement): {', '.join(power_words)}"
+        if avoid_words:
+            triggers_context += f"\nAVOID (hurt performance): {', '.join(avoid_words)}"
+        
+        # Get learned best CTAs
         best_ctas = self.data.get("best_styles", [])
         learned_context = ""
         if best_ctas:
@@ -144,47 +165,23 @@ Topic: {topic}
 Category: {category}
 Style: {style_hint}
 {learned_context}
+{triggers_context}
 
-===== MANDATORY SCORING REQUIREMENTS (Our algorithm scores these!) =====
+===== SCORING ALGORITHM (what our system checks!) =====
+Our algorithm scores CTAs based on:
+- Presence of engagement trigger words (+20 points per trigger)
+- Questions that demand response (+15 points)
+- Clear action instructions (+10 points)
+- Power words (+5 points each)
 
-1. COMMENT TRIGGER (Required for max score)
-   Must include one of these EXACT phrases or words:
-   "comment", "tell me", "what do you think", "share your", 
-   "agree", "disagree", "opinion", "experience", "happened to you"
-   
-   Best formula: Ask a question + "Comment below"
-
-2. LIKE TRIGGER (Bonus points)
-   Include: "like if", "double tap", "smash like", "hit like", 
-   "if you agree", "if this helped"
-
-3. SHARE TRIGGER (High bonus)
-   Include: "share this", "tell a friend", "save for later", 
-   "tag someone", "someone needs to see", "send this to"
-
-4. SAVE TRIGGER (Bonus points)
-   Include: "save this", "bookmark", "come back", "reference",
-   "steps", "guide", "how to"
-
-===== HIGH-SCORING CTA TEMPLATES =====
-Format: [Engagement hook] + [Clear action] + [Why they should]
-
-PERFECT EXAMPLES (score 90-100):
-- "Comment your biggest struggle with this - I'll reply with tips"
-- "Save this for later - you'll need it. Tell me if you agree!"
-- "What do you think? Drop your opinion below - let's debate"
-- "Tag someone who needs to see this. Share the knowledge!"
-- "Like if this helped, comment your experience - I read everything"
-
-BAD EXAMPLES (score 30-40):
-- "Thanks for watching" (no engagement trigger)
-- "Subscribe to my channel" (too generic)
-- "See you next time" (zero engagement)
+===== YOUR FORMULA =====
+[Engagement trigger] + [Clear action] + [Question or urgency]
 
 ===== REQUIREMENTS =====
+- MUST use at least one engagement trigger from above (if provided)
+- MUST include a question OR clear action
 - 10-20 words MAX
-- Must include at least 2 engagement triggers from above
-- Must end with a question OR clear action
+- Do NOT use any avoid words
 - Feel natural, not pushy
 
 Return ONLY the CTA text, no quotes, no explanation."""
@@ -194,6 +191,31 @@ Return ONLY the CTA text, no quotes, no explanation."""
             return self._clean_cta(result)
         
         return None
+    
+    def _get_dynamic_triggers(self) -> Dict:
+        """
+        v17.9.16: Get dynamic triggers from learning engine.
+        NO HARDCODING - all from analytics or AI!
+        """
+        try:
+            from self_learning_engine import get_learning_engine
+            engine = get_learning_engine()
+            return engine.get_viral_triggers()
+        except ImportError:
+            try:
+                from src.analytics.self_learning_engine import get_learning_engine
+                engine = get_learning_engine()
+                return engine.get_viral_triggers()
+            except:
+                pass
+        
+        # Empty fallback - no hardcoded defaults!
+        return {
+            "source": "none",
+            "engagement_triggers": [],
+            "power_words": [],
+            "avoid_words": []
+        }
     
     def _call_ai(self, prompt: str) -> Optional[str]:
         """Call AI."""

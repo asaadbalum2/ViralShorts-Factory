@@ -754,12 +754,17 @@ def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
 
 def get_model_for_task(task_type: str) -> str:
     """
-    v17.9.15: Get the BEST model for a specific task type.
+    v17.9.16: Get the BEST model for a specific task type.
     
     Task types:
     - "critical": Hook, evaluation, scoring → Use PRO model
     - "bulk": Phrases, CTAs → Use flash/fast model
     - "evaluation": Quality checks → Use PRO model
+    
+    Fallback chain:
+    1. gemini-pro (high quality)
+    2. groq-70b (high quality)
+    3. gemini-flash (fast, always available)
     
     Returns: Model ID (provider:model format)
     """
@@ -769,14 +774,19 @@ def get_model_for_task(task_type: str) -> str:
         # Try to get a pro model
         pro_model = get_high_quality_model("gemini")
         if pro_model:
+            _safe_print(f"[MODEL] Using high-quality Gemini for {task_type}")
             return f"gemini:{pro_model}"
         
         # Fall back to Groq 70B
         groq_pro = get_high_quality_model("groq")
         if groq_pro:
+            _safe_print(f"[MODEL] Using high-quality Groq for {task_type}")
             return f"groq:{groq_pro}"
+        
+        # v17.9.16: Fall back to regular model (ALWAYS have a fallback!)
+        _safe_print(f"[MODEL] Pro models unavailable, using fast model for {task_type}")
     
-    # For bulk tasks, use the standard fast model
+    # For bulk tasks OR fallback, use the standard fast model
     return f"gemini:{get_dynamic_gemini_model()}"
 
 

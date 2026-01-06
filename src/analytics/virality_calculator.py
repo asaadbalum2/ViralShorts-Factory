@@ -38,7 +38,11 @@ VIRALITY_FILE = STATE_DIR / "virality_scores.json"
 
 class ViralityCalculator:
     """
-    Comprehensive virality score calculator.
+    v17.9.16: Comprehensive virality score calculator.
+    
+    Now uses HYBRID approach for pattern detection:
+    - Baseline patterns (algorithm fundamentals)
+    - Learned patterns from analytics
     """
     
     # Viral elements and their weights
@@ -51,8 +55,15 @@ class ViralityCalculator:
         "platform_fit": 0.10         # Optimized for Shorts?
     }
     
+    # v17.9.16: Minimal baseline patterns (always checked)
+    _BASELINE_INTERRUPT = ["stop", "wait", "hold on"]
+    _BASELINE_CURIOSITY = ["secret", "truth", "why", "how", "hidden"]
+    
     def __init__(self):
         self.data = self._load()
+        
+        # v17.9.16: Initialize with baseline + learned
+        self._init_dynamic_patterns()
     
     def _load(self) -> Dict:
         try:
@@ -67,6 +78,33 @@ class ViralityCalculator:
             "best": 0,
             "last_updated": None
         }
+    
+    def _init_dynamic_patterns(self):
+        """v17.9.16: Initialize patterns with baseline + learned."""
+        # Start with baseline
+        self.pattern_interrupt_words = list(self._BASELINE_INTERRUPT)
+        self.curiosity_words = list(self._BASELINE_CURIOSITY)
+        
+        # Try to extend with learned patterns
+        try:
+            from self_learning_engine import get_learning_engine
+            engine = get_learning_engine()
+            triggers = engine.get_viral_triggers()
+            
+            if triggers.get("source") != "none_available":
+                # Extend with learned hook triggers
+                for t in triggers.get("hook_triggers", []):
+                    t_lower = t.lower()
+                    if t_lower not in self.pattern_interrupt_words:
+                        self.pattern_interrupt_words.append(t_lower)
+                
+                # Extend with learned power words
+                for w in triggers.get("power_words", []):
+                    w_lower = w.lower()
+                    if w_lower not in self.curiosity_words:
+                        self.curiosity_words.append(w_lower)
+        except:
+            pass  # Use baseline only
     
     def _save(self):
         self.data["last_updated"] = datetime.now().isoformat()
@@ -137,15 +175,18 @@ class ViralityCalculator:
         return result
     
     def _score_hook(self, hook: str) -> float:
-        """Score hook strength (0-100)."""
+        """
+        v17.9.16: Score hook strength (0-100).
+        Uses DYNAMIC patterns from learning engine.
+        """
         if not hook:
             return 20
         
         score = 30
         hook_lower = hook.lower()
         
-        # Pattern interrupt
-        if any(w in hook_lower for w in ["stop", "wait", "hold on"]):
+        # Pattern interrupt - uses dynamic patterns
+        if any(w in hook_lower for w in self.pattern_interrupt_words):
             score += 20
         
         # Question
@@ -156,8 +197,8 @@ class ViralityCalculator:
         if re.search(r'\d', hook):
             score += 15
         
-        # Curiosity words
-        if any(w in hook_lower for w in ["secret", "truth", "why", "how", "hidden"]):
+        # Curiosity/power words - uses dynamic patterns
+        if any(w in hook_lower for w in self.curiosity_words):
             score += 15
         
         # Short and punchy

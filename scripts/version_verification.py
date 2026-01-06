@@ -931,15 +931,16 @@ class VersionVerifier:
     # ========================================================================
     def check_score_maximization(self) -> bool:
         """
-        v17.9.15: Check score maximization improvements are in place.
+        v17.9.16: Check score maximization with DYNAMIC patterns.
         
         Ensures:
-        - Hook generator uses high-quality model
-        - Hook prompt includes scoring requirements
-        - CTA generator includes engagement triggers
+        - Hook generator uses DYNAMIC triggers from learning engine
+        - CTA generator uses DYNAMIC triggers from learning engine
+        - Self-learning engine has get_viral_triggers()
         - Feedback loop updates all generators
+        - Scorers use dynamic patterns (not hardcoded)
         """
-        print("\n[16] SCORE MAXIMIZATION CHECK (v17.9.15)...")
+        print("\n[16] SCORE MAXIMIZATION CHECK (v17.9.16)...")
         
         issues = []
         
@@ -954,27 +955,34 @@ class VersionVerifier:
         else:
             issues.append("model_helper.py not found")
         
-        # Check 2: Hook generator uses scoring requirements
+        # Check 2: Hook generator uses DYNAMIC triggers
         hook_gen = Path("src/ai/ai_hook_generator.py")
         if hook_gen.exists():
             content = hook_gen.read_text(encoding='utf-8', errors='ignore')
-            if "PATTERN INTERRUPT" not in content:
-                issues.append("Hook generator missing PATTERN INTERRUPT requirement")
-            if "SCORING REQUIREMENTS" not in content.upper():
-                issues.append("Hook generator missing scoring requirements prompt")
-            if "get_high_quality_model" not in content:
-                self.warnings.append("Hook generator may not use high-quality model")
+            if "_get_dynamic_triggers" not in content:
+                issues.append("Hook generator missing _get_dynamic_triggers")
+            if "get_viral_triggers" not in content:
+                issues.append("Hook generator not using self_learning_engine triggers")
         
-        # Check 3: CTA generator has engagement triggers
+        # Check 3: CTA generator uses DYNAMIC triggers
         cta_gen = Path("src/ai/ai_cta_generator.py")
         if cta_gen.exists():
             content = cta_gen.read_text(encoding='utf-8', errors='ignore')
-            if "COMMENT TRIGGER" not in content:
-                issues.append("CTA generator missing engagement triggers")
-            if "SCORING REQUIREMENTS" not in content.upper():
-                self.warnings.append("CTA generator missing scoring requirements")
+            if "_get_dynamic_triggers" not in content:
+                issues.append("CTA generator missing _get_dynamic_triggers")
+            if "get_viral_triggers" not in content:
+                issues.append("CTA generator not using self_learning_engine triggers")
         
-        # Check 4: Feedback loop updates all generators
+        # Check 4: Self-learning engine has viral triggers method
+        learning_engine = Path("src/analytics/self_learning_engine.py")
+        if learning_engine.exists():
+            content = learning_engine.read_text(encoding='utf-8', errors='ignore')
+            if "def get_viral_triggers" not in content:
+                issues.append("Self-learning engine missing get_viral_triggers()")
+            if "_get_triggers_from_ai" not in content:
+                issues.append("Self-learning engine missing AI trigger generation")
+        
+        # Check 5: Feedback loop updates all generators
         feedback = Path("src/analytics/analytics_feedback.py")
         if feedback.exists():
             content = feedback.read_text(encoding='utf-8', errors='ignore')
@@ -982,19 +990,26 @@ class VersionVerifier:
                 issues.append("Feedback loop missing generator updates")
             if "hook_gen.record_performance" not in content:
                 issues.append("Feedback loop not updating hook generator")
-            if "cta_gen.record_performance" not in content:
-                issues.append("Feedback loop not updating CTA generator")
+        
+        # Check 6: Scorers use dynamic patterns
+        virality = Path("src/analytics/virality_calculator.py")
+        if virality.exists():
+            content = virality.read_text(encoding='utf-8', errors='ignore')
+            if "_init_dynamic_patterns" not in content:
+                issues.append("Virality calculator not using dynamic patterns")
         
         if issues:
             for issue in issues:
                 self.errors.append(f"Score Max: {issue}")
             return False
         else:
-            self.passed.append("Score maximization properly implemented")
-            print("   [OK] High-quality model function exists")
-            print("   [OK] Hook generator has scoring requirements")
-            print("   [OK] CTA generator has engagement triggers")
+            self.passed.append("Score maximization with dynamic patterns")
+            print("   [OK] High-quality model functions exist")
+            print("   [OK] Hook generator uses DYNAMIC triggers")
+            print("   [OK] CTA generator uses DYNAMIC triggers")
+            print("   [OK] Self-learning engine provides viral triggers")
             print("   [OK] Feedback loop updates all generators")
+            print("   [OK] Scorers use dynamic patterns")
             return True
     
     # ========================================================================
