@@ -753,35 +753,73 @@ def test_model_discovery_chart():
     
     chart_data = {"gemini": [], "openrouter": [], "groq": []}
     
-    # Discover Gemini models WITH QUOTA INFO
+    # Discover ALL Gemini models (including low-quota for testing)
     try:
-        from model_helper import _discover_gemini_models, get_dynamic_gemini_model, _load_cache, _is_model_usable, MIN_DAILY_QUOTA
+        from model_helper import get_dynamic_gemini_model, _load_cache, _is_model_usable, MIN_DAILY_QUOTA
+        import requests
         
-        gemini_models = _discover_gemini_models()
-        track_quota("gemini", "/models", model="chart-discovery", is_free=True)
-        production_gemini = get_dynamic_gemini_model() if os.environ.get("GEMINI_API_KEY") else None
+        # Get ALL models directly from API (not filtered by MIN_QUOTA)
+        api_key = os.environ.get("GEMINI_API_KEY")
+        all_gemini_models = []
+        all_quotas = {}
         
-        # Try to get quota data from cache
-        cache = _load_cache("gemini", allow_expired=True) or {}
-        quotas = cache.get("quotas", {})
+        if api_key:
+            response = requests.get(
+                f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
+                timeout=10
+            )
+            track_quota("gemini", "/v1beta/models", model="chart-discovery", is_free=True)
+            
+            if response.status_code == 200:
+                models_data = response.json().get("models", [])
+                all_gemini_models = [m["name"].replace("models/", "") for m in models_data 
+                                     if "generateContent" in m.get("supportedGenerationMethods", [])]
+                
+                # Check quota for each (use cache if available)
+                cache = _load_cache("gemini", allow_expired=True) or {}
+                cached_quotas = cache.get("quotas", {})
+                
+                for model in all_gemini_models[:20]:  # Check up to 20
+                    if model in cached_quotas:
+                        all_quotas[model] = cached_quotas[model]
+                    else:
+                        is_usable, quota = _is_model_usable(model, "gemini")
+                        all_quotas[model] = quota
         
-        safe_print(f"\n   GEMINI MODELS ({len(gemini_models)} discovered, filtered by MIN_QUOTA={MIN_DAILY_QUOTA}):")
-        safe_print("   " + "-" * 60)
-        safe_print("   Status | Idx | Model Name                    | Quota (req/day)")
-        safe_print("   " + "-" * 60)
-        for i, model in enumerate(gemini_models[:10]):  # Show top 10
-            marker = "[PROD]" if model == production_gemini else "[TEST]"
-            quota = quotas.get(model, "?")
-            quota_str = f"{quota}/day" if isinstance(quota, int) else str(quota)
+        production_gemini = get_dynamic_gemini_model() if api_key else None
+        
+        # Separate into PRODUCTION (>=50) and TEST-ONLY (<50)
+        prod_models = [(m, all_quotas.get(m, 0)) for m in all_gemini_models if all_quotas.get(m, 0) >= MIN_DAILY_QUOTA]
+        test_models = [(m, all_quotas.get(m, 0)) for m in all_gemini_models if 0 < all_quotas.get(m, 0) < MIN_DAILY_QUOTA]
+        
+        safe_print(f"\n   GEMINI MODELS ({len(all_gemini_models)} total discovered):")
+        safe_print("   " + "-" * 65)
+        safe_print("   Status     | Idx | Model Name                    | Quota (req/day)")
+        safe_print("   " + "-" * 65)
+        
+        # Show production models first
+        for i, (model, quota) in enumerate(prod_models[:5]):
+            marker = "[PROD]    " if model == production_gemini else "[PROD-ALT]"
+            quota_str = f"{quota}/day"
             model_short = model[:30] if len(model) <= 30 else model[:27] + "..."
             safe_print(f"   {marker} | {i:2} | {model_short:30} | {quota_str}")
-        if len(gemini_models) > 10:
-            safe_print(f"   ... and {len(gemini_models) - 10} more")
         
-        chart_data["gemini"] = gemini_models
-        if len(gemini_models) > 0:
-            record_test("Gemini Model Chart", True, f"{len(gemini_models)} models")
-        elif not os.environ.get("GEMINI_API_KEY"):
+        # Show test-only models (low quota, perfect for testing!)
+        if test_models:
+            safe_print("   " + "-" * 65)
+            safe_print("   LOW-QUOTA MODELS (perfect for testing, not for production):")
+            for i, (model, quota) in enumerate(test_models[:5]):
+                quota_str = f"{quota}/day"
+                model_short = model[:30] if len(model) <= 30 else model[:27] + "..."
+                safe_print(f"   [TEST-OK]  | {i:2} | {model_short:30} | {quota_str}")
+        
+        chart_data["gemini"] = all_gemini_models
+        chart_data["gemini_test_only"] = [m for m, q in test_models]  # Save test-only models
+        
+        if len(all_gemini_models) > 0:
+            record_test("Gemini Model Chart", True, 
+                       f"{len(prod_models)} prod + {len(test_models)} test-only")
+        elif not api_key:
             record_test("Gemini Model Chart", True, "Skipped (no API key)", warning=True)
         else:
             record_test("Gemini Model Chart", False, "0 models discovered")
@@ -812,33 +850,23 @@ def test_model_discovery_chart():
     except Exception as e:
         record_test("OpenRouter Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
     
-    # Discover Groq models (INFO ONLY - shared quota means we don't use for testing)
-    try:
-        from model_helper import _discover_groq_models
-        
-        groq_models = _discover_groq_models()
-        track_quota("groq", "/models", model="chart-discovery", is_free=True)
-        
-        safe_print(f"\n   GROQ MODELS ({len(groq_models)} discovered) - INFO ONLY, NOT USED IN TESTS:")
-        safe_print("   Reason: All Groq models share the same 14,400 req/day quota pool")
-        safe_print("   " + "-" * 60)
-        for i, model in enumerate(groq_models[:5]):
-            safe_print(f"   [SHARED] {i}: {model} (shares 14,400/day pool)")
-        
-        chart_data["groq"] = groq_models
-        record_test("Groq Model Chart", True, f"{len(groq_models)} models (NOT used in tests)")
-    except Exception as e:
-        record_test("Groq Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
+    # SKIP Groq discovery - all models share quota pool, can't use for testing
+    safe_print(f"\n   GROQ MODELS: SKIPPED")
+    safe_print("   Reason: All Groq models share the same 14,400 req/day quota pool")
+    safe_print("   Using any Groq model in tests would consume production quota")
+    safe_print("   Therefore: NO Groq discovery call made (saves API call)")
+    chart_data["groq"] = []
+    record_test("Groq Model Chart", True, "Skipped (shared quota)")
     
     safe_print("\n   LEGEND:")
-    safe_print("   [PROD]   = Used by production workflows (highest quota model)")
-    safe_print("   [TEST]   = Safe for testing (separate quota from production)")
-    safe_print("   [SHARED] = Shared quota pool - NOT used in tests (would consume prod quota)")
-    safe_print("\n   HOW PRODUCTION MODEL IS SELECTED:")
-    safe_print("   1. Discover all models via API")
-    safe_print("   2. Check quota for each model (API call or cached from 429 errors)")
-    safe_print("   3. Filter models with quota >= MIN_DAILY_QUOTA (50/day)")
-    safe_print("   4. Sort by quota (highest first) -> PROD = first model")
+    safe_print("   [PROD]     = Primary production model (highest quota)")
+    safe_print("   [PROD-ALT] = Alternative production model (quota >= 50/day)")
+    safe_print("   [TEST-OK]  = Low-quota model, perfect for testing (< 50/day)")
+    safe_print("\n   WHY SEPARATE PROD VS TEST MODELS:")
+    safe_print("   - Production needs high-quota models (6 videos/day = ~100+ calls)")
+    safe_print("   - Testing needs very few calls (1-5 per test)")
+    safe_print("   - Low-quota models (20-49/day) are PERFECT for testing!")
+    safe_print("   - Groq is SKIPPED entirely (all models share 14,400/day pool)")
     
     return chart_data
 
