@@ -99,41 +99,118 @@ class AIHookGenerator:
         return self._fallback_hook(topic, category)
     
     def _try_learned_pattern(self, topic: str, category: str) -> Optional[str]:
-        """Try to apply a learned best-performing pattern."""
+        """
+        v17.9.15: Apply learned best-performing patterns from analytics.
+        
+        Uses real performance data to create hooks with proven patterns.
+        """
         if not self.data.get("best_patterns"):
             return None
         
-        # TODO: Implement pattern matching and application
-        # For now, return None to use AI
+        # Need at least 3 successful patterns to have confidence
+        best_patterns = self.data.get("best_patterns", [])
+        if len(best_patterns) < 3:
+            return None
+        
+        # Get pattern performance data
+        performance = self.data.get("performance", {})
+        
+        # Find patterns with high engagement
+        high_performers = []
+        for hook_hash, perf in performance.items():
+            if perf.get("views", 0) > 1000 or perf.get("ctr", 0) > 0.05:
+                high_performers.append(perf)
+        
+        if not high_performers:
+            return None
+        
+        # Analyze successful hooks to find common patterns
+        import random
+        
+        # v17.9.15: Use AI to adapt proven patterns to new topic
+        try:
+            best_hook_examples = [p.get("hook", "") for p in high_performers if p.get("hook")][:3]
+            if best_hook_examples:
+                # Use AI to create variation based on successful patterns
+                prompt = f"""Based on these PROVEN viral hooks:
+{chr(10).join(f'- "{h}"' for h in best_hook_examples)}
+
+Create a NEW hook for this topic using the SAME patterns but different words:
+Topic: {topic}
+Category: {category}
+
+Keep the same structure and psychological triggers.
+Return ONLY the new hook (7-10 words max), no explanation."""
+                
+                result = self._call_gemini(prompt)
+                if result and len(result.split()) <= 12:
+                    safe_print(f"   [HOOK] Applied learned pattern!")
+                    return self._clean_hook(result)
+        except:
+            pass
+        
         return None
     
     def _generate_with_ai(self, topic: str, category: str, 
                          style: str) -> Optional[str]:
-        """Generate hook using AI."""
-        prompt = f"""You are a viral content expert who creates scroll-stopping hooks.
+        """Generate hook using AI with HIGH-QUALITY model for best results."""
+        
+        # v17.9.15: Get learned patterns for enhanced prompting
+        best_patterns = self.data.get("best_patterns", [])
+        worst_patterns = self.data.get("worst_patterns", [])
+        
+        patterns_context = ""
+        if best_patterns:
+            patterns_context = f"\n\nPATTERNS THAT WORK (from analytics): {', '.join(best_patterns[:5])}"
+        if worst_patterns:
+            patterns_context += f"\nPATTERNS TO AVOID: {', '.join(worst_patterns[:3])}"
+        
+        prompt = f"""You are MrBeast's hook writer. You've written 1000+ viral hooks with 10B+ views.
 
-TASK: Create ONE irresistible hook for this video.
+TASK: Create ONE hook that will score 10/10 on our virality algorithm.
 
 Topic: {topic}
 Category: {category}
-Style: {style if style != "auto" else "choose the best style"}
+{patterns_context}
 
-HOOK REQUIREMENTS:
-1. Must be 7-15 words MAX
-2. Must create curiosity gap
-3. Must promise value
-4. Must stop the scroll
-5. Must feel authentic (not AI-generated)
+===== MANDATORY SCORING REQUIREMENTS (ALL must be met!) =====
+Our algorithm scores hooks on these EXACT criteria. Your hook MUST include:
 
-HOOK STYLES:
-- question: "Did you know 93% of people get this wrong?"
-- statement: "I was wrong about this for 10 years."
-- challenge: "You're making this mistake every single day."
-- pattern_interrupt: "STOP - this will change everything."
-- mystery: "The secret they don't want you to know..."
+1. PATTERN INTERRUPT (Required for +20 points)
+   Start with one of: "STOP", "Wait", "Hold on", "Listen"
+   Example: "STOP - this changes everything"
 
-Return ONLY the hook text, no quotes, no explanation.
-Just the hook itself."""
+2. QUESTION OR NUMBER (Required for +15 points each)
+   Include a "?" OR a specific number
+   Example: "Did you know 97% of people..." or "3 things no one tells you..."
+
+3. CURIOSITY TRIGGER (Required for +15 points)
+   Include one of: "secret", "truth", "why", "how", "hidden", "actually"
+   Example: "The hidden truth about..."
+
+4. SHORT & PUNCHY (Required for +10 points)
+   MAXIMUM 10 words. Less is more!
+
+5. IDENTITY CHALLENGE (Bonus virality)
+   Make them question themselves: "You're doing this wrong"
+
+===== WINNING FORMULA =====
+[PATTERN INTERRUPT] + [NUMBER/QUESTION] + [CURIOSITY WORD] + [IDENTITY HOOK]
+
+PERFECT EXAMPLES (score 95-100):
+- "STOP - the secret 3-step trick that 99% don't know"
+- "Wait, why do 87% of people get this wrong?"
+- "Hold on - the hidden truth about {topic} will shock you"
+- "STOP scrolling - here's the real reason why..."
+
+BAD EXAMPLES (score 20-40):
+- "Here's a tip about {topic}" (no interrupt, no curiosity)
+- "Let me tell you something interesting" (boring, no hook)
+- "This video is about {topic}" (zero hook power)
+
+CRITICAL: Your hook must be 10 words or less and include at least 3 of the 5 requirements above!
+
+Return ONLY the hook text, no quotes, no explanation."""
 
         # Try Gemini first (more creative)
         hook = self._call_gemini(prompt)
@@ -148,13 +225,29 @@ Just the hook itself."""
         return None
     
     def _call_gemini(self, prompt: str) -> Optional[str]:
-        """Call Gemini API."""
+        """Call Gemini API with HIGH-QUALITY model for hooks."""
         if not self.gemini_key:
             return None
         try:
             import google.generativeai as genai
             genai.configure(api_key=self.gemini_key)
-            model = genai.GenerativeModel(get_dynamic_gemini_model())
+            
+            # v17.9.15: Use high-quality model for hooks (critical task)
+            try:
+                from model_helper import get_high_quality_model
+                model_name = get_high_quality_model("gemini")
+            except ImportError:
+                try:
+                    from src.ai.model_helper import get_high_quality_model
+                    model_name = get_high_quality_model("gemini")
+                except:
+                    model_name = None
+            
+            # Fall back to regular model if pro not available
+            if not model_name:
+                model_name = get_dynamic_gemini_model()
+            
+            model = genai.GenerativeModel(model_name)
             response = model.generate_content(prompt)
             return response.text.strip()
         except Exception as e:

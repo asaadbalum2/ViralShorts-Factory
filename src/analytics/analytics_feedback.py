@@ -735,6 +735,123 @@ class FeedbackLoopController:
             pass  # AI pattern generator not available
         except Exception as e:
             print(f"   [!] AI pattern refresh failed: {e}")
+        
+        # v17.9.15: Feed performance data to ALL generators for learning
+        self._update_all_generators_from_insights(insights)
+    
+    def _update_all_generators_from_insights(self, insights: Dict):
+        """
+        v17.9.15: Update ALL content generators with performance data.
+        This ensures the feedback loop is COMPLETE - learned patterns 
+        are used in future content generation!
+        """
+        all_videos = self.metadata_store.get_all()
+        
+        # Update Hook Generator with hook performance
+        try:
+            from ai_hook_generator import get_hook_generator
+            hook_gen = get_hook_generator()
+            
+            for video in all_videos:
+                if video.performance and video.hook:
+                    views = video.performance.get('views', 0)
+                    likes = video.performance.get('likes', 0)
+                    
+                    # Only record hooks with sufficient data
+                    if views > 0:
+                        hook_gen.record_performance(video.hook, views, likes)
+            
+            # Update best/worst patterns based on performance
+            if hook_gen.data.get("performance"):
+                sorted_hooks = sorted(
+                    hook_gen.data["performance"].items(),
+                    key=lambda x: x[1].get("ctr", 0),
+                    reverse=True
+                )
+                
+                # Top patterns become "best_patterns"
+                hook_gen.data["best_patterns"] = [
+                    h[1].get("hook", "")[:20] for h in sorted_hooks[:5]
+                ]
+                # Bottom patterns become "worst_patterns"
+                hook_gen.data["worst_patterns"] = [
+                    h[1].get("hook", "")[:20] for h in sorted_hooks[-3:]
+                ]
+                hook_gen._save()
+                
+            print("   [FEEDBACK] Hook generator updated with performance data")
+        except Exception as e:
+            print(f"   [!] Hook feedback failed: {e}")
+        
+        # Update CTA Generator with engagement performance
+        try:
+            from ai_cta_generator import get_cta_generator
+            cta_gen = get_cta_generator()
+            
+            for video in all_videos:
+                if video.performance:
+                    comments = video.performance.get('comments', 0)
+                    likes = video.performance.get('likes', 0)
+                    shares = video.performance.get('shares', 0)
+                    
+                    # Extract CTA from content summary if available
+                    cta = video.content_summary.split('.')[-1] if video.content_summary else ""
+                    if cta and comments + likes > 0:
+                        cta_gen.record_performance(
+                            cta, 
+                            video.video_type,
+                            comments, 
+                            likes,
+                            shares
+                        )
+            
+            print("   [FEEDBACK] CTA generator updated with engagement data")
+        except Exception as e:
+            print(f"   [!] CTA feedback failed: {e}")
+        
+        # Update Title Optimizer with CTR data
+        try:
+            from ai_title_optimizer import get_title_optimizer
+            title_opt = get_title_optimizer()
+            
+            for video in all_videos:
+                if video.performance:
+                    views = video.performance.get('views', 0)
+                    impressions = video.performance.get('impressions', views * 10)  # Estimate
+                    ctr = views / max(impressions, 1)
+                    
+                    title = video.topic or video.filename
+                    if views > 0:
+                        title_opt.record_performance(title, views, ctr)
+            
+            print("   [FEEDBACK] Title optimizer updated with CTR data")
+        except Exception as e:
+            print(f"   [!] Title feedback failed: {e}")
+        
+        # Update Music Mood learner
+        try:
+            from ai_music_mood import get_mood_selector
+            mood_sel = get_mood_selector()
+            
+            for video in all_videos:
+                if video.performance and video.music_mood:
+                    views = video.performance.get('views', 0)
+                    avg_view_duration = video.performance.get('avg_view_duration', 0)
+                    video_duration = video.performance.get('duration', 30)
+                    retention = (avg_view_duration / max(video_duration, 1)) * 100
+                    
+                    mood_sel.record_performance(
+                        video.music_mood,
+                        video.video_type,
+                        retention,
+                        views
+                    )
+            
+            print("   [FEEDBACK] Music mood selector updated with retention data")
+        except Exception as e:
+            print(f"   [!] Music feedback failed: {e}")
+        
+        print("   [FEEDBACK] All generators updated from analytics!")
     
     def get_content_guidance(self) -> Dict:
         """

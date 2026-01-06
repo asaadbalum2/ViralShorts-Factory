@@ -676,6 +676,111 @@ def _discover_huggingface_models() -> List[str]:
 
 
 # =============================================================================
+# CRITICAL TASK MODEL SELECTION
+# =============================================================================
+
+def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
+    """
+    v17.9.15: Get a HIGH-QUALITY model for CRITICAL tasks.
+    
+    Critical tasks (6 calls/video max = 36/day for 6 videos):
+    - Hook generation (1)
+    - Final quality evaluation (1)  
+    - God-tier scoring (1)
+    - Title optimization (1)
+    - Script refinement (1)
+    - CTA generation (1)
+    
+    Budget: 36 calls/day → gemini-1.5-pro (50/day) is perfect!
+    
+    Returns: High-quality model ID, or None if unavailable
+    """
+    provider = provider.lower()
+    
+    if provider == "gemini":
+        # Query for "pro" models specifically
+        try:
+            import requests
+            api_key = os.environ.get("GEMINI_API_KEY")
+            if api_key:
+                response = requests.get(
+                    f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}",
+                    timeout=10
+                )
+                if response.status_code == 200:
+                    models = response.json().get("models", [])
+                    
+                    # Find "pro" models (higher quality than "flash")
+                    pro_models = []
+                    for m in models:
+                        model_name = m.get("name", "").replace("models/", "")
+                        methods = m.get("supportedGenerationMethods", [])
+                        
+                        if "generateContent" not in methods:
+                            continue
+                        
+                        # Identify pro models by name pattern
+                        if "pro" in model_name.lower():
+                            # Check if it has ANY quota (even low)
+                            quota = _get_model_quota_from_api(model_name, "gemini")
+                            if quota is not None and quota > 0:
+                                pro_models.append((model_name, quota))
+                    
+                    if pro_models:
+                        # Sort by quota (highest first)
+                        pro_models.sort(key=lambda x: x[1], reverse=True)
+                        best_pro = pro_models[0][0]
+                        _safe_print(f"[MODEL] High-quality model: {best_pro} ({pro_models[0][1]}/day)")
+                        return best_pro
+        except Exception as e:
+            _safe_print(f"[MODEL] Pro model discovery error: {e}")
+        
+        return None
+    
+    elif provider == "groq":
+        # Groq's best model is the 70B variant
+        try:
+            models = get_all_models("groq")
+            for m in models:
+                if "70b" in m.lower():
+                    _safe_print(f"[MODEL] High-quality Groq model: {m}")
+                    return m
+        except:
+            pass
+        return None
+    
+    return None
+
+
+def get_model_for_task(task_type: str) -> str:
+    """
+    v17.9.15: Get the BEST model for a specific task type.
+    
+    Task types:
+    - "critical": Hook, evaluation, scoring → Use PRO model
+    - "bulk": Phrases, CTAs → Use flash/fast model
+    - "evaluation": Quality checks → Use PRO model
+    
+    Returns: Model ID (provider:model format)
+    """
+    critical_tasks = ["hook", "evaluation", "scoring", "title", "script", "quality", "god_tier"]
+    
+    if any(t in task_type.lower() for t in critical_tasks):
+        # Try to get a pro model
+        pro_model = get_high_quality_model("gemini")
+        if pro_model:
+            return f"gemini:{pro_model}"
+        
+        # Fall back to Groq 70B
+        groq_pro = get_high_quality_model("groq")
+        if groq_pro:
+            return f"groq:{groq_pro}"
+    
+    # For bulk tasks, use the standard fast model
+    return f"gemini:{get_dynamic_gemini_model()}"
+
+
+# =============================================================================
 # RATE LIMITS
 # =============================================================================
 

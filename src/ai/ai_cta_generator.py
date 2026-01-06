@@ -130,27 +130,62 @@ class AICTAGenerator:
         else:
             style_hint = "Choose the best style for maximum engagement."
         
-        prompt = f"""You are a viral content strategist who creates CTAs that drive engagement.
+        # v17.9.15: Get learned best CTAs for enhanced prompting
+        best_ctas = self.data.get("best_styles", [])
+        learned_context = ""
+        if best_ctas:
+            learned_context = f"\n\nPROVEN CTAs FROM OUR ANALYTICS: {', '.join(best_ctas[:3])}"
+        
+        prompt = f"""You are MrBeast's engagement strategist. You've created CTAs with 100M+ comments.
 
-TASK: Create ONE powerful CTA (call-to-action) for the end of this video.
+TASK: Create ONE CTA that will score 10/10 on our engagement algorithm.
 
 Topic: {topic}
 Category: {category}
 Style: {style_hint}
+{learned_context}
 
-CTA REQUIREMENTS:
-1. Must be 10-20 words MAX
-2. Must feel natural (not pushy)
-3. Must create urgency or curiosity
-4. Must be specific to the content
-5. Should drive comments, likes, or subscribes
+===== MANDATORY SCORING REQUIREMENTS (Our algorithm scores these!) =====
 
-EFFECTIVE CTA PATTERNS:
-- Question: "Comment below: What's YOUR biggest challenge with this?"
-- Challenge: "Save this and try it for 7 days - you'll thank me later"
-- Poll: "Type 1 if you knew this, 2 if you didn't"
-- Curiosity: "Follow for Part 2 where I reveal the secret weapon"
-- Social proof: "Join 10,000 others who already tried this"
+1. COMMENT TRIGGER (Required for max score)
+   Must include one of these EXACT phrases or words:
+   "comment", "tell me", "what do you think", "share your", 
+   "agree", "disagree", "opinion", "experience", "happened to you"
+   
+   Best formula: Ask a question + "Comment below"
+
+2. LIKE TRIGGER (Bonus points)
+   Include: "like if", "double tap", "smash like", "hit like", 
+   "if you agree", "if this helped"
+
+3. SHARE TRIGGER (High bonus)
+   Include: "share this", "tell a friend", "save for later", 
+   "tag someone", "someone needs to see", "send this to"
+
+4. SAVE TRIGGER (Bonus points)
+   Include: "save this", "bookmark", "come back", "reference",
+   "steps", "guide", "how to"
+
+===== HIGH-SCORING CTA TEMPLATES =====
+Format: [Engagement hook] + [Clear action] + [Why they should]
+
+PERFECT EXAMPLES (score 90-100):
+- "Comment your biggest struggle with this - I'll reply with tips"
+- "Save this for later - you'll need it. Tell me if you agree!"
+- "What do you think? Drop your opinion below - let's debate"
+- "Tag someone who needs to see this. Share the knowledge!"
+- "Like if this helped, comment your experience - I read everything"
+
+BAD EXAMPLES (score 30-40):
+- "Thanks for watching" (no engagement trigger)
+- "Subscribe to my channel" (too generic)
+- "See you next time" (zero engagement)
+
+===== REQUIREMENTS =====
+- 10-20 words MAX
+- Must include at least 2 engagement triggers from above
+- Must end with a question OR clear action
+- Feel natural, not pushy
 
 Return ONLY the CTA text, no quotes, no explanation."""
 

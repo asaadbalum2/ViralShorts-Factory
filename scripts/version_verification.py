@@ -929,6 +929,75 @@ class VersionVerifier:
             return True
     
     # ========================================================================
+    def check_score_maximization(self) -> bool:
+        """
+        v17.9.15: Check score maximization improvements are in place.
+        
+        Ensures:
+        - Hook generator uses high-quality model
+        - Hook prompt includes scoring requirements
+        - CTA generator includes engagement triggers
+        - Feedback loop updates all generators
+        """
+        print("\n[16] SCORE MAXIMIZATION CHECK (v17.9.15)...")
+        
+        issues = []
+        
+        # Check 1: High-quality model function exists
+        model_helper = Path("src/ai/model_helper.py")
+        if model_helper.exists():
+            content = model_helper.read_text(encoding='utf-8', errors='ignore')
+            if "get_high_quality_model" not in content:
+                issues.append("model_helper missing get_high_quality_model function")
+            if "get_model_for_task" not in content:
+                issues.append("model_helper missing get_model_for_task function")
+        else:
+            issues.append("model_helper.py not found")
+        
+        # Check 2: Hook generator uses scoring requirements
+        hook_gen = Path("src/ai/ai_hook_generator.py")
+        if hook_gen.exists():
+            content = hook_gen.read_text(encoding='utf-8', errors='ignore')
+            if "PATTERN INTERRUPT" not in content:
+                issues.append("Hook generator missing PATTERN INTERRUPT requirement")
+            if "SCORING REQUIREMENTS" not in content.upper():
+                issues.append("Hook generator missing scoring requirements prompt")
+            if "get_high_quality_model" not in content:
+                self.warnings.append("Hook generator may not use high-quality model")
+        
+        # Check 3: CTA generator has engagement triggers
+        cta_gen = Path("src/ai/ai_cta_generator.py")
+        if cta_gen.exists():
+            content = cta_gen.read_text(encoding='utf-8', errors='ignore')
+            if "COMMENT TRIGGER" not in content:
+                issues.append("CTA generator missing engagement triggers")
+            if "SCORING REQUIREMENTS" not in content.upper():
+                self.warnings.append("CTA generator missing scoring requirements")
+        
+        # Check 4: Feedback loop updates all generators
+        feedback = Path("src/analytics/analytics_feedback.py")
+        if feedback.exists():
+            content = feedback.read_text(encoding='utf-8', errors='ignore')
+            if "_update_all_generators_from_insights" not in content:
+                issues.append("Feedback loop missing generator updates")
+            if "hook_gen.record_performance" not in content:
+                issues.append("Feedback loop not updating hook generator")
+            if "cta_gen.record_performance" not in content:
+                issues.append("Feedback loop not updating CTA generator")
+        
+        if issues:
+            for issue in issues:
+                self.errors.append(f"Score Max: {issue}")
+            return False
+        else:
+            self.passed.append("Score maximization properly implemented")
+            print("   [OK] High-quality model function exists")
+            print("   [OK] Hook generator has scoring requirements")
+            print("   [OK] CTA generator has engagement triggers")
+            print("   [OK] Feedback loop updates all generators")
+            return True
+    
+    # ========================================================================
     # MAIN VERIFICATION
     # ========================================================================
     def run_all_checks(self) -> bool:
@@ -954,6 +1023,7 @@ class VersionVerifier:
             self.check_test_suite(),  # v17.8.27: Test suite
             self.check_v1797_fixes(),  # v17.9.7: Critical fixes
             self.check_smart_router(),  # v17.9.9: Smart Model Router
+            self.check_score_maximization(),  # v17.9.15: Score maximization
         ]
         
         print("\n" + "=" * 60)
