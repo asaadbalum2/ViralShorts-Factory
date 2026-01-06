@@ -226,6 +226,53 @@ def categorize_models_for_usage(models_with_info: List[Tuple[str, int, float, Di
     return categories
 
 
+def get_cached_model_categories(provider: str, force_refresh: bool = False) -> Optional[Dict]:
+    """
+    v17.9.30: Get cached model categories to avoid repeated API calls.
+    
+    The model discovery endpoints are FREE (no quota consumed) but add latency.
+    This caches the 4-category results for faster access.
+    
+    Args:
+        provider: "gemini", "groq", or "openrouter"
+        force_refresh: If True, ignore cache and fetch fresh
+    
+    Returns: Cached categories dict or None if not cached
+    """
+    cache_file = EMERGENCY_CACHE_DIR / f"{provider}_categories.json"
+    
+    if not force_refresh and cache_file.exists():
+        try:
+            with open(cache_file, 'r') as f:
+                data = json.load(f)
+                cached_time = datetime.fromisoformat(data.get("cached_at", "2000-01-01"))
+                age_hours = (datetime.now() - cached_time).total_seconds() / 3600
+                
+                # Categories valid for 24 hours (quotas don't change often)
+                if age_hours < 24:
+                    _safe_print(f"[MODEL] Using cached categories for {provider} (age: {age_hours:.1f}h)")
+                    return data.get("categories")
+        except:
+            pass
+    
+    return None
+
+
+def save_model_categories(provider: str, categories: Dict):
+    """Save model categories to cache."""
+    cache_file = EMERGENCY_CACHE_DIR / f"{provider}_categories.json"
+    try:
+        EMERGENCY_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        with open(cache_file, 'w') as f:
+            json.dump({
+                "cached_at": datetime.now().isoformat(),
+                "categories": categories
+            }, f)
+        _safe_print(f"[MODEL] Saved {provider} categories to cache")
+    except Exception as e:
+        _safe_print(f"[MODEL] Failed to cache categories: {e}")
+
+
 def _load_quota_cache() -> Dict[str, int]:
     """Load cached quota values discovered from 429 errors."""
     quota_cache_file = EMERGENCY_CACHE_DIR / "actual_quotas.json"

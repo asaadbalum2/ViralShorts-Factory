@@ -1771,16 +1771,24 @@ def main():
     safe_print("  QUOTA USAGE REPORT (Grouped by Test Type)")
     safe_print("=" * 85)
     
-    # Known daily quotas for percentage calculation
+    # Get dynamic quota data from cache (no hardcoded model quotas!)
+    try:
+        from model_helper import _load_cache
+        gemini_cache = _load_cache("gemini", allow_expired=True) or {}
+        cached_quotas = gemini_cache.get("quotas", {})
+    except:
+        cached_quotas = {}
+    
+    # Build quotas dynamically - only infrastructure endpoints are "known"
     KNOWN_QUOTAS = {
         "gemini": {
-            "/v1beta/models": float('inf'),  # Free endpoint
+            # FREE infrastructure endpoints
+            "/v1beta/models": float('inf'),
             "chart-discovery": float('inf'),
             "format-validation": float('inf'),
-            "gemini-2.5-flash": 500,
-            "gemini-1.5-flash": 1500,
-            "gemini-1.5-pro": 50,
-            "gemma-3-1b-it": 1000,  # Estimated
+            # Model quotas come from cache (discovered dynamically)
+            **{model: quota for model, quota in cached_quotas.items()},
+            "default": 50,  # Conservative fallback
         },
         "groq": {
             "/v1/models": float('inf'),  # Free endpoint
@@ -1796,7 +1804,7 @@ def main():
             "default": float('inf'),  # Very high limits
         },
         "youtube": {
-            "default": 10000,  # 10K units/day
+            "default": 10000,  # 10K units/day (API limit)
         }
     }
     
