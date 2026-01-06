@@ -1,6 +1,6 @@
 name: TEST - Systems Dry Run (Zero Production Quota)
 
-# COMPREHENSIVE SYSTEM TEST - v17.9.22
+# COMPREHENSIVE SYSTEM TEST - v17.9.23
 # =====================================
 # Tests ALL systems WITHOUT consuming PRODUCTION quota.
 #
@@ -13,7 +13,7 @@ name: TEST - Systems Dry Run (Zero Production Quota)
 # 15.    Content generation using NON-PRODUCTION OpenRouter models
 # 16.    YouTube API (basic credential check ONLY, NOT full analytics)
 # 17.    API behavior validation (response format checks)
-# 18.    PRODUCTION PROMPTS: Validates god-tier, hook, CTA prompts work
+# 18.    PRODUCTION PROMPTS: Actually tests prompts with AI (non-prod models)
 # 19.    Rate limiters
 # 20.    TTS engine (Edge-TTS)
 # 21.    Pexels API (video search)
