@@ -43,6 +43,120 @@ def _safe_print(msg: str):
 QUOTA_CACHE_TTL_HOURS = int(os.environ.get("QUOTA_CACHE_TTL_HOURS", 24))  # Configurable!
 
 
+# =============================================================================
+# SMART MODEL QUALITY SCORING (v17.9.27)
+# =============================================================================
+# Instead of checking for "pro" in name, we score models based on actual properties
+
+def get_model_quality_score(model_name: str, model_info: Dict = None) -> float:
+    """
+    Calculate a quality score (0-10) for a model based on actual properties.
+    
+    Scoring factors:
+    1. Model Size (extracted from name): 70B=10, 8B=5, 1B=2
+    2. Context Length: >100K=10, >32K=7, >8K=5, else=3
+    3. Model Generation: Ultra>Pro>Flash>Nano
+    4. Recency: Newer models often better
+    
+    Returns: Quality score 0-10 (higher = better for critical tasks)
+    """
+    score = 5.0  # Base score
+    model_lower = model_name.lower()
+    
+    # Factor 1: Model Size (weight: 40%)
+    size_score = 5.0
+    if "70b" in model_lower or "72b" in model_lower:
+        size_score = 10.0
+    elif "32b" in model_lower or "34b" in model_lower:
+        size_score = 8.5
+    elif "13b" in model_lower or "14b" in model_lower:
+        size_score = 7.0
+    elif "8b" in model_lower or "9b" in model_lower:
+        size_score = 6.0
+    elif "4b" in model_lower or "3b" in model_lower:
+        size_score = 4.0
+    elif "1b" in model_lower or "2b" in model_lower:
+        size_score = 2.5
+    elif "nano" in model_lower or "mini" in model_lower:
+        size_score = 2.0
+    
+    # Factor 2: Model Tier/Generation (weight: 35%)
+    tier_score = 5.0
+    if "ultra" in model_lower:
+        tier_score = 10.0
+    elif "pro" in model_lower:
+        tier_score = 8.5
+    elif "plus" in model_lower or "advanced" in model_lower:
+        tier_score = 7.5
+    elif "flash" in model_lower or "turbo" in model_lower:
+        tier_score = 5.5  # Fast but lower quality
+    elif "lite" in model_lower or "mini" in model_lower or "nano" in model_lower:
+        tier_score = 3.0
+    elif "exp" in model_lower or "preview" in model_lower:
+        tier_score = 6.0  # Experimental could be good
+    
+    # Factor 3: Context Length (weight: 15%)
+    context_score = 5.0
+    if model_info:
+        context = model_info.get("inputTokenLimit", 0) or model_info.get("context_length", 0) or model_info.get("context_window", 0)
+        if context >= 1000000:  # 1M tokens
+            context_score = 10.0
+        elif context >= 128000:  # 128K
+            context_score = 9.0
+        elif context >= 32000:  # 32K
+            context_score = 7.0
+        elif context >= 8000:  # 8K
+            context_score = 5.0
+        else:
+            context_score = 3.0
+    
+    # Factor 4: Recency/Version (weight: 10%)
+    version_score = 5.0
+    if "2.5" in model_lower or "3.0" in model_lower or "3.1" in model_lower:
+        version_score = 9.0
+    elif "2.0" in model_lower:
+        version_score = 7.0
+    elif "1.5" in model_lower:
+        version_score = 6.0
+    elif "1.0" in model_lower:
+        version_score = 4.0
+    
+    # Weighted average
+    final_score = (size_score * 0.40) + (tier_score * 0.35) + (context_score * 0.15) + (version_score * 0.10)
+    
+    return round(final_score, 1)
+
+
+def is_high_quality_model(model_name: str, model_info: Dict = None, threshold: float = 7.0) -> bool:
+    """
+    Determine if a model is high-quality based on quality score.
+    
+    Args:
+        model_name: The model identifier
+        model_info: Optional dict with model properties (context_length, etc.)
+        threshold: Minimum score to be considered "high quality" (default 7.0)
+    
+    Returns: True if model is high quality
+    """
+    score = get_model_quality_score(model_name, model_info)
+    return score >= threshold
+
+
+def get_model_quality_tier(model_name: str, model_info: Dict = None) -> str:
+    """
+    Get the quality tier of a model.
+    
+    Returns: "critical", "standard", or "low"
+    """
+    score = get_model_quality_score(model_name, model_info)
+    if score >= 7.5:
+        return "critical"  # Use for hooks, scoring, evaluation
+    elif score >= 5.0:
+        return "standard"  # Use for general tasks
+    else:
+        return "low"  # Avoid in production, OK for testing
+
+
 def _load_quota_cache() -> Dict[str, int]:
     """Load cached quota values discovered from 429 errors."""
     quota_cache_file = EMERGENCY_CACHE_DIR / "actual_quotas.json"
@@ -681,7 +795,7 @@ def _discover_huggingface_models() -> List[str]:
 
 def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
     """
-    v17.9.15: Get a HIGH-QUALITY model for CRITICAL tasks.
+    v17.9.27: Get a HIGH-QUALITY model for CRITICAL tasks using SMART SCORING.
     
     Critical tasks (6 calls/video max = 36/day for 6 videos):
     - Hook generation (1)
@@ -691,14 +805,17 @@ def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
     - Script refinement (1)
     - CTA generation (1)
     
-    Budget: 36 calls/day → gemini-1.5-pro (50/day) is perfect!
+    Uses quality scoring based on:
+    - Model size (70B > 8B > 1B)
+    - Model tier (Ultra > Pro > Flash)
+    - Context length
+    - Version/recency
     
     Returns: High-quality model ID, or None if unavailable
     """
     provider = provider.lower()
     
     if provider == "gemini":
-        # Query for "pro" models specifically
         try:
             import requests
             api_key = os.environ.get("GEMINI_API_KEY")
@@ -710,8 +827,8 @@ def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
                 if response.status_code == 200:
                     models = response.json().get("models", [])
                     
-                    # Find "pro" models (higher quality than "flash")
-                    pro_models = []
+                    # Score all models and find high-quality ones with quota
+                    high_quality_models = []
                     for m in models:
                         model_name = m.get("name", "").replace("models/", "")
                         methods = m.get("supportedGenerationMethods", [])
@@ -719,34 +836,56 @@ def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
                         if "generateContent" not in methods:
                             continue
                         
-                        # Identify pro models by name pattern
-                        if "pro" in model_name.lower():
-                            # Check if it has ANY quota (even low)
+                        # Calculate quality score using actual model properties
+                        quality_score = get_model_quality_score(model_name, m)
+                        
+                        # Only consider high-quality models (score >= 7.0)
+                        if quality_score >= 7.0:
                             quota = _get_model_quota_from_api(model_name, "gemini")
                             if quota is not None and quota > 0:
-                                pro_models.append((model_name, quota))
+                                high_quality_models.append((model_name, quota, quality_score))
                     
-                    if pro_models:
-                        # Sort by quota (highest first)
-                        pro_models.sort(key=lambda x: x[1], reverse=True)
-                        best_pro = pro_models[0][0]
-                        _safe_print(f"[MODEL] High-quality model: {best_pro} ({pro_models[0][1]}/day)")
-                        return best_pro
+                    if high_quality_models:
+                        # Sort by quality score first, then quota
+                        high_quality_models.sort(key=lambda x: (x[2], x[1]), reverse=True)
+                        best = high_quality_models[0]
+                        _safe_print(f"[MODEL] High-quality: {best[0]} (score={best[2]}, quota={best[1]}/day)")
+                        return best[0]
         except Exception as e:
-            _safe_print(f"[MODEL] Pro model discovery error: {e}")
+            _safe_print(f"[MODEL] High-quality discovery error: {e}")
         
         return None
     
     elif provider == "groq":
-        # Groq's best model is the 70B variant
         try:
-            models = get_all_models("groq")
-            for m in models:
-                if "70b" in m.lower():
-                    _safe_print(f"[MODEL] High-quality Groq model: {m}")
-                    return m
-        except:
-            pass
+            import requests
+            groq_key = os.environ.get("GROQ_API_KEY")
+            if groq_key:
+                response = requests.get(
+                    "https://api.groq.com/openai/v1/models",
+                    headers={"Authorization": f"Bearer {groq_key}"},
+                    timeout=10
+                )
+                if response.status_code == 200:
+                    models = response.json().get("data", [])
+                    
+                    # Score all Groq models
+                    high_quality_models = []
+                    for m in models:
+                        model_id = m.get("id", "")
+                        quality_score = get_model_quality_score(model_id, m)
+                        
+                        if quality_score >= 7.0:
+                            high_quality_models.append((model_id, quality_score))
+                    
+                    if high_quality_models:
+                        high_quality_models.sort(key=lambda x: x[1], reverse=True)
+                        best = high_quality_models[0]
+                        _safe_print(f"[MODEL] High-quality Groq: {best[0]} (score={best[1]})")
+                        return best[0]
+        except Exception as e:
+            _safe_print(f"[MODEL] High-quality Groq error: {e}")
+        
         return None
     
     return None
