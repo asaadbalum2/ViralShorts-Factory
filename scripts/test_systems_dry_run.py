@@ -753,19 +753,28 @@ def test_model_discovery_chart():
     
     chart_data = {"gemini": [], "openrouter": [], "groq": []}
     
-    # Discover Gemini models
+    # Discover Gemini models WITH QUOTA INFO
     try:
-        from model_helper import _discover_gemini_models, get_dynamic_gemini_model
+        from model_helper import _discover_gemini_models, get_dynamic_gemini_model, _load_cache, _is_model_usable, MIN_DAILY_QUOTA
         
         gemini_models = _discover_gemini_models()
         track_quota("gemini", "/models", model="chart-discovery", is_free=True)
         production_gemini = get_dynamic_gemini_model() if os.environ.get("GEMINI_API_KEY") else None
         
-        safe_print(f"\n   GEMINI MODELS ({len(gemini_models)} discovered):")
-        safe_print("   " + "-" * 50)
+        # Try to get quota data from cache
+        cache = _load_cache("gemini", allow_expired=True) or {}
+        quotas = cache.get("quotas", {})
+        
+        safe_print(f"\n   GEMINI MODELS ({len(gemini_models)} discovered, filtered by MIN_QUOTA={MIN_DAILY_QUOTA}):")
+        safe_print("   " + "-" * 60)
+        safe_print("   Status | Idx | Model Name                    | Quota (req/day)")
+        safe_print("   " + "-" * 60)
         for i, model in enumerate(gemini_models[:10]):  # Show top 10
-            marker = "[PROD]" if model == production_gemini else "[TEST]" if i > 0 else "[PROD]"
-            safe_print(f"   {marker} {i}: {model}")
+            marker = "[PROD]" if model == production_gemini else "[TEST]"
+            quota = quotas.get(model, "?")
+            quota_str = f"{quota}/day" if isinstance(quota, int) else str(quota)
+            model_short = model[:30] if len(model) <= 30 else model[:27] + "..."
+            safe_print(f"   {marker} | {i:2} | {model_short:30} | {quota_str}")
         if len(gemini_models) > 10:
             safe_print(f"   ... and {len(gemini_models) - 10} more")
         
@@ -787,11 +796,14 @@ def test_model_discovery_chart():
         track_quota("openrouter", "/models", model="chart-discovery", is_free=True)
         
         safe_print(f"\n   OPENROUTER FREE MODELS ({len(openrouter_models)} discovered):")
-        safe_print("   " + "-" * 50)
+        safe_print("   Note: Free models marked ':free' - unlimited quota but may require specific API access")
+        safe_print("   " + "-" * 60)
+        safe_print("   Status | Idx | Model Name                              | Quota")
+        safe_print("   " + "-" * 60)
         for i, model in enumerate(openrouter_models[:10]):
             marker = "[PROD]" if i == 0 else "[TEST]"
-            model_short = model[:45] + "..." if len(model) > 45 else model
-            safe_print(f"   {marker} {i}: {model_short}")
+            model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+            safe_print(f"   {marker} | {i:2} | {model_short:40} | unlimited")
         if len(openrouter_models) > 10:
             safe_print(f"   ... and {len(openrouter_models) - 10} more")
         
@@ -800,17 +812,18 @@ def test_model_discovery_chart():
     except Exception as e:
         record_test("OpenRouter Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
     
-    # Discover Groq models (show but mark as SHARED QUOTA)
+    # Discover Groq models (INFO ONLY - shared quota means we don't use for testing)
     try:
         from model_helper import _discover_groq_models
         
         groq_models = _discover_groq_models()
         track_quota("groq", "/models", model="chart-discovery", is_free=True)
         
-        safe_print(f"\n   GROQ MODELS ({len(groq_models)} discovered) - SHARED QUOTA, NOT FOR TESTING:")
-        safe_print("   " + "-" * 50)
+        safe_print(f"\n   GROQ MODELS ({len(groq_models)} discovered) - INFO ONLY, NOT USED IN TESTS:")
+        safe_print("   Reason: All Groq models share the same 14,400 req/day quota pool")
+        safe_print("   " + "-" * 60)
         for i, model in enumerate(groq_models[:5]):
-            safe_print(f"   [SHARED] {i}: {model}")
+            safe_print(f"   [SHARED] {i}: {model} (shares 14,400/day pool)")
         
         chart_data["groq"] = groq_models
         record_test("Groq Model Chart", True, f"{len(groq_models)} models (NOT used in tests)")
@@ -818,9 +831,14 @@ def test_model_discovery_chart():
         record_test("Groq Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
     
     safe_print("\n   LEGEND:")
-    safe_print("   [PROD]   = Used by production workflows")
-    safe_print("   [TEST]   = Safe for testing (separate quota)")
-    safe_print("   [SHARED] = Shared quota - NOT used in tests")
+    safe_print("   [PROD]   = Used by production workflows (highest quota model)")
+    safe_print("   [TEST]   = Safe for testing (separate quota from production)")
+    safe_print("   [SHARED] = Shared quota pool - NOT used in tests (would consume prod quota)")
+    safe_print("\n   HOW PRODUCTION MODEL IS SELECTED:")
+    safe_print("   1. Discover all models via API")
+    safe_print("   2. Check quota for each model (API call or cached from 429 errors)")
+    safe_print("   3. Filter models with quota >= MIN_DAILY_QUOTA (50/day)")
+    safe_print("   4. Sort by quota (highest first) -> PROD = first model")
     
     return chart_data
 
@@ -1567,41 +1585,83 @@ def main():
     safe_print(f"   Duration: {duration:.1f}s")
     safe_print("=" * 60)
     
-    # QUOTA USAGE REPORT (with model-level detail)
-    safe_print("\n" + "=" * 60)
+    # QUOTA USAGE REPORT (with model-level detail and percentage)
+    safe_print("\n" + "=" * 70)
     safe_print("  QUOTA USAGE REPORT (Per Model)")
-    safe_print("=" * 60)
+    safe_print("=" * 70)
+    
+    # Known daily quotas for percentage calculation
+    KNOWN_QUOTAS = {
+        "gemini": {
+            "/v1beta/models": float('inf'),  # Free endpoint
+            "chart-discovery": float('inf'),
+            "format-validation": float('inf'),
+            "gemini-2.5-flash": 500,
+            "gemini-1.5-flash": 1500,
+            "gemini-1.5-pro": 50,
+            "gemma-3-1b-it": 1000,  # Estimated
+        },
+        "groq": {
+            "/v1/models": float('inf'),  # Free endpoint
+            "chart-discovery": float('inf'),
+            "format-validation": float('inf'),
+            # All Groq models share 14,400/day
+            "default": 14400,
+        },
+        "openrouter": {
+            "default": float('inf'),  # Free models are unlimited
+        },
+        "pexels": {
+            "default": float('inf'),  # Very high limits
+        },
+        "youtube": {
+            "default": 10000,  # 10K units/day
+        }
+    }
+    
     total_quota_calls = 0
     total_free_calls = 0
+    
+    safe_print(f"\n   {'Provider':<12} | {'Endpoint/Model':<40} | {'Calls':>6} | {'% Daily':<10}")
+    safe_print("   " + "-" * 75)
     
     for provider, data in QUOTA_USED.items():
         if data["models"]:
             provider_quota = 0
             provider_free = 0
+            provider_quotas = KNOWN_QUOTAS.get(provider.lower(), {})
             
             for model, counts in data["models"].items():
                 provider_quota += counts["quota"]
                 provider_free += counts["free"]
             
             if provider_free > 0 or provider_quota > 0:
-                safe_print(f"\n   {provider.upper()}:")
                 for model, counts in data["models"].items():
-                    model_short = model[:40] + "..." if len(model) > 40 else model
-                    if counts["quota"] > 0:
-                        safe_print(f"     [QUOTA] {model_short}: {counts['quota']} calls")
+                    model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                    calls = counts["quota"] if counts["quota"] > 0 else counts["free"]
+                    call_type = "[QUOTA]" if counts["quota"] > 0 else "[FREE]"
+                    
+                    # Get quota for this model
+                    model_quota = provider_quotas.get(model, provider_quotas.get("default", float('inf')))
+                    
+                    if model_quota == float('inf'):
+                        pct_str = "inf"
                     else:
-                        safe_print(f"     [FREE]  {model_short}: {counts['free']} calls")
+                        pct = (calls / model_quota) * 100
+                        pct_str = f"{pct:.3f}%"
+                    
+                    safe_print(f"   {provider.upper():<12} | {model_short:<40} | {calls:>6} | {pct_str:<10} {call_type}")
             
             total_quota_calls += provider_quota
             total_free_calls += provider_free
     
-    safe_print("\n" + "-" * 60)
+    safe_print("\n" + "-" * 70)
     safe_print(f"   TOTAL FREE CALLS: {total_free_calls}")
     if total_quota_calls == 0:
         safe_print("   TOTAL PRODUCTION QUOTA USED: ZERO")
     else:
         safe_print(f"   TOTAL PRODUCTION QUOTA USED: {total_quota_calls} calls")
-    safe_print("=" * 60)
+    safe_print("=" * 70)
     
     # Save results
     TEST_RESULTS["duration_seconds"] = duration
