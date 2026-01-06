@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-06T22:43:56.414266",
+  "timestamp": "2026-01-06T22:59:04.523125",
   "tests": {
     "Gemini Discovery": {
       "status": "PASS",
@@ -229,5 +229,31 @@
   "passed": 56,
   "failed": 0,
   "warnings": 0,
-  "duration_seconds": 2.3744022846221924
+  "duration_seconds": 2.2896392345428467,
+  "quota_used": {
+    "gemini": {
+      "calls": 0,
+      "endpoints": []
+    },
+    "groq": {
+      "calls": 0,
+      "endpoints": []
+    },
+    "openrouter": {
+      "calls": 0,
+      "endpoints": []
+    },
+    "pexels": {
+      "calls": 0,
+      "endpoints": []
+    },
+    "youtube": {
+      "calls": 0,
+      "endpoints": []
+    },
+    "huggingface": {
+      "calls": 0,
+      "endpoints": []
+    }
+  }
 }

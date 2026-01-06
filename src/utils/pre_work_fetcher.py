@@ -17,11 +17,16 @@ Architecture:
 """
 
 import os
+import sys
 import json
 import random
+import warnings
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
+
+# Suppress google.generativeai deprecation warning (will migrate to google.genai later)
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
 # Setup
 DATA_DIR = Path("./data")

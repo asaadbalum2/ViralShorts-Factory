@@ -38,9 +38,14 @@ import os
 import sys
 import json
 import time
+import warnings
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple
+
+# Suppress the google.generativeai deprecation warning
+# We're aware of this and will migrate to google.genai in a future update
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
 # Setup paths
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -69,6 +74,23 @@ TEST_RESULTS = {
     "failed": 0,
     "warnings": 0
 }
+
+# Quota tracking
+QUOTA_USED = {
+    "gemini": {"calls": 0, "endpoints": []},
+    "groq": {"calls": 0, "endpoints": []},
+    "openrouter": {"calls": 0, "endpoints": []},
+    "pexels": {"calls": 0, "endpoints": []},
+    "youtube": {"calls": 0, "endpoints": []},
+    "huggingface": {"calls": 0, "endpoints": []}
+}
+
+def track_quota(provider: str, endpoint: str, is_free: bool = True):
+    """Track quota usage."""
+    if provider in QUOTA_USED:
+        if not is_free:  # Only count non-free calls
+            QUOTA_USED[provider]["calls"] += 1
+        QUOTA_USED[provider]["endpoints"].append(f"{'[FREE]' if is_free else '[QUOTA]'} {endpoint}")
 
 def safe_print(msg: str):
     """Print with encoding fallback."""
@@ -118,6 +140,7 @@ def test_model_discovery():
             record_test("Gemini Discovery", True, "Skipped (no API key - expected locally)", warning=True)
         else:
             models = _discover_gemini_models()
+            track_quota("gemini", "/models endpoint", is_free=True)  # FREE endpoint
             if models and len(models) > 0:
                 record_test("Gemini Discovery", True, f"Found {len(models)} models")
                 
@@ -138,6 +161,7 @@ def test_model_discovery():
             record_test("Groq Discovery", True, "Skipped (no API key - expected locally)", warning=True)
         else:
             models = _discover_groq_models()
+            track_quota("groq", "/models endpoint", is_free=True)  # FREE endpoint
             if models and len(models) > 0:
                 record_test("Groq Discovery", True, f"Found {len(models)} models")
                 
@@ -835,6 +859,7 @@ Return ONLY the hook text, nothing else."""
             timeout=30
         )
         
+        track_quota("openrouter", f"/chat/completions ({test_model})", is_free=True)  # Free model
         if response.status_code == 200:
             result = response.json()
             hook = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
@@ -947,6 +972,7 @@ def test_api_behavior_validation():
                 timeout=10
             )
             
+            track_quota("gemini", "/models (format check)", is_free=True)  # FREE endpoint
             if response.status_code == 200:
                 data = response.json()
                 
@@ -984,6 +1010,7 @@ def test_api_behavior_validation():
                 timeout=10
             )
             
+            track_quota("groq", "/models (format check)", is_free=True)  # FREE endpoint
             if response.status_code == 200:
                 data = response.json()
                 
@@ -1015,6 +1042,7 @@ def test_api_behavior_validation():
                 timeout=10
             )
             
+            track_quota("openrouter", "/models (format check)", is_free=True)  # FREE endpoint
             if response.status_code == 200:
                 data = response.json()
                 
@@ -1094,6 +1122,7 @@ def test_ai_generation_non_production():
                     timeout=30
                 )
                 
+                track_quota("openrouter", f"/chat/completions ({model})", is_free=True)  # Free model
                 if response.status_code == 200:
                     model_short = model.split("/")[-1][:25] if "/" in model else model[:25]
                     record_test("OpenRouter AI Test", True, f"{model_short}: OK (non-prod)")
@@ -1164,6 +1193,7 @@ def test_pexels_api():
             timeout=10
         )
         
+        track_quota("pexels", "/videos/search", is_free=True)  # Pexels is free tier
         if response.status_code == 200:
             data = response.json()
             video_count = len(data.get("videos", []))
@@ -1328,8 +1358,29 @@ def main():
     safe_print(f"   Duration: {duration:.1f}s")
     safe_print("=" * 60)
     
+    # QUOTA USAGE REPORT
+    safe_print("\n" + "=" * 60)
+    safe_print("  QUOTA USAGE REPORT")
+    safe_print("=" * 60)
+    total_quota_calls = 0
+    for provider, data in QUOTA_USED.items():
+        if data["endpoints"]:
+            quota_calls = data["calls"]
+            free_calls = len([e for e in data["endpoints"] if "[FREE]" in e])
+            total_quota_calls += quota_calls
+            status = "ZERO" if quota_calls == 0 else str(quota_calls)
+            safe_print(f"   {provider.upper():12} | Quota used: {status:4} | Free calls: {free_calls}")
+    
+    safe_print("-" * 60)
+    if total_quota_calls == 0:
+        safe_print("   TOTAL PRODUCTION QUOTA USED: ZERO")
+    else:
+        safe_print(f"   TOTAL PRODUCTION QUOTA USED: {total_quota_calls} calls")
+    safe_print("=" * 60)
+    
     # Save results
     TEST_RESULTS["duration_seconds"] = duration
+    TEST_RESULTS["quota_used"] = QUOTA_USED
     save_results()
     safe_print(f"\n[OK] Results saved to test_output/test_results.json")
     

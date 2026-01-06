@@ -34,10 +34,14 @@ import asyncio
 import random
 import time
 import math
+import warnings
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, field
 import numpy as np
+
+# Suppress google.generativeai deprecation warning (will migrate to google.genai later)
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 import requests
 
 # Core imports

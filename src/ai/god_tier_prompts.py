@@ -16,8 +16,12 @@ Each prompt is crafted using advanced prompt engineering techniques:
 import os
 import json
 import re
+import warnings
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple
+
+# Suppress google.generativeai deprecation warning (will migrate to google.genai later)
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
 try:
     from groq import Groq

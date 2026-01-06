@@ -26,8 +26,12 @@ import os
 import json
 import time
 import re
+import warnings
 from typing import Dict, List, Optional, Tuple
 from dataclasses import asdict
+
+# Suppress google.generativeai deprecation warning (will migrate to google.genai later)
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
 # Import the router
 try:
