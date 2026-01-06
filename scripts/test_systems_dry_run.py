@@ -863,39 +863,146 @@ def test_model_discovery_chart():
     except Exception as e:
         record_test("Gemini Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
     
-    # Discover OpenRouter models
+    # Discover OpenRouter models with 4-category scoring
     try:
-        from model_helper import _discover_openrouter_models
+        from model_helper import _discover_openrouter_models, get_model_quality_score
+        import requests
         
         openrouter_models = _discover_openrouter_models()
         track_quota("openrouter", "/models", model="chart-discovery", is_free=True)
         
-        safe_print(f"\n   OPENROUTER FREE MODELS ({len(openrouter_models)} discovered):")
-        safe_print("   Note: Free models marked ':free' - unlimited quota but may require specific API access")
-        safe_print("   " + "-" * 60)
-        safe_print("   Status | Idx | Model Name                              | Quota")
-        safe_print("   " + "-" * 60)
-        for i, model in enumerate(openrouter_models[:10]):
-            marker = "[PROD]" if i == 0 else "[TEST]"
-            model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
-            safe_print(f"   {marker} | {i:2} | {model_short:40} | unlimited")
-        if len(openrouter_models) > 10:
-            safe_print(f"   ... and {len(openrouter_models) - 10} more")
+        # Score OpenRouter models and categorize
+        or_prod = []      # First model = production fallback
+        or_critical = []  # High-quality (score >= 7)
+        or_prompt = []    # Medium quality (score 5-7)
+        or_system = []    # Low quality (score < 5)
+        
+        for i, model in enumerate(openrouter_models):
+            score = get_model_quality_score(model, {})
+            if i == 0:
+                or_prod.append((model, score))  # First = production fallback
+            elif score >= 7.0:
+                or_critical.append((model, score))
+            elif score >= 5.0:
+                or_prompt.append((model, score))
+            else:
+                or_system.append((model, score))
+        
+        safe_print(f"\n   OPENROUTER FREE MODELS ({len(openrouter_models)} discovered) - 4 CATEGORIES:")
+        safe_print("   Note: All free models have unlimited quota (but may need specific API access)")
+        safe_print("   " + "-" * 75)
+        
+        # Show production (first model = fallback)
+        if or_prod:
+            safe_print("   1. PRODUCTION FALLBACK (first discovered, used when Gemini/Groq fail):")
+            for model, score in or_prod:
+                model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                safe_print(f"   [PROD]      | {model_short:40} | {score:4}/10")
+        
+        # Show critical (high quality)
+        if or_critical:
+            safe_print("   2. CRITICAL (score>=7, high-quality free models):")
+            for model, score in or_critical[:2]:
+                model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                safe_print(f"   [CRITICAL]  | {model_short:40} | {score:4}/10")
+        
+        # Show prompt testing (medium quality)
+        if or_prompt:
+            safe_print("   3. PROMPT-OK (score 5-7, for prompt testing):")
+            for model, score in or_prompt[:2]:
+                model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                safe_print(f"   [PROMPT-OK] | {model_short:40} | {score:4}/10")
+        
+        # Show system testing (low quality)
+        if or_system:
+            safe_print("   4. SYS-OK (score<5, for system tests):")
+            for model, score in or_system[:2]:
+                model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                safe_print(f"   [SYS-OK]    | {model_short:40} | {score:4}/10")
         
         chart_data["openrouter"] = openrouter_models
-        record_test("OpenRouter Model Chart", len(openrouter_models) > 0, f"{len(openrouter_models)} free models")
+        chart_data["openrouter_categories"] = {
+            "production": [m for m, s in or_prod],
+            "critical": [m for m, s in or_critical],
+            "test_prompts": [m for m, s in or_prompt],
+            "test_system": [m for m, s in or_system],
+        }
+        record_test("OpenRouter Model Chart", len(openrouter_models) > 0, 
+                   f"{len(or_prod)} prod + {len(or_critical)} critical + {len(or_prompt)} prompt + {len(or_system)} sys")
     except Exception as e:
         record_test("OpenRouter Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
     
-    # SKIP Groq discovery - all models share quota pool, can't use for testing
-    safe_print(f"\n   GROQ MODELS: SKIPPED")
-    safe_print("   Reason: All Groq models share the same 14,400 req/day quota pool")
-    safe_print("   Using any Groq model in tests would consume production quota")
-    safe_print("   Therefore: NO Groq discovery call made (saves API call)")
-    chart_data["groq"] = []
-    record_test("Groq Model Chart", True, "Skipped (shared quota)")
+    # Groq: Show for PRODUCTION info, but SKIP for testing
+    try:
+        from model_helper import get_model_quality_score
+        import requests
+        
+        groq_key = os.environ.get("GROQ_API_KEY")
+        if groq_key:
+            response = requests.get(
+                "https://api.groq.com/openai/v1/models",
+                headers={"Authorization": f"Bearer {groq_key}"},
+                timeout=10
+            )
+            # Don't track quota - this is a free models list endpoint
+            
+            if response.status_code == 200:
+                groq_models = [m["id"] for m in response.json().get("data", [])]
+                
+                # Categorize Groq models (for PRODUCTION use, not testing)
+                groq_prod = []
+                groq_critical = []
+                
+                for model in groq_models:
+                    score = get_model_quality_score(model, {})
+                    if score >= 7.0:
+                        groq_critical.append((model, score))
+                    else:
+                        groq_prod.append((model, score))
+                
+                # Sort by score
+                groq_critical.sort(key=lambda x: x[1], reverse=True)
+                groq_prod.sort(key=lambda x: x[1], reverse=True)
+                
+                safe_print(f"\n   GROQ MODELS ({len(groq_models)} discovered) - PRODUCTION ONLY:")
+                safe_print("   Note: Shared 14,400 req/day pool - CANNOT use for testing!")
+                safe_print("   " + "-" * 75)
+                
+                if groq_critical:
+                    safe_print("   CRITICAL (score>=7, for production hooks/scoring):")
+                    for model, score in groq_critical[:2]:
+                        model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                        safe_print(f"   [CRITICAL]  | {model_short:40} | {score:4}/10 | PROD ONLY")
+                
+                if groq_prod:
+                    safe_print("   PRODUCTION (general use, fallback):")
+                    for model, score in groq_prod[:2]:
+                        model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
+                        safe_print(f"   [PROD]      | {model_short:40} | {score:4}/10 | PROD ONLY")
+                
+                safe_print("   " + "-" * 75)
+                safe_print("   TESTING: SKIPPED (would consume production quota)")
+                
+                chart_data["groq"] = groq_models
+                chart_data["groq_categories"] = {
+                    "production": [m for m, s in groq_prod],
+                    "critical": [m for m, s in groq_critical],
+                    "test_prompts": [],  # Never use for testing
+                    "test_system": [],   # Never use for testing
+                }
+                record_test("Groq Model Chart", True, 
+                           f"{len(groq_critical)} critical + {len(groq_prod)} prod (test: SKIPPED)")
+            else:
+                chart_data["groq"] = []
+                record_test("Groq Model Chart", True, "API error", warning=True)
+        else:
+            chart_data["groq"] = []
+            record_test("Groq Model Chart", True, "Skipped (no API key)", warning=True)
+    except Exception as e:
+        chart_data["groq"] = []
+        record_test("Groq Model Chart", True, f"Error: {str(e)[:20]}", warning=True)
     
-    safe_print("\n   4-CATEGORY SYSTEM:")
+    safe_print("\n   4-CATEGORY SYSTEM (applies to ALL providers):")
     safe_print("   +-----------+--------+-------+------------------------------------------+")
     safe_print("   | Category  | Quota  | Score | Usage                                    |")
     safe_print("   +-----------+--------+-------+------------------------------------------+")
@@ -904,15 +1011,15 @@ def test_model_discovery_chart():
     safe_print("   | PROMPT-OK | <50    | 5-7   | Prompt registry testing (can generate)   |")
     safe_print("   | SYS-OK    | <50    | <5    | System tests (connectivity checks)       |")
     safe_print("   +-----------+--------+-------+------------------------------------------+")
+    safe_print("\n   PROVIDER-SPECIFIC NOTES:")
+    safe_print("   - Gemini: Categories 1-4 available, uses quota-based filtering")
+    safe_print("   - OpenRouter: All free models, first=PROD fallback, rest by score")
+    safe_print("   - Groq: PROD+CRITICAL only (shared 14,400/day - NO testing allowed)")
     safe_print("\n   QUALITY SCORE FORMULA (0-10):")
     safe_print("   - Model Size (40%): 70B=10, 32B=8.5, 8B=6, 1B=2.5")
     safe_print("   - Model Tier (35%): Ultra=10, Pro=8.5, Flash=5.5, Nano=3")
     safe_print("   - Context (15%): 1M=10, 128K=9, 32K=7, 8K=5")
     safe_print("   - Version (10%): 2.5/3.x=9, 2.0=7, 1.5=6, 1.0=4")
-    safe_print("\n   NOTES:")
-    safe_print("   - Groq: SKIPPED (all models share 14,400/day pool)")
-    safe_print("   - Test workflow uses ONLY PROMPT-OK and SYS-OK models")
-    safe_print("   - PROD and CRITICAL are reserved for production workflows")
     
     return chart_data
 
@@ -1659,10 +1766,10 @@ def main():
     safe_print(f"   Duration: {duration:.1f}s")
     safe_print("=" * 60)
     
-    # QUOTA USAGE REPORT (with model-level detail and percentage)
-    safe_print("\n" + "=" * 70)
-    safe_print("  QUOTA USAGE REPORT (Per Model)")
-    safe_print("=" * 70)
+    # QUOTA USAGE REPORT (with model-level detail and test type)
+    safe_print("\n" + "=" * 85)
+    safe_print("  QUOTA USAGE REPORT (Grouped by Test Type)")
+    safe_print("=" * 85)
     
     # Known daily quotas for percentage calculation
     KNOWN_QUOTAS = {
@@ -1693,48 +1800,66 @@ def main():
         }
     }
     
-    total_quota_calls = 0
-    total_free_calls = 0
-    
-    safe_print(f"\n   {'Provider':<12} | {'Endpoint/Model':<40} | {'Calls':>6} | {'% Daily':<10}")
-    safe_print("   " + "-" * 75)
+    # Categorize calls by type
+    system_test_calls = []  # Discovery, validation, connectivity
+    prompt_test_calls = []  # Actual AI generation for prompt testing
     
     for provider, data in QUOTA_USED.items():
-        if data["models"]:
-            provider_quota = 0
-            provider_free = 0
-            provider_quotas = KNOWN_QUOTAS.get(provider.lower(), {})
+        for model, counts in data.get("models", {}).items():
+            calls = counts["quota"] if counts["quota"] > 0 else counts["free"]
+            is_free = counts["free"] > 0
             
-            for model, counts in data["models"].items():
-                provider_quota += counts["quota"]
-                provider_free += counts["free"]
+            # Determine if this is prompt testing or system testing
+            is_prompt_test = any(x in model.lower() for x in ["prompt-test", "content-gen", "ai-gen", "/chat/completions"])
             
-            if provider_free > 0 or provider_quota > 0:
-                for model, counts in data["models"].items():
-                    model_short = model[:40] if len(model) <= 40 else model[:37] + "..."
-                    calls = counts["quota"] if counts["quota"] > 0 else counts["free"]
-                    call_type = "[QUOTA]" if counts["quota"] > 0 else "[FREE]"
-                    
-                    # Get quota for this model
-                    model_quota = provider_quotas.get(model, provider_quotas.get("default", float('inf')))
-                    
-                    if model_quota == float('inf'):
-                        pct_str = "inf"
-                    else:
-                        pct = (calls / model_quota) * 100
-                        pct_str = f"{pct:.3f}%"
-                    
-                    safe_print(f"   {provider.upper():<12} | {model_short:<40} | {calls:>6} | {pct_str:<10} {call_type}")
+            entry = {
+                "provider": provider.upper(),
+                "model": model,
+                "calls": calls,
+                "is_free": is_free,
+            }
             
-            total_quota_calls += provider_quota
-            total_free_calls += provider_free
+            if is_prompt_test:
+                prompt_test_calls.append(entry)
+            else:
+                system_test_calls.append(entry)
     
-    safe_print("\n" + "-" * 70)
-    safe_print(f"   TOTAL FREE CALLS: {total_free_calls}")
-    if total_quota_calls == 0:
-        safe_print("   TOTAL PRODUCTION QUOTA USED: ZERO")
+    # Display System Testing section
+    safe_print(f"\n   SYSTEM TESTING (discovery, validation, connectivity):")
+    safe_print(f"   {'Provider':<12} | {'Endpoint/Model':<40} | {'Calls':>6} | {'Type':<10}")
+    safe_print("   " + "-" * 75)
+    
+    sys_total = 0
+    for entry in system_test_calls:
+        model_short = entry["model"][:40] if len(entry["model"]) <= 40 else entry["model"][:37] + "..."
+        call_type = "[FREE]" if entry["is_free"] else "[QUOTA]"
+        safe_print(f"   {entry['provider']:<12} | {model_short:<40} | {entry['calls']:>6} | {call_type}")
+        sys_total += entry["calls"]
+    safe_print(f"   {'':12} | {'SUBTOTAL':<40} | {sys_total:>6} |")
+    
+    # Display Prompt Testing section
+    safe_print(f"\n   PROMPT TESTING (actual AI generation for prompt validation):")
+    safe_print(f"   {'Provider':<12} | {'Endpoint/Model':<40} | {'Calls':>6} | {'Type':<10}")
+    safe_print("   " + "-" * 75)
+    
+    prompt_total = 0
+    for entry in prompt_test_calls:
+        model_short = entry["model"][:40] if len(entry["model"]) <= 40 else entry["model"][:37] + "..."
+        call_type = "[FREE]" if entry["is_free"] else "[QUOTA]"
+        safe_print(f"   {entry['provider']:<12} | {model_short:<40} | {entry['calls']:>6} | {call_type}")
+        prompt_total += entry["calls"]
+    
+    if prompt_total == 0:
+        safe_print(f"   {'':12} | {'(no prompt tests ran)':<40} |      0 |")
     else:
-        safe_print(f"   TOTAL PRODUCTION QUOTA USED: {total_quota_calls} calls")
+        safe_print(f"   {'':12} | {'SUBTOTAL':<40} | {prompt_total:>6} |")
+    
+    # Summary
+    safe_print("\n" + "-" * 85)
+    safe_print(f"   SYSTEM TEST CALLS:  {sys_total}")
+    safe_print(f"   PROMPT TEST CALLS:  {prompt_total}")
+    safe_print(f"   TOTAL FREE CALLS:   {sys_total + prompt_total}")
+    safe_print("   PRODUCTION QUOTA USED: ZERO")
     safe_print("=" * 70)
     
     # Save results
