@@ -272,13 +272,27 @@ class QuotaOptimizer:
             
             safe_print(f"[CACHE] Found {len(candidate_models)} Gemini models via API")
             
-            # Step 2: Load quota cache (from previous 429 errors)
+            # Step 2: Load quota cache (from previous 429 errors) with freshness check
             quota_cache_file = Path("data/persistent/model_cache/actual_quotas.json")
             quota_cache = {}
+            QUOTA_TTL_HOURS = 24  # Re-check quotas daily
             try:
                 if quota_cache_file.exists():
                     with open(quota_cache_file, 'r') as f:
-                        quota_cache = json.load(f)
+                        raw_cache = json.load(f)
+                    # Filter to only fresh entries
+                    for key, value in raw_cache.items():
+                        if "_discovered_at" in key:
+                            continue
+                        discovered_key = f"{key}_discovered_at"
+                        if discovered_key in raw_cache:
+                            try:
+                                discovered_at = datetime.fromisoformat(raw_cache[discovered_key])
+                                age_hours = (datetime.now() - discovered_at).total_seconds() / 3600
+                                if age_hours < QUOTA_TTL_HOURS:
+                                    quota_cache[key] = value
+                            except:
+                                pass
             except:
                 pass
             

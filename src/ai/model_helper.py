@@ -39,6 +39,10 @@ def _safe_print(msg: str):
         print(msg.encode('ascii', 'replace').decode())
 
 
+# Quota cache TTL - re-check quotas periodically in case they change
+QUOTA_CACHE_TTL_HOURS = int(os.environ.get("QUOTA_CACHE_TTL_HOURS", 24))  # Configurable!
+
+
 def _load_quota_cache() -> Dict[str, int]:
     """Load cached quota values discovered from 429 errors."""
     quota_cache_file = EMERGENCY_CACHE_DIR / "actual_quotas.json"
@@ -60,6 +64,28 @@ def _save_quota_cache(cache: Dict[str, int]):
             json.dump(cache, f, indent=2)
     except:
         pass
+
+
+def _is_quota_cache_fresh(cache: Dict, model_name: str) -> bool:
+    """Check if cached quota is still fresh (within TTL)."""
+    discovered_key = f"{model_name}_discovered_at"
+    if discovered_key not in cache:
+        return False
+    
+    try:
+        discovered_at = datetime.fromisoformat(cache[discovered_key])
+        age_hours = (datetime.now() - discovered_at).total_seconds() / 3600
+        return age_hours < QUOTA_CACHE_TTL_HOURS
+    except:
+        return False
+
+
+def get_cached_quota(model_name: str) -> Optional[int]:
+    """Get cached quota if fresh, None if expired or not found."""
+    cache = _load_quota_cache()
+    if model_name in cache and _is_quota_cache_fresh(cache, model_name):
+        return cache[model_name]
+    return None
 
 
 def record_quota_from_429(model_name: str, quota_value: int):
@@ -89,11 +115,10 @@ def _get_model_quota_from_api(model_name: str, provider: str) -> Optional[int]:
     try:
         import requests
         
-        # Step 1: Check quota cache (from previous 429 errors)
-        quota_cache = _load_quota_cache()
-        if model_name in quota_cache:
-            cached_quota = quota_cache[model_name]
-            _safe_print(f"[QUOTA] {model_name}: {cached_quota}/day (cached from 429)")
+        # Step 1: Check quota cache (from previous 429 errors) - with TTL!
+        cached_quota = get_cached_quota(model_name)
+        if cached_quota is not None:
+            _safe_print(f"[QUOTA] {model_name}: {cached_quota}/day (cached, fresh)")
             return cached_quota
         
         if provider == "gemini":
