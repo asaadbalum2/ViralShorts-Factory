@@ -206,6 +206,25 @@ class VersionVerifier:
             ("get_gemini_models" in main_content, "Dynamic Gemini models"),
         ]
         
+        # v17.9.13: Check for quota-aware mechanisms
+        model_helper_path = Path("src/ai/model_helper.py")
+        if model_helper_path.exists():
+            model_helper = model_helper_path.read_text(errors='ignore')
+            checks.append(("record_quota_from_429" in model_helper, "Quota learning from 429 errors"))
+            checks.append(("actual_quotas.json" in model_helper, "Quota cache persistence"))
+        
+        # Check generate.yml for pre-work download
+        generate_yml_path = Path(".github/workflows/generate.yml")
+        if generate_yml_path.exists():
+            generate_yml = generate_yml_path.read_text(errors='ignore')
+            checks.append(("pre-generated-concepts" in generate_yml, "Pre-work concepts download"))
+        
+        # Check pre-work.yml for permissions
+        prework_yml_path = Path(".github/workflows/pre-work.yml")
+        if prework_yml_path.exists():
+            prework_yml = prework_yml_path.read_text(errors='ignore')
+            checks.append(("permissions:" in prework_yml and "contents: write" in prework_yml, "Pre-work write permissions"))
+        
         passed = 0
         for check, desc in checks:
             if check:

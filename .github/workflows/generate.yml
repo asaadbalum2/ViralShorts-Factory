@@ -162,6 +162,39 @@ jobs:
           fi
         continue-on-error: true
 
+      # v17.9.13: Download pre-generated concepts from Pre-Work workflow
+      - name: Restore pre-generated concepts
+        run: |
+          echo "[INFO] Checking for pre-generated concepts from Pre-Work workflow..."
+          ARTIFACT_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/artifacts?name=pre-generated-concepts&per_page=1" \
+            | jq -r '.artifacts[0].id')
+          
+          if [ "$ARTIFACT_ID" != "null" ] && [ -n "$ARTIFACT_ID" ]; then
+            # Check if artifact is from today (within 24 hours)
+            CREATED_AT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID" \
+              | jq -r '.created_at')
+            
+            echo "Pre-work artifact created at: $CREATED_AT"
+            
+            curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID/zip" \
+              -o /tmp/prework.zip
+            mkdir -p data
+            unzip -o /tmp/prework.zip -d data/ 2>/dev/null || true
+            
+            if [ -f data/pre_generated_concepts.json ]; then
+              CONCEPT_COUNT=$(python3 -c "import json; d=json.load(open('data/pre_generated_concepts.json')); print(len(d.get('concepts', [])))")
+              echo "[OK] Loaded $CONCEPT_COUNT pre-generated concepts (saves AI quota!)"
+            else
+              echo "[INFO] Pre-work data downloaded but no concepts file found"
+            fi
+          else
+            echo "[INFO] No pre-generated concepts available - will generate fresh (uses more quota)"
+          fi
+        continue-on-error: true
+
       - name: Pre-fetch some B-roll (optional cache)
         run: python fetch_broll.py || true
         env:

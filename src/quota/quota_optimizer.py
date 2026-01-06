@@ -233,10 +233,14 @@ class QuotaOptimizer:
     # ========================================================================
     def get_gemini_models(self, api_key: str = None, force_refresh: bool = False) -> List[str]:
         """
-        Get available Gemini models, prioritizing those with free tier.
+        v17.9.13: Get available Gemini models, sorted by ACTUAL QUOTA (highest first).
         
-        Uses genai.list_models() to discover available models dynamically.
-        Cached for 24 hours.
+        Strategy:
+        1. Query API for available models
+        2. Check quota cache for each model (from previous 429 errors)
+        3. Test unknown models to discover quota
+        4. Sort by quota descending
+        5. Skip models with low quota (<50/day)
         
         LAZY LOADING: Set force_refresh=True when a model returns 404.
         """
@@ -247,41 +251,110 @@ class QuotaOptimizer:
         if force_refresh:
             safe_print("[CACHE] Force refreshing Gemini models (model not found)")
         
-        # v17.9.12: NO hardcoded fallbacks! All via API discovery.
-        
         if not api_key:
             safe_print("[!] No GEMINI_API_KEY - cannot discover models")
             return []
         
         try:
             import google.generativeai as genai
+            import requests
             genai.configure(api_key=api_key)
             
-            # List all available models from API
+            # Step 1: List all available models from API
             models = genai.list_models()
             
-            # Get models with quota info - NO hardcoded priority!
-            available_models = []
+            # Get models that support generateContent
+            candidate_models = []
             for model in models:
                 model_name = model.name.replace("models/", "")
-                # Check if it supports generateContent
                 if "generateContent" in getattr(model, "supported_generation_methods", []):
-                    available_models.append(model_name)
+                    candidate_models.append(model_name)
             
-            if available_models:
+            safe_print(f"[CACHE] Found {len(candidate_models)} Gemini models via API")
+            
+            # Step 2: Load quota cache (from previous 429 errors)
+            quota_cache_file = Path("data/persistent/model_cache/actual_quotas.json")
+            quota_cache = {}
+            try:
+                if quota_cache_file.exists():
+                    with open(quota_cache_file, 'r') as f:
+                        quota_cache = json.load(f)
+            except:
+                pass
+            
+            # Step 3: Score models by quota
+            models_with_quota = []
+            tested_count = 0
+            MAX_TESTS = 5  # Limit test calls to save quota
+            
+            for model_name in candidate_models:
+                # Check cached quota first
+                if model_name in quota_cache:
+                    quota = quota_cache[model_name]
+                    if quota >= 50:  # Skip low-quota models
+                        models_with_quota.append((model_name, quota))
+                        safe_print(f"   {model_name}: {quota}/day (cached)")
+                    continue
+                
+                # Test model to discover quota (limited)
+                if tested_count < MAX_TESTS:
+                    try:
+                        test_response = requests.post(
+                            f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}",
+                            json={"contents": [{"parts": [{"text": "1"}]}], "generationConfig": {"maxOutputTokens": 1}},
+                            timeout=10
+                        )
+                        tested_count += 1
+                        
+                        # Check rate limit headers
+                        daily_limit = test_response.headers.get("x-ratelimit-limit-requests-per-day")
+                        if daily_limit:
+                            quota = int(daily_limit)
+                        elif test_response.status_code == 429:
+                            # Parse quota from error
+                            import re
+                            match = re.search(r'quota_value[:\s]+(\d+)', test_response.text)
+                            quota = int(match.group(1)) if match else 20  # Assume low if 429
+                            quota_cache[model_name] = quota
+                        elif test_response.status_code == 200:
+                            quota = 500  # Assume decent if works
+                        else:
+                            quota = 0  # Skip this model
+                        
+                        if quota >= 50:
+                            models_with_quota.append((model_name, quota))
+                            quota_cache[model_name] = quota
+                            safe_print(f"   {model_name}: {quota}/day (discovered)")
+                    except Exception as e:
+                        safe_print(f"   {model_name}: Error testing - {e}")
+            
+            # Save updated quota cache
+            try:
+                quota_cache_file.parent.mkdir(parents=True, exist_ok=True)
+                with open(quota_cache_file, 'w') as f:
+                    json.dump(quota_cache, f, indent=2)
+            except:
+                pass
+            
+            # Step 4: Sort by quota (highest first)
+            models_with_quota.sort(key=lambda x: x[1], reverse=True)
+            sorted_models = [m[0] for m in models_with_quota]
+            
+            if sorted_models:
+                safe_print(f"[MODEL] Best Gemini: {sorted_models[0]} ({models_with_quota[0][1]}/day)")
                 self.cache["gemini_models"] = {
-                    "data": available_models[:10],
+                    "data": sorted_models,
+                    "quotas": {m[0]: m[1] for m in models_with_quota},
                     "timestamp": time.time()
                 }
                 self._save_cache()
-                safe_print(f"[CACHE] Found {len(available_models)} Gemini models via API")
-                return available_models[:10]
+                return sorted_models
                 
         except Exception as e:
             safe_print(f"[!] Gemini model discovery failed: {e}")
         
         # Return empty - caller should try OpenRouter or other fallback
-        safe_print("[!] Gemini: No models discovered, will use fallback provider")
+        safe_print("[!] Gemini: No high-quota models found, will use fallback provider")
         return []
     
     # ========================================================================

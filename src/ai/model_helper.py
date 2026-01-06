@@ -39,41 +39,106 @@ def _safe_print(msg: str):
         print(msg.encode('ascii', 'replace').decode())
 
 
+def _load_quota_cache() -> Dict[str, int]:
+    """Load cached quota values discovered from 429 errors."""
+    quota_cache_file = EMERGENCY_CACHE_DIR / "actual_quotas.json"
+    try:
+        if quota_cache_file.exists():
+            with open(quota_cache_file, 'r') as f:
+                return json.load(f)
+    except:
+        pass
+    return {}
+
+
+def _save_quota_cache(cache: Dict[str, int]):
+    """Save discovered quota values."""
+    quota_cache_file = EMERGENCY_CACHE_DIR / "actual_quotas.json"
+    try:
+        EMERGENCY_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        with open(quota_cache_file, 'w') as f:
+            json.dump(cache, f, indent=2)
+    except:
+        pass
+
+
+def record_quota_from_429(model_name: str, quota_value: int):
+    """
+    Record actual quota discovered from a 429 error.
+    Call this from error handlers when you see 'quota_value: X' in error message.
+    """
+    cache = _load_quota_cache()
+    cache[model_name] = quota_value
+    cache[f"{model_name}_discovered_at"] = datetime.now().isoformat()
+    _save_quota_cache(cache)
+    _safe_print(f"[QUOTA] Recorded {model_name} has {quota_value}/day (from 429)")
+
+
 def _get_model_quota_from_api(model_name: str, provider: str) -> Optional[int]:
     """
-    Query model availability and quota via API.
-    Returns daily request limit, or None if unknown.
+    v17.9.13: Query model availability and ACTUAL quota via API.
     
-    v17.9.12: NO test calls! Uses free info endpoints only.
+    Strategy:
+    1. Check cached quota from previous 429 errors (MOST ACCURATE)
+    2. Check if model exists via free info endpoint
+    3. Make ONE minimal test call to discover rate limit headers
+    4. Return discovered quota or None if unknown
+    
+    NO name-based inference - all from actual API responses!
     """
     try:
         import requests
         
+        # Step 1: Check quota cache (from previous 429 errors)
+        quota_cache = _load_quota_cache()
+        if model_name in quota_cache:
+            cached_quota = quota_cache[model_name]
+            _safe_print(f"[QUOTA] {model_name}: {cached_quota}/day (cached from 429)")
+            return cached_quota
+        
         if provider == "gemini":
             api_key = os.environ.get("GEMINI_API_KEY")
             if api_key:
-                # Use model info endpoint (FREE - no quota cost!)
+                # Step 2: Check if model exists (FREE)
                 info_response = requests.get(
                     f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}?key={api_key}",
                     timeout=10
                 )
                 
-                if info_response.status_code == 200:
-                    model_info = info_response.json()
-                    # Model exists and is available
-                    # Note: Gemini doesn't expose quota in model info
-                    # We infer from model name patterns
-                    name_lower = model_name.lower()
-                    if "flash" in name_lower and "1.5" in name_lower:
-                        return 1500  # Known high-quota model
-                    elif "flash" in name_lower:
-                        return 500  # Standard flash models
-                    elif "pro" in name_lower:
-                        return 50  # Pro models have lower quota
-                    else:
-                        return 100  # Default assumption
-                elif info_response.status_code == 404:
+                if info_response.status_code == 404:
                     return 0  # Model doesn't exist
+                
+                if info_response.status_code == 200:
+                    # Step 3: Make ONE minimal test call to discover quota
+                    # This costs 1 request but gives us REAL quota info
+                    test_response = requests.post(
+                        f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}",
+                        json={"contents": [{"parts": [{"text": "1"}]}], "generationConfig": {"maxOutputTokens": 1}},
+                        timeout=10
+                    )
+                    
+                    # Check rate limit headers
+                    daily_limit = test_response.headers.get("x-ratelimit-limit-requests-per-day")
+                    if daily_limit:
+                        quota = int(daily_limit)
+                        record_quota_from_429(model_name, quota)  # Cache it
+                        return quota
+                    
+                    if test_response.status_code == 429:
+                        # Parse quota from error message
+                        import re
+                        error_text = test_response.text
+                        match = re.search(r'quota_value[:\s]+(\d+)', error_text)
+                        if match:
+                            quota = int(match.group(1))
+                            record_quota_from_429(model_name, quota)
+                            return quota
+                        return 0  # Exhausted, unknown limit
+                    
+                    elif test_response.status_code == 200:
+                        # Model works, assume decent quota if no headers
+                        # Will be corrected later if we hit 429
+                        return 500  # Conservative assumption
                     
         elif provider == "groq":
             api_key = os.environ.get("GROQ_API_KEY")

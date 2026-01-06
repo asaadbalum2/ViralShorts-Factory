@@ -16,26 +16,32 @@ on:
   schedule:
     - cron: '30 5 * * *'  # 5:30 AM UTC (30 min before first video workflow)
 
+# v17.9.13: Grant write permission so we can push pre-generated data
+permissions:
+  contents: write
+
 jobs:
   pre-work:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
-      - name: Check quota before starting
+      - name: Check API availability (FREE - no quota cost)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
+          # v17.9.13: Use FREE models list endpoint instead of generateContent!
           HTTP_CODE=$(curl -s -w "%{http_code}" -o /dev/null \
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}" \
-            -H "Content-Type: application/json" \
-            -d '{"contents":[{"parts":[{"text":"Hi"}]}],"generationConfig":{"maxOutputTokens":1}}' \
+            "https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}" \
             2>/dev/null || echo "000")
           if [ "$HTTP_CODE" = "429" ]; then
-            echo "::warning::QUOTA EXHAUSTED - Skipping. Will retry at next scheduled time."
+            echo "::warning::API rate limited - will retry at next scheduled time."
             exit 78
+          elif [ "$HTTP_CODE" = "200" ]; then
+            echo "API available - proceeding"
+          else
+            echo "::warning::API check returned $HTTP_CODE - proceeding anyway"
           fi
-          echo "Quota OK - proceeding"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -79,7 +85,8 @@ jobs:
           echo "   PRE-WORK COMPLETE"
           echo "=============================================="
           if [ -f data/pre_generated_concepts.json ]; then
-            echo "Concepts generated: $(cat data/pre_generated_concepts.json | python -c 'import json,sys; d=json.load(sys.stdin); print(len(d.get(\"concepts\", [])))')"
+            CONCEPT_COUNT=$(python3 -c "import json; d=json.load(open('data/pre_generated_concepts.json')); print(len(d.get('concepts', [])))")
+            echo "Concepts generated: $CONCEPT_COUNT"
           fi
 
 

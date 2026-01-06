@@ -259,6 +259,18 @@ class SmartAICaller:
                     is_retryable = '429' in error_str or 'timeout' in error_str.lower() or \
                                    'connection' in error_str.lower() or 'network' in error_str.lower()
                     
+                    # v17.9.13: Record quota from 429 errors for smarter model selection
+                    if '429' in error_str:
+                        import re
+                        match = re.search(r'quota_value[:\s]+(\d+)', error_str)
+                        if match:
+                            try:
+                                from src.ai.model_helper import record_quota_from_429
+                                model_name = model_id.split(':')[-1] if ':' in model_id else model_id
+                                record_quota_from_429(model_name, int(match.group(1)))
+                            except ImportError:
+                                pass  # Function not available
+                    
                     if is_retryable and attempt < max_retries - 1:
                         safe_print(f"   [!] {model_key}: {error_str[:50]}... retrying in {retry_delay}s")
                         time.sleep(retry_delay)
