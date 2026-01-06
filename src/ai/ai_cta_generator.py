@@ -118,79 +118,105 @@ class AICTAGenerator:
     def _generate_with_ai(self, topic: str, category: str,
                          style: str) -> Optional[str]:
         """
-        v17.9.16: Generate CTA with AI using DYNAMIC triggers from learning engine.
+        v17.9.17: HYBRID GOD-LIKE-GENERIC PROMPT with dynamic context injection.
         
-        NO HARDCODED TRIGGERS! All triggers come from:
-        1. Self-learning engine (learned from analytics)
-        2. AI-generated (asks AI for current engagement triggers)
+        Architecture:
+        1. Generic prompt (works standalone without any data)
+        2. Context injection (learned CTAs as EXAMPLES to guide AI)
+        3. AI generates BETTER response using context as guidance
         """
-        style_hint = ""
-        if style == "comment":
-            style_hint = "Focus on driving comments - ask a question that DEMANDS a response."
-        elif style == "subscribe":
-            style_hint = "Focus on subscribing - create urgency around not missing future content."
-        elif style == "save":
-            style_hint = "Focus on saving - emphasize the reference value of this content."
-        elif style == "share":
-            style_hint = "Focus on sharing - appeal to helping friends/family."
-        else:
-            style_hint = "Choose the best style for maximum engagement."
+        style_guidance = {
+            "comment": "driving comments through questions that demand response",
+            "subscribe": "creating urgency around not missing future content",
+            "save": "emphasizing the reference/tutorial value",
+            "share": "appealing to helping friends/family"
+        }
+        style_hint = style_guidance.get(style, "maximum overall engagement")
         
-        # v17.9.16: Get DYNAMIC triggers from learning engine
-        triggers = self._get_dynamic_triggers()
+        # v17.9.17: Build context section with learned data
+        context_section = self._build_context_section()
         
-        engagement_triggers = triggers.get("engagement_triggers", [])
-        power_words = triggers.get("power_words", [])
-        avoid_words = triggers.get("avoid_words", [])
-        
-        triggers_context = ""
-        if engagement_triggers:
-            triggers_context += f"\nENGAGEMENT TRIGGERS (proven to work): {', '.join(engagement_triggers)}"
-        if power_words:
-            triggers_context += f"\nPOWER WORDS (boost engagement): {', '.join(power_words)}"
-        if avoid_words:
-            triggers_context += f"\nAVOID (hurt performance): {', '.join(avoid_words)}"
-        
-        # Get learned best CTAs
-        best_ctas = self.data.get("best_styles", [])
-        learned_context = ""
-        if best_ctas:
-            learned_context = f"\n\nPROVEN CTAs FROM OUR ANALYTICS: {', '.join(best_ctas[:3])}"
-        
-        prompt = f"""You are MrBeast's engagement strategist. You've created CTAs with 100M+ comments.
+        prompt = f"""You are an engagement expert who creates CTAs that drive massive interaction.
+Your CTAs have generated millions of comments, likes, and shares.
 
-TASK: Create ONE CTA that will score 10/10 on our engagement algorithm.
+===== YOUR TASK =====
+Create ONE powerful CTA (call-to-action) for the end of this video.
+Goal: {style_hint}
 
 Topic: {topic}
 Category: {category}
-Style: {style_hint}
-{learned_context}
-{triggers_context}
 
-===== SCORING ALGORITHM (what our system checks!) =====
-Our algorithm scores CTAs based on:
-- Presence of engagement trigger words (+20 points per trigger)
-- Questions that demand response (+15 points)
-- Clear action instructions (+10 points)
-- Power words (+5 points each)
+===== UNDERSTANDING ENGAGEMENT PSYCHOLOGY =====
+The most effective CTAs tap into these principles:
+1. RECIPROCITY: They gave value, now ask something specific in return
+2. CURIOSITY: Tease what they'll miss if they don't engage
+3. SOCIAL PROOF: Hint that others are already engaging
+4. EASE: Make the action feel effortless ("just drop a comment")
+5. PERSONALIZATION: Address their specific situation or challenge
 
-===== YOUR FORMULA =====
-[Engagement trigger] + [Clear action] + [Question or urgency]
+===== WHAT DRIVES DIFFERENT ACTIONS =====
+- COMMENTS: Questions that demand opinion, controversy that requires a stance
+- LIKES: Gratitude triggers, "if this helped" statements
+- SAVES: Tutorial/reference framing, "you'll need this later"
+- SHARES: "Tag someone who...", "Send this to..."
 
-===== REQUIREMENTS =====
-- MUST use at least one engagement trigger from above (if provided)
-- MUST include a question OR clear action
-- 10-20 words MAX
-- Do NOT use any avoid words
-- Feel natural, not pushy
+===== WHAT WORKS =====
+- Specific questions > vague requests
+- One clear action > multiple asks
+- Natural language > corporate/pushy tone
+- 10-20 words ideal
+{context_section}
 
-Return ONLY the CTA text, no quotes, no explanation."""
+===== GENERATE =====
+Create ONE CTA for "{topic}" that drives {style_hint}.
+Make it feel authentic and conversational, not scripted.
+
+Return ONLY the CTA text (10-20 words), no quotes, no explanation."""
 
         result = self._call_ai(prompt)
         if result:
             return self._clean_cta(result)
         
         return None
+    
+    def _build_context_section(self) -> str:
+        """
+        v17.9.17: Build context section from learned data.
+        Injects examples as GUIDANCE, not rules to copy.
+        """
+        sections = []
+        
+        # Get dynamic triggers
+        triggers = self._get_dynamic_triggers()
+        
+        # Get high-performing CTAs from our data
+        high_performers = []
+        for key, perf in self.data.get("performance", {}).items():
+            if perf.get("engagement", 0) > 50 or perf.get("comments", 0) > 10:
+                cta = perf.get("cta", "")
+                if cta and len(cta) > 10:
+                    high_performers.append(cta[:80])
+        
+        best_styles = self.data.get("best_styles", [])
+        
+        if high_performers or best_styles:
+            sections.append("\n===== EXAMPLES THAT WORKED (from our channel) =====")
+            examples = high_performers[:3] if high_performers else best_styles[:3]
+            for ex in examples:
+                sections.append(f'- "{ex}"')
+            sections.append("(Use as INSPIRATION, adapt to this topic)")
+        
+        if triggers.get("source") != "none_available":
+            engagement = triggers.get("engagement_triggers", [])
+            if engagement:
+                sections.append(f"\n===== CURRENT TRENDING PHRASES =====")
+                sections.append(f"Phrases driving engagement now: {', '.join(engagement[:5])}")
+        
+        if triggers.get("avoid_words"):
+            sections.append(f"\n===== AVOID =====")
+            sections.append(f"Overused/spam-flagged: {', '.join(triggers.get('avoid_words', [])[:5])}")
+        
+        return "\n".join(sections) if sections else ""
     
     def _get_dynamic_triggers(self) -> Dict:
         """

@@ -119,7 +119,7 @@ class AIPatternGenerator:
         
         prompt = """You are a viral content strategist who has analyzed millions of successful YouTube Shorts.
 
-Generate the CURRENT (2026) most effective viral patterns based on your knowledge of what works.
+Generate the CURRENT and most effective viral patterns based on your latest knowledge of what works right now.
 
 Analyze and provide:
 

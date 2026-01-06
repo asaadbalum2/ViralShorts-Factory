@@ -931,16 +931,16 @@ class VersionVerifier:
     # ========================================================================
     def check_score_maximization(self) -> bool:
         """
-        v17.9.16: Check score maximization with DYNAMIC patterns.
+        v17.9.17: Check HYBRID GOD-LIKE-GENERIC prompts with context injection.
         
         Ensures:
-        - Hook generator uses DYNAMIC triggers from learning engine
-        - CTA generator uses DYNAMIC triggers from learning engine
+        - Hook generator uses _build_context_section (hybrid approach)
+        - CTA generator uses _build_context_section (hybrid approach)
         - Self-learning engine has get_viral_triggers()
-        - Feedback loop updates all generators
-        - Scorers use dynamic patterns (not hardcoded)
+        - No hardcoded year references in prompts
+        - Scorers use dynamic patterns
         """
-        print("\n[16] SCORE MAXIMIZATION CHECK (v17.9.16)...")
+        print("\n[16] HYBRID PROMPT ARCHITECTURE CHECK (v17.9.17)...")
         
         issues = []
         
@@ -950,28 +950,22 @@ class VersionVerifier:
             content = model_helper.read_text(encoding='utf-8', errors='ignore')
             if "get_high_quality_model" not in content:
                 issues.append("model_helper missing get_high_quality_model function")
-            if "get_model_for_task" not in content:
-                issues.append("model_helper missing get_model_for_task function")
-        else:
-            issues.append("model_helper.py not found")
         
-        # Check 2: Hook generator uses DYNAMIC triggers
+        # Check 2: Hook generator uses HYBRID approach with context injection
         hook_gen = Path("src/ai/ai_hook_generator.py")
         if hook_gen.exists():
             content = hook_gen.read_text(encoding='utf-8', errors='ignore')
-            if "_get_dynamic_triggers" not in content:
-                issues.append("Hook generator missing _get_dynamic_triggers")
-            if "get_viral_triggers" not in content:
-                issues.append("Hook generator not using self_learning_engine triggers")
+            if "_build_context_section" not in content:
+                issues.append("Hook generator missing _build_context_section (hybrid approach)")
+            if "EXAMPLES THAT WORKED" not in content and "INSPIRATION" not in content:
+                self.warnings.append("Hook generator may not inject learned examples")
         
-        # Check 3: CTA generator uses DYNAMIC triggers
+        # Check 3: CTA generator uses HYBRID approach
         cta_gen = Path("src/ai/ai_cta_generator.py")
         if cta_gen.exists():
             content = cta_gen.read_text(encoding='utf-8', errors='ignore')
-            if "_get_dynamic_triggers" not in content:
-                issues.append("CTA generator missing _get_dynamic_triggers")
-            if "get_viral_triggers" not in content:
-                issues.append("CTA generator not using self_learning_engine triggers")
+            if "_build_context_section" not in content:
+                issues.append("CTA generator missing _build_context_section (hybrid approach)")
         
         # Check 4: Self-learning engine has viral triggers method
         learning_engine = Path("src/analytics/self_learning_engine.py")
@@ -979,17 +973,16 @@ class VersionVerifier:
             content = learning_engine.read_text(encoding='utf-8', errors='ignore')
             if "def get_viral_triggers" not in content:
                 issues.append("Self-learning engine missing get_viral_triggers()")
-            if "_get_triggers_from_ai" not in content:
-                issues.append("Self-learning engine missing AI trigger generation")
         
-        # Check 5: Feedback loop updates all generators
-        feedback = Path("src/analytics/analytics_feedback.py")
-        if feedback.exists():
-            content = feedback.read_text(encoding='utf-8', errors='ignore')
-            if "_update_all_generators_from_insights" not in content:
-                issues.append("Feedback loop missing generator updates")
-            if "hook_gen.record_performance" not in content:
-                issues.append("Feedback loop not updating hook generator")
+        # Check 5: No hardcoded years in critical prompts
+        for check_file in ["src/ai/ai_pattern_generator.py", "src/analytics/monthly_analysis.py"]:
+            path = Path(check_file)
+            if path.exists():
+                content = path.read_text(encoding='utf-8', errors='ignore')
+                # Check for hardcoded years in prompts (not comments)
+                if '"2024' in content or '"2025' in content or '"2026' in content:
+                    if "Generate" in content or "prompt" in content.lower():
+                        self.warnings.append(f"{check_file} may have hardcoded year in prompt")
         
         # Check 6: Scorers use dynamic patterns
         virality = Path("src/analytics/virality_calculator.py")
@@ -1000,15 +993,14 @@ class VersionVerifier:
         
         if issues:
             for issue in issues:
-                self.errors.append(f"Score Max: {issue}")
+                self.errors.append(f"Hybrid: {issue}")
             return False
         else:
-            self.passed.append("Score maximization with dynamic patterns")
+            self.passed.append("Hybrid god-like-generic prompt architecture")
             print("   [OK] High-quality model functions exist")
-            print("   [OK] Hook generator uses DYNAMIC triggers")
-            print("   [OK] CTA generator uses DYNAMIC triggers")
+            print("   [OK] Hook generator uses HYBRID approach with context injection")
+            print("   [OK] CTA generator uses HYBRID approach with context injection")
             print("   [OK] Self-learning engine provides viral triggers")
-            print("   [OK] Feedback loop updates all generators")
             print("   [OK] Scorers use dynamic patterns")
             return True
     

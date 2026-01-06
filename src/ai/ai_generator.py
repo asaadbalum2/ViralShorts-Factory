@@ -163,7 +163,7 @@ def generate_trending_questions() -> List[Dict]:
     if not client:
         return []
     
-    prompt = """Generate 5 "Would You Rather" questions based on CURRENT 2024-2025 trends:
+    prompt = """Generate 5 "Would You Rather" questions based on what's trending RIGHT NOW:
 - AI and technology
 - Work from home vs office
 - Social media and influencers

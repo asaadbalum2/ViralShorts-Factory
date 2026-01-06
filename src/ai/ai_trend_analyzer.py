@@ -165,7 +165,10 @@ JSON ONLY."""
         is_evergreen = any(w in topic.lower() for w in evergreen_words)
         
         # Check for trending indicators
-        trending_words = ["new", "2026", "latest", "breaking", "ai", "trend"]
+        # v17.9.17: Use current year dynamically
+        from datetime import datetime
+        current_year = str(datetime.now().year)
+        trending_words = ["new", current_year, "latest", "breaking", "ai", "trend"]
         is_trending = any(w in topic.lower() for w in trending_words)
         
         return {

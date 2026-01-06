@@ -154,67 +154,50 @@ Return ONLY the new hook (7-10 words max), no explanation."""
     def _generate_with_ai(self, topic: str, category: str, 
                          style: str) -> Optional[str]:
         """
-        v17.9.16: Generate hook using AI with DYNAMIC triggers from learning engine.
+        v17.9.17: HYBRID GOD-LIKE-GENERIC PROMPT with dynamic context injection.
         
-        NO HARDCODED TRIGGERS! All triggers come from:
-        1. Self-learning engine (learned from analytics)
-        2. AI-generated (asks AI for current viral triggers)
+        Architecture:
+        1. Generic prompt (works standalone without any data)
+        2. Context injection (learned patterns as EXAMPLES to guide AI)
+        3. AI generates BETTER response using context as guidance
+        
+        Never hardcode patterns - always let AI generate with context!
         """
         
-        # v17.9.16: Get DYNAMIC triggers from learning engine
-        triggers = self._get_dynamic_triggers()
+        # v17.9.17: Build CONTEXT section (injected as examples, not rules)
+        context_section = self._build_context_section()
         
-        # Build dynamic context from triggers
-        hook_triggers = triggers.get("hook_triggers", [])
-        power_words = triggers.get("power_words", [])
-        avoid_words = triggers.get("avoid_words", [])
-        
-        triggers_context = ""
-        if hook_triggers:
-            triggers_context += f"\nHOOK TRIGGERS (proven to work): {', '.join(hook_triggers)}"
-        if power_words:
-            triggers_context += f"\nPOWER WORDS (boost CTR): {', '.join(power_words)}"
-        if avoid_words:
-            triggers_context += f"\nAVOID WORDS (hurt performance): {', '.join(avoid_words)}"
-        
-        # Get learned patterns
-        best_patterns = self.data.get("best_patterns", [])
-        worst_patterns = self.data.get("worst_patterns", [])
-        
-        patterns_context = ""
-        if best_patterns:
-            patterns_context = f"\n\nPATTERNS THAT WORK (from our analytics): {', '.join(best_patterns[:5])}"
-        if worst_patterns:
-            patterns_context += f"\nPATTERNS TO AVOID (from our analytics): {', '.join(worst_patterns[:3])}"
-        
-        prompt = f"""You are MrBeast's hook writer. You've written 1000+ viral hooks with 10B+ views.
+        prompt = f"""You are a viral content expert who creates scroll-stopping hooks.
+Your hooks have generated billions of views across YouTube Shorts and TikTok.
 
-TASK: Create ONE hook that will score 10/10 on our virality algorithm.
+===== YOUR TASK =====
+Create ONE irresistible hook for this video that will make viewers STOP scrolling.
 
 Topic: {topic}
 Category: {category}
-{patterns_context}
-{triggers_context}
 
-===== SCORING ALGORITHM (what our system checks!) =====
-Our algorithm scores hooks based on:
-- Pattern interrupt words (+20 points)
-- Questions or specific numbers (+15 points each)
-- Curiosity/power words (+15 points)
-- Short & punchy: 10 words max (+10 points)
-- Identity challenge: Make them question themselves (bonus)
+===== UNDERSTANDING WHAT WORKS =====
+The most viral hooks share these psychological principles:
+1. PATTERN INTERRUPT: Break the viewer's scroll with unexpected words
+2. CURIOSITY GAP: Make them NEED to know what comes next
+3. IDENTITY CHALLENGE: Make them question if they're doing something wrong
+4. SPECIFIC NUMBERS: Concrete data feels more believable than vague claims
+5. SHORT & PUNCHY: 7-12 words maximum - every word must earn its place
 
-===== YOUR FORMULA =====
-[PATTERN INTERRUPT] + [NUMBER/QUESTION] + [POWER WORD] + [IDENTITY HOOK]
+===== WHAT MAKES HOOKS SCORE HIGH =====
+Our algorithm measures:
+- Does it stop the scroll? (pattern interrupt words)
+- Does it create curiosity? (questions, mysteries)
+- Is it specific? (numbers, not vague claims)
+- Is it short enough for mobile? (10 words or less ideal)
+{context_section}
 
-===== REQUIREMENTS =====
-- MUST use at least one hook trigger from above (if provided)
-- MUST include a number OR question mark
-- MUST include at least one power word (if provided)
-- MAXIMUM 10 words
-- Do NOT use any avoid words
+===== GENERATE =====
+Create ONE hook for "{topic}" that applies these principles.
+The hook should feel authentic and human, not robotic or formulaic.
+Adapt the principles to this specific topic - don't just follow a template.
 
-Return ONLY the hook text, no quotes, no explanation."""
+Return ONLY the hook text (7-12 words max), no quotes, no explanation."""
 
         result = self._call_gemini(prompt)
         if result:
@@ -225,6 +208,58 @@ Return ONLY the hook text, no quotes, no explanation."""
             return self._clean_hook(result)
         
         return None
+    
+    def _build_context_section(self) -> str:
+        """
+        v17.9.17: Build context section from learned data.
+        
+        This is INJECTED as examples/guidance, not as rules to follow exactly.
+        The AI uses this context to generate BETTER responses.
+        """
+        sections = []
+        
+        # Get dynamic triggers from learning engine
+        triggers = self._get_dynamic_triggers()
+        
+        # Get learned patterns from our performance data
+        best_hooks = self.data.get("best_patterns", [])
+        worst_hooks = self.data.get("worst_patterns", [])
+        
+        # Get high-performing hooks from our history
+        high_performers = []
+        for key, perf in self.data.get("performance", {}).items():
+            if perf.get("ctr", 0) > 0.05 or perf.get("views", 0) > 1000:
+                hook = perf.get("hook", "")
+                if hook and len(hook) > 10:
+                    high_performers.append(hook[:60])
+        
+        # Build context based on what data we have
+        if high_performers or best_hooks:
+            sections.append("\n===== EXAMPLES THAT WORKED (from our channel) =====")
+            examples = high_performers[:3] if high_performers else best_hooks[:3]
+            for ex in examples:
+                sections.append(f'- "{ex}"')
+            sections.append("(Use these as INSPIRATION, not templates to copy)")
+        
+        if triggers.get("source") != "none_available":
+            hook_triggers = triggers.get("hook_triggers", [])
+            power_words = triggers.get("power_words", [])
+            
+            if hook_triggers or power_words:
+                sections.append("\n===== PATTERNS TRENDING NOW (from AI analysis) =====")
+                if hook_triggers:
+                    sections.append(f"Current viral triggers: {', '.join(hook_triggers[:5])}")
+                if power_words:
+                    sections.append(f"High-CTR power words: {', '.join(power_words[:5])}")
+        
+        if worst_hooks:
+            sections.append("\n===== PATTERNS TO AVOID (underperformed) =====")
+            sections.append(f"These didn't work: {', '.join(worst_hooks[:3])}")
+        
+        if triggers.get("avoid_words"):
+            sections.append(f"Avoid these words: {', '.join(triggers.get('avoid_words', [])[:5])}")
+        
+        return "\n".join(sections) if sections else ""
     
     def _get_dynamic_triggers(self) -> Dict:
         """

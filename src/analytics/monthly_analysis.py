@@ -87,6 +87,10 @@ def youtube_search(query, max_results=10):
         return []
     
     url = "https://www.googleapis.com/youtube/v3/search"
+    # v17.9.17: Use dynamic date (past 6 months) instead of hardcoded year
+    from datetime import datetime, timedelta
+    six_months_ago = (datetime.now() - timedelta(days=180)).strftime("%Y-%m-%dT00:00:00Z")
+    
     params = {
         "q": query,
         "part": "snippet",
@@ -94,7 +98,7 @@ def youtube_search(query, max_results=10):
         "videoDuration": "short",  # Shorts only
         "order": "viewCount",
         "maxResults": max_results,
-        "publishedAfter": "2024-01-01T00:00:00Z"
+        "publishedAfter": six_months_ago  # Dynamic, not hardcoded
     }
     headers = {"Authorization": f"Bearer {token}"}
     
@@ -209,9 +213,9 @@ Be SPECIFIC. Extract the SECRETS that make these videos viral. JSON ONLY."""
 def generate_search_queries_ai():
     """AI generates search queries - NO HARDCODING!"""
     if not GROQ_API_KEY:
-        return ["viral shorts 2024", "facts shorts trending"]
+        return ["viral shorts trending", "facts shorts viral"]  # No year-specific
     
-    prompt = """You are a YouTube search expert. Generate 5-7 search queries to find the most viral AI-generated YouTube Shorts in 2024-2025.
+    prompt = """You are a YouTube search expert. Generate 5-7 search queries to find the most viral AI-generated YouTube Shorts from the past year.
 
 We want to find:
 - Fact-based Shorts with millions of views
@@ -253,7 +257,7 @@ JSON ARRAY ONLY."""
         safe_print(f"[!] AI query generation failed: {e}")
     
     # Minimal fallback only if AI completely fails
-    return ["viral shorts 2024 million views", "trending facts shorts"]
+    return ["viral shorts million views", "trending facts shorts"]
 
 
 def identify_recycle_candidates(analytics_file=Path("data/persistent/analytics_state.json")):

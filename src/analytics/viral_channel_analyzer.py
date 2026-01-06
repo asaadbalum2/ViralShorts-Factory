@@ -119,7 +119,7 @@ class ViralChannelAnalyzer:
         
         prompt = """You are an expert in viral short-form video content (YouTube Shorts, TikTok, Reels).
 
-Based on your knowledge of what makes content go viral in 2024-2025, generate:
+Based on your knowledge of what makes content go viral RIGHT NOW, generate:
 
 1. **TITLE FORMULAS** (10 patterns): Proven title structures that get clicks
    - Use {placeholders} for variable parts

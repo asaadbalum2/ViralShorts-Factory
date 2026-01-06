@@ -296,8 +296,10 @@ class ViralityCalculator:
         if any(e in topic.lower() for e in evergreen):
             score += 20
         
-        # Trending signals
-        trending_words = ["2026", "new", "latest", "breaking", "trending", "ai"]
+        # Trending signals - use current year dynamically
+        from datetime import datetime
+        current_year = str(datetime.now().year)
+        trending_words = [current_year, "new", "latest", "breaking", "trending", "ai"]
         if any(t in topic.lower() for t in trending_words):
             score += 20
         
