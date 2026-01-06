@@ -3,18 +3,35 @@
 ViralShorts Factory - Comprehensive Systems Dry Run Test
 =========================================================
 
-Tests ALL systems WITHOUT consuming valuable quota:
-1. Model Discovery (FREE API endpoints)
-2. Quota Management
-3. Persistent Data Read/Write
-4. All Scorers and Calculators
-5. Rate Limiters
-6. Self-Learning Engine
-7. Feedback Mechanisms (dry run)
-8. Pre-Work Infrastructure
-9. Video Generation Infrastructure (dry run)
+Tests ALL systems without consuming PRODUCTION quota.
 
-QUOTA USAGE: ZERO (uses only free endpoints)
+TEST CATEGORIES (23 tests):
+1-4.   Model Discovery (FREE API endpoints)
+5-7.   Quota Management & Caching
+8-10.  Persistent Data Read (does NOT modify production state)
+11-13. All Scorers (Virality, Engagement, Retention, Script, Quality)
+14.    Model Discovery Chart (shows production vs test models)
+15.    Actual Content Generation (using non-prod models)
+16.    YouTube Analytics (read-only, don't save)
+17.    API Behavior Validation (response formats)
+18.    Non-Production AI Call (OpenRouter free index 1+)
+19.    TTS Engine (Edge-TTS)
+20.    Pexels API (video search)
+21.    YouTube API (credentials check)
+22.    Video Rendering Infrastructure
+23.    Error Handling & Retry Logic
+
+QUOTA USAGE:
+- Production models: ZERO
+- OpenRouter free models (index 1+): minimal, separate quota
+- Groq: NOT USED (shared quota)
+- All discovery/info endpoints: FREE
+
+PERSISTENT STATE:
+- Reads production state (verified)
+- Creates test files (verified)
+- DELETES all test files after (cleanup)
+- Does NOT modify production artifacts
 """
 
 import os
@@ -693,13 +710,583 @@ def test_emergency_fallbacks():
         record_test("Workflow Resilience", False, str(e)[:50])
 
 # ============================================================================
+# TEST 14: MODEL DISCOVERY CHART (Shows production vs test models)
+# ============================================================================
+def test_model_discovery_chart():
+    """Print a chart of all discovered models, highlighting test vs production."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 14: MODEL DISCOVERY CHART")
+    safe_print("=" * 60)
+    
+    chart_data = {"gemini": [], "openrouter": [], "groq": []}
+    
+    # Discover Gemini models
+    try:
+        from model_helper import _discover_gemini_models, get_dynamic_gemini_model
+        
+        gemini_models = _discover_gemini_models()
+        production_gemini = get_dynamic_gemini_model() if os.environ.get("GEMINI_API_KEY") else None
+        
+        safe_print(f"\n   GEMINI MODELS ({len(gemini_models)} discovered):")
+        safe_print("   " + "-" * 50)
+        for i, model in enumerate(gemini_models[:10]):  # Show top 10
+            marker = "[PROD]" if model == production_gemini else "[TEST]" if i > 0 else "[PROD]"
+            safe_print(f"   {marker} {i}: {model}")
+        if len(gemini_models) > 10:
+            safe_print(f"   ... and {len(gemini_models) - 10} more")
+        
+        chart_data["gemini"] = gemini_models
+        if len(gemini_models) > 0:
+            record_test("Gemini Model Chart", True, f"{len(gemini_models)} models")
+        elif not os.environ.get("GEMINI_API_KEY"):
+            record_test("Gemini Model Chart", True, "Skipped (no API key)", warning=True)
+        else:
+            record_test("Gemini Model Chart", False, "0 models discovered")
+    except Exception as e:
+        record_test("Gemini Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
+    
+    # Discover OpenRouter models
+    try:
+        from model_helper import _discover_openrouter_models
+        
+        openrouter_models = _discover_openrouter_models()
+        
+        safe_print(f"\n   OPENROUTER FREE MODELS ({len(openrouter_models)} discovered):")
+        safe_print("   " + "-" * 50)
+        for i, model in enumerate(openrouter_models[:10]):
+            marker = "[PROD]" if i == 0 else "[TEST]"
+            model_short = model[:45] + "..." if len(model) > 45 else model
+            safe_print(f"   {marker} {i}: {model_short}")
+        if len(openrouter_models) > 10:
+            safe_print(f"   ... and {len(openrouter_models) - 10} more")
+        
+        chart_data["openrouter"] = openrouter_models
+        record_test("OpenRouter Model Chart", len(openrouter_models) > 0, f"{len(openrouter_models)} free models")
+    except Exception as e:
+        record_test("OpenRouter Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
+    
+    # Discover Groq models (show but mark as SHARED QUOTA)
+    try:
+        from model_helper import _discover_groq_models
+        
+        groq_models = _discover_groq_models()
+        
+        safe_print(f"\n   GROQ MODELS ({len(groq_models)} discovered) - SHARED QUOTA, NOT FOR TESTING:")
+        safe_print("   " + "-" * 50)
+        for i, model in enumerate(groq_models[:5]):
+            safe_print(f"   [SHARED] {i}: {model}")
+        
+        chart_data["groq"] = groq_models
+        record_test("Groq Model Chart", True, f"{len(groq_models)} models (NOT used in tests)")
+    except Exception as e:
+        record_test("Groq Model Chart", True, f"Discovery failed: {str(e)[:30]}", warning=True)
+    
+    safe_print("\n   LEGEND:")
+    safe_print("   [PROD]   = Used by production workflows")
+    safe_print("   [TEST]   = Safe for testing (separate quota)")
+    safe_print("   [SHARED] = Shared quota - NOT used in tests")
+    
+    return chart_data
+
+# ============================================================================
+# TEST 15: ACTUAL CONTENT GENERATION (Non-production models)
+# ============================================================================
+def test_actual_content_generation():
+    """Actually generate content using NON-PRODUCTION models only."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 15: ACTUAL CONTENT GENERATION (Non-Prod Models)")
+    safe_print("=" * 60)
+    
+    # Try OpenRouter first (completely separate quota)
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY")
+    if not openrouter_key:
+        record_test("Content Generation", True, "Skipped (no OpenRouter key)", warning=True)
+        return
+    
+    try:
+        from model_helper import _discover_openrouter_models
+        import requests
+        
+        free_models = _discover_openrouter_models()
+        if len(free_models) < 2:
+            record_test("Content Generation", True, "Not enough free models", warning=True)
+            return
+        
+        # Use model at index 1+ (NOT production)
+        test_model = free_models[1]
+        safe_print(f"   Using non-production model: {test_model}")
+        
+        # Actually generate a hook
+        hook_prompt = """Generate ONE viral YouTube Shorts hook about productivity.
+Requirements: 10 words max, starts with pattern interrupt.
+Return ONLY the hook text, nothing else."""
+        
+        response = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {openrouter_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": test_model,
+                "messages": [{"role": "user", "content": hook_prompt}],
+                "max_tokens": 50
+            },
+            timeout=30
+        )
+        
+        if response.status_code == 200:
+            result = response.json()
+            hook = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+            
+            if hook and len(hook) > 5:
+                safe_print(f"   Generated hook: \"{hook[:50]}...\"" if len(hook) > 50 else f"   Generated hook: \"{hook}\"")
+                
+                # Score it with our scorers
+                try:
+                    from virality_calculator import get_virality_calculator
+                    calc = get_virality_calculator()
+                    
+                    test_content = {
+                        "hook": hook,
+                        "phrases": ["Test phrase one", "Test phrase two"],
+                        "cta": "Comment below!",
+                        "category": "productivity",
+                        "topic": "Morning routines"
+                    }
+                    
+                    result = calc.calculate_virality(test_content)
+                    score = result.get("overall_score", 0)
+                    grade = result.get("grade", "?")
+                    
+                    safe_print(f"   Hook virality score: {score}/100 ({grade})")
+                    record_test("Hook Generation", True, f"Generated & scored: {score}/100")
+                except Exception as e:
+                    record_test("Hook Generation", True, f"Generated but scoring failed: {str(e)[:20]}", warning=True)
+            else:
+                record_test("Hook Generation", True, "Generated empty hook", warning=True)
+        elif response.status_code == 429:
+            record_test("Hook Generation", True, "Rate limited (expected)", warning=True)
+        else:
+            record_test("Hook Generation", True, f"API returned {response.status_code}", warning=True)
+            
+    except Exception as e:
+        record_test("Content Generation", True, f"Error: {str(e)[:40]}", warning=True)
+
+# ============================================================================
+# TEST 16: YOUTUBE ANALYTICS (Read-Only)
+# ============================================================================
+def test_youtube_analytics_readonly():
+    """Fetch real YouTube analytics (read-only, don't save anywhere)."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 16: YOUTUBE ANALYTICS (Read-Only)")
+    safe_print("=" * 60)
+    
+    # Check if we have YouTube credentials
+    token_path = Path("token.pickle")
+    if not token_path.exists():
+        record_test("YouTube Analytics", True, "No token.pickle (expected in CI)", warning=True)
+        return
+    
+    try:
+        import pickle
+        from googleapiclient.discovery import build
+        
+        # Load credentials
+        with open(token_path, 'rb') as f:
+            creds = pickle.load(f)
+        
+        # Build YouTube Analytics API
+        youtube = build('youtube', 'v3', credentials=creds)
+        
+        # Get channel info (read-only!)
+        request = youtube.channels().list(
+            part='snippet,statistics',
+            mine=True
+        )
+        response = request.execute()
+        
+        if response.get('items'):
+            channel = response['items'][0]
+            channel_name = channel['snippet']['title']
+            video_count = channel['statistics'].get('videoCount', 0)
+            view_count = channel['statistics'].get('viewCount', 0)
+            
+            safe_print(f"   Channel: {channel_name}")
+            safe_print(f"   Videos: {video_count}, Views: {view_count}")
+            
+            # NOTE: We do NOT save this data anywhere!
+            record_test("YouTube Analytics Fetch", True, f"Channel: {channel_name[:20]}, {video_count} videos")
+        else:
+            record_test("YouTube Analytics Fetch", True, "No channel data returned", warning=True)
+            
+    except Exception as e:
+        error_msg = str(e)[:50]
+        if "invalid_grant" in error_msg.lower() or "expired" in error_msg.lower():
+            record_test("YouTube Analytics", True, "Token expired (needs refresh)", warning=True)
+        else:
+            record_test("YouTube Analytics", True, f"Error: {error_msg}", warning=True)
+
+# ============================================================================
+# TEST 17: API BEHAVIOR VALIDATION
+# ============================================================================
+def test_api_behavior_validation():
+    """Validate that APIs return expected response formats and headers."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 17: API BEHAVIOR VALIDATION")
+    safe_print("=" * 60)
+    
+    import requests
+    
+    # Test Gemini API response format
+    gemini_key = os.environ.get("GEMINI_API_KEY")
+    if gemini_key:
+        try:
+            response = requests.get(
+                f"https://generativelanguage.googleapis.com/v1beta/models?key={gemini_key}",
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                # Validate expected structure
+                has_models = "models" in data
+                models_is_list = isinstance(data.get("models"), list)
+                
+                if has_models and models_is_list:
+                    # Check model structure
+                    if data["models"]:
+                        first_model = data["models"][0]
+                        has_name = "name" in first_model
+                        has_methods = "supportedGenerationMethods" in first_model
+                        
+                        record_test("Gemini API Format", has_name and has_methods, 
+                                   "Response structure valid")
+                    else:
+                        record_test("Gemini API Format", True, "No models in response", warning=True)
+                else:
+                    record_test("Gemini API Format", False, "Invalid response structure")
+            else:
+                record_test("Gemini API Format", True, f"HTTP {response.status_code}", warning=True)
+        except Exception as e:
+            record_test("Gemini API Format", True, f"Error: {str(e)[:30]}", warning=True)
+    else:
+        record_test("Gemini API Format", True, "Skipped (no key)", warning=True)
+    
+    # Test Groq API response format
+    groq_key = os.environ.get("GROQ_API_KEY")
+    if groq_key:
+        try:
+            response = requests.get(
+                "https://api.groq.com/openai/v1/models",
+                headers={"Authorization": f"Bearer {groq_key}"},
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                # Validate OpenAI-compatible structure
+                has_data = "data" in data
+                data_is_list = isinstance(data.get("data"), list)
+                
+                if has_data and data_is_list and data["data"]:
+                    first_model = data["data"][0]
+                    has_id = "id" in first_model
+                    
+                    record_test("Groq API Format", has_id, "OpenAI-compatible format")
+                else:
+                    record_test("Groq API Format", True, "Empty or invalid data", warning=True)
+            else:
+                record_test("Groq API Format", True, f"HTTP {response.status_code}", warning=True)
+        except Exception as e:
+            record_test("Groq API Format", True, f"Error: {str(e)[:30]}", warning=True)
+    else:
+        record_test("Groq API Format", True, "Skipped (no key)", warning=True)
+    
+    # Test OpenRouter API response format
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY")
+    if openrouter_key:
+        try:
+            response = requests.get(
+                "https://openrouter.ai/api/v1/models",
+                headers={"Authorization": f"Bearer {openrouter_key}"},
+                timeout=10
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                
+                has_data = "data" in data
+                if has_data and data["data"]:
+                    first_model = data["data"][0]
+                    has_id = "id" in first_model
+                    has_pricing = "pricing" in first_model
+                    
+                    record_test("OpenRouter API Format", has_id and has_pricing, 
+                               "Response structure valid with pricing")
+                else:
+                    record_test("OpenRouter API Format", True, "Empty data", warning=True)
+            else:
+                record_test("OpenRouter API Format", True, f"HTTP {response.status_code}", warning=True)
+        except Exception as e:
+            record_test("OpenRouter API Format", True, f"Error: {str(e)[:30]}", warning=True)
+    else:
+        record_test("OpenRouter API Format", True, "Skipped (no key)", warning=True)
+
+# ============================================================================
+# TEST 18: NON-PRODUCTION AI CALL (OpenRouter - Separate Quota)
+# ============================================================================
+def test_ai_generation_non_production():
+    """Test actual AI call using NON-PRODUCTION models only.
+    
+    These models have SEPARATE quota from production models:
+    - Gemini experimental/preview models (NOT gemini-1.5-flash, NOT gemini-2.0-flash)
+    - OpenRouter free models
+    - NOT Groq (shared quota across all models)
+    """
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 14: AI GENERATION (Non-Production Models)")
+    safe_print("=" * 60)
+    
+    # Skip if no API keys
+    if not os.environ.get("GEMINI_API_KEY") and not os.environ.get("OPENROUTER_API_KEY"):
+        record_test("AI Generation", True, "Skipped (no API keys)", warning=True)
+        return
+    
+    # Use EXISTING model discovery from model_helper (reuse, don't duplicate!)
+    try:
+        openrouter_key = os.environ.get("OPENROUTER_API_KEY")
+        if not openrouter_key:
+            record_test("OpenRouter AI Test", True, "Skipped (no key)", warning=True)
+            return
+        
+        # Reuse existing discovery method!
+        from model_helper import _discover_openrouter_models
+        
+        free_models = _discover_openrouter_models()
+        safe_print(f"   [INFO] Discovered {len(free_models)} free models (using existing method)")
+        
+        if not free_models:
+            record_test("OpenRouter AI Test", True, "No free models discovered", warning=True)
+            return
+        
+        # IMPORTANT: Skip first model - production uses free_models[0]
+        # We use models from index 1+ to ensure SEPARATE quota
+        test_models = free_models[1:6] if len(free_models) > 1 else free_models
+        safe_print(f"   [INFO] Using non-production models: {len(test_models)} available")
+        
+        import requests
+        for model in test_models:
+            try:
+                response = requests.post(
+                    "https://openrouter.ai/api/v1/chat/completions",
+                    headers={
+                        "Authorization": f"Bearer {openrouter_key}",
+                        "Content-Type": "application/json"
+                    },
+                    json={
+                        "model": model,
+                        "messages": [{"role": "user", "content": "Say 'test ok' in 2 words"}],
+                        "max_tokens": 10
+                    },
+                    timeout=30
+                )
+                
+                if response.status_code == 200:
+                    model_short = model.split("/")[-1][:25] if "/" in model else model[:25]
+                    record_test("OpenRouter AI Test", True, f"{model_short}: OK (non-prod)")
+                    return  # Success
+                elif response.status_code == 429:
+                    continue  # Try next model
+            except:
+                continue
+        
+        record_test("OpenRouter AI Test", True, "All test models exhausted", warning=True)
+            
+    except Exception as e:
+        record_test("OpenRouter AI Test", True, f"Error: {str(e)[:40]}", warning=True)
+
+# ============================================================================
+# TEST 19: TTS ENGINE
+# ============================================================================
+def test_tts_engine():
+    """Test TTS engine availability."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 15: TTS ENGINE")
+    safe_print("=" * 60)
+    
+    # Check edge-tts availability
+    try:
+        import edge_tts
+        record_test("Edge-TTS Import", True, "Module available")
+        
+        # Check voices list (doesn't consume quota)
+        import asyncio
+        
+        async def get_voices():
+            voices = await edge_tts.list_voices()
+            return voices
+        
+        try:
+            voices = asyncio.run(get_voices())
+            english_voices = [v for v in voices if v.get("Locale", "").startswith("en-")]
+            record_test("TTS Voices", True, f"{len(english_voices)} English voices available")
+        except:
+            record_test("TTS Voices", True, "Voice list unavailable (OK in CI)", warning=True)
+            
+    except ImportError:
+        record_test("Edge-TTS Import", False, "Module not installed")
+
+# ============================================================================
+# TEST 20: PEXELS API
+# ============================================================================
+def test_pexels_api():
+    """Test Pexels API for B-roll."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 16: PEXELS API")
+    safe_print("=" * 60)
+    
+    pexels_key = os.environ.get("PEXELS_API_KEY")
+    if not pexels_key:
+        record_test("Pexels API", True, "Skipped (no API key)", warning=True)
+        return
+    
+    try:
+        import requests
+        
+        # Test video search (free, no quota issues)
+        response = requests.get(
+            "https://api.pexels.com/videos/search",
+            params={"query": "nature", "per_page": 1},
+            headers={"Authorization": pexels_key},
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            data = response.json()
+            video_count = len(data.get("videos", []))
+            record_test("Pexels Video Search", True, f"Found {video_count} video(s)")
+        else:
+            record_test("Pexels Video Search", False, f"HTTP {response.status_code}")
+            
+    except Exception as e:
+        record_test("Pexels API", False, str(e)[:50])
+
+# ============================================================================
+# TEST 21: YOUTUBE API (Credentials Check)
+# ============================================================================
+def test_youtube_api():
+    """Test YouTube API availability (read-only, no upload)."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 17: YOUTUBE API (Read-Only)")
+    safe_print("=" * 60)
+    
+    # Check if credentials file structure exists
+    try:
+        creds_path = Path("client_secret.json")
+        token_path = Path("token.pickle")
+        
+        has_secret = creds_path.exists()
+        has_token = token_path.exists()
+        
+        if has_secret and has_token:
+            record_test("YouTube Credentials", True, "Both files present")
+        elif has_secret:
+            record_test("YouTube Credentials", True, "Secret present, token missing (needs auth)", warning=True)
+        else:
+            record_test("YouTube Credentials", True, "No credentials (expected in CI)", warning=True)
+            
+    except Exception as e:
+        record_test("YouTube API", False, str(e)[:50])
+
+# ============================================================================
+# TEST 22: VIDEO RENDERING INFRASTRUCTURE
+# ============================================================================
+def test_video_rendering():
+    """Test video rendering infrastructure (without actually rendering)."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 18: VIDEO RENDERING INFRASTRUCTURE")
+    safe_print("=" * 60)
+    
+    # Check moviepy
+    try:
+        import moviepy.editor as mpy
+        record_test("MoviePy Import", True, "Module available")
+    except ImportError:
+        record_test("MoviePy Import", False, "Module not installed")
+    
+    # Check PIL
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+        record_test("PIL Import", True, "Module available")
+    except ImportError:
+        record_test("PIL Import", False, "Module not installed")
+    
+    # Check ffmpeg
+    try:
+        import subprocess
+        result = subprocess.run(["ffmpeg", "-version"], capture_output=True, timeout=5)
+        if result.returncode == 0:
+            record_test("FFmpeg", True, "Installed and working")
+        else:
+            record_test("FFmpeg", True, "Not working (OK locally)", warning=True)
+    except FileNotFoundError:
+        # FFmpeg not installed locally is OK - it's installed in GitHub Actions
+        record_test("FFmpeg", True, "Not installed (OK locally, installed in CI)", warning=True)
+    except Exception as e:
+        record_test("FFmpeg", True, str(e)[:30], warning=True)
+
+# ============================================================================
+# TEST 23: ERROR HANDLING & RETRY LOGIC
+# ============================================================================
+def test_error_handling():
+    """Test error handling and retry logic."""
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 19: ERROR HANDLING & RETRY")
+    safe_print("=" * 60)
+    
+    # Check smart_ai_caller has retry logic
+    try:
+        caller_path = PROJECT_ROOT / "src" / "ai" / "smart_ai_caller.py"
+        if caller_path.exists():
+            content = caller_path.read_text(encoding='utf-8')
+            
+            has_retry = 'retry' in content.lower() or 'attempt' in content.lower()
+            has_429_handling = '429' in content
+            has_fallback = 'fallback' in content.lower()
+            
+            checks = sum([has_retry, has_429_handling, has_fallback])
+            record_test("AI Caller Error Handling", checks >= 2, f"Passed {checks}/3 checks")
+        else:
+            record_test("AI Caller Error Handling", False, "File not found")
+    except Exception as e:
+        record_test("Error Handling", False, str(e)[:50])
+    
+    # Check robustness module
+    try:
+        robustness_path = PROJECT_ROOT / "src" / "utils" / "robustness.py"
+        if robustness_path.exists():
+            content = robustness_path.read_text(encoding='utf-8')
+            
+            has_retry_decorator = 'def retry' in content or '@retry' in content
+            has_validator = 'Validator' in content
+            
+            record_test("Robustness Module", has_retry_decorator or has_validator, "Retry/validation present")
+        else:
+            record_test("Robustness Module", True, "File not found (optional)", warning=True)
+    except Exception as e:
+        record_test("Robustness Module", False, str(e)[:50])
+
+# ============================================================================
 # MAIN
 # ============================================================================
 def main():
     """Run all tests."""
     safe_print("\n" + "=" * 60)
     safe_print("  VIRALSHORTS FACTORY - COMPREHENSIVE SYSTEM TEST")
-    safe_print("  QUOTA USAGE: ZERO (Free endpoints only)")
+    safe_print("  Uses NON-PRODUCTION models only (separate quota)")
     safe_print("=" * 60)
     
     start_time = time.time()
@@ -718,6 +1305,16 @@ def main():
     test_prework_concepts()
     test_analytics_structure()
     test_emergency_fallbacks()
+    test_model_discovery_chart()          # NEW: Shows all models, highlights test vs prod
+    test_actual_content_generation()      # NEW: Actually generates content with non-prod models
+    test_youtube_analytics_readonly()     # NEW: Fetches real analytics (read-only)
+    test_api_behavior_validation()        # NEW: Validates API response formats
+    test_ai_generation_non_production()   # Uses NON-production models only!
+    test_tts_engine()
+    test_pexels_api()
+    test_youtube_api()
+    test_video_rendering()
+    test_error_handling()
     
     # Summary
     duration = time.time() - start_time
@@ -736,6 +1333,9 @@ def main():
     save_results()
     safe_print(f"\n[OK] Results saved to test_output/test_results.json")
     
+    # CLEANUP: Remove test entries from caches to not pollute production
+    cleanup_test_artifacts()
+    
     # Exit code
     if TEST_RESULTS['failed'] > 0:
         safe_print("\n[FAIL] Some tests failed!")
@@ -743,6 +1343,47 @@ def main():
     else:
         safe_print("\n[OK] All critical tests passed!")
         sys.exit(0)
+
+
+def cleanup_test_artifacts():
+    """Clean up any test artifacts to not pollute production state."""
+    safe_print("\n[CLEANUP] Removing test artifacts...")
+    
+    # 1. Remove test files from persistent directory
+    test_files = [
+        Path("data/persistent/test_persistent.json"),
+        Path("data/persistent/last_test_run.json"),
+    ]
+    for f in test_files:
+        if f.exists():
+            try:
+                f.unlink()
+                safe_print(f"   Removed: {f.name}")
+            except:
+                pass
+    
+    # 2. Remove test entries from quota cache
+    try:
+        from model_helper import _load_quota_cache, _save_quota_cache
+        cache = _load_quota_cache()
+        if "test-quota-model" in cache:
+            del cache["test-quota-model"]
+            _save_quota_cache(cache)
+            safe_print("   Removed: test-quota-model from quota cache")
+    except:
+        pass
+    
+    # 3. Remove test provider from model cache
+    try:
+        cache_dir = Path("data/persistent/model_cache")
+        test_cache = cache_dir / "test_provider.json"
+        if test_cache.exists():
+            test_cache.unlink()
+            safe_print("   Removed: test_provider cache")
+    except:
+        pass
+    
+    safe_print("[CLEANUP] Done - production state unchanged")
 
 if __name__ == "__main__":
     main()

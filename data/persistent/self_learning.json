@@ -5,9 +5,9 @@
     "hooks": [
       {
         "value": "pattern_interrupt",
-        "success_count": 4,
+        "success_count": 11,
         "failure_count": 0,
-        "last_used": "2026-01-06T22:12:27.868633",
+        "last_used": "2026-01-06T22:43:56.996979",
         "examples": [
           "STOP - This is a test hook"
         ]
@@ -17,9 +17,9 @@
     "categories": [
       {
         "value": "test",
-        "success_count": 4,
+        "success_count": 11,
         "failure_count": 0,
-        "last_used": "2026-01-06T22:12:27.868645",
+        "last_used": "2026-01-06T22:43:56.997004",
         "examples": [
           "Test Topic"
         ]
@@ -28,9 +28,9 @@
     "phrases": [
       {
         "value": "punchy",
-        "success_count": 4,
+        "success_count": 11,
         "failure_count": 0,
-        "last_used": "2026-01-06T22:12:27.868649",
+        "last_used": "2026-01-06T22:43:56.997010",
         "examples": [
           "STOP - This is a test hook"
         ]
@@ -40,7 +40,7 @@
     "failures": []
   },
   "stats": {
-    "total_videos": 4,
+    "total_videos": 11,
     "avg_first_attempt_score": null,
     "regeneration_rate": null,
     "top_categories": [
@@ -65,6 +65,6 @@
     "hours": {},
     "days": {}
   },
-  "last_updated": "2026-01-06T22:12:27.868656",
+  "last_updated": "2026-01-06T22:43:56.997017",
   "awaiting_real_data": true
 }

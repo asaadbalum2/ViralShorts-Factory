@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-06T22:12:27.338767",
+  "timestamp": "2026-01-06T22:43:56.414266",
   "tests": {
     "Gemini Discovery": {
       "status": "PASS",
@@ -152,10 +152,82 @@
     "Workflow Resilience": {
       "status": "PASS",
       "details": "Retry/fallback mechanisms present"
+    },
+    "Gemini Model Chart": {
+      "status": "PASS",
+      "details": "Skipped (no API key)"
+    },
+    "OpenRouter Model Chart": {
+      "status": "PASS",
+      "details": "32 free models"
+    },
+    "Groq Model Chart": {
+      "status": "PASS",
+      "details": "0 models (NOT used in tests)"
+    },
+    "Content Generation": {
+      "status": "PASS",
+      "details": "Skipped (no OpenRouter key)"
+    },
+    "YouTube Analytics": {
+      "status": "PASS",
+      "details": "No token.pickle (expected in CI)"
+    },
+    "Gemini API Format": {
+      "status": "PASS",
+      "details": "Skipped (no key)"
+    },
+    "Groq API Format": {
+      "status": "PASS",
+      "details": "Skipped (no key)"
+    },
+    "OpenRouter API Format": {
+      "status": "PASS",
+      "details": "Skipped (no key)"
+    },
+    "AI Generation": {
+      "status": "PASS",
+      "details": "Skipped (no API keys)"
+    },
+    "Edge-TTS Import": {
+      "status": "PASS",
+      "details": "Module available"
+    },
+    "TTS Voices": {
+      "status": "PASS",
+      "details": "47 English voices available"
+    },
+    "Pexels API": {
+      "status": "PASS",
+      "details": "Skipped (no API key)"
+    },
+    "YouTube Credentials": {
+      "status": "PASS",
+      "details": "No credentials (expected in CI)"
+    },
+    "MoviePy Import": {
+      "status": "PASS",
+      "details": "Module available"
+    },
+    "PIL Import": {
+      "status": "PASS",
+      "details": "Module available"
+    },
+    "FFmpeg": {
+      "status": "PASS",
+      "details": "Not installed (OK locally, installed in CI)"
+    },
+    "AI Caller Error Handling": {
+      "status": "PASS",
+      "details": "Passed 3/3 checks"
+    },
+    "Robustness Module": {
+      "status": "PASS",
+      "details": "Retry/validation present"
     }
   },
-  "passed": 38,
+  "passed": 56,
   "failed": 0,
   "warnings": 0,
-  "duration_seconds": 0.5494868755340576
+  "duration_seconds": 2.3744022846221924
 }

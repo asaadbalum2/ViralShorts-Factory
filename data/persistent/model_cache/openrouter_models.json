@@ -1,16 +1,13 @@
 {
   "models": [
-    "allenai/olmo-3.1-32b-think:free",
     "xiaomi/mimo-v2-flash:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "mistralai/devstral-2512:free",
     "nex-agi/deepseek-v3.1-nex-n1:free",
     "arcee-ai/trinity-mini:free",
     "tngtech/tng-r1t-chimera:free",
-    "allenai/olmo-3-32b-think:free",
     "kwaipilot/kat-coder-pro:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
-    "alibaba/tongyi-deepresearch-30b-a3b:free",
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
@@ -36,5 +33,5 @@
     "meta-llama/llama-3.1-405b-instruct:free",
     "mistralai/mistral-7b-instruct:free"
   ],
-  "cached_at": "2026-01-04T22:13:18.442942"
+  "cached_at": "2026-01-06T22:43:57.151323"
 }

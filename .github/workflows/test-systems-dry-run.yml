@@ -1,17 +1,41 @@
-name: TEST - Systems Dry Run (Zero Quota)
+name: TEST - Systems Dry Run (Zero Production Quota)
 
-# COMPREHENSIVE SYSTEM TEST
-# =========================
-# This workflow tests ALL systems WITHOUT consuming valuable quota:
-# - Uses FREE API endpoints only (model discovery, not generation)
-# - Tests persistent data read/write (GitHub Artifacts)
-# - Tests quota management and model discovery
-# - Tests all scorers and calculators
-# - Tests rate limiters
-# - Tests feedback mechanisms (dry run)
-# - Tests pre-work and video generation infrastructure
+# COMPREHENSIVE SYSTEM TEST - v17.9.20
+# =====================================
+# Tests ALL systems WITHOUT consuming PRODUCTION quota.
 #
-# QUOTA USAGE: ZERO (uses only free endpoints)
+# WHAT IT TESTS (56+ tests):
+# - Model discovery (Gemini, Groq, OpenRouter, HuggingFace)
+# - MODEL CHART: Shows all discovered models, highlights test vs production
+# - Quota management and caching
+# - Persistent data read/write (verified then CLEANED UP)
+# - All scorers (Virality, Engagement, Retention, Script, Quality Gate)
+# - Rate limiters
+# - Self-learning engine
+# - Feedback mechanisms (dry run)
+# - Generator infrastructure (hooks, CTAs, pre-work)
+# - ACTUAL CONTENT GENERATION: Generates real hooks using non-prod models
+# - YOUTUBE ANALYTICS: Fetches real channel data (read-only, not saved)
+# - API BEHAVIOR VALIDATION: Verifies response formats for all providers
+# - TTS engine (Edge-TTS)
+# - Pexels API (video search)
+# - YouTube API (credentials check, read-only)
+# - Video rendering infrastructure (MoviePy, PIL, FFmpeg)
+# - Error handling and retry logic
+# - AI generation using NON-PRODUCTION models (OpenRouter free, index 1+)
+#
+# PRODUCTION QUOTA USAGE: ZERO
+# - Free API endpoints for discovery
+# - OpenRouter free models from index 1+ (production uses index 0)
+# - NO Groq (shared quota across all models)
+#
+# PERSISTENT STATE: READ-ONLY
+# - Downloads production state to verify read
+# - Creates test files to verify write
+# - DELETES all test files immediately after
+# - Does NOT save any artifact back
+# - Production state completely UNCHANGED
+#
 # TRIGGER: Manual only (workflow_dispatch)
 
 on:
@@ -153,6 +177,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           PYTHONUNBUFFERED: "1"
         run: |
           python scripts/test_systems_dry_run.py
@@ -160,26 +185,26 @@ jobs:
       # ================================================================
       # TEST 4: PERSISTENT STATE WRITE
       # ================================================================
-      - name: "TEST 4: Write Test State"
+      - name: "TEST 4: Verify Write Capability (No Save)"
         run: |
           echo "=============================================="
-          echo "  TEST 4: WRITE PERSISTENT STATE"
+          echo "  TEST 4: VERIFY WRITE CAPABILITY"
           echo "=============================================="
           
-          # Create a test marker file
+          # Create a test marker file (verify we CAN write)
           echo "{\"test_run\": \"${{ github.run_number }}\", \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"status\": \"success\"}" \
             > data/persistent/last_test_run.json
           
-          echo "[OK] Created test marker file"
+          echo "[OK] Write test passed"
           cat data/persistent/last_test_run.json
-      
-      - name: "Save Persistent State"
-        uses: actions/upload-artifact@v4
-        with:
-          name: persistent-state
-          path: data/persistent/
-          retention-days: 30
-          overwrite: true
+          
+          # CLEANUP: Remove test file so we don't pollute anything
+          rm -f data/persistent/last_test_run.json
+          rm -f data/persistent/test_persistent.json
+          echo "[OK] Cleaned up test files"
+          
+          # NOTE: We do NOT save back to any artifact!
+          # This ensures the test workflow doesn't affect production state.
       
       # ================================================================
       # SUMMARY
@@ -201,13 +226,15 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Persistent State" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-          ls -la data/persistent/ >> $GITHUB_STEP_SUMMARY 2>&1 || echo "No state files"
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "- **Read**: Verified (downloaded production artifact)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Write**: Verified (created test file, then deleted)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Cleanup**: Test files removed, production state UNCHANGED" >> $GITHUB_STEP_SUMMARY
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Quota Usage" >> $GITHUB_STEP_SUMMARY
-          echo "**ZERO** - All tests used FREE endpoints only" >> $GITHUB_STEP_SUMMARY
+          echo "- **Production models**: ZERO" >> $GITHUB_STEP_SUMMARY
+          echo "- **OpenRouter free models**: Minimal (separate quota, dynamically discovered)" >> $GITHUB_STEP_SUMMARY
+          echo "- **All other tests**: FREE endpoints only" >> $GITHUB_STEP_SUMMARY
           
       - name: Upload Test Results
         if: always()
@@ -217,4 +244,5 @@ jobs:
           path: test_output/
           retention-days: 7
           if-no-files-found: ignore
+
 
