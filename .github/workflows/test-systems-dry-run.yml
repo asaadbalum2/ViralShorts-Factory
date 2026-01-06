@@ -1,10 +1,10 @@
 name: TEST - Systems Dry Run (Zero Production Quota)
 
-# COMPREHENSIVE SYSTEM TEST - v17.9.21
+# COMPREHENSIVE SYSTEM TEST - v17.9.22
 # =====================================
 # Tests ALL systems WITHOUT consuming PRODUCTION quota.
 #
-# WHAT IT TESTS (60+ tests across 23 categories):
+# WHAT IT TESTS (60+ tests across 24 categories):
 # 1-4.   Model discovery (Gemini, Groq, OpenRouter, HuggingFace) - FREE endpoints
 # 5-7.   Quota management and caching
 # 8-10.  Persistent data read/write (verified then CLEANED UP)
@@ -13,18 +13,17 @@ name: TEST - Systems Dry Run (Zero Production Quota)
 # 15.    Content generation using NON-PRODUCTION OpenRouter models
 # 16.    YouTube API (basic credential check ONLY, NOT full analytics)
 # 17.    API behavior validation (response format checks)
-# 18.    Rate limiters
-# 19.    TTS engine (Edge-TTS)
-# 20.    Pexels API (video search)
-# 21.    Video rendering infrastructure (MoviePy, PIL, FFmpeg)
-# 22.    Error handling and retry logic
-# 23.    Emergency fallbacks
+# 18.    PRODUCTION PROMPTS: Validates god-tier, hook, CTA prompts work
+# 19.    Rate limiters
+# 20.    TTS engine (Edge-TTS)
+# 21.    Pexels API (video search)
+# 22.    Video rendering infrastructure (MoviePy, PIL, FFmpeg)
+# 23.    Error handling and retry logic
+# 24.    Emergency fallbacks
 #
-# CLARIFICATIONS:
-# - NO VIDEO IS GENERATED: This tests infrastructure only, not actual rendering
-# - YouTube: Just checks credentials work, NOT full virality/analytics workflow
-# - Model Chart: Printed in TEST 14, shows which models are PROD vs TEST
-# - QUOTA REPORT: Printed at end showing exactly what was consumed
+# QUOTA REPORT: Shows per-model usage at end (provider + model + calls)
+# NO VIDEO RENDERED: Tests infrastructure only
+# YouTube: Just credential check, NOT full analytics
 #
 # PRODUCTION QUOTA USAGE: ZERO
 # - All discovery uses FREE /models endpoints

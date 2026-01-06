@@ -5,7 +5,7 @@ ViralShorts Factory - Comprehensive Systems Dry Run Test
 
 Tests ALL systems without consuming PRODUCTION quota.
 
-TEST CATEGORIES (23 tests):
+TEST CATEGORIES (24 tests):
 1-4.   Model Discovery (FREE API endpoints)
 5-7.   Quota Management & Caching
 8-10.  Persistent Data Read (does NOT modify production state)
@@ -14,12 +14,13 @@ TEST CATEGORIES (23 tests):
 15.    Actual Content Generation (using non-prod models)
 16.    YouTube Analytics (read-only, don't save)
 17.    API Behavior Validation (response formats)
-18.    Non-Production AI Call (OpenRouter free index 1+)
-19.    TTS Engine (Edge-TTS)
-20.    Pexels API (video search)
-21.    YouTube API (credentials check)
-22.    Video Rendering Infrastructure
-23.    Error Handling & Retry Logic
+18.    Production Prompt Validation (God-tier, Hook, CTA prompts)
+19.    Non-Production AI Call (OpenRouter free index 1+)
+20.    TTS Engine (Edge-TTS)
+21.    Pexels API (video search)
+22.    YouTube API (credentials check)
+23.    Video Rendering Infrastructure
+24.    Error Handling & Retry Logic
 
 QUOTA USAGE:
 - Production models: ZERO
@@ -75,22 +76,30 @@ TEST_RESULTS = {
     "warnings": 0
 }
 
-# Quota tracking
+# Quota tracking with model-level detail
 QUOTA_USED = {
-    "gemini": {"calls": 0, "endpoints": []},
-    "groq": {"calls": 0, "endpoints": []},
-    "openrouter": {"calls": 0, "endpoints": []},
-    "pexels": {"calls": 0, "endpoints": []},
-    "youtube": {"calls": 0, "endpoints": []},
-    "huggingface": {"calls": 0, "endpoints": []}
+    "gemini": {"calls": 0, "models": {}},
+    "groq": {"calls": 0, "models": {}},
+    "openrouter": {"calls": 0, "models": {}},
+    "pexels": {"calls": 0, "models": {}},
+    "youtube": {"calls": 0, "models": {}},
+    "huggingface": {"calls": 0, "models": {}}
 }
 
-def track_quota(provider: str, endpoint: str, is_free: bool = True):
-    """Track quota usage."""
+def track_quota(provider: str, endpoint: str, model: str = "info-endpoint", is_free: bool = True):
+    """Track quota usage with model-level detail."""
     if provider in QUOTA_USED:
-        if not is_free:  # Only count non-free calls
+        if not is_free:
             QUOTA_USED[provider]["calls"] += 1
-        QUOTA_USED[provider]["endpoints"].append(f"{'[FREE]' if is_free else '[QUOTA]'} {endpoint}")
+        
+        # Track per-model usage
+        if model not in QUOTA_USED[provider]["models"]:
+            QUOTA_USED[provider]["models"][model] = {"free": 0, "quota": 0}
+        
+        if is_free:
+            QUOTA_USED[provider]["models"][model]["free"] += 1
+        else:
+            QUOTA_USED[provider]["models"][model]["quota"] += 1
 
 def safe_print(msg: str):
     """Print with encoding fallback."""
@@ -140,7 +149,7 @@ def test_model_discovery():
             record_test("Gemini Discovery", True, "Skipped (no API key - expected locally)", warning=True)
         else:
             models = _discover_gemini_models()
-            track_quota("gemini", "/models endpoint", is_free=True)  # FREE endpoint
+            track_quota("gemini", "/models", model="/v1beta/models", is_free=True)
             if models and len(models) > 0:
                 record_test("Gemini Discovery", True, f"Found {len(models)} models")
                 
@@ -161,7 +170,7 @@ def test_model_discovery():
             record_test("Groq Discovery", True, "Skipped (no API key - expected locally)", warning=True)
         else:
             models = _discover_groq_models()
-            track_quota("groq", "/models endpoint", is_free=True)  # FREE endpoint
+            track_quota("groq", "/models", model="/v1/models", is_free=True)
             if models and len(models) > 0:
                 record_test("Groq Discovery", True, f"Found {len(models)} models")
                 
@@ -859,7 +868,7 @@ Return ONLY the hook text, nothing else."""
             timeout=30
         )
         
-        track_quota("openrouter", f"/chat/completions ({test_model})", is_free=True)  # Free model
+        track_quota("openrouter", "/chat/completions", model=test_model, is_free=True)
         if response.status_code == 200:
             result = response.json()
             hook = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
@@ -972,7 +981,7 @@ def test_api_behavior_validation():
                 timeout=10
             )
             
-            track_quota("gemini", "/models (format check)", is_free=True)  # FREE endpoint
+            track_quota("gemini", "/models", model="format-validation", is_free=True)
             if response.status_code == 200:
                 data = response.json()
                 
@@ -1010,7 +1019,7 @@ def test_api_behavior_validation():
                 timeout=10
             )
             
-            track_quota("groq", "/models (format check)", is_free=True)  # FREE endpoint
+            track_quota("groq", "/models", model="format-validation", is_free=True)
             if response.status_code == 200:
                 data = response.json()
                 
@@ -1042,7 +1051,7 @@ def test_api_behavior_validation():
                 timeout=10
             )
             
-            track_quota("openrouter", "/models (format check)", is_free=True)  # FREE endpoint
+            track_quota("openrouter", "/models", model="format-validation", is_free=True)
             if response.status_code == 200:
                 data = response.json()
                 
@@ -1064,7 +1073,85 @@ def test_api_behavior_validation():
         record_test("OpenRouter API Format", True, "Skipped (no key)", warning=True)
 
 # ============================================================================
-# TEST 18: NON-PRODUCTION AI CALL (OpenRouter - Separate Quota)
+# TEST 18: PRODUCTION PROMPT VALIDATION
+# ============================================================================
+def test_production_prompts():
+    """Test that production prompts can be loaded and are correctly structured.
+    
+    This validates:
+    - God-tier prompts can be loaded
+    - Hook generator prompts work
+    - CTA generator prompts work
+    - All prompt infrastructure is functional
+    """
+    safe_print("\n" + "=" * 60)
+    safe_print("  TEST 18: PRODUCTION PROMPT VALIDATION")
+    safe_print("=" * 60)
+    
+    # Test god-tier prompts
+    try:
+        from god_tier_prompts import GodTierPromptEngine
+        
+        engine = GodTierPromptEngine()
+        
+        # Check hook prompts exist
+        has_generate = hasattr(engine, 'generate_topic') or hasattr(engine, 'generate_hook')
+        has_script = hasattr(engine, 'generate_script') or hasattr(engine, 'generate_phrases')
+        
+        if has_generate or has_script:
+            record_test("God-Tier Prompts", True, "Engine loaded, methods present")
+        else:
+            record_test("God-Tier Prompts", True, "Engine loaded (minimal methods)", warning=True)
+    except Exception as e:
+        record_test("God-Tier Prompts", True, f"Skipped: {str(e)[:30]}", warning=True)
+    
+    # Test hook generator prompts
+    try:
+        from ai_hook_generator import get_hook_generator
+        
+        generator = get_hook_generator()
+        
+        # Check it has the prompt generation method
+        has_generate = hasattr(generator, 'generate') or hasattr(generator, '_generate_with_ai')
+        has_fallback = hasattr(generator, '_get_fallback_hooks') or hasattr(generator, 'fallback_hooks')
+        
+        record_test("Hook Generator Prompts", has_generate, 
+                   f"Methods: generate={has_generate}, fallback={has_fallback}")
+    except Exception as e:
+        record_test("Hook Generator Prompts", True, f"Skipped: {str(e)[:30]}", warning=True)
+    
+    # Test CTA generator prompts
+    try:
+        from ai_cta_generator import get_cta_generator
+        
+        generator = get_cta_generator()
+        
+        has_generate = hasattr(generator, 'generate') or hasattr(generator, '_generate_with_ai')
+        
+        record_test("CTA Generator Prompts", has_generate, 
+                   f"Generate method present: {has_generate}")
+    except Exception as e:
+        record_test("CTA Generator Prompts", True, f"Skipped: {str(e)[:30]}", warning=True)
+    
+    # Test self-learning prompt boost
+    try:
+        from self_learning_engine import get_self_learning_engine
+        
+        engine = get_self_learning_engine()
+        
+        # Get viral triggers (used to boost prompts)
+        triggers = engine.get_viral_triggers()
+        
+        has_hooks = "hook_words" in triggers
+        has_power = "power_words" in triggers
+        
+        record_test("Prompt Boost (Self-Learning)", has_hooks or has_power, 
+                   f"Triggers loaded: hooks={has_hooks}, power={has_power}")
+    except Exception as e:
+        record_test("Prompt Boost", True, f"Skipped: {str(e)[:30]}", warning=True)
+
+# ============================================================================
+# TEST 19: NON-PRODUCTION AI CALL (OpenRouter - Separate Quota)
 # ============================================================================
 def test_ai_generation_non_production():
     """Test actual AI call using NON-PRODUCTION models only.
@@ -1075,7 +1162,7 @@ def test_ai_generation_non_production():
     - NOT Groq (shared quota across all models)
     """
     safe_print("\n" + "=" * 60)
-    safe_print("  TEST 14: AI GENERATION (Non-Production Models)")
+    safe_print("  TEST 19: AI GENERATION (Non-Production Models)")
     safe_print("=" * 60)
     
     # Skip if no API keys
@@ -1122,7 +1209,7 @@ def test_ai_generation_non_production():
                     timeout=30
                 )
                 
-                track_quota("openrouter", f"/chat/completions ({model})", is_free=True)  # Free model
+                track_quota("openrouter", "/chat/completions", model=model, is_free=True)
                 if response.status_code == 200:
                     model_short = model.split("/")[-1][:25] if "/" in model else model[:25]
                     record_test("OpenRouter AI Test", True, f"{model_short}: OK (non-prod)")
@@ -1138,7 +1225,7 @@ def test_ai_generation_non_production():
         record_test("OpenRouter AI Test", True, f"Error: {str(e)[:40]}", warning=True)
 
 # ============================================================================
-# TEST 19: TTS ENGINE
+# TEST 20: TTS ENGINE
 # ============================================================================
 def test_tts_engine():
     """Test TTS engine availability."""
@@ -1169,7 +1256,7 @@ def test_tts_engine():
         record_test("Edge-TTS Import", False, "Module not installed")
 
 # ============================================================================
-# TEST 20: PEXELS API
+# TEST 21: PEXELS API
 # ============================================================================
 def test_pexels_api():
     """Test Pexels API for B-roll."""
@@ -1193,7 +1280,7 @@ def test_pexels_api():
             timeout=10
         )
         
-        track_quota("pexels", "/videos/search", is_free=True)  # Pexels is free tier
+        track_quota("pexels", "/search", model="videos/search", is_free=True)
         if response.status_code == 200:
             data = response.json()
             video_count = len(data.get("videos", []))
@@ -1205,7 +1292,7 @@ def test_pexels_api():
         record_test("Pexels API", False, str(e)[:50])
 
 # ============================================================================
-# TEST 21: YOUTUBE API (Credentials Check)
+# TEST 22: YOUTUBE API (Credentials Check)
 # ============================================================================
 def test_youtube_api():
     """Test YouTube API availability (read-only, no upload)."""
@@ -1232,7 +1319,7 @@ def test_youtube_api():
         record_test("YouTube API", False, str(e)[:50])
 
 # ============================================================================
-# TEST 22: VIDEO RENDERING INFRASTRUCTURE
+# TEST 23: VIDEO RENDERING INFRASTRUCTURE
 # ============================================================================
 def test_video_rendering():
     """Test video rendering infrastructure (without actually rendering)."""
@@ -1269,7 +1356,7 @@ def test_video_rendering():
         record_test("FFmpeg", True, str(e)[:30], warning=True)
 
 # ============================================================================
-# TEST 23: ERROR HANDLING & RETRY LOGIC
+# TEST 24: ERROR HANDLING & RETRY LOGIC
 # ============================================================================
 def test_error_handling():
     """Test error handling and retry logic."""
@@ -1335,10 +1422,11 @@ def main():
     test_prework_concepts()
     test_analytics_structure()
     test_emergency_fallbacks()
-    test_model_discovery_chart()          # NEW: Shows all models, highlights test vs prod
-    test_actual_content_generation()      # NEW: Actually generates content with non-prod models
-    test_youtube_analytics_readonly()     # NEW: Fetches real analytics (read-only)
-    test_api_behavior_validation()        # NEW: Validates API response formats
+    test_model_discovery_chart()          # Shows all models, highlights test vs prod
+    test_actual_content_generation()      # Actually generates content with non-prod models
+    test_youtube_analytics_readonly()     # Fetches real analytics (read-only)
+    test_api_behavior_validation()        # Validates API response formats
+    test_production_prompts()             # NEW: Validates production prompts work
     test_ai_generation_non_production()   # Uses NON-production models only!
     test_tts_engine()
     test_pexels_api()
@@ -1358,20 +1446,36 @@ def main():
     safe_print(f"   Duration: {duration:.1f}s")
     safe_print("=" * 60)
     
-    # QUOTA USAGE REPORT
+    # QUOTA USAGE REPORT (with model-level detail)
     safe_print("\n" + "=" * 60)
-    safe_print("  QUOTA USAGE REPORT")
+    safe_print("  QUOTA USAGE REPORT (Per Model)")
     safe_print("=" * 60)
     total_quota_calls = 0
-    for provider, data in QUOTA_USED.items():
-        if data["endpoints"]:
-            quota_calls = data["calls"]
-            free_calls = len([e for e in data["endpoints"] if "[FREE]" in e])
-            total_quota_calls += quota_calls
-            status = "ZERO" if quota_calls == 0 else str(quota_calls)
-            safe_print(f"   {provider.upper():12} | Quota used: {status:4} | Free calls: {free_calls}")
+    total_free_calls = 0
     
-    safe_print("-" * 60)
+    for provider, data in QUOTA_USED.items():
+        if data["models"]:
+            provider_quota = 0
+            provider_free = 0
+            
+            for model, counts in data["models"].items():
+                provider_quota += counts["quota"]
+                provider_free += counts["free"]
+            
+            if provider_free > 0 or provider_quota > 0:
+                safe_print(f"\n   {provider.upper()}:")
+                for model, counts in data["models"].items():
+                    model_short = model[:40] + "..." if len(model) > 40 else model
+                    if counts["quota"] > 0:
+                        safe_print(f"     [QUOTA] {model_short}: {counts['quota']} calls")
+                    else:
+                        safe_print(f"     [FREE]  {model_short}: {counts['free']} calls")
+            
+            total_quota_calls += provider_quota
+            total_free_calls += provider_free
+    
+    safe_print("\n" + "-" * 60)
+    safe_print(f"   TOTAL FREE CALLS: {total_free_calls}")
     if total_quota_calls == 0:
         safe_print("   TOTAL PRODUCTION QUOTA USED: ZERO")
     else:

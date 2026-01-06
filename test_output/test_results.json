@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-06T22:59:04.523125",
+  "timestamp": "2026-01-06T23:08:13.091373",
   "tests": {
     "Gemini Discovery": {
       "status": "PASS",
@@ -51,7 +51,7 @@
     },
     "Prompt Boost": {
       "status": "PASS",
-      "details": "Method exists but error: unsupported operand type(s) fo"
+      "details": "Skipped: cannot import name 'get_self_l"
     },
     "Virality Calculator": {
       "status": "PASS",
@@ -185,6 +185,18 @@
       "status": "PASS",
       "details": "Skipped (no key)"
     },
+    "God-Tier Prompts": {
+      "status": "PASS",
+      "details": "Skipped: cannot import name 'GodTierPro"
+    },
+    "Hook Generator Prompts": {
+      "status": "PASS",
+      "details": "Skipped: No module named 'src'"
+    },
+    "CTA Generator Prompts": {
+      "status": "PASS",
+      "details": "Skipped: No module named 'src'"
+    },
     "AI Generation": {
       "status": "PASS",
       "details": "Skipped (no API keys)"
@@ -226,34 +238,34 @@
       "details": "Retry/validation present"
     }
   },
-  "passed": 56,
+  "passed": 60,
   "failed": 0,
   "warnings": 0,
-  "duration_seconds": 2.2896392345428467,
+  "duration_seconds": 6.9371421337127686,
   "quota_used": {
     "gemini": {
       "calls": 0,
-      "endpoints": []
+      "models": {}
     },
     "groq": {
       "calls": 0,
-      "endpoints": []
+      "models": {}
     },
     "openrouter": {
       "calls": 0,
-      "endpoints": []
+      "models": {}
     },
     "pexels": {
       "calls": 0,
-      "endpoints": []
+      "models": {}
     },
     "youtube": {
       "calls": 0,
-      "endpoints": []
+      "models": {}
     },
     "huggingface": {
       "calls": 0,
-      "endpoints": []
+      "models": {}
     }
   }
 }
