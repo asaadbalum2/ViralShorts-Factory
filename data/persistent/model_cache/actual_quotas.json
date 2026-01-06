@@ -1,4 +1,6 @@
 {
   "test-model-123": 100,
-  "test-model-123_discovered_at": "2026-01-06T22:01:19.999665"
+  "test-model-123_discovered_at": "2026-01-06T22:01:19.999665",
+  "test-quota-model": 100,
+  "test-quota-model_discovered_at": "2026-01-06T22:12:27.836764"
 }

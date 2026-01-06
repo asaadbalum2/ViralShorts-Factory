@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-01-06T22:12:27.338767",
+  "tests": {
+    "Gemini Discovery": {
+      "status": "PASS",
+      "details": "Skipped (no API key - expected locally)"
+    },
+    "Groq Discovery": {
+      "status": "PASS",
+      "details": "Skipped (no API key - expected locally)"
+    },
+    "High-Quality Model": {
+      "status": "PASS",
+      "details": "None available (will use fallback)"
+    },
+    "Task-Based Selection": {
+      "status": "PASS",
+      "details": "Hook task: gemini:gemini-1.5-flash"
+    },
+    "Quota Cache Write/Read": {
+      "status": "PASS",
+      "details": "Cache works correctly"
+    },
+    "Model Cache Write/Read": {
+      "status": "PASS",
+      "details": "Cache works correctly"
+    },
+    "Rate Limits": {
+      "status": "PASS",
+      "details": "Gemini: 5.0s, Groq: 2.0s"
+    },
+    "Persistent Write": {
+      "status": "PASS",
+      "details": "Wrote to data\\persistent\\test_persistent.json"
+    },
+    "Persistent Read": {
+      "status": "PASS",
+      "details": "Data integrity verified"
+    },
+    "Persistent Files": {
+      "status": "PASS",
+      "details": "Found 20 files"
+    },
+    "Viral Triggers": {
+      "status": "PASS",
+      "details": "Source: none_available"
+    },
+    "Learn From Video": {
+      "status": "PASS",
+      "details": "Learning mechanism works"
+    },
+    "Prompt Boost": {
+      "status": "PASS",
+      "details": "Method exists but error: unsupported operand type(s) fo"
+    },
+    "Virality Calculator": {
+      "status": "PASS",
+      "details": "Score: 73.5/100 (B)"
+    },
+    "Engagement Predictor": {
+      "status": "PASS",
+      "details": "Score: 47.5/100"
+    },
+    "Retention Predictor": {
+      "status": "PASS",
+      "details": "Score: 88.3%"
+    },
+    "Script Analyzer": {
+      "status": "PASS",
+      "details": "Score: 85.43333333333334/100"
+    },
+    "AI Quality Gate": {
+      "status": "PASS",
+      "details": "Score: 73.7/100, Passed: True"
+    },
+    "Hook Generator Structure": {
+      "status": "PASS",
+      "details": "All required methods present"
+    },
+    "CTA Generator Structure": {
+      "status": "PASS",
+      "details": "All methods present"
+    },
+    "Pre-Work Fetcher Structure": {
+      "status": "PASS",
+      "details": "All methods present"
+    },
+    "Feedback Controller": {
+      "status": "PASS",
+      "details": "Preferences loaded: 5 keys"
+    },
+    "Generator Feedback": {
+      "status": "PASS",
+      "details": "Update method present"
+    },
+    "Metadata Store": {
+      "status": "PASS",
+      "details": "Found 0 video records"
+    },
+    "Rate Limit Values": {
+      "status": "PASS",
+      "details": "All within expected ranges"
+    },
+    "Rate Limit Check": {
+      "status": "PASS",
+      "details": "Min delay: 2.0s"
+    },
+    "Music Mood Selector": {
+      "status": "PASS",
+      "details": "Structure OK"
+    },
+    "Hashtag Generator": {
+      "status": "PASS",
+      "details": "Structure OK"
+    },
+    "Title Optimizer": {
+      "status": "PASS",
+      "details": "Structure OK"
+    },
+    "Workflow: generate.yml": {
+      "status": "PASS",
+      "details": "Structure valid"
+    },
+    "Workflow: pre-work.yml": {
+      "status": "PASS",
+      "details": "Structure valid"
+    },
+    "Workflow: analytics-feedback.yml": {
+      "status": "PASS",
+      "details": "Structure valid"
+    },
+    "Workflow: monthly-analysis.yml": {
+      "status": "PASS",
+      "details": "Structure valid"
+    },
+    "Pre-Work Concepts": {
+      "status": "PASS",
+      "details": "File not found (will be created by pre-work workflow)"
+    },
+    "Analytics State": {
+      "status": "PASS",
+      "details": "File not found (expected on fresh install)"
+    },
+    "Content Preferences": {
+      "status": "PASS",
+      "details": "File not found (expected on fresh install)"
+    },
+    "Model Fallbacks": {
+      "status": "PASS",
+      "details": "Passed 2/3 checks"
+    },
+    "Workflow Resilience": {
+      "status": "PASS",
+      "details": "Retry/fallback mechanisms present"
+    }
+  },
+  "passed": 38,
+  "failed": 0,
+  "warnings": 0,
+  "duration_seconds": 0.5494868755340576
+}

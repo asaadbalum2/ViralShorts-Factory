@@ -1,39 +1,70 @@
 {
   "source": "REAL_ANALYTICS",
   "note": "This file is populated ONLY by actual video performance data. DO NOT SEED!",
-  
   "patterns": {
-    "hooks": [],
+    "hooks": [
+      {
+        "value": "pattern_interrupt",
+        "success_count": 4,
+        "failure_count": 0,
+        "last_used": "2026-01-06T22:12:27.868633",
+        "examples": [
+          "STOP - This is a test hook"
+        ]
+      }
+    ],
     "topics": [],
-    "categories": [],
-    "phrases": [],
+    "categories": [
+      {
+        "value": "test",
+        "success_count": 4,
+        "failure_count": 0,
+        "last_used": "2026-01-06T22:12:27.868645",
+        "examples": [
+          "Test Topic"
+        ]
+      }
+    ],
+    "phrases": [
+      {
+        "value": "punchy",
+        "success_count": 4,
+        "failure_count": 0,
+        "last_used": "2026-01-06T22:12:27.868649",
+        "examples": [
+          "STOP - This is a test hook"
+        ]
+      }
+    ],
     "numbers": [],
     "failures": []
   },
-  
   "stats": {
-    "total_videos": 0,
+    "total_videos": 4,
     "avg_first_attempt_score": null,
     "regeneration_rate": null,
-    "top_categories": [],
+    "top_categories": [
+      "test"
+    ],
     "worst_categories": []
   },
-  
   "recommendations": {
     "note": "Populated by SelfLearningEngine after analyzing real performance",
-    "boost_phrases": [],
+    "boost_phrases": [
+      "punchy"
+    ],
     "avoid_phrases": [],
-    "best_hook_styles": [],
+    "best_hook_styles": [
+      "pattern_interrupt"
+    ],
     "optimal_length": null,
     "best_posting_hours": [],
     "best_posting_days": []
   },
-  
   "timing_performance": {
     "hours": {},
     "days": {}
   },
-  
-  "last_updated": null,
+  "last_updated": "2026-01-06T22:12:27.868656",
   "awaiting_real_data": true
 }

@@ -1005,6 +1005,47 @@ class VersionVerifier:
             return True
     
     # ========================================================================
+    # CHECK: Test Workflow (v17.9.18)
+    # ========================================================================
+    def check_test_workflow(self) -> bool:
+        """Verify the zero-quota test workflow exists and is valid."""
+        print("\n[NEW] DRY RUN TEST WORKFLOW CHECK...")
+        
+        # Check workflow file
+        workflow_path = Path(".github/workflows/test-systems-dry-run.yml")
+        if not workflow_path.exists():
+            return self.error("test-systems-dry-run.yml not found")
+        
+        content = workflow_path.read_text(encoding='utf-8')
+        
+        # Check it doesn't use quota-consuming endpoints
+        checks_passed = 0
+        
+        # Should use FREE endpoints
+        if '/models' in content or 'models?' in content:
+            checks_passed += 1
+            self.passed.append("Test workflow uses FREE model discovery endpoints")
+        
+        # Should NOT make generateContent calls
+        if 'generateContent' not in content:
+            checks_passed += 1
+            self.passed.append("Test workflow doesn't call generateContent in bash")
+        
+        # Check test script exists
+        test_script = Path("scripts/test_systems_dry_run.py")
+        if test_script.exists():
+            checks_passed += 1
+            self.passed.append("test_systems_dry_run.py exists")
+        else:
+            return self.error("test_systems_dry_run.py not found")
+        
+        if checks_passed >= 2:
+            self.passed.append("Dry run test workflow valid")
+            return True
+        else:
+            return self.error("Test workflow missing critical checks")
+    
+    # ========================================================================
     # MAIN VERIFICATION
     # ========================================================================
     def run_all_checks(self) -> bool:
@@ -1031,6 +1072,7 @@ class VersionVerifier:
             self.check_v1797_fixes(),  # v17.9.7: Critical fixes
             self.check_smart_router(),  # v17.9.9: Smart Model Router
             self.check_score_maximization(),  # v17.9.15: Score maximization
+            self.check_test_workflow(),  # v17.9.18: Dry run test workflow
         ]
         
         print("\n" + "=" * 60)
