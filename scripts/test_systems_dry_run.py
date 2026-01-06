@@ -753,19 +753,15 @@ def test_model_discovery_chart():
     
     chart_data = {"gemini": [], "openrouter": [], "groq": []}
     
-    # Discover ALL Gemini models with QUALITY SCORING
+    # Discover ALL Gemini models with QUALITY SCORING and 4-CATEGORY SYSTEM
     try:
         from model_helper import (get_dynamic_gemini_model, _load_cache, _is_model_usable, 
-                                  MIN_DAILY_QUOTA, get_model_quality_score, get_model_quality_tier)
+                                  MIN_DAILY_QUOTA, get_model_quality_score, categorize_models_for_usage)
         import requests
         
         # Get ALL models directly from API with full info
         api_key = os.environ.get("GEMINI_API_KEY")
-        all_gemini_models = []
-        all_quotas = {}
-        all_scores = {}
-        all_tiers = {}
-        models_info = {}  # Store full model info for scoring
+        models_with_info = []  # (model_name, quota, score, info)
         
         if api_key:
             response = requests.get(
@@ -777,91 +773,89 @@ def test_model_discovery_chart():
             if response.status_code == 200:
                 models_data = response.json().get("models", [])
                 
+                # Get quota cache
+                cache = _load_cache("gemini", allow_expired=True) or {}
+                cached_quotas = cache.get("quotas", {})
+                
                 for m in models_data:
                     if "generateContent" not in m.get("supportedGenerationMethods", []):
                         continue
                     
                     model_name = m["name"].replace("models/", "")
-                    all_gemini_models.append(model_name)
-                    models_info[model_name] = m
+                    score = get_model_quality_score(model_name, m)
                     
-                    # Calculate quality score using actual model properties
-                    all_scores[model_name] = get_model_quality_score(model_name, m)
-                    all_tiers[model_name] = get_model_quality_tier(model_name, m)
-                
-                # Check quota for each (use cache if available)
-                cache = _load_cache("gemini", allow_expired=True) or {}
-                cached_quotas = cache.get("quotas", {})
-                
-                for model in all_gemini_models[:20]:  # Check up to 20
-                    if model in cached_quotas:
-                        all_quotas[model] = cached_quotas[model]
+                    # Get quota
+                    if model_name in cached_quotas:
+                        quota = cached_quotas[model_name]
                     else:
-                        is_usable, quota = _is_model_usable(model, "gemini")
-                        all_quotas[model] = quota
+                        is_usable, quota = _is_model_usable(model_name, "gemini")
+                    
+                    models_with_info.append((model_name, quota, score, m))
         
         production_gemini = get_dynamic_gemini_model() if api_key else None
         
-        # Separate by QUALITY TIER (not just "pro" in name!):
-        # - PRODUCTION: High-quota (>=50) for general calls
-        # - CRITICAL: High-quality models (score >= 7.0) with low quota - for critical tasks
-        # - TEST-SAFE: Low-quality models (score < 7.0) with low quota - safe for testing
+        # Use the 4-category system
+        categories = categorize_models_for_usage(models_with_info)
         
-        prod_models = [(m, all_quotas.get(m, 0), all_scores.get(m, 0)) 
-                       for m in all_gemini_models if all_quotas.get(m, 0) >= MIN_DAILY_QUOTA]
+        # For backward compatibility
+        prod_models = [(m["model"], m["quota"], m["score"]) for m in categories["production"]]
+        critical_models = [(m["model"], m["quota"], m["score"]) for m in categories["critical"]]
+        test_prompt_models = [(m["model"], m["quota"], m["score"]) for m in categories["test_prompts"]]
+        test_system_models = [(m["model"], m["quota"], m["score"]) for m in categories["test_system"]]
         
-        # High-quality low-quota models = CRITICAL (for hooks, scoring)
-        critical_models = [(m, all_quotas.get(m, 0), all_scores.get(m, 0)) 
-                          for m in all_gemini_models 
-                          if 0 < all_quotas.get(m, 0) < MIN_DAILY_QUOTA 
-                          and all_scores.get(m, 0) >= 7.0]
-        
-        # Low-quality low-quota models = SAFE FOR TESTING
-        test_models = [(m, all_quotas.get(m, 0), all_scores.get(m, 0)) 
-                      for m in all_gemini_models 
-                      if 0 < all_quotas.get(m, 0) < MIN_DAILY_QUOTA 
-                      and all_scores.get(m, 0) < 7.0]
-        
-        safe_print(f"\n   GEMINI MODELS ({len(all_gemini_models)} total discovered):")
+        total_models = len(models_with_info)
+        safe_print(f"\n   GEMINI MODELS ({total_models} total discovered) - 4 CATEGORIES:")
         safe_print("   Quality scoring: Size(40%) + Tier(35%) + Context(15%) + Version(10%)")
-        safe_print("   " + "-" * 80)
-        safe_print("   Status      | Idx | Model Name                    | Quota    | Score")
-        safe_print("   " + "-" * 80)
+        safe_print("   " + "-" * 85)
+        safe_print("   Category    | Idx | Model Name                    | Quota    | Score | Usage")
+        safe_print("   " + "-" * 85)
         
-        # Show production models (high quota, general use)
-        safe_print("   GENERAL USE (high quota >=50/day):")
-        for i, (model, quota, score) in enumerate(sorted(prod_models, key=lambda x: x[2], reverse=True)[:5]):
+        # Category 1: PRODUCTION (high quota, general use)
+        safe_print("   1. PRODUCTION (high quota >=50/day, general use):")
+        for i, (model, quota, score) in enumerate(prod_models[:3]):
             marker = "[PROD]     " if model == production_gemini else "[PROD-ALT] "
             quota_str = f"{quota}/day"
-            model_short = model[:30] if len(model) <= 30 else model[:27] + "..."
-            safe_print(f"   {marker}| {i:2} | {model_short:30} | {quota_str:8} | {score}/10")
+            model_short = model[:28] if len(model) <= 28 else model[:25] + "..."
+            safe_print(f"   {marker}| {i:2} | {model_short:28} | {quota_str:8} | {score:4}/10 | General AI")
         
-        # Show critical models (high-quality, low-quota - used for hooks, etc.)
+        # Category 2: CRITICAL (high-quality, low-quota - for hooks, etc.)
         if critical_models:
-            safe_print("   " + "-" * 80)
-            safe_print("   CRITICAL TASKS (high-quality score>=7, low-quota - for hooks/scoring):")
-            for i, (model, quota, score) in enumerate(sorted(critical_models, key=lambda x: x[2], reverse=True)[:5]):
+            safe_print("   " + "-" * 85)
+            safe_print("   2. CRITICAL TASKS (score>=7, low-quota, for hooks/scoring):")
+            for i, (model, quota, score) in enumerate(critical_models[:3]):
                 quota_str = f"{quota}/day"
-                model_short = model[:30] if len(model) <= 30 else model[:27] + "..."
-                safe_print(f"   [CRITICAL]  | {i:2} | {model_short:30} | {quota_str:8} | {score}/10 <- NO TEST")
+                model_short = model[:28] if len(model) <= 28 else model[:25] + "..."
+                safe_print(f"   [CRITICAL]  | {i:2} | {model_short:28} | {quota_str:8} | {score:4}/10 | Hooks,Score")
         
-        # Show test-safe models (low-quality, low-quota, safe for testing!)
-        if test_models:
-            safe_print("   " + "-" * 80)
-            safe_print("   SAFE FOR TESTING (quality score<7, low-quota, NOT used in production):")
-            for i, (model, quota, score) in enumerate(sorted(test_models, key=lambda x: x[2], reverse=True)[:5]):
+        # Category 3: TEST PROMPTS (medium-quality leftovers, for prompt testing)
+        if test_prompt_models:
+            safe_print("   " + "-" * 85)
+            safe_print("   3. TEST PROMPTS (score 5-7, leftovers for prompt registry testing):")
+            for i, (model, quota, score) in enumerate(test_prompt_models[:3]):
                 quota_str = f"{quota}/day"
-                model_short = model[:30] if len(model) <= 30 else model[:27] + "..."
-                safe_print(f"   [TEST-OK]   | {i:2} | {model_short:30} | {quota_str:8} | {score}/10")
+                model_short = model[:28] if len(model) <= 28 else model[:25] + "..."
+                safe_print(f"   [PROMPT-OK] | {i:2} | {model_short:28} | {quota_str:8} | {score:4}/10 | PromptTest")
         
-        chart_data["gemini"] = all_gemini_models
-        chart_data["gemini_scores"] = all_scores
-        chart_data["gemini_critical"] = [m for m, q, s in critical_models]  # High-quality for critical tasks
-        chart_data["gemini_test_safe"] = [m for m, q, s in test_models]  # Safe for testing
+        # Category 4: TEST SYSTEM (low-quality leftovers, for system testing)
+        if test_system_models:
+            safe_print("   " + "-" * 85)
+            safe_print("   4. TEST SYSTEM (score<5, leftovers for system/connectivity tests):")
+            for i, (model, quota, score) in enumerate(test_system_models[:3]):
+                quota_str = f"{quota}/day"
+                model_short = model[:28] if len(model) <= 28 else model[:25] + "..."
+                safe_print(f"   [SYS-OK]    | {i:2} | {model_short:28} | {quota_str:8} | {score:4}/10 | SysTest")
         
-        if len(all_gemini_models) > 0:
+        chart_data["gemini"] = [m for m, q, s, i in models_with_info]
+        chart_data["gemini_categories"] = {
+            "production": [m for m, q, s in prod_models],
+            "critical": [m for m, q, s in critical_models],
+            "test_prompts": [m for m, q, s in test_prompt_models],
+            "test_system": [m for m, q, s in test_system_models],
+        }
+        
+        if total_models > 0:
             record_test("Gemini Model Chart", True, 
-                       f"{len(prod_models)} prod + {len(critical_models)} critical (score>=7) + {len(test_models)} test-safe")
+                       f"{len(prod_models)} prod + {len(critical_models)} critical + {len(test_prompt_models)} prompt-test + {len(test_system_models)} sys-test")
         elif not api_key:
             record_test("Gemini Model Chart", True, "Skipped (no API key)", warning=True)
         else:
@@ -901,21 +895,24 @@ def test_model_discovery_chart():
     chart_data["groq"] = []
     record_test("Groq Model Chart", True, "Skipped (shared quota)")
     
-    safe_print("\n   LEGEND:")
-    safe_print("   [PROD]      = Primary production model (highest quota)")
-    safe_print("   [PROD-ALT]  = Alternative production model (quota >= 50/day)")
-    safe_print("   [CRITICAL]  = High-quality (score >= 7.0) low-quota model for critical tasks")
-    safe_print("   [TEST-OK]   = Low-quality (score < 7.0) low-quota model, SAFE for testing")
-    safe_print("\n   QUALITY SCORING (0-10):")
+    safe_print("\n   4-CATEGORY SYSTEM:")
+    safe_print("   +-----------+--------+-------+------------------------------------------+")
+    safe_print("   | Category  | Quota  | Score | Usage                                    |")
+    safe_print("   +-----------+--------+-------+------------------------------------------+")
+    safe_print("   | PROD      | >=50   | any   | General production (scripts, CTAs)       |")
+    safe_print("   | CRITICAL  | <50    | >=7.0 | Critical tasks (hooks, scoring)          |")
+    safe_print("   | PROMPT-OK | <50    | 5-7   | Prompt registry testing (can generate)   |")
+    safe_print("   | SYS-OK    | <50    | <5    | System tests (connectivity checks)       |")
+    safe_print("   +-----------+--------+-------+------------------------------------------+")
+    safe_print("\n   QUALITY SCORE FORMULA (0-10):")
     safe_print("   - Model Size (40%): 70B=10, 32B=8.5, 8B=6, 1B=2.5")
     safe_print("   - Model Tier (35%): Ultra=10, Pro=8.5, Flash=5.5, Nano=3")
-    safe_print("   - Context Length (15%): 1M=10, 128K=9, 32K=7, 8K=5")
+    safe_print("   - Context (15%): 1M=10, 128K=9, 32K=7, 8K=5")
     safe_print("   - Version (10%): 2.5/3.x=9, 2.0=7, 1.5=6, 1.0=4")
-    safe_print("\n   MODEL USAGE:")
-    safe_print("   - PROD/PROD-ALT: General AI calls (scripts, CTAs, phrases)")
-    safe_print("   - CRITICAL: Hooks, quality scoring (best quality for important tasks)")
-    safe_print("   - TEST-OK: ONLY these can be used for testing!")
+    safe_print("\n   NOTES:")
     safe_print("   - Groq: SKIPPED (all models share 14,400/day pool)")
+    safe_print("   - Test workflow uses ONLY PROMPT-OK and SYS-OK models")
+    safe_print("   - PROD and CRITICAL are reserved for production workflows")
     
     return chart_data
 

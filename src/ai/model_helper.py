@@ -146,15 +146,84 @@ def get_model_quality_tier(model_name: str, model_info: Dict = None) -> str:
     """
     Get the quality tier of a model.
     
-    Returns: "critical", "standard", or "low"
+    Returns one of 4 tiers:
+    - "production": High-quota models for general production use
+    - "critical": High-quality models for critical tasks (hooks, scoring)
+    - "test_system": Low-quality leftover models for system tests
+    - "test_prompts": Medium-quality leftover models for prompt testing
+    
+    Note: This returns quality-based tier. Quota filtering is done separately.
     """
     score = get_model_quality_score(model_name, model_info)
-    if score >= 7.5:
+    if score >= 7.0:
         return "critical"  # Use for hooks, scoring, evaluation
     elif score >= 5.0:
-        return "standard"  # Use for general tasks
+        return "test_prompts"  # Can generate decent content for prompt testing
     else:
-        return "low"  # Avoid in production, OK for testing
+        return "test_system"  # Basic checks only, may not generate coherent content
+
+
+def categorize_models_for_usage(models_with_info: List[Tuple[str, int, float, Dict]]) -> Dict[str, List]:
+    """
+    v17.9.29: Categorize models into 4 usage categories.
+    
+    Args:
+        models_with_info: List of (model_name, quota, quality_score, model_info)
+    
+    Returns dict with 4 categories:
+        1. production: High-quota (>=50) models for general production use
+        2. critical: High-quality (score>=7) for production critical tasks
+        3. test_system: Low-quality leftovers for system testing
+        4. test_prompts: Medium-quality leftovers for prompt testing
+    
+    Note: Groq models should be excluded before calling this (shared quota).
+    """
+    categories = {
+        "production": [],      # High quota, for general use
+        "critical": [],        # High quality, for hooks/scoring
+        "test_system": [],     # Leftovers for system tests
+        "test_prompts": [],    # Leftovers for prompt tests
+    }
+    
+    for model_name, quota, score, info in models_with_info:
+        if quota >= MIN_DAILY_QUOTA:
+            # High quota = production use
+            categories["production"].append({
+                "model": model_name,
+                "quota": quota,
+                "score": score,
+                "usage": "General AI calls (scripts, CTAs, phrases)"
+            })
+        elif quota > 0 and score >= 7.0:
+            # Low quota but high quality = critical tasks
+            categories["critical"].append({
+                "model": model_name,
+                "quota": quota,
+                "score": score,
+                "usage": "Hooks, quality scoring, god-tier evaluation"
+            })
+        elif quota > 0 and score >= 5.0:
+            # Medium quality leftovers = prompt testing
+            categories["test_prompts"].append({
+                "model": model_name,
+                "quota": quota,
+                "score": score,
+                "usage": "Prompt registry testing (can generate content)"
+            })
+        elif quota > 0:
+            # Low quality leftovers = system testing
+            categories["test_system"].append({
+                "model": model_name,
+                "quota": quota,
+                "score": score,
+                "usage": "System tests (basic connectivity checks)"
+            })
+    
+    # Sort each category by score (best first)
+    for cat in categories:
+        categories[cat].sort(key=lambda x: x["score"], reverse=True)
+    
+    return categories
 
 
 def _load_quota_cache() -> Dict[str, int]:
