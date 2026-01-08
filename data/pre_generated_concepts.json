@@ -1,206 +1,198 @@
 {
-  "generated_at": "2026-01-07T05:49:20.015576",
-  "valid_until": "2026-01-07T23:59:20.015584",
+  "generated_at": "2026-01-08T05:49:17.684845",
+  "valid_until": "2026-01-08T23:59:17.684853",
   "categories": [
-    "Taylor Fritz tennis highlights",
-    "Bruno Mars new album reactions",
-    "Sex and the City reboot speculation",
-    "Joel Edgerton movie reviews",
-    "Ringer TV show recaps",
-    "Jiri Lehecka tennis analysis",
-    "Kraken sea creature documentaries",
-    "Maxime Raynaud extreme sports",
-    "Winter sports compilations",
-    "New music Friday playlists",
-    "90s TV show nostalgia",
-    "Fantasy creature art tutorials",
-    "Sports news updates",
-    "Album review and discussion",
-    " Celebrity fitness routines"
+    "Winter Storm Updates",
+    "Sports Highlights",
+    "Celebrity News",
+    "Gardening Tips",
+    "Game Day Predictions",
+    "Entertainment News",
+    "Weather Safety",
+    "Flower Arranging",
+    "TV Show Recaps",
+    "Rivalry Stories",
+    "News Analysis",
+    "Seasonal Decorating",
+    "Basketball Analysis",
+    "Pop Culture Trends",
+    "Storm Tracking"
   ],
   "concepts": [
     {
-      "category": "Taylor Fritz tennis highlights",
-      "topic": "Taylor Fritz's most epic comeback wins",
-      "hook": "You won't believe how Taylor Fritz turned the tables in these 3 insane matches!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Winter Storm Updates",
+      "topic": "Blizzard of 2023: East Coast Paralysis",
+      "hook": "A massive storm is brewing, and it's about to bring the entire East Coast to a standstill!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Bruno Mars new album reactions",
-      "topic": "Bruno Mars' new album: hit or miss?",
-      "hook": "Is Bruno Mars' latest release his best work yet or a major disappointment?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Sports Highlights",
+      "topic": "Tom Brady's Most Iconic Touchdowns",
+      "hook": "You won't believe the incredible throw that cemented Tom Brady's status as a football legend!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sex and the City reboot speculation",
-      "topic": "The one thing that could make the Sex and the City reboot a success",
-      "hook": "What's the secret ingredient that could make the Sex and the City reboot a huge hit?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Celebrity News",
+      "topic": "The Secret Behind Taylor Swift's Songwriting Process",
+      "hook": "What's the one thing Taylor Swift does before writing every hit song? You'll be surprised!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
     },
     {
-      "category": "Joel Edgerton movie reviews",
-      "topic": "Joel Edgerton's most underrated movie roles",
-      "hook": "You might have missed these hidden gems in Joel Edgerton's filmography!",
+      "category": "Gardening Tips",
+      "topic": "5 Unconventional Uses for Eggshells in Your Garden",
+      "hook": "Turn your kitchen trash into gardening gold with these genius eggshell hacks!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Ringer TV show recaps",
-      "topic": "The Ringer's most mind-blowing plot twists",
-      "hook": "Get ready for the most shocking moments in Ringer history!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Jiri Lehecka tennis analysis",
-      "topic": "What makes Jiri Lehecka a force to be reckoned with on the court",
-      "hook": "The surprising reason Jiri Lehecka is dominating the tennis world right now!",
+      "category": "Game Day Predictions",
+      "topic": "The Ultimate Showdown: Chiefs vs. Ravens",
+      "hook": "The stage is set for an epic battle \u2013 but which team will come out on top?",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Kraken sea creature documentaries",
-      "topic": "Uncovering the legend of the Kraken",
-      "hook": "Dive into the depths of the ocean and uncover the truth about the legendary Kraken!",
+      "category": "Entertainment News",
+      "topic": "The Most Shocking Plot Twists in Movie History",
+      "hook": "You think you know the ending, but these movies will blow your mind with their jaw-dropping plot twists!",
       "voice_style": "mysterious",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 42
     },
     {
-      "category": "Maxime Raynaud extreme sports",
-      "topic": "Maxime Raynaud's most death-defying stunts",
-      "hook": "Witness the most heart-stopping stunts performed by the fearless Maxime Raynaud!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter sports compilations",
-      "topic": "The most epic winter sports fails",
-      "hook": "Laugh out loud at these hilarious winter sports fails!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "New music Friday playlists",
-      "topic": "The hidden gems of New Music Friday",
-      "hook": "Discover the secret tracks you might have missed on New Music Friday!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Taylor Fritz tennis highlights",
-      "topic": "Taylor Fritz's most impressive aces",
-      "hook": "Watch in awe as Taylor Fritz serves up these unstoppable aces!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Bruno Mars new album reactions",
-      "topic": "Bruno Mars' new album: a nostalgic throwback or a bold new direction?",
-      "hook": "Is Bruno Mars' latest release a nostalgic trip back in time or a bold step into the future?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Sex and the City reboot speculation",
-      "topic": "The one character that could make or break the Sex and the City reboot",
-      "hook": "Which beloved character holds the key to the Sex and the City reboot's success?",
+      "category": "Weather Safety",
+      "topic": "How to Stay Safe During a Tornado Warning",
+      "hook": "When the sirens sound, every second counts \u2013 do you know what to do to stay alive?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Joel Edgerton movie reviews",
-      "topic": "Joel Edgerton's most memorable villain roles",
-      "hook": "Get ready to love to hate Joel Edgerton's most iconic villain characters!",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Ringer TV show recaps",
-      "topic": "The Ringer's most shocking season finales",
-      "hook": "Relive the most jaw-dropping season finales in Ringer history!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Jiri Lehecka tennis analysis",
-      "topic": "Jiri Lehecka's secret to dominating on the tennis court",
-      "hook": "What's the one thing that sets Jiri Lehecka apart from his tennis rivals?",
+      "category": "Flower Arranging",
+      "topic": "The Art of Creating a Stunning Peony Bouquet",
+      "hook": "Get ready to be mesmerized by the beauty of peonies \u2013 and learn how to create your own show-stopping arrangement!",
       "voice_style": "calm",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Kraken sea creature documentaries",
-      "topic": "The real-life encounters with the Kraken",
-      "hook": "Dive into the frightening true stories of Kraken sightings!",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "TV Show Recaps",
+      "topic": "The Most Talked-About Moments from The Walking Dead",
+      "hook": "From shocking deaths to unexpected alliances, relive the most heart-pumping moments from The Walking Dead!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Maxime Raynaud extreme sports",
-      "topic": "Maxime Raynaud's most record-breaking jumps",
-      "hook": "Witness Maxime Raynaud push the limits of human endurance with these record-breaking jumps!",
+      "category": "Rivalry Stories",
+      "topic": "The Intense Rivalry Between LeBron James and Kevin Durant",
+      "hook": "What fuels the fire between these two basketball superstars? Dive into the fascinating story behind their legendary rivalry!",
       "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Winter sports compilations",
-      "topic": "The most incredible winter sports rescues",
-      "hook": "Watch in awe as these brave winter sports athletes make death-defying rescues!",
+      "category": "Winter Storm Updates",
+      "topic": "The Science Behind Lake-Effect Snow",
+      "hook": "Why do some areas get buried under feet of snow while others stay relatively snow-free? The answer lies in this fascinating phenomenon!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
+      "music_mood": "inspirational",
+      "target_duration": 42
     },
     {
-      "category": "New music Friday playlists",
-      "topic": "The best New Music Friday discoveries of the year",
-      "hook": "Discover the hidden gems you might have missed on New Music Friday this year!",
+      "category": "Sports Highlights",
+      "topic": "The Most Iconic Moments in Olympic History",
+      "hook": "Relive the magic of the Olympics with these heart-stopping, record-breaking moments that will leave you breathless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Secret to Jennifer Lopez's Age-Defying Glow",
+      "hook": "What's the one skincare hack that JLo swears by to keep her skin looking radiant and youthful?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Taylor Fritz tennis highlights",
-      "topic": "Taylor Fritz's most clutch tournament wins",
-      "hook": "Relive the most thrilling tournament wins in Taylor Fritz's career!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Gardening Tips",
+      "topic": "How to Grow Your Own Microgreens at Home",
+      "hook": "Unlock the secret to boosting your nutrition and adding fresh flavor to your meals with these easy-to-grow microgreens!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Game Day Predictions",
+      "topic": "The Ultimate NFL Playoff Bracket",
+      "hook": "Think you can predict the winners of the NFL playoffs? Take on the challenge and see how your picks stack up against the experts!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Bruno Mars new album reactions",
-      "topic": "Bruno Mars' new album: a return to his roots or a bold new direction?",
-      "hook": "Is Bruno Mars' latest release a nostalgic trip back to his roots or a bold step into the future?",
+      "category": "Entertainment News",
+      "topic": "The Most Anticipated Movie Releases of the Year",
+      "hook": "Get ready for the most epic battle of the box office \u2013 which movie will reign supreme?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Safety",
+      "topic": "How to Prepare for a Hurricane",
+      "hook": "When the storm warning sounds, will you be ready? Learn the essential steps to keep you and your loved ones safe!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Flower Arranging",
+      "topic": "The Art of Creating a Beautiful Succulent Garden",
+      "hook": "Transform your space into a stunning oasis with these low-maintenance, high-impact succulent arrangements!",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Most Shocking Plot Reveals in Game of Thrones",
+      "hook": "From the Red Wedding to the Night King's demise, relive the most jaw-dropping moments from the world of Westeros!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Rivalry Stories",
+      "topic": "The Legendary Rivalry Between Muhammad Ali and Joe Frazier",
+      "hook": "What fueled the intense rivalry between these two boxing legends? Dive into the fascinating story behind their epic battles!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Winter Storm Updates",
+      "topic": "The Impact of Climate Change on Winter Storms",
+      "hook": "How is climate change affecting the frequency and severity of winter storms? The answer may surprise you!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -208,69 +200,69 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
