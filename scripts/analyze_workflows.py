@@ -1490,12 +1490,21 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
         safe_print("\n   Quota Status by Provider:")
         for provider in sorted(quota_details.keys()):
             total_provider_calls = sum(d["calls"] for d in quota_details[provider].values())
-            total_provider_limit = sum(d["limit"] for d in quota_details[provider].values() if d["limit"] > 0)
-            if total_provider_limit > 0:
-                pct = total_provider_calls / total_provider_limit * 100
-                safe_print(f"      {provider}: {total_provider_calls} calls (~{pct:.1f}% of daily limits)")
+            
+            # For YouTube, show per-day max instead of cumulative
+            if provider == "YOUTUBE":
+                max_per_day = 0
+                for endpoint_data in quota_details[provider].values():
+                    if endpoint_data.get("per_day"):
+                        max_per_day = max(max_per_day, max(endpoint_data["per_day"].values()))
+                safe_print(f"      {provider}: {total_provider_calls} uploads over {days} days (max {max_per_day}/day of 6 limit)")
             else:
-                safe_print(f"      {provider}: {total_provider_calls} calls (FREE endpoints)")
+                total_provider_limit = sum(d["limit"] for d in quota_details[provider].values() if d["limit"] > 0)
+                if total_provider_limit > 0:
+                    pct = total_provider_calls / total_provider_limit * 100
+                    safe_print(f"      {provider}: {total_provider_calls} calls (~{pct:.1f}% of daily limits)")
+                else:
+                    safe_print(f"      {provider}: {total_provider_calls} calls (FREE endpoints)")
     
     # Persistent data summary
     if persistent_data:
