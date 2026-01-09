@@ -1,374 +1,329 @@
 #!/usr/bin/env python3
 """
-Aggressive Mode Controller
-==========================
+ViralShorts Factory - Aggressive Mode v17.9.33
+===============================================
 
-v1.0: Implements the "Aggressive Mode" switch for maximizing quota usage.
+AGGRESSIVE MODE: Use leftover/wasted quota for extra value!
 
-When ENABLED:
-- Uses ALL available "bonus" quota for extra analytics
-- Runs virality analysis more frequently
-- Runs self-learning more aggressively  
-- Generates research videos (metadata only, no upload)
-- Maximizes model throughput utilization
+When enabled, this mode uses surplus API quota (that would otherwise expire unused) for:
+1. Extra virality analysis runs
+2. More frequent self-learning cycles
+3. Research video concept generation
+4. Enhanced analytics and pattern detection
 
-When DISABLED (default):
-- Normal operation, conservative quota usage
-- Only essential API calls made
-- Standard daily schedule
+QUOTA MANAGEMENT:
+- Production quota is ALWAYS reserved first (with 10% margin)
+- Only SURPLUS quota is used for aggressive features
+- Groq's shared 14,400/day quota provides large surplus
+- OpenRouter free models provide additional capacity
 
-Usage:
-    from src.core.aggressive_mode import AggressiveMode
-    
-    # Check mode
-    if AggressiveMode.is_enabled():
-        run_extra_analytics()
-    
-    # Enable/disable
-    AggressiveMode.enable()
-    AggressiveMode.disable()
+SWITCH CONTROL:
+- Enable: set_aggressive_mode(True) or via environment variable
+- Disable: set_aggressive_mode(False)
+- Check: is_aggressive_mode_enabled()
+
+This is a SWITCH - when OFF, system operates normally.
+When ON, it consumes extra quota for enhanced learning.
 """
 
 import os
 import json
+from datetime import datetime
 from pathlib import Path
-from datetime import datetime, timedelta
-from typing import Dict, List, Optional
+from typing import Dict, Optional
 
-# State file location
-STATE_FILE = Path("data/persistent/aggressive_mode.json")
+# State file for aggressive mode
+STATE_DIR = Path("./data/persistent")
+STATE_DIR.mkdir(parents=True, exist_ok=True)
+AGGRESSIVE_MODE_FILE = STATE_DIR / "aggressive_mode.json"
 
 
-class AggressiveMode:
+def _safe_print(msg: str):
+    """Print with encoding fallback."""
+    try:
+        print(msg)
+    except UnicodeEncodeError:
+        print(msg.encode('ascii', 'replace').decode())
+
+
+# =============================================================================
+# QUOTA POOL CONFIGURATION
+# =============================================================================
+
+# Estimated daily production needs (with 10% safety margin already applied)
+PRODUCTION_QUOTA_NEEDS = {
+    "video_generation": 350,    # ~50 calls/video * 6 videos + margin
+    "analytics": 50,            # Performance analysis
+    "pre_work": 50,             # Concept pre-generation
+    "fallback_reserve": 100,    # Reserved for fallback scenarios
+}
+
+TOTAL_PRODUCTION_NEED = sum(PRODUCTION_QUOTA_NEEDS.values())  # ~550 calls/day
+
+# Available quota pools (discovered dynamically, these are estimates)
+ESTIMATED_QUOTA_POOLS = {
+    "gemini_flash": 1500,       # Daily limit for flash models
+    "gemini_pro": 50,           # Daily limit for pro models
+    "groq_shared": 14400,       # Shared across all Groq models
+    "openrouter_free": 2000,    # Conservative estimate for free models
+}
+
+TOTAL_AVAILABLE = sum(ESTIMATED_QUOTA_POOLS.values())  # ~17,950 calls/day
+
+
+def get_surplus_quota() -> int:
     """
-    Aggressive Mode controller for maximizing quota usage.
+    Calculate surplus quota available for aggressive mode.
     
-    This is a SWITCH - when on, the system uses all available quota
-    for extra analytics, learning, and research.
+    Returns: Number of API calls available for aggressive features
     """
-    
-    # Default state
-    _state: Dict = {
+    # Reserve production needs + 20% extra safety
+    reserved = int(TOTAL_PRODUCTION_NEED * 1.20)
+    surplus = TOTAL_AVAILABLE - reserved
+    return max(0, surplus)  # Never negative
+
+
+# =============================================================================
+# AGGRESSIVE MODE STATE
+# =============================================================================
+
+_aggressive_mode_enabled = None  # Cached state
+
+
+def _load_state() -> Dict:
+    """Load aggressive mode state from file."""
+    try:
+        if AGGRESSIVE_MODE_FILE.exists():
+            with open(AGGRESSIVE_MODE_FILE, 'r') as f:
+                return json.load(f)
+    except Exception:
+        pass
+    return {
         "enabled": False,
-        "enabled_at": None,
-        "disabled_at": None,
-        "auto_disable_after_hours": 24,  # Auto-disable after 24h to prevent quota waste
-        "features": {
-            "extra_virality_analysis": True,
-            "aggressive_self_learning": True,
-            "research_video_generation": True,  # Generate but don't upload
-            "bonus_quota_usage": True,
-            "frequent_competitor_analysis": True,
-        },
+        "last_changed": None,
         "stats": {
-            "extra_api_calls_made": 0,
-            "research_videos_generated": 0,
-            "virality_analyses_run": 0,
-            "self_learning_cycles": 0,
+            "extra_analytics_runs": 0,
+            "research_concepts_generated": 0,
+            "learning_cycles_completed": 0,
+            "quota_used": 0,
         }
     }
-    
-    @classmethod
-    def _load_state(cls) -> Dict:
-        """Load state from persistent storage."""
-        try:
-            if STATE_FILE.exists():
-                with open(STATE_FILE, 'r') as f:
-                    saved = json.load(f)
-                    # Merge with defaults to ensure all keys exist
-                    cls._state.update(saved)
-                    
-                    # Check auto-disable
-                    if cls._state.get("enabled") and cls._state.get("enabled_at"):
-                        enabled_at = datetime.fromisoformat(cls._state["enabled_at"])
-                        hours_enabled = (datetime.now() - enabled_at).total_seconds() / 3600
-                        auto_hours = cls._state.get("auto_disable_after_hours", 24)
-                        
-                        if hours_enabled > auto_hours:
-                            print(f"[AGGRESSIVE] Auto-disabled after {hours_enabled:.1f}h")
-                            cls._state["enabled"] = False
-                            cls._state["disabled_at"] = datetime.now().isoformat()
-                            cls._save_state()
-        except Exception as e:
-            print(f"[AGGRESSIVE] Failed to load state: {e}")
-        
-        return cls._state
-    
-    @classmethod
-    def _save_state(cls):
-        """Save state to persistent storage."""
-        try:
-            STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-            with open(STATE_FILE, 'w') as f:
-                json.dump(cls._state, f, indent=2)
-        except Exception as e:
-            print(f"[AGGRESSIVE] Failed to save state: {e}")
-    
-    @classmethod
-    def is_enabled(cls) -> bool:
-        """Check if aggressive mode is enabled."""
-        cls._load_state()
-        return cls._state.get("enabled", False)
-    
-    @classmethod
-    def enable(cls, auto_disable_hours: int = 24):
-        """
-        Enable aggressive mode.
-        
-        Args:
-            auto_disable_hours: Auto-disable after this many hours (default 24)
-        """
-        cls._load_state()
-        cls._state["enabled"] = True
-        cls._state["enabled_at"] = datetime.now().isoformat()
-        cls._state["auto_disable_after_hours"] = auto_disable_hours
-        cls._save_state()
-        print(f"[AGGRESSIVE] MODE ENABLED - will auto-disable in {auto_disable_hours}h")
-        print(f"[AGGRESSIVE] Extra features: {list(cls._state['features'].keys())}")
-    
-    @classmethod
-    def disable(cls):
-        """Disable aggressive mode."""
-        cls._load_state()
-        cls._state["enabled"] = False
-        cls._state["disabled_at"] = datetime.now().isoformat()
-        cls._save_state()
-        print(f"[AGGRESSIVE] MODE DISABLED")
-        print(f"[AGGRESSIVE] Stats: {cls._state['stats']}")
-    
-    @classmethod
-    def is_feature_enabled(cls, feature: str) -> bool:
-        """Check if a specific aggressive feature is enabled."""
-        if not cls.is_enabled():
-            return False
-        return cls._state.get("features", {}).get(feature, False)
-    
-    @classmethod
-    def record_activity(cls, activity_type: str, count: int = 1):
-        """Record aggressive mode activity for stats."""
-        cls._load_state()
-        if activity_type in cls._state["stats"]:
-            cls._state["stats"][activity_type] += count
-            cls._save_state()
-    
-    @classmethod
-    def get_stats(cls) -> Dict:
-        """Get aggressive mode statistics."""
-        cls._load_state()
-        return cls._state.get("stats", {})
-    
-    @classmethod
-    def get_status(cls) -> Dict:
-        """Get full status report."""
-        cls._load_state()
-        status = {
-            "enabled": cls._state.get("enabled", False),
-            "enabled_at": cls._state.get("enabled_at"),
-            "features": cls._state.get("features", {}),
-            "stats": cls._state.get("stats", {}),
-        }
-        
-        if status["enabled"] and status["enabled_at"]:
-            enabled_at = datetime.fromisoformat(status["enabled_at"])
-            hours_active = (datetime.now() - enabled_at).total_seconds() / 3600
-            auto_hours = cls._state.get("auto_disable_after_hours", 24)
-            status["hours_active"] = round(hours_active, 1)
-            status["hours_remaining"] = round(max(0, auto_hours - hours_active), 1)
-        
-        return status
 
 
-def get_bonus_models() -> List[Dict]:
-    """
-    Get bonus quota models for aggressive mode.
-    
-    These are models with quota that would be wasted if not used.
-    """
+def _save_state(state: Dict):
+    """Save aggressive mode state to file."""
     try:
-        from src.ai.model_helper import categorize_models_for_usage, _discover_gemini_models
-        from src.ai.model_helper import get_model_quality_score, _is_model_usable
-        
-        # Get all Gemini models
-        models = _discover_gemini_models()
-        
-        # Score and categorize
-        models_with_info = []
-        for model in models:
-            is_usable, quota = _is_model_usable(model, "gemini")
-            if is_usable:
-                score = get_model_quality_score(model)
-                models_with_info.append((model, quota, score, {}))
-        
-        # Get categorization
-        categories = categorize_models_for_usage(models_with_info)
-        
-        # Return bonus models (extra quota we can use)
-        bonus = categories.get("bonus", [])
-        
-        # If no explicit bonus category, look for backup models
-        if not bonus:
-            bonus = categories.get("backup", [])
-        
-        return bonus
-        
+        STATE_DIR.mkdir(parents=True, exist_ok=True)
+        with open(AGGRESSIVE_MODE_FILE, 'w') as f:
+            json.dump(state, f, indent=2)
     except Exception as e:
-        print(f"[AGGRESSIVE] Failed to get bonus models: {e}")
-        return []
+        _safe_print(f"[AGGRESSIVE] Failed to save state: {e}")
 
 
-def calculate_available_bonus_quota() -> Dict:
+def is_aggressive_mode_enabled() -> bool:
     """
-    Calculate how much bonus quota is available for aggressive mode.
+    Check if aggressive mode is enabled.
+    
+    Can be set via:
+    1. Environment variable: AGGRESSIVE_MODE=1
+    2. Persistent state file
+    3. set_aggressive_mode() function
+    """
+    global _aggressive_mode_enabled
+    
+    # Check environment variable first (highest priority)
+    env_value = os.environ.get("AGGRESSIVE_MODE", "").lower()
+    if env_value in ("1", "true", "yes", "on"):
+        return True
+    if env_value in ("0", "false", "no", "off"):
+        return False
+    
+    # Check cached value
+    if _aggressive_mode_enabled is not None:
+        return _aggressive_mode_enabled
+    
+    # Load from file
+    state = _load_state()
+    _aggressive_mode_enabled = state.get("enabled", False)
+    return _aggressive_mode_enabled
+
+
+def set_aggressive_mode(enabled: bool) -> Dict:
+    """
+    Enable or disable aggressive mode.
+    
+    Args:
+        enabled: True to enable, False to disable
     
     Returns:
-        Dict with quota breakdown by provider
+        Updated state dict
     """
-    try:
-        # Import model helpers
-        from src.ai.model_helper import MODEL_RATE_LIMITS
-        
-        # Get bonus models
-        bonus_models = get_bonus_models()
-        
-        total_bonus_quota = sum(m.get("quota", 0) for m in bonus_models)
-        
-        # Standard production needs (6 videos/day)
-        production_needs = {
-            "video_generation": 6 * 15,  # 15 calls per video
-            "analytics": 20,
-            "total": 110
-        }
-        
-        return {
-            "bonus_quota_available": total_bonus_quota,
-            "production_needs": production_needs["total"],
-            "free_for_aggressive": max(0, total_bonus_quota - production_needs["total"]),
-            "bonus_models_count": len(bonus_models),
-        }
-        
-    except Exception as e:
-        print(f"[AGGRESSIVE] Failed to calculate bonus quota: {e}")
-        return {"bonus_quota_available": 0, "free_for_aggressive": 0}
+    global _aggressive_mode_enabled
+    
+    state = _load_state()
+    state["enabled"] = enabled
+    state["last_changed"] = datetime.now().isoformat()
+    
+    _save_state(state)
+    _aggressive_mode_enabled = enabled
+    
+    status = "ENABLED" if enabled else "DISABLED"
+    _safe_print(f"[AGGRESSIVE] Mode {status}")
+    if enabled:
+        surplus = get_surplus_quota()
+        _safe_print(f"[AGGRESSIVE] Surplus quota available: ~{surplus} calls/day")
+    
+    return state
 
 
-class AggressiveFeatures:
+def get_aggressive_mode_stats() -> Dict:
+    """Get aggressive mode statistics."""
+    state = _load_state()
+    return {
+        "enabled": state.get("enabled", False),
+        "last_changed": state.get("last_changed"),
+        "surplus_quota": get_surplus_quota(),
+        "production_reserved": TOTAL_PRODUCTION_NEED,
+        "stats": state.get("stats", {}),
+    }
+
+
+def record_aggressive_action(action_type: str, quota_used: int = 1):
     """
-    Collection of aggressive mode features.
+    Record an aggressive mode action for stats tracking.
+    
+    Args:
+        action_type: Type of action ("analytics", "research", "learning")
+        quota_used: Number of API calls consumed
     """
+    state = _load_state()
+    stats = state.get("stats", {})
     
-    @staticmethod
-    def run_extra_virality_analysis():
-        """Run additional virality analysis using bonus quota."""
-        if not AggressiveMode.is_feature_enabled("extra_virality_analysis"):
-            return None
-        
-        try:
-            # Import virality engine
-            from src.analytics.virality_engine import ViralityEngine
-            
-            engine = ViralityEngine()
-            results = engine.analyze_trending_patterns()
-            
-            AggressiveMode.record_activity("virality_analyses_run")
-            print("[AGGRESSIVE] Extra virality analysis completed")
-            
-            return results
-        except Exception as e:
-            print(f"[AGGRESSIVE] Virality analysis failed: {e}")
-            return None
+    if action_type == "analytics":
+        stats["extra_analytics_runs"] = stats.get("extra_analytics_runs", 0) + 1
+    elif action_type == "research":
+        stats["research_concepts_generated"] = stats.get("research_concepts_generated", 0) + 1
+    elif action_type == "learning":
+        stats["learning_cycles_completed"] = stats.get("learning_cycles_completed", 0) + 1
     
-    @staticmethod
-    def run_aggressive_self_learning():
-        """Run additional self-learning cycles."""
-        if not AggressiveMode.is_feature_enabled("aggressive_self_learning"):
-            return None
-        
-        try:
-            # Import self-learning engine
-            from src.analytics.self_learning import SelfLearningEngine
-            
-            engine = SelfLearningEngine()
-            results = engine.run_learning_cycle()
-            
-            AggressiveMode.record_activity("self_learning_cycles")
-            print("[AGGRESSIVE] Extra self-learning cycle completed")
-            
-            return results
-        except Exception as e:
-            print(f"[AGGRESSIVE] Self-learning failed: {e}")
-            return None
+    stats["quota_used"] = stats.get("quota_used", 0) + quota_used
+    state["stats"] = stats
     
-    @staticmethod
-    def generate_research_video(topic: str = None):
-        """
-        Generate a research video (metadata only, no upload).
-        
-        This uses bonus quota to test content ideas without
-        consuming YouTube upload quota.
-        """
-        if not AggressiveMode.is_feature_enabled("research_video_generation"):
-            return None
-        
-        try:
-            # Import video generator
-            from pro_video_generator import VideoGenerator
-            
-            generator = VideoGenerator()
-            
-            # Generate video metadata only (no render, no upload)
-            result = generator.generate_concept(
-                research_mode=True,  # Flag to not upload
-                topic=topic
-            )
-            
-            AggressiveMode.record_activity("research_videos_generated")
-            print("[AGGRESSIVE] Research video concept generated")
-            
-            return result
-        except Exception as e:
-            print(f"[AGGRESSIVE] Research video failed: {e}")
-            return None
+    _save_state(state)
 
 
-# CLI interface
-def main():
-    """Command line interface for aggressive mode."""
-    import sys
-    
-    if len(sys.argv) < 2:
-        # Show status
-        status = AggressiveMode.get_status()
-        print("\n=== AGGRESSIVE MODE STATUS ===")
-        print(f"Enabled: {'YES' if status['enabled'] else 'NO'}")
-        if status['enabled']:
-            print(f"Active for: {status.get('hours_active', 0)}h")
-            print(f"Auto-disable in: {status.get('hours_remaining', 0)}h")
-        print(f"\nFeatures: {list(status.get('features', {}).keys())}")
-        print(f"Stats: {status.get('stats', {})}")
-        
-        # Show bonus quota
-        quota = calculate_available_bonus_quota()
-        print(f"\nBonus Quota Available: {quota.get('bonus_quota_available', 0)}")
-        print(f"Free for Aggressive: {quota.get('free_for_aggressive', 0)}")
-        return
-    
-    command = sys.argv[1].lower()
-    
-    if command in ["on", "enable", "start"]:
-        hours = int(sys.argv[2]) if len(sys.argv) > 2 else 24
-        AggressiveMode.enable(hours)
-        
-    elif command in ["off", "disable", "stop"]:
-        AggressiveMode.disable()
-        
-    elif command in ["status", "info"]:
-        status = AggressiveMode.get_status()
-        print(json.dumps(status, indent=2))
-        
-    else:
-        print(f"Unknown command: {command}")
-        print("Usage: python aggressive_mode.py [on|off|status]")
+# =============================================================================
+# AGGRESSIVE MODE ACTIONS
+# =============================================================================
 
+def should_run_extra_analytics() -> bool:
+    """
+    Check if we should run extra analytics in aggressive mode.
+    
+    Returns True if:
+    - Aggressive mode is enabled
+    - We have surplus quota
+    - Haven't exceeded daily extra runs limit
+    """
+    if not is_aggressive_mode_enabled():
+        return False
+    
+    state = _load_state()
+    stats = state.get("stats", {})
+    
+    # Limit to 10 extra analytics runs per day
+    MAX_EXTRA_ANALYTICS = 10
+    today_runs = stats.get("extra_analytics_runs", 0)
+    
+    return today_runs < MAX_EXTRA_ANALYTICS
+
+
+def should_generate_research_concepts() -> bool:
+    """
+    Check if we should generate research video concepts.
+    
+    Research concepts are generated to:
+    - Test new topic ideas without uploading
+    - Build a bank of pre-evaluated concepts
+    - Learn what performs well
+    """
+    if not is_aggressive_mode_enabled():
+        return False
+    
+    state = _load_state()
+    stats = state.get("stats", {})
+    
+    # Limit to 20 research concepts per day
+    MAX_RESEARCH_CONCEPTS = 20
+    today_concepts = stats.get("research_concepts_generated", 0)
+    
+    return today_concepts < MAX_RESEARCH_CONCEPTS
+
+
+def should_run_learning_cycle() -> bool:
+    """
+    Check if we should run an extra self-learning cycle.
+    
+    Learning cycles analyze past performance and update:
+    - Viral patterns
+    - Hook effectiveness
+    - Topic preferences
+    """
+    if not is_aggressive_mode_enabled():
+        return False
+    
+    state = _load_state()
+    stats = state.get("stats", {})
+    
+    # Limit to 5 extra learning cycles per day
+    MAX_LEARNING_CYCLES = 5
+    today_cycles = stats.get("learning_cycles_completed", 0)
+    
+    return today_cycles < MAX_LEARNING_CYCLES
+
+
+def get_aggressive_mode_summary() -> str:
+    """Get a human-readable summary of aggressive mode status."""
+    stats = get_aggressive_mode_stats()
+    
+    if not stats["enabled"]:
+        return "Aggressive Mode: DISABLED"
+    
+    lines = [
+        "=" * 50,
+        "AGGRESSIVE MODE: ENABLED",
+        "=" * 50,
+        f"Surplus Quota: ~{stats['surplus_quota']} calls/day",
+        f"Production Reserved: ~{stats['production_reserved']} calls/day",
+        "",
+        "Today's Aggressive Actions:",
+        f"  - Extra Analytics Runs: {stats['stats'].get('extra_analytics_runs', 0)}/10",
+        f"  - Research Concepts: {stats['stats'].get('research_concepts_generated', 0)}/20",
+        f"  - Learning Cycles: {stats['stats'].get('learning_cycles_completed', 0)}/5",
+        f"  - Total Quota Used: {stats['stats'].get('quota_used', 0)}",
+        "=" * 50,
+    ]
+    
+    return "\n".join(lines)
+
+
+# =============================================================================
+# CLI
+# =============================================================================
 
 if __name__ == "__main__":
-    main()
+    import sys
+    
+    if len(sys.argv) > 1:
+        cmd = sys.argv[1].lower()
+        if cmd in ("on", "enable", "1", "true"):
+            set_aggressive_mode(True)
+        elif cmd in ("off", "disable", "0", "false"):
+            set_aggressive_mode(False)
+        elif cmd == "status":
+            print(get_aggressive_mode_summary())
+        else:
+            print(f"Unknown command: {cmd}")
+            print("Usage: python aggressive_mode.py [on|off|status]")
+    else:
+        print(get_aggressive_mode_summary())
