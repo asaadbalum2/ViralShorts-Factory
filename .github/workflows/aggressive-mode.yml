@@ -111,11 +111,42 @@ jobs:
           HOOK_WORDS_FILE = Path("data/persistent/hook_word_performance.json")
           AGGRESSIVE_FILE = Path("data/persistent/aggressive_mode.json")
 
+          def get_best_groq_model():
+              """DYNAMIC: Discover and select best available Groq model."""
+              if not GROQ_API_KEY:
+                  return "llama-3.3-70b-versatile"  # Fallback only
+              try:
+                  response = requests.get(
+                      "https://api.groq.com/openai/v1/models",
+                      headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+                      timeout=10
+                  )
+                  if response.status_code == 200:
+                      models = response.json().get("data", [])
+                      # Prefer larger llama models, then mixtral
+                      for model in models:
+                          model_id = model.get("id", "")
+                          if "llama" in model_id and "70b" in model_id:
+                              return model_id
+                      for model in models:
+                          model_id = model.get("id", "")
+                          if "mixtral" in model_id:
+                              return model_id
+                      # Return first active model
+                      for model in models:
+                          if model.get("active", True):
+                              return model.get("id")
+              except Exception as e:
+                  safe_print(f"  [!] Model discovery error: {e}")
+              return "llama-3.3-70b-versatile"  # Fallback
+
           def call_groq(prompt, max_tokens=1500):
-              """Call Groq API for analysis."""
+              """Call Groq API for analysis with DYNAMIC model selection."""
               if not GROQ_API_KEY:
                   return None
               try:
+                  model = get_best_groq_model()
+                  safe_print(f"  [GROQ] Using model: {model}")
                   response = requests.post(
                       "https://api.groq.com/openai/v1/chat/completions",
                       headers={
@@ -123,7 +154,7 @@ jobs:
                           "Content-Type": "application/json"
                       },
                       json={
-                          "model": "llama-3.3-70b-versatile",
+                          "model": model,
                           "messages": [{"role": "user", "content": prompt}],
                           "temperature": 0.7,
                           "max_tokens": max_tokens
@@ -545,11 +576,39 @@ jobs:
                   safe_print(f"[!] Search error: {e}")
               return []
 
+          def get_best_groq_model():
+              """DYNAMIC: Discover and select best available Groq model."""
+              if not GROQ_API_KEY:
+                  return "llama-3.3-70b-versatile"
+              try:
+                  response = requests.get(
+                      "https://api.groq.com/openai/v1/models",
+                      headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+                      timeout=10
+                  )
+                  if response.status_code == 200:
+                      models = response.json().get("data", [])
+                      for model in models:
+                          model_id = model.get("id", "")
+                          if "llama" in model_id and "70b" in model_id:
+                              return model_id
+                      for model in models:
+                          model_id = model.get("id", "")
+                          if "mixtral" in model_id:
+                              return model_id
+                      for model in models:
+                          if model.get("active", True):
+                              return model.get("id")
+              except:
+                  pass
+              return "llama-3.3-70b-versatile"
+
           def call_groq(prompt, max_tokens=1500):
-              """Call Groq for analysis."""
+              """Call Groq for analysis with DYNAMIC model."""
               if not GROQ_API_KEY:
                   return None
               try:
+                  model = get_best_groq_model()
                   response = requests.post(
                       "https://api.groq.com/openai/v1/chat/completions",
                       headers={
@@ -557,7 +616,7 @@ jobs:
                           "Content-Type": "application/json"
                       },
                       json={
-                          "model": "llama-3.3-70b-versatile",
+                          "model": model,
                           "messages": [{"role": "user", "content": prompt}],
                           "temperature": 0.7,
                           "max_tokens": max_tokens
@@ -737,10 +796,36 @@ jobs:
           RESEARCH_CONCEPTS_FILE = Path("data/persistent/research_concepts.json")
           AGGRESSIVE_FILE = Path("data/persistent/aggressive_mode.json")
 
+          def get_best_groq_model():
+              """DYNAMIC model selection."""
+              if not GROQ_API_KEY:
+                  return "llama-3.3-70b-versatile"
+              try:
+                  response = requests.get(
+                      "https://api.groq.com/openai/v1/models",
+                      headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+                      timeout=10
+                  )
+                  if response.status_code == 200:
+                      models = response.json().get("data", [])
+                      for model in models:
+                          if "llama" in model.get("id", "") and "70b" in model.get("id", ""):
+                              return model["id"]
+                      for model in models:
+                          if "mixtral" in model.get("id", ""):
+                              return model["id"]
+                      for model in models:
+                          if model.get("active", True):
+                              return model.get("id")
+              except:
+                  pass
+              return "llama-3.3-70b-versatile"
+
           def call_groq(prompt, max_tokens=2000):
               if not GROQ_API_KEY:
                   return None
               try:
+                  model = get_best_groq_model()
                   response = requests.post(
                       "https://api.groq.com/openai/v1/chat/completions",
                       headers={
@@ -748,7 +833,7 @@ jobs:
                           "Content-Type": "application/json"
                       },
                       json={
-                          "model": "llama-3.3-70b-versatile",
+                          "model": model,
                           "messages": [{"role": "user", "content": prompt}],
                           "temperature": 0.8,
                           "max_tokens": max_tokens

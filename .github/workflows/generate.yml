@@ -92,12 +92,49 @@ jobs:
           fi
           echo "✓ Proceeding with video generation (Python handles provider selection)"
 
-      - name: Random delay for stealth (0-45 min)
+      - name: Smart timing delay (uses learned best posting hours)
         if: github.event.inputs.skip_delay != 'true'
         run: |
-          DELAY=$((RANDOM % 2700))
-          echo "Waiting $DELAY seconds for randomization..."
-          sleep $DELAY
+          # v17.9.38: SMART TIMING - uses learned best_posting_hours_utc
+          # Base random delay (0-30 min) for stealth
+          BASE_DELAY=$((RANDOM % 1800))
+          
+          # Check if we have learned posting hours from aggressive mode
+          VARIETY_FILE="data/persistent/variety_state.json"
+          CURRENT_HOUR=$(date -u +%H | sed 's/^0//')
+          
+          # Download variety_state to check best hours
+          ARTIFACT_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/artifacts?name=persistent-state&per_page=1" \
+            | jq -r '.artifacts[0].id' 2>/dev/null || echo "null")
+          
+          OPTIMAL_DELAY=0
+          if [ "$ARTIFACT_ID" != "null" ] && [ -n "$ARTIFACT_ID" ]; then
+            curl -sL -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID/zip" \
+              -o /tmp/state_check.zip 2>/dev/null
+            unzip -o /tmp/state_check.zip variety_state.json -d /tmp/ 2>/dev/null || true
+            
+            if [ -f "/tmp/variety_state.json" ]; then
+              BEST_HOURS=$(cat /tmp/variety_state.json | grep -o '"best_posting_hours_utc":\s*\[[^]]*\]' | grep -o '\[.*\]' 2>/dev/null || echo "[]")
+              echo "[SMART] Best posting hours: $BEST_HOURS"
+              echo "[SMART] Current UTC hour: $CURRENT_HOUR"
+              
+              # Check if current hour is in best hours
+              if echo "$BEST_HOURS" | grep -q "$CURRENT_HOUR"; then
+                echo "[SMART] ✓ Currently in OPTIMAL posting window!"
+                OPTIMAL_DELAY=0  # No extra delay needed
+              else
+                # Add small delay to move towards better timing
+                OPTIMAL_DELAY=$((RANDOM % 900))  # 0-15 min extra
+                echo "[SMART] Not in optimal window - adding ${OPTIMAL_DELAY}s to shift timing"
+              fi
+            fi
+          fi
+          
+          TOTAL_DELAY=$((BASE_DELAY + OPTIMAL_DELAY))
+          echo "Total delay: ${TOTAL_DELAY}s (base: ${BASE_DELAY}s, timing optimization: ${OPTIMAL_DELAY}s)"
+          sleep $TOTAL_DELAY
           echo "Starting execution at $(date -u)"
 
       - name: Checkout code

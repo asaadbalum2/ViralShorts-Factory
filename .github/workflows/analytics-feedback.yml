@@ -151,6 +151,31 @@ jobs:
               try: print(msg)
               except: print(msg.encode('ascii', 'ignore').decode())
 
+          def get_best_groq_model():
+              """DYNAMIC: Discover and select best available Groq model."""
+              if not GROQ_API_KEY:
+                  return "llama-3.3-70b-versatile"
+              try:
+                  response = requests.get(
+                      "https://api.groq.com/openai/v1/models",
+                      headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+                      timeout=10
+                  )
+                  if response.status_code == 200:
+                      models = response.json().get("data", [])
+                      for model in models:
+                          if "llama" in model.get("id", "") and "70b" in model.get("id", ""):
+                              return model["id"]
+                      for model in models:
+                          if "mixtral" in model.get("id", ""):
+                              return model["id"]
+                      for model in models:
+                          if model.get("active", True):
+                              return model.get("id")
+              except:
+                  pass
+              return "llama-3.3-70b-versatile"
+
           def get_access_token():
               """Get fresh YouTube access token."""
               if not all([YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN]):
@@ -399,6 +424,8 @@ jobs:
           Be SPECIFIC and ACTIONABLE based on ACTUAL numbers. JSON ONLY."""
 
               try:
+                  model = get_best_groq_model()
+                  safe_print(f"[AI] Using Groq model: {model}")
                   response = requests.post(
                       "https://api.groq.com/openai/v1/chat/completions",
                       headers={
@@ -406,7 +433,7 @@ jobs:
                           "Content-Type": "application/json"
                       },
                       json={
-                          "model": "llama-3.3-70b-versatile",
+                          "model": model,
                           "messages": [{"role": "user", "content": prompt}],
                           "temperature": 0.7,
                           "max_tokens": 800
