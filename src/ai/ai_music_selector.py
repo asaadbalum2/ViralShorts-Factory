@@ -125,6 +125,10 @@ JSON ONLY."""
         gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
         if gemini_key:
             try:
+                import time
+                # v17.9.36: Add rate limit delay (4.4s = 15 RPM with 10% margin)
+                time.sleep(4.4)
+                
                 # DYNAMIC MODEL SELECTION - no hardcoded model names
                 gemini_model = get_gemini_model_for_rest_api(gemini_key)
                 response = requests.post(

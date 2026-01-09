@@ -19,6 +19,18 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+# v17.9.36: Import centralized rate-limited AI caller
+try:
+    from src.ai.smart_ai_caller import smart_call_ai
+    SMART_CALLER_AVAILABLE = True
+except ImportError:
+    try:
+        from smart_ai_caller import smart_call_ai
+        SMART_CALLER_AVAILABLE = True
+    except ImportError:
+        SMART_CALLER_AVAILABLE = False
+        smart_call_ai = None
+
 STATE_DIR = Path("./data/persistent")
 STATE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -332,7 +344,24 @@ class GodTierContentGenerator:
             return None
     
     def _call_gemini(self, prompt: str) -> Optional[Dict]:
-        """Call Gemini API."""
+        """
+        Call Gemini API with RATE LIMITING.
+        
+        v17.9.36: Now uses centralized smart_call_ai to respect rate limits
+        and avoid 429 errors.
+        """
+        # v17.9.36: Use centralized rate-limited caller if available
+        if SMART_CALLER_AVAILABLE and smart_call_ai:
+            try:
+                result = smart_call_ai(prompt, hint="creative", max_tokens=1500)
+                if result:
+                    return self._parse_json(result)
+                return None
+            except Exception as e:
+                safe_print(f"[!] Smart AI call failed: {e}")
+                return None
+        
+        # Fallback to direct call (with manual delay)
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
             return None
@@ -340,8 +369,11 @@ class GodTierContentGenerator:
         try:
             import requests
             
+            # v17.9.36: Add rate limit delay (4.4s = 15 RPM with 10% margin)
+            time.sleep(4.4)
+            
             response = requests.post(
-                f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={api_key}",
+                f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}",
                 headers={"Content-Type": "application/json"},
                 json={
                     "contents": [{"parts": [{"text": prompt}]}],
@@ -353,6 +385,8 @@ class GodTierContentGenerator:
             if response.status_code == 200:
                 text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
                 return self._parse_json(text)
+            elif response.status_code == 429:
+                safe_print("[!] Gemini 429 - rate limited (fallback mode)")
             return None
         except Exception as e:
             safe_print(f"[!] Gemini call failed: {e}")
