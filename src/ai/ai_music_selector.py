@@ -126,8 +126,13 @@ JSON ONLY."""
         if gemini_key:
             try:
                 import time
-                # v17.9.36: Add rate limit delay (4.4s = 15 RPM with 10% margin)
-                time.sleep(4.4)
+                # v17.9.37: DYNAMIC rate limit delay
+                try:
+                    from src.ai.model_helper import get_smart_delay
+                    delay = get_smart_delay(gemini_model, "gemini")
+                except ImportError:
+                    delay = 4.4  # Fallback
+                time.sleep(delay)
                 
                 # DYNAMIC MODEL SELECTION - no hardcoded model names
                 gemini_model = get_gemini_model_for_rest_api(gemini_key)
