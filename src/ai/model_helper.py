@@ -1167,27 +1167,31 @@ def get_model_for_task(task_type: str) -> str:
 
 # Model-specific rate limits (discovered from API 429 responses and documentation)
 # Format: {model_pattern: {req_per_min, delay_seconds, daily_quota}}
+# NOTE: All delays include 10% safety margin (e.g., 12s base → 13.2s actual)
+RATE_LIMIT_MARGIN = 1.10  # 10% safety margin
+
 MODEL_RATE_LIMITS = {
     # Gemini models - FREE tier limits (very restrictive!)
-    "gemini-2.5-flash": {"req_per_min": 5, "delay": 12.0, "daily_quota": 500, "throughput": "low"},
-    "gemini-2.5-pro": {"req_per_min": 2, "delay": 30.0, "daily_quota": 50, "throughput": "low"},
-    "gemini-2.0-flash-exp": {"req_per_min": 5, "delay": 12.0, "daily_quota": 50, "throughput": "low"},
-    "gemini-2.0-flash": {"req_per_min": 10, "delay": 6.0, "daily_quota": 500, "throughput": "medium"},
-    "gemini-1.5-flash": {"req_per_min": 15, "delay": 4.0, "daily_quota": 1500, "throughput": "high"},  # If available
-    "gemini-1.5-pro": {"req_per_min": 5, "delay": 12.0, "daily_quota": 50, "throughput": "low"},
+    # delay = (60 / req_per_min) * 1.10 for safety
+    "gemini-2.5-flash": {"req_per_min": 5, "delay": 13.2, "daily_quota": 500, "throughput": "low"},      # 12s + 10%
+    "gemini-2.5-pro": {"req_per_min": 2, "delay": 33.0, "daily_quota": 50, "throughput": "low"},         # 30s + 10%
+    "gemini-2.0-flash-exp": {"req_per_min": 5, "delay": 13.2, "daily_quota": 50, "throughput": "low"},   # 12s + 10%
+    "gemini-2.0-flash": {"req_per_min": 10, "delay": 6.6, "daily_quota": 500, "throughput": "medium"},   # 6s + 10%
+    "gemini-1.5-flash": {"req_per_min": 15, "delay": 4.4, "daily_quota": 1500, "throughput": "high"},    # 4s + 10%
+    "gemini-1.5-pro": {"req_per_min": 5, "delay": 13.2, "daily_quota": 50, "throughput": "low"},         # 12s + 10%
     
-    # Groq models - generous rate limits
-    "llama-3.3-70b-versatile": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
-    "llama-3.1-70b-versatile": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
-    "llama-3.1-8b-instant": {"req_per_min": 60, "delay": 1.0, "daily_quota": 500, "throughput": "high"},
-    "mixtral-8x7b-32768": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
-    "gemma-7b-it": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
+    # Groq models - generous rate limits (still apply 10% margin)
+    "llama-3.3-70b-versatile": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},  # 2s + 10%
+    "llama-3.1-70b-versatile": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
+    "llama-3.1-8b-instant": {"req_per_min": 60, "delay": 1.1, "daily_quota": 500, "throughput": "high"},     # 1s + 10%
+    "mixtral-8x7b-32768": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
+    "gemma-7b-it": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
     
-    # Default fallbacks by provider
-    "_gemini_default": {"req_per_min": 5, "delay": 12.0, "daily_quota": 100, "throughput": "low"},
-    "_groq_default": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
-    "_openrouter_default": {"req_per_min": 20, "delay": 3.0, "daily_quota": 1000, "throughput": "medium"},
-    "_huggingface_default": {"req_per_min": 10, "delay": 6.0, "daily_quota": 100, "throughput": "medium"},
+    # Default fallbacks by provider (with 10% margin)
+    "_gemini_default": {"req_per_min": 5, "delay": 13.2, "daily_quota": 100, "throughput": "low"},
+    "_groq_default": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
+    "_openrouter_default": {"req_per_min": 20, "delay": 3.3, "daily_quota": 1000, "throughput": "medium"},
+    "_huggingface_default": {"req_per_min": 10, "delay": 6.6, "daily_quota": 100, "throughput": "medium"},
 }
 
 # Cache for learned rate limits from 429 responses

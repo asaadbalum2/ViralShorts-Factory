@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "enabled_at": "2026-01-09T16:47:43.132286",
+  "disabled_at": null,
+  "auto_disable_after_hours": 24,
+  "features": {
+    "extra_virality_analysis": true,
+    "aggressive_self_learning": true,
+    "research_video_generation": true,
+    "bonus_quota_usage": true,
+    "frequent_competitor_analysis": true
+  },
+  "stats": {
+    "extra_api_calls_made": 0,
+    "research_videos_generated": 0,
+    "virality_analyses_run": 0,
+    "self_learning_cycles": 0
+  }
+}
