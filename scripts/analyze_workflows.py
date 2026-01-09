@@ -363,13 +363,17 @@ def download_persistent_data() -> Dict[str, PersistentDataAnalysis]:
                         analysis.health_status = "healthy" if data.get("last_feedback") else "stale"
                         
                     elif file_name == "viral_patterns.json":
+                        # v17.9.14: Check multiple possible field names for last update
+                        last_updated = data.get("last_updated") or data.get("last_performance_update") or data.get("last_ai_update")
                         analysis.key_fields = {
-                            "best_patterns_count": len(data.get("our_best_patterns", [])),
-                            "key_insight": data.get("key_insight", "N/A")[:50] if data.get("key_insight") else "N/A",
+                            "title_patterns": len(data.get("title_patterns", [])),
+                            "hook_patterns": len(data.get("hook_patterns", [])),
+                            "best_patterns": len(data.get("our_best_patterns", [])),
                             "optimal_duration": data.get("optimal_duration"),
-                            "last_update": data.get("last_performance_update", "N/A"),
+                            "last_update": last_updated or "N/A",
+                            "ai_generated": data.get("ai_generated", False),
                         }
-                        analysis.health_status = "healthy" if data.get("last_performance_update") else "stale"
+                        analysis.health_status = "healthy" if last_updated else "stale"
                         
                     elif file_name == "analytics_state.json":
                         analysis.key_fields = {
@@ -660,19 +664,34 @@ def analyze_video_generator(log: str, run: WorkflowRun) -> WorkflowAnalysisResul
     
     # Check persistent data read - what files were read
     persistent_read_files = []
-    if "Restored patterns from artifact" in log or "[OK] Restored" in log:
+    
+    # v17.9.14: Fix false positive - check for ACTUAL file extraction, not script display
+    # The log shows "inflating:" when files are actually extracted from the artifact
+    inflated_files = re.findall(r'inflating:\s*data/persistent/([^\s]+)', log)
+    if inflated_files:
+        result.persistent_read_success = True
+        persistent_read_files.append(f"persistent-state ({len(inflated_files)} files)")
+        for f in inflated_files[:5]:  # Show first 5
+            if f.endswith('.json'):
+                persistent_read_files.append(f)
+    elif "Restored patterns from artifact" in log and "[36;1m" not in log.split("Restored")[0][-20:]:
+        # Only count as restored if it's actual output, not shell script display
         result.persistent_read_success = True
         persistent_read_files.append("persistent-state (artifact)")
-    if "variety_state" in log:
+    
+    if "variety_state" in log and "variety_state.json" not in persistent_read_files:
         persistent_read_files.append("variety_state.json")
-    if "viral_patterns" in log:
+    if "viral_patterns" in log and "viral_patterns.json" not in persistent_read_files:
         persistent_read_files.append("viral_patterns.json")
-    if "upload_state" in log:
+    if "upload_state" in log and "upload_state.json" not in persistent_read_files:
         persistent_read_files.append("upload_state.json")
     
-    if "No previous state found" in log:
-        result.persistent_read_success = True  # Valid - fresh start
-        result.warnings.append("Fresh state (no previous persistent data)")
+    # Only mark as fresh start if NO files were actually inflated
+    if not inflated_files and "No previous state found" in log:
+        # Check it's not just script display by looking for actual execution (no color codes)
+        if re.search(r'^\[INFO\] No previous state found', log, re.MULTILINE):
+            result.persistent_read_success = True  # Valid - fresh start
+            result.warnings.append("Fresh state (no previous persistent data)")
     
     result.key_metrics["persistent_files_read"] = persistent_read_files
     
@@ -1317,9 +1336,14 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
             if analysis.health_status == "corrupted":
                 hidden_issues.append(f"Corrupted file: {fname} - JSON parse error")
     
-    # Issue 5: High rate limit frequency
-    if len(rate_limited) > 3:
-        hidden_issues.append(f"Frequent rate limits: {len(rate_limited)} events - consider reducing API call frequency")
+    # Issue 5: High rate limit frequency - but only if causing failures
+    # Rate limits that fall back to other providers are expected behavior
+    failed_due_to_rate_limit = sum(1 for r in results if not r.passed and any(q.error_429 for q in r.quota_usage))
+    if failed_due_to_rate_limit > 0:
+        hidden_issues.append(f"Rate limit failures: {failed_due_to_rate_limit} runs FAILED due to 429 errors")
+    elif len(rate_limited) > len(generator_results):
+        # Only warn if rate limits happen more than once per run on average
+        hidden_issues.append(f"Note: {len(rate_limited)} rate limit hits (fallback to Groq worked)")
     
     # Issue 6: Low video generation success rate
     if generator_results:
