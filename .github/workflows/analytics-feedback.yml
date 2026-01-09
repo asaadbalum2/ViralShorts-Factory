@@ -11,10 +11,10 @@ name: Weekly Analytics Feedback - Learn from Our Performance (v10.0)
 # Fully autonomous - no human intervention needed!
 
 on:
-  # v17.5.2: Auto-skip if quota exhausted (no manual enable/disable needed)
-  # Twice weekly: Sunday + Wednesday at 2 AM UTC (faster learning)
+  # v17.9.39: DAILY analytics for fast learning (was 2x/week)
+  # We have 17,000 daily quota - use it for learning!
   schedule:
-    - cron: '0 2 * * 0,3'
+    - cron: '0 2 * * *'  # Every day at 2 AM UTC
   
   # Manual trigger for testing
   workflow_dispatch:

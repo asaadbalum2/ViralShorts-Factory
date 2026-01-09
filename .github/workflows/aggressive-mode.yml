@@ -38,7 +38,7 @@ env:
 jobs:
   aggressive-learning:
     runs-on: ubuntu-latest
-    timeout-minutes: 45  # Longer for deep analysis
+    timeout-minutes: 60  # v17.9.39: Extended for intensive learning
 
     steps:
       - name: Checkout Repository
@@ -357,6 +357,68 @@ jobs:
                           safe_print(f"  [OK] Extracted {len(analysis.get('hook_templates', []))} hook templates")
                   except Exception as e:
                       safe_print(f"  [!] Parse error: {e}")
+
+          # =====================================================================
+          # INTENSIVE ITERATION: Multiple AI perspectives (v17.9.39)
+          # =====================================================================
+          ITERATION_COUNT = 5  # Run 5 iterations per cycle = 5x more learning
+          
+          for iteration in range(ITERATION_COUNT):
+              safe_print(f"\n[ITERATION {iteration+1}/{ITERATION_COUNT}] Multi-perspective analysis...")
+              
+              perspectives = [
+                  "viral video psychologist", "YouTube algorithm expert", 
+                  "attention economy researcher", "scroll-stopping specialist",
+                  "Gen-Z content analyst"
+              ]
+              perspective = perspectives[iteration % len(perspectives)]
+              
+              if videos:
+                  prompt = f"""You are a {perspective}. 
+                  
+          Analyze these videos from YOUR unique perspective:
+          {json.dumps([{"title": v["title"], "views": v.get("views", 0)} for v in videos[:15]], indent=2)}
+
+          What UNIQUE insights do you see that others miss?
+          What would you do MORE of? What would you AVOID?
+          What's the ONE thing that could 10x our views?
+
+          Return JSON:
+          {{
+              "unique_insight": "Your key observation",
+              "do_more": ["action 1", "action 2", "action 3"],
+              "avoid": ["thing to stop", "thing to stop"],
+              "10x_opportunity": "The biggest lever"
+          }}
+
+          JSON ONLY:"""
+
+                  time.sleep(2.2)
+                  result = call_groq(prompt)
+                  
+                  if result:
+                      try:
+                          match = re.search(r'\{[\s\S]*\}', result)
+                          if match:
+                              analysis = json.loads(match.group())
+                              
+                              # Aggregate do_more and avoid lists
+                              if analysis.get("do_more"):
+                                  existing = variety_data.get("do_more", [])
+                                  variety_data["do_more"] = list(set(existing + analysis["do_more"]))[:20]
+                              
+                              if analysis.get("avoid"):
+                                  existing = variety_data.get("avoid", [])
+                                  variety_data["avoid"] = list(set(existing + analysis["avoid"]))[:20]
+                              
+                              if analysis.get("10x_opportunity"):
+                                  opportunities = viral_patterns.get("10x_opportunities", [])
+                                  opportunities.append(analysis["10x_opportunity"])
+                                  viral_patterns["10x_opportunities"] = opportunities[-10:]  # Keep last 10
+                              
+                              safe_print(f"    [{perspective}] Added insights")
+                      except:
+                          pass
 
           # =====================================================================
           # DEEP ANALYSIS CYCLE 3: Category Performance Deep Dive
@@ -681,18 +743,23 @@ jobs:
           # =====================================================================
           # RESEARCH: Search for viral Shorts in our niches
           # =====================================================================
+          # v17.9.39: INTENSIVE SEARCH - Use more quota for deeper learning
           search_queries = [
               "psychology facts shorts viral",
               "money saving tips shorts",
               "life hacks shorts 2024",
               "brain tricks facts shorts",
               "viral facts shorts AI",
-              "motivational shorts viral"
+              "motivational shorts viral",
+              "scary facts shorts",
+              "rich people secrets shorts",
+              "dark psychology tricks shorts",
+              "future predictions shorts"
           ]
 
           all_viral_videos = []
           
-          for query in search_queries[:3]:  # Limit to 3 searches to conserve quota
+          for query in search_queries:  # v17.9.39: ALL searches for maximum learning
               safe_print(f"\n[SEARCH] '{query}'...")
               results = search_viral_shorts(access_token, query, max_results=5)
               all_viral_videos.extend(results)
