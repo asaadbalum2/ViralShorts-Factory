@@ -169,13 +169,39 @@ jobs:
                   safe_print(f"  [!] Groq exception: {e}")
               return None
 
+          def get_best_gemini_model():
+              """DYNAMIC: Discover and select best available Gemini model."""
+              if not GEMINI_API_KEY:
+                  return "gemini-1.5-flash"
+              try:
+                  response = requests.get(
+                      f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}",
+                      timeout=10
+                  )
+                  if response.status_code == 200:
+                      models = response.json().get("models", [])
+                      # Prefer flash for speed, then pro
+                      for model in models:
+                          name = model.get("name", "").replace("models/", "")
+                          if "flash" in name and "gemini" in name:
+                              return name
+                      for model in models:
+                          name = model.get("name", "").replace("models/", "")
+                          if "gemini" in name:
+                              return name
+              except:
+                  pass
+              return "gemini-1.5-flash"
+
           def call_gemini(prompt, max_tokens=1500):
-              """Call Gemini API for analysis."""
+              """Call Gemini API with DYNAMIC model selection."""
               if not GEMINI_API_KEY:
                   return None
               try:
+                  model = get_best_gemini_model()
+                  safe_print(f"  [GEMINI] Using model: {model}")
                   response = requests.post(
-                      f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}",
+                      f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}",
                       headers={"Content-Type": "application/json"},
                       json={
                           "contents": [{"parts": [{"text": prompt}]}],

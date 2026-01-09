@@ -118,7 +118,7 @@ class AICTAGenerator:
     def _generate_with_ai(self, topic: str, category: str,
                          style: str) -> Optional[str]:
         """
-        v17.9.17: HYBRID GOD-LIKE-GENERIC PROMPT with dynamic context injection.
+        v17.9.17: HYBRID MASTER-GENERIC PROMPT with dynamic context injection.
         
         Architecture:
         1. Generic prompt (works standalone without any data)

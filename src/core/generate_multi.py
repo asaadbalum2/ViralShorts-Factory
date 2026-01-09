@@ -65,9 +65,9 @@ except ImportError:
 # Import master prompts
 try:
     from master_prompts import MasterContentGenerator, strip_emojis as strip_emojis_master
-    HAS_GOD_TIER = True
+    HAS_MASTER = True
 except ImportError:
-    HAS_GOD_TIER = False
+    HAS_MASTER = False
 
 # Import DYNAMIC video generator (per-phrase B-roll!)
 try:
@@ -608,11 +608,11 @@ async def main():
     
     generated = 0
     
-    # AI MODE - Use GOD-TIER prompts for best results
+    # AI MODE - Use MASTER prompts for best results
     if args.type == "ai":
-        print("\n🧠 GOD-TIER AI Mode: Maximum viral potential...")
+        print("\n🧠 MASTER AI Mode: Maximum viral potential...")
         
-        if HAS_GOD_TIER:
+        if HAS_MASTER:
             gen = MasterContentGenerator()
             # Initialize client
             import os as os_module

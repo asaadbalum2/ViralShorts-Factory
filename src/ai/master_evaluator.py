@@ -45,10 +45,10 @@ def safe_print(msg: str):
 
 
 # =============================================================================
-# GOD-TIER MASTER EVALUATION PROMPT
+# MASTER MASTER EVALUATION PROMPT
 # =============================================================================
 
-GOD_TIER_EVALUATION_PROMPT = """You are the ULTIMATE VIRAL VIDEO QUALITY EXPERT.
+MASTER_EVALUATION_PROMPT = """You are the ULTIMATE VIRAL VIDEO QUALITY EXPERT.
 
 Your job: Evaluate this video content with BRUTAL HONESTY and provide a score from 1-10.
 You have seen millions of viral videos. You know EXACTLY what makes content go viral.
@@ -348,7 +348,7 @@ class MasterEvaluator:
         """Get AI evaluation using the master prompt."""
         try:
             # Build the prompt
-            prompt = GOD_TIER_EVALUATION_PROMPT.format(
+            prompt = MASTER_EVALUATION_PROMPT.format(
                 hook=hook,
                 phrases="\n".join([f"- {p}" for p in phrases]),
                 cta=cta,
@@ -563,7 +563,7 @@ def get_tips_for_10() -> List[str]:
 
 if __name__ == "__main__":
     safe_print("=" * 60)
-    safe_print("GOD-TIER EVALUATOR TEST")
+    safe_print("MASTER EVALUATOR TEST")
     safe_print("=" * 60)
     
     evaluator = get_master_evaluator()

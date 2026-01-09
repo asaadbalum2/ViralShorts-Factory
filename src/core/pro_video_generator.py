@@ -392,9 +392,9 @@ except ImportError:
 # v17.9.7: Master Master Evaluator - THE definitive quality scoring system
 try:
     from master_evaluator import MasterEvaluator, get_master_evaluator
-    GOD_TIER_EVALUATOR_AVAILABLE = True
+    MASTER_EVALUATOR_AVAILABLE = True
 except ImportError:
-    GOD_TIER_EVALUATOR_AVAILABLE = False
+    MASTER_EVALUATOR_AVAILABLE = False
 
 try:
     from content_optimizer import ContentOptimizer
@@ -1991,8 +1991,8 @@ Return ONLY the improved hook, nothing else."""
             except Exception as e:
                 safe_print(f"   [!] Virality calculation skipped: {e}")
         
-        # 5. v17.9.7: GOD-TIER EVALUATOR - The ULTIMATE quality scoring system
-        if GOD_TIER_EVALUATOR_AVAILABLE and phrases:
+        # 5. v17.9.7: MASTER EVALUATOR - The ULTIMATE quality scoring system
+        if MASTER_EVALUATOR_AVAILABLE and phrases:
             try:
                 evaluator = get_master_evaluator()
                 master_content = {

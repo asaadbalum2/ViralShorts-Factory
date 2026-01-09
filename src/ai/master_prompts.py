@@ -71,7 +71,7 @@ def strip_emojis(text: str) -> str:
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Viral Topic Generation
+# MASTER PROMPT: Viral Topic Generation
 # =============================================================================
 
 VIRAL_TOPIC_PROMPT = """You are MrBeast's head content strategist combined with Robert Cialdini (psychology), 
@@ -227,7 +227,7 @@ Return a JSON array of {count} objects. No markdown, no emojis, no explanations 
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Content Quality Evaluation
+# MASTER PROMPT: Content Quality Evaluation
 # =============================================================================
 
 CONTENT_EVALUATION_PROMPT = """You are a YouTube Shorts algorithm expert who has analyzed 10 million viral videos. You understand exactly what makes content spread.
@@ -274,7 +274,7 @@ Return JSON:
 
 
 # =============================================================================
-# GOD-TIER PROMPT: B-roll Keyword Extraction
+# MASTER PROMPT: B-roll Keyword Extraction
 # =============================================================================
 
 BROLL_KEYWORDS_PROMPT = """You are a professional video editor who has worked on Netflix documentaries. You understand visual storytelling.
@@ -309,7 +309,7 @@ Return EXACTLY 5 specific, searchable B-roll descriptions:
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Voiceover Script
+# MASTER PROMPT: Voiceover Script
 # =============================================================================
 
 VOICEOVER_PROMPT = """You are Morgan Freeman's dialogue coach + a TikTok creator with 50M followers.
@@ -390,7 +390,7 @@ Return JSON:
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Platform-Specific Optimization (#6)
+# MASTER PROMPT: Platform-Specific Optimization (#6)
 # =============================================================================
 
 PLATFORM_OPTIMIZATION_PROMPT = """You are a MULTI-PLATFORM STRATEGIST who knows the differences between platforms.
@@ -433,7 +433,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Contextual Event Awareness (#15)
+# MASTER PROMPT: Contextual Event Awareness (#15)
 # =============================================================================
 
 CONTEXTUAL_AWARENESS_PROMPT = """You are a CULTURAL SENSITIVITY and TIMING expert.
@@ -471,7 +471,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Cross-Promotion Network (#19)
+# MASTER PROMPT: Cross-Promotion Network (#19)
 # =============================================================================
 
 CROSS_PROMOTION_PROMPT = """You are a CONTENT NETWORK STRATEGIST.
@@ -501,7 +501,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Failed Content Recycling (#23)
+# MASTER PROMPT: Failed Content Recycling (#23)
 # =============================================================================
 
 CONTENT_RECYCLING_PROMPT = """You are a CONTENT RESURRECTION SPECIALIST.
@@ -538,7 +538,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Seasonal Content Calendar (#27 - v9.5)
+# MASTER PROMPT: Seasonal Content Calendar (#27 - v9.5)
 # =============================================================================
 
 SEASONAL_CALENDAR_PROMPT = """You are a CONTENT CALENDAR strategist for viral short-form video.
@@ -592,7 +592,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Series Detection & Continuation (#33 - v9.5)
+# MASTER PROMPT: Series Detection & Continuation (#33 - v9.5)
 # =============================================================================
 
 SERIES_CONTINUATION_PROMPT = """You are a CONTENT STRATEGIST specializing in SERIES and FRANCHISES.
@@ -638,7 +638,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Engagement Reply Templates (#34 - v9.5)
+# MASTER PROMPT: Engagement Reply Templates (#34 - v9.5)
 # =============================================================================
 
 ENGAGEMENT_REPLY_PROMPT = """You are a COMMUNITY MANAGER for a viral YouTube Shorts channel.
@@ -701,7 +701,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: B-Roll Relevance Scoring (#31 - v9.5)
+# MASTER PROMPT: B-Roll Relevance Scoring (#31 - v9.5)
 # =============================================================================
 
 BROLL_RELEVANCE_PROMPT = """You are a VIDEO EDITOR selecting B-roll for a short video.
@@ -752,7 +752,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Hook Word Analysis (#28 - v9.5)
+# MASTER PROMPT: Hook Word Analysis (#28 - v9.5)
 # =============================================================================
 
 HOOK_WORD_ANALYSIS_PROMPT = """You are a LINGUISTIC ANALYST studying viral video hooks.
@@ -800,7 +800,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Category Decay Analysis (#35 - v9.5)
+# MASTER PROMPT: Category Decay Analysis (#35 - v9.5)
 # =============================================================================
 
 CATEGORY_DECAY_PROMPT = """You are a TREND ANALYST tracking content category performance over time.
@@ -839,7 +839,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Emotional Arc Design (#37 - v10.0)
+# MASTER PROMPT: Emotional Arc Design (#37 - v10.0)
 # =============================================================================
 
 EMOTIONAL_ARC_PROMPT = """You are an EMOTIONAL STORYTELLING expert for viral short-form video.
@@ -890,7 +890,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Competitor Gap Analysis (#38 - v10.0)
+# MASTER PROMPT: Competitor Gap Analysis (#38 - v10.0)
 # =============================================================================
 
 COMPETITOR_GAP_PROMPT = """You are a COMPETITIVE INTELLIGENCE analyst for viral short-form content.
@@ -944,7 +944,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Description SEO (#39 - v10.0)
+# MASTER PROMPT: Description SEO (#39 - v10.0)
 # =============================================================================
 
 DESCRIPTION_SEO_PROMPT = """You are a YOUTUBE SEO expert specializing in Shorts optimization.
@@ -984,7 +984,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Viral Velocity Prediction (#45 - v10.0)
+# MASTER PROMPT: Viral Velocity Prediction (#45 - v10.0)
 # =============================================================================
 
 VIRAL_VELOCITY_PROMPT = """You are a VIRAL PREDICTION expert who has analyzed 10 million YouTube Shorts.
@@ -1044,7 +1044,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Thumbnail Text Optimization (#36 - v10.0)
+# MASTER PROMPT: Thumbnail Text Optimization (#36 - v10.0)
 # =============================================================================
 
 THUMBNAIL_TEXT_PROMPT = """You are a THUMBNAIL OPTIMIZATION expert who has tested thousands of click-through variations.
@@ -1083,7 +1083,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Comment Sentiment Analysis (#40 - v10.0)
+# MASTER PROMPT: Comment Sentiment Analysis (#40 - v10.0)
 # =============================================================================
 
 COMMENT_SENTIMENT_PROMPT = """You are a SENTIMENT ANALYSIS expert for YouTube comment sections.
@@ -1127,7 +1127,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Click Bait Optimization (#46-51 - v11.0)
+# MASTER PROMPT: Click Bait Optimization (#46-51 - v11.0)
 # =============================================================================
 
 CLICKBAIT_OPTIMIZATION_PROMPT = """You are a CLICK PSYCHOLOGY expert who understands what makes humans click.
@@ -1170,7 +1170,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: First 3 Seconds Retention (#52-57 - v11.0)
+# MASTER PROMPT: First 3 Seconds Retention (#52-57 - v11.0)
 # =============================================================================
 
 FIRST_SECONDS_PROMPT = """You are a RETENTION EXPERT who specializes in the first 3 seconds of short-form video.
@@ -1218,7 +1218,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Algorithm Optimization (#58-63 - v11.0)
+# MASTER PROMPT: Algorithm Optimization (#58-63 - v11.0)
 # =============================================================================
 
 ALGORITHM_OPTIMIZATION_PROMPT = """You are a YOUTUBE ALGORITHM EXPERT who understands exactly how Shorts get promoted.
@@ -1270,7 +1270,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Visual Optimization (#64-68 - v11.0)
+# MASTER PROMPT: Visual Optimization (#64-68 - v11.0)
 # =============================================================================
 
 VISUAL_OPTIMIZATION_PROMPT = """You are a VISUAL DESIGN expert for short-form video.
@@ -1321,7 +1321,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Content Quality Check (#69-74 - v11.0)
+# MASTER PROMPT: Content Quality Check (#69-74 - v11.0)
 # =============================================================================
 
 CONTENT_QUALITY_PROMPT = """You are a CONTENT QUALITY expert who ensures videos are valuable, believable, and memorable.
@@ -1378,7 +1378,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Viral/Trend Optimization (#75-79 - v11.0)
+# MASTER PROMPT: Viral/Trend Optimization (#75-79 - v11.0)
 # =============================================================================
 
 VIRAL_TREND_PROMPT = """You are a VIRAL TREND expert who knows how to ride waves and create them.
@@ -1433,7 +1433,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Analytics Deep Dive (#80-84 - v11.0)
+# MASTER PROMPT: Analytics Deep Dive (#80-84 - v11.0)
 # =============================================================================
 
 ANALYTICS_DEEP_DIVE_PROMPT = """You are an ANALYTICS EXPERT who finds hidden insights in video performance data.
@@ -1482,7 +1482,7 @@ JSON ONLY."""
 
 
 # =============================================================================
-# GOD-TIER PROMPT: Channel Growth Strategy (#85-89 - v11.0)
+# MASTER PROMPT: Channel Growth Strategy (#85-89 - v11.0)
 # =============================================================================
 
 CHANNEL_GROWTH_PROMPT = """You are a CHANNEL GROWTH strategist who builds sustainable, long-term success.
@@ -1759,7 +1759,7 @@ Only return valid JSON."""
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("🧠 GOD-TIER PROMPT ENGINEERING TEST")
+    print("🧠 MASTER PROMPT ENGINEERING TEST")
     print("=" * 60)
     
     # Direct API test

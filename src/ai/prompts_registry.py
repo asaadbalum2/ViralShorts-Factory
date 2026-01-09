@@ -74,7 +74,7 @@ DEFAULT_PROMPTS = [
         times_used=0
     ),
     PromptInfo(
-        name="GOD_TIER_GENERATION_PROMPT",
+        name="MASTER_GENERATION_PROMPT",
         type="creative",
         source_file="src/ai/master_content_generator.py",
         description="Generates 10/10 quality video content with hardcoded checks",
@@ -141,7 +141,7 @@ DEFAULT_PROMPTS = [
     
     # === EVALUATION PROMPTS (Need structured output) ===
     PromptInfo(
-        name="GOD_TIER_EVALUATION_PROMPT",
+        name="MASTER_EVALUATION_PROMPT",
         type="evaluation",
         source_file="src/ai/master_evaluator.py",
         description="Comprehensive quality scoring with 7 dimensions",

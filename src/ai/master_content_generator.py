@@ -44,10 +44,10 @@ def safe_print(msg: str):
 
 
 # =============================================================================
-# GOD-TIER CONTENT GENERATION PROMPT
+# MASTER CONTENT GENERATION PROMPT
 # =============================================================================
 
-GOD_TIER_GENERATION_PROMPT = """You are the WORLD'S MOST AGGRESSIVE (but truthful) VIRAL CONTENT CREATOR.
+MASTER_GENERATION_PROMPT = """You are the WORLD'S MOST AGGRESSIVE (but truthful) VIRAL CONTENT CREATOR.
 
 Your ONLY goal: Create content that is IMPOSSIBLE TO SCROLL PAST and scores 10/10.
 
@@ -183,7 +183,7 @@ class MasterContentGenerator:
         best_score = 0
         
         for attempt in range(max_attempts):
-            safe_print(f"   [GOD-TIER GEN] Attempt {attempt + 1}/{max_attempts}")
+            safe_print(f"   [MASTER GEN] Attempt {attempt + 1}/{max_attempts}")
             
             # Generate content
             result = self._generate_content(topic, category, duration, phrase_count, feedback)
@@ -206,7 +206,7 @@ class MasterContentGenerator:
             
             # If perfect, we're done
             if score == 10:
-                safe_print(f"   [GOD-TIER GEN] PERFECT 10/10!")
+                safe_print(f"   [MASTER GEN] PERFECT 10/10!")
                 return best_result
             
             # Build feedback for next attempt
@@ -216,7 +216,7 @@ class MasterContentGenerator:
             feedback += "Fix ALL issues in next attempt."
         
         if best_result:
-            safe_print(f"   [GOD-TIER GEN] Best score: {best_score}/10")
+            safe_print(f"   [MASTER GEN] Best score: {best_score}/10")
         
         return best_result
     
@@ -224,7 +224,7 @@ class MasterContentGenerator:
                          duration: int, phrase_count: int, 
                          feedback: str) -> Optional[Dict]:
         """Call AI to generate content."""
-        prompt = GOD_TIER_GENERATION_PROMPT.format(
+        prompt = MASTER_GENERATION_PROMPT.format(
             topic=topic,
             category=category,
             duration=duration,
@@ -436,7 +436,7 @@ def generate_master_content(topic: str, category: str,
 
 if __name__ == "__main__":
     safe_print("=" * 60)
-    safe_print("GOD-TIER CONTENT GENERATOR TEST")
+    safe_print("MASTER CONTENT GENERATOR TEST")
     safe_print("=" * 60)
     
     generator = get_master_generator()
