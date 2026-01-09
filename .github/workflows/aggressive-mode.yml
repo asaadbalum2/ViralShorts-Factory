@@ -22,8 +22,10 @@ name: AGGRESSIVE MODE - Deep Learning & Virality Boost
 
 on:
   schedule:
-    # Run every 3 hours to maximize learning (8x daily)
-    - cron: '30 */3 * * *'
+    # v17.9.38: Run every 30 MINUTES for maximum learning (48x daily!)
+    # This uses ~960 calls/day (20 calls × 48 runs)
+    # Still only 5.6% of surplus, but provides continuous learning
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -874,6 +876,110 @@ jobs:
           safe_print("  PHASE 3 COMPLETE - Research concepts saved")
           safe_print("=" * 70)
           RESEARCH_CONCEPTS
+
+      # ========================================================================
+      # PHASE 4: PROGRESS MONITORING
+      # ========================================================================
+      - name: Phase 4 - Progress Monitoring
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python << 'PROGRESS_MONITOR'
+          import os
+          import json
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          import requests
+
+          def safe_print(msg):
+              try: print(msg)
+              except: print(msg.encode('ascii', 'replace').decode())
+
+          safe_print("=" * 70)
+          safe_print("  AGGRESSIVE MODE: PHASE 4 - PROGRESS MONITORING")
+          safe_print("=" * 70)
+
+          PROGRESS_FILE = Path("data/persistent/aggressive_progress.json")
+          ANALYTICS_FILE = Path("data/persistent/analytics_state.json")
+
+          # Load existing progress data
+          progress = {
+              "runs": [],
+              "metrics_history": [],
+              "last_updated": None
+          }
+          if PROGRESS_FILE.exists():
+              try:
+                  with open(PROGRESS_FILE) as f:
+                      progress = json.load(f)
+              except:
+                  pass
+
+          # Get current metrics from analytics
+          analytics = {}
+          if ANALYTICS_FILE.exists():
+              try:
+                  with open(ANALYTICS_FILE) as f:
+                      analytics = json.load(f)
+              except:
+                  pass
+
+          # Calculate current metrics
+          videos = analytics.get("videos", [])
+          if videos:
+              total_views = sum(v.get("views", 0) for v in videos)
+              avg_views = total_views / len(videos) if videos else 0
+              recent_5 = sorted(videos, key=lambda x: x.get("published", ""), reverse=True)[:5]
+              recent_avg = sum(v.get("views", 0) for v in recent_5) / len(recent_5) if recent_5 else 0
+              
+              current_metrics = {
+                  "timestamp": datetime.now().isoformat(),
+                  "total_videos": len(videos),
+                  "total_views": total_views,
+                  "avg_views_all": round(avg_views, 2),
+                  "avg_views_recent_5": round(recent_avg, 2)
+              }
+              
+              # Add to history
+              progress["metrics_history"].append(current_metrics)
+              progress["metrics_history"] = progress["metrics_history"][-100:]  # Keep last 100
+              
+              # Check for improvement
+              if len(progress["metrics_history"]) >= 2:
+                  prev = progress["metrics_history"][-2]
+                  view_change = current_metrics["avg_views_recent_5"] - prev.get("avg_views_recent_5", 0)
+                  improvement = "IMPROVED" if view_change > 0 else "DECLINED" if view_change < 0 else "STABLE"
+                  
+                  safe_print(f"\n[PROGRESS] Performance: {improvement}")
+                  safe_print(f"  - Avg views (recent 5): {current_metrics['avg_views_recent_5']}")
+                  safe_print(f"  - Change from last run: {view_change:+.2f}")
+              else:
+                  safe_print("\n[PROGRESS] First run - baseline established")
+                  safe_print(f"  - Avg views (recent 5): {current_metrics['avg_views_recent_5']}")
+              
+              safe_print(f"  - Total videos tracked: {current_metrics['total_videos']}")
+          else:
+              safe_print("\n[PROGRESS] No analytics data available yet")
+
+          # Record this run
+          progress["runs"].append({
+              "timestamp": datetime.now().isoformat(),
+              "phases_completed": 4
+          })
+          progress["runs"] = progress["runs"][-50:]  # Keep last 50 runs
+          progress["last_updated"] = datetime.now().isoformat()
+
+          # Save progress
+          with open(PROGRESS_FILE, 'w') as f:
+              json.dump(progress, f, indent=2)
+          safe_print(f"\n[OK] aggressive_progress.json updated")
+
+          safe_print("\n" + "=" * 70)
+          safe_print("  PHASE 4 COMPLETE - Progress monitoring saved")
+          safe_print("=" * 70)
+          PROGRESS_MONITOR
 
       # ========================================================================
       # SUMMARY & SAVE
