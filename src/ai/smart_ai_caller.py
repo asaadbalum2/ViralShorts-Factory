@@ -38,8 +38,15 @@ try:
     from src.ai.smart_model_router import (
         get_smart_router, SmartModelRouter, ModelInfo
     )
+    from src.ai.model_helper import get_smart_delay
 except ImportError:
     from smart_model_router import get_smart_router, SmartModelRouter, ModelInfo
+    try:
+        from model_helper import get_smart_delay
+    except ImportError:
+        # Fallback if not available
+        def get_smart_delay(model_name: str, provider: str = None) -> float:
+            return 12.0  # Conservative default
 
 
 def safe_print(msg: str):
@@ -227,8 +234,9 @@ class SmartAICaller:
             if not caller:
                 continue
             
-            # Respect rate limits
-            self._wait_for_rate_limit(provider, model_info.delay)
+            # Respect rate limits - v17.9.32: Use smart per-model delay with 10% margin
+            smart_delay = get_smart_delay(model_id, provider)
+            self._wait_for_rate_limit(provider, model_id, smart_delay)
             
             # Log attempt
             if i > 0:
@@ -288,17 +296,26 @@ class SmartAICaller:
         safe_print(f"   [FAIL] All {len(chain)} models failed!")
         return None
     
-    def _wait_for_rate_limit(self, provider: str, delay: float):
-        """Wait to respect rate limits."""
+    def _wait_for_rate_limit(self, provider: str, model_id: str, delay: float):
+        """
+        v17.9.32: Wait to respect SMART per-model rate limits.
+        
+        Uses per-model tracking (not per-provider) because different models
+        of the same provider have different rate limits.
+        
+        E.g., gemini-1.5-flash (15/min) vs gemini-2.5-pro (2/min)
+        """
+        model_key = f"{provider}:{model_id}"
         now = time.time()
-        last = self.last_call_time.get(provider, 0)
+        last = self.last_call_time.get(model_key, 0)
         elapsed = now - last
         
         if elapsed < delay:
             wait_time = delay - elapsed
+            safe_print(f"   [RATE] Waiting {wait_time:.1f}s for {model_id} rate limit")
             time.sleep(wait_time)
         
-        self.last_call_time[provider] = time.time()
+        self.last_call_time[model_key] = time.time()
     
     def parse_json(self, text: str) -> Optional[Dict]:
         """Parse JSON from AI response."""
