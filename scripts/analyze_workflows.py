@@ -743,7 +743,42 @@ def analyze_video_generator(log: str, run: WorkflowRun) -> WorkflowAnalysisResul
     if gen_time_match:
         result.key_metrics["generation_time_sec"] = float(gen_time_match.group(1))
     
-    # Extract AI model used
+    # Extract AI model usage - shows 4-category system working
+    # Primary model selection
+    primary_model_match = re.search(r'\[MODEL\] Best Gemini: ([\w\.-]+) \((\d+)/day\)', log)
+    if primary_model_match:
+        result.key_metrics["primary_model"] = primary_model_match.group(1)
+        result.key_metrics["primary_model_quota"] = int(primary_model_match.group(2))
+    
+    # All models used during the run
+    # Pattern 1: [AI] Using provider:model
+    gemini_uses = re.findall(r'\[AI\] Using gemini:([\w\.-]+)', log)
+    groq_uses = re.findall(r'\[AI\] Using groq:([\w\.-]+)', log)
+    
+    # Pattern 2: [OK] Gemini model: model-name (for primary selection)
+    gemini_init = re.findall(r'\[OK\] Gemini model: ([\w\.-]+)', log)
+    gemini_uses.extend(gemini_init)
+    
+    # Pattern 3: Fallback events
+    fallback_uses = re.findall(r'\[FALLBACK\] Trying ([\w\.:/-]+)', log)
+    fallback_success = re.findall(r'\[OK\] Fallback succeeded with ([\w\.:/-]+)', log)
+    
+    models_used = {}
+    for m in gemini_uses:
+        models_used[f"gemini:{m}"] = models_used.get(f"gemini:{m}", 0) + 1
+    for m in groq_uses:
+        models_used[f"groq:{m}"] = models_used.get(f"groq:{m}", 0) + 1
+    
+    result.key_metrics["models_used"] = models_used
+    result.key_metrics["fallback_count"] = len(fallback_success)  # Count actual successful fallbacks
+    
+    # Check if model discovery worked
+    discovered_match = re.search(r'([\w\.-]+): (\d+)/day \(discovered\)', log)
+    if discovered_match:
+        result.key_metrics["discovered_model"] = discovered_match.group(1)
+        result.key_metrics["discovered_quota"] = int(discovered_match.group(2))
+    
+    # Legacy model extraction
     model_match = re.search(r'(?:Using|Selected|Model)[:\s]*(gemini-[^\s,\]]+)', log, re.IGNORECASE)
     if model_match:
         result.key_metrics["ai_model"] = model_match.group(1)
@@ -1376,10 +1411,61 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
         safe_print("\n   ✅ No hidden issues detected!")
     
     # ============================================================
-    # SECTION 9: Additional Metrics
+    # SECTION 9: MODEL USAGE (4-Category System Verification)
+    # ============================================================
+    safe_print("\n" + "-" * 90)
+    safe_print("  9. MODEL USAGE (4-Category System Verification)")
+    safe_print("-" * 90)
+    
+    # Aggregate model usage across all runs
+    all_models_used = {}
+    total_fallbacks = 0
+    primary_models = {}
+    discovered_info = []
+    
+    for r in results:
+        models = r.key_metrics.get("models_used", {})
+        for model, count in models.items():
+            all_models_used[model] = all_models_used.get(model, 0) + count
+        
+        total_fallbacks += r.key_metrics.get("fallback_count", 0)
+        
+        pm = r.key_metrics.get("primary_model")
+        if pm:
+            pq = r.key_metrics.get("primary_model_quota", 0)
+            primary_models[pm] = pq
+        
+        dm = r.key_metrics.get("discovered_model")
+        if dm:
+            dq = r.key_metrics.get("discovered_quota", 0)
+            discovered_info.append(f"{dm}: {dq}/day")
+    
+    if primary_models:
+        safe_print("\n   📊 PRIMARY MODELS SELECTED (via dynamic discovery):")
+        for model, quota in sorted(primary_models.items(), key=lambda x: -x[1]):
+            safe_print(f"      ✅ {model} ({quota}/day quota)")
+    
+    if all_models_used:
+        safe_print("\n   🤖 MODELS USED DURING VIDEO GENERATION:")
+        for model, count in sorted(all_models_used.items(), key=lambda x: -x[1]):
+            provider = model.split(":")[0] if ":" in model else "unknown"
+            model_name = model.split(":")[-1] if ":" in model else model
+            category = "PRODUCTION" if "70b" in model_name.lower() or "flash" in model_name.lower() else "STANDARD"
+            safe_print(f"      {provider.upper():<10} | {model_name:<30} | {count:>3}x | [{category}]")
+        
+        safe_print(f"\n   📈 Total API Calls: {sum(all_models_used.values())}")
+        safe_print(f"   🔄 Fallback Events: {total_fallbacks} (Gemini→Groq when quota exceeded)")
+        
+        if total_fallbacks > 0:
+            safe_print("      └─ This shows the fallback chain is working correctly!")
+    else:
+        safe_print("\n   ⚠️ No model usage data found in logs")
+    
+    # ============================================================
+    # SECTION 10: Additional Metrics
     # ============================================================
     safe_print("\n" + "-" * 80)
-    safe_print("  9. ADDITIONAL METRICS")
+    safe_print("  10. ADDITIONAL METRICS")
     safe_print("-" * 80)
     
     # Pre-work effectiveness
@@ -1403,7 +1489,7 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
         safe_print(f"\n   🎬 Avg Videos per Run: {avg_videos:.1f}")
     
     # ============================================================
-    # SECTION 10: Persistent Data Analysis
+    # SECTION 11: Persistent Data Analysis
     # ============================================================
     if persistent_data:
         safe_print("\n" + "-" * 90)
@@ -1453,7 +1539,7 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
                         safe_print(f"      {key}: {value}")
     
     # ============================================================
-    # SECTION 11: Per-Workflow Quota Breakdown
+    # SECTION 12: Per-Workflow Quota Breakdown
     # ============================================================
     safe_print("\n" + "-" * 90)
     safe_print("  11. PER-WORKFLOW QUOTA BREAKDOWN")
@@ -1743,8 +1829,73 @@ def generate_html_report(results: List[WorkflowAnalysisResult], persistent_data:
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div>'''
+    
+    # Model Usage Section - shows 4-category system is working
+    all_models_used = {}
+    total_fallbacks = 0
+    primary_models = {}
+    
+    for r in results:
+        models = r.key_metrics.get("models_used", {})
+        for model, count in models.items():
+            all_models_used[model] = all_models_used.get(model, 0) + count
+        total_fallbacks += r.key_metrics.get("fallback_count", 0)
+        pm = r.key_metrics.get("primary_model")
+        if pm:
+            pq = r.key_metrics.get("primary_model_quota", 0)
+            primary_models[pm] = pq
+    
+    if all_models_used:
+        html += '''
+        <!-- Model Usage (4-Category System) -->
+        <div class="section">
+            <h2 class="section-title">🤖 Model Usage (4-Category System)</h2>
+            <div class="card">'''
         
+        if primary_models:
+            html += '<p style="margin-bottom: 1rem; color: var(--accent);"><strong>✅ Dynamic Discovery Working:</strong> '
+            for m, q in primary_models.items():
+                html += f'{m} ({q}/day quota) '
+            html += '</p>'
+        
+        html += '''
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Provider</th>
+                            <th>Model</th>
+                            <th>Calls</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>'''
+        
+        for model, count in sorted(all_models_used.items(), key=lambda x: -x[1]):
+            provider = model.split(":")[0].upper() if ":" in model else "UNKNOWN"
+            model_name = model.split(":")[-1] if ":" in model else model
+            category = "PRODUCTION" if "70b" in model_name.lower() or "flash" in model_name.lower() else "STANDARD"
+            cat_class = "success" if category == "PRODUCTION" else "warning"
+            html += f'''
+                        <tr>
+                            <td><strong>{provider}</strong></td>
+                            <td>{model_name}</td>
+                            <td>{count}</td>
+                            <td><span class="badge badge-{cat_class}">{category}</span></td>
+                        </tr>'''
+        
+        html += f'''
+                    </tbody>
+                </table>
+                <p style="margin-top: 1rem; color: var(--text-muted);">
+                    📈 Total API Calls: <strong>{sum(all_models_used.values())}</strong> | 
+                    🔄 Fallback Events: <strong>{total_fallbacks}</strong> (Gemini→Groq on quota)
+                    {' ✅ Fallback chain working!' if total_fallbacks > 0 else ''}
+                </p>
+            </div>
+        </div>'''
+        
+    html += '''
         <!-- Videos -->
         <div class="section">
             <h2 class="section-title">🎥 Generated Videos</h2>

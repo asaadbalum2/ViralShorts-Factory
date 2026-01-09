@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Analysis Report</title>
+    <style>
+        :root {
+            --bg-dark: #0d1117;
+            --bg-card: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --success: #3fb950;
+            --warning: #d29922;
+            --error: #f85149;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #58a6ff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { color: var(--text-muted); margin-bottom: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        .card h3 { color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .card .value { font-size: 2.5rem; font-weight: 700; }
+        .card .subvalue { color: var(--text-muted); font-size: 0.875rem; }
+        .success { color: var(--success); }
+        .warning { color: var(--warning); }
+        .error { color: var(--error); }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 500; font-size: 0.875rem; text-transform: uppercase; }
+        tr:hover { background: rgba(88, 166, 255, 0.05); }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge-success { background: rgba(63, 185, 80, 0.2); color: var(--success); }
+        .badge-error { background: rgba(248, 81, 73, 0.2); color: var(--error); }
+        .badge-warning { background: rgba(210, 153, 34, 0.2); color: var(--warning); }
+        .progress-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--success), var(--accent));
+            transition: width 0.3s ease;
+        }
+        .section { margin-bottom: 2rem; }
+        .section-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+        .video-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .video-card h4 { font-size: 0.875rem; margin-bottom: 0.5rem; word-break: break-all; }
+        .video-meta { display: flex; gap: 1rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.8rem; }
+        .video-meta span { display: flex; align-items: center; gap: 0.25rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .issue-list { list-style: none; }
+        .issue-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.5rem; }
+        .issue-list li:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Workflow Analysis Report</h1>
+        <p class="subtitle">Last 1 day(s) • Generated 2026-01-09 10:03 UTC</p>
+        
+        <!-- Summary Cards -->
+        <div class="grid">
+            <div class="card">
+                <h3>Success Rate</h3>
+                <div class="value success">100%</div>
+                <div class="subvalue">7/7 workflows passed</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100.0%"></div></div>
+            </div>
+            <div class="card">
+                <h3>Videos Generated</h3>
+                <div class="value">6</div>
+                <div class="subvalue">6 uploaded to YouTube</div>
+            </div>
+            <div class="card">
+                <h3>Errors</h3>
+                <div class="value success">0</div>
+                <div class="subvalue">1 hidden issues detected</div>
+            </div>
+            <div class="card">
+                <h3>Persistent Data</h3>
+                <div class="value success">8/10</div>
+                <div class="subvalue">files healthy</div>
+            </div>
+        </div>
+        
+        <!-- Workflow Runs -->
+        <div class="section">
+            <h2 class="section-title">📋 Workflow Runs</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Workflow</th>
+                            <th>Run ID</th>
+                            <th>Time</th>
+                            <th>Videos</th>
+                            <th>Pre-work Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>ViralShorts Factory - Auto Video Generat</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20845990467" target="_blank">#20845990467</a></td>
+                            <td>2026-01-09 08:32</td>
+                            <td>1</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>Pre-Work Data Fetcher</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20842623328" target="_blank">#20842623328</a></td>
+                            <td>2026-01-09 05:49</td>
+                            <td>0</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>ViralShorts Factory - Auto Video Generat</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20841264368" target="_blank">#20841264368</a></td>
+                            <td>2026-01-09 04:30</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>ViralShorts Factory - Auto Video Generat</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20838288782" target="_blank">#20838288782</a></td>
+                            <td>2026-01-09 01:43</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>ViralShorts Factory - Auto Video Generat</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20830855725" target="_blank">#20830855725</a></td>
+                            <td>2026-01-08 20:32</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>ViralShorts Factory - Auto Video Generat</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20823979937" target="_blank">#20823979937</a></td>
+                            <td>2026-01-08 16:29</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-success">✓ PASS</span></td>
+                            <td>ViralShorts Factory - Auto Video Generat</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/20816925120" target="_blank">#20816925120</a></td>
+                            <td>2026-01-08 12:32</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Quota Usage -->
+        <div class="section">
+            <h2 class="section-title">📊 Quota Usage</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Provider</th>
+                            <th>Calls</th>
+                            <th>Daily Limit</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>GEMINI</strong></td>
+                            <td>92</td>
+                            <td>1500</td>
+                            <td class="success">6.1%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GROQ</strong></td>
+                            <td>137</td>
+                            <td>1000</td>
+                            <td class="success">13.7%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>YOUTUBE</strong></td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td class="error">100.0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Model Usage (4-Category System) -->
+        <div class="section">
+            <h2 class="section-title">🤖 Model Usage (4-Category System)</h2>
+            <div class="card"><p style="margin-bottom: 1rem; color: var(--accent);"><strong>✅ Dynamic Discovery Working:</strong> gemini-2.5-flash (500/day quota) </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Provider</th>
+                            <th>Model</th>
+                            <th>Calls</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>GROQ</strong></td>
+                            <td>llama-3.3-70b-versatile</td>
+                            <td>29</td>
+                            <td><span class="badge badge-success">PRODUCTION</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>GEMINI</strong></td>
+                            <td>gemini-2.5-flash</td>
+                            <td>6</td>
+                            <td><span class="badge badge-success">PRODUCTION</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 1rem; color: var(--text-muted);">
+                    📈 Total API Calls: <strong>35</strong> | 
+                    🔄 Fallback Events: <strong>18</strong> (Gemini→Groq on quota)
+                     ✅ Fallback chain working!
+                </p>
+            </div>
+        </div>
+        <!-- Videos -->
+        <div class="section">
+            <h2 class="section-title">🎥 Generated Videos</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <h4>pro_Food_86870.mp4</h4>
+                    <div class="video-meta">
+                        <span>📁 Food</span>
+                        <span>💾 21.0MB</span>
+                        <span class="badge badge-success">Uploaded</span>
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 gemini-2.5-flash</span>
+                        <span>🎙 Edge-TTS</span>
+                    </div>
+                    <div style="margin-top: 0.5rem;"><a href="https://youtube.com/shorts/6Rm2fsQg8ks" target="_blank">Watch →</a></div>
+                </div>
+                <div class="video-card">
+                    <h4>pro_Psychology_77165.mp4</h4>
+                    <div class="video-meta">
+                        <span>📁 Psychology</span>
+                        <span>💾 23.0MB</span>
+                        <span class="badge badge-success">Uploaded</span>
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 gemini-2.5-flash</span>
+                        <span>🎙 Edge-TTS</span>
+                    </div>
+                    
+                </div>
+                <div class="video-card">
+                    <h4>pro_Skills_11080.mp4</h4>
+                    <div class="video-meta">
+                        <span>📁 Skills</span>
+                        <span>💾 30.0MB</span>
+                        <span class="badge badge-success">Uploaded</span>
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 gemini-2.5-flash</span>
+                        <span>🎙 Edge-TTS</span>
+                    </div>
+                    <div style="margin-top: 0.5rem;"><a href="https://youtube.com/shorts/aD9qn44MqqE" target="_blank">Watch →</a></div>
+                </div>
+                <div class="video-card">
+                    <h4>pro_productivity_tips_44273.mp4</h4>
+                    <div class="video-meta">
+                        <span>📁 productivity</span>
+                        <span>💾 21.0MB</span>
+                        <span class="badge badge-success">Uploaded</span>
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 gemini-2.5-flash</span>
+                        <span>🎙 Edge-TTS</span>
+                    </div>
+                    <div style="margin-top: 0.5rem;"><a href="https://youtube.com/shorts/sXqiC8cFLAA" target="_blank">Watch →</a></div>
+                </div>
+                <div class="video-card">
+                    <h4>pro_relationship_goals_68746.mp4</h4>
+                    <div class="video-meta">
+                        <span>📁 relationship</span>
+                        <span>💾 27.0MB</span>
+                        <span class="badge badge-success">Uploaded</span>
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 gemini-2.5-flash</span>
+                        <span>🎙 Edge-TTS</span>
+                    </div>
+                    <div style="margin-top: 0.5rem;"><a href="https://youtube.com/shorts/-lDzGHY3JLs" target="_blank">Watch →</a></div>
+                </div>
+                <div class="video-card">
+                    <h4>pro_Entertainment_16815.mp4</h4>
+                    <div class="video-meta">
+                        <span>📁 Entertainment</span>
+                        <span>💾 19.0MB</span>
+                        <span class="badge badge-success">Uploaded</span>
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 gemini-2.5-flash</span>
+                        <span>🎙 Edge-TTS</span>
+                    </div>
+                    <div style="margin-top: 0.5rem;"><a href="https://youtube.com/shorts/fp_6QETKK9Y" target="_blank">Watch →</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

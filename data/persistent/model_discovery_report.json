@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-01-09T16:18:13.931232",
+  "gemini_models": [],
+  "groq_models": [],
+  "categories": {
+    "high_throughput": [],
+    "low_throughput": [],
+    "backup": []
+  },
+  "quota_budget": {
+    "total_available": 0,
+    "production_needs": 110,
+    "free_for_aggressive": 0
+  }
+}

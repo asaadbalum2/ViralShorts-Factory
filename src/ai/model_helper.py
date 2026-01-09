@@ -165,35 +165,80 @@ def get_model_quality_tier(model_name: str, model_info: Dict = None) -> str:
 
 def categorize_models_for_usage(models_with_info: List[Tuple[str, int, float, Dict]]) -> Dict[str, List]:
     """
-    v17.9.29: Categorize models into 4 usage categories.
+    v17.9.31: Categorize models into 7 usage categories with throughput awareness.
     
     Args:
         models_with_info: List of (model_name, quota, quality_score, model_info)
     
-    Returns dict with 4 categories:
-        1. production: High-quota (>=50) models for general production use
-        2. critical: High-quality (score>=7) for production critical tasks
-        3. test_system: Low-quality leftovers for system testing
-        4. test_prompts: Medium-quality leftovers for prompt testing
+    Returns dict with 7 categories:
+        1. production_high_throughput: High quota + high rate limit (≥15/min)
+        2. production_low_throughput: High quota + low rate limit (needs pacing)
+        3. critical: High-quality (score≥7) for hooks/scoring
+        4. backup: Medium-quality fallback for production
+        5. bonus: Extra quota for aggressive mode (analytics, learning)
+        6. test_system: Low-quality leftovers for system testing
+        7. test_prompts: Medium-quality leftovers for prompt testing
     
     Note: Groq models should be excluded before calling this (shared quota).
     """
     categories = {
-        "production": [],      # High quota, for general use
-        "critical": [],        # High quality, for hooks/scoring
-        "test_system": [],     # Leftovers for system tests
-        "test_prompts": [],    # Leftovers for prompt tests
+        "production_high_throughput": [],  # High quota + fast rate limit
+        "production_low_throughput": [],   # High quota + slow rate limit (needs pacing)
+        "critical": [],                     # High quality, for hooks/scoring
+        "backup": [],                       # Medium quality fallback
+        "bonus": [],                        # Extra quota for aggressive mode
+        "test_system": [],                  # Leftovers for system tests
+        "test_prompts": [],                 # Leftovers for prompt tests
+        # Legacy compatibility
+        "production": [],                   # Maps to both production categories
     }
     
     for model_name, quota, score, info in models_with_info:
-        if quota >= MIN_DAILY_QUOTA:
-            # High quota = production use
-            categories["production"].append({
+        # Get throughput info for this model
+        rate_info = get_model_rate_limit(model_name)
+        is_high_throughput = rate_info.get("throughput") == "high" or rate_info.get("req_per_min", 0) >= 15
+        
+        if quota >= MIN_DAILY_QUOTA and score >= 7.0:
+            # High quota + high quality = production
+            entry = {
                 "model": model_name,
                 "quota": quota,
                 "score": score,
-                "usage": "General AI calls (scripts, CTAs, phrases)"
+                "throughput": rate_info.get("throughput", "unknown"),
+                "req_per_min": rate_info.get("req_per_min", 5),
+                "delay": rate_info.get("delay", 12.0),
+            }
+            
+            if is_high_throughput:
+                entry["usage"] = "Bulk AI calls (high speed, no pacing needed)"
+                categories["production_high_throughput"].append(entry)
+            else:
+                entry["usage"] = "Quality AI calls (needs pacing, use for critical)"
+                categories["production_low_throughput"].append(entry)
+            
+            # Also add to legacy production category
+            categories["production"].append(entry)
+            
+        elif quota >= MIN_DAILY_QUOTA and score >= 5.0:
+            # High quota but medium quality = backup
+            categories["backup"].append({
+                "model": model_name,
+                "quota": quota,
+                "score": score,
+                "throughput": rate_info.get("throughput", "unknown"),
+                "usage": "Fallback for production when primary exhausted"
             })
+            
+        elif quota >= MIN_DAILY_QUOTA:
+            # High quota but low quality = bonus (for aggressive mode)
+            categories["bonus"].append({
+                "model": model_name,
+                "quota": quota,
+                "score": score,
+                "throughput": rate_info.get("throughput", "unknown"),
+                "usage": "Extra analytics, learning, experiments (aggressive mode)"
+            })
+            
         elif quota > 0 and score >= 7.0:
             # Low quota but high quality = critical tasks
             categories["critical"].append({
@@ -202,6 +247,7 @@ def categorize_models_for_usage(models_with_info: List[Tuple[str, int, float, Di
                 "score": score,
                 "usage": "Hooks, quality scoring, god-tier evaluation"
             })
+            
         elif quota > 0 and score >= 5.0:
             # Medium quality leftovers = prompt testing
             categories["test_prompts"].append({
@@ -210,6 +256,7 @@ def categorize_models_for_usage(models_with_info: List[Tuple[str, int, float, Di
                 "score": score,
                 "usage": "Prompt registry testing (can generate content)"
             })
+            
         elif quota > 0:
             # Low quality leftovers = system testing
             categories["test_system"].append({
@@ -1115,21 +1162,131 @@ def get_model_for_task(task_type: str) -> str:
 
 
 # =============================================================================
-# RATE LIMITS
+# RATE LIMITS - v17.9.31: SMART PER-MODEL RATE LIMITING
 # =============================================================================
+
+# Model-specific rate limits (discovered from API 429 responses and documentation)
+# Format: {model_pattern: {req_per_min, delay_seconds, daily_quota}}
+MODEL_RATE_LIMITS = {
+    # Gemini models - FREE tier limits (very restrictive!)
+    "gemini-2.5-flash": {"req_per_min": 5, "delay": 12.0, "daily_quota": 500, "throughput": "low"},
+    "gemini-2.5-pro": {"req_per_min": 2, "delay": 30.0, "daily_quota": 50, "throughput": "low"},
+    "gemini-2.0-flash-exp": {"req_per_min": 5, "delay": 12.0, "daily_quota": 50, "throughput": "low"},
+    "gemini-2.0-flash": {"req_per_min": 10, "delay": 6.0, "daily_quota": 500, "throughput": "medium"},
+    "gemini-1.5-flash": {"req_per_min": 15, "delay": 4.0, "daily_quota": 1500, "throughput": "high"},  # If available
+    "gemini-1.5-pro": {"req_per_min": 5, "delay": 12.0, "daily_quota": 50, "throughput": "low"},
+    
+    # Groq models - generous rate limits
+    "llama-3.3-70b-versatile": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
+    "llama-3.1-70b-versatile": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
+    "llama-3.1-8b-instant": {"req_per_min": 60, "delay": 1.0, "daily_quota": 500, "throughput": "high"},
+    "mixtral-8x7b-32768": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
+    "gemma-7b-it": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
+    
+    # Default fallbacks by provider
+    "_gemini_default": {"req_per_min": 5, "delay": 12.0, "daily_quota": 100, "throughput": "low"},
+    "_groq_default": {"req_per_min": 30, "delay": 2.0, "daily_quota": 500, "throughput": "high"},
+    "_openrouter_default": {"req_per_min": 20, "delay": 3.0, "daily_quota": 1000, "throughput": "medium"},
+    "_huggingface_default": {"req_per_min": 10, "delay": 6.0, "daily_quota": 100, "throughput": "medium"},
+}
+
+# Cache for learned rate limits from 429 responses
+_rate_limit_cache: Dict[str, Dict] = {}
+
+
+def get_model_rate_limit(model_name: str, provider: str = None) -> Dict:
+    """
+    v17.9.31: Get SMART rate limit for a specific model.
+    
+    Priority:
+    1. Learned from 429 response (most accurate)
+    2. Known model limits (from MODEL_RATE_LIMITS)
+    3. Provider defaults
+    
+    Returns: {req_per_min, delay, daily_quota, throughput}
+    """
+    # Normalize model name
+    model_lower = model_name.lower()
+    
+    # Step 1: Check learned cache (from 429 responses)
+    if model_lower in _rate_limit_cache:
+        return _rate_limit_cache[model_lower]
+    
+    # Step 2: Check known model limits
+    for pattern, limits in MODEL_RATE_LIMITS.items():
+        if pattern.startswith("_"):  # Skip defaults
+            continue
+        if pattern.lower() in model_lower:
+            return limits.copy()
+    
+    # Step 3: Use provider default
+    if provider:
+        default_key = f"_{provider.lower()}_default"
+        if default_key in MODEL_RATE_LIMITS:
+            return MODEL_RATE_LIMITS[default_key].copy()
+    
+    # Fallback: conservative defaults
+    return {"req_per_min": 5, "delay": 12.0, "daily_quota": 100, "throughput": "low"}
+
+
+def learn_rate_limit_from_429(model_name: str, limit_value: int):
+    """
+    v17.9.31: Learn rate limit from 429 response header.
+    
+    When we get a 429, the response often contains the actual limit.
+    Store this for future requests.
+    """
+    model_lower = model_name.lower()
+    
+    # Calculate delay from limit
+    delay = 60.0 / limit_value if limit_value > 0 else 12.0
+    
+    _rate_limit_cache[model_lower] = {
+        "req_per_min": limit_value,
+        "delay": delay,
+        "daily_quota": MODEL_RATE_LIMITS.get(model_lower, {}).get("daily_quota", 100),
+        "throughput": "high" if limit_value >= 15 else "medium" if limit_value >= 10 else "low",
+        "learned": True
+    }
+    
+    _safe_print(f"[RATE] Learned {model_name}: {limit_value}/min, delay={delay:.1f}s")
+
 
 def get_rate_limits() -> Dict[str, float]:
     """
-    Get rate limit delays for all providers.
+    Get rate limit delays for all providers (legacy compatibility).
     Returns seconds to wait between API calls.
+    
+    Note: For per-model limits, use get_model_rate_limit() instead.
     """
     return {
-        "gemini": 5.0,       # 20 req/min = 3s min, 5s for safety
+        "gemini": 12.0,      # 5 req/min on FREE tier = 12s delay
         "groq": 2.0,         # 30 req/min = 2s
-        "openrouter": 1.0,   # Higher limits
-        "huggingface": 2.0,  # ~30 req/min on free tier
+        "openrouter": 3.0,   # 20 req/min = 3s
+        "huggingface": 6.0,  # 10 req/min
         "pexels": 18.0       # 200 req/hour
     }
+
+
+def get_smart_delay(model_name: str, provider: str = None) -> float:
+    """
+    v17.9.31: Get smart delay for a specific model.
+    
+    Use this instead of get_rate_limits() for per-model pacing.
+    """
+    limits = get_model_rate_limit(model_name, provider)
+    return limits.get("delay", 12.0)
+
+
+def is_high_throughput_model(model_name: str, provider: str = None) -> bool:
+    """
+    v17.9.31: Check if model has high throughput (good for bulk tasks).
+    
+    High throughput = ≥15 req/min
+    Low throughput = <15 req/min (needs pacing for bulk tasks)
+    """
+    limits = get_model_rate_limit(model_name, provider)
+    return limits.get("throughput") == "high" or limits.get("req_per_min", 0) >= 15
 
 
 def get_pexels_rate_limit() -> Dict:
