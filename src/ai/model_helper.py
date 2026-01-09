@@ -245,7 +245,7 @@ def categorize_models_for_usage(models_with_info: List[Tuple[str, int, float, Di
                 "model": model_name,
                 "quota": quota,
                 "score": score,
-                "usage": "Hooks, quality scoring, god-tier evaluation"
+                "usage": "Hooks, quality scoring, master evaluation"
             })
             
         elif quota > 0 and score >= 5.0:
@@ -1032,7 +1032,7 @@ def get_high_quality_model(provider: str = "gemini") -> Optional[str]:
     Critical tasks (6 calls/video max = 36/day for 6 videos):
     - Hook generation (1)
     - Final quality evaluation (1)  
-    - God-tier scoring (1)
+    - Master scoring (1)
     - Title optimization (1)
     - Script refinement (1)
     - CTA generation (1)
@@ -1139,7 +1139,7 @@ def get_model_for_task(task_type: str) -> str:
     
     Returns: Model ID (provider:model format)
     """
-    critical_tasks = ["hook", "evaluation", "scoring", "title", "script", "quality", "god_tier"]
+    critical_tasks = ["hook", "evaluation", "scoring", "title", "script", "quality", "master"]
     
     if any(t in task_type.lower() for t in critical_tasks):
         # Try to get a pro model

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - God-Tier Quality Evaluator v17.9.7
+ViralShorts Factory - Master Quality Evaluator v17.9.7
 =========================================================
 
 A COMPREHENSIVE AI-powered quality evaluation system that:
@@ -178,7 +178,7 @@ BE HARSH. We want 10/10 videos, not participation trophies.
 OUTPUT JSON ONLY."""
 
 
-class GodTierEvaluator:
+class MasterEvaluator:
     """
     The ultimate quality evaluator for viral video content.
     Combines AI evaluation with hardcoded viral science rules.
@@ -213,7 +213,7 @@ class GodTierEvaluator:
     
     def _load_history(self) -> Dict:
         """Load evaluation history."""
-        history_file = STATE_DIR / "god_tier_history.json"
+        history_file = STATE_DIR / "master_history.json"
         try:
             if history_file.exists():
                 with open(history_file, 'r') as f:
@@ -236,7 +236,7 @@ class GodTierEvaluator:
         self.history["avg_score"] = sum(scores) / len(scores) if scores else 0
         self.history["best_score"] = max(scores) if scores else 0
         
-        history_file = STATE_DIR / "god_tier_history.json"
+        history_file = STATE_DIR / "master_history.json"
         with open(history_file, 'w') as f:
             json.dump(self.history, f, indent=2)
     
@@ -250,7 +250,7 @@ class GodTierEvaluator:
     
     def evaluate(self, content: Dict) -> Dict:
         """
-        Perform god-tier evaluation of content.
+        Perform master evaluation of content.
         
         Args:
             content: Dict with hook, phrases, cta, topic, category
@@ -345,7 +345,7 @@ class GodTierEvaluator:
     
     def _ai_evaluation(self, hook: str, phrases: List[str], cta: str, 
                        topic: str, category: str) -> Optional[Dict]:
-        """Get AI evaluation using the god-tier prompt."""
+        """Get AI evaluation using the master prompt."""
         try:
             # Build the prompt
             prompt = GOD_TIER_EVALUATION_PROMPT.format(
@@ -531,25 +531,25 @@ class GodTierEvaluator:
 # SINGLETON & CONVENIENCE
 # =============================================================================
 
-_god_tier_evaluator = None
+_master_evaluator = None
 
 
-def get_god_tier_evaluator() -> GodTierEvaluator:
+def get_master_evaluator() -> MasterEvaluator:
     """Get singleton evaluator."""
-    global _god_tier_evaluator
-    if _god_tier_evaluator is None:
-        _god_tier_evaluator = GodTierEvaluator()
-    return _god_tier_evaluator
+    global _master_evaluator
+    if _master_evaluator is None:
+        _master_evaluator = MasterEvaluator()
+    return _master_evaluator
 
 
 def evaluate_content(content: Dict) -> Dict:
     """Convenience function for evaluation."""
-    return get_god_tier_evaluator().evaluate(content)
+    return get_master_evaluator().evaluate(content)
 
 
 def get_tips_for_10() -> List[str]:
     """Get tips for achieving 10/10."""
-    return get_god_tier_evaluator().get_tips_for_10()
+    return get_master_evaluator().get_tips_for_10()
 
 
 # =============================================================================
@@ -561,7 +561,7 @@ if __name__ == "__main__":
     safe_print("GOD-TIER EVALUATOR TEST")
     safe_print("=" * 60)
     
-    evaluator = get_god_tier_evaluator()
+    evaluator = get_master_evaluator()
     
     # Test content
     test_content = {

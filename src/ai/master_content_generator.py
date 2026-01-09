@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - God-Tier Content Generator v17.9.7
+ViralShorts Factory - Master Content Generator v17.9.7
 =========================================================
 
 This module GENERATES 10/10 content by:
@@ -8,7 +8,7 @@ This module GENERATES 10/10 content by:
 2. Auto-checking against hardcoded rules before returning
 3. Iteratively improving until 10/10 is achieved
 
-This is the GENERATION counterpart to god_tier_evaluator.py
+This is the GENERATION counterpart to master_evaluator.py
 """
 
 import os
@@ -134,9 +134,9 @@ REMEMBER: If this content doesn't make YOU want to stop scrolling and watch, STA
 OUTPUT JSON ONLY."""
 
 
-class GodTierContentGenerator:
+class MasterContentGenerator:
     """
-    Generates 10/10 viral content using the god-tier prompt.
+    Generates 10/10 viral content using the master prompt.
     """
     
     # Hardcoded checks that MUST pass
@@ -200,7 +200,7 @@ class GodTierContentGenerator:
             if score > best_score:
                 best_score = score
                 best_result = result
-                best_result["god_tier_score"] = score
+                best_result["master_score"] = score
                 best_result["checks_passed"] = check_result["passed"]
                 best_result["checks_failed"] = check_result["failed"]
             
@@ -407,22 +407,22 @@ class GodTierContentGenerator:
 # SINGLETON & CONVENIENCE
 # =============================================================================
 
-_god_tier_generator = None
+_master_generator = None
 
 
-def get_god_tier_generator() -> GodTierContentGenerator:
+def get_master_generator() -> MasterContentGenerator:
     """Get singleton generator."""
-    global _god_tier_generator
-    if _god_tier_generator is None:
-        _god_tier_generator = GodTierContentGenerator()
-    return _god_tier_generator
+    global _master_generator
+    if _master_generator is None:
+        _master_generator = MasterContentGenerator()
+    return _master_generator
 
 
-def generate_god_tier_content(topic: str, category: str, 
+def generate_master_content(topic: str, category: str, 
                               duration: int = 50, 
                               phrase_count: int = 8) -> Dict:
     """Convenience function."""
-    return get_god_tier_generator().generate(topic, category, duration, phrase_count)
+    return get_master_generator().generate(topic, category, duration, phrase_count)
 
 
 # =============================================================================
@@ -434,7 +434,7 @@ if __name__ == "__main__":
     safe_print("GOD-TIER CONTENT GENERATOR TEST")
     safe_print("=" * 60)
     
-    generator = get_god_tier_generator()
+    generator = get_master_generator()
     
     # Test with a sample topic
     result = generator.generate(
@@ -451,7 +451,7 @@ if __name__ == "__main__":
         for i, phrase in enumerate(result.get('phrases', []), 1):
             safe_print(f"  {i}. {phrase}")
         safe_print(f"\nCTA: {result.get('cta', 'N/A')}")
-        safe_print(f"\nGod-Tier Score: {result.get('god_tier_score', 'N/A')}/10")
+        safe_print(f"\nMaster Score: {result.get('master_score', 'N/A')}/10")
         safe_print(f"Checks Passed: {len(result.get('checks_passed', []))}")
         safe_print(f"Checks Failed: {len(result.get('checks_failed', []))}")
         

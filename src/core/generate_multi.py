@@ -62,9 +62,9 @@ try:
 except ImportError:
     HAS_AI_TRENDS = False
 
-# Import god-tier prompts
+# Import master prompts
 try:
-    from god_tier_prompts import GodTierContentGenerator, strip_emojis as strip_emojis_godtier
+    from master_prompts import MasterContentGenerator, strip_emojis as strip_emojis_master
     HAS_GOD_TIER = True
 except ImportError:
     HAS_GOD_TIER = False
@@ -613,7 +613,7 @@ async def main():
         print("\n🧠 GOD-TIER AI Mode: Maximum viral potential...")
         
         if HAS_GOD_TIER:
-            gen = GodTierContentGenerator()
+            gen = MasterContentGenerator()
             # Initialize client
             import os as os_module
             api_key = os_module.environ.get("GROQ_API_KEY")
@@ -719,7 +719,7 @@ async def main():
                         if success:
                             generated += 1
         else:
-            print("⚠️ God-tier prompts not available, using basic AI")
+            print("⚠️ Master prompts not available, using basic AI")
             if HAS_AI_TRENDS:
                 ai_topics = get_multiple_ai_suggestions(args.count)
                 for i, topic in enumerate(ai_topics, 1):

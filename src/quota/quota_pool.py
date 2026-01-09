@@ -110,7 +110,7 @@ class QuotaPoolManager:
     # Production needs per video (with 10% margin)
     PRODUCTION_NEEDS = {
         "regular_steps_per_video": 12,  # Script, CTA, phrases, etc.
-        "critical_steps_per_video": 3,   # Hook, quality eval, god-tier
+        "critical_steps_per_video": 3,   # Hook, quality eval, master
         "videos_per_day": 6,
     }
     

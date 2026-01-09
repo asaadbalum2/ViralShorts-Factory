@@ -37,7 +37,7 @@ async def generate_videos(count: int):
     """Generate videos with full AI and B-roll support."""
     
     # Import after setting env vars
-    from god_tier_prompts import GodTierContentGenerator, strip_emojis
+    from master_prompts import MasterContentGenerator, strip_emojis
     from dynamic_video_generator import DynamicVideoGenerator
     from groq import Groq
     
@@ -65,9 +65,9 @@ async def generate_videos(count: int):
         print(f"   [ERROR] AI Connection failed: {e}")
         return
     
-    # Generate topics with god-tier prompts
-    print("\n[2] Generating viral topics with god-tier prompts...")
-    gen = GodTierContentGenerator()
+    # Generate topics with master prompts
+    print("\n[2] Generating viral topics with master prompts...")
+    gen = MasterContentGenerator()
     gen.groq_client = client
     
     topics = gen.generate_viral_topics(count)

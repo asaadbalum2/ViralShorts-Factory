@@ -50,7 +50,7 @@ try:
         download_pexels_video, VIDEO_WIDTH, VIDEO_HEIGHT,
         THEMES, BROLL_DIR, pil_to_moviepy_clip
     )
-    from god_tier_prompts import GodTierContentGenerator, strip_emojis
+    from master_prompts import MasterContentGenerator, strip_emojis
     from background_music import get_background_music
     from viral_video_science import ValueDeliveryChecker, ViralContentGenerator
     HAS_DEPS = True
@@ -668,8 +668,8 @@ async def generate_dynamic_viral_video(count: int = 1, video_type: str = None):
     print("   ✓ Addictive pacing")
     print("=" * 60)
     
-    # Get viral topics from god-tier prompts
-    from god_tier_prompts import GodTierContentGenerator
+    # Get viral topics from master prompts
+    from master_prompts import MasterContentGenerator
     
     try:
         from groq import Groq
@@ -677,7 +677,7 @@ async def generate_dynamic_viral_video(count: int = 1, video_type: str = None):
     except:
         groq_client = None
     
-    gen = GodTierContentGenerator()
+    gen = MasterContentGenerator()
     gen.client = groq_client
     
     # Generate topics with improved prompts

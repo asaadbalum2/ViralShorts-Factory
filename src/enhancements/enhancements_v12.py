@@ -6654,7 +6654,7 @@ FREE TOOL MAXIMIZATION:
 
 class MasterPromptDesign:
     """
-    #380: Designs god-tier master prompts.
+    #380: Designs master master prompts.
     """
     
     def get_master_instruction(self) -> str:
@@ -7483,7 +7483,7 @@ This batch makes the system SELF-IMPROVING:
 1. ANALYTICS: Learn from every video
 2. SELF-TUNING: Auto-optimize all parameters
 3. QUOTA: Maximum efficiency
-4. PROMPTING: God-tier AI usage
+4. PROMPTING: Master AI usage
 5. FREE TOOLS: Maximize free resources
 6. COMPLIANCE: Never get banned
 

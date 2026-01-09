@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ViralShorts Factory - GOD-TIER PROMPT ENGINEERING
+ViralShorts Factory - MASTER PROMPT ENGINEERING
 Ultra-optimized prompts for maximum viral potential.
 
 Each prompt is crafted using advanced prompt engineering techniques:
@@ -1536,8 +1536,8 @@ JSON ONLY."""
 # Main Class
 # =============================================================================
 
-class GodTierContentGenerator:
-    """Generate viral content using god-tier prompts with multi-AI support."""
+class MasterContentGenerator:
+    """Generate viral content using master prompts with multi-AI support."""
     
     def __init__(self):
         self.groq_client = None
@@ -1605,7 +1605,7 @@ class GodTierContentGenerator:
     
     def generate_viral_topics(self, count: int = 3) -> List[Dict]:
         """
-        Generate viral topic ideas using god-tier prompt.
+        Generate viral topic ideas using master prompt.
         
         IMPORTANT: Uses MULTIPLE SOURCES for trending data - NO HARDCODED TOPICS!
         Sources: Google Trends RSS, Reddit, AI predictions
@@ -1785,7 +1785,7 @@ if __name__ == "__main__":
     else:
         client = None
     
-    gen = GodTierContentGenerator()
+    gen = MasterContentGenerator()
     gen.client = client
     
     if not gen.client:

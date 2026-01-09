@@ -63,7 +63,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="VIRAL_TOPIC_PROMPT",
         type="creative",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Generates viral video topic ideas with hooks and content",
         complexity="complex",
         avg_tokens=2000,
@@ -76,7 +76,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="GOD_TIER_GENERATION_PROMPT",
         type="creative",
-        source_file="src/ai/god_tier_content_generator.py",
+        source_file="src/ai/master_content_generator.py",
         description="Generates 10/10 quality video content with hardcoded checks",
         complexity="complex",
         avg_tokens=1500,
@@ -89,7 +89,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="VOICEOVER_PROMPT",
         type="creative",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Creates natural-sounding voiceover scripts",
         complexity="medium",
         avg_tokens=600,
@@ -102,7 +102,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="ENGAGEMENT_REPLY_PROMPT",
         type="creative",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Generates human-like comment reply templates",
         complexity="medium",
         avg_tokens=600,
@@ -115,7 +115,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="SERIES_CONTINUATION_PROMPT",
         type="creative",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Plans sequel content for successful videos",
         complexity="medium",
         avg_tokens=700,
@@ -128,7 +128,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="CONTENT_RECYCLING_PROMPT",
         type="creative",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Resurrects failed content with new angles",
         complexity="medium",
         avg_tokens=700,
@@ -143,7 +143,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="GOD_TIER_EVALUATION_PROMPT",
         type="evaluation",
-        source_file="src/ai/god_tier_evaluator.py",
+        source_file="src/ai/master_evaluator.py",
         description="Comprehensive quality scoring with 7 dimensions",
         complexity="complex",
         avg_tokens=1500,
@@ -156,7 +156,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="CONTENT_EVALUATION_PROMPT",
         type="evaluation",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Evaluates content for viral potential",
         complexity="medium",
         avg_tokens=800,
@@ -169,7 +169,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="VIRAL_VELOCITY_PROMPT",
         type="evaluation",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Predicts video viral velocity and view counts",
         complexity="medium",
         avg_tokens=800,
@@ -182,7 +182,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="COMMENT_SENTIMENT_PROMPT",
         type="evaluation",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Analyzes comment sentiment and extracts insights",
         complexity="simple",
         avg_tokens=400,
@@ -197,7 +197,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="BROLL_KEYWORDS_PROMPT",
         type="simple",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Extracts B-roll search keywords from content",
         complexity="simple",
         avg_tokens=500,
@@ -210,7 +210,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="DESCRIPTION_SEO_PROMPT",
         type="simple",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Generates SEO-optimized video descriptions",
         complexity="simple",
         avg_tokens=400,
@@ -223,7 +223,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="THUMBNAIL_TEXT_PROMPT",
         type="simple",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Creates thumbnail text overlays",
         complexity="simple",
         avg_tokens=400,
@@ -249,7 +249,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="PLATFORM_OPTIMIZATION_PROMPT",
         type="simple",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Optimizes content for specific platform",
         complexity="simple",
         avg_tokens=600,
@@ -264,7 +264,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="ANALYTICS_DEEP_DIVE_PROMPT",
         type="analysis",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Deep analysis of video performance data",
         complexity="complex",
         avg_tokens=1200,
@@ -277,7 +277,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="CHANNEL_GROWTH_PROMPT",
         type="analysis",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Strategic channel growth planning",
         complexity="complex",
         avg_tokens=1500,
@@ -290,7 +290,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="COMPETITOR_GAP_PROMPT",
         type="analysis",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Finds content gaps from competitor analysis",
         complexity="complex",
         avg_tokens=1200,
@@ -303,7 +303,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="SEASONAL_CALENDAR_PROMPT",
         type="analysis",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Identifies seasonal content opportunities",
         complexity="medium",
         avg_tokens=800,
@@ -316,7 +316,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="CATEGORY_DECAY_PROMPT",
         type="analysis",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Tracks category performance over time",
         complexity="medium",
         avg_tokens=600,
@@ -329,7 +329,7 @@ DEFAULT_PROMPTS = [
     PromptInfo(
         name="HOOK_WORD_ANALYSIS_PROMPT",
         type="analysis",
-        source_file="src/ai/god_tier_prompts.py",
+        source_file="src/ai/master_prompts.py",
         description="Analyzes hook word performance patterns",
         complexity="medium",
         avg_tokens=500,

@@ -565,7 +565,7 @@ def main():
     # v9.5: Seasonal content suggestions for next month
     safe_print("\n[v9.5] Seasonal Content Calendar")
     try:
-        from god_tier_prompts import SEASONAL_CALENDAR_PROMPT
+        from master_prompts import SEASONAL_CALENDAR_PROMPT
         # Generate seasonal suggestions using AI
         prompt = SEASONAL_CALENDAR_PROMPT.format(
             current_date=datetime.now().strftime("%A, %B %d, %Y")

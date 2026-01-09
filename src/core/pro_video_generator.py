@@ -17,7 +17,7 @@ v12.0 ULTIMATE ENHANCEMENTS - 330 NEW (419 TOTAL!):
 - Batch 6: Intelligence (85) - Analytics, Self-Tuning, Quota
 
 20 CATEGORIES: A-T
-All AI-driven via god-tier master prompts!
+All AI-driven via master master prompts!
 
 Previous versions:
 - v8.0: Persistent variety, upload tracking
@@ -389,9 +389,9 @@ try:
 except ImportError:
     AI_QUALITY_GATE_AVAILABLE = False
 
-# v17.9.7: God-Tier Master Evaluator - THE definitive quality scoring system
+# v17.9.7: Master Master Evaluator - THE definitive quality scoring system
 try:
-    from god_tier_evaluator import GodTierEvaluator, get_god_tier_evaluator
+    from master_evaluator import MasterEvaluator, get_master_evaluator
     GOD_TIER_EVALUATOR_AVAILABLE = True
 except ImportError:
     GOD_TIER_EVALUATOR_AVAILABLE = False
@@ -1994,33 +1994,33 @@ Return ONLY the improved hook, nothing else."""
         # 5. v17.9.7: GOD-TIER EVALUATOR - The ULTIMATE quality scoring system
         if GOD_TIER_EVALUATOR_AVAILABLE and phrases:
             try:
-                evaluator = get_god_tier_evaluator()
-                god_tier_content = {
+                evaluator = get_master_evaluator()
+                master_content = {
                     "hook": phrases[0] if phrases else "",
                     "phrases": phrases[1:] if len(phrases) > 1 else phrases,
                     "cta": content.get('cta', ''),
                     "topic": content.get('concept', {}).get('specific_topic', ''),
                     "category": content.get('concept', {}).get('category', 'educational')
                 }
-                god_tier_result = evaluator.evaluate(god_tier_content)
-                content['god_tier_evaluation'] = god_tier_result
+                master_result = evaluator.evaluate(master_content)
+                content['master_evaluation'] = master_result
                 
-                final_score = god_tier_result.get('final_score', 0)
-                verdict = god_tier_result.get('verdict', 'N/A')
-                checks = f"{god_tier_result.get('checks_passed', 0)}/{god_tier_result.get('checks_total', 7)}"
+                final_score = master_result.get('final_score', 0)
+                verdict = master_result.get('verdict', 'N/A')
+                checks = f"{master_result.get('checks_passed', 0)}/{master_result.get('checks_total', 7)}"
                 
-                safe_print(f"   [GOD-TIER] Score: {final_score:.1f}/10 | Verdict: {verdict} | Checks: {checks}")
+                safe_print(f"   [MASTER] Score: {final_score:.1f}/10 | Verdict: {verdict} | Checks: {checks}")
                 
                 # If score < 8 and we have improvement suggestions, log them
-                if final_score < 8 and god_tier_result.get('specific_improvements'):
-                    safe_print(f"   [GOD-TIER] To improve: {god_tier_result['specific_improvements'][0][:60]}...")
+                if final_score < 8 and master_result.get('specific_improvements'):
+                    safe_print(f"   [MASTER] To improve: {master_result['specific_improvements'][0][:60]}...")
                 
                 # Store rewritten hook suggestion for potential use
-                if god_tier_result.get('rewritten_hook'):
-                    content['suggested_hook'] = god_tier_result['rewritten_hook']
+                if master_result.get('rewritten_hook'):
+                    content['suggested_hook'] = master_result['rewritten_hook']
                     
             except Exception as e:
-                safe_print(f"   [!] God-tier evaluation skipped: {e}")
+                safe_print(f"   [!] Master evaluation skipped: {e}")
         
         # v8.9.1: Get the hook/topic from concept for promise validation
         concept = content.get('concept', {})
