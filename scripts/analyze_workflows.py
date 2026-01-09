@@ -626,12 +626,14 @@ def extract_detailed_quota(log: str, workflow_name: str) -> List[QuotaUsage]:
         ))
     
     if youtube_uploads > 0:
+        # NOTE: YouTube limit is 6 per DAY. This shows per-RUN percentage.
+        # For multi-day analysis, the report aggregates by DAY, not total.
         quota_list.append(QuotaUsage(
             provider="YOUTUBE",
             endpoint="uploads",
             calls=youtube_uploads,
             daily_limit=6,
-            percent_used=round(youtube_uploads / 6 * 100, 2)
+            percent_used=round(youtube_uploads / 6 * 100, 2),  # Per-run: 1 upload = ~17%
         ))
     
     # Check for 429 errors
@@ -1099,6 +1101,9 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
     quota_details: Dict[str, Dict[str, Dict]] = {}  # provider -> model -> {calls, limit, percent}
     rate_limited = []
     
+    # Special tracking for YouTube per-day limits
+    youtube_per_day: Dict[str, int] = {}  # date -> upload count
+    
     for r in results:
         for q in r.quota_usage:
             if q.provider not in quota_details:
@@ -1109,11 +1114,20 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
                 quota_details[q.provider][endpoint_key] = {
                     "calls": 0, 
                     "limit": q.daily_limit,
-                    "workflows": set()
+                    "workflows": set(),
+                    "per_day": {}  # Track per-day for daily-limited quotas
                 }
             
             quota_details[q.provider][endpoint_key]["calls"] += q.calls
             quota_details[q.provider][endpoint_key]["workflows"].add(r.run.name[:20])
+            
+            # Track per-day for YouTube uploads
+            if q.provider == "YOUTUBE" and "upload" in endpoint_key.lower():
+                day_key = r.run.created_at.strftime("%Y-%m-%d")
+                if "per_day" not in quota_details[q.provider][endpoint_key]:
+                    quota_details[q.provider][endpoint_key]["per_day"] = {}
+                quota_details[q.provider][endpoint_key]["per_day"][day_key] = \
+                    quota_details[q.provider][endpoint_key]["per_day"].get(day_key, 0) + q.calls
             
             if q.error_429:
                 rate_limited.append((q.provider, endpoint_key, r.run.run_id, r.run.created_at))
@@ -1128,7 +1142,17 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
             limit = data["limit"]
             total_calls += calls
             
-            if limit > 0:
+            # For YouTube uploads, check per-day usage (limit is per DAY, not total)
+            if provider == "YOUTUBE" and "upload" in endpoint.lower() and data.get("per_day"):
+                max_day_usage = max(data["per_day"].values()) if data["per_day"] else 0
+                percent = max_day_usage / limit * 100 if limit > 0 else 0
+                percent_str = f"{percent:.1f}%/day"
+                status = "⚠️ HIGH" if percent >= 80 else "✅ OK"
+                # Show per-day breakdown
+                days_info = ", ".join([f"{d[-5:]}: {c}" for d, c in sorted(data["per_day"].items())[-3:]])
+                safe_print(f"   {provider:<12} | {endpoint[:30]:<30} | {calls:>6} | {limit:>5}/day | {percent_str:>8} | {status:<10}")
+                safe_print(f"   {'':12} | {'  └─ Per day: ' + days_info:<62}")
+            elif limit > 0:
                 percent = calls / limit * 100
                 percent_str = f"{percent:.1f}%"
                 if percent >= 80:
@@ -1137,12 +1161,12 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
                     status = "📊 MEDIUM"
                 else:
                     status = "✅ OK"
+                limit_str = str(limit)
+                safe_print(f"   {provider:<12} | {endpoint[:30]:<30} | {calls:>6} | {limit_str:>8} | {percent_str:>8} | {status:<10}")
             else:
                 percent_str = "∞ FREE"
                 status = "✅ FREE"
-            
-            limit_str = str(limit) if limit > 0 else "∞"
-            safe_print(f"   {provider:<12} | {endpoint[:30]:<30} | {calls:>6} | {limit_str:>8} | {percent_str:>8} | {status:<10}")
+                safe_print(f"   {provider:<12} | {endpoint[:30]:<30} | {calls:>6} | {'∞':>8} | {percent_str:>8} | {status:<10}")
     
     safe_print("   " + "-" * 95)
     safe_print(f"   {'TOTAL':<12} | {'':<30} | {total_calls:>6} |")
@@ -1254,10 +1278,84 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
                 safe_print(f"      [{wf[:20]}] Run #{run_id}: {warn[:50]}")
     
     # ============================================================
-    # SECTION 8: Additional Metrics
+    # SECTION 8: HIDDEN ISSUES DETECTION
+    # ============================================================
+    safe_print("\n" + "-" * 90)
+    safe_print("  8. HIDDEN ISSUES DETECTION")
+    safe_print("-" * 90)
+    
+    hidden_issues = []
+    
+    # Issue 1: Persistent data not being read/written correctly
+    for r in results:
+        if "Video Generator" in r.run.name:
+            if r.passed and not r.persistent_read_success:
+                hidden_issues.append(f"Run #{r.run.run_id}: Video generated but persistent data not read")
+            if r.passed and not r.persistent_write_success:
+                hidden_issues.append(f"Run #{r.run.run_id}: Video generated but persistent data not saved")
+    
+    # Issue 2: Pre-work not being used
+    generator_results = [r for r in results if "Video Generator" in r.run.name]
+    for r in generator_results:
+        if r.passed and r.key_metrics.get("prework_concepts_used", 0) == 0:
+            hidden_issues.append(f"Run #{r.run.run_id}: Pre-work concepts not used (quota wasted on fresh generation)")
+    
+    # Issue 3: Videos generated but not uploaded (when upload was expected)
+    for r in generator_results:
+        if r.passed and r.videos:
+            not_uploaded = [v for v in r.videos if not v.uploaded]
+            if not_uploaded and "no-upload" not in str(r.run.log_content).lower():
+                hidden_issues.append(f"Run #{r.run.run_id}: {len(not_uploaded)} video(s) generated but not uploaded")
+    
+    # Issue 4: Stale persistent data
+    if persistent_data:
+        for fname, analysis in persistent_data.items():
+            if analysis.health_status == "stale":
+                hidden_issues.append(f"Stale file: {fname} - not updated for >7 days")
+            if analysis.health_status == "empty":
+                hidden_issues.append(f"Empty file: {fname} - no meaningful data")
+            if analysis.health_status == "corrupted":
+                hidden_issues.append(f"Corrupted file: {fname} - JSON parse error")
+    
+    # Issue 5: High rate limit frequency
+    if len(rate_limited) > 3:
+        hidden_issues.append(f"Frequent rate limits: {len(rate_limited)} events - consider reducing API call frequency")
+    
+    # Issue 6: Low video generation success rate
+    if generator_results:
+        gen_passed = sum(1 for r in generator_results if r.passed and r.videos)
+        gen_total = len(generator_results)
+        if gen_total > 0 and gen_passed / gen_total < 0.8:
+            hidden_issues.append(f"Low video success rate: {gen_passed}/{gen_total} ({gen_passed/gen_total*100:.0f}%)")
+    
+    # Issue 7: Missing expected workflow runs
+    expected_workflows = {
+        "Video Generator": 6,  # Expected per day
+        "Pre-Work": 1,  # Expected per day
+    }
+    for wf_name, expected_per_day in expected_workflows.items():
+        matching = [r for r in results if wf_name in r.run.name]
+        expected_in_period = expected_per_day * days
+        if len(matching) < expected_in_period * 0.5:  # Less than 50% of expected
+            hidden_issues.append(f"Missing {wf_name} runs: Expected ~{expected_in_period}, got {len(matching)}")
+    
+    # Issue 8: Consistent "fresh state" warnings (means persistent data not persisting)
+    fresh_state_count = sum(1 for r in results for w in r.warnings if "Fresh state" in w)
+    if fresh_state_count > len(generator_results) * 0.5:
+        hidden_issues.append(f"Persistent state issues: {fresh_state_count}/{len(generator_results)} runs started fresh")
+    
+    if hidden_issues:
+        safe_print("\n   🔍 DETECTED HIDDEN ISSUES:")
+        for i, issue in enumerate(hidden_issues, 1):
+            safe_print(f"      {i}. ⚠️ {issue}")
+    else:
+        safe_print("\n   ✅ No hidden issues detected!")
+    
+    # ============================================================
+    # SECTION 9: Additional Metrics
     # ============================================================
     safe_print("\n" + "-" * 80)
-    safe_print("  8. ADDITIONAL METRICS")
+    safe_print("  9. ADDITIONAL METRICS")
     safe_print("-" * 80)
     
     # Pre-work effectiveness
@@ -1281,11 +1379,11 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
         safe_print(f"\n   🎬 Avg Videos per Run: {avg_videos:.1f}")
     
     # ============================================================
-    # SECTION 9: Persistent Data Analysis
+    # SECTION 10: Persistent Data Analysis
     # ============================================================
     if persistent_data:
         safe_print("\n" + "-" * 90)
-        safe_print("  9. PERSISTENT DATA ANALYSIS")
+        safe_print("  10. PERSISTENT DATA ANALYSIS")
         safe_print("-" * 90)
         
         safe_print(f"\n   {'File':<30} | {'Status':<12} | {'Size':>8} | {'Key Info':<35}")
@@ -1331,10 +1429,10 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
                         safe_print(f"      {key}: {value}")
     
     # ============================================================
-    # SECTION 10: Per-Workflow Quota Breakdown
+    # SECTION 11: Per-Workflow Quota Breakdown
     # ============================================================
     safe_print("\n" + "-" * 90)
-    safe_print("  10. PER-WORKFLOW QUOTA BREAKDOWN")
+    safe_print("  11. PER-WORKFLOW QUOTA BREAKDOWN")
     safe_print("-" * 90)
     
     for r in sorted(results, key=lambda x: x.run.created_at, reverse=True)[:10]:
