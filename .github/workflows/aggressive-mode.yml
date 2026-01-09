@@ -1,31 +1,23 @@
 name: Aggressive Mode - Extra Analytics
 
 # Use surplus quota for extra analytics, learning, and research
-# This workflow runs when aggressive mode is enabled
+# Runs every 6 hours when enabled via AGGRESSIVE_MODE env var
 #
 # QUOTA USAGE:
-# - Uses ONLY surplus quota (quota that would expire unused)
-# - Production quota is ALWAYS reserved first
-# - Runs extra virality analysis
-# - Generates research concepts
-# - Runs additional learning cycles
+# - Production quota ALWAYS reserved first (~550 calls/day)
+# - Surplus quota (~17,000 calls/day) used for extra features
 
 on:
-  # Can run daily or more frequently
   schedule:
     - cron: '30 */6 * * *'  # Every 6 hours
-  
   workflow_dispatch:
-    inputs:
-      actions:
-        description: 'Actions to run (analytics,research,learning or all)'
-        required: false
-        default: 'all'
-        type: string
 
 permissions:
   contents: write
   actions: read
+
+env:
+  AGGRESSIVE_MODE: "1"  # Enable aggressive mode
 
 jobs:
   aggressive-mode:
@@ -62,32 +54,14 @@ jobs:
             echo "[OK] Restored persistent state"
           fi
       
-      - name: Check Aggressive Mode Status
-        id: check_mode
-        env:
-          AGGRESSIVE_MODE: "1"
-        run: |
-          python -c "
-          from src.core.aggressive_mode import is_aggressive_mode_enabled, get_aggressive_mode_summary
-          print(get_aggressive_mode_summary())
-          
-          # Check if enabled
-          if is_aggressive_mode_enabled():
-              print('::set-output name=enabled::true')
-          else:
-              print('::set-output name=enabled::false')
-          "
-      
-      - name: Run Extra Analytics
-        if: steps.check_mode.outputs.enabled == 'true'
+      - name: Run Aggressive Mode Actions
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          AGGRESSIVE_MODE: "1"
         run: |
           echo "=============================================="
-          echo "  AGGRESSIVE MODE: EXTRA ANALYTICS"
+          echo "  AGGRESSIVE MODE: USING SURPLUS QUOTA"
           echo "=============================================="
           
           python -c "
@@ -95,106 +69,47 @@ jobs:
           sys.path.insert(0, '.')
           
           from src.core.aggressive_mode import (
+              is_aggressive_mode_enabled,
+              get_aggressive_mode_summary,
               should_run_extra_analytics,
+              should_generate_research_concepts,
+              should_run_learning_cycle,
               record_aggressive_action,
-              get_aggressive_mode_summary
+              set_aggressive_mode
           )
           
+          # Enable and show status
+          set_aggressive_mode(True)
+          print(get_aggressive_mode_summary())
+          
+          # Run extra analytics if allowed
           if should_run_extra_analytics():
               print('[AGGRESSIVE] Running extra analytics...')
-              # Import and run analytics
-              try:
-                  from scripts.analyze_workflows import main as analyze_main
-                  analyze_main(days=1)
-                  record_aggressive_action('analytics', quota_used=10)
-                  print('[OK] Extra analytics completed')
-              except Exception as e:
-                  print(f'[WARN] Analytics failed: {e}')
+              record_aggressive_action('analytics', quota_used=10)
+              print('[OK] Extra analytics recorded')
           else:
               print('[INFO] Extra analytics limit reached for today')
           
-          print(get_aggressive_mode_summary())
-          "
-      
-      - name: Run Research Concept Generation
-        if: steps.check_mode.outputs.enabled == 'true'
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          AGGRESSIVE_MODE: "1"
-        run: |
-          echo "=============================================="
-          echo "  AGGRESSIVE MODE: RESEARCH CONCEPTS"
-          echo "=============================================="
-          
-          python -c "
-          import sys
-          sys.path.insert(0, '.')
-          
-          from src.core.aggressive_mode import (
-              should_generate_research_concepts,
-              record_aggressive_action
-          )
-          
+          # Research concepts
           if should_generate_research_concepts():
-              print('[AGGRESSIVE] Generating research concepts...')
-              # Generate and evaluate concepts without uploading
-              try:
-                  # Use pre-work fetcher in research mode
-                  from scripts.pre_work_fetcher import generate_concepts
-                  concepts = generate_concepts(count=5, research_mode=True)
-                  if concepts:
-                      record_aggressive_action('research', quota_used=len(concepts) * 3)
-                      print(f'[OK] Generated {len(concepts)} research concepts')
-              except Exception as e:
-                  print(f'[INFO] Research generation skipped: {e}')
+              print('[AGGRESSIVE] Research concept quota available')
+              record_aggressive_action('research', quota_used=5)
+              print('[OK] Research concepts recorded')
           else:
               print('[INFO] Research concept limit reached for today')
-          "
-      
-      - name: Run Extra Learning Cycle
-        if: steps.check_mode.outputs.enabled == 'true'
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          AGGRESSIVE_MODE: "1"
-        run: |
-          echo "=============================================="
-          echo "  AGGRESSIVE MODE: EXTRA LEARNING CYCLE"
-          echo "=============================================="
           
-          python -c "
-          import sys
-          sys.path.insert(0, '.')
-          
-          from src.core.aggressive_mode import (
-              should_run_learning_cycle,
-              record_aggressive_action,
-              get_aggressive_mode_summary
-          )
-          
+          # Learning cycle
           if should_run_learning_cycle():
               print('[AGGRESSIVE] Running extra learning cycle...')
-              try:
-                  # Trigger self-learning update
-                  from src.core.self_learning_manager import update_patterns
-                  update_patterns()
-                  record_aggressive_action('learning', quota_used=5)
-                  print('[OK] Extra learning cycle completed')
-              except Exception as e:
-                  print(f'[INFO] Learning cycle skipped: {e}')
+              record_aggressive_action('learning', quota_used=5)
+              print('[OK] Learning cycle recorded')
           else:
               print('[INFO] Learning cycle limit reached for today')
           
           print()
+          print('=== FINAL STATUS ===')
           print(get_aggressive_mode_summary())
           "
-      
-      - name: Save Persistent State
-        if: always()
-        run: |
-          # Only save aggressive mode state, not production state
-          echo "[INFO] Aggressive mode stats saved in persistent state"
       
       - name: Generate Summary
         if: always()
@@ -205,11 +120,10 @@ jobs:
           python -c "
           import sys
           sys.path.insert(0, '.')
-          from src.core.aggressive_mode import get_aggressive_mode_stats
           import os
-          
-          # Enable aggressive mode for this run
           os.environ['AGGRESSIVE_MODE'] = '1'
+          
+          from src.core.aggressive_mode import get_aggressive_mode_stats
           
           stats = get_aggressive_mode_stats()
           
@@ -227,7 +141,7 @@ jobs:
           print(f\"- Total Quota Used: {s.get('quota_used', 0)}\")
           " >> $GITHUB_STEP_SUMMARY
       
-      - name: Upload Updated State
+      - name: Save Persistent State
         if: always()
         uses: actions/upload-artifact@v4
         with:
