@@ -610,12 +610,10 @@ def get_dynamic_gemini_model() -> str:
 
 def get_dynamic_groq_model() -> str:
     """
-    v17.9.12: TRULY DYNAMIC Groq model selection.
+    v17.9.30: Dynamic Groq model selection with TEXT GENERATION filtering.
     
-    NO hardcoded model names! All via API:
-    1. Query API for available models
-    2. Filter out inactive/decommissioned (404 from API)
-    3. Return first available
+    FILTERS OUT TTS/audio/speech models (orpheus, whisper, etc.)
+    ONLY includes text generation models (llama, mixtral, gemma)
     """
     # 1. Try quota_optimizer first
     try:
@@ -628,30 +626,39 @@ def get_dynamic_groq_model() -> str:
         except ImportError:
             pass
     
-    # 2. Try API discovery - get ONLY active models
+    # 2. Use _discover_groq_models() which has proper filtering
+    models = _discover_groq_models()
+    if models:
+        _safe_print(f"[MODEL] Selected Groq: {models[0]} (from {len(models)} text-gen models)")
+        return models[0]
+                
+    # 3. Fallback to hardcoded safe models (text generation only)
+    SAFE_GROQ_MODELS = [
+        "llama-3.3-70b-versatile",
+        "llama-3.1-8b-instant", 
+        "mixtral-8x7b-32768",
+        "gemma2-9b-it",
+    ]
+    
     try:
         api_key = os.environ.get("GROQ_API_KEY")
         if api_key:
             from groq import Groq
             client = Groq(api_key=api_key)
-            models_response = client.models.list()
-            
-            # Get all active models from API (no hardcoding!)
-            available = []
-            for m in models_response.data:
-                if hasattr(m, 'id') and hasattr(m, 'active'):
-                    if m.active:  # Only include active models
-                        available.append(m.id)
-                elif hasattr(m, 'id'):
-                    available.append(m.id)  # If no active flag, assume active
-            
-            if available:
-                _save_cache("groq", {"models": available})
-                _safe_print(f"[MODEL] Selected Groq: {available[0]} (from {len(available)} active)")
-                return available[0]
-                
+            for model in SAFE_GROQ_MODELS:
+                try:
+                    # Test if model works
+                    client.chat.completions.create(
+                        model=model,
+                        messages=[{"role": "user", "content": "test"}],
+                        max_tokens=1
+                    )
+                    _safe_print(f"[MODEL] Using safe Groq model: {model}")
+                    return model
+                except:
+                    continue
     except Exception as e:
-        _safe_print(f"[MODEL] Groq discovery failed: {e}")
+        _safe_print(f"[MODEL] Groq fallback failed: {e}")
     
     # 3. Try cache
     cached = _load_cache("groq", allow_expired=True)
@@ -804,18 +811,80 @@ def get_all_models(provider: str) -> List[str]:
 
 
 def _discover_groq_models() -> List[str]:
-    """Discover all available Groq models."""
+    """
+    v17.9.30: Discover TEXT GENERATION Groq models only.
+    
+    FILTERS OUT:
+    - TTS/audio models (orpheus, whisper, distil-whisper)
+    - Models requiring terms acceptance
+    - Non-text-generation models
+    
+    INCLUDES (priority order):
+    - llama-3.3-70b-versatile (best quality)
+    - llama-3.1-8b-instant (fast)
+    - mixtral (good quality)
+    - gemma (good quality)
+    """
+    # Patterns to EXCLUDE (TTS, audio, speech, vision-only, special)
+    EXCLUDE_PATTERNS = [
+        "orpheus",      # TTS model
+        "whisper",      # Speech-to-text
+        "distil-whisper", 
+        "playai",       # Audio generation
+        "tts",          # Text-to-speech
+        "audio",        # Audio models
+        "speech",       # Speech models
+        "vision",       # Vision-only models
+        "guard",        # Safety models
+        "tool-use",     # Tool-only models
+    ]
+    
+    # Patterns to INCLUDE (text generation models)
+    INCLUDE_PATTERNS = [
+        "llama",        # LLaMA family
+        "mixtral",      # Mixtral family  
+        "gemma",        # Gemma family
+        "deepseek",     # DeepSeek
+        "qwen",         # Qwen
+    ]
+    
     try:
         api_key = os.environ.get("GROQ_API_KEY")
         if api_key:
             from groq import Groq
             client = Groq(api_key=api_key)
             models_response = client.models.list()
-            models = [m.id for m in models_response.data if hasattr(m, 'id')]
             
-            if models:
-                _save_cache("groq", {"models": models})
-                return models
+            text_gen_models = []
+            for m in models_response.data:
+                if not hasattr(m, 'id'):
+                    continue
+                model_id = m.id.lower()
+                
+                # Skip excluded patterns
+                if any(excl in model_id for excl in EXCLUDE_PATTERNS):
+                    continue
+                    
+                # Only include if matches text gen patterns
+                if any(incl in model_id for incl in INCLUDE_PATTERNS):
+                    text_gen_models.append(m.id)
+            
+            if text_gen_models:
+                # Sort: prefer 70b > 8b > others, versatile > instant
+                def model_priority(m):
+                    m_lower = m.lower()
+                    score = 0
+                    if "70b" in m_lower: score += 100
+                    if "versatile" in m_lower: score += 50
+                    if "8b" in m_lower: score += 30
+                    if "instant" in m_lower: score += 20
+                    if "3.3" in m_lower: score += 10
+                    return -score  # Negative for descending sort
+                
+                text_gen_models.sort(key=model_priority)
+                _save_cache("groq", {"models": text_gen_models})
+                _safe_print(f"[MODEL] Found {len(text_gen_models)} Groq text-gen models")
+                return text_gen_models
     except Exception as e:
         _safe_print(f"[MODEL] Groq discovery failed: {e}")
     

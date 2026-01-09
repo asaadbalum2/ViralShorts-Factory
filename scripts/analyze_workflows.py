@@ -1516,6 +1516,289 @@ def generate_report(results: List[WorkflowAnalysisResult], days: int, persistent
 
 
 # ============================================================
+# HTML REPORT GENERATION
+# ============================================================
+
+def generate_html_report(results: List[WorkflowAnalysisResult], persistent_data: Dict, days: int) -> str:
+    """Generate a beautiful HTML report."""
+    
+    # Calculate summary stats
+    total_runs = len(results)
+    passed = sum(1 for r in results if r.passed)
+    failed = total_runs - passed
+    success_rate = (passed / total_runs * 100) if total_runs > 0 else 0
+    
+    all_videos = [v for r in results for v in r.videos]
+    total_videos = len(all_videos)
+    uploaded_videos = sum(1 for v in all_videos if v.uploaded)
+    
+    # Collect quota data
+    quota_by_provider = {}
+    for r in results:
+        for q in r.quota_usage:
+            if q.provider not in quota_by_provider:
+                quota_by_provider[q.provider] = {"calls": 0, "limit": q.daily_limit}
+            quota_by_provider[q.provider]["calls"] += q.calls
+    
+    # Collect errors
+    all_errors = [(r.run.name, r.run.run_id, e) for r in results for e in r.errors]
+    
+    # Hidden issues
+    hidden_issues = []
+    rate_limited_count = sum(1 for r in results if any(q.error_429 for q in r.quota_usage))
+    if rate_limited_count > 0:
+        hidden_issues.append(f"Rate limits hit in {rate_limited_count} runs")
+    
+    # Generate HTML
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Analysis Report</title>
+    <style>
+        :root {{
+            --bg-dark: #0d1117;
+            --bg-card: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --success: #3fb950;
+            --warning: #d29922;
+            --error: #f85149;
+        }}
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        h1 {{
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #58a6ff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }}
+        .subtitle {{ color: var(--text-muted); margin-bottom: 2rem; }}
+        .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }}
+        .card {{
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }}
+        .card h3 {{ color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }}
+        .card .value {{ font-size: 2.5rem; font-weight: 700; }}
+        .card .subvalue {{ color: var(--text-muted); font-size: 0.875rem; }}
+        .success {{ color: var(--success); }}
+        .warning {{ color: var(--warning); }}
+        .error {{ color: var(--error); }}
+        table {{ width: 100%; border-collapse: collapse; margin-top: 1rem; }}
+        th, td {{ padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }}
+        th {{ color: var(--text-muted); font-weight: 500; font-size: 0.875rem; text-transform: uppercase; }}
+        tr:hover {{ background: rgba(88, 166, 255, 0.05); }}
+        .badge {{
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }}
+        .badge-success {{ background: rgba(63, 185, 80, 0.2); color: var(--success); }}
+        .badge-error {{ background: rgba(248, 81, 73, 0.2); color: var(--error); }}
+        .badge-warning {{ background: rgba(210, 153, 34, 0.2); color: var(--warning); }}
+        .progress-bar {{
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }}
+        .progress-fill {{
+            height: 100%;
+            background: linear-gradient(90deg, var(--success), var(--accent));
+            transition: width 0.3s ease;
+        }}
+        .section {{ margin-bottom: 2rem; }}
+        .section-title {{ font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }}
+        .video-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }}
+        .video-card {{
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }}
+        .video-card h4 {{ font-size: 0.875rem; margin-bottom: 0.5rem; word-break: break-all; }}
+        .video-meta {{ display: flex; gap: 1rem; flex-wrap: wrap; color: var(--text-muted); font-size: 0.8rem; }}
+        .video-meta span {{ display: flex; align-items: center; gap: 0.25rem; }}
+        a {{ color: var(--accent); text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .issue-list {{ list-style: none; }}
+        .issue-list li {{ padding: 0.5rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.5rem; }}
+        .issue-list li:last-child {{ border-bottom: none; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Workflow Analysis Report</h1>
+        <p class="subtitle">Last {days} day(s) • Generated {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")} UTC</p>
+        
+        <!-- Summary Cards -->
+        <div class="grid">
+            <div class="card">
+                <h3>Success Rate</h3>
+                <div class="value {'success' if success_rate >= 90 else 'warning' if success_rate >= 70 else 'error'}">{success_rate:.0f}%</div>
+                <div class="subvalue">{passed}/{total_runs} workflows passed</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: {success_rate}%"></div></div>
+            </div>
+            <div class="card">
+                <h3>Videos Generated</h3>
+                <div class="value">{total_videos}</div>
+                <div class="subvalue">{uploaded_videos} uploaded to YouTube</div>
+            </div>
+            <div class="card">
+                <h3>Errors</h3>
+                <div class="value {'error' if len(all_errors) > 0 else 'success'}">{len(all_errors)}</div>
+                <div class="subvalue">{len(hidden_issues)} hidden issues detected</div>
+            </div>
+            <div class="card">
+                <h3>Persistent Data</h3>
+                <div class="value success">{sum(1 for a in persistent_data.values() if a.health_status == "healthy")}/{len(persistent_data)}</div>
+                <div class="subvalue">files healthy</div>
+            </div>
+        </div>
+        
+        <!-- Workflow Runs -->
+        <div class="section">
+            <h2 class="section-title">📋 Workflow Runs</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Workflow</th>
+                            <th>Run ID</th>
+                            <th>Time</th>
+                            <th>Videos</th>
+                            <th>Pre-work Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>'''
+    
+    for r in sorted(results, key=lambda x: x.run.created_at, reverse=True):
+        status_badge = '<span class="badge badge-success">✓ PASS</span>' if r.passed else '<span class="badge badge-error">✗ FAIL</span>'
+        video_count = len(r.videos)
+        prework = r.key_metrics.get("prework_concepts_used", "-")
+        html += f'''
+                        <tr>
+                            <td>{status_badge}</td>
+                            <td>{r.run.name[:40]}</td>
+                            <td><a href="https://github.com/asaadbalum2/ViralShorts-Factory/actions/runs/{r.run.run_id}" target="_blank">#{r.run.run_id}</a></td>
+                            <td>{r.run.created_at.strftime("%Y-%m-%d %H:%M")}</td>
+                            <td>{video_count}</td>
+                            <td>{prework}</td>
+                        </tr>'''
+    
+    html += '''
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Quota Usage -->
+        <div class="section">
+            <h2 class="section-title">📊 Quota Usage</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Provider</th>
+                            <th>Calls</th>
+                            <th>Daily Limit</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>'''
+    
+    for provider, data in sorted(quota_by_provider.items()):
+        calls = data["calls"]
+        limit = data["limit"]
+        pct = (calls / limit * 100) if limit > 0 else 0
+        status_class = "error" if pct > 80 else "warning" if pct > 50 else "success"
+        html += f'''
+                        <tr>
+                            <td><strong>{provider}</strong></td>
+                            <td>{calls}</td>
+                            <td>{limit if limit > 0 else "∞"}</td>
+                            <td class="{status_class}">{pct:.1f}%</td>
+                        </tr>'''
+    
+    html += '''
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Videos -->
+        <div class="section">
+            <h2 class="section-title">🎥 Generated Videos</h2>
+            <div class="video-grid">'''
+    
+    for v in all_videos[:12]:  # Show first 12
+        upload_badge = '<span class="badge badge-success">Uploaded</span>' if v.uploaded else '<span class="badge badge-warning">Local</span>'
+        yt_link = f'<a href="{v.youtube_url}" target="_blank">Watch →</a>' if v.youtube_url else ""
+        html += f'''
+                <div class="video-card">
+                    <h4>{v.title}</h4>
+                    <div class="video-meta">
+                        <span>📁 {v.category or "Unknown"}</span>
+                        <span>💾 {v.file_size_mb}MB</span>
+                        {upload_badge}
+                    </div>
+                    <div class="video-meta" style="margin-top: 0.5rem;">
+                        <span>🤖 {v.ai_model_used or "N/A"}</span>
+                        <span>🎙 {v.tts_engine or "N/A"}</span>
+                    </div>
+                    {f'<div style="margin-top: 0.5rem;">{yt_link}</div>' if yt_link else ""}
+                </div>'''
+    
+    html += '''
+            </div>
+        </div>'''
+    
+    # Errors section if any
+    if all_errors:
+        html += '''
+        <div class="section">
+            <h2 class="section-title">⚠️ Errors</h2>
+            <div class="card">
+                <ul class="issue-list">'''
+        for wf, run_id, err in all_errors[:5]:
+            html += f'''
+                    <li>
+                        <span class="badge badge-error">ERROR</span>
+                        <span><strong>{wf[:25]}</strong> (#{run_id}): {err[:60]}</span>
+                    </li>'''
+        html += '''
+                </ul>
+            </div>
+        </div>'''
+    
+    html += '''
+    </div>
+</body>
+</html>'''
+    
+    return html
+
+
+# ============================================================
 # MAIN
 # ============================================================
 
@@ -1535,6 +1818,12 @@ Examples:
         type=int, 
         default=1,
         help="Number of days to analyze (default: 1)"
+    )
+    parser.add_argument(
+        "--html",
+        type=str,
+        default=None,
+        help="Generate HTML report to specified file (e.g., --html report.html)"
     )
     
     args = parser.parse_args()
@@ -1569,6 +1858,15 @@ Examples:
     # Step 4-6: Generate report
     safe_print(f"\n[4/6] Generating comprehensive report...")
     generate_report(results, args.days, persistent_data)
+    
+    # Step 5: Generate HTML report if requested
+    if args.html:
+        safe_print(f"\n[5/6] Generating HTML report...")
+        html_content = generate_html_report(results, persistent_data, args.days)
+        
+        html_path = Path(args.html)
+        html_path.write_text(html_content, encoding='utf-8')
+        safe_print(f"   ✅ HTML report saved to: {html_path.absolute()}")
     
     safe_print("\n✅ Comprehensive analysis complete!")
 
