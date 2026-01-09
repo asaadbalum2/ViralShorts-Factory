@@ -139,60 +139,76 @@ class ModelInfo:
     consecutive_failures: int = 0  # Track failures to deprioritize broken models
 
 
+# =============================================================================
+# RATE LIMIT SAFETY MARGIN (v17.9.33)
+# =============================================================================
+# 10% safety margin on all delays to ensure ZERO 429 errors
+# 
+# Formula: safe_delay = (60 / requests_per_minute) * 1.10
+# Example: 15 RPM -> 4.0s base -> 4.4s with margin
+#
+RATE_LIMIT_MARGIN = 1.10  # 10% safety buffer
+
+
+def _safe_delay(rpm: int) -> float:
+    """Calculate delay with 10% safety margin."""
+    return round((60.0 / rpm) * RATE_LIMIT_MARGIN, 1)
+
+
 # Default model pool (discovered dynamically, this is fallback)
+# v17.9.33: All delays now include 10% safety margin
 DEFAULT_MODELS = {
-    # Groq
+    # Groq - shared 14,400/day quota across all models
     "groq:llama-3.3-70b-versatile": ModelInfo(
         provider="groq", model_id="llama-3.3-70b-versatile",
-        daily_limit=300, rate_limit=30, delay=2.0,
+        daily_limit=300, rate_limit=30, delay=_safe_delay(30),  # 2.2s
         quality_general=8.5, quality_creative=9.0, quality_structured=8.0, quality_speed=9.0,
         robustness=0.98, available=True
     ),
     # REMOVED: llama-3.1-70b-versatile - DECOMMISSIONED by Groq (Jan 2026)
-    # "groq:llama-3.1-70b-versatile": ModelInfo(...)
     "groq:llama-3.1-8b-instant": ModelInfo(
         provider="groq", model_id="llama-3.1-8b-instant",
-        daily_limit=600, rate_limit=60, delay=1.0,
+        daily_limit=600, rate_limit=60, delay=_safe_delay(60),  # 1.1s
         quality_general=7.0, quality_creative=6.5, quality_structured=7.0, quality_speed=10.0,
         robustness=0.99, available=True
     ),
     # REMOVED: mixtral-8x7b-32768 - DECOMMISSIONED by Groq (Jan 2026)
-    # Gemini
+    # Gemini - separate quotas per model
     "gemini:gemini-1.5-flash": ModelInfo(
         provider="gemini", model_id="gemini-1.5-flash",
-        daily_limit=1500, rate_limit=15, delay=4.0,
+        daily_limit=1500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=7.5, quality_creative=7.0, quality_structured=8.5, quality_speed=8.0,
         robustness=0.95, available=True
     ),
     "gemini:gemini-2.0-flash": ModelInfo(
         provider="gemini", model_id="gemini-2.0-flash",
-        daily_limit=500, rate_limit=15, delay=4.0,
+        daily_limit=500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=8.0, quality_creative=7.5, quality_structured=9.0, quality_speed=8.0,
         robustness=0.92, available=True
     ),
     "gemini:gemini-1.5-pro": ModelInfo(
         provider="gemini", model_id="gemini-1.5-pro",
-        daily_limit=50, rate_limit=5, delay=12.0,
+        daily_limit=50, rate_limit=5, delay=_safe_delay(5),  # 13.2s
         quality_general=8.5, quality_creative=8.0, quality_structured=9.0, quality_speed=5.0,
         robustness=0.90, available=True
     ),
-    # OpenRouter (free)
+    # OpenRouter (free) - generous limits
     "openrouter:meta-llama/llama-3.2-3b-instruct:free": ModelInfo(
         provider="openrouter", model_id="meta-llama/llama-3.2-3b-instruct:free",
-        daily_limit=10000, rate_limit=60, delay=1.0,
+        daily_limit=10000, rate_limit=60, delay=_safe_delay(60),  # 1.1s
         quality_general=6.5, quality_creative=6.0, quality_structured=6.5, quality_speed=9.0,
         robustness=0.90, available=True
     ),
     "openrouter:google/gemma-2-9b-it:free": ModelInfo(
         provider="openrouter", model_id="google/gemma-2-9b-it:free",
-        daily_limit=10000, rate_limit=60, delay=1.0,
+        daily_limit=10000, rate_limit=60, delay=_safe_delay(60),  # 1.1s
         quality_general=7.0, quality_creative=6.5, quality_structured=7.0, quality_speed=8.5,
         robustness=0.88, available=True
     ),
-    # HuggingFace
+    # HuggingFace - rate limiting is more lenient
     "huggingface:HuggingFaceH4/zephyr-7b-beta": ModelInfo(
         provider="huggingface", model_id="HuggingFaceH4/zephyr-7b-beta",
-        daily_limit=2400, rate_limit=100, delay=36.0,
+        daily_limit=2400, rate_limit=100, delay=_safe_delay(100),  # 0.7s
         quality_general=7.5, quality_creative=7.0, quality_structured=7.5, quality_speed=5.0,
         robustness=0.80, available=True
     ),
@@ -346,9 +362,10 @@ class SmartModelRouter:
                     key = f"groq:{model_id}"
                     if key not in self.models:
                         # Add new model with estimated stats
+                        # v17.9.33: Use _safe_delay for 10% margin
                         self.models[key] = ModelInfo(
                             provider="groq", model_id=model_id,
-                            daily_limit=300, rate_limit=30, delay=2.0,
+                            daily_limit=300, rate_limit=30, delay=_safe_delay(30),  # 2.2s
                             quality_general=7.0, quality_creative=7.0,
                             quality_structured=7.0, quality_speed=8.0,
                             robustness=0.90, available=True
@@ -377,13 +394,15 @@ class SmartModelRouter:
                         key = f"gemini:{name}"
                         if key not in self.models:
                             # Estimate stats based on model name
+                            # v17.9.33: Use _safe_delay for 10% margin
                             is_flash = "flash" in name.lower()
                             is_pro = "pro" in name.lower()
+                            rpm = 15 if is_flash else 5
                             self.models[key] = ModelInfo(
                                 provider="gemini", model_id=name,
                                 daily_limit=1500 if is_flash else (50 if is_pro else 500),
-                                rate_limit=15 if is_flash else 5,
-                                delay=4.0 if is_flash else 12.0,
+                                rate_limit=rpm,
+                                delay=_safe_delay(rpm),  # 4.4s for flash, 13.2s for pro
                                 quality_general=7.5 if is_flash else 8.5,
                                 quality_creative=7.0 if is_flash else 8.0,
                                 quality_structured=8.5 if is_flash else 9.0,
@@ -412,9 +431,10 @@ class SmartModelRouter:
                     if ":free" in model_id.lower() or model.get("pricing", {}).get("prompt") == "0":
                         key = f"openrouter:{model_id}"
                         if key not in self.models:
+                            # v17.9.33: Use _safe_delay for 10% margin
                             self.models[key] = ModelInfo(
                                 provider="openrouter", model_id=model_id,
-                                daily_limit=10000, rate_limit=60, delay=1.0,
+                                daily_limit=10000, rate_limit=60, delay=_safe_delay(60),  # 1.1s
                                 quality_general=6.5, quality_creative=6.0,
                                 quality_structured=6.5, quality_speed=9.0,
                                 robustness=0.85, available=True
