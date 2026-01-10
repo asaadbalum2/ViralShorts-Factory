@@ -22,9 +22,9 @@ name: AGGRESSIVE MODE - Deep Learning & Virality Boost
 
 on:
   schedule:
-    # v17.9.38: Run every 30 MINUTES for maximum learning (48x daily!)
-    # This uses ~960 calls/day (20 calls × 48 runs)
-    # Still only 5.6% of surplus, but provides continuous learning
+    # v17.9.40: INTENSIVE LEARNING - 93% quota utilization!
+    # 280 calls/run × 48 runs/day = 13,440 Groq calls/day (93% of 14,400)
+    # Plus Gemini calls = approaching 100% surplus usage
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
@@ -530,6 +530,146 @@ jobs:
                       safe_print(f"  [OK] Self-learning updated with {len(analysis.get('do_more', []))} action items")
               except Exception as e:
                   safe_print(f"  [!] Parse error: {e}")
+
+          # =====================================================================
+          # INTENSIVE CONTINUOUS LEARNING (v17.9.40)
+          # =====================================================================
+          # Use remaining time to learn as much as possible!
+          # Target: 300 calls/run = 10% of Groq daily quota per run
+          # 48 runs/day × 300 calls = 14,400 calls/day = 100% Groq quota
+          
+          import time as time_module
+          start_time = time_module.time()
+          MAX_RUNTIME_SECONDS = 55 * 60  # 55 mins (leave 5 for save)
+          call_count = 0
+          MAX_CALLS = 280  # Leave buffer for other phases
+          
+          learning_topics = [
+              "viewer psychology and attention patterns",
+              "thumbnail design principles that increase CTR",
+              "optimal video pacing and retention curves",
+              "title formulas that create curiosity gaps",
+              "hook structures that stop scrolling",
+              "category trends and saturation analysis",
+              "competitor content gap analysis",
+              "audience demographic targeting",
+              "posting time optimization by timezone",
+              "hashtag and tag effectiveness",
+              "comment engagement strategies",
+              "series and sequel planning",
+              "seasonal content opportunities",
+              "algorithm signals and ranking factors",
+              "virality prediction indicators"
+          ]
+          
+          safe_print(f"\n[INTENSIVE] Starting continuous learning loop (max {MAX_CALLS} calls, {MAX_RUNTIME_SECONDS//60} mins)")
+          
+          iteration = 0
+          while call_count < MAX_CALLS and (time_module.time() - start_time) < MAX_RUNTIME_SECONDS:
+              iteration += 1
+              topic = learning_topics[iteration % len(learning_topics)]
+              
+              safe_print(f"\n  [LEARN {iteration}] Topic: {topic}")
+              
+              # Generate insights for this topic
+              prompt = f"""You are a YouTube Shorts viral content strategist.
+              
+          Topic for deep analysis: {topic}
+
+          Our current data:
+          - Top performing categories: {list(variety_data.get('learned_weights', {}).keys())[:5]}
+          - Best hooks we've found: {variety_data.get('best_hooks', [])[:3]}
+          - Videos analyzed: {len(videos)}
+
+          Provide SPECIFIC, ACTIONABLE insights for "{topic}":
+          1. What patterns should we use?
+          2. What mistakes should we avoid?
+          3. What specific tactics will increase views?
+          4. Any contrarian insights others miss?
+
+          Return JSON:
+          {{
+              "topic": "{topic}",
+              "patterns_to_use": ["specific pattern 1", "pattern 2", "pattern 3"],
+              "mistakes_to_avoid": ["mistake 1", "mistake 2"],
+              "tactics_for_views": ["tactic 1", "tactic 2", "tactic 3"],
+              "contrarian_insight": "one unique insight",
+              "confidence": 0.0-1.0
+          }}
+
+          JSON ONLY:"""
+
+              time.sleep(2.2)  # Groq rate limit
+              result = call_groq(prompt, max_tokens=800)
+              call_count += 1
+              
+              if result:
+                  try:
+                      match = re.search(r'\{[\s\S]*\}', result)
+                      if match:
+                          insights = json.loads(match.group())
+                          
+                          # Aggregate insights
+                          key = f"insights_{topic.replace(' ', '_')[:30]}"
+                          variety_data[key] = insights
+                          
+                          # Add to master lists
+                          if insights.get("patterns_to_use"):
+                              existing = variety_data.get("all_patterns", [])
+                              variety_data["all_patterns"] = list(set(existing + insights["patterns_to_use"]))[-100:]
+                          
+                          if insights.get("mistakes_to_avoid"):
+                              existing = variety_data.get("all_mistakes", [])
+                              variety_data["all_mistakes"] = list(set(existing + insights["mistakes_to_avoid"]))[-50:]
+                          
+                          if insights.get("contrarian_insight"):
+                              contrarian = variety_data.get("contrarian_insights", [])
+                              contrarian.append(insights["contrarian_insight"])
+                              variety_data["contrarian_insights"] = contrarian[-30:]
+                          
+                          safe_print(f"    ✓ Learned: {insights.get('contrarian_insight', 'N/A')[:60]}")
+                  except:
+                      pass
+              
+              # Every 10 iterations, do a meta-analysis
+              if iteration % 10 == 0:
+                  safe_print(f"\n  [META] Synthesizing last 10 learnings...")
+                  
+                  recent_patterns = variety_data.get("all_patterns", [])[-30:]
+                  
+                  meta_prompt = f"""Synthesize these viral content patterns into TOP 5 actionable rules:
+
+          Patterns discovered: {recent_patterns}
+
+          Create a priority-ranked summary. Return JSON:
+          {{
+              "top_5_rules": ["Rule 1 - most important", "Rule 2", "Rule 3", "Rule 4", "Rule 5"],
+              "single_biggest_opportunity": "The one thing that will 10x our views",
+              "immediate_action": "What to do in the next video"
+          }}
+
+          JSON ONLY:"""
+
+                  time.sleep(2.2)
+                  meta_result = call_groq(meta_prompt, max_tokens=600)
+                  call_count += 1
+                  
+                  if meta_result:
+                      try:
+                          match = re.search(r'\{[\s\S]*\}', meta_result)
+                          if match:
+                              meta = json.loads(match.group())
+                              variety_data["top_5_rules"] = meta.get("top_5_rules", [])
+                              variety_data["biggest_opportunity"] = meta.get("single_biggest_opportunity", "")
+                              variety_data["next_video_action"] = meta.get("immediate_action", "")
+                              safe_print(f"    ✓ Top rule: {meta.get('top_5_rules', ['N/A'])[0][:50]}")
+                      except:
+                          pass
+          
+          elapsed = time_module.time() - start_time
+          safe_print(f"\n[INTENSIVE] Complete: {call_count} calls, {elapsed/60:.1f} mins")
+          variety_data["intensive_learning_calls"] = call_count
+          variety_data["intensive_learning_time"] = f"{elapsed/60:.1f} mins"
 
           # =====================================================================
           # SAVE ALL LEARNINGS

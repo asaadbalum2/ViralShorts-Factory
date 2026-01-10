@@ -1182,7 +1182,7 @@ MODEL_RATE_LIMITS = {
     
     # Groq models - generous rate limits (still apply 10% margin)
     "llama-3.3-70b-versatile": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},  # 2s + 10%
-    "llama-3.1-70b-versatile": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
+    # REMOVED: llama-3.1-70b-versatile - DECOMMISSIONED by Groq (Jan 2026)
     "llama-3.1-8b-instant": {"req_per_min": 60, "delay": 1.1, "daily_quota": 500, "throughput": "high"},     # 1s + 10%
     "mixtral-8x7b-32768": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
     "gemma-7b-it": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
