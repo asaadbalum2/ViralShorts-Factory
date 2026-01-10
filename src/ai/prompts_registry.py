@@ -339,6 +339,138 @@ DEFAULT_PROMPTS = [
         last_used=None,
         times_used=0
     ),
+    
+    # === ADDITIONAL PROMPTS (v17.9.40 - Complete Registry) ===
+    PromptInfo(
+        name="BROLL_RELEVANCE_PROMPT",
+        type="evaluation",
+        source_file="src/ai/master_prompts.py",
+        description="Scores B-roll relevance to video content",
+        complexity="simple",
+        avg_tokens=400,
+        best_model="gemini:gemini-1.5-flash",
+        success_rate=0.93,
+        avg_quality=7.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="EMOTIONAL_ARC_PROMPT",
+        type="creative",
+        source_file="src/ai/master_prompts.py",
+        description="Designs emotional journey for video",
+        complexity="complex",
+        avg_tokens=800,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.88,
+        avg_quality=8.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="CONTEXTUAL_AWARENESS_PROMPT",
+        type="analysis",
+        source_file="src/ai/master_prompts.py",
+        description="Checks cultural sensitivity and timing",
+        complexity="medium",
+        avg_tokens=600,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.90,
+        avg_quality=7.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="CROSS_PROMOTION_PROMPT",
+        type="creative",
+        source_file="src/ai/master_prompts.py",
+        description="Generates cross-platform content strategy",
+        complexity="medium",
+        avg_tokens=700,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.85,
+        avg_quality=7.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="CLICKBAIT_OPTIMIZATION_PROMPT",
+        type="creative",
+        source_file="src/ai/master_prompts.py",
+        description="Optimizes titles for maximum click-through",
+        complexity="medium",
+        avg_tokens=600,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.92,
+        avg_quality=8.0,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="FIRST_SECONDS_PROMPT",
+        type="creative",
+        source_file="src/ai/master_prompts.py",
+        description="Optimizes first 3 seconds for retention",
+        complexity="complex",
+        avg_tokens=800,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.90,
+        avg_quality=9.0,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="ALGORITHM_OPTIMIZATION_PROMPT",
+        type="analysis",
+        source_file="src/ai/master_prompts.py",
+        description="Optimizes for YouTube algorithm signals",
+        complexity="complex",
+        avg_tokens=900,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.85,
+        avg_quality=8.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="VISUAL_OPTIMIZATION_PROMPT",
+        type="creative",
+        source_file="src/ai/master_prompts.py",
+        description="Optimizes visual design for short-form",
+        complexity="medium",
+        avg_tokens=700,
+        best_model="gemini:gemini-1.5-flash",
+        success_rate=0.88,
+        avg_quality=7.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="CONTENT_QUALITY_PROMPT",
+        type="evaluation",
+        source_file="src/ai/master_prompts.py",
+        description="Ensures content value and believability",
+        complexity="complex",
+        avg_tokens=900,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.90,
+        avg_quality=8.5,
+        last_used=None,
+        times_used=0
+    ),
+    PromptInfo(
+        name="VIRAL_TREND_PROMPT",
+        type="analysis",
+        source_file="src/ai/master_prompts.py",
+        description="Analyzes viral trends for content opportunities",
+        complexity="complex",
+        avg_tokens=900,
+        best_model="groq:llama-3.3-70b-versatile",
+        success_rate=0.87,
+        avg_quality=8.0,
+        last_used=None,
+        times_used=0
+    ),
 ]
 
 
