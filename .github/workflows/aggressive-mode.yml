@@ -22,10 +22,12 @@ name: AGGRESSIVE MODE - Deep Learning & Virality Boost
 
 on:
   schedule:
-    # v17.9.40: INTENSIVE LEARNING - 93% quota utilization!
-    # 280 calls/run × 48 runs/day = 13,440 Groq calls/day (93% of 14,400)
-    # Plus Gemini calls = approaching 100% surplus usage
-    - cron: '*/30 * * * *'
+    # v17.9.41: SMART QUOTA - Reserve tokens for production!
+    # Groq free tier: 100,000 TOKENS/day (not calls!)
+    # Reserve 50,000 tokens for production fallback
+    # Aggressive gets: 50,000 tokens = ~25 calls/day
+    # Run 6x daily (every 4 hours) with ~4 calls each
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,7 +40,7 @@ env:
 jobs:
   aggressive-learning:
     runs-on: ubuntu-latest
-    timeout-minutes: 60  # v17.9.39: Extended for intensive learning
+    timeout-minutes: 15  # v17.9.41: Reduced - 6 calls max per run
 
     steps:
       - name: Checkout Repository
@@ -542,9 +544,14 @@ jobs:
           
           import time as time_module
           start_time = time_module.time()
-          MAX_RUNTIME_SECONDS = 55 * 60  # 55 mins (leave 5 for save)
+          MAX_RUNTIME_SECONDS = 10 * 60  # 10 mins per run
           call_count = 0
-          MAX_CALLS = 280  # Leave buffer for other phases
+          # v17.9.41: QUOTA MATH:
+          # - Groq: 100,000 tokens/day, ~2000 tokens/call = 50 calls/day max
+          # - Gemini: 250 RPD (reduced Dec 2025) = 250 calls/day
+          # - Reserve 15 Groq calls for production fallback
+          # - Aggressive gets: 35 calls/day = 6 calls per run (6 runs/day)
+          MAX_CALLS = 6
           
           learning_topics = [
               "viewer psychology and attention patterns",
