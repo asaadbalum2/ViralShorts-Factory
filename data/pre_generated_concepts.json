@@ -1,260 +1,92 @@
 {
-  "generated_at": "2026-01-09T05:49:40.633113",
-  "valid_until": "2026-01-09T23:59:40.633121",
+  "generated_at": "2026-01-10T05:45:14.278847",
+  "valid_until": "2026-01-10T23:59:14.278853",
   "categories": [
-    "Sports Highlights",
-    "Music News",
-    "Chicago Local News",
-    "Tennis Updates",
-    "Entertainment News",
-    "College Basketball",
-    "Rapper Interviews",
-    "Viral Dance Challenges",
-    "Social Justice Movements",
-    "New Music Releases",
-    "Sports Analysis",
-    "Pop Culture Trends",
-    "WTA Tennis",
-    "Rap Music Reviews",
-    "College Sports Rivalries"
+    "ai_trends",
+    "productivity",
+    "psychology",
+    "money_hacks",
+    "health_tips",
+    "tech_news",
+    "life_hacks",
+    "motivation"
   ],
-  "concepts": [
-    {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Most Epic Dunks of the Season",
-      "hook": "You won't believe the insane dunk LeBron just pulled off!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music News",
-      "topic": "Billie Eilish's Secret Songwriting Process Revealed",
-      "hook": "What's the surprising way Billie Eilish comes up with her hit songs?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Chicago Local News",
-      "topic": "The Revitalization of Chicago's South Side",
-      "hook": "A new era for Chicago's South Side: what's changing and why it matters",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Tennis Updates",
-      "topic": "The Rise of Tennis Prodigy Coco Gauff",
-      "hook": "Meet the 18-year-old tennis sensation taking the world by storm",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Most Anticipated Movies of the Year",
-      "hook": "Which blockbuster movie is going to break all the records this year?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "College Basketball",
-      "topic": "The Unstoppable March Madness Underdogs",
-      "hook": "The Cinderella story of this year's March Madness that will leave you speechless",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Rapper Interviews",
-      "topic": "Kendrick Lamar on Social Justice and Music",
-      "hook": "Kendrick Lamar's shocking take on the music industry and social justice",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "The Latest Dance Challenge Taking Over TikTok",
-      "hook": "Can you handle the newest dance challenge that's sweeping the nation?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Justice Movements",
-      "topic": "The Power of Protest Music Throughout History",
-      "hook": "How music has been the soundtrack to social change for decades",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "New Music Releases",
-      "topic": "The Most Highly Anticipated Album of the Year",
-      "hook": "The wait is over: the most anticipated album of the year is finally here",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Sports History",
-      "hook": "You won't believe these incredible comebacks that will leave you on the edge of your seat",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Music News",
-      "topic": "The Evolution of Hip-Hop Over the Years",
-      "hook": "From its roots to its current reign: the fascinating story of hip-hop",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Chicago Local News",
-      "topic": "The Best Kept Secrets of Chicago's Food Scene",
-      "hook": "Discover the hidden gems of Chicago's culinary world that will make your taste buds dance",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tennis Updates",
-      "topic": "The Intense Rivalry Between Djokovic and Federer",
-      "hook": "The epic battles between two tennis legends that will leave you breathless",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Most Iconic Movie Quotes of All Time",
-      "hook": "The movie quotes that have become a part of our pop culture DNA",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "College Basketball",
-      "topic": "The Unforgettable Moments of March Madness",
-      "hook": "Relive the most unforgettable moments in March Madness history",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Rapper Interviews",
-      "topic": "JAY-Z on Entrepreneurship and Music",
-      "hook": "JAY-Z's surprising advice on how to make it big in the music industry",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "The Dance Challenge That's Taking Over the World",
-      "hook": "Get ready to join the latest dance challenge that's sweeping the globe",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Justice Movements",
-      "topic": "The Impact of Social Media on Social Justice",
-      "hook": "How social media is changing the game for social justice movements",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New Music Releases",
-      "topic": "The Most Anticipated Music Collaborations of the Year",
-      "hook": "The dream collaborations that are going to change the music game this year",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
