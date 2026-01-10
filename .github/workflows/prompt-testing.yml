@@ -339,11 +339,8 @@ jobs:
               safe_print(f"\n[TEST {idx+1}/{len(prompts_to_test)}] {test['name']} ({test['type']})")
               results["total"] += 1
               
-              # Select model based on type
-              if test["type"] in ["creative", "analysis"]:
-                  response, error = call_groq(test["prompt"])
-              else:  # evaluation, simple
-                  response, error = call_gemini(test["prompt"])
+              # v17.9.41: Use Groq ONLY for testing - preserve Gemini for production
+              response, error = call_groq(test["prompt"])
               
               test_result = {
                   "name": test["name"],
