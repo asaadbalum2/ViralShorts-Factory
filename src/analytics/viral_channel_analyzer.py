@@ -595,6 +595,27 @@ def get_viral_prompt_boost() -> str:
         if state.get("best_posting_days"):
             analytics_boost += f"\n\nBEST POSTING DAYS: {', '.join(state['best_posting_days'][:3])}"
         
+        # v17.9.42: AGGRESSIVE MODE LEARNINGS
+        if state.get("hook_templates"):
+            analytics_boost += f"\n\nPROVEN HOOK TEMPLATES: {state['hook_templates'][:3]}"
+        
+        if state.get("curiosity_gaps"):
+            analytics_boost += f"\nCURIOSITY GAP EXAMPLES: {state['curiosity_gaps'][:2]}"
+        
+        if state.get("do_more"):
+            analytics_boost += f"\n\nDO MORE (from deep analysis): {state['do_more'][:5]}"
+        
+        if state.get("avoid"):
+            analytics_boost += f"\nAVOID (from deep analysis): {state['avoid'][:5]}"
+        
+        if state.get("external_hooks"):
+            analytics_boost += f"\n\nVIRAL HOOKS FROM TOP CREATORS: {state['external_hooks'][:3]}"
+        
+        if state.get("learned_weights"):
+            weights = state["learned_weights"]
+            top_categories = sorted(weights.items(), key=lambda x: x[1], reverse=True)[:3]
+            analytics_boost += f"\n\nTOP PERFORMING CATEGORIES (by weight): {top_categories}"
+        
         if analytics_boost:
             viral_additions += f"\n\n=== OUR ANALYTICS INSIGHTS (GOLD-VALUE) ==={analytics_boost}\n"
         

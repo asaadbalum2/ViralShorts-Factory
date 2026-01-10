@@ -22,11 +22,9 @@ name: AGGRESSIVE MODE - Deep Learning & Virality Boost
 
 on:
   schedule:
-    # v17.9.41: SMART QUOTA - Reserve tokens for production!
-    # Groq free tier: 100,000 TOKENS/day (not calls!)
-    # Reserve 50,000 tokens for production fallback
-    # Aggressive gets: 50,000 tokens = ~25 calls/day
-    # Run 6x daily (every 4 hours) with ~4 calls each
+    # v17.9.42: Using 8b-instant (500K tokens/day instead of 100K!)
+    # 200 calls/day for aggressive = 33 calls × 6 runs
+    # Run every 4 hours for stable learning
     - cron: '0 */4 * * *'
   workflow_dispatch:
 
@@ -114,9 +112,13 @@ jobs:
           AGGRESSIVE_FILE = Path("data/persistent/aggressive_mode.json")
 
           def get_best_groq_model():
-              """DYNAMIC: Discover and select best available Groq model."""
+              """DYNAMIC: Select model with HIGHEST QUOTA for aggressive learning."""
+              # v17.9.42: QUOTA-AWARE MODEL SELECTION
+              # - llama-3.3-70b-versatile: 100K tokens/day (quality but limited)
+              # - llama-3.1-8b-instant: 500K tokens/day (5x more quota!)
+              # For aggressive mode, prefer MORE QUOTA over quality
               if not GROQ_API_KEY:
-                  return "llama-3.3-70b-versatile"  # Fallback only
+                  return "llama-3.1-8b-instant"  # Higher quota fallback
               try:
                   response = requests.get(
                       "https://api.groq.com/openai/v1/models",
@@ -125,22 +127,23 @@ jobs:
                   )
                   if response.status_code == 200:
                       models = response.json().get("data", [])
-                      # Prefer larger llama models, then mixtral
+                      # PREFER 8b-instant for 5x more quota
                       for model in models:
                           model_id = model.get("id", "")
-                          if "llama" in model_id and "70b" in model_id:
+                          if "8b-instant" in model_id:
                               return model_id
+                      # Fall back to smaller/faster models
                       for model in models:
                           model_id = model.get("id", "")
-                          if "mixtral" in model_id:
+                          if "instant" in model_id or "small" in model_id:
                               return model_id
-                      # Return first active model
+                      # Last resort: any active model
                       for model in models:
                           if model.get("active", True):
                               return model.get("id")
               except Exception as e:
                   safe_print(f"  [!] Model discovery error: {e}")
-              return "llama-3.3-70b-versatile"  # Fallback
+              return "llama-3.1-8b-instant"  # Higher quota fallback
 
           def call_groq(prompt, max_tokens=1500):
               """Call Groq API for analysis with DYNAMIC model selection."""
@@ -546,12 +549,12 @@ jobs:
           start_time = time_module.time()
           MAX_RUNTIME_SECONDS = 10 * 60  # 10 mins per run
           call_count = 0
-          # v17.9.41: QUOTA MATH:
-          # - Groq: 100,000 tokens/day, ~2000 tokens/call = 50 calls/day max
-          # - Gemini: 250 RPD (reduced Dec 2025) = 250 calls/day
-          # - Reserve 15 Groq calls for production fallback
-          # - Aggressive gets: 35 calls/day = 6 calls per run (6 runs/day)
-          MAX_CALLS = 6
+          # v17.9.42: QUOTA MATH (using llama-3.1-8b-instant):
+          # - Groq 8b-instant: 500,000 tokens/day, ~2000 tokens/call = 250 calls/day
+          # - Gemini Flash: 250 RPD - reserved for production
+          # - Reserve 50 Groq calls for production fallback
+          # - Aggressive gets: 200 calls/day = 33 calls per run (6 runs/day)
+          MAX_CALLS = 33
           
           learning_topics = [
               "viewer psychology and attention patterns",

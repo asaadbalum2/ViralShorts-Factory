@@ -327,7 +327,14 @@ class VarietyStateManager:
             "best_posting_hours_utc": self.state.get("best_posting_hours_utc", []),
             "best_posting_days": self.state.get("best_posting_days", []),
             "best_title_styles": self.state.get("best_title_styles", []),
-            "comment_insights": self.state.get("comment_insights", {})
+            "comment_insights": self.state.get("comment_insights", {}),
+            # v17.9.42: Added aggressive mode learnings
+            "learned_weights": self.state.get("learned_weights", {}),
+            "hook_templates": self.state.get("hook_templates", []),
+            "curiosity_gaps": self.state.get("curiosity_gaps", []),
+            "do_more": self.state.get("do_more", []),
+            "avoid": self.state.get("avoid", []),
+            "external_hooks": self.state.get("external_hooks", [])
         }
 
 
