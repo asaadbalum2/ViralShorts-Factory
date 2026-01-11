@@ -1,31 +1,222 @@
 {
-  "generated_at": "2026-01-10T05:45:14.278847",
-  "valid_until": "2026-01-10T23:59:14.278853",
+  "generated_at": "2026-01-11T05:48:33.417688",
+  "valid_until": "2026-01-11T23:59:33.417696",
   "categories": [
-    "ai_trends",
-    "productivity",
-    "psychology",
-    "money_hacks",
-    "health_tips",
-    "tech_news",
-    "life_hacks",
-    "motivation"
+    "NFL Coaching Changes with Matt Nagy",
+    "Spider-Man No Way Home Theories",
+    "John Wick Fan Edits",
+    "Oilers Game Highlights",
+    "Dax Shepard's Wild Adventures",
+    "Behind the Scenes with The Rock",
+    "Chicago Tribune News Breakdowns",
+    "Seth Rollins WWE Updates",
+    "Winter Sports Bloopers",
+    "New Year's Resolution Fitness Tips",
+    "Spider-Man No Way Home Easter Eggs",
+    "John Wick Cosplay Tutorials",
+    "Oilers Player Profiles",
+    "Spider-Man No Way Home Fan Art",
+    "NFL Offseason Rumors with The Rock's Take"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "NFL Coaching Changes with Matt Nagy",
+      "topic": "Nagy's Top 3 Coaching Destinations in 2024",
+      "hook": "Could Matt Nagy be the next head coach of the Dallas Cowboys?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Spider-Man No Way Home Theories",
+      "topic": "The Multiverse Mystery: Unraveling the Spider-Verse",
+      "hook": "What if Spider-Man's multiverse is actually a warning from the future?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "John Wick Fan Edits",
+      "topic": "John Wick vs. The Matrix: An Epic Fan-Made Mashup",
+      "hook": "Imagine John Wick taking on Agent Smith in an epic battle",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Oilers Game Highlights",
+      "topic": "McDavid's 5 Most Unbelievable Goals of the Season",
+      "hook": "You won't believe the angles on McDavid's latest game-winner",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Dax Shepard's Wild Adventures",
+      "topic": "Dax Shepard's Insane Off-Roading Escapade in the Desert",
+      "hook": "Dax Shepard just took his 4x4 on the wildest off-roading adventure ever",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Behind the Scenes with The Rock",
+      "topic": "The Rock's Intense Workout Routine for His Next Movie",
+      "hook": "The Rock is pushing his body to the limit for his next blockbuster",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Chicago Tribune News Breakdowns",
+      "topic": "The Impact of the New Stadium on Chicago's Economy",
+      "hook": "The new stadium could bring in millions for Chicago's local businesses",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Seth Rollins WWE Updates",
+      "topic": "Seth Rollins' Road to WrestleMania: Can He Take the Title?",
+      "hook": "Seth Rollins is on a mission to take down the WWE champion",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Sports Bloopers",
+      "topic": "The Funniest Skiing Fails of the Season",
+      "hook": "These skiing fails will have you laughing out loud",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "New Year's Resolution Fitness Tips",
+      "topic": "5 Simple Exercises to Get You in Shape for Summer",
+      "hook": "Get ready to transform your body in just a few short weeks",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "NFL Coaching Changes with Matt Nagy",
+      "topic": "Nagy's Coaching Philosophy: What Teams Can Expect",
+      "hook": "Matt Nagy's coaching style could be the key to a team's success",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Spider-Man No Way Home Theories",
+      "topic": "The Sinister Six: Who Could Be the Next Villains?",
+      "hook": "The next Spider-Man movie could introduce the most epic villains yet",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "John Wick Fan Edits",
+      "topic": "John Wick vs. James Bond: The Ultimate Spy Showdown",
+      "hook": "Imagine John Wick taking on James Bond in a high-stakes battle",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Oilers Game Highlights",
+      "topic": "The Oilers' Most Thrilling Comebacks of the Season",
+      "hook": "The Oilers have pulled off some incredible comebacks this season",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Dax Shepard's Wild Adventures",
+      "topic": "Dax Shepard's Crazy Motorcycle Road Trip Across America",
+      "hook": "Dax Shepard just embarked on the wildest motorcycle adventure ever",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Behind the Scenes with The Rock",
+      "topic": "The Rock's Favorite Stunts from His Latest Movie",
+      "hook": "The Rock is sharing his favorite stunts from his latest blockbuster",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Chicago Tribune News Breakdowns",
+      "topic": "The Impact of Climate Change on Chicago's Weather",
+      "hook": "Climate change is having a profound impact on Chicago's weather patterns",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Seth Rollins WWE Updates",
+      "topic": "Seth Rollins' Most Epic Feuds in the WWE",
+      "hook": "Seth Rollins has been involved in some of the most epic feuds in WWE history",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Sports Bloopers",
+      "topic": "The Funniest Snowboarding Fails of the Season",
+      "hook": "These snowboarding fails will have you laughing out loud",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "New Year's Resolution Fitness Tips",
+      "topic": "5 Simple Nutrition Tips to Boost Your Workout",
+      "hook": "Transform your body with these simple nutrition tips",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "NFL Coaching Changes with Matt Nagy",
+      "topic": "What Nagy's Hiring Means for the Future of the NFL",
+      "hook": "Matt Nagy's hiring could be a game-changer for the NFL",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
@@ -34,59 +225,44 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
