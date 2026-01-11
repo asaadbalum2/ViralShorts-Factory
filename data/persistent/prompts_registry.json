@@ -1,6 +1,6 @@
 {
   "version": "17.9.9",
-  "updated_at": "2026-01-04T00:25:36.354106",
+  "updated_at": "2026-01-11T06:22:44.197108",
   "prompts": [
     {
       "name": "VIRAL_TOPIC_PROMPT",
@@ -396,6 +396,32 @@
       "name": "VIRAL_TREND_PROMPT",
       "type": "simple",
       "source_file": "src\\ai\\god_tier_prompts.py",
+      "description": "Auto-discovered prompt",
+      "complexity": "medium",
+      "avg_tokens": 500,
+      "best_model": null,
+      "success_rate": 0.5,
+      "avg_quality": 5.0,
+      "last_used": null,
+      "times_used": 0
+    },
+    {
+      "name": "MASTER_EVALUATION_PROMPT",
+      "type": "simple",
+      "source_file": "src/ai/master_evaluator.py",
+      "description": "Auto-discovered prompt",
+      "complexity": "medium",
+      "avg_tokens": 500,
+      "best_model": null,
+      "success_rate": 0.5,
+      "avg_quality": 5.0,
+      "last_used": null,
+      "times_used": 0
+    },
+    {
+      "name": "MASTER_GENERATION_PROMPT",
+      "type": "simple",
+      "source_file": "src/ai/master_content_generator.py",
       "description": "Auto-discovered prompt",
       "complexity": "medium",
       "avg_tokens": 500,
