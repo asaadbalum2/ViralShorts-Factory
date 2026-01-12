@@ -177,7 +177,7 @@ jobs:
           def get_best_gemini_model():
               """DYNAMIC: Discover and select best available Gemini model."""
               if not GEMINI_API_KEY:
-                  return "gemini-1.5-flash"
+                  return "gemini-2.5-flash"
               try:
                   response = requests.get(
                       f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}",
@@ -196,7 +196,7 @@ jobs:
                               return name
               except:
                   pass
-              return "gemini-1.5-flash"
+              return "gemini-2.5-flash"
 
           def call_gemini(prompt, max_tokens=1500):
               """Call Gemini API with DYNAMIC model selection."""
