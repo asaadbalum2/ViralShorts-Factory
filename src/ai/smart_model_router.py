@@ -174,8 +174,8 @@ DEFAULT_MODELS = {
     ),
     # REMOVED: mixtral-8x7b-32768 - DECOMMISSIONED by Groq (Jan 2026)
     # Gemini - separate quotas per model
-    "gemini:gemini-1.5-flash": ModelInfo(
-        provider="gemini", model_id="gemini-1.5-flash",
+    "gemini:gemini-2.5-flash": ModelInfo(
+        provider="gemini", model_id="gemini-2.5-flash",
         daily_limit=1500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=7.5, quality_creative=7.0, quality_structured=8.5, quality_speed=8.0,
         robustness=0.95, available=True
@@ -186,7 +186,7 @@ DEFAULT_MODELS = {
         quality_general=8.0, quality_creative=7.5, quality_structured=9.0, quality_speed=8.0,
         robustness=0.92, available=True
     ),
-    # REMOVED: gemini-1.5-pro - Returns 404 "not found for API version v1beta" (Jan 2026)
+    # REMOVED: gemini-2.5-pro - Returns 404 "not found for API version v1beta" (Jan 2026)
     # OpenRouter (free) - generous limits
     "openrouter:meta-llama/llama-3.2-3b-instruct:free": ModelInfo(
         provider="openrouter", model_id="meta-llama/llama-3.2-3b-instruct:free",
@@ -237,8 +237,8 @@ class SmartModelRouter:
         "gemini-2.5-pro": 20,
         "gemini-2.0-flash-exp": 20,
         "gemini-2.0-flash": 20,
-        "gemini-1.5-flash": 20,
-        # REMOVED: gemini-1.5-pro - deprecated (404)
+        "gemini-2.5-flash": 20,
+        # REMOVED: gemini-2.5-pro - deprecated (404)
         # Groq: Token-based (100K for 70b, 500K for 8b)
         "llama-3.3-70b-versatile": 50,   # ~100K TPD / 2K per call
         "llama-3.1-8b-instant": 250,     # ~500K TPD / 2K per call

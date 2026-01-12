@@ -19,7 +19,7 @@ except ImportError:
     try:
         from src.ai.model_helper import get_dynamic_gemini_model
     except ImportError:
-        def get_dynamic_gemini_model(): return "gemini-1.5-flash"
+        def get_dynamic_gemini_model(): return "gemini-2.5-flash"
 import json
 import re
 from datetime import datetime

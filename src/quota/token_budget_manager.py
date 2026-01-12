@@ -38,7 +38,7 @@ try:
     from src.quota.quota_optimizer import get_best_gemini_model
 except ImportError:
     def get_best_gemini_model(api_key=None):
-        return "gemini-1.5-flash"  # Fallback only if import fails
+        return "gemini-2.5-flash"  # Fallback only if import fails
 
 # State directory
 STATE_DIR = Path("data/persistent")
@@ -395,7 +395,7 @@ class BudgetAwareAICaller:
         print(f"[BudgetAI] Task '{task}' -> Provider: {provider}")
         
         # Rate limit protection
-        time.sleep(0.5)
+        time.sleep(get_smart_delay("default", "groq") if "get_smart_delay" in dir() else 0.5)
         
         def extract_retry_delay(error_msg: str) -> int:
             match = re.search(r'retry in (\d+(?:\.\d+)?)', str(error_msg), re.IGNORECASE)

@@ -1,1 +1,1 @@
-﻿# Quota management
+# Quota management

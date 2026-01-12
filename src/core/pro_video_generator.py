@@ -918,8 +918,8 @@ class MasterAI:
                 
                 if not self.gemini_model:
                     # Last resort fallback
-                    self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
-                    safe_print("[OK] Gemini AI initialized (fallback: gemini-1.5-flash)")
+                    self.gemini_model = genai.GenerativeModel('gemini-2.5-flash')
+                    safe_print("[OK] Gemini AI initialized (fallback: gemini-2.5-flash)")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")
         

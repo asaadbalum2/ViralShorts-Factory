@@ -74,7 +74,7 @@ VIRAL_PSYCHOLOGY = {
     "fear_of_missing_out": {
         "description": "Something is happening without them",
         "technique": "Urgency and timeliness",
-        "example": "If you're not doing this in 2024, you're behind...",
+        "example": "If you're not doing this this year, you're behind...",
         "power_level": 8
     },
     "identity_validation": {

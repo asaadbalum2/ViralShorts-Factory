@@ -31,7 +31,7 @@ try:
     from src.quota.quota_optimizer import get_gemini_model_for_rest_api
 except ImportError:
     def get_gemini_model_for_rest_api(api_key=None):
-        return "gemini-1.5-flash"  # Fallback only if import fails
+        return "gemini-2.5-flash"  # Fallback only if import fails
 
 
 # Thumbnail settings

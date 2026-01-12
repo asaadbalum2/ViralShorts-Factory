@@ -28,7 +28,7 @@ try:
     from src.quota.quota_optimizer import get_best_gemini_model
 except ImportError:
     def get_best_gemini_model(api_key=None):
-        return "gemini-1.5-flash"  # Fallback only if import fails
+        return "gemini-2.5-flash"  # Fallback only if import fails
 
 
 def get_groq_client():
@@ -217,7 +217,7 @@ def refresh_questions_file(output_path: str = "questions.json", count: int = 50)
     for category in categories:
         questions = generate_viral_questions(groq_per_category, category)
         all_questions.extend(questions)
-        time.sleep(0.5)  # Rate limit protection
+        time.sleep(get_smart_delay("default", "groq") if "get_smart_delay" in dir() else 0.5)  # Rate limit protection
     
     # ===== GEMINI (60 req/min = even more capacity) =====
     print("\n📊 Phase 2: Google Gemini (High Quality)")
@@ -233,7 +233,7 @@ def refresh_questions_file(output_path: str = "questions.json", count: int = 50)
     for prompt in gemini_prompts:
         gemini_qs = generate_with_gemini(prompt, gemini_per_prompt)
         all_questions.extend(gemini_qs)
-        time.sleep(1)  # Rate limit protection
+        time.sleep(get_smart_delay("default", "groq") if "get_smart_delay" in dir() else 1)  # Rate limit protection
     
     # Add trending questions from Groq
     trending = generate_trending_questions()

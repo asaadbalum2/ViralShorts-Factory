@@ -315,7 +315,7 @@ class SmartAICaller:
         Uses per-model tracking (not per-provider) because different models
         of the same provider have different rate limits.
         
-        E.g., gemini-1.5-flash (15/min) vs gemini-2.5-pro (2/min)
+        E.g., gemini-2.5-flash (15/min) vs gemini-2.5-pro (2/min)
         """
         model_key = f"{provider}:{model_id}"
         now = time.time()

@@ -2316,7 +2316,7 @@ PREDICTION TOPICS:
 - Trends that will change X
 - What experts predict about Y
 - Future-focused = intriguing
-- "By 2025, you'll need to know..."
+- "By next year, you'll need to know..."
 """
 
 
@@ -6924,7 +6924,7 @@ class GeminiIntegration:
     """
     
     GEMINI_INFO = {
-        "model": "gemini-1.5-flash",
+        "model": "gemini-2.5-flash",
         "daily_limit": "Free tier generous",
         "quality": "High",
         "best_for": ["content creation", "analysis", "complex tasks"]

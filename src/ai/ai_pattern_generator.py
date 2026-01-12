@@ -25,7 +25,7 @@ except ImportError:
     except ImportError:
         # Fallback if model_helper not available
         def get_dynamic_gemini_model():
-            return "gemini-1.5-flash"
+            return "gemini-2.5-flash"
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional

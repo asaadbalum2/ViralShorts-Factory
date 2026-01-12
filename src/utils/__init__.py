@@ -1,1 +1,1 @@
-﻿# Utility functions
+# Utility functions

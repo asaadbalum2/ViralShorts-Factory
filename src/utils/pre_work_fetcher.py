@@ -74,12 +74,12 @@ class PreWorkFetcher:
                     from quota_optimizer import get_quota_optimizer
                     optimizer = get_quota_optimizer()
                     gemini_models = optimizer.get_gemini_models(gemini_key)
-                    model_to_use = gemini_models[0] if gemini_models else 'gemini-1.5-flash'
+                    model_to_use = gemini_models[0] if gemini_models else 'gemini-2.5-flash'
                 except:
-                    model_to_use = 'gemini-1.5-flash'
+                    model_to_use = 'gemini-2.5-flash'
                 
                 self.gemini_model = genai.GenerativeModel(model_to_use)
-                self.gemini_models_list = gemini_models if 'gemini_models' in dir() else ['gemini-1.5-flash']
+                self.gemini_models_list = gemini_models if 'gemini_models' in dir() else ['gemini-2.5-flash']
                 safe_print(f"[OK] Gemini initialized ({model_to_use})")
             except Exception as e:
                 safe_print(f"[!] Gemini init failed: {e}")

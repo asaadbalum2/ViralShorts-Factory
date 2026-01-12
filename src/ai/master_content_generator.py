@@ -372,13 +372,13 @@ class MasterContentGenerator:
             # v17.9.37: DYNAMIC rate limit delay
             try:
                 from src.ai.model_helper import get_smart_delay
-                delay = get_smart_delay("gemini-1.5-flash", "gemini")
+                delay = get_smart_delay("gemini-2.5-flash", "gemini")
             except ImportError:
                 delay = 4.4  # Fallback
             time.sleep(delay)
             
             response = requests.post(
-                f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}",
+                f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}",
                 headers={"Content-Type": "application/json"},
                 json={
                     "contents": [{"parts": [{"text": prompt}]}],

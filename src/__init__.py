@@ -1,1 +1,1 @@
-﻿# ViralShorts Factory - Core
+# ViralShorts Factory - Core

@@ -1,1 +1,1 @@
-﻿# Platform uploaders
+# Platform uploaders

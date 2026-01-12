@@ -724,7 +724,7 @@ def get_best_gemini_model(api_key: str = None, for_rest_api: bool = False) -> st
         for_rest_api: If True, returns model name for REST API calls (e.g., URL construction)
     
     Returns:
-        Best model name string (e.g., "gemini-1.5-flash" or could be "gemini-2.0-flash" if available)
+        Best model name string (e.g., "gemini-2.5-flash" or could be "gemini-2.0-flash" if available)
     
     Usage:
         from src.quota.quota_optimizer import get_best_gemini_model
@@ -740,7 +740,7 @@ def get_best_gemini_model(api_key: str = None, for_rest_api: bool = False) -> st
         return models[0]  # Return best available
     
     # Ultimate fallback (should never reach here)
-    return "gemini-1.5-flash"
+    return "gemini-2.5-flash"
 
 
 def get_best_groq_model(api_key: str = None) -> str:
@@ -768,7 +768,7 @@ def get_gemini_model_for_rest_api(api_key: str = None) -> str:
     """
     Get Gemini model name formatted for REST API URL construction.
     
-    Example: Returns "gemini-1.5-flash" for use in URLs like:
+    Example: Returns "gemini-2.5-flash" for use in URLs like:
     f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     """
     return get_best_gemini_model(api_key=api_key)

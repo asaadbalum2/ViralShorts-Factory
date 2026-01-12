@@ -1,1 +1,1 @@
-﻿# Core video generation
+# Core video generation

@@ -96,7 +96,7 @@ try:
     from src.quota.quota_optimizer import get_best_gemini_model, get_best_groq_model
 except ImportError:
     def get_best_gemini_model(api_key=None):
-        return "gemini-1.5-flash"
+        return "gemini-2.5-flash"
     def get_best_groq_model(api_key=None):
         return "llama-3.3-70b-versatile"
 
@@ -190,7 +190,7 @@ class SmartAICaller:
             except ImportError:
                 pass
         
-        time.sleep(0.5)  # Rate limit protection
+        time.sleep(get_smart_delay("default", "groq") if "get_smart_delay" in dir() else 0.5)  # Rate limit protection
         
         # Determine order based on priority
         if priority == "critical":

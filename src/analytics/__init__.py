@@ -1,1 +1,1 @@
-﻿# Analytics and feedback
+# Analytics and feedback
