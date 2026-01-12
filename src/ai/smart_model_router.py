@@ -228,7 +228,7 @@ class SmartModelRouter:
     """
     
     # How often to refresh model rankings (in seconds)
-    REFRESH_INTERVAL = 7 * 24 * 3600  # 7 days
+    REFRESH_INTERVAL = 24 * 3600  # 24 hours - v17.9.45: More frequent to catch deprecated models
     
     # v17.9.43: ACTUAL per-model daily quotas (from error messages)
     MODEL_DAILY_QUOTAS = {
@@ -713,6 +713,10 @@ class SmartModelRouter:
                 model.consecutive_failures = 0
             else:
                 model.consecutive_failures += 1
+                # v17.9.45: Auto-disable models with 5+ consecutive failures (likely deprecated)
+                if model.consecutive_failures >= 5:
+                    model.available = False
+                    safe_print(f"[ROUTER] Auto-disabled {model_key} after 5 consecutive failures")
         
         # Save periodically (every 10 calls)
         if self.stats["calls"] % 10 == 0:
