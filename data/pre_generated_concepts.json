@@ -1,268 +1,276 @@
 {
-  "generated_at": "2026-01-11T05:48:33.417688",
-  "valid_until": "2026-01-11T23:59:33.417696",
+  "generated_at": "2026-01-12T05:52:59.309064",
+  "valid_until": "2026-01-12T23:59:59.309072",
   "categories": [
-    "NFL Coaching Changes with Matt Nagy",
-    "Spider-Man No Way Home Theories",
-    "John Wick Fan Edits",
-    "Oilers Game Highlights",
-    "Dax Shepard's Wild Adventures",
-    "Behind the Scenes with The Rock",
-    "Chicago Tribune News Breakdowns",
-    "Seth Rollins WWE Updates",
-    "Winter Sports Bloopers",
-    "New Year's Resolution Fitness Tips",
-    "Spider-Man No Way Home Easter Eggs",
-    "John Wick Cosplay Tutorials",
-    "Oilers Player Profiles",
-    "Spider-Man No Way Home Fan Art",
-    "NFL Offseason Rumors with The Rock's Take"
+    "Behind-the-scenes of popular TV shows like Stranger Things",
+    "Winter sports and athlete highlights featuring Cameron Norrie",
+    "Comedian takeovers with Kyle Brandt",
+    "Severe weather updates and snow storm forecasts",
+    "Women in sports profiles like Paula Badosa",
+    "Throwbacks to classic Steven Spielberg movies",
+    "Emerging athlete showcases with Amen Thompson",
+    "Actress Q&A sessions featuring Laura Dern",
+    "Netflix documentary reviews and reactions",
+    "Snow day activities and challenges",
+    "Indoor gaming and entertainment for winter",
+    "Sports analysis and predictions for upcoming events",
+    "Top 10 lists of must-watch movies and shows",
+    "Morning routine and self-care for snowy days",
+    "Viral challenge explanations and trend reports"
   ],
   "concepts": [
     {
-      "category": "NFL Coaching Changes with Matt Nagy",
-      "topic": "Nagy's Top 3 Coaching Destinations in 2024",
-      "hook": "Could Matt Nagy be the next head coach of the Dallas Cowboys?",
+      "category": "Behind-the-scenes of popular TV shows like Stranger Things",
+      "topic": "Uncovering the Making of the Demogorgon",
+      "hook": "You won't believe how the Stranger Things creators brought this monster to life!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Spider-Man No Way Home Theories",
-      "topic": "The Multiverse Mystery: Unraveling the Spider-Verse",
-      "hook": "What if Spider-Man's multiverse is actually a warning from the future?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "John Wick Fan Edits",
-      "topic": "John Wick vs. The Matrix: An Epic Fan-Made Mashup",
-      "hook": "Imagine John Wick taking on Agent Smith in an epic battle",
-      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Oilers Game Highlights",
-      "topic": "McDavid's 5 Most Unbelievable Goals of the Season",
-      "hook": "You won't believe the angles on McDavid's latest game-winner",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Dax Shepard's Wild Adventures",
-      "topic": "Dax Shepard's Insane Off-Roading Escapade in the Desert",
-      "hook": "Dax Shepard just took his 4x4 on the wildest off-roading adventure ever",
+      "category": "Winter sports and athlete highlights featuring Cameron Norrie",
+      "topic": "Cameron Norrie's Top 5 Most Epic Tennis Shots",
+      "hook": "Get ready to witness the most jaw-dropping tennis shots from Cameron Norrie's career!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Behind the Scenes with The Rock",
-      "topic": "The Rock's Intense Workout Routine for His Next Movie",
-      "hook": "The Rock is pushing his body to the limit for his next blockbuster",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Chicago Tribune News Breakdowns",
-      "topic": "The Impact of the New Stadium on Chicago's Economy",
-      "hook": "The new stadium could bring in millions for Chicago's local businesses",
+      "category": "Comedian takeovers with Kyle Brandt",
+      "topic": "Kyle Brandt's Hilarious NFL Pre-Game Rituals",
+      "hook": "What does Kyle Brandt do before a big game? You might be surprised!",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 42
     },
     {
-      "category": "Seth Rollins WWE Updates",
-      "topic": "Seth Rollins' Road to WrestleMania: Can He Take the Title?",
-      "hook": "Seth Rollins is on a mission to take down the WWE champion",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Sports Bloopers",
-      "topic": "The Funniest Skiing Fails of the Season",
-      "hook": "These skiing fails will have you laughing out loud",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "New Year's Resolution Fitness Tips",
-      "topic": "5 Simple Exercises to Get You in Shape for Summer",
-      "hook": "Get ready to transform your body in just a few short weeks",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "NFL Coaching Changes with Matt Nagy",
-      "topic": "Nagy's Coaching Philosophy: What Teams Can Expect",
-      "hook": "Matt Nagy's coaching style could be the key to a team's success",
+      "category": "Severe weather updates and snow storm forecasts",
+      "topic": "The Great Blizzard of 2023: What We Learned",
+      "hook": "Relive the most intense blizzard of the century and find out what's in store for this winter!",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Spider-Man No Way Home Theories",
-      "topic": "The Sinister Six: Who Could Be the Next Villains?",
-      "hook": "The next Spider-Man movie could introduce the most epic villains yet",
-      "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "John Wick Fan Edits",
-      "topic": "John Wick vs. James Bond: The Ultimate Spy Showdown",
-      "hook": "Imagine John Wick taking on James Bond in a high-stakes battle",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Oilers Game Highlights",
-      "topic": "The Oilers' Most Thrilling Comebacks of the Season",
-      "hook": "The Oilers have pulled off some incredible comebacks this season",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Dax Shepard's Wild Adventures",
-      "topic": "Dax Shepard's Crazy Motorcycle Road Trip Across America",
-      "hook": "Dax Shepard just embarked on the wildest motorcycle adventure ever",
+      "category": "Women in sports profiles like Paula Badosa",
+      "topic": "Paula Badosa's Journey to Tennis Stardom",
+      "hook": "From humble beginnings to tennis superstar, discover Paula Badosa's inspiring story!",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Behind the Scenes with The Rock",
-      "topic": "The Rock's Favorite Stunts from His Latest Movie",
-      "hook": "The Rock is sharing his favorite stunts from his latest blockbuster",
-      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Chicago Tribune News Breakdowns",
-      "topic": "The Impact of Climate Change on Chicago's Weather",
-      "hook": "Climate change is having a profound impact on Chicago's weather patterns",
+      "category": "Throwbacks to classic Steven Spielberg movies",
+      "topic": "The Making of E.T. - A Timeless Classic",
+      "hook": "Step into the iconic world of E.T. and uncover the secrets behind its creation!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 43
+    },
+    {
+      "category": "Emerging athlete showcases with Amen Thompson",
+      "topic": "Amen Thompson: The Rising Star of Basketball",
+      "hook": "Meet the young athlete taking the basketball world by storm - Amen Thompson!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Actress Q&A sessions featuring Laura Dern",
+      "topic": "Laura Dern's Most Memorable Roles and Why She Chose Them",
+      "hook": "Join Laura Dern as she reflects on her most iconic characters and the stories behind them!",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 42
     },
     {
-      "category": "Seth Rollins WWE Updates",
-      "topic": "Seth Rollins' Most Epic Feuds in the WWE",
-      "hook": "Seth Rollins has been involved in some of the most epic feuds in WWE history",
+      "category": "Netflix documentary reviews and reactions",
+      "topic": "Uncovering the Truth Behind 'The Tinder Swindler'",
+      "hook": "You won't believe the shocking truth revealed in Netflix's 'The Tinder Swindler' documentary!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Winter Sports Bloopers",
-      "topic": "The Funniest Snowboarding Fails of the Season",
-      "hook": "These snowboarding fails will have you laughing out loud",
+      "category": "Snow day activities and challenges",
+      "topic": "The Ultimate Snowman Building Challenge",
+      "hook": "Get ready to witness the most epic snowman building battle of the winter!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "New Year's Resolution Fitness Tips",
-      "topic": "5 Simple Nutrition Tips to Boost Your Workout",
-      "hook": "Transform your body with these simple nutrition tips",
+      "category": "Behind-the-scenes of popular TV shows like Stranger Things",
+      "topic": "The Secret to Creating the Upside Down",
+      "hook": "Step into the world of Stranger Things and discover the magic behind the Upside Down!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter sports and athlete highlights featuring Cameron Norrie",
+      "topic": "Cameron Norrie's Most Thrilling Tennis Comebacks",
+      "hook": "Witness Cameron Norrie's most heart-stopping comebacks that will leave you on the edge of your seat!",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Comedian takeovers with Kyle Brandt",
+      "topic": "Kyle Brandt's Funniest NFL Impressions",
+      "hook": "Get ready to laugh out loud with Kyle Brandt's hilarious NFL impressions!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Severe weather updates and snow storm forecasts",
+      "topic": "The Science Behind Snowstorms: What You Need to Know",
+      "hook": "Uncover the fascinating science behind snowstorms and stay ahead of the weather!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Women in sports profiles like Paula Badosa",
+      "topic": "Paula Badosa's Mental Preparation for Big Matches",
+      "hook": "Discover the mental tricks and strategies that give Paula Badosa a competitive edge!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "NFL Coaching Changes with Matt Nagy",
-      "topic": "What Nagy's Hiring Means for the Future of the NFL",
-      "hook": "Matt Nagy's hiring could be a game-changer for the NFL",
-      "voice_style": "authoritative",
+      "category": "Throwbacks to classic Steven Spielberg movies",
+      "topic": "The Iconic Scores of John Williams and Steven Spielberg",
+      "hook": "Step into the world of cinematic magic and explore the iconic scores of John Williams and Steven Spielberg!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 43
+    },
+    {
+      "category": "Emerging athlete showcases with Amen Thompson",
+      "topic": "Amen Thompson's Journey to the Top: Overcoming Adversity",
+      "hook": "Join Amen Thompson as he shares his inspiring story of perseverance and determination!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Actress Q&A sessions featuring Laura Dern",
+      "topic": "Laura Dern's Favorite Roles and Why She Loved Them",
+      "hook": "Sit down with Laura Dern as she reflects on her favorite roles and the experiences that made them unforgettable!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Netflix documentary reviews and reactions",
+      "topic": "The Haunting Truth Behind 'The Keepers' Documentary",
+      "hook": "Uncover the dark secrets and shocking revelations in Netflix's 'The Keepers' documentary!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Snow day activities and challenges",
+      "topic": "The Ultimate Ice Skating Challenge: Who Will Win?",
+      "hook": "Get ready to witness the most thrilling ice skating battle of the winter - who will be crowned the champion?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Behind-the-scenes of popular TV shows like Stranger Things",
+      "topic": "The Creation of the Mind Flayer: A Behind-the-Scenes Look",
+      "hook": "Step into the world of Stranger Things and discover the terrifying process of creating the Mind Flayer!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter sports and athlete highlights featuring Cameron Norrie",
+      "topic": "Cameron Norrie's Record-Breaking Tennis Achievements",
+      "hook": "Witness Cameron Norrie's most impressive record-breaking achievements that will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 43
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
