@@ -98,32 +98,84 @@ class AITopicSuggester:
         return self._generate_simple(count, category)
     
     def _get_performance_insights(self) -> Dict:
-        """Get insights from historical performance."""
+        """
+        Get insights from historical performance and aggressive mode learning.
+        
+        v18.6: FIXED - Now reads from correct paths that aggressive mode saves to:
+        - variety_state.json: learned_weights, do_more, avoid, hook_templates
+        - self_learning.json: patterns (hooks), do_more, avoid
+        - viral_patterns.json: title_patterns, hook_patterns
+        """
         insights = {}
         
-        # Try to get from self-learning
-        try:
-            learning_file = STATE_DIR / "self_learning.json"
-            if learning_file.exists():
-                with open(learning_file, 'r') as f:
-                    learning = json.load(f)
-                
-                # Extract best performing patterns
-                insights["best_categories"] = learning.get("recommendations", {}).get("top_categories", [])
-                insights["best_hooks"] = learning.get("recommendations", {}).get("best_hook_styles", [])
-                insights["avoid"] = learning.get("recommendations", {}).get("avoid_phrases", [])
-        except:
-            pass
-        
-        # Try to get from variety state
+        # 1. Load variety_state (primary learning storage from aggressive mode)
         try:
             variety_file = STATE_DIR / "variety_state.json"
             if variety_file.exists():
                 with open(variety_file, 'r') as f:
                     variety = json.load(f)
                 
-                insights["recent_categories"] = variety.get("usage_tracking", {}).get("categories", [])
-                insights["recent_topics"] = variety.get("usage_tracking", {}).get("topics", [])
+                # v18.6: Read from CORRECT paths (what aggressive mode saves)
+                # Learned category weights
+                learned_weights = variety.get("learned_weights", {})
+                if learned_weights and isinstance(learned_weights, dict):
+                    sorted_cats = sorted(learned_weights.keys(), 
+                                       key=lambda x: learned_weights[x].get("weight", 0) if isinstance(learned_weights[x], dict) else 0, 
+                                       reverse=True)
+                    insights["best_categories"] = sorted_cats[:5]
+                
+                # Preferred categories and subcategories
+                insights["preferred_categories"] = variety.get("preferred_categories", [])
+                insights["preferred_subcategories"] = variety.get("preferred_subcategories", [])
+                
+                # Actionable insights from aggressive mode
+                insights["do_more"] = variety.get("do_more", [])[:5]
+                insights["avoid"] = variety.get("avoid", [])[:5]
+                
+                # Hook templates from virality research
+                insights["hook_templates"] = variety.get("hook_templates", [])
+                insights["contrarian_insights"] = variety.get("contrarian_insights", [])[:3]
+                
+                # All patterns and mistakes
+                insights["all_patterns"] = variety.get("all_patterns", [])[:10]
+                insights["all_mistakes"] = variety.get("all_mistakes", [])[:5]
+                
+                # Recent usage to avoid repetition
+                insights["recent_categories"] = variety.get("categories", [])[-10:]
+                insights["recent_topics"] = variety.get("topics", [])[-10:]
+        except:
+            pass
+        
+        # 2. Load self_learning.json (hook patterns with success data)
+        try:
+            learning_file = STATE_DIR / "self_learning.json"
+            if learning_file.exists():
+                with open(learning_file, 'r') as f:
+                    learning = json.load(f)
+                
+                # Get hook patterns sorted by success
+                patterns = learning.get("patterns", {})
+                hooks = patterns.get("hooks", [])
+                if hooks:
+                    sorted_hooks = sorted(hooks, key=lambda x: x.get("success_count", 0), reverse=True)
+                    insights["best_hooks"] = [h.get("value") for h in sorted_hooks[:5] if h.get("value")]
+                    
+                    # Extract avoid phrases from low-performing hooks
+                    worst_hooks = sorted(hooks, key=lambda x: x.get("failure_count", 0), reverse=True)
+                    insights["avoid_phrases"] = [h.get("value") for h in worst_hooks[:5] if h.get("value")]
+        except:
+            pass
+        
+        # 3. Load viral_patterns.json (general viral patterns)
+        try:
+            viral_file = STATE_DIR / "viral_patterns.json"
+            if viral_file.exists():
+                with open(viral_file, 'r') as f:
+                    viral = json.load(f)
+                
+                insights["title_patterns"] = viral.get("title_patterns", [])[:5]
+                insights["hook_patterns"] = viral.get("hook_patterns", [])[:5]
+                insights["psych_triggers"] = viral.get("psychological_triggers", [])[:5]
         except:
             pass
         
@@ -134,6 +186,14 @@ class AITopicSuggester:
         """Generate topics with AI."""
         now = datetime.now()
         
+        # v18.6: Build comprehensive context from all learning sources
+        best_cats = performance.get("best_categories", performance.get("preferred_categories", []))
+        hook_templates = performance.get("hook_templates", [])
+        do_more = performance.get("do_more", [])
+        avoid_list = performance.get("avoid", [])
+        psych_triggers = performance.get("psych_triggers", [])
+        contrarian = performance.get("contrarian_insights", [])
+        
         prompt = f"""You are a viral content strategist.
 
 TASK: Generate {count} viral video topics for YouTube Shorts.
@@ -143,17 +203,27 @@ CURRENT CONTEXT:
 - Day: {now.strftime("%A")}
 - Category filter: {category if category else "any"}
 
-PERFORMANCE INSIGHTS:
-- Best categories: {performance.get("best_categories", ["psychology", "money"])}
-- Best hook styles: {performance.get("best_hooks", ["question", "pattern_interrupt"])}
+PERFORMANCE INSIGHTS (from our analytics):
+- Best performing categories: {best_cats[:5] if best_cats else ["psychology", "money", "productivity"]}
+- Best hook styles: {performance.get("best_hooks", [])}
+- Hook templates that work: {hook_templates[:3] if hook_templates else []}
+- Do MORE of: {do_more[:3] if do_more else []}
 - Avoid topics like: {avoid_recent if avoid_recent else "none"}
-- Recent topics to avoid: {performance.get("recent_topics", [])[-5:]}
+- Topics/styles to AVOID: {avoid_list[:3] if avoid_list else []}
+- Recent topics (don't repeat): {performance.get("recent_topics", [])[-5:]}
+
+PSYCHOLOGICAL TRIGGERS THAT WORK:
+{psych_triggers[:5] if psych_triggers else ["curiosity gap", "identity challenge", "FOMO"]}
+
+CONTRARIAN ANGLES (unexpected takes that went viral):
+{contrarian[:2] if contrarian else []}
 
 REQUIREMENTS:
 1. Topics must be SPECIFIC (not vague)
 2. Topics must have clear value proposition
 3. Topics must work for 15-30 second videos
 4. Topics must be evergreen or currently trending
+5. Use the psychological triggers and hook templates above
 
 Return JSON array:
 [{{"topic": "specific topic", "category": "category", "hook_idea": "scroll-stopping hook", "value": "what viewer learns"}}]

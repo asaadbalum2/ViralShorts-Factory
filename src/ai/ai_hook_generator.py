@@ -263,28 +263,79 @@ Return ONLY the hook text (7-12 words max), no quotes, no explanation."""
     
     def _get_dynamic_triggers(self) -> Dict:
         """
-        v17.9.16: Get dynamic triggers from learning engine.
-        NO HARDCODING - all from analytics or AI!
+        v18.6: Get dynamic triggers from all learning sources.
+        NO HARDCODING - all from analytics/aggressive mode learning!
+        
+        Sources (in priority order):
+        1. self_learning_engine (if available)
+        2. variety_state.json (aggressive mode learning)
+        3. viral_patterns.json (virality research)
         """
+        result = {
+            "source": "none_available",
+            "hook_triggers": [],
+            "power_words": [],
+            "avoid_words": [],
+            "hook_templates": [],
+            "contrarian_insights": []
+        }
+        
+        # 1. Try learning engine
         try:
             from self_learning_engine import get_learning_engine
             engine = get_learning_engine()
-            return engine.get_viral_triggers()
-        except ImportError:
-            try:
-                from src.analytics.self_learning_engine import get_learning_engine
-                engine = get_learning_engine()
-                return engine.get_viral_triggers()
-            except:
-                pass
+            data = engine.get_viral_triggers()
+            if data.get("source") != "none_available":
+                return data
+        except:
+            pass
         
-        # Empty fallback - no hardcoded defaults!
-        return {
-            "source": "none",
-            "hook_triggers": [],
-            "power_words": [],
-            "avoid_words": []
-        }
+        # 2. Load from variety_state.json (aggressive mode)
+        try:
+            variety_file = STATE_DIR / "variety_state.json"
+            if variety_file.exists():
+                with open(variety_file, 'r') as f:
+                    variety = json.load(f)
+                
+                result["source"] = "variety_state"
+                
+                # Hook templates from virality research
+                result["hook_templates"] = variety.get("hook_templates", [])
+                result["hook_triggers"] = variety.get("psych_triggers", [])
+                
+                # Patterns and mistakes
+                patterns = variety.get("all_patterns", [])
+                if patterns:
+                    # Extract power words from patterns
+                    power_words = []
+                    for p in patterns:
+                        words = re.findall(r'\b\w+\b', str(p).lower())
+                        power_words.extend([w for w in words if len(w) > 3 and w not in ["the", "that", "this", "with", "from", "have", "your", "what", "when", "where", "which"]])
+                    result["power_words"] = list(set(power_words))[:10]
+                
+                result["avoid_words"] = variety.get("avoid", [])
+                result["contrarian_insights"] = variety.get("contrarian_insights", [])
+        except:
+            pass
+        
+        # 3. Load from viral_patterns.json (virality research)
+        try:
+            viral_file = STATE_DIR / "viral_patterns.json"
+            if viral_file.exists():
+                with open(viral_file, 'r') as f:
+                    viral = json.load(f)
+                
+                if not result["hook_templates"]:
+                    result["hook_templates"] = viral.get("hook_patterns", [])
+                if not result["hook_triggers"]:
+                    result["hook_triggers"] = viral.get("psychological_triggers", [])
+                
+                if result["source"] == "none_available":
+                    result["source"] = "viral_patterns"
+        except:
+            pass
+        
+        return result
 
         # Try Gemini first (more creative)
         hook = self._call_gemini(prompt)
