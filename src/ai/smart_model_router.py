@@ -229,16 +229,36 @@ class SmartModelRouter:
     - Periodic re-evaluation of model rankings (default: weekly)
     - Fallback chains guarantee eventual success
     - Tracks usage and success rates
+    - v17.9.43: Per-model daily usage tracking for quota rotation
     """
     
     # How often to refresh model rankings (in seconds)
     REFRESH_INTERVAL = 7 * 24 * 3600  # 7 days
+    
+    # v17.9.43: ACTUAL per-model daily quotas (from error messages)
+    MODEL_DAILY_QUOTAS = {
+        # Gemini: 20 RPD per model (free tier!)
+        "gemini-2.5-flash": 20,
+        "gemini-2.5-pro": 20,
+        "gemini-2.0-flash-exp": 20,
+        "gemini-2.0-flash": 20,
+        "gemini-1.5-flash": 20,
+        "gemini-1.5-pro": 20,
+        # Groq: Token-based (100K for 70b, 500K for 8b)
+        "llama-3.3-70b-versatile": 50,   # ~100K TPD / 2K per call
+        "llama-3.1-8b-instant": 250,     # ~500K TPD / 2K per call
+        "mixtral-8x7b-32768": 100,
+    }
     
     def __init__(self):
         self.models = {}
         self.rankings = {}  # {prompt_type: [ordered list of model keys]}
         self.stats = {"calls": 0, "successes": 0, "fallbacks": 0}
         self.last_refresh = None
+        
+        # v17.9.43: Per-model usage tracking (resets daily)
+        self.model_usage_today = {}  # {model_name: count}
+        self.usage_date = None  # Track which day the usage is for
         
         # Load cached data or initialize
         self._load_cache()
@@ -582,6 +602,33 @@ class SmartModelRouter:
         
         return chain
     
+    def _is_model_exhausted(self, model_key: str, model: ModelInfo) -> bool:
+        """
+        v17.9.43: Check if a model has hit its daily quota.
+        
+        Returns True if we should skip this model and try next in chain.
+        """
+        today = datetime.now().strftime("%Y-%m-%d")
+        
+        # Reset counter if new day
+        if model.last_call_date != today:
+            model.calls_today = 0
+            model.last_call_date = today
+            return False
+        
+        # Get quota for this model
+        model_name = model.name
+        quota = self.MODEL_DAILY_QUOTAS.get(model_name, 50)  # Default 50 if unknown
+        
+        # Leave 10% buffer for safety
+        safe_quota = int(quota * 0.90)
+        
+        if model.calls_today >= safe_quota:
+            safe_print(f"   [QUOTA] {model_name}: {model.calls_today}/{quota} - exhausted, trying next")
+            return True
+        
+        return False
+    
     def get_best_model(self, prompt: str, hint: str = None, 
                        prompt_name: str = None) -> Tuple[str, ModelInfo]:
         """
@@ -594,6 +641,8 @@ class SmartModelRouter:
         
         Returns:
             (model_key, ModelInfo) for the best model
+            
+        v17.9.43: Now skips exhausted models and rotates to next available
         """
         # v17.9.9: Check prompts registry for per-prompt recommendations
         if prompt_name:
@@ -601,7 +650,10 @@ class SmartModelRouter:
                 from prompts_registry import get_best_model_for_prompt
                 recommended = get_best_model_for_prompt(prompt_name)
                 if recommended and recommended in self.models:
-                    return (recommended, self.models[recommended])
+                    model = self.models[recommended]
+                    # v17.9.43: Check if recommended model is exhausted
+                    if not self._is_model_exhausted(recommended, model):
+                        return (recommended, model)
             except ImportError:
                 pass
             except Exception:
@@ -611,10 +663,22 @@ class SmartModelRouter:
         prompt_type = self.classify_prompt(prompt, hint)
         chain = self.get_model_chain(prompt_type)
         
+        # v17.9.43: Find first non-exhausted model in chain
+        for key, model in chain:
+            if not self._is_model_exhausted(key, model):
+                return (key, model)
+        
+        # All models in chain exhausted - try any available model
+        safe_print("   [QUOTA] All primary models exhausted, checking all providers...")
+        for key, model in self.models.items():
+            if not self._is_model_exhausted(key, model):
+                return (key, model)
+        
+        # Ultimate fallback - return first model anyway (let API error handle it)
+        safe_print("   [QUOTA] WARNING: All models appear exhausted, using first available")
         if chain:
             return chain[0]
         
-        # Ultimate fallback
         for key, model in self.models.items():
             return (key, model)
         

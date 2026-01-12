@@ -1171,21 +1171,25 @@ def get_model_for_task(task_type: str) -> str:
 RATE_LIMIT_MARGIN = 1.10  # 10% safety margin
 
 MODEL_RATE_LIMITS = {
-    # Gemini models - FREE tier limits (very restrictive!)
+    # Gemini models - FREE tier limits (VERY restrictive! 20 RPD PER MODEL!)
+    # v17.9.43: ACTUAL limits from error messages - NOT what docs claim!
+    # "Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20"
     # delay = (60 / req_per_min) * 1.10 for safety
-    "gemini-2.5-flash": {"req_per_min": 5, "delay": 13.2, "daily_quota": 500, "throughput": "low"},      # 12s + 10%
-    "gemini-2.5-pro": {"req_per_min": 2, "delay": 33.0, "daily_quota": 50, "throughput": "low"},         # 30s + 10%
-    "gemini-2.0-flash-exp": {"req_per_min": 5, "delay": 13.2, "daily_quota": 50, "throughput": "low"},   # 12s + 10%
-    "gemini-2.0-flash": {"req_per_min": 10, "delay": 6.6, "daily_quota": 500, "throughput": "medium"},   # 6s + 10%
-    "gemini-1.5-flash": {"req_per_min": 15, "delay": 4.4, "daily_quota": 1500, "throughput": "high"},    # 4s + 10%
-    "gemini-1.5-pro": {"req_per_min": 5, "delay": 13.2, "daily_quota": 50, "throughput": "low"},         # 12s + 10%
+    "gemini-2.5-flash": {"req_per_min": 5, "delay": 13.2, "daily_quota": 20, "throughput": "low"},       # 20 RPD per model!
+    "gemini-2.5-pro": {"req_per_min": 2, "delay": 33.0, "daily_quota": 20, "throughput": "low"},         # 20 RPD per model!
+    "gemini-2.0-flash-exp": {"req_per_min": 5, "delay": 13.2, "daily_quota": 20, "throughput": "low"},   # 20 RPD per model!
+    "gemini-2.0-flash": {"req_per_min": 10, "delay": 6.6, "daily_quota": 20, "throughput": "medium"},    # 20 RPD per model!
+    "gemini-1.5-flash": {"req_per_min": 15, "delay": 4.4, "daily_quota": 20, "throughput": "high"},      # 20 RPD per model!
+    "gemini-1.5-pro": {"req_per_min": 5, "delay": 13.2, "daily_quota": 20, "throughput": "low"},         # 20 RPD per model!
     
-    # Groq models - generous rate limits (still apply 10% margin)
-    "llama-3.3-70b-versatile": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},  # 2s + 10%
+    # Groq models - v17.9.43: ACTUAL limits from error messages!
+    # "Limit 100000" TPD for 70b, 500000 TPD for 8b-instant
+    # ~2000 tokens/call = 50 calls (70b) or 250 calls (8b)
+    "llama-3.3-70b-versatile": {"req_per_min": 30, "delay": 2.2, "daily_quota": 50, "throughput": "high"},   # 100K TPD = ~50 calls
     # REMOVED: llama-3.1-70b-versatile - DECOMMISSIONED by Groq (Jan 2026)
-    "llama-3.1-8b-instant": {"req_per_min": 60, "delay": 1.1, "daily_quota": 500, "throughput": "high"},     # 1s + 10%
-    "mixtral-8x7b-32768": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
-    "gemma-7b-it": {"req_per_min": 30, "delay": 2.2, "daily_quota": 500, "throughput": "high"},
+    "llama-3.1-8b-instant": {"req_per_min": 60, "delay": 1.1, "daily_quota": 250, "throughput": "high"},     # 500K TPD = ~250 calls
+    "mixtral-8x7b-32768": {"req_per_min": 30, "delay": 2.2, "daily_quota": 100, "throughput": "high"},       # Estimated
+    "gemma-7b-it": {"req_per_min": 30, "delay": 2.2, "daily_quota": 200, "throughput": "high"},              # Estimated
     
     # Default fallbacks by provider (with 10% margin)
     "_gemini_default": {"req_per_min": 5, "delay": 13.2, "daily_quota": 100, "throughput": "low"},
