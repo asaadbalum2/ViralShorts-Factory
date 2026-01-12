@@ -57,19 +57,19 @@ class QuotaMonitor:
     # Provider limits
     LIMITS = {
         "groq": {
-            "daily": 100000,
-            "hourly": 15000,  # Rough estimate
-            "minute": 400,    # Rough estimate
+            "daily": 300,      # v18.5: Token-based (300 calls)
+            "hourly": 50,      # Spread over 6 hours  # Rough estimate
+            "minute": 30,      # 30 RPM    # Rough estimate
         },
         "gemini": {
-            "daily": 1000000,
-            "hourly": 100000,
-            "minute": 1600,   # 60 RPM * ~27 avg tokens
+            "daily": 100,      # v18.5: 5 models x 20 RPD
+            "hourly": 10,      # Spread over 10 hours
+            "minute": 15,      # 15 RPM   # 60 RPM * ~27 avg tokens
         },
         "openrouter": {
-            "daily": 200000,
-            "hourly": 20000,
-            "minute": 500,
+            "daily": 10000,    # Free tier is generous
+            "hourly": 1000,
+            "minute": 60,
         }
     }
     
