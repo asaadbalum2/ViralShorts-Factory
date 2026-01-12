@@ -205,7 +205,8 @@ class SmartAICaller:
         self.last_call_time = {}  # Track last call per provider
     
     def call(self, prompt: str, hint: str = None, 
-             max_tokens: int = 2000, temperature: float = 0.8) -> Optional[str]:
+             max_tokens: int = 2000, temperature: float = 0.8,
+             prompt_name: str = None) -> Optional[str]:
         """
         Make an AI call with smart routing.
         
@@ -214,6 +215,7 @@ class SmartAICaller:
             hint: Optional hint about prompt type (e.g., "topic", "evaluation")
             max_tokens: Maximum tokens in response
             temperature: Creativity level (0-1)
+            prompt_name: Optional name for prompt tracking (e.g., "VIRAL_TOPIC_PROMPT")
         
         Returns:
             The AI response text, or None if all models fail
@@ -259,6 +261,16 @@ class SmartAICaller:
                                                   was_fallback=(i > 0))
                         if i > 0:
                             safe_print(f"   [OK] Fallback succeeded with {model_key}")
+                        
+                        # v17.9.43: Record prompt performance for learning
+                        if prompt_name:
+                            try:
+                                from prompts_registry import record_prompt_usage
+                                record_prompt_usage(prompt_name, model_key, 
+                                                    success=True, response_quality=7.5)
+                            except ImportError:
+                                pass  # Registry not available
+                        
                         return result
                     else:
                         # Empty response, try next model
@@ -369,12 +381,14 @@ def get_smart_caller() -> SmartAICaller:
 
 
 def smart_call_ai(prompt: str, hint: str = None,
-                  max_tokens: int = 2000, temperature: float = 0.8) -> Optional[str]:
+                  max_tokens: int = 2000, temperature: float = 0.8,
+                  prompt_name: str = None) -> Optional[str]:
     """
     Convenience function for smart AI calls.
     
     Args:
         prompt: The prompt to send
+        prompt_name: Optional prompt name for performance tracking
         hint: Optional hint about prompt type
         max_tokens: Maximum tokens
         temperature: Creativity level
@@ -389,18 +403,19 @@ def smart_call_ai(prompt: str, hint: str = None,
         )
     """
     caller = get_smart_caller()
-    return caller.call(prompt, hint, max_tokens, temperature)
+    return caller.call(prompt, hint, max_tokens, temperature, prompt_name)
 
 
 def smart_call_json(prompt: str, hint: str = None,
-                    max_tokens: int = 2000, temperature: float = 0.7) -> Optional[Dict]:
+                    max_tokens: int = 2000, temperature: float = 0.7,
+                    prompt_name: str = None) -> Optional[Dict]:
     """
     Make AI call and parse JSON response.
     
     Lower default temperature for more consistent JSON output.
     """
     caller = get_smart_caller()
-    text = caller.call(prompt, hint, max_tokens, temperature)
+    text = caller.call(prompt, hint, max_tokens, temperature, prompt_name)
     return caller.parse_json(text)
 
 

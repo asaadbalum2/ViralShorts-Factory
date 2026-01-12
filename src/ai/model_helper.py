@@ -1180,7 +1180,7 @@ MODEL_RATE_LIMITS = {
     "gemini-2.0-flash-exp": {"req_per_min": 5, "delay": 13.2, "daily_quota": 20, "throughput": "low"},   # 20 RPD per model!
     "gemini-2.0-flash": {"req_per_min": 10, "delay": 6.6, "daily_quota": 20, "throughput": "medium"},    # 20 RPD per model!
     "gemini-1.5-flash": {"req_per_min": 15, "delay": 4.4, "daily_quota": 20, "throughput": "high"},      # 20 RPD per model!
-    "gemini-1.5-pro": {"req_per_min": 5, "delay": 13.2, "daily_quota": 20, "throughput": "low"},         # 20 RPD per model!
+    # REMOVED: gemini-1.5-pro - deprecated, returns 404 (Jan 2026)
     
     # Groq models - v17.9.43: ACTUAL limits from error messages!
     # "Limit 100000" TPD for 70b, 500000 TPD for 8b-instant

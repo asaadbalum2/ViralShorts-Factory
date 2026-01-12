@@ -186,12 +186,7 @@ DEFAULT_MODELS = {
         quality_general=8.0, quality_creative=7.5, quality_structured=9.0, quality_speed=8.0,
         robustness=0.92, available=True
     ),
-    "gemini:gemini-1.5-pro": ModelInfo(
-        provider="gemini", model_id="gemini-1.5-pro",
-        daily_limit=50, rate_limit=5, delay=_safe_delay(5),  # 13.2s
-        quality_general=8.5, quality_creative=8.0, quality_structured=9.0, quality_speed=5.0,
-        robustness=0.90, available=True
-    ),
+    # REMOVED: gemini-1.5-pro - Returns 404 "not found for API version v1beta" (Jan 2026)
     # OpenRouter (free) - generous limits
     "openrouter:meta-llama/llama-3.2-3b-instruct:free": ModelInfo(
         provider="openrouter", model_id="meta-llama/llama-3.2-3b-instruct:free",
@@ -243,7 +238,7 @@ class SmartModelRouter:
         "gemini-2.0-flash-exp": 20,
         "gemini-2.0-flash": 20,
         "gemini-1.5-flash": 20,
-        "gemini-1.5-pro": 20,
+        # REMOVED: gemini-1.5-pro - deprecated (404)
         # Groq: Token-based (100K for 70b, 500K for 8b)
         "llama-3.3-70b-versatile": 50,   # ~100K TPD / 2K per call
         "llama-3.1-8b-instant": 250,     # ~500K TPD / 2K per call
