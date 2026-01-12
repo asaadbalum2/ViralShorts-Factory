@@ -161,14 +161,14 @@ DEFAULT_MODELS = {
     # Groq - shared 14,400/day quota across all models
     "groq:llama-3.3-70b-versatile": ModelInfo(
         provider="groq", model_id="llama-3.3-70b-versatile",
-        daily_limit=300, rate_limit=30, delay=_safe_delay(30),  # 2.2s
+        daily_limit=50, rate_limit=30, delay=_safe_delay(30),  # 2.2s
         quality_general=8.5, quality_creative=9.0, quality_structured=8.0, quality_speed=9.0,
         robustness=0.98, available=True
     ),
     # REMOVED: llama-3.1-70b-versatile - DECOMMISSIONED by Groq (Jan 2026)
     "groq:llama-3.1-8b-instant": ModelInfo(
         provider="groq", model_id="llama-3.1-8b-instant",
-        daily_limit=600, rate_limit=60, delay=_safe_delay(60),  # 1.1s
+        daily_limit=250, rate_limit=60, delay=_safe_delay(60),  # 1.1s
         quality_general=7.0, quality_creative=6.5, quality_structured=7.0, quality_speed=10.0,
         robustness=0.99, available=True
     ),
@@ -176,13 +176,13 @@ DEFAULT_MODELS = {
     # Gemini - separate quotas per model
     "gemini:gemini-2.5-flash": ModelInfo(
         provider="gemini", model_id="gemini-2.5-flash",
-        daily_limit=1500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
+        daily_limit=20, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=7.5, quality_creative=7.0, quality_structured=8.5, quality_speed=8.0,
         robustness=0.95, available=True
     ),
     "gemini:gemini-2.0-flash": ModelInfo(
         provider="gemini", model_id="gemini-2.0-flash",
-        daily_limit=500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
+        daily_limit=20, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=8.0, quality_creative=7.5, quality_structured=9.0, quality_speed=8.0,
         robustness=0.92, available=True
     ),
@@ -380,7 +380,7 @@ class SmartModelRouter:
                         # v17.9.33: Use _safe_delay for 10% margin
                         self.models[key] = ModelInfo(
                             provider="groq", model_id=model_id,
-                            daily_limit=300, rate_limit=30, delay=_safe_delay(30),  # 2.2s
+                            daily_limit=50, rate_limit=30, delay=_safe_delay(30),  # 2.2s
                             quality_general=7.0, quality_creative=7.0,
                             quality_structured=7.0, quality_speed=8.0,
                             robustness=0.90, available=True
