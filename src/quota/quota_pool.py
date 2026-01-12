@@ -89,19 +89,23 @@ class QuotaPoolManager:
     """
     
     # Known model quotas (will be updated from API)
+    # v18.6: CORRECTED quotas based on actual free-tier limits
     KNOWN_QUOTAS = {
-        # Gemini models (per model, not shared)
-        "gemini-2.5-flash": {"daily": 500, "quality": 7.5, "throughput": "low", "shared": False},
-        "gemini-2.5-pro": {"daily": 50, "quality": 8.5, "throughput": "low", "shared": False},
-        "gemini-2.0-flash": {"daily": 500, "quality": 7.0, "throughput": "medium", "shared": False},
-        "gemini-2.0-flash-exp": {"daily": 50, "quality": 6.0, "throughput": "low", "shared": False},
-        "gemini-2.5-flash": {"daily": 1500, "quality": 6.5, "throughput": "high", "shared": False},
-        # REMOVED: gemini-2.5-pro - deprecated, returns 404
+        # Gemini models - 20 RPD PER MODEL (free tier!)
+        # Total Gemini: ~100 calls/day across 5 models
+        "gemini-2.5-flash": {"daily": 20, "quality": 7.5, "throughput": "low", "shared": False},
+        "gemini-2.5-pro": {"daily": 20, "quality": 8.5, "throughput": "low", "shared": False},
+        "gemini-2.0-flash": {"daily": 20, "quality": 7.0, "throughput": "medium", "shared": False},
+        "gemini-2.0-flash-exp": {"daily": 20, "quality": 6.0, "throughput": "low", "shared": False},
+        "gemini-1.5-flash": {"daily": 20, "quality": 6.5, "throughput": "high", "shared": False},
+        # REMOVED: gemini-1.5-pro - deprecated, returns 404
         
-        # Groq models (SHARED quota pool - 500 total)
-        "llama-3.3-70b-versatile": {"daily": 500, "quality": 9.0, "throughput": "high", "shared": True},
-        "llama-3.1-8b-instant": {"daily": 500, "quality": 6.0, "throughput": "high", "shared": True},
-        "mixtral-8x7b-32768": {"daily": 500, "quality": 7.0, "throughput": "high", "shared": True},
+        # Groq models - Token-based limits (NOT calls)
+        # 70b: ~100K TPD = ~50 calls/day (2K tokens/call avg)
+        # 8b: ~500K TPD = ~250 calls/day (2K tokens/call avg)
+        "llama-3.3-70b-versatile": {"daily": 50, "quality": 9.0, "throughput": "medium", "shared": False},
+        "llama-3.1-8b-instant": {"daily": 250, "quality": 6.0, "throughput": "high", "shared": False},
+        "mixtral-8x7b-32768": {"daily": 100, "quality": 7.0, "throughput": "high", "shared": False},
         
         # OpenRouter (free models, limited capabilities)
         "openrouter:free": {"daily": 200, "quality": 4.0, "throughput": "medium", "shared": False},
