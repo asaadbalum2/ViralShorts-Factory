@@ -1,8 +1,0 @@
-﻿gh : failed to get run: HTTP 404: Not Found 
-(https://api.github.com/repos/asaadbalum2/ViralShorts-Factory/actions/runs/232?exclude_pull_requests=true)
-At C:\Users\SoulsTaker7\AppData\Local\Temp\ps-script-3a081a47-33c8-4b11-8a31-85abf9a7a040.ps1:86 char:1
-+ gh run view 232 --log 2>&1 | Out-File -FilePath workflow_232_log.txt  ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (failed to get r..._requests=true):String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
