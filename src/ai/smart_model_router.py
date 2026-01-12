@@ -358,10 +358,18 @@ class SmartModelRouter:
                    f"{len(self.rankings)} prompt types")
     
     def _discover_groq_models(self):
-        """Discover available Groq models."""
+        """
+        v18.5: Discover Groq TEXT GENERATION models only.
+        CRITICAL: Filters non-text models that caused failure #232.
+        """
         api_key = os.environ.get("GROQ_API_KEY")
         if not api_key:
             return
+        
+        # v18.5: CRITICAL - Skip non-text-generation models
+        EXCLUDE = ["orpheus", "whisper", "playai", "bark", "guard", 
+                   "safeguard", "compound", "allam", "tts", "audio", 
+                   "speech", "embed", "canopy"]
         
         try:
             import requests
@@ -372,20 +380,28 @@ class SmartModelRouter:
             )
             if response.status_code == 200:
                 models_data = response.json().get("data", [])
+                added, skipped = 0, 0
                 for model in models_data:
                     model_id = model.get("id", "")
+                    model_lower = model_id.lower()
+                    
+                    # Skip non-text models
+                    if any(p in model_lower for p in EXCLUDE):
+                        skipped += 1
+                        continue
+                    
                     key = f"groq:{model_id}"
                     if key not in self.models:
-                        # Add new model with estimated stats
-                        # v17.9.33: Use _safe_delay for 10% margin
+                        daily = 50 if "70b" in model_lower else (250 if "8b" in model_lower else 100)
                         self.models[key] = ModelInfo(
                             provider="groq", model_id=model_id,
-                            daily_limit=50, rate_limit=30, delay=_safe_delay(30),  # 2.2s
+                            daily_limit=daily, rate_limit=30, delay=_safe_delay(30),
                             quality_general=7.0, quality_creative=7.0,
                             quality_structured=7.0, quality_speed=8.0,
                             robustness=0.90, available=True
                         )
-                safe_print(f"[ROUTER] Discovered {len(models_data)} Groq models")
+                        added += 1
+                safe_print(f"[ROUTER] Discovered {added} Groq text models (filtered {skipped})")
         except Exception as e:
             safe_print(f"[ROUTER] Groq discovery failed: {e}")
     
