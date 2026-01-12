@@ -161,32 +161,32 @@ DEFAULT_MODELS = {
     # Groq - shared 14,400/day quota across all models
     "groq:llama-3.3-70b-versatile": ModelInfo(
         provider="groq", model_id="llama-3.3-70b-versatile",
-        daily_limit=50, rate_limit=30, delay=_safe_delay(30),  # 2.2s
+        daily_limit=300, rate_limit=30, delay=_safe_delay(30),  # 2.2s
         quality_general=8.5, quality_creative=9.0, quality_structured=8.0, quality_speed=9.0,
         robustness=0.98, available=True
     ),
     # REMOVED: llama-3.1-70b-versatile - DECOMMISSIONED by Groq (Jan 2026)
     "groq:llama-3.1-8b-instant": ModelInfo(
         provider="groq", model_id="llama-3.1-8b-instant",
-        daily_limit=250, rate_limit=60, delay=_safe_delay(60),  # 1.1s
+        daily_limit=600, rate_limit=60, delay=_safe_delay(60),  # 1.1s
         quality_general=7.0, quality_creative=6.5, quality_structured=7.0, quality_speed=10.0,
         robustness=0.99, available=True
     ),
     # REMOVED: mixtral-8x7b-32768 - DECOMMISSIONED by Groq (Jan 2026)
     # Gemini - separate quotas per model
-    "gemini:gemini-2.5-flash": ModelInfo(
-        provider="gemini", model_id="gemini-2.5-flash",
-        daily_limit=20, rate_limit=15, delay=_safe_delay(15),  # 4.4s
+    "gemini:gemini-1.5-flash": ModelInfo(
+        provider="gemini", model_id="gemini-1.5-flash",
+        daily_limit=1500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=7.5, quality_creative=7.0, quality_structured=8.5, quality_speed=8.0,
         robustness=0.95, available=True
     ),
     "gemini:gemini-2.0-flash": ModelInfo(
         provider="gemini", model_id="gemini-2.0-flash",
-        daily_limit=20, rate_limit=15, delay=_safe_delay(15),  # 4.4s
+        daily_limit=500, rate_limit=15, delay=_safe_delay(15),  # 4.4s
         quality_general=8.0, quality_creative=7.5, quality_structured=9.0, quality_speed=8.0,
         robustness=0.92, available=True
     ),
-    # REMOVED: gemini-2.5-pro - Returns 404 "not found for API version v1beta" (Jan 2026)
+    # REMOVED: gemini-1.5-pro - Returns 404 "not found for API version v1beta" (Jan 2026)
     # OpenRouter (free) - generous limits
     "openrouter:meta-llama/llama-3.2-3b-instruct:free": ModelInfo(
         provider="openrouter", model_id="meta-llama/llama-3.2-3b-instruct:free",
@@ -237,8 +237,8 @@ class SmartModelRouter:
         "gemini-2.5-pro": 20,
         "gemini-2.0-flash-exp": 20,
         "gemini-2.0-flash": 20,
-        "gemini-2.5-flash": 20,
-        # REMOVED: gemini-2.5-pro - deprecated (404)
+        "gemini-1.5-flash": 20,
+        # REMOVED: gemini-1.5-pro - deprecated (404)
         # Groq: Token-based (100K for 70b, 500K for 8b)
         "llama-3.3-70b-versatile": 50,   # ~100K TPD / 2K per call
         "llama-3.1-8b-instant": 250,     # ~500K TPD / 2K per call
@@ -359,49 +359,103 @@ class SmartModelRouter:
     
     def _discover_groq_models(self):
         """
-        v18.5: Discover Groq TEXT GENERATION models only.
-        CRITICAL: Filters non-text models that caused failure #232.
+        Discover available Groq models - DYNAMIC capability detection.
+        
+        v18.6: DYNAMIC FILTERING (not hardcoded!)
+        - Tests each model with a minimal chat completion request
+        - Detects: terms_required, audio-only, non-chat models
+        - Only adds models that successfully complete text generation
         """
         api_key = os.environ.get("GROQ_API_KEY")
         if not api_key:
             return
         
-        # v18.5: CRITICAL - Skip non-text-generation models
-        EXCLUDE = ["orpheus", "whisper", "playai", "bark", "guard", 
-                   "safeguard", "compound", "allam", "tts", "audio", 
-                   "speech", "embed", "canopy"]
-        
         try:
             import requests
+            
+            # Step 1: Get list of all models
             response = requests.get(
                 "https://api.groq.com/openai/v1/models",
                 headers={"Authorization": f"Bearer {api_key}"},
                 timeout=10
             )
-            if response.status_code == 200:
-                models_data = response.json().get("data", [])
-                added, skipped = 0, 0
-                for model in models_data:
-                    model_id = model.get("id", "")
-                    model_lower = model_id.lower()
+            if response.status_code != 200:
+                safe_print(f"[ROUTER] Groq model list failed: {response.status_code}")
+                return
+            
+            models_data = response.json().get("data", [])
+            added = 0
+            skipped_terms = 0
+            skipped_incapable = 0
+            
+            for model in models_data:
+                model_id = model.get("id", "")
+                key = f"groq:{model_id}"
+                
+                if key in self.models:
+                    continue  # Already have this model
+                
+                # Step 2: DYNAMIC capability test - make a minimal request
+                # This detects: terms required, audio-only, non-chat models
+                try:
+                    test_response = requests.post(
+                        "https://api.groq.com/openai/v1/chat/completions",
+                        headers={
+                            "Authorization": f"Bearer {api_key}",
+                            "Content-Type": "application/json"
+                        },
+                        json={
+                            "model": model_id,
+                            "messages": [{"role": "user", "content": "Hi"}],
+                            "max_tokens": 1  # Minimal to save quota
+                        },
+                        timeout=5
+                    )
                     
-                    # Skip non-text models
-                    if any(p in model_lower for p in EXCLUDE):
-                        skipped += 1
-                        continue
-                    
-                    key = f"groq:{model_id}"
-                    if key not in self.models:
-                        daily = 50 if "70b" in model_lower else (250 if "8b" in model_lower else 100)
+                    # Check response
+                    if test_response.status_code == 200:
+                        # Model works for text generation!
+                        # Determine quality based on model characteristics
+                        is_large = any(x in model_id.lower() for x in ["70b", "405b", "32b", "maverick", "scout"])
+                        is_fast = any(x in model_id.lower() for x in ["8b", "instant", "mini", "nano"])
+                        
+                        daily_limit = 50 if is_large else (250 if is_fast else 100)
+                        quality = 8.5 if is_large else (6.5 if is_fast else 7.0)
+                        
                         self.models[key] = ModelInfo(
                             provider="groq", model_id=model_id,
-                            daily_limit=daily, rate_limit=30, delay=_safe_delay(30),
-                            quality_general=7.0, quality_creative=7.0,
-                            quality_structured=7.0, quality_speed=8.0,
-                            robustness=0.90, available=True
+                            daily_limit=daily_limit, rate_limit=30, delay=_safe_delay(30),
+                            quality_general=quality, quality_creative=quality,
+                            quality_structured=quality, quality_speed=9.0 if is_fast else 7.0,
+                            robustness=0.95, available=True
                         )
                         added += 1
-                safe_print(f"[ROUTER] Discovered {added} Groq text models (filtered {skipped})")
+                        
+                    elif test_response.status_code == 400:
+                        # Check if it's a terms requirement
+                        error_data = test_response.json()
+                        error_msg = str(error_data.get("error", {}).get("message", "")).lower()
+                        
+                        if "terms" in error_msg or "accept" in error_msg:
+                            skipped_terms += 1
+                            safe_print(f"[ROUTER] Skipped {model_id}: requires terms acceptance")
+                        else:
+                            # Other error - likely not a chat model
+                            skipped_incapable += 1
+                    else:
+                        # 429 (rate limit) or other - skip but don't count as failure
+                        skipped_incapable += 1
+                        
+                except requests.Timeout:
+                    skipped_incapable += 1
+                except Exception as e:
+                    skipped_incapable += 1
+                
+                # Small delay to avoid rate limits during discovery
+                time.sleep(0.1)
+            
+            safe_print(f"[ROUTER] Groq: Added {added}, skipped {skipped_terms} (terms), {skipped_incapable} (incapable)")
+            
         except Exception as e:
             safe_print(f"[ROUTER] Groq discovery failed: {e}")
     
@@ -628,7 +682,7 @@ class SmartModelRouter:
             return False
         
         # Get quota for this model
-        model_name = model.name
+        model_name = model.model_id
         quota = self.MODEL_DAILY_QUOTAS.get(model_name, 50)  # Default 50 if unknown
         
         # Leave 10% buffer for safety
@@ -858,4 +912,3 @@ if __name__ == "__main__":
         safe_print(f"  {key}: {value}")
     
     safe_print("\n" + "=" * 60)
-
