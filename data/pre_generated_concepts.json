@@ -1,221 +1,243 @@
 {
-  "generated_at": "2026-01-12T05:52:59.309064",
-  "valid_until": "2026-01-12T23:59:59.309072",
+  "generated_at": "2026-01-13T05:49:11.130923",
+  "valid_until": "2026-01-13T23:59:11.130930",
   "categories": [
-    "Behind-the-scenes of popular TV shows like Stranger Things",
-    "Winter sports and athlete highlights featuring Cameron Norrie",
-    "Comedian takeovers with Kyle Brandt",
-    "Severe weather updates and snow storm forecasts",
-    "Women in sports profiles like Paula Badosa",
-    "Throwbacks to classic Steven Spielberg movies",
-    "Emerging athlete showcases with Amen Thompson",
-    "Actress Q&A sessions featuring Laura Dern",
-    "Netflix documentary reviews and reactions",
-    "Snow day activities and challenges",
-    "Indoor gaming and entertainment for winter",
-    "Sports analysis and predictions for upcoming events",
-    "Top 10 lists of must-watch movies and shows",
-    "Morning routine and self-care for snowy days",
-    "Viral challenge explanations and trend reports"
+    "Sports Highlights",
+    "Relationship Goals",
+    " Celebrity News",
+    "Music Mashups",
+    "TV Show Recaps",
+    "Sports Analysis",
+    "Comedy Skits",
+    "Challenge Videos",
+    "Q&A Sessions",
+    "Behind the Scenes",
+    "Reaction Videos",
+    "Love and Relationships",
+    "Sports Bloopers",
+    "Pop Culture News",
+    "Influencer Takeovers"
   ],
   "concepts": [
     {
-      "category": "Behind-the-scenes of popular TV shows like Stranger Things",
-      "topic": "Uncovering the Making of the Demogorgon",
-      "hook": "You won't believe how the Stranger Things creators brought this monster to life!",
+      "category": "Sports Highlights",
+      "topic": "LeBron James' Most Iconic Dunks",
+      "hook": "You won't believe the dunk that changed the game forever!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Winter sports and athlete highlights featuring Cameron Norrie",
-      "topic": "Cameron Norrie's Top 5 Most Epic Tennis Shots",
-      "hook": "Get ready to witness the most jaw-dropping tennis shots from Cameron Norrie's career!",
+      "category": "Relationship Goals",
+      "topic": "The Secret to David and Victoria Beckham's Long-Lasting Marriage",
+      "hook": "What's the one thing that's kept this power couple together for over two decades?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Comedian takeovers with Kyle Brandt",
-      "topic": "Kyle Brandt's Hilarious NFL Pre-Game Rituals",
-      "hook": "What does Kyle Brandt do before a big game? You might be surprised!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
+      "category": "Celebrity News",
+      "topic": "The Most Shocking Celebrity Breakups of the Year",
+      "hook": "You won't believe which A-list couples didn't make it to the end of the year!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Severe weather updates and snow storm forecasts",
-      "topic": "The Great Blizzard of 2023: What We Learned",
-      "hook": "Relive the most intense blizzard of the century and find out what's in store for this winter!",
-      "voice_style": "authoritative",
+      "category": "Music Mashups",
+      "topic": "When Billie Eilish Meets The Beatles: A Musical Mashup",
+      "hook": "Imagine if the Bad Guy singer took on the Fab Four's biggest hits!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Biggest Plot Twist in Stranger Things History",
+      "hook": "The one moment that left fans speechless and wanting more!",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 48
+      "target_duration": 40
     },
     {
-      "category": "Women in sports profiles like Paula Badosa",
-      "topic": "Paula Badosa's Journey to Tennis Stardom",
-      "hook": "From humble beginnings to tennis superstar, discover Paula Badosa's inspiring story!",
-      "voice_style": "friendly",
+      "category": "Sports Analysis",
+      "topic": "Decoding the Tactical Genius of Manchester City's Pep Guardiola",
+      "hook": "What makes this football manager a mastermind of the game?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Throwbacks to classic Steven Spielberg movies",
-      "topic": "The Making of E.T. - A Timeless Classic",
-      "hook": "Step into the iconic world of E.T. and uncover the secrets behind its creation!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Emerging athlete showcases with Amen Thompson",
-      "topic": "Amen Thompson: The Rising Star of Basketball",
-      "hook": "Meet the young athlete taking the basketball world by storm - Amen Thompson!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Actress Q&A sessions featuring Laura Dern",
-      "topic": "Laura Dern's Most Memorable Roles and Why She Chose Them",
-      "hook": "Join Laura Dern as she reflects on her most iconic characters and the stories behind them!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Netflix documentary reviews and reactions",
-      "topic": "Uncovering the Truth Behind 'The Tinder Swindler'",
-      "hook": "You won't believe the shocking truth revealed in Netflix's 'The Tinder Swindler' documentary!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Snow day activities and challenges",
-      "topic": "The Ultimate Snowman Building Challenge",
-      "hook": "Get ready to witness the most epic snowman building battle of the winter!",
+      "category": "Comedy Skits",
+      "topic": "When Friends Meets The Office: A Hilarious Crossover",
+      "hook": "Imagine if the Friends gang walked into Dunder Mifflin \u2013 chaos ensues!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 50
     },
     {
-      "category": "Behind-the-scenes of popular TV shows like Stranger Things",
-      "topic": "The Secret to Creating the Upside Down",
-      "hook": "Step into the world of Stranger Things and discover the magic behind the Upside Down!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Challenge Videos",
+      "topic": "Can You Eat the World's Hottest Curry in Under 10 Minutes?",
+      "hook": "One brave soul takes on the spiciest challenge of their life \u2013 will they survive?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Winter sports and athlete highlights featuring Cameron Norrie",
-      "topic": "Cameron Norrie's Most Thrilling Tennis Comebacks",
-      "hook": "Witness Cameron Norrie's most heart-stopping comebacks that will leave you on the edge of your seat!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Comedian takeovers with Kyle Brandt",
-      "topic": "Kyle Brandt's Funniest NFL Impressions",
-      "hook": "Get ready to laugh out loud with Kyle Brandt's hilarious NFL impressions!",
+      "category": "Q&A Sessions",
+      "topic": "A Conversation with Elon Musk: The Future of Space Exploration",
+      "hook": "What does the visionary entrepreneur have in store for humanity's next giant leap?",
       "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
+      "music_mood": "inspirational",
+      "target_duration": 40
     },
     {
-      "category": "Severe weather updates and snow storm forecasts",
-      "topic": "The Science Behind Snowstorms: What You Need to Know",
-      "hook": "Uncover the fascinating science behind snowstorms and stay ahead of the weather!",
+      "category": "Behind the Scenes",
+      "topic": "The Making of Avengers: Endgame \u2013 Secrets Revealed",
+      "hook": "Go behind the scenes of the most epic movie finale in history \u2013 you won't believe what you missed!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 48
+      "target_duration": 45
     },
     {
-      "category": "Women in sports profiles like Paula Badosa",
-      "topic": "Paula Badosa's Mental Preparation for Big Matches",
-      "hook": "Discover the mental tricks and strategies that give Paula Badosa a competitive edge!",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Comebacks in Super Bowl History",
+      "hook": "Which teams have made the most miraculous turnarounds in the biggest game of them all?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Relationship Goals",
+      "topic": "The Secret to Michelle and Barack Obama's Unbreakable Bond",
+      "hook": "What's the key to this power couple's enduring love and respect for each other?",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Most Surprising Celebrity Transformations of the Year",
+      "hook": "You won't recognize these stars after their drastic makeovers!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Music Mashups",
+      "topic": "When Ariana Grande Meets Justin Bieber: A Musical Mashup",
+      "hook": "Imagine if these two pop sensations collaborated on a hit single \u2013 it's a game-changer!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Biggest Plot Twist in Game of Thrones History",
+      "hook": "The one moment that left fans stunned and questioning everything!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "The Tactical Masterclass of Liverpool's J\u00fcrgen Klopp",
+      "hook": "What makes this football manager a genius of the game?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Throwbacks to classic Steven Spielberg movies",
-      "topic": "The Iconic Scores of John Williams and Steven Spielberg",
-      "hook": "Step into the world of cinematic magic and explore the iconic scores of John Williams and Steven Spielberg!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Emerging athlete showcases with Amen Thompson",
-      "topic": "Amen Thompson's Journey to the Top: Overcoming Adversity",
-      "hook": "Join Amen Thompson as he shares his inspiring story of perseverance and determination!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Actress Q&A sessions featuring Laura Dern",
-      "topic": "Laura Dern's Favorite Roles and Why She Loved Them",
-      "hook": "Sit down with Laura Dern as she reflects on her favorite roles and the experiences that made them unforgettable!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Netflix documentary reviews and reactions",
-      "topic": "The Haunting Truth Behind 'The Keepers' Documentary",
-      "hook": "Uncover the dark secrets and shocking revelations in Netflix's 'The Keepers' documentary!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Snow day activities and challenges",
-      "topic": "The Ultimate Ice Skating Challenge: Who Will Win?",
-      "hook": "Get ready to witness the most thrilling ice skating battle of the winter - who will be crowned the champion?",
+      "category": "Comedy Skits",
+      "topic": "When The Office Meets Parks and Recreation: A Hilarious Crossover",
+      "hook": "Imagine if the Dunder Mifflin crew met the Parks and Recreation team \u2013 hilarity ensues!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 50
     },
     {
-      "category": "Behind-the-scenes of popular TV shows like Stranger Things",
-      "topic": "The Creation of the Mind Flayer: A Behind-the-Scenes Look",
-      "hook": "Step into the world of Stranger Things and discover the terrifying process of creating the Mind Flayer!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Challenge Videos",
+      "topic": "Can You Solve the World's Most Complex Puzzle in Under 5 Minutes?",
+      "hook": "One brave soul takes on the ultimate brain teaser \u2013 will they crack the code?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Winter sports and athlete highlights featuring Cameron Norrie",
-      "topic": "Cameron Norrie's Record-Breaking Tennis Achievements",
-      "hook": "Witness Cameron Norrie's most impressive record-breaking achievements that will leave you speechless!",
+      "category": "Q&A Sessions",
+      "topic": "A Conversation with Taylor Swift: The Story Behind Her Greatest Hits",
+      "hook": "What inspired the songstress to write her most iconic songs?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Behind the Scenes",
+      "topic": "The Making of The Lion King \u2013 Secrets Revealed",
+      "hook": "Go behind the scenes of the most epic Disney remake in history \u2013 you won't believe what you missed!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Greatest Upsets in Sports History",
+      "hook": "Which underdog teams have pulled off the most shocking victories of all time?",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 43
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -223,54 +245,24 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
