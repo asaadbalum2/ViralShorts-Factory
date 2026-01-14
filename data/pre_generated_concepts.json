@@ -1,248 +1,248 @@
 {
-  "generated_at": "2026-01-13T05:49:11.130923",
-  "valid_until": "2026-01-13T23:59:11.130930",
+  "generated_at": "2026-01-14T05:49:57.910465",
+  "valid_until": "2026-01-14T23:59:57.910471",
   "categories": [
-    "Sports Highlights",
-    "Relationship Goals",
-    " Celebrity News",
-    "Music Mashups",
-    "TV Show Recaps",
-    "Sports Analysis",
-    "Comedy Skits",
-    "Challenge Videos",
-    "Q&A Sessions",
-    "Behind the Scenes",
-    "Reaction Videos",
-    "Love and Relationships",
+    "Celebrity Couples",
+    "WWE News",
+    "NBA Highlights",
+    "Modeling Careers",
+    "ER Reboot Rumors",
+    "Mamma Mia Behind The Scenes",
+    "Late Night Talk Shows",
+    "Portland Trail Blazers",
+    "AEW Updates",
+    "Hollywood Marriages",
     "Sports Bloopers",
-    "Pop Culture News",
-    "Influencer Takeovers"
+    "Fallon Tonight Interviews",
+    "Damian Lillard's Gaming",
+    "Noah Wyle's Directing Career",
+    "Behind The Scenes of Famous Movies"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Most Iconic Dunks",
-      "hook": "You won't believe the dunk that changed the game forever!",
+      "category": "Celebrity Couples",
+      "topic": "Jennifer Lopez and Ben Affleck's Rekindled Romance",
+      "hook": "You won't believe what sparked JLo and Ben Affleck's second chance at love!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Relationship Goals",
-      "topic": "The Secret to David and Victoria Beckham's Long-Lasting Marriage",
-      "hook": "What's the one thing that's kept this power couple together for over two decades?",
+      "category": "WWE News",
+      "topic": "John Cena's Potential Return to the Ring",
+      "hook": "The Cenation leader is teasing a comeback, but what's the real story?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "NBA Highlights",
+      "topic": "Steph Curry's Most Insane 3-Pointers",
+      "hook": "Get ready to witness the most unbelievable shots from the NBA's greatest shooter!",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Modeling Careers",
+      "topic": "How Cindy Crawford Became a Supermodel",
+      "hook": "From small-town girl to catwalk queen, discover Cindy Crawford's incredible rise to fame!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "ER Reboot Rumors",
+      "topic": "The Truth Behind the Rumored ER Reboot",
+      "hook": "Is the beloved medical drama making a comeback? We've got the inside scoop!",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Mamma Mia Behind The Scenes",
+      "topic": "The Making of Mamma Mia's Iconic Dancing Scenes",
+      "hook": "Go behind the scenes of the most epic musical numbers in Mamma Mia history!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Late Night Talk Shows",
+      "topic": "The Most Awkward Interviews in Late Night History",
+      "hook": "You won't believe the most cringe-worthy moments from your favorite late-night shows!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Portland Trail Blazers",
+      "topic": "Damian Lillard's Most Clutch Moments",
+      "hook": "Relive the thrill of Dame Time with the Trail Blazers' most heart-stopping plays!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "AEW Updates",
+      "topic": "CM Punk's AEW Debut and What It Means for the Promotion",
+      "hook": "The Best in the World has arrived in AEW, but what's next for the company?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Hollywood Marriages",
+      "topic": "The Secret to Tom Hanks and Rita Wilson's Enduring Marriage",
+      "hook": "Find out the surprising reason behind Hollywood's most beloved couple's long-lasting love!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Couples",
+      "topic": "George Clooney and Amal's Whirlwind Romance",
+      "hook": "From blind date to fairy-tale wedding, get the inside story on the Clooneys' love story!",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Celebrity News",
-      "topic": "The Most Shocking Celebrity Breakups of the Year",
-      "hook": "You won't believe which A-list couples didn't make it to the end of the year!",
+      "category": "WWE News",
+      "topic": "The Rise of Roman Reigns as the Tribal Chief",
+      "hook": "How Roman Reigns transformed into the WWE's most dominant force!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Music Mashups",
-      "topic": "When Billie Eilish Meets The Beatles: A Musical Mashup",
-      "hook": "Imagine if the Bad Guy singer took on the Fab Four's biggest hits!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Biggest Plot Twist in Stranger Things History",
-      "hook": "The one moment that left fans speechless and wanting more!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
+      "category": "NBA Highlights",
+      "topic": "LeBron James' Most Jaw-Dropping Dunks",
+      "hook": "Witness the King's most thunderous slams that will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
     },
     {
-      "category": "Sports Analysis",
-      "topic": "Decoding the Tactical Genius of Manchester City's Pep Guardiola",
-      "hook": "What makes this football manager a mastermind of the game?",
+      "category": "Modeling Careers",
+      "topic": "Gigi Hadid's Journey to Becoming a Supermodel",
+      "hook": "From Malibu girl to runway sensation, discover Gigi Hadid's path to stardom!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits",
-      "topic": "When Friends Meets The Office: A Hilarious Crossover",
-      "hook": "Imagine if the Friends gang walked into Dunder Mifflin \u2013 chaos ensues!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Challenge Videos",
-      "topic": "Can You Eat the World's Hottest Curry in Under 10 Minutes?",
-      "hook": "One brave soul takes on the spiciest challenge of their life \u2013 will they survive?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Q&A Sessions",
-      "topic": "A Conversation with Elon Musk: The Future of Space Exploration",
-      "hook": "What does the visionary entrepreneur have in store for humanity's next giant leap?",
+      "category": "ER Reboot Rumors",
+      "topic": "Which Original Cast Members Are Returning for the ER Reboot?",
+      "hook": "The wait is over! Find out which beloved characters are coming back to County General!",
       "voice_style": "calm",
-      "music_mood": "inspirational",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Behind the Scenes",
-      "topic": "The Making of Avengers: Endgame \u2013 Secrets Revealed",
-      "hook": "Go behind the scenes of the most epic movie finale in history \u2013 you won't believe what you missed!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Mamma Mia Behind The Scenes",
+      "topic": "The Making of Mamma Mia's Iconic Costume Design",
+      "hook": "Get a glimpse into the creative process behind the film's dazzling wardrobe!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Super Bowl History",
-      "hook": "Which teams have made the most miraculous turnarounds in the biggest game of them all?",
+      "category": "Late Night Talk Shows",
+      "topic": "The Funniest Moments from The Tonight Show with Jimmy Fallon",
+      "hook": "Laugh out loud with the most hilarious sketches and interviews from Jimmy Fallon's show!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Relationship Goals",
-      "topic": "The Secret to Michelle and Barack Obama's Unbreakable Bond",
-      "hook": "What's the key to this power couple's enduring love and respect for each other?",
-      "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Celebrity News",
-      "topic": "The Most Surprising Celebrity Transformations of the Year",
-      "hook": "You won't recognize these stars after their drastic makeovers!",
+      "category": "Portland Trail Blazers",
+      "topic": "CJ McCollum's Most Clutch Three-Pointers",
+      "hook": "Relive the thrill of CJ McCollum's most clutch shots that changed the game!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Music Mashups",
-      "topic": "When Ariana Grande Meets Justin Bieber: A Musical Mashup",
-      "hook": "Imagine if these two pop sensations collaborated on a hit single \u2013 it's a game-changer!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "The Biggest Plot Twist in Game of Thrones History",
-      "hook": "The one moment that left fans stunned and questioning everything!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Sports Analysis",
-      "topic": "The Tactical Masterclass of Liverpool's J\u00fcrgen Klopp",
-      "hook": "What makes this football manager a genius of the game?",
+      "category": "AEW Updates",
+      "topic": "Kenny Omega's AEW World Championship Reign",
+      "hook": "The Cleaner's journey to the top of AEW, and what's next for the champion!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits",
-      "topic": "When The Office Meets Parks and Recreation: A Hilarious Crossover",
-      "hook": "Imagine if the Dunder Mifflin crew met the Parks and Recreation team \u2013 hilarity ensues!",
+      "category": "Hollywood Marriages",
+      "topic": "The Secret to Denzel and Pauletta Washington's 40-Year Marriage",
+      "hook": "Discover the heartwarming story behind one of Hollywood's most enduring marriages!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Challenge Videos",
-      "topic": "Can You Solve the World's Most Complex Puzzle in Under 5 Minutes?",
-      "hook": "One brave soul takes on the ultimate brain teaser \u2013 will they crack the code?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Q&A Sessions",
-      "topic": "A Conversation with Taylor Swift: The Story Behind Her Greatest Hits",
-      "hook": "What inspired the songstress to write her most iconic songs?",
-      "voice_style": "calm",
       "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Behind the Scenes",
-      "topic": "The Making of The Lion King \u2013 Secrets Revealed",
-      "hook": "Go behind the scenes of the most epic Disney remake in history \u2013 you won't believe what you missed!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Upsets in Sports History",
-      "hook": "Which underdog teams have pulled off the most shocking victories of all time?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Celebrity Couples",
+      "topic": "David and Victoria Beckham's Love Story",
+      "hook": "From Spice Girl to soccer star, get the inside scoop on the Beckhams' whirlwind romance!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -250,19 +250,19 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
