@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-01-14T05:49:57.910465",
-  "valid_until": "2026-01-14T23:59:57.910471",
+  "generated_at": "2026-01-15T05:49:58.598175",
+  "valid_until": "2026-01-15T23:59:58.598186",
   "categories": [
-    "Celebrity Couples",
-    "WWE News",
-    "NBA Highlights",
-    "Modeling Careers",
-    "ER Reboot Rumors",
-    "Mamma Mia Behind The Scenes",
-    "Late Night Talk Shows",
-    "Portland Trail Blazers",
-    "AEW Updates",
-    "Hollywood Marriages",
-    "Sports Bloopers",
-    "Fallon Tonight Interviews",
-    "Damian Lillard's Gaming",
-    "Noah Wyle's Directing Career",
-    "Behind The Scenes of Famous Movies"
+    "NFL Coaching Decisions",
+    "NBATradeRumors",
+    "ExtremeSportsHighlights",
+    "MexicanSoccerUpdates",
+    "NHLPowerRankings",
+    "CreditCardReviews",
+    "NBAInjuryReports",
+    "TennisComebacks",
+    "SportsCoachesUnderFire",
+    "WinterSportsFails",
+    "NewYearNewYouFitness",
+    "SportsMemes",
+    " AthleteLifeHacks",
+    "JanuarySalesAndDeals",
+    "SportsTragedyAndTriumphStories"
   ],
   "concepts": [
     {
-      "category": "Celebrity Couples",
-      "topic": "Jennifer Lopez and Ben Affleck's Rekindled Romance",
-      "hook": "You won't believe what sparked JLo and Ben Affleck's second chance at love!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "WWE News",
-      "topic": "John Cena's Potential Return to the Ring",
-      "hook": "The Cenation leader is teasing a comeback, but what's the real story?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Highlights",
-      "topic": "Steph Curry's Most Insane 3-Pointers",
-      "hook": "Get ready to witness the most unbelievable shots from the NBA's greatest shooter!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Modeling Careers",
-      "topic": "How Cindy Crawford Became a Supermodel",
-      "hook": "From small-town girl to catwalk queen, discover Cindy Crawford's incredible rise to fame!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "ER Reboot Rumors",
-      "topic": "The Truth Behind the Rumored ER Reboot",
-      "hook": "Is the beloved medical drama making a comeback? We've got the inside scoop!",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Mamma Mia Behind The Scenes",
-      "topic": "The Making of Mamma Mia's Iconic Dancing Scenes",
-      "hook": "Go behind the scenes of the most epic musical numbers in Mamma Mia history!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Late Night Talk Shows",
-      "topic": "The Most Awkward Interviews in Late Night History",
-      "hook": "You won't believe the most cringe-worthy moments from your favorite late-night shows!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Portland Trail Blazers",
-      "topic": "Damian Lillard's Most Clutch Moments",
-      "hook": "Relive the thrill of Dame Time with the Trail Blazers' most heart-stopping plays!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "AEW Updates",
-      "topic": "CM Punk's AEW Debut and What It Means for the Promotion",
-      "hook": "The Best in the World has arrived in AEW, but what's next for the company?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Hollywood Marriages",
-      "topic": "The Secret to Tom Hanks and Rita Wilson's Enduring Marriage",
-      "hook": "Find out the surprising reason behind Hollywood's most beloved couple's long-lasting love!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Couples",
-      "topic": "George Clooney and Amal's Whirlwind Romance",
-      "hook": "From blind date to fairy-tale wedding, get the inside story on the Clooneys' love story!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "WWE News",
-      "topic": "The Rise of Roman Reigns as the Tribal Chief",
-      "hook": "How Roman Reigns transformed into the WWE's most dominant force!",
+      "category": "NFL Coaching Decisions",
+      "topic": "Bill Belichick's Most Controversial Calls",
+      "hook": "You won't believe the one decision that still haunts Patriots fans!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "NBA Highlights",
-      "topic": "LeBron James' Most Jaw-Dropping Dunks",
-      "hook": "Witness the King's most thunderous slams that will leave you speechless!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Modeling Careers",
-      "topic": "Gigi Hadid's Journey to Becoming a Supermodel",
-      "hook": "From Malibu girl to runway sensation, discover Gigi Hadid's path to stardom!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "ER Reboot Rumors",
-      "topic": "Which Original Cast Members Are Returning for the ER Reboot?",
-      "hook": "The wait is over! Find out which beloved characters are coming back to County General!",
-      "voice_style": "calm",
+      "category": "NBATradeRumors",
+      "topic": "The Kevin Durant Trade That Never Happened",
+      "hook": "What if I told you KD was almost traded to a surprising team?",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Mamma Mia Behind The Scenes",
-      "topic": "The Making of Mamma Mia's Iconic Costume Design",
-      "hook": "Get a glimpse into the creative process behind the film's dazzling wardrobe!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Late Night Talk Shows",
-      "topic": "The Funniest Moments from The Tonight Show with Jimmy Fallon",
-      "hook": "Laugh out loud with the most hilarious sketches and interviews from Jimmy Fallon's show!",
+      "category": "ExtremeSportsHighlights",
+      "topic": "Tony Hawk's Most Insane Trick Attempts",
+      "hook": "Watch as Tony Hawk pushes the limits of human possibility!",
       "voice_style": "energetic",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Portland Trail Blazers",
-      "topic": "CJ McCollum's Most Clutch Three-Pointers",
-      "hook": "Relive the thrill of CJ McCollum's most clutch shots that changed the game!",
-      "voice_style": "dramatic",
+      "category": "MexicanSoccerUpdates",
+      "topic": "Chivas Guadalajara's Rise to the Top",
+      "hook": "From underdogs to champions, witness the incredible journey of Chivas!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "NHLPowerRankings",
+      "topic": "The Tampa Bay Lightning's Dominant Streak",
+      "hook": "Can anyone stop the Lightning's reign of terror in the NHL?",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "AEW Updates",
-      "topic": "Kenny Omega's AEW World Championship Reign",
-      "hook": "The Cleaner's journey to the top of AEW, and what's next for the champion!",
+      "category": "CreditCardReviews",
+      "topic": "The Best Cashback Credit Cards for Sports Fans",
+      "hook": "Score big with these credit cards that reward your sports fandom!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "NBAInjuryReports",
+      "topic": "The Impact of Steph Curry's Recent Injuries",
+      "hook": "How will the Warriors survive without their star point guard?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "TennisComebacks",
+      "topic": "The Unbelievable Resurgence of Novak Djokovic",
+      "hook": "From injury to dominance, witness Djokovic's incredible comeback story!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "SportsCoachesUnderFire",
+      "topic": "The Pressure on Cowboys Coach Mike McCarthy",
+      "hook": "Is McCarthy's job on the line after a disappointing season?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "WinterSportsFails",
+      "topic": "The Most Epic Skiing Wipeouts of All Time",
+      "hook": "Get ready to cringe at these hilarious and jaw-dropping skiing fails!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NFL Coaching Decisions",
+      "topic": "The Controversy Surrounding the Packers' Play-Calling",
+      "hook": "Was the Packers' coach outcoached in the playoffs?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Hollywood Marriages",
-      "topic": "The Secret to Denzel and Pauletta Washington's 40-Year Marriage",
-      "hook": "Discover the heartwarming story behind one of Hollywood's most enduring marriages!",
+      "category": "NBATradeRumors",
+      "topic": "The Bradley Beal Trade Rumors That Won't Go Away",
+      "hook": "Where will Beal end up next, and what does it mean for the NBA?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "ExtremeSportsHighlights",
+      "topic": "Travis Pastrana's Death-Defying Motocross Jumps",
+      "hook": " Witness the most insane motocross stunts that will leave you breathless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "MexicanSoccerUpdates",
+      "topic": "Cruz Azul's Quest for the Liga MX Title",
+      "hook": "Can Cruz Azul finally break their championship drought?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Celebrity Couples",
-      "topic": "David and Victoria Beckham's Love Story",
-      "hook": "From Spice Girl to soccer star, get the inside scoop on the Beckhams' whirlwind romance!",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "NHLPowerRankings",
+      "topic": "The Surprising Rise of the Vegas Golden Knights",
+      "hook": "How did the Golden Knights become the NHL's newest powerhouse team?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
+    },
+    {
+      "category": "CreditCardReviews",
+      "topic": "The Best Credit Cards for Buying Sports Tickets",
+      "hook": "Score the best seats in the house with these top credit cards!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "NBAInjuryReports",
+      "topic": "The Impact of Joel Embiid's Injury on the 76ers",
+      "hook": "Can the 76ers survive without their dominant center?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "TennisComebacks",
+      "topic": "The Inspirational Story of Serena Williams' Return to Tennis",
+      "hook": "From motherhood to Grand Slam titles, witness Serena's incredible journey!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "SportsCoachesUnderFire",
+      "topic": "The Heat on Lakers Coach Frank Vogel",
+      "hook": "Is Vogel's job on the line after a disappointing season?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "WinterSportsFails",
+      "topic": "The Funniest Snowboarding Fails of All Time",
+      "hook": "Get ready to laugh at these hilarious and relatable snowboarding fails!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NHLPowerRankings",
+      "topic": "The Boston Bruins' Dominance in the NHL",
+      "hook": "Can anyone stop the Bruins' reign of terror in the NHL?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
