@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-01-16T05:49:27.032122",
-  "valid_until": "2026-01-16T23:59:27.032131",
+  "generated_at": "2026-01-17T05:44:21.532524",
+  "valid_until": "2026-01-17T23:59:21.532532",
   "categories": [
-    "NBA Highlights",
-    "Music Video Reactions",
-    "Phone Hacks and Organization",
-    "Sports Analysis",
-    "New Music Releases",
-    "Memes and Trends",
-    "Basketball Player Challenges",
-    "Phone Accessories Reviews",
-    "Celebrities and Pop Culture",
-    "Slam Poetry Performances",
-    "Frank Ocean Fan Content",
-    "Mitski Song Covers",
-    "Lakers and Hornets Game Recaps",
-    "Rui Hachimura and Onyeka Okongwu Fan Pages",
-    "Comedy Skits and Parodies"
+    "Sports Highlights",
+    "New Moon Astrology",
+    "Business Leadership",
+    "NBATwitter Reactions",
+    "Comedy Sketches",
+    "Retail Therapy",
+    "Kings Basketball Analysis",
+    "Celebrity Interviews",
+    "Tennis Match Recaps",
+    "Humoristic News Commentary",
+    "Astrological Predictions",
+    "NBA Trade Rumors",
+    "Moon Phase Lifestyle Tips",
+    "CEO Success Stories",
+    "Entertainment News Updates"
   ],
   "concepts": [
     {
-      "category": "NBA Highlights",
-      "topic": "Steph Curry's Most Insane 3-Pointers",
-      "hook": "You won't believe the shot he made at 0.5 seconds left on the clock!",
+      "category": "Sports Highlights",
+      "topic": "Tom Brady's Most Iconic Touchdowns",
+      "hook": "You won't believe the throw that changed the game forever!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Music Video Reactions",
-      "topic": "Reacting to Billie Eilish's 'Bad Guy' Music Video for the First Time",
-      "hook": "I've never seen anything like this before, is this the future of music?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "New Moon Astrology",
+      "topic": "Unlocking the Secrets of the Cancer New Moon",
+      "hook": "What does the stars have in store for you this month?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Phone Hacks and Organization",
-      "topic": "10 Hidden iPhone Features You Never Knew Existed",
-      "hook": "Your iPhone can do what? I just discovered a game-changer!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "Why the Lakers Will Win the NBA Championship This Year",
-      "hook": "I'm calling it now, the Lakers have the secret sauce to take it all!",
+      "category": "Business Leadership",
+      "topic": "Elon Musk's Top 3 Productivity Hacks",
+      "hook": "Want to know the secret to Elon Musk's insane work ethic?",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "NBATwitter Reactions",
+      "topic": "The Funniest Reactions to the Latest NBA Trade",
+      "hook": "You won't believe what NBA fans are saying about the latest trade!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "New Music Releases",
-      "topic": "First Listen: Kanye West's New Album 'Donda'",
-      "hook": "Is this the comeback of the century or a disappointment?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Comedy Sketches",
+      "topic": "When You Try to Cook a New Recipe",
+      "hook": "Ever tried to cook a new recipe and ended up with a disaster?",
+      "voice_style": "comedic",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Memes and Trends",
-      "topic": "The Funniest TikTok Trends of the Month",
-      "hook": "Which one of these trends will take over the internet next?",
+      "category": "Retail Therapy",
+      "topic": "Unboxing the Latest Luxury Fashion Trends",
+      "hook": "Get ready to drool over the latest designer must-haves!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Basketball Player Challenges",
-      "topic": "I Tried to Recreate Zion Williamson's Most Impossible Dunks",
-      "hook": "Can an average guy really dunk like a pro? I put it to the test!",
+      "category": "Kings Basketball Analysis",
+      "topic": "Breaking Down the Sacramento Kings' Latest Winning Streak",
+      "hook": "What's behind the Kings' surprising winning streak?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Celebrity Interviews",
+      "topic": "Exclusive Interview with Dwayne 'The Rock' Johnson",
+      "hook": "You won't believe what The Rock has to say about his latest movie role!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Match Recaps",
+      "topic": "The Most Epic Tennis Comebacks in History",
+      "hook": "You won't believe the incredible comeback that stunned the tennis world!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Phone Accessories Reviews",
-      "topic": "The Best Wireless Earbuds for Under $50",
-      "hook": "You don't have to break the bank for great sound, I found the perfect budget option!",
-      "voice_style": "calm",
+      "category": "Humoristic News Commentary",
+      "topic": "The Funniest News Bloopers of the Week",
+      "hook": "When news anchors lose it on live TV!",
+      "voice_style": "comedic",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Celebrities and Pop Culture",
-      "topic": "The Most Shocking Celebrity Transformations",
-      "hook": "You won't recognize these stars after their dramatic makeovers!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Football Upsets of All Time",
+      "hook": "The biggest upsets that shocked the football world!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Slam Poetry Performances",
-      "topic": "Original Piece: 'Social Media Madness'",
-      "hook": "What happens when we trade our lives for likes and followers?",
+      "category": "New Moon Astrology",
+      "topic": "The Astrological Significance of the New Moon in Leo",
+      "hook": "What does the Leo New Moon mean for your love life?",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 50
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "NBA Highlights",
-      "topic": "The Evolution of LeBron James' Game",
-      "hook": "From high school phenom to NBA legend, how did he do it?",
+      "category": "Business Leadership",
+      "topic": "The Top 5 Leadership Lessons from Steve Jobs",
+      "hook": "Want to know the secret to Steve Jobs' success?",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "NBATwitter Reactions",
+      "topic": "The Funniest Memes from the Latest NBA Game",
+      "hook": "NBA fans are going wild with these hilarious memes!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Music Video Reactions",
-      "topic": "Uncovering the Hidden Messages in Taylor Swift's Music Videos",
-      "hook": "There's more to these videos than meets the eye, let's decode them!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Comedy Sketches",
+      "topic": "When You're Trying to Adult but Fail Miserably",
+      "hook": "Ever tried to adult but ended up being a hot mess?",
+      "voice_style": "comedic",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Phone Hacks and Organization",
-      "topic": "5 Simple Tips to Double Your Phone's Battery Life",
-      "hook": "Tired of your phone dying at the worst moments? I've got the solution!",
+      "category": "Retail Therapy",
+      "topic": "Unboxing the Latest Tech Gadgets",
+      "hook": "Get ready to geek out over the latest tech must-haves!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Analysis",
-      "topic": "The Rise of the New NBA Superteams",
-      "hook": "Which teams will dominate the league next season and why?",
+      "category": "Kings Basketball Analysis",
+      "topic": "The Impact of the Kings' New Coaching Staff",
+      "hook": "How will the new coaching staff change the Kings' game?",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "New Music Releases",
-      "topic": "Breaking Down the Lyrics of Drake's Latest Single",
-      "hook": "What's really behind the 6 God's latest bars?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Memes and Trends",
-      "topic": "The Most Cringeworthy TikTok Challenges",
-      "hook": "What were they thinking when they made these?",
+      "category": "Celebrity Interviews",
+      "topic": "Exclusive Interview with Taylor Swift",
+      "hook": "You won't believe what Taylor Swift has to say about her latest album!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Basketball Player Challenges",
-      "topic": "Can I Beat a Pro Basketball Player 1-on-1?",
-      "hook": "I stepped onto the court with a pro, here's what happened!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Tennis Match Recaps",
+      "topic": "The Most Thrilling Tennis Matches of the Year",
+      "hook": "The most epic tennis battles that kept us on the edge of our seats!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Phone Accessories Reviews",
-      "topic": "The Top 3 Phone Cases for Protection and Style",
-      "hook": "Don't let your phone shatter, I found the perfect case for you!",
-      "voice_style": "calm",
+      "category": "Humoristic News Commentary",
+      "topic": "The Weirdest News Stories of the Month",
+      "hook": "You won't believe the bizarre news stories that made headlines this month!",
+      "voice_style": "comedic",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Celebrities and Pop Culture",
-      "topic": "Uncovering the Most Iconic Celebrity Feuds",
-      "hook": "What really went down between these stars and why?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Slam Poetry Performances",
-      "topic": "Original Piece: 'Mental Health in the Digital Age'",
-      "hook": "Can we find silence in a world that never stops screaming?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Business Leadership",
+      "topic": "The Top 3 Business Lessons from Mark Zuckerberg",
+      "hook": "Want to know the secret to Mark Zuckerberg's success?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
