@@ -1,87 +1,87 @@
 {
   "title_patterns": [
-    "{number} Life-Changing {topic} Hacks",
-    "The {number} Best {topic} Tips You Need",
-    "What {topic} Can Teach You About {related_topic}",
-    "The Ultimate {topic} Guide for {audience}",
-    "The {topic} Secret That {result}",
-    "{number} Surprising {topic} Facts",
-    "Why {topic} Is the Key to {desirable_outcome}",
-    "The {number} Most Important {topic} Lessons",
-    "{topic} vs {alternative}: Which Is Better?",
-    "The Top {number} {topic} Myths Debunked"
+    "{number} Things You're Doing Wrong With {topic}",
+    "The Shocking Truth About {topic}",
+    "Why {topic} Is The Key To {desirableOutcome}",
+    "{topic} Hacks You Need To Know",
+    "The {topic} Secret That {authority} Doesn't Want You To Know",
+    "{number} {topic} Life Hacks To Simplify Your Life",
+    "What {topic} Really Means For Your {aspectOfLife}",
+    "The #1 {topic} Mistake You're Making Right Now",
+    "How To {desirableAction} With {topic} In Just {timeframe}",
+    "The Top {number} {topic} Trends You Need To Know"
   ],
   "hook_patterns": [
     "You won't believe what happens when...",
-    "What if I told you {surprising_fact}?",
-    "The secret to {desirable_outcome} is...",
-    "I tried {topic} for {time} and here's what happened",
-    "The one thing {authority} doesn't want you to know",
-    "Are you making these {number} common {topic} mistakes?",
-    "The truth about {topic} will shock you",
-    "I spent {time} studying {topic} and here's what I found",
-    "What {influencer} doesn't want you to know about {topic}",
-    "The {number} second rule that changes everything"
+    "What if I told you {surprisingStatement}?",
+    "The craziest thing about {topic} is...",
+    "I used to think {topic} was {opinion}, but then I discovered...",
+    "The one thing {authority} doesn't want you to know about {topic} is...",
+    "Are you making this {commonMistake} with {topic}?",
+    "I tried {topic} for {timeframe} and here's what happened...",
+    "The #1 thing that will change your mind about {topic} is...",
+    "What if {hypotheticalScenario} was a reality?",
+    "You're probably doing {topic} all wrong, here's why..."
   ],
   "engagement_baits": [
-    "Let me know in the comments what you think about {topic}",
-    "Can you guess the answer to this {topic} question?",
-    "Share your favorite {topic} tip in the comments",
+    "What's your favorite way to {action} with {topic}?",
+    "Can you guess what happens next in this {topic} scenario?",
+    "Share your worst {topic} experience in the comments below",
     "Do you agree or disagree with this {topic} statement?",
-    "What's your favorite way to {action}?",
+    "What's one thing you wish you knew about {topic} before you started?",
     "Tag a friend who needs to see this {topic} video",
-    "Comment below with your {topic} story",
-    "Save this video for later and let me know what you think"
+    "What's the most {adjective} thing that's happened to you with {topic}?",
+    "Save this video if you're {emotion} about {topic}"
   ],
   "psychological_triggers": [
     "curiosity",
     "fomo",
+    "urgency",
     "scarcity",
     "socialproof",
     "authority",
-    "reciprocity",
-    "urgency",
-    "novelty"
+    "empathy",
+    "anticipation"
   ],
   "scroll_stop_openers": [
-    "I just discovered a secret that will change your life forever",
-    "You're about to learn the one thing that {authority} doesn't want you to know",
-    "What if I told you there's a way to {desirable_outcome} in just {time}?",
-    "I'm about to share with you the most important {topic} lesson I've ever learned",
-    "This {topic} hack will save you {time} and {money}",
-    "The truth about {topic} is not what you think",
-    "I tried {topic} for {time} and the results were astonishing",
-    "The #1 {topic} mistake that's costing you {money} every year"
+    "I just discovered a {topic} secret that's about to change everything",
+    "You're about to learn the {number} most important things about {topic}",
+    "What if I told you there's a way to {desirableOutcome} with {topic}?",
+    "The #1 thing you need to know about {topic} is...",
+    "I used to think {topic} was {opinion}, but then I discovered the truth",
+    "Are you ready to unlock the full potential of {topic}?",
+    "The most {adjective} thing about {topic} is...",
+    "I'm about to reveal the {topic} hack that will simplify your life"
   ],
   "proven_categories": [
     "psychology",
     "money",
-    "health",
     "relationships",
     "productivity",
+    "health",
     "technology",
     "marketing",
-    "entrepreneurship"
+    "selfimprovement"
   ],
   "retention_tricks": [
-    "Start with a hook that grabs attention",
+    "Use cliffhangers to keep viewers engaged",
+    "Ask viewers to participate in a challenge",
     "Use storytelling to make the content more relatable",
-    "Ask questions to keep the viewer engaged",
-    "Use visuals to break up the content",
-    "Provide valuable information that solves a problem",
-    "End with a call-to-action that encourages engagement"
+    "Provide exclusive information or tips",
+    "Use humor to keep viewers entertained",
+    "Create a sense of community by asking viewers to share their experiences"
   ],
   "cta_formulas": [
-    "Don't forget to {action} and {benefit}",
+    "Don't forget to {action} and {action} in the comments below",
+    "If you want to {desirableOutcome}, make sure to {action}",
     "Get instant access to {resource} by {action}",
-    "Take the first step towards {desirable_outcome} by {action}",
-    "Join the {number} people who have already {action}",
-    "Download your free {resource} now and {benefit}",
-    "Start your {topic} journey today by {action}"
+    "Take the first step towards {desirableOutcome} by {action}",
+    "Join the {number} people who have already {action} and {action}",
+    "Unlock your full potential by {action} and {action} today"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-01-11T06:22:42.039949",
+  "last_ai_update": "2026-01-18T06:22:27.825299",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-01-11T06:22:42.039957"
+  "last_saved": "2026-01-18T06:22:27.825307"
 }
