@@ -1,267 +1,259 @@
 {
-  "generated_at": "2026-01-18T05:47:11.776414",
-  "valid_until": "2026-01-18T23:59:11.776422",
+  "generated_at": "2026-01-19T05:55:12.225319",
+  "valid_until": "2026-01-19T23:59:12.225326",
   "categories": [
-    "Tennis Highlights and Analysis",
-    "Kobe Bufkin NBA Updates",
-    "Comedy Sketches with Martin Lawrence",
-    "Shakira Dance Challenges",
-    "Scarlett Johansson Movie Reviews",
-    "Salma Hayek Lifestyle and Wellness",
-    "Sports News with Michael Irvin",
-    "Gabe Vincent Basketball Reels",
-    "Winter Sports and Fitness",
-    "New Movie Trailers and Releases",
-    "Social Media Challenges and Trends",
-    " Celebrity Interviews and Q&A",
-    "Morning Motivation and Inspiration",
-    "Behind-the-Scenes of Popular TV Shows",
-    "Emerging Music and Artist Spotlights"
+    "Dr. Martin Luther King Jr. Day Tributes",
+    "Colin Farrell Movie Highlights",
+    "Muhammad Ali Boxing Legends",
+    "Comedy Skits with Jesse Eisenberg",
+    "Tennis Tips and Parks Tennis Challenges",
+    "Camila Morrone Fashion Inspiration",
+    "Ellen DeGeneres Comedy Sketches",
+    "Jameson Williams Football Analysis",
+    "Social Justice Advocacy",
+    "Motivational Monday Quotes",
+    "Influencer Spotlight: Celebrity Interviews",
+    "Throwback Sports Moments",
+    "Boxing Workout Routines",
+    "MLK Day Reflections and Inspirational Stories",
+    "Entertainment News and Celebrity Updates"
   ],
   "concepts": [
     {
-      "category": "Tennis Highlights and Analysis",
-      "topic": "The Art of Serving: A Breakdown of Serena Williams' Technique",
-      "hook": "Can you guess the secret behind Serena's 125mph serve?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Dr. Martin Luther King Jr. Day Tributes",
+      "topic": "The Power of Nonviolent Resistance",
+      "hook": "What if I told you that one man's dream changed the course of history?",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Kobe Bufkin NBA Updates",
-      "topic": "Kobe Bufkin's Rise to Stardom: What Makes Him a Top Rookie?",
-      "hook": "From college to the pros, what's fueling Kobe Bufkin's rapid ascent?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Colin Farrell Movie Highlights",
+      "topic": "Unforgettable Colin Farrell Characters",
+      "hook": "You won't believe which Colin Farrell character is still giving us nightmares!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Comedy Sketches with Martin Lawrence",
-      "topic": "Martin Lawrence's Funniest Impressions: A Laugh-Out-Loud Moment",
-      "hook": "You won't believe who Martin Lawrence is impersonating this time!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Muhammad Ali Boxing Legends",
+      "topic": "The Greatest Boxing Matches of All Time",
+      "hook": "Get ready to rumble with the most epic boxing match in history!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Shakira Dance Challenges",
-      "topic": "Shakira's 'Hips Don't Lie' Challenge: Can You Keep Up?",
-      "hook": "Get ready to move your hips like Shakira in this epic dance challenge!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Comedy Skits with Jesse Eisenberg",
+      "topic": "Jesse Eisenberg's Funniest Movie Moments",
+      "hook": "Why did Jesse Eisenberg's character bring a rubber chicken to the party?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Scarlett Johansson Movie Reviews",
-      "topic": "Unpacking Scarlett Johansson's Performance in 'Lost in Translation'",
-      "hook": "What makes Scarlett Johansson's performance in 'Lost in Translation' so iconic?",
-      "voice_style": "calm",
+      "category": "Tennis Tips and Parks Tennis Challenges",
+      "topic": "Mastering the Perfect Forehand",
+      "hook": "Can you guess the secret to a winning forehand shot?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Salma Hayek Lifestyle and Wellness",
-      "topic": "Salma Hayek's Morning Routine: Wellness Tips from the Star",
-      "hook": "Start your day like Salma Hayek with these simple yet powerful wellness tips!",
-      "voice_style": "friendly",
+      "category": "Camila Morrone Fashion Inspiration",
+      "topic": "Camila Morrone's Style Evolution",
+      "hook": "From runway to red carpet, how does Camila Morrone slay every look?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Sports News with Michael Irvin",
-      "topic": "The Future of the NFL: Michael Irvin's Predictions for the Upcoming Season",
-      "hook": "Michael Irvin reveals his bold predictions for the NFL's next season!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Ellen DeGeneres Comedy Sketches",
+      "topic": "Ellen's Funniest Pranks on Celebrities",
+      "hook": "You won't believe which celebrity got pranked by Ellen on live TV!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Gabe Vincent Basketball Reels",
-      "topic": "Gabe Vincent's Most Epic Dunks: A Slam Dunk Contest",
-      "hook": "Gabe Vincent is taking the court by storm with these jaw-dropping dunks!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Jameson Williams Football Analysis",
+      "topic": "Breaking Down Jameson Williams' Game-Changing Plays",
+      "hook": "What makes Jameson Williams a game-changer on the field?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Winter Sports and Fitness",
-      "topic": "Snowboarding 101: Tips and Tricks for Beginners",
-      "hook": "Hit the slopes like a pro with these beginner-friendly snowboarding tips!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "New Movie Trailers and Releases",
-      "topic": "The Most Anticipated Movies of 2024: A Sneak Peek",
-      "hook": "Get ready for the most epic movie releases of 2024 \u2013 you won't want to miss these!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Tennis Highlights and Analysis",
-      "topic": "The Rivalry Between Djokovic and Nadal: A Historic Analysis",
-      "hook": "What fuels the intense rivalry between Djokovic and Nadal?",
-      "voice_style": "authoritative",
+      "category": "Social Justice Advocacy",
+      "topic": "The Importance of Mental Health Awareness",
+      "hook": "Why is it time to break the silence around mental health?",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Kobe Bufkin NBA Updates",
-      "topic": "Kobe Bufkin's Off-Court Personality: What You Didn't Know",
-      "hook": "There's more to Kobe Bufkin than just his basketball skills \u2013 get to know the man behind the jersey!",
+      "category": "Motivational Monday Quotes",
+      "topic": "Overcoming Self-Doubt with Daily Affirmations",
+      "hook": "What if one simple phrase could change your life forever?",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Sketches with Martin Lawrence",
-      "topic": "Martin Lawrence's Hilarious Take on Modern Dating",
-      "hook": "Martin Lawrence is back with a hilarious take on modern dating \u2013 you'll laugh out loud!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Shakira Dance Challenges",
-      "topic": "Shakira's 'Waka Waka' Challenge: Dance Your Way to Fitness",
-      "hook": "Get moving with Shakira's 'Waka Waka' challenge \u2013 it's a workout like no other!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Scarlett Johansson Movie Reviews",
-      "topic": "Scarlett Johansson's Performance in 'The Avengers': An In-Depth Analysis",
-      "hook": "What makes Scarlett Johansson's Black Widow so compelling in 'The Avengers'?",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Salma Hayek Lifestyle and Wellness",
-      "topic": "Salma Hayek's Skincare Routine: Tips for Glowing Skin",
-      "hook": "Unlock the secrets to Salma Hayek's radiant skin with these simple skincare tips!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports News with Michael Irvin",
-      "topic": "The Impact of Technology on Sports: Michael Irvin Weighs In",
-      "hook": "How is technology changing the game \u2013 literally? Michael Irvin shares his insights!",
+      "category": "Dr. Martin Luther King Jr. Day Tributes",
+      "topic": "The Impact of Dr. King's Speeches on Modern Society",
+      "hook": "How are Dr. King's words still shaping our world today?",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Gabe Vincent Basketball Reels",
-      "topic": "Gabe Vincent's Clutch Moments: A Highlight Reel",
-      "hook": "Gabe Vincent is making a name for himself with these clutch moments on the court!",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Winter Sports and Fitness",
-      "topic": "The Benefits of Skiing for Fitness: A Beginner's Guide",
-      "hook": "Hit the slopes for a killer workout \u2013 discover the benefits of skiing for fitness!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "New Movie Trailers and Releases",
-      "topic": "The Most Anticipated Superhero Movies of 2024: A First Look",
-      "hook": "Get ready for the most action-packed superhero movies of 2024 \u2013 the wait is almost over!",
+      "category": "Colin Farrell Movie Highlights",
+      "topic": "Colin Farrell's Most Iconic Movie Roles",
+      "hook": "Which Colin Farrell character do you love to hate?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Tennis Highlights and Analysis",
-      "topic": "The Evolution of Tennis Rackets: How Technology Has Changed the Game",
-      "hook": "How have advancements in tennis racket technology impacted the game?",
+      "category": "Muhammad Ali Boxing Legends",
+      "topic": "The Rivalry Between Muhammad Ali and Joe Frazier",
+      "hook": "What fueled the greatest boxing rivalry of all time?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedy Skits with Jesse Eisenberg",
+      "topic": "Jesse Eisenberg's Best Improv Moments",
+      "hook": "Can Jesse Eisenberg think on his feet and make us laugh?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Tips and Parks Tennis Challenges",
+      "topic": "The Ultimate Tennis Serve Tutorial",
+      "hook": "Want to ace your tennis game with one simple trick?",
       "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Camila Morrone Fashion Inspiration",
+      "topic": "Camila Morrone's Favorite Fashion Trends",
+      "hook": "What's the one fashion item Camila Morrone can't live without?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Ellen DeGeneres Comedy Sketches",
+      "topic": "Ellen's Funniest Moments with Her Audience",
+      "hook": "You won't believe what happened when Ellen surprised her audience!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Jameson Williams Football Analysis",
+      "topic": "Jameson Williams' Rise to Football Stardom",
+      "hook": "What's the secret to Jameson Williams' incredible speed on the field?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Social Justice Advocacy",
+      "topic": "The Power of Community in Creating Social Change",
+      "hook": "How can we come together to create a better world?",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
+    },
+    {
+      "category": "Motivational Monday Quotes",
+      "topic": "Daily Affirmations for Self-Improvement",
+      "hook": "What if you could manifest your dreams with just one daily habit?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     }
   ],
