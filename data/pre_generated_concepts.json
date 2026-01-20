@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-01-19T05:55:12.225319",
-  "valid_until": "2026-01-19T23:59:12.225326",
+  "generated_at": "2026-01-20T05:53:39.283120",
+  "valid_until": "2026-01-20T23:59:39.283129",
   "categories": [
-    "Dr. Martin Luther King Jr. Day Tributes",
-    "Colin Farrell Movie Highlights",
-    "Muhammad Ali Boxing Legends",
-    "Comedy Skits with Jesse Eisenberg",
-    "Tennis Tips and Parks Tennis Challenges",
-    "Camila Morrone Fashion Inspiration",
-    "Ellen DeGeneres Comedy Sketches",
-    "Jameson Williams Football Analysis",
-    "Social Justice Advocacy",
-    "Motivational Monday Quotes",
-    "Influencer Spotlight: Celebrity Interviews",
-    "Throwback Sports Moments",
-    "Boxing Workout Routines",
-    "MLK Day Reflections and Inspirational Stories",
-    "Entertainment News and Celebrity Updates"
+    "NBA Highlights",
+    "NFL Playoffs Analysis",
+    "Fitness Challenges with Eva Lys",
+    "Warriors Fan Reactions",
+    "NFL Team Standings Updates",
+    "Sports Bloopers with Moses Moody",
+    "UFC Fighter Profiles like Max Holloway",
+    "90s Nostalgia with Charlie Sheen",
+    "Paul Giamatti Movie Clips",
+    "Sports Memes and Jokes",
+    "Current Event News Updates",
+    "Q&A Sessions with Sports Personalities",
+    "Behind the Scenes of NBA Games",
+    "Player Profile Breakdowns like Stephen Curry",
+    "Esports and Gaming Trends"
   ],
   "concepts": [
     {
-      "category": "Dr. Martin Luther King Jr. Day Tributes",
-      "topic": "The Power of Nonviolent Resistance",
-      "hook": "What if I told you that one man's dream changed the course of history?",
-      "voice_style": "inspirational",
+      "category": "NBA Highlights",
+      "topic": "Steph Curry's Record-Breaking 3-Pointers",
+      "hook": "Can you believe what Curry just did?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Colin Farrell Movie Highlights",
-      "topic": "Unforgettable Colin Farrell Characters",
-      "hook": "You won't believe which Colin Farrell character is still giving us nightmares!",
+      "category": "NFL Playoffs Analysis",
+      "topic": "Predicting the Next Super Bowl Champions",
+      "hook": "The underdog story that will change everything",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Fitness Challenges with Eva Lys",
+      "topic": "Eva Lys Tries a 30-Day Plank Challenge",
+      "hook": "You won't believe the transformation",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Warriors Fan Reactions",
+      "topic": "Crazy Fan Reactions to the Warriors' Comeback Wins",
+      "hook": "These fans lost their minds when...",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Muhammad Ali Boxing Legends",
-      "topic": "The Greatest Boxing Matches of All Time",
-      "hook": "Get ready to rumble with the most epic boxing match in history!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Comedy Skits with Jesse Eisenberg",
-      "topic": "Jesse Eisenberg's Funniest Movie Moments",
-      "hook": "Why did Jesse Eisenberg's character bring a rubber chicken to the party?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Tennis Tips and Parks Tennis Challenges",
-      "topic": "Mastering the Perfect Forehand",
-      "hook": "Can you guess the secret to a winning forehand shot?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Camila Morrone Fashion Inspiration",
-      "topic": "Camila Morrone's Style Evolution",
-      "hook": "From runway to red carpet, how does Camila Morrone slay every look?",
+      "category": "NFL Team Standings Updates",
+      "topic": "The Surprising Team That's Taking Over the NFL",
+      "hook": "The dark horse that's changing the game",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Bloopers with Moses Moody",
+      "topic": "The Funniest NBA Bloopers of the Season",
+      "hook": "Moses Moody's laugh-out-loud reaction to...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Ellen DeGeneres Comedy Sketches",
-      "topic": "Ellen's Funniest Pranks on Celebrities",
-      "hook": "You won't believe which celebrity got pranked by Ellen on live TV!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "UFC Fighter Profiles like Max Holloway",
+      "topic": "The Rise of Max Holloway: From Underdog to Champion",
+      "hook": "The incredible story behind Max Holloway's success",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Jameson Williams Football Analysis",
-      "topic": "Breaking Down Jameson Williams' Game-Changing Plays",
-      "hook": "What makes Jameson Williams a game-changer on the field?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Justice Advocacy",
-      "topic": "The Importance of Mental Health Awareness",
-      "hook": "Why is it time to break the silence around mental health?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Motivational Monday Quotes",
-      "topic": "Overcoming Self-Doubt with Daily Affirmations",
-      "hook": "What if one simple phrase could change your life forever?",
+      "category": "90s Nostalgia with Charlie Sheen",
+      "topic": "Charlie Sheen's Iconic Roles in 90s Movies",
+      "hook": "You won't believe what Charlie Sheen just said",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Dr. Martin Luther King Jr. Day Tributes",
-      "topic": "The Impact of Dr. King's Speeches on Modern Society",
-      "hook": "How are Dr. King's words still shaping our world today?",
+      "category": "Paul Giamatti Movie Clips",
+      "topic": "Paul Giamatti's Most Memorable Movie Moments",
+      "hook": "The one movie line that still gives us chills",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Colin Farrell Movie Highlights",
-      "topic": "Colin Farrell's Most Iconic Movie Roles",
-      "hook": "Which Colin Farrell character do you love to hate?",
+      "category": "Sports Memes and Jokes",
+      "topic": "The Funniest Sports Memes of the Week",
+      "hook": "This sports meme is so relatable",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NBA Highlights",
+      "topic": "LeBron James' Most Dominant Performances",
+      "hook": "The King's most unforgettable games",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Muhammad Ali Boxing Legends",
-      "topic": "The Rivalry Between Muhammad Ali and Joe Frazier",
-      "hook": "What fueled the greatest boxing rivalry of all time?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits with Jesse Eisenberg",
-      "topic": "Jesse Eisenberg's Best Improv Moments",
-      "hook": "Can Jesse Eisenberg think on his feet and make us laugh?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Tips and Parks Tennis Challenges",
-      "topic": "The Ultimate Tennis Serve Tutorial",
-      "hook": "Want to ace your tennis game with one simple trick?",
+      "category": "NFL Playoffs Analysis",
+      "topic": "The Biggest Upsets in NFL Playoffs History",
+      "hook": "The shocking moment that changed the game",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Camila Morrone Fashion Inspiration",
-      "topic": "Camila Morrone's Favorite Fashion Trends",
-      "hook": "What's the one fashion item Camila Morrone can't live without?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Ellen DeGeneres Comedy Sketches",
-      "topic": "Ellen's Funniest Moments with Her Audience",
-      "hook": "You won't believe what happened when Ellen surprised her audience!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Jameson Williams Football Analysis",
-      "topic": "Jameson Williams' Rise to Football Stardom",
-      "hook": "What's the secret to Jameson Williams' incredible speed on the field?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Justice Advocacy",
-      "topic": "The Power of Community in Creating Social Change",
-      "hook": "How can we come together to create a better world?",
-      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Motivational Monday Quotes",
-      "topic": "Daily Affirmations for Self-Improvement",
-      "hook": "What if you could manifest your dreams with just one daily habit?",
+      "category": "Fitness Challenges with Eva Lys",
+      "topic": "Eva Lys' 7-Day Ab Challenge",
+      "hook": "Get ready for the ultimate core workout",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
+    },
+    {
+      "category": "Warriors Fan Reactions",
+      "topic": "The Most Epic Warriors Fan Moments",
+      "hook": "These fans are the real MVPs",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "NFL Team Standings Updates",
+      "topic": "The NFL Teams That Are Surprisingly Underperforming",
+      "hook": "The teams that are falling behind",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Bloopers with Moses Moody",
+      "topic": "The Most Hilarious Sports Bloopers of the Month",
+      "hook": "Moses Moody's reaction to this blooper is priceless",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "UFC Fighter Profiles like Max Holloway",
+      "topic": "The Inspiring Story of Max Holloway's UFC Journey",
+      "hook": "The secret to Max Holloway's success",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "90s Nostalgia with Charlie Sheen",
+      "topic": "Charlie Sheen's Best 90s Movie Quotes",
+      "hook": "Charlie Sheen's most iconic lines",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Paul Giamatti Movie Clips",
+      "topic": "Paul Giamatti's Most Underrated Movie Roles",
+      "hook": "The one Paul Giamatti movie you need to watch",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Memes and Jokes",
+      "topic": "The Funniest Sports Memes of the Season",
+      "hook": "This sports meme is going viral",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NBA Highlights",
+      "topic": "The Greatest NBA Rivalries of All Time",
+      "hook": "The most epic NBA rivalries that will never be forgotten",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
