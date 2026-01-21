@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-01-20T05:53:39.283120",
-  "valid_until": "2026-01-20T23:59:39.283129",
+  "generated_at": "2026-01-21T05:52:29.094762",
+  "valid_until": "2026-01-21T23:59:29.094770",
   "categories": [
     "NBA Highlights",
-    "NFL Playoffs Analysis",
-    "Fitness Challenges with Eva Lys",
-    "Warriors Fan Reactions",
-    "NFL Team Standings Updates",
-    "Sports Bloopers with Moses Moody",
-    "UFC Fighter Profiles like Max Holloway",
-    "90s Nostalgia with Charlie Sheen",
-    "Paul Giamatti Movie Clips",
-    "Sports Memes and Jokes",
-    "Current Event News Updates",
-    "Q&A Sessions with Sports Personalities",
-    "Behind the Scenes of NBA Games",
-    "Player Profile Breakdowns like Stephen Curry",
-    "Esports and Gaming Trends"
+    "Fitness Motivation",
+    "Martial Arts Tutorials",
+    "Sports Analysis",
+    "Running Challenges",
+    "Esports Updates",
+    "Daily News Recap",
+    "Warrior Workout Routines",
+    "Learning Strategies",
+    "Marathon Training Tips",
+    "Fantasy Sports Advice",
+    "Basketball Skills Training",
+    "Motivational Speeches",
+    "Gaming Walkthroughs",
+    "Healthy Lifestyle Hacks"
   ],
   "concepts": [
     {
       "category": "NBA Highlights",
-      "topic": "Steph Curry's Record-Breaking 3-Pointers",
-      "hook": "Can you believe what Curry just did?",
+      "topic": "Steph Curry's Greatest Game Winners",
+      "hook": "You won't believe the shot that changed the NBA forever!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "NFL Playoffs Analysis",
-      "topic": "Predicting the Next Super Bowl Champions",
-      "hook": "The underdog story that will change everything",
+      "category": "Fitness Motivation",
+      "topic": "Transforming Your Body in 30 Days",
+      "hook": "Get ready to experience the most epic body transformation of your life!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Fitness Challenges with Eva Lys",
-      "topic": "Eva Lys Tries a 30-Day Plank Challenge",
-      "hook": "You won't believe the transformation",
+      "category": "Martial Arts Tutorials",
+      "topic": "Mastering the Perfect Roundhouse Kick",
+      "hook": "The one kick that can take down any opponent - learn how to do it like a pro!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Warriors Fan Reactions",
-      "topic": "Crazy Fan Reactions to the Warriors' Comeback Wins",
-      "hook": "These fans lost their minds when...",
-      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "NFL Team Standings Updates",
-      "topic": "The Surprising Team That's Taking Over the NFL",
-      "hook": "The dark horse that's changing the game",
+      "category": "Sports Analysis",
+      "topic": "The Secret to Tom Brady's Success",
+      "hook": "What makes Tom Brady the greatest quarterback of all time? The answer will surprise you!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Running Challenges",
+      "topic": "5K to Marathon in 12 Weeks",
+      "hook": "From couch to marathon finisher in just 3 months - is it possible?",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 41
     },
     {
-      "category": "Sports Bloopers with Moses Moody",
-      "topic": "The Funniest NBA Bloopers of the Season",
-      "hook": "Moses Moody's laugh-out-loud reaction to...",
+      "category": "Esports Updates",
+      "topic": "The Rise of the New Gaming Sensation",
+      "hook": "Meet the 16-year-old gamer who's taking the esports world by storm!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 44
     },
     {
-      "category": "UFC Fighter Profiles like Max Holloway",
-      "topic": "The Rise of Max Holloway: From Underdog to Champion",
-      "hook": "The incredible story behind Max Holloway's success",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "90s Nostalgia with Charlie Sheen",
-      "topic": "Charlie Sheen's Iconic Roles in 90s Movies",
-      "hook": "You won't believe what Charlie Sheen just said",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Paul Giamatti Movie Clips",
-      "topic": "Paul Giamatti's Most Memorable Movie Moments",
-      "hook": "The one movie line that still gives us chills",
+      "category": "Daily News Recap",
+      "topic": "The Top 5 News Stories of the Week",
+      "hook": "Don't miss the most shocking news stories of the week - you won't believe what happened!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "dramatic",
+      "target_duration": 46
     },
     {
-      "category": "Sports Memes and Jokes",
-      "topic": "The Funniest Sports Memes of the Week",
-      "hook": "This sports meme is so relatable",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Warrior Workout Routines",
+      "topic": "The Navy SEAL Fitness Test",
+      "hook": "Can you pass the toughest fitness test in the world? Find out how to prepare!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Learning Strategies",
+      "topic": "The Pomodoro Technique for Boosting Productivity",
+      "hook": "The simple technique that can increase your focus and productivity by 500%!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 40
+    },
+    {
+      "category": "Marathon Training Tips",
+      "topic": "The Ultimate Guide to Fueling for a Marathon",
+      "hook": "What to eat and when to eat it - the secret to a successful marathon finish!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
     },
     {
       "category": "NBA Highlights",
-      "topic": "LeBron James' Most Dominant Performances",
-      "hook": "The King's most unforgettable games",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "NFL Playoffs Analysis",
-      "topic": "The Biggest Upsets in NFL Playoffs History",
-      "hook": "The shocking moment that changed the game",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Fitness Challenges with Eva Lys",
-      "topic": "Eva Lys' 7-Day Ab Challenge",
-      "hook": "Get ready for the ultimate core workout",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Warriors Fan Reactions",
-      "topic": "The Most Epic Warriors Fan Moments",
-      "hook": "These fans are the real MVPs",
+      "topic": "The Greatest Dunks in NBA History",
+      "hook": "You won't believe the most insane dunks that will leave you speechless!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "NFL Team Standings Updates",
-      "topic": "The NFL Teams That Are Surprisingly Underperforming",
-      "hook": "The teams that are falling behind",
+      "category": "Fitness Motivation",
+      "topic": "My Journey from Fat to Fit",
+      "hook": "From 300 pounds to ripped in 6 months - my incredible weight loss journey!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Martial Arts Tutorials",
+      "topic": "The Art of Brazilian Jiu-Jitsu",
+      "hook": "The grappling technique that will give you the upper hand in any fight - learn how to do it like a pro!",
+      "voice_style": "friendly",
+      "music_mood": "intense",
+      "target_duration": 41
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "The Science of Football Injuries",
+      "hook": "What's behind the shocking rise in football injuries? The answer will surprise you!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 46
+    },
+    {
+      "category": "Running Challenges",
+      "topic": "Running a Marathon Without Training",
+      "hook": "Can you really run a marathon without training? I tried it and here's what happened!",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 43
     },
     {
-      "category": "Sports Bloopers with Moses Moody",
-      "topic": "The Most Hilarious Sports Bloopers of the Month",
-      "hook": "Moses Moody's reaction to this blooper is priceless",
+      "category": "Esports Updates",
+      "topic": "The Future of Esports",
+      "hook": "What does the future hold for esports? The latest trends and predictions!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 44
     },
     {
-      "category": "UFC Fighter Profiles like Max Holloway",
-      "topic": "The Inspiring Story of Max Holloway's UFC Journey",
-      "hook": "The secret to Max Holloway's success",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "90s Nostalgia with Charlie Sheen",
-      "topic": "Charlie Sheen's Best 90s Movie Quotes",
-      "hook": "Charlie Sheen's most iconic lines",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Paul Giamatti Movie Clips",
-      "topic": "Paul Giamatti's Most Underrated Movie Roles",
-      "hook": "The one Paul Giamatti movie you need to watch",
+      "category": "Daily News Recap",
+      "topic": "The Most Shocking News Stories of the Month",
+      "hook": "Don't miss the most jaw-dropping news stories of the month - you won't believe what happened!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "dramatic",
+      "target_duration": 49
     },
     {
-      "category": "Sports Memes and Jokes",
-      "topic": "The Funniest Sports Memes of the Season",
-      "hook": "This sports meme is going viral",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Warrior Workout Routines",
+      "topic": "The Special Forces Fitness Test",
+      "hook": "Can you pass the toughest fitness test in the military? Find out how to prepare!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Learning Strategies",
+      "topic": "The Power of Mindfulness for Focus",
+      "hook": "How mindfulness can increase your focus and productivity by 200% - try it now!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "NBA Highlights",
-      "topic": "The Greatest NBA Rivalries of All Time",
-      "hook": "The most epic NBA rivalries that will never be forgotten",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Marathon Training Tips",
+      "topic": "The Ultimate Guide to Recovery After a Marathon",
+      "hook": "What to do after crossing the finish line - the secret to a speedy recovery!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 41
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
