@@ -1,235 +1,223 @@
 {
-  "generated_at": "2026-01-21T05:52:29.094762",
-  "valid_until": "2026-01-21T23:59:29.094770",
+  "generated_at": "2026-01-22T05:52:54.912446",
+  "valid_until": "2026-01-22T23:59:54.912458",
   "categories": [
-    "NBA Highlights",
+    "Sports Highlights",
+    "Reality TV Recaps",
+    "Ellen Show Clips",
+    "New Music Releases",
+    "Winter Fashion Trends",
+    "Tennis Analysis",
+    "NBATopPlays",
+    "Korean Drama Reviews",
+    "Netflix Show Reviews",
+    "Singles Inferno Challenges",
+    "Behind the Scenes",
+    "Celebrity Interviews",
+    "Emerging Artist Spotlight",
     "Fitness Motivation",
-    "Martial Arts Tutorials",
-    "Sports Analysis",
-    "Running Challenges",
-    "Esports Updates",
-    "Daily News Recap",
-    "Warrior Workout Routines",
-    "Learning Strategies",
-    "Marathon Training Tips",
-    "Fantasy Sports Advice",
-    "Basketball Skills Training",
-    "Motivational Speeches",
-    "Gaming Walkthroughs",
-    "Healthy Lifestyle Hacks"
+    "Entertainment News Updates"
   ],
   "concepts": [
     {
-      "category": "NBA Highlights",
-      "topic": "Steph Curry's Greatest Game Winners",
-      "hook": "You won't believe the shot that changed the NBA forever!",
+      "category": "Sports Highlights",
+      "topic": "LeBron James' Most Unbelievable Game Winners",
+      "hook": "You won't believe what LeBron did in the final seconds of these games!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Reality TV Recaps",
+      "topic": "The Most Shocking Bachelor Nation Breakups",
+      "hook": "Which Bachelor couples did NOT get their happily ever after?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Ellen Show Clips",
+      "topic": "Ellen's Funniest Pranks on Celebrities",
+      "hook": "You'll LOL at these hilarious pranks Ellen played on her famous friends!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "New Music Releases",
+      "topic": "Billie Eilish's Most Haunting Songs",
+      "hook": "Get ready to be hypnotized by Billie Eilish's darkest tracks...",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Winter Fashion Trends",
+      "topic": "The Coziest Winter Boots You Need This Season",
+      "hook": "Stay warm and stylish with these must-have winter boots!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Analysis",
+      "topic": "The Secret to Novak Djokovic's Incredible Comebacks",
+      "hook": "What makes Djokovic the king of tennis comebacks? Let's break it down!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "NBATopPlays",
+      "topic": "Stephen Curry's Most Impossible Shots",
+      "hook": "You won't believe the impossible shots Curry has made in his career!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Korean Drama Reviews",
+      "topic": "The Most Romantic K-Drama Kisses of All Time",
+      "hook": "Swoon over these unforgettable K-drama kisses!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Netflix Show Reviews",
+      "topic": "The Darkest 'Stranger Things' Theories",
+      "hook": "What's really going on in Hawkins, Indiana? Let's dive into the darkest theories...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Singles Inferno Challenges",
+      "topic": "The Most Epic 'Singles Inferno' Rejections",
+      "hook": "Who got burned in the most brutal rejections on 'Singles Inferno'?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "Tom Brady's Most Clutch Super Bowl Moments",
+      "hook": "Watch Tom Brady prove why he's the G.O.A.T. in these clutch Super Bowl moments!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Reality TV Recaps",
+      "topic": "The Craziest 'Survivor' Idol Plays of All Time",
+      "hook": "Which players made the most epic idol plays in 'Survivor' history?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Ellen Show Clips",
+      "topic": "Ellen's Most Emotional Surprises for Deserving Fans",
+      "hook": "Get ready to cry happy tears at these heartwarming surprises on Ellen!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "New Music Releases",
+      "topic": "Taylor Swift's Most Empowering Anthems",
+      "hook": "Sing along to Taylor Swift's most iconic feminist anthems!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fitness Motivation",
-      "topic": "Transforming Your Body in 30 Days",
-      "hook": "Get ready to experience the most epic body transformation of your life!",
+      "category": "Winter Fashion Trends",
+      "topic": "The Hottest Winter Coats to Stay Warm and Stylish",
+      "hook": "Stay warm and trendy with these must-have winter coats!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Tennis Analysis",
+      "topic": "The Rise of Emma Raducanu: What Makes Her a Tennis Sensation",
+      "hook": "How did Emma Raducanu become a tennis superstar overnight? Let's analyze her game!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Martial Arts Tutorials",
-      "topic": "Mastering the Perfect Roundhouse Kick",
-      "hook": "The one kick that can take down any opponent - learn how to do it like a pro!",
-      "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "The Secret to Tom Brady's Success",
-      "hook": "What makes Tom Brady the greatest quarterback of all time? The answer will surprise you!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Running Challenges",
-      "topic": "5K to Marathon in 12 Weeks",
-      "hook": "From couch to marathon finisher in just 3 months - is it possible?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 41
-    },
-    {
-      "category": "Esports Updates",
-      "topic": "The Rise of the New Gaming Sensation",
-      "hook": "Meet the 16-year-old gamer who's taking the esports world by storm!",
+      "category": "NBATopPlays",
+      "topic": "The Most Dominant NBA Rookies of All Time",
+      "hook": "Which NBA rookies made an instant impact in their debut seasons?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Daily News Recap",
-      "topic": "The Top 5 News Stories of the Week",
-      "hook": "Don't miss the most shocking news stories of the week - you won't believe what happened!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 46
-    },
-    {
-      "category": "Warrior Workout Routines",
-      "topic": "The Navy SEAL Fitness Test",
-      "hook": "Can you pass the toughest fitness test in the world? Find out how to prepare!",
-      "voice_style": "mysterious",
       "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Learning Strategies",
-      "topic": "The Pomodoro Technique for Boosting Productivity",
-      "hook": "The simple technique that can increase your focus and productivity by 500%!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Marathon Training Tips",
-      "topic": "The Ultimate Guide to Fueling for a Marathon",
-      "hook": "What to eat and when to eat it - the secret to a successful marathon finish!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "NBA Highlights",
-      "topic": "The Greatest Dunks in NBA History",
-      "hook": "You won't believe the most insane dunks that will leave you speechless!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fitness Motivation",
-      "topic": "My Journey from Fat to Fit",
-      "hook": "From 300 pounds to ripped in 6 months - my incredible weight loss journey!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Martial Arts Tutorials",
-      "topic": "The Art of Brazilian Jiu-Jitsu",
-      "hook": "The grappling technique that will give you the upper hand in any fight - learn how to do it like a pro!",
+      "category": "Korean Drama Reviews",
+      "topic": "The Most Addictive K-Dramas to Binge-Watch This Year",
+      "hook": "Get ready to obsess over these addictive K-dramas!",
       "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 41
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "The Science of Football Injuries",
-      "hook": "What's behind the shocking rise in football injuries? The answer will surprise you!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 46
-    },
-    {
-      "category": "Running Challenges",
-      "topic": "Running a Marathon Without Training",
-      "hook": "Can you really run a marathon without training? I tried it and here's what happened!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Esports Updates",
-      "topic": "The Future of Esports",
-      "hook": "What does the future hold for esports? The latest trends and predictions!",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 44
+      "target_duration": 50
     },
     {
-      "category": "Daily News Recap",
-      "topic": "The Most Shocking News Stories of the Month",
-      "hook": "Don't miss the most jaw-dropping news stories of the month - you won't believe what happened!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Warrior Workout Routines",
-      "topic": "The Special Forces Fitness Test",
-      "hook": "Can you pass the toughest fitness test in the military? Find out how to prepare!",
+      "category": "Netflix Show Reviews",
+      "topic": "The Most Mind-Blowing 'Black Mirror' Twists",
+      "hook": "What are the most shocking plot twists in 'Black Mirror' history?",
       "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Learning Strategies",
-      "topic": "The Power of Mindfulness for Focus",
-      "hook": "How mindfulness can increase your focus and productivity by 200% - try it now!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Marathon Training Tips",
-      "topic": "The Ultimate Guide to Recovery After a Marathon",
-      "hook": "What to do after crossing the finish line - the secret to a speedy recovery!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 41
+      "category": "Singles Inferno Challenges",
+      "topic": "The Most Shocking 'Singles Inferno' Couples Who Found Love",
+      "hook": "Which 'Singles Inferno' couples beat the odds and found real love?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Unforgettable Olympic Upsets of All Time",
+      "hook": "Which underdog athletes pulled off the most stunning Olympic upsets?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -237,24 +225,44 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
