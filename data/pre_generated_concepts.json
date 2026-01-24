@@ -1,276 +1,268 @@
 {
-  "generated_at": "2026-01-23T05:51:28.147390",
-  "valid_until": "2026-01-23T23:59:28.147398",
+  "generated_at": "2026-01-24T05:45:51.382679",
+  "valid_until": "2026-01-24T23:59:51.382686",
   "categories": [
-    "NBA Trade Deadline Rumors and Predictions",
-    "Sports Highlights and Analysis",
-    "Emerging Athlete Profiles: Magda Linette and Eileen Gu",
-    "NBATradeDeadline Reactions and Memes",
-    "Fitness and Training Tips with Pro Athletes like Marcus Smart",
-    "Top NBA Players to Watch: John Collins and Caleb Love",
-    "Rising Stars in the NBA: Shaedon Sharpe and Rui Hachimura",
-    "Esports and Gaming Highlights",
-    "Current Event Recap and Discussion",
-    "Winter Sports and Activities",
-    "Trending Sports News and Updates",
-    "Athlete Lifestyle and Behind-the-Scenes",
-    "Comedy Sports Sketches and Parodies",
-    "Sports Debate and Opinion",
-    "Influencer and Celebrity Sports Fan Reactions"
+    "Winter Survival Tips",
+    "Car Reviews: Aston Martin",
+    "Extreme Weather Challenges",
+    "Celebrity News: Olivia Wilde",
+    "Tree Explosion Explanations",
+    "Monster Legends: Kraken",
+    "Netflix Show Reviews",
+    "Warner Bros Movie Previews",
+    "Sports Highlights: Sandro Mamukelashvili",
+    "Cold-Weather Fashion",
+    "Tree Care and Safety",
+    "Automotive News: Electric Vehicles",
+    "Acting Tips with Ethan Hawke",
+    "Modeling Inspiration: Nikola Bartunkova",
+    "Environmental Awareness: Climate Change"
   ],
   "concepts": [
     {
-      "category": "NBA Trade Deadline Rumors and Predictions",
-      "topic": "Will the Lakers Make a Blockbuster Trade for a Championship Run?",
-      "hook": "LeBron's future in LA hangs in the balance, but what's the real plan?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights and Analysis",
-      "topic": "Deconstructing Stephen Curry's Unstoppable 3-Point Shot",
-      "hook": "What makes Curry's shot so unguardable, and can it be replicated?",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Emerging Athlete Profiles: Magda Linette and Eileen Gu",
-      "topic": "Eileen Gu's Rise to Skiing Stardom: What's Behind Her Success?",
-      "hook": "From China to the slopes of Switzerland, Gu's journey is one for the ages",
-      "voice_style": "friendly",
+      "category": "Winter Survival Tips",
+      "topic": "How to Start a Fire with Just a Battery and a Gum Wrapper",
+      "hook": "You won't believe the simple trick to starting a fire in the freezing cold!",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "NBATradeDeadline Reactions and Memes",
-      "topic": "The Funniest NBA Trade Deadline Memes That Are Taking Over the Internet",
-      "hook": "When the trade deadline meets memes, hilarity ensues",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Fitness and Training Tips with Pro Athletes like Marcus Smart",
-      "topic": "Marcus Smart's Off-Season Training Regimen for Peak Performance",
-      "hook": "What does it take to be an NBA athlete? Let's dive into Smart's fitness secrets",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Top NBA Players to Watch: John Collins and Caleb Love",
-      "topic": "John Collins' Path to NBA Stardom: What Makes Him a Rising Star?",
-      "hook": "From collegiate standout to NBA sensation, Collins is on the rise",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Rising Stars in the NBA: Shaedon Sharpe and Rui Hachimura",
-      "topic": "Shaedon Sharpe's Rookie Season: Can He Live Up to the Hype?",
-      "hook": "The enigmatic Sharpe has the NBA buzzing, but what's his true potential?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 42
+      "category": "Car Reviews: Aston Martin",
+      "topic": "Aston Martin DBS Superleggera: The $300,000 Question",
+      "hook": "Is this luxury sports car worth the staggering price tag?",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Esports and Gaming Highlights",
-      "topic": "The Most Epic Gaming Comebacks in Esports History",
-      "hook": "When all hope seems lost, these gamers turn the tide",
+      "category": "Extreme Weather Challenges",
+      "topic": "Surviving a -50\u00b0C Night in the Frozen Wilderness",
+      "hook": "I spent the night in the freezing cold with no shelter, here's what happened!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
+      "target_duration": 50
     },
     {
-      "category": "Current Event Recap and Discussion",
-      "topic": "The Impact of Social Media on Modern Sports: A Double-Edged Sword?",
-      "hook": "How are athletes using social media to shape their brand and influence?",
-      "voice_style": "authoritative",
+      "category": "Celebrity News: Olivia Wilde",
+      "topic": "Olivia Wilde's Most Shocking Movie Roles",
+      "hook": "You won't believe the most daring roles Olivia Wilde has taken on!",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Winter Sports and Activities",
-      "topic": "The World's Most Treacherous Ski Slopes: Would You Dare to Tackle Them?",
-      "hook": "For the fearless and the fanatical, these slopes offer the ultimate rush",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Tree Explosion Explanations",
+      "topic": "The Science Behind Tree Explosions: What Causes Them?",
+      "hook": "The bizarre phenomenon of exploding trees explained!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "NBA Trade Deadline Rumors and Predictions",
-      "topic": "The Dark Horse Teams That Could Shake Up the NBA Trade Deadline",
-      "hook": "Which under-the-radar teams are poised to make a splash at the deadline?",
-      "voice_style": "mysterious",
+      "category": "Monster Legends: Kraken",
+      "topic": "Uncovering the Legend of the Kraken: Fact or Fiction?",
+      "hook": "The sea monster of Norse legend: separating myth from reality!",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 42
+      "target_duration": 50
     },
     {
-      "category": "Sports Highlights and Analysis",
-      "topic": "The Art of the Pick-and-Roll: Unpacking the NBA's Most Effective Play",
-      "hook": "What makes the pick-and-roll so deadly, and how can teams counter it?",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Emerging Athlete Profiles: Magda Linette and Eileen Gu",
-      "topic": "Magda Linette's Surprising Rise to Tennis Prominence: What's Behind Her Success?",
-      "hook": "From relative obscurity to Grand Slam contender, Linette's story is inspiring",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "NBATradeDeadline Reactions and Memes",
-      "topic": "The Best NBA Trade Deadline Reactions from Players and Coaches",
-      "hook": "When the trade deadline drops, the reactions are just as entertaining as the deals",
+      "category": "Netflix Show Reviews",
+      "topic": "The Shocking Twist in Netflix's 'The Witcher' Season 2",
+      "hook": "The jaw-dropping moment that changed everything in 'The Witcher'!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Fitness and Training Tips with Pro Athletes like Marcus Smart",
-      "topic": "Pro Athletes' Favorite Fitness Apps for Staying in Shape on the Go",
-      "hook": "What do the pros use to stay fit and healthy during the off-season?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Top NBA Players to Watch: John Collins and Caleb Love",
-      "topic": "Caleb Love's Breakout Season: Can He Lead His Team to the Playoffs?",
-      "hook": "The young gun is making waves in the NBA, but what's his true potential?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Rising Stars in the NBA: Shaedon Sharpe and Rui Hachimura",
-      "topic": "Rui Hachimura's Journey from Japan to the NBA: Overcoming Adversity",
-      "hook": "From a small town in Japan to the bright lights of the NBA, Hachimura's story is one of perseverance",
-      "voice_style": "authoritative",
+      "category": "Warner Bros Movie Previews",
+      "topic": "The Most Anticipated Warner Bros Movies of 2024",
+      "hook": "Get ready for the biggest blockbusters of the year!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Esports and Gaming Highlights",
-      "topic": "The Most Dominant Esports Teams of All Time: What Made Them Unbeatable?",
-      "hook": "Which teams have reigned supreme in the world of competitive gaming?",
+      "category": "Sports Highlights: Sandro Mamukelashvili",
+      "topic": "Sandro Mamukelashvili's Most Epic Basketball Plays",
+      "hook": "The most dominating moments of Sandro Mamukelashvili's career!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
+      "target_duration": 50
     },
     {
-      "category": "Current Event Recap and Discussion",
-      "topic": "The Impact of Sports on Mental Health: A Growing Concern",
-      "hook": "How are athletes and teams addressing the critical issue of mental health?",
-      "voice_style": "authoritative",
+      "category": "Cold-Weather Fashion",
+      "topic": "The Top 5 Winter Fashion Trends to Stay Warm and Stylish",
+      "hook": "Stay warm and stylish this winter with these must-have fashion trends!",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Winter Sports and Activities",
-      "topic": "The Most Extreme Winter Sports: For the Thrill-Seekers Only",
-      "hook": "Which winter sports push athletes to the limit and beyond?",
+      "category": "Winter Survival Tips",
+      "topic": "How to Build a Snow Shelter in Under 30 Minutes",
+      "hook": "The ultimate winter survival hack: building a snow shelter in no time!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Car Reviews: Aston Martin",
+      "topic": "Aston Martin Valhalla: The $1.5 Million Hypercar",
+      "hook": "Is this limited-edition hypercar worth the staggering price tag?",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Extreme Weather Challenges",
+      "topic": "I Spent 24 Hours in a Desert Storm",
+      "hook": "The ultimate test of survival: spending a day in the scorching desert!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News: Olivia Wilde",
+      "topic": "Olivia Wilde's Most Inspirational Quotes on Life and Success",
+      "hook": "The words of wisdom from Olivia Wilde that will motivate you to succeed!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Tree Explosion Explanations",
+      "topic": "The Role of Climate Change in Tree Explosions",
+      "hook": "The alarming link between tree explosions and climate change!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Monster Legends: Kraken",
+      "topic": "The Cultural Significance of the Kraken in Norse Mythology",
+      "hook": "Unraveling the mythological significance of the Kraken in Norse culture!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Netflix Show Reviews",
+      "topic": "The Hidden Meaning Behind 'Stranger Things' Season 4",
+      "hook": "The shocking secrets and Easter eggs in 'Stranger Things' you missed!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "NBA Trade Deadline Rumors and Predictions",
-      "topic": "The Biggest NBA Trade Deadline Busts: What Went Wrong?",
-      "hook": "Which deals failed to live up to the hype, and what can we learn from them?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 42
+      "category": "Warner Bros Movie Previews",
+      "topic": "The Exciting New Releases from Warner Bros in 2024",
+      "hook": "Get ready for the most anticipated movies of the year!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
     },
     {
-      "category": "Sports Highlights and Analysis",
-      "topic": "The Evolution of the NBA's Fast Break: From Showtime to Today",
-      "hook": "How have teams adapted and innovated the fast break to dominate on the court?",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "category": "Sports Highlights: Sandro Mamukelashvili",
+      "topic": "Sandro Mamukelashvili's Incredible Basketball Comeback",
+      "hook": "The unforgettable moment Sandro Mamukelashvili made an epic comeback!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Cold-Weather Fashion",
+      "topic": "The Best Winter Accessories to Keep You Warm and Stylish",
+      "hook": "Stay warm and stylish this winter with these must-have accessories!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Winter Survival Tips",
+      "topic": "How to Find Food in the Wild During Winter",
+      "hook": "The ultimate winter survival hack: finding food in the wild!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
