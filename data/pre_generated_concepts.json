@@ -1,189 +1,197 @@
 {
-  "generated_at": "2026-01-24T05:45:51.382679",
-  "valid_until": "2026-01-24T23:59:51.382686",
+  "generated_at": "2026-01-25T05:50:44.228630",
+  "valid_until": "2026-01-25T23:59:44.228639",
   "categories": [
-    "Winter Survival Tips",
-    "Car Reviews: Aston Martin",
-    "Extreme Weather Challenges",
-    "Celebrity News: Olivia Wilde",
-    "Tree Explosion Explanations",
-    "Monster Legends: Kraken",
-    "Netflix Show Reviews",
-    "Warner Bros Movie Previews",
-    "Sports Highlights: Sandro Mamukelashvili",
-    "Cold-Weather Fashion",
-    "Tree Care and Safety",
-    "Automotive News: Electric Vehicles",
-    "Acting Tips with Ethan Hawke",
-    "Modeling Inspiration: Nikola Bartunkova",
-    "Environmental Awareness: Climate Change"
+    "Explaining Emerging Tech: Decoding Polymarket and its Impact",
+    "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
+    "Mexican Football Analysis: UANL vs Atlas Post-Game Discussion",
+    "Tennis Tips with Coco Gauff: Mastering the Court",
+    "Comedy Sketches: Recreating Colin Jost's Funniest SNL Moments",
+    "Financial Insights: Rick Rieder's Market Predictions for 2026",
+    "Wildlife Comedy: Geese on SNL - Hilarious Animal Impressions",
+    "NFL and Boxing Predictions: Upcoming Fights and Games",
+    "Current Event Debates: Discussing the Latest News and Trends",
+    "Sports Bloopers: Funny Moments from Recent Games",
+    "Tech for Beginners: Understanding Cryptocurrency and Markets",
+    "Winter Sports: Highlights from Recent Tennis and Football Matches",
+    "Saturday Night Live Parodies: Recreating Iconic Sketches",
+    "Esports and Gaming: Analyzing the Latest Trends and Updates",
+    "Morning Market Updates: Daily News and Financial Analysis"
   ],
   "concepts": [
     {
-      "category": "Winter Survival Tips",
-      "topic": "How to Start a Fire with Just a Battery and a Gum Wrapper",
-      "hook": "You won't believe the simple trick to starting a fire in the freezing cold!",
-      "voice_style": "energetic",
+      "category": "Explaining Emerging Tech: Decoding Polymarket and its Impact",
+      "topic": "How Polymarket's Predictive Markets Are Revolutionizing Event Forecasting",
+      "hook": "What if you could predict the future with 90% accuracy?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Car Reviews: Aston Martin",
-      "topic": "Aston Martin DBS Superleggera: The $300,000 Question",
-      "hook": "Is this luxury sports car worth the staggering price tag?",
-      "voice_style": "authoritative",
+      "category": "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
+      "topic": "Shakur Stevenson's Lightning-Fast Knockout: A Breakdown of His Technique",
+      "hook": "You won't believe the speed of this knockout!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Extreme Weather Challenges",
-      "topic": "Surviving a -50\u00b0C Night in the Frozen Wilderness",
-      "hook": "I spent the night in the freezing cold with no shelter, here's what happened!",
+      "category": "Mexican Football Analysis: UANL vs Atlas Post-Game Discussion",
+      "topic": "UANL's Shocking Upset: What Went Wrong for Atlas?",
+      "hook": "The biggest upset of the season: what happened?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Celebrity News: Olivia Wilde",
-      "topic": "Olivia Wilde's Most Shocking Movie Roles",
-      "hook": "You won't believe the most daring roles Olivia Wilde has taken on!",
+      "category": "Tennis Tips with Coco Gauff: Mastering the Court",
+      "topic": "Coco Gauff's Secret to Dominating at the Net: A Step-by-Step Guide",
+      "hook": "Want to ace like Coco Gauff? Here's her secret trick!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Tree Explosion Explanations",
-      "topic": "The Science Behind Tree Explosions: What Causes Them?",
-      "hook": "The bizarre phenomenon of exploding trees explained!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Comedy Sketches: Recreating Colin Jost's Funniest SNL Moments",
+      "topic": "Recreating Colin Jost's Funniest Impressions: A Comedy Challenge",
+      "hook": "Can we recreate Colin Jost's funniest SNL moments?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Monster Legends: Kraken",
-      "topic": "Uncovering the Legend of the Kraken: Fact or Fiction?",
-      "hook": "The sea monster of Norse legend: separating myth from reality!",
+      "category": "Financial Insights: Rick Rieder's Market Predictions for 2026",
+      "topic": "Rick Rieder's Bold Prediction: A Market Crash in 2026?",
+      "hook": "Is a market crash coming in 2026? Rick Rieder weighs in!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Netflix Show Reviews",
-      "topic": "The Shocking Twist in Netflix's 'The Witcher' Season 2",
-      "hook": "The jaw-dropping moment that changed everything in 'The Witcher'!",
+      "category": "Wildlife Comedy: Geese on SNL - Hilarious Animal Impressions",
+      "topic": "Geese Take Over SNL: The Funniest Animal Impressions Ever",
+      "hook": "What happens when geese take over SNL?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Warner Bros Movie Previews",
-      "topic": "The Most Anticipated Warner Bros Movies of 2024",
-      "hook": "Get ready for the biggest blockbusters of the year!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Highlights: Sandro Mamukelashvili",
-      "topic": "Sandro Mamukelashvili's Most Epic Basketball Plays",
-      "hook": "The most dominating moments of Sandro Mamukelashvili's career!",
+      "category": "NFL and Boxing Predictions: Upcoming Fights and Games",
+      "topic": "The Biggest Upset of the NFL Season: Our Expert Predictions",
+      "hook": "The biggest NFL upset of the season: who will it be?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Cold-Weather Fashion",
-      "topic": "The Top 5 Winter Fashion Trends to Stay Warm and Stylish",
-      "hook": "Stay warm and stylish this winter with these must-have fashion trends!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Survival Tips",
-      "topic": "How to Build a Snow Shelter in Under 30 Minutes",
-      "hook": "The ultimate winter survival hack: building a snow shelter in no time!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Car Reviews: Aston Martin",
-      "topic": "Aston Martin Valhalla: The $1.5 Million Hypercar",
-      "hook": "Is this limited-edition hypercar worth the staggering price tag?",
+      "category": "Current Event Debates: Discussing the Latest News and Trends",
+      "topic": "The Future of Social Media: Will TikTok Replace Instagram?",
+      "hook": "Is TikTok the future of social media? Let's debate!",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Extreme Weather Challenges",
-      "topic": "I Spent 24 Hours in a Desert Storm",
-      "hook": "The ultimate test of survival: spending a day in the scorching desert!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News: Olivia Wilde",
-      "topic": "Olivia Wilde's Most Inspirational Quotes on Life and Success",
-      "hook": "The words of wisdom from Olivia Wilde that will motivate you to succeed!",
+      "category": "Sports Bloopers: Funny Moments from Recent Games",
+      "topic": "The Funniest Sports Bloopers of the Month: A Laugh-Out-Loud Compilation",
+      "hook": "You won't believe these hilarious sports bloopers!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Tree Explosion Explanations",
-      "topic": "The Role of Climate Change in Tree Explosions",
-      "hook": "The alarming link between tree explosions and climate change!",
+      "category": "Explaining Emerging Tech: Decoding Polymarket and its Impact",
+      "topic": "The Impact of Polymarket on the Gaming Industry: A Deep Dive",
+      "hook": "How Polymarket is changing the gaming industry forever!",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Monster Legends: Kraken",
-      "topic": "The Cultural Significance of the Kraken in Norse Mythology",
-      "hook": "Unraveling the mythological significance of the Kraken in Norse culture!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Netflix Show Reviews",
-      "topic": "The Hidden Meaning Behind 'Stranger Things' Season 4",
-      "hook": "The shocking secrets and Easter eggs in 'Stranger Things' you missed!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Warner Bros Movie Previews",
-      "topic": "The Exciting New Releases from Warner Bros in 2024",
-      "hook": "Get ready for the most anticipated movies of the year!",
-      "voice_style": "friendly",
+      "category": "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
+      "topic": "Nikola Jovi\u0107's Record-Breaking Game: A Statistical Analysis",
+      "hook": "Nikola Jovi\u0107's record-breaking game: the numbers don't lie!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Sandro Mamukelashvili",
-      "topic": "Sandro Mamukelashvili's Incredible Basketball Comeback",
-      "hook": "The unforgettable moment Sandro Mamukelashvili made an epic comeback!",
+      "category": "Mexican Football Analysis: UANL vs Atlas Post-Game Discussion",
+      "topic": "The Tactical Masterclass Behind UANL's Win: A Coach's Perspective",
+      "hook": "The secret behind UANL's stunning win: a coach's insights!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Tips with Coco Gauff: Mastering the Court",
+      "topic": "Coco Gauff's Favorite Drills for Improving Your Serve",
+      "hook": "Want to serve like Coco Gauff? Try these drills!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedy Sketches: Recreating Colin Jost's Funniest SNL Moments",
+      "topic": "Recreating Colin Jost's Funniest Sketches: A Challenge for Comedians",
+      "hook": "Can comedians recreate Colin Jost's funniest sketches?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Insights: Rick Rieder's Market Predictions for 2026",
+      "topic": "Rick Rieder's Top Investment Picks for 2026: A Exclusive Interview",
+      "hook": "Rick Rieder's top investment picks for 2026: don't miss out!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Wildlife Comedy: Geese on SNL - Hilarious Animal Impressions",
+      "topic": "Geese Take Over a News Studio: Chaos Ensues!",
+      "hook": "What happens when geese take over a news studio?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "NFL and Boxing Predictions: Upcoming Fights and Games",
+      "topic": "The Biggest Boxing Match of the Year: Our Expert Predictions",
+      "hook": "The biggest boxing match of the year: who will win?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Cold-Weather Fashion",
-      "topic": "The Best Winter Accessories to Keep You Warm and Stylish",
-      "hook": "Stay warm and stylish this winter with these must-have accessories!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "Current Event Debates: Discussing the Latest News and Trends",
+      "topic": "The Impact of Artificial Intelligence on Jobs: A Debate",
+      "hook": "Will AI replace human jobs? Let's debate!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
     },
     {
-      "category": "Winter Survival Tips",
-      "topic": "How to Find Food in the Wild During Winter",
-      "hook": "The ultimate winter survival hack: finding food in the wild!",
+      "category": "Sports Bloopers: Funny Moments from Recent Games",
+      "topic": "The Funniest Sports Bloopers of the Year: A Compilation",
+      "hook": "The funniest sports bloopers of the year: you won't believe them!",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Explaining Emerging Tech: Decoding Polymarket and its Impact",
+      "topic": "The Potential Risks of Polymarket: A Balanced Analysis",
+      "hook": "The dark side of Polymarket: what are the risks?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
+      "topic": "Shakur Stevenson's Rise to Fame: A Timeline of His Career",
+      "hook": "From amateur to pro: Shakur Stevenson's journey to the top!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     }
@@ -191,23 +199,13 @@
   "voice_music_pairs": [
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -215,54 +213,64 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
