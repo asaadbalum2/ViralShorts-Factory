@@ -1,251 +1,213 @@
 {
-  "generated_at": "2026-01-25T05:50:44.228630",
-  "valid_until": "2026-01-25T23:59:44.228639",
+  "generated_at": "2026-01-26T05:55:12.952012",
+  "valid_until": "2026-01-26T23:59:12.952020",
   "categories": [
-    "Explaining Emerging Tech: Decoding Polymarket and its Impact",
-    "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
-    "Mexican Football Analysis: UANL vs Atlas Post-Game Discussion",
-    "Tennis Tips with Coco Gauff: Mastering the Court",
-    "Comedy Sketches: Recreating Colin Jost's Funniest SNL Moments",
-    "Financial Insights: Rick Rieder's Market Predictions for 2026",
-    "Wildlife Comedy: Geese on SNL - Hilarious Animal Impressions",
-    "NFL and Boxing Predictions: Upcoming Fights and Games",
-    "Current Event Debates: Discussing the Latest News and Trends",
-    "Sports Bloopers: Funny Moments from Recent Games",
-    "Tech for Beginners: Understanding Cryptocurrency and Markets",
-    "Winter Sports: Highlights from Recent Tennis and Football Matches",
-    "Saturday Night Live Parodies: Recreating Iconic Sketches",
-    "Esports and Gaming: Analyzing the Latest Trends and Updates",
-    "Morning Market Updates: Daily News and Financial Analysis"
+    "Behind-the-scenes of Finding Her Edge Season 2",
+    "Updates on the Kaiser Strike and its impact",
+    "NFL analysis featuring Will Levis",
+    "Bridgerton cast interviews and fashion",
+    "Gold investment tips and market trends",
+    "Goa travel vlogs and cultural experiences",
+    "Kristen Stewart's latest projects and interviews",
+    "Elise Mertens tennis highlights and training",
+    "Strike support and worker rights awareness",
+    "Regency-era fashion inspired by Bridgerton",
+    "Travel guides to India featuring Goa",
+    "Sports news and analysis with a focus on the NFL",
+    "Entertainment news and celebrity interviews",
+    "Financial advice and investment strategies",
+    "Weekend getaways and vacation planning inspired by Goa"
   ],
   "concepts": [
     {
-      "category": "Explaining Emerging Tech: Decoding Polymarket and its Impact",
-      "topic": "How Polymarket's Predictive Markets Are Revolutionizing Event Forecasting",
-      "hook": "What if you could predict the future with 90% accuracy?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Behind-the-scenes of Finding Her Edge Season 2",
+      "topic": "Exclusive Interview with the Lead Actress",
+      "hook": "You won't believe what happened on set during the most intense scene!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
-      "topic": "Shakur Stevenson's Lightning-Fast Knockout: A Breakdown of His Technique",
-      "hook": "You won't believe the speed of this knockout!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Updates on the Kaiser Strike and its impact",
+      "topic": "The Hidden Consequences on Local Businesses",
+      "hook": "The strike is affecting more than just the workers, find out how!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Mexican Football Analysis: UANL vs Atlas Post-Game Discussion",
-      "topic": "UANL's Shocking Upset: What Went Wrong for Atlas?",
-      "hook": "The biggest upset of the season: what happened?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Tennis Tips with Coco Gauff: Mastering the Court",
-      "topic": "Coco Gauff's Secret to Dominating at the Net: A Step-by-Step Guide",
-      "hook": "Want to ace like Coco Gauff? Here's her secret trick!",
+      "category": "NFL analysis featuring Will Levis",
+      "topic": "Breaking Down Will Levis' Most Epic Plays",
+      "hook": "What makes Will Levis a game-changer on the field?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "music_mood": "intense",
+      "target_duration": 42
     },
     {
-      "category": "Comedy Sketches: Recreating Colin Jost's Funniest SNL Moments",
-      "topic": "Recreating Colin Jost's Funniest Impressions: A Comedy Challenge",
-      "hook": "Can we recreate Colin Jost's funniest SNL moments?",
+      "category": "Bridgerton cast interviews and fashion",
+      "topic": "Regency Era Makeup Tips from the Show's Lead Actress",
+      "hook": "Get ready to shine like a Bridgerton diamond with these insider tips!",
       "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Gold investment tips and market trends",
+      "topic": "The Top 3 Mistakes New Investors Make When Buying Gold",
+      "hook": "Don't lose your shirt in the gold market, avoid these rookie mistakes!",
+      "voice_style": "mysterious",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Financial Insights: Rick Rieder's Market Predictions for 2026",
-      "topic": "Rick Rieder's Bold Prediction: A Market Crash in 2026?",
-      "hook": "Is a market crash coming in 2026? Rick Rieder weighs in!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildlife Comedy: Geese on SNL - Hilarious Animal Impressions",
-      "topic": "Geese Take Over SNL: The Funniest Animal Impressions Ever",
-      "hook": "What happens when geese take over SNL?",
+      "category": "Goa travel vlogs and cultural experiences",
+      "topic": "Exploring the Local Cuisine of Goa",
+      "hook": "Get ready for a flavor explosion in the tropical paradise of Goa!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "NFL and Boxing Predictions: Upcoming Fights and Games",
-      "topic": "The Biggest Upset of the NFL Season: Our Expert Predictions",
-      "hook": "The biggest NFL upset of the season: who will it be?",
+      "category": "Kristen Stewart's latest projects and interviews",
+      "topic": "Kristen Stewart's Most Challenging Role to Date",
+      "hook": "What drove Kristen Stewart to take on her most daring role yet?",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 42
     },
     {
-      "category": "Current Event Debates: Discussing the Latest News and Trends",
-      "topic": "The Future of Social Media: Will TikTok Replace Instagram?",
-      "hook": "Is TikTok the future of social media? Let's debate!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Bloopers: Funny Moments from Recent Games",
-      "topic": "The Funniest Sports Bloopers of the Month: A Laugh-Out-Loud Compilation",
-      "hook": "You won't believe these hilarious sports bloopers!",
+      "category": "Elise Mertens tennis highlights and training",
+      "topic": "Elise Mertens' Secret Training Regimen",
+      "hook": "What sets Elise Mertens apart from the rest of the tennis world?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Explaining Emerging Tech: Decoding Polymarket and its Impact",
-      "topic": "The Impact of Polymarket on the Gaming Industry: A Deep Dive",
-      "hook": "How Polymarket is changing the gaming industry forever!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
-      "topic": "Nikola Jovi\u0107's Record-Breaking Game: A Statistical Analysis",
-      "hook": "Nikola Jovi\u0107's record-breaking game: the numbers don't lie!",
+      "category": "Strike support and worker rights awareness",
+      "topic": "The History of Labor Movements and Their Impact",
+      "hook": "The fight for worker rights is not new, but the struggle continues...",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "dramatic",
+      "target_duration": 48
     },
     {
-      "category": "Mexican Football Analysis: UANL vs Atlas Post-Game Discussion",
-      "topic": "The Tactical Masterclass Behind UANL's Win: A Coach's Perspective",
-      "hook": "The secret behind UANL's stunning win: a coach's insights!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Tips with Coco Gauff: Mastering the Court",
-      "topic": "Coco Gauff's Favorite Drills for Improving Your Serve",
-      "hook": "Want to serve like Coco Gauff? Try these drills!",
+      "category": "Regency-era fashion inspired by Bridgerton",
+      "topic": "Creating Your Own Regency Era Ball Gown",
+      "hook": "Transform into a Bridgerton belle with these simple yet stunning fashion tips!",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Behind-the-scenes of Finding Her Edge Season 2",
+      "topic": "The Making of the Show's Most Iconic Scenes",
+      "hook": "Go behind the camera and discover the magic of Finding Her Edge!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Comedy Sketches: Recreating Colin Jost's Funniest SNL Moments",
-      "topic": "Recreating Colin Jost's Funniest Sketches: A Challenge for Comedians",
-      "hook": "Can comedians recreate Colin Jost's funniest sketches?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Updates on the Kaiser Strike and its impact",
+      "topic": "The Human Cost of the Kaiser Strike",
+      "hook": "The strike is not just about numbers, it's about the people affected...",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "NFL analysis featuring Will Levis",
+      "topic": "Will Levis' Most Crucial Games of the Season",
+      "hook": "What do Will Levis' stats reveal about his chances of winning?",
+      "voice_style": "friendly",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Financial Insights: Rick Rieder's Market Predictions for 2026",
-      "topic": "Rick Rieder's Top Investment Picks for 2026: A Exclusive Interview",
-      "hook": "Rick Rieder's top investment picks for 2026: don't miss out!",
+      "category": "Bridgerton cast interviews and fashion",
+      "topic": "The Bridgerton Cast's Favorite Regency Era Trends",
+      "hook": "Which Bridgerton star is a secret fashion icon?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Gold investment tips and market trends",
+      "topic": "The Pros and Cons of Investing in Gold Coins",
+      "hook": "Is investing in gold coins a smart move or a rookie mistake?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 50
+      "target_duration": 48
     },
     {
-      "category": "Wildlife Comedy: Geese on SNL - Hilarious Animal Impressions",
-      "topic": "Geese Take Over a News Studio: Chaos Ensues!",
-      "hook": "What happens when geese take over a news studio?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "NFL and Boxing Predictions: Upcoming Fights and Games",
-      "topic": "The Biggest Boxing Match of the Year: Our Expert Predictions",
-      "hook": "The biggest boxing match of the year: who will win?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Current Event Debates: Discussing the Latest News and Trends",
-      "topic": "The Impact of Artificial Intelligence on Jobs: A Debate",
-      "hook": "Will AI replace human jobs? Let's debate!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Bloopers: Funny Moments from Recent Games",
-      "topic": "The Funniest Sports Bloopers of the Year: A Compilation",
-      "hook": "The funniest sports bloopers of the year: you won't believe them!",
+      "category": "Goa travel vlogs and cultural experiences",
+      "topic": "Discovering Goa's Best-Kept Secrets",
+      "hook": "Venture off the beaten path and uncover Goa's hidden gems!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Kristen Stewart's latest projects and interviews",
+      "topic": "Kristen Stewart's Take on Feminism in Hollywood",
+      "hook": "What does Kristen Stewart believe is the key to feminist progress in the film industry?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Explaining Emerging Tech: Decoding Polymarket and its Impact",
-      "topic": "The Potential Risks of Polymarket: A Balanced Analysis",
-      "hook": "The dark side of Polymarket: what are the risks?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights: Shakur Stevenson and Nikola Jovi\u0107's Latest Matches",
-      "topic": "Shakur Stevenson's Rise to Fame: A Timeline of His Career",
-      "hook": "From amateur to pro: Shakur Stevenson's journey to the top!",
+      "category": "Elise Mertens tennis highlights and training",
+      "topic": "Elise Mertens' Road to Recovery After Injury",
+      "hook": "How did Elise Mertens bounce back from a career-threatening injury?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Strike support and worker rights awareness",
+      "topic": "The Power of Solidarity in Labor Movements",
+      "hook": "What can we learn from the most successful labor movements in history?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Regency-era fashion inspired by Bridgerton",
+      "topic": "Creating Your Own Regency Era Accessories",
+      "hook": "Add a touch of Regency elegance to your wardrobe with these easy DIY accessories!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Behind-the-scenes of Finding Her Edge Season 2",
+      "topic": "The Casting Process for Finding Her Edge",
+      "hook": "What does it take to land a role in the hit series Finding Her Edge?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
@@ -253,24 +215,54 @@
       "music_mood": "inspirational"
     },
     {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
