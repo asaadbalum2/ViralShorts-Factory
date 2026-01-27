@@ -1,266 +1,258 @@
 {
-  "generated_at": "2026-01-26T05:55:12.952012",
-  "valid_until": "2026-01-26T23:59:12.952020",
+  "generated_at": "2026-01-27T05:51:19.590121",
+  "valid_until": "2026-01-27T23:59:19.590130",
   "categories": [
-    "Behind-the-scenes of Finding Her Edge Season 2",
-    "Updates on the Kaiser Strike and its impact",
-    "NFL analysis featuring Will Levis",
-    "Bridgerton cast interviews and fashion",
-    "Gold investment tips and market trends",
-    "Goa travel vlogs and cultural experiences",
-    "Kristen Stewart's latest projects and interviews",
-    "Elise Mertens tennis highlights and training",
-    "Strike support and worker rights awareness",
-    "Regency-era fashion inspired by Bridgerton",
-    "Travel guides to India featuring Goa",
-    "Sports news and analysis with a focus on the NFL",
-    "Entertainment news and celebrity interviews",
-    "Financial advice and investment strategies",
-    "Weekend getaways and vacation planning inspired by Goa"
+    "Wildlife Encounters",
+    "San Francisco News",
+    "Sports Highlights",
+    "Celebrity Gossip",
+    "True Crime Stories",
+    "Acting legends",
+    "US Politics",
+    "Snow Leopard Conservation",
+    "Mountain Lion Sightings",
+    " Tennis Match Analysis",
+    "Actors and Actresses",
+    "San Francisco Wildlife",
+    "US Open Updates",
+    "Criminal Investigations",
+    "Hollywood News"
   ],
   "concepts": [
     {
-      "category": "Behind-the-scenes of Finding Her Edge Season 2",
-      "topic": "Exclusive Interview with the Lead Actress",
-      "hook": "You won't believe what happened on set during the most intense scene!",
+      "category": "Wildlife Encounters",
+      "topic": "Rare Jaguar Sighting in the Amazon Rainforest",
+      "hook": "You won't believe what happened when I stumbled upon a jaguar in the wild!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Updates on the Kaiser Strike and its impact",
-      "topic": "The Hidden Consequences on Local Businesses",
-      "hook": "The strike is affecting more than just the workers, find out how!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "NFL analysis featuring Will Levis",
-      "topic": "Breaking Down Will Levis' Most Epic Plays",
-      "hook": "What makes Will Levis a game-changer on the field?",
+      "category": "San Francisco News",
+      "topic": "The Revival of San Francisco's Pier 39 Sea Lions",
+      "hook": "What's behind the sudden return of sea lions to Pier 39?",
       "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Bridgerton cast interviews and fashion",
-      "topic": "Regency Era Makeup Tips from the Show's Lead Actress",
-      "hook": "Get ready to shine like a Bridgerton diamond with these insider tips!",
-      "voice_style": "calm",
       "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Gold investment tips and market trends",
-      "topic": "The Top 3 Mistakes New Investors Make When Buying Gold",
-      "hook": "Don't lose your shirt in the gold market, avoid these rookie mistakes!",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Goa travel vlogs and cultural experiences",
-      "topic": "Exploring the Local Cuisine of Goa",
-      "hook": "Get ready for a flavor explosion in the tropical paradise of Goa!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Kristen Stewart's latest projects and interviews",
-      "topic": "Kristen Stewart's Most Challenging Role to Date",
-      "hook": "What drove Kristen Stewart to take on her most daring role yet?",
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Tennis Comebacks in History",
+      "hook": "From down to victorious, these tennis players will leave you speechless!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 42
+      "target_duration": 50
     },
     {
-      "category": "Elise Mertens tennis highlights and training",
-      "topic": "Elise Mertens' Secret Training Regimen",
-      "hook": "What sets Elise Mertens apart from the rest of the tennis world?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Celebrity Gossip",
+      "topic": "The Secret Romance Between Hollywood's Biggest Stars",
+      "hook": "Which A-list couple is hiding their relationship from the public eye?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Strike support and worker rights awareness",
-      "topic": "The History of Labor Movements and Their Impact",
-      "hook": "The fight for worker rights is not new, but the struggle continues...",
+      "category": "True Crime Stories",
+      "topic": "The Bizarre Case of the Zodiac Killer",
+      "hook": "Uncover the cryptic messages and unsolved mysteries of the Zodiac Killer's crimes",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Regency-era fashion inspired by Bridgerton",
-      "topic": "Creating Your Own Regency Era Ball Gown",
-      "hook": "Transform into a Bridgerton belle with these simple yet stunning fashion tips!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Behind-the-scenes of Finding Her Edge Season 2",
-      "topic": "The Making of the Show's Most Iconic Scenes",
-      "hook": "Go behind the camera and discover the magic of Finding Her Edge!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Acting legends",
+      "topic": "The Iconic Roles of Meryl Streep",
+      "hook": "From Miranda Priestly to Margaret Thatcher, Meryl Streep's transformations will amaze you",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Updates on the Kaiser Strike and its impact",
-      "topic": "The Human Cost of the Kaiser Strike",
-      "hook": "The strike is not just about numbers, it's about the people affected...",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 42
+      "category": "US Politics",
+      "topic": "The Impact of Social Media on Presidential Elections",
+      "hook": "How social media is revolutionizing the way we vote and interact with politicians",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "NFL analysis featuring Will Levis",
-      "topic": "Will Levis' Most Crucial Games of the Season",
-      "hook": "What do Will Levis' stats reveal about his chances of winning?",
+      "category": "Snow Leopard Conservation",
+      "topic": "The Elusive Snow Leopards of the Himalayas",
+      "hook": "Join me on a journey to track down the rare and majestic snow leopards",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Mountain Lion Sightings",
+      "topic": "The Rise of Mountain Lion Sightings in Urban Areas",
+      "hook": "What's behind the increasing number of mountain lion sightings in our cities?",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Bridgerton cast interviews and fashion",
-      "topic": "The Bridgerton Cast's Favorite Regency Era Trends",
-      "hook": "Which Bridgerton star is a secret fashion icon?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Gold investment tips and market trends",
-      "topic": "The Pros and Cons of Investing in Gold Coins",
-      "hook": "Is investing in gold coins a smart move or a rookie mistake?",
+      "category": "Tennis Match Analysis",
+      "topic": "The Art of Serving in Tennis: A Technical Breakdown",
+      "hook": "Unlock the secrets of the perfect tennis serve and take your game to the next level",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Goa travel vlogs and cultural experiences",
-      "topic": "Discovering Goa's Best-Kept Secrets",
-      "hook": "Venture off the beaten path and uncover Goa's hidden gems!",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 42
+      "target_duration": 50
     },
     {
-      "category": "Kristen Stewart's latest projects and interviews",
-      "topic": "Kristen Stewart's Take on Feminism in Hollywood",
-      "hook": "What does Kristen Stewart believe is the key to feminist progress in the film industry?",
+      "category": "Wildlife Encounters",
+      "topic": "Swimming with Sharks: An Adrenaline Junkie's Dream",
+      "hook": "Dive into the world of shark diving and experience the rush of a lifetime",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Elise Mertens tennis highlights and training",
-      "topic": "Elise Mertens' Road to Recovery After Injury",
-      "hook": "How did Elise Mertens bounce back from a career-threatening injury?",
+      "category": "San Francisco News",
+      "topic": "The Battle for Affordable Housing in San Francisco",
+      "hook": "What's being done to address the housing crisis in one of America's most expensive cities?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Strike support and worker rights awareness",
-      "topic": "The Power of Solidarity in Labor Movements",
-      "hook": "What can we learn from the most successful labor movements in history?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Regency-era fashion inspired by Bridgerton",
-      "topic": "Creating Your Own Regency Era Accessories",
-      "hook": "Add a touch of Regency elegance to your wardrobe with these easy DIY accessories!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Behind-the-scenes of Finding Her Edge Season 2",
-      "topic": "The Casting Process for Finding Her Edge",
-      "hook": "What does it take to land a role in the hit series Finding Her Edge?",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Upsets in Sports History",
+      "hook": "When underdogs become champions, and the crowd goes wild!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Celebrity Gossip",
+      "topic": "The Most Shocking Celebrity Breakups of the Decade",
+      "hook": "Which celebrity couples did not make it, and what went wrong?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The Chilling Case of the Golden State Killer",
+      "hook": "Unravel the mystery behind one of America's most notorious serial killers",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Acting legends",
+      "topic": "The Legacy of Denzel Washington",
+      "hook": "From Malcolm X to Roman J. Israel, Denzel Washington's iconic roles will inspire you",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "US Politics",
+      "topic": "The Role of Social Media in Shaping Public Opinion",
+      "hook": "How social media is changing the way we consume news and engage with politics",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Snow Leopard Conservation",
+      "topic": "The Efforts to Protect Snow Leopard Habitats",
+      "hook": "Join the fight to preserve the majestic snow leopard's habitat and ensure its survival",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Mountain Lion Sightings",
+      "topic": "The Increasing Threat of Mountain Lion Attacks",
+      "hook": "What you need to know to stay safe in mountain lion country",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Match Analysis",
+      "topic": "The Strategy Behind a Winning Tennis Serve",
+      "hook": "Unlock the secrets of a powerful tennis serve and outmaneuver your opponents",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "chill"
     }
