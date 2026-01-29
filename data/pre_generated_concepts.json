@@ -1,268 +1,276 @@
 {
-  "generated_at": "2026-01-28T05:52:40.655707",
-  "valid_until": "2026-01-28T23:59:40.655715",
+  "generated_at": "2026-01-29T06:05:33.871580",
+  "valid_until": "2026-01-29T23:59:33.871587",
   "categories": [
-    "Entertainment News: Celebrity Updates",
-    "Weather Updates: Sacramento Forecast",
-    "K-Drama Analysis: Singles Inferno",
-    "Sports Highlights: Kris Dunn",
-    "Equipment Rentals: Tips with United Rentals",
-    "TV Show Recaps: Jacob Elordi's Latest Roles",
-    "International News: India News Update",
-    "Late Night Talk Shows: Stephen Colbert Highlights",
-    "Music Trends: Damiano David's Latest Hits",
-    "Reality TV: Singles Inferno Cast Reactions",
-    "Seasonal Weather: Preparing for El Nino",
-    "Pop Culture: Celebrity Gossip and Rumors",
-    "News Comedy: Funny Takes on Current Events",
-    "Travel Vlogs: Exploring India's Hidden Gems",
-    "Motivational Content: Overcoming Challenges like Kris Dunn"
+    "Gaming Highlights: Nioh 3 Gameplay",
+    "Crime News: Bryan Kohberger Updates",
+    "Sports Analysis: CO State vs San Diego St",
+    "NBAs Biggest Trades",
+    "Movie Breakdowns: Stephanie Hsu Interviews",
+    "Music Deep Cuts:Hidden Gems",
+    "Author Insights: Chuck Klosterman Book Reviews",
+    "Actor Takeovers: Luke Evans Q&A",
+    "Sports Debates: NBA Trade Reactions",
+    "Trending TV and Movie Recaps",
+    "Current Event Explainers",
+    "Esports: Nioh 3 Tournaments",
+    "Pop Culture News: Celebrity Interviews",
+    "Sports Predictions: CO State vs San Diego St",
+    "Viral Challenges: Gaming and Sports"
   ],
   "concepts": [
     {
-      "category": "Entertainment News: Celebrity Updates",
-      "topic": "Jennifer Lawrence's Latest Movie Role",
-      "hook": "You won't believe which iconic character Jennifer Lawrence is set to play next!",
+      "category": "Gaming Highlights: Nioh 3 Gameplay",
+      "topic": "Nioh 3's Most Challenging Boss Fight",
+      "hook": "You won't believe the insane trick to beating Nioh 3's toughest boss!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Weather Updates: Sacramento Forecast",
-      "topic": "Sacramento's Record-Breaking Heatwave",
-      "hook": "Sacramento is sizzling! Find out how to stay cool during the hottest week of the year",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "K-Drama Analysis: Singles Inferno",
-      "topic": "Singles Inferno's Most Shocking Plot Twist",
-      "hook": "The secret's out! What really happened on Singles Inferno's most dramatic night",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Highlights: Kris Dunn",
-      "topic": "Kris Dunn's Career-High Scoring Game",
-      "hook": "Kris Dunn is on fire! Relive his record-breaking night on the court",
+      "category": "Crime News: Bryan Kohberger Updates",
+      "topic": "New Evidence in the Bryan Kohberger Case",
+      "hook": "Breaking news: shocking new details emerge in the Bryan Kohberger investigation!",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Equipment Rentals: Tips with United Rentals",
-      "topic": "The Ultimate Guide to Renting Heavy Machinery",
-      "hook": "Don't get stuck in the mud! Learn how to choose the right heavy machinery for your next project",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "TV Show Recaps: Jacob Elordi's Latest Roles",
-      "topic": "Jacob Elordi's Surprising New Character",
-      "hook": "From Heartbreak High to Hollywood, Jacob Elordi's latest role will leave you speechless",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "International News: India News Update",
-      "topic": "India's Groundbreaking New Space Mission",
-      "hook": "Blast off! India is taking the world by storm with its latest space exploration mission",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Late Night Talk Shows: Stephen Colbert Highlights",
-      "topic": "Stephen Colbert's Hilarious Interview with Emma Stone",
-      "hook": "Laugh out loud with Stephen Colbert and Emma Stone's sidesplitting conversation",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Trends: Damiano David's Latest Hits",
-      "topic": "Damiano David's New Album: What to Expect",
-      "hook": "Get ready to rock! Damiano David's new album is coming soon, and we have the scoop",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Reality TV: Singles Inferno Cast Reactions",
-      "topic": "The Singles Inferno Cast's Most Emotional Moments",
-      "hook": "Tears, tantrums, and true love! Relive the most emotional moments from Singles Inferno",
-      "voice_style": "dramatic",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Entertainment News: Celebrity Updates",
-      "topic": "The Secret Behind Taylor Swift's Songwriting Process",
-      "hook": "What inspires Taylor Swift's hit songs? We've got the inside scoop",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Weather Updates: Sacramento Forecast",
-      "topic": "Sacramento's Wildfire Season: How to Stay Safe",
-      "hook": "Stay informed, stay safe! What you need to know about Sacramento's wildfire season",
-      "voice_style": "authoritative",
-      "music_mood": "serious",
+      "category": "Sports Analysis: CO State vs San Diego St",
+      "topic": "CO State's Comeback Victory Over San Diego St",
+      "hook": "How did CO State pull off the impossible comeback against San Diego St?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "NBAs Biggest Trades",
+      "topic": "The Impact of the Latest NBA Trade Deadline",
+      "hook": "Which teams won and lost in the latest NBA trade frenzy?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "K-Drama Analysis: Singles Inferno",
-      "topic": "Singles Inferno's Hidden Meanings and Symbolism",
-      "hook": "What's really going on in Singles Inferno? Uncover the hidden meanings behind the show",
+      "category": "Movie Breakdowns: Stephanie Hsu Interviews",
+      "topic": "Stephanie Hsu on Her Breakout Role in Everything Everywhere All at Once",
+      "hook": "Stephanie Hsu reveals the secret to her iconic performance in Everything Everywhere All at Once!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Deep Cuts: Hidden Gems",
+      "topic": "Uncovering the Best-Kept Secrets in 80s Music",
+      "hook": "Get ready to discover the most underrated 80s tracks you've never heard before!",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Kris Dunn",
-      "topic": "Kris Dunn's Incredible Comeback Story",
-      "hook": "From injury to triumph! Kris Dunn's inspiring journey back to the top",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Author Insights: Chuck Klosterman Book Reviews",
+      "topic": "Chuck Klosterman's Most Underrated Works",
+      "hook": "Dive into the hidden gems of Chuck Klosterman's literary career!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Equipment Rentals: Tips with United Rentals",
-      "topic": "The Benefits of Renting vs Buying Equipment",
-      "hook": "Save time, save money! Why renting equipment might be the smartest decision for your business",
+      "category": "Actor Takeovers: Luke Evans Q&A",
+      "topic": "Luke Evans on His Favorite Roles and Career Highlights",
+      "hook": "Luke Evans takes over our channel to answer your burning questions!",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Debates: NBA Trade Reactions",
+      "topic": "The Most Controversial NBA Trades of the Season",
+      "hook": "Which NBA trades have sparked the most debate among fans and experts?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Trending TV and Movie Recaps",
+      "topic": "The Biggest Plot Twists in The Last of Us",
+      "hook": "You won't believe the shocking plot twists in The Last of Us that changed everything!",
+      "voice_style": "energetic",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Highlights: Nioh 3 Gameplay",
+      "topic": "Nioh 3's Most Epic Sword Fights",
+      "hook": "Witness the most epic sword fights in Nioh 3 that will leave you breathless!",
+      "voice_style": "calm",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Crime News: Bryan Kohberger Updates",
+      "topic": "The Latest Developments in the Bryan Kohberger Trial",
+      "hook": "Breaking news: what's next for the Bryan Kohberger trial?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Analysis: CO State vs San Diego St",
+      "topic": "CO State's Winning Strategy Against San Diego St",
+      "hook": "What was the key to CO State's victory over San Diego St?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "NBAs Biggest Trades",
+      "topic": "The Impact of the Kevin Durant Trade",
+      "hook": "How will the Kevin Durant trade shake up the NBA?",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "TV Show Recaps: Jacob Elordi's Latest Roles",
-      "topic": "Jacob Elordi's Surprising Career Choices",
-      "hook": "What's next for Jacob Elordi? We dive into his unexpected career moves",
+      "category": "Movie Breakdowns: Stephanie Hsu Interviews",
+      "topic": "Stephanie Hsu on Her Favorite Movie Roles",
+      "hook": "Stephanie Hsu reveals her favorite movie roles and why she chose them!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "International News: India News Update",
-      "topic": "India's Innovative Solutions to Environmental Issues",
-      "hook": "India is leading the way in sustainability! Discover the country's groundbreaking eco-friendly initiatives",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Late Night Talk Shows: Stephen Colbert Highlights",
-      "topic": "Stephen Colbert's Funniest Monologues",
-      "hook": "Laughter is the best medicine! Stephen Colbert's most hilarious monologues to brighten your day",
-      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Music Trends: Damiano David's Latest Hits",
-      "topic": "Damiano David's Musical Influences and Inspirations",
-      "hook": "What drives Damiano David's creative process? We explore his musical influences and inspirations",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
+      "category": "Music Deep Cuts: Hidden Gems",
+      "topic": "The Best Indie Folk Bands You've Never Heard Of",
+      "hook": "Discover the hidden gems of the indie folk music scene!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Reality TV: Singles Inferno Cast Reactions",
-      "topic": "The Singles Inferno Cast's Post-Show Transformations",
-      "hook": "What happened after the cameras stopped rolling? The Singles Inferno cast's shocking transformations",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
+      "category": "Author Insights: Chuck Klosterman Book Reviews",
+      "topic": "Chuck Klosterman's Take on Pop Culture",
+      "hook": "Chuck Klosterman's unique perspective on pop culture will blow your mind!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Actor Takeovers: Luke Evans Q&A",
+      "topic": "Luke Evans on His Favorite Movie Roles",
+      "hook": "Luke Evans takes you behind the scenes of his most iconic movie roles!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Entertainment News: Celebrity Updates",
-      "topic": "The Most Anticipated Celebrity Comebacks of the Year",
-      "hook": "The wait is over! Which celebrities are making a comeback this year and what can we expect",
+      "category": "Sports Debates: NBA Trade Reactions",
+      "topic": "The Most Surprising NBA Trades of the Season",
+      "hook": "Which NBA trades have left fans and experts stunned?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Trending TV and Movie Recaps",
+      "topic": "The Biggest Plot Reveals in House of the Dragon",
+      "hook": "You won't believe the shocking plot reveals in House of the Dragon that changed everything!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Highlights: Nioh 3 Gameplay",
+      "topic": "Nioh 3's Most Challenging Levels",
+      "hook": "Can you handle the most challenging levels in Nioh 3?",
+      "voice_style": "calm",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Crime News: Bryan Kohberger Updates",
+      "topic": "The Psychological Analysis of Bryan Kohberger",
+      "hook": "What does the psychological analysis of Bryan Kohberger reveal about his motives?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "rate": "+8%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
