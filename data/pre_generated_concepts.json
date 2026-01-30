@@ -1,276 +1,260 @@
 {
-  "generated_at": "2026-01-29T06:05:33.871580",
-  "valid_until": "2026-01-29T23:59:33.871587",
+  "generated_at": "2026-01-30T06:07:04.275711",
+  "valid_until": "2026-01-30T23:59:04.275718",
   "categories": [
-    "Gaming Highlights: Nioh 3 Gameplay",
-    "Crime News: Bryan Kohberger Updates",
-    "Sports Analysis: CO State vs San Diego St",
-    "NBAs Biggest Trades",
-    "Movie Breakdowns: Stephanie Hsu Interviews",
-    "Music Deep Cuts:Hidden Gems",
-    "Author Insights: Chuck Klosterman Book Reviews",
-    "Actor Takeovers: Luke Evans Q&A",
-    "Sports Debates: NBA Trade Reactions",
-    "Trending TV and Movie Recaps",
-    "Current Event Explainers",
-    "Esports: Nioh 3 Tournaments",
-    "Pop Culture News: Celebrity Interviews",
-    "Sports Predictions: CO State vs San Diego St",
-    "Viral Challenges: Gaming and Sports"
+    "NBA Analysis",
+    "Politician Reactions",
+    "Music Cover Challenges",
+    "Sports Highlights",
+    "Mythical Creature Art",
+    "Comedian Impressions",
+    "Tennis Match Previews",
+    "Senator Interviews",
+    "NFL Player Vlogs",
+    "Song Association Games",
+    "Basketball Legend Tributes",
+    "Division in Society Discussions",
+    "Actor Behind-the-Scenes",
+    "Sea Monster Documentaries",
+    "Athlete Q&A Sessions"
   ],
   "concepts": [
     {
-      "category": "Gaming Highlights: Nioh 3 Gameplay",
-      "topic": "Nioh 3's Most Challenging Boss Fight",
-      "hook": "You won't believe the insane trick to beating Nioh 3's toughest boss!",
+      "category": "NBA Analysis",
+      "topic": "Stephen Curry's Unstoppable 3-Pointers",
+      "hook": "What makes Curry's shots nearly unguardable?",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Crime News: Bryan Kohberger Updates",
-      "topic": "New Evidence in the Bryan Kohberger Case",
-      "hook": "Breaking news: shocking new details emerge in the Bryan Kohberger investigation!",
+      "category": "Politician Reactions",
+      "topic": "Biden's Most Surprising Debate Moments",
+      "hook": "You won't believe what Biden said in these 5 moments!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Sports Analysis: CO State vs San Diego St",
-      "topic": "CO State's Comeback Victory Over San Diego St",
-      "hook": "How did CO State pull off the impossible comeback against San Diego St?",
+      "category": "Music Cover Challenges",
+      "topic": "Can I Sing Like Billie Eilish?",
+      "hook": "I tried to cover Billie Eilish's toughest song, and here's what happened...",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "NBAs Biggest Trades",
-      "topic": "The Impact of the Latest NBA Trade Deadline",
-      "hook": "Which teams won and lost in the latest NBA trade frenzy?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Breakdowns: Stephanie Hsu Interviews",
-      "topic": "Stephanie Hsu on Her Breakout Role in Everything Everywhere All at Once",
-      "hook": "Stephanie Hsu reveals the secret to her iconic performance in Everything Everywhere All at Once!",
-      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Deep Cuts: Hidden Gems",
-      "topic": "Uncovering the Best-Kept Secrets in 80s Music",
-      "hook": "Get ready to discover the most underrated 80s tracks you've never heard before!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Author Insights: Chuck Klosterman Book Reviews",
-      "topic": "Chuck Klosterman's Most Underrated Works",
-      "hook": "Dive into the hidden gems of Chuck Klosterman's literary career!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Actor Takeovers: Luke Evans Q&A",
-      "topic": "Luke Evans on His Favorite Roles and Career Highlights",
-      "hook": "Luke Evans takes over our channel to answer your burning questions!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Sports Debates: NBA Trade Reactions",
-      "topic": "The Most Controversial NBA Trades of the Season",
-      "hook": "Which NBA trades have sparked the most debate among fans and experts?",
+      "category": "Sports Highlights",
+      "topic": "LeBron James' Most Jaw-Dropping Dunk",
+      "hook": "The dunk that left the crowd speechless!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Trending TV and Movie Recaps",
-      "topic": "The Biggest Plot Twists in The Last of Us",
-      "hook": "You won't believe the shocking plot twists in The Last of Us that changed everything!",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming Highlights: Nioh 3 Gameplay",
-      "topic": "Nioh 3's Most Epic Sword Fights",
-      "hook": "Witness the most epic sword fights in Nioh 3 that will leave you breathless!",
-      "voice_style": "calm",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Crime News: Bryan Kohberger Updates",
-      "topic": "The Latest Developments in the Bryan Kohberger Trial",
-      "hook": "Breaking news: what's next for the Bryan Kohberger trial?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Analysis: CO State vs San Diego St",
-      "topic": "CO State's Winning Strategy Against San Diego St",
-      "hook": "What was the key to CO State's victory over San Diego St?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "NBAs Biggest Trades",
-      "topic": "The Impact of the Kevin Durant Trade",
-      "hook": "How will the Kevin Durant trade shake up the NBA?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Breakdowns: Stephanie Hsu Interviews",
-      "topic": "Stephanie Hsu on Her Favorite Movie Roles",
-      "hook": "Stephanie Hsu reveals her favorite movie roles and why she chose them!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Deep Cuts: Hidden Gems",
-      "topic": "The Best Indie Folk Bands You've Never Heard Of",
-      "hook": "Discover the hidden gems of the indie folk music scene!",
+      "category": "Mythical Creature Art",
+      "topic": "Drawing a Dragon in 5 Minutes",
+      "hook": "Can I create a fire-breathing dragon in under 5 minutes?",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Author Insights: Chuck Klosterman Book Reviews",
-      "topic": "Chuck Klosterman's Take on Pop Culture",
-      "hook": "Chuck Klosterman's unique perspective on pop culture will blow your mind!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Comedian Impressions",
+      "topic": "Kevin Hart's Funniest Impressions",
+      "hook": "I tried to impersonate Kevin Hart, and it was hilarious!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Actor Takeovers: Luke Evans Q&A",
-      "topic": "Luke Evans on His Favorite Movie Roles",
-      "hook": "Luke Evans takes you behind the scenes of his most iconic movie roles!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Tennis Match Previews",
+      "topic": "The Rivalry Between Federer and Nadal",
+      "hook": "The greatest tennis rivalry of all time, explained!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Senator Interviews",
+      "topic": "What Senators Really Think About Climate Change",
+      "hook": "I asked senators about climate change, and their answers will surprise you!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Sports Debates: NBA Trade Reactions",
-      "topic": "The Most Surprising NBA Trades of the Season",
-      "hook": "Which NBA trades have left fans and experts stunned?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "NFL Player Vlogs",
+      "topic": "A Day in the Life of Tom Brady",
+      "hook": "What does a typical day look like for the NFL's greatest quarterback?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Trending TV and Movie Recaps",
-      "topic": "The Biggest Plot Reveals in House of the Dragon",
-      "hook": "You won't believe the shocking plot reveals in House of the Dragon that changed everything!",
+      "category": "Song Association Games",
+      "topic": "Can I Guess the Song in 5 Seconds?",
+      "hook": "I tried to guess the song in just 5 seconds, and you won't believe the results!",
       "voice_style": "energetic",
-      "music_mood": "dramatic",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Gaming Highlights: Nioh 3 Gameplay",
-      "topic": "Nioh 3's Most Challenging Levels",
-      "hook": "Can you handle the most challenging levels in Nioh 3?",
-      "voice_style": "calm",
+      "category": "NBA Analysis",
+      "topic": "The Rise of Luka Doncic",
+      "hook": "What makes Luka Doncic the most dominant player in the NBA?",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Crime News: Bryan Kohberger Updates",
-      "topic": "The Psychological Analysis of Bryan Kohberger",
-      "hook": "What does the psychological analysis of Bryan Kohberger reveal about his motives?",
+      "category": "Politician Reactions",
+      "topic": "Trump's Most Controversial Statements",
+      "hook": "The 5 most shocking things Trump has ever said!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Music Cover Challenges",
+      "topic": "Singing Like Ariana Grande",
+      "hook": "I tried to hit Ariana Grande's highest notes, and it was a challenge!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Greatest Super Bowl Finishes",
+      "hook": "The most unforgettable Super Bowl finishes in history!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Mythical Creature Art",
+      "topic": "Drawing a Mermaid in Watercolor",
+      "hook": "Can I create a stunning mermaid using only watercolors?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedian Impressions",
+      "topic": "Eddie Murphy's Most Iconic Characters",
+      "hook": "I tried to impersonate Eddie Murphy's funniest characters, and it was hilarious!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Match Previews",
+      "topic": "The Rivalry Between Serena and Venus Williams",
+      "hook": "The greatest sisterly rivalry in tennis history, explained!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Senator Interviews",
+      "topic": "What Senators Think About Gun Control",
+      "hook": "I asked senators about gun control, and their answers will surprise you!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "NFL Player Vlogs",
+      "topic": "A Day in the Life of Patrick Mahomes",
+      "hook": "What does a typical day look like for the NFL's most exciting quarterback?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Song Association Games",
+      "topic": "Can I Guess the Song from Just the Lyrics?",
+      "hook": "I tried to guess the song from just one line of lyrics, and you won't believe the results!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
