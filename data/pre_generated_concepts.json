@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-01-30T06:07:04.275711",
-  "valid_until": "2026-01-30T23:59:04.275718",
+  "generated_at": "2026-01-31T06:00:24.484546",
+  "valid_until": "2026-01-31T23:59:24.484555",
   "categories": [
-    "NBA Analysis",
-    "Politician Reactions",
-    "Music Cover Challenges",
+    "Sports Updates",
+    "Tax Reform Explainers",
+    "Movie Reviews",
+    "Comedy Skits",
+    "Celebrity News",
+    "Traffic and Transportation",
+    "Current Events",
+    "Movie Trailers",
+    "Sports Injuries",
+    "Seasonal Traffic Tips",
+    "Tax Season Prep",
+    "New Movie Releases",
+    "Social Media Challenges",
     "Sports Highlights",
-    "Mythical Creature Art",
-    "Comedian Impressions",
-    "Tennis Match Previews",
-    "Senator Interviews",
-    "NFL Player Vlogs",
-    "Song Association Games",
-    "Basketball Legend Tributes",
-    "Division in Society Discussions",
-    "Actor Behind-the-Scenes",
-    "Sea Monster Documentaries",
-    "Athlete Q&A Sessions"
+    "Entertainment News"
   ],
   "concepts": [
     {
-      "category": "NBA Analysis",
-      "topic": "Stephen Curry's Unstoppable 3-Pointers",
-      "hook": "What makes Curry's shots nearly unguardable?",
+      "category": "Sports Updates",
+      "topic": "LeBron James' Record-Breaking Season",
+      "hook": "Is LeBron James the greatest basketball player of all time?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Politician Reactions",
-      "topic": "Biden's Most Surprising Debate Moments",
-      "hook": "You won't believe what Biden said in these 5 moments!",
+      "category": "Tax Reform Explainers",
+      "topic": "How the New Tax Code Affects Freelancers",
+      "hook": "You won't believe how the new tax code is impacting freelancers' wallets!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Music Cover Challenges",
-      "topic": "Can I Sing Like Billie Eilish?",
-      "hook": "I tried to cover Billie Eilish's toughest song, and here's what happened...",
+      "category": "Movie Reviews",
+      "topic": "Review of the Latest Marvel Movie",
+      "hook": "The latest Marvel movie is out, but is it worth the hype?",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
+      "music_mood": "dramatic",
+      "target_duration": 42
     },
     {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Most Jaw-Dropping Dunk",
-      "hook": "The dunk that left the crowd speechless!",
+      "category": "Comedy Skits",
+      "topic": "When You Try to Cook a New Recipe",
+      "hook": "Have you ever tried to cook a new recipe and ended up with a disaster?",
+      "voice_style": "comedy",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Latest Celebrity Couple Breakup",
+      "hook": "Which celebrity couple just broke up and why?",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Mythical Creature Art",
-      "topic": "Drawing a Dragon in 5 Minutes",
-      "hook": "Can I create a fire-breathing dragon in under 5 minutes?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedian Impressions",
-      "topic": "Kevin Hart's Funniest Impressions",
-      "hook": "I tried to impersonate Kevin Hart, and it was hilarious!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Tennis Match Previews",
-      "topic": "The Rivalry Between Federer and Nadal",
-      "hook": "The greatest tennis rivalry of all time, explained!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Senator Interviews",
-      "topic": "What Senators Really Think About Climate Change",
-      "hook": "I asked senators about climate change, and their answers will surprise you!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "NFL Player Vlogs",
-      "topic": "A Day in the Life of Tom Brady",
-      "hook": "What does a typical day look like for the NFL's greatest quarterback?",
+      "category": "Traffic and Transportation",
+      "topic": "The Best Ridesharing Apps for Your Commute",
+      "hook": "Tired of being stuck in traffic? We've got the solution!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Song Association Games",
-      "topic": "Can I Guess the Song in 5 Seconds?",
-      "hook": "I tried to guess the song in just 5 seconds, and you won't believe the results!",
+      "category": "Current Events",
+      "topic": "The Impact of Social Media on Society",
+      "hook": "Is social media controlling our lives?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Movie Trailers",
+      "topic": "The New Trailer for the Upcoming Sci-Fi Movie",
+      "hook": "Get ready for the most epic sci-fi movie of the year!",
       "voice_style": "energetic",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "NBA Analysis",
-      "topic": "The Rise of Luka Doncic",
-      "hook": "What makes Luka Doncic the most dominant player in the NBA?",
+      "category": "Sports Injuries",
+      "topic": "The Most Common Injuries in Football",
+      "hook": "Which football players are most prone to injury and why?",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Politician Reactions",
-      "topic": "Trump's Most Controversial Statements",
-      "hook": "The 5 most shocking things Trump has ever said!",
+      "category": "Seasonal Traffic Tips",
+      "topic": "How to Navigate Summer Road Closures",
+      "hook": "Summer is here, but so are the road closures!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Sports Updates",
+      "topic": "The Rise of Women's Soccer",
+      "hook": "Can the US women's soccer team win the World Cup again?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Tax Reform Explainers",
+      "topic": "How to Take Advantage of Tax Credits for Homeowners",
+      "hook": "Are you missing out on thousands of dollars in tax credits?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Movie Reviews",
+      "topic": "The Best Movies of the Year So Far",
+      "hook": "What are the must-see movies of the year?",
+      "voice_style": "friendly",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Comedy Skits",
+      "topic": "When You're Running Late for Work",
+      "hook": "We've all been there - running late for work and everything that can go wrong does!",
+      "voice_style": "comedy",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Latest Celebrity Fashion Trends",
+      "hook": "Which celebrities are rocking the latest fashion trends?",
       "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Music Cover Challenges",
-      "topic": "Singing Like Ariana Grande",
-      "hook": "I tried to hit Ariana Grande's highest notes, and it was a challenge!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Super Bowl Finishes",
-      "hook": "The most unforgettable Super Bowl finishes in history!",
-      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Mythical Creature Art",
-      "topic": "Drawing a Mermaid in Watercolor",
-      "hook": "Can I create a stunning mermaid using only watercolors?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedian Impressions",
-      "topic": "Eddie Murphy's Most Iconic Characters",
-      "hook": "I tried to impersonate Eddie Murphy's funniest characters, and it was hilarious!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Match Previews",
-      "topic": "The Rivalry Between Serena and Venus Williams",
-      "hook": "The greatest sisterly rivalry in tennis history, explained!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Senator Interviews",
-      "topic": "What Senators Think About Gun Control",
-      "hook": "I asked senators about gun control, and their answers will surprise you!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "NFL Player Vlogs",
-      "topic": "A Day in the Life of Patrick Mahomes",
-      "hook": "What does a typical day look like for the NFL's most exciting quarterback?",
+      "category": "Traffic and Transportation",
+      "topic": "The Benefits of Using Public Transportation",
+      "hook": "Ditch your car and start using public transportation - your wallet will thank you!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Song Association Games",
-      "topic": "Can I Guess the Song from Just the Lyrics?",
-      "hook": "I tried to guess the song from just one line of lyrics, and you won't believe the results!",
+      "category": "Current Events",
+      "topic": "The Impact of Climate Change on Our Planet",
+      "hook": "Is it too late to save our planet from climate change?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Movie Trailers",
+      "topic": "The New Trailer for the Upcoming Action Movie",
+      "hook": "Get ready for the most action-packed movie of the year!",
       "voice_style": "energetic",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Sports Injuries",
+      "topic": "The Most Common Injuries in Basketball",
+      "hook": "Which basketball players are most prone to injury and why?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Traffic Tips",
+      "topic": "How to Prepare Your Car for Winter Driving",
+      "hook": "Winter is coming - is your car ready?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
