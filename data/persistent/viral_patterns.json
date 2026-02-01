@@ -1,87 +1,87 @@
 {
   "title_patterns": [
-    "{number} {topic} You Won't Believe",
-    "The {topic} Secret They Don't Want You To Know",
-    "{topic} Hacks To {desirable outcome}",
-    "What {topic} Really Means For {audience}",
-    "The {number} Biggest {topic} Mistakes",
-    "{topic} vs {contrasting topic}: Which Is Better?",
-    "The Ultimate {topic} Guide For {audience}",
-    "Why {topic} Is {adjective} Than You Think",
-    "The Top {number} {topic} Trends To Watch",
-    "{topic} Exposed: The Truth You Need To Know"
+    "{number} Secrets {topic} Doesn't Want You to Know",
+    "The {topic} Hack That Will Change Your Life",
+    "{topic} vs {opponent}: Which is Better?",
+    "What {topic} Can Teach You About {life_lesson}",
+    "The Top {number} {topic} Mistakes You're Making",
+    "Why {topic} is the Key to {desirable_outcome}",
+    "The {topic} Revolution: How to {achieve_something}",
+    "The Dark Side of {topic}: {shocking_truth}",
+    "How to {achieve_something} with {topic} in {time_frame}",
+    "The Ultimate {topic} Guide: {promise}"
   ],
   "hook_patterns": [
     "You won't believe what happens when...",
-    "What if I told you {surprising fact}?",
-    "The one thing {expert} got wrong about {topic}",
-    "I tried {topic} for {time period} and here's what happened",
-    "The {number} second rule that changes everything",
-    "What {influencer} doesn't want you to know about {topic}",
-    "The shocking truth about {common myth}",
-    "I asked {number} people about {topic} and the results were surprising",
-    "The {adjective} way to {achieve outcome} that nobody tells you",
-    "If you {action}, you'll be surprised at what happens next"
+    "What if I told you {shocking_truth}?",
+    "I tried {topic} for {time_frame} and here's what happened",
+    "The #1 thing {authority} doesn't want you to know",
+    "I spent {amount} on {topic} and it was a huge mistake",
+    "The secret to {desirable_outcome} is {surprising_answer}",
+    "If you {action}, you'll { consequence}",
+    "What {famous_person} can teach you about {topic}",
+    "I discovered a {topic} hack that will {achieve_something}",
+    "The one {topic} mistake that's costing you {loss}"
   ],
   "engagement_baits": [
-    "Let me know in the comments what you think about {topic}",
-    "Can you guess what happens next in this {topic} scenario?",
-    "Share your favorite {topic} tip in the comments below",
-    "What's the most {adjective} thing that's happened to you related to {topic}?",
-    "Do you agree or disagree with this {topic} statement?",
-    "Tag a friend who needs to see this {topic} video",
-    "If you've tried {topic}, share your experience in the comments",
-    "What's the one thing you wish you knew about {topic} before trying it?"
+    "What's your favorite {topic} and why?",
+    "Can you guess what happens next in this {topic} story?",
+    "Share your worst {topic} experience in the comments",
+    "Do you think {statement} is true or false?",
+    "If you could {action}, what would you do?",
+    "What's the best {topic} advice you've ever received?",
+    "Can you relate to this {topic} struggle?",
+    "What's one thing you wish you knew about {topic} before?"
   ],
   "psychological_triggers": [
     "curiosity",
     "fomo",
     "scarcity",
-    "socialproof",
+    "social_proof",
     "urgency",
-    "exclusive",
-    "guilt",
-    "nostalgia"
+    "authority",
+    "reciprocity",
+    "consistency"
   ],
   "scroll_stop_openers": [
-    "I just discovered a {topic} secret that will change everything",
-    "You won't believe what {influencer} just said about {topic}",
-    "The {number} second challenge that's sweeping the nation",
-    "What if I told you there's a {topic} hack that actually works?",
-    "I tried {topic} for {time period} and the results were astonishing",
-    "The one {topic} tip that will make you {desirable outcome}",
-    "The {adjective} truth about {common myth} that will shock you",
-    "I asked {number} experts about {topic} and here's what they said"
+    "I just discovered a shocking truth about {topic}",
+    "You're probably doing {topic} all wrong, here's why",
+    "The #1 thing you need to know about {topic} is",
+    "What if I told you there's a {topic} hack that",
+    "I spent years studying {topic} and here's what I found",
+    "If you're struggling with {topic}, you're not alone",
+    "The secret to {desirable_outcome} is hiding in plain sight",
+    "I'm about to share a {topic} secret that will change everything"
   ],
   "proven_categories": [
     "psychology",
     "money",
     "relationships",
     "health",
-    "productivity",
     "technology",
+    "productivity",
     "marketing",
-    "selfimprovement"
+    "self_improvement"
   ],
   "retention_tricks": [
-    "Start with a hook, then provide context",
-    "Use storytelling to make the content more relatable",
-    "Ask questions to keep the viewer engaged",
-    "Provide surprises or unexpected twists",
-    "Use humor to make the content more enjoyable",
-    "Make the content interactive, such as with quizzes or challenges"
+    "Start with a story",
+    "Use humor to break the ice",
+    "Make a bold claim or promise",
+    "Use visuals to illustrate a point",
+    "Create a sense of anticipation",
+    "Ask a question and encourage discussion"
   ],
   "cta_formulas": [
-    "Sign up now for {free resource} and get {desirable outcome}",
-    "Get instant access to {exclusive content} by clicking the link below",
-    "Join our {community} to connect with like-minded individuals",
-    "Download your free {guide} and start {achieving outcome} today",
-    "Take the {challenge} and see how you can {improve}",
-    "Click the link below to get {limited time offer} before it's gone"
+    "Get instant access to {resource} now",
+    "Download your free {gift} today",
+    "Join the {community} and start {achieving_something}",
+    "Take the {challenge} and transform your {life_area}",
+    "Get {result} in just {time_frame} with our {system}",
+    "Unlock {exclusive_content} and take your {skill} to the next level"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-01-25T06:22:39.870243",
+  "last_ai_update": "2026-02-01T06:40:46.535803",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-01-25T06:22:39.870250"
+  "last_saved": "2026-02-01T06:40:46.535813"
 }
