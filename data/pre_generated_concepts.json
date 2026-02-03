@@ -1,276 +1,268 @@
 {
-  "generated_at": "2026-02-02T06:38:42.851422",
-  "valid_until": "2026-02-02T23:59:42.851429",
+  "generated_at": "2026-02-03T06:10:58.946942",
+  "valid_until": "2026-02-03T23:59:58.946948",
   "categories": [
-    "Bitcoin and Crypto Market Updates",
-    "Costa Rican Election Analysis",
-    "Jack Ryan Fan Theories",
-    "Stock Market News and Futures",
-    "Vegas Golden Knights Game Highlights",
-    "Hayley Williams Music Mashups",
-    "True Crime Stories like Lucy Letby",
-    "Personal Injury Attorney FAQs",
-    "Financial Crisis Survival Tips",
-    "Election Day Reactions",
-    "Stock Market Crash Memes",
-    "Bitcoin Investment Advice",
-    "Costa Rica Travel Vlogs",
-    "Paramore Music Covers",
-    "Lawyer Reacts to Current Events"
+    "TV Show Recaps",
+    "Explosive Stunt Videos",
+    "Musician Challenges",
+    "Snow Day Vlogs",
+    "Basketball Highlights",
+    "Film Director Tributes",
+    "Science Explainers",
+    "Winter Weather Updates",
+    "Sports Analysis",
+    "Comedy Parodies",
+    "Gaming Walkthroughs",
+    "Influencer Q&A",
+    "Movie Theories",
+    "Sports Tournament Highlights",
+    "Weather Forecast Challenges"
   ],
   "concepts": [
     {
-      "category": "Bitcoin and Crypto Market Updates",
-      "topic": "Ethereum Merge Impact on Bitcoin Prices",
-      "hook": "What if I told you the Ethereum merge could skyrocket Bitcoin prices?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "TV Show Recaps",
+      "topic": "The Last of Us Season 1 Finale",
+      "hook": "You won't believe the shocking twist in the final episode!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Costa Rican Election Analysis",
-      "topic": "The Rise of Conservative Candidates in Costa Rica",
-      "hook": "A shift to the right: can conservative candidates win over Costa Rica?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Explosive Stunt Videos",
+      "topic": "World Record Fireworks Explosion",
+      "hook": " Witness the largest fireworks explosion ever recorded!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Jack Ryan Fan Theories",
-      "topic": "Uncovering the True Enemy in the Jack Ryan Series",
-      "hook": "The truth is out there: who's the real enemy in the Jack Ryan universe?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Stock Market News and Futures",
-      "topic": "The Impact of Inflation on Tech Stocks",
-      "hook": "Inflation is coming: will tech stocks survive the storm?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Vegas Golden Knights Game Highlights",
-      "topic": "Top 5 Goals of the Season",
-      "hook": "Get ready for a hat-trick of highlights: the best of the Vegas Golden Knights!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "Hayley Williams Music Mashups",
-      "topic": "Paramore Meets Billie Eilish: The Ultimate Mashup",
-      "hook": "What if Hayley Williams and Billie Eilish collaborated on a song?",
+      "category": "Musician Challenges",
+      "topic": "24-Hour Songwriting Challenge with Billie Eilish",
+      "hook": "Can Billie Eilish write a hit song in just 24 hours?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 41
-    },
-    {
-      "category": "True Crime Stories like Lucy Letby",
-      "topic": "The Chilling Case of the UK's Worst Serial Killer",
-      "hook": "A killer in plain sight: uncovering the shocking truth behind Lucy Letby",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Personal Injury Attorney FAQs",
-      "topic": "What to Do After a Car Accident",
-      "hook": "You've been in a car accident: here's what you need to do next",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial Crisis Survival Tips",
-      "topic": "Building an Emergency Fund",
-      "hook": "Are you prepared for the worst? How to build an emergency fund",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Election Day Reactions",
-      "topic": "Analyzing the Winners and Losers of the Latest Election",
-      "hook": "It's all over: who were the biggest winners and losers on election day?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 47
-    },
-    {
-      "category": "Bitcoin and Crypto Market Updates",
-      "topic": "The Future of Cryptocurrency Regulation",
-      "hook": "The government is watching: what does the future hold for crypto regulation?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 41
-    },
-    {
-      "category": "Costa Rican Election Analysis",
-      "topic": "The Role of Environmental Issues in Costa Rican Politics",
-      "hook": "The rainforest is calling: how environmental issues are shaping Costa Rican elections",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "Jack Ryan Fan Theories",
-      "topic": "Decoding the Symbols in the Jack Ryan Series",
-      "hook": "Cracking the code: what do the symbols in Jack Ryan really mean?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Stock Market News and Futures",
-      "topic": "The Impact of Geopolitics on Global Markets",
-      "hook": "War and markets: how global conflicts affect your investments",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Vegas Golden Knights Game Highlights",
-      "topic": "The Best Fights of the Season",
-      "hook": "Drop the gloves: the most epic fights of the Vegas Golden Knights season",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Hayley Williams Music Mashups",
-      "topic": "Paramore Meets Taylor Swift: The Ultimate Mashup",
-      "hook": "What if Hayley Williams and Taylor Swift collaborated on a song?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "True Crime Stories like Lucy Letby",
-      "topic": "The Psychology of Serial Killers",
-      "hook": "What drives someone to kill? Uncovering the psychology of serial killers",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Personal Injury Attorney FAQs",
-      "topic": "Understanding Your Rights After a Slip and Fall Accident",
-      "hook": "You've fallen and gotten hurt: do you know your rights?",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 41
-    },
-    {
-      "category": "Financial Crisis Survival Tips",
-      "topic": "Cutting Expenses During a Recession",
-      "hook": "The recession is coming: how to cut expenses and stay afloat",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Election Day Reactions",
-      "topic": "The Impact of Social Media on Election Results",
-      "hook": "Likes and votes: how social media is changing the face of elections",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Bitcoin and Crypto Market Updates",
-      "topic": "The Rise of Alternative Cryptocurrencies",
-      "hook": "Bitcoin is not the only game in town: the rise of alternative cryptocurrencies",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
+      "category": "Snow Day Vlogs",
+      "topic": "Snowboarding Down a Mountain in Japan",
+      "hook": "I'm snowboarding down a mountain in Japan and you won't believe the views!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Costa Rican Election Analysis",
-      "topic": "The Growing Influence of Independent Candidates",
-      "hook": "The people are rising: how independent candidates are changing Costa Rican politics",
+      "category": "Basketball Highlights",
+      "topic": "LeBron James' Most Epic Dunks",
+      "hook": "Get ready for the most epic dunks of LeBron James' career!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Film Director Tributes",
+      "topic": "The Genius of Quentin Tarantino's Storytelling",
+      "hook": "What makes Quentin Tarantino's movies so unforgettable?",
       "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Science Explainers",
+      "topic": "The Science Behind Black Holes",
+      "hook": "What happens if you get sucked into a black hole?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Weather Updates",
+      "topic": "The Coldest Temperatures Ever Recorded on Earth",
+      "hook": "You won't believe the coldest temperatures ever recorded on our planet!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "The Strategy Behind the New England Patriots' Success",
+      "hook": "What makes the New England Patriots so dominant in the NFL?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Parodies",
+      "topic": "Parodying the Most Popular Memes of 2022",
+      "hook": "Get ready to laugh at the most hilarious memes of 2022!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Most Shocking Moments in Stranger Things",
+      "hook": "You won't believe the most shocking moments in Stranger Things!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Explosive Stunt Videos",
+      "topic": "World's Largest Water Slide Jump",
+      "hook": " Witness the world's largest water slide jump and hold your breath!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Musician Challenges",
+      "topic": "Can I Learn to Play the Piano in 30 Days?",
+      "hook": "Can I learn to play the piano in just 30 days? Watch to find out!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 44
+      "target_duration": 45
+    },
+    {
+      "category": "Snow Day Vlogs",
+      "topic": "Ice Skating on Frozen Lakes in Canada",
+      "hook": "I'm ice skating on frozen lakes in Canada and it's breathtaking!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Basketball Highlights",
+      "topic": "Stephen Curry's Most Epic Three-Pointers",
+      "hook": "Get ready for Stephen Curry's most epic three-pointers!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Film Director Tributes",
+      "topic": "The Cinematic Genius of Martin Scorsese",
+      "hook": "What makes Martin Scorsese's movies so iconic?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Science Explainers",
+      "topic": "The Mystery of Dark Matter Explained",
+      "hook": "What is dark matter and how does it affect our universe?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Weather Updates",
+      "topic": "The Most Severe Blizzard in US History",
+      "hook": "You won't believe the most severe blizzard in US history!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "The Tactics Behind the Brazilian Football Team's Success",
+      "hook": "What makes the Brazilian football team so successful?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Parodies",
+      "topic": "Parodying the Most Popular Social Media Trends",
+      "hook": "Get ready to laugh at the most hilarious social media trends!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Most Emotional Moments in This Is Us",
+      "hook": "You won't believe the most emotional moments in This Is Us!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
