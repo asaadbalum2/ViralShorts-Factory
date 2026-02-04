@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-03T06:10:58.946942",
-  "valid_until": "2026-02-03T23:59:58.946948",
+  "generated_at": "2026-02-04T06:09:01.006685",
+  "valid_until": "2026-02-04T23:59:01.006693",
   "categories": [
-    "TV Show Recaps",
-    "Explosive Stunt Videos",
-    "Musician Challenges",
-    "Snow Day Vlogs",
-    "Basketball Highlights",
-    "Film Director Tributes",
-    "Science Explainers",
-    "Winter Weather Updates",
+    "Sports Highlights",
+    "Current Events",
+    "Wealth and Finance",
+    "Olympic Updates",
+    "Religion and Spirituality",
+    "Crime and Investigation",
+    "Winter Sports",
+    " Celebrity News",
+    "Memoirs and Biographies",
+    "Social Justice",
+    "Entertainment News",
     "Sports Analysis",
-    "Comedy Parodies",
-    "Gaming Walkthroughs",
-    "Influencer Q&A",
-    "Movie Theories",
-    "Sports Tournament Highlights",
-    "Weather Forecast Challenges"
+    "Net Worth Explanations",
+    "Upcoming Event Previews",
+    "Winter Olympic Preparation"
   ],
   "concepts": [
     {
-      "category": "TV Show Recaps",
-      "topic": "The Last of Us Season 1 Finale",
-      "hook": "You won't believe the shocking twist in the final episode!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Comebacks in NBA History",
+      "hook": "You won't believe the impossible shot that changed the course of the 2016 NBA Finals!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Explosive Stunt Videos",
-      "topic": "World Record Fireworks Explosion",
-      "hook": " Witness the largest fireworks explosion ever recorded!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Musician Challenges",
-      "topic": "24-Hour Songwriting Challenge with Billie Eilish",
-      "hook": "Can Billie Eilish write a hit song in just 24 hours?",
-      "voice_style": "friendly",
+      "category": "Current Events",
+      "topic": "The Rise of Sustainable Energy Sources",
+      "hook": "A new innovative technology could make fossil fuels a thing of the past, but is it too good to be true?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Snow Day Vlogs",
-      "topic": "Snowboarding Down a Mountain in Japan",
-      "hook": "I'm snowboarding down a mountain in Japan and you won't believe the views!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Basketball Highlights",
-      "topic": "LeBron James' Most Epic Dunks",
-      "hook": "Get ready for the most epic dunks of LeBron James' career!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Wealth and Finance",
+      "topic": "The World's Most Successful Investment Strategies",
+      "hook": "Want to know the secret to turning $1,000 into $1 million? It starts with this one simple trick",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Film Director Tributes",
-      "topic": "The Genius of Quentin Tarantino's Storytelling",
-      "hook": "What makes Quentin Tarantino's movies so unforgettable?",
+      "category": "Olympic Updates",
+      "topic": "The Most Inspiring Olympic Moments of All Time",
+      "hook": "Get ready to be moved to tears by the incredible story of this Olympic athlete's journey to gold",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Religion and Spirituality",
+      "topic": "The Science Behind Meditation and Mindfulness",
+      "hook": "What if you could unlock the secrets of the universe with just one simple technique?",
       "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Science Explainers",
-      "topic": "The Science Behind Black Holes",
-      "hook": "What happens if you get sucked into a black hole?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Weather Updates",
-      "topic": "The Coldest Temperatures Ever Recorded on Earth",
-      "hook": "You won't believe the coldest temperatures ever recorded on our planet!",
-      "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sports Analysis",
-      "topic": "The Strategy Behind the New England Patriots' Success",
-      "hook": "What makes the New England Patriots so dominant in the NFL?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Parodies",
-      "topic": "Parodying the Most Popular Memes of 2022",
-      "hook": "Get ready to laugh at the most hilarious memes of 2022!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "The Most Shocking Moments in Stranger Things",
-      "hook": "You won't believe the most shocking moments in Stranger Things!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Explosive Stunt Videos",
-      "topic": "World's Largest Water Slide Jump",
-      "hook": " Witness the world's largest water slide jump and hold your breath!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Musician Challenges",
-      "topic": "Can I Learn to Play the Piano in 30 Days?",
-      "hook": "Can I learn to play the piano in just 30 days? Watch to find out!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Snow Day Vlogs",
-      "topic": "Ice Skating on Frozen Lakes in Canada",
-      "hook": "I'm ice skating on frozen lakes in Canada and it's breathtaking!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Basketball Highlights",
-      "topic": "Stephen Curry's Most Epic Three-Pointers",
-      "hook": "Get ready for Stephen Curry's most epic three-pointers!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Film Director Tributes",
-      "topic": "The Cinematic Genius of Martin Scorsese",
-      "hook": "What makes Martin Scorsese's movies so iconic?",
-      "voice_style": "calm",
+      "category": "Crime and Investigation",
+      "topic": "The World's Most Baffling Unsolved Mysteries",
+      "hook": "The chilling true story of the Zodiac Killer will leave you on the edge of your seat",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Science Explainers",
-      "topic": "The Mystery of Dark Matter Explained",
-      "hook": "What is dark matter and how does it affect our universe?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Weather Updates",
-      "topic": "The Most Severe Blizzard in US History",
-      "hook": "You won't believe the most severe blizzard in US history!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "The Tactics Behind the Brazilian Football Team's Success",
-      "hook": "What makes the Brazilian football team so successful?",
-      "voice_style": "authoritative",
+      "category": "Winter Sports",
+      "topic": "The Most Heart-Stopping Ski Jumps in History",
+      "hook": "You won't believe the death-defying stunt that this skier pulled off at the X Games",
+      "voice_style": "energetic",
       "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Most Shocking Celebrity Feuds of the Decade",
+      "hook": "What really went down between Taylor Swift and Kanye West? The truth will shock you",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Comedy Parodies",
-      "topic": "Parodying the Most Popular Social Media Trends",
-      "hook": "Get ready to laugh at the most hilarious social media trends!",
+      "category": "Memoirs and Biographies",
+      "topic": "The Incredible Life Story of Elon Musk",
+      "hook": "From poverty to billionaire status, the rags-to-riches tale of Elon Musk will inspire you to chase your dreams",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Social Justice",
+      "topic": "The Fight for Racial Equality in the 21st Century",
+      "hook": "The powerful story of one man's quest for justice will leave you speechless and inspired to take action",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Unforgettable Football Matches in History",
+      "hook": "The epic showdown between Manchester United and Bayern Munich will have you on the edge of your seat",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events",
+      "topic": "The Impact of Social Media on Mental Health",
+      "hook": "The dark side of social media: what your followers don't want you to know",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Wealth and Finance",
+      "topic": "The Benefits of Cryptocurrency Investing",
+      "hook": "Could cryptocurrency be the key to unlocking your financial freedom? Here's what you need to know",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Most Emotional Moments in This Is Us",
-      "hook": "You won't believe the most emotional moments in This Is Us!",
+      "category": "Olympic Updates",
+      "topic": "The Most Dominant Olympic Athletes of All Time",
+      "hook": "Meet the incredible athlete who won an unprecedented 28 Olympic medals",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Religion and Spirituality",
+      "topic": "The Power of Gratitude and Positive Thinking",
+      "hook": "Unlock the secret to a happier, healthier life with this one simple practice",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Crime and Investigation",
+      "topic": "The World's Most Notorious Serial Killers",
+      "hook": "The chilling true story of Ted Bundy will leave you questioning everything",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Winter Sports",
+      "topic": "The Most Thrilling Snowboarding Tricks",
+      "hook": "Watch in awe as this snowboarder lands a record-breaking 1440",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Most Surprising Celebrity Romances",
+      "hook": "You won't believe which A-list couple had a secret romance that lasted for years",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Memoirs and Biographies",
+      "topic": "The Inspiring Life Story of Malala Yousafzai",
+      "hook": "The courageous tale of one girl's fight for education will leave you inspired and motivated",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Social Justice",
+      "topic": "The Fight Against Climate Change",
+      "hook": "The shocking truth about the state of our planet will leave you wondering if it's too late to make a change",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Iconic Tennis Rivalries",
+      "hook": "The epic battle between Federer and Nadal will have you on the edge of your seat",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
