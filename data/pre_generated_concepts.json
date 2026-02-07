@@ -1,195 +1,220 @@
 {
-  "generated_at": "2026-02-06T06:12:29.968625",
-  "valid_until": "2026-02-06T23:59:29.968633",
+  "generated_at": "2026-02-07T06:03:13.065325",
+  "valid_until": "2026-02-07T23:59:13.065331",
   "categories": [
-    "Olympic Sports Highlights",
-    "Sports Analysis and News",
-    "Music and Artist Updates",
-    "True Crime and Investigations",
-    "NBAs Latest Scores and Stats",
-    "Upcoming T20 World Cup Predictions",
-    "Viral Dance Challenges",
-    "Winter Sports and Fitness",
-    "New Music Releases and Reviews",
-    "NFL and Basketball Player Profiles",
-    "Investigative Journalism and Docs",
-    "Sports Bloopers and Fails",
-    "Athlete Interviews and Stories",
-    "Emerging Artists and Trends",
-    "Esports and Gaming Highlights"
+    "Movie Reviews and Reacts",
+    "Music Challenges with Lil Uzi Vert",
+    "Retro TV Show Nostalgia featuring Willow TV",
+    "Sports Highlights with Kawhi Leonard",
+    "Mexican Soccer Analysis of Tabla Liga MX",
+    "Celebrity News and Gossip with 50 Cent",
+    "Green Day Music Covers and Performances",
+    "Actor Caleb Landry Jones Fan Content",
+    " Weekend Streaming Guides",
+    "Music Mashups and Remixes",
+    "Sports News and Updates",
+    "TV Show Recaps and Theories",
+    "Movie and TV Show Trivia",
+    "Rapper Interviews and Behind-the-Scenes",
+    "Viral Dance Challenges to Popular Songs"
   ],
   "concepts": [
     {
-      "category": "Olympic Sports Highlights",
-      "topic": "Usain Bolt's Record-Breaking 100m Dash",
-      "hook": " Witness the fastest man in the world make history!",
+      "category": "Movie Reviews and Reacts",
+      "topic": "Reacting to the Ending of Inception",
+      "hook": "You won't believe the mind-blowing twist that changes everything!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Analysis and News",
-      "topic": "Decoding LeBron James' Gameplay Strategies",
-      "hook": "What makes the King of Basketball almost unbeatable?",
-      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Music and Artist Updates",
-      "topic": "Billie Eilish's Rise to Fame: A Timeline",
-      "hook": "From soundcloud to sold-out tours, how did Billie Eilish take over the music world?",
+      "category": "Music Challenges with Lil Uzi Vert",
+      "topic": "Rapping Over a Randomly Generated Beat",
+      "hook": "Can Lil Uzi Vert create a hit song in just 5 minutes?",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Retro TV Show Nostalgia featuring Willow TV",
+      "topic": "Revisiting the Iconic Characters of 90s TV",
+      "hook": "Get ready for a blast from the past with the most iconic TV characters of all time!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 42
     },
     {
-      "category": "True Crime and Investigations",
-      "topic": "The Mysterious Disappearance of the Sodder Children",
-      "hook": "A Christmas Eve tragedy that remains unsolved to this day...",
-      "voice_style": "mysterious",
+      "category": "Sports Highlights with Kawhi Leonard",
+      "topic": "Kawhi's Most Dominant Playoff Performances",
+      "hook": " Witness the greatness of Kawhi Leonard's postseason dominance!",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "NBAs Latest Scores and Stats",
-      "topic": "Steph Curry's Unstoppable Three-Pointers",
-      "hook": "Is Steph Curry the greatest shooter in NBA history?",
+      "category": "Mexican Soccer Analysis of Tabla Liga MX",
+      "topic": "Predicting the Liga MX Championship Winners",
+      "hook": "Who will be crowned the champions of Liga MX this season?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
+      "target_duration": 41
+    },
+    {
+      "category": "Celebrity News and Gossip with 50 Cent",
+      "topic": "50 Cent's Most Shocking Celebrity Feuds",
+      "hook": "You won't believe the crazy feuds that 50 Cent has been a part of!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 44
+    },
+    {
+      "category": "Green Day Music Covers and Performances",
+      "topic": "Acoustic Cover of 'Good Riddance'",
+      "hook": "Experience the emotional acoustic rendition of Green Day's hit song!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Upcoming T20 World Cup Predictions",
-      "topic": "Can India Defend Their T20 World Cup Title?",
-      "hook": "The stage is set, but will the Men in Blue reign supreme once again?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "The Renegade Dance Challenge Takes Over TikTok",
-      "hook": "Get ready to groove to the most viral dance challenge of the year!",
+      "category": "Actor Caleb Landry Jones Fan Content",
+      "topic": "Caleb Landry Jones' Most Underrated Movie Roles",
+      "hook": "Discover the hidden gems of Caleb Landry Jones' film career!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "music_mood": "chill",
+      "target_duration": 43
     },
     {
-      "category": "Winter Sports and Fitness",
-      "topic": "Training Like a Pro: Skiing Workouts for Beginners",
-      "hook": "Hit the slopes like a pro with these essential skiing exercises!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New Music Releases and Reviews",
-      "topic": "Kendrick Lamar's Latest Album: A Review",
-      "hook": "The king of hip-hop is back, but does his latest album live up to the hype?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "NFL and Basketball Player Profiles",
-      "topic": "The Inspiring Story of NFL Player, J.J. Watt",
-      "hook": "From small-town Wisconsin to NFL superstar, J.J. Watt's journey will leave you speechless!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Olympic Sports Highlights",
-      "topic": "Michael Phelps' Record-Breaking Medal Count",
-      "hook": "The most decorated Olympian of all time, but what's his secret?",
+      "category": "Weekend Streaming Guides",
+      "topic": "Must-Watch Movies on Netflix This Weekend",
+      "hook": "Don't miss out on these blockbuster movies available on Netflix now!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 41
     },
     {
-      "category": "Sports Analysis and News",
-      "topic": "The Impact of Advanced Analytics on NBA Teams",
-      "hook": "How data-driven decisions are changing the game of basketball forever!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Music and Artist Updates",
-      "topic": "The Evolution of Taylor Swift's Music Style",
-      "hook": "From country to pop, how has T-Swift's sound changed over the years?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "True Crime and Investigations",
-      "topic": "The Unsolved Murder of JonBenet Ramsey",
-      "hook": "A brutal crime that shocked the nation, but what really happened that fateful night?",
+      "category": "Music Mashups and Remixes",
+      "topic": "Mashing Up Lil Uzi Vert and The Weeknd",
+      "hook": "What happens when you combine two of the biggest names in music?",
       "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Movie Reviews and Reacts",
+      "topic": "Reviewing the Latest Marvel Movie",
+      "hook": "Is the latest Marvel movie worth the hype?",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "NBAs Latest Scores and Stats",
-      "topic": "Luka Doncic's Incredible Rookie Season",
-      "hook": "The Slovenian sensation taking the NBA by storm, but can he keep it up?",
-      "voice_style": "energetic",
+      "category": "Music Challenges with Lil Uzi Vert",
+      "topic": "Creating a Song with a Random Word Generator",
+      "hook": "Can Lil Uzi Vert turn a random word into a hit song?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Upcoming T20 World Cup Predictions",
-      "topic": "Australia's Chances of Winning the T20 World Cup",
-      "hook": "The Aussies are looking strong, but can they bring home the coveted title?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "The Floss Dance Challenge: How to Master the Move",
-      "hook": "Get ready to floss like a pro with these easy-to-follow steps!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Retro TV Show Nostalgia featuring Willow TV",
+      "topic": "Remembering the Best Nickelodeon Shows",
+      "hook": "Take a trip down memory lane with the most iconic Nickelodeon shows!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 42
     },
     {
-      "category": "Winter Sports and Fitness",
-      "topic": "Snowboarding Workouts for Improved Balance and Agility",
-      "hook": "Shred the gnar like a pro with these essential snowboarding exercises!",
+      "category": "Sports Highlights with Kawhi Leonard",
+      "topic": "Kawhi's Most Clutch Playoff Moments",
+      "hook": " Witness Kawhi Leonard's most clutch playoff performances!",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New Music Releases and Reviews",
-      "topic": "Ariana Grande's Latest Album: A Track-by-Track Review",
-      "hook": "The pop princess is back, but does her latest album live up to the hype?",
-      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "NFL and Basketball Player Profiles",
-      "topic": "The Rise of Giannis Antetokounmpo: From Unknown to NBA Superstar",
-      "hook": "The Greek Freak's journey to the top is a true rags-to-riches story!",
+      "category": "Mexican Soccer Analysis of Tabla Liga MX",
+      "topic": "Analyzing the Liga MX Table and Predictions",
+      "hook": "Who will rise to the top of the Liga MX table this season?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 44
+    },
+    {
+      "category": "Celebrity News and Gossip with 50 Cent",
+      "topic": "50 Cent's Wildest Celebrity Encounters",
+      "hook": "You won't believe the crazy stories that 50 Cent has to share!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 41
+    },
+    {
+      "category": "Green Day Music Covers and Performances",
+      "topic": "Electric Cover of 'American Idiot'",
+      "hook": "Experience the high-energy performance of Green Day's classic song!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Actor Caleb Landry Jones Fan Content",
+      "topic": "Caleb Landry Jones' Rise to Fame",
+      "hook": "Discover the journey of Caleb Landry Jones from unknown to Hollywood star!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Weekend Streaming Guides",
+      "topic": "New Releases on Hulu This Weekend",
+      "hook": "Don't miss out on the latest movies and shows on Hulu now!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Mashups and Remixes",
+      "topic": "Mashing Up Billie Eilish and Kendrick Lamar",
+      "hook": "What happens when you combine two of the biggest names in music?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Analysis and News",
-      "topic": "The Impact of Social Media on Modern Sports",
-      "hook": "How athletes are using social media to build their brand and change the game!",
+      "category": "Movie Reviews and Reacts",
+      "topic": "Reacting to the Latest Sci-Fi Movie",
+      "hook": "Is the latest sci-fi movie a game-changer or a disappointment?",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "dramatic",
       "target_duration": 48
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
@@ -197,72 +222,47 @@
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
