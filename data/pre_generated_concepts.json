@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-07T06:03:13.065325",
-  "valid_until": "2026-02-07T23:59:13.065331",
+  "generated_at": "2026-02-08T06:12:11.235264",
+  "valid_until": "2026-02-08T23:59:11.235272",
   "categories": [
-    "Movie Reviews and Reacts",
-    "Music Challenges with Lil Uzi Vert",
-    "Retro TV Show Nostalgia featuring Willow TV",
-    "Sports Highlights with Kawhi Leonard",
-    "Mexican Soccer Analysis of Tabla Liga MX",
-    "Celebrity News and Gossip with 50 Cent",
-    "Green Day Music Covers and Performances",
-    "Actor Caleb Landry Jones Fan Content",
-    " Weekend Streaming Guides",
-    "Music Mashups and Remixes",
-    "Sports News and Updates",
-    "TV Show Recaps and Theories",
-    "Movie and TV Show Trivia",
-    "Rapper Interviews and Behind-the-Scenes",
-    "Viral Dance Challenges to Popular Songs"
+    "College Basketball Highlights",
+    "Music Legends: Then and Now",
+    "Up-and-Coming Artists",
+    "Sports Rivalries",
+    "NBA Player Profiles",
+    "Banking and Finance News",
+    "March Madness Predictions",
+    "Music Festival Previews",
+    "Oregon Trail Blazers Game Recaps",
+    "Kobe Bryant Tributes",
+    "Arizona State University Campus Life",
+    "University of Colorado Sports",
+    "San Diego Travel Guides",
+    "70s and 80s Music Revival",
+    "Demar Derozan's Career Highlights"
   ],
   "concepts": [
     {
-      "category": "Movie Reviews and Reacts",
-      "topic": "Reacting to the Ending of Inception",
-      "hook": "You won't believe the mind-blowing twist that changes everything!",
+      "category": "College Basketball Highlights",
+      "topic": "Zion Williamson's Greatest Dunks",
+      "hook": "You won't believe the insane dunk that made Zion a legend!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Music Challenges with Lil Uzi Vert",
-      "topic": "Rapping Over a Randomly Generated Beat",
-      "hook": "Can Lil Uzi Vert create a hit song in just 5 minutes?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Retro TV Show Nostalgia featuring Willow TV",
-      "topic": "Revisiting the Iconic Characters of 90s TV",
-      "hook": "Get ready for a blast from the past with the most iconic TV characters of all time!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Highlights with Kawhi Leonard",
-      "topic": "Kawhi's Most Dominant Playoff Performances",
-      "hook": " Witness the greatness of Kawhi Leonard's postseason dominance!",
+      "category": "Music Legends: Then and Now",
+      "topic": "Stevie Wonder's Evolution from Child Prodigy to Music Icon",
+      "hook": "What happened to the 11-year-old boy who became a music sensation?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Mexican Soccer Analysis of Tabla Liga MX",
-      "topic": "Predicting the Liga MX Championship Winners",
-      "hook": "Who will be crowned the champions of Liga MX this season?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 41
-    },
-    {
-      "category": "Celebrity News and Gossip with 50 Cent",
-      "topic": "50 Cent's Most Shocking Celebrity Feuds",
-      "hook": "You won't believe the crazy feuds that 50 Cent has been a part of!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 44
-    },
-    {
-      "category": "Green Day Music Covers and Performances",
-      "topic": "Acoustic Cover of 'Good Riddance'",
-      "hook": "Experience the emotional acoustic rendition of Green Day's hit song!",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Actor Caleb Landry Jones Fan Content",
-      "topic": "Caleb Landry Jones' Most Underrated Movie Roles",
-      "hook": "Discover the hidden gems of Caleb Landry Jones' film career!",
+      "category": "Up-and-Coming Artists",
+      "topic": "Billie Eilish's Rise to Fame: From Small Town to Global Superstar",
+      "hook": "How did a 15-year-old girl from California become the most talked-about artist in music?",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Weekend Streaming Guides",
-      "topic": "Must-Watch Movies on Netflix This Weekend",
-      "hook": "Don't miss out on these blockbuster movies available on Netflix now!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Music Mashups and Remixes",
-      "topic": "Mashing Up Lil Uzi Vert and The Weeknd",
-      "hook": "What happens when you combine two of the biggest names in music?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Movie Reviews and Reacts",
-      "topic": "Reviewing the Latest Marvel Movie",
-      "hook": "Is the latest Marvel movie worth the hype?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Challenges with Lil Uzi Vert",
-      "topic": "Creating a Song with a Random Word Generator",
-      "hook": "Can Lil Uzi Vert turn a random word into a hit song?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Retro TV Show Nostalgia featuring Willow TV",
-      "topic": "Remembering the Best Nickelodeon Shows",
-      "hook": "Take a trip down memory lane with the most iconic Nickelodeon shows!",
-      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 42
     },
     {
-      "category": "Sports Highlights with Kawhi Leonard",
-      "topic": "Kawhi's Most Clutch Playoff Moments",
-      "hook": " Witness Kawhi Leonard's most clutch playoff performances!",
-      "voice_style": "energetic",
+      "category": "Sports Rivalries",
+      "topic": "The Intense LeBron James vs Kevin Durant Rivalry",
+      "hook": "The two basketball giants have been at war for years, but what sparked their epic feud?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "Mexican Soccer Analysis of Tabla Liga MX",
-      "topic": "Analyzing the Liga MX Table and Predictions",
-      "hook": "Who will rise to the top of the Liga MX table this season?",
+      "category": "NBA Player Profiles",
+      "topic": "The Unstoppable Steph Curry: A Look into His Training Regimen",
+      "hook": "What's the secret behind Steph Curry's uncanny ability to make shots from anywhere on the court?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Banking and Finance News",
+      "topic": "The Impact of Cryptocurrency on the Global Economy",
+      "hook": "Is the rise of Bitcoin and other cryptocurrencies a bubble waiting to burst or the future of money?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 44
+      "target_duration": 45
     },
     {
-      "category": "Celebrity News and Gossip with 50 Cent",
-      "topic": "50 Cent's Wildest Celebrity Encounters",
-      "hook": "You won't believe the crazy stories that 50 Cent has to share!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 41
+      "category": "March Madness Predictions",
+      "topic": "The Top 5 Dark Horse Teams That Could Win It All",
+      "hook": "Don't count out these underdog teams that could make a shocking run to the championship!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Green Day Music Covers and Performances",
-      "topic": "Electric Cover of 'American Idiot'",
-      "hook": "Experience the high-energy performance of Green Day's classic song!",
+      "category": "Music Festival Previews",
+      "topic": "The Ultimate Guide to Coachella 2024: Lineup, Schedule, and Tips",
+      "hook": "Get ready for the most epic music festival of the year with our insider's guide to Coachella!",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 46
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
-      "category": "Actor Caleb Landry Jones Fan Content",
-      "topic": "Caleb Landry Jones' Rise to Fame",
-      "hook": "Discover the journey of Caleb Landry Jones from unknown to Hollywood star!",
+      "category": "Oregon Trail Blazers Game Recaps",
+      "topic": "Damian Lillard's Game-Winning Shots: A Compilation",
+      "hook": "Relive the thrill of Damian Lillard's most clutch moments on the court!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Kobe Bryant Tributes",
+      "topic": "Kobe's Greatest Mentees: The Players He Inspired and Mentored",
+      "hook": "The Mamba's legacy lives on through the players he inspired and guided throughout his career.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "College Basketball Highlights",
+      "topic": "The Craziest Buzzer-Beaters in NCAA History",
+      "hook": "You won't believe the shots that changed the course of college basketball history!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Music Legends: Then and Now",
+      "topic": "Elton John's Journey from Rockstar to Music Icon and Activist",
+      "hook": "From 'Rocket Man' to 'Lion King', Elton John's career is a testament to his enduring talent and passion.",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 43
+      "target_duration": 45
     },
     {
-      "category": "Weekend Streaming Guides",
-      "topic": "New Releases on Hulu This Weekend",
-      "hook": "Don't miss out on the latest movies and shows on Hulu now!",
+      "category": "Up-and-Coming Artists",
+      "topic": "The Rise of Olivia Rodrigo: From Disney Star to Chart-Topping Singer",
+      "hook": "How did a 17-year-old girl from California become the most streamed artist of the year?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Music Mashups and Remixes",
-      "topic": "Mashing Up Billie Eilish and Kendrick Lamar",
-      "hook": "What happens when you combine two of the biggest names in music?",
-      "voice_style": "mysterious",
+      "category": "Sports Rivalries",
+      "topic": "The Heated Tom Brady vs Peyton Manning Rivalry",
+      "hook": "The two NFL legends have been at war for years, but what's behind their intense rivalry?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "NBA Player Profiles",
+      "topic": "Joel Embiid's Journey from Cameroon to NBA Superstar",
+      "hook": "The unlikely story of how a young boy from Cameroon became one of the NBA's most dominant players.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Movie Reviews and Reacts",
-      "topic": "Reacting to the Latest Sci-Fi Movie",
-      "hook": "Is the latest sci-fi movie a game-changer or a disappointment?",
+      "category": "Banking and Finance News",
+      "topic": "The Impact of Artificial Intelligence on the Banking Industry",
+      "hook": "Will AI revolutionize the banking industry or replace human workers?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 48
+      "target_duration": 42
+    },
+    {
+      "category": "March Madness Predictions",
+      "topic": "The Top 5 Teams That Will Make a Deep Run in the Tournament",
+      "hook": "Don't miss out on these teams that are poised to make a surprising run to the Final Four!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Festival Previews",
+      "topic": "The Ultimate Guide to Lollapalooza 2024: Lineup, Schedule, and Tips",
+      "hook": "Get ready for the most epic music festival of the summer with our insider's guide to Lollapalooza!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Oregon Trail Blazers Game Recaps",
+      "topic": "The Trail Blazers' Most Thrilling Comeback Wins",
+      "hook": "Relive the excitement of the Trail Blazers' most unforgettable comeback victories!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Kobe Bryant Tributes",
+      "topic": "Kobe's Most Inspirational Quotes and Life Lessons",
+      "hook": "The Mamba's words of wisdom and life lessons continue to inspire and motivate us to this day.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "College Basketball Highlights",
+      "topic": "The Best NCAA Tournament Moments of the Decade",
+      "hook": "Relive the most unforgettable moments from the past decade of March Madness!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
