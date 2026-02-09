@@ -1,203 +1,210 @@
 {
-  "generated_at": "2026-02-08T06:12:11.235264",
-  "valid_until": "2026-02-08T23:59:11.235272",
+  "generated_at": "2026-02-09T06:42:11.869272",
+  "valid_until": "2026-02-09T23:59:11.869280",
   "categories": [
-    "College Basketball Highlights",
-    "Music Legends: Then and Now",
-    "Up-and-Coming Artists",
-    "Sports Rivalries",
-    "NBA Player Profiles",
-    "Banking and Finance News",
-    "March Madness Predictions",
-    "Music Festival Previews",
-    "Oregon Trail Blazers Game Recaps",
-    "Kobe Bryant Tributes",
-    "Arizona State University Campus Life",
-    "University of Colorado Sports",
-    "San Diego Travel Guides",
-    "70s and 80s Music Revival",
-    "Demar Derozan's Career Highlights"
+    "European Travel Vlogs",
+    "Xiaomi Smartphone Reviews",
+    "India's Emerging Tech Scene",
+    "Portugal Cultural Experiences",
+    "Seedance 2.0 Dance Challenges",
+    "France Fashion Week Highlights",
+    "Mars Exploration Updates",
+    "Ernest Jones Jewelry Hauls",
+    "Indian Cuisine Cooking Tutorials",
+    "European Football Match Analysis",
+    "Space Tourism: Mars and Beyond",
+    "Seedance 2.0 Tutorial Videos",
+    "Xiaomi vs Other Smartphone Brands",
+    "Portugal vs France: Cultural Comparison",
+    "India's Space Program Progress"
   ],
   "concepts": [
     {
-      "category": "College Basketball Highlights",
-      "topic": "Zion Williamson's Greatest Dunks",
-      "hook": "You won't believe the insane dunk that made Zion a legend!",
+      "category": "European Travel Vlogs",
+      "topic": "Exploring Hidden Gems in Santorini",
+      "hook": "What if I told you there's a secret village in Santorini that only locals know about?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Music Legends: Then and Now",
-      "topic": "Stevie Wonder's Evolution from Child Prodigy to Music Icon",
-      "hook": "What happened to the 11-year-old boy who became a music sensation?",
+      "category": "Xiaomi Smartphone Reviews",
+      "topic": "Xiaomi Mi 11 Ultra vs Samsung S21: Camera Comparison",
+      "hook": "Can the Xiaomi Mi 11 Ultra really take down the Samsung S21 in a camera showdown?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Up-and-Coming Artists",
-      "topic": "Billie Eilish's Rise to Fame: From Small Town to Global Superstar",
-      "hook": "How did a 15-year-old girl from California become the most talked-about artist in music?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Rivalries",
-      "topic": "The Intense LeBron James vs Kevin Durant Rivalry",
-      "hook": "The two basketball giants have been at war for years, but what sparked their epic feud?",
-      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "NBA Player Profiles",
-      "topic": "The Unstoppable Steph Curry: A Look into His Training Regimen",
-      "hook": "What's the secret behind Steph Curry's uncanny ability to make shots from anywhere on the court?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Banking and Finance News",
-      "topic": "The Impact of Cryptocurrency on the Global Economy",
-      "hook": "Is the rise of Bitcoin and other cryptocurrencies a bubble waiting to burst or the future of money?",
-      "voice_style": "authoritative",
+      "category": "India's Emerging Tech Scene",
+      "topic": "The Rise of Bengaluru as India's Silicon Valley",
+      "hook": "What's making Bengaluru the hottest destination for tech startups in India?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Portugal Cultural Experiences",
+      "topic": "Traditional Portuguese Fado Music and Dance",
+      "hook": "Have you ever felt the soulful melodies of Portuguese Fado music?",
+      "voice_style": "calm",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "March Madness Predictions",
-      "topic": "The Top 5 Dark Horse Teams That Could Win It All",
-      "hook": "Don't count out these underdog teams that could make a shocking run to the championship!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Music Festival Previews",
-      "topic": "The Ultimate Guide to Coachella 2024: Lineup, Schedule, and Tips",
-      "hook": "Get ready for the most epic music festival of the year with our insider's guide to Coachella!",
+      "category": "Seedance 2.0 Dance Challenges",
+      "topic": "The Ultimate Seedance 2.0 Challenge: Can You Keep Up?",
+      "hook": "Get ready to bust a move with the most epic Seedance 2.0 challenge yet!",
       "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Oregon Trail Blazers Game Recaps",
-      "topic": "Damian Lillard's Game-Winning Shots: A Compilation",
-      "hook": "Relive the thrill of Damian Lillard's most clutch moments on the court!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Kobe Bryant Tributes",
-      "topic": "Kobe's Greatest Mentees: The Players He Inspired and Mentored",
-      "hook": "The Mamba's legacy lives on through the players he inspired and guided throughout his career.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "France Fashion Week Highlights",
+      "topic": "Chanel's Latest Collection: A Fashion Revolution?",
+      "hook": "Is Chanel's new collection the most daring fashion statement of the year?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "College Basketball Highlights",
-      "topic": "The Craziest Buzzer-Beaters in NCAA History",
-      "hook": "You won't believe the shots that changed the course of college basketball history!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Mars Exploration Updates",
+      "topic": "NASA's Perseverance Rover: What's Next for Mars Exploration?",
+      "hook": "What secrets will the Perseverance rover uncover on its mission to Mars?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
     },
     {
-      "category": "Music Legends: Then and Now",
-      "topic": "Elton John's Journey from Rockstar to Music Icon and Activist",
-      "hook": "From 'Rocket Man' to 'Lion King', Elton John's career is a testament to his enduring talent and passion.",
+      "category": "Ernest Jones Jewelry Hauls",
+      "topic": "Unboxing the Most Luxurious Ernest Jones Jewelry Collection",
+      "hook": "What if you could get your hands on the most exclusive Ernest Jones jewelry pieces?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Indian Cuisine Cooking Tutorials",
+      "topic": "The Art of Making Perfect Butter Chicken",
+      "hook": "Can you really make restaurant-quality butter chicken at home?",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "European Football Match Analysis",
+      "topic": "Decoding the Tactics Behind Liverpool's Winning Streak",
+      "hook": "What's the secret behind Liverpool's unstoppable winning streak?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "European Travel Vlogs",
+      "topic": "Discovering the Magical City of Prague",
+      "hook": "What if I told you there's a city in Europe that's like stepping into a fairy tale?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Xiaomi Smartphone Reviews",
+      "topic": "Xiaomi Redmi Note 10 Pro: Is it the Best Budget Smartphone?",
+      "hook": "Can the Xiaomi Redmi Note 10 Pro really deliver flagship performance on a budget?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Up-and-Coming Artists",
-      "topic": "The Rise of Olivia Rodrigo: From Disney Star to Chart-Topping Singer",
-      "hook": "How did a 17-year-old girl from California become the most streamed artist of the year?",
+      "category": "India's Emerging Tech Scene",
+      "topic": "The Future of Artificial Intelligence in India",
+      "hook": "What's driving India's surge in artificial intelligence innovation?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Portugal Cultural Experiences",
+      "topic": "Exploring the Historic City of Porto",
+      "hook": "What secrets will you uncover in the charming city of Porto?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sports Rivalries",
-      "topic": "The Heated Tom Brady vs Peyton Manning Rivalry",
-      "hook": "The two NFL legends have been at war for years, but what's behind their intense rivalry?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "NBA Player Profiles",
-      "topic": "Joel Embiid's Journey from Cameroon to NBA Superstar",
-      "hook": "The unlikely story of how a young boy from Cameroon became one of the NBA's most dominant players.",
-      "voice_style": "authoritative",
+      "category": "Seedance 2.0 Dance Challenges",
+      "topic": "The Evolution of Seedance 2.0: From Basics to Advanced Moves",
+      "hook": "Are you ready to take your Seedance 2.0 skills to the next level?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Banking and Finance News",
-      "topic": "The Impact of Artificial Intelligence on the Banking Industry",
-      "hook": "Will AI revolutionize the banking industry or replace human workers?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
+      "category": "France Fashion Week Highlights",
+      "topic": "Dior's Latest Collection: A Celebration of French Elegance",
+      "hook": "Is Dior's new collection the epitome of French fashion?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "March Madness Predictions",
-      "topic": "The Top 5 Teams That Will Make a Deep Run in the Tournament",
-      "hook": "Don't miss out on these teams that are poised to make a surprising run to the Final Four!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Mars Exploration Updates",
+      "topic": "The Search for Water on Mars: A New Discovery?",
+      "hook": "What if we told you that water on Mars is more accessible than you think?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Music Festival Previews",
-      "topic": "The Ultimate Guide to Lollapalooza 2024: Lineup, Schedule, and Tips",
-      "hook": "Get ready for the most epic music festival of the summer with our insider's guide to Lollapalooza!",
-      "voice_style": "energetic",
+      "category": "Ernest Jones Jewelry Hauls",
+      "topic": "Unboxing the Exclusive Ernest Jones Diamond Collection",
+      "hook": "What if you could own a piece of luxury jewelry that's truly one-of-a-kind?",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Oregon Trail Blazers Game Recaps",
-      "topic": "The Trail Blazers' Most Thrilling Comeback Wins",
-      "hook": "Relive the excitement of the Trail Blazers' most unforgettable comeback victories!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Kobe Bryant Tributes",
-      "topic": "Kobe's Most Inspirational Quotes and Life Lessons",
-      "hook": "The Mamba's words of wisdom and life lessons continue to inspire and motivate us to this day.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "College Basketball Highlights",
-      "topic": "The Best NCAA Tournament Moments of the Decade",
-      "hook": "Relive the most unforgettable moments from the past decade of March Madness!",
-      "voice_style": "energetic",
+      "category": "Indian Cuisine Cooking Tutorials",
+      "topic": "The Art of Making Perfect Naan Bread",
+      "hook": "Can you really make authentic Indian naan bread at home?",
+      "voice_style": "calm",
       "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "European Football Match Analysis",
+      "topic": "Analyzing the Tactics Behind Barcelona's Tiki-Taka Style",
+      "hook": "What's the secret behind Barcelona's iconic Tiki-Taka style of play?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
@@ -205,63 +212,48 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "dramatic"
     }
   ],
