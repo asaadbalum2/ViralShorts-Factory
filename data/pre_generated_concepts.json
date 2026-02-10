@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-02-09T06:42:11.869272",
-  "valid_until": "2026-02-09T23:59:11.869280",
+  "generated_at": "2026-02-10T06:43:34.252470",
+  "valid_until": "2026-02-10T23:59:34.252478",
   "categories": [
-    "European Travel Vlogs",
-    "Xiaomi Smartphone Reviews",
-    "India's Emerging Tech Scene",
-    "Portugal Cultural Experiences",
-    "Seedance 2.0 Dance Challenges",
-    "France Fashion Week Highlights",
-    "Mars Exploration Updates",
-    "Ernest Jones Jewelry Hauls",
-    "Indian Cuisine Cooking Tutorials",
-    "European Football Match Analysis",
-    "Space Tourism: Mars and Beyond",
-    "Seedance 2.0 Tutorial Videos",
-    "Xiaomi vs Other Smartphone Brands",
-    "Portugal vs France: Cultural Comparison",
-    "India's Space Program Progress"
+    "Tech Issues Explained",
+    "TV Show Hype",
+    "Dance Challenge Videos",
+    "Sports Highlights",
+    "Up-and-Coming Athletes",
+    "Current Event Updates",
+    "Breaking News",
+    "Gaming Updates",
+    "Sports Analysis",
+    "New Tech Releases",
+    "Comedy Sketches",
+    "Reaction Videos",
+    "Behind-the-Scenes",
+    "Sports News",
+    "Internet Trends"
   ],
   "concepts": [
     {
-      "category": "European Travel Vlogs",
-      "topic": "Exploring Hidden Gems in Santorini",
-      "hook": "What if I told you there's a secret village in Santorini that only locals know about?",
-      "voice_style": "energetic",
+      "category": "Tech Issues Explained",
+      "topic": "Why Your Smartphone Battery Drains Faster in Winter",
+      "hook": "You won't believe the shocking reason your phone dies faster in the cold!",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Xiaomi Smartphone Reviews",
-      "topic": "Xiaomi Mi 11 Ultra vs Samsung S21: Camera Comparison",
-      "hook": "Can the Xiaomi Mi 11 Ultra really take down the Samsung S21 in a camera showdown?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "TV Show Hype",
+      "topic": "The Hidden Meaning Behind Stranger Things' Demogorgon",
+      "hook": "What if I told you the Demogorgon is more than just a monster?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "India's Emerging Tech Scene",
-      "topic": "The Rise of Bengaluru as India's Silicon Valley",
-      "hook": "What's making Bengaluru the hottest destination for tech startups in India?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Dance Challenge Videos",
+      "topic": "The Renegade Dance Challenge: A Step-by-Step Guide",
+      "hook": "Get ready to bust a move with the latest TikTok sensation!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Portugal Cultural Experiences",
-      "topic": "Traditional Portuguese Fado Music and Dance",
-      "hook": "Have you ever felt the soulful melodies of Portuguese Fado music?",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Seedance 2.0 Dance Challenges",
-      "topic": "The Ultimate Seedance 2.0 Challenge: Can You Keep Up?",
-      "hook": "Get ready to bust a move with the most epic Seedance 2.0 challenge yet!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "France Fashion Week Highlights",
-      "topic": "Chanel's Latest Collection: A Fashion Revolution?",
-      "hook": "Is Chanel's new collection the most daring fashion statement of the year?",
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Comebacks in NBA History",
+      "hook": "You won't believe these insane turnarounds that changed the game!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Mars Exploration Updates",
-      "topic": "NASA's Perseverance Rover: What's Next for Mars Exploration?",
-      "hook": "What secrets will the Perseverance rover uncover on its mission to Mars?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Ernest Jones Jewelry Hauls",
-      "topic": "Unboxing the Most Luxurious Ernest Jones Jewelry Collection",
-      "hook": "What if you could get your hands on the most exclusive Ernest Jones jewelry pieces?",
+      "category": "Up-and-Coming Athletes",
+      "topic": "The Rise of Tennis Star Coco Gauff: What You Need to Know",
+      "hook": "Meet the 18-year-old tennis sensation taking the world by storm!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Indian Cuisine Cooking Tutorials",
-      "topic": "The Art of Making Perfect Butter Chicken",
-      "hook": "Can you really make restaurant-quality butter chicken at home?",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
+      "category": "Current Event Updates",
+      "topic": "The Impact of Social Media on Mental Health: A Closer Look",
+      "hook": "The alarming truth about how your social media habits are affecting your mind!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "European Football Match Analysis",
-      "topic": "Decoding the Tactics Behind Liverpool's Winning Streak",
-      "hook": "What's the secret behind Liverpool's unstoppable winning streak?",
+      "category": "Breaking News",
+      "topic": "Breaking Down the Latest Developments in Space Exploration",
+      "hook": "NASA's latest discovery will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Updates",
+      "topic": "The Next-Gen Console Wars: PS5 vs Xbox Series X",
+      "hook": "Which console reigns supreme? Let's dive into the specs!",
       "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "European Travel Vlogs",
-      "topic": "Discovering the Magical City of Prague",
-      "hook": "What if I told you there's a city in Europe that's like stepping into a fairy tale?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Xiaomi Smartphone Reviews",
-      "topic": "Xiaomi Redmi Note 10 Pro: Is it the Best Budget Smartphone?",
-      "hook": "Can the Xiaomi Redmi Note 10 Pro really deliver flagship performance on a budget?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "India's Emerging Tech Scene",
-      "topic": "The Future of Artificial Intelligence in India",
-      "hook": "What's driving India's surge in artificial intelligence innovation?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Portugal Cultural Experiences",
-      "topic": "Exploring the Historic City of Porto",
-      "hook": "What secrets will you uncover in the charming city of Porto?",
+      "category": "Sports Analysis",
+      "topic": "Decoding the Tactical Genius of Soccer Manager Pep Guardiola",
+      "hook": "The secrets behind the most successful soccer manager in the world revealed!",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "New Tech Releases",
+      "topic": "Unboxing the Latest Samsung Smartwatch: Features and Review",
+      "hook": "Is this the smartwatch you've been waiting for? Let's find out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Seedance 2.0 Dance Challenges",
-      "topic": "The Evolution of Seedance 2.0: From Basics to Advanced Moves",
-      "hook": "Are you ready to take your Seedance 2.0 skills to the next level?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Tech Issues Explained",
+      "topic": "The Dark Side of AI: Understanding the Risks of Emerging Tech",
+      "hook": "The terrifying truth about AI: what you need to know!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "France Fashion Week Highlights",
-      "topic": "Dior's Latest Collection: A Celebration of French Elegance",
-      "hook": "Is Dior's new collection the epitome of French fashion?",
+      "category": "TV Show Hype",
+      "topic": "The Unsolved Mysteries of Game of Thrones: A Deep Dive",
+      "hook": "The shocking plot twists that still have fans talking years later!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Mars Exploration Updates",
-      "topic": "The Search for Water on Mars: A New Discovery?",
-      "hook": "What if we told you that water on Mars is more accessible than you think?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Ernest Jones Jewelry Hauls",
-      "topic": "Unboxing the Exclusive Ernest Jones Diamond Collection",
-      "hook": "What if you could own a piece of luxury jewelry that's truly one-of-a-kind?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Indian Cuisine Cooking Tutorials",
-      "topic": "The Art of Making Perfect Naan Bread",
-      "hook": "Can you really make authentic Indian naan bread at home?",
-      "voice_style": "calm",
+      "category": "Dance Challenge Videos",
+      "topic": "The Floss Dance Challenge: A Step-by-Step Tutorial",
+      "hook": "Master the Floss dance and become a TikTok sensation!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "European Football Match Analysis",
-      "topic": "Analyzing the Tactics Behind Barcelona's Tiki-Taka Style",
-      "hook": "What's the secret behind Barcelona's iconic Tiki-Taka style of play?",
+      "category": "Sports Highlights",
+      "topic": "The Most Thrilling Finishes in Marathon History",
+      "hook": "You won't believe these heart-stopping finishes that will leave you on the edge!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Up-and-Coming Athletes",
+      "topic": "The Rise of Skateboarding Star Sky Brown: What You Need to Know",
+      "hook": "Meet the 12-year-old skateboarding prodigy taking the world by storm!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Current Event Updates",
+      "topic": "The Impact of Climate Change on Global Food Systems",
+      "hook": "The alarming truth about how climate change is affecting your plate!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Breaking News",
+      "topic": "The Latest Developments in Electric Vehicle Technology",
+      "hook": "The future of transportation is here: what you need to know about EVs!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Updates",
+      "topic": "The Evolution of Fortnite: A Look Back at its Impact on Gaming",
+      "hook": "How Fortnite changed the gaming landscape forever!",
       "voice_style": "authoritative",
       "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "Decoding the Tactics of Soccer Team Liverpool FC",
+      "hook": "The secrets behind Liverpool's success revealed!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 50
+    },
+    {
+      "category": "New Tech Releases",
+      "topic": "Unboxing the Latest Apple AirPods: Features and Review",
+      "hook": "Are the new AirPods worth the hype? Let's find out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
