@@ -1,200 +1,248 @@
 {
-  "generated_at": "2026-02-10T06:43:34.252470",
-  "valid_until": "2026-02-10T23:59:34.252478",
+  "generated_at": "2026-02-11T06:40:17.744769",
+  "valid_until": "2026-02-11T23:59:17.744776",
   "categories": [
-    "Tech Issues Explained",
-    "TV Show Hype",
-    "Dance Challenge Videos",
-    "Sports Highlights",
-    "Up-and-Coming Athletes",
-    "Current Event Updates",
-    "Breaking News",
-    "Gaming Updates",
-    "Sports Analysis",
-    "New Tech Releases",
+    "True Crime Stories",
+    "Winter Sports Highlights",
+    "Cancer Awareness",
+    "Los Angeles Lifestyle",
+    "Child Safety Tips",
+    "Weather Forecasting",
+    "90s Nostalgia",
     "Comedy Sketches",
-    "Reaction Videos",
-    "Behind-the-Scenes",
-    "Sports News",
-    "Internet Trends"
+    "Inspirational Stories",
+    "Cold Case Investigations",
+    "Snowboarding Tricks",
+    "Motivational Speakers",
+    "Mystery Documentaries",
+    "LA Tourism Guides",
+    "Crime Scene Investigations"
   ],
   "concepts": [
     {
-      "category": "Tech Issues Explained",
-      "topic": "Why Your Smartphone Battery Drains Faster in Winter",
-      "hook": "You won't believe the shocking reason your phone dies faster in the cold!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Hype",
-      "topic": "The Hidden Meaning Behind Stranger Things' Demogorgon",
-      "hook": "What if I told you the Demogorgon is more than just a monster?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Dance Challenge Videos",
-      "topic": "The Renegade Dance Challenge: A Step-by-Step Guide",
-      "hook": "Get ready to bust a move with the latest TikTok sensation!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Most Epic Comebacks in NBA History",
-      "hook": "You won't believe these insane turnarounds that changed the game!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Up-and-Coming Athletes",
-      "topic": "The Rise of Tennis Star Coco Gauff: What You Need to Know",
-      "hook": "Meet the 18-year-old tennis sensation taking the world by storm!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Current Event Updates",
-      "topic": "The Impact of Social Media on Mental Health: A Closer Look",
-      "hook": "The alarming truth about how your social media habits are affecting your mind!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking News",
-      "topic": "Breaking Down the Latest Developments in Space Exploration",
-      "hook": "NASA's latest discovery will leave you speechless!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming Updates",
-      "topic": "The Next-Gen Console Wars: PS5 vs Xbox Series X",
-      "hook": "Which console reigns supreme? Let's dive into the specs!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "Decoding the Tactical Genius of Soccer Manager Pep Guardiola",
-      "hook": "The secrets behind the most successful soccer manager in the world revealed!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "New Tech Releases",
-      "topic": "Unboxing the Latest Samsung Smartwatch: Features and Review",
-      "hook": "Is this the smartwatch you've been waiting for? Let's find out!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Issues Explained",
-      "topic": "The Dark Side of AI: Understanding the Risks of Emerging Tech",
-      "hook": "The terrifying truth about AI: what you need to know!",
+      "category": "True Crime Stories",
+      "topic": "The Bizarre Case of the Zodiac Killer's Unsolved Ciphers",
+      "hook": "What if I told you that one of America's most infamous serial killers left behind a cryptic message that has never been cracked?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "TV Show Hype",
-      "topic": "The Unsolved Mysteries of Game of Thrones: A Deep Dive",
-      "hook": "The shocking plot twists that still have fans talking years later!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Dance Challenge Videos",
-      "topic": "The Floss Dance Challenge: A Step-by-Step Tutorial",
-      "hook": "Master the Floss dance and become a TikTok sensation!",
+      "category": "Winter Sports Highlights",
+      "topic": "The Most Epic Ski Jump Failures in Winter Sports History",
+      "hook": "Get ready to cringe at the most jaw-dropping ski jump fails that will leave you speechless!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Most Thrilling Finishes in Marathon History",
-      "hook": "You won't believe these heart-stopping finishes that will leave you on the edge!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Cancer Awareness",
+      "topic": "The Hidden Dangers of UV Radiation and Skin Cancer",
+      "hook": "You might be surprised to learn that a common daily habit could be putting you at risk for skin cancer",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Los Angeles Lifestyle",
+      "topic": "Exploring the Secret Hiking Trails of Runyon Canyon",
+      "hook": "Want to experience the real LA like a local? I'm about to spill the tea on the city's best-kept hiking secrets",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Up-and-Coming Athletes",
-      "topic": "The Rise of Skateboarding Star Sky Brown: What You Need to Know",
-      "hook": "Meet the 12-year-old skateboarding prodigy taking the world by storm!",
-      "voice_style": "friendly",
+      "category": "Child Safety Tips",
+      "topic": "Teaching Kids How to Stay Safe in Public Restrooms",
+      "hook": "As a parent, have you ever worried about your child's safety in public restrooms? Here's what you need to know",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Current Event Updates",
-      "topic": "The Impact of Climate Change on Global Food Systems",
-      "hook": "The alarming truth about how climate change is affecting your plate!",
+      "category": "Weather Forecasting",
+      "topic": "The Science Behind Predicting Severe Thunderstorms",
+      "hook": "Ever wondered how meteorologists predict severe weather events? Let's dive into the fascinating world of storm forecasting",
       "voice_style": "authoritative",
-      "music_mood": "chill",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "90s Nostalgia",
+      "topic": "The Top 5 Most Iconic TV Shows of the 1990s",
+      "hook": "Get ready for a blast from the past as we count down the most iconic TV shows that defined a generation",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Breaking News",
-      "topic": "The Latest Developments in Electric Vehicle Technology",
-      "hook": "The future of transportation is here: what you need to know about EVs!",
+      "category": "Comedy Sketches",
+      "topic": "The Hilarious Struggle of Adulting in Your 20s",
+      "hook": "Who else is tired of pretending to be a functioning adult? Let's poke fun at the struggles of growing up",
+      "voice_style": "comedy",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Inspirational Stories",
+      "topic": "Overcoming Adversity: The Uplifting Story of Nick Newell's Journey to UFC",
+      "hook": "Meet the one-armed UFC fighter who defied the odds and achieved his dreams against all odds",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Cold Case Investigations",
+      "topic": "The Chilling Disappearance of the Sodder Children on Christmas Eve",
+      "hook": "On a night that's supposed to be filled with joy and laughter, a family's life was forever changed by a mysterious tragedy",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The Twisted Case of H.H. Holmes and His Murder Castle",
+      "hook": "Step into the mind of one of America's first serial killers and the sinister hotel he designed to lure victims to their demise",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Winter Sports Highlights",
+      "topic": "The Most Thrilling Downhill Skiing Crashes in World Cup History",
+      "hook": " Witness the heart-stopping crashes that will leave you on the edge of your seat",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Gaming Updates",
-      "topic": "The Evolution of Fortnite: A Look Back at its Impact on Gaming",
-      "hook": "How Fortnite changed the gaming landscape forever!",
+      "category": "Cancer Awareness",
+      "topic": "The Importance of Early Detection in Beating Breast Cancer",
+      "hook": "It's time to take control of your health and learn the life-saving steps to early breast cancer detection",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Analysis",
-      "topic": "Decoding the Tactics of Soccer Team Liverpool FC",
-      "hook": "The secrets behind Liverpool's success revealed!",
-      "voice_style": "calm",
+      "category": "Los Angeles Lifestyle",
+      "topic": "Uncovering the Best Kept Secrets of Venice Beach Boardwalk",
+      "hook": "From street performers to eclectic shops, I'm taking you on a tour of the hidden gems that make Venice Beach so unique",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Child Safety Tips",
+      "topic": "How to Keep Your Kids Safe from Online Predators",
+      "hook": "In a world where technology is constantly evolving, it's more important than ever to protect your child from the dangers of the internet",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Weather Forecasting",
+      "topic": "The Art of Predicting El Ni\u00f1o and Its Impact on Global Weather",
+      "hook": "Ever wondered how scientists forecast one of the most complex and powerful weather phenomena on the planet?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "New Tech Releases",
-      "topic": "Unboxing the Latest Apple AirPods: Features and Review",
-      "hook": "Are the new AirPods worth the hype? Let's find out!",
-      "voice_style": "friendly",
+      "category": "90s Nostalgia",
+      "topic": "The Evolution of Video Games from Pac-Man to PlayStation",
+      "hook": "Get ready to level up and take a trip down memory lane as we explore the iconic video games that defined a generation",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Sketches",
+      "topic": "The Amusing Struggles of Learning a New Language as an Adult",
+      "hook": "Who else has struggled to pronounce foreign words or accidentally ordered something weird at a restaurant?",
+      "voice_style": "comedy",
       "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Inspirational Stories",
+      "topic": "The Triumphant Story of Bethany Hamilton's Shark Attack Survival",
+      "hook": "Against all odds, one surfer's courage and determination inspired a nation after a terrifying encounter with a shark",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Cold Case Investigations",
+      "topic": "The Mysterious Disappearance of the Mary Celeste's Crew",
+      "hook": "Over 140 years ago, a ship was found adrift with no signs of its crew on board \u2013 what really happened to the Mary Celeste?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The Sinister Case of the Golden State Killer and His 30-Year Reign of Terror",
+      "hook": "For decades, a serial rapist and murderer evaded capture, leaving a trail of devastation in his wake \u2013 until one detective cracked the case",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -207,54 +255,14 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
