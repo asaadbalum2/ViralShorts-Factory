@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-11T06:40:17.744769",
-  "valid_until": "2026-02-11T23:59:17.744776",
+  "generated_at": "2026-02-12T06:39:12.475999",
+  "valid_until": "2026-02-12T23:59:12.476006",
   "categories": [
-    "True Crime Stories",
-    "Winter Sports Highlights",
-    "Cancer Awareness",
-    "Los Angeles Lifestyle",
-    "Child Safety Tips",
-    "Weather Forecasting",
-    "90s Nostalgia",
-    "Comedy Sketches",
-    "Inspirational Stories",
-    "Cold Case Investigations",
-    "Snowboarding Tricks",
-    "Motivational Speakers",
-    "Mystery Documentaries",
-    "LA Tourism Guides",
-    "Crime Scene Investigations"
+    "Sports Highlights",
+    "Winter Olympics Updates",
+    "AI Tech Explainers",
+    "Real Estate Investing Tips",
+    "Tennis Analysis",
+    "Vloggers' Lifestyle",
+    "Travel Vlogs: Sri Lanka and Oman",
+    "Golf Tournaments",
+    "Esports and Gaming",
+    "Trending Celebrity News",
+    "Extreme Sports: Snowboarding",
+    "Emerging Tech in Real Estate",
+    "Olympic Athlete Profiles",
+    "Short-Form Comedy Skits",
+    "Influencer Challenges: Piper Rockelle"
   ],
   "concepts": [
     {
-      "category": "True Crime Stories",
-      "topic": "The Bizarre Case of the Zodiac Killer's Unsolved Ciphers",
-      "hook": "What if I told you that one of America's most infamous serial killers left behind a cryptic message that has never been cracked?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Sports Highlights",
+      "topic": "Comeback Kids: Most Epic Turnarounds in Sports History",
+      "hook": "You won't believe the most insane comeback in sports history that will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Winter Sports Highlights",
-      "topic": "The Most Epic Ski Jump Failures in Winter Sports History",
-      "hook": "Get ready to cringe at the most jaw-dropping ski jump fails that will leave you speechless!",
-      "voice_style": "energetic",
+      "category": "Winter Olympics Updates",
+      "topic": "The Science of Speed Skating: Uncovering the Secrets of Olympic Pros",
+      "hook": "What makes Olympic speed skaters so ridiculously fast? Let's dive into the science behind their speed!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "AI Tech Explainers",
+      "topic": "How AI-Powered Chatbots Are Revolutionizing Customer Service",
+      "hook": "Imagine having a conversation with a machine that's smarter than you - welcome to the future of customer service!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Real Estate Investing Tips",
+      "topic": "The Top 3 Cities to Invest in Rental Properties for Guaranteed Returns",
+      "hook": "Want to make a fortune in real estate? These three cities are the secret to guaranteed returns on your investment!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Tennis Analysis",
+      "topic": "The Unstoppable Serve: How to Master the Perfect Tennis Serve",
+      "hook": "What makes the perfect tennis serve so unbeatable? Let's break down the technique and science behind it!",
+      "voice_style": "calm",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Cancer Awareness",
-      "topic": "The Hidden Dangers of UV Radiation and Skin Cancer",
-      "hook": "You might be surprised to learn that a common daily habit could be putting you at risk for skin cancer",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Los Angeles Lifestyle",
-      "topic": "Exploring the Secret Hiking Trails of Runyon Canyon",
-      "hook": "Want to experience the real LA like a local? I'm about to spill the tea on the city's best-kept hiking secrets",
+      "category": "Vloggers' Lifestyle",
+      "topic": "A Day in the Life of a Full-Time Travel Vlogger: The Highs and Lows",
+      "hook": "Ever wondered what it's like to get paid to travel the world? Take a peek into my crazy life as a full-time travel vlogger!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Child Safety Tips",
-      "topic": "Teaching Kids How to Stay Safe in Public Restrooms",
-      "hook": "As a parent, have you ever worried about your child's safety in public restrooms? Here's what you need to know",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Weather Forecasting",
-      "topic": "The Science Behind Predicting Severe Thunderstorms",
-      "hook": "Ever wondered how meteorologists predict severe weather events? Let's dive into the fascinating world of storm forecasting",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "90s Nostalgia",
-      "topic": "The Top 5 Most Iconic TV Shows of the 1990s",
-      "hook": "Get ready for a blast from the past as we count down the most iconic TV shows that defined a generation",
+      "category": "Travel Vlogs: Sri Lanka and Oman",
+      "topic": "Discovering the Hidden Gems of Sri Lanka: Off-the-Beaten-Path Adventures",
+      "hook": "Get ready to explore the uncharted territories of Sri Lanka - from secret waterfalls to ancient temples!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Comedy Sketches",
-      "topic": "The Hilarious Struggle of Adulting in Your 20s",
-      "hook": "Who else is tired of pretending to be a functioning adult? Let's poke fun at the struggles of growing up",
-      "voice_style": "comedy",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Inspirational Stories",
-      "topic": "Overcoming Adversity: The Uplifting Story of Nick Newell's Journey to UFC",
-      "hook": "Meet the one-armed UFC fighter who defied the odds and achieved his dreams against all odds",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Cold Case Investigations",
-      "topic": "The Chilling Disappearance of the Sodder Children on Christmas Eve",
-      "hook": "On a night that's supposed to be filled with joy and laughter, a family's life was forever changed by a mysterious tragedy",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime Stories",
-      "topic": "The Twisted Case of H.H. Holmes and His Murder Castle",
-      "hook": "Step into the mind of one of America's first serial killers and the sinister hotel he designed to lure victims to their demise",
+      "category": "Golf Tournaments",
+      "topic": "The Most Dramatic Finishes in Golf History: When Underdogs Became Champions",
+      "hook": "You won't believe the most shocking comebacks in golf history that will leave you on the edge of your seat!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 48
     },
     {
-      "category": "Winter Sports Highlights",
-      "topic": "The Most Thrilling Downhill Skiing Crashes in World Cup History",
-      "hook": " Witness the heart-stopping crashes that will leave you on the edge of your seat",
-      "voice_style": "energetic",
+      "category": "Esports and Gaming",
+      "topic": "The Rise of Female Gamers: Breaking Down Barriers in the Gaming Industry",
+      "hook": "Meet the female gamers who are shattering stereotypes and taking the gaming world by storm!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Cancer Awareness",
-      "topic": "The Importance of Early Detection in Beating Breast Cancer",
-      "hook": "It's time to take control of your health and learn the life-saving steps to early breast cancer detection",
+      "category": "Trending Celebrity News",
+      "topic": "The Secret to Celebrity Fitness: Uncovering the Workout Routines of the Stars",
+      "hook": "Want to know the secret to getting a body like your favorite celebrity? Let's uncover their fitness routines!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Los Angeles Lifestyle",
-      "topic": "Uncovering the Best Kept Secrets of Venice Beach Boardwalk",
-      "hook": "From street performers to eclectic shops, I'm taking you on a tour of the hidden gems that make Venice Beach so unique",
+      "category": "Sports Highlights",
+      "topic": "The Most Unbelievable Sports Records That Will Never Be Broken",
+      "hook": "You won't believe the most unbreakable records in sports history that will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Winter Olympics Updates",
+      "topic": "The Thrill of Big Air Snowboarding: What It Takes to Be an Olympic Champion",
+      "hook": "Get ready to witness the death-defying stunts of big air snowboarding and meet the athletes who dare to push the limits!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "AI Tech Explainers",
+      "topic": "The Future of Transportation: How AI-Powered Self-Driving Cars Will Change the World",
+      "hook": "Imagine a world where cars drive themselves - welcome to the future of transportation, powered by AI!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Real Estate Investing Tips",
+      "topic": "The Top 5 Mistakes to Avoid When Investing in Real Estate for the First Time",
+      "hook": "Don't lose your shirt in real estate! Avoid these top 5 mistakes that every beginner makes and secure your financial future!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Child Safety Tips",
-      "topic": "How to Keep Your Kids Safe from Online Predators",
-      "hook": "In a world where technology is constantly evolving, it's more important than ever to protect your child from the dangers of the internet",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Weather Forecasting",
-      "topic": "The Art of Predicting El Ni\u00f1o and Its Impact on Global Weather",
-      "hook": "Ever wondered how scientists forecast one of the most complex and powerful weather phenomena on the planet?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Tennis Analysis",
+      "topic": "The Art of Mental Toughness: How Tennis Players Overcome Pressure and Win",
+      "hook": "What separates the champions from the rest? Let's explore the mental strategies that tennis players use to stay ahead of the game!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "90s Nostalgia",
-      "topic": "The Evolution of Video Games from Pac-Man to PlayStation",
-      "hook": "Get ready to level up and take a trip down memory lane as we explore the iconic video games that defined a generation",
+      "category": "Vloggers' Lifestyle",
+      "topic": "The Dark Side of Being a Social Media Influencer: The Unseen Struggles",
+      "hook": "Being a social media influencer isn't all glamour and fun - take a peek into the unseen struggles and drama behind the scenes!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Travel Vlogs: Sri Lanka and Oman",
+      "topic": "Uncovering the Ancient Secrets of Oman: A Journey Through Time",
+      "hook": "Get ready to uncover the hidden treasures of Oman and embark on a journey through time, exploring ancient forts and mysterious landscapes!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Comedy Sketches",
-      "topic": "The Amusing Struggles of Learning a New Language as an Adult",
-      "hook": "Who else has struggled to pronounce foreign words or accidentally ordered something weird at a restaurant?",
-      "voice_style": "comedy",
+      "category": "Golf Tournaments",
+      "topic": "The Most Memorable Golf Rivalries of All Time: When Legends Clashed",
+      "hook": "You won't believe the most epic golf rivalries that will go down in history as the greatest of all time!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Esports and Gaming",
+      "topic": "The Rise of Esports in the Mainstream: How Gaming Became a Global Phenomenon",
+      "hook": "From basement gamers to stadium fillers - how did esports become a global phenomenon that's taking the world by storm?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Inspirational Stories",
-      "topic": "The Triumphant Story of Bethany Hamilton's Shark Attack Survival",
-      "hook": "Against all odds, one surfer's courage and determination inspired a nation after a terrifying encounter with a shark",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Cold Case Investigations",
-      "topic": "The Mysterious Disappearance of the Mary Celeste's Crew",
-      "hook": "Over 140 years ago, a ship was found adrift with no signs of its crew on board \u2013 what really happened to the Mary Celeste?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime Stories",
-      "topic": "The Sinister Case of the Golden State Killer and His 30-Year Reign of Terror",
-      "hook": "For decades, a serial rapist and murderer evaded capture, leaving a trail of devastation in his wake \u2013 until one detective cracked the case",
+      "category": "Trending Celebrity News",
+      "topic": "The Most Shocking Celebrity Transformations That Will Leave You Speechless",
+      "hook": "You won't believe the most jaw-dropping celebrity transformations that will leave you questioning everything!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 48
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Dominant Athletes in Sports History: When Superstars Ruled the Game",
+      "hook": "Meet the athletes who dominated their sports like no one else - the legends who redefined the game and left an unforgettable mark!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
