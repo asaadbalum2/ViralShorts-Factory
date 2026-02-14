@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-13T06:35:33.827272",
-  "valid_until": "2026-02-13T23:59:33.827281",
+  "generated_at": "2026-02-14T06:05:46.749127",
+  "valid_until": "2026-02-14T23:59:46.749133",
   "categories": [
-    "Olympic Highlights",
-    "Justice System Explainers",
-    "Bachelor Nation Updates",
-    "Winter Sports Fails",
-    "Music Challenge Videos",
-    "Cricket Match Reactions",
-    "Space Exploration Breakthroughs",
-    "Parliamentary Proceedings",
+    "Figure Skating Highlights",
+    "Oman Travel Vlogs",
+    "Classic Movie Reviews",
     "Valentines Day Gift Ideas",
-    "Unbelievable Astronomical Discoveries",
-    "Figure Skating Analysis",
-    "Zimbabwean Culture Showcase",
-    "Australian Sports Analysis",
-    "Lyric Music Videos",
-    "Current Event Comedies"
+    "US Political Analysis",
+    "Skating Legend Tributes",
+    "Furniture Shopping Hacks",
+    "Movie Night Recommendations",
+    "Streaming Service Updates",
+    "Olympic Sports News",
+    "Romantic Getaway Inspiration",
+    "Iconic Celebrity Interviews",
+    "International Sports Updates",
+    "Weekend Watchlist",
+    "Love Story Movie Recs"
   ],
   "concepts": [
     {
-      "category": "Olympic Highlights",
-      "topic": "Most Shocking Upsets in Olympic History",
-      "hook": "You won't believe which underdog took down a reigning champion!",
+      "category": "Figure Skating Highlights",
+      "topic": "Nathan Chen's Record-Breaking Triple Axels",
+      "hook": "Can one skater really land 5 triple axels in a row?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Justice System Explainers",
-      "topic": "The Ins and Outs of Jury Selection",
-      "hook": "What really happens behind closed doors when choosing a jury?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Oman Travel Vlogs",
+      "topic": "Exploring Muscat's Hidden Gems",
+      "hook": "You won't believe what's hidden behind this ancient fort wall",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Bachelor Nation Updates",
-      "topic": "The Most Dramatic Rose Ceremonies in Bachelor History",
-      "hook": "Which Bachelor contestant was left standing alone in the most shocking rose ceremony?",
+      "category": "Classic Movie Reviews",
+      "topic": "Why Casablanca Remains a Timeless Classic",
+      "hook": "The secret to this movie's enduring success will surprise you",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Valentines Day Gift Ideas",
+      "topic": "DIY Spa Day Kits for Your Loved One",
+      "hook": "Transform your home into a luxury spa with just $20",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "US Political Analysis",
+      "topic": "The Impact of Social Media on Modern Elections",
+      "hook": "What if your favorite social media platform was influencing your vote?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Skating Legend Tributes",
+      "topic": "Remembering the Incredible Career of Scott Hamilton",
+      "hook": "From cancer survivor to Olympic champion, his story will inspire you",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Furniture Shopping Hacks",
+      "topic": "How to Score Luxury Furniture at Thrift Store Prices",
+      "hook": "You won't believe the designer sofa I found for 90% off",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Movie Night Recommendations",
+      "topic": "The Best Indie Films You've Never Heard Of",
+      "hook": "Get ready to discover your new favorite hidden gem movie",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Streaming Service Updates",
+      "topic": "What's New on Netflix This Month",
+      "hook": "You won't want to miss these highly-anticipated new releases",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Olympic Sports News",
+      "topic": "The Rise of Snowboarding as an Olympic Sport",
+      "hook": "How a group of rebels turned their passion into an Olympic event",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Winter Sports Fails",
-      "topic": "Epic Skiing Wipeouts from the Slopes",
-      "hook": "Watch as these skiers take a tumble down the mountain!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Challenge Videos",
-      "topic": "Can You Sing Like Your Favorite Artist?",
-      "hook": "Think you can hit the high notes like Ariana Grande? Take the challenge!",
+      "category": "Figure Skating Highlights",
+      "topic": "The Most Iconic Figure Skating Rivalries in History",
+      "hook": "Which legendary skater had the most epic rivalry of all time?",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Cricket Match Reactions",
-      "topic": "The Most Unbelievable Cricket Comebacks in History",
-      "hook": "You won't believe how these teams turned the game around!",
-      "voice_style": "excited",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Space Exploration Breakthroughs",
-      "topic": "The Latest Discoveries on Mars",
-      "hook": "What did NASA's Curiosity rover just discover on the red planet?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Oman Travel Vlogs",
+      "topic": "Desert Camping Under the Stars in Oman",
+      "hook": "Imagine sleeping under a blanket of a million stars",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Parliamentary Proceedings",
-      "topic": "The Most Heated Debates in Parliamentary History",
-      "hook": "Which politicians got into a shouting match in the house?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Classic Movie Reviews",
+      "topic": "Uncovering the Hidden Themes in The Wizard of Oz",
+      "hook": "What if the classic movie you loved as a child has a dark secret?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
       "category": "Valentines Day Gift Ideas",
-      "topic": "Unique Gift Ideas for Your Partner",
-      "hook": "Ditch the flowers and chocolates, try these unexpected gifts instead!",
+      "topic": "Personalized Photo Albums for Your Loved One",
+      "hook": "Create a one-of-a-kind gift that will make their heart melt",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Unbelievable Astronomical Discoveries",
-      "topic": "The Discovery of Exoplanets",
-      "hook": "Could we be one step closer to finding life beyond Earth?",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Olympic Highlights",
-      "topic": "The Most Iconic Moments in Olympic Opening Ceremonies",
-      "hook": "Which opening ceremony moment still gives you chills to this day?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Justice System Explainers",
-      "topic": "The Difference Between a Felony and a Misdemeanor",
-      "hook": "What's the real difference between these two types of crimes?",
+      "category": "US Political Analysis",
+      "topic": "The Impact of Climate Change on Future Elections",
+      "hook": "Will the next president be a climate hero or villain?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 40
+      "target_duration": 50
     },
     {
-      "category": "Bachelor Nation Updates",
-      "topic": "The Most Unexpected Bachelor Couples",
-      "hook": "Which contestants found love in the most unexpected way?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Skating Legend Tributes",
+      "topic": "The Enduring Legacy of Figure Skating Icon, Peggy Fleming",
+      "hook": "The trailblazing skater who paved the way for generations to come",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Winter Sports Fails",
-      "topic": "Snowboarding Crashes That Will Make You Cringe",
-      "hook": "Watch as these snowboarders take a tumble down the mountain!",
+      "category": "Furniture Shopping Hacks",
+      "topic": "Upcycling Old Furniture into Unique Masterpieces",
+      "hook": "Turn trash into treasure with these genius DIY hacks",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Music Challenge Videos",
-      "topic": "Can You Sing a Song in a Different Language?",
-      "hook": "Think you can sing like a native speaker? Take the challenge!",
-      "voice_style": "energetic",
+      "category": "Movie Night Recommendations",
+      "topic": "The Best Foreign Films to Watch This Year",
+      "hook": "Get ready to explore new cultures and worlds through cinema",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Streaming Service Updates",
+      "topic": "The Latest Streaming Trends to Watch Out For",
+      "hook": "What's next for the world of streaming, and how will it change the game?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Cricket Match Reactions",
-      "topic": "The Most Thrilling Last-Over Finishes in Cricket History",
-      "hook": "Which teams pulled off the most epic comeback in the final over?",
-      "voice_style": "excited",
+      "category": "Olympic Sports News",
+      "topic": "The Growing Popularity of Women's Sports in the Olympics",
+      "hook": "The female athletes breaking barriers and shattering records",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Space Exploration Breakthroughs",
-      "topic": "The latest Findings on Black Holes",
-      "hook": "What do scientists just discover about these mysterious voids in space?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Parliamentary Proceedings",
-      "topic": "The Most Surprising Parliamentary Apologies",
-      "hook": "Which politicians had to eat their words and apologize in the house?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Valentines Day Gift Ideas",
-      "topic": "DIY Gift Ideas for Your Partner",
-      "hook": "Ditch the store-bought gifts and make something special instead!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Unbelievable Astronomical Discoveries",
-      "topic": "The Mystery of Fast Radio Bursts",
-      "hook": "What are these brief, intense pulses of energy coming from space?",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Olympic Highlights",
-      "topic": "The Most Inspiring Olympic Comebacks",
-      "hook": "Which athletes overcame incredible obstacles to win gold?",
+      "category": "Figure Skating Highlights",
+      "topic": "The Most Memorable Figure Skating Comebacks in History",
+      "hook": "From injury to victory, these skaters will inspire you with their determination",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
