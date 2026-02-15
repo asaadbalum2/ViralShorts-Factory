@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-14T06:05:46.749127",
-  "valid_until": "2026-02-14T23:59:46.749133",
+  "generated_at": "2026-02-15T06:12:47.558867",
+  "valid_until": "2026-02-15T23:59:47.558871",
   "categories": [
-    "Figure Skating Highlights",
-    "Oman Travel Vlogs",
-    "Classic Movie Reviews",
-    "Valentines Day Gift Ideas",
-    "US Political Analysis",
-    "Skating Legend Tributes",
-    "Furniture Shopping Hacks",
-    "Movie Night Recommendations",
-    "Streaming Service Updates",
-    "Olympic Sports News",
-    "Romantic Getaway Inspiration",
-    "Iconic Celebrity Interviews",
-    "International Sports Updates",
-    "Weekend Watchlist",
-    "Love Story Movie Recs"
+    "Olympic Sports Highlights",
+    "Winter Sports Analysis",
+    "Current Event News",
+    "Sports Updates",
+    "Women in Sports",
+    "International Competitions",
+    "Music Legends",
+    "Golf Tournaments",
+    "Sports Controversies",
+    "Winter Olympic Moments",
+    "Emerging Athletes",
+    "Global News",
+    "Sports Leagues",
+    "Entertainment News",
+    "Action Sports"
   ],
   "concepts": [
     {
-      "category": "Figure Skating Highlights",
-      "topic": "Nathan Chen's Record-Breaking Triple Axels",
-      "hook": "Can one skater really land 5 triple axels in a row?",
+      "category": "Olympic Sports Highlights",
+      "topic": "Top 5 Most Unbelievable Finishes in Olympic History",
+      "hook": "You won't believe the comeback that stunned the world!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Oman Travel Vlogs",
-      "topic": "Exploring Muscat's Hidden Gems",
-      "hook": "You won't believe what's hidden behind this ancient fort wall",
-      "voice_style": "friendly",
+      "category": "Winter Sports Analysis",
+      "topic": "The Science Behind Ski Jumping: How Athletes Defy Gravity",
+      "hook": "What makes these athletes fly through the air like superheroes?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Classic Movie Reviews",
-      "topic": "Why Casablanca Remains a Timeless Classic",
-      "hook": "The secret to this movie's enduring success will surprise you",
-      "voice_style": "authoritative",
+      "category": "Current Event News",
+      "topic": "The Impact of Climate Change on Winter Sports: A Growing Concern",
+      "hook": "The future of winter sports is melting away, literally!",
+      "voice_style": "calm",
       "music_mood": "dramatic",
-      "target_duration": 50
+      "target_duration": 42
     },
     {
-      "category": "Valentines Day Gift Ideas",
-      "topic": "DIY Spa Day Kits for Your Loved One",
-      "hook": "Transform your home into a luxury spa with just $20",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Sports Updates",
+      "topic": "The Rise of New Olympic Sports: What You Need to Know",
+      "hook": "Get ready for the most epic additions to the Olympic lineup!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Women in Sports",
+      "topic": "The Trailblazing Women of Winter Sports: Breaking Barriers",
+      "hook": "Meet the fearless females who are redefining the world of winter sports!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "US Political Analysis",
-      "topic": "The Impact of Social Media on Modern Elections",
-      "hook": "What if your favorite social media platform was influencing your vote?",
+      "category": "International Competitions",
+      "topic": "The Intense Rivalry Between the US and Canada in Ice Hockey",
+      "hook": "It's more than just a game, it's a battle for bragging rights!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Skating Legend Tributes",
-      "topic": "Remembering the Incredible Career of Scott Hamilton",
-      "hook": "From cancer survivor to Olympic champion, his story will inspire you",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Furniture Shopping Hacks",
-      "topic": "How to Score Luxury Furniture at Thrift Store Prices",
-      "hook": "You won't believe the designer sofa I found for 90% off",
-      "voice_style": "energetic",
+      "category": "Music Legends",
+      "topic": "The Iconic Songs That Defined the Olympics: A Musical Journey",
+      "hook": "Relive the magic of the Olympics through the power of music!",
+      "voice_style": "calm",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Golf Tournaments",
+      "topic": "The Most Dramatic Finishes in Golf Major History",
+      "hook": "These heart-stopping moments will leave you on the edge of your seat!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Movie Night Recommendations",
-      "topic": "The Best Indie Films You've Never Heard Of",
-      "hook": "Get ready to discover your new favorite hidden gem movie",
+      "category": "Sports Controversies",
+      "topic": "The Most Shocking Scandals in Olympic History: A Look Back",
+      "hook": "You won't believe the secrets that were hidden behind the scenes!",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Winter Olympic Moments",
+      "topic": "The Most Emotional Moments in Winter Olympics History",
+      "hook": "Get ready to feel all the feels with these heartwarming moments!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Streaming Service Updates",
-      "topic": "What's New on Netflix This Month",
-      "hook": "You won't want to miss these highly-anticipated new releases",
+      "category": "Olympic Sports Highlights",
+      "topic": "The Fastest Times in Olympic History: A Record-Breaking Ride",
+      "hook": "These athletes are redefining the limits of human speed!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Winter Sports Analysis",
+      "topic": "The Art of Figure Skating: What Makes a Perfect Routine?",
+      "hook": "What separates the champions from the rest in this precise sport?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Current Event News",
+      "topic": "The Impact of Technology on Winter Sports: A New Era",
+      "hook": "How technology is revolutionizing the world of winter sports!",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Updates",
+      "topic": "The Comeback Kids: Athletes Who Overcame Injury to Win Gold",
+      "hook": "Their journeys will inspire you to never give up on your dreams!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Olympic Sports News",
-      "topic": "The Rise of Snowboarding as an Olympic Sport",
-      "hook": "How a group of rebels turned their passion into an Olympic event",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Women in Sports",
+      "topic": "The Female Pioneers of Winter Sports: Breaking Down Barriers",
+      "hook": "Meet the women who paved the way for future generations!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 42
     },
     {
-      "category": "Figure Skating Highlights",
-      "topic": "The Most Iconic Figure Skating Rivalries in History",
-      "hook": "Which legendary skater had the most epic rivalry of all time?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "International Competitions",
+      "topic": "The Rivalry Between the US and Russia in Figure Skating",
+      "hook": "It's a battle for ice supremacy, and only one can reign!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Oman Travel Vlogs",
-      "topic": "Desert Camping Under the Stars in Oman",
-      "hook": "Imagine sleeping under a blanket of a million stars",
+      "category": "Music Legends",
+      "topic": "The Iconic Music Performances at the Olympics: A Look Back",
+      "hook": "Relive the magic of the Olympics through the power of music!",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Classic Movie Reviews",
-      "topic": "Uncovering the Hidden Themes in The Wizard of Oz",
-      "hook": "What if the classic movie you loved as a child has a dark secret?",
+      "category": "Golf Tournaments",
+      "topic": "The Most Memorable Golf Moments in Olympic History",
+      "hook": "These moments will make you appreciate the beauty of golf!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Sports Controversies",
+      "topic": "The Biggest Upsets in Olympic History: What Went Wrong?",
+      "hook": "These shocking defeats will leave you speechless!",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Valentines Day Gift Ideas",
-      "topic": "Personalized Photo Albums for Your Loved One",
-      "hook": "Create a one-of-a-kind gift that will make their heart melt",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "US Political Analysis",
-      "topic": "The Impact of Climate Change on Future Elections",
-      "hook": "Will the next president be a climate hero or villain?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Skating Legend Tributes",
-      "topic": "The Enduring Legacy of Figure Skating Icon, Peggy Fleming",
-      "hook": "The trailblazing skater who paved the way for generations to come",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Furniture Shopping Hacks",
-      "topic": "Upcycling Old Furniture into Unique Masterpieces",
-      "hook": "Turn trash into treasure with these genius DIY hacks",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Movie Night Recommendations",
-      "topic": "The Best Foreign Films to Watch This Year",
-      "hook": "Get ready to explore new cultures and worlds through cinema",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Streaming Service Updates",
-      "topic": "The Latest Streaming Trends to Watch Out For",
-      "hook": "What's next for the world of streaming, and how will it change the game?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Olympic Sports News",
-      "topic": "The Growing Popularity of Women's Sports in the Olympics",
-      "hook": "The female athletes breaking barriers and shattering records",
-      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Figure Skating Highlights",
-      "topic": "The Most Memorable Figure Skating Comebacks in History",
-      "hook": "From injury to victory, these skaters will inspire you with their determination",
-      "voice_style": "energetic",
+      "category": "Winter Olympic Moments",
+      "topic": "The Most Iconic Winter Olympic Moments of the 21st Century",
+      "hook": "Relive the magic of the Winter Olympics with these unforgettable moments!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Olympic Sports Highlights",
+      "topic": "The Most Dominant Olympic Athletes of All Time: A Look Back",
+      "hook": "These athletes redefined the limits of human potential!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
