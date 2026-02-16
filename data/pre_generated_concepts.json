@@ -1,218 +1,200 @@
 {
-  "generated_at": "2026-02-15T06:12:47.558867",
-  "valid_until": "2026-02-15T23:59:47.558871",
+  "generated_at": "2026-02-16T06:40:27.594863",
+  "valid_until": "2026-02-16T23:59:27.594871",
   "categories": [
-    "Olympic Sports Highlights",
-    "Winter Sports Analysis",
-    "Current Event News",
-    "Sports Updates",
-    "Women in Sports",
+    "Sports Highlights",
+    "Weather Updates",
+    "Collectible Reviews",
+    "Figure Skating",
     "International Competitions",
-    "Music Legends",
-    "Golf Tournaments",
-    "Sports Controversies",
-    "Winter Olympic Moments",
-    "Emerging Athletes",
-    "Global News",
-    "Sports Leagues",
-    "Entertainment News",
-    "Action Sports"
+    "Curling Analysis",
+    "Northern Lights Time-Lapses",
+    "Retail Hacks",
+    "Return Policy Exposed",
+    "Pokemon Card Unboxing",
+    "Olympic Trials",
+    "Current Events Explained",
+    "Winter Sports",
+    "Viral Challenge Alerts",
+    "Tonight's Forecast"
   ],
   "concepts": [
     {
-      "category": "Olympic Sports Highlights",
-      "topic": "Top 5 Most Unbelievable Finishes in Olympic History",
-      "hook": "You won't believe the comeback that stunned the world!",
+      "category": "Sports Highlights",
+      "topic": "NBA Record-Breaking Dunks",
+      "hook": "You won't believe the highest dunk in NBA history!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Winter Sports Analysis",
-      "topic": "The Science Behind Ski Jumping: How Athletes Defy Gravity",
-      "hook": "What makes these athletes fly through the air like superheroes?",
-      "voice_style": "authoritative",
+      "category": "Weather Updates",
+      "topic": "Rare Morning Glory Clouds",
+      "hook": " Witness the breathtaking Morning Glory clouds that will leave you speechless!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Current Event News",
-      "topic": "The Impact of Climate Change on Winter Sports: A Growing Concern",
-      "hook": "The future of winter sports is melting away, literally!",
-      "voice_style": "calm",
+      "category": "Collectible Reviews",
+      "topic": "Rare 1999 Pok\u00e9mon Cards",
+      "hook": "What makes these vintage Pok\u00e9mon cards worth a fortune?",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Updates",
-      "topic": "The Rise of New Olympic Sports: What You Need to Know",
-      "hook": "Get ready for the most epic additions to the Olympic lineup!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Women in Sports",
-      "topic": "The Trailblazing Women of Winter Sports: Breaking Barriers",
-      "hook": "Meet the fearless females who are redefining the world of winter sports!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "Figure Skating",
+      "topic": "Axel Jump Techniques",
+      "hook": "The secret to landing the perfect Axel jump revealed!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
       "category": "International Competitions",
-      "topic": "The Intense Rivalry Between the US and Canada in Ice Hockey",
-      "hook": "It's more than just a game, it's a battle for bragging rights!",
-      "voice_style": "dramatic",
+      "topic": "Robotics World Championships",
+      "hook": "The future of robotics: which team will take home the gold?",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Music Legends",
-      "topic": "The Iconic Songs That Defined the Olympics: A Musical Journey",
-      "hook": "Relive the magic of the Olympics through the power of music!",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Golf Tournaments",
-      "topic": "The Most Dramatic Finishes in Golf Major History",
-      "hook": "These heart-stopping moments will leave you on the edge of your seat!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Curling Analysis",
+      "topic": "Sweeping Techniques",
+      "hook": "The art of sweeping: what makes a curling team unbeatable?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sports Controversies",
-      "topic": "The Most Shocking Scandals in Olympic History: A Look Back",
-      "hook": "You won't believe the secrets that were hidden behind the scenes!",
+      "category": "Northern Lights Time-Lapses",
+      "topic": "Aurora Borealis in 4K",
+      "hook": "Experience the breathtaking beauty of the Northern Lights like never before!",
       "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Winter Olympic Moments",
-      "topic": "The Most Emotional Moments in Winter Olympics History",
-      "hook": "Get ready to feel all the feels with these heartwarming moments!",
-      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Olympic Sports Highlights",
-      "topic": "The Fastest Times in Olympic History: A Record-Breaking Ride",
-      "hook": "These athletes are redefining the limits of human speed!",
-      "voice_style": "energetic",
+      "category": "Retail Hacks",
+      "topic": "Saving Money at Outlet Stores",
+      "hook": "The secret to scoring huge discounts at outlet stores revealed!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Winter Sports Analysis",
-      "topic": "The Art of Figure Skating: What Makes a Perfect Routine?",
-      "hook": "What separates the champions from the rest in this precise sport?",
+      "category": "Return Policy Exposed",
+      "topic": "Walmart's Return Policy Secrets",
+      "hook": "What Walmart doesn't want you to know about their return policy!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Current Event News",
-      "topic": "The Impact of Technology on Winter Sports: A New Era",
-      "hook": "How technology is revolutionizing the world of winter sports!",
-      "voice_style": "calm",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports Updates",
-      "topic": "The Comeback Kids: Athletes Who Overcame Injury to Win Gold",
-      "hook": "Their journeys will inspire you to never give up on your dreams!",
-      "voice_style": "friendly",
+      "category": "Pokemon Card Unboxing",
+      "topic": "Rare Charizard Card Unboxing",
+      "hook": "Will I pull the rarest Charizard card in this unboxing?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "NFL Record-Breaking Touchdowns",
+      "hook": "The most epic touchdown catches in NFL history!",
+      "voice_style": "dramatic",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Updates",
+      "topic": "Hurricane Formation Explained",
+      "hook": "The fascinating science behind hurricane formation!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Women in Sports",
-      "topic": "The Female Pioneers of Winter Sports: Breaking Down Barriers",
-      "hook": "Meet the women who paved the way for future generations!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 42
+      "category": "Collectible Reviews",
+      "topic": "Vintage Star Wars Action Figures",
+      "hook": "The rarest Star Wars action figures that will make your collection shine!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Figure Skating",
+      "topic": "Ice Dance Techniques",
+      "hook": "The art of ice dance: what makes a perfect performance?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
       "category": "International Competitions",
-      "topic": "The Rivalry Between the US and Russia in Figure Skating",
-      "hook": "It's a battle for ice supremacy, and only one can reign!",
-      "voice_style": "dramatic",
+      "topic": "Esports World Championships",
+      "hook": "The battle for esports supremacy: which team will reign supreme?",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Music Legends",
-      "topic": "The Iconic Music Performances at the Olympics: A Look Back",
-      "hook": "Relive the magic of the Olympics through the power of music!",
+      "category": "Curling Analysis",
+      "topic": "Strategy and Tactics",
+      "hook": "The mind games of curling: outsmarting your opponents!",
       "voice_style": "calm",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Golf Tournaments",
-      "topic": "The Most Memorable Golf Moments in Olympic History",
-      "hook": "These moments will make you appreciate the beauty of golf!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Controversies",
-      "topic": "The Biggest Upsets in Olympic History: What Went Wrong?",
-      "hook": "These shocking defeats will leave you speechless!",
+      "category": "Northern Lights Time-Lapses",
+      "topic": "Aurora Australis in Antarctica",
+      "hook": "Witness the breathtaking beauty of the Southern Lights in Antarctica!",
       "voice_style": "mysterious",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Winter Olympic Moments",
-      "topic": "The Most Iconic Winter Olympic Moments of the 21st Century",
-      "hook": "Relive the magic of the Winter Olympics with these unforgettable moments!",
+      "category": "Retail Hacks",
+      "topic": "Scoring Deals on Black Friday",
+      "hook": "The ultimate guide to scoring the best deals on Black Friday!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Olympic Sports Highlights",
-      "topic": "The Most Dominant Olympic Athletes of All Time: A Look Back",
-      "hook": "These athletes redefined the limits of human potential!",
+      "category": "Return Policy Exposed",
+      "topic": "Amazon's Return Policy Secrets",
+      "hook": "What Amazon doesn't want you to know about their return policy!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Pokemon Card Unboxing",
+      "topic": "Rare Pikachu Card Unboxing",
+      "hook": "Will I pull the rarest Pikachu card in this unboxing?",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 42
+      "music_mood": "intense",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
@@ -220,8 +202,13 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
@@ -230,39 +217,44 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
