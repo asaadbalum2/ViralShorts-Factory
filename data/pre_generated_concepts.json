@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-02-16T06:40:27.594863",
-  "valid_until": "2026-02-16T23:59:27.594871",
+  "generated_at": "2026-02-17T06:33:21.089147",
+  "valid_until": "2026-02-17T23:59:21.089155",
   "categories": [
-    "Sports Highlights",
-    "Weather Updates",
-    "Collectible Reviews",
-    "Figure Skating",
-    "International Competitions",
-    "Curling Analysis",
-    "Northern Lights Time-Lapses",
-    "Retail Hacks",
-    "Return Policy Exposed",
-    "Pokemon Card Unboxing",
-    "Olympic Trials",
-    "Current Events Explained",
-    "Winter Sports",
-    "Viral Challenge Alerts",
-    "Tonight's Forecast"
+    "Lunar New Year Celebrations",
+    "Sports Highlights: Canada vs New Zealand",
+    "Tech Issue Fixes: Spectrum Outage Solutions",
+    "Book Reviews: The Last Thing He Told Me",
+    "Celebrity News: Shia Labeouf Updates",
+    "Travel Vlogs: Exploring Bombay",
+    "Seasonal Greetings: A\u00f1o Nuevo Lunar Wishes",
+    "News Updates: Spectrum Outage Latest",
+    "Comedy Skits: Jennifer Garner Parodies",
+    "Food Recipes: Traditional Lunar New Year Dishes",
+    "DIY Fixes: Troubleshooting Spectrum Outage Issues",
+    "Sports Analysis: Canada vs New Zealand Recap",
+    "Entertainment News: Shia Labeouf Controversies",
+    "Travel Guides: Bombay Hidden Gems",
+    "Cultural Explanations: Understanding \u519c\u5386\u65b0\u5e74 Traditions"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "NBA Record-Breaking Dunks",
-      "hook": "You won't believe the highest dunk in NBA history!",
+      "category": "Lunar New Year Celebrations",
+      "topic": "Unconventional Lion Dance Performances",
+      "hook": "You won't believe what happens when lion dancers take over the streets!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Weather Updates",
-      "topic": "Rare Morning Glory Clouds",
-      "hook": " Witness the breathtaking Morning Glory clouds that will leave you speechless!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Collectible Reviews",
-      "topic": "Rare 1999 Pok\u00e9mon Cards",
-      "hook": "What makes these vintage Pok\u00e9mon cards worth a fortune?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Figure Skating",
-      "topic": "Axel Jump Techniques",
-      "hook": "The secret to landing the perfect Axel jump revealed!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "International Competitions",
-      "topic": "Robotics World Championships",
-      "hook": "The future of robotics: which team will take home the gold?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Curling Analysis",
-      "topic": "Sweeping Techniques",
-      "hook": "The art of sweeping: what makes a curling team unbeatable?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Northern Lights Time-Lapses",
-      "topic": "Aurora Borealis in 4K",
-      "hook": "Experience the breathtaking beauty of the Northern Lights like never before!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Retail Hacks",
-      "topic": "Saving Money at Outlet Stores",
-      "hook": "The secret to scoring huge discounts at outlet stores revealed!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Return Policy Exposed",
-      "topic": "Walmart's Return Policy Secrets",
-      "hook": "What Walmart doesn't want you to know about their return policy!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Pokemon Card Unboxing",
-      "topic": "Rare Charizard Card Unboxing",
-      "hook": "Will I pull the rarest Charizard card in this unboxing?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "NFL Record-Breaking Touchdowns",
-      "hook": "The most epic touchdown catches in NFL history!",
+      "category": "Sports Highlights: Canada vs New Zealand",
+      "topic": "Most Epic Rugby Tackles",
+      "hook": "Get ready for the most intense tackles that will leave you speechless!",
       "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "Hurricane Formation Explained",
-      "hook": "The fascinating science behind hurricane formation!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Collectible Reviews",
-      "topic": "Vintage Star Wars Action Figures",
-      "hook": "The rarest Star Wars action figures that will make your collection shine!",
+      "category": "Tech Issue Fixes: Spectrum Outage Solutions",
+      "topic": "Quick Fixes for Common Spectrum Outage Issues",
+      "hook": "Is your internet down? Don't panic, we've got the solutions right here!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Figure Skating",
-      "topic": "Ice Dance Techniques",
-      "hook": "The art of ice dance: what makes a perfect performance?",
+      "category": "Book Reviews: The Last Thing He Told Me",
+      "topic": "Unraveling the Mystery of Laura Dave's Latest Novel",
+      "hook": "What secrets lie behind the pages of this gripping novel?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Celebrity News: Shia Labeouf Updates",
+      "topic": "Shia Labeouf's Most Shocking Career Moves",
+      "hook": "You won't believe what Shia Labeouf's been up to lately!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "International Competitions",
-      "topic": "Esports World Championships",
-      "hook": "The battle for esports supremacy: which team will reign supreme?",
+      "category": "Travel Vlogs: Exploring Bombay",
+      "topic": "Discovering Hidden Gems in Bombay's Street Food Scene",
+      "hook": "Get ready to taste the flavors of India like never before!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Curling Analysis",
-      "topic": "Strategy and Tactics",
-      "hook": "The mind games of curling: outsmarting your opponents!",
+      "category": "Seasonal Greetings: A\u00f1o Nuevo Lunar Wishes",
+      "topic": "Wishing You a Prosperous Lunar New Year",
+      "hook": "It's time to ring in the new year with good fortune and happiness!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "News Updates: Spectrum Outage Latest",
+      "topic": "Breaking News: Spectrum Outage Updates and Solutions",
+      "hook": "Stay informed with the latest updates on the Spectrum outage!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Comedy Skits: Jennifer Garner Parodies",
+      "topic": "Hilarious Jennifer Garner Parody: 'The Odd Life'",
+      "hook": "Get ready to laugh out loud with this ridiculous parody!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Food Recipes: Traditional Lunar New Year Dishes",
+      "topic": "Cooking Authentic Dumplings for Lunar New Year",
+      "hook": "Want to impress your friends with authentic Lunar New Year dishes?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Northern Lights Time-Lapses",
-      "topic": "Aurora Australis in Antarctica",
-      "hook": "Witness the breathtaking beauty of the Southern Lights in Antarctica!",
-      "voice_style": "mysterious",
+      "category": "Lunar New Year Celebrations",
+      "topic": "The Ancient History Behind Lunar New Year Traditions",
+      "hook": "Uncover the fascinating history behind Lunar New Year celebrations!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Retail Hacks",
-      "topic": "Scoring Deals on Black Friday",
-      "hook": "The ultimate guide to scoring the best deals on Black Friday!",
+      "category": "Sports Highlights: Canada vs New Zealand",
+      "topic": "The Most Thrilling Moments in Canada vs New Zealand Hockey",
+      "hook": "Witness the most heart-stopping moments in hockey history!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Tech Issue Fixes: Spectrum Outage Solutions",
+      "topic": "Spectrum Outage Hacks: Get Back Online in No Time",
+      "hook": "Don't let the Spectrum outage get you down - try these quick fixes!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Return Policy Exposed",
-      "topic": "Amazon's Return Policy Secrets",
-      "hook": "What Amazon doesn't want you to know about their return policy!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Book Reviews: The Last Thing He Told Me",
+      "topic": "Uncovering the Twists and Turns of Laura Dave's Novel",
+      "hook": "What secrets will you uncover in the pages of this gripping novel?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Pokemon Card Unboxing",
-      "topic": "Rare Pikachu Card Unboxing",
-      "hook": "Will I pull the rarest Pikachu card in this unboxing?",
+      "category": "Celebrity News: Shia Labeouf Updates",
+      "topic": "Shia Labeouf's Most Memorable Movie Roles",
+      "hook": "Take a trip down memory lane with Shia Labeouf's most iconic roles!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Travel Vlogs: Exploring Bombay",
+      "topic": "Exploring the Vibrant Streets of Bombay's Fashion District",
+      "hook": "Get ready to experience the colors and sounds of Bombay's fashion scene!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Greetings: A\u00f1o Nuevo Lunar Wishes",
+      "topic": "Wishing You a Year of Good Fortune and Happiness",
+      "hook": "May the new year bring you joy, prosperity, and good fortune!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "News Updates: Spectrum Outage Latest",
+      "topic": "Spectrum Outage: What You Need to Know and How to Stay Informed",
+      "hook": "Stay ahead of the curve with the latest Spectrum outage updates!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Comedy Skits: Jennifer Garner Parodies",
+      "topic": "Jennifer Garner Parody: 'The Crazy Life of a Hollywood Star'",
+      "hook": "Get ready to laugh out loud with this hilarious parody of Jennifer Garner!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Food Recipes: Traditional Lunar New Year Dishes",
+      "topic": "Cooking Traditional Lunar New Year Desserts",
+      "hook": "Sweeten up your Lunar New Year with these traditional desserts!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Lunar New Year Celebrations",
+      "topic": "The Significance of Lion Dance Performances in Lunar New Year",
+      "hook": "Uncover the fascinating story behind the lion dance performances!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
