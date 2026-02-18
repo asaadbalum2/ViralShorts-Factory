@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-02-17T06:33:21.089147",
-  "valid_until": "2026-02-17T23:59:21.089155",
+  "generated_at": "2026-02-18T06:38:56.439948",
+  "valid_until": "2026-02-18T23:59:56.439955",
   "categories": [
-    "Lunar New Year Celebrations",
-    "Sports Highlights: Canada vs New Zealand",
-    "Tech Issue Fixes: Spectrum Outage Solutions",
-    "Book Reviews: The Last Thing He Told Me",
-    "Celebrity News: Shia Labeouf Updates",
-    "Travel Vlogs: Exploring Bombay",
-    "Seasonal Greetings: A\u00f1o Nuevo Lunar Wishes",
-    "News Updates: Spectrum Outage Latest",
-    "Comedy Skits: Jennifer Garner Parodies",
-    "Food Recipes: Traditional Lunar New Year Dishes",
-    "DIY Fixes: Troubleshooting Spectrum Outage Issues",
-    "Sports Analysis: Canada vs New Zealand Recap",
-    "Entertainment News: Shia Labeouf Controversies",
-    "Travel Guides: Bombay Hidden Gems",
-    "Cultural Explanations: Understanding \u519c\u5386\u65b0\u5e74 Traditions"
+    "Winter Sports Highlights",
+    "TV and Movie News",
+    "Music and Celebrity Updates",
+    "Tech and Internet Issues",
+    "International Sports Competitions",
+    "Olympic Athlete Profiles",
+    "News Anchor Bloopers",
+    "Snowboarding Tricks and Fails",
+    "Entertainment News and Gossip",
+    "Sports Commentary and Analysis",
+    "Internet Outage Memes",
+    "Female Celebrities and Empowerment",
+    "College Basketball Highlights",
+    "Short-Form Olympic Event Recaps",
+    "Current Event Reaction Videos"
   ],
   "concepts": [
     {
-      "category": "Lunar New Year Celebrations",
-      "topic": "Unconventional Lion Dance Performances",
-      "hook": "You won't believe what happens when lion dancers take over the streets!",
+      "category": "Winter Sports Highlights",
+      "topic": "Ski Jumping World Record Attempts",
+      "hook": "Can they break the impossible barrier of 250 meters?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Canada vs New Zealand",
-      "topic": "Most Epic Rugby Tackles",
-      "hook": "Get ready for the most intense tackles that will leave you speechless!",
+      "category": "TV and Movie News",
+      "topic": "Stranger Things Season 5 Leaks",
+      "hook": "What's the shocking truth behind the upcoming season's plot twist?",
       "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Music and Celebrity Updates",
+      "topic": "Billie Eilish's Most Iconic Music Video Fashion",
+      "hook": "You won't believe the story behind her most daring outfit yet!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Tech and Internet Issues",
+      "topic": "The Dark Side of Social Media Algorithms",
+      "hook": "Are you being manipulated by your favorite social media platforms?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "International Sports Competitions",
+      "topic": "The Rise of Indian Cricket in the ICC World Cup",
+      "hook": "Can they take home the coveted trophy for the first time in decades?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Olympic Athlete Profiles",
+      "topic": "The Unstoppable Journey of Simone Biles",
+      "hook": "What drives the world's most decorated gymnast to keep pushing limits?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "News Anchor Bloopers",
+      "topic": "The Funniest Live TV Fails of 2022",
+      "hook": "When anchors lose it on live television, hilarity ensues!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Snowboarding Tricks and Fails",
+      "topic": "The Most Epic Wipeouts in X Games History",
+      "hook": "You won't believe the craziest crashes that left athletes shaken!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News and Gossip",
+      "topic": "The Secret Romance Between Hollywood's Biggest Stars",
+      "hook": "Which A-list couple is hiding their love from the paparazzi?",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Commentary and Analysis",
+      "topic": "Decoding the Tactical Genius of Pep Guardiola",
+      "hook": "What makes the legendary football manager a mastermind of the game?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Sports Highlights",
+      "topic": "The Thrilling Downhill Skiing Courses of the Alps",
+      "hook": "Experience the rush of speeding down icy slopes at breakneck speeds!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Tech Issue Fixes: Spectrum Outage Solutions",
-      "topic": "Quick Fixes for Common Spectrum Outage Issues",
-      "hook": "Is your internet down? Don't panic, we've got the solutions right here!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Book Reviews: The Last Thing He Told Me",
-      "topic": "Unraveling the Mystery of Laura Dave's Latest Novel",
-      "hook": "What secrets lie behind the pages of this gripping novel?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "Celebrity News: Shia Labeouf Updates",
-      "topic": "Shia Labeouf's Most Shocking Career Moves",
-      "hook": "You won't believe what Shia Labeouf's been up to lately!",
+      "category": "TV and Movie News",
+      "topic": "The Making of Avengers: Endgame's Most Iconic Scenes",
+      "hook": "Go behind the scenes of the biggest movie of the decade!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Vlogs: Exploring Bombay",
-      "topic": "Discovering Hidden Gems in Bombay's Street Food Scene",
-      "hook": "Get ready to taste the flavors of India like never before!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Seasonal Greetings: A\u00f1o Nuevo Lunar Wishes",
-      "topic": "Wishing You a Prosperous Lunar New Year",
-      "hook": "It's time to ring in the new year with good fortune and happiness!",
+      "category": "Music and Celebrity Updates",
+      "topic": "Taylor Swift's Songwriting Secrets Revealed",
+      "hook": "What's the story behind her most personal and emotional songs?",
       "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "News Updates: Spectrum Outage Latest",
-      "topic": "Breaking News: Spectrum Outage Updates and Solutions",
-      "hook": "Stay informed with the latest updates on the Spectrum outage!",
+      "category": "Tech and Internet Issues",
+      "topic": "The Alarming Rise of Deepfake Technology",
+      "hook": "Can you trust what you see and hear online anymore?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Comedy Skits: Jennifer Garner Parodies",
-      "topic": "Hilarious Jennifer Garner Parody: 'The Odd Life'",
-      "hook": "Get ready to laugh out loud with this ridiculous parody!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Food Recipes: Traditional Lunar New Year Dishes",
-      "topic": "Cooking Authentic Dumplings for Lunar New Year",
-      "hook": "Want to impress your friends with authentic Lunar New Year dishes?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "International Sports Competitions",
+      "topic": "The Dominance of the New Zealand All Blacks in Rugby",
+      "hook": "What's the secret to their unbeatable team dynamic and strategy?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Lunar New Year Celebrations",
-      "topic": "The Ancient History Behind Lunar New Year Traditions",
-      "hook": "Uncover the fascinating history behind Lunar New Year celebrations!",
-      "voice_style": "authoritative",
+      "category": "Olympic Athlete Profiles",
+      "topic": "The Inspiring Story of Para-Athlete Derek Weida",
+      "hook": "How one man's determination defied the odds and changed his life forever!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Canada vs New Zealand",
-      "topic": "The Most Thrilling Moments in Canada vs New Zealand Hockey",
-      "hook": "Witness the most heart-stopping moments in hockey history!",
-      "voice_style": "dramatic",
+      "category": "News Anchor Bloopers",
+      "topic": "The Most Hilarious News Anchor Fails of the Decade",
+      "hook": "When live TV goes horribly wrong, comedy gold is born!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Snowboarding Tricks and Fails",
+      "topic": "The Most Insane Snowboarding Stunts in Red Bull History",
+      "hook": "Witness the death-defying jumps and tricks that will leave you speechless!",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 42
+      "target_duration": 45
     },
     {
-      "category": "Tech Issue Fixes: Spectrum Outage Solutions",
-      "topic": "Spectrum Outage Hacks: Get Back Online in No Time",
-      "hook": "Don't let the Spectrum outage get you down - try these quick fixes!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Book Reviews: The Last Thing He Told Me",
-      "topic": "Uncovering the Twists and Turns of Laura Dave's Novel",
-      "hook": "What secrets will you uncover in the pages of this gripping novel?",
-      "voice_style": "mysterious",
+      "category": "Entertainment News and Gossip",
+      "topic": "The Hidden Messages in Kanye West's Music Videos",
+      "hook": "Uncover the secrets and symbolism behind his most provocative visuals!",
+      "voice_style": "dramatic",
       "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News: Shia Labeouf Updates",
-      "topic": "Shia Labeouf's Most Memorable Movie Roles",
-      "hook": "Take a trip down memory lane with Shia Labeouf's most iconic roles!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Travel Vlogs: Exploring Bombay",
-      "topic": "Exploring the Vibrant Streets of Bombay's Fashion District",
-      "hook": "Get ready to experience the colors and sounds of Bombay's fashion scene!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Seasonal Greetings: A\u00f1o Nuevo Lunar Wishes",
-      "topic": "Wishing You a Year of Good Fortune and Happiness",
-      "hook": "May the new year bring you joy, prosperity, and good fortune!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "News Updates: Spectrum Outage Latest",
-      "topic": "Spectrum Outage: What You Need to Know and How to Stay Informed",
-      "hook": "Stay ahead of the curve with the latest Spectrum outage updates!",
+      "category": "Sports Commentary and Analysis",
+      "topic": "The Tactical Evolution of Football Under Jurgen Klopp",
+      "hook": "How one man's innovative approach changed the face of the sport!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Comedy Skits: Jennifer Garner Parodies",
-      "topic": "Jennifer Garner Parody: 'The Crazy Life of a Hollywood Star'",
-      "hook": "Get ready to laugh out loud with this hilarious parody of Jennifer Garner!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Food Recipes: Traditional Lunar New Year Dishes",
-      "topic": "Cooking Traditional Lunar New Year Desserts",
-      "hook": "Sweeten up your Lunar New Year with these traditional desserts!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Lunar New Year Celebrations",
-      "topic": "The Significance of Lion Dance Performances in Lunar New Year",
-      "hook": "Uncover the fascinating story behind the lion dance performances!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
