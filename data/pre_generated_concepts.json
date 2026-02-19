@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-02-18T06:38:56.439948",
-  "valid_until": "2026-02-18T23:59:56.439955",
+  "generated_at": "2026-02-19T06:36:32.879859",
+  "valid_until": "2026-02-19T23:59:32.879867",
   "categories": [
-    "Winter Sports Highlights",
-    "TV and Movie News",
-    "Music and Celebrity Updates",
-    "Tech and Internet Issues",
-    "International Sports Competitions",
-    "Olympic Athlete Profiles",
-    "News Anchor Bloopers",
-    "Snowboarding Tricks and Fails",
-    "Entertainment News and Gossip",
-    "Sports Commentary and Analysis",
-    "Internet Outage Memes",
-    "Female Celebrities and Empowerment",
-    "College Basketball Highlights",
-    "Short-Form Olympic Event Recaps",
-    "Current Event Reaction Videos"
+    "Olympic Moments",
+    "Travel Hacks",
+    "Sports Highlights",
+    "Celebrity News",
+    "Winter Sports",
+    "Female Empowerment",
+    "Skating Fails",
+    "Basketball Analysis",
+    "Destination Guides",
+    "Political Updates",
+    "Academy Vlogs",
+    "Flight Deals",
+    "West Indies Cricket",
+    "Women in Sports",
+    "Entertainment News"
   ],
   "concepts": [
     {
-      "category": "Winter Sports Highlights",
-      "topic": "Ski Jumping World Record Attempts",
-      "hook": "Can they break the impossible barrier of 250 meters?",
+      "category": "Olympic Moments",
+      "topic": "Usain Bolt's Record-Breaking 100m Dash",
+      "hook": "What makes the world's fastest man unbeatable?",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "TV and Movie News",
-      "topic": "Stranger Things Season 5 Leaks",
-      "hook": "What's the shocking truth behind the upcoming season's plot twist?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "category": "Travel Hacks",
+      "topic": "Packing Light for a 2-Week Europe Trip",
+      "hook": "Can you really fit two weeks' worth of clothes in a carry-on?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Music and Celebrity Updates",
-      "topic": "Billie Eilish's Most Iconic Music Video Fashion",
-      "hook": "You won't believe the story behind her most daring outfit yet!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Sports Highlights",
+      "topic": "LeBron James' Most Epic Dunks",
+      "hook": "Get ready to witness the king of the court's most jaw-dropping dunks!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Tech and Internet Issues",
-      "topic": "The Dark Side of Social Media Algorithms",
-      "hook": "Are you being manipulated by your favorite social media platforms?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "International Sports Competitions",
-      "topic": "The Rise of Indian Cricket in the ICC World Cup",
-      "hook": "Can they take home the coveted trophy for the first time in decades?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Olympic Athlete Profiles",
-      "topic": "The Unstoppable Journey of Simone Biles",
-      "hook": "What drives the world's most decorated gymnast to keep pushing limits?",
+      "category": "Celebrity News",
+      "topic": "Taylor Swift's Most Iconic Music Video Looks",
+      "hook": "Which T-Swift music video look is the most memorable of all time?",
       "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "News Anchor Bloopers",
-      "topic": "The Funniest Live TV Fails of 2022",
-      "hook": "When anchors lose it on live television, hilarity ensues!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Winter Sports",
+      "topic": "The Science Behind Downhill Skiing Speed",
+      "hook": "What makes downhill skiers reach heart-stopping speeds of over 90mph?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Snowboarding Tricks and Fails",
-      "topic": "The Most Epic Wipeouts in X Games History",
-      "hook": "You won't believe the craziest crashes that left athletes shaken!",
+      "category": "Female Empowerment",
+      "topic": "Ruth Bader Ginsburg's Most Iconic Supreme Court Moments",
+      "hook": "Meet the woman who paved the way for a new generation of female leaders",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Skating Fails",
+      "topic": "The Funniest Ice Skating Mishaps in Olympic History",
+      "hook": "When even the best skaters fall, hilarity ensues!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Basketball Analysis",
+      "topic": "The Art of Steph Curry's 3-Point Shot",
+      "hook": "What makes Steph Curry the greatest shooter in NBA history?",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Entertainment News and Gossip",
-      "topic": "The Secret Romance Between Hollywood's Biggest Stars",
-      "hook": "Which A-list couple is hiding their love from the paparazzi?",
+      "category": "Destination Guides",
+      "topic": "Exploring Hidden Gems in Tokyo, Japan",
+      "hook": "Discover the secret spots that only locals know about in Tokyo!",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Political Updates",
+      "topic": "The Impact of Social Media on Modern Elections",
+      "hook": "How is social media changing the face of politics forever?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Olympic Moments",
+      "topic": "The Inspiring Story of Derek Redmond's Olympic Courage",
+      "hook": "What happens when an athlete's Olympic dreams are shattered in an instant?",
       "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Commentary and Analysis",
-      "topic": "Decoding the Tactical Genius of Pep Guardiola",
-      "hook": "What makes the legendary football manager a mastermind of the game?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Sports Highlights",
-      "topic": "The Thrilling Downhill Skiing Courses of the Alps",
-      "hook": "Experience the rush of speeding down icy slopes at breakneck speeds!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "TV and Movie News",
-      "topic": "The Making of Avengers: Endgame's Most Iconic Scenes",
-      "hook": "Go behind the scenes of the biggest movie of the decade!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music and Celebrity Updates",
-      "topic": "Taylor Swift's Songwriting Secrets Revealed",
-      "hook": "What's the story behind her most personal and emotional songs?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech and Internet Issues",
-      "topic": "The Alarming Rise of Deepfake Technology",
-      "hook": "Can you trust what you see and hear online anymore?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "International Sports Competitions",
-      "topic": "The Dominance of the New Zealand All Blacks in Rugby",
-      "hook": "What's the secret to their unbeatable team dynamic and strategy?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Olympic Athlete Profiles",
-      "topic": "The Inspiring Story of Para-Athlete Derek Weida",
-      "hook": "How one man's determination defied the odds and changed his life forever!",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "News Anchor Bloopers",
-      "topic": "The Most Hilarious News Anchor Fails of the Decade",
-      "hook": "When live TV goes horribly wrong, comedy gold is born!",
+      "category": "Travel Hacks",
+      "topic": "How to Score Cheap Flights Using Error Fares",
+      "hook": "Can you really fly around the world for a fraction of the cost?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Snowboarding Tricks and Fails",
-      "topic": "The Most Insane Snowboarding Stunts in Red Bull History",
-      "hook": "Witness the death-defying jumps and tricks that will leave you speechless!",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Comebacks in Super Bowl History",
+      "hook": "Which team made the most epic Super Bowl comeback of all time?",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Entertainment News and Gossip",
-      "topic": "The Hidden Messages in Kanye West's Music Videos",
-      "hook": "Uncover the secrets and symbolism behind his most provocative visuals!",
+      "category": "Celebrity News",
+      "topic": "The Most Shocking Celebrity Feuds of the Decade",
+      "hook": "Which celebrity feud left everyone speechless?",
       "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Sports",
+      "topic": "The Thrill of Big Air Snowboarding Competitions",
+      "hook": " Witness the death-defying stunts that will leave you breathless!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Sports Commentary and Analysis",
-      "topic": "The Tactical Evolution of Football Under Jurgen Klopp",
-      "hook": "How one man's innovative approach changed the face of the sport!",
+      "category": "Female Empowerment",
+      "topic": "Malala Yousafzai's Brave Fight for Girls' Education",
+      "hook": "Meet the young woman who refused to be silenced",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Skating Fails",
+      "topic": "The Most Hilarious Figure Skating Costume Malfunctions",
+      "hook": "When figure skaters' costumes fail them, comedy ensues!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Basketball Analysis",
+      "topic": "The Strategic Genius of Coach Phil Jackson",
+      "hook": "What makes Coach Phil Jackson one of the greatest coaches in NBA history?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Destination Guides",
+      "topic": "Uncovering the Best Kept Secrets in New York City",
+      "hook": "Explore the hidden side of the city that never sleeps!",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Political Updates",
+      "topic": "The Rise of Young Leaders in Modern Politics",
+      "hook": "Meet the young politicians who are changing the face of politics",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Olympic Moments",
+      "topic": "Jesse Owens' Historic Performance at the 1936 Olympics",
+      "hook": "Witness the moment that defied Hitler's Aryan ideology",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
