@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-19T06:36:32.879859",
-  "valid_until": "2026-02-19T23:59:32.879867",
+  "generated_at": "2026-02-20T06:13:09.945921",
+  "valid_until": "2026-02-20T23:59:09.945928",
   "categories": [
-    "Olympic Moments",
-    "Travel Hacks",
-    "Sports Highlights",
-    "Celebrity News",
-    "Winter Sports",
-    "Female Empowerment",
-    "Skating Fails",
-    "Basketball Analysis",
-    "Destination Guides",
-    "Political Updates",
-    "Academy Vlogs",
-    "Flight Deals",
-    "West Indies Cricket",
-    "Women in Sports",
-    "Entertainment News"
+    "Travel Hacks for Dubai Flights",
+    "Airline Reviews: Delta Airlines Exposed",
+    "Target Shopping Challenges",
+    "Olivia Rodrigo Music Dance Covers",
+    "College Basketball Highlights: Cal Poly",
+    "Mindful Eating with Michael Pollan",
+    "IED Explosion Caught on Camera",
+    "Get Ready with Kate Hudson",
+    "Spring Break Vacation Ideas",
+    "Aviation News: Delta Airlines Updates",
+    "Shopping on a Budget at Target",
+    "Women's Empowerment: Olivia Rodrigo Inspires",
+    "Dubai Travel Vlogs",
+    "Cal Poly Basketball Analysis",
+    "Delta Airlines vs Other Airlines: Which is Best?"
   ],
   "concepts": [
     {
-      "category": "Olympic Moments",
-      "topic": "Usain Bolt's Record-Breaking 100m Dash",
-      "hook": "What makes the world's fastest man unbeatable?",
+      "category": "Travel Hacks for Dubai Flights",
+      "topic": "How to Get a Free Upgrade on Emirates",
+      "hook": "You won't believe the simple trick to getting a business class seat without paying a dime!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Travel Hacks",
-      "topic": "Packing Light for a 2-Week Europe Trip",
-      "hook": "Can you really fit two weeks' worth of clothes in a carry-on?",
+      "category": "Airline Reviews: Delta Airlines Exposed",
+      "topic": "The Worst Delta Flight Experience Ever",
+      "hook": "I survived the flight from hell and I'm about to spill all the tea!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Target Shopping Challenges",
+      "topic": "Finding the Cheapest Hidden Gems at Target",
+      "hook": "Can I find a designer dupe for under $10? The challenge is on!",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Olivia Rodrigo Music Dance Covers",
+      "topic": "Dancing to 'Drivers License' in a Public Place",
+      "hook": "I'm taking Olivia Rodrigo's hit song to the streets - will I get weird looks or cheers?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "College Basketball Highlights: Cal Poly",
+      "topic": "The Most Epic Cal Poly Comeback in History",
+      "hook": "Down by 10 with 2 minutes left - how did Cal Poly pull off the impossible?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Mindful Eating with Michael Pollan",
+      "topic": "Eating a Meal with Your Non-Dominant Hand",
+      "hook": "What happens when you slow down and eat with intention - and your non-dominant hand?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Most Epic Dunks",
-      "hook": "Get ready to witness the king of the court's most jaw-dropping dunks!",
+      "category": "IED Explosion Caught on Camera",
+      "topic": "The Courage of First Responders in the Face of Danger",
+      "hook": "Heroic moments caught on camera - a tribute to the brave men and women who risk it all",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Taylor Swift's Most Iconic Music Video Looks",
-      "hook": "Which T-Swift music video look is the most memorable of all time?",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Winter Sports",
-      "topic": "The Science Behind Downhill Skiing Speed",
-      "hook": "What makes downhill skiers reach heart-stopping speeds of over 90mph?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
+      "category": "Get Ready with Kate Hudson",
+      "topic": "Kate Hudson's Morning Skincare Routine",
+      "hook": "What does it take to get Kate Hudson's glowing skin? Let's find out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Female Empowerment",
-      "topic": "Ruth Bader Ginsburg's Most Iconic Supreme Court Moments",
-      "hook": "Meet the woman who paved the way for a new generation of female leaders",
+      "category": "Spring Break Vacation Ideas",
+      "topic": "The Ultimate Spring Break Road Trip Itinerary",
+      "hook": "Are you ready for the most epic spring break adventure? Buckle up and let's hit the road!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Aviation News: Delta Airlines Updates",
+      "topic": "Delta's New Sustainable Flight Initiatives",
+      "hook": "The future of flying is here - and it's greener than you think!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Skating Fails",
-      "topic": "The Funniest Ice Skating Mishaps in Olympic History",
-      "hook": "When even the best skaters fall, hilarity ensues!",
+      "category": "Travel Hacks for Dubai Flights",
+      "topic": "How to Navigate Dubai Airport Like a Pro",
+      "hook": "Lost in the world's busiest airport? Not with these insider tips and tricks!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Airline Reviews: Delta Airlines Exposed",
+      "topic": "Delta's Best-Kept Secret: The Premium Select Cabin",
+      "hook": "What makes Delta's Premium Select cabin worth the splurge? Let's dive in and find out!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Target Shopping Challenges",
+      "topic": "Finding the Perfect Outfit for Under $50",
+      "hook": "Can I create a stylish outfit on a budget? The challenge is on at Target!",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Olivia Rodrigo Music Dance Covers",
+      "topic": "Dancing to 'Good 4 U' in a Unique Location",
+      "hook": "Where will I dance to Olivia Rodrigo's hit song today? You'll have to watch to find out!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "College Basketball Highlights: Cal Poly",
+      "topic": "The Most Clutch 3-Pointers in Cal Poly History",
+      "hook": "The shots that changed the game - relive the most epic 3-pointers in Cal Poly history!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Mindful Eating with Michael Pollan",
+      "topic": "The Art of Savoring a Single Ingredient",
+      "hook": "What happens when you focus on a single ingredient - and nothing else?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Basketball Analysis",
-      "topic": "The Art of Steph Curry's 3-Point Shot",
-      "hook": "What makes Steph Curry the greatest shooter in NBA history?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Destination Guides",
-      "topic": "Exploring Hidden Gems in Tokyo, Japan",
-      "hook": "Discover the secret spots that only locals know about in Tokyo!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Political Updates",
-      "topic": "The Impact of Social Media on Modern Elections",
-      "hook": "How is social media changing the face of politics forever?",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Olympic Moments",
-      "topic": "The Inspiring Story of Derek Redmond's Olympic Courage",
-      "hook": "What happens when an athlete's Olympic dreams are shattered in an instant?",
+      "category": "IED Explosion Caught on Camera",
+      "topic": "The Heroic Rescues that Followed the Blast",
+      "hook": "From chaos to hope - the courageous stories of rescue and recovery",
       "voice_style": "dramatic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Travel Hacks",
-      "topic": "How to Score Cheap Flights Using Error Fares",
-      "hook": "Can you really fly around the world for a fraction of the cost?",
+      "category": "Get Ready with Kate Hudson",
+      "topic": "Kate Hudson's Favorite Wellness Routine",
+      "hook": "What keeps Kate Hudson feeling her best? Let's get ready with her and find out!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 42
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Super Bowl History",
-      "hook": "Which team made the most epic Super Bowl comeback of all time?",
+      "category": "Spring Break Vacation Ideas",
+      "topic": "The Top 5 Affordable Spring Break Destinations",
+      "hook": "Ready for a break without breaking the bank? These 5 destinations have got you covered!",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 48
     },
     {
-      "category": "Celebrity News",
-      "topic": "The Most Shocking Celebrity Feuds of the Decade",
-      "hook": "Which celebrity feud left everyone speechless?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Sports",
-      "topic": "The Thrill of Big Air Snowboarding Competitions",
-      "hook": " Witness the death-defying stunts that will leave you breathless!",
+      "category": "Aviation News: Delta Airlines Updates",
+      "topic": "Delta's New In-Flight Entertainment System",
+      "hook": "The future of in-flight entertainment is here - and it's about to change the game!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Female Empowerment",
-      "topic": "Malala Yousafzai's Brave Fight for Girls' Education",
-      "hook": "Meet the young woman who refused to be silenced",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Skating Fails",
-      "topic": "The Most Hilarious Figure Skating Costume Malfunctions",
-      "hook": "When figure skaters' costumes fail them, comedy ensues!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Basketball Analysis",
-      "topic": "The Strategic Genius of Coach Phil Jackson",
-      "hook": "What makes Coach Phil Jackson one of the greatest coaches in NBA history?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Destination Guides",
-      "topic": "Uncovering the Best Kept Secrets in New York City",
-      "hook": "Explore the hidden side of the city that never sleeps!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Political Updates",
-      "topic": "The Rise of Young Leaders in Modern Politics",
-      "hook": "Meet the young politicians who are changing the face of politics",
+      "category": "Travel Hacks for Dubai Flights",
+      "topic": "How to Avoid Long Lines at Dubai Airport Security",
+      "hook": "Tired of waiting in line? These Dubai airport security hacks will get you to your gate in no time!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Olympic Moments",
-      "topic": "Jesse Owens' Historic Performance at the 1936 Olympics",
-      "hook": "Witness the moment that defied Hitler's Aryan ideology",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
