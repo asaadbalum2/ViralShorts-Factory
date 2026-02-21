@@ -1,188 +1,180 @@
 {
-  "generated_at": "2026-02-20T06:13:09.945921",
-  "valid_until": "2026-02-20T23:59:09.945928",
+  "generated_at": "2026-02-21T06:02:34.967074",
+  "valid_until": "2026-02-21T23:59:34.967081",
   "categories": [
-    "Travel Hacks for Dubai Flights",
-    "Airline Reviews: Delta Airlines Exposed",
-    "Target Shopping Challenges",
-    "Olivia Rodrigo Music Dance Covers",
-    "College Basketball Highlights: Cal Poly",
-    "Mindful Eating with Michael Pollan",
-    "IED Explosion Caught on Camera",
-    "Get Ready with Kate Hudson",
-    "Spring Break Vacation Ideas",
-    "Aviation News: Delta Airlines Updates",
-    "Shopping on a Budget at Target",
-    "Women's Empowerment: Olivia Rodrigo Inspires",
-    "Dubai Travel Vlogs",
-    "Cal Poly Basketball Analysis",
-    "Delta Airlines vs Other Airlines: Which is Best?"
+    "Car Recall Updates",
+    "Sports Highlights",
+    "Olympic Games Analysis",
+    "Winter Sports Challenges",
+    " Celebrity News",
+    " NBA Player Profiles",
+    "Freestyle Skiing Tricks",
+    "Baseball Team Previews",
+    "Recall Notice Explainers",
+    "Sports Bloopers",
+    "Actor Interviews",
+    "Winter Olympics Vlogs",
+    "Dodgers Fan Reactions",
+    " NBA Trade Rumors",
+    "Automotive Safety Tips"
   ],
   "concepts": [
     {
-      "category": "Travel Hacks for Dubai Flights",
-      "topic": "How to Get a Free Upgrade on Emirates",
-      "hook": "You won't believe the simple trick to getting a business class seat without paying a dime!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Airline Reviews: Delta Airlines Exposed",
-      "topic": "The Worst Delta Flight Experience Ever",
-      "hook": "I survived the flight from hell and I'm about to spill all the tea!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Target Shopping Challenges",
-      "topic": "Finding the Cheapest Hidden Gems at Target",
-      "hook": "Can I find a designer dupe for under $10? The challenge is on!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Olivia Rodrigo Music Dance Covers",
-      "topic": "Dancing to 'Drivers License' in a Public Place",
-      "hook": "I'm taking Olivia Rodrigo's hit song to the streets - will I get weird looks or cheers?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "College Basketball Highlights: Cal Poly",
-      "topic": "The Most Epic Cal Poly Comeback in History",
-      "hook": "Down by 10 with 2 minutes left - how did Cal Poly pull off the impossible?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Mindful Eating with Michael Pollan",
-      "topic": "Eating a Meal with Your Non-Dominant Hand",
-      "hook": "What happens when you slow down and eat with intention - and your non-dominant hand?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "IED Explosion Caught on Camera",
-      "topic": "The Courage of First Responders in the Face of Danger",
-      "hook": "Heroic moments caught on camera - a tribute to the brave men and women who risk it all",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Get Ready with Kate Hudson",
-      "topic": "Kate Hudson's Morning Skincare Routine",
-      "hook": "What does it take to get Kate Hudson's glowing skin? Let's find out!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Spring Break Vacation Ideas",
-      "topic": "The Ultimate Spring Break Road Trip Itinerary",
-      "hook": "Are you ready for the most epic spring break adventure? Buckle up and let's hit the road!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Aviation News: Delta Airlines Updates",
-      "topic": "Delta's New Sustainable Flight Initiatives",
-      "hook": "The future of flying is here - and it's greener than you think!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Hacks for Dubai Flights",
-      "topic": "How to Navigate Dubai Airport Like a Pro",
-      "hook": "Lost in the world's busiest airport? Not with these insider tips and tricks!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Airline Reviews: Delta Airlines Exposed",
-      "topic": "Delta's Best-Kept Secret: The Premium Select Cabin",
-      "hook": "What makes Delta's Premium Select cabin worth the splurge? Let's dive in and find out!",
+      "category": "Car Recall Updates",
+      "topic": "Tesla's Latest Recall: What You Need to Know",
+      "hook": "Is your Tesla at risk of a deadly malfunction?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Target Shopping Challenges",
-      "topic": "Finding the Perfect Outfit for Under $50",
-      "hook": "Can I create a stylish outfit on a budget? The challenge is on at Target!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Olivia Rodrigo Music Dance Covers",
-      "topic": "Dancing to 'Good 4 U' in a Unique Location",
-      "hook": "Where will I dance to Olivia Rodrigo's hit song today? You'll have to watch to find out!",
+      "category": "Sports Highlights",
+      "topic": "Lebron James' Most Epic Dunks",
+      "hook": "You won't believe the insane dunk Lebron just pulled off!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 48
+      "target_duration": 40
     },
     {
-      "category": "College Basketball Highlights: Cal Poly",
-      "topic": "The Most Clutch 3-Pointers in Cal Poly History",
-      "hook": "The shots that changed the game - relive the most epic 3-pointers in Cal Poly history!",
-      "voice_style": "authoritative",
+      "category": "Olympic Games Analysis",
+      "topic": "Why the USA Dominates the Winter Olympics",
+      "hook": "What's behind the USA's unstoppable Olympic streak?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Winter Sports Challenges",
+      "topic": "The Toughest Downhill Skiing Courses",
+      "hook": "Can you handle the most treacherous slopes on earth?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Mindful Eating with Michael Pollan",
-      "topic": "The Art of Savoring a Single Ingredient",
-      "hook": "What happens when you focus on a single ingredient - and nothing else?",
+      "category": "Celebrity News",
+      "topic": "The Latest on Tom Brady's Retirement",
+      "hook": "Is Tom Brady really hanging up his cleats for good?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "IED Explosion Caught on Camera",
-      "topic": "The Heroic Rescues that Followed the Blast",
-      "hook": "From chaos to hope - the courageous stories of rescue and recovery",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Get Ready with Kate Hudson",
-      "topic": "Kate Hudson's Favorite Wellness Routine",
-      "hook": "What keeps Kate Hudson feeling her best? Let's get ready with her and find out!",
+      "category": "NBA Player Profiles",
+      "topic": "The Rise of Luka Doncic",
+      "hook": "From unknown to NBA superstar: Luka's incredible journey",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 42
+      "target_duration": 45
     },
     {
-      "category": "Spring Break Vacation Ideas",
-      "topic": "The Top 5 Affordable Spring Break Destinations",
-      "hook": "Ready for a break without breaking the bank? These 5 destinations have got you covered!",
+      "category": "Freestyle Skiing Tricks",
+      "topic": "The Most Insane Freestyle Skiing Stunts",
+      "hook": "You won't believe the death-defying stunts these skiers are pulling off!",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 48
+      "target_duration": 40
     },
     {
-      "category": "Aviation News: Delta Airlines Updates",
-      "topic": "Delta's New In-Flight Entertainment System",
-      "hook": "The future of in-flight entertainment is here - and it's about to change the game!",
+      "category": "Baseball Team Previews",
+      "topic": "The Yankees' Chances of Winning the World Series",
+      "hook": "Can the Yankees finally bring home another championship?",
       "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Recall Notice Explainers",
+      "topic": "Understanding the Latest Toyota Recall",
+      "hook": "Is your Toyota at risk of a major safety defect?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Bloopers",
+      "topic": "The Funniest Sports Fails of the Year",
+      "hook": "You won't stop laughing at these hilarious sports moments!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Car Recall Updates",
+      "topic": "The Most Recalled Cars of the Past Year",
+      "hook": "Is your car on the list of most recalled vehicles?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Greatest Comebacks in Sports History",
+      "hook": "You won't believe these incredible sports comebacks!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Olympic Games Analysis",
+      "topic": "The Science Behind Olympic Athletes' Training",
+      "hook": "What makes Olympic athletes so much faster and stronger?",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Travel Hacks for Dubai Flights",
-      "topic": "How to Avoid Long Lines at Dubai Airport Security",
-      "hook": "Tired of waiting in line? These Dubai airport security hacks will get you to your gate in no time!",
+      "category": "Winter Sports Challenges",
+      "topic": "The World's Most Challenging Ice Climbing Routes",
+      "hook": "Can you conquer the most treacherous ice climbing routes on earth?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Latest on Taylor Swift's Music Career",
+      "hook": "What's next for Taylor Swift's music empire?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "NBA Player Profiles",
+      "topic": "The Inspiring Story of Steph Curry's Rise to Fame",
+      "hook": "From underdog to NBA superstar: Steph Curry's incredible journey",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Freestyle Skiing Tricks",
+      "topic": "The Most Difficult Freestyle Skiing Tricks to Master",
+      "hook": "Can you handle the most challenging freestyle skiing tricks?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Baseball Team Previews",
+      "topic": "The Dodgers' Chances of Winning the World Series",
+      "hook": "Can the Dodgers finally bring home another championship?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Recall Notice Explainers",
+      "topic": "Understanding the Latest Ford Recall",
+      "hook": "Is your Ford at risk of a major safety defect?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Bloopers",
+      "topic": "The Funniest Sports Fails of the NFL Season",
+      "hook": "You won't stop laughing at these hilarious NFL moments!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
@@ -190,78 +182,78 @@
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     }
   ],
