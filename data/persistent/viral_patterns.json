@@ -1,87 +1,25 @@
 {
   "title_patterns": [
-    "{number} {topic} You Didn't Know",
-    "Why {topic} Changes Everything",
-    "The {topic} Hack You Need To Try",
-    "{topic} vs {topic}: Which Is Better?",
-    "What {topic} Can Teach You About {topic}",
-    "The Top {number} {topic} For {year}",
-    "The Dark Side Of {topic}",
-    "The Ultimate {topic} Guide",
-    "{topic} Exposed: The Truth You Need To Know",
-    "How To {topic} Like A Pro"
+    "\ud83e\udd2f Mind-Blowing Fact About...",
+    "\ud83e\udd2b The Secret to...",
+    "\ud83d\udd25 Transformation You Won't Believe...",
+    "\ud83e\udd14 What If...?"
   ],
   "hook_patterns": [
-    "You won't believe what happens when...",
-    "What if I told you {topic} is a lie?",
-    "I tried {topic} for {time} and here's what happened",
-    "The secret to {topic} is not what you think",
-    "Are you making these {number} common {topic} mistakes?",
-    "The one thing you're getting wrong about {topic}",
-    "I spent {time} studying {topic} and here's what I found",
-    "The truth about {topic} that nobody wants to tell you",
-    "What your {topic} says about you",
-    "The shocking truth about {topic} revealed"
+    "Are you REALLY getting enough sleep?",
+    "Stop scrolling, start learning!",
+    "This one thing will change EVERYTHING!",
+    "Seriously, you need to see this."
   ],
   "engagement_baits": [
-    "Let me know in the comments what you think about {topic}",
-    "Can you guess what happens next?",
-    "Share your {topic} story with me",
-    "Do you agree or disagree with this {topic}?",
-    "Tag a friend who needs to see this {topic}",
-    "What's your favorite {topic} and why?",
-    "Would you try {topic} or not?",
-    "Comment below with your thoughts on {topic}"
-  ],
-  "psychological_triggers": [
-    "curiosity",
-    "fomo",
-    "scarcity",
-    "socialproof",
-    "authority",
-    "reciprocity",
-    "urgency",
-    "empathy"
-  ],
-  "scroll_stop_openers": [
-    "I used to think {topic} was a myth, but then I discovered",
-    "You're probably making this one common {topic} mistake",
-    "What if you could {topic} in just {time}?",
-    "The #1 thing you're getting wrong about {topic} is",
-    "I tried {topic} for {time} and here's what I learned",
-    "The shocking truth about {topic} that nobody wants to tell you is",
-    "Are you ready to learn the secret to {topic}?",
-    "The one thing you need to know about {topic} is"
-  ],
-  "proven_categories": [
-    "psychology",
-    "money",
-    "relationships",
-    "health",
-    "technology",
-    "travel",
-    "food",
-    "selfimprovement"
-  ],
-  "retention_tricks": [
-    "Use a mix of fast and slow pacing",
-    "Add surprises and plot twists",
-    "Use storytelling techniques",
-    "Make it personal and relatable",
-    "Use visuals and animations",
-    "Ask questions and encourage engagement"
-  ],
-  "cta_formulas": [
-    "Get instant access to {resource} now at {link}",
-    "Download your free {resource} today at {link}",
-    "Join our {community} and start {benefit} now",
-    "Learn more about {topic} and get started with {link}",
-    "Get {result} with our {product/service} - sign up at {link}",
-    "Take the first step towards {goal} with our {resource} at {link}"
+    "What's your biggest struggle with...? Let's talk!",
+    "Tag a friend who needs to see this!",
+    "Rate this video 1-10!",
+    "Comment with your biggest question!"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-02-15T06:42:19.022662",
+  "last_ai_update": "2026-02-22T06:38:28.368894",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-02-15T06:42:19.022672"
+  "last_saved": "2026-02-22T06:38:28.368905"
 }
