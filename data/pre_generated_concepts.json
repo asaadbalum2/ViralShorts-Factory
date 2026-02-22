@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-02-21T06:02:34.967074",
-  "valid_until": "2026-02-21T23:59:34.967081",
+  "generated_at": "2026-02-22T06:09:17.709040",
+  "valid_until": "2026-02-22T23:59:17.709048",
   "categories": [
-    "Car Recall Updates",
-    "Sports Highlights",
-    "Olympic Games Analysis",
-    "Winter Sports Challenges",
-    " Celebrity News",
-    " NBA Player Profiles",
-    "Freestyle Skiing Tricks",
-    "Baseball Team Previews",
-    "Recall Notice Explainers",
-    "Sports Bloopers",
-    "Actor Interviews",
-    "Winter Olympics Vlogs",
-    "Dodgers Fan Reactions",
-    " NBA Trade Rumors",
-    "Automotive Safety Tips"
+    "Boxing Highlights",
+    "Olympic Updates",
+    "Sports News",
+    "Streaming Services",
+    "TV App Reviews",
+    "Manny Pacquiao Legacy",
+    "Gervonta Davis Fight Analysis",
+    "Terence Crawford Training",
+    "2026 Olympics Venue Tours",
+    "Streamed Sports Events",
+    "Bryan Zamble Interviews",
+    "Fitness Motivation",
+    "Esports Streaming",
+    "Summer Olympics Previews",
+    "Live Streaming Tips"
   ],
   "concepts": [
     {
-      "category": "Car Recall Updates",
-      "topic": "Tesla's Latest Recall: What You Need to Know",
-      "hook": "Is your Tesla at risk of a deadly malfunction?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Boxing Highlights",
+      "topic": "Top 5 Knockout Punches of 2023",
+      "hook": "You won't believe the most devastating knockout of the year!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "Lebron James' Most Epic Dunks",
-      "hook": "You won't believe the insane dunk Lebron just pulled off!",
-      "voice_style": "energetic",
+      "category": "Olympic Updates",
+      "topic": "New Sports Added to the 2026 Olympics",
+      "hook": "Get ready for the most epic Olympics yet with these new additions!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Olympic Games Analysis",
-      "topic": "Why the USA Dominates the Winter Olympics",
-      "hook": "What's behind the USA's unstoppable Olympic streak?",
-      "voice_style": "friendly",
+      "category": "Sports News",
+      "topic": "The Rise of Women's Boxing",
+      "hook": "Meet the female boxer who's taking the sports world by storm!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Winter Sports Challenges",
-      "topic": "The Toughest Downhill Skiing Courses",
-      "hook": "Can you handle the most treacherous slopes on earth?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Streaming Services",
+      "topic": "The Best Streaming Services for Sports Fans",
+      "hook": "Don't miss a single game with these top streaming services!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "The Latest on Tom Brady's Retirement",
-      "hook": "Is Tom Brady really hanging up his cleats for good?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Player Profiles",
-      "topic": "The Rise of Luka Doncic",
-      "hook": "From unknown to NBA superstar: Luka's incredible journey",
+      "category": "TV App Reviews",
+      "topic": "Review of the DAZN App",
+      "hook": "Is the DAZN app worth the hype? Let's find out!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Freestyle Skiing Tricks",
-      "topic": "The Most Insane Freestyle Skiing Stunts",
-      "hook": "You won't believe the death-defying stunts these skiers are pulling off!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Baseball Team Previews",
-      "topic": "The Yankees' Chances of Winning the World Series",
-      "hook": "Can the Yankees finally bring home another championship?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Recall Notice Explainers",
-      "topic": "Understanding the Latest Toyota Recall",
-      "hook": "Is your Toyota at risk of a major safety defect?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Bloopers",
-      "topic": "The Funniest Sports Fails of the Year",
-      "hook": "You won't stop laughing at these hilarious sports moments!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Car Recall Updates",
-      "topic": "The Most Recalled Cars of the Past Year",
-      "hook": "Is your car on the list of most recalled vehicles?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Sports History",
-      "hook": "You won't believe these incredible sports comebacks!",
+      "category": "Manny Pacquiao Legacy",
+      "topic": "Manny Pacquiao's Greatest Fights",
+      "hook": "Relive the glory days of boxing with Manny Pacquiao's most iconic fights!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Olympic Games Analysis",
-      "topic": "The Science Behind Olympic Athletes' Training",
-      "hook": "What makes Olympic athletes so much faster and stronger?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Sports Challenges",
-      "topic": "The World's Most Challenging Ice Climbing Routes",
-      "hook": "Can you conquer the most treacherous ice climbing routes on earth?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "The Latest on Taylor Swift's Music Career",
-      "hook": "What's next for Taylor Swift's music empire?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Player Profiles",
-      "topic": "The Inspiring Story of Steph Curry's Rise to Fame",
-      "hook": "From underdog to NBA superstar: Steph Curry's incredible journey",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Freestyle Skiing Tricks",
-      "topic": "The Most Difficult Freestyle Skiing Tricks to Master",
-      "hook": "Can you handle the most challenging freestyle skiing tricks?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Baseball Team Previews",
-      "topic": "The Dodgers' Chances of Winning the World Series",
-      "hook": "Can the Dodgers finally bring home another championship?",
+      "category": "Gervonta Davis Fight Analysis",
+      "topic": "Gervonta Davis vs. Ryan Garcia: Fight Breakdown",
+      "hook": "Who will come out on top in this highly anticipated matchup?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Recall Notice Explainers",
-      "topic": "Understanding the Latest Ford Recall",
-      "hook": "Is your Ford at risk of a major safety defect?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Terence Crawford Training",
+      "topic": "A Day in the Life of Terence Crawford's Training Camp",
+      "hook": "Go behind the scenes of Terence Crawford's intense training regimen!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "2026 Olympics Venue Tours",
+      "topic": "Exploring the 2026 Olympics Aquatics Center",
+      "hook": "Take a sneak peek at the state-of-the-art venue that will host the world's best swimmers!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Bloopers",
-      "topic": "The Funniest Sports Fails of the NFL Season",
-      "hook": "You won't stop laughing at these hilarious NFL moments!",
-      "voice_style": "energetic",
+      "category": "Streamed Sports Events",
+      "topic": "How to Watch the 2026 Olympics Online",
+      "hook": "Don't miss a single event - learn how to stream the 2026 Olympics from anywhere!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Boxing Highlights",
+      "topic": "The Most Epic Boxing Upsets of All Time",
+      "hook": "You won't believe these shocking upsets that changed the course of boxing history!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Olympic Updates",
+      "topic": "The New Olympic Sports That Will Debut in 2026",
+      "hook": "Get ready for the most exciting Olympic debutants yet!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports News",
+      "topic": "The Impact of Technology on Modern Sports",
+      "hook": "Discover how technology is revolutionizing the world of sports!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Streaming Services",
+      "topic": "The Best Streaming Services for Live Sports",
+      "hook": "Don't miss a single game - find out which streaming services have got you covered!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "TV App Reviews",
+      "topic": "Review of the ESPN App",
+      "hook": "Is the ESPN app the ultimate sports companion? Let's find out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Manny Pacquiao Legacy",
+      "topic": "Manny Pacquiao's Most Memorable Quotes",
+      "hook": "Get inspired by the wisdom and wit of boxing legend Manny Pacquiao!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Gervonta Davis Fight Analysis",
+      "topic": "Gervonta Davis's Path to Becoming a World Champion",
+      "hook": "Relive the journey of one of boxing's most exciting young champions!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Terence Crawford Training",
+      "topic": "Terence Crawford's Secret to Success: A Look at His Training Regimen",
+      "hook": "Uncover the secrets behind Terence Crawford's unbeatable training regimen!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "2026 Olympics Venue Tours",
+      "topic": "Exploring the 2026 Olympics Athletics Stadium",
+      "hook": "Take a tour of the iconic venue that will host the world's best athletes!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Streamed Sports Events",
+      "topic": "How to Watch the 2026 Olympics on Your Mobile Device",
+      "hook": "Don't miss a single event - learn how to stream the 2026 Olympics on-the-go!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
