@@ -1,238 +1,261 @@
 {
-  "generated_at": "2026-02-22T06:09:17.709040",
-  "valid_until": "2026-02-22T23:59:17.709048",
+  "generated_at": "2026-02-23T06:41:19.191676",
+  "valid_until": "2026-02-23T23:59:19.191684",
   "categories": [
-    "Boxing Highlights",
-    "Olympic Updates",
-    "Sports News",
-    "Streaming Services",
-    "TV App Reviews",
-    "Manny Pacquiao Legacy",
-    "Gervonta Davis Fight Analysis",
-    "Terence Crawford Training",
-    "2026 Olympics Venue Tours",
-    "Streamed Sports Events",
-    "Bryan Zamble Interviews",
-    "Fitness Motivation",
-    "Esports Streaming",
-    "Summer Olympics Previews",
-    "Live Streaming Tips"
+    "Earthquake Updates and Safety Tips",
+    "California Travel Warnings and Advice",
+    "Governor Ned Lamont's Latest Announcements",
+    "Breaking News and Live Coverage",
+    "Allyson Friedman's Lifestyle and Wellness",
+    "Get Rich Quick Schemes and Millionaire Stories",
+    "WWE Highlights and Roman Reigns News",
+    "Brock Lesnar's Fighting Career and Workout Routines",
+    "Disaster Preparedness and Emergency Response",
+    "California Earthquake Aftermath and Relief Efforts",
+    "News Anchor Bloopers and Funny Moments",
+    "Governor Interviews and Political Analysis",
+    "Natural Disaster Documentaries and Explainers",
+    "Pro Wrestling News and Smackdown Recaps",
+    "Wealth Creation and Financial Literacy Tips"
   ],
   "concepts": [
     {
-      "category": "Boxing Highlights",
-      "topic": "Top 5 Knockout Punches of 2023",
-      "hook": "You won't believe the most devastating knockout of the year!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Olympic Updates",
-      "topic": "New Sports Added to the 2026 Olympics",
-      "hook": "Get ready for the most epic Olympics yet with these new additions!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports News",
-      "topic": "The Rise of Women's Boxing",
-      "hook": "Meet the female boxer who's taking the sports world by storm!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Streaming Services",
-      "topic": "The Best Streaming Services for Sports Fans",
-      "hook": "Don't miss a single game with these top streaming services!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "TV App Reviews",
-      "topic": "Review of the DAZN App",
-      "hook": "Is the DAZN app worth the hype? Let's find out!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Manny Pacquiao Legacy",
-      "topic": "Manny Pacquiao's Greatest Fights",
-      "hook": "Relive the glory days of boxing with Manny Pacquiao's most iconic fights!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Gervonta Davis Fight Analysis",
-      "topic": "Gervonta Davis vs. Ryan Garcia: Fight Breakdown",
-      "hook": "Who will come out on top in this highly anticipated matchup?",
+      "category": "Earthquake Updates and Safety Tips",
+      "topic": "Top 5 Earthquake-Resistant Building Materials",
+      "hook": "Can your home withstand a 7.0 magnitude earthquake?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Terence Crawford Training",
-      "topic": "A Day in the Life of Terence Crawford's Training Camp",
-      "hook": "Go behind the scenes of Terence Crawford's intense training regimen!",
+      "category": "California Travel Warnings and Advice",
+      "topic": "Hidden Dangers of Visiting California's Wildfire Zones",
+      "hook": "Are you prepared for the unexpected dangers lurking in California's wildfire zones?",
+      "voice_style": "friendly",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Governor Ned Lamont's Latest Announcements",
+      "topic": "Ned Lamont's Plan to Revitalize Connecticut's Economy",
+      "hook": "What's behind Governor Lamont's bold new plan to boost Connecticut's economy?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Breaking News and Live Coverage",
+      "topic": "Live Update: Severe Weather Alert for the Eastern Seaboard",
+      "hook": "Breaking news: a powerful storm is barreling towards the East Coast - are you prepared?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Allyson Friedman's Lifestyle and Wellness",
+      "topic": "Allyson Friedman's Morning Routine for Boosting Energy",
+      "hook": "Want to know the secret to Allyson Friedman's boundless energy?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 41
+    },
+    {
+      "category": "Get Rich Quick Schemes and Millionaire Stories",
+      "topic": "The Unconventional Investment Strategy of a Self-Made Millionaire",
+      "hook": "From rags to riches: how one entrepreneur made millions with an unconventional investment strategy",
+      "voice_style": "mysterious",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "WWE Highlights and Roman Reigns News",
+      "topic": "Roman Reigns' Most Epic Smackdowns",
+      "hook": "Get ready for the most unforgettable Smackdowns in Roman Reigns' WWE career",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 46
     },
     {
-      "category": "2026 Olympics Venue Tours",
-      "topic": "Exploring the 2026 Olympics Aquatics Center",
-      "hook": "Take a sneak peek at the state-of-the-art venue that will host the world's best swimmers!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Streamed Sports Events",
-      "topic": "How to Watch the 2026 Olympics Online",
-      "hook": "Don't miss a single event - learn how to stream the 2026 Olympics from anywhere!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Boxing Highlights",
-      "topic": "The Most Epic Boxing Upsets of All Time",
-      "hook": "You won't believe these shocking upsets that changed the course of boxing history!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Olympic Updates",
-      "topic": "The New Olympic Sports That Will Debut in 2026",
-      "hook": "Get ready for the most exciting Olympic debutants yet!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports News",
-      "topic": "The Impact of Technology on Modern Sports",
-      "hook": "Discover how technology is revolutionizing the world of sports!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Streaming Services",
-      "topic": "The Best Streaming Services for Live Sports",
-      "hook": "Don't miss a single game - find out which streaming services have got you covered!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "TV App Reviews",
-      "topic": "Review of the ESPN App",
-      "hook": "Is the ESPN app the ultimate sports companion? Let's find out!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Manny Pacquiao Legacy",
-      "topic": "Manny Pacquiao's Most Memorable Quotes",
-      "hook": "Get inspired by the wisdom and wit of boxing legend Manny Pacquiao!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Gervonta Davis Fight Analysis",
-      "topic": "Gervonta Davis's Path to Becoming a World Champion",
-      "hook": "Relive the journey of one of boxing's most exciting young champions!",
+      "category": "Brock Lesnar's Fighting Career and Workout Routines",
+      "topic": "Brock Lesnar's Intensive Training Regimen for UFC Fights",
+      "hook": "What does it take to train like the Beast Incarnate?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Terence Crawford Training",
-      "topic": "Terence Crawford's Secret to Success: A Look at His Training Regimen",
-      "hook": "Uncover the secrets behind Terence Crawford's unbeatable training regimen!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Disaster Preparedness and Emergency Response",
+      "topic": "The Essential Items to Include in Your Emergency Kit",
+      "hook": "Are you prepared for the worst? Don't let disaster catch you off guard",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "2026 Olympics Venue Tours",
-      "topic": "Exploring the 2026 Olympics Athletics Stadium",
-      "hook": "Take a tour of the iconic venue that will host the world's best athletes!",
+      "category": "California Earthquake Aftermath and Relief Efforts",
+      "topic": "Community Comes Together to Support Earthquake Survivors",
+      "hook": "In the face of disaster, a community comes together to support those in need",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Breaking News and Live Coverage",
+      "topic": "Live Update: Ongoing Rescue Efforts in Disaster-Stricken Areas",
+      "hook": "Breaking news: rescue teams are racing against time to save those trapped in disaster zones",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Allyson Friedman's Lifestyle and Wellness",
+      "topic": "Allyson Friedman's Top 3 Mindfulness Exercises for Reducing Stress",
+      "hook": "Want to know Allyson Friedman's secret to staying calm under pressure?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Governor Ned Lamont's Latest Announcements",
+      "topic": "Ned Lamont's Initiative to Support Small Businesses in Connecticut",
+      "hook": "How is Governor Lamont planning to support the backbone of Connecticut's economy?",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "WWE Highlights and Roman Reigns News",
+      "topic": "Roman Reigns' Most Memorable Feuds in the WWE",
+      "hook": "Get ready to relive the most epic feuds in Roman Reigns' WWE career",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "California Earthquake Aftermath and Relief Efforts",
+      "topic": "Innovative Solutions for Rebuilding Earthquake-Damaged Infrastructure",
+      "hook": "Can cutting-edge technology help rebuild and create earthquake-resistant infrastructure?",
+      "voice_style": "mysterious",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Streamed Sports Events",
-      "topic": "How to Watch the 2026 Olympics on Your Mobile Device",
-      "hook": "Don't miss a single event - learn how to stream the 2026 Olympics on-the-go!",
-      "voice_style": "calm",
+      "category": "Get Rich Quick Schemes and Millionaire Stories",
+      "topic": "The Rise of a Self-Made Millionaire: From Humble Beginnings to Financial Freedom",
+      "hook": "From rags to riches: the inspiring story of a self-made millionaire",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 44
+    },
+    {
+      "category": "Brock Lesnar's Fighting Career and Workout Routines",
+      "topic": "Brock Lesnar's Most Intense UFC Fights",
+      "hook": "Get ready to relive the intensity of Brock Lesnar's most unforgettable UFC fights",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 47
+    },
+    {
+      "category": "Disaster Preparedness and Emergency Response",
+      "topic": "The Importance of Having a Family Emergency Plan",
+      "hook": "Don't wait until it's too late: create a family emergency plan today",
+      "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 40
+    },
+    {
+      "category": "California Travel Warnings and Advice",
+      "topic": "The Hidden Dangers of California's Most Popular Tourist Destinations",
+      "hook": "Are you aware of the unseen dangers lurking in California's most popular tourist spots?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Earthquake Updates and Safety Tips",
+      "topic": "The Science Behind Earthquake Prediction and Warning Systems",
+      "hook": "Can scientists predict the next big earthquake? Find out the latest advancements in earthquake prediction",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Breaking News and Live Coverage",
+      "topic": "Live Update: Developing Story on the Recent Wildfires in California",
+      "hook": "Breaking news: wildfires are sweeping through California - get the latest updates and information",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 49
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
@@ -240,21 +263,6 @@
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
