@@ -1,268 +1,276 @@
 {
-  "generated_at": "2026-02-23T06:41:19.191676",
-  "valid_until": "2026-02-23T23:59:19.191684",
+  "generated_at": "2026-02-24T06:35:46.027779",
+  "valid_until": "2026-02-24T23:59:46.027787",
   "categories": [
-    "Earthquake Updates and Safety Tips",
-    "California Travel Warnings and Advice",
-    "Governor Ned Lamont's Latest Announcements",
-    "Breaking News and Live Coverage",
-    "Allyson Friedman's Lifestyle and Wellness",
-    "Get Rich Quick Schemes and Millionaire Stories",
-    "WWE Highlights and Roman Reigns News",
-    "Brock Lesnar's Fighting Career and Workout Routines",
-    "Disaster Preparedness and Emergency Response",
-    "California Earthquake Aftermath and Relief Efforts",
-    "News Anchor Bloopers and Funny Moments",
-    "Governor Interviews and Political Analysis",
-    "Natural Disaster Documentaries and Explainers",
-    "Pro Wrestling News and Smackdown Recaps",
-    "Wealth Creation and Financial Literacy Tips"
+    "Winter Olympics Highlights",
+    "Pok\u00e9mon 30th Anniversary Celebrations",
+    "Behind-the-Scenes with Bobby Cannavale",
+    "Comedy Skits with Scottie",
+    "Neve Campbell Throwbacks",
+    "Rafael Jodar Dance Challenges",
+    "Adam Walton Q&A Sessions",
+    "Cameron Norrie Tennis Tips",
+    "Olympic Gold Medalist Interviews",
+    "30th Anniversary Pok\u00e9mon Trivia",
+    "Winter Sports Fails and Bloopers",
+    "Pok\u00e9mon Gaming Content",
+    "Current Events News Updates",
+    "Seasonal Winter Fashion Inspiration",
+    "Sports News and Analysis"
   ],
   "concepts": [
     {
-      "category": "Earthquake Updates and Safety Tips",
-      "topic": "Top 5 Earthquake-Resistant Building Materials",
-      "hook": "Can your home withstand a 7.0 magnitude earthquake?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Winter Olympics Highlights",
+      "topic": "Most Epic Ski Jumps in Olympic History",
+      "hook": "You won't believe the insane height of this ski jump!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "California Travel Warnings and Advice",
-      "topic": "Hidden Dangers of Visiting California's Wildfire Zones",
-      "hook": "Are you prepared for the unexpected dangers lurking in California's wildfire zones?",
+      "category": "Pok\u00e9mon 30th Anniversary Celebrations",
+      "topic": "Rare Pok\u00e9mon Cards You Might Have at Home",
+      "hook": "Is your old Pok\u00e9mon card collection worth a fortune?",
       "voice_style": "friendly",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Governor Ned Lamont's Latest Announcements",
-      "topic": "Ned Lamont's Plan to Revitalize Connecticut's Economy",
-      "hook": "What's behind Governor Lamont's bold new plan to boost Connecticut's economy?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Breaking News and Live Coverage",
-      "topic": "Live Update: Severe Weather Alert for the Eastern Seaboard",
-      "hook": "Breaking news: a powerful storm is barreling towards the East Coast - are you prepared?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Allyson Friedman's Lifestyle and Wellness",
-      "topic": "Allyson Friedman's Morning Routine for Boosting Energy",
-      "hook": "Want to know the secret to Allyson Friedman's boundless energy?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 41
-    },
-    {
-      "category": "Get Rich Quick Schemes and Millionaire Stories",
-      "topic": "The Unconventional Investment Strategy of a Self-Made Millionaire",
-      "hook": "From rags to riches: how one entrepreneur made millions with an unconventional investment strategy",
-      "voice_style": "mysterious",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "WWE Highlights and Roman Reigns News",
-      "topic": "Roman Reigns' Most Epic Smackdowns",
-      "hook": "Get ready for the most unforgettable Smackdowns in Roman Reigns' WWE career",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Brock Lesnar's Fighting Career and Workout Routines",
-      "topic": "Brock Lesnar's Intensive Training Regimen for UFC Fights",
-      "hook": "What does it take to train like the Beast Incarnate?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Disaster Preparedness and Emergency Response",
-      "topic": "The Essential Items to Include in Your Emergency Kit",
-      "hook": "Are you prepared for the worst? Don't let disaster catch you off guard",
+      "category": "Behind-the-Scenes with Bobby Cannavale",
+      "topic": "Bobby Cannavale's Favorite Acting Roles",
+      "hook": "What's the one role that still gives Bobby Cannavale goosebumps?",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits with Scottie",
+      "topic": "When You Try to Cook a Romantic Dinner",
+      "hook": "Watch as Scottie turns a simple dinner into a hilarious disaster!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Neve Campbell Throwbacks",
+      "topic": "Neve Campbell's Most Iconic Movie Roles",
+      "hook": "From Scream to Skyscraper, which Neve Campbell role is the most iconic?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "California Earthquake Aftermath and Relief Efforts",
-      "topic": "Community Comes Together to Support Earthquake Survivors",
-      "hook": "In the face of disaster, a community comes together to support those in need",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Breaking News and Live Coverage",
-      "topic": "Live Update: Ongoing Rescue Efforts in Disaster-Stricken Areas",
-      "hook": "Breaking news: rescue teams are racing against time to save those trapped in disaster zones",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Allyson Friedman's Lifestyle and Wellness",
-      "topic": "Allyson Friedman's Top 3 Mindfulness Exercises for Reducing Stress",
-      "hook": "Want to know Allyson Friedman's secret to staying calm under pressure?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 41
-    },
-    {
-      "category": "Governor Ned Lamont's Latest Announcements",
-      "topic": "Ned Lamont's Initiative to Support Small Businesses in Connecticut",
-      "hook": "How is Governor Lamont planning to support the backbone of Connecticut's economy?",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "WWE Highlights and Roman Reigns News",
-      "topic": "Roman Reigns' Most Memorable Feuds in the WWE",
-      "hook": "Get ready to relive the most epic feuds in Roman Reigns' WWE career",
+      "category": "Rafael Jodar Dance Challenges",
+      "topic": "The Impossible Dance Move That's Taking Over TikTok",
+      "hook": "Think you can master Rafael Jodar's latest dance challenge?",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "California Earthquake Aftermath and Relief Efforts",
-      "topic": "Innovative Solutions for Rebuilding Earthquake-Damaged Infrastructure",
-      "hook": "Can cutting-edge technology help rebuild and create earthquake-resistant infrastructure?",
-      "voice_style": "mysterious",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Get Rich Quick Schemes and Millionaire Stories",
-      "topic": "The Rise of a Self-Made Millionaire: From Humble Beginnings to Financial Freedom",
-      "hook": "From rags to riches: the inspiring story of a self-made millionaire",
+      "category": "Adam Walton Q&A Sessions",
+      "topic": "The Craziest Fan Questions Adam Walton Has Ever Received",
+      "hook": "What's the weirdest thing a fan has ever asked Adam Walton?",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "Brock Lesnar's Fighting Career and Workout Routines",
-      "topic": "Brock Lesnar's Most Intense UFC Fights",
-      "hook": "Get ready to relive the intensity of Brock Lesnar's most unforgettable UFC fights",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 47
-    },
-    {
-      "category": "Disaster Preparedness and Emergency Response",
-      "topic": "The Importance of Having a Family Emergency Plan",
-      "hook": "Don't wait until it's too late: create a family emergency plan today",
-      "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "California Travel Warnings and Advice",
-      "topic": "The Hidden Dangers of California's Most Popular Tourist Destinations",
-      "hook": "Are you aware of the unseen dangers lurking in California's most popular tourist spots?",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "Earthquake Updates and Safety Tips",
-      "topic": "The Science Behind Earthquake Prediction and Warning Systems",
-      "hook": "Can scientists predict the next big earthquake? Find out the latest advancements in earthquake prediction",
+      "category": "Cameron Norrie Tennis Tips",
+      "topic": "The Secret to Cameron Norrie's Powerful Forehand",
+      "hook": "Want to hit a forehand like Cameron Norrie? Here's his secret!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Breaking News and Live Coverage",
-      "topic": "Live Update: Developing Story on the Recent Wildfires in California",
-      "hook": "Breaking news: wildfires are sweeping through California - get the latest updates and information",
+      "category": "Olympic Gold Medalist Interviews",
+      "topic": "What It Takes to Become an Olympic Gold Medalist",
+      "hook": "What's the one thing that separates Olympic gold medalists from the rest?",
+      "voice_style": "calm",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "30th Anniversary Pok\u00e9mon Trivia",
+      "topic": "Pok\u00e9mon Trivia: How Well Do You Know the Original 151?",
+      "hook": "Think you're a true Pok\u00e9mon master? Take this quiz to find out!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Olympics Highlights",
+      "topic": "The Most Heartwarming Moments in Winter Olympics History",
+      "hook": "Get ready to feel all the feels with these Olympic moments!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Pok\u00e9mon 30th Anniversary Celebrations",
+      "topic": "The Evolution of Pok\u00e9mon Games Over the Years",
+      "hook": "From Game Boy to Nintendo Switch, how have Pok\u00e9mon games changed?",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Behind-the-Scenes with Bobby Cannavale",
+      "topic": "Bobby Cannavale's Favorite On-Set Memories",
+      "hook": "What's the most memorable moment from Bobby Cannavale's acting career?",
+      "voice_style": "calm",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedy Skits with Scottie",
+      "topic": "When You Try to Take a Relaxing Vacation",
+      "hook": "Watch as Scottie turns a peaceful vacation into a hilarious catastrophe!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Neve Campbell Throwbacks",
+      "topic": "Neve Campbell's Most Iconic 90s Fashion Moments",
+      "hook": "Which 90s fashion trend did Neve Campbell rock the best?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Rafael Jodar Dance Challenges",
+      "topic": "The Dance Move That's Taking Over the World",
+      "hook": "Can you handle the craziest dance challenge of the year?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Adam Walton Q&A Sessions",
+      "topic": "The Most Surprising Thing Adam Walton Has Learned from His Fans",
+      "hook": "What's the one thing Adam Walton wishes he knew about his fans?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Cameron Norrie Tennis Tips",
+      "topic": "How to Improve Your Tennis Serve in 5 Minutes",
+      "hook": "Want to serve like a pro? Cameron Norrie's got you covered!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Olympic Gold Medalist Interviews",
+      "topic": "The Mental Preparation of an Olympic Gold Medalist",
+      "hook": "What's the secret to an Olympic gold medalist's mental toughness?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "30th Anniversary Pok\u00e9mon Trivia",
+      "topic": "Pok\u00e9mon Trivia: Which Pok\u00e9mon Has the Highest Attack Stat?",
+      "hook": "Think you know your Pok\u00e9mon stats? Take this quiz to prove it!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Olympics Highlights",
+      "topic": "The Most Shocking Upsets in Winter Olympics History",
+      "hook": "You won't believe these shocking upsets that changed the Olympics forever!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 49
+      "target_duration": 40
+    },
+    {
+      "category": "Pok\u00e9mon 30th Anniversary Celebrations",
+      "topic": "The Rare Pok\u00e9mon That Will Make Your Collection Complete",
+      "hook": "Is your Pok\u00e9mon collection missing this rare gem?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
