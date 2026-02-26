@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-02-25T06:40:08.331208",
-  "valid_until": "2026-02-25T23:59:08.331216",
+  "generated_at": "2026-02-26T06:34:23.792990",
+  "valid_until": "2026-02-26T23:59:23.792999",
   "categories": [
     "Sports Highlights",
-    "LA Lakers Analysis",
-    "Podcast Reactions",
-    "Shakira Music Challenges",
-    "Judi Dench Impressions",
-    "News Updates",
+    "Music Challenges",
+    "Wildlife Encounters",
+    "College Basketball Analysis",
+    "MLB Player Profiles",
+    "Tennis Match Recaps",
+    "Country Music Covers",
     "Comedy Skits",
-    "Sports News",
-    "Football Player Profiles",
-    "NBA Score Reactions",
-    "Shakira Dance Tutorials",
-    "Los Angeles Lifestyle",
-    "Entertainment News",
-    "Sports Debate",
-    "Music Mashups"
+    "Quacky Animal Videos",
+    "Sports Bloopers",
+    "Celebrity Interviews",
+    "Music Mashups",
+    "French Tennis Player Features",
+    "College Sports Rivalries",
+    "Athlete Q&A Sessions"
   ],
   "concepts": [
     {
       "category": "Sports Highlights",
       "topic": "LeBron James' Most Epic Dunks",
-      "hook": "You won't believe the insane dunk LeBron threw down last night!",
+      "hook": "You won't believe the dunk that changed the game forever!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "LA Lakers Analysis",
-      "topic": "Why the Lakers Will Win the NBA Championship This Year",
-      "hook": "I'm about to reveal the shocking reason why the Lakers are unstoppable this season!",
-      "voice_style": "authoritative",
+      "category": "Music Challenges",
+      "topic": "Singing in a Foreign Language",
+      "hook": "Can I really sing a perfect French song without practicing?",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Podcast Reactions",
-      "topic": "Reacting to the Joe Rogan Experience's Most Controversial Episode",
-      "hook": "You won't believe what Joe Rogan just said on his latest podcast!",
+      "category": "Wildlife Encounters",
+      "topic": "Swimming with Great White Sharks",
+      "hook": "What happens when you get too close to the ocean's top predator?",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "College Basketball Analysis",
+      "topic": "March Madness Bracket Predictions",
+      "hook": "Our expert reveals the secret to picking a perfect bracket!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Shakira Music Challenges",
-      "topic": "Can I Dance Like Shakira to 'Hips Don't Lie'?",
-      "hook": "Watch me attempt to dance like Shakira and see how embarrassing it gets!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Judi Dench Impressions",
-      "topic": "My Best Judi Dench Impression as M from James Bond",
-      "hook": "I'm about to transform into Judi Dench and it's going to be hilarious!",
+      "category": "MLB Player Profiles",
+      "topic": "The Rise of Shohei Ohtani",
+      "hook": "How did this Japanese baseball star become a household name?",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "News Updates",
-      "topic": "Breaking Down the Latest COVID-19 Vaccine Updates",
-      "hook": "The latest COVID-19 vaccine news is out and it's a game-changer!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Tennis Match Recaps",
+      "topic": "The Greatest Tennis Comebacks in History",
+      "hook": "You won't believe the incredible turnaround in this legendary match!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Country Music Covers",
+      "topic": "Unique Covers of Classic Country Songs",
+      "hook": "Hear your favorite country song like you've never heard it before!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
       "category": "Comedy Skits",
-      "topic": "The Funniest Sports Press Conference Moments",
-      "hook": "You won't believe the ridiculous things athletes say in press conferences!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports News",
-      "topic": "The Impact of the New NFL Rule Changes on the Upcoming Season",
-      "hook": "The NFL just made some major rule changes and it's going to change everything!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Football Player Profiles",
-      "topic": "The Inspiring Story of Tom Brady's Rise to Fame",
-      "hook": "You won't believe the incredible story of how Tom Brady became a football legend!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Score Reactions",
-      "topic": "Reacting to the Craziest NBA Comebacks of the Season",
-      "hook": "I'm still in shock after watching these insane NBA comebacks!",
+      "topic": "When Sports Fans Get Too Excited",
+      "hook": "You'll laugh out loud at these hilarious fan reactions!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Top 5 Most Iconic Moments in Super Bowl History",
-      "hook": "Get ready to relive the most unforgettable Super Bowl moments of all time!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "LA Lakers Analysis",
-      "topic": "What the Lakers Need to Do to Beat the Clippers This Season",
-      "hook": "I'm about to reveal the secret to the Lakers' success against their toughest rival!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Podcast Reactions",
-      "topic": "Reacting to the Most Surprising Celebrity Interviews on The Howard Stern Show",
-      "hook": "You won't believe what these celebrities just revealed on The Howard Stern Show!",
+      "category": "Quacky Animal Videos",
+      "topic": "Funny Animal Fails",
+      "hook": "These adorable animals will make you laugh with their silly mistakes!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Shakira Music Challenges",
-      "topic": "Can I Sing Like Shakira to 'Whenever, Wherever'?",
-      "hook": "Watch me attempt to sing like Shakira and see how badly I fail!",
-      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Judi Dench Impressions",
-      "topic": "My Best Judi Dench Impression as Queen Elizabeth I",
-      "hook": "I'm about to channel my inner Judi Dench and become a queen!",
-      "voice_style": "authoritative",
+      "category": "Sports Bloopers",
+      "topic": "The Most Epic Sports Fails of the Year",
+      "hook": "Get ready to cringe at these hilarious sports moments!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Wildlife Encounters",
+      "topic": "Encountering a Giant Squid in the Deep Sea",
+      "hook": "Dive into the depths of the ocean and meet the legendary giant squid!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Music Challenges",
+      "topic": "Beatboxing Like a Pro",
+      "hook": "Can I really create an entire song using just my mouth?",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "News Updates",
-      "topic": "The Latest Updates on the Ongoing Climate Change Crisis",
-      "hook": "The climate change crisis is getting worse and it's time to take action!",
+      "category": "College Basketball Analysis",
+      "topic": "The Art of the Perfect Pick-and-Roll",
+      "hook": "Our expert breaks down the secret to this unstoppable play!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "MLB Player Profiles",
+      "topic": "The Unstoppable Mike Trout",
+      "hook": "What makes this baseball superstar so dominant on the field?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Tennis Match Recaps",
+      "topic": "The Greatest Rivalries in Tennis History",
+      "hook": "Relive the most epic battles on the tennis court!",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Country Music Covers",
+      "topic": "Country Music Stars Singing Pop Songs",
+      "hook": "Hear your favorite country singers tackle unexpected pop hits!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
       "category": "Comedy Skits",
-      "topic": "The Funniest Moments from the Latest Saturday Night Live Episode",
-      "hook": "You won't believe the hilarious sketches from the latest SNL episode!",
+      "topic": "When Athletes Try to Cook",
+      "hook": "You'll laugh out loud at these hilarious kitchen disasters!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports News",
-      "topic": "The Impact of Social Media on Modern-Day Sports",
-      "hook": "Social media is changing the sports world forever and you won't believe how!",
+      "category": "Quacky Animal Videos",
+      "topic": "Animals Stealing Food from Their Owners",
+      "hook": "These sneaky animals will make you laugh with their food heists!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Bloopers",
+      "topic": "The Funniest Sports Moments of the Decade",
+      "hook": "Get ready to laugh at these hilarious sports bloopers!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Wildlife Encounters",
+      "topic": "Walking with Wild Wolves",
+      "hook": "Join us on an unforgettable journey into the heart of wolf country!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Music Challenges",
+      "topic": "Singing with a Mouthful of Marshmallows",
+      "hook": "Can I really sing a perfect song with a mouthful of marshmallows?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Football Player Profiles",
-      "topic": "The Incredible Journey of Cristiano Ronaldo's Rise to Fame",
-      "hook": "Get ready to be inspired by the amazing story of Cristiano Ronaldo's success!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Score Reactions",
-      "topic": "Reacting to the Wildest NBA Finals Moments of the Decade",
-      "hook": "I'm still in shock after watching these crazy NBA Finals moments!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Skits",
-      "topic": "The Most Hilarious Sports Bloopers of the Year",
-      "hook": "You won't believe the ridiculous mistakes athletes made this year!",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
