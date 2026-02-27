@@ -1,268 +1,276 @@
 {
-  "generated_at": "2026-02-26T06:34:23.792990",
-  "valid_until": "2026-02-26T23:59:23.792999",
+  "generated_at": "2026-02-27T06:11:15.498897",
+  "valid_until": "2026-02-27T23:59:15.498907",
   "categories": [
-    "Sports Highlights",
-    "Music Challenges",
-    "Wildlife Encounters",
-    "College Basketball Analysis",
-    "MLB Player Profiles",
-    "Tennis Match Recaps",
-    "Country Music Covers",
-    "Comedy Skits",
-    "Quacky Animal Videos",
-    "Sports Bloopers",
-    "Celebrity Interviews",
-    "Music Mashups",
-    "French Tennis Player Features",
-    "College Sports Rivalries",
-    "Athlete Q&A Sessions"
+    "Bruno Mars Album Reaction",
+    "Kyron Horman Cold Case Updates",
+    "Romantic Music Playlists",
+    "Weather Forecast with Mark Kriski",
+    "Benny Blanco Music Collaborations",
+    "Pok\u00e9mon 30th Anniversary Challenges",
+    "Yanic Konan Niederhauser Skateboarding",
+    "Blackpink Dance Tutorials",
+    "Valentines Day Gift Ideas",
+    "Music Producer Tips with Benny Blanco",
+    "Pokemon Anniversary Trivia",
+    "Bruno Mars Song Covers",
+    "K-pop Dance Challenges",
+    "Missing Persons Awareness",
+    "Music Festival Lineup Predictions"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Most Epic Dunks",
-      "hook": "You won't believe the dunk that changed the game forever!",
+      "category": "Bruno Mars Album Reaction",
+      "topic": "Unpacking the Hidden Gems in Bruno Mars' Debut Album",
+      "hook": "You won't believe the song Bruno Mars didn't want you to hear!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Music Challenges",
-      "topic": "Singing in a Foreign Language",
-      "hook": "Can I really sing a perfect French song without practicing?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Kyron Horman Cold Case Updates",
+      "topic": "Newly Uncovered Evidence in the Kyron Horman Disappearance",
+      "hook": "The shocking truth about Kyron Horman's case that will change everything!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Wildlife Encounters",
-      "topic": "Swimming with Great White Sharks",
-      "hook": "What happens when you get too close to the ocean's top predator?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Romantic Music Playlists",
+      "topic": "The Ultimate 90s Slow Jams Playlist for a Perfect Date Night",
+      "hook": "Get ready to fall in love all over again with these timeless 90s jams!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "College Basketball Analysis",
-      "topic": "March Madness Bracket Predictions",
-      "hook": "Our expert reveals the secret to picking a perfect bracket!",
+      "category": "Weather Forecast with Mark Kriski",
+      "topic": "Mark Kriski's Top 5 Most Extreme Weather Conditions",
+      "hook": "You won't believe the craziest weather Mark Kriski has ever forecasted!",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "MLB Player Profiles",
-      "topic": "The Rise of Shohei Ohtani",
-      "hook": "How did this Japanese baseball star become a household name?",
+      "category": "Benny Blanco Music Collaborations",
+      "topic": "The Making of Benny Blanco's Hit Single with Justin Bieber",
+      "hook": "What really happened behind the scenes of Benny Blanco's biggest hit?",
       "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Tennis Match Recaps",
-      "topic": "The Greatest Tennis Comebacks in History",
-      "hook": "You won't believe the incredible turnaround in this legendary match!",
+      "category": "Pok\u00e9mon 30th Anniversary Challenges",
+      "topic": "Can You Complete the Pok\u00e9mon Red Challenge in Under 30 Minutes?",
+      "hook": "Think you're a Pok\u00e9mon master? Take on this impossible challenge!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Yanic Konan Niederhauser Skateboarding",
+      "topic": "Yanic Konan Niederhauser's Most Insane Skateboarding Tricks",
+      "hook": "You won't believe the death-defying tricks Yanic Konan Niederhauser is about to land!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Country Music Covers",
-      "topic": "Unique Covers of Classic Country Songs",
-      "hook": "Hear your favorite country song like you've never heard it before!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Skits",
-      "topic": "When Sports Fans Get Too Excited",
-      "hook": "You'll laugh out loud at these hilarious fan reactions!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Quacky Animal Videos",
-      "topic": "Funny Animal Fails",
-      "hook": "These adorable animals will make you laugh with their silly mistakes!",
+      "category": "Blackpink Dance Tutorials",
+      "topic": "Learn Blackpink's 'DDU-DU DDU-DU' Choreography in 5 Minutes",
+      "hook": "Get ready to dance like a K-pop star with this quick and easy tutorial!",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Bloopers",
-      "topic": "The Most Epic Sports Fails of the Year",
-      "hook": "Get ready to cringe at these hilarious sports moments!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildlife Encounters",
-      "topic": "Encountering a Giant Squid in the Deep Sea",
-      "hook": "Dive into the depths of the ocean and meet the legendary giant squid!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Challenges",
-      "topic": "Beatboxing Like a Pro",
-      "hook": "Can I really create an entire song using just my mouth?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "College Basketball Analysis",
-      "topic": "The Art of the Perfect Pick-and-Roll",
-      "hook": "Our expert breaks down the secret to this unstoppable play!",
-      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "MLB Player Profiles",
-      "topic": "The Unstoppable Mike Trout",
-      "hook": "What makes this baseball superstar so dominant on the field?",
+      "category": "Valentines Day Gift Ideas",
+      "topic": "The Top 5 Most Creative and Affordable Valentine's Day Gifts",
+      "hook": "Don't break the bank! Find the perfect gift for your loved one with these budget-friendly ideas!",
       "voice_style": "calm",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Tennis Match Recaps",
-      "topic": "The Greatest Rivalries in Tennis History",
-      "hook": "Relive the most epic battles on the tennis court!",
+      "category": "Music Producer Tips with Benny Blanco",
+      "topic": "Benny Blanco's Top 3 Music Production Tips for Beginners",
+      "hook": "Want to produce a hit song like Benny Blanco? Start with these expert tips!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Bruno Mars Album Reaction",
+      "topic": "A Deep Dive into Bruno Mars' Funk and Soul Influences",
+      "hook": "The surprising artists who inspired Bruno Mars' biggest hits!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Kyron Horman Cold Case Updates",
+      "topic": "The Latest Developments in the Kyron Horman Case: A Timeline",
+      "hook": "What's new in the Kyron Horman case? Get the latest updates and revelations!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Country Music Covers",
-      "topic": "Country Music Stars Singing Pop Songs",
-      "hook": "Hear your favorite country singers tackle unexpected pop hits!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits",
-      "topic": "When Athletes Try to Cook",
-      "hook": "You'll laugh out loud at these hilarious kitchen disasters!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Romantic Music Playlists",
+      "topic": "The Best Acoustic Love Songs to Make Your Partner Swoon",
+      "hook": "Create the perfect romantic atmosphere with these soulful acoustic love songs!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Quacky Animal Videos",
-      "topic": "Animals Stealing Food from Their Owners",
-      "hook": "These sneaky animals will make you laugh with their food heists!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Bloopers",
-      "topic": "The Funniest Sports Moments of the Decade",
-      "hook": "Get ready to laugh at these hilarious sports bloopers!",
-      "voice_style": "energetic",
+      "category": "Weather Forecast with Mark Kriski",
+      "topic": "Mark Kriski's Funniest Weather Forecast Bloopers",
+      "hook": "When weather forecasts go hilariously wrong! Mark Kriski's funniest moments!",
+      "voice_style": "calm",
       "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildlife Encounters",
-      "topic": "Walking with Wild Wolves",
-      "hook": "Join us on an unforgettable journey into the heart of wolf country!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Music Challenges",
-      "topic": "Singing with a Mouthful of Marshmallows",
-      "hook": "Can I really sing a perfect song with a mouthful of marshmallows?",
-      "voice_style": "friendly",
+      "category": "Benny Blanco Music Collaborations",
+      "topic": "The Story Behind Benny Blanco's Unreleased Tracks with Rihanna",
+      "hook": "You won't believe the unreleased hits Benny Blanco worked on with Rihanna!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 40
+    },
+    {
+      "category": "Pok\u00e9mon 30th Anniversary Challenges",
+      "topic": "The Ultimate Pok\u00e9mon Trading Card Challenge: Can You Collect Them All?",
+      "hook": "Think you're a Pok\u00e9mon master? Take on the ultimate Trading Card Challenge!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Yanic Konan Niederhauser Skateboarding",
+      "topic": "Yanic Konan Niederhauser's Skateboarding Journey: From Amateur to Pro",
+      "hook": "From falling to flying: Yanic Konan Niederhauser's incredible skateboarding journey!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Blackpink Dance Tutorials",
+      "topic": "Learn Blackpink's 'Kill This Love' Choreography in 10 Easy Steps",
+      "hook": "Get ready to slay the dance floor with this easy-to-follow Blackpink tutorial!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Valentines Day Gift Ideas",
+      "topic": "DIY Valentine's Day Gifts: 5 Creative and Thoughtful Ideas",
+      "hook": "Show your love and care with these unique and handmade Valentine's Day gifts!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Producer Tips with Benny Blanco",
+      "topic": "Benny Blanco's Favorite Music Production Plugins and Software",
+      "hook": "Want to produce like Benny Blanco? Here are his go-to music production tools!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Bruno Mars Album Reaction",
+      "topic": "The Evolution of Bruno Mars' Music Style: From Hip-Hop to Pop",
+      "hook": "How Bruno Mars transformed from a hip-hop artist to a pop sensation!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Kyron Horman Cold Case Updates",
+      "topic": "The Kyron Horman Case: New Theories and Suspects Emerge",
+      "hook": "The Kyron Horman case just got a whole lot more complicated: new theories and suspects!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
