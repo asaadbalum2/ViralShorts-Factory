@@ -1,276 +1,268 @@
 {
-  "generated_at": "2026-02-27T06:11:15.498897",
-  "valid_until": "2026-02-27T23:59:15.498907",
+  "generated_at": "2026-02-28T05:56:30.565066",
+  "valid_until": "2026-02-28T23:59:30.565073",
   "categories": [
-    "Bruno Mars Album Reaction",
-    "Kyron Horman Cold Case Updates",
-    "Romantic Music Playlists",
-    "Weather Forecast with Mark Kriski",
-    "Benny Blanco Music Collaborations",
-    "Pok\u00e9mon 30th Anniversary Challenges",
-    "Yanic Konan Niederhauser Skateboarding",
-    "Blackpink Dance Tutorials",
-    "Valentines Day Gift Ideas",
-    "Music Producer Tips with Benny Blanco",
-    "Pokemon Anniversary Trivia",
-    "Bruno Mars Song Covers",
-    "K-pop Dance Challenges",
-    "Missing Persons Awareness",
-    "Music Festival Lineup Predictions"
+    "Denver Travel Vlogs",
+    "Selena Gomez Dance Challenges",
+    "NBA Highlights featuring Aaron Wiggins and Alex Caruso",
+    "RE9 Safe Code Explained",
+    "Jared McCain and Cason Wallace Basketball Analysis",
+    "Cameron Johnson Fan Edits",
+    "Sports News and Updates",
+    "Current Event Commentary",
+    "Social Media Trends and Challenges",
+    "Evergreen Gaming Content",
+    "Music and Dance Challenges",
+    "Comedy Skits and Parodies",
+    "Denver Food and Culture",
+    "Sports Bloopers and Fails",
+    "Behind-the-Scenes with Popular Athletes"
   ],
   "concepts": [
     {
-      "category": "Bruno Mars Album Reaction",
-      "topic": "Unpacking the Hidden Gems in Bruno Mars' Debut Album",
-      "hook": "You won't believe the song Bruno Mars didn't want you to hear!",
+      "category": "Denver Travel Vlogs",
+      "topic": "Exploring Denver's Street Art Scene",
+      "hook": "You won't believe the vibrant murals hiding in Denver's alleyways!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Kyron Horman Cold Case Updates",
-      "topic": "Newly Uncovered Evidence in the Kyron Horman Disappearance",
-      "hook": "The shocking truth about Kyron Horman's case that will change everything!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Selena Gomez Dance Challenges",
+      "topic": "Dancing to Selena's 'Lose You to Love Me' in Public",
+      "hook": "I just busted out Selena Gomez's choreo in the middle of the mall!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Romantic Music Playlists",
-      "topic": "The Ultimate 90s Slow Jams Playlist for a Perfect Date Night",
-      "hook": "Get ready to fall in love all over again with these timeless 90s jams!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "NBA Highlights featuring Aaron Wiggins and Alex Caruso",
+      "topic": "Aaron Wiggins' Clutch Three-Pointers vs. Warriors",
+      "hook": "Watch Aaron Wiggins drain not one, not two, but THREE game-changing threes!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Weather Forecast with Mark Kriski",
-      "topic": "Mark Kriski's Top 5 Most Extreme Weather Conditions",
-      "hook": "You won't believe the craziest weather Mark Kriski has ever forecasted!",
+      "category": "RE9 Safe Code Explained",
+      "topic": "Cracking the RE9 Safe Code: A Step-by-Step Guide",
+      "hook": "The secret's out: I'm revealing the RE9 safe code right now!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Jared McCain and Cason Wallace Basketball Analysis",
+      "topic": "Jared McCain's Unique Scoring Ability: A Breakdown",
+      "hook": "What makes Jared McCain's scoring technique so unstoppable?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Cameron Johnson Fan Edits",
+      "topic": "Cameron Johnson's Most Epic Dunks of the Season",
+      "hook": "Get ready for the most thunderous dunks of Cameron Johnson's career!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News and Updates",
+      "topic": "NBA Trade Deadline Recap: Winners and Losers",
+      "hook": "The NBA trade deadline just dropped, and we've got the tea!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Event Commentary",
+      "topic": "The Impact of Social Media on Modern Society",
+      "hook": "Is social media controlling our lives, or are we in control?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Benny Blanco Music Collaborations",
-      "topic": "The Making of Benny Blanco's Hit Single with Justin Bieber",
-      "hook": "What really happened behind the scenes of Benny Blanco's biggest hit?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
+      "category": "Social Media Trends and Challenges",
+      "topic": "The Viral 'Renegade' Dance Challenge Explained",
+      "hook": "You've seen the 'Renegade' dance challenge everywhere, but what's the story behind it?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Pok\u00e9mon 30th Anniversary Challenges",
-      "topic": "Can You Complete the Pok\u00e9mon Red Challenge in Under 30 Minutes?",
-      "hook": "Think you're a Pok\u00e9mon master? Take on this impossible challenge!",
+      "category": "Evergreen Gaming Content",
+      "topic": "The Top 5 Most Iconic Video Game Soundtracks of All Time",
+      "hook": "These video game soundtracks will transport you back to a world of nostalgia!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Denver Travel Vlogs",
+      "topic": "Discovering Denver's Hidden Gems: A Walking Tour",
+      "hook": "Tucked away in Denver's streets are secrets waiting to be uncovered!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Yanic Konan Niederhauser Skateboarding",
-      "topic": "Yanic Konan Niederhauser's Most Insane Skateboarding Tricks",
-      "hook": "You won't believe the death-defying tricks Yanic Konan Niederhauser is about to land!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Selena Gomez Dance Challenges",
+      "topic": "Selena Gomez's 'Good for You' Dance Tutorial",
+      "hook": "Get ready to slay the dance floor with Selena's sultry moves!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Blackpink Dance Tutorials",
-      "topic": "Learn Blackpink's 'DDU-DU DDU-DU' Choreography in 5 Minutes",
-      "hook": "Get ready to dance like a K-pop star with this quick and easy tutorial!",
+      "category": "NBA Highlights featuring Aaron Wiggins and Alex Caruso",
+      "topic": "Alex Caruso's Clutch Plays: A Highlight Reel",
+      "hook": "When the game is on the line, Alex Caruso always delivers!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "RE9 Safe Code Explained",
+      "topic": "The Hidden Patterns Behind the RE9 Safe Code",
+      "hook": "Unravel the mystery of the RE9 safe code, and unlock the secrets within!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Jared McCain and Cason Wallace Basketball Analysis",
+      "topic": "Cason Wallace's Defensive Prowess: A Breakdown",
+      "hook": "What makes Cason Wallace one of the most feared defenders in the game?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Cameron Johnson Fan Edits",
+      "topic": "Cameron Johnson's Most Dominant Performances of the Season",
+      "hook": "Witness Cameron Johnson's most jaw-dropping moments of the season!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News and Updates",
+      "topic": "NFL Draft Recap: The Biggest Surprises and Steals",
+      "hook": "The NFL draft just dropped, and we're breaking down the biggest surprises!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Valentines Day Gift Ideas",
-      "topic": "The Top 5 Most Creative and Affordable Valentine's Day Gifts",
-      "hook": "Don't break the bank! Find the perfect gift for your loved one with these budget-friendly ideas!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Producer Tips with Benny Blanco",
-      "topic": "Benny Blanco's Top 3 Music Production Tips for Beginners",
-      "hook": "Want to produce a hit song like Benny Blanco? Start with these expert tips!",
+      "category": "Current Event Commentary",
+      "topic": "The Impact of Climate Change on Global Sports",
+      "hook": "How is climate change affecting the world of sports, and what can we do about it?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "dramatic",
+      "target_duration": 50
     },
     {
-      "category": "Bruno Mars Album Reaction",
-      "topic": "A Deep Dive into Bruno Mars' Funk and Soul Influences",
-      "hook": "The surprising artists who inspired Bruno Mars' biggest hits!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Kyron Horman Cold Case Updates",
-      "topic": "The Latest Developments in the Kyron Horman Case: A Timeline",
-      "hook": "What's new in the Kyron Horman case? Get the latest updates and revelations!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Romantic Music Playlists",
-      "topic": "The Best Acoustic Love Songs to Make Your Partner Swoon",
-      "hook": "Create the perfect romantic atmosphere with these soulful acoustic love songs!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Weather Forecast with Mark Kriski",
-      "topic": "Mark Kriski's Funniest Weather Forecast Bloopers",
-      "hook": "When weather forecasts go hilariously wrong! Mark Kriski's funniest moments!",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Benny Blanco Music Collaborations",
-      "topic": "The Story Behind Benny Blanco's Unreleased Tracks with Rihanna",
-      "hook": "You won't believe the unreleased hits Benny Blanco worked on with Rihanna!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Pok\u00e9mon 30th Anniversary Challenges",
-      "topic": "The Ultimate Pok\u00e9mon Trading Card Challenge: Can You Collect Them All?",
-      "hook": "Think you're a Pok\u00e9mon master? Take on the ultimate Trading Card Challenge!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Yanic Konan Niederhauser Skateboarding",
-      "topic": "Yanic Konan Niederhauser's Skateboarding Journey: From Amateur to Pro",
-      "hook": "From falling to flying: Yanic Konan Niederhauser's incredible skateboarding journey!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Blackpink Dance Tutorials",
-      "topic": "Learn Blackpink's 'Kill This Love' Choreography in 10 Easy Steps",
-      "hook": "Get ready to slay the dance floor with this easy-to-follow Blackpink tutorial!",
+      "category": "Social Media Trends and Challenges",
+      "topic": "The Rise of TikTok: How it's Changing Social Media",
+      "hook": "TikTok is taking over the internet, but what's behind its massive success?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Valentines Day Gift Ideas",
-      "topic": "DIY Valentine's Day Gifts: 5 Creative and Thoughtful Ideas",
-      "hook": "Show your love and care with these unique and handmade Valentine's Day gifts!",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Music Producer Tips with Benny Blanco",
-      "topic": "Benny Blanco's Favorite Music Production Plugins and Software",
-      "hook": "Want to produce like Benny Blanco? Here are his go-to music production tools!",
-      "voice_style": "authoritative",
+      "category": "Evergreen Gaming Content",
+      "topic": "The Evolution of Video Game Graphics: Then vs. Now",
+      "hook": "Get ready for a blast from the past as we compare retro games to their modern counterparts!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Bruno Mars Album Reaction",
-      "topic": "The Evolution of Bruno Mars' Music Style: From Hip-Hop to Pop",
-      "hook": "How Bruno Mars transformed from a hip-hop artist to a pop sensation!",
+      "category": "Denver Travel Vlogs",
+      "topic": "Denver's Best Kept Secrets: A Local's Guide",
+      "hook": "Think you know Denver? Think again! We're spilling the city's best-kept secrets!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Kyron Horman Cold Case Updates",
-      "topic": "The Kyron Horman Case: New Theories and Suspects Emerge",
-      "hook": "The Kyron Horman case just got a whole lot more complicated: new theories and suspects!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
