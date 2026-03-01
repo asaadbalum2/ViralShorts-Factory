@@ -17,9 +17,40 @@
     "Rate this video 1-10!",
     "Comment with your biggest question!"
   ],
+  "psychological_triggers": [
+    "Curiosity",
+    "FOMO",
+    "Regret",
+    "Anxiety",
+    "Hope"
+  ],
+  "scroll_stop_openers": [
+    "Seriously, this is wild!",
+    "Wait, what?!",
+    "You won't believe this...",
+    "This is a game-changer!"
+  ],
+  "proven_categories": [
+    "Self-Improvement",
+    "Finance",
+    "Relationships",
+    "Health & Wellness",
+    "Tech & Gadgets"
+  ],
+  "retention_tricks": [
+    "Quick tips for...",
+    "Behind-the-scenes look at...",
+    "Quick tutorial on..."
+  ],
+  "cta_formulas": [
+    "Learn More!",
+    "Subscribe Now!",
+    "Check Out the Link!",
+    "Don't Miss Out!"
+  ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-02-22T06:38:28.368894",
+  "last_ai_update": "2026-03-01T06:37:15.881297",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-02-22T06:38:28.368905"
+  "last_saved": "2026-03-01T06:37:15.881309"
 }
