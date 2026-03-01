@@ -1,267 +1,267 @@
 {
-  "generated_at": "2026-02-28T05:56:30.565066",
-  "valid_until": "2026-02-28T23:59:30.565073",
+  "generated_at": "2026-03-01T06:08:04.899040",
+  "valid_until": "2026-03-01T23:59:04.899048",
   "categories": [
-    "Denver Travel Vlogs",
-    "Selena Gomez Dance Challenges",
-    "NBA Highlights featuring Aaron Wiggins and Alex Caruso",
-    "RE9 Safe Code Explained",
-    "Jared McCain and Cason Wallace Basketball Analysis",
-    "Cameron Johnson Fan Edits",
-    "Sports News and Updates",
-    "Current Event Commentary",
-    "Social Media Trends and Challenges",
-    "Evergreen Gaming Content",
-    "Music and Dance Challenges",
-    "Comedy Skits and Parodies",
-    "Denver Food and Culture",
-    "Sports Bloopers and Fails",
-    "Behind-the-Scenes with Popular Athletes"
+    "Quentin Tarantino Film Reviews",
+    "Johannesburg Travel Vlogs",
+    "Chris Stapleton Music Covers",
+    "Mikey Lewis Sports Highlights",
+    "Ryan Gosling Movie Mashups",
+    "Isabel May Fashion Inspiration",
+    "America FC Soccer Analysis",
+    "Korean Football Updates",
+    "LA FC vs Houston Dynamo Predictions",
+    "March Madness Sports Bloopers",
+    "Spring Fashion Trends with Isabel May",
+    "Ryan Gosling and Quentin Tarantino Collaborations",
+    "Johannesburg Music Festival Previews",
+    "Chris Stapleton and Mikey Lewis Fan Challenges",
+    "LA FC and America FC Fan Reactions"
   ],
   "concepts": [
     {
-      "category": "Denver Travel Vlogs",
-      "topic": "Exploring Denver's Street Art Scene",
-      "hook": "You won't believe the vibrant murals hiding in Denver's alleyways!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Selena Gomez Dance Challenges",
-      "topic": "Dancing to Selena's 'Lose You to Love Me' in Public",
-      "hook": "I just busted out Selena Gomez's choreo in the middle of the mall!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Highlights featuring Aaron Wiggins and Alex Caruso",
-      "topic": "Aaron Wiggins' Clutch Three-Pointers vs. Warriors",
-      "hook": "Watch Aaron Wiggins drain not one, not two, but THREE game-changing threes!",
+      "category": "Quentin Tarantino Film Reviews",
+      "topic": "The Hidden Meaning Behind Pulp Fiction's Iconic Dance Scene",
+      "hook": "You won't believe the shocking truth about Tarantino's most famous scene...",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "RE9 Safe Code Explained",
-      "topic": "Cracking the RE9 Safe Code: A Step-by-Step Guide",
-      "hook": "The secret's out: I'm revealing the RE9 safe code right now!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Jared McCain and Cason Wallace Basketball Analysis",
-      "topic": "Jared McCain's Unique Scoring Ability: A Breakdown",
-      "hook": "What makes Jared McCain's scoring technique so unstoppable?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Cameron Johnson Fan Edits",
-      "topic": "Cameron Johnson's Most Epic Dunks of the Season",
-      "hook": "Get ready for the most thunderous dunks of Cameron Johnson's career!",
+      "category": "Johannesburg Travel Vlogs",
+      "topic": "Exploring the Vibrant Street Art of Soweto",
+      "hook": "Get ready to discover the most Instagrammable neighborhood in Johannesburg!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports News and Updates",
-      "topic": "NBA Trade Deadline Recap: Winners and Losers",
-      "hook": "The NBA trade deadline just dropped, and we've got the tea!",
+      "category": "Chris Stapleton Music Covers",
+      "topic": "A Soulful Acoustic Cover of 'Tennessee Whiskey'",
+      "hook": "You've never heard 'Tennessee Whiskey' sound so good...",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Mikey Lewis Sports Highlights",
+      "topic": "The Most Insane Rugby Tries of Mikey Lewis' Career",
+      "hook": "Watch as Mikey Lewis leaves defenders in the dust with these incredible tries!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Ryan Gosling Movie Mashups",
+      "topic": "Ryan Gosling's Most Iconic Movie Roles in One Epic Mashup",
+      "hook": "What if Ryan Gosling's most famous characters all met in one movie?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Current Event Commentary",
-      "topic": "The Impact of Social Media on Modern Society",
-      "hook": "Is social media controlling our lives, or are we in control?",
+      "category": "Isabel May Fashion Inspiration",
+      "topic": "Stealing Isabel May's Chic and Effortless Style for a Night Out",
+      "hook": "Want to dress like a Hollywood starlet? Let's break down Isabel May's best looks!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "America FC Soccer Analysis",
+      "topic": "Breaking Down America FC's Winning Strategy This Season",
+      "hook": "What's behind America FC's incredible winning streak? Let's dive into the stats!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Social Media Trends and Challenges",
-      "topic": "The Viral 'Renegade' Dance Challenge Explained",
-      "hook": "You've seen the 'Renegade' dance challenge everywhere, but what's the story behind it?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Evergreen Gaming Content",
-      "topic": "The Top 5 Most Iconic Video Game Soundtracks of All Time",
-      "hook": "These video game soundtracks will transport you back to a world of nostalgia!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Denver Travel Vlogs",
-      "topic": "Discovering Denver's Hidden Gems: A Walking Tour",
-      "hook": "Tucked away in Denver's streets are secrets waiting to be uncovered!",
+      "category": "Korean Football Updates",
+      "topic": "The Rise of Korean Football: What You Need to Know",
+      "hook": "Korean football is taking the world by storm - here's what you've been missing!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "LA FC vs Houston Dynamo Predictions",
+      "topic": "LA FC vs Houston Dynamo: The Ultimate Matchday Preview",
+      "hook": "Who will come out on top in this epic showdown? Our expert predictions reveal all!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Selena Gomez Dance Challenges",
-      "topic": "Selena Gomez's 'Good for You' Dance Tutorial",
-      "hook": "Get ready to slay the dance floor with Selena's sultry moves!",
+      "category": "March Madness Sports Bloopers",
+      "topic": "The Funniest March Madness Bloopers of All Time",
+      "hook": "When March Madness goes hilariously wrong - you won't believe these bloopers!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "NBA Highlights featuring Aaron Wiggins and Alex Caruso",
-      "topic": "Alex Caruso's Clutch Plays: A Highlight Reel",
-      "hook": "When the game is on the line, Alex Caruso always delivers!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "RE9 Safe Code Explained",
-      "topic": "The Hidden Patterns Behind the RE9 Safe Code",
-      "hook": "Unravel the mystery of the RE9 safe code, and unlock the secrets within!",
+      "category": "Quentin Tarantino Film Reviews",
+      "topic": "Unpacking the Twisted Themes of Tarantino's 'Kill Bill' Saga",
+      "hook": "You think you know 'Kill Bill', but have you uncovered its darkest secrets?",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Jared McCain and Cason Wallace Basketball Analysis",
-      "topic": "Cason Wallace's Defensive Prowess: A Breakdown",
-      "hook": "What makes Cason Wallace one of the most feared defenders in the game?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Cameron Johnson Fan Edits",
-      "topic": "Cameron Johnson's Most Dominant Performances of the Season",
-      "hook": "Witness Cameron Johnson's most jaw-dropping moments of the season!",
+      "category": "Johannesburg Travel Vlogs",
+      "topic": "Discovering the Hidden Gems of Johannesburg's Neillson Mandela Square",
+      "hook": "Explore the heart of Johannesburg and uncover its best-kept secrets!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports News and Updates",
-      "topic": "NFL Draft Recap: The Biggest Surprises and Steals",
-      "hook": "The NFL draft just dropped, and we're breaking down the biggest surprises!",
+      "category": "Chris Stapleton Music Covers",
+      "topic": "A Haunting Cover of 'Broken Halos' by Chris Stapleton",
+      "hook": "Get ready to have your heart broken by this soulful cover of 'Broken Halos'...",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Mikey Lewis Sports Highlights",
+      "topic": "The Top 5 Most Daring Tries of Mikey Lewis' Career",
+      "hook": "Mikey Lewis is known for his fearless playing style - watch his most daring tries!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Ryan Gosling Movie Mashups",
+      "topic": "What if Ryan Gosling's Characters from 'La La Land' and 'The Notebook' Met?",
+      "hook": "Imagine the romantic leads from 'La La Land' and 'The Notebook' in one epic scene...",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Current Event Commentary",
-      "topic": "The Impact of Climate Change on Global Sports",
-      "hook": "How is climate change affecting the world of sports, and what can we do about it?",
+      "category": "Isabel May Fashion Inspiration",
+      "topic": "Recreating Isabel May's Red Carpet Looks on a Budget",
+      "hook": "Who says you need to break the bank to dress like a Hollywood starlet? Let's get creative!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "America FC Soccer Analysis",
+      "topic": "How America FC's Midfield Dominance is Winning Them Games",
+      "hook": "What's the secret to America FC's midfield magic? Our expert analysis reveals all!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Social Media Trends and Challenges",
-      "topic": "The Rise of TikTok: How it's Changing Social Media",
-      "hook": "TikTok is taking over the internet, but what's behind its massive success?",
+      "category": "Korean Football Updates",
+      "topic": "The Emerging Stars of Korean Football You Need to Know",
+      "hook": "Korean football is bursting with talent - meet the rising stars you won't want to miss!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "LA FC vs Houston Dynamo Predictions",
+      "topic": "The Head-to-Head Stats That Will Decide the LA FC vs Houston Dynamo Match",
+      "hook": "It all comes down to the numbers - which team has the edge in this epic showdown?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "March Madness Sports Bloopers",
+      "topic": "The Most Hilarious March Madness Fan Reactions of All Time",
+      "hook": "When March Madness fans lose their minds - you won't believe these hilarious reactions!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Evergreen Gaming Content",
-      "topic": "The Evolution of Video Game Graphics: Then vs. Now",
-      "hook": "Get ready for a blast from the past as we compare retro games to their modern counterparts!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Denver Travel Vlogs",
-      "topic": "Denver's Best Kept Secrets: A Local's Guide",
-      "hook": "Think you know Denver? Think again! We're spilling the city's best-kept secrets!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Quentin Tarantino Film Reviews",
+      "topic": "The Influence of Tarantino's 'Reservoir Dogs' on Modern Film",
+      "hook": "How 'Reservoir Dogs' changed the game for indie films and pop culture forever...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     }
   ],
