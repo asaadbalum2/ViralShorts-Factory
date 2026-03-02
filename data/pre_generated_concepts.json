@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-03-01T06:08:04.899040",
-  "valid_until": "2026-03-01T23:59:04.899048",
+  "generated_at": "2026-03-02T06:11:17.836580",
+  "valid_until": "2026-03-02T23:59:17.836589",
   "categories": [
-    "Quentin Tarantino Film Reviews",
-    "Johannesburg Travel Vlogs",
-    "Chris Stapleton Music Covers",
-    "Mikey Lewis Sports Highlights",
-    "Ryan Gosling Movie Mashups",
-    "Isabel May Fashion Inspiration",
-    "America FC Soccer Analysis",
-    "Korean Football Updates",
-    "LA FC vs Houston Dynamo Predictions",
-    "March Madness Sports Bloopers",
-    "Spring Fashion Trends with Isabel May",
-    "Ryan Gosling and Quentin Tarantino Collaborations",
-    "Johannesburg Music Festival Previews",
-    "Chris Stapleton and Mikey Lewis Fan Challenges",
-    "LA FC and America FC Fan Reactions"
+    "Sports Highlights",
+    "NB\u0391 Player Analysis",
+    "Travel Vlogs: Hotel Tours",
+    "Current Events: Politics and News",
+    "Luke Kennard Game Reactions",
+    "Luka Don\u010di\u0107 Tribute Videos",
+    "Dejounte Murray Basketball Challenges",
+    "Stock Market Updates: Nifty 50",
+    "Aviation Technology: F15",
+    "Conservative Commentary with Dan Bongino",
+    "Sports News: Sacramento Kings vs Lakers",
+    "Travel Tips: Booking Affordable Hotels",
+    "Motivational Speeches by Sports Personalities",
+    "Viral Challenges: Basketball Edition",
+    "Market Trends and Financial News"
   ],
   "concepts": [
     {
-      "category": "Quentin Tarantino Film Reviews",
-      "topic": "The Hidden Meaning Behind Pulp Fiction's Iconic Dance Scene",
-      "hook": "You won't believe the shocking truth about Tarantino's most famous scene...",
+      "category": "Sports Highlights",
+      "topic": "Most Unbelievable Basketball Dunks of 2022",
+      "hook": "You won't believe the dunk that broke the internet last year!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "NB\u0391 Player Analysis",
+      "topic": "The Secret Behind Stephen Curry's Three-Point Shooting",
+      "hook": "What makes Curry the greatest shooter in NBA history?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Travel Vlogs: Hotel Tours",
+      "topic": "Exploring the World's Most Luxurious Hotel Suite in Dubai",
+      "hook": "Welcome to the $10,000 per night hotel room that will blow your mind!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Current Events: Politics and News",
+      "topic": "Understanding the Impact of the Recent Election on Global Markets",
+      "hook": "How will the latest election results affect your wallet?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Luke Kennard Game Reactions",
+      "topic": "Luke Kennard's Craziest Game-Winning Shots",
+      "hook": "Can you believe Luke Kennard's insane buzzer-beater?",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Luka Don\u010di\u0107 Tribute Videos",
+      "topic": "The Rise of Luka Doncic: From Teen Sensation to NBA Superstar",
+      "hook": " Witness the incredible journey of the NBA's youngest superstar!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Dejounte Murray Basketball Challenges",
+      "topic": "Dejounte Murray's Most Impossible Ball-Handling Drills",
+      "hook": "Can you handle the ball like Dejounte Murray?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Johannesburg Travel Vlogs",
-      "topic": "Exploring the Vibrant Street Art of Soweto",
-      "hook": "Get ready to discover the most Instagrammable neighborhood in Johannesburg!",
+      "category": "Stock Market Updates: Nifty 50",
+      "topic": "Nifty 50: The Top 5 Stocks to Watch in the Next Quarter",
+      "hook": "Don't miss out on these hot stocks that could make you rich!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Aviation Technology: F15",
+      "topic": "Uncovering the Advanced Features of the F-15 Fighter Jet",
+      "hook": "Get ready to take flight in the world's most advanced fighter jet!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Conservative Commentary with Dan Bongino",
+      "topic": "The Truth About the Latest Government Scandal",
+      "hook": "You won't believe what they're not telling you about the latest scandal!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Football Comebacks in NFL History",
+      "hook": "These unbelievable comebacks will leave you speechless!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Chris Stapleton Music Covers",
-      "topic": "A Soulful Acoustic Cover of 'Tennessee Whiskey'",
-      "hook": "You've never heard 'Tennessee Whiskey' sound so good...",
-      "voice_style": "calm",
+      "category": "NB\u0391 Player Analysis",
+      "topic": "The Unstoppable Force of Giannis Antetokounmpo",
+      "hook": "What makes Giannis the most dominant player in the NBA?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Travel Vlogs: Hotel Tours",
+      "topic": "Discovering the Hidden Gems of Tokyo's Luxury Hotels",
+      "hook": "Explore the secret world of Tokyo's most exclusive hotels!",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Mikey Lewis Sports Highlights",
-      "topic": "The Most Insane Rugby Tries of Mikey Lewis' Career",
-      "hook": "Watch as Mikey Lewis leaves defenders in the dust with these incredible tries!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Current Events: Politics and News",
+      "topic": "The Impact of Social Media on Modern Politics",
+      "hook": "How is social media changing the face of politics?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Ryan Gosling Movie Mashups",
-      "topic": "Ryan Gosling's Most Iconic Movie Roles in One Epic Mashup",
-      "hook": "What if Ryan Gosling's most famous characters all met in one movie?",
-      "voice_style": "friendly",
+      "category": "Luke Kennard Game Reactions",
+      "topic": "Luke Kennard's Most Thrilling Playoff Performances",
+      "hook": "Relive Luke Kennard's most clutch playoff moments!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Luka Don\u010di\u0107 Tribute Videos",
+      "topic": "Luka Doncic's Journey to the NBA: From Europe to America",
+      "hook": "Witness the incredible story of Luka Doncic's rise to fame!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Isabel May Fashion Inspiration",
-      "topic": "Stealing Isabel May's Chic and Effortless Style for a Night Out",
-      "hook": "Want to dress like a Hollywood starlet? Let's break down Isabel May's best looks!",
+      "category": "Dejounte Murray Basketball Challenges",
+      "topic": "Dejounte Murray's Toughest Defensive Matchups",
+      "hook": "Can Dejounte Murray stop the NBA's toughest scorers?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "America FC Soccer Analysis",
-      "topic": "Breaking Down America FC's Winning Strategy This Season",
-      "hook": "What's behind America FC's incredible winning streak? Let's dive into the stats!",
+      "category": "Stock Market Updates: Nifty 50",
+      "topic": "The Top 3 Stocks to Invest in for Long-Term Growth",
+      "hook": "Don't miss out on these stocks that could change your financial future!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Korean Football Updates",
-      "topic": "The Rise of Korean Football: What You Need to Know",
-      "hook": "Korean football is taking the world by storm - here's what you've been missing!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "LA FC vs Houston Dynamo Predictions",
-      "topic": "LA FC vs Houston Dynamo: The Ultimate Matchday Preview",
-      "hook": "Who will come out on top in this epic showdown? Our expert predictions reveal all!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "March Madness Sports Bloopers",
-      "topic": "The Funniest March Madness Bloopers of All Time",
-      "hook": "When March Madness goes hilariously wrong - you won't believe these bloopers!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Quentin Tarantino Film Reviews",
-      "topic": "Unpacking the Twisted Themes of Tarantino's 'Kill Bill' Saga",
-      "hook": "You think you know 'Kill Bill', but have you uncovered its darkest secrets?",
+      "category": "Aviation Technology: F15",
+      "topic": "The Advanced Radar Systems of the F-15 Fighter Jet",
+      "hook": "Unlock the secrets of the F-15's state-of-the-art radar technology!",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Johannesburg Travel Vlogs",
-      "topic": "Discovering the Hidden Gems of Johannesburg's Neillson Mandela Square",
-      "hook": "Explore the heart of Johannesburg and uncover its best-kept secrets!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Chris Stapleton Music Covers",
-      "topic": "A Haunting Cover of 'Broken Halos' by Chris Stapleton",
-      "hook": "Get ready to have your heart broken by this soulful cover of 'Broken Halos'...",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Mikey Lewis Sports Highlights",
-      "topic": "The Top 5 Most Daring Tries of Mikey Lewis' Career",
-      "hook": "Mikey Lewis is known for his fearless playing style - watch his most daring tries!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Ryan Gosling Movie Mashups",
-      "topic": "What if Ryan Gosling's Characters from 'La La Land' and 'The Notebook' Met?",
-      "hook": "Imagine the romantic leads from 'La La Land' and 'The Notebook' in one epic scene...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Isabel May Fashion Inspiration",
-      "topic": "Recreating Isabel May's Red Carpet Looks on a Budget",
-      "hook": "Who says you need to break the bank to dress like a Hollywood starlet? Let's get creative!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "America FC Soccer Analysis",
-      "topic": "How America FC's Midfield Dominance is Winning Them Games",
-      "hook": "What's the secret to America FC's midfield magic? Our expert analysis reveals all!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Korean Football Updates",
-      "topic": "The Emerging Stars of Korean Football You Need to Know",
-      "hook": "Korean football is bursting with talent - meet the rising stars you won't want to miss!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "LA FC vs Houston Dynamo Predictions",
-      "topic": "The Head-to-Head Stats That Will Decide the LA FC vs Houston Dynamo Match",
-      "hook": "It all comes down to the numbers - which team has the edge in this epic showdown?",
-      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "March Madness Sports Bloopers",
-      "topic": "The Most Hilarious March Madness Fan Reactions of All Time",
-      "hook": "When March Madness fans lose their minds - you won't believe these hilarious reactions!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Conservative Commentary with Dan Bongino",
+      "topic": "The Truth About the Mainstream Media's Hidden Agenda",
+      "hook": "You won't believe what the mainstream media is hiding from you!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Quentin Tarantino Film Reviews",
-      "topic": "The Influence of Tarantino's 'Reservoir Dogs' on Modern Film",
-      "hook": "How 'Reservoir Dogs' changed the game for indie films and pop culture forever...",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "category": "Sports Highlights",
+      "topic": "The Most Electrifying Moments in Sports History",
+      "hook": "Get ready to relive the most iconic moments in sports!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
