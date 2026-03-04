@@ -1,190 +1,182 @@
 {
-  "generated_at": "2026-03-03T06:08:46.827033",
-  "valid_until": "2026-03-03T23:59:46.827039",
+  "generated_at": "2026-03-04T06:05:10.832369",
+  "valid_until": "2026-03-04T23:59:10.832377",
   "categories": [
-    "NBA Highlights: Moses Moody and Draymond Green Moments",
-    "Tech Unboxing: Latest Mac Models",
-    "Sports Bloopers: Funny Moments with Kris Dunn",
-    "Australian News: Angus Booth Updates",
-    "NBA Analysis: Al Horford's Career",
-    "Film Community: Jafar Panahi Tribute",
-    "Social Media Challenges: Nicholas Braimbridge Dance",
-    "Comedy Skits: Tony Cooper's Latest",
+    "NBA Highlights",
+    "Sports Analysis",
+    "California News",
+    "Basketball Challenges",
+    "Politics and Governance",
+    "Athlete Interviews",
     "March Madness Predictions",
-    "Spring Fashion Trends",
-    "St. Patrick's Day Recipes",
-    "NBA Trade Rumors",
-    "New Mac Accessories Review",
-    "Sports Debate: Draymond Green vs Other NBA Players",
-    "Viral Dance Challenges: Community Participation"
+    "Lakers Fan Reactions",
+    "NBPA Updates",
+    "Trending Sports News",
+    "Gaming with Pro Athletes",
+    "Current Event Commentary",
+    "Sports Bloopers",
+    "Player Profile Breakdowns",
+    "Governor Newsom Updates"
   ],
   "concepts": [
     {
-      "category": "NBA Highlights: Moses Moody and Draymond Green Moments",
-      "topic": "Moses Moody's Game-Winning Three-Pointers",
-      "hook": "You won't believe the shot that won it all for the Warriors!",
+      "category": "NBA Highlights",
+      "topic": "LeBron James' Most Insane Game Winners",
+      "hook": "You won't believe the shot LeBron made to win it all!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Unboxing: Latest Mac Models",
-      "topic": "Unboxing the New MacBook Air M2",
-      "hook": "What's inside the box of the most anticipated laptop of the year?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Bloopers: Funny Moments with Kris Dunn",
-      "topic": "Kris Dunn's Most Epic Fails on the Court",
-      "hook": "When athletes become comedians, you get moments like these!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Sports Analysis",
+      "topic": "The Impact of Stephen Curry's Shooting on Team Strategy",
+      "hook": "What makes Curry's shot so deadly, and how do teams defend it?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Australian News: Angus Booth Updates",
-      "topic": "Angus Booth's Exclusive Interview on Climate Change",
-      "hook": "Hear from the expert himself on the future of our planet!",
-      "voice_style": "authoritative",
+      "category": "California News",
+      "topic": "The Rise of Basketball in Los Angeles High Schools",
+      "hook": "Discover the secret to LA's dominance in producing NBA talent!",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Basketball Challenges",
+      "topic": "Can You Make 10 Three-Pointers in a Row?",
+      "hook": "Think you've got what it takes to be a sharpshooter? Take the challenge!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "NBA Analysis: Al Horford's Career",
-      "topic": "The Evolution of Al Horford: From Rookie to Veteran",
-      "hook": "How did Al Horford become one of the most underrated players in the NBA?",
+      "category": "Politics and Governance",
+      "topic": "The Intersection of Sports and Social Justice",
+      "hook": "How athletes are using their platforms to spark real change!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Film Community: Jafar Panahi Tribute",
-      "topic": "The Cinematic Masterpieces of Jafar Panahi",
-      "hook": "Discover the works of the Iranian director who changed the game!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Media Challenges: Nicholas Braimbridge Dance",
-      "topic": "The Nicholas Braimbridge Dance Challenge Takes Over TikTok",
-      "hook": "Can you handle the latest dance craze that's sweeping the nation?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits: Tony Cooper's Latest",
-      "topic": "Tony Cooper's Hilarious Parody of Everyday Struggles",
-      "hook": "When everyday life becomes a joke, you get comedy gold like this!",
-      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
+    },
+    {
+      "category": "Athlete Interviews",
+      "topic": "Exclusive Talk with Giannis Antetokounmpo on His Rise to Fame",
+      "hook": "What drives the Greek Freak to be the best?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
       "category": "March Madness Predictions",
-      "topic": "The Dark Horse Teams That Could Win It All",
-      "hook": "Don't sleep on these underdog teams that could make a deep run!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Spring Fashion Trends",
-      "topic": "The Revival of 90s Fashion: What's Hot and What's Not",
-      "hook": "Get ready for a blast from the past as 90s fashion makes a comeback!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Highlights: Moses Moody and Draymond Green Moments",
-      "topic": "Draymond Green's Most Intense Defensive Plays",
-      "hook": "Witness the defensive dominance of Draymond Green!",
+      "topic": "Underdog Teams That Could Make a Deep Run",
+      "hook": "Don't sleep on these sleepers \u2013 they might just win it all!",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Unboxing: Latest Mac Models",
-      "topic": "Comparing the MacBook Pro M1 and M2: Which One Reigns Supreme?",
-      "hook": "The ultimate showdown between two of the most powerful laptops on the market!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Sports Bloopers: Funny Moments with Kris Dunn",
-      "topic": "Kris Dunn's Funniest Moments Off the Court",
-      "hook": "You won't believe what Kris Dunn does when he's not playing basketball!",
-      "voice_style": "friendly",
+      "category": "Lakers Fan Reactions",
+      "topic": "The Most Epic Lakers Comebacks in Recent History",
+      "hook": "You won't believe how these Lakers fans reacted to an epic comeback!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NBPA Updates",
+      "topic": "The Latest on the NBA's Collective Bargaining Agreement",
+      "hook": "What the new CBA means for your favorite players and teams!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Trending Sports News",
+      "topic": "The Impact of Advanced Analytics on NBA Front Offices",
+      "hook": "How data is revolutionizing the way teams make decisions!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Australian News: Angus Booth Updates",
-      "topic": "Angus Booth's Take on the Future of Renewable Energy",
-      "hook": "Hear from the expert on the innovations that will change the world!",
+      "category": "NBA Highlights",
+      "topic": "The Top 5 Dunks of the Season So Far",
+      "hook": "These dunks will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "The Evolution of the Pick-and-Roll in Modern Basketball",
+      "hook": "How coaches are adapting this classic play to outsmart defenses!",
       "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "California News",
+      "topic": "The Impact of the New Arena on the Golden State Warriors' Fan Experience",
+      "hook": "What the Chase Center means for Warriors Nation!",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Basketball Challenges",
+      "topic": "Can You Beat a Defender with Only Crossovers?",
+      "hook": "Think you've got the handles to take on the best?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "NBA Analysis: Al Horford's Career",
-      "topic": "The Impact of Al Horford on the NBA Community",
-      "hook": "Discover the lasting legacy of Al Horford on and off the court!",
+      "category": "Politics and Governance",
+      "topic": "The Role of Athletes in Shaping Social Policy",
+      "hook": "How sports stars are using their influence to drive real change!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Film Community: Jafar Panahi Tribute",
-      "topic": "Jafar Panahi's Most Influential Films of All Time",
-      "hook": "Explore the cinematic genius of Jafar Panahi and his most iconic works!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Media Challenges: Nicholas Braimbridge Dance",
-      "topic": "The Best Nicholas Braimbridge Dance Challenge Videos",
-      "hook": "Get ready to laugh and dance along with the best of the challenge!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits: Tony Cooper's Latest",
-      "topic": "Tony Cooper's Hilarious Take on Modern Dating",
-      "hook": "When dating apps and relationships collide, comedy ensues!",
-      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "March Madness Predictions",
-      "topic": "The Top Contenders for the NCAA Championship",
-      "hook": "Who will be the last team standing in the NCAA tournament?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Athlete Interviews",
+      "topic": "One-on-One with Joel Embiid on His Rise to Superstardom",
+      "hook": "What makes the Process so dominant on the court?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Spring Fashion Trends",
-      "topic": "The Must-Have Accessories for Spring 2024",
-      "hook": "Stay ahead of the fashion curve with the hottest accessories of the season!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "category": "March Madness Predictions",
+      "topic": "The Most Likely Upsets in the Tournament",
+      "hook": "Don't get caught sleeping on these underdog teams!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "NBA Highlights: Moses Moody and Draymond Green Moments",
-      "topic": "The Unstoppable Duo: Moses Moody and Draymond Green",
-      "hook": "Witness the dynamic duo that's taking the NBA by storm!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Lakers Fan Reactions",
+      "topic": "The Best Lakers Fan Moments of the Season",
+      "hook": "You won't believe how these Lakers fans reacted to a win!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NBPA Updates",
+      "topic": "The Latest on the NBA's Mental Health Initiatives",
+      "hook": "How the league is supporting players' mental well-being!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Trending Sports News",
+      "topic": "The Impact of Esports on the Future of Sports",
+      "hook": "How competitive gaming is changing the sports landscape!",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
       "target_duration": 40
     }
   ],
@@ -192,77 +184,77 @@
     {
       "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
