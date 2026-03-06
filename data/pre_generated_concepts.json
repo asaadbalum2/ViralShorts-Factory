@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-03-05T06:07:48.769334",
-  "valid_until": "2026-03-05T23:59:48.769340",
+  "generated_at": "2026-03-06T06:05:32.172789",
+  "valid_until": "2026-03-06T23:59:32.172797",
   "categories": [
-    "Sports Highlights",
-    "TV Show Recaps",
-    " Celebrity News",
-    "Music Festivals",
-    "Esports Updates",
-    "Comedy Skits",
-    "Gaming News",
-    "Sports Analysis",
-    "Concert Reviews",
-    "Movie Trailers",
-    "Sports Stats",
-    "Anime Reviews",
-    "Player Interviews",
-    "League Standings",
-    "Entertainment News"
+    "celebrity news and updates",
+    "women's sports highlights",
+    "award show coverage",
+    "music and entertainment",
+    "viral challenges and trends",
+    "breaking news and tributes",
+    "art and crafts tutorials",
+    "cricket match analysis",
+    "lifestyle and pop culture",
+    "emerging artist showcases",
+    "social justice and awareness",
+    "memes and comedy sketches",
+    "international sports updates",
+    "fan culture and fandoms",
+    "influencer and celebrity interviews"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Most Epic Dunks",
-      "hook": "You won't believe the dunk that left the crowd speechless!",
+      "category": "celebrity news and updates",
+      "topic": "Beyonc\u00e9's Latest Fashion Line",
+      "hook": "You won't believe the price tag on Beyonc\u00e9's new clothing line!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Walking Dead Season Finale Recap",
-      "hook": "The shocking twist that changed everything!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Beyonc\u00e9's Surprising New Album Leak",
-      "hook": "What's really going on behind Queen Bey's latest move?",
+      "category": "women's sports highlights",
+      "topic": "US Women's Soccer Team Victory",
+      "hook": "The US Women's Soccer Team just made history, and you need to see it!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Music Festivals",
-      "topic": "Coachella 2024 Lineup Predictions",
-      "hook": "Which iconic artists will take the stage this year?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Esports Updates",
-      "topic": "The Rise of Fortnite Pro Player, Bugha",
-      "hook": "From unknown to champion, what's Bugha's secret?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Comedy Skits",
-      "topic": "Hilarious Parody of Social Media Trends",
-      "hook": "When TikTok challenges go hilariously wrong!",
-      "voice_style": "comedy",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming News",
-      "topic": "New PlayStation 5 Exclusive Games",
-      "hook": "What's coming next for PS5 players?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "Breaking Down Tom Brady's Winning Strategy",
-      "hook": "The secret to Tom Brady's unprecedented success revealed!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Concert Reviews",
-      "topic": "Billie Eilish's Electrifying World Tour",
-      "hook": "What makes Billie Eilish's live shows truly unforgettable?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Movie Trailers",
-      "topic": "Marvel's Avengers 5 First Look",
-      "hook": "The Avengers are back, but this time it's different!",
+      "category": "award show coverage",
+      "topic": "Grammy Awards Red Carpet Fashion",
+      "hook": "Who stunned on the Grammys red carpet, and who missed the mark?",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Sports Highlights",
-      "topic": "Serena Williams' Most Iconic Tennis Moments",
-      "hook": "The unbreakable spirit of a tennis legend!",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "Stranger Things Season 4 Recap",
-      "hook": "The mind-blowing twist that will change everything!",
+      "category": "music and entertainment",
+      "topic": "Billie Eilish's New Music Video",
+      "hook": "Billie Eilish just dropped a music video that will leave you speechless!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "Taylor Swift's Feud with Scooter Braun",
-      "hook": "What's really behind the shocking feud?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Festivals",
-      "topic": "Lollapalooza 2024 Headliners Predictions",
-      "hook": "Which world-renowned artists will headline this year?",
+      "category": "viral challenges and trends",
+      "topic": "The Renegade Dance Challenge",
+      "hook": "Can you keep up with the latest TikTok dance challenge that's taking over the internet?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Esports Updates",
-      "topic": "The Dominance of League of Legends Pro Team, SKT",
-      "hook": "What makes SKT the most feared team in the league?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Comedy Skits",
-      "topic": "Parody of Popular Fitness Trends",
-      "hook": "When fitness challenges go ridiculously wrong!",
-      "voice_style": "comedy",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming News",
-      "topic": "New Xbox Series X Exclusive Games",
-      "hook": "What's next for Xbox players?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Sports Analysis",
-      "topic": "The Rise of New York Yankees' Superstar, Aaron Judge",
-      "hook": "What makes Aaron Judge a game-changer?",
-      "voice_style": "authoritative",
+      "category": "breaking news and tributes",
+      "topic": "Remembering Kobe Bryant's Legacy",
+      "hook": "One year after his passing, we're remembering the incredible legacy of Kobe Bryant",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Concert Reviews",
-      "topic": "Kendrick Lamar's Thought-Provoking Live Show",
-      "hook": "What makes Kendrick Lamar's live performances unforgettable?",
+      "category": "art and crafts tutorials",
+      "topic": "DIY Custom Phone Cases",
+      "hook": "Turn your phone into a work of art with this easy DIY tutorial!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "Movie Trailers",
-      "topic": "Star Wars: The Next Chapter First Look",
-      "hook": "The next epic chapter in the Star Wars saga is coming!",
+      "category": "cricket match analysis",
+      "topic": "India vs. Australia Cricket Match Highlights",
+      "hook": "The most thrilling cricket match of the year just went down, and you won't believe the outcome!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "lifestyle and pop culture",
+      "topic": "The Rise of Plant-Based Diets",
+      "hook": "The surprising reason why everyone's switching to a plant-based diet, and should you join them?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "emerging artist showcases",
+      "topic": "Discovering the Next Big Music Star",
+      "hook": "You've never heard of this emerging artist, but their music will blow your mind!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "celebrity news and updates",
+      "topic": "Jennifer Lawrence's Secret Wedding",
+      "hook": "The shocking details about Jennifer Lawrence's secret wedding that will leave you stunned!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
+    },
+    {
+      "category": "women's sports highlights",
+      "topic": "Serena Williams' Record-Breaking Win",
+      "hook": "Serena Williams just made history, and it's a moment you don't want to miss!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "award show coverage",
+      "topic": "Oscars Red Carpet Fashion Disasters",
+      "hook": "The Oscars red carpet fashion disasters that will make you cringe!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "music and entertainment",
+      "topic": "The Weeknd's New Album Release",
+      "hook": "The Weeknd just dropped a new album, and it's a game-changer!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "viral challenges and trends",
+      "topic": "The Before and After Makeup Challenge",
+      "hook": "You won't believe the mind-blowing transformations in the latest TikTok makeup challenge!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "breaking news and tributes",
+      "topic": "Remembering Chadwick Boseman's Legacy",
+      "hook": "The world is still reeling from the loss of Chadwick Boseman, and we're remembering his incredible legacy",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "art and crafts tutorials",
+      "topic": "DIY Home Decor on a Budget",
+      "hook": "Transform your home without breaking the bank with these easy DIY decor tips!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "cricket match analysis",
+      "topic": "Pakistan vs. England Cricket Match Analysis",
+      "hook": "The thrilling Pakistan vs. England cricket match just ended, and we're breaking down the highlights!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "lifestyle and pop culture",
+      "topic": "The Rise of Social Media Influencers",
+      "hook": "The surprising truth about how social media influencers are taking over the world, and what it means for you!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "emerging artist showcases",
+      "topic": "Introducing the Next Big Thing in Music",
+      "hook": "You've never heard of this emerging artist, but their unique sound will change the music game!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
