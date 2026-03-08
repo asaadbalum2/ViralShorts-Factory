@@ -1,13 +1,13 @@
 {
   "title_patterns": [
     "\ud83e\udd2f Mind-Blowing Fact About...",
-    "\ud83e\udd2b The Secret to...",
+    "\ud83e\udd2b Secret Hack for...",
     "\ud83d\udd25 Transformation You Won't Believe...",
     "\ud83e\udd14 What If...?"
   ],
   "hook_patterns": [
     "Are you REALLY getting enough sleep?",
-    "Stop scrolling, start learning!",
+    "Stop scrolling \u2013 this is the truth!",
     "This one thing will change EVERYTHING!",
     "Seriously, you need to see this."
   ],
@@ -17,40 +17,9 @@
     "Rate this video 1-10!",
     "Comment with your biggest question!"
   ],
-  "psychological_triggers": [
-    "Curiosity",
-    "FOMO",
-    "Regret",
-    "Anxiety",
-    "Hope"
-  ],
-  "scroll_stop_openers": [
-    "Seriously, this is wild!",
-    "Wait, what?!",
-    "You won't believe this...",
-    "This is a game-changer!"
-  ],
-  "proven_categories": [
-    "Self-Improvement",
-    "Finance",
-    "Relationships",
-    "Health & Wellness",
-    "Tech & Gadgets"
-  ],
-  "retention_tricks": [
-    "Quick tips for...",
-    "Behind-the-scenes look at...",
-    "Quick tutorial on..."
-  ],
-  "cta_formulas": [
-    "Learn More!",
-    "Subscribe Now!",
-    "Check Out the Link!",
-    "Don't Miss Out!"
-  ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-03-01T06:37:15.881297",
+  "last_ai_update": "2026-03-08T06:34:14.182053",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-03-01T06:37:15.881309"
+  "last_saved": "2026-03-08T06:34:14.182061"
 }
