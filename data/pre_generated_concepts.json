@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-03-07T05:59:30.486448",
-  "valid_until": "2026-03-07T23:59:30.486456",
+  "generated_at": "2026-03-08T06:03:24.500555",
+  "valid_until": "2026-03-08T23:59:24.500563",
   "categories": [
-    "Breaking News Updates",
-    "Sports Highlights",
-    "Music Festivals",
-    "Extreme Weather Coverage",
-    "Local News Bloopers",
-    "Car Reveals and Reviews",
-    "Esports and Gaming",
-    "Wildlife and Animal Encounters",
-    "Severe Weather Alerts",
-    "Motorsport News",
-    "Concert and Festival Vlogs",
-    "News Anchor Fails",
-    "Storm Chasing Adventures",
-    "Fight Sports Analysis",
-    "Weather Forecasting Explained"
+    "March 8 International Women's Day Celebrations",
+    "SJ Sharks Game Highlights",
+    "St Thomas Basketball Analysis",
+    "Toto Wolff F1 Updates",
+    "Adesanya Fight Previews",
+    "AJ Dybantsa Music Releases",
+    "Sinner Tennis Match Recaps",
+    "Phoenix Travel Vlogs",
+    "Women's Empowerment Stories",
+    "Sports News and Updates",
+    "Music Trends and Reviews",
+    "Basketball Game Reactions",
+    "F1 Racing News",
+    "Tennis Tournament Previews",
+    "Inspirational Women in Sports"
   ],
   "concepts": [
     {
-      "category": "Breaking News Updates",
-      "topic": "NASA's Latest Discovery on Mars",
-      "hook": "You won't believe what NASA just found on the red planet!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "March 8 International Women's Day Celebrations",
+      "topic": "Women in STEM: Breaking Barriers",
+      "hook": "Did you know that only 28% of women pursue careers in STEM?",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Most Unbelievable Basketball Shot of the Year",
-      "hook": "This shot will leave you speechless!",
-      "voice_style": "dramatic",
+      "category": "SJ Sharks Game Highlights",
+      "topic": "Erik Karlsson's Record-Breaking Goals",
+      "hook": "Can Erik Karlsson become the all-time leading scorer for the Sharks?",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Music Festivals",
-      "topic": "Coachella's Most Epic Performances",
-      "hook": "Get ready to relive the magic of Coachella's main stage!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Extreme Weather Coverage",
-      "topic": "The Largest Tornado Outbreak in US History",
-      "hook": " Witness the fury of nature's most destructive force!",
+      "category": "St Thomas Basketball Analysis",
+      "topic": "The Rise of the Tommies' Three-Point Shooting",
+      "hook": "What's behind the Tommies' sudden surge in three-point shooting?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Toto Wolff F1 Updates",
+      "topic": "Mercedes' Chances at the Upcoming Monaco Grand Prix",
+      "hook": "Will Mercedes' new engine Upgrade give them an edge in Monaco?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Adesanya Fight Previews",
+      "topic": "Israel Adesanya's Strategy Against Robert Whittaker",
+      "hook": "Can Adesanya's unorthodox style take down the former champ Whittaker?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Local News Bloopers",
-      "topic": "The Funniest News Anchor Fails of the Year",
-      "hook": "When live TV goes hilariously wrong!",
-      "voice_style": "friendly",
+      "category": "AJ Dybantsa Music Releases",
+      "topic": "The Story Behind AJ Dybantsa's Latest Single 'Lost'",
+      "hook": "What inspired AJ Dybantsa to write his emotional new single 'Lost'?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Car Reveals and Reviews",
-      "topic": "The First-Ever Electric Porsche 911",
-      "hook": "The future of sports cars has arrived, and it's electrifying!",
+      "category": "Sinner Tennis Match Recaps",
+      "topic": "Jannik Sinner's Comeback Win at the Australian Open",
+      "hook": "How did Jannik Sinner pull off an epic comeback at the Aussie Open?",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Phoenix Travel Vlogs",
+      "topic": "Exploring Phoenix's Hidden Gems: Street Art and Food",
+      "hook": "Get ready to discover the vibrant street art and food scene in Phoenix!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Esports and Gaming",
-      "topic": "The World's Highest-Paid Gamer Reveals His Secrets",
-      "hook": "Want to know how to turn gaming into a million-dollar career?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Women's Empowerment Stories",
+      "topic": "Overcoming Adversity: The Story of a Female Entrepreneur",
+      "hook": "From poverty to CEO: one woman's inspiring journey to success",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Wildlife and Animal Encounters",
-      "topic": "The Rarest Animal Sightings in the World's Most Remote Locations",
-      "hook": "Venture into the unknown with these incredible animal encounters!",
-      "voice_style": "calm",
+      "category": "Sports News and Updates",
+      "topic": "The Impact of the New NFL Rule Changes on Player Safety",
+      "hook": "Will the NFL's new rule changes really reduce player injuries?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "March 8 International Women's Day Celebrations",
+      "topic": "Women in History: Unsung Heroes of the Suffrage Movement",
+      "hook": "Meet the fearless women who fought for your right to vote",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Severe Weather Alerts",
-      "topic": "The Most Destructive Hurricane to Hit the US in the Last Decade",
-      "hook": "Don't get caught off guard: the warning signs of a catastrophic storm!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "SJ Sharks Game Highlights",
+      "topic": "The Sharks' Most Epic Comeback Wins in Franchise History",
+      "hook": "You won't believe these incredible Sharks comebacks!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Motorsport News",
-      "topic": "The New Formula 1 Car That's Changing the Game",
-      "hook": "Get ready to experience the fastest cars on the planet like never before!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "St Thomas Basketball Analysis",
+      "topic": "The Tommies' Defensive Strategy: What's Working and What's Not",
+      "hook": "Can the Tommies' defense hold up against top-ranked opponents?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
     },
     {
-      "category": "Breaking News Updates",
-      "topic": "The Latest Developments in the Search for Extraterrestrial Life",
-      "hook": "Are we alone in the universe? The answer might be closer than you think!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Sports History",
-      "hook": "When the impossible becomes possible: the most epic comebacks in sports!",
+      "category": "Toto Wolff F1 Updates",
+      "topic": "The Future of Mercedes' F1 Team: Wolff's Vision",
+      "hook": "What's Toto Wolff's plan to get Mercedes back on top in F1?",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Music Festivals",
-      "topic": "The Rise of Tomorrowland: The World's Biggest Electronic Music Festival",
-      "hook": "Step into the magical world of Tomorrowland, where music knows no borders!",
+      "category": "Adesanya Fight Previews",
+      "topic": "Israel Adesanya's Keys to Victory Against Robert Whittaker",
+      "hook": "What must Adesanya do to take down the former champ Whittaker?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Extreme Weather Coverage",
-      "topic": "The Most Extreme Weather Phenomena on Earth",
-      "hook": " Witness the awe-inspiring power of nature's most extreme weather events!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Local News Bloopers",
-      "topic": "The Funniest On-Air Mistakes by News Anchors",
-      "hook": "When live TV goes hilariously wrong: the funniest news anchor fails!",
-      "voice_style": "friendly",
+      "category": "AJ Dybantsa Music Releases",
+      "topic": "The Meaning Behind AJ Dybantsa's Debut Album 'Phoenix Rising'",
+      "hook": "What inspired AJ Dybantsa to create his debut album 'Phoenix Rising'?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Car Reveals and Reviews",
-      "topic": "The New Tesla Model That's Changing the Electric Car Game",
-      "hook": "The future of electric cars has arrived, and it's more powerful than ever!",
+      "category": "Sinner Tennis Match Recaps",
+      "topic": "Jannik Sinner's Path to the Top 10 in the ATP Rankings",
+      "hook": "How did Jannik Sinner become one of the top tennis players in the world?",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Phoenix Travel Vlogs",
+      "topic": "Discovering Phoenix's Best Kept Secrets: Hiking Trails and Scenic Spots",
+      "hook": "Explore the natural beauty of Phoenix with these hidden gems!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Esports and Gaming",
-      "topic": "The Rise of Fortnite: How a Game Became a Cultural Phenomenon",
-      "hook": "How a simple game became a global sensation: the story of Fortnite's success!",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Women's Empowerment Stories",
+      "topic": "From Survivor to Thriving Entrepreneur: A Woman's Journey",
+      "hook": "One woman's inspiring story of overcoming obstacles to achieve success",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Wildlife and Animal Encounters",
-      "topic": "The Most Venomous Animals in the World",
-      "hook": "Get up close and personal with the world's most deadly creatures!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Severe Weather Alerts",
-      "topic": "The Warning Signs of a Tornado: What to Look Out For",
-      "hook": "Don't get caught off guard: the warning signs of a tornado and how to stay safe!",
+      "category": "Sports News and Updates",
+      "topic": "The Impact of Technology on Modern Sports: Trends and Innovations",
+      "hook": "How is technology changing the face of sports forever?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Motorsport News",
-      "topic": "The New Technology That's Revolutionizing Formula 1",
-      "hook": "Get ready to experience the future of motorsport: the latest innovations in Formula 1!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking News Updates",
-      "topic": "The Latest Breakthroughs in Medical Technology",
-      "hook": "The future of medicine is here: the latest advancements that will change your life!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "target_duration": 48
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
