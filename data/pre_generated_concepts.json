@@ -1,200 +1,200 @@
 {
-  "generated_at": "2026-03-08T06:03:24.500555",
-  "valid_until": "2026-03-08T23:59:24.500563",
+  "generated_at": "2026-03-09T06:36:32.978810",
+  "valid_until": "2026-03-09T23:59:32.978818",
   "categories": [
-    "March 8 International Women's Day Celebrations",
-    "SJ Sharks Game Highlights",
-    "St Thomas Basketball Analysis",
-    "Toto Wolff F1 Updates",
-    "Adesanya Fight Previews",
-    "AJ Dybantsa Music Releases",
-    "Sinner Tennis Match Recaps",
-    "Phoenix Travel Vlogs",
-    "Women's Empowerment Stories",
+    "Truck Accident Lawyer FAQs",
+    "Corey Harrison's Latest Updates",
+    "Tornado Safety Tips",
+    "Eric Wilson's Sports Highlights",
+    "Madelyn Cline's Lifestyle Vlogs",
+    "Rasheer Fleming's Basketball Analysis",
+    "Charlotte Hornets vs Phoenix Suns Game Recaps",
+    "Brandon Miller's NBA Journey",
+    "Accident Prevention and Awareness",
     "Sports News and Updates",
-    "Music Trends and Reviews",
-    "Basketball Game Reactions",
-    "F1 Racing News",
-    "Tennis Tournament Previews",
-    "Inspirational Women in Sports"
+    "Severe Weather Alerts and Preparations",
+    "Law and Order: Truck Accident Cases",
+    "Sports Player Profiles and Biographies",
+    "Disaster Relief and Support",
+    "March Madness Basketball Highlights"
   ],
   "concepts": [
     {
-      "category": "March 8 International Women's Day Celebrations",
-      "topic": "Women in STEM: Breaking Barriers",
-      "hook": "Did you know that only 28% of women pursue careers in STEM?",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
+      "category": "Truck Accident Lawyer FAQs",
+      "topic": "What to Do Immediately After a Truck Accident",
+      "hook": "You've just been hit by a truck, what's the first call you should make?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "SJ Sharks Game Highlights",
-      "topic": "Erik Karlsson's Record-Breaking Goals",
-      "hook": "Can Erik Karlsson become the all-time leading scorer for the Sharks?",
+      "category": "Corey Harrison's Latest Updates",
+      "topic": "Corey Harrison's New Business Venture",
+      "hook": "Corey Harrison just dropped a bombshell about his new business, you won't believe what it is!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "St Thomas Basketball Analysis",
-      "topic": "The Rise of the Tommies' Three-Point Shooting",
-      "hook": "What's behind the Tommies' sudden surge in three-point shooting?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
+      "category": "Tornado Safety Tips",
+      "topic": "How to Create a Tornado Emergency Kit",
+      "hook": "What's the one thing you need to have in your tornado emergency kit that could save your life?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 50
     },
     {
-      "category": "Toto Wolff F1 Updates",
-      "topic": "Mercedes' Chances at the Upcoming Monaco Grand Prix",
-      "hook": "Will Mercedes' new engine Upgrade give them an edge in Monaco?",
+      "category": "Eric Wilson's Sports Highlights",
+      "topic": "Eric Wilson's Top 5 Football Plays",
+      "hook": "You won't believe the insane play Eric Wilson made last night, it's a must-see!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Adesanya Fight Previews",
-      "topic": "Israel Adesanya's Strategy Against Robert Whittaker",
-      "hook": "Can Adesanya's unorthodox style take down the former champ Whittaker?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "AJ Dybantsa Music Releases",
-      "topic": "The Story Behind AJ Dybantsa's Latest Single 'Lost'",
-      "hook": "What inspired AJ Dybantsa to write his emotional new single 'Lost'?",
-      "voice_style": "calm",
+      "category": "Madelyn Cline's Lifestyle Vlogs",
+      "topic": "Madelyn Cline's Morning Routine",
+      "hook": "Start your day like Madelyn Cline, with her favorite morning routine hacks!",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sinner Tennis Match Recaps",
-      "topic": "Jannik Sinner's Comeback Win at the Australian Open",
-      "hook": "How did Jannik Sinner pull off an epic comeback at the Aussie Open?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Phoenix Travel Vlogs",
-      "topic": "Exploring Phoenix's Hidden Gems: Street Art and Food",
-      "hook": "Get ready to discover the vibrant street art and food scene in Phoenix!",
-      "voice_style": "friendly",
+      "category": "Rasheer Fleming's Basketball Analysis",
+      "topic": "Rasheer Fleming's Top NBA Picks for the Week",
+      "hook": "Rasheer Fleming just revealed his top NBA picks for the week, and you won't believe who's on the list!",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Women's Empowerment Stories",
-      "topic": "Overcoming Adversity: The Story of a Female Entrepreneur",
-      "hook": "From poverty to CEO: one woman's inspiring journey to success",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Charlotte Hornets vs Phoenix Suns Game Recaps",
+      "topic": "The Biggest Upset of the Season: Charlotte Hornets vs Phoenix Suns",
+      "hook": "The Charlotte Hornets just pulled off the biggest upset of the season, and we've got the highlights!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Sports News and Updates",
-      "topic": "The Impact of the New NFL Rule Changes on Player Safety",
-      "hook": "Will the NFL's new rule changes really reduce player injuries?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "March 8 International Women's Day Celebrations",
-      "topic": "Women in History: Unsung Heroes of the Suffrage Movement",
-      "hook": "Meet the fearless women who fought for your right to vote",
-      "voice_style": "mysterious",
+      "category": "Brandon Miller's NBA Journey",
+      "topic": "Brandon Miller's Rise to NBA Stardom",
+      "hook": "From college to the pros, Brandon Miller's journey to NBA stardom is an inspirational must-see!",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "SJ Sharks Game Highlights",
-      "topic": "The Sharks' Most Epic Comeback Wins in Franchise History",
-      "hook": "You won't believe these incredible Sharks comebacks!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "St Thomas Basketball Analysis",
-      "topic": "The Tommies' Defensive Strategy: What's Working and What's Not",
-      "hook": "Can the Tommies' defense hold up against top-ranked opponents?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Toto Wolff F1 Updates",
-      "topic": "The Future of Mercedes' F1 Team: Wolff's Vision",
-      "hook": "What's Toto Wolff's plan to get Mercedes back on top in F1?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Adesanya Fight Previews",
-      "topic": "Israel Adesanya's Keys to Victory Against Robert Whittaker",
-      "hook": "What must Adesanya do to take down the former champ Whittaker?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "AJ Dybantsa Music Releases",
-      "topic": "The Meaning Behind AJ Dybantsa's Debut Album 'Phoenix Rising'",
-      "hook": "What inspired AJ Dybantsa to create his debut album 'Phoenix Rising'?",
+      "category": "Accident Prevention and Awareness",
+      "topic": "The Most Common Causes of Car Accidents",
+      "hook": "You're more likely to get into a car accident because of this one thing, are you guilty of it?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sinner Tennis Match Recaps",
-      "topic": "Jannik Sinner's Path to the Top 10 in the ATP Rankings",
-      "hook": "How did Jannik Sinner become one of the top tennis players in the world?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Phoenix Travel Vlogs",
-      "topic": "Discovering Phoenix's Best Kept Secrets: Hiking Trails and Scenic Spots",
-      "hook": "Explore the natural beauty of Phoenix with these hidden gems!",
-      "voice_style": "friendly",
+      "category": "Sports News and Updates",
+      "topic": "The Latest NBA Trade Rumors",
+      "hook": "Breaking news: the latest NBA trade rumors that will change the game forever!",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Women's Empowerment Stories",
-      "topic": "From Survivor to Thriving Entrepreneur: A Woman's Journey",
-      "hook": "One woman's inspiring story of overcoming obstacles to achieve success",
-      "voice_style": "inspirational",
+      "category": "Truck Accident Lawyer FAQs",
+      "topic": "How to Choose the Right Truck Accident Lawyer",
+      "hook": "Don't get taken advantage of by insurance companies, know your rights with a truck accident lawyer!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Corey Harrison's Latest Updates",
+      "topic": "Corey Harrison's Take on the Latest Reality TV Shows",
+      "hook": "Corey Harrison just spilled the tea on the latest reality TV shows, and you won't believe what he said!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 42
+      "target_duration": 45
+    },
+    {
+      "category": "Tornado Safety Tips",
+      "topic": "Tornado Safety for Pets",
+      "hook": "What to do to keep your pets safe during a tornado, it's not what you think!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Eric Wilson's Sports Highlights",
+      "topic": "Eric Wilson's Most Epic Football Fails",
+      "hook": "Even the pros have bad days, check out Eric Wilson's most epic football fails!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Madelyn Cline's Lifestyle Vlogs",
+      "topic": "Madelyn Cline's Favorite Workout Routine",
+      "hook": "Get fit like Madelyn Cline with her favorite workout routine, it's easier than you think!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Rasheer Fleming's Basketball Analysis",
+      "topic": "Rasheer Fleming's Breakdown of the NBA Playoffs",
+      "hook": "Rasheer Fleming just broke down the NBA playoffs, and his predictions will surprise you!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Charlotte Hornets vs Phoenix Suns Game Recaps",
+      "topic": "The Most Thrilling Finish to a Game This Season",
+      "hook": "You won't believe the ending to the Charlotte Hornets vs Phoenix Suns game, it's insane!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Brandon Miller's NBA Journey",
+      "topic": "Brandon Miller's Off-Season Training Regimen",
+      "hook": "What Brandon Miller does in the off-season to stay on top of his game, it's not for the faint of heart!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Accident Prevention and Awareness",
+      "topic": "The Dangers of Distracted Driving",
+      "hook": "You're putting your life at risk every time you get behind the wheel, find out why!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
       "category": "Sports News and Updates",
-      "topic": "The Impact of Technology on Modern Sports: Trends and Innovations",
-      "hook": "How is technology changing the face of sports forever?",
+      "topic": "The Impact of Social Media on Sports",
+      "hook": "How social media is changing the game of sports, and what it means for athletes and fans!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
+      "music_mood": "upbeat",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
@@ -202,59 +202,59 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
