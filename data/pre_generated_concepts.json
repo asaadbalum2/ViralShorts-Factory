@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-03-09T06:36:32.978810",
-  "valid_until": "2026-03-09T23:59:32.978818",
+  "generated_at": "2026-03-10T06:05:40.994525",
+  "valid_until": "2026-03-10T23:59:40.994533",
   "categories": [
-    "Truck Accident Lawyer FAQs",
-    "Corey Harrison's Latest Updates",
-    "Tornado Safety Tips",
-    "Eric Wilson's Sports Highlights",
-    "Madelyn Cline's Lifestyle Vlogs",
-    "Rasheer Fleming's Basketball Analysis",
-    "Charlotte Hornets vs Phoenix Suns Game Recaps",
-    "Brandon Miller's NBA Journey",
-    "Accident Prevention and Awareness",
-    "Sports News and Updates",
-    "Severe Weather Alerts and Preparations",
-    "Law and Order: Truck Accident Cases",
-    "Sports Player Profiles and Biographies",
-    "Disaster Relief and Support",
-    "March Madness Basketball Highlights"
+    "Coinbase Crypto Explainers",
+    "NASA Space Exploration Updates",
+    "US Attorney New Jersey Investigation Recaps",
+    "Supreme Court Justice Brett Kavanaugh Analysis",
+    "Jetblue Travel Hacks and Flight Deals",
+    "Powerball Winning Number Predictions",
+    "Marvel Wonder Man Fan Theories",
+    "Cillian Murphy Actor Profiles",
+    "Current Event News Updates",
+    "Spring Break Travel Inspiration",
+    "Cryptocurrency Market Trends",
+    "Space Exploration Technology",
+    "Law and Justice System Explainers",
+    "Marvel Movie News and Rumors",
+    "Celebrity Biographies and Interviews"
   ],
   "concepts": [
     {
-      "category": "Truck Accident Lawyer FAQs",
-      "topic": "What to Do Immediately After a Truck Accident",
-      "hook": "You've just been hit by a truck, what's the first call you should make?",
+      "category": "Coinbase Crypto Explainers",
+      "topic": "Understanding Bitcoin Halving",
+      "hook": "What happens when the Bitcoin reward is cut in half?",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Corey Harrison's Latest Updates",
-      "topic": "Corey Harrison's New Business Venture",
-      "hook": "Corey Harrison just dropped a bombshell about his new business, you won't believe what it is!",
+      "category": "NASA Space Exploration Updates",
+      "topic": "Mars Perseverance Rover Discoveries",
+      "hook": "You won't believe what NASA's Mars rover just found!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Tornado Safety Tips",
-      "topic": "How to Create a Tornado Emergency Kit",
-      "hook": "What's the one thing you need to have in your tornado emergency kit that could save your life?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Eric Wilson's Sports Highlights",
-      "topic": "Eric Wilson's Top 5 Football Plays",
-      "hook": "You won't believe the insane play Eric Wilson made last night, it's a must-see!",
+      "category": "US Attorney New Jersey Investigation Recaps",
+      "topic": "Recent Developments in the Jersey Shore Corruption Case",
+      "hook": "The shocking truth behind the Jersey Shore corruption scandal",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Madelyn Cline's Lifestyle Vlogs",
-      "topic": "Madelyn Cline's Morning Routine",
-      "hook": "Start your day like Madelyn Cline, with her favorite morning routine hacks!",
+      "category": "Supreme Court Justice Brett Kavanaugh Analysis",
+      "topic": "The Impact of Kavanaugh's Rulings on Women's Rights",
+      "hook": "How Justice Kavanaugh's decisions are changing the game for women's rights",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Jetblue Travel Hacks and Flight Deals",
+      "topic": "How to Score Cheap Flights to the Caribbean",
+      "hook": "Want to fly to the Caribbean for under $200? Here's how!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Rasheer Fleming's Basketball Analysis",
-      "topic": "Rasheer Fleming's Top NBA Picks for the Week",
-      "hook": "Rasheer Fleming just revealed his top NBA picks for the week, and you won't believe who's on the list!",
+      "category": "Powerball Winning Number Predictions",
+      "topic": "Using AI to Predict the Next Jackpot",
+      "hook": "Can AI really predict the winning Powerball numbers?",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Charlotte Hornets vs Phoenix Suns Game Recaps",
-      "topic": "The Biggest Upset of the Season: Charlotte Hornets vs Phoenix Suns",
-      "hook": "The Charlotte Hornets just pulled off the biggest upset of the season, and we've got the highlights!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Brandon Miller's NBA Journey",
-      "topic": "Brandon Miller's Rise to NBA Stardom",
-      "hook": "From college to the pros, Brandon Miller's journey to NBA stardom is an inspirational must-see!",
+      "category": "Marvel Wonder Man Fan Theories",
+      "topic": "The Connection Between Wonder Man and the Avengers",
+      "hook": "You won't believe the shocking connection between Wonder Man and the Avengers",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Accident Prevention and Awareness",
-      "topic": "The Most Common Causes of Car Accidents",
-      "hook": "You're more likely to get into a car accident because of this one thing, are you guilty of it?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports News and Updates",
-      "topic": "The Latest NBA Trade Rumors",
-      "hook": "Breaking news: the latest NBA trade rumors that will change the game forever!",
-      "voice_style": "authoritative",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Truck Accident Lawyer FAQs",
-      "topic": "How to Choose the Right Truck Accident Lawyer",
-      "hook": "Don't get taken advantage of by insurance companies, know your rights with a truck accident lawyer!",
+      "category": "Cillian Murphy Actor Profiles",
+      "topic": "The Rise of Cillian Murphy from Batman to Peaky Blinders",
+      "hook": "From Batman to Peaky Blinders, how Cillian Murphy became a household name",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 40
+      "target_duration": 48
     },
     {
-      "category": "Corey Harrison's Latest Updates",
-      "topic": "Corey Harrison's Take on the Latest Reality TV Shows",
-      "hook": "Corey Harrison just spilled the tea on the latest reality TV shows, and you won't believe what he said!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tornado Safety Tips",
-      "topic": "Tornado Safety for Pets",
-      "hook": "What to do to keep your pets safe during a tornado, it's not what you think!",
+      "category": "Current Event News Updates",
+      "topic": "Understanding the Impact of Social Media on Elections",
+      "hook": "How social media is changing the game for elections",
       "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Eric Wilson's Sports Highlights",
-      "topic": "Eric Wilson's Most Epic Football Fails",
-      "hook": "Even the pros have bad days, check out Eric Wilson's most epic football fails!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Madelyn Cline's Lifestyle Vlogs",
-      "topic": "Madelyn Cline's Favorite Workout Routine",
-      "hook": "Get fit like Madelyn Cline with her favorite workout routine, it's easier than you think!",
+      "category": "Spring Break Travel Inspiration",
+      "topic": "The Top 5 Most Affordable Spring Break Destinations",
+      "hook": "Want to know the secret to an affordable spring break?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Rasheer Fleming's Basketball Analysis",
-      "topic": "Rasheer Fleming's Breakdown of the NBA Playoffs",
-      "hook": "Rasheer Fleming just broke down the NBA playoffs, and his predictions will surprise you!",
+      "category": "Coinbase Crypto Explainers",
+      "topic": "The Benefits of Using a Crypto Wallet",
+      "hook": "What you need to know about keeping your crypto safe",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
+      "music_mood": "inspirational",
+      "target_duration": 42
     },
     {
-      "category": "Charlotte Hornets vs Phoenix Suns Game Recaps",
-      "topic": "The Most Thrilling Finish to a Game This Season",
-      "hook": "You won't believe the ending to the Charlotte Hornets vs Phoenix Suns game, it's insane!",
+      "category": "NASA Space Exploration Updates",
+      "topic": "The Latest Developments in the Search for Life on Mars",
+      "hook": "Are we finally closing in on the answer to the ultimate question: are we alone?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "US Attorney New Jersey Investigation Recaps",
+      "topic": "The Fallout from the Recent Corruption Arrests",
+      "hook": "The shocking aftermath of the latest corruption arrests in New Jersey",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Brandon Miller's NBA Journey",
-      "topic": "Brandon Miller's Off-Season Training Regimen",
-      "hook": "What Brandon Miller does in the off-season to stay on top of his game, it's not for the faint of heart!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "Supreme Court Justice Brett Kavanaugh Analysis",
+      "topic": "The Impact of Kavanaugh's Rulings on Gun Control",
+      "hook": "How Justice Kavanaugh's decisions are shaping the future of gun control",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Jetblue Travel Hacks and Flight Deals",
+      "topic": "How to Get the Most Out of Your Jetblue Points",
+      "hook": "Want to know the secret to maximizing your Jetblue points?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Accident Prevention and Awareness",
-      "topic": "The Dangers of Distracted Driving",
-      "hook": "You're putting your life at risk every time you get behind the wheel, find out why!",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Powerball Winning Number Predictions",
+      "topic": "Using Numerology to Predict the Next Jackpot",
+      "hook": "Can numerology really predict the winning Powerball numbers?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports News and Updates",
-      "topic": "The Impact of Social Media on Sports",
-      "hook": "How social media is changing the game of sports, and what it means for athletes and fans!",
-      "voice_style": "authoritative",
+      "category": "Marvel Wonder Man Fan Theories",
+      "topic": "The Theory Behind Wonder Man's Connection to the Quantum Realm",
+      "hook": "You won't believe the mind-blowing connection between Wonder Man and the Quantum Realm",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 50
+      "target_duration": 42
+    },
+    {
+      "category": "Cillian Murphy Actor Profiles",
+      "topic": "The Evolution of Cillian Murphy's Career from Indie Films to Blockbusters",
+      "hook": "From indie films to blockbuster hits, how Cillian Murphy became a Hollywood star",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Current Event News Updates",
+      "topic": "The Impact of Climate Change on Global Food Supplies",
+      "hook": "How climate change is changing the way we eat",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Spring Break Travel Inspiration",
+      "topic": "The Best Kept Secrets for an Unforgettable Spring Break",
+      "hook": "Want to know the secret to an unforgettable spring break?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
