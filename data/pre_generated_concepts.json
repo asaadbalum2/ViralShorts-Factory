@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-03-10T06:05:40.994525",
-  "valid_until": "2026-03-10T23:59:40.994533",
+  "generated_at": "2026-03-11T06:08:14.409279",
+  "valid_until": "2026-03-11T23:59:14.409287",
   "categories": [
-    "Coinbase Crypto Explainers",
-    "NASA Space Exploration Updates",
-    "US Attorney New Jersey Investigation Recaps",
-    "Supreme Court Justice Brett Kavanaugh Analysis",
-    "Jetblue Travel Hacks and Flight Deals",
-    "Powerball Winning Number Predictions",
-    "Marvel Wonder Man Fan Theories",
-    "Cillian Murphy Actor Profiles",
-    "Current Event News Updates",
-    "Spring Break Travel Inspiration",
-    "Cryptocurrency Market Trends",
-    "Space Exploration Technology",
-    "Law and Justice System Explainers",
-    "Marvel Movie News and Rumors",
-    "Celebrity Biographies and Interviews"
+    "Sports Highlights",
+    "Gaming Walkthroughs",
+    "NBA Analysis",
+    "Relationship Advice",
+    "Law and Justice",
+    "Esports Updates",
+    "Basketball News",
+    "Western Conference Breakdowns",
+    "Joel Embiid Fan Content",
+    "LA Lakers Game Recaps",
+    "Luke Kennard Highlights",
+    "Jarred Vanderbilt Interviews",
+    "Nier Automata Tips and Tricks",
+    "Divorce and Separation Support",
+    "March Madness Predictions"
   ],
   "concepts": [
     {
-      "category": "Coinbase Crypto Explainers",
-      "topic": "Understanding Bitcoin Halving",
-      "hook": "What happens when the Bitcoin reward is cut in half?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Sports Highlights",
+      "topic": "Most Unbelievable Touchdowns in NFL History",
+      "hook": "You won't believe what happened on the last play of the game!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "NASA Space Exploration Updates",
-      "topic": "Mars Perseverance Rover Discoveries",
-      "hook": "You won't believe what NASA's Mars rover just found!",
+      "category": "Gaming Walkthroughs",
+      "topic": "How to Beat the Final Boss in The Last of Us",
+      "hook": "The secret to defeating the toughest enemy in the game is revealed!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "NBA Analysis",
+      "topic": "The Impact of Steph Curry's Shooting on the Warriors' Offense",
+      "hook": "What makes Steph Curry the most feared shooter in the league?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Relationship Advice",
+      "topic": "Signs That Your Partner is Losing Interest",
+      "hook": "Are you noticing these red flags in your relationship?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Law and Justice",
+      "topic": "The Most Shocking Court Cases of the Past Year",
+      "hook": "Justice has been served, but at what cost?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Esports Updates",
+      "topic": "The Rise of Cloud9 in the League of Legends Championship",
+      "hook": "Can this underdog team take home the championship title?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "US Attorney New Jersey Investigation Recaps",
-      "topic": "Recent Developments in the Jersey Shore Corruption Case",
-      "hook": "The shocking truth behind the Jersey Shore corruption scandal",
-      "voice_style": "dramatic",
+      "category": "Basketball News",
+      "topic": "The Impact of the New NBA Draft Rules on Team Rosters",
+      "hook": "How will the new draft rules change the game?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Western Conference Breakdowns",
+      "topic": "The Denver Nuggets' Chances of Making it to the NBA Finals",
+      "hook": "Can the Nuggets overcome their toughest opponents?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Joel Embiid Fan Content",
+      "topic": "Joel Embiid's Most Dominant Games of the Season",
+      "hook": " Witness the greatness of Joel Embiid on the court!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "Supreme Court Justice Brett Kavanaugh Analysis",
-      "topic": "The Impact of Kavanaugh's Rulings on Women's Rights",
-      "hook": "How Justice Kavanaugh's decisions are changing the game for women's rights",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "Jetblue Travel Hacks and Flight Deals",
-      "topic": "How to Score Cheap Flights to the Caribbean",
-      "hook": "Want to fly to the Caribbean for under $200? Here's how!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Powerball Winning Number Predictions",
-      "topic": "Using AI to Predict the Next Jackpot",
-      "hook": "Can AI really predict the winning Powerball numbers?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Marvel Wonder Man Fan Theories",
-      "topic": "The Connection Between Wonder Man and the Avengers",
-      "hook": "You won't believe the shocking connection between Wonder Man and the Avengers",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Cillian Murphy Actor Profiles",
-      "topic": "The Rise of Cillian Murphy from Batman to Peaky Blinders",
-      "hook": "From Batman to Peaky Blinders, how Cillian Murphy became a household name",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Current Event News Updates",
-      "topic": "Understanding the Impact of Social Media on Elections",
-      "hook": "How social media is changing the game for elections",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Spring Break Travel Inspiration",
-      "topic": "The Top 5 Most Affordable Spring Break Destinations",
-      "hook": "Want to know the secret to an affordable spring break?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Coinbase Crypto Explainers",
-      "topic": "The Benefits of Using a Crypto Wallet",
-      "hook": "What you need to know about keeping your crypto safe",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "NASA Space Exploration Updates",
-      "topic": "The Latest Developments in the Search for Life on Mars",
-      "hook": "Are we finally closing in on the answer to the ultimate question: are we alone?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "US Attorney New Jersey Investigation Recaps",
-      "topic": "The Fallout from the Recent Corruption Arrests",
-      "hook": "The shocking aftermath of the latest corruption arrests in New Jersey",
+      "category": "LA Lakers Game Recaps",
+      "topic": "The Lakers' Comeback Win Against the Celtics",
+      "hook": "What was the turning point in this thrilling matchup?",
       "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Fails in Sports History",
+      "hook": "You won't believe these hilarious mishaps!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Walkthroughs",
+      "topic": "How to Unlock All Characters in Mortal Kombat",
+      "hook": "Get ready to unleash your favorite fighters!",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Supreme Court Justice Brett Kavanaugh Analysis",
-      "topic": "The Impact of Kavanaugh's Rulings on Gun Control",
-      "hook": "How Justice Kavanaugh's decisions are shaping the future of gun control",
+      "category": "NBA Analysis",
+      "topic": "The Impact of LeBron James' Leadership on the Lakers",
+      "hook": "What makes LeBron James a great leader on and off the court?",
       "voice_style": "calm",
-      "music_mood": "mysterious",
+      "music_mood": "inspirational",
       "target_duration": 42
     },
     {
-      "category": "Jetblue Travel Hacks and Flight Deals",
-      "topic": "How to Get the Most Out of Your Jetblue Points",
-      "hook": "Want to know the secret to maximizing your Jetblue points?",
+      "category": "Relationship Advice",
+      "topic": "How to Communicate Effectively in a Long-Distance Relationship",
+      "hook": "Don't let distance come between you and your loved one!",
       "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Law and Justice",
+      "topic": "The Most Influential Supreme Court Cases of the Past Decade",
+      "hook": "How have these landmark cases shaped our society?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Esports Updates",
+      "topic": "The Rise of Female Gamers in the Esports Industry",
+      "hook": "Meet the women who are dominating the gaming world!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Powerball Winning Number Predictions",
-      "topic": "Using Numerology to Predict the Next Jackpot",
-      "hook": "Can numerology really predict the winning Powerball numbers?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Basketball News",
+      "topic": "The Impact of the New NBA Schedule on Player Fatigue",
+      "hook": "How will the new schedule affect player performance?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Marvel Wonder Man Fan Theories",
-      "topic": "The Theory Behind Wonder Man's Connection to the Quantum Realm",
-      "hook": "You won't believe the mind-blowing connection between Wonder Man and the Quantum Realm",
-      "voice_style": "energetic",
+      "category": "Western Conference Breakdowns",
+      "topic": "The Utah Jazz's Chances of Making a Deep Playoff Run",
+      "hook": "Can the Jazz overcome their toughest opponents?",
+      "voice_style": "calm",
       "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Cillian Murphy Actor Profiles",
-      "topic": "The Evolution of Cillian Murphy's Career from Indie Films to Blockbusters",
-      "hook": "From indie films to blockbuster hits, how Cillian Murphy became a Hollywood star",
+      "category": "Joel Embiid Fan Content",
+      "topic": "Joel Embiid's Funniest Moments On and Off the Court",
+      "hook": "Get ready to laugh with the most entertaining player in the NBA!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
       "target_duration": 48
     },
     {
-      "category": "Current Event News Updates",
-      "topic": "The Impact of Climate Change on Global Food Supplies",
-      "hook": "How climate change is changing the way we eat",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Spring Break Travel Inspiration",
-      "topic": "The Best Kept Secrets for an Unforgettable Spring Break",
-      "hook": "Want to know the secret to an unforgettable spring break?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "LA Lakers Game Recaps",
+      "topic": "The Lakers' Dominant Win Against the Clippers",
+      "hook": "What was the key to the Lakers' victory?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
