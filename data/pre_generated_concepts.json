@@ -1,225 +1,223 @@
 {
-  "generated_at": "2026-03-11T06:08:14.409279",
-  "valid_until": "2026-03-11T23:59:14.409287",
+  "generated_at": "2026-03-12T06:10:43.716762",
+  "valid_until": "2026-03-12T23:59:43.716770",
   "categories": [
-    "Sports Highlights",
-    "Gaming Walkthroughs",
-    "NBA Analysis",
-    "Relationship Advice",
-    "Law and Justice",
-    "Esports Updates",
-    "Basketball News",
-    "Western Conference Breakdowns",
-    "Joel Embiid Fan Content",
-    "LA Lakers Game Recaps",
-    "Luke Kennard Highlights",
-    "Jarred Vanderbilt Interviews",
-    "Nier Automata Tips and Tricks",
-    "Divorce and Separation Support",
-    "March Madness Predictions"
+    "Tech Issues Explained",
+    "Gaming News and Updates",
+    "Job Market and Layoffs",
+    "Sports Highlights and Analysis",
+    "Anime and Manga Reviews",
+    "Concert and Music Festival Vlogs",
+    "Theme Park Adventures",
+    "Sports Player Profiles",
+    "Internet Outage Survival Tips",
+    "Seasonal Travel Guides",
+    "New Season Reviews and Reactions",
+    "Music Festival Fashion Inspiration",
+    "Job Search and Career Advice",
+    "Tech and Gaming Industry News",
+    "Event and Concert Recaps"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "Most Unbelievable Touchdowns in NFL History",
-      "hook": "You won't believe what happened on the last play of the game!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Walkthroughs",
-      "topic": "How to Beat the Final Boss in The Last of Us",
-      "hook": "The secret to defeating the toughest enemy in the game is revealed!",
+      "category": "Tech Issues Explained",
+      "topic": "Solving the 'Wi-Fi Connected But No Internet' Enigma",
+      "hook": "Have you ever been stuck in the purgatory of Wi-Fi limbo?",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Analysis",
-      "topic": "The Impact of Steph Curry's Shooting on the Warriors' Offense",
-      "hook": "What makes Steph Curry the most feared shooter in the league?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Relationship Advice",
-      "topic": "Signs That Your Partner is Losing Interest",
-      "hook": "Are you noticing these red flags in your relationship?",
-      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Law and Justice",
-      "topic": "The Most Shocking Court Cases of the Past Year",
-      "hook": "Justice has been served, but at what cost?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Esports Updates",
-      "topic": "The Rise of Cloud9 in the League of Legends Championship",
-      "hook": "Can this underdog team take home the championship title?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Basketball News",
-      "topic": "The Impact of the New NBA Draft Rules on Team Rosters",
-      "hook": "How will the new draft rules change the game?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Western Conference Breakdowns",
-      "topic": "The Denver Nuggets' Chances of Making it to the NBA Finals",
-      "hook": "Can the Nuggets overcome their toughest opponents?",
+      "category": "Gaming News and Updates",
+      "topic": "Unveiling the Latest 'Elden Ring' DLC",
+      "hook": "Get ready to embark on a new odyssey in the Lands Between!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Job Market and Layoffs",
+      "topic": "Navigating the Remote Work Revolution",
+      "hook": "Is the traditional office a thing of the past?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 42
     },
     {
-      "category": "Joel Embiid Fan Content",
-      "topic": "Joel Embiid's Most Dominant Games of the Season",
-      "hook": " Witness the greatness of Joel Embiid on the court!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Sports Highlights and Analysis",
+      "topic": "Decoding the Tactics Behind Manchester City's Triumph",
+      "hook": "What makes the Sky Blues nearly unbeatable?",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 48
     },
     {
-      "category": "LA Lakers Game Recaps",
-      "topic": "The Lakers' Comeback Win Against the Celtics",
-      "hook": "What was the turning point in this thrilling matchup?",
-      "voice_style": "dramatic",
+      "category": "Anime and Manga Reviews",
+      "topic": "Unpacking the Hidden Gems of 'Attack on Titan'",
+      "hook": "Beyond the action lies a world of complex characters and themes",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Most Epic Fails in Sports History",
-      "hook": "You won't believe these hilarious mishaps!",
-      "voice_style": "friendly",
+      "category": "Concert and Music Festival Vlogs",
+      "topic": "Electric Atmosphere at Tomorrowland",
+      "hook": "Imagine a world where music knows no borders",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Gaming Walkthroughs",
-      "topic": "How to Unlock All Characters in Mortal Kombat",
-      "hook": "Get ready to unleash your favorite fighters!",
-      "voice_style": "authoritative",
+      "category": "Theme Park Adventures",
+      "topic": "Conquering the Fearsome Coasters of Cedar Point",
+      "hook": "Are you brave enough to ride the Kingda Ka?",
+      "voice_style": "friendly",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "NBA Analysis",
-      "topic": "The Impact of LeBron James' Leadership on the Lakers",
-      "hook": "What makes LeBron James a great leader on and off the court?",
+      "category": "Sports Player Profiles",
+      "topic": "The Rise of Tennis Phenom Emma Raducanu",
+      "hook": "From wildcard to champion, what drives her to victory?",
       "voice_style": "calm",
       "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Internet Outage Survival Tips",
+      "topic": "Staying Productive During Internet Blackouts",
+      "hook": "Can you survive a day without Wi-Fi?",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Seasonal Travel Guides",
+      "topic": "Exploring the Wonders of Autumn in New England",
+      "hook": "Imagine strolling through a kaleidoscope of golden hues",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Issues Explained",
+      "topic": "Demystifying the 'Blue Screen of Death'",
+      "hook": "The moment of truth: when your screen turns blue",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 42
     },
     {
-      "category": "Relationship Advice",
-      "topic": "How to Communicate Effectively in a Long-Distance Relationship",
-      "hook": "Don't let distance come between you and your loved one!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Gaming News and Updates",
+      "topic": "The Evolution of 'The Last of Us' Series",
+      "hook": "A journey through the infected streets of a post-apocalyptic world",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "Law and Justice",
-      "topic": "The Most Influential Supreme Court Cases of the Past Decade",
-      "hook": "How have these landmark cases shaped our society?",
+      "category": "Job Market and Layoffs",
+      "topic": "The Future of Work: Will AI Replace Human Jobs?",
+      "hook": "The robots are coming, but will they take your job?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Esports Updates",
-      "topic": "The Rise of Female Gamers in the Esports Industry",
-      "hook": "Meet the women who are dominating the gaming world!",
+      "category": "Sports Highlights and Analysis",
+      "topic": "The Art of Football: Tactics and Strategies",
+      "hook": "More than just a game, it's a chess match on the pitch",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Basketball News",
-      "topic": "The Impact of the New NBA Schedule on Player Fatigue",
-      "hook": "How will the new schedule affect player performance?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Anime and Manga Reviews",
+      "topic": "Diving into the World of 'Fullmetal Alchemist'",
+      "hook": "A tale of brotherhood, sacrifice, and the pursuit of perfection",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Western Conference Breakdowns",
-      "topic": "The Utah Jazz's Chances of Making a Deep Playoff Run",
-      "hook": "Can the Jazz overcome their toughest opponents?",
-      "voice_style": "calm",
+      "category": "Concert and Music Festival Vlogs",
+      "topic": "The Magic of Coachella: A Festival Like No Other",
+      "hook": "Where music meets art in the desert",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Joel Embiid Fan Content",
-      "topic": "Joel Embiid's Funniest Moments On and Off the Court",
-      "hook": "Get ready to laugh with the most entertaining player in the NBA!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Theme Park Adventures",
+      "topic": "Discovering the Hidden Worlds of Universal Studios",
+      "hook": "Behind the scenes of movie magic",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Player Profiles",
+      "topic": "The Unstoppable LeBron James: A Career Retrospective",
+      "hook": "From high school phenom to NBA legend",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 48
     },
     {
-      "category": "LA Lakers Game Recaps",
-      "topic": "The Lakers' Dominant Win Against the Clippers",
-      "hook": "What was the key to the Lakers' victory?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Internet Outage Survival Tips",
+      "topic": "Staying Connected Without the Internet",
+      "hook": "Can you remember life before Wi-Fi?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Seasonal Travel Guides",
+      "topic": "Winter Wonderland: Exploring the Best Ski Resorts",
+      "hook": "Imagine waking up to a snow-covered paradise",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Issues Explained",
+      "topic": "Understanding the Mysteries of VPNs",
+      "hook": "Unmasking the truth behind virtual private networks",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -227,34 +225,44 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
