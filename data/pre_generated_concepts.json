@@ -1,253 +1,213 @@
 {
-  "generated_at": "2026-03-12T06:10:43.716762",
-  "valid_until": "2026-03-12T23:59:43.716770",
+  "generated_at": "2026-03-13T06:09:06.613775",
+  "valid_until": "2026-03-13T23:59:06.613785",
   "categories": [
-    "Tech Issues Explained",
-    "Gaming News and Updates",
-    "Job Market and Layoffs",
-    "Sports Highlights and Analysis",
-    "Anime and Manga Reviews",
-    "Concert and Music Festival Vlogs",
-    "Theme Park Adventures",
-    "Sports Player Profiles",
-    "Internet Outage Survival Tips",
-    "Seasonal Travel Guides",
-    "New Season Reviews and Reactions",
-    "Music Festival Fashion Inspiration",
-    "Job Search and Career Advice",
-    "Tech and Gaming Industry News",
-    "Event and Concert Recaps"
+    "Wildfire Updates",
+    "Seattle Weather Forecast",
+    "Margaret Qualley Fan Content",
+    "Anime Recap: One Piece Season 3",
+    "Retro Gaming: John Carpenter's Toxic Commando",
+    "Sports Highlights: Austin Reaves",
+    "Tennis Pro: Katarzyna Kawa",
+    "Lauren Bessette Throwbacks",
+    "Spring Weather Preparations",
+    "News Explainers",
+    "Video Game Trailers",
+    "Drama Series Recaps",
+    "Comedy Skits",
+    "Action Movie Clips",
+    "Emergency Preparedness Tips"
   ],
   "concepts": [
     {
-      "category": "Tech Issues Explained",
-      "topic": "Solving the 'Wi-Fi Connected But No Internet' Enigma",
-      "hook": "Have you ever been stuck in the purgatory of Wi-Fi limbo?",
+      "category": "Wildfire Updates",
+      "topic": "California Wildfire Season 2024 Predictions",
+      "hook": "A devastating wildfire season is looming, but are we prepared?",
       "voice_style": "authoritative",
-      "music_mood": "chill",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Gaming News and Updates",
-      "topic": "Unveiling the Latest 'Elden Ring' DLC",
-      "hook": "Get ready to embark on a new odyssey in the Lands Between!",
+      "category": "Seattle Weather Forecast",
+      "topic": "Unseasonable Storms in Seattle: What to Expect",
+      "hook": "Seattle, get ready for the storm of the century!",
       "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Job Market and Layoffs",
-      "topic": "Navigating the Remote Work Revolution",
-      "hook": "Is the traditional office a thing of the past?",
+      "category": "Margaret Qualley Fan Content",
+      "topic": "Margaret Qualley's Rise to Fame: A Timeline",
+      "hook": "From ballet to Hollywood, how did Margaret Qualley become a household name?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 42
+      "target_duration": 50
     },
     {
-      "category": "Sports Highlights and Analysis",
-      "topic": "Decoding the Tactics Behind Manchester City's Triumph",
-      "hook": "What makes the Sky Blues nearly unbeatable?",
+      "category": "Anime Recap: One Piece Season 3",
+      "topic": "The Water 7 Arc: A Game-Changer for the Straw Hat Pirates",
+      "hook": "The Straw Hat Pirates are in for a wild ride, but what secrets will they uncover in Water 7?",
       "voice_style": "dramatic",
       "music_mood": "upbeat",
-      "target_duration": 48
+      "target_duration": 45
     },
     {
-      "category": "Anime and Manga Reviews",
-      "topic": "Unpacking the Hidden Gems of 'Attack on Titan'",
-      "hook": "Beyond the action lies a world of complex characters and themes",
+      "category": "Retro Gaming: John Carpenter's Toxic Commando",
+      "topic": "Toxic Commando: The Overlooked Classic of 80s Gaming",
+      "hook": "Get ready to revisit the toxic wasteland of a forgotten gaming classic",
       "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights: Austin Reaves",
+      "topic": "Austin Reaves' Most Epic Dunks of the Season",
+      "hook": "Austin Reaves is taking the NBA by storm, and these dunks will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Pro: Katarzyna Kawa",
+      "topic": "Katarzyna Kawa's Journey to the Top: Overcoming Adversity",
+      "hook": "From humble beginnings to tennis stardom, what drives Katarzyna Kawa's success?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Lauren Bessette Throwbacks",
+      "topic": "Lauren Bessette's 90s Fashion Moments: A Blast from the Past",
+      "hook": "Step back into the 90s with Lauren Bessette's most iconic fashion moments",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Spring Weather Preparations",
+      "topic": "5 Essential Spring Weather Preparation Tips for Homeowners",
+      "hook": "Don't let spring weather catch you off guard: are you prepared for the unexpected?",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Concert and Music Festival Vlogs",
-      "topic": "Electric Atmosphere at Tomorrowland",
-      "hook": "Imagine a world where music knows no borders",
-      "voice_style": "energetic",
+      "category": "News Explainers",
+      "topic": "Understanding the Impact of Climate Change on Global Food Systems",
+      "hook": "The alarming truth about climate change and your dinner plate",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Wildfire Updates",
+      "topic": "The Science Behind Wildfire Spread: A Deep Dive",
+      "hook": "What's really fueling the wildfires, and can we stop them?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Seattle Weather Forecast",
+      "topic": "The Unpredictable Nature of Seattle's Weather Patterns",
+      "hook": "Why Seattle's weather is more unpredictable than you think",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Theme Park Adventures",
-      "topic": "Conquering the Fearsome Coasters of Cedar Point",
-      "hook": "Are you brave enough to ride the Kingda Ka?",
-      "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Player Profiles",
-      "topic": "The Rise of Tennis Phenom Emma Raducanu",
-      "hook": "From wildcard to champion, what drives her to victory?",
+      "category": "Margaret Qualley Fan Content",
+      "topic": "Margaret Qualley's Most Memorable Red Carpet Moments",
+      "hook": "Margaret Qualley's red carpet style is unmatched, but what's her secret?",
       "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Internet Outage Survival Tips",
-      "topic": "Staying Productive During Internet Blackouts",
-      "hook": "Can you survive a day without Wi-Fi?",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Seasonal Travel Guides",
-      "topic": "Exploring the Wonders of Autumn in New England",
-      "hook": "Imagine strolling through a kaleidoscope of golden hues",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech Issues Explained",
-      "topic": "Demystifying the 'Blue Screen of Death'",
-      "hook": "The moment of truth: when your screen turns blue",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Gaming News and Updates",
-      "topic": "The Evolution of 'The Last of Us' Series",
-      "hook": "A journey through the infected streets of a post-apocalyptic world",
+      "category": "Anime Recap: One Piece Season 3",
+      "topic": "The Will of D.: Uncovering the Mystery Behind the Ancient Power",
+      "hook": "The truth about the Will of D. will change everything you thought you knew about One Piece",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
+      "target_duration": 50
     },
     {
-      "category": "Job Market and Layoffs",
-      "topic": "The Future of Work: Will AI Replace Human Jobs?",
-      "hook": "The robots are coming, but will they take your job?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Retro Gaming: John Carpenter's Toxic Commando",
+      "topic": "Toxic Commando: The Making of a Cult Classic",
+      "hook": "The fascinating story behind the creation of John Carpenter's Toxic Commando",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights and Analysis",
-      "topic": "The Art of Football: Tactics and Strategies",
-      "hook": "More than just a game, it's a chess match on the pitch",
+      "category": "Sports Highlights: Austin Reaves",
+      "topic": "Austin Reaves' Clutch Performances: A Highlight Reel",
+      "hook": "When the game is on the line, Austin Reaves always delivers",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Anime and Manga Reviews",
-      "topic": "Diving into the World of 'Fullmetal Alchemist'",
-      "hook": "A tale of brotherhood, sacrifice, and the pursuit of perfection",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Concert and Music Festival Vlogs",
-      "topic": "The Magic of Coachella: A Festival Like No Other",
-      "hook": "Where music meets art in the desert",
+      "category": "Tennis Pro: Katarzyna Kawa",
+      "topic": "Katarzyna Kawa's Training Regimen: A Glimpse into Her Fitness Routine",
+      "hook": "What does it take to be a tennis pro like Katarzyna Kawa?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Theme Park Adventures",
-      "topic": "Discovering the Hidden Worlds of Universal Studios",
-      "hook": "Behind the scenes of movie magic",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Player Profiles",
-      "topic": "The Unstoppable LeBron James: A Career Retrospective",
-      "hook": "From high school phenom to NBA legend",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Internet Outage Survival Tips",
-      "topic": "Staying Connected Without the Internet",
-      "hook": "Can you remember life before Wi-Fi?",
+      "category": "Lauren Bessette Throwbacks",
+      "topic": "Lauren Bessette'sFavorite Fashion Trends of the 90s",
+      "hook": "Lauren Bessette's favorite 90s fashion trends are making a comeback",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Seasonal Travel Guides",
-      "topic": "Winter Wonderland: Exploring the Best Ski Resorts",
-      "hook": "Imagine waking up to a snow-covered paradise",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Spring Weather Preparations",
+      "topic": "Preparing Your Home for Spring Flooding: Expert Tips",
+      "hook": "Don't wait until it's too late: protect your home from spring flooding",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Tech Issues Explained",
-      "topic": "Understanding the Mysteries of VPNs",
-      "hook": "Unmasking the truth behind virtual private networks",
+      "category": "News Explainers",
+      "topic": "The Impact of Social Media on Mental Health: A Comprehensive Review",
+      "hook": "The shocking truth about social media's impact on your mental health",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 42
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Wildfire Updates",
+      "topic": "Innovative Technologies for Preventing and Combating Wildfires",
+      "hook": "The future of wildfire prevention is here, and it's more innovative than you think",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
@@ -255,14 +215,54 @@
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
