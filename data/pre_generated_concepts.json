@@ -1,267 +1,259 @@
 {
-  "generated_at": "2026-03-13T06:09:06.613775",
-  "valid_until": "2026-03-13T23:59:06.613785",
+  "generated_at": "2026-03-14T06:05:45.424873",
+  "valid_until": "2026-03-14T23:59:45.424881",
   "categories": [
-    "Wildfire Updates",
-    "Seattle Weather Forecast",
-    "Margaret Qualley Fan Content",
-    "Anime Recap: One Piece Season 3",
-    "Retro Gaming: John Carpenter's Toxic Commando",
-    "Sports Highlights: Austin Reaves",
-    "Tennis Pro: Katarzyna Kawa",
-    "Lauren Bessette Throwbacks",
-    "Spring Weather Preparations",
-    "News Explainers",
-    "Video Game Trailers",
-    "Drama Series Recaps",
-    "Comedy Skits",
-    "Action Movie Clips",
-    "Emergency Preparedness Tips"
+    "IOS 26.4 iPhone Customization Hacks",
+    "Katy Perry Music Covers",
+    "Kevin Vallejos Comedy Skits",
+    "Wildfire Prevention Tips",
+    "Government Shutdown Explainers",
+    "Jake Shane Dance Challenges",
+    "Lainey Wilson Country Music Covers",
+    "Brandin Podziemski Basketball Highlights",
+    "Spring Break Vlog Ideas",
+    "Fire Safety Awareness",
+    "Custom iPhone Home Screen Inspirations",
+    "Katy Perry Song Reaction Videos",
+    "Weather Watch: Staying Safe During Fire Season",
+    "Government Shutdown Impact on Daily Life",
+    "March Madness Basketball Analysis"
   ],
   "concepts": [
     {
-      "category": "Wildfire Updates",
-      "topic": "California Wildfire Season 2024 Predictions",
-      "hook": "A devastating wildfire season is looming, but are we prepared?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Seattle Weather Forecast",
-      "topic": "Unseasonable Storms in Seattle: What to Expect",
-      "hook": "Seattle, get ready for the storm of the century!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Margaret Qualley Fan Content",
-      "topic": "Margaret Qualley's Rise to Fame: A Timeline",
-      "hook": "From ballet to Hollywood, how did Margaret Qualley become a household name?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Anime Recap: One Piece Season 3",
-      "topic": "The Water 7 Arc: A Game-Changer for the Straw Hat Pirates",
-      "hook": "The Straw Hat Pirates are in for a wild ride, but what secrets will they uncover in Water 7?",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Retro Gaming: John Carpenter's Toxic Commando",
-      "topic": "Toxic Commando: The Overlooked Classic of 80s Gaming",
-      "hook": "Get ready to revisit the toxic wasteland of a forgotten gaming classic",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Highlights: Austin Reaves",
-      "topic": "Austin Reaves' Most Epic Dunks of the Season",
-      "hook": "Austin Reaves is taking the NBA by storm, and these dunks will leave you speechless!",
+      "category": "IOS 26.4 iPhone Customization Hacks",
+      "topic": "Hidden Features in iOS 26.4",
+      "hook": "You won't believe the secret feature hiding in your iPhone settings!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Tennis Pro: Katarzyna Kawa",
-      "topic": "Katarzyna Kawa's Journey to the Top: Overcoming Adversity",
-      "hook": "From humble beginnings to tennis stardom, what drives Katarzyna Kawa's success?",
+      "category": "Katy Perry Music Covers",
+      "topic": "Acoustic Version of 'Firework'",
+      "hook": "Get ready to be amazed by this soulful cover of Katy Perry's hit song!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Lauren Bessette Throwbacks",
-      "topic": "Lauren Bessette's 90s Fashion Moments: A Blast from the Past",
-      "hook": "Step back into the 90s with Lauren Bessette's most iconic fashion moments",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Spring Weather Preparations",
-      "topic": "5 Essential Spring Weather Preparation Tips for Homeowners",
-      "hook": "Don't let spring weather catch you off guard: are you prepared for the unexpected?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "News Explainers",
-      "topic": "Understanding the Impact of Climate Change on Global Food Systems",
-      "hook": "The alarming truth about climate change and your dinner plate",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildfire Updates",
-      "topic": "The Science Behind Wildfire Spread: A Deep Dive",
-      "hook": "What's really fueling the wildfires, and can we stop them?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Seattle Weather Forecast",
-      "topic": "The Unpredictable Nature of Seattle's Weather Patterns",
-      "hook": "Why Seattle's weather is more unpredictable than you think",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Margaret Qualley Fan Content",
-      "topic": "Margaret Qualley's Most Memorable Red Carpet Moments",
-      "hook": "Margaret Qualley's red carpet style is unmatched, but what's her secret?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Anime Recap: One Piece Season 3",
-      "topic": "The Will of D.: Uncovering the Mystery Behind the Ancient Power",
-      "hook": "The truth about the Will of D. will change everything you thought you knew about One Piece",
+      "category": "Kevin Vallejos Comedy Skits",
+      "topic": "Funny Job Interview",
+      "hook": "What happens when a job interview goes hilariously wrong?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Retro Gaming: John Carpenter's Toxic Commando",
-      "topic": "Toxic Commando: The Making of a Cult Classic",
-      "hook": "The fascinating story behind the creation of John Carpenter's Toxic Commando",
-      "voice_style": "mysterious",
+      "category": "Wildfire Prevention Tips",
+      "topic": "Campfire Safety",
+      "hook": "Don't let your camping trip turn into a disaster - learn these crucial safety tips!",
+      "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Austin Reaves",
-      "topic": "Austin Reaves' Clutch Performances: A Highlight Reel",
-      "hook": "When the game is on the line, Austin Reaves always delivers",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Government Shutdown Explainers",
+      "topic": "Impact on National Parks",
+      "hook": "What does the government shutdown mean for our national treasures?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Tennis Pro: Katarzyna Kawa",
-      "topic": "Katarzyna Kawa's Training Regimen: A Glimpse into Her Fitness Routine",
-      "hook": "What does it take to be a tennis pro like Katarzyna Kawa?",
+      "category": "Jake Shane Dance Challenges",
+      "topic": "The 'Shane Shuffle' Challenge",
+      "hook": "Can you master the latest dance craze sweeping the nation?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Lainey Wilson Country Music Covers",
+      "topic": "Country Twang Version of 'Someone Like You'",
+      "hook": "You've never heard this Adele hit like this before - country style!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Brandin Podziemski Basketball Highlights",
+      "topic": "Top 5 Dunks of the Season",
+      "hook": "Get ready to slam dunk your way into the weekend with these jaw-dropping highlights!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Spring Break Vlog Ideas",
+      "topic": "Beach Party Essentials",
+      "hook": "Who's ready to party? Here's what you need to know for an epic spring break!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fire Safety Awareness",
+      "topic": "Kitchen Fire Prevention",
+      "hook": "Don't let a kitchen fire ruin your dinner plans - stay safe with these tips!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "IOS 26.4 iPhone Customization Hacks",
+      "topic": "Customizing Your Home Screen",
+      "hook": "Transform your iPhone into a work of art with these customization hacks!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Lauren Bessette Throwbacks",
-      "topic": "Lauren Bessette'sFavorite Fashion Trends of the 90s",
-      "hook": "Lauren Bessette's favorite 90s fashion trends are making a comeback",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Katy Perry Music Covers",
+      "topic": "A Cappella Version of 'Roar'",
+      "hook": "You won't believe the harmonies in this a cappella cover of Katy Perry's hit song!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Spring Weather Preparations",
-      "topic": "Preparing Your Home for Spring Flooding: Expert Tips",
-      "hook": "Don't wait until it's too late: protect your home from spring flooding",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "News Explainers",
-      "topic": "The Impact of Social Media on Mental Health: A Comprehensive Review",
-      "hook": "The shocking truth about social media's impact on your mental health",
-      "voice_style": "mysterious",
+      "category": "Kevin Vallejos Comedy Skits",
+      "topic": "Funny Superhero Auditions",
+      "hook": "What happens when superheroes try out for a team - hilarity ensues!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Wildfire Updates",
-      "topic": "Innovative Technologies for Preventing and Combating Wildfires",
-      "hook": "The future of wildfire prevention is here, and it's more innovative than you think",
+      "category": "Wildfire Prevention Tips",
+      "topic": "Defensible Space",
+      "hook": "Create a safe zone around your home with these defensible space tips!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
       "target_duration": 45
+    },
+    {
+      "category": "Government Shutdown Explainers",
+      "topic": "Impact on Federal Employees",
+      "hook": "What does the government shutdown mean for those who serve our country?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Jake Shane Dance Challenges",
+      "topic": "The 'Mirror Move' Challenge",
+      "hook": "Can you master the dance move that's taking the internet by storm?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Lainey Wilson Country Music Covers",
+      "topic": "Country Version of 'Stay with Me'",
+      "hook": "You've never heard Sam Smith's hit like this before - country style!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Brandin Podziemski Basketball Highlights",
+      "topic": "Top 5 Three-Pointers of the Season",
+      "hook": "Get ready to witness greatness with these incredible three-point shots!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Spring Break Vlog Ideas",
+      "topic": "Road Trip Essentials",
+      "hook": "Who's ready for an adventure? Here's what you need to know for an epic road trip!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fire Safety Awareness",
+      "topic": "Electrical Fire Prevention",
+      "hook": "Don't let a faulty wire ruin your life - stay safe with these electrical fire prevention tips!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     }
   ],
