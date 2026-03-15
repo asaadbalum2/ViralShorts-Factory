@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-03-14T06:05:45.424873",
-  "valid_until": "2026-03-14T23:59:45.424881",
+  "generated_at": "2026-03-15T06:33:23.285824",
+  "valid_until": "2026-03-15T23:59:23.285831",
   "categories": [
-    "IOS 26.4 iPhone Customization Hacks",
-    "Katy Perry Music Covers",
-    "Kevin Vallejos Comedy Skits",
-    "Wildfire Prevention Tips",
-    "Government Shutdown Explainers",
-    "Jake Shane Dance Challenges",
-    "Lainey Wilson Country Music Covers",
-    "Brandin Podziemski Basketball Highlights",
-    "Spring Break Vlog Ideas",
-    "Fire Safety Awareness",
-    "Custom iPhone Home Screen Inspirations",
-    "Katy Perry Song Reaction Videos",
-    "Weather Watch: Staying Safe During Fire Season",
-    "Government Shutdown Impact on Daily Life",
-    "March Madness Basketball Analysis"
+    "War Updates and Analysis",
+    "Sports Highlights and Reactions",
+    "Extreme Weather Coverage",
+    " Celebrity News and Interviews",
+    "Global Conflict Explainers",
+    "Storm Chasing and Safety Tips",
+    "Female Empowerment and Inspiration",
+    "Comedy Sketches and Parodies",
+    "Winter Sports and Activities",
+    "News Recap and Discussion",
+    "Global Politics and News",
+    "Sports Predictions and Previews",
+    "Entertainment News and Gossip",
+    "Emergency Preparedness and Response",
+    "Current Event Challenges and Trends"
   ],
   "concepts": [
     {
-      "category": "IOS 26.4 iPhone Customization Hacks",
-      "topic": "Hidden Features in iOS 26.4",
-      "hook": "You won't believe the secret feature hiding in your iPhone settings!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Katy Perry Music Covers",
-      "topic": "Acoustic Version of 'Firework'",
-      "hook": "Get ready to be amazed by this soulful cover of Katy Perry's hit song!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Kevin Vallejos Comedy Skits",
-      "topic": "Funny Job Interview",
-      "hook": "What happens when a job interview goes hilariously wrong?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildfire Prevention Tips",
-      "topic": "Campfire Safety",
-      "hook": "Don't let your camping trip turn into a disaster - learn these crucial safety tips!",
+      "category": "War Updates and Analysis",
+      "topic": "Russia's Recent Military Movements in Ukraine",
+      "hook": "Breaking: Russia's latest troop deployment sparks fears of imminent conflict!",
       "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Government Shutdown Explainers",
-      "topic": "Impact on National Parks",
-      "hook": "What does the government shutdown mean for our national treasures?",
-      "voice_style": "calm",
       "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Jake Shane Dance Challenges",
-      "topic": "The 'Shane Shuffle' Challenge",
-      "hook": "Can you master the latest dance craze sweeping the nation?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Lainey Wilson Country Music Covers",
-      "topic": "Country Twang Version of 'Someone Like You'",
-      "hook": "You've never heard this Adele hit like this before - country style!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Sports Highlights and Reactions",
+      "topic": "LeBron James' Record-Breaking Dunk",
+      "hook": "You won't believe the insane dunk that just broke the internet!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Brandin Podziemski Basketball Highlights",
-      "topic": "Top 5 Dunks of the Season",
-      "hook": "Get ready to slam dunk your way into the weekend with these jaw-dropping highlights!",
+      "category": "Extreme Weather Coverage",
+      "topic": "Hurricane Ian's Devastating Landfall in Florida",
+      "hook": "Catastrophic storm surge: Witness the terrifying moment Hurricane Ian made landfall!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Spring Break Vlog Ideas",
-      "topic": "Beach Party Essentials",
-      "hook": "Who's ready to party? Here's what you need to know for an epic spring break!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fire Safety Awareness",
-      "topic": "Kitchen Fire Prevention",
-      "hook": "Don't let a kitchen fire ruin your dinner plans - stay safe with these tips!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "IOS 26.4 iPhone Customization Hacks",
-      "topic": "Customizing Your Home Screen",
-      "hook": "Transform your iPhone into a work of art with these customization hacks!",
+      "category": "Celebrity News and Interviews",
+      "topic": "Taylor Swift's Exclusive Interview on New Album",
+      "hook": "Taylor Swift spills all: Get the inside scoop on her most personal album yet!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Katy Perry Music Covers",
-      "topic": "A Cappella Version of 'Roar'",
-      "hook": "You won't believe the harmonies in this a cappella cover of Katy Perry's hit song!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Kevin Vallejos Comedy Skits",
-      "topic": "Funny Superhero Auditions",
-      "hook": "What happens when superheroes try out for a team - hilarity ensues!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildfire Prevention Tips",
-      "topic": "Defensible Space",
-      "hook": "Create a safe zone around your home with these defensible space tips!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Government Shutdown Explainers",
-      "topic": "Impact on Federal Employees",
-      "hook": "What does the government shutdown mean for those who serve our country?",
+      "category": "Global Conflict Explainers",
+      "topic": "The Israel-Palestine Conflict: A Simplified Explanation",
+      "hook": "The truth behind the headlines: Uncovering the complex history of the Israel-Palestine conflict!",
       "voice_style": "calm",
-      "music_mood": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Storm Chasing and Safety Tips",
+      "topic": "How to Prepare for a Tornado Emergency",
+      "hook": "Tornado warning: Don't get caught off guard! Learn the life-saving tips you need to know!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Jake Shane Dance Challenges",
-      "topic": "The 'Mirror Move' Challenge",
-      "hook": "Can you master the dance move that's taking the internet by storm?",
-      "voice_style": "energetic",
+      "category": "Female Empowerment and Inspiration",
+      "topic": "Malala Yousafzai's Journey to Nobel Peace Prize",
+      "hook": "From survivor to leader: The incredible true story of Malala Yousafzai's courage and resilience!",
+      "voice_style": "inspirational",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Lainey Wilson Country Music Covers",
-      "topic": "Country Version of 'Stay with Me'",
-      "hook": "You've never heard Sam Smith's hit like this before - country style!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Comedy Sketches and Parodies",
+      "topic": "Funny Impersonation of Famous World Leaders",
+      "hook": "You won't believe who's been impersonating your favorite world leaders!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Brandin Podziemski Basketball Highlights",
-      "topic": "Top 5 Three-Pointers of the Season",
-      "hook": "Get ready to witness greatness with these incredible three-point shots!",
+      "category": "Winter Sports and Activities",
+      "topic": "Insane Ski Jumping Tricks at the Winter Olympics",
+      "hook": "Mind-blowing ski jumps that will leave you breathless!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "News Recap and Discussion",
+      "topic": "Weekly Recap of Major Global Events",
+      "hook": "The week in review: Catch up on the top news stories you might have missed!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "War Updates and Analysis",
+      "topic": "The Rise of Drone Warfare in Modern Conflict",
+      "hook": "The future of war is here: Uncovering the game-changing world of drone warfare!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights and Reactions",
+      "topic": "Cristiano Ronaldo's Historic Goal in the Champions League",
+      "hook": "The goal that shook the world: Relive Cristiano Ronaldo's record-breaking moment!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Extreme Weather Coverage",
+      "topic": "The Aftermath of Category 5 Hurricane in the Caribbean",
+      "hook": "Paradise lost: Witness the devastating aftermath of the category 5 hurricane that ravaged the Caribbean!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Spring Break Vlog Ideas",
-      "topic": "Road Trip Essentials",
-      "hook": "Who's ready for an adventure? Here's what you need to know for an epic road trip!",
-      "voice_style": "energetic",
+      "category": "Celebrity News and Interviews",
+      "topic": "Exclusive Interview with Academy Award Winner",
+      "hook": "Behind the scenes with Hollywood's biggest star: Get the inside scoop on their latest film!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Conflict Explainers",
+      "topic": "The Ongoing Crisis in Yemen: A Deep Dive",
+      "hook": "The forgotten war: Uncovering the complexities of the Yemen crisis and its global implications!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Storm Chasing and Safety Tips",
+      "topic": "How to Survive a Lightning Storm while Hiking",
+      "hook": "Caught in a storm: Learn the essential survival tips to stay safe while hiking in treacherous weather!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Female Empowerment and Inspiration",
+      "topic": "The Story of Frida Kahlo: Overcoming Adversity and Finding Success",
+      "hook": "The untold story of Frida Kahlo: From tragedy to triumph, discover the inspiring life of this iconic artist!",
+      "voice_style": "inspirational",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fire Safety Awareness",
-      "topic": "Electrical Fire Prevention",
-      "hook": "Don't let a faulty wire ruin your life - stay safe with these electrical fire prevention tips!",
-      "voice_style": "authoritative",
+      "category": "Comedy Sketches and Parodies",
+      "topic": "Funny Parody of Popular Social Media Trends",
+      "hook": "The hilarious truth behind your favorite social media trends!",
+      "voice_style": "energetic",
       "music_mood": "chill",
       "target_duration": 40
+    },
+    {
+      "category": "Winter Sports and Activities",
+      "topic": "The Thrill of Ice Climbing in the Swiss Alps",
+      "hook": "Conquering the icy giants: Experience the heart-pumping thrill of ice climbing in the Swiss Alps!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "News Recap and Discussion",
+      "topic": "The Impact of Climate Change on Global Food Production",
+      "hook": "The alarming truth about climate change: How will it affect the food on your plate?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "War Updates and Analysis",
+      "topic": "The Role of Cyber Warfare in Modern Conflict",
+      "hook": "The invisible war: Uncovering the dark world of cyber warfare and its deadly consequences!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
