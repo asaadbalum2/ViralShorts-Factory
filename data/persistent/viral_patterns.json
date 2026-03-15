@@ -1,25 +1,87 @@
 {
   "title_patterns": [
-    "\ud83e\udd2f Mind-Blowing Fact About...",
-    "\ud83e\udd2b Secret Hack for...",
-    "\ud83d\udd25 Transformation You Won't Believe...",
-    "\ud83e\udd14 What If...?"
+    "{number} Life-Changing {topic} Hacks",
+    "The #1 {topic} Secret You Don't Know",
+    "{topic} vs {opponent}: Which is Better?",
+    "What {topic} Can Teach You About {life_lesson}",
+    "The {adjective} Truth About {topic}",
+    "{number} {topic} Myths Busted",
+    "The Ultimate {topic} Guide for {audience}",
+    "{topic} Like a Pro: {number} Tips",
+    "Why {topic} is {adjective} Than You Think",
+    "The {topic} Revolution: What You Need to Know"
   ],
   "hook_patterns": [
-    "Are you REALLY getting enough sleep?",
-    "Stop scrolling \u2013 this is the truth!",
-    "This one thing will change EVERYTHING!",
-    "Seriously, you need to see this."
+    "You won't believe what happens when...",
+    "What if I told you {secret}?",
+    "The shocking truth about {topic} is...",
+    "Are you making this {common_mistake}?",
+    "I tried {topic} for {time_period} and here's what happened",
+    "The #1 thing {influencer} gets wrong about {topic}",
+    "What {expert} isn't telling you about {topic}",
+    "This one {technique} can {desirable_outcome}",
+    "I used to think {topic} was {opinion}, but then I discovered...",
+    "The hidden {benefit} of {topic} that nobody talks about"
   ],
   "engagement_baits": [
-    "What's your biggest struggle with...? Let's talk!",
-    "Tag a friend who needs to see this!",
-    "Rate this video 1-10!",
-    "Comment with your biggest question!"
+    "Let me know in the comments: {question}",
+    "Tag a friend who needs to see this",
+    "Share your favorite {topic} in the comments below",
+    "What's your take on {controversial_topic}?",
+    "If you've tried {topic}, tell us about your experience",
+    "Who else is {relatable_situation}?",
+    "Can you guess {mystery}?",
+    "Comment below with your {topic}-related story"
+  ],
+  "psychological_triggers": [
+    "curiosity",
+    "fomo",
+    "urgency",
+    "scarcity",
+    "social_proof",
+    "authority",
+    "reciprocity",
+    "consistency"
+  ],
+  "scroll_stop_openers": [
+    "I just discovered a {topic} hack that's changing everything",
+    "You're probably making this {common_mistake} without realizing it",
+    "The truth about {topic} is more {adjective} than you think",
+    "What if I told you there's a {desirable_outcome} to {problem}?",
+    "This {topic} trick can {desirable_outcome} in just {time_period}",
+    "The #1 {topic} myth that's holding you back",
+    "I tried {topic} for {time_period} and here's what I learned",
+    "The {topic} secret that {influencer} doesn't want you to know"
+  ],
+  "proven_categories": [
+    "psychology",
+    "money",
+    "relationships",
+    "health",
+    "technology",
+    "marketing",
+    "productivity",
+    "self_improvement"
+  ],
+  "retention_tricks": [
+    "Start with a hook, then provide value",
+    "Use storytelling to make content more relatable",
+    "Ask questions to encourage audience engagement",
+    "Use humor to keep the audience entertained",
+    "Provide unexpected twists or surprises",
+    "Use visuals to break up text and keep the audience engaged"
+  ],
+  "cta_formulas": [
+    "Get instant access to {resource} by clicking the link in my bio",
+    "Download your free {resource} now and start {desirable_outcome}",
+    "Join our {community} to connect with like-minded {audience}",
+    "Take the first step towards {desirable_outcome} by {call_to_action}",
+    "Get {resource} delivered straight to your inbox by subscribing",
+    "Learn more about {topic} and how to {desirable_outcome} by watching"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-03-08T06:34:14.182053",
+  "last_ai_update": "2026-03-15T06:47:35.555780",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-03-08T06:34:14.182061"
+  "last_saved": "2026-03-15T06:47:35.555789"
 }
