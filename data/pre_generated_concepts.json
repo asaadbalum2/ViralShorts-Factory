@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-03-15T06:33:23.285824",
-  "valid_until": "2026-03-15T23:59:23.285831",
+  "generated_at": "2026-03-16T06:52:52.404995",
+  "valid_until": "2026-03-16T23:59:52.405003",
   "categories": [
-    "War Updates and Analysis",
-    "Sports Highlights and Reactions",
-    "Extreme Weather Coverage",
-    " Celebrity News and Interviews",
-    "Global Conflict Explainers",
-    "Storm Chasing and Safety Tips",
-    "Female Empowerment and Inspiration",
-    "Comedy Sketches and Parodies",
-    "Winter Sports and Activities",
-    "News Recap and Discussion",
-    "Global Politics and News",
-    "Sports Predictions and Previews",
-    "Entertainment News and Gossip",
-    "Emergency Preparedness and Response",
-    "Current Event Challenges and Trends"
+    "March Storm Updates",
+    "Car Accident Survival Tips",
+    "Peter Thiel's Latest Ventures",
+    "Milo Manheim Dance Challenges",
+    "Spring Home Decor with Martha Stewart",
+    "News Bloopers like WKYT",
+    "Weather Forecast Fails",
+    "Auto Accident Attorney FAQs",
+    "WHNT Weather Updates",
+    "WAFF 48 News Parodies",
+    "Storm Safety Precautions",
+    "Influencer Home Tours",
+    "Dancing with the Stars Clips",
+    "Home Improvement Hacks",
+    "Personal Injury Law Explained"
   ],
   "concepts": [
     {
-      "category": "War Updates and Analysis",
-      "topic": "Russia's Recent Military Movements in Ukraine",
-      "hook": "Breaking: Russia's latest troop deployment sparks fears of imminent conflict!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "March Storm Updates",
+      "topic": "Tornado Safety Tips for Pet Owners",
+      "hook": "Can your pet predict a tornado?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights and Reactions",
-      "topic": "LeBron James' Record-Breaking Dunk",
-      "hook": "You won't believe the insane dunk that just broke the internet!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Car Accident Survival Tips",
+      "topic": "What to Do If You're Injured in a Hit-and-Run",
+      "hook": "You've been hit, now what?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Extreme Weather Coverage",
-      "topic": "Hurricane Ian's Devastating Landfall in Florida",
-      "hook": "Catastrophic storm surge: Witness the terrifying moment Hurricane Ian made landfall!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Celebrity News and Interviews",
-      "topic": "Taylor Swift's Exclusive Interview on New Album",
-      "hook": "Taylor Swift spills all: Get the inside scoop on her most personal album yet!",
+      "category": "Peter Thiel's Latest Ventures",
+      "topic": "How Thiel's Zero to One Philosophy Can Change Your Life",
+      "hook": "Want to think like a billionaire?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Conflict Explainers",
-      "topic": "The Israel-Palestine Conflict: A Simplified Explanation",
-      "hook": "The truth behind the headlines: Uncovering the complex history of the Israel-Palestine conflict!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Storm Chasing and Safety Tips",
-      "topic": "How to Prepare for a Tornado Emergency",
-      "hook": "Tornado warning: Don't get caught off guard! Learn the life-saving tips you need to know!",
-      "voice_style": "authoritative",
+      "category": "Milo Manheim Dance Challenges",
+      "topic": "Milo's Favorite TikTok Dance Challenges",
+      "hook": "Can you dance like Milo?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Spring Home Decor with Martha Stewart",
+      "topic": "Martha's 5 Favorite Spring Decor Trends",
+      "hook": "Ready to Spring into new decor?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "News Bloopers like WKYT",
+      "topic": "Hilarious News Anchor Fails",
+      "hook": "When news anchors lose it live on air",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Female Empowerment and Inspiration",
-      "topic": "Malala Yousafzai's Journey to Nobel Peace Prize",
-      "hook": "From survivor to leader: The incredible true story of Malala Yousafzai's courage and resilience!",
-      "voice_style": "inspirational",
+      "category": "Weather Forecast Fails",
+      "topic": "The Most Epic Weather Forecast Fails of the Year",
+      "hook": "When weather forecasts go hilariously wrong",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Comedy Sketches and Parodies",
-      "topic": "Funny Impersonation of Famous World Leaders",
-      "hook": "You won't believe who's been impersonating your favorite world leaders!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Winter Sports and Activities",
-      "topic": "Insane Ski Jumping Tricks at the Winter Olympics",
-      "hook": "Mind-blowing ski jumps that will leave you breathless!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "News Recap and Discussion",
-      "topic": "Weekly Recap of Major Global Events",
-      "hook": "The week in review: Catch up on the top news stories you might have missed!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "War Updates and Analysis",
-      "topic": "The Rise of Drone Warfare in Modern Conflict",
-      "hook": "The future of war is here: Uncovering the game-changing world of drone warfare!",
+      "category": "Auto Accident Attorney FAQs",
+      "topic": "What to Ask Your Auto Accident Attorney",
+      "hook": "Don't get taken for a ride, ask these questions",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "WHNT Weather Updates",
+      "topic": "Severe Weather Warning: What to Expect",
+      "hook": "A storm is coming, are you prepared?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights and Reactions",
-      "topic": "Cristiano Ronaldo's Historic Goal in the Champions League",
-      "hook": "The goal that shook the world: Relive Cristiano Ronaldo's record-breaking moment!",
-      "voice_style": "energetic",
+      "category": "WAFF 48 News Parodies",
+      "topic": "Funny News Parodies to Brighten Your Day",
+      "hook": "When news anchors become comedians",
+      "voice_style": "dramatic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Extreme Weather Coverage",
-      "topic": "The Aftermath of Category 5 Hurricane in the Caribbean",
-      "hook": "Paradise lost: Witness the devastating aftermath of the category 5 hurricane that ravaged the Caribbean!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "March Storm Updates",
+      "topic": "How to Prepare Your Home for a Tornado",
+      "hook": "Is your home tornado-ready?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
-      "category": "Celebrity News and Interviews",
-      "topic": "Exclusive Interview with Academy Award Winner",
-      "hook": "Behind the scenes with Hollywood's biggest star: Get the inside scoop on their latest film!",
+      "category": "Car Accident Survival Tips",
+      "topic": "The Ultimate Car Emergency Kit",
+      "hook": "What to keep in your car to save your life",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Peter Thiel's Latest Ventures",
+      "topic": "Thiel's Top 3 Investment Tips for Beginners",
+      "hook": "Want to invest like a pro?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Conflict Explainers",
-      "topic": "The Ongoing Crisis in Yemen: A Deep Dive",
-      "hook": "The forgotten war: Uncovering the complexities of the Yemen crisis and its global implications!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Storm Chasing and Safety Tips",
-      "topic": "How to Survive a Lightning Storm while Hiking",
-      "hook": "Caught in a storm: Learn the essential survival tips to stay safe while hiking in treacherous weather!",
-      "voice_style": "authoritative",
+      "category": "Milo Manheim Dance Challenges",
+      "topic": "Milo's Favorite Dance Challenges for Beginners",
+      "hook": "Get ready to dance like a star",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Spring Home Decor with Martha Stewart",
+      "topic": "Martha's Favorite DIY Spring Decor Projects",
+      "hook": "Transform your home with these easy DIYs",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "News Bloopers like WKYT",
+      "topic": "Live TV Fails: When News Anchors Mess Up",
+      "hook": "You won't believe what happened live on air",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Female Empowerment and Inspiration",
-      "topic": "The Story of Frida Kahlo: Overcoming Adversity and Finding Success",
-      "hook": "The untold story of Frida Kahlo: From tragedy to triumph, discover the inspiring life of this iconic artist!",
-      "voice_style": "inspirational",
+      "category": "Weather Forecast Fails",
+      "topic": "The Funniest Weather Forecast Fails of the Month",
+      "hook": "When weather forecasts go hilariously wrong",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Comedy Sketches and Parodies",
-      "topic": "Funny Parody of Popular Social Media Trends",
-      "hook": "The hilarious truth behind your favorite social media trends!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
+      "category": "Auto Accident Attorney FAQs",
+      "topic": "What to Expect from Your First Meeting with an Auto Accident Attorney",
+      "hook": "Don't go in blind, know what to expect",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Winter Sports and Activities",
-      "topic": "The Thrill of Ice Climbing in the Swiss Alps",
-      "hook": "Conquering the icy giants: Experience the heart-pumping thrill of ice climbing in the Swiss Alps!",
-      "voice_style": "dramatic",
+      "category": "WHNT Weather Updates",
+      "topic": "Severe Weather Alert: Tornado Watch issued for Your Area",
+      "hook": "A tornado watch has been issued, stay safe",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "News Recap and Discussion",
-      "topic": "The Impact of Climate Change on Global Food Production",
-      "hook": "The alarming truth about climate change: How will it affect the food on your plate?",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 50
+      "category": "WAFF 48 News Parodies",
+      "topic": "Funny Parodies of Your Favorite News Shows",
+      "hook": "When news becomes comedy",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "War Updates and Analysis",
-      "topic": "The Role of Cyber Warfare in Modern Conflict",
-      "hook": "The invisible war: Uncovering the dark world of cyber warfare and its deadly consequences!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "March Storm Updates",
+      "topic": "The Science Behind Tornado Formation",
+      "hook": "What makes a tornado form?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
