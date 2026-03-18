@@ -1,210 +1,213 @@
 {
-  "generated_at": "2026-03-17T06:40:03.090426",
-  "valid_until": "2026-03-17T23:59:03.090432",
+  "generated_at": "2026-03-18T06:39:39.511204",
+  "valid_until": "2026-03-18T23:59:39.511210",
   "categories": [
-    "Cricket match highlights",
-    "Breaking news updates",
-    "Gaming console reviews",
-    "Celebrity news",
-    "TV show recaps",
-    "Anime announcements",
-    "Power outage survival tips",
-    "Earthquake safety tutorials",
-    "Pier vacation vlogs",
-    "Shooting incident analysis",
-    "Gaming walkthroughs",
-    "Model fitness routines",
-    "New console rumors",
-    "Disaster relief efforts",
-    "Sports analysis"
+    "Tel Aviv Travel Vlogs",
+    "Travis Scott Music Challenges",
+    "AI Explained in 60 Seconds",
+    "Los Angeles Weather Updates",
+    "Blockchain Tech for Beginners",
+    "Sports News: Lamar Odom",
+    "Rebecca Grossman Case Analysis",
+    "Alex Warren Q&A Sessions",
+    "Israel Culture and Food",
+    "Rapper Travis Scott Fan Edits",
+    "AI-Powered Art and Design",
+    "LA Traffic and Commute Hacks",
+    "Blockchain and Crypto News",
+    "Short Tel Aviv City Guides",
+    "AI in Music: Travis Scott Edition"
   ],
   "concepts": [
     {
-      "category": "Cricket match highlights",
-      "topic": "India vs Pakistan ICC World Cup Final",
-      "hook": "You won't believe the shocking twist in the last over!",
+      "category": "Tel Aviv Travel Vlogs",
+      "topic": "Exploring Carmel Market at Night",
+      "hook": "You won't believe what happens in Tel Aviv's streets after dark!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Breaking news updates",
-      "topic": "NASA's Latest Discovery on Mars",
-      "hook": "Breaking: NASA just revealed a game-changing finding on the red planet!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Travis Scott Music Challenges",
+      "topic": "Can I Learn the 'Sicko Mode' Dance in 1 Hour?",
+      "hook": "I've never danced in my life, but I'm about to take on Travis Scott's toughest moves!",
+      "voice_style": "friendly",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Gaming console reviews",
-      "topic": "PS5 vs Xbox Series X: Which One Reigns Supreme?",
-      "hook": "The ultimate showdown: PS5 vs Xbox Series X - which console comes out on top?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "AI Explained in 60 Seconds",
+      "topic": "How AI is Revolutionizing Healthcare",
+      "hook": "The future of medicine is here, and it's more shocking than you think!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Celebrity news",
-      "topic": "Bollywood Star Deepika Padukone's Latest Controversy",
-      "hook": "Deepika Padukone's shocking statement has left the entire nation talking!",
+      "category": "Los Angeles Weather Updates",
+      "topic": "Why LA's Weather is Becoming Increasingly Unpredictable",
+      "hook": "The City of Angels is experiencing a weather crisis, and it's not what you expect!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Blockchain Tech for Beginners",
+      "topic": "A Beginner's Guide to Understanding Cryptocurrency",
+      "hook": "What if I told you that blockchain is not just about Bitcoin?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News: Lamar Odom",
+      "topic": "Lamar Odom's Most Shocking Career Moments",
+      "hook": "You won't believe the secrets behind Lamar Odom's rise to fame!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "TV show recaps",
-      "topic": "The Latest Plot Twist in Stranger Things Season 4",
-      "hook": "What just happened in Hawkins? Recap of the most epic episode yet!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Anime announcements",
-      "topic": "One Piece Chapter 1000: The Wait is Finally Over",
-      "hook": "The most anticipated chapter is here! What does the future hold for the Straw Hat Pirates?",
+      "category": "Rebecca Grossman Case Analysis",
+      "topic": "Uncovering the Truth Behind the Rebecca Grossman Trial",
+      "hook": "The shocking truth about the Rebecca Grossman case will leave you speechless!",
       "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Power outage survival tips",
-      "topic": "How to Stay Safe During a Prolonged Power Outage",
-      "hook": "Don't get left in the dark! Essential tips to survive a power outage",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Earthquake safety tutorials",
-      "topic": "The Drop, Cover, and Hold Method Explained",
-      "hook": "When the ground starts shaking, do you know what to do? Learn the life-saving technique!",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Pier vacation vlogs",
-      "topic": "Exploring the Hidden Gems of Santa Monica Pier",
-      "hook": "Join me on an unforgettable adventure to the iconic Santa Monica Pier!",
+      "category": "Alex Warren Q&A Sessions",
+      "topic": "Alex Warren Answers Your Most Burning Questions",
+      "hook": "What if Alex Warren revealed his deepest secrets to you?",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Israel Culture and Food",
+      "topic": "The Secret to Making Authentic Israeli Shawarma",
+      "hook": "Get ready to taste the flavors of Israel like never before!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Shooting incident analysis",
-      "topic": "The Psychology Behind Mass Shootings: Expert Insights",
-      "hook": "What drives someone to commit such a heinous crime? Expert analysis reveals the shocking truth",
-      "voice_style": "mysterious",
+      "category": "Rapper Travis Scott Fan Edits",
+      "topic": "The Ultimate Travis Scott Music Video Mashup",
+      "hook": "Imagine if Travis Scott's biggest hits came together in one epic video!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Cricket match highlights",
-      "topic": "The Highest Scoring ODI Match in History",
-      "hook": "You won't believe the record-breaking scores in this epic match!",
+      "category": "Tel Aviv Travel Vlogs",
+      "topic": "Discovering Tel Aviv's Best Kept Secrets",
+      "hook": "What if I told you that Tel Aviv has a hidden side that few tourists know about?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Travis Scott Music Challenges",
+      "topic": "Can I Rap Like Travis Scott for 24 Hours?",
+      "hook": "I'm about to take on the ultimate Travis Scott challenge, and it's not for the faint of heart!",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "AI Explained in 60 Seconds",
+      "topic": "The Future of AI: What to Expect in the Next 5 Years",
+      "hook": "The AI revolution is coming, and it's going to change everything!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Los Angeles Weather Updates",
+      "topic": "The Impact of Climate Change on LA's Weather",
+      "hook": "The City of Angels is facing a climate crisis, and it's time to take action!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Blockchain Tech for Beginners",
+      "topic": "How to Invest in Cryptocurrency Safely",
+      "hook": "What if I told you that investing in cryptocurrency is easier than you think?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Breaking news updates",
-      "topic": "The Latest COVID-19 Vaccine Breakthrough",
-      "hook": "Breaking: Scientists just announced a groundbreaking discovery in the fight against COVID-19!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming console reviews",
-      "topic": "Nintendo Switch vs PlayStation Vita: The Ultimate Handheld Showdown",
-      "hook": "Which handheld console reigns supreme? The battle between Nintendo Switch and PS Vita!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Celebrity news",
-      "topic": "The Secret Behind Taylor Swift's Songwriting Process",
-      "hook": "What inspires Taylor Swift's hit songs? The surprising truth revealed!",
+      "category": "Sports News: Lamar Odom",
+      "topic": "Lamar Odom's Road to Recovery: An Exclusive Look",
+      "hook": "You won't believe the incredible story of Lamar Odom's comeback!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "TV show recaps",
-      "topic": "The Walking Dead Season 10 Finale: The Most Shocking Death Yet",
-      "hook": "The Walking Dead just pulled off the most epic twist in TV history - you won't believe who died!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Anime announcements",
-      "topic": "Attack on Titan Season 4: The Final Chapter Begins",
-      "hook": "The wait is over! The final season of Attack on Titan has arrived - what can we expect?",
+      "category": "Rebecca Grossman Case Analysis",
+      "topic": "The Rebecca Grossman Trial: A Closer Look at the Evidence",
+      "hook": "The shocking truth about the Rebecca Grossman case will leave you questioning everything!",
       "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Power outage survival tips",
-      "topic": "How to Keep Your Food Fresh During a Power Outage",
-      "hook": "Don't let your groceries go to waste! Tips to keep your food fresh during a blackout",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Earthquake safety tutorials",
-      "topic": "Earthquake-Proofing Your Home: A Step-by-Step Guide",
-      "hook": "Is your home earthquake-ready? Learn how to protect your family and property",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Pier vacation vlogs",
-      "topic": "A Day in the Life of a Pier Fisherman",
-      "hook": "Join me on an exclusive adventure with a pier fisherman - the unseen side of the pier!",
+      "category": "Alex Warren Q&A Sessions",
+      "topic": "Alex Warren's Favorite Fan Questions Answered",
+      "hook": "What if Alex Warren revealed his favorite fan questions and answered them live?",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Israel Culture and Food",
+      "topic": "The Art of Making Traditional Israeli Falafel",
+      "hook": "Get ready to taste the authentic flavors of Israel in every bite!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Shooting incident analysis",
-      "topic": "The Warning Signs of a Potential Shooter: Expert Analysis",
-      "hook": "What are the red flags that can help prevent a shooting incident? Expert insights reveal the truth",
-      "voice_style": "mysterious",
+      "category": "Rapper Travis Scott Fan Edits",
+      "topic": "The Ultimate Travis Scott Concert Experience",
+      "hook": "Imagine if you could relive the most epic Travis Scott concerts in one video!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
+    },
+    {
+      "category": "Tel Aviv Travel Vlogs",
+      "topic": "A Day in the Life of a Tel Aviv Local",
+      "hook": "What if I took you on a journey through the daily life of a Tel Aviv local?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
@@ -212,49 +215,54 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
