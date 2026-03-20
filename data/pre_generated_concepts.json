@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-03-19T06:34:46.143659",
-  "valid_until": "2026-03-19T23:59:46.143667",
+  "generated_at": "2026-03-20T06:11:32.184149",
+  "valid_until": "2026-03-20T23:59:32.184165",
   "categories": [
-    "Gaming Updates",
-    "Weather Woes",
-    "Lottery Winners",
-    "Celebrity News",
-    "Gaming Downtime",
-    "New Release Hype",
-    "Console Wars",
-    "Music Legends",
-    "LA Life",
-    "Fortnite Frenzy",
-    "Powerball Predictions",
-    "Entertainment News",
-    "Seasonal Weather",
-    "Viral Challenges",
-    "Retro Revivals"
+    "Mortgage Tips and Rates",
+    "Travel Vlogs: Plane Adventures",
+    "Sports Analysis: NCAA Women's Basketball",
+    "March Madness Predictions",
+    "Home Buying 101 with a Mortgage Officer",
+    "Broker vs Officer: Mortgage Explained",
+    "IMan Shumpert's Basketball Insights",
+    "Game Day Predictions: Akron vs Texas Tech",
+    "Kentucky vs Santa Clara: NCAA Women's Basketball",
+    "Personal Finance for Homeowners",
+    "Spring Break Travel Inspiration",
+    "Women's Basketball Highlights and News",
+    "Mortgage Brokerage Services Explained",
+    "NCAA Tournament Bracket Challenges",
+    "Home Loan Advice for First-Time Buyers"
   ],
   "concepts": [
     {
-      "category": "Gaming Updates",
-      "topic": "New Minecraft Update",
-      "hook": "You won't believe what's coming to Minecraft next!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Woes",
-      "topic": "California Wildfires",
-      "hook": "The devastating truth about the California wildfires revealed!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Lottery Winners",
-      "topic": "Biggest Jackpot Winners",
-      "hook": "Meet the lucky few who won the biggest jackpots in history!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Taylor Swift's New Album",
-      "hook": "Taylor Swift just dropped a bombshell about her new album!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Downtime",
-      "topic": "Overwatch Server Issues",
-      "hook": "What's really going on with the Overwatch servers?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "New Release Hype",
-      "topic": "Cyberpunk 2077 Release",
-      "hook": "The wait is over! Get ready for Cyberpunk 2077!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Console Wars",
-      "topic": "PS5 vs Xbox Series X",
-      "hook": "The ultimate showdown: PS5 vs Xbox Series X!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Music Legends",
-      "topic": "The Beatles' Legacy",
-      "hook": "Uncovering the secrets behind The Beatles' timeless music!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "LA Life",
-      "topic": "Hollywood's Hidden Gems",
-      "hook": "Explore the secret spots in LA that only locals know!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Fortnite Frenzy",
-      "topic": "Fortnite's Latest Season",
-      "hook": "Get ready for the most epic Fortnite season yet!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Updates",
-      "topic": "Apex Legends New Legend",
-      "hook": "The newest Apex Legend is here, and they're a game-changer!",
+      "category": "Mortgage Tips and Rates",
+      "topic": "5 Hidden Fees in Your Mortgage Contract",
+      "hook": "You won't believe the secret fee your lender doesn't want you to know!",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Weather Woes",
-      "topic": "Hurricane Season Preparations",
-      "hook": "Are you ready for hurricane season? Here's what you need to know!",
-      "voice_style": "calm",
+      "category": "Travel Vlogs: Plane Adventures",
+      "topic": "Exploring the World's Most Luxurious Airplane Cabin",
+      "hook": "Have you ever wondered what it's like to fly like royalty?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Analysis: NCAA Women's Basketball",
+      "topic": "The Rise of UConn's Women's Basketball Dynasty",
+      "hook": "What makes the UConn Huskies the most dominant team in women's college basketball?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "March Madness Predictions",
+      "topic": "Busting Bracket Myths: Don't Make These Common Mistakes",
+      "hook": "Are you making these critical errors that could ruin your March Madness bracket?",
+      "voice_style": "dramatic",
       "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Lottery Winners",
-      "topic": "Unclaimed Lottery Prizes",
-      "hook": "Millions of dollars in unclaimed lottery prizes - could you be the winner?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Kardashian Family Drama",
-      "hook": "The latest Kardashian family drama revealed - you won't believe what's happening!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Gaming Downtime",
-      "topic": "Gaming Community Burnout",
-      "hook": "The surprising reason why gamers are burning out - and what you can do about it!",
+      "category": "Home Buying 101 with a Mortgage Officer",
+      "topic": "The Top 3 Mortgage Mistakes First-Time Homebuyers Make",
+      "hook": "Don't let these common mistakes cost you thousands of dollars on your first home!",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "New Release Hype",
-      "topic": "Godfall Release Date",
-      "hook": "The wait is almost over - get ready for Godfall!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Console Wars",
-      "topic": "Nintendo Switch vs PS5",
-      "hook": "The battle for gaming supremacy - Nintendo Switch vs PS5!",
+      "category": "Broker vs Officer: Mortgage Explained",
+      "topic": "Mortgage Broker vs Loan Officer: Which is Right for You?",
+      "hook": "The ultimate showdown: which mortgage expert will save you the most money?",
       "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "IMan Shumpert's Basketball Insights",
+      "topic": "The Art of Perimeter Defense with IMan Shumpert",
+      "hook": "Learn the secrets of shutdown defense from NBA champion IMan Shumpert!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Game Day Predictions: Akron vs Texas Tech",
+      "topic": "Akron vs Texas Tech: The Ultimate Underdog Story",
+      "hook": "Can the underdog Akron Zips pull off the biggest upset of the season?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Music Legends",
-      "topic": "Michael Jackson's Legacy",
-      "hook": "Uncovering the secrets behind Michael Jackson's incredible music legacy!",
-      "voice_style": "mysterious",
+      "category": "Kentucky vs Santa Clara: NCAA Women's Basketball",
+      "topic": "The Battle for Supremacy: Kentucky Wildcats vs Santa Clara Broncos",
+      "hook": "Which team will reign supreme in this epic showdown?",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "LA Life",
-      "topic": "LA's Best Kept Secrets",
-      "hook": "Discover the hidden gems of LA that only insiders know about!",
-      "voice_style": "friendly",
+      "category": "Personal Finance for Homeowners",
+      "topic": "Maximizing Your Home Equity: A Step-by-Step Guide",
+      "hook": "Unlock the secret to turning your home into a cash machine!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Mortgage Tips and Rates",
+      "topic": "The Pros and Cons of Adjustable-Rate Mortgages",
+      "hook": "Are adjustable-rate mortgages a smart move or a recipe for disaster?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Fortnite Frenzy",
-      "topic": "Fortnite's Most Epic Moments",
-      "hook": "Relive the most epic moments in Fortnite history - you won't believe what happened!",
-      "voice_style": "energetic",
+      "category": "Travel Vlogs: Plane Adventures",
+      "topic": "The World's Longest Flight: A Journey to the Edge of the World",
+      "hook": "Join me on the ultimate adventure: a 20-hour flight to the most remote corner of the globe!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis: NCAA Women's Basketball",
+      "topic": "The Evolution of Women's College Basketball: A Decade of Dominance",
+      "hook": "How have the dynamics of women's college basketball changed over the past decade?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "March Madness Predictions",
+      "topic": "The Art of Bracketology: How to Pick the Perfect Bracket",
+      "hook": "Can you crack the code to creating the ultimate March Madness bracket?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 50
+    },
+    {
+      "category": "Home Buying 101 with a Mortgage Officer",
+      "topic": "The Importance of Credit Scores in Mortgage Applications",
+      "hook": "What's the one thing that can make or break your mortgage application?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Broker vs Officer: Mortgage Explained",
+      "topic": "Mortgage Origination Fees: What You Need to Know",
+      "hook": "Are you being taken advantage of by hidden mortgage fees?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "IMan Shumpert's Basketball Insights",
+      "topic": "The Psychology of Basketball: How to Get in the Zone",
+      "hook": "Unlock the secrets of the mental game with NBA champion IMan Shumpert!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Game Day Predictions: Akron vs Texas Tech",
+      "topic": "The X-Factor in the Akron vs Texas Tech Showdown",
+      "hook": "What's the one factor that could swing the game in favor of the underdog Akron Zips?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Kentucky vs Santa Clara: NCAA Women's Basketball",
+      "topic": "The Rivalry Renewed: Kentucky Wildcats vs Santa Clara Broncos",
+      "hook": "It's more than just a game: it's a battle for bragging rights!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance for Homeowners",
+      "topic": "The 50/30/20 Rule: A Simple Guide to Managing Your Finances",
+      "hook": "Transform your financial life with this one simple rule!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Mortgage Tips and Rates",
+      "topic": "The Benefits of Refinancing Your Mortgage",
+      "hook": "Could refinancing your mortgage save you thousands of dollars a year?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-JennyNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
