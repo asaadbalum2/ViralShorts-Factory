@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-03-20T06:11:32.184149",
-  "valid_until": "2026-03-20T23:59:32.184165",
+  "generated_at": "2026-03-21T06:01:47.084286",
+  "valid_until": "2026-03-21T23:59:47.084295",
   "categories": [
-    "Mortgage Tips and Rates",
-    "Travel Vlogs: Plane Adventures",
-    "Sports Analysis: NCAA Women's Basketball",
-    "March Madness Predictions",
-    "Home Buying 101 with a Mortgage Officer",
-    "Broker vs Officer: Mortgage Explained",
-    "IMan Shumpert's Basketball Insights",
-    "Game Day Predictions: Akron vs Texas Tech",
-    "Kentucky vs Santa Clara: NCAA Women's Basketball",
-    "Personal Finance for Homeowners",
-    "Spring Break Travel Inspiration",
-    "Women's Basketball Highlights and News",
-    "Mortgage Brokerage Services Explained",
-    "NCAA Tournament Bracket Challenges",
-    "Home Loan Advice for First-Time Buyers"
+    "War Updates and Analysis",
+    " Celebrity News and Gossip",
+    "Sports Highlights and Reactions",
+    "Gun Reviews and Firearms News",
+    "Comedy Sketches and Parodies",
+    "Mexico Soccer League Updates",
+    "College Basketball Coaching Changes",
+    "True Crime Stories and Investigations",
+    "Action Movie Trailers and Reviews",
+    "Global Conflict Explainers",
+    "Middle East News and Politics",
+    "Social Media Challenges and Trends",
+    "Biography and Documentary-Style Videos",
+    "Comedian Takeovers and Interviews",
+    "Military Technology and Defense News"
   ],
   "concepts": [
     {
-      "category": "Mortgage Tips and Rates",
-      "topic": "5 Hidden Fees in Your Mortgage Contract",
-      "hook": "You won't believe the secret fee your lender doesn't want you to know!",
+      "category": "War Updates and Analysis",
+      "topic": "Russia's Latest Military Strategy in Ukraine",
+      "hook": "You won't believe the shocking tactic Russia just deployed in Ukraine!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Travel Vlogs: Plane Adventures",
-      "topic": "Exploring the World's Most Luxurious Airplane Cabin",
-      "hook": "Have you ever wondered what it's like to fly like royalty?",
+      "category": "Celebrity News and Gossip",
+      "topic": "The Secret Behind Taylor Swift's Recent Weight Loss",
+      "hook": "Taylor Swift's weight loss secret revealed - and it's not what you think!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports Analysis: NCAA Women's Basketball",
-      "topic": "The Rise of UConn's Women's Basketball Dynasty",
-      "hook": "What makes the UConn Huskies the most dominant team in women's college basketball?",
+      "category": "Sports Highlights and Reactions",
+      "topic": "LeBron James' Most Epic Game-Winning Shots",
+      "hook": "The king of the court: watch LeBron's most jaw-dropping game-winners!",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Gun Reviews and Firearms News",
+      "topic": "The New Glock 43X: A Game-Changer for Concealed Carry?",
+      "hook": "Is the Glock 43X the ultimate concealed carry pistol? Let's find out!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Sketches and Parodies",
+      "topic": "A Hilarious Parody of the Latest Marvel Movie Trailer",
+      "hook": "The Marvel movie trailer just got roasted - and it's hilarious!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Mexico Soccer League Updates",
+      "topic": "The Rise of Club Am\u00e9rica's Young Star, Santiago Naveda",
+      "hook": "Meet the 19-year-old sensation taking Mexico's soccer league by storm!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "March Madness Predictions",
-      "topic": "Busting Bracket Myths: Don't Make These Common Mistakes",
-      "hook": "Are you making these critical errors that could ruin your March Madness bracket?",
-      "voice_style": "dramatic",
+      "category": "College Basketball Coaching Changes",
+      "topic": "The Impact of Mick Cronin's Departure from UCLA",
+      "hook": "What does Mick Cronin's shocking exit mean for UCLA's basketball future?",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Home Buying 101 with a Mortgage Officer",
-      "topic": "The Top 3 Mortgage Mistakes First-Time Homebuyers Make",
-      "hook": "Don't let these common mistakes cost you thousands of dollars on your first home!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Broker vs Officer: Mortgage Explained",
-      "topic": "Mortgage Broker vs Loan Officer: Which is Right for You?",
-      "hook": "The ultimate showdown: which mortgage expert will save you the most money?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "True Crime Stories and Investigations",
+      "topic": "The Bizarre Case of the Golden State Killer",
+      "hook": "The Golden State Killer's crimes will haunt you - but justice was finally served!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "IMan Shumpert's Basketball Insights",
-      "topic": "The Art of Perimeter Defense with IMan Shumpert",
-      "hook": "Learn the secrets of shutdown defense from NBA champion IMan Shumpert!",
-      "voice_style": "friendly",
+      "category": "Action Movie Trailers and Reviews",
+      "topic": "A Deep Dive into the Latest Fast and Furious Trailer",
+      "hook": "Get ready for the wildest ride yet - the new Fast and Furious trailer is here!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Global Conflict Explainers",
+      "topic": "Understanding the Complexity of the Israel-Palestine Conflict",
+      "hook": "The Israel-Palestine conflict explained - what you need to know!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "War Updates and Analysis",
+      "topic": "The Geopolitical Implications of the Recent Ukraine-Russia Conflict",
+      "hook": "The Ukraine-Russia conflict just got a whole lot more complicated - here's why!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News and Gossip",
+      "topic": "The Latest Developments in the Johnny Depp vs Amber Heard Trial",
+      "hook": "The Johnny Depp vs Amber Heard trial just took a shocking turn - what's next?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights and Reactions",
+      "topic": "The Most Thrilling Moments from the NBA Playoffs",
+      "hook": "The NBA playoffs are heating up - relive the most thrilling moments!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Game Day Predictions: Akron vs Texas Tech",
-      "topic": "Akron vs Texas Tech: The Ultimate Underdog Story",
-      "hook": "Can the underdog Akron Zips pull off the biggest upset of the season?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Kentucky vs Santa Clara: NCAA Women's Basketball",
-      "topic": "The Battle for Supremacy: Kentucky Wildcats vs Santa Clara Broncos",
-      "hook": "Which team will reign supreme in this epic showdown?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance for Homeowners",
-      "topic": "Maximizing Your Home Equity: A Step-by-Step Guide",
-      "hook": "Unlock the secret to turning your home into a cash machine!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Mortgage Tips and Rates",
-      "topic": "The Pros and Cons of Adjustable-Rate Mortgages",
-      "hook": "Are adjustable-rate mortgages a smart move or a recipe for disaster?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Vlogs: Plane Adventures",
-      "topic": "The World's Longest Flight: A Journey to the Edge of the World",
-      "hook": "Join me on the ultimate adventure: a 20-hour flight to the most remote corner of the globe!",
+      "category": "Gun Reviews and Firearms News",
+      "topic": "A Hands-On Review of the Newest Sig Sauer Pistol",
+      "hook": "Is the new Sig Sauer pistol the best on the market? Let's take a closer look!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Analysis: NCAA Women's Basketball",
-      "topic": "The Evolution of Women's College Basketball: A Decade of Dominance",
-      "hook": "How have the dynamics of women's college basketball changed over the past decade?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "March Madness Predictions",
-      "topic": "The Art of Bracketology: How to Pick the Perfect Bracket",
-      "hook": "Can you crack the code to creating the ultimate March Madness bracket?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Home Buying 101 with a Mortgage Officer",
-      "topic": "The Importance of Credit Scores in Mortgage Applications",
-      "hook": "What's the one thing that can make or break your mortgage application?",
-      "voice_style": "authoritative",
+      "category": "Comedy Sketches and Parodies",
+      "topic": "A Funny Parody of the Latest Social Media Trends",
+      "hook": "The latest social media trends just got roasted - and it's hilarious!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Mexico Soccer League Updates",
+      "topic": "The Intense Rivalry Between Cruz Azul and Am\u00e9rica",
+      "hook": "The Mexico soccer league's biggest rivalry is about to get even fiercer!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Broker vs Officer: Mortgage Explained",
-      "topic": "Mortgage Origination Fees: What You Need to Know",
-      "hook": "Are you being taken advantage of by hidden mortgage fees?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "IMan Shumpert's Basketball Insights",
-      "topic": "The Psychology of Basketball: How to Get in the Zone",
-      "hook": "Unlock the secrets of the mental game with NBA champion IMan Shumpert!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Game Day Predictions: Akron vs Texas Tech",
-      "topic": "The X-Factor in the Akron vs Texas Tech Showdown",
-      "hook": "What's the one factor that could swing the game in favor of the underdog Akron Zips?",
-      "voice_style": "dramatic",
+      "category": "College Basketball Coaching Changes",
+      "topic": "The Impact of Chris Beard's Departure from Texas Tech",
+      "hook": "What does Chris Beard's shocking exit mean for Texas Tech's basketball future?",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Kentucky vs Santa Clara: NCAA Women's Basketball",
-      "topic": "The Rivalry Renewed: Kentucky Wildcats vs Santa Clara Broncos",
-      "hook": "It's more than just a game: it's a battle for bragging rights!",
+      "category": "True Crime Stories and Investigations",
+      "topic": "The Chilling Case of the Ted Bundy Tapes",
+      "hook": "The Ted Bundy tapes will send chills down your spine - but what did we learn?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Action Movie Trailers and Reviews",
+      "topic": "A Review of the Latest John Wick Movie",
+      "hook": "The latest John Wick movie is non-stop action - but is it worth the hype?",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance for Homeowners",
-      "topic": "The 50/30/20 Rule: A Simple Guide to Managing Your Finances",
-      "hook": "Transform your financial life with this one simple rule!",
-      "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Mortgage Tips and Rates",
-      "topic": "The Benefits of Refinancing Your Mortgage",
-      "hook": "Could refinancing your mortgage save you thousands of dollars a year?",
+      "category": "Global Conflict Explainers",
+      "topic": "Understanding the Roots of the Yemen Civil War",
+      "hook": "The Yemen civil war explained - what you need to know about the crisis!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "War Updates and Analysis",
+      "topic": "The Role of Drones in Modern Warfare",
+      "hook": "The future of warfare is here - how drones are changing the game!",
       "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
+      "music_mood": "mysterious",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
