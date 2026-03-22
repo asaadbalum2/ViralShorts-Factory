@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-03-21T06:01:47.084286",
-  "valid_until": "2026-03-21T23:59:47.084295",
+  "generated_at": "2026-03-22T06:11:08.987702",
+  "valid_until": "2026-03-22T23:59:08.987711",
   "categories": [
-    "War Updates and Analysis",
-    " Celebrity News and Gossip",
-    "Sports Highlights and Reactions",
-    "Gun Reviews and Firearms News",
-    "Comedy Sketches and Parodies",
-    "Mexico Soccer League Updates",
-    "College Basketball Coaching Changes",
-    "True Crime Stories and Investigations",
-    "Action Movie Trailers and Reviews",
-    "Global Conflict Explainers",
-    "Middle East News and Politics",
-    "Social Media Challenges and Trends",
-    "Biography and Documentary-Style Videos",
-    "Comedian Takeovers and Interviews",
-    "Military Technology and Defense News"
+    "Sports Highlights: NZ vs SA",
+    "Movie Reviews: The Town and Other Classics",
+    "Throwback Tributes: Heath Ledger's Best Roles",
+    "Lottery Tips and Tricks: Winning the Powerball Jackpot",
+    "True Crime Stories: Jaskirat Singh Rangi and More",
+    "Celebrity News: Cameron Diaz and Woody Harrelson's Latest",
+    "Music and Entertainment: Jared Leto's Projects",
+    "Comedy Skits: Funny Moments with Celebrities",
+    "Travel Vlogs: Visiting New Zealand and South Africa",
+    "Behind-the-Scenes: The Making of Famous Movies",
+    "Gaming Content: Sports and Lottery-Themed Games",
+    "Motivational Stories: Overcoming Challenges like Jaskirat Singh Rangi",
+    "Movie Trivia: Interesting Facts about The Town and Other Films",
+    "Q&A Sessions: Answering Questions about Current Events",
+    "Challenge Videos: Can You Guess the Lottery Powerball Numbers?"
   ],
   "concepts": [
     {
-      "category": "War Updates and Analysis",
-      "topic": "Russia's Latest Military Strategy in Ukraine",
-      "hook": "You won't believe the shocking tactic Russia just deployed in Ukraine!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Sports Highlights: NZ vs SA",
+      "topic": "Most Epic Rugby Tries Between NZ and SA",
+      "hook": "You won't believe the try that changed the course of rugby history!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Secret Behind Taylor Swift's Recent Weight Loss",
-      "hook": "Taylor Swift's weight loss secret revealed - and it's not what you think!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Movie Reviews: The Town and Other Classics",
+      "topic": "Unpacking the Cinematic Genius of Ben Affleck in The Town",
+      "hook": "What makes The Town a masterpiece that still holds up today?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Sports Highlights and Reactions",
-      "topic": "LeBron James' Most Epic Game-Winning Shots",
-      "hook": "The king of the court: watch LeBron's most jaw-dropping game-winners!",
-      "voice_style": "energetic",
+      "category": "Throwback Tributes: Heath Ledger's Best Roles",
+      "topic": "Heath Ledger's Transformation into the Joker: A Retrospective",
+      "hook": "The method acting technique that landed Heath Ledger his posthumous Oscar",
+      "voice_style": "mysterious",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Gun Reviews and Firearms News",
-      "topic": "The New Glock 43X: A Game-Changer for Concealed Carry?",
-      "hook": "Is the Glock 43X the ultimate concealed carry pistol? Let's find out!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Sketches and Parodies",
-      "topic": "A Hilarious Parody of the Latest Marvel Movie Trailer",
-      "hook": "The Marvel movie trailer just got roasted - and it's hilarious!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Mexico Soccer League Updates",
-      "topic": "The Rise of Club Am\u00e9rica's Young Star, Santiago Naveda",
-      "hook": "Meet the 19-year-old sensation taking Mexico's soccer league by storm!",
+      "category": "Lottery Tips and Tricks: Winning the Powerball Jackpot",
+      "topic": "The Mathematically Proven Strategy to Increase Your Powerball Winnings",
+      "hook": "The secret formula that could make you the next Powerball millionaire",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "College Basketball Coaching Changes",
-      "topic": "The Impact of Mick Cronin's Departure from UCLA",
-      "hook": "What does Mick Cronin's shocking exit mean for UCLA's basketball future?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "True Crime Stories and Investigations",
-      "topic": "The Bizarre Case of the Golden State Killer",
-      "hook": "The Golden State Killer's crimes will haunt you - but justice was finally served!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Action Movie Trailers and Reviews",
-      "topic": "A Deep Dive into the Latest Fast and Furious Trailer",
-      "hook": "Get ready for the wildest ride yet - the new Fast and Furious trailer is here!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Global Conflict Explainers",
-      "topic": "Understanding the Complexity of the Israel-Palestine Conflict",
-      "hook": "The Israel-Palestine conflict explained - what you need to know!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "War Updates and Analysis",
-      "topic": "The Geopolitical Implications of the Recent Ukraine-Russia Conflict",
-      "hook": "The Ukraine-Russia conflict just got a whole lot more complicated - here's why!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Latest Developments in the Johnny Depp vs Amber Heard Trial",
-      "hook": "The Johnny Depp vs Amber Heard trial just took a shocking turn - what's next?",
+      "category": "True Crime Stories: Jaskirat Singh Rangi and More",
+      "topic": "The Chilling Case of Jaskirat Singh Rangi: What Really Happened?",
+      "hook": "The shocking truth behind one of the most bizarre crimes in recent history",
       "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Highlights and Reactions",
-      "topic": "The Most Thrilling Moments from the NBA Playoffs",
-      "hook": "The NBA playoffs are heating up - relive the most thrilling moments!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Gun Reviews and Firearms News",
-      "topic": "A Hands-On Review of the Newest Sig Sauer Pistol",
-      "hook": "Is the new Sig Sauer pistol the best on the market? Let's take a closer look!",
-      "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 50
+      "target_duration": 40
     },
     {
-      "category": "Comedy Sketches and Parodies",
-      "topic": "A Funny Parody of the Latest Social Media Trends",
-      "hook": "The latest social media trends just got roasted - and it's hilarious!",
+      "category": "Celebrity News: Cameron Diaz and Woody Harrelson's Latest",
+      "topic": "Cameron Diaz's Shocking Return to Hollywood: What's Next?",
+      "hook": "The real reason Cameron Diaz is making a comeback after years of silence",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Music and Entertainment: Jared Leto's Projects",
+      "topic": "Jared Leto's Most Ambitious Project Yet: A Deep Dive",
+      "hook": "The surprising reason Jared Leto's latest project is his most personal one yet",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedy Skits: Funny Moments with Celebrities",
+      "topic": "When Celebrities Get Pranked: The Funniest Moments",
+      "hook": "You won't believe what happened when Dwayne Johnson got pranked on set",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Vlogs: Visiting New Zealand and South Africa",
+      "topic": "Exploring the Hidden Gems of New Zealand's South Island",
+      "hook": "The one place in New Zealand that will leave you breathless",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Behind-the-Scenes: The Making of Famous Movies",
+      "topic": "The Making of The Lord of the Rings: Secrets Revealed",
+      "hook": "The incredible story of how The Lord of the Rings was brought to life",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights: NZ vs SA",
+      "topic": "The Greatest Rivalry in Cricket: NZ vs SA",
+      "hook": "The most intense cricket match between NZ and SA that will keep you on the edge",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Movie Reviews: The Town and Other Classics",
+      "topic": "Why The Town Remains One of the Most Underrated Heist Movies",
+      "hook": "The heist movie that flew under the radar but deserves your attention",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Throwback Tributes: Heath Ledger's Best Roles",
+      "topic": "Heath Ledger's Iconic Portrayal of Ennis Del Mar in Brokeback Mountain",
+      "hook": "The heartbreaking story of how Heath Ledger prepared for his role in Brokeback Mountain",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Lottery Tips and Tricks: Winning the Powerball Jackpot",
+      "topic": "The Science Behind Winning the Powerball: A Data-Driven Approach",
+      "hook": "The surprising way data analysis can increase your chances of winning the Powerball",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "True Crime Stories: Jaskirat Singh Rangi and More",
+      "topic": "The Bizarre Case of the Ken McElroy Murder: What Really Happened?",
+      "hook": "The shocking truth behind one of the most infamous unsolved murders in American history",
       "voice_style": "dramatic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News: Cameron Diaz and Woody Harrelson's Latest",
+      "topic": "Woody Harrelson's Most Controversial Roles: A Look Back",
+      "hook": "The one role that got Woody Harrelson into major trouble with the public",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Mexico Soccer League Updates",
-      "topic": "The Intense Rivalry Between Cruz Azul and Am\u00e9rica",
-      "hook": "The Mexico soccer league's biggest rivalry is about to get even fiercer!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Music and Entertainment: Jared Leto's Projects",
+      "topic": "Jared Leto's Band Thirty Seconds to Mars: The Untold Story",
+      "hook": "The real reason Jared Leto started Thirty Seconds to Mars and what's next for the band",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "College Basketball Coaching Changes",
-      "topic": "The Impact of Chris Beard's Departure from Texas Tech",
-      "hook": "What does Chris Beard's shocking exit mean for Texas Tech's basketball future?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "True Crime Stories and Investigations",
-      "topic": "The Chilling Case of the Ted Bundy Tapes",
-      "hook": "The Ted Bundy tapes will send chills down your spine - but what did we learn?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Action Movie Trailers and Reviews",
-      "topic": "A Review of the Latest John Wick Movie",
-      "hook": "The latest John Wick movie is non-stop action - but is it worth the hype?",
+      "category": "Comedy Skits: Funny Moments with Celebrities",
+      "topic": "When Celebrities Get Roasted: The Funniest Moments",
+      "hook": "The most epic celebrity roast that will leave you laughing out loud",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Global Conflict Explainers",
-      "topic": "Understanding the Roots of the Yemen Civil War",
-      "hook": "The Yemen civil war explained - what you need to know about the crisis!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "category": "Travel Vlogs: Visiting New Zealand and South Africa",
+      "topic": "Discovering the Best Kept Secrets of South Africa's Garden Route",
+      "hook": "The hidden gem of South Africa that will make you want to pack your bags",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
-      "category": "War Updates and Analysis",
-      "topic": "The Role of Drones in Modern Warfare",
-      "hook": "The future of warfare is here - how drones are changing the game!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
+      "category": "Behind-the-Scenes: The Making of Famous Movies",
+      "topic": "The Incredible Story of How The Avengers Was Made",
+      "hook": "The shocking truth behind the making of The Avengers and what almost went wrong",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights: NZ vs SA",
+      "topic": "The Most Iconic Moments in NZ vs SA Rugby History",
+      "hook": "The try that will go down in history as one of the greatest of all time",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
