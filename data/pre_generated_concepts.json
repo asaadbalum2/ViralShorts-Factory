@@ -1,256 +1,198 @@
 {
-  "generated_at": "2026-03-22T06:11:08.987702",
-  "valid_until": "2026-03-22T23:59:08.987711",
+  "generated_at": "2026-03-23T06:47:28.916582",
+  "valid_until": "2026-03-23T23:59:28.916591",
   "categories": [
-    "Sports Highlights: NZ vs SA",
-    "Movie Reviews: The Town and Other Classics",
-    "Throwback Tributes: Heath Ledger's Best Roles",
-    "Lottery Tips and Tricks: Winning the Powerball Jackpot",
-    "True Crime Stories: Jaskirat Singh Rangi and More",
-    "Celebrity News: Cameron Diaz and Woody Harrelson's Latest",
-    "Music and Entertainment: Jared Leto's Projects",
-    "Comedy Skits: Funny Moments with Celebrities",
-    "Travel Vlogs: Visiting New Zealand and South Africa",
-    "Behind-the-Scenes: The Making of Famous Movies",
-    "Gaming Content: Sports and Lottery-Themed Games",
-    "Motivational Stories: Overcoming Challenges like Jaskirat Singh Rangi",
-    "Movie Trivia: Interesting Facts about The Town and Other Films",
-    "Q&A Sessions: Answering Questions about Current Events",
-    "Challenge Videos: Can You Guess the Lottery Powerball Numbers?"
+    "Stock Market Updates",
+    "TV Show Recaps",
+    "Financial News",
+    "Sports Legends",
+    "Movie Star Challenges",
+    "Restaurant Reviews",
+    "Workplace Fashion",
+    "Air Travel Safety",
+    "New York City News",
+    "Chinese Market Analysis",
+    "Episode Breakdowns",
+    "Commodity Prices",
+    "Celebrity Sightings",
+    "Aviation Incidents",
+    "Entertainment News"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights: NZ vs SA",
-      "topic": "Most Epic Rugby Tries Between NZ and SA",
-      "hook": "You won't believe the try that changed the course of rugby history!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Stock Market Updates",
+      "topic": "Impact of Inflation on Tech Stocks",
+      "hook": "Will your favorite tech stocks survive the inflation wave?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Movie Reviews: The Town and Other Classics",
-      "topic": "Unpacking the Cinematic Genius of Ben Affleck in The Town",
-      "hook": "What makes The Town a masterpiece that still holds up today?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "TV Show Recaps",
+      "topic": "Breaking Down the Latest Plot Twist in Stranger Things",
+      "hook": "You won't believe what just happened in Hawkins, Indiana!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Throwback Tributes: Heath Ledger's Best Roles",
-      "topic": "Heath Ledger's Transformation into the Joker: A Retrospective",
-      "hook": "The method acting technique that landed Heath Ledger his posthumous Oscar",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
+      "category": "Financial News",
+      "topic": "The Rise of Cryptocurrency in Global Markets",
+      "hook": "Is cryptocurrency the future of money or a recipe for disaster?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Lottery Tips and Tricks: Winning the Powerball Jackpot",
-      "topic": "The Mathematically Proven Strategy to Increase Your Powerball Winnings",
-      "hook": "The secret formula that could make you the next Powerball millionaire",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime Stories: Jaskirat Singh Rangi and More",
-      "topic": "The Chilling Case of Jaskirat Singh Rangi: What Really Happened?",
-      "hook": "The shocking truth behind one of the most bizarre crimes in recent history",
+      "category": "Sports Legends",
+      "topic": "The Unforgettable Career of LeBron James",
+      "hook": "What makes King James the most dominant force in basketball?",
       "voice_style": "dramatic",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity News: Cameron Diaz and Woody Harrelson's Latest",
-      "topic": "Cameron Diaz's Shocking Return to Hollywood: What's Next?",
-      "hook": "The real reason Cameron Diaz is making a comeback after years of silence",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music and Entertainment: Jared Leto's Projects",
-      "topic": "Jared Leto's Most Ambitious Project Yet: A Deep Dive",
-      "hook": "The surprising reason Jared Leto's latest project is his most personal one yet",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits: Funny Moments with Celebrities",
-      "topic": "When Celebrities Get Pranked: The Funniest Moments",
-      "hook": "You won't believe what happened when Dwayne Johnson got pranked on set",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs: Visiting New Zealand and South Africa",
-      "topic": "Exploring the Hidden Gems of New Zealand's South Island",
-      "hook": "The one place in New Zealand that will leave you breathless",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Behind-the-Scenes: The Making of Famous Movies",
-      "topic": "The Making of The Lord of the Rings: Secrets Revealed",
-      "hook": "The incredible story of how The Lord of the Rings was brought to life",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights: NZ vs SA",
-      "topic": "The Greatest Rivalry in Cricket: NZ vs SA",
-      "hook": "The most intense cricket match between NZ and SA that will keep you on the edge",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Reviews: The Town and Other Classics",
-      "topic": "Why The Town Remains One of the Most Underrated Heist Movies",
-      "hook": "The heist movie that flew under the radar but deserves your attention",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Throwback Tributes: Heath Ledger's Best Roles",
-      "topic": "Heath Ledger's Iconic Portrayal of Ennis Del Mar in Brokeback Mountain",
-      "hook": "The heartbreaking story of how Heath Ledger prepared for his role in Brokeback Mountain",
-      "voice_style": "mysterious",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Lottery Tips and Tricks: Winning the Powerball Jackpot",
-      "topic": "The Science Behind Winning the Powerball: A Data-Driven Approach",
-      "hook": "The surprising way data analysis can increase your chances of winning the Powerball",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "True Crime Stories: Jaskirat Singh Rangi and More",
-      "topic": "The Bizarre Case of the Ken McElroy Murder: What Really Happened?",
-      "hook": "The shocking truth behind one of the most infamous unsolved murders in American history",
-      "voice_style": "dramatic",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News: Cameron Diaz and Woody Harrelson's Latest",
-      "topic": "Woody Harrelson's Most Controversial Roles: A Look Back",
-      "hook": "The one role that got Woody Harrelson into major trouble with the public",
-      "voice_style": "energetic",
+      "category": "Movie Star Challenges",
+      "topic": "Can Dwayne 'The Rock' Johnson Survive a Real-Life Action Movie Stunt?",
+      "hook": "The Rock takes on the ultimate challenge - but will he make it out alive?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Music and Entertainment: Jared Leto's Projects",
-      "topic": "Jared Leto's Band Thirty Seconds to Mars: The Untold Story",
-      "hook": "The real reason Jared Leto started Thirty Seconds to Mars and what's next for the band",
+      "category": "Restaurant Reviews",
+      "topic": "The Secret to the Perfect Slice of New York-Style Pizza",
+      "hook": "We reviewed the top pizzerias in NYC - and the winner will surprise you!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Workplace Fashion",
+      "topic": "The Dos and Don'ts of Dressing for a Job Interview",
+      "hook": "What you wear to a job interview could make or break your chances - here's what to wear!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Air Travel Safety",
+      "topic": "What to Do in Case of a Plane Emergency",
+      "hook": "Don't panic - we've got the ultimate guide to staying safe in the air!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "New York City News",
+      "topic": "The Revitalization of Times Square - What's Changing and What's Staying the Same",
+      "hook": "The Crossroads of the World is getting a major facelift - but will it still be the same?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Chinese Market Analysis",
+      "topic": "The Impact of Trade Wars on Chinese Tech Giants",
+      "hook": "How are Chinese tech companies like Huawei and Alibaba navigating the trade war landscape?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Stock Market Updates",
+      "topic": "The Future of Sustainable Investing",
+      "hook": "Is your portfolio hurting the planet - and what can you do about it?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits: Funny Moments with Celebrities",
-      "topic": "When Celebrities Get Roasted: The Funniest Moments",
-      "hook": "The most epic celebrity roast that will leave you laughing out loud",
-      "voice_style": "energetic",
+      "category": "TV Show Recaps",
+      "topic": "Unpacking the Mystery of Westworld's Latest Season",
+      "hook": "What secrets are hiding in the world of Westworld - and how will they change everything?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Financial News",
+      "topic": "The Rise of Fintech and Mobile Banking",
+      "hook": "Are traditional banks a thing of the past - and what does it mean for your money?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Legends",
+      "topic": "The Untold Story of Michael Jordan's Basketball Career",
+      "hook": "What drove the G.O.A.T. to become the greatest basketball player of all time?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Movie Star Challenges",
+      "topic": "Emma Stone Takes on the Ultimate Comedy Challenge",
+      "hook": "Can Emma Stone make us laugh with her hilarious comedy skills - or will she crack under pressure?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Travel Vlogs: Visiting New Zealand and South Africa",
-      "topic": "Discovering the Best Kept Secrets of South Africa's Garden Route",
-      "hook": "The hidden gem of South Africa that will make you want to pack your bags",
-      "voice_style": "calm",
+      "category": "Restaurant Reviews",
+      "topic": "The Best Kept Secrets of Michelin-Starred Restaurants",
+      "hook": "What makes a restaurant worthy of a Michelin star - and which ones are worth the hype?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Workplace Fashion",
+      "topic": "The Evolution of Office Wear for Women",
+      "hook": "From power suits to Athleisure wear - how has office fashion changed for women over the years?",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Behind-the-Scenes: The Making of Famous Movies",
-      "topic": "The Incredible Story of How The Avengers Was Made",
-      "hook": "The shocking truth behind the making of The Avengers and what almost went wrong",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Air Travel Safety",
+      "topic": "The Hidden Dangers of Air Travel - and How to Avoid Them",
+      "hook": "What are the biggest threats to air travel safety - and what can you do to protect yourself?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Sports Highlights: NZ vs SA",
-      "topic": "The Most Iconic Moments in NZ vs SA Rugby History",
-      "hook": "The try that will go down in history as one of the greatest of all time",
+      "category": "New York City News",
+      "topic": "The Resurgence of Brooklyn as a Cultural Hub",
+      "hook": "From trendy neighborhoods to world-class museums - what's behind Brooklyn's cultural renaissance?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Chinese Market Analysis",
+      "topic": "The Growing Influence of Chinese E-Commerce Giants",
+      "hook": "How are Chinese e-commerce companies like Alibaba and JD.com changing the global retail landscape?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
@@ -260,9 +202,59 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
