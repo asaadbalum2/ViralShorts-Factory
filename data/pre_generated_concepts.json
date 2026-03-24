@@ -1,235 +1,250 @@
 {
-  "generated_at": "2026-03-23T06:47:28.916582",
-  "valid_until": "2026-03-23T23:59:28.916591",
+  "generated_at": "2026-03-24T06:39:15.735710",
+  "valid_until": "2026-03-24T23:59:15.735718",
   "categories": [
-    "Stock Market Updates",
-    "TV Show Recaps",
-    "Financial News",
-    "Sports Legends",
-    "Movie Star Challenges",
-    "Restaurant Reviews",
-    "Workplace Fashion",
-    "Air Travel Safety",
-    "New York City News",
-    "Chinese Market Analysis",
-    "Episode Breakdowns",
-    "Commodity Prices",
-    "Celebrity Sightings",
-    "Aviation Incidents",
-    "Entertainment News"
+    "Sustainable Living for Climate Change Awareness",
+    "Electric Vehicle Reviews and Test Drives",
+    "Space Exploration Updates and Discoveries",
+    "World Cup 2026 Predictions and Highlights",
+    "Deep Learning Explained in Simple Terms",
+    "Lottery Powerball Winning Strategies",
+    "Personal Injury Attorney FAQs and Advice",
+    "Kristen Stewart Movie Reviews and News",
+    "Climate Change Mitigation Tips and Tricks",
+    "Electric Vehicle vs Gasoline Car Comparisons",
+    "Space Travel and Astronomy for Beginners",
+    "World Cup 2026 Team Profiles and Analysis",
+    "AI and Deep Learning in Daily Life",
+    "Climate Change Impact on Global Sports",
+    "EV Charging Station Tours and Reviews"
   ],
   "concepts": [
     {
-      "category": "Stock Market Updates",
-      "topic": "Impact of Inflation on Tech Stocks",
-      "hook": "Will your favorite tech stocks survive the inflation wave?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "Breaking Down the Latest Plot Twist in Stranger Things",
-      "hook": "You won't believe what just happened in Hawkins, Indiana!",
+      "category": "Sustainable Living for Climate Change Awareness",
+      "topic": "Using Bamboo Instead of Plastic",
+      "hook": "Did you know that bamboo can save the world from plastic?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial News",
-      "topic": "The Rise of Cryptocurrency in Global Markets",
-      "hook": "Is cryptocurrency the future of money or a recipe for disaster?",
-      "voice_style": "calm",
       "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Legends",
-      "topic": "The Unforgettable Career of LeBron James",
-      "hook": "What makes King James the most dominant force in basketball?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Movie Star Challenges",
-      "topic": "Can Dwayne 'The Rock' Johnson Survive a Real-Life Action Movie Stunt?",
-      "hook": "The Rock takes on the ultimate challenge - but will he make it out alive?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Restaurant Reviews",
-      "topic": "The Secret to the Perfect Slice of New York-Style Pizza",
-      "hook": "We reviewed the top pizzerias in NYC - and the winner will surprise you!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Workplace Fashion",
-      "topic": "The Dos and Don'ts of Dressing for a Job Interview",
-      "hook": "What you wear to a job interview could make or break your chances - here's what to wear!",
+      "category": "Electric Vehicle Reviews and Test Drives",
+      "topic": "Tesla Model S vs Lucid Motors Air",
+      "hook": "Which electric car is the real game-changer?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Air Travel Safety",
-      "topic": "What to Do in Case of a Plane Emergency",
-      "hook": "Don't panic - we've got the ultimate guide to staying safe in the air!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "New York City News",
-      "topic": "The Revitalization of Times Square - What's Changing and What's Staying the Same",
-      "hook": "The Crossroads of the World is getting a major facelift - but will it still be the same?",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Chinese Market Analysis",
-      "topic": "The Impact of Trade Wars on Chinese Tech Giants",
-      "hook": "How are Chinese tech companies like Huawei and Alibaba navigating the trade war landscape?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Stock Market Updates",
-      "topic": "The Future of Sustainable Investing",
-      "hook": "Is your portfolio hurting the planet - and what can you do about it?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "Unpacking the Mystery of Westworld's Latest Season",
-      "hook": "What secrets are hiding in the world of Westworld - and how will they change everything?",
+      "category": "Space Exploration Updates and Discoveries",
+      "topic": "NASA's Perseverance Rover Latest Findings",
+      "hook": "What did NASA's Perseverance rover just discover on Mars?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Financial News",
-      "topic": "The Rise of Fintech and Mobile Banking",
-      "hook": "Are traditional banks a thing of the past - and what does it mean for your money?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Legends",
-      "topic": "The Untold Story of Michael Jordan's Basketball Career",
-      "hook": "What drove the G.O.A.T. to become the greatest basketball player of all time?",
+      "category": "World Cup 2026 Predictions and Highlights",
+      "topic": "Top 5 Teams to Watch in the World Cup 2026",
+      "hook": "Which teams will dominate the World Cup 2026?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Movie Star Challenges",
-      "topic": "Emma Stone Takes on the Ultimate Comedy Challenge",
-      "hook": "Can Emma Stone make us laugh with her hilarious comedy skills - or will she crack under pressure?",
+      "category": "Deep Learning Explained in Simple Terms",
+      "topic": "Understanding Neural Networks in 5 Minutes",
+      "hook": "Can you learn about neural networks in just 5 minutes?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Restaurant Reviews",
-      "topic": "The Best Kept Secrets of Michelin-Starred Restaurants",
-      "hook": "What makes a restaurant worthy of a Michelin star - and which ones are worth the hype?",
+      "category": "Lottery Powerball Winning Strategies",
+      "topic": "The Math Behind Winning the Powerball",
+      "hook": "Is there a secret math formula to winning the Powerball?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Workplace Fashion",
-      "topic": "The Evolution of Office Wear for Women",
-      "hook": "From power suits to Athleisure wear - how has office fashion changed for women over the years?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Air Travel Safety",
-      "topic": "The Hidden Dangers of Air Travel - and How to Avoid Them",
-      "hook": "What are the biggest threats to air travel safety - and what can you do to protect yourself?",
+      "category": "Personal Injury Attorney FAQs and Advice",
+      "topic": "What to Do After a Car Accident",
+      "hook": "Don't make these mistakes after a car accident!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Kristen Stewart Movie Reviews and News",
+      "topic": "Kristen Stewart's Best Movies Ranked",
+      "hook": "Which Kristen Stewart movie is a must-watch?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Climate Change Mitigation Tips and Tricks",
+      "topic": "Reducing Carbon Footprint with Simple Swaps",
+      "hook": "Can you save the planet with these simple swaps?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Electric Vehicle vs Gasoline Car Comparisons",
+      "topic": "Ford Mustang Electric vs Gasoline",
+      "hook": "Which Ford Mustang is the real winner?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sustainable Living for Climate Change Awareness",
+      "topic": "The Impact of Fast Fashion on the Environment",
+      "hook": "The dark truth about your favorite clothing brand",
       "voice_style": "calm",
       "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "New York City News",
-      "topic": "The Resurgence of Brooklyn as a Cultural Hub",
-      "hook": "From trendy neighborhoods to world-class museums - what's behind Brooklyn's cultural renaissance?",
-      "voice_style": "energetic",
+      "category": "Space Exploration Updates and Discoveries",
+      "topic": "The Search for Life on Europa",
+      "hook": "Is there life beyond Earth?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "World Cup 2026 Predictions and Highlights",
+      "topic": "The Rise of African Football Teams",
+      "hook": "Which African team will surprise us in the World Cup 2026?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Deep Learning Explained in Simple Terms",
+      "topic": "How Deep Learning is Used in Self-Driving Cars",
+      "hook": "Can deep learning make self-driving cars safer?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Lottery Powerball Winning Strategies",
+      "topic": "The Most Common Powerball Winning Numbers",
+      "hook": "Are these the luckiest Powerball numbers?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Injury Attorney FAQs and Advice",
+      "topic": "What to Expect in a Personal Injury Lawsuit",
+      "hook": "Don't go into a personal injury lawsuit unprepared!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Kristen Stewart Movie Reviews and News",
+      "topic": "Kristen Stewart's Upcoming Movie Releases",
+      "hook": "What's next for Kristen Stewart?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Chinese Market Analysis",
-      "topic": "The Growing Influence of Chinese E-Commerce Giants",
-      "hook": "How are Chinese e-commerce companies like Alibaba and JD.com changing the global retail landscape?",
+      "category": "Climate Change Mitigation Tips and Tricks",
+      "topic": "Using Renewable Energy Sources at Home",
+      "hook": "Can you power your home with renewable energy?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Electric Vehicle vs Gasoline Car Comparisons",
+      "topic": "Audi e-tron vs Audi Q5",
+      "hook": "Which Audi is the better choice?",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sustainable Living for Climate Change Awareness",
+      "topic": "The Benefits of a Zero-Waste Lifestyle",
+      "hook": "Can a zero-waste lifestyle really make a difference?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -237,24 +252,9 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
