@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-03-24T06:39:15.735710",
-  "valid_until": "2026-03-24T23:59:15.735718",
+  "generated_at": "2026-03-25T06:39:12.036081",
+  "valid_until": "2026-03-25T23:59:12.036089",
   "categories": [
-    "Sustainable Living for Climate Change Awareness",
-    "Electric Vehicle Reviews and Test Drives",
-    "Space Exploration Updates and Discoveries",
-    "World Cup 2026 Predictions and Highlights",
-    "Deep Learning Explained in Simple Terms",
-    "Lottery Powerball Winning Strategies",
-    "Personal Injury Attorney FAQs and Advice",
-    "Kristen Stewart Movie Reviews and News",
-    "Climate Change Mitigation Tips and Tricks",
-    "Electric Vehicle vs Gasoline Car Comparisons",
-    "Space Travel and Astronomy for Beginners",
-    "World Cup 2026 Team Profiles and Analysis",
-    "AI and Deep Learning in Daily Life",
-    "Climate Change Impact on Global Sports",
-    "EV Charging Station Tours and Reviews"
+    "Sports Highlights",
+    "Music News",
+    "Car Reviews",
+    "Travel Vlogs of South Africa and New Zealand",
+    "Law and Justice Explainers",
+    "Cricket Match Analysis",
+    "Amazon Product Unboxings",
+    "Personal Injury Attorney Q&A",
+    "Retro Music Throwbacks",
+    "Luxury Lifestyle Tours",
+    "New Music Releases",
+    "Sports News Updates",
+    "Viral Challenge Videos",
+    "Tech and Gadget Reviews",
+    "Entertainment News and Gossip"
   ],
   "concepts": [
     {
-      "category": "Sustainable Living for Climate Change Awareness",
-      "topic": "Using Bamboo Instead of Plastic",
-      "hook": "Did you know that bamboo can save the world from plastic?",
+      "category": "Sports Highlights",
+      "topic": "NBA Slam Dunk Contest 2022",
+      "hook": "Can you believe the insane dunk that won it all?",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Electric Vehicle Reviews and Test Drives",
-      "topic": "Tesla Model S vs Lucid Motors Air",
-      "hook": "Which electric car is the real game-changer?",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "category": "Music News",
+      "topic": "The Rise of Billie Eilish",
+      "hook": "What's behind the success of the youngest artist to top the Billboard charts?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Space Exploration Updates and Discoveries",
-      "topic": "NASA's Perseverance Rover Latest Findings",
-      "hook": "What did NASA's Perseverance rover just discover on Mars?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Car Reviews",
+      "topic": "2022 Tesla Model S Review",
+      "hook": "Is the new Tesla Model S the most futuristic car on the market?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "World Cup 2026 Predictions and Highlights",
-      "topic": "Top 5 Teams to Watch in the World Cup 2026",
-      "hook": "Which teams will dominate the World Cup 2026?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Travel Vlogs of South Africa and New Zealand",
+      "topic": "Exploring Cape Town's Hidden Gems",
+      "hook": "Discover the secret spots that will make you fall in love with Cape Town",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Deep Learning Explained in Simple Terms",
-      "topic": "Understanding Neural Networks in 5 Minutes",
-      "hook": "Can you learn about neural networks in just 5 minutes?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Law and Justice Explainers",
+      "topic": "Understanding Miranda Rights",
+      "hook": "What happens when you're read your rights - do you know what they mean?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Lottery Powerball Winning Strategies",
-      "topic": "The Math Behind Winning the Powerball",
-      "hook": "Is there a secret math formula to winning the Powerball?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Cricket Match Analysis",
+      "topic": "India vs Australia 2022 ICC World Cup",
+      "hook": "The shocking upset that changed the course of the tournament - what went wrong?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Amazon Product Unboxings",
+      "topic": "Unboxing the Newest Echo Smart Speaker",
+      "hook": "Is the latest Echo smart speaker worth the hype - let's unbox and find out",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Personal Injury Attorney FAQs and Advice",
+      "category": "Personal Injury Attorney Q&A",
       "topic": "What to Do After a Car Accident",
-      "hook": "Don't make these mistakes after a car accident!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Kristen Stewart Movie Reviews and News",
-      "topic": "Kristen Stewart's Best Movies Ranked",
-      "hook": "Which Kristen Stewart movie is a must-watch?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Climate Change Mitigation Tips and Tricks",
-      "topic": "Reducing Carbon Footprint with Simple Swaps",
-      "hook": "Can you save the planet with these simple swaps?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Electric Vehicle vs Gasoline Car Comparisons",
-      "topic": "Ford Mustang Electric vs Gasoline",
-      "hook": "Which Ford Mustang is the real winner?",
+      "hook": "Don't make these common mistakes after a car accident - know your rights",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Sustainable Living for Climate Change Awareness",
-      "topic": "The Impact of Fast Fashion on the Environment",
-      "hook": "The dark truth about your favorite clothing brand",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
+      "music_mood": "calm",
       "target_duration": 40
     },
     {
-      "category": "Space Exploration Updates and Discoveries",
-      "topic": "The Search for Life on Europa",
-      "hook": "Is there life beyond Earth?",
+      "category": "Retro Music Throwbacks",
+      "topic": "The Best of 90s Grunge Music",
+      "hook": "The iconic bands that defined a generation - are you ready for a blast from the past?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "World Cup 2026 Predictions and Highlights",
-      "topic": "The Rise of African Football Teams",
-      "hook": "Which African team will surprise us in the World Cup 2026?",
+      "category": "Luxury Lifestyle Tours",
+      "topic": "Inside a $10 Million New Zealand Mansion",
+      "hook": "Step into the opulent world of the rich and famous - you won't believe the views",
       "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Deep Learning Explained in Simple Terms",
-      "topic": "How Deep Learning is Used in Self-Driving Cars",
-      "hook": "Can deep learning make self-driving cars safer?",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Comebacks in Sports History",
+      "hook": "The most epic turnarounds that will leave you speechless",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Music News",
+      "topic": "The Evolution of Hip-Hop",
+      "hook": "From its humble beginnings to global phenomenon - how did hip-hop take over the world?",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Car Reviews",
+      "topic": "Porsche 911 vs Chevrolet Corvette",
+      "hook": "Which American muscle can take down the German powerhouse?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Lottery Powerball Winning Strategies",
-      "topic": "The Most Common Powerball Winning Numbers",
-      "hook": "Are these the luckiest Powerball numbers?",
+      "category": "Travel Vlogs of South Africa and New Zealand",
+      "topic": "Hiking the Famous Routeburn Track",
+      "hook": "Get ready for breathtaking views on one of the world's most scenic hikes",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Law and Justice Explainers",
+      "topic": "Understanding Your Rights During a Police Stop",
+      "hook": "Know what to do and say when pulled over - it could save you from trouble",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Injury Attorney FAQs and Advice",
-      "topic": "What to Expect in a Personal Injury Lawsuit",
-      "hook": "Don't go into a personal injury lawsuit unprepared!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Kristen Stewart Movie Reviews and News",
-      "topic": "Kristen Stewart's Upcoming Movie Releases",
-      "hook": "What's next for Kristen Stewart?",
+      "category": "Cricket Match Analysis",
+      "topic": "The Art of Spin Bowling",
+      "hook": "Unraveling the secrets of the most unpredictable and thrilling aspect of cricket",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Amazon Product Unboxings",
+      "topic": "Unboxing the Latest Samsung Smartwatch",
+      "hook": "Can the new Samsung smartwatch dethrone the Apple Watch - let's find out",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Climate Change Mitigation Tips and Tricks",
-      "topic": "Using Renewable Energy Sources at Home",
-      "hook": "Can you power your home with renewable energy?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "Personal Injury Attorney Q&A",
+      "topic": "What to Expect in a Personal Injury Lawsuit",
+      "hook": "Navigating the complex world of personal injury claims - get the inside scoop",
+      "voice_style": "authoritative",
+      "music_mood": "calm",
       "target_duration": 40
     },
     {
-      "category": "Electric Vehicle vs Gasoline Car Comparisons",
-      "topic": "Audi e-tron vs Audi Q5",
-      "hook": "Which Audi is the better choice?",
-      "voice_style": "authoritative",
+      "category": "Retro Music Throwbacks",
+      "topic": "The Iconic Music Festivals of the 60s and 70s",
+      "hook": "Relive the magic of Woodstock and Coachella's predecessors - the legendary music festivals that started it all",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Luxury Lifestyle Tours",
+      "topic": "Inside a $5 Million South African Wine Estate",
+      "hook": "Escape to a world of luxury and elegance - tour the most exquisite wine estate in South Africa",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sustainable Living for Climate Change Awareness",
-      "topic": "The Benefits of a Zero-Waste Lifestyle",
-      "hook": "Can a zero-waste lifestyle really make a difference?",
+      "category": "Travel Vlogs of South Africa and New Zealand",
+      "topic": "Discovering the Natural Wonders of Milford Sound",
+      "hook": "Witness the breathtaking beauty of one of the world's most stunning fjords",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 40
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
