@@ -1,268 +1,276 @@
 {
-  "generated_at": "2026-03-25T06:39:12.036081",
-  "valid_until": "2026-03-25T23:59:12.036089",
+  "generated_at": "2026-03-26T06:45:27.542224",
+  "valid_until": "2026-03-26T23:59:27.542234",
   "categories": [
-    "Sports Highlights",
-    "Music News",
-    "Car Reviews",
-    "Travel Vlogs of South Africa and New Zealand",
-    "Law and Justice Explainers",
-    "Cricket Match Analysis",
-    "Amazon Product Unboxings",
-    "Personal Injury Attorney Q&A",
-    "Retro Music Throwbacks",
-    "Luxury Lifestyle Tours",
-    "New Music Releases",
-    "Sports News Updates",
-    "Viral Challenge Videos",
-    "Tech and Gadget Reviews",
-    "Entertainment News and Gossip"
+    "Travel Vlogs at Unique Listings like the Hannah Montana Airbnb",
+    "International News: Bangladesh Updates and Analysis",
+    "Thriller Reviews: 'They Will Kill You' and Similar Movies",
+    "Politics and Leadership:\u67ef\u6587\u54f2 and Global Impact",
+    "Airport Hacks and LAX Travel Tips",
+    "Tech News: X and the Latest Social Media Platforms",
+    "Comedy Legends: Julia Louis-Dreyfus and Funny Moments",
+    "Election and Voting Guides: Understanding the Ballot",
+    "Spring Break Travel Inspiration",
+    "Social Media Challenges and Trends",
+    "Movie and TV Show Reviews",
+    "Global Festivals and Celebrations",
+    "Influencer Marketing and Brand Partnerships",
+    "Short-Form Comedy Skits and Parody Videos",
+    "Productivity and Time Management Hacks for Busy Lives"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "NBA Slam Dunk Contest 2022",
-      "hook": "Can you believe the insane dunk that won it all?",
+      "category": "Travel Vlogs at Unique Listings like the Hannah Montana Airbnb",
+      "topic": "Exploring the Real-Life Barbie Dreamhouse in California",
+      "hook": "You won't believe the insane details inside the world's most iconic pink mansion!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Music News",
-      "topic": "The Rise of Billie Eilish",
-      "hook": "What's behind the success of the youngest artist to top the Billboard charts?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Car Reviews",
-      "topic": "2022 Tesla Model S Review",
-      "hook": "Is the new Tesla Model S the most futuristic car on the market?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel Vlogs of South Africa and New Zealand",
-      "topic": "Exploring Cape Town's Hidden Gems",
-      "hook": "Discover the secret spots that will make you fall in love with Cape Town",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Law and Justice Explainers",
-      "topic": "Understanding Miranda Rights",
-      "hook": "What happens when you're read your rights - do you know what they mean?",
+      "category": "International News: Bangladesh Updates and Analysis",
+      "topic": "Uncovering the Impact of Climate Change on Bangladesh's Coastal Communities",
+      "hook": "What's really happening in the low-lying lands of Bangladesh as sea levels rise?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Cricket Match Analysis",
-      "topic": "India vs Australia 2022 ICC World Cup",
-      "hook": "The shocking upset that changed the course of the tournament - what went wrong?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Amazon Product Unboxings",
-      "topic": "Unboxing the Newest Echo Smart Speaker",
-      "hook": "Is the latest Echo smart speaker worth the hype - let's unbox and find out",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Injury Attorney Q&A",
-      "topic": "What to Do After a Car Accident",
-      "hook": "Don't make these common mistakes after a car accident - know your rights",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 40
-    },
-    {
-      "category": "Retro Music Throwbacks",
-      "topic": "The Best of 90s Grunge Music",
-      "hook": "The iconic bands that defined a generation - are you ready for a blast from the past?",
+      "category": "Thriller Reviews: 'They Will Kill You' and Similar Movies",
+      "topic": "Breaking Down the Twists in 'Gone Girl' and What Makes it a Masterclass Thriller",
+      "hook": "The shocking truth behind one of the most mind-blowing plot twists in movie history!",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "intense",
+      "target_duration": 48
     },
     {
-      "category": "Luxury Lifestyle Tours",
-      "topic": "Inside a $10 Million New Zealand Mansion",
-      "hook": "Step into the opulent world of the rich and famous - you won't believe the views",
-      "voice_style": "dramatic",
+      "category": "Politics and Leadership: \u67ef\u6587\u54f2 and Global Impact",
+      "topic": "Decoding the Economic Policies of Xi Jinping and Their Global Ramifications",
+      "hook": "How one man's vision is reshaping the world economy, and what it means for you!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Airport Hacks and LAX Travel Tips",
+      "topic": "Secrets to Bypassing Long Lines at LAX Using Special Perks and Shortcuts",
+      "hook": "Want to know the hack to getting through LAX security in under 5 minutes?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech News: X and the Latest Social Media Platforms",
+      "topic": "What Elon Musk's Twitter Takeover Means for the Future of Social Media",
+      "hook": "The billionaire's bold move to reshape the internet, and what it means for your online presence!",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Sports History",
-      "hook": "The most epic turnarounds that will leave you speechless",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music News",
-      "topic": "The Evolution of Hip-Hop",
-      "hook": "From its humble beginnings to global phenomenon - how did hip-hop take over the world?",
-      "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Car Reviews",
-      "topic": "Porsche 911 vs Chevrolet Corvette",
-      "hook": "Which American muscle can take down the German powerhouse?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Vlogs of South Africa and New Zealand",
-      "topic": "Hiking the Famous Routeburn Track",
-      "hook": "Get ready for breathtaking views on one of the world's most scenic hikes",
+      "category": "Comedy Legends: Julia Louis-Dreyfus and Funny Moments",
+      "topic": "The Funniest Moments from 'Seinfeld' that Still Hold Up Today",
+      "hook": "The laugh-out-loud moments from TV's most iconic comedy that never get old!",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Law and Justice Explainers",
-      "topic": "Understanding Your Rights During a Police Stop",
-      "hook": "Know what to do and say when pulled over - it could save you from trouble",
+      "category": "Election and Voting Guides: Understanding the Ballot",
+      "topic": "Breaking Down the Most Important Issues on the Upcoming Ballot",
+      "hook": "Don't miss out on your chance to shape the future: here's what you need to know before voting!",
       "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 40
+      "music_mood": "dramatic",
+      "target_duration": 48
     },
     {
-      "category": "Cricket Match Analysis",
-      "topic": "The Art of Spin Bowling",
-      "hook": "Unraveling the secrets of the most unpredictable and thrilling aspect of cricket",
+      "category": "Spring Break Travel Inspiration",
+      "topic": "Discovering the Hidden Gems of Cancun, Mexico for an Unforgettable Getaway",
+      "hook": "Leave the crowds behind and explore the secret beaches and ruins of Mexico's Caribbean coast!",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Amazon Product Unboxings",
-      "topic": "Unboxing the Latest Samsung Smartwatch",
-      "hook": "Can the new Samsung smartwatch dethrone the Apple Watch - let's find out",
-      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Personal Injury Attorney Q&A",
-      "topic": "What to Expect in a Personal Injury Lawsuit",
-      "hook": "Navigating the complex world of personal injury claims - get the inside scoop",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 40
-    },
-    {
-      "category": "Retro Music Throwbacks",
-      "topic": "The Iconic Music Festivals of the 60s and 70s",
-      "hook": "Relive the magic of Woodstock and Coachella's predecessors - the legendary music festivals that started it all",
+      "category": "Social Media Challenges and Trends",
+      "topic": "The Rise of 'Dark Academia' and How to Participate in the Latest TikTok Trend",
+      "hook": "What's behind the mysterious and intriguing world of 'Dark Academia' taking over social media?",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "intense",
+      "target_duration": 40
     },
     {
-      "category": "Luxury Lifestyle Tours",
-      "topic": "Inside a $5 Million South African Wine Estate",
-      "hook": "Escape to a world of luxury and elegance - tour the most exquisite wine estate in South Africa",
+      "category": "Travel Vlogs at Unique Listings like the Hannah Montana Airbnb",
+      "topic": "Unwinding at the World's First 3D-Printed Hotel in the Middle of the Desert",
+      "hook": "Experience the futuristic and surreal stay at a hotel that's out of this world!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "International News: Bangladesh Updates and Analysis",
+      "topic": "The Impact of Microfinance on Women's Empowerment in Rural Bangladesh",
+      "hook": "How small loans are changing the lives of women in one of the world's most impoverished countries!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Thriller Reviews: 'They Will Kill You' and Similar Movies",
+      "topic": "Unpacking the Psychological Thrills of 'Shutter Island' and its Mind-Blowing Ending",
+      "hook": "The shocking truth behind one of Martin Scorsese's most underrated masterpieces!",
       "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Politics and Leadership: \u67ef\u6587\u54f2 and Global Impact",
+      "topic": "The Role of Soft Power in China's Global Influence and What it Means for the World",
+      "hook": "How China is using cultural exchange and diplomacy to shape global opinion and policy!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Airport Hacks and LAX Travel Tips",
+      "topic": "How to Get a Free Upgrade to First Class at LAX Using This One Simple Trick",
+      "hook": "Want to know the secret to flying first class without breaking the bank?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech News: X and the Latest Social Media Platforms",
+      "topic": "The Rise of Virtual Influencers and What it Means for the Future of Marketing",
+      "hook": "The AI-powered avatars taking over social media, and what brands need to know!",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Travel Vlogs of South Africa and New Zealand",
-      "topic": "Discovering the Natural Wonders of Milford Sound",
-      "hook": "Witness the breathtaking beauty of one of the world's most stunning fjords",
+      "category": "Comedy Legends: Julia Louis-Dreyfus and Funny Moments",
+      "topic": "The Funniest Female Comedians Killing it on Netflix Right Now",
+      "hook": "The laugh-out-loud ladies of comedy who are currently slaying the game!",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Election and Voting Guides: Understanding the Ballot",
+      "topic": "A Beginner's Guide to Understanding the Electoral College System",
+      "hook": "Don't let the electoral college confuse you: here's a simple guide to understanding how it works!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Spring Break Travel Inspiration",
+      "topic": "Discovering the Best Kept Secrets of Costa Rica for an Unforgettable Adventure",
+      "hook": "Leave the tourist trail behind and explore the hidden waterfalls, beaches, and jungles of Costa Rica!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Social Media Challenges and Trends",
+      "topic": "The Evolution of TikTok Dance Challenges and How to Participate",
+      "hook": "From Renegade to Toosie Slide, how TikTok dance challenges are taking over the internet!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Travel Vlogs at Unique Listings like the Hannah Montana Airbnb",
+      "topic": "Spending a Night in the Real-Life Hobbit House from Lord of the Rings",
+      "hook": "Step into Middle Earth and experience the enchanting world of hobbits, elves, and magic!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "International News: Bangladesh Updates and Analysis",
+      "topic": "The Impact of the Rohingya Refugee Crisis on Bangladesh's Economy and Society",
+      "hook": "The humanitarian crisis unfolding in Bangladesh, and what the world can do to help!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
