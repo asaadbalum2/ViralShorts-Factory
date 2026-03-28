@@ -1,200 +1,235 @@
 {
-  "generated_at": "2026-03-27T06:45:48.646386",
-  "valid_until": "2026-03-27T23:59:48.646394",
+  "generated_at": "2026-03-28T06:34:06.280985",
+  "valid_until": "2026-03-28T23:59:06.280994",
   "categories": [
-    "Wildlife Wonders",
-    "Celebrity News",
-    "Movie Reviews",
-    "Travel Vlogs",
-    "Music Festivals",
-    "Late Night Talk Shows",
-    "Nature Escapes",
-    "New Movie Releases",
-    "Actor Interviews",
-    "Music Performances",
-    "National Park Adventures",
-    "Ocean Conservation",
-    "Sci-Fi Analysis",
-    "Comedy Sketches",
-    "Behind the Scenes"
+    "Sports Highlights",
+    "Royal Family Updates",
+    "Car Reviews",
+    "TV Show Recaps",
+    "Sports Betting Tips",
+    "Formula 1 Analysis",
+    "NBA Player Stats",
+    "College Basketball",
+    " Celebrity News",
+    "Tech Gadget Reviews",
+    "Automotive News",
+    "March Madness Predictions",
+    "European Soccer Updates",
+    "Luxury Lifestyle",
+    "Entertainment News"
   ],
   "concepts": [
     {
-      "category": "Wildlife Wonders",
-      "topic": "Rare Albino Animals",
-      "hook": "You won't believe the shocking rareness of these 5 albino animals...",
+      "category": "Sports Highlights",
+      "topic": "LeBron James' Record-Breaking Dunks",
+      "hook": "You won't believe the insane dunk that just broke the internet!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "Leonardo DiCaprio's Environmental Activism",
-      "hook": "What's driving Leonardo DiCaprio's obsession with saving the planet?",
+      "category": "Royal Family Updates",
+      "topic": "Prince William's Secret Charity Work",
+      "hook": "The shocking truth about Prince William's hidden philanthropy revealed!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Movie Reviews",
-      "topic": "The Impact of Marvel's Cinematic Universe",
-      "hook": "The #1 reason why Marvel's movies are taking over the world...",
+      "category": "Car Reviews",
+      "topic": "Tesla Model S vs Porsche Taycan",
+      "hook": "Which electric car reigns supreme? Watch to find out!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Exploring Hidden Beaches in Bali",
-      "hook": "Discover the secret beach in Bali that only locals know about...",
-      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Festivals",
-      "topic": "Coachella's Most Iconic Performances",
-      "hook": "The top 3 most unforgettable performances in Coachella history...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Late Night Talk Shows",
-      "topic": "The Funniest Moments on The Tonight Show",
-      "hook": "You won't stop laughing at these hilarious moments from The Tonight Show...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Nature Escapes",
-      "topic": "Hiking the Grand Canyon at Sunrise",
-      "hook": " Witness the breathtaking beauty of the Grand Canyon at sunrise...",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "New Movie Releases",
-      "topic": "The Latest Sci-Fi Movies to Watch",
-      "hook": "Get ready for the most mind-blowing sci-fi movies of the year...",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Actor Interviews",
-      "topic": "Chris Hemsworth's Thor Transformation",
-      "hook": "The shocking truth behind Chris Hemsworth's epic Thor transformation...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Performances",
-      "topic": "Beyonce's Most Powerful Live Performances",
-      "hook": "The #1 reason why Beyonce's live performances are truly unstoppable...",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Wildlife Wonders",
-      "topic": "The Intelligence of Octopuses",
-      "hook": "You won't believe the clever tricks that octopuses use to survive...",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Taylor Swift's Songwriting Process",
-      "hook": "The secret behind Taylor Swift's songwriting magic revealed...",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Reviews",
-      "topic": "The Impact of Netflix on the Film Industry",
-      "hook": "The #1 way that Netflix is changing the game for filmmakers...",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Discovering Street Food in Tokyo",
-      "hook": "Get ready to drool over the most delicious street food in Tokyo...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Festivals",
-      "topic": "The Best Music Festivals for Summer",
-      "hook": "The top 5 music festivals you can't miss this summer...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Late Night Talk Shows",
-      "topic": "The Best Comedy Sketches on SNL",
-      "hook": "You won't stop laughing at these hilarious SNL comedy sketches...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Nature Escapes",
-      "topic": "Exploring the Bioluminescent Bay in Puerto Rico",
-      "hook": "Witness the magical glow of the bioluminescent bay in Puerto Rico...",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "New Movie Releases",
-      "topic": "The Most Anticipated Horror Movies",
-      "hook": "Get ready to scream with the most terrifying horror movies of the year...",
+      "category": "TV Show Recaps",
+      "topic": "The Latest Plot Twist in Stranger Things",
+      "hook": "What just happened in Hawkins? Get the scoop on the latest Stranger Things shocker!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Actor Interviews",
-      "topic": "Emma Stone's Acting Journey",
-      "hook": "The inspiring story behind Emma Stone's rise to fame...",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "category": "Sports Betting Tips",
+      "topic": "March Madness Bracket Predictions",
+      "hook": "Want to win big in March Madness? Don't make these common bracket mistakes!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Music Performances",
-      "topic": "Kendrick Lamar's Most Powerful Live Performances",
-      "hook": "The #1 reason why Kendrick Lamar's live performances are truly unforgettable...",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Formula 1 Analysis",
+      "topic": "The Science Behind F1 Tire Strategy",
+      "hook": "The secret to winning in F1? It's all about the tires!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "NBA Player Stats",
+      "topic": "Stephen Curry's Unbelievable 3-Point Record",
+      "hook": "Is Stephen Curry the greatest shooter in NBA history? The numbers don't lie!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "College Basketball",
+      "topic": "The Cinderella Story of March Madness",
+      "hook": "From underdogs to champions: the most epic March Madness comeback stories!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Latest Kardashian Family Feud",
+      "hook": "You won't believe what just happened between Kim and Kourtney!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech Gadget Reviews",
+      "topic": "The New iPhone vs Samsung Galaxy",
+      "hook": "Which smartphone reigns supreme? We put them head-to-head!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Iconic Super Bowl Moments",
+      "hook": "Relive the most unforgettable Super Bowl moments in history!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Royal Family Updates",
+      "topic": "Meghan Markle's Latest Fashion Statement",
+      "hook": "The Duchess of Sussex is making waves with her latest style choice!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Car Reviews",
+      "topic": "The All-New Ford Mustang Review",
+      "hook": "Is the new Ford Mustang worth the hype? We take it for a spin!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Walking Dead Season Finale Recap",
+      "hook": "The Walking Dead just dropped a major bombshell! What does it mean for the future?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Betting Tips",
+      "topic": "NFL Week 1 Betting Predictions",
+      "hook": "Kick off the NFL season with a bang! Don't miss these week 1 betting tips!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Formula 1 Analysis",
+      "topic": "The Impact of F1's New Regulations",
+      "hook": "How will the new F1 regulations shake up the grid? We break it down!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "NBA Player Stats",
+      "topic": "The Rise of Luka Doncic",
+      "hook": "Is Luka Doncic the next NBA superstar? The stats say yes!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "College Basketball",
+      "topic": "The Greatest College Basketball Rivalries",
+      "hook": "Which college basketball rivalry is the most epic? We weigh in!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Latest Taylor Swift Music Rumors",
+      "hook": "What's next for Taylor Swift? We've got the inside scoop on her new music!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech Gadget Reviews",
+      "topic": "The New Apple Watch Review",
+      "hook": "Is the new Apple Watch worth the upgrade? We put it to the test!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -203,58 +238,23 @@
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
