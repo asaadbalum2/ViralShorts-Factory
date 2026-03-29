@@ -1,57 +1,57 @@
 {
   "title_patterns": [
-    "{number} {topic} You Won't Believe",
-    "The {topic} Secret Revealed",
-    "{number} Things You're Doing Wrong With {topic}",
-    "Why {topic} Is A Lie",
-    "The Ultimate {topic} Hack",
+    "{number} Secrets {topic} You Didn't Know",
+    "Why {topic} Changes Everything",
+    "The {adjective} Truth About {topic}",
+    "{number} Life-Changing {topic} Hacks",
     "What {topic} Really Means For You",
-    "{number} {topic} Myths Busted",
-    "The Surprising Truth About {topic}",
-    "How To {topic} Like A Pro",
-    "The {topic} Revolution: What You Need To Know"
+    "The {number} Most {adjective} {topic} Facts",
+    "How {topic} Affects Your {aspect_of_life}",
+    "{topic} Exposed: The {adjective} Truth",
+    "The {number} Biggest {topic} Mistakes",
+    "Uncovering The {adjective} {topic} Mystery"
   ],
   "hook_patterns": [
     "You won't believe what happens when...",
     "What if I told you {topic} was a lie?",
-    "I tried {topic} for {number} days and...",
-    "The secret to {topic} is not what you think",
-    "I was shocked to discover {topic}",
-    "Are you making this {topic} mistake?",
-    "The truth about {topic} will blow your mind",
-    "What {topic} experts don't want you to know",
-    "I'm about to reveal the {topic} secret",
-    "You're doing {topic} all wrong, here's why"
+    "The shocking truth about {topic} is...",
+    "I tried {topic} for {time} and here's what happened",
+    "The #1 {topic} myth debunked",
+    "Are you making these {number} common {topic} mistakes?",
+    "The one {topic} trick you need to know",
+    "Warning: {topic} may be causing you {problem}",
+    "I spent {time} studying {topic} and here's what I found",
+    "The {adjective} secret to {topic} that nobody tells you"
   ],
   "engagement_baits": [
     "Let me know in the comments what you think about {topic}",
-    "Share this with someone who needs to know {topic}",
-    "Can you guess the answer to this {topic} question?",
-    "What's your favorite {topic} tip? Share below",
+    "Share with someone who needs to see this {topic} video",
+    "What's your favorite {topic} trick? Tell me below",
     "Do you agree or disagree with this {topic} statement?",
-    "Tag a friend who loves {topic} and let's discuss",
-    "What's the most interesting {topic} fact you know?",
-    "Will you try this {topic} challenge? Let me know"
+    "Tag a friend who loves {topic} as much as you do",
+    "If you've tried {topic} before, share your experience",
+    "What's the most {adjective} {topic} thing you've ever seen?",
+    "Save this video for later and let me know what you think"
   ],
   "psychological_triggers": [
     "curiosity",
     "fomo",
-    "urgency",
     "scarcity",
-    "socialproof",
     "authority",
-    "empathy",
-    "novelty"
+    "socialproof",
+    "urgency",
+    "reciprocity",
+    "anticipation"
   ],
   "scroll_stop_openers": [
-    "I just discovered a game-changing {topic} hack",
-    "You won't believe the shocking truth about {topic}",
-    "What if I told you there's a way to {topic} in just {number} minutes",
-    "The {number} biggest {topic} mistakes you're making",
-    "I tried {topic} for {number} days and here's what happened",
-    "The secret to {topic} that only {number}% of people know",
-    "Are you ready to unlock the {topic} secret?",
-    "I'm about to reveal the {topic} truth that will change everything"
+    "I just discovered the shocking truth about {topic}",
+    "You're not going to believe what happens when you {action}",
+    "The #1 thing you're doing wrong with {topic}",
+    "What if I told you there's a {topic} hack that works every time",
+    "I tried {topic} for {time} and the results were astonishing",
+    "The one {topic} tip that will change your life forever",
+    "Warning: {topic} may be causing you {problem} without you realizing",
+    "I spent {time} studying {topic} and here's what I found out"
   ],
   "proven_categories": [
     "psychology",
@@ -59,29 +59,29 @@
     "relationships",
     "health",
     "technology",
-    "productivity",
     "marketing",
-    "entrepreneurship"
+    "productivity",
+    "selfimprovement"
   ],
   "retention_tricks": [
-    "Use cliffhangers to keep viewers engaged",
-    "Ask questions that spark curiosity",
-    "Use humor to break the ice",
-    "Share personal anecdotes to build connection",
-    "Use storytelling to convey information",
-    "Provide valuable insights to keep viewers interested"
+    "Start with a hook, then provide value",
+    "Use storytelling to keep viewers engaged",
+    "Ask questions to encourage audience participation",
+    "Provide a clear structure and outline",
+    "Use visuals and animations to break up content",
+    "End with a call-to-action or next steps"
   ],
   "cta_formulas": [
-    "Don't forget to {action} and {benefit}",
-    "Want to {desire}? Then {action} now",
-    "Get {result} by {action} today",
-    "Ready to {achieve}? {action} and start {benefit}",
-    "Take the first step to {desire} by {action}",
-    "Unlock {benefit} by {action} now"
+    "Join our {community/channel} for more {topic} content",
+    "Download our free {resource} to learn more about {topic}",
+    "Take our {quiz/challenge} to test your {topic} knowledge",
+    "Share this video with someone who needs to see it and let's {action}",
+    "Like and subscribe for more {topic} videos like this",
+    "Click the link in our bio to {action} and get started"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-03-22T06:41:25.751242",
+  "last_ai_update": "2026-03-29T06:55:35.473318",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-03-22T06:41:25.751251"
+  "last_saved": "2026-03-29T06:55:35.473328"
 }
