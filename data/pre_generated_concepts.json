@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-03-28T06:34:06.280985",
-  "valid_until": "2026-03-28T23:59:06.280994",
+  "generated_at": "2026-03-29T06:41:43.400575",
+  "valid_until": "2026-03-29T23:59:43.400583",
   "categories": [
-    "Sports Highlights",
-    "Royal Family Updates",
-    "Car Reviews",
-    "TV Show Recaps",
-    "Sports Betting Tips",
-    "Formula 1 Analysis",
-    "NBA Player Stats",
-    "College Basketball",
-    " Celebrity News",
-    "Tech Gadget Reviews",
-    "Automotive News",
-    "March Madness Predictions",
-    "European Soccer Updates",
-    "Luxury Lifestyle",
-    "Entertainment News"
+    "F1 Racing Highlights",
+    "Coachella 2026 Fashion Inspo",
+    "Marisa Tomei Tribute Videos",
+    "Cameron Diaz Comeback Stories",
+    "Ollie Bearman's Rise to Fame",
+    "Delauter Challenge Reactions",
+    "Apple TV Show Reviews",
+    "Coachella 2026 Lineup Reactions",
+    "Spring Festival Fashion",
+    "As Seen on TV Product Reviews",
+    "Influencer Coachella Takeovers",
+    "F1 Car Racing Tutorials",
+    "Celebrity Coachella Sightings",
+    "Emerging Music Artists at Coachella",
+    "Viral Delauter Dance Challenges"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "LeBron James' Record-Breaking Dunks",
-      "hook": "You won't believe the insane dunk that just broke the internet!",
+      "category": "F1 Racing Highlights",
+      "topic": "Top 5 Most Dramatic Pit Stops in F1 History",
+      "hook": "You won't believe the pit stop that changed the course of the championship!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Royal Family Updates",
-      "topic": "Prince William's Secret Charity Work",
-      "hook": "The shocking truth about Prince William's hidden philanthropy revealed!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Coachella 2026 Fashion Inspo",
+      "topic": "Sustainable Fashion Trends to Rock at Coachella 2026",
+      "hook": "Get ready to dazzle at Coachella with the most eco-friendly outfits of the season!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Car Reviews",
-      "topic": "Tesla Model S vs Porsche Taycan",
-      "hook": "Which electric car reigns supreme? Watch to find out!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Marisa Tomei Tribute Videos",
+      "topic": "Marisa Tomei's Most Iconic Movie Roles: A Tribute",
+      "hook": "From 'My Cousin Vinny' to 'Spider-Man', let's celebrate the incredible career of Marisa Tomei!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Latest Plot Twist in Stranger Things",
-      "hook": "What just happened in Hawkins? Get the scoop on the latest Stranger Things shocker!",
+      "category": "Cameron Diaz Comeback Stories",
+      "topic": "Cameron Diaz's Journey Back to Hollywood: What We Can Learn",
+      "hook": "After a 5-year hiatus, Cameron Diaz is back! But what sparked her return to the spotlight?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Ollie Bearman's Rise to Fame",
+      "topic": "The Untold Story of Ollie Bearman's Journey to F1 Stardom",
+      "hook": "From karting to F1, discover the incredible rise of Ollie Bearman and what's next for this young star!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Sports Betting Tips",
-      "topic": "March Madness Bracket Predictions",
-      "hook": "Want to win big in March Madness? Don't make these common bracket mistakes!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Formula 1 Analysis",
-      "topic": "The Science Behind F1 Tire Strategy",
-      "hook": "The secret to winning in F1? It's all about the tires!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Player Stats",
-      "topic": "Stephen Curry's Unbelievable 3-Point Record",
-      "hook": "Is Stephen Curry the greatest shooter in NBA history? The numbers don't lie!",
+      "category": "Delauter Challenge Reactions",
+      "topic": "The Funniest Delauter Challenge Reactions on Social Media",
+      "hook": "You won't stop laughing at these hilarious Delauter Challenge reactions!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "College Basketball",
-      "topic": "The Cinderella Story of March Madness",
-      "hook": "From underdogs to champions: the most epic March Madness comeback stories!",
+      "category": "Apple TV Show Reviews",
+      "topic": "Is 'Ted Lasso' the Best Apple TV Show of All Time?",
+      "hook": "Don't miss our honest review of 'Ted Lasso' and why it's a must-watch on Apple TV!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Coachella 2026 Lineup Reactions",
+      "topic": "The Most Surprising Coachella 2026 Lineup Announcements",
+      "hook": "The Coachella 2026 lineup is out! But which surprises will leave you speechless?",
       "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Spring Festival Fashion",
+      "topic": "10 Must-Have Spring Festival Fashion Essentials for 2026",
+      "hook": "Get ready to elevate your spring festival style with these must-have fashion essentials!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "As Seen on TV Product Reviews",
+      "topic": "The Truth About the 'Snuggie' As Seen on TV: Does it Really Work?",
+      "hook": "We put the infamous 'Snuggie' to the test \u2013 and the results are shocking!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "F1 Racing Highlights",
+      "topic": "The Most Heart-Stopping F1 Crashes of the 2020s",
+      "hook": "You won't believe the most terrifying F1 crashes of the decade \u2013 and how the drivers survived!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Coachella 2026 Fashion Inspo",
+      "topic": "Coachella 2026: How to Create the Perfect Festival Makeup Look",
+      "hook": "Get festival-ready with our top tips for creating the perfect Coachella makeup look!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Marisa Tomei Tribute Videos",
+      "topic": "Marisa Tomei's Most Memorable Quotes: A Tribute to Her Iconic Roles",
+      "hook": "Let's celebrate the wit and charm of Marisa Tomei with her most unforgettable movie quotes!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Celebrity News",
-      "topic": "The Latest Kardashian Family Feud",
-      "hook": "You won't believe what just happened between Kim and Kourtney!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Gadget Reviews",
-      "topic": "The New iPhone vs Samsung Galaxy",
-      "hook": "Which smartphone reigns supreme? We put them head-to-head!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Most Iconic Super Bowl Moments",
-      "hook": "Relive the most unforgettable Super Bowl moments in history!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Royal Family Updates",
-      "topic": "Meghan Markle's Latest Fashion Statement",
-      "hook": "The Duchess of Sussex is making waves with her latest style choice!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Car Reviews",
-      "topic": "The All-New Ford Mustang Review",
-      "hook": "Is the new Ford Mustang worth the hype? We take it for a spin!",
+      "category": "Cameron Diaz Comeback Stories",
+      "topic": "Cameron Diaz's Top 5 Best Movies: A Look Back at Her Illustrious Career",
+      "hook": "From 'There's Something About Mary' to 'Bad Teacher', we're counting down Cameron Diaz's top 5 best movies!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Walking Dead Season Finale Recap",
-      "hook": "The Walking Dead just dropped a major bombshell! What does it mean for the future?",
+      "category": "Ollie Bearman's Rise to Fame",
+      "topic": "What Makes Ollie Bearman the Most Exciting Young Driver in F1",
+      "hook": "Discover the incredible talent and dedication that's driving Ollie Bearman to F1 stardom!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Sports Betting Tips",
-      "topic": "NFL Week 1 Betting Predictions",
-      "hook": "Kick off the NFL season with a bang! Don't miss these week 1 betting tips!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Formula 1 Analysis",
-      "topic": "The Impact of F1's New Regulations",
-      "hook": "How will the new F1 regulations shake up the grid? We break it down!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Player Stats",
-      "topic": "The Rise of Luka Doncic",
-      "hook": "Is Luka Doncic the next NBA superstar? The stats say yes!",
+      "category": "Delauter Challenge Reactions",
+      "topic": "The Best Delauter Challenge Fails: Laugh-Out-Loud Moments",
+      "hook": "Get ready to laugh at the most hilarious Delauter Challenge fails \u2013 they're guaranteed to brighten your day!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "College Basketball",
-      "topic": "The Greatest College Basketball Rivalries",
-      "hook": "Which college basketball rivalry is the most epic? We weigh in!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Apple TV Show Reviews",
+      "topic": "Why 'The Morning Show' is the Most Underrated Apple TV Show",
+      "hook": "Don't miss our review of 'The Morning Show' and why it's a hidden gem on Apple TV!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "The Latest Taylor Swift Music Rumors",
-      "hook": "What's next for Taylor Swift? We've got the inside scoop on her new music!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "Coachella 2026 Lineup Reactions",
+      "topic": "The Biggest Coachella 2026 Lineup Snubs: Who Got Left Out?",
+      "hook": "The Coachella 2026 lineup is out, but which major artists got snubbed \u2013 and why?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Tech Gadget Reviews",
-      "topic": "The New Apple Watch Review",
-      "hook": "Is the new Apple Watch worth the upgrade? We put it to the test!",
+      "category": "Spring Festival Fashion",
+      "topic": "5 Essential Spring Festival Accessories to Elevate Your Style",
+      "hook": "Take your spring festival style to the next level with these must-have accessories!",
       "voice_style": "authoritative",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "As Seen on TV Product Reviews",
+      "topic": "The 'Slap Chop' As Seen on TV: Does it Really Make Chopping Easier?",
+      "hook": "We put the infamous 'Slap Chop' to the test \u2013 but does it live up to the hype?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "F1 Racing Highlights",
+      "topic": "The Most Thrilling F1 Overtakes of the 2020s",
+      "hook": "You won't believe the most daring F1 overtakes of the decade \u2013 and the drivers who pulled them off!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
