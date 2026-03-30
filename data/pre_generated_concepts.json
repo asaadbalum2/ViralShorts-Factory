@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-03-29T06:41:43.400575",
-  "valid_until": "2026-03-29T23:59:43.400583",
+  "generated_at": "2026-03-30T07:07:09.753106",
+  "valid_until": "2026-03-30T23:59:09.753113",
   "categories": [
-    "F1 Racing Highlights",
-    "Coachella 2026 Fashion Inspo",
-    "Marisa Tomei Tribute Videos",
-    "Cameron Diaz Comeback Stories",
-    "Ollie Bearman's Rise to Fame",
-    "Delauter Challenge Reactions",
-    "Apple TV Show Reviews",
-    "Coachella 2026 Lineup Reactions",
-    "Spring Festival Fashion",
-    "As Seen on TV Product Reviews",
-    "Influencer Coachella Takeovers",
-    "F1 Car Racing Tutorials",
-    "Celebrity Coachella Sightings",
-    "Emerging Music Artists at Coachella",
-    "Viral Delauter Dance Challenges"
+    "Actress Takeovers: Zazie Beetz Edition",
+    "Home Improvement Hacks for a Dream Real Estate",
+    "Paradise Season 3 Recaps and Theories",
+    "Northern Lights Time-Lapses and Travel Guides",
+    "Japanese Talent Spotlight: \u6d45\u91ce\u5553\u4ecb",
+    "Comedian Highlights: Spencer Jones' Best Moments",
+    "Apple Product Reviews and Unboxings",
+    "Phoenix Weather Updates and Safety Tips",
+    "Spring Home Decor Inspiration",
+    "March Madness Sports Analysis",
+    "Aurora-Chasing Adventures",
+    "Hollywood Star Interviews and Behind-the-Scenes",
+    "Tech News and Gadget Trends",
+    "Travel Vlogs: Exploring the American Southwest",
+    "Seasonal Fashion and Beauty Must-Haves"
   ],
   "concepts": [
     {
-      "category": "F1 Racing Highlights",
-      "topic": "Top 5 Most Dramatic Pit Stops in F1 History",
-      "hook": "You won't believe the pit stop that changed the course of the championship!",
+      "category": "Actress Takeovers: Zazie Beetz Edition",
+      "topic": "Zazie Beetz's Most Iconic Roles",
+      "hook": "You won't believe the movie that launched Zazie Beetz's career!",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Home Improvement Hacks for a Dream Real Estate",
+      "topic": "5-Minute DIY Shelf Installation",
+      "hook": "Transform your living room in just 5 minutes with this easy hack!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Paradise Season 3 Recaps and Theories",
+      "topic": "The Biggest Plot Twist in Paradise Season 3",
+      "hook": "The shocking moment that changed everything in Paradise Season 3!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Coachella 2026 Fashion Inspo",
-      "topic": "Sustainable Fashion Trends to Rock at Coachella 2026",
-      "hook": "Get ready to dazzle at Coachella with the most eco-friendly outfits of the season!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Marisa Tomei Tribute Videos",
-      "topic": "Marisa Tomei's Most Iconic Movie Roles: A Tribute",
-      "hook": "From 'My Cousin Vinny' to 'Spider-Man', let's celebrate the incredible career of Marisa Tomei!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Cameron Diaz Comeback Stories",
-      "topic": "Cameron Diaz's Journey Back to Hollywood: What We Can Learn",
-      "hook": "After a 5-year hiatus, Cameron Diaz is back! But what sparked her return to the spotlight?",
+      "category": "Northern Lights Time-Lapses and Travel Guides",
+      "topic": "Witnessing the Northern Lights in Iceland",
+      "hook": "Get ready for the most breathtaking natural phenomenon on Earth!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Ollie Bearman's Rise to Fame",
-      "topic": "The Untold Story of Ollie Bearman's Journey to F1 Stardom",
-      "hook": "From karting to F1, discover the incredible rise of Ollie Bearman and what's next for this young star!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Japanese Talent Spotlight: \u6d45\u91ce\u5553\u4ecb",
+      "topic": "The Rise of Japanese Singer-Songwriter Yui",
+      "hook": "Discover the Japanese artist taking the music world by storm!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Delauter Challenge Reactions",
-      "topic": "The Funniest Delauter Challenge Reactions on Social Media",
-      "hook": "You won't stop laughing at these hilarious Delauter Challenge reactions!",
+      "category": "Comedian Highlights: Spencer Jones' Best Moments",
+      "topic": "Spencer Jones' Funniest Stand-Up Bits",
+      "hook": "Laughter guaranteed with Spencer Jones' most hilarious jokes!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Apple TV Show Reviews",
-      "topic": "Is 'Ted Lasso' the Best Apple TV Show of All Time?",
-      "hook": "Don't miss our honest review of 'Ted Lasso' and why it's a must-watch on Apple TV!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Coachella 2026 Lineup Reactions",
-      "topic": "The Most Surprising Coachella 2026 Lineup Announcements",
-      "hook": "The Coachella 2026 lineup is out! But which surprises will leave you speechless?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Apple Product Reviews and Unboxings",
+      "topic": "Unboxing the Latest Apple AirPods Pro",
+      "hook": "What's inside the box of the most anticipated earbuds of the year?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
     },
     {
-      "category": "Spring Festival Fashion",
-      "topic": "10 Must-Have Spring Festival Fashion Essentials for 2026",
-      "hook": "Get ready to elevate your spring festival style with these must-have fashion essentials!",
+      "category": "Phoenix Weather Updates and Safety Tips",
+      "topic": "How to Stay Safe During a Phoenix Dust Storm",
+      "hook": "Don't get caught off guard: learn how to survive a Phoenix dust storm!",
       "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Spring Home Decor Inspiration",
+      "topic": "10 Spring Decor Trends to Try This Season",
+      "hook": "Give your home a fresh new look with these spring decor trends!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "As Seen on TV Product Reviews",
-      "topic": "The Truth About the 'Snuggie' As Seen on TV: Does it Really Work?",
-      "hook": "We put the infamous 'Snuggie' to the test \u2013 and the results are shocking!",
+      "category": "March Madness Sports Analysis",
+      "topic": "Predicting the March Madness Championship Winner",
+      "hook": "Who will take home the championship title this year?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Actress Takeovers: Zazie Beetz Edition",
+      "topic": "Zazie Beetz's Favorite Movies and TV Shows",
+      "hook": "Find out what Zazie Beetz binge-watches in her free time!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Improvement Hacks for a Dream Real Estate",
+      "topic": "Budget-Friendly Ways to Update Your Kitchen",
+      "hook": "Give your kitchen a luxurious makeover without breaking the bank!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Paradise Season 3 Recaps and Theories",
+      "topic": "Uncovering the Secrets of Paradise Season 3",
+      "hook": "The truth behind the mysterious events in Paradise Season 3 revealed!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "F1 Racing Highlights",
-      "topic": "The Most Heart-Stopping F1 Crashes of the 2020s",
-      "hook": "You won't believe the most terrifying F1 crashes of the decade \u2013 and how the drivers survived!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Coachella 2026 Fashion Inspo",
-      "topic": "Coachella 2026: How to Create the Perfect Festival Makeup Look",
-      "hook": "Get festival-ready with our top tips for creating the perfect Coachella makeup look!",
-      "voice_style": "friendly",
+      "category": "Northern Lights Time-Lapses and Travel Guides",
+      "topic": "The Best Time to See the Northern Lights in Norway",
+      "hook": "Plan your trip to witness the breathtaking Northern Lights in Norway!",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Marisa Tomei Tribute Videos",
-      "topic": "Marisa Tomei's Most Memorable Quotes: A Tribute to Her Iconic Roles",
-      "hook": "Let's celebrate the wit and charm of Marisa Tomei with her most unforgettable movie quotes!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Cameron Diaz Comeback Stories",
-      "topic": "Cameron Diaz's Top 5 Best Movies: A Look Back at Her Illustrious Career",
-      "hook": "From 'There's Something About Mary' to 'Bad Teacher', we're counting down Cameron Diaz's top 5 best movies!",
+      "category": "Japanese Talent Spotlight: \u6d45\u91ce\u5553\u4ecb",
+      "topic": "The Life and Career of Japanese Actor Sosuke Ikematsu",
+      "hook": "Get to know the talented Japanese actor taking Hollywood by storm!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Ollie Bearman's Rise to Fame",
-      "topic": "What Makes Ollie Bearman the Most Exciting Young Driver in F1",
-      "hook": "Discover the incredible talent and dedication that's driving Ollie Bearman to F1 stardom!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Delauter Challenge Reactions",
-      "topic": "The Best Delauter Challenge Fails: Laugh-Out-Loud Moments",
-      "hook": "Get ready to laugh at the most hilarious Delauter Challenge fails \u2013 they're guaranteed to brighten your day!",
+      "category": "Comedian Highlights: Spencer Jones' Best Moments",
+      "topic": "Spencer Jones' Most Hilarious Impressions",
+      "hook": "Laugh out loud with Spencer Jones' hilarious celebrity impressions!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Apple TV Show Reviews",
-      "topic": "Why 'The Morning Show' is the Most Underrated Apple TV Show",
-      "hook": "Don't miss our review of 'The Morning Show' and why it's a hidden gem on Apple TV!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Coachella 2026 Lineup Reactions",
-      "topic": "The Biggest Coachella 2026 Lineup Snubs: Who Got Left Out?",
-      "hook": "The Coachella 2026 lineup is out, but which major artists got snubbed \u2013 and why?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Spring Festival Fashion",
-      "topic": "5 Essential Spring Festival Accessories to Elevate Your Style",
-      "hook": "Take your spring festival style to the next level with these must-have accessories!",
+      "category": "Apple Product Reviews and Unboxings",
+      "topic": "Apple iPhone 13 Pro Review: Is it Worth the Upgrade?",
+      "hook": "Should you upgrade to the latest iPhone 13 Pro? Find out here!",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "As Seen on TV Product Reviews",
-      "topic": "The 'Slap Chop' As Seen on TV: Does it Really Make Chopping Easier?",
-      "hook": "We put the infamous 'Slap Chop' to the test \u2013 but does it live up to the hype?",
-      "voice_style": "mysterious",
+      "category": "Phoenix Weather Updates and Safety Tips",
+      "topic": "How to Prepare for a Phoenix Monsoon Season",
+      "hook": "Don't get caught off guard: prepare for the Phoenix monsoon season now!",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "F1 Racing Highlights",
-      "topic": "The Most Thrilling F1 Overtakes of the 2020s",
-      "hook": "You won't believe the most daring F1 overtakes of the decade \u2013 and the drivers who pulled them off!",
-      "voice_style": "dramatic",
+      "category": "Spring Home Decor Inspiration",
+      "topic": "Spring Decor Ideas for Small Spaces",
+      "hook": "Maximize your small space with these clever spring decor ideas!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "March Madness Sports Analysis",
+      "topic": "The Most Epic March Madness Upsets in History",
+      "hook": "Relive the most shocking March Madness upsets that will leave you speechless!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
+    },
+    {
+      "category": "Actress Takeovers: Zazie Beetz Edition",
+      "topic": "Zazie Beetz's Fitness and Wellness Routine",
+      "hook": "Get fit and feel amazing with Zazie Beetz's wellness secrets!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
