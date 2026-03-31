@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-03-30T07:07:09.753106",
-  "valid_until": "2026-03-30T23:59:09.753113",
+  "generated_at": "2026-03-31T06:49:55.196494",
+  "valid_until": "2026-03-31T23:59:55.196503",
   "categories": [
-    "Actress Takeovers: Zazie Beetz Edition",
-    "Home Improvement Hacks for a Dream Real Estate",
-    "Paradise Season 3 Recaps and Theories",
-    "Northern Lights Time-Lapses and Travel Guides",
-    "Japanese Talent Spotlight: \u6d45\u91ce\u5553\u4ecb",
-    "Comedian Highlights: Spencer Jones' Best Moments",
-    "Apple Product Reviews and Unboxings",
-    "Phoenix Weather Updates and Safety Tips",
-    "Spring Home Decor Inspiration",
-    "March Madness Sports Analysis",
-    "Aurora-Chasing Adventures",
-    "Hollywood Star Interviews and Behind-the-Scenes",
-    "Tech News and Gadget Trends",
-    "Travel Vlogs: Exploring the American Southwest",
-    "Seasonal Fashion and Beauty Must-Haves"
+    "Top 11 Life Hacks for Accident Prevention",
+    "Lawyer Reacts to Crazy Auto Accident Cases",
+    "Rick and Morty Fan Theories with Andy Samberg",
+    "Amber Rose's Favorite Travel Destinations like Pandora from Avatar 3",
+    "Wander Franco's Baseball Training Tips",
+    "Richard Nixon's Most Shocking Decisions",
+    "11 Things You Didn't Know About Richard Nixon",
+    "Auto Accident Lawyer Q&A with Funny Hosts like Andy Samberg",
+    "Rick and Morty Cosplay Ideas for Spring",
+    "Amber Rose's Spring Fashion Must-Haves",
+    "Avatar 3 Predictions and Theories with Wander Franco",
+    "11 Essential Items to Carry in Your Car for Safe Driving",
+    "Lawyer-Approved Car Insurance Tips for 2026",
+    "Unconventional Uses for Items like Rick from Rick and Morty",
+    "Spring Break Safety Tips with Andy Samberg and Friends"
   ],
   "concepts": [
     {
-      "category": "Actress Takeovers: Zazie Beetz Edition",
-      "topic": "Zazie Beetz's Most Iconic Roles",
-      "hook": "You won't believe the movie that launched Zazie Beetz's career!",
+      "category": "Top 11 Life Hacks for Accident Prevention",
+      "topic": "Preventing Slips and Falls at Home",
+      "hook": "You won't believe the crazy thing that's increasing your risk of slipping at home!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Home Improvement Hacks for a Dream Real Estate",
-      "topic": "5-Minute DIY Shelf Installation",
-      "hook": "Transform your living room in just 5 minutes with this easy hack!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Paradise Season 3 Recaps and Theories",
-      "topic": "The Biggest Plot Twist in Paradise Season 3",
-      "hook": "The shocking moment that changed everything in Paradise Season 3!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Northern Lights Time-Lapses and Travel Guides",
-      "topic": "Witnessing the Northern Lights in Iceland",
-      "hook": "Get ready for the most breathtaking natural phenomenon on Earth!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Japanese Talent Spotlight: \u6d45\u91ce\u5553\u4ecb",
-      "topic": "The Rise of Japanese Singer-Songwriter Yui",
-      "hook": "Discover the Japanese artist taking the music world by storm!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedian Highlights: Spencer Jones' Best Moments",
-      "topic": "Spencer Jones' Funniest Stand-Up Bits",
-      "hook": "Laughter guaranteed with Spencer Jones' most hilarious jokes!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Apple Product Reviews and Unboxings",
-      "topic": "Unboxing the Latest Apple AirPods Pro",
-      "hook": "What's inside the box of the most anticipated earbuds of the year?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Phoenix Weather Updates and Safety Tips",
-      "topic": "How to Stay Safe During a Phoenix Dust Storm",
-      "hook": "Don't get caught off guard: learn how to survive a Phoenix dust storm!",
+      "category": "Lawyer Reacts to Crazy Auto Accident Cases",
+      "topic": "The Most Shocking Case of a Self-Driving Car Accident",
+      "hook": "A self-driving car crashed into a tree, but what the investigation revealed will shock you!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Spring Home Decor Inspiration",
-      "topic": "10 Spring Decor Trends to Try This Season",
-      "hook": "Give your home a fresh new look with these spring decor trends!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "March Madness Sports Analysis",
-      "topic": "Predicting the March Madness Championship Winner",
-      "hook": "Who will take home the championship title this year?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Actress Takeovers: Zazie Beetz Edition",
-      "topic": "Zazie Beetz's Favorite Movies and TV Shows",
-      "hook": "Find out what Zazie Beetz binge-watches in her free time!",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Home Improvement Hacks for a Dream Real Estate",
-      "topic": "Budget-Friendly Ways to Update Your Kitchen",
-      "hook": "Give your kitchen a luxurious makeover without breaking the bank!",
+      "category": "Rick and Morty Fan Theories with Andy Samberg",
+      "topic": "Is Rick Sanchez a Time Traveler or a Dimension Hopper?",
+      "hook": "Andy Samberg here, and I've got a theory that will blow your mind about Rick's adventures!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "upbeat",
+      "target_duration": 48
     },
     {
-      "category": "Paradise Season 3 Recaps and Theories",
-      "topic": "Uncovering the Secrets of Paradise Season 3",
-      "hook": "The truth behind the mysterious events in Paradise Season 3 revealed!",
+      "category": "Amber Rose's Favorite Travel Destinations like Pandora from Avatar 3",
+      "topic": "Exploring the Bioluminescent Forests of New Zealand",
+      "hook": "Get ready to be transported to a real-life Pandora, as I take you to the most breathtaking forests on Earth!",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Northern Lights Time-Lapses and Travel Guides",
-      "topic": "The Best Time to See the Northern Lights in Norway",
-      "hook": "Plan your trip to witness the breathtaking Northern Lights in Norway!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Japanese Talent Spotlight: \u6d45\u91ce\u5553\u4ecb",
-      "topic": "The Life and Career of Japanese Actor Sosuke Ikematsu",
-      "hook": "Get to know the talented Japanese actor taking Hollywood by storm!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedian Highlights: Spencer Jones' Best Moments",
-      "topic": "Spencer Jones' Most Hilarious Impressions",
-      "hook": "Laugh out loud with Spencer Jones' hilarious celebrity impressions!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Apple Product Reviews and Unboxings",
-      "topic": "Apple iPhone 13 Pro Review: Is it Worth the Upgrade?",
-      "hook": "Should you upgrade to the latest iPhone 13 Pro? Find out here!",
-      "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Phoenix Weather Updates and Safety Tips",
-      "topic": "How to Prepare for a Phoenix Monsoon Season",
-      "hook": "Don't get caught off guard: prepare for the Phoenix monsoon season now!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Spring Home Decor Inspiration",
-      "topic": "Spring Decor Ideas for Small Spaces",
-      "hook": "Maximize your small space with these clever spring decor ideas!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "March Madness Sports Analysis",
-      "topic": "The Most Epic March Madness Upsets in History",
-      "hook": "Relive the most shocking March Madness upsets that will leave you speechless!",
+      "category": "Wander Franco's Baseball Training Tips",
+      "topic": "Mastering the Art of Hitting a Curveball",
+      "hook": "Wander Franco here, and I'm about to reveal the secret to hitting a curveball like a pro!",
       "voice_style": "energetic",
       "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Richard Nixon's Most Shocking Decisions",
+      "topic": "The Watergate Scandal: What Really Happened?",
+      "hook": "The truth behind the Watergate scandal will shock you, as we dive into the most shocking decision of Nixon's presidency!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "11 Things You Didn't Know About Richard Nixon",
+      "topic": "Nixon's Secret Love of Poetry and Music",
+      "hook": "You won't believe the secret hobby that Nixon had, which will change the way you think about him forever!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Auto Accident Lawyer Q&A with Funny Hosts like Andy Samberg",
+      "topic": "The Funniest Auto Accident Questions Answered",
+      "hook": "Andy Samberg here, and we're about to tackle the most ridiculous auto accident questions you've ever heard!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 49
+    },
+    {
+      "category": "Rick and Morty Cosplay Ideas for Spring",
+      "topic": "Creating the Perfect Summer Smith Cosplay",
+      "hook": "Get ready to level up your cosplay game, as we show you how to create the most epic Summer Smith costume!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 41
+    },
+    {
+      "category": "Amber Rose's Spring Fashion Must-Haves",
+      "topic": "The Hottest Sustainable Fashion Trends for Spring",
+      "hook": "Amber Rose here, and I'm about to spill the tea on the most stylish and sustainable fashion trends for Spring!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Top 11 Life Hacks for Accident Prevention",
+      "topic": "Preventing Fires in the Kitchen",
+      "hook": "You're probably making this one simple mistake in the kitchen that could start a fire!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Lawyer Reacts to Crazy Auto Accident Cases",
+      "topic": "The Case of the Missing Black Box",
+      "hook": "A plane crashed, but the black box was nowhere to be found - what does this mean for the investigation?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Rick and Morty Fan Theories with Andy Samberg",
+      "topic": "Is Birdperson a Traitor?",
+      "hook": "Andy Samberg here, and I've got a theory that will make you question everything you thought you knew about Birdperson!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Actress Takeovers: Zazie Beetz Edition",
-      "topic": "Zazie Beetz's Fitness and Wellness Routine",
-      "hook": "Get fit and feel amazing with Zazie Beetz's wellness secrets!",
-      "voice_style": "calm",
+      "category": "Amber Rose's Favorite Travel Destinations like Pandora from Avatar 3",
+      "topic": "Discovering the Hidden Beaches of Bora Bora",
+      "hook": "Get ready to escape to a tropical paradise, as I take you to the most stunning hidden beaches on Earth!",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Wander Franco's Baseball Training Tips",
+      "topic": "The Secret to Throwing a 100mph Fastball",
+      "hook": "Wander Franco here, and I'm about to reveal the secret to throwing a fastball that will leave batters stunned!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Richard Nixon's Most Shocking Decisions",
+      "topic": "The Decision to Invade Cambodia",
+      "hook": "The shocking truth behind Nixon's decision to invade Cambodia will leave you speechless!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "11 Things You Didn't Know About Richard Nixon",
+      "topic": "Nixon's Secret Meetings with Foreign Leaders",
+      "hook": "You won't believe the secret meetings that Nixon had with foreign leaders, which will change the way you think about his presidency!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Auto Accident Lawyer Q&A with Funny Hosts like Andy Samberg",
+      "topic": "The Most Ridiculous Auto Accident Claims",
+      "hook": "Andy Samberg here, and we're about to tackle the most ridiculous auto accident claims you've ever heard!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 49
+    },
+    {
+      "category": "Rick and Morty Cosplay Ideas for Spring",
+      "topic": "Creating the Perfect Rick Sanchez Cosplay",
+      "hook": "Get ready to level up your cosplay game, as we show you how to create the most epic Rick Sanchez costume!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 41
+    },
+    {
+      "category": "Amber Rose's Spring Fashion Must-Haves",
+      "topic": "The Hottest Spring Fashion Trends for 2024",
+      "hook": "Amber Rose here, and I'm about to spill the tea on the most stylish and sustainable fashion trends for Spring 2024!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Top 11 Life Hacks for Accident Prevention",
+      "topic": "Preventing Injuries in the Workplace",
+      "hook": "You're probably making this one simple mistake at work that could lead to a serious injury!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
