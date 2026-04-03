@@ -1,276 +1,260 @@
 {
-  "generated_at": "2026-04-02T06:48:53.308678",
-  "valid_until": "2026-04-02T23:59:53.308686",
+  "generated_at": "2026-04-03T06:46:16.613873",
+  "valid_until": "2026-04-03T23:59:16.613883",
   "categories": [
-    "Gaming Highlights (League of Legends)",
-    "Fantasy Anime Reviews (Solo Leveling Season 3)",
-    "Weather Updates (San Francisco Weather)",
-    "Politician Watch (JD Vance)",
-    "Mythology-Based Movies (Ramayana Movie)",
-    "Running Shoe Reviews (Brooks)",
-    "Student Loan Advice (Education Department Student Loans)",
-    "Esports Analysis (League of Legends)",
-    "Movie Star Interviews (Anya Taylor-Joy)",
-    "Current Events Explained",
-    "Seasonal Weather Prep",
-    "Social Media Challenges",
-    "Anime vs. Live-Action Debates",
-    "Education Loan Hacks",
-    "Gaming Tier Lists (League of Legends)"
+    "Gaming Highlights with Rockstar Games",
+    "K-Pop Dance Challenges featuring Mark NCT",
+    "Kings Game Walkthroughs and Strategies",
+    "Apple iPhone 17 Pro Max Reviews and Unboxing",
+    "Silver Alert Awareness and Safety Tips",
+    "NBA Highlights and Analysis with Kawhi Leonard",
+    "Sheetz Food Reviews and Challenges",
+    "Dylan Harper Music Covers and Reactions",
+    "Easter and Spring Break Vlogs",
+    "Gaming Setup Tours with Popular Games",
+    "Phone Accessories for iPhone 17 Pro Max",
+    "Spring Fashion and Beauty Trends",
+    "Sports Analysis and Predictions",
+    "Music Festival Previews and Lineup Reactions",
+    "Technology News and Updates"
   ],
   "concepts": [
     {
-      "category": "Gaming Highlights (League of Legends)",
-      "topic": "Insane 1v5 Pentakill by a Bronze Player",
-      "hook": "You won't believe the most impossible comeback I've ever seen!",
+      "category": "Gaming Highlights with Rockstar Games",
+      "topic": "Unbelievable GTA V Stunt Jumps & Near Misses Compilation",
+      "hook": "Did I just defy gravity in Los Santos? You won't believe this!",
       "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Fantasy Anime Reviews (Solo Leveling Season 3)",
-      "topic": "The Hidden Meaning Behind Jin Woo's Powers",
-      "hook": "What if I told you Jin Woo's powers are not just random abilities?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Weather Updates (San Francisco Weather)",
-      "topic": "The Unusual Cause of San Francisco's Recent Fog",
-      "hook": "San Francisco's fog is back, but this time it's not what you think!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Politician Watch (JD Vance)",
-      "topic": "JD Vance's Surprising Stance on Student Loans",
-      "hook": "You might be shocked by what JD Vance just said about student loans!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Mythology-Based Movies (Ramayana Movie)",
-      "topic": "The Ramayana Movie's Most Accurate Depiction of Hindu Mythology",
-      "hook": "This one scene from the Ramayana movie will change your perspective on Hindu mythology forever!",
+      "category": "Gaming Highlights with Rockstar Games",
+      "topic": "Red Dead Redemption 2's Most Epic Lasso Fails & Redemption Moments",
+      "hook": "My lasso skills are... questionable. But the saves? Legendary!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Running Shoe Reviews (Brooks)",
-      "topic": "The Brooks Shoe Model That's a Game-Changer for Long-Distance Runners",
-      "hook": "I just found the perfect running shoe for marathon training, and it's not what you expect!",
+      "category": "K-Pop Dance Challenges featuring Mark NCT",
+      "topic": "Mastering Mark NCT's 'Baggy Jeans' Dance Break in 60 Seconds (Tutorial)",
+      "hook": "Think you can hit Mark NCT's 'Baggy Jeans' choreo? Let's break it down!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Student Loan Advice (Education Department Student Loans)",
-      "topic": "The Little-Known Hack to Forgive Your Student Loans",
-      "hook": "What if I told you there's a secret way to make your student loans disappear?",
+      "category": "K-Pop Dance Challenges featuring Mark NCT",
+      "topic": "Reacting to Fans Doing Mark NCT's Favorite Dance Move (Challenge Compilation)",
+      "hook": "Mark NCT's signature move is iconic. Let's see how YOU did it!",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Kings Game Walkthroughs and Strategies",
+      "topic": "How to Dominate the Early Game in Kings Game: Essential Resource Management",
+      "hook": "Starting Kings Game strong is KEY. Here's my secret sauce for early victory!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Kings Game Walkthroughs and Strategies",
+      "topic": "Top 3 Underrated Unit Combinations in Kings Game for PvP Victory",
+      "hook": "Everyone uses the same units... but THESE combinations will shock your opponents!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Apple iPhone 17 Pro Max Reviews and Unboxing",
+      "topic": "iPhone 17 Pro Max Camera Test: Low Light vs. Daylight Battle!",
+      "hook": "Is the iPhone 17 Pro Max camera REALLY worth the hype? Let's shoot!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Apple iPhone 17 Pro Max Reviews and Unboxing",
+      "topic": "Unboxing the iPhone 17 Pro Max: First Impressions & Hidden Features!",
+      "hook": "It's finally here! The iPhone 17 Pro Max is in my hands \u2013 what's inside?!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Silver Alert Awareness and Safety Tips",
+      "topic": "What to Do When You See a Silver Alert: Your Quick Action Guide",
+      "hook": "A Silver Alert just popped up. Do you know what to do next? Your quick guide starts now.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Silver Alert Awareness and Safety Tips",
+      "topic": "Essential Safety Tips for Loved Ones Prone to Wandering (Preventative Measures)",
+      "hook": "Protecting vulnerable loved ones is crucial. These tips could save a life.",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Esports Analysis (League of Legends)",
-      "topic": "The Strategic Mistake That Cost Team Liquid the Championship",
-      "hook": "One critical error changed the course of the entire tournament - here's what happened!",
-      "voice_style": "authoritative",
+      "category": "NBA Highlights and Analysis with Kawhi Leonard",
+      "topic": "Kawhi Leonard's Top 5 Clutch Shots That Changed Games (Breakdown)",
+      "hook": "Kawhi's calm under pressure is unmatched. Let's relive his most insane clutch moments!",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Movie Star Interviews (Anya Taylor-Joy)",
-      "topic": "Anya Taylor-Joy's Unconventional Approach to Acting",
-      "hook": "Anya Taylor-Joy just revealed the unusual technique she uses to get into character!",
+      "category": "NBA Highlights and Analysis with Kawhi Leonard",
+      "topic": "Analyzing Kawhi Leonard's Defensive Masterclass: The 'Klaw' Steal Clinic",
+      "hook": "How does Kawhi ALWAYS get the steal? We're breaking down his defensive genius!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Sheetz Food Reviews and Challenges",
+      "topic": "The Ultimate Sheetz MTO Burger Build Challenge: Is It Worth It?",
+      "hook": "Can I build the PERFECT Sheetz MTO burger? Let's find out... and rate it!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sheetz Food Reviews and Challenges",
+      "topic": "Ranking Sheetz's Top 5 Secret Menu Items You NEED to Try!",
+      "hook": "Forget the regular menu! These Sheetz secret items are game-changers.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Dylan Harper Music Covers and Reactions",
+      "topic": "My Acoustic Cover of Dylan Harper's Latest Hit: 'Midnight Drive'",
+      "hook": "Dylan Harper's new track is stuck in my head! Here's my acoustic take.",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Current Events Explained",
-      "topic": "The Unexpected Reason Behind the Recent Stock Market Fluctuations",
-      "hook": "You won't believe the shocking truth behind the latest market trends!",
+      "category": "Dylan Harper Music Covers and Reactions",
+      "topic": "First Listen Reaction to Dylan Harper's Unreleased Demo (Fan Speculation)",
+      "hook": "OMG! I found what sounds like a Dylan Harper demo! Let's freak out together!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
+      "music_mood": "mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Gaming Highlights (League of Legends)",
-      "topic": "The Most Creative Baron Steal in League of Legends History",
-      "hook": "I've never seen a more impressive Baron steal - you won't believe the mechanics!",
-      "voice_style": "energetic",
+      "category": "Easter and Spring Break Vlogs",
+      "topic": "DIY Easter Basket Ideas for Under $20: Budget-Friendly & Adorable!",
+      "hook": "Easter baskets don't need to break the bank! Here are my favorite budget ideas.",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fantasy Anime Reviews (Solo Leveling Season 3)",
-      "topic": "The Hidden Symbolism in Solo Leveling's Monster Designs",
-      "hook": "What if I told you the monsters in Solo Leveling are more than just beasts?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Weather Updates (San Francisco Weather)",
-      "topic": "The Unique Weather Phenomenon That Only Occurs in San Francisco",
-      "hook": "San Francisco just experienced a rare weather event that will blow your mind!",
-      "voice_style": "calm",
+      "category": "Easter and Spring Break Vlogs",
+      "topic": "Spring Break Travel Hacks You WISH You Knew Sooner (Save Money & Stress)",
+      "hook": "Planning Spring Break? Stop scrolling! These hacks will save your trip.",
+      "voice_style": "energetic",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Politician Watch (JD Vance)",
-      "topic": "JD Vance's Surprising Proposal for Education Reform",
-      "hook": "You might be surprised by JD Vance's latest plan to revolutionize the education system!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Mythology-Based Movies (Ramayana Movie)",
-      "topic": "The Ramayana Movie's Most Epic Battle Scene",
-      "hook": "This one battle scene from the Ramayana movie will leave you breathless!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Running Shoe Reviews (Brooks)",
-      "topic": "The Best Brooks Running Shoe for Beginners",
-      "hook": "Just started running? This Brooks shoe model is a must-have for beginners!",
+      "category": "Gaming Setup Tours with Popular Games",
+      "topic": "My Valorant Pro-Inspired Gaming Setup Tour (Budget-Friendly Edition)",
+      "hook": "Want a pro Valorant setup without the pro price tag? Welcome to my battle station!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Student Loan Advice (Education Department Student Loans)",
-      "topic": "The Top 3 Mistakes to Avoid When Applying for Student Loans",
-      "hook": "Don't fall into these common traps when applying for student loans - here's what to avoid!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Esports Analysis (League of Legends)",
-      "topic": "The Game-Changing Strategy That Won the World Championship",
-      "hook": "This one strategy changed the course of the entire tournament - here's how it worked!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Movie Star Interviews (Anya Taylor-Joy)",
-      "topic": "Anya Taylor-Joy's Favorite Books and How They Inspire Her Acting",
-      "hook": "Anya Taylor-Joy just revealed her favorite books and how they influence her performances!",
+      "category": "Gaming Setup Tours with Popular Games",
+      "topic": "Cozy Animal Crossing Island Creator Setup: Max Comfort, Max Creativity",
+      "hook": "Forget the flashy RGB! This is my ultimate cozy setup for creating Animal Crossing dreams.",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
-    },
-    {
-      "category": "Current Events Explained",
-      "topic": "The Surprising Impact of Social Media on Mental Health",
-      "hook": "You won't believe the shocking truth about social media's effect on your mental well-being!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming Highlights (League of Legends)",
-      "topic": "The Most Dominant Champion in the Current Meta",
-      "hook": "This one champion is unbeatable in the current meta - here's why!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fantasy Anime Reviews (Solo Leveling Season 3)",
-      "topic": "The Tragic Backstory of Jin Woo's Most Loyal Ally",
-      "hook": "You won't believe the heartbreaking story behind Jin Woo's most trusted friend!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
