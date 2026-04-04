@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-04-03T06:46:16.613873",
-  "valid_until": "2026-04-03T23:59:16.613883",
+  "generated_at": "2026-04-04T06:35:59.647864",
+  "valid_until": "2026-04-04T23:59:59.647872",
   "categories": [
-    "Gaming Highlights with Rockstar Games",
-    "K-Pop Dance Challenges featuring Mark NCT",
-    "Kings Game Walkthroughs and Strategies",
-    "Apple iPhone 17 Pro Max Reviews and Unboxing",
-    "Silver Alert Awareness and Safety Tips",
-    "NBA Highlights and Analysis with Kawhi Leonard",
-    "Sheetz Food Reviews and Challenges",
-    "Dylan Harper Music Covers and Reactions",
-    "Easter and Spring Break Vlogs",
-    "Gaming Setup Tours with Popular Games",
-    "Phone Accessories for iPhone 17 Pro Max",
-    "Spring Fashion and Beauty Trends",
-    "Sports Analysis and Predictions",
-    "Music Festival Previews and Lineup Reactions",
-    "Technology News and Updates"
+    "TV Show Reviews",
+    "Celebrity News",
+    "Local Weather Updates",
+    "Travel Vlogs",
+    "Horror Movie Analysis",
+    "Fashion Trends",
+    "Aviation News",
+    "True Crime Stories",
+    "Spring Break Ideas",
+    "Luxury Lifestyle",
+    "Movie Director Profiles",
+    "Airline Reviews",
+    "Modeling Tips",
+    "Crime Drama Recaps",
+    "Entertainment News"
   ],
   "concepts": [
     {
-      "category": "Gaming Highlights with Rockstar Games",
-      "topic": "Unbelievable GTA V Stunt Jumps & Near Misses Compilation",
-      "hook": "Did I just defy gravity in Los Santos? You won't believe this!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Highlights with Rockstar Games",
-      "topic": "Red Dead Redemption 2's Most Epic Lasso Fails & Redemption Moments",
-      "hook": "My lasso skills are... questionable. But the saves? Legendary!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "K-Pop Dance Challenges featuring Mark NCT",
-      "topic": "Mastering Mark NCT's 'Baggy Jeans' Dance Break in 60 Seconds (Tutorial)",
-      "hook": "Think you can hit Mark NCT's 'Baggy Jeans' choreo? Let's break it down!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "K-Pop Dance Challenges featuring Mark NCT",
-      "topic": "Reacting to Fans Doing Mark NCT's Favorite Dance Move (Challenge Compilation)",
-      "hook": "Mark NCT's signature move is iconic. Let's see how YOU did it!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Kings Game Walkthroughs and Strategies",
-      "topic": "How to Dominate the Early Game in Kings Game: Essential Resource Management",
-      "hook": "Starting Kings Game strong is KEY. Here's my secret sauce for early victory!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Kings Game Walkthroughs and Strategies",
-      "topic": "Top 3 Underrated Unit Combinations in Kings Game for PvP Victory",
-      "hook": "Everyone uses the same units... but THESE combinations will shock your opponents!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Apple iPhone 17 Pro Max Reviews and Unboxing",
-      "topic": "iPhone 17 Pro Max Camera Test: Low Light vs. Daylight Battle!",
-      "hook": "Is the iPhone 17 Pro Max camera REALLY worth the hype? Let's shoot!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Apple iPhone 17 Pro Max Reviews and Unboxing",
-      "topic": "Unboxing the iPhone 17 Pro Max: First Impressions & Hidden Features!",
-      "hook": "It's finally here! The iPhone 17 Pro Max is in my hands \u2013 what's inside?!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Silver Alert Awareness and Safety Tips",
-      "topic": "What to Do When You See a Silver Alert: Your Quick Action Guide",
-      "hook": "A Silver Alert just popped up. Do you know what to do next? Your quick guide starts now.",
-      "voice_style": "authoritative",
+      "category": "TV Show Reviews",
+      "topic": "Why 'Severance' is the most unsettling show you're not watching",
+      "hook": "Did you know your work-life balance could be *literally* severed? This show will make you rethink your 9-to-5.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Silver Alert Awareness and Safety Tips",
-      "topic": "Essential Safety Tips for Loved Ones Prone to Wandering (Preventative Measures)",
-      "hook": "Protecting vulnerable loved ones is crucial. These tips could save a life.",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Highlights and Analysis with Kawhi Leonard",
-      "topic": "Kawhi Leonard's Top 5 Clutch Shots That Changed Games (Breakdown)",
-      "hook": "Kawhi's calm under pressure is unmatched. Let's relive his most insane clutch moments!",
-      "voice_style": "energetic",
+      "category": "Celebrity News",
+      "topic": "The most shocking celeb breakup nobody saw coming this year",
+      "hook": "Just when we thought love was real, *this* power couple called it quits. You won't believe who it is!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "NBA Highlights and Analysis with Kawhi Leonard",
-      "topic": "Analyzing Kawhi Leonard's Defensive Masterclass: The 'Klaw' Steal Clinic",
-      "hook": "How does Kawhi ALWAYS get the steal? We're breaking down his defensive genius!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Local Weather Updates",
+      "topic": "The truth about why our city's spring allergies are worse than ever",
+      "hook": "Your eyes aren't playing tricks on you \u2013 pollen is actually out to get us this year. Here's why.",
+      "voice_style": "friendly",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sheetz Food Reviews and Challenges",
-      "topic": "The Ultimate Sheetz MTO Burger Build Challenge: Is It Worth It?",
-      "hook": "Can I build the PERFECT Sheetz MTO burger? Let's find out... and rate it!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sheetz Food Reviews and Challenges",
-      "topic": "Ranking Sheetz's Top 5 Secret Menu Items You NEED to Try!",
-      "hook": "Forget the regular menu! These Sheetz secret items are game-changers.",
+      "category": "Travel Vlogs",
+      "topic": "Exploring Japan's hidden cat islands \u2013 a purr-fect paradise",
+      "hook": "Imagine a place where felines rule, and every corner is a cuddle opportunity. Welcome to Japan's cat islands!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Dylan Harper Music Covers and Reactions",
-      "topic": "My Acoustic Cover of Dylan Harper's Latest Hit: 'Midnight Drive'",
-      "hook": "Dylan Harper's new track is stuck in my head! Here's my acoustic take.",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Horror Movie Analysis",
+      "topic": "The psychological terror behind 'Hereditary' and why it sticks with you",
+      "hook": "Forget jump scares, *this* movie will crawl into your head and never leave. Let's break down 'Hereditary's' genius.",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Dylan Harper Music Covers and Reactions",
-      "topic": "First Listen Reaction to Dylan Harper's Unreleased Demo (Fan Speculation)",
-      "hook": "OMG! I found what sounds like a Dylan Harper demo! Let's freak out together!",
+      "category": "Fashion Trends",
+      "topic": "Is 'Coastal Grandmother' still in, or is 'Cottagecore' making a comeback?",
+      "hook": "Your grandma's linen pants just got a major glow-up, but there's a new challenger. What's the hottest aesthetic?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Aviation News",
+      "topic": "Debunking the biggest myths about turbulence on airplanes",
+      "hook": "Does turbulence mean your plane is falling? Let's clear the air and calm your flying fears.",
+      "voice_style": "authoritative",
+      "music_mood": "calm",
+      "target_duration": 45
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The unsolved mystery of the missing heiress from the 1980s",
+      "hook": "She vanished without a trace, leaving behind a fortune and a chilling note. What really happened to the heiress?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Spring Break Ideas",
+      "topic": "Affordable spring break destinations for college students on a budget",
+      "hook": "Dreaming of spring break but your wallet's crying? I've got you covered with epic budget-friendly escapes!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Luxury Lifestyle",
+      "topic": "Inside the world's most exclusive members-only club with a 5-year waiting list",
+      "hook": "What would you pay to get into a club where entry is almost impossible? We're taking you inside the ultra-exclusive.",
       "voice_style": "dramatic",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Easter and Spring Break Vlogs",
-      "topic": "DIY Easter Basket Ideas for Under $20: Budget-Friendly & Adorable!",
-      "hook": "Easter baskets don't need to break the bank! Here are my favorite budget ideas.",
-      "voice_style": "friendly",
+      "category": "TV Show Reviews",
+      "topic": "The wildest fan theories about 'The Bear' Season 3",
+      "hook": "Carmy's got a secret ingredient, but it's not what you think. We're diving into the craziest 'The Bear' Season 3 predictions!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Easter and Spring Break Vlogs",
-      "topic": "Spring Break Travel Hacks You WISH You Knew Sooner (Save Money & Stress)",
-      "hook": "Planning Spring Break? Stop scrolling! These hacks will save your trip.",
+      "category": "Celebrity News",
+      "topic": "Which A-lister just bought an entire island?",
+      "hook": "Forget mansions, one celeb just took 'private property' to a whole new level. Can you guess who bought a whole island?",
       "voice_style": "energetic",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Gaming Setup Tours with Popular Games",
-      "topic": "My Valorant Pro-Inspired Gaming Setup Tour (Budget-Friendly Edition)",
-      "hook": "Want a pro Valorant setup without the pro price tag? Welcome to my battle station!",
-      "voice_style": "energetic",
+      "category": "Local Weather Updates",
+      "topic": "Forecasting a freak heatwave hitting the region next week",
+      "hook": "Put away your sweaters, because next week is bringing a *scorcher* nobody predicted! Get ready for record temps.",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Gaming Setup Tours with Popular Games",
-      "topic": "Cozy Animal Crossing Island Creator Setup: Max Comfort, Max Creativity",
-      "hook": "Forget the flashy RGB! This is my ultimate cozy setup for creating Animal Crossing dreams.",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Travel Vlogs",
+      "topic": "Surviving the world's most extreme zipline in Costa Rica",
+      "hook": "Ever wondered what it feels like to fly through a rainforest at 60 mph? Join me on the scariest zipline ever!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Horror Movie Analysis",
+      "topic": "Analyzing the scariest found-footage film you've never heard of",
+      "hook": "Think you've seen every found-footage scare? Think again. This obscure gem will give you nightmares.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion Trends",
+      "topic": "The one accessory dominating celebrity street style this spring",
+      "hook": "From Hailey Bieber to Zendaya, *this* tiny item is suddenly everywhere. You need to know about the IT accessory of the season!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Aviation News",
+      "topic": "The incredible technology behind self-landing planes you didn't know existed",
+      "hook": "Imagine your pilot taking a nap while the plane lands itself perfectly. Self-landing tech is real, and it's mind-blowing.",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The bizarre case of the 'Netflix Hacker' who stole millions without leaving home",
+      "hook": "This hacker never left their couch, but managed to pull off a multi-million dollar heist. How did they do it?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Spring Break Ideas",
+      "topic": "The ultimate guide to a luxury spring break getaway in the Caribbean",
+      "hook": "Forget crowded beaches, this is how you do spring break like a millionaire. Your guide to an exclusive Caribbean escape.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Luxury Lifestyle",
+      "topic": "Test driving the newest electric supercar that costs more than your house",
+      "hook": "Forget 0 to 60, this car goes 0 to 'I just spent a fortune' in seconds. We're test driving the ultimate electric supercar.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
