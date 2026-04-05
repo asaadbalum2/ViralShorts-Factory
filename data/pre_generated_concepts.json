@@ -1,259 +1,98 @@
 {
-  "generated_at": "2026-04-04T06:35:59.647864",
-  "valid_until": "2026-04-04T23:59:59.647872",
+  "generated_at": "2026-04-05T06:42:46.247721",
+  "valid_until": "2026-04-05T23:59:46.247727",
   "categories": [
-    "TV Show Reviews",
-    "Celebrity News",
-    "Local Weather Updates",
-    "Travel Vlogs",
-    "Horror Movie Analysis",
-    "Fashion Trends",
-    "Aviation News",
-    "True Crime Stories",
-    "Spring Break Ideas",
-    "Luxury Lifestyle",
-    "Movie Director Profiles",
-    "Airline Reviews",
-    "Modeling Tips",
-    "Crime Drama Recaps",
-    "Entertainment News"
+    "Easter DIY Crafts 2026",
+    "Sports Highlights: Partidos de Liga MX",
+    "UFC News: Jon Jones Updates",
+    " Celebrity Easter Outfits: Kate Beckinsale and Kristen Stewart",
+    "NBL Game Recaps and Analysis",
+    "Jared Leto Movie Reviews",
+    "TV Show Nostalgia: The Middle Rewind",
+    "Spring Fashion Trends 2026",
+    "Easter Egg Decorating Ideas",
+    "Spring Break Destination Inspiration",
+    "Top 5 Easter Recipes 2026",
+    "UFC Fighter Training Routines",
+    "Mexican Football: Partidos de Liga MX Predictions",
+    "90s and 2000s TV Show Revivals",
+    "Short-Form Comedy Skits for Easter 2026"
   ],
-  "concepts": [
-    {
-      "category": "TV Show Reviews",
-      "topic": "Why 'Severance' is the most unsettling show you're not watching",
-      "hook": "Did you know your work-life balance could be *literally* severed? This show will make you rethink your 9-to-5.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "The most shocking celeb breakup nobody saw coming this year",
-      "hook": "Just when we thought love was real, *this* power couple called it quits. You won't believe who it is!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Local Weather Updates",
-      "topic": "The truth about why our city's spring allergies are worse than ever",
-      "hook": "Your eyes aren't playing tricks on you \u2013 pollen is actually out to get us this year. Here's why.",
-      "voice_style": "friendly",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Exploring Japan's hidden cat islands \u2013 a purr-fect paradise",
-      "hook": "Imagine a place where felines rule, and every corner is a cuddle opportunity. Welcome to Japan's cat islands!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Horror Movie Analysis",
-      "topic": "The psychological terror behind 'Hereditary' and why it sticks with you",
-      "hook": "Forget jump scares, *this* movie will crawl into your head and never leave. Let's break down 'Hereditary's' genius.",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Fashion Trends",
-      "topic": "Is 'Coastal Grandmother' still in, or is 'Cottagecore' making a comeback?",
-      "hook": "Your grandma's linen pants just got a major glow-up, but there's a new challenger. What's the hottest aesthetic?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Aviation News",
-      "topic": "Debunking the biggest myths about turbulence on airplanes",
-      "hook": "Does turbulence mean your plane is falling? Let's clear the air and calm your flying fears.",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime Stories",
-      "topic": "The unsolved mystery of the missing heiress from the 1980s",
-      "hook": "She vanished without a trace, leaving behind a fortune and a chilling note. What really happened to the heiress?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Spring Break Ideas",
-      "topic": "Affordable spring break destinations for college students on a budget",
-      "hook": "Dreaming of spring break but your wallet's crying? I've got you covered with epic budget-friendly escapes!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Luxury Lifestyle",
-      "topic": "Inside the world's most exclusive members-only club with a 5-year waiting list",
-      "hook": "What would you pay to get into a club where entry is almost impossible? We're taking you inside the ultra-exclusive.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Reviews",
-      "topic": "The wildest fan theories about 'The Bear' Season 3",
-      "hook": "Carmy's got a secret ingredient, but it's not what you think. We're diving into the craziest 'The Bear' Season 3 predictions!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Which A-lister just bought an entire island?",
-      "hook": "Forget mansions, one celeb just took 'private property' to a whole new level. Can you guess who bought a whole island?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Local Weather Updates",
-      "topic": "Forecasting a freak heatwave hitting the region next week",
-      "hook": "Put away your sweaters, because next week is bringing a *scorcher* nobody predicted! Get ready for record temps.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Surviving the world's most extreme zipline in Costa Rica",
-      "hook": "Ever wondered what it feels like to fly through a rainforest at 60 mph? Join me on the scariest zipline ever!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Horror Movie Analysis",
-      "topic": "Analyzing the scariest found-footage film you've never heard of",
-      "hook": "Think you've seen every found-footage scare? Think again. This obscure gem will give you nightmares.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Fashion Trends",
-      "topic": "The one accessory dominating celebrity street style this spring",
-      "hook": "From Hailey Bieber to Zendaya, *this* tiny item is suddenly everywhere. You need to know about the IT accessory of the season!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Aviation News",
-      "topic": "The incredible technology behind self-landing planes you didn't know existed",
-      "hook": "Imagine your pilot taking a nap while the plane lands itself perfectly. Self-landing tech is real, and it's mind-blowing.",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime Stories",
-      "topic": "The bizarre case of the 'Netflix Hacker' who stole millions without leaving home",
-      "hook": "This hacker never left their couch, but managed to pull off a multi-million dollar heist. How did they do it?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Spring Break Ideas",
-      "topic": "The ultimate guide to a luxury spring break getaway in the Caribbean",
-      "hook": "Forget crowded beaches, this is how you do spring break like a millionaire. Your guide to an exclusive Caribbean escape.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Luxury Lifestyle",
-      "topic": "Test driving the newest electric supercar that costs more than your house",
-      "hook": "Forget 0 to 60, this car goes 0 to 'I just spent a fortune' in seconds. We're test driving the ultimate electric supercar.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
       "music_mood": "intense"
     }
   ],
