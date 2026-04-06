@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-04-05T06:42:46.247721",
-  "valid_until": "2026-04-05T23:59:46.247727",
+  "generated_at": "2026-04-06T07:09:00.795843",
+  "valid_until": "2026-04-06T23:59:00.795852",
   "categories": [
-    "Easter DIY Crafts 2026",
-    "Sports Highlights: Partidos de Liga MX",
-    "UFC News: Jon Jones Updates",
-    " Celebrity Easter Outfits: Kate Beckinsale and Kristen Stewart",
-    "NBL Game Recaps and Analysis",
-    "Jared Leto Movie Reviews",
-    "TV Show Nostalgia: The Middle Rewind",
-    "Spring Fashion Trends 2026",
-    "Easter Egg Decorating Ideas",
-    "Spring Break Destination Inspiration",
-    "Top 5 Easter Recipes 2026",
-    "UFC Fighter Training Routines",
-    "Mexican Football: Partidos de Liga MX Predictions",
-    "90s and 2000s TV Show Revivals",
-    "Short-Form Comedy Skits for Easter 2026"
+    "Travel Warnings: Flea Borne Typhus Safety Tips",
+    "Airline Reviews: AlaskaAir Experiences",
+    "Lawyer Reacts: Personal Injury Attorney Q&A",
+    "TV Show Recaps: Bloodhounds Season 2 Theories",
+    "Movie Reviews: Incendies Analysis",
+    "Gaming Highlights: Rockstar Gameplays",
+    "K-Pop Dance Challenges: Ten NCT Covers",
+    "Mexico Travel Vlogs: Cultural Experiences",
+    "Health Awareness: Flea Borne Typhus Prevention",
+    "Attorney Advice: Choosing the Right Personal Injury Lawyer",
+    "TV Show Casting Calls: Bloodhounds Season 2 Auditions",
+    "Music Festival Previews: Rockstar Performances",
+    "Spring Break Travel Guides: Mexico Destinations",
+    "Dog Safety Tips: Protecting Pets from Flea Borne Typhus",
+    "K-Pop Music Videos: Ten NCT Song Reactions"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Travel Warnings: Flea Borne Typhus Safety Tips",
+      "topic": "How to spot early symptoms of Flea Borne Typhus after travel.",
+      "hook": "Just got back from vacation? Don't ignore *that* headache. It could be more than jet lag.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Airline Reviews: AlaskaAir Experiences",
+      "topic": "Alaska Airlines First Class vs. Premium Class comparison on a transcontinental flight.",
+      "hook": "Is Alaska First Class worth double the price? I tried it so you don't have to.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Lawyer Reacts: Personal Injury Attorney Q&A",
+      "topic": "Reacting to common myths about 'slip and fall' personal injury cases.",
+      "hook": "Think 'slip and fall' cases are easy money? My clients hear this all the time, and it's dead wrong.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "TV Show Recaps: Bloodhounds Season 2 Theories",
+      "topic": "Predicting the main villain for Bloodhounds Season 2 based on Season 1's unresolved plots.",
+      "hook": "Who's the *real* mastermind behind the curtain in Bloodhounds? My Season 2 villain theory will shock you.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 47
+    },
+    {
+      "category": "Movie Reviews: Incendies Analysis",
+      "topic": "Deconstructing the 'mother's letter' reveal in Incendies and its emotional impact.",
+      "hook": "The letter. The twins. Incendies' ending isn't just a twist; it's a gut punch that changes everything.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Gaming Highlights: Rockstar Gameplays",
+      "topic": "Showcasing the best hidden Easter eggs in Red Dead Redemption 2.",
+      "hook": "You've played RDR2 for hundreds of hours, but I bet you missed *these* secrets.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "K-Pop Dance Challenges: Ten NCT Covers",
+      "topic": "Breaking down Ten's 'Nightwalker' core choreography for beginners.",
+      "hook": "Ready to move like Ten? I'm breaking down 'Nightwalker' step-by-step, even if you have two left feet.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 49
+    },
+    {
+      "category": "Mexico Travel Vlogs: Cultural Experiences",
+      "topic": "A day trip to Teotihuacan pyramids and understanding ancient Aztec history.",
+      "hook": "Ever wonder what it felt like to walk among gods? Teotihuacan isn't just ruins; it's a time machine.",
+      "voice_style": "inspirational",
+      "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Health Awareness: Flea Borne Typhus Prevention",
+      "topic": "Debunking common myths about how flea-borne typhus is transmitted.",
+      "hook": "Think only dirty places have typhus fleas? The truth about transmission might surprise you.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 41
+    },
+    {
+      "category": "Attorney Advice: Choosing the Right Personal Injury Lawyer",
+      "topic": "3 red flags to watch out for when interviewing personal injury lawyers.",
+      "hook": "Don't get scammed after an accident. Here are 3 signs your personal injury lawyer isn't the one.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Travel Warnings: Flea Borne Typhus Safety Tips",
+      "topic": "Essential first-aid kit items for flea-borne typhus prone areas.",
+      "hook": "Traveling to a hotspot? Your emergency kit is missing *one* crucial item for typhus safety.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Airline Reviews: AlaskaAir Experiences",
+      "topic": "My unexpected positive experience with Alaska Airlines customer service during a flight delay.",
+      "hook": "My Alaska Airlines flight was delayed, but what happened next restored my faith in air travel.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Lawyer Reacts: Personal Injury Attorney Q&A",
+      "topic": "Can you sue for emotional distress after a minor car accident? A lawyer's take.",
+      "hook": "You're physically okay after that fender bender, but mentally? Can you still seek justice?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "TV Show Recaps: Bloodhounds Season 2 Theories",
+      "topic": "The fate of Kim Geon-woo: Will he return as a vigilante or a changed man in Season 2?",
+      "hook": "Bloodhounds fans, we NEED to talk about Geon-woo. Is he coming back, and will he be the same?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Movie Reviews: Incendies Analysis",
+      "topic": "The masterful use of non-linear storytelling in Incendies to build suspense.",
+      "hook": "Incendies doesn't just tell a story; it *weaves* it, making you question every single frame until the very end.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Gaming Highlights: Rockstar Gameplays",
+      "topic": "GTA V's most epic police chase fails and successes (player compilation).",
+      "hook": "From rampages to hilarious escapes: the wildest GTA V police chases you won't believe.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 47
+    },
+    {
+      "category": "K-Pop Dance Challenges: Ten NCT Covers",
+      "topic": "Mastering Ten's smooth body rolls from his 'Birthday' choreography.",
+      "hook": "Want to glide like Ten in 'Birthday'? These body roll secrets will elevate your dance game.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Mexico Travel Vlogs: Cultural Experiences",
+      "topic": "A deep dive into the street food scene of Oaxaca City and must-try dishes.",
+      "hook": "Forget fancy restaurants. Oaxaca's best kept secrets are on the streets, and they'll blow your mind.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Health Awareness: Flea Borne Typhus Prevention",
+      "topic": "The unexpected link between pet care and human flea-borne typhus prevention.",
+      "hook": "Your furry friend could be a silent carrier. Here's how pet care prevents human typhus outbreaks.",
+      "voice_style": "authoritative",
+      "music_mood": "calm",
+      "target_duration": 42
+    },
+    {
+      "category": "Attorney Advice: Choosing the Right Personal Injury Lawyer",
+      "topic": "What questions to ask a personal injury lawyer about their fee structure.",
+      "hook": "Before signing anything, ask these 3 crucial questions about your lawyer's fees. Don't get surprised later.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 44
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
