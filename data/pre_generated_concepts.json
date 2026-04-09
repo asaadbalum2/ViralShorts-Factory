@@ -1,276 +1,99 @@
 {
-  "generated_at": "2026-04-08T06:54:21.013195",
-  "valid_until": "2026-04-08T23:59:21.013202",
+  "generated_at": "2026-04-09T06:56:21.362662",
+  "valid_until": "2026-04-09T23:59:21.362669",
   "categories": [
-    "Explaining the Claude Outage: Tech Updates",
-    "Bitcoin and Crypto News with Adam Back",
-    "NBA Analysis: Derek Fisher's Coaching Legacy",
-    "Winona Ryder's Iconic 90s Fashion",
-    "NFL Personal Lives: Patrick Mahomes' Latest News",
-    "Astronomy News: Fireball Meteor Sightings",
-    "John Krasinski's Funniest Movie Moments",
-    "Amen Thompson's Rising Basketball Star",
-    "Space and Astronomy: Meteor Showers",
-    "90s Nostalgia: Throwback Fashion and Music",
-    "Sports News: Latest NFL and NBA Updates",
-    "Tech Issues: How to Troubleshoot Like a Pro",
-    "Spring Astronomy: Stargazing Tips and Tricks",
-    "Viral Challenge: Recreating John Krasinski's Comedy Scenes",
-    "NFL and NBA Player Profiles: Rising Stars and Legends"
+    "Sports Highlights",
+    "Movie Reviews",
+    "Tech Unboxing",
+    "NBA Analysis",
+    "Music Throwbacks",
+    "Financial Advice",
+    "True Crime Stories",
+    "Phone Hacks",
+    "Baseball Moments",
+    "Investment Tips",
+    "Biographical Docs",
+    "Retro Music Covers",
+    "Gaming Walkthroughs",
+    "Influencer Vlogs",
+    "Motivational Speeches"
   ],
-  "concepts": [
-    {
-      "category": "Explaining the Claude Outage: Tech Updates",
-      "topic": "Uncovering the Cause of the Recent Claude AI Outage",
-      "hook": "What really happened during the Claude AI blackout?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Bitcoin and Crypto News with Adam Back",
-      "topic": "Adam Back's Prediction for the Next Bitcoin Halving",
-      "hook": "Will Bitcoin's price skyrocket after the next halving?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Analysis: Derek Fisher's Coaching Legacy",
-      "topic": "Derek Fisher's Most Memorable Coaching Moments",
-      "hook": "What made Derek Fisher a legendary coach in the NBA?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Winona Ryder's Iconic 90s Fashion",
-      "topic": "Winona Ryder's 5 Most Iconic 90s Fashion Moments",
-      "hook": "Get ready for a blast from the past with Winona Ryder's iconic looks",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "NFL Personal Lives: Patrick Mahomes' Latest News",
-      "topic": "Patrick Mahomes' Off-Season Training Regimen",
-      "hook": "What's Patrick Mahomes doing to stay on top of his game?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Astronomy News: Fireball Meteor Sightings",
-      "topic": "The Science Behind Fireball Meteor Sightings",
-      "hook": "Have you ever witnessed a fireball meteor in the sky?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "John Krasinski's Funniest Movie Moments",
-      "topic": "John Krasinski's Top 3 Funniest Movie Roles",
-      "hook": "Get ready to laugh with John Krasinski's funniest moments",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Amen Thompson's Rising Basketball Star",
-      "topic": "Amen Thompson's Journey to the NBA Draft",
-      "hook": "Will Amen Thompson be the next big thing in the NBA?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Space and Astronomy: Meteor Showers",
-      "topic": "The Best Meteor Showers to Watch This Year",
-      "hook": "Don't miss out on the most spectacular meteor showers of the year",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "90s Nostalgia: Throwback Fashion and Music",
-      "topic": "The Top 5 Most Iconic 90s Music Festivals",
-      "hook": "Take a trip back to the iconic music festivals of the 90s",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Explaining the Claude Outage: Tech Updates",
-      "topic": "What the Claude Outage Means for the Future of AI",
-      "hook": "Is the Claude outage a sign of bigger problems in the AI world?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Bitcoin and Crypto News with Adam Back",
-      "topic": "Adam Back's Thoughts on the Future of Cryptocurrency Regulation",
-      "hook": "What does the future hold for cryptocurrency regulation?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "NBA Analysis: Derek Fisher's Coaching Legacy",
-      "topic": "Derek Fisher's Impact on the Los Angeles Lakers",
-      "hook": "How did Derek Fisher contribute to the Lakers' success?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Winona Ryder's Iconic 90s Fashion",
-      "topic": "Winona Ryder's Style Evolution Over the Years",
-      "hook": "From grunge to glamour, Winona Ryder's style has evolved dramatically",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "NFL Personal Lives: Patrick Mahomes' Latest News",
-      "topic": "Patrick Mahomes' Off-Field Philanthropic Efforts",
-      "hook": "What's Patrick Mahomes doing to give back to his community?",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Astronomy News: Fireball Meteor Sightings",
-      "topic": "The Most Recent Fireball Meteor Sightings Around the World",
-      "hook": "Have you heard about the latest fireball meteor sightings?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "John Krasinski's Funniest Movie Moments",
-      "topic": "John Krasinski's Funniest Moments in The Office",
-      "hook": "Who can forget John Krasinski's hilarious moments in The Office?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Amen Thompson's Rising Basketball Star",
-      "topic": "Amen Thompson's High School Basketball Highlights",
-      "hook": "Get ready to be amazed by Amen Thompson's high school basketball skills",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Space and Astronomy: Meteor Showers",
-      "topic": "How to Photograph Meteor Showers Like a Pro",
-      "hook": "Want to capture stunning photos of meteor showers?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "90s Nostalgia: Throwback Fashion and Music",
-      "topic": "The Top 5 Most Iconic 90s TV Shows",
-      "hook": "Take a trip back to the iconic TV shows of the 90s",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Explaining the Claude Outage: Tech Updates",
-      "topic": "The Impact of the Claude Outage on the Tech Industry",
-      "hook": "How will the Claude outage affect the future of tech?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Bitcoin and Crypto News with Adam Back",
-      "topic": "Adam Back's Thoughts on the Future of Cryptocurrency Adoption",
-      "hook": "Will cryptocurrency become the new norm?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
