@@ -1,99 +1,276 @@
 {
-  "generated_at": "2026-04-09T06:56:21.362662",
-  "valid_until": "2026-04-09T23:59:21.362669",
+  "generated_at": "2026-04-10T07:06:34.499566",
+  "valid_until": "2026-04-10T23:59:34.499574",
   "categories": [
-    "Sports Highlights",
-    "Movie Reviews",
-    "Tech Unboxing",
-    "NBA Analysis",
-    "Music Throwbacks",
-    "Financial Advice",
-    "True Crime Stories",
-    "Phone Hacks",
-    "Baseball Moments",
-    "Investment Tips",
-    "Biographical Docs",
-    "Retro Music Covers",
-    "Gaming Walkthroughs",
-    "Influencer Vlogs",
-    "Motivational Speeches"
+    "Predicting Celebrity Draft Picks with Xander Bogaerts and Kyle Karros",
+    "Donald Trump on Military Draft: Pros and Cons",
+    "Home Decor Inspiration for a Dream Real Estate Find",
+    "Malcolm in the Middle: Life Lessons for Adults",
+    "Comedy Skits featuring Melissa McCarthy",
+    "Unconventional Uses for Real Estate Spaces",
+    "Laura Loomer's Take on Social Media Trends",
+    "Satirical News: Trump's Military Draft Announcement",
+    "Spring Real Estate Market Predictions",
+    "Life Hacks for Homebuyers and Sellers",
+    "Hilarious Moments from Malcolm in the Middle Reboot",
+    "Melissa McCarthy's Funniest Impressions",
+    "Xander Bogaerts' Baseball Tips and Tricks",
+    "Real Estate investing for Beginners with Prediction Market Insights",
+    "Donald Trump's Most Controversial Statements: Draft and Beyond"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Predicting Celebrity Draft Picks with Xander Bogaerts and Kyle Karros",
+      "topic": "MLB Draft Predictions: Who Will Be the Next Big Star?",
+      "hook": "What if I told you that Xander Bogaerts and Kyle Karros are about to spill the tea on the next MLB draft?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Donald Trump on Military Draft: Pros and Cons",
+      "topic": "The Shocking Truth About Trump's Military Draft Plan",
+      "hook": "You won't believe what Donald Trump just said about the military draft - it's a game-changer!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Decor Inspiration for a Dream Real Estate Find",
+      "topic": "Transforming a Fixer-Upper into a Luxurious Mansion",
+      "hook": "Ever dreamed of turning a dump into a diamonds? Let's make it happen!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Malcolm in the Middle: Life Lessons for Adults",
+      "topic": "What Malcolm in the Middle Taught Me About Parenting",
+      "hook": "Who knew that Malcolm in the Middle held the secret to raising perfect kids?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Comedy Skits featuring Melissa McCarthy",
+      "topic": "Melissa McCarthy's Hilarious Take on Morning Routines",
+      "hook": "Get ready to LOL with Melissa McCarthy's outrageous morning routine!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Unconventional Uses for Real Estate Spaces",
+      "topic": "Turning an Old Barn into a Cozy Home Office",
+      "hook": "What if I told you that an old barn could be the ultimate home office?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Laura Loomer's Take on Social Media Trends",
+      "topic": "The Dark Side of Social Media: Laura Loomer Weighs In",
+      "hook": "You won't believe what Laura Loomer just said about social media - it's a wake-up call!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Satirical News: Trump's Military Draft Announcement",
+      "topic": "Breaking News: Trump Announces Mandatory Pizza Parties for the Military",
+      "hook": "In a shocking turn of events, Trump just announced that pizza parties are now mandatory for the military - yes, you read that right!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Spring Real Estate Market Predictions",
+      "topic": "The Top 5 Neighborhoods to Invest in This Spring",
+      "hook": "Want to know the secret to making a killing in the spring real estate market?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Life Hacks for Homebuyers and Sellers",
+      "topic": "10 Secret Tips for Selling Your Home Fast",
+      "hook": "Tired of waiting for your home to sell? These 10 secret tips will change everything!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Predicting Celebrity Draft Picks with Xander Bogaerts and Kyle Karros",
+      "topic": "The Ultimate Showdown: Xander Bogaerts vs Kyle Karros in a MLB Draft Challenge",
+      "hook": "It's time to put Xander Bogaerts and Kyle Karros to the test - who will come out on top in the MLB draft challenge?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Donald Trump on Military Draft: Pros and Cons",
+      "topic": "The Pros and Cons of a Military Draft: Trump Weighs In",
+      "hook": "You won't believe what Trump just said about the pros and cons of a military draft - it's a must-see!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Decor Inspiration for a Dream Real Estate Find",
+      "topic": "From Disaster to Dream Home: A Stunning Before-and-After Transformation",
+      "hook": "Get ready to be amazed by this jaw-dropping before-and-after home transformation!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Malcolm in the Middle: Life Lessons for Adults",
+      "topic": "The Unconventional Life Lessons I Learned from Malcolm in the Middle",
+      "hook": "Who knew that Malcolm in the Middle held the secret to adulting?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits featuring Melissa McCarthy",
+      "topic": "Melissa McCarthy's Side-Splitting Take on Online Dating",
+      "hook": "Get ready to LOL with Melissa McCarthy's hilarious take on online dating!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Unconventional Uses for Real Estate Spaces",
+      "topic": "Turning a Shipping Container into a Cozy Tiny Home",
+      "hook": "What if I told you that a shipping container could be the ultimate tiny home?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Laura Loomer's Take on Social Media Trends",
+      "topic": "The Hidden Dangers of Social Media: Laura Loomer's Warning",
+      "hook": "You won't believe what Laura Loomer just said about the hidden dangers of social media - it's a wake-up call!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Satirical News: Trump's Military Draft Announcement",
+      "topic": "Breaking News: Trump Announces Mandatory Video Game Training for the Military",
+      "hook": "In a shocking turn of events, Trump just announced that video game training is now mandatory for the military - yes, you read that right!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Spring Real Estate Market Predictions",
+      "topic": "The Top 5 Home Staging Tips to Sell Your Home Fast This Spring",
+      "hook": "Want to know the secret to selling your home fast this spring? It starts with these 5 home staging tips!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Life Hacks for Homebuyers and Sellers",
+      "topic": "5 Secret Negotiation Tactics to Get the Best Deal on Your Dream Home",
+      "hook": "Tired of getting taken advantage of in real estate negotiations? These 5 secret tactics will give you the upper hand!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Predicting Celebrity Draft Picks with Xander Bogaerts and Kyle Karros",
+      "topic": "The Ultimate MLB Draft Showdown: Xander Bogaerts vs Kyle Karros",
+      "hook": "It's time to put Xander Bogaerts and Kyle Karros head-to-head in the ultimate MLB draft showdown!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Comedy Skits featuring Melissa McCarthy",
+      "topic": "Melissa McCarthy's Hilarious Take on Morning Routine Chaos",
+      "hook": "Get ready to LOL with Melissa McCarthy's outrageous morning routine chaos!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
