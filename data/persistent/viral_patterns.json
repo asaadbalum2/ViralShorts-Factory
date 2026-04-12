@@ -1,25 +1,87 @@
 {
   "title_patterns": [
-    "\ud83e\udd2f Mind-Blowing Fact About...",
-    "\ud83e\udd2b The Secret to...",
-    "\ud83d\udd25 Transformation You Won't Believe...",
-    "\ud83e\udd14 What If...?"
+    "{number} {topic} Secrets They DON'T Want You To Know",
+    "This {topic} Changed My Life (You WON'T Believe It)",
+    "STOP {bad_action}, DO THIS {good_action} INSTEAD!",
+    "The TRUTH About {controversial_topic} Exposed",
+    "{number} Ways To {desired_outcome} In {time_frame}",
+    "WTF?! {shocking_event} Is Actually {explanation}",
+    "I Tried {viral_trend} For {time_frame} (HERE'S What Happened)",
+    "You're Doing {common_task} WRONG! (Fix It Now)",
+    "Why Nobody Talks About {underrated_topic}",
+    "\ud83e\udd2f The {adjective} {noun} You NEED To See!"
   ],
   "hook_patterns": [
-    "Are you REALLY getting enough sleep?",
-    "Stop scrolling, start learning!",
-    "This one thing will change EVERYTHING!",
-    "Seriously, you need to see this."
+    "WAIT! Before you scroll, watch this.",
+    "You won't believe what just happened.",
+    "Is THIS why you're still struggling with {problem}?",
+    "Everyone's talking about {viral_topic}, but they're missing THIS.",
+    "Did you know {shocking_fact}?",
+    "Okay, serious question: {provocative_question}?",
+    "This is the ONLY {solution} you'll ever need.",
+    "My mind was blown when I discovered {secret}.",
+    "Forget everything you thought about {topic}.",
+    "Hold up. If you do {action}, you NEED to see this."
   ],
   "engagement_baits": [
-    "What's your biggest struggle with...? Let's talk!",
+    "What's YOUR take on {topic}? Let me know below!",
+    "Agree or disagree? Drop a comment!",
     "Tag a friend who needs to see this!",
-    "Rate this video 1-10!",
-    "Comment with your biggest question!"
+    "Which of these {options} blew your mind the most?",
+    "Is this a game changer, or overhyped? Your thoughts?",
+    "Can you relate to this? Share your story!",
+    "Save this for later if you found it useful!",
+    "What's one thing you'd add to this list?"
+  ],
+  "psychological_triggers": [
+    "Curiosity",
+    "Urgency",
+    "Scarcity",
+    "FOMO",
+    "Social Proof",
+    "Authority",
+    "Reciprocity",
+    "Loss Aversion"
+  ],
+  "scroll_stop_openers": [
+    "You're about to discover the one thing that will change your {life/skill/habit} forever.",
+    "Here's the secret {hack/tip/method} nobody told you about {topic}.",
+    "Prepare to have your mind blown by this {fact/discovery/trick}.",
+    "If you're still doing {common_action}, you're wasting your time. Do this instead.",
+    "Don't scroll past this if you want to {achieve_desire}.",
+    "This unexpected {event/revelation} is going to reshape how you think about {topic}.",
+    "Watch till the end to see the full {transformation/reveal/trick}.",
+    "I guarantee you've never seen {this_topic} explained like this before."
+  ],
+  "proven_categories": [
+    "Finance",
+    "Productivity",
+    "Health",
+    "Relationships",
+    "Technology",
+    "DIY",
+    "Motivation",
+    "Psychology"
+  ],
+  "retention_tricks": [
+    "Fast Pacing: Quick cuts, rapid scene changes, constant motion.",
+    "Sound Design: Engaging sound effects, trending audio, dynamic music shifts.",
+    "Text Overlays: Key points highlighted with animated text, captions for accessibility.",
+    "Visual Hooks: On-screen countdowns, progress bars, mysterious objects.",
+    "Story Arc: Mini-narrative within the short, building suspense or a journey.",
+    "Direct Address: Speaker directly engages the viewer with questions or commands."
+  ],
+  "cta_formulas": [
+    "Tap the link in my bio for more {value_proposition}!",
+    "Follow for daily {topic} tips!",
+    "Subscribe for the full {tutorial/story}!",
+    "Hit the like button if you learned something new!",
+    "Comment '{keyword}' and I'll send you the {resource}!",
+    "Visit my channel to watch the extended {video_type}!"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-04-05T06:57:22.773124",
+  "last_ai_update": "2026-04-12T07:05:51.134672",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-04-05T06:57:22.773135"
+  "last_saved": "2026-04-12T07:05:51.134681"
 }
