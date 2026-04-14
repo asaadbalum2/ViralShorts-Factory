@@ -1,215 +1,84 @@
 {
-  "generated_at": "2026-04-13T07:27:16.090079",
-  "valid_until": "2026-04-13T23:59:16.090088",
+  "generated_at": "2026-04-14T07:07:42.268059",
+  "valid_until": "2026-04-14T23:59:42.268066",
   "categories": [
-    "Music Festival Vlogs",
-    "Influencer Drama",
-    "Coachella Fashion",
-    "Latin Music Updates",
-    "Travel Vlogs Colombia",
-    "Seattle City Guides",
-    "Festival Weather Forecast",
-    "Coachella Schedules",
-    "Gaming Community News",
-    "Sykkuno Fan Reactions",
-    "Anuel AA Music Reviews",
-    "Coachella Headliner Predictions",
-    "Festival Outfit Inspiration",
-    "Colombian Culture Showcase",
-    "Seattle Food Scene"
+    "Tornado Safety Tips",
+    "Fashion Hacks with Miu Miu",
+    "News Updates with Fox6",
+    "Severe Weather Alerts",
+    "Power Outage Hacks",
+    "Financial Insights with Scott Bessent",
+    "Tornado Warning Signs",
+    "National Weather Service Updates",
+    "Emergency Preparedness",
+    "Spring Fashion Trends",
+    "Disaster Relief Efforts",
+    "Weather Radar Analysis",
+    "Storm Chasing Adventures",
+    "Miu Miu Fashion Challenges",
+    "Tornado Siren Explainers"
   ],
-  "concepts": [
-    {
-      "category": "Music Festival Vlogs",
-      "topic": "Surviving a surprise torrential rainstorm at a desert festival",
-      "hook": "You won't BELIEVE what happened when the skies opened up at Oasis Fest! Our tent almost floated away!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Festival Vlogs",
-      "topic": "Behind-the-scenes hacks for finding the best vegan food stalls at major festivals",
-      "hook": "Forget the main stage, I found the *real* hidden gems for festival food \u2013 and they're all vegan!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Influencer Drama",
-      "topic": "The recent 'unfollowed-gate' between two major beauty gurus over a product launch",
-      "hook": "Did [Influencer A] REALLY shade [Influencer B] with that cryptic tweet? The beauty world is in shambles!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Influencer Drama",
-      "topic": "Exposing alleged fake giveaways and engagement pod tactics in the travel influencer niche",
-      "hook": "Is that dream vacation giveaway even REAL? Let's uncover the truth behind viral travel contests!",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Coachella Fashion",
-      "topic": "DIY-ing iconic Coachella looks from past years on a strict budget (e.g., recreating a celebrity's outfit)",
-      "hook": "Think you can't afford Coachella style? Watch me recreate THIS iconic look for under $50!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Coachella Fashion",
-      "topic": "The surprising accessory trend (e.g., custom body chains) taking over Coachella 2024",
-      "hook": "Everyone's talking about the *shoes*, but THIS is the accessory you NEED to see at Coachella!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Latin Music Updates",
-      "topic": "The rising Reggaeton artist from Medell\u00edn everyone's sleeping on and why they're next big thing",
-      "hook": "Forget the charts, THIS underground Reggaeton artist from Medell\u00edn is about to EXPLODE!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Latin Music Updates",
-      "topic": "Unpacking the lyrical controversy in a new Bad Bunny track that has fans divided",
-      "hook": "Did Bad Bunny *really* say that? Let's dive into the most talked-about lyric of his new album!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs Colombia",
-      "topic": "Solo female traveler safety tips for exploring Bogot\u00e1's historic La Candelaria district",
-      "hook": "Exploring Bogot\u00e1 solo? Here are my MUST-KNOW tips for staying safe in La Candelaria!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs Colombia",
-      "topic": "The hidden gem coffee farm tour near Salento that offers an authentic, off-the-beaten-path experience",
-      "hook": "Forget the main attractions, THIS coffee farm tour near Salento is a secret paradise!",
-      "voice_style": "Inspirational",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Seattle City Guides",
-      "topic": "Best budget-friendly eats in Pike Place Market beyond the famous fish throwing",
-      "hook": "You've seen the fish, but what are the REAL budget food hacks at Pike Place Market you're missing?",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Seattle City Guides",
-      "topic": "Uncovering the spookiest ghost stories and most haunted spots in Seattle's historic districts",
-      "hook": "Think Seattle's just coffee and rain? Prepare for its chilling, haunted secrets!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Festival Weather Forecast",
-      "topic": "Predicting the likelihood and impact of a dust storm at EDC Vegas this year",
-      "hook": "Is EDC Vegas about to get dusty? Here's your sneak peek at the desert's biggest threat!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Festival Weather Forecast",
-      "topic": "The ultimate guide to dressing for unpredictable spring festival weather (e.g., Bonnaroo's hot days, cold nights, and rain)",
-      "hook": "Don't let Bonnaroo's wild weather ruin your vibe! Here's how to dress for EVERYTHING.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Coachella Schedules",
-      "topic": "My personal strategy for maximizing set overlaps on Saturday at Coachella to see the most acts",
-      "hook": "Coachella Saturday got you stressed? Here's my MASTER plan to catch all your faves!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Coachella Schedules",
-      "topic": "Identifying the breakout artist on the Outdoor Theatre stage destined for next year's main stage",
-      "hook": "Who's the *real* hidden gem on Coachella's Outdoor Theatre stage? You heard it here first!",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Community News",
-      "topic": "The major controversy around the new patch for Valorant's agent balance and pro player reactions",
-      "hook": "Did Valorant's new patch just BREAK the game? The community and pros are RAGING!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Community News",
-      "topic": "Unpacking the surprising return of an old fan-favorite character in a major RPG sequel trailer",
-      "hook": "They said it couldn't be done! THIS character is back in [Game Title 2], and fans are losing their minds!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sykkuno Fan Reactions",
-      "topic": "Compiling the funniest fan reactions to Sykkuno's accidental 'face reveal' stream moment",
-      "hook": "Sykkuno's 'face reveal' moment broke the internet! Get ready for the wildest fan reactions!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sykkuno Fan Reactions",
-      "topic": "Analyzing fan theories about Sykkuno's mysterious new gaming project or collaboration",
-      "hook": "Sykkuno just teased something HUGE! What are fans speculating about his next big move?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -217,44 +86,14 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
