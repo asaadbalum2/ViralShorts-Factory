@@ -1,64 +1,238 @@
 {
-  "generated_at": "2026-04-14T07:07:42.268059",
-  "valid_until": "2026-04-14T23:59:42.268066",
+  "generated_at": "2026-04-15T07:08:40.822019",
+  "valid_until": "2026-04-15T23:59:40.822027",
   "categories": [
-    "Tornado Safety Tips",
-    "Fashion Hacks with Miu Miu",
-    "News Updates with Fox6",
-    "Severe Weather Alerts",
-    "Power Outage Hacks",
-    "Financial Insights with Scott Bessent",
-    "Tornado Warning Signs",
-    "National Weather Service Updates",
-    "Emergency Preparedness",
-    "Spring Fashion Trends",
-    "Disaster Relief Efforts",
-    "Weather Radar Analysis",
-    "Storm Chasing Adventures",
-    "Miu Miu Fashion Challenges",
-    "Tornado Siren Explainers"
+    "Local News Updates",
+    "Red Carpet Fashion",
+    "Weather Forecasting",
+    "Dog Breeds 101",
+    "Auto Accident Advice",
+    "Tech Investor Insights",
+    "Snack Food Reviews",
+    "Breaking News Analysis",
+    "Current Event Discussions",
+    "Seasonal Weather Safety",
+    "Car Accident Prevention",
+    "Celebrity Relationship News",
+    "Legal Advice for Accidents",
+    "Morning News Highlights",
+    "Detroit Community News"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Local News Updates",
+      "topic": "New Community Center Opening",
+      "hook": "You won't believe what's coming to our neighborhood this summer!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Red Carpet Fashion",
+      "topic": "Sustainable Fashion Trends",
+      "hook": "Which A-list celebrity just rocked the red carpet with a dress made from recycled plastic?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Weather Forecasting",
+      "topic": "Rare Cloud Formations",
+      "hook": "Have you ever seen a morning glory cloud? You're about to!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Dog Breeds 101",
+      "topic": "The Azawakh Breed",
+      "hook": "Meet the fastest dog breed in the world, capable of reaching speeds of up to 40 miles per hour!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Auto Accident Advice",
+      "topic": "What to Do After a Fender Bender",
+      "hook": "Don't make these common mistakes after a car accident, or you could end up paying thousands out of pocket!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Tech Investor Insights",
+      "topic": "The Future of Cryptocurrency",
+      "hook": "Is this the end of Bitcoin, or is it just the beginning of a new era in cryptocurrency?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Snack Food Reviews",
+      "topic": "Taste Testing Exotic Chips",
+      "hook": "We tried the weirdest flavored chips from around the world, and you won't believe the results!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Breaking News Analysis",
+      "topic": "Understanding the Latest Economic Shifts",
+      "hook": "What does the latest economic news mean for your wallet, and how can you prepare for the future?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Event Discussions",
+      "topic": "The Impact of Social Media on Society",
+      "hook": "Is social media controlling your mind, or are you in control? Let's dive into the shocking truth!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Seasonal Weather Safety",
+      "topic": "Hurricane Preparation Tips",
+      "hook": "Don't wait until it's too late! Here are the top 5 things you need to do to prepare for hurricane season!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Local News Updates",
+      "topic": "New Restaurant Openings",
+      "hook": "Get ready to indulge in the most mouth-watering foodie experience of your life, as we explore the newest restaurants in town!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Red Carpet Fashion",
+      "topic": "The Evolution of Met Gala Looks",
+      "hook": "From daring to divine, we're counting down the most iconic Met Gala looks of all time!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Weather Forecasting",
+      "topic": "The Science of Thunderstorms",
+      "hook": "What makes thunderstorms so powerful, and how can you stay safe during a storm?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Dog Breeds 101",
+      "topic": "The Corgi Breed",
+      "hook": "Why are corgis so beloved by royalty, and what makes them the perfect pet for any family?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Auto Accident Advice",
+      "topic": "The Importance of Dash Cams",
+      "hook": "Don't let a car accident ruin your life! Here's why you need a dash cam, and how it can save you thousands!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Tech Investor Insights",
+      "topic": "The Rise of Artificial Intelligence",
+      "hook": "Is AI the future of tech, or a recipe for disaster? We're exploring the possibilities and pitfalls of AI investment!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Snack Food Reviews",
+      "topic": "The Best Vegan Snack Options",
+      "hook": "Going vegan doesn't mean giving up flavor! We're taste testing the best vegan snack options on the market!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Breaking News Analysis",
+      "topic": "Understanding the Latest Political Developments",
+      "hook": "What does the latest news from the White House mean for you, and how can you stay informed in a chaotic world?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Event Discussions",
+      "topic": "The Impact of Climate Change on Local Communities",
+      "hook": "Climate change is real, and it's happening right now! Here's how you can make a difference in your own community!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Seasonal Weather Safety",
+      "topic": "Winter Driving Tips",
+      "hook": "Don't get caught off guard by winter weather! Here are the top tips for safe driving on snowy and icy roads!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Local News Updates",
+      "topic": "Community Event Calendar",
+      "hook": "From concerts to festivals, we've got the inside scoop on the hottest events in town this summer!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
@@ -66,34 +240,29 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
