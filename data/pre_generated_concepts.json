@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-04-15T07:08:40.822019",
-  "valid_until": "2026-04-15T23:59:40.822027",
+  "generated_at": "2026-04-16T07:09:38.793836",
+  "valid_until": "2026-04-16T23:59:38.793843",
   "categories": [
-    "Local News Updates",
-    "Red Carpet Fashion",
-    "Weather Forecasting",
-    "Dog Breeds 101",
-    "Auto Accident Advice",
-    "Tech Investor Insights",
-    "Snack Food Reviews",
-    "Breaking News Analysis",
-    "Current Event Discussions",
-    "Seasonal Weather Safety",
-    "Car Accident Prevention",
-    "Celebrity Relationship News",
-    "Legal Advice for Accidents",
-    "Morning News Highlights",
-    "Detroit Community News"
+    "Earthquake Safety Tips",
+    "MLB Team Analysis",
+    "MacBook Pro Reviews",
+    "Wednesday Powerball Winner Reactions",
+    "Gen V Gaming Highlights",
+    "Sopranos Rewatch Discussions",
+    "Mel Brooks Comedy Sketches",
+    "TSMC Stock Market Updates",
+    "Disaster Preparedness",
+    "Baseball Fantasy League Advice",
+    "Tech Unboxing and Reviews",
+    "Powerball Jackpot Strategies",
+    "MLB Standings Updates",
+    "Gen V Gameplay Walkthroughs",
+    "90s TV Show Nostalgia"
   ],
   "concepts": [
     {
-      "category": "Local News Updates",
-      "topic": "New Community Center Opening",
-      "hook": "You won't believe what's coming to our neighborhood this summer!",
+      "category": "Earthquake Safety Tips",
+      "topic": "Earthquake-Proofing Your Home Office",
+      "hook": "You won't believe the one simple thing that can save your life during an earthquake!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Red Carpet Fashion",
-      "topic": "Sustainable Fashion Trends",
-      "hook": "Which A-list celebrity just rocked the red carpet with a dress made from recycled plastic?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "MLB Team Analysis",
+      "topic": "The Yankees' Chances of Winning the World Series This Year",
+      "hook": "The secret stat that's going to make or break the Yankees' season!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Weather Forecasting",
-      "topic": "Rare Cloud Formations",
-      "hook": "Have you ever seen a morning glory cloud? You're about to!",
-      "voice_style": "calm",
+      "category": "MacBook Pro Reviews",
+      "topic": "MacBook Pro vs MacBook Air: Which One Should You Choose?",
+      "hook": "What the tech experts don't want you to know about the new MacBook Pro!",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Wednesday Powerball Winner Reactions",
+      "topic": "The Most Epic Powerball Winner Reactions of All Time",
+      "hook": "You won't believe the crazy things people do when they win the Powerball jackpot!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Dog Breeds 101",
-      "topic": "The Azawakh Breed",
-      "hook": "Meet the fastest dog breed in the world, capable of reaching speeds of up to 40 miles per hour!",
-      "voice_style": "authoritative",
+      "category": "Gen V Gaming Highlights",
+      "topic": "The Top 5 Most Insane Gen V Gaming Moments",
+      "hook": "The one Gen V gaming moment that will leave you speechless!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Auto Accident Advice",
-      "topic": "What to Do After a Fender Bender",
-      "hook": "Don't make these common mistakes after a car accident, or you could end up paying thousands out of pocket!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Tech Investor Insights",
-      "topic": "The Future of Cryptocurrency",
-      "hook": "Is this the end of Bitcoin, or is it just the beginning of a new era in cryptocurrency?",
+      "category": "Sopranos Rewatch Discussions",
+      "topic": "The Hidden Meaning Behind the Sopranos Finale",
+      "hook": "The surprising truth about the Sopranos finale that will change everything you thought you knew!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Snack Food Reviews",
-      "topic": "Taste Testing Exotic Chips",
-      "hook": "We tried the weirdest flavored chips from around the world, and you won't believe the results!",
+      "category": "Mel Brooks Comedy Sketches",
+      "topic": "The Funniest Mel Brooks Comedy Sketches of All Time",
+      "hook": "The one Mel Brooks sketch that's so funny, it's been banned from TV!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Breaking News Analysis",
-      "topic": "Understanding the Latest Economic Shifts",
-      "hook": "What does the latest economic news mean for your wallet, and how can you prepare for the future?",
+      "category": "TSMC Stock Market Updates",
+      "topic": "The Future of TSMC Stock: Should You Invest?",
+      "hook": "The shocking truth about TSMC's stock that every investor needs to know!",
       "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Disaster Preparedness",
+      "topic": "The Top 5 Essential Items to Have in Your Emergency Kit",
+      "hook": "The one thing you're not prepared for that could save your life in a disaster!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Baseball Fantasy League Advice",
+      "topic": "The Secret to Winning Your Baseball Fantasy League",
+      "hook": "The one simple trick that will give you an unfair advantage in your fantasy league!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Earthquake Safety Tips",
+      "topic": "How to Create an Earthquake Evacuation Plan",
+      "hook": "Don't wait until it's too late: create your earthquake evacuation plan now!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "MLB Team Analysis",
+      "topic": "The Dodgers' Chances of Winning the NL West This Year",
+      "hook": "The shocking reason why the Dodgers might not win the NL West this year!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "MacBook Pro Reviews",
+      "topic": "The New MacBook Pro: Is It Worth the Upgrade?",
+      "hook": "What Apple doesn't want you to know about the new MacBook Pro!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Wednesday Powerball Winner Reactions",
+      "topic": "The Most Heartwarming Powerball Winner Reactions",
+      "hook": "The Powerball winner reactions that will restore your faith in humanity!",
+      "voice_style": "dramatic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Current Event Discussions",
-      "topic": "The Impact of Social Media on Society",
-      "hook": "Is social media controlling your mind, or are you in control? Let's dive into the shocking truth!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Seasonal Weather Safety",
-      "topic": "Hurricane Preparation Tips",
-      "hook": "Don't wait until it's too late! Here are the top 5 things you need to do to prepare for hurricane season!",
+      "category": "Gen V Gaming Highlights",
+      "topic": "The Top 5 Most Epic Gen V Gaming Comebacks",
+      "hook": "The Gen V gaming comebacks that will leave you on the edge of your seat!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Local News Updates",
-      "topic": "New Restaurant Openings",
-      "hook": "Get ready to indulge in the most mouth-watering foodie experience of your life, as we explore the newest restaurants in town!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Red Carpet Fashion",
-      "topic": "The Evolution of Met Gala Looks",
-      "hook": "From daring to divine, we're counting down the most iconic Met Gala looks of all time!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Weather Forecasting",
-      "topic": "The Science of Thunderstorms",
-      "hook": "What makes thunderstorms so powerful, and how can you stay safe during a storm?",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Dog Breeds 101",
-      "topic": "The Corgi Breed",
-      "hook": "Why are corgis so beloved by royalty, and what makes them the perfect pet for any family?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Auto Accident Advice",
-      "topic": "The Importance of Dash Cams",
-      "hook": "Don't let a car accident ruin your life! Here's why you need a dash cam, and how it can save you thousands!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Tech Investor Insights",
-      "topic": "The Rise of Artificial Intelligence",
-      "hook": "Is AI the future of tech, or a recipe for disaster? We're exploring the possibilities and pitfalls of AI investment!",
+      "category": "Sopranos Rewatch Discussions",
+      "topic": "The Psychology of Tony Soprano: What Made Him Tick?",
+      "hook": "The dark secret behind Tony Soprano's behavior that will change everything you thought you knew!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Snack Food Reviews",
-      "topic": "The Best Vegan Snack Options",
-      "hook": "Going vegan doesn't mean giving up flavor! We're taste testing the best vegan snack options on the market!",
+      "category": "Mel Brooks Comedy Sketches",
+      "topic": "The Best Mel Brooks Comedy Sketches You've Never Seen",
+      "hook": "The hilarious Mel Brooks sketches that were too funny for TV!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Breaking News Analysis",
-      "topic": "Understanding the Latest Political Developments",
-      "hook": "What does the latest news from the White House mean for you, and how can you stay informed in a chaotic world?",
+      "category": "TSMC Stock Market Updates",
+      "topic": "The Impact of Global Events on TSMC Stock",
+      "hook": "The shocking way that global events could affect TSMC's stock price!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Current Event Discussions",
-      "topic": "The Impact of Climate Change on Local Communities",
-      "hook": "Climate change is real, and it's happening right now! Here's how you can make a difference in your own community!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Seasonal Weather Safety",
-      "topic": "Winter Driving Tips",
-      "hook": "Don't get caught off guard by winter weather! Here are the top tips for safe driving on snowy and icy roads!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Disaster Preparedness",
+      "topic": "How to Prepare for a Natural Disaster on a Budget",
+      "hook": "Don't break the bank: how to prepare for a natural disaster without spending a fortune!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Local News Updates",
-      "topic": "Community Event Calendar",
-      "hook": "From concerts to festivals, we've got the inside scoop on the hottest events in town this summer!",
+      "category": "Baseball Fantasy League Advice",
+      "topic": "The Top 5 Sleepers to Pick in Your Fantasy League Draft",
+      "hook": "The secret sleepers that will give you an edge in your fantasy league!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Earthquake Safety Tips",
+      "topic": "Earthquake-Proofing Your Home: A Step-by-Step Guide",
+      "hook": "Don't wait until it's too late: earthquake-proof your home now with these simple steps!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "rate": "-3%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
