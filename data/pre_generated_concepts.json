@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-04-16T07:09:38.793836",
-  "valid_until": "2026-04-16T23:59:38.793843",
+  "generated_at": "2026-04-17T07:09:51.666451",
+  "valid_until": "2026-04-17T23:59:51.666458",
   "categories": [
-    "Earthquake Safety Tips",
-    "MLB Team Analysis",
-    "MacBook Pro Reviews",
-    "Wednesday Powerball Winner Reactions",
-    "Gen V Gaming Highlights",
-    "Sopranos Rewatch Discussions",
-    "Mel Brooks Comedy Sketches",
-    "TSMC Stock Market Updates",
-    "Disaster Preparedness",
-    "Baseball Fantasy League Advice",
-    "Tech Unboxing and Reviews",
-    "Powerball Jackpot Strategies",
-    "MLB Standings Updates",
-    "Gen V Gameplay Walkthroughs",
-    "90s TV Show Nostalgia"
+    "Breaking News: CVG Airport Updates",
+    "Better Call Saul Series Finale Reactions",
+    "Politics Uncovered: Stephen Miller Analysis",
+    "Sports Highlights: Jose Alvarado's Latest Games",
+    "Miley Cyrus Music Challenges",
+    "Invincible Comics Explained",
+    "Daniel Radcliffe's Latest Roles",
+    "Tyla Dance Challenge Tutorials",
+    "Spring Travel Hacks",
+    "Summer Festival Outfit Inspiration",
+    "TV Show Recaps and Theories",
+    "Comic Book Lore and Discussions",
+    "Celebrity News and Gossip",
+    "Viral Dance Challenges",
+    "Entertainment News and Trends"
   ],
   "concepts": [
     {
-      "category": "Earthquake Safety Tips",
-      "topic": "Earthquake-Proofing Your Home Office",
-      "hook": "You won't believe the one simple thing that can save your life during an earthquake!",
+      "category": "Breaking News: CVG Airport Updates",
+      "topic": "CVG Airport's New Terminal Expansion",
+      "hook": "You won't believe the futuristic features coming to CVG Airport!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "MLB Team Analysis",
-      "topic": "The Yankees' Chances of Winning the World Series This Year",
-      "hook": "The secret stat that's going to make or break the Yankees' season!",
-      "voice_style": "authoritative",
+      "category": "Better Call Saul Series Finale Reactions",
+      "topic": "The Shocking Twist in the Series Finale",
+      "hook": "The one question everyone's asking after the Better Call Saul finale...",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "MacBook Pro Reviews",
-      "topic": "MacBook Pro vs MacBook Air: Which One Should You Choose?",
-      "hook": "What the tech experts don't want you to know about the new MacBook Pro!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Politics Uncovered: Stephen Miller Analysis",
+      "topic": "Uncovering Stephen Miller's Controversial Policies",
+      "hook": "The hidden agenda behind Stephen Miller's latest statements revealed!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Wednesday Powerball Winner Reactions",
-      "topic": "The Most Epic Powerball Winner Reactions of All Time",
-      "hook": "You won't believe the crazy things people do when they win the Powerball jackpot!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Gen V Gaming Highlights",
-      "topic": "The Top 5 Most Insane Gen V Gaming Moments",
-      "hook": "The one Gen V gaming moment that will leave you speechless!",
+      "category": "Sports Highlights: Jose Alvarado's Latest Games",
+      "topic": "Jose Alvarado's Record-Breaking Fastball",
+      "hook": "Watch Jose Alvarado throw the fastest pitch of his career!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sopranos Rewatch Discussions",
-      "topic": "The Hidden Meaning Behind the Sopranos Finale",
-      "hook": "The surprising truth about the Sopranos finale that will change everything you thought you knew!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Mel Brooks Comedy Sketches",
-      "topic": "The Funniest Mel Brooks Comedy Sketches of All Time",
-      "hook": "The one Mel Brooks sketch that's so funny, it's been banned from TV!",
+      "category": "Miley Cyrus Music Challenges",
+      "topic": "The 'Wrecking Ball' Challenge",
+      "hook": "Can you take on the 'Wrecking Ball' challenge like Miley Cyrus?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "TSMC Stock Market Updates",
-      "topic": "The Future of TSMC Stock: Should You Invest?",
-      "hook": "The shocking truth about TSMC's stock that every investor needs to know!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Disaster Preparedness",
-      "topic": "The Top 5 Essential Items to Have in Your Emergency Kit",
-      "hook": "The one thing you're not prepared for that could save your life in a disaster!",
+      "category": "Invincible Comics Explained",
+      "topic": "The Origin Story of Invincible's Omni-Man",
+      "hook": "The shocking truth about Omni-Man's past in Invincible comics!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Daniel Radcliffe's Latest Roles",
+      "topic": "Daniel Radcliffe's Transformation in 'Weird: The Al Yankovic Story'",
+      "hook": "You won't recognize Daniel Radcliffe in his latest role!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Baseball Fantasy League Advice",
-      "topic": "The Secret to Winning Your Baseball Fantasy League",
-      "hook": "The one simple trick that will give you an unfair advantage in your fantasy league!",
+      "category": "Tyla Dance Challenge Tutorials",
+      "topic": "Mastering the Tyla Dance Challenge",
+      "hook": "Get ready to bust a move with the Tyla dance challenge tutorial!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Earthquake Safety Tips",
-      "topic": "How to Create an Earthquake Evacuation Plan",
-      "hook": "Don't wait until it's too late: create your earthquake evacuation plan now!",
+      "category": "Spring Travel Hacks",
+      "topic": "Packing Light for a Weekend Getaway",
+      "hook": "The secret to fitting a week's worth of clothes in a carry-on bag!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "MLB Team Analysis",
-      "topic": "The Dodgers' Chances of Winning the NL West This Year",
-      "hook": "The shocking reason why the Dodgers might not win the NL West this year!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Summer Festival Outfit Inspiration",
+      "topic": "Boho Chic Outfits for Music Festivals",
+      "hook": "Elevate your festival style with these boho chic outfit ideas!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "MacBook Pro Reviews",
-      "topic": "The New MacBook Pro: Is It Worth the Upgrade?",
-      "hook": "What Apple doesn't want you to know about the new MacBook Pro!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Breaking News: CVG Airport Updates",
+      "topic": "CVG Airport's New Security Measures",
+      "hook": "The surprising new security feature coming to CVG Airport!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Better Call Saul Series Finale Reactions",
+      "topic": "The Symbolism Behind the Finale's Ending",
+      "hook": "Unpacking the hidden meaning behind the Better Call Saul series finale!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Politics Uncovered: Stephen Miller Analysis",
+      "topic": "Stephen Miller's Impact on Immigration Policies",
+      "hook": "The alarming truth about Stephen Miller's influence on immigration laws!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights: Jose Alvarado's Latest Games",
+      "topic": "Jose Alvarado's Comeback from Injury",
+      "hook": "Watch Jose Alvarado's incredible comeback from a career-threatening injury!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Wednesday Powerball Winner Reactions",
-      "topic": "The Most Heartwarming Powerball Winner Reactions",
-      "hook": "The Powerball winner reactions that will restore your faith in humanity!",
-      "voice_style": "dramatic",
+      "category": "Miley Cyrus Music Challenges",
+      "topic": "The 'Party in the USA' Challenge",
+      "hook": "Can you keep up with Miley Cyrus in the 'Party in the USA' challenge?",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Gen V Gaming Highlights",
-      "topic": "The Top 5 Most Epic Gen V Gaming Comebacks",
-      "hook": "The Gen V gaming comebacks that will leave you on the edge of your seat!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Sopranos Rewatch Discussions",
-      "topic": "The Psychology of Tony Soprano: What Made Him Tick?",
-      "hook": "The dark secret behind Tony Soprano's behavior that will change everything you thought you knew!",
+      "category": "Invincible Comics Explained",
+      "topic": "The Powers of Invincible's Atom Eve",
+      "hook": "Uncovering the secrets behind Atom Eve's incredible powers in Invincible!",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "music_mood": "mysterious",
+      "target_duration": 50
     },
     {
-      "category": "Mel Brooks Comedy Sketches",
-      "topic": "The Best Mel Brooks Comedy Sketches You've Never Seen",
-      "hook": "The hilarious Mel Brooks sketches that were too funny for TV!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "TSMC Stock Market Updates",
-      "topic": "The Impact of Global Events on TSMC Stock",
-      "hook": "The shocking way that global events could affect TSMC's stock price!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Disaster Preparedness",
-      "topic": "How to Prepare for a Natural Disaster on a Budget",
-      "hook": "Don't break the bank: how to prepare for a natural disaster without spending a fortune!",
+      "category": "Daniel Radcliffe's Latest Roles",
+      "topic": "Daniel Radcliffe's Preparation for 'The Lost City' Role",
+      "hook": "You won't believe how Daniel Radcliffe prepared for his latest role!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Baseball Fantasy League Advice",
-      "topic": "The Top 5 Sleepers to Pick in Your Fantasy League Draft",
-      "hook": "The secret sleepers that will give you an edge in your fantasy league!",
+      "category": "Tyla Dance Challenge Tutorials",
+      "topic": "Tyla Dance Challenge for Beginners",
+      "hook": "Get ready to groove with the Tyla dance challenge tutorial for beginners!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Earthquake Safety Tips",
-      "topic": "Earthquake-Proofing Your Home: A Step-by-Step Guide",
-      "hook": "Don't wait until it's too late: earthquake-proof your home now with these simple steps!",
+      "category": "Spring Travel Hacks",
+      "topic": "Finding Cheap Flights for Spring Break",
+      "hook": "The secret to scoring affordable flights for spring break revealed!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 40
+    },
+    {
+      "category": "Summer Festival Outfit Inspiration",
+      "topic": "Grungy Chic Outfits for Music Festivals",
+      "hook": "Elevate your festival style with these grungy chic outfit ideas!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Invincible Comics Explained",
+      "topic": "The Invincible Universe's Most Powerful Villains",
+      "hook": "Meet the most formidable foes in the Invincible universe!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
