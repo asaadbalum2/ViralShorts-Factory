@@ -1,207 +1,227 @@
 {
-  "generated_at": "2026-04-17T07:09:51.666451",
-  "valid_until": "2026-04-17T23:59:51.666458",
+  "generated_at": "2026-04-18T06:46:38.976183",
+  "valid_until": "2026-04-18T23:59:38.976192",
   "categories": [
-    "Breaking News: CVG Airport Updates",
-    "Better Call Saul Series Finale Reactions",
-    "Politics Uncovered: Stephen Miller Analysis",
-    "Sports Highlights: Jose Alvarado's Latest Games",
-    "Miley Cyrus Music Challenges",
-    "Invincible Comics Explained",
-    "Daniel Radcliffe's Latest Roles",
-    "Tyla Dance Challenge Tutorials",
-    "Spring Travel Hacks",
-    "Summer Festival Outfit Inspiration",
-    "TV Show Recaps and Theories",
-    "Comic Book Lore and Discussions",
-    "Celebrity News and Gossip",
-    "Viral Dance Challenges",
-    "Entertainment News and Trends"
+    "Wrestling Fails with AJ Styles",
+    "Royal Family Updates with Prince Harry",
+    "Voice Acting Challenges with Troy Baker",
+    "90s Music Revival with Gwen Stefani",
+    "Rap Battles featuring Swae Lee",
+    "Wrestling Legacy with Nick Hogan",
+    "Electronic Music Festivals with Disclosure",
+    "Joost Klein's Photography Tips",
+    "Spring Fashion Trends",
+    "April Fools' Prank Reactions",
+    "Easter Egg Decorating Ideas",
+    "Gaming News and Updates",
+    "Music Festival Lineup Reveal",
+    " Fitness Motivation with Celebrity Trainers",
+    "Spring Break Getaway Inspiration"
   ],
   "concepts": [
     {
-      "category": "Breaking News: CVG Airport Updates",
-      "topic": "CVG Airport's New Terminal Expansion",
-      "hook": "You won't believe the futuristic features coming to CVG Airport!",
+      "category": "Wrestling Fails with AJ Styles",
+      "topic": "AJ Styles' Most Epic Falls",
+      "hook": "You won't believe the time AJ Styles flew out of the ring!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Better Call Saul Series Finale Reactions",
-      "topic": "The Shocking Twist in the Series Finale",
-      "hook": "The one question everyone's asking after the Better Call Saul finale...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Politics Uncovered: Stephen Miller Analysis",
-      "topic": "Uncovering Stephen Miller's Controversial Policies",
-      "hook": "The hidden agenda behind Stephen Miller's latest statements revealed!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Highlights: Jose Alvarado's Latest Games",
-      "topic": "Jose Alvarado's Record-Breaking Fastball",
-      "hook": "Watch Jose Alvarado throw the fastest pitch of his career!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Miley Cyrus Music Challenges",
-      "topic": "The 'Wrecking Ball' Challenge",
-      "hook": "Can you take on the 'Wrecking Ball' challenge like Miley Cyrus?",
+      "category": "Royal Family Updates with Prince Harry",
+      "topic": "Prince Harry's Hidden Talent",
+      "hook": "What's the secret skill Prince Harry has been hiding from the world?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Invincible Comics Explained",
-      "topic": "The Origin Story of Invincible's Omni-Man",
-      "hook": "The shocking truth about Omni-Man's past in Invincible comics!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Daniel Radcliffe's Latest Roles",
-      "topic": "Daniel Radcliffe's Transformation in 'Weird: The Al Yankovic Story'",
-      "hook": "You won't recognize Daniel Radcliffe in his latest role!",
+      "category": "Voice Acting Challenges with Troy Baker",
+      "topic": "Troy Baker's Funniest Voicing Fails",
+      "hook": "Troy Baker's laugh-out-loud moments that never made it to the game!",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 50
     },
     {
-      "category": "Tyla Dance Challenge Tutorials",
-      "topic": "Mastering the Tyla Dance Challenge",
-      "hook": "Get ready to bust a move with the Tyla dance challenge tutorial!",
-      "voice_style": "friendly",
+      "category": "90s Music Revival with Gwen Stefani",
+      "topic": "Gwen Stefani's Favorite 90s Music Memories",
+      "hook": "Gwen Stefani reveals the song that started it all for No Doubt!",
+      "voice_style": "dramatic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Spring Travel Hacks",
-      "topic": "Packing Light for a Weekend Getaway",
-      "hook": "The secret to fitting a week's worth of clothes in a carry-on bag!",
+      "category": "Rap Battles featuring Swae Lee",
+      "topic": "Swae Lee's Most Epic Rap Battle Comebacks",
+      "hook": "The time Swae Lee shut down his opponent with just one verse!",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Festival Outfit Inspiration",
-      "topic": "Boho Chic Outfits for Music Festivals",
-      "hook": "Elevate your festival style with these boho chic outfit ideas!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking News: CVG Airport Updates",
-      "topic": "CVG Airport's New Security Measures",
-      "hook": "The surprising new security feature coming to CVG Airport!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Better Call Saul Series Finale Reactions",
-      "topic": "The Symbolism Behind the Finale's Ending",
-      "hook": "Unpacking the hidden meaning behind the Better Call Saul series finale!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Politics Uncovered: Stephen Miller Analysis",
-      "topic": "Stephen Miller's Impact on Immigration Policies",
-      "hook": "The alarming truth about Stephen Miller's influence on immigration laws!",
-      "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Highlights: Jose Alvarado's Latest Games",
-      "topic": "Jose Alvarado's Comeback from Injury",
-      "hook": "Watch Jose Alvarado's incredible comeback from a career-threatening injury!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Miley Cyrus Music Challenges",
-      "topic": "The 'Party in the USA' Challenge",
-      "hook": "Can you keep up with Miley Cyrus in the 'Party in the USA' challenge?",
+      "category": "Wrestling Legacy with Nick Hogan",
+      "topic": "Nick Hogan's Favorite Wrestling Memories with His Dad",
+      "hook": "The heartwarming story of Nick Hogan's first wrestling match with Hulk Hogan!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Invincible Comics Explained",
-      "topic": "The Powers of Invincible's Atom Eve",
-      "hook": "Uncovering the secrets behind Atom Eve's incredible powers in Invincible!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Daniel Radcliffe's Latest Roles",
-      "topic": "Daniel Radcliffe's Preparation for 'The Lost City' Role",
-      "hook": "You won't believe how Daniel Radcliffe prepared for his latest role!",
+      "category": "Electronic Music Festivals with Disclosure",
+      "topic": "Disclosure's Craziest Festival Performances",
+      "hook": "The time Disclosure's set got interrupted by a surprise storm!",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Joost Klein's Photography Tips",
+      "topic": "Joost Klein's Top 3 Photography Hacks",
+      "hook": "The secret camera setting that will change your photography game forever!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Tyla Dance Challenge Tutorials",
-      "topic": "Tyla Dance Challenge for Beginners",
-      "hook": "Get ready to groove with the Tyla dance challenge tutorial for beginners!",
+      "category": "Spring Fashion Trends",
+      "topic": "This Season's Hottest Colors",
+      "hook": "The one color that's taking over spring fashion this year!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Spring Travel Hacks",
-      "topic": "Finding Cheap Flights for Spring Break",
-      "hook": "The secret to scoring affordable flights for spring break revealed!",
+      "category": "April Fools' Prank Reactions",
+      "topic": "The Best April Fools' Pranks on Friends",
+      "hook": "You won't believe the time I pranked my best friend with a fake spider!",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Summer Festival Outfit Inspiration",
-      "topic": "Grungy Chic Outfits for Music Festivals",
-      "hook": "Elevate your festival style with these grungy chic outfit ideas!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Invincible Comics Explained",
-      "topic": "The Invincible Universe's Most Powerful Villains",
-      "hook": "Meet the most formidable foes in the Invincible universe!",
+      "category": "Wrestling Fails with AJ Styles",
+      "topic": "AJ Styles' Worst Injuries",
+      "hook": "The injury that almost ended AJ Styles' wrestling career!",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Royal Family Updates with Prince Harry",
+      "topic": "Prince Harry's Charity Work",
+      "hook": "The incredible way Prince Harry is giving back to his community!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
+    },
+    {
+      "category": "Voice Acting Challenges with Troy Baker",
+      "topic": "Troy Baker's Most Challenging Roles",
+      "hook": "The character that pushed Troy Baker to his limits!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "90s Music Revival with Gwen Stefani",
+      "topic": "Gwen Stefani's Favorite 90s Music Icons",
+      "hook": "The 90s music icon who inspired Gwen Stefani's unique style!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Rap Battles featuring Swae Lee",
+      "topic": "Swae Lee's Most Personal Rap Battles",
+      "hook": "The time Swae Lee rapped about his toughest life struggles!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Wrestling Legacy with Nick Hogan",
+      "topic": "Nick Hogan's Favorite Wrestling Memories",
+      "hook": "The historic wrestling match that Nick Hogan will never forget!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Electronic Music Festivals with Disclosure",
+      "topic": "Disclosure's Favorite Festival Performances",
+      "hook": "The festival where Disclosure's performance got interrupted by a surprise guest!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Joost Klein's Photography Tips",
+      "topic": "Joost Klein's Top Photography Gear",
+      "hook": "The one photography accessory that Joost Klein can't live without!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Spring Fashion Trends",
+      "topic": "This Season's Must-Have Accessories",
+      "hook": "The one accessory that's taking over spring fashion this year!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "April Fools' Prank Reactions",
+      "topic": "The Funniest April Fools' Prank Fails",
+      "hook": "The time I got pranked with a fake parking ticket!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Wrestling Fails with AJ Styles",
+      "topic": "AJ Styles' Funniest Moments",
+      "hook": "You won't believe the time AJ Styles tripped on his own feet!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
@@ -210,59 +230,39 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
