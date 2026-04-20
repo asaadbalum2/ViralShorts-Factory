@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-04-19T06:57:35.109273",
-  "valid_until": "2026-04-19T23:59:35.109282",
+  "generated_at": "2026-04-20T07:27:46.273396",
+  "valid_until": "2026-04-20T23:59:46.273405",
   "categories": [
-    "Music Festival Vlogs",
-    "Coachella Fashion Inspiration",
-    "Justin Bieber Fan Content",
-    "Celebrity News and Gossip",
-    "Summer Concert Essentials",
-    "SNL Skit Recreations",
-    "90s Music Revival",
-    "Spider-Man Comics Analysis",
-    "Banking and Finance Hacks",
-    "Festival Merch Unboxing",
-    "Indie Music Discovery",
-    "Comedy Sketches",
-    "New Music Releases",
-    "Artist Interviews and Performances",
-    "Pop Culture Commentary"
+    "Shakira and Karol G Music Challenges",
+    "Ryan Castro Dance Tutorials",
+    "Colombia Travel Vlogs",
+    "Patrick Muldoon Throwback Scenes",
+    "Homes and Interior Design Inspiration",
+    "Lyrids Meteor Shower Time-Lapses",
+    "New Zealand vs Bangladesh Cricket Highlights",
+    "Shakira's Latest Music News",
+    "Karol G's Fashion Inspiration",
+    "Colombian Culture and Traditions",
+    "Ryan Castro's Rise to Fame Stories",
+    "Patrick Muldoon's Iconic Movie Roles",
+    "Home Decor on a Budget Tips",
+    "Lyrids Meteor Shower Viewing Guides",
+    "Colombian Music and Dance Fusions"
   ],
   "concepts": [
     {
-      "category": "Music Festival Vlogs",
-      "topic": "What I Packed vs. What I ACTUALLY Needed at Desert Daze 2023",
-      "hook": "Thought I was ready for Desert Daze? My packing list was a disaster. Here's what I *really* used and what stayed in the tent!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Festival Vlogs",
-      "topic": "Finding the Secret Silent Disco at EDC Vegas 2023: My Adventure",
-      "hook": "Everyone talks about the main stages, but did you know about the secret silent disco at EDC? I found it, and here's how you can too!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Coachella Fashion Inspiration",
-      "topic": "How to Style Your Coachella Outfit Like a 70s Rock God/Goddess",
-      "hook": "Forget basic boho! Want to turn heads at Coachella with a killer 70s rock vibe? I'll show you how to channel your inner Stevie Nicks or Freddie Mercury.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Coachella Fashion Inspiration",
-      "topic": "Coachella Looks for Under $50: Thrift Store Haul & DIY Tips",
-      "hook": "Don't break the bank for Coachella style! I hit up the thrift store and found incredible pieces to create head-turning looks for less than 50 bucks.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Justin Bieber Fan Content",
-      "topic": "The Underrated Genius of Justin Bieber's 'Journals' Album (Why It's a Masterpiece)",
-      "hook": "Everyone loves *Purpose*, but are we sleeping on Justin Bieber's *Journals*? This album changed everything, and here's why you need to re-listen.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Shakira and Karol G Music Challenges",
+      "topic": "Shakira's 'Hips Don't Lie' Dance Challenge",
+      "hook": "Can you move your hips like Shakira?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Justin Bieber Fan Content",
-      "topic": "Decoding Justin Bieber's Secret Instagram Messages to Hailey: Fan Theories Exposed",
-      "hook": "Is Justin leaving hidden messages for Hailey on Instagram? I've been deep diving his posts, and some theories are wild. Let's decode them together!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 49
-    },
-    {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Shocking Truth Behind Taylor Swift's New Jet Scandal & Fan Reactions",
-      "hook": "Did Taylor Swift just buy *another* private jet? The internet is buzzing, and the carbon footprint debate is back. Here's what's *really* going on.",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
-      "target_duration": 44
-    },
-    {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Hollywood Feud That Defined the Early 2000s: Lindsay Lohan vs. Hilary Duff",
-      "hook": "Before the Kardashians, there was *the* beef of the early 2000s: Lindsay Lohan vs. Hilary Duff. Remember the drama? Let's unearth this iconic feud.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Summer Concert Essentials",
-      "topic": "Beyond the Ticket: 5 Must-Have Items for Any Outdoor Summer Concert Survival",
-      "hook": "Got your ticket? Good. But you're forgetting something crucial for that outdoor summer concert. These 5 items will save your life (and your feet).",
-      "voice_style": "Authoritative",
-      "music_mood": "Upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Summer Concert Essentials",
-      "topic": "Don't Go Off-Grid! Best Portable Chargers & Gadgets for Festivals & Concerts",
-      "hook": "Picture this: your phone dies mid-set. Nightmare, right? Here are the absolute best portable chargers and tech gadgets to keep you connected and charged all festival long.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "SNL Skit Recreations",
-      "topic": "Recreating the Iconic 'More Cowbell' Skit with a Modern, Unexpected Twist",
-      "hook": "I've got a fever, and the only prescription is more cowbell! We're recreating one of SNL's most legendary skits, but with a surprising modern twist. Get ready!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 47
-    },
-    {
-      "category": "SNL Skit Recreations",
-      "topic": "Becoming Stefon: Your Guide to New York's Hottest (SNL-Inspired) Clubs",
-      "hook": "New York's hottest club is... *this video*! Join me as I channel Stefon and reveal the wildest, most bizarre 'clubs' SNL style. It has *everything*.",
-      "voice_style": "Dramatic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "90s Music Revival",
-      "topic": "The Grunge Band You Forgot: Why Stone Temple Pilots Deserve a Rediscovery",
-      "hook": "Everyone talks Nirvana and Pearl Jam, but are we seriously sleeping on Stone Temple Pilots? Their music was pure 90s gold, and here's why you need to rediscover them.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Ryan Castro Dance Tutorials",
+      "topic": "Ryan Castro's Signature Step-by-Step Tutorial",
+      "hook": "Get ready to dance like Ryan Castro in just 40 seconds!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "90s Music Revival",
-      "topic": "When Pop Went Punk: The Rise of Green Day and Blink-182 in the 90s",
-      "hook": "Remember when pop music suddenly got a spiked haircut and a skateboard? The 90s saw the explosion of pop-punk, and bands like Green Day and Blink-182 changed everything. Let's dive in!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 48
+      "category": "Colombia Travel Vlogs",
+      "topic": "Exploring Cartagena's Vibrant Streets",
+      "hook": "Discover the hidden gems of Cartagena with me!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
-      "category": "Spider-Man Comics Analysis",
-      "topic": "Is Venom the REAL Hero? An Unpopular Opinion on Spider-Man's Arch-Nemesis",
-      "hook": "Okay, hear me out: what if Venom isn't just a villain, but an anti-hero misunderstood by all? I'm breaking down why Venom might be the true chaotic good of the Marvel universe.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 46
+      "category": "Patrick Muldoon Throwback Scenes",
+      "topic": "Patrick Muldoon's Most Iconic 90s Moments",
+      "hook": "Who else remembers Patrick Muldoon's hottest 90s scenes?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
     },
     {
-      "category": "Spider-Man Comics Analysis",
-      "topic": "The Darkest Era of Peter Parker: Tracing Spider-Man's Identity Crisis in the 80s Comics",
-      "hook": "Think Spider-Man's always been upbeat? Think again. The 80s were a rough time for Peter Parker, filled with identity crises and moral dilemmas. Let's uncover his darkest era.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 49
+      "category": "Homes and Interior Design Inspiration",
+      "topic": "10-Minute Home Decor Makeover on a Budget",
+      "hook": "Transform your space in just 10 minutes - yes, it's possible!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
     },
     {
-      "category": "Banking and Finance Hacks",
-      "topic": "The 'Envelope System' Reboot: How I Save 30% of My Income Monthly (Step-by-Step)",
-      "hook": "Struggling to save? Forget complicated apps! I'm bringing back the old-school 'envelope system' with a modern twist that helped me save 30% of my income every single month.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 44
+      "category": "Lyrids Meteor Shower Time-Lapses",
+      "topic": "Capturing the Lyrids Meteor Shower in 4K",
+      "hook": " Witness the breathtaking Lyrids meteor shower like never before!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
     },
     {
-      "category": "Banking and Finance Hacks",
-      "topic": "3 'Money Saving' Habits That Are Actually Costing You More (Stop Doing These!)",
-      "hook": "You think you're saving money, but you might be unknowingly spending *more*. Here are 3 common finance habits that are secretly draining your wallet.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 42
+      "category": "New Zealand vs Bangladesh Cricket Highlights",
+      "topic": "Most Epic New Zealand vs Bangladesh Cricket Match",
+      "hook": "Relive the most thrilling cricket match between New Zealand and Bangladesh!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Festival Merch Unboxing",
-      "topic": "Is Tomorrowland's Secret Society Merch Worth the Hype (and Price Tag)?",
-      "hook": "I finally got my hands on the exclusive Tomorrowland Secret Society merch! Is it epic or a total rip-off? Let's unbox and find out if it lives up to the hype.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 47
+      "category": "Shakira's Latest Music News",
+      "topic": "Shakira's New Album Release Date Revealed",
+      "hook": "The wait is over - Shakira's new album is coming sooner than you think!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
     },
     {
-      "category": "Festival Merch Unboxing",
-      "topic": "Festival Merch Quality Test: EDC Las Vegas vs. Ultra Miami \u2013 Who Wins?",
-      "hook": "Ever wondered if festival merch is worth it? I bought gear from EDC Las Vegas and Ultra Miami, and we're putting it to the ultimate quality and style test. Let's see who wins!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 49
+      "category": "Karol G's Fashion Inspiration",
+      "topic": "Karol G's Top 5 Fashion Trends to Follow",
+      "hook": "Get ready to upgrade your wardrobe with Karol G's top fashion picks!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Colombian Culture and Traditions",
+      "topic": "The Significance of the Colombian Flag",
+      "hook": "Uncover the fascinating story behind the Colombian flag!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Shakira and Karol G Music Challenges",
+      "topic": "Karol G's 'Tusa' Vocal Challenge",
+      "hook": "Think you can sing like Karol G? Take the 'Tusa' vocal challenge!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Ryan Castro Dance Tutorials",
+      "topic": "Ryan Castro's Beginner-Friendly Salsa Tutorial",
+      "hook": "Learn to salsa like Ryan Castro in just 40 seconds!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Colombia Travel Vlogs",
+      "topic": "Discovering Medellin's Innovative Comuna 13",
+      "hook": "Explore the vibrant streets of Medellin's Comuna 13 with me!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Patrick Muldoon Throwback Scenes",
+      "topic": "Patrick Muldoon's Most Iconic Movie Roles",
+      "hook": "Who else remembers Patrick Muldoon's hottest movie scenes?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Homes and Interior Design Inspiration",
+      "topic": "5-Minute DIY Home Decor Hacks",
+      "hook": "Transform your space in just 5 minutes - it's easier than you think!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Lyrids Meteor Shower Time-Lapses",
+      "topic": "The Best Lyrids Meteor Shower Viewing Spots",
+      "hook": "Find the best spot to witness the breathtaking Lyrids meteor shower!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "New Zealand vs Bangladesh Cricket Highlights",
+      "topic": "The Most Unforgettable New Zealand vs Bangladesh Cricket Moments",
+      "hook": "Relive the most epic cricket moments between New Zealand and Bangladesh!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Shakira's Latest Music News",
+      "topic": "Shakira's Upcoming World Tour Dates Revealed",
+      "hook": "The wait is over - Shakira's world tour is coming to a city near you!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Karol G's Fashion Inspiration",
+      "topic": "Karol G's Favorite Fashion Brands",
+      "hook": "Get ready to shop like Karol G with her top fashion brand picks!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Colombian Culture and Traditions",
+      "topic": "The History Behind Colombia's Famous Empanadas",
+      "hook": "Uncover the fascinating story behind Colombia's beloved empanadas!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Shakira and Karol G Music Challenges",
+      "topic": "Shakira's 'Waka Waka' Dance Challenge",
+      "hook": "Can you dance like Shakira in 'Waka Waka'?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
