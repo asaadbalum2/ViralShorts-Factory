@@ -1,188 +1,188 @@
 {
-  "generated_at": "2026-04-20T07:27:46.273396",
-  "valid_until": "2026-04-20T23:59:46.273405",
+  "generated_at": "2026-04-21T07:11:34.761654",
+  "valid_until": "2026-04-21T23:59:34.761664",
   "categories": [
-    "Shakira and Karol G Music Challenges",
-    "Ryan Castro Dance Tutorials",
-    "Colombia Travel Vlogs",
-    "Patrick Muldoon Throwback Scenes",
-    "Homes and Interior Design Inspiration",
-    "Lyrids Meteor Shower Time-Lapses",
-    "New Zealand vs Bangladesh Cricket Highlights",
-    "Shakira's Latest Music News",
-    "Karol G's Fashion Inspiration",
-    "Colombian Culture and Traditions",
-    "Ryan Castro's Rise to Fame Stories",
-    "Patrick Muldoon's Iconic Movie Roles",
-    "Home Decor on a Budget Tips",
-    "Lyrids Meteor Shower Viewing Guides",
-    "Colombian Music and Dance Fusions"
+    "Comedy Sketches with Quinta Brunson",
+    "Air Travel Hacks on Alaska Airlines",
+    "Car Accident Survival Stories",
+    "Powerball Winning Strategies",
+    "Stock Market Updates on Avis",
+    "Personal Injury Lawyer Q&A",
+    "Banking Hacks and Tips",
+    "James Bond Movie Reviews",
+    "Spring Break Travel Vlogs",
+    "Lawyer Reaction Videos to Recent Cases",
+    "Lottery Winner Stories",
+    "Financial Literacy for Young Adults",
+    "Road Safety PSAs",
+    "Stock Market Analysis for Beginners",
+    "Movie Reviews and Easter Egg Hunts for James Bond Fans"
   ],
   "concepts": [
     {
-      "category": "Shakira and Karol G Music Challenges",
-      "topic": "Shakira's 'Hips Don't Lie' Dance Challenge",
-      "hook": "Can you move your hips like Shakira?",
+      "category": "Comedy Sketches with Quinta Brunson",
+      "topic": "Quinta's Worst Morning Routine",
+      "hook": "You won't believe what I do every morning...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Ryan Castro Dance Tutorials",
-      "topic": "Ryan Castro's Signature Step-by-Step Tutorial",
-      "hook": "Get ready to dance like Ryan Castro in just 40 seconds!",
+      "category": "Air Travel Hacks on Alaska Airlines",
+      "topic": "How to Get Free Upgrades on Alaska Flights",
+      "hook": "The secret to flying first class without paying a dime...",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Colombia Travel Vlogs",
-      "topic": "Exploring Cartagena's Vibrant Streets",
-      "hook": "Discover the hidden gems of Cartagena with me!",
+      "category": "Car Accident Survival Stories",
+      "topic": "I Survived a 100mph Crash: Here's What I Learned",
+      "hook": "My car was totaled, but I walked away with my life...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Powerball Winning Strategies",
+      "topic": "The Math Behind Picking the Perfect Powerball Numbers",
+      "hook": "Can math really guarantee a Powerball win?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Stock Market Updates on Avis",
+      "topic": "Avis Stock Soars: What's Behind the Sudden Surge?",
+      "hook": "Why Avis stock is making headlines today...",
       "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Personal Injury Lawyer Q&A",
+      "topic": "What to Do Immediately After a Slip and Fall Accident",
+      "hook": "Don't make these common mistakes after a slip and fall...",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Patrick Muldoon Throwback Scenes",
-      "topic": "Patrick Muldoon's Most Iconic 90s Moments",
-      "hook": "Who else remembers Patrick Muldoon's hottest 90s scenes?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Banking Hacks and Tips",
+      "topic": "How to Avoid Overdraft Fees with These Simple Tricks",
+      "hook": "Never pay another overdraft fee again...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Homes and Interior Design Inspiration",
-      "topic": "10-Minute Home Decor Makeover on a Budget",
-      "hook": "Transform your space in just 10 minutes - yes, it's possible!",
+      "category": "James Bond Movie Reviews",
+      "topic": "Ranking the Top 5 James Bond Villains of All Time",
+      "hook": "Who's the most iconic Bond villain of all time?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Lyrids Meteor Shower Time-Lapses",
-      "topic": "Capturing the Lyrids Meteor Shower in 4K",
-      "hook": " Witness the breathtaking Lyrids meteor shower like never before!",
-      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "New Zealand vs Bangladesh Cricket Highlights",
-      "topic": "Most Epic New Zealand vs Bangladesh Cricket Match",
-      "hook": "Relive the most thrilling cricket match between New Zealand and Bangladesh!",
+      "category": "Spring Break Travel Vlogs",
+      "topic": "Exploring the Hidden Beaches of Cancun",
+      "hook": "You won't believe the secret beaches I discovered in Cancun...",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Lawyer Reaction Videos to Recent Cases",
+      "topic": "The Shocking Verdict in the Latest High-Profile Trial",
+      "hook": "I'm a lawyer, and I'm shocked by this verdict...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Comedy Sketches with Quinta Brunson",
+      "topic": "When You're the Only Adult in the Room",
+      "hook": "What happens when you're the only grown-up in a room full of kids?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Shakira's Latest Music News",
-      "topic": "Shakira's New Album Release Date Revealed",
-      "hook": "The wait is over - Shakira's new album is coming sooner than you think!",
+      "category": "Air Travel Hacks on Alaska Airlines",
+      "topic": "How to Score the Best Seats on an Alaska Flight",
+      "hook": "The secret to getting the best seats on your next Alaska flight...",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Karol G's Fashion Inspiration",
-      "topic": "Karol G's Top 5 Fashion Trends to Follow",
-      "hook": "Get ready to upgrade your wardrobe with Karol G's top fashion picks!",
+      "category": "Car Accident Survival Stories",
+      "topic": "I Was in a Car Accident and Didn't Even Know It",
+      "hook": "I was in a car accident and didn't even realize it...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Powerball Winning Strategies",
+      "topic": "The Hot and Cold Numbers Strategy for Powerball",
+      "hook": "Can this simple strategy increase your chances of winning the Powerball?",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Colombian Culture and Traditions",
-      "topic": "The Significance of the Colombian Flag",
-      "hook": "Uncover the fascinating story behind the Colombian flag!",
+      "category": "Stock Market Updates on Avis",
+      "topic": "Avis Stock Predictions: Will It Continue to Soar?",
+      "hook": "What's next for Avis stock after its recent surge?",
       "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Shakira and Karol G Music Challenges",
-      "topic": "Karol G's 'Tusa' Vocal Challenge",
-      "hook": "Think you can sing like Karol G? Take the 'Tusa' vocal challenge!",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Ryan Castro Dance Tutorials",
-      "topic": "Ryan Castro's Beginner-Friendly Salsa Tutorial",
-      "hook": "Learn to salsa like Ryan Castro in just 40 seconds!",
+      "category": "Personal Injury Lawyer Q&A",
+      "topic": "What to Expect in a Personal Injury Lawsuit",
+      "hook": "Don't go into a personal injury lawsuit without knowing this...",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Colombia Travel Vlogs",
-      "topic": "Discovering Medellin's Innovative Comuna 13",
-      "hook": "Explore the vibrant streets of Medellin's Comuna 13 with me!",
-      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Patrick Muldoon Throwback Scenes",
-      "topic": "Patrick Muldoon's Most Iconic Movie Roles",
-      "hook": "Who else remembers Patrick Muldoon's hottest movie scenes?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Homes and Interior Design Inspiration",
-      "topic": "5-Minute DIY Home Decor Hacks",
-      "hook": "Transform your space in just 5 minutes - it's easier than you think!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Lyrids Meteor Shower Time-Lapses",
-      "topic": "The Best Lyrids Meteor Shower Viewing Spots",
-      "hook": "Find the best spot to witness the breathtaking Lyrids meteor shower!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "New Zealand vs Bangladesh Cricket Highlights",
-      "topic": "The Most Unforgettable New Zealand vs Bangladesh Cricket Moments",
-      "hook": "Relive the most epic cricket moments between New Zealand and Bangladesh!",
+      "category": "Banking Hacks and Tips",
+      "topic": "How to Use the 50/30/20 Rule for Budgeting",
+      "hook": "Take control of your finances with this simple budgeting rule...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Shakira's Latest Music News",
-      "topic": "Shakira's Upcoming World Tour Dates Revealed",
-      "hook": "The wait is over - Shakira's world tour is coming to a city near you!",
+      "category": "James Bond Movie Reviews",
+      "topic": "The Evolution of Bond Cars Over the Years",
+      "hook": "From Aston Martins to Lotus Esprits, which Bond car is the best?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Spring Break Travel Vlogs",
+      "topic": "Discovering the Best Kept Secrets of South Padre Island",
+      "hook": "You won't believe the hidden gems I found on South Padre Island...",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Karol G's Fashion Inspiration",
-      "topic": "Karol G's Favorite Fashion Brands",
-      "hook": "Get ready to shop like Karol G with her top fashion brand picks!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Colombian Culture and Traditions",
-      "topic": "The History Behind Colombia's Famous Empanadas",
-      "hook": "Uncover the fascinating story behind Colombia's beloved empanadas!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "category": "Lawyer Reaction Videos to Recent Cases",
+      "topic": "The Impact of the Latest Supreme Court Ruling",
+      "hook": "As a lawyer, here's what the latest Supreme Court ruling means for you...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Shakira and Karol G Music Challenges",
-      "topic": "Shakira's 'Waka Waka' Dance Challenge",
-      "hook": "Can you dance like Shakira in 'Waka Waka'?",
+      "category": "Comedy Sketches with Quinta Brunson",
+      "topic": "When You're Trying to Adult but Still Playing Video Games",
+      "hook": "What happens when you're trying to be an adult but still love gaming?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
@@ -190,79 +190,79 @@
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
