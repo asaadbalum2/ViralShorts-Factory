@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-04-21T07:11:34.761654",
-  "valid_until": "2026-04-21T23:59:34.761664",
+  "generated_at": "2026-04-22T07:11:29.426662",
+  "valid_until": "2026-04-22T23:59:29.426669",
   "categories": [
-    "Comedy Sketches with Quinta Brunson",
-    "Air Travel Hacks on Alaska Airlines",
-    "Car Accident Survival Stories",
-    "Powerball Winning Strategies",
-    "Stock Market Updates on Avis",
-    "Personal Injury Lawyer Q&A",
-    "Banking Hacks and Tips",
-    "James Bond Movie Reviews",
-    "Spring Break Travel Vlogs",
-    "Lawyer Reaction Videos to Recent Cases",
-    "Lottery Winner Stories",
-    "Financial Literacy for Young Adults",
-    "Road Safety PSAs",
-    "Stock Market Analysis for Beginners",
-    "Movie Reviews and Easter Egg Hunts for James Bond Fans"
+    "Sustainable Living Hacks for Climate Change",
+    "World Cup 2026 Predictions and Highlights",
+    "Space Exploration Explained in 60 Seconds",
+    "OpenAI Tech Reviews and Tutorials",
+    "Bitcoin Price Updates and Analysis",
+    "Electric Vehicle Test Drives and Reviews",
+    "Jesse Tyler Ferguson Comedy Skits",
+    "Eva Lys Dance Challenges",
+    "Earth Day Activism and Awareness",
+    "Football Fans' Reactions to World Cup 2026",
+    "AI-Generated Art and Music",
+    "Climate Change Impacts on Global Sports",
+    "EV vs Gasoline Vehicle Debates",
+    "OpenAI-Powered Chatbots for Daily Life",
+    "Space Travel and Exploration News Updates"
   ],
   "concepts": [
     {
-      "category": "Comedy Sketches with Quinta Brunson",
-      "topic": "Quinta's Worst Morning Routine",
-      "hook": "You won't believe what I do every morning...",
-      "voice_style": "energetic",
+      "category": "Sustainable Living Hacks for Climate Change",
+      "topic": "10 Easy Ways to Reduce Plastic Use in the Kitchen",
+      "hook": "Did you know that one simple switch can save over 1000 pieces of plastic per year?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Air Travel Hacks on Alaska Airlines",
-      "topic": "How to Get Free Upgrades on Alaska Flights",
-      "hook": "The secret to flying first class without paying a dime...",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "World Cup 2026 Predictions and Highlights",
+      "topic": "Why Brazil Will Win the World Cup 2026",
+      "hook": "The shocking stat that gives Brazil a 90% chance of lifting the trophy!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Car Accident Survival Stories",
-      "topic": "I Survived a 100mph Crash: Here's What I Learned",
-      "hook": "My car was totaled, but I walked away with my life...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Space Exploration Explained in 60 Seconds",
+      "topic": "The Mysterious Great Attractor of the Universe",
+      "hook": "There's a region in space that's pulling us towards it, but what is it?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "OpenAI Tech Reviews and Tutorials",
+      "topic": "How to Build a Chatbot Using OpenAI's Latest Model",
+      "hook": "Create your own AI-powered chatbot in just 5 minutes!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Powerball Winning Strategies",
-      "topic": "The Math Behind Picking the Perfect Powerball Numbers",
-      "hook": "Can math really guarantee a Powerball win?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Bitcoin Price Updates and Analysis",
+      "topic": "Will Bitcoin Reach $100,000 by the End of 2026?",
+      "hook": "The one key factor that could send Bitcoin soaring to new heights!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Updates on Avis",
-      "topic": "Avis Stock Soars: What's Behind the Sudden Surge?",
-      "hook": "Why Avis stock is making headlines today...",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Personal Injury Lawyer Q&A",
-      "topic": "What to Do Immediately After a Slip and Fall Accident",
-      "hook": "Don't make these common mistakes after a slip and fall...",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Banking Hacks and Tips",
-      "topic": "How to Avoid Overdraft Fees with These Simple Tricks",
-      "hook": "Never pay another overdraft fee again...",
+      "category": "Electric Vehicle Test Drives and Reviews",
+      "topic": "Tesla Model 3 vs Lucid Air: Which EV Reigns Supreme?",
+      "hook": "The ultimate showdown between two of the world's fastest electric cars!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Jesse Tyler Ferguson Comedy Skits",
+      "topic": "The Hilarious Struggle of Online Shopping",
+      "hook": "When you try to return a pair of pants, but the website has other plans!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "James Bond Movie Reviews",
-      "topic": "Ranking the Top 5 James Bond Villains of All Time",
-      "hook": "Who's the most iconic Bond villain of all time?",
+      "category": "Eva Lys Dance Challenges",
+      "topic": "The #LysLift Dance Challenge",
+      "hook": "Can you master the move that's taking the internet by storm?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Earth Day Activism and Awareness",
+      "topic": "The Devastating Impact of Fast Fashion on the Environment",
+      "hook": "The shocking truth about the fashion industry's dirty secret!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Spring Break Travel Vlogs",
-      "topic": "Exploring the Hidden Beaches of Cancun",
-      "hook": "You won't believe the secret beaches I discovered in Cancun...",
+      "category": "Football Fans' Reactions to World Cup 2026",
+      "topic": "The Most Epic Football Fan Reactions to Goal Scorers",
+      "hook": "When your team scores, and you lose your mind!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Sustainable Living Hacks for Climate Change",
+      "topic": "DIY Vertical Gardening for Small Spaces",
+      "hook": "Transform your balcony into a lush oasis using just a few simple tricks!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Lawyer Reaction Videos to Recent Cases",
-      "topic": "The Shocking Verdict in the Latest High-Profile Trial",
-      "hook": "I'm a lawyer, and I'm shocked by this verdict...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Space Exploration Explained in 60 Seconds",
+      "topic": "The Search for Life on Mars: What We Know So Far",
+      "hook": "The fascinating discovery that could change everything we thought about the red planet!",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Comedy Sketches with Quinta Brunson",
-      "topic": "When You're the Only Adult in the Room",
-      "hook": "What happens when you're the only grown-up in a room full of kids?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Air Travel Hacks on Alaska Airlines",
-      "topic": "How to Score the Best Seats on an Alaska Flight",
-      "hook": "The secret to getting the best seats on your next Alaska flight...",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Car Accident Survival Stories",
-      "topic": "I Was in a Car Accident and Didn't Even Know It",
-      "hook": "I was in a car accident and didn't even realize it...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Powerball Winning Strategies",
-      "topic": "The Hot and Cold Numbers Strategy for Powerball",
-      "hook": "Can this simple strategy increase your chances of winning the Powerball?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Stock Market Updates on Avis",
-      "topic": "Avis Stock Predictions: Will It Continue to Soar?",
-      "hook": "What's next for Avis stock after its recent surge?",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Personal Injury Lawyer Q&A",
-      "topic": "What to Expect in a Personal Injury Lawsuit",
-      "hook": "Don't go into a personal injury lawsuit without knowing this...",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Banking Hacks and Tips",
-      "topic": "How to Use the 50/30/20 Rule for Budgeting",
-      "hook": "Take control of your finances with this simple budgeting rule...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "James Bond Movie Reviews",
-      "topic": "The Evolution of Bond Cars Over the Years",
-      "hook": "From Aston Martins to Lotus Esprits, which Bond car is the best?",
+      "category": "OpenAI Tech Reviews and Tutorials",
+      "topic": "How to Use OpenAI's Text-to-Image Model to Create Stunning Art",
+      "hook": "Unleash your creativity and turn words into breathtaking images!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Spring Break Travel Vlogs",
-      "topic": "Discovering the Best Kept Secrets of South Padre Island",
-      "hook": "You won't believe the hidden gems I found on South Padre Island...",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Lawyer Reaction Videos to Recent Cases",
-      "topic": "The Impact of the Latest Supreme Court Ruling",
-      "hook": "As a lawyer, here's what the latest Supreme Court ruling means for you...",
+      "category": "Bitcoin Price Updates and Analysis",
+      "topic": "The Impact of Inflation on Bitcoin's Value",
+      "hook": "The surprising way that inflation could affect your Bitcoin investment!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Comedy Sketches with Quinta Brunson",
-      "topic": "When You're Trying to Adult but Still Playing Video Games",
-      "hook": "What happens when you're trying to be an adult but still love gaming?",
+      "category": "Electric Vehicle Test Drives and Reviews",
+      "topic": "The Rivian R1T: An Electric Truck That's Changing the Game",
+      "hook": "The electric vehicle that's taking the automotive world by storm!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Jesse Tyler Ferguson Comedy Skits",
+      "topic": "The Absurdity of Modern Dating Apps",
+      "hook": "When you swipe right, but things don't quite go as planned!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
+    },
+    {
+      "category": "Eva Lys Dance Challenges",
+      "topic": "The #LysSpin Dance Challenge",
+      "hook": "Can you master the spin move that's taking the dance world by storm?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Earth Day Activism and Awareness",
+      "topic": "The Importance of Reducing Food Waste at Home",
+      "hook": "The simple trick that can save you money and help the planet!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Football Fans' Reactions to World Cup 2026",
+      "topic": "The Funniest Football Fan Meltdowns",
+      "hook": "When your team loses, and you lose your cool!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Sustainable Living Hacks for Climate Change",
+      "topic": "5 Simple Swaps for a More Eco-Friendly Home",
+      "hook": "Make these easy changes to reduce your carbon footprint and save money!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "World Cup 2026 Predictions and Highlights",
+      "topic": "The Top 5 Players to Watch at the World Cup 2026",
+      "hook": "The rising stars that will dominate the pitch and capture your heart!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
