@@ -1,267 +1,267 @@
 {
-  "generated_at": "2026-04-22T07:11:29.426662",
-  "valid_until": "2026-04-22T23:59:29.426669",
+  "generated_at": "2026-04-23T07:13:57.608284",
+  "valid_until": "2026-04-23T23:59:57.608292",
   "categories": [
-    "Sustainable Living Hacks for Climate Change",
-    "World Cup 2026 Predictions and Highlights",
-    "Space Exploration Explained in 60 Seconds",
-    "OpenAI Tech Reviews and Tutorials",
-    "Bitcoin Price Updates and Analysis",
-    "Electric Vehicle Test Drives and Reviews",
-    "Jesse Tyler Ferguson Comedy Skits",
-    "Eva Lys Dance Challenges",
-    "Earth Day Activism and Awareness",
-    "Football Fans' Reactions to World Cup 2026",
-    "AI-Generated Art and Music",
-    "Climate Change Impacts on Global Sports",
-    "EV vs Gasoline Vehicle Debates",
-    "OpenAI-Powered Chatbots for Daily Life",
-    "Space Travel and Exploration News Updates"
+    "Lucky Wins: Powerball Stories",
+    "Spring Lawn Care with John Deere",
+    "Minnesota Travel Vlogs",
+    "Drew Barrymore's Morning Routine",
+    "Tech Troubleshooting: Xfinity Hacks",
+    "Eriksson Ek NHL Highlights",
+    "Andre Iguodala's Basketball Tips",
+    "Carolina Flores Gomez Dance Challenges",
+    "News Updates: Minnesota Current Events",
+    "Home Improvement with John Deere Tools",
+    "Comedy Skits: Drew Barrymore Impressions",
+    "Outdoor Adventures in Minnesota",
+    "Sports Analysis: Eriksson Ek and Andre Iguodala",
+    "Powerball Winning Strategies",
+    "Xfinity Streaming: What's New"
   ],
   "concepts": [
     {
-      "category": "Sustainable Living Hacks for Climate Change",
-      "topic": "10 Easy Ways to Reduce Plastic Use in the Kitchen",
-      "hook": "Did you know that one simple switch can save over 1000 pieces of plastic per year?",
-      "voice_style": "friendly",
+      "category": "Lucky Wins: Powerball Stories",
+      "topic": "Winning the Jackpot with Unconventional Numbers",
+      "hook": "What if I told you that using your pet's birthday as Powerball numbers could make you a millionaire?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "World Cup 2026 Predictions and Highlights",
-      "topic": "Why Brazil Will Win the World Cup 2026",
-      "hook": "The shocking stat that gives Brazil a 90% chance of lifting the trophy!",
-      "voice_style": "energetic",
+      "category": "Spring Lawn Care with John Deere",
+      "topic": "Reviving Your Lawn After a Harsh Winter",
+      "hook": "Don't let winter's chill turn your lawn into a barren wasteland - here's how to bring it back to life!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Minnesota Travel Vlogs",
+      "topic": "Exploring the Hidden Gems of Duluth",
+      "hook": "Ever heard of the secret waterfall in Duluth that only a few know about?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Drew Barrymore's Morning Routine",
+      "topic": "Drew's Favorite Smoothie Recipe for a Boost of Energy",
+      "hook": "Want to know the secret ingredient in Drew Barrymore's morning smoothie that keeps her energized all day?",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Troubleshooting: Xfinity Hacks",
+      "topic": "Fixing Your Internet Connection with a Simple Router Trick",
+      "hook": "Tired of constant buffering? This one simple trick will increase your internet speed overnight!",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Space Exploration Explained in 60 Seconds",
-      "topic": "The Mysterious Great Attractor of the Universe",
-      "hook": "There's a region in space that's pulling us towards it, but what is it?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "OpenAI Tech Reviews and Tutorials",
-      "topic": "How to Build a Chatbot Using OpenAI's Latest Model",
-      "hook": "Create your own AI-powered chatbot in just 5 minutes!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Bitcoin Price Updates and Analysis",
-      "topic": "Will Bitcoin Reach $100,000 by the End of 2026?",
-      "hook": "The one key factor that could send Bitcoin soaring to new heights!",
+      "category": "Eriksson Ek NHL Highlights",
+      "topic": "Eriksson Ek's Most Epic Goals of the Season",
+      "hook": "Get ready to witness the most jaw-dropping goals of the season, courtesy of NHL star Eriksson Ek!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Electric Vehicle Test Drives and Reviews",
-      "topic": "Tesla Model 3 vs Lucid Air: Which EV Reigns Supreme?",
-      "hook": "The ultimate showdown between two of the world's fastest electric cars!",
-      "voice_style": "energetic",
+      "category": "Andre Iguodala's Basketball Tips",
+      "topic": "Mastering the Art of the Perfect Jump Shot",
+      "hook": "What if I told you that a simple adjustment in your jump shot technique could increase your accuracy by 50%?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 50
+      "target_duration": 42
     },
     {
-      "category": "Jesse Tyler Ferguson Comedy Skits",
-      "topic": "The Hilarious Struggle of Online Shopping",
-      "hook": "When you try to return a pair of pants, but the website has other plans!",
+      "category": "Carolina Flores Gomez Dance Challenges",
+      "topic": "The Ultimate Dance-Off: Carolina vs. Her Fans",
+      "hook": "Think you can out-dance Carolina Flores Gomez? Take our dance challenge and show us your best moves!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "News Updates: Minnesota Current Events",
+      "topic": "The Impact of Climate Change on Minnesota's Lakes",
+      "hook": "What's really happening to Minnesota's lakes, and how can you make a difference?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Improvement with John Deere Tools",
+      "topic": "Transforming Your Backyard into a Cozy Oasis",
+      "hook": "Turn your backyard into a luxurious retreat without breaking the bank - here's how!",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Lucky Wins: Powerball Stories",
+      "topic": "The Most Unlikely Powerball Winners in History",
+      "hook": "From janitors to CEOs, these unlikely winners will inspire you to take a chance on the Powerball!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Spring Lawn Care with John Deere",
+      "topic": "The Importance of Proper Lawn Aeration",
+      "hook": "Is your lawn suffocating? Learn how to give it the breath of fresh air it needs!",
+      "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Eva Lys Dance Challenges",
-      "topic": "The #LysLift Dance Challenge",
-      "hook": "Can you master the move that's taking the internet by storm?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Earth Day Activism and Awareness",
-      "topic": "The Devastating Impact of Fast Fashion on the Environment",
-      "hook": "The shocking truth about the fashion industry's dirty secret!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Football Fans' Reactions to World Cup 2026",
-      "topic": "The Most Epic Football Fan Reactions to Goal Scorers",
-      "hook": "When your team scores, and you lose your mind!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Sustainable Living Hacks for Climate Change",
-      "topic": "DIY Vertical Gardening for Small Spaces",
-      "hook": "Transform your balcony into a lush oasis using just a few simple tricks!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Space Exploration Explained in 60 Seconds",
-      "topic": "The Search for Life on Mars: What We Know So Far",
-      "hook": "The fascinating discovery that could change everything we thought about the red planet!",
+      "category": "Minnesota Travel Vlogs",
+      "topic": "Discovering the Best Kept Secrets of the North Shore",
+      "hook": "Get ready to explore the hidden coves, scenic hikes, and charming towns of Minnesota's North Shore!",
       "voice_style": "mysterious",
       "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "OpenAI Tech Reviews and Tutorials",
-      "topic": "How to Use OpenAI's Text-to-Image Model to Create Stunning Art",
-      "hook": "Unleash your creativity and turn words into breathtaking images!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Bitcoin Price Updates and Analysis",
-      "topic": "The Impact of Inflation on Bitcoin's Value",
-      "hook": "The surprising way that inflation could affect your Bitcoin investment!",
+      "category": "Drew Barrymore's Morning Routine",
+      "topic": "Drew's Favorite Meditation Techniques for a Stress-Free Day",
+      "hook": "Want to know the secret to Drew Barrymore's calm and centered morning routine?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Tech Troubleshooting: Xfinity Hacks",
+      "topic": "Boosting Your Wi-Fi Signal with a Simple DIY Trick",
+      "hook": "Tired of spotty Wi-Fi? This genius DIY hack will strengthen your signal in minutes!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Eriksson Ek NHL Highlights",
+      "topic": "Eriksson Ek's Most Impressive Assists of the Season",
+      "hook": "Witness the incredible passes, clever plays, and selfless assists that make Eriksson Ek a fan favorite!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Electric Vehicle Test Drives and Reviews",
-      "topic": "The Rivian R1T: An Electric Truck That's Changing the Game",
-      "hook": "The electric vehicle that's taking the automotive world by storm!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Jesse Tyler Ferguson Comedy Skits",
-      "topic": "The Absurdity of Modern Dating Apps",
-      "hook": "When you swipe right, but things don't quite go as planned!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Eva Lys Dance Challenges",
-      "topic": "The #LysSpin Dance Challenge",
-      "hook": "Can you master the spin move that's taking the dance world by storm?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Earth Day Activism and Awareness",
-      "topic": "The Importance of Reducing Food Waste at Home",
-      "hook": "The simple trick that can save you money and help the planet!",
+      "category": "Andre Iguodala's Basketball Tips",
+      "topic": "The Art of Defensive Positioning: Tips from a Pro",
+      "hook": "What if I told you that a single adjustment in your defensive stance could shut down even the toughest opponents?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Football Fans' Reactions to World Cup 2026",
-      "topic": "The Funniest Football Fan Meltdowns",
-      "hook": "When your team loses, and you lose your cool!",
-      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 42
     },
     {
-      "category": "Sustainable Living Hacks for Climate Change",
-      "topic": "5 Simple Swaps for a More Eco-Friendly Home",
-      "hook": "Make these easy changes to reduce your carbon footprint and save money!",
-      "voice_style": "friendly",
+      "category": "Carolina Flores Gomez Dance Challenges",
+      "topic": "Carolina's Favorite Dance Moves to Get You Moving",
+      "hook": "Get ready to groove with Carolina Flores Gomez as she shares her go-to dance moves to get you pumped up and energized!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "World Cup 2026 Predictions and Highlights",
-      "topic": "The Top 5 Players to Watch at the World Cup 2026",
-      "hook": "The rising stars that will dominate the pitch and capture your heart!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "News Updates: Minnesota Current Events",
+      "topic": "The Impact of New Legislation on Minnesota's Environment",
+      "hook": "Stay informed about the latest developments in Minnesota's environmental policies and how they affect you!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Improvement with John Deere Tools",
+      "topic": "Creating a Sustainable Garden with Minimal Waste",
+      "hook": "Turn your backyard into a sustainable oasis without hurting the planet - here's how!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Lucky Wins: Powerball Stories",
+      "topic": "The Biggest Powerball Wins in Minnesota History",
+      "hook": "From life-changing jackpots to heartwarming stories of goodwill, discover the most remarkable Powerball wins in Minnesota's history!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     }
   ],
