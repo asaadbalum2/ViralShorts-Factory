@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-04-24T07:17:27.873731",
-  "valid_until": "2026-04-24T23:59:27.873739",
+  "generated_at": "2026-04-25T06:50:40.513828",
+  "valid_until": "2026-04-25T23:59:40.513838",
   "categories": [
-    "Air Travel Hacks with Alaska Airlines",
-    "Comcast Xfinity Internet Reviews and Speed Tests",
-    "Financial News Updates from FT",
-    "Astronomy Explained: Saros Cycles",
-    "E-commerce Tips with Alibaba",
-    "LA News and Trends featuring KTLA",
-    "Tech Investing Insights from Peter Thiel",
-    "SVU Behind-the-Scenes with Melissa McCarthy",
-    "Spring Travel Destinations",
-    "Internet Security for Comcast Users",
-    "Alaska Adventure Vlogs",
-    "Alibaba Shopping Hauls",
-    "Space and Astronomy for Beginners",
-    "Comcast Xfinity vs Other Internet Providers",
-    "Financial Literacy with FT and Peter Thiel"
+    "South Park memes and reactions",
+    "Tesla Cybertruck reviews and test drives",
+    "Youssef Zalal highlights and MMA analysis",
+    "AJ Dybantsa dance challenges and tutorials",
+    "Hunger Games movie summaries and fan theories",
+    "George Strait country music covers and playlists",
+    "SF Giants game highlights and commentary",
+    "Harrison Barnes NBA analysis and interview clips",
+    "Electric vehicle comparisons and tech news",
+    "Country music festivals and concert vlogs",
+    "MMA fighter training and workout routines",
+    "Car reviews and automotive news",
+    "TV show and movie parodies and spoofs",
+    "Sports news and live event commentary",
+    "Music festival and concert performances"
   ],
   "concepts": [
     {
-      "category": "Air Travel Hacks with Alaska Airlines",
-      "topic": "How to Get Upgraded to First Class for Free",
-      "hook": "Want to experience luxury flying without breaking the bank?",
-      "voice_style": "friendly",
+      "category": "South Park memes and reactions",
+      "topic": "Top 5 Most Relatable Cartman Moments",
+      "hook": "You won't believe what Cartman did this time...",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Comcast Xfinity Internet Reviews and Speed Tests",
-      "topic": "Xfinity vs. Verizon Fios: Which Internet Provider Reigns Supreme?",
-      "hook": "Is your internet provider holding you back from streaming greatness?",
+      "category": "Tesla Cybertruck reviews and test drives",
+      "topic": "Cybertruck vs F-150: The Ultimate Towing Test",
+      "hook": "Can the Cybertruck really take down the F-150?",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Financial News Updates from FT",
-      "topic": "The Impact of Brexit on Global Markets",
-      "hook": "What's the real cost of Brexit on your wallet?",
+      "category": "Youssef Zalal highlights and MMA analysis",
+      "topic": "Youssef Zalal's Most Devastating Knockout Wins",
+      "hook": "This fighter's knockout power will leave you speechless...",
       "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "intense",
+      "target_duration": 45
     },
     {
-      "category": "Astronomy Explained: Saros Cycles",
-      "topic": "Uncovering the Mysteries of the 18-Year Solar Eclipse Cycle",
-      "hook": "Did you know the sun and moon are connected in a 18-year cycle?",
+      "category": "AJ Dybantsa dance challenges and tutorials",
+      "topic": "The 'Dybantsa Shuffle' Challenge: Can You Keep Up?",
+      "hook": "Get ready to bust a move with the hottest new dance challenge...",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Hunger Games movie summaries and fan theories",
+      "topic": "The Secret Meaning Behind Katniss's Pin: A Deep Dive",
+      "hook": "You might have missed this hidden symbol in The Hunger Games...",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "E-commerce Tips with Alibaba",
-      "topic": "How to Find the Best-Selling Products on Alibaba",
-      "hook": "Want to start a successful online store with products that fly off the shelves?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "LA News and Trends featuring KTLA",
-      "topic": "The Rise of Veganism in Los Angeles",
-      "hook": "Is LA the new vegan capital of the world?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech Investing Insights from Peter Thiel",
-      "topic": "How to Invest in the Next Big Tech Startup",
-      "hook": "Want to invest in the next Facebook or Airbnb?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "SVU Behind-the-Scenes with Melissa McCarthy",
-      "topic": "The Making of a Comedy Legend",
-      "hook": "What's it like to be a comedy genius?",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Spring Travel Destinations",
-      "topic": "The Top 5 Hidden Gems for Spring Break",
-      "hook": "Ready to escape to a secret paradise this spring?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Internet Security for Comcast Users",
-      "topic": "How to Protect Your Comcast Account from Hackers",
-      "hook": "Is your Comcast account vulnerable to cyber attacks?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Air Travel Hacks with Alaska Airlines",
-      "topic": "The Secret to Scoring Cheap Flights on Alaska Airlines",
-      "hook": "Want to fly for less without sacrificing comfort?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Comcast Xfinity Internet Reviews and Speed Tests",
-      "topic": "The Truth About Comcast's Internet Speed Claims",
-      "hook": "Are you getting the internet speed you're paying for?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Financial News Updates from FT",
-      "topic": "The Impact of Trade Wars on Global Economies",
-      "hook": "What's the real cost of trade wars on your wallet?",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Astronomy Explained: Saros Cycles",
-      "topic": "The Ancient Mystery of the Saros Cycle",
-      "hook": "Did ancient civilizations predict solar eclipses?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "George Strait country music covers and playlists",
+      "topic": "The Best George Strait Covers You've Never Heard",
+      "hook": "These undiscovered covers will make you love George Strait even more...",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "E-commerce Tips with Alibaba",
-      "topic": "How to Avoid Scams When Buying on Alibaba",
-      "hook": "Want to avoid getting scammed when buying on Alibaba?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "LA News and Trends featuring KTLA",
-      "topic": "The Rise of Street Art in Los Angeles",
-      "hook": "Is LA the new street art capital of the world?",
+      "category": "SF Giants game highlights and commentary",
+      "topic": "The Most Iconic SF Giants Walk-Off Home Runs",
+      "hook": "Relive the magic of these unforgettable Giants moments...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Harrison Barnes NBA analysis and interview clips",
+      "topic": "Harrison Barnes's Most Savage Trash Talk Moments",
+      "hook": "You won't believe what Harrison Barnes said to his opponents...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Tech Investing Insights from Peter Thiel",
-      "topic": "The Future of Tech Investing",
-      "hook": "Want to invest in the next big tech trend?",
+      "category": "Electric vehicle comparisons and tech news",
+      "topic": "Tesla Model 3 vs Porsche Taycan: The Ultimate EV Showdown",
+      "hook": "Which electric vehicle reigns supreme?",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "SVU Behind-the-Scenes with Melissa McCarthy",
-      "topic": "The Making of a Comedy Icon",
-      "hook": "What's it like to be a comedy legend?",
-      "voice_style": "dramatic",
+      "category": "Country music festivals and concert vlogs",
+      "topic": "The Best Moments from Stagecoach Festival 2022",
+      "hook": "Experience the ultimate country music festival...",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "South Park memes and reactions",
+      "topic": "The Funniest South Park Memes of All Time",
+      "hook": "These memes will make you laugh out loud...",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Spring Travel Destinations",
-      "topic": "The Top 5 Budget-Friendly Spring Break Destinations",
-      "hook": "Ready to escape to a affordable paradise this spring?",
+      "category": "Tesla Cybertruck reviews and test drives",
+      "topic": "Cybertruck's Secret Features You Never Knew Existed",
+      "hook": "You won't believe the hidden features in the Cybertruck...",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Youssef Zalal highlights and MMA analysis",
+      "topic": "Youssef Zalal's Rise to Fame: A Fighter's Journey",
+      "hook": "From unknown to UFC sensation: Youssef Zalal's story...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "AJ Dybantsa dance challenges and tutorials",
+      "topic": "AJ Dybantsa Teaches You the 'Dybantsa Shuffle' Step-by-Step",
+      "hook": "Learn the hottest new dance challenge from the master himself...",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Hunger Games movie summaries and fan theories",
+      "topic": "The Dark Truth Behind The Hunger Games: A Theory",
+      "hook": "You might have missed this disturbing Hunger Games theory...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "George Strait country music covers and playlists",
+      "topic": "The Best Country Music Covers of George Strait's Songs",
+      "hook": "Hear your favorite artists cover George Strait's hits...",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Internet Security for Comcast Users",
-      "topic": "How to Protect Your Comcast Account from Phishing Scams",
-      "hook": "Is your Comcast account vulnerable to phishing scams?",
+      "category": "SF Giants game highlights and commentary",
+      "topic": "The SF Giants' Most Thrilling Comeback Wins",
+      "hook": "Relive the excitement of these unforgettable Giants comebacks...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Harrison Barnes NBA analysis and interview clips",
+      "topic": "Harrison Barnes's Most Inspiring Interviews and Motivational Quotes",
+      "hook": "Get motivated by Harrison Barnes's words of wisdom...",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Electric vehicle comparisons and tech news",
+      "topic": "The Future of Electric Vehicles: What to Expect in 2025",
+      "hook": "The electric vehicle revolution is just getting started...",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Country music festivals and concert vlogs",
+      "topic": "The Best Country Music Festivals to Attend in 2024",
+      "hook": "Get ready for the ultimate country music experience...",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "South Park memes and reactions",
+      "topic": "The Evolution of South Park Memes: From Cartman to Kyle",
+      "hook": "Witness the transformation of South Park memes over the years...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
