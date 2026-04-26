@@ -1,87 +1,87 @@
 {
   "title_patterns": [
-    "{number} {topic} You Didn't Know",
-    "Why {topic} Changes Everything",
-    "The {adjective} Truth About {topic}",
-    "I Tried {challenge} For {duration} (Results Shocking)",
-    "{number} Hacks To {achieve_goal}",
-    "This Is Why You {common_problem}",
-    "Don't Make This {type_of_mistake} Mistake!",
-    "You're Using {item} Wrong (Here's Why)",
-    "The ONLY Way To {achieve_goal_fast}",
-    "\ud83e\udd2f What Happens When You {action_or_event}?"
+    "The {secret} {verb} You NEED to Know",
+    "{Number} Things {Topic} Doesn't Want You to See",
+    "I Tried {viral_trend} For {duration} And HERE'S What Happened",
+    "STOP Doing {bad_habit} - Do THIS Instead!",
+    "Why {Topic} Is Actually {surprising_adjective}",
+    "You're Using {product/method} WRONG! Here's How.",
+    "The TRUTH About {controversial_topic}",
+    "Can {action} REALLY {achieve_result}?",
+    "Watch Me {action} in {short_timeframe} (Results Will SHOCK You)",
+    "Is {common_belief} A SCAM?"
   ],
   "hook_patterns": [
-    "Wait, before you scroll...",
-    "Did you know {shocking_fact}?",
-    "STOP. You NEED to see this.",
-    "This one simple trick will {benefit}.",
-    "I bet you can't guess {what_happens_next}.",
-    "If you do {common_action}, you're doing it wrong.",
-    "The {adjective} secret nobody tells you about {topic}.",
-    "My mind was blown when I learned {fact}.",
-    "You've been lied to about {topic}.",
-    "Only {percentage}% of people can {challenge}."
+    "WAIT! Before you scroll...",
+    "Don't even THINK about scrolling past this.",
+    "You're telling me you didn't know this?!",
+    "This is going to change EVERYTHING for you.",
+    "Seriously, stop what you're doing.",
+    "I need to show you something wild.",
+    "If you're still doing {common_mistake}, you're wasting time.",
+    "What if I told you {shocking_fact}?",
+    "The {number}% of people who know this secret...",
+    "My jaw hit the floor when I saw this."
   ],
   "engagement_baits": [
-    "What's YOUR biggest {topic} hack?",
+    "What's YOUR take on {topic}?",
     "Agree or disagree? Let me know below!",
-    "Which {option1} do you prefer: {option2} or {option3}?",
+    "Did you know this? Type 'YES' if you did!",
     "Tag a friend who needs to see this!",
-    "Is this {action} genius or crazy? Comment 'genius' or 'crazy'!",
-    "Save this for later if you found it helpful!",
-    "What's the most {adjective} thing you've learned about {topic}?",
-    "If you know, you know. What did I miss?"
+    "Which {option1} or {option2} do you prefer? Vote in comments!",
+    "What's the BEST {related_item} you've ever {experienced}?",
+    "Save this for later \u2013 you'll thank me!",
+    "If you found this helpful, drop a \ud83d\udd25 in the comments!"
   ],
   "psychological_triggers": [
     "Curiosity",
     "FOMO",
+    "Urgency",
     "Scarcity",
     "Authority",
-    "Urgency",
-    "Reciprocity",
     "Social Proof",
-    "Anticipation"
+    "Emotion",
+    "Novelty"
   ],
   "scroll_stop_openers": [
-    "Alright, hold up. If you're scrolling past, you're missing the single most important {topic} tip.",
-    "I'm about to show you something that will completely change how you view {topic}.",
-    "Stop what you're doing. This is the truth about {topic} they don't want you to know.",
-    "You'll never guess what happened when I tried {action/challenge}.",
-    "Prepare to have your mind blown. This {topic} secret is a game-changer.",
-    "Seriously, don't scroll. This quick {tip/hack} will save you {time/money/effort}.",
-    "Is {common_belief} true? I'm debunking it right now.",
-    "The one thing you absolutely MUST know about {topic} if you want to {achieve_goal}."
+    "You're making a huge mistake if you don't know this.",
+    "Prepare to have your mind blown by this simple trick.",
+    "Only 1% of people know this secret about {topic}.",
+    "I'm about to expose the truth behind {common_misconception}.",
+    "This one change will instantly upgrade your {life_aspect}.",
+    "If you have {problem}, this video is for you.",
+    "I promise you've never seen {thing} done this way before.",
+    "Watch till the end to unlock the {benefit}."
   ],
   "proven_categories": [
-    "Psychology",
     "Money",
-    "Fitness",
-    "Tech",
-    "Self-Improvement",
-    "Food",
-    "Lifehacks",
-    "Storytelling"
+    "Health",
+    "Productivity",
+    "Hacks",
+    "Psychology",
+    "Relationships",
+    "Education",
+    "Entertainment"
   ],
   "retention_tricks": [
-    "**Fast Pacing:** Quick cuts, no dead air, constantly evolving visuals and sound.",
-    "**Sound Design:** Engaging sound effects, trending audio, dynamic music changes, and clear voiceovers.",
-    "**Text Overlays:** Reinforce key points, add humor, introduce a twist, or provide additional context.",
-    "**Looping Visuals:** End on a visual that seamlessly transitions back to the start, encouraging re-watches and boosting loop rate.",
-    "**Mini-Cliffhangers:** Introduce a question or mystery early, promising the answer or reveal later in the short.",
-    "**Direct Address:** Speaker looks directly at the camera, fostering a personal connection and breaking the fourth wall."
+    "Fast Pacing: Rapid cuts every 1-3 seconds to maintain momentum.",
+    "Dynamic Text: On-screen text overlays reinforcing key points or adding humor.",
+    "Sound Design: Engaging background music, sound effects, and voiceovers.",
+    "Mystery/Reveal: Pose a question or problem early, reveal the answer later.",
+    "Constant Change: Varied camera angles, visual elements, or scene changes.",
+    "Loopable End: Design the ending to seamlessly transition back to the beginning."
   ],
   "cta_formulas": [
-    "Follow for more {topic} tips!",
-    "Link in bio for the full {resource}.",
-    "Subscribe for weekly {type_of_content}!",
-    "Check out my profile for {related_content}.",
-    "Hit the like button if this {action} helped you!",
-    "Comment '{keyword}' for a Part 2!"
+    "Follow for more {daily_value}!",
+    "Like this if you {agree/found_helpful}!",
+    "Comment '{keyword}' for {exclusive_tip}!",
+    "Share this to {help_a_friend/spread_awareness}!",
+    "Save this for when you need to {action}!",
+    "Subscribe for {deep_dive_content}!"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-04-19T07:09:32.059414",
+  "last_ai_update": "2026-04-26T07:19:28.466164",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-04-19T07:09:32.059424"
+  "last_saved": "2026-04-26T07:19:28.466173"
 }
