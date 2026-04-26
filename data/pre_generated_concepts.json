@@ -1,267 +1,259 @@
 {
-  "generated_at": "2026-04-25T06:50:40.513828",
-  "valid_until": "2026-04-25T23:59:40.513838",
+  "generated_at": "2026-04-26T07:10:33.376680",
+  "valid_until": "2026-04-26T23:59:33.376692",
   "categories": [
-    "South Park memes and reactions",
-    "Tesla Cybertruck reviews and test drives",
-    "Youssef Zalal highlights and MMA analysis",
-    "AJ Dybantsa dance challenges and tutorials",
-    "Hunger Games movie summaries and fan theories",
-    "George Strait country music covers and playlists",
-    "SF Giants game highlights and commentary",
-    "Harrison Barnes NBA analysis and interview clips",
-    "Electric vehicle comparisons and tech news",
-    "Country music festivals and concert vlogs",
-    "MMA fighter training and workout routines",
-    "Car reviews and automotive news",
-    "TV show and movie parodies and spoofs",
-    "Sports news and live event commentary",
-    "Music festival and concert performances"
+    "Travel Disasters",
+    "Celebrity News",
+    "Severe Weather",
+    "Music Legend Tributes",
+    "Emerging Artist Features",
+    "Boxing Legends",
+    "Banking and Finance News",
+    "Hollywood Actress Interviews",
+    "Spring Storm Safety",
+    "Viral Dance Challenges",
+    "Cruise Ship Adventures",
+    "Music Festival Previews",
+    "Debunking Conspiracy Theories",
+    "Pop Culture Trivia",
+    "Weathering the Storm: Survival Tips"
   ],
   "concepts": [
     {
-      "category": "South Park memes and reactions",
-      "topic": "Top 5 Most Relatable Cartman Moments",
-      "hook": "You won't believe what Cartman did this time...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Travel Disasters",
+      "topic": "The 'Lost Luggage Nightmare' at Heathrow during peak summer.",
+      "hook": "Imagine flying 10 hours, only to find your luggage is... somewhere else entirely.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Tesla Cybertruck reviews and test drives",
-      "topic": "Cybertruck vs F-150: The Ultimate Towing Test",
-      "hook": "Can the Cybertruck really take down the F-150?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Travel Disasters",
+      "topic": "Cruise ship engine failure and stranded passengers in the Caribbean.",
+      "hook": "Your dream Caribbean cruise just turned into a floating nightmare!",
+      "voice_style": "Energetic",
+      "music_mood": "Dramatic",
       "target_duration": 40
     },
     {
-      "category": "Youssef Zalal highlights and MMA analysis",
-      "topic": "Youssef Zalal's Most Devastating Knockout Wins",
-      "hook": "This fighter's knockout power will leave you speechless...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Celebrity News",
+      "topic": "Unconfirmed reports of a major A-list couple's secret wedding in Bora Bora.",
+      "hook": "Did *they* just tie the knot in paradise without anyone knowing?!",
+      "voice_style": "Mysterious",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "AJ Dybantsa dance challenges and tutorials",
-      "topic": "The 'Dybantsa Shuffle' Challenge: Can You Keep Up?",
-      "hook": "Get ready to bust a move with the hottest new dance challenge...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Celebrity News",
+      "topic": "Paparazzi clash with security outside a private celebrity party in Hollywood Hills.",
+      "hook": "Chaos erupted last night when a celeb's party got *too* exclusive!",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
       "target_duration": 40
     },
     {
-      "category": "Hunger Games movie summaries and fan theories",
-      "topic": "The Secret Meaning Behind Katniss's Pin: A Deep Dive",
-      "hook": "You might have missed this hidden symbol in The Hunger Games...",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Severe Weather",
+      "topic": "Documenting the aftermath of a surprise microburst in a suburban neighborhood.",
+      "hook": "One minute it was sunny, the next... pure devastation hit this quiet street.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "George Strait country music covers and playlists",
-      "topic": "The Best George Strait Covers You've Never Heard",
-      "hook": "These undiscovered covers will make you love George Strait even more...",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Severe Weather",
+      "topic": "The science behind 'bomb cyclones' and why they're becoming more frequent.",
+      "hook": "What exactly *is* a 'bomb cyclone,' and why should you be worried?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 40
     },
     {
-      "category": "SF Giants game highlights and commentary",
-      "topic": "The Most Iconic SF Giants Walk-Off Home Runs",
-      "hook": "Relive the magic of these unforgettable Giants moments...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Music Legend Tributes",
+      "topic": "Untold stories from the recording sessions of Freddie Mercury's last album.",
+      "hook": "Before his final curtain, Freddie Mercury left us with an album full of secrets...",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Harrison Barnes NBA analysis and interview clips",
-      "topic": "Harrison Barnes's Most Savage Trash Talk Moments",
-      "hook": "You won't believe what Harrison Barnes said to his opponents...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Music Legend Tributes",
+      "topic": "The unexpected influence of David Bowie's fashion on modern pop stars.",
+      "hook": "Beyond the music, how did Bowie's wardrobe change pop culture forever?",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Electric vehicle comparisons and tech news",
-      "topic": "Tesla Model 3 vs Porsche Taycan: The Ultimate EV Showdown",
-      "hook": "Which electric vehicle reigns supreme?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Emerging Artist Features",
+      "topic": "Spotlight on 'Synthwave Siren,' an indie artist blending 80s vibes with future sounds.",
+      "hook": "Meet the artist bringing neon dreams and retro-futurism to your speakers!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Country music festivals and concert vlogs",
-      "topic": "The Best Moments from Stagecoach Festival 2022",
-      "hook": "Experience the ultimate country music festival...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Emerging Artist Features",
+      "topic": "The TikTok phenomenon: how 'Bedroom Beats' went from obscurity to viral sensation.",
+      "hook": "From a bedroom studio to millions of streams: the rise of a viral music star!",
+      "voice_style": "Energetic",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "South Park memes and reactions",
-      "topic": "The Funniest South Park Memes of All Time",
-      "hook": "These memes will make you laugh out loud...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Boxing Legends",
+      "topic": "The forgotten rivalry between Sugar Ray Robinson and Jake LaMotta.",
+      "hook": "Before Ali, before Tyson, there was a rivalry so intense it defined an era.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Tesla Cybertruck reviews and test drives",
-      "topic": "Cybertruck's Secret Features You Never Knew Existed",
-      "hook": "You won't believe the hidden features in the Cybertruck...",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
+      "category": "Boxing Legends",
+      "topic": "Mike Tyson's surprising venture into pigeon racing and his life post-boxing.",
+      "hook": "From 'Iron Mike' to... pigeon whisperer? Tyson's life after the ring will shock you!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Youssef Zalal highlights and MMA analysis",
-      "topic": "Youssef Zalal's Rise to Fame: A Fighter's Journey",
-      "hook": "From unknown to UFC sensation: Youssef Zalal's story...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Banking and Finance News",
+      "topic": "Explaining the 'gamification' of investing for new-age traders.",
+      "hook": "Is your stock portfolio a game? How apps are changing how we invest!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "AJ Dybantsa dance challenges and tutorials",
-      "topic": "AJ Dybantsa Teaches You the 'Dybantsa Shuffle' Step-by-Step",
-      "hook": "Learn the hottest new dance challenge from the master himself...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Banking and Finance News",
+      "topic": "The rise of digital-only banks and what it means for your local branch.",
+      "hook": "Your bank branch might be disappearing! Are you ready for a purely digital future?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 40
     },
     {
-      "category": "Hunger Games movie summaries and fan theories",
-      "topic": "The Dark Truth Behind The Hunger Games: A Theory",
-      "hook": "You might have missed this disturbing Hunger Games theory...",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Hollywood Actress Interviews",
+      "topic": "Behind-the-scenes secrets from filming a major action sequence with a leading lady.",
+      "hook": "She performed *that* stunt herself?! Inside the making of an epic action scene!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "George Strait country music covers and playlists",
-      "topic": "The Best Country Music Covers of George Strait's Songs",
-      "hook": "Hear your favorite artists cover George Strait's hits...",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Hollywood Actress Interviews",
+      "topic": "An actress discusses breaking industry stereotypes and empowering female roles.",
+      "hook": "She's not just an actress; she's rewriting the rules for women in Hollywood!",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
       "target_duration": 40
     },
     {
-      "category": "SF Giants game highlights and commentary",
-      "topic": "The SF Giants' Most Thrilling Comeback Wins",
-      "hook": "Relive the excitement of these unforgettable Giants comebacks...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Spring Storm Safety",
+      "topic": "Essential checklist for preparing your home for unexpected spring tornadoes.",
+      "hook": "Is your home ready for a spring tornado? This checklist could save lives!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Harrison Barnes NBA analysis and interview clips",
-      "topic": "Harrison Barnes's Most Inspiring Interviews and Motivational Quotes",
-      "hook": "Get motivated by Harrison Barnes's words of wisdom...",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Spring Storm Safety",
+      "topic": "Debunking common myths about lightning safety during spring thunderstorms.",
+      "hook": "Think you're safe indoors during a storm? These lightning myths could shock you!",
+      "voice_style": "Energetic",
+      "music_mood": "Mysterious",
       "target_duration": 40
     },
     {
-      "category": "Electric vehicle comparisons and tech news",
-      "topic": "The Future of Electric Vehicles: What to Expect in 2025",
-      "hook": "The electric vehicle revolution is just getting started...",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Viral Dance Challenges",
+      "topic": "Breaking down the 'Cosmic Groove' challenge and its origins.",
+      "hook": "The 'Cosmic Groove' challenge is taking over! Can you master its moves?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Country music festivals and concert vlogs",
-      "topic": "The Best Country Music Festivals to Attend in 2024",
-      "hook": "Get ready for the ultimate country music experience...",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Viral Dance Challenges",
+      "topic": "The story behind the 'Unicorn Shuffle' and how it united dancers worldwide.",
+      "hook": "From a simple step to a global phenomenon: the story of the 'Unicorn Shuffle'!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 40
-    },
-    {
-      "category": "South Park memes and reactions",
-      "topic": "The Evolution of South Park Memes: From Cartman to Kyle",
-      "hook": "Witness the transformation of South Park memes over the years...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     }
   ],
