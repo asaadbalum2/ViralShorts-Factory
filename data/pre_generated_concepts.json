@@ -1,240 +1,218 @@
 {
-  "generated_at": "2026-04-26T07:10:33.376680",
-  "valid_until": "2026-04-26T23:59:33.376692",
+  "generated_at": "2026-04-27T07:53:50.480203",
+  "valid_until": "2026-04-27T23:59:50.480211",
   "categories": [
-    "Travel Disasters",
-    "Celebrity News",
-    "Severe Weather",
-    "Music Legend Tributes",
-    "Emerging Artist Features",
-    "Boxing Legends",
-    "Banking and Finance News",
-    "Hollywood Actress Interviews",
-    "Spring Storm Safety",
-    "Viral Dance Challenges",
-    "Cruise Ship Adventures",
-    "Music Festival Previews",
-    "Debunking Conspiracy Theories",
-    "Pop Culture Trivia",
-    "Weathering the Storm: Survival Tips"
+    "Sports Highlights (Ban vs NZ)",
+    "Celebrity News (Johnny Depp, Met Gala 2026)",
+    "Tech Reviews (Qatar Airways, Ben Pasternak)",
+    "Travel vlogs (Qatar Airways)",
+    "Theater Reviews (Lost Boys Broadway)",
+    "Red Carpet Fashion (Met Gala 2026)",
+    "Influencer Spotlights (Evelyn Ha, Ben Pasternak)",
+    "Sports Analysis (Casper Ruud, Ban vs NZ)",
+    "Entertainment News",
+    "Event Coverage (Met Gala 2026)",
+    "Travel Tips",
+    "Celebrity Interviews",
+    "Theater Performances",
+    "Behind-the-Scenes",
+    "Pop Culture Commentary"
   ],
   "concepts": [
     {
-      "category": "Travel Disasters",
-      "topic": "The 'Lost Luggage Nightmare' at Heathrow during peak summer.",
-      "hook": "Imagine flying 10 hours, only to find your luggage is... somewhere else entirely.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Sports Highlights (Ban vs NZ)",
+      "topic": "Miraculous Comeback in Bangladesh vs New Zealand Cricket Match",
+      "hook": "You won't believe the shocking turnaround in the last over!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Travel Disasters",
-      "topic": "Cruise ship engine failure and stranded passengers in the Caribbean.",
-      "hook": "Your dream Caribbean cruise just turned into a floating nightmare!",
-      "voice_style": "Energetic",
-      "music_mood": "Dramatic",
+      "category": "Celebrity News (Johnny Depp, Met Gala 2026)",
+      "topic": "Johnny Depp's Unexpected Appearance at Met Gala 2026",
+      "hook": "What was behind Johnny Depp's surprise visit to the Met Gala?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Celebrity News",
-      "topic": "Unconfirmed reports of a major A-list couple's secret wedding in Bora Bora.",
-      "hook": "Did *they* just tie the knot in paradise without anyone knowing?!",
-      "voice_style": "Mysterious",
-      "music_mood": "Upbeat",
+      "category": "Tech Reviews (Qatar Airways, Ben Pasternak)",
+      "topic": "Ben Pasternak's Exclusive Review of Qatar Airways' New Business Class",
+      "hook": "Is Qatar Airways' business class really worth the hype? Let's find out!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Travel vlogs (Qatar Airways)",
+      "topic": "24 Hours in Doha with Qatar Airways",
+      "hook": "Join me on an epic adventure in Doha, courtesy of Qatar Airways!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "Paparazzi clash with security outside a private celebrity party in Hollywood Hills.",
-      "hook": "Chaos erupted last night when a celeb's party got *too* exclusive!",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
+      "category": "Theater Reviews (Lost Boys Broadway)",
+      "topic": "Uncovering the Magic of Lost Boys on Broadway",
+      "hook": "Get ready to enter a world of wonder with the Lost Boys!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Severe Weather",
-      "topic": "Documenting the aftermath of a surprise microburst in a suburban neighborhood.",
-      "hook": "One minute it was sunny, the next... pure devastation hit this quiet street.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Red Carpet Fashion (Met Gala 2026)",
+      "topic": "Top 5 Most Stunning Looks from Met Gala 2026",
+      "hook": "Which celebrity stole the show with their jaw-dropping Met Gala outfit?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Severe Weather",
-      "topic": "The science behind 'bomb cyclones' and why they're becoming more frequent.",
-      "hook": "What exactly *is* a 'bomb cyclone,' and why should you be worried?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Influencer Spotlights (Evelyn Ha, Ben Pasternak)",
+      "topic": "The Rise of Evelyn Ha: How She Became a Social Media Sensation",
+      "hook": "What's the secret behind Evelyn Ha's incredible influencer success?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Music Legend Tributes",
-      "topic": "Untold stories from the recording sessions of Freddie Mercury's last album.",
-      "hook": "Before his final curtain, Freddie Mercury left us with an album full of secrets...",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
+      "category": "Sports Analysis (Casper Ruud, Ban vs NZ)",
+      "topic": "Casper Ruud's Winning Strategy in the Bangladesh vs New Zealand Match",
+      "hook": "How did Casper Ruud outmaneuver his opponents to claim victory?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Most Anticipated Movie Releases of 2026",
+      "hook": "Which upcoming movie is generating the most buzz?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Event Coverage (Met Gala 2026)",
+      "topic": "Behind-the-Scenes at Met Gala 2026: The Most Unforgettable Moments",
+      "hook": "Go behind the scenes of the most iconic event in fashion!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Music Legend Tributes",
-      "topic": "The unexpected influence of David Bowie's fashion on modern pop stars.",
-      "hook": "Beyond the music, how did Bowie's wardrobe change pop culture forever?",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Emerging Artist Features",
-      "topic": "Spotlight on 'Synthwave Siren,' an indie artist blending 80s vibes with future sounds.",
-      "hook": "Meet the artist bringing neon dreams and retro-futurism to your speakers!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Sports Highlights (Ban vs NZ)",
+      "topic": "The Most Thrilling Moments from the Bangladesh vs New Zealand Series",
+      "hook": "Relive the most heart-stopping moments from the epic cricket series!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Emerging Artist Features",
-      "topic": "The TikTok phenomenon: how 'Bedroom Beats' went from obscurity to viral sensation.",
-      "hook": "From a bedroom studio to millions of streams: the rise of a viral music star!",
-      "voice_style": "Energetic",
-      "music_mood": "Chill",
+      "category": "Celebrity News (Johnny Depp, Met Gala 2026)",
+      "topic": "Johnny Depp's Met Gala 2026 After-Party Antics",
+      "hook": "What did Johnny Depp get up to after the Met Gala?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Boxing Legends",
-      "topic": "The forgotten rivalry between Sugar Ray Robinson and Jake LaMotta.",
-      "hook": "Before Ali, before Tyson, there was a rivalry so intense it defined an era.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Tech Reviews (Qatar Airways, Ben Pasternak)",
+      "topic": "Ben Pasternak's Hands-On Review of Qatar Airways' Latest In-Flight Tech",
+      "hook": "Is Qatar Airways' new in-flight tech the future of air travel?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Travel vlogs (Qatar Airways)",
+      "topic": "Exploring the World's Best Airports with Qatar Airways",
+      "hook": "Join me on a journey to the most incredible airports around the globe!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Boxing Legends",
-      "topic": "Mike Tyson's surprising venture into pigeon racing and his life post-boxing.",
-      "hook": "From 'Iron Mike' to... pigeon whisperer? Tyson's life after the ring will shock you!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Theater Reviews (Lost Boys Broadway)",
+      "topic": "Unpacking the Themes and Symbolism in Lost Boys on Broadway",
+      "hook": "Dive into the hidden meanings behind the Lost Boys' enchanting world!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Banking and Finance News",
-      "topic": "Explaining the 'gamification' of investing for new-age traders.",
-      "hook": "Is your stock portfolio a game? How apps are changing how we invest!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Red Carpet Fashion (Met Gala 2026)",
+      "topic": "The Evolution of Met Gala Fashion: Then vs Now",
+      "hook": "How has Met Gala fashion changed over the years?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Banking and Finance News",
-      "topic": "The rise of digital-only banks and what it means for your local branch.",
-      "hook": "Your bank branch might be disappearing! Are you ready for a purely digital future?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Influencer Spotlights (Evelyn Ha, Ben Pasternak)",
+      "topic": "Ben Pasternak's Journey to Becoming a Tech Influencer",
+      "hook": "What drove Ben Pasternak to become one of the most influential tech voices?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Hollywood Actress Interviews",
-      "topic": "Behind-the-scenes secrets from filming a major action sequence with a leading lady.",
-      "hook": "She performed *that* stunt herself?! Inside the making of an epic action scene!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Sports Analysis (Casper Ruud, Ban vs NZ)",
+      "topic": "Casper Ruud's Training Regimen: What Makes Him a Tennis Powerhouse",
+      "hook": "Uncover the secrets behind Casper Ruud's impressive athletic abilities!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Resurgence of 90s Trends in Modern Pop Culture",
+      "hook": "Why are 90s trends making a comeback in music, fashion, and film?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Event Coverage (Met Gala 2026)",
+      "topic": "Met Gala 2026: The Best and Worst Dressed Celebrities",
+      "hook": "Who stunned and who struggled on the Met Gala red carpet?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Hollywood Actress Interviews",
-      "topic": "An actress discusses breaking industry stereotypes and empowering female roles.",
-      "hook": "She's not just an actress; she's rewriting the rules for women in Hollywood!",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Spring Storm Safety",
-      "topic": "Essential checklist for preparing your home for unexpected spring tornadoes.",
-      "hook": "Is your home ready for a spring tornado? This checklist could save lives!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Sports Highlights (Ban vs NZ)",
+      "topic": "The Epic Bangladesh vs New Zealand Cricket Match: A Photographic Recap",
+      "hook": "Relive the thrilling moments from the Bangladesh vs New Zealand series in pictures!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
-    },
-    {
-      "category": "Spring Storm Safety",
-      "topic": "Debunking common myths about lightning safety during spring thunderstorms.",
-      "hook": "Think you're safe indoors during a storm? These lightning myths could shock you!",
-      "voice_style": "Energetic",
-      "music_mood": "Mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "Breaking down the 'Cosmic Groove' challenge and its origins.",
-      "hook": "The 'Cosmic Groove' challenge is taking over! Can you master its moves?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "The story behind the 'Unicorn Shuffle' and how it united dancers worldwide.",
-      "hook": "From a simple step to a global phenomenon: the story of the 'Unicorn Shuffle'!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -242,18 +220,48 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     }
   ],
