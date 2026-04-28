@@ -1,228 +1,233 @@
 {
-  "generated_at": "2026-04-27T07:53:50.480203",
-  "valid_until": "2026-04-27T23:59:50.480211",
+  "generated_at": "2026-04-28T07:53:27.654182",
+  "valid_until": "2026-04-28T23:59:27.654189",
   "categories": [
-    "Sports Highlights (Ban vs NZ)",
-    "Celebrity News (Johnny Depp, Met Gala 2026)",
-    "Tech Reviews (Qatar Airways, Ben Pasternak)",
-    "Travel vlogs (Qatar Airways)",
-    "Theater Reviews (Lost Boys Broadway)",
-    "Red Carpet Fashion (Met Gala 2026)",
-    "Influencer Spotlights (Evelyn Ha, Ben Pasternak)",
-    "Sports Analysis (Casper Ruud, Ban vs NZ)",
-    "Entertainment News",
-    "Event Coverage (Met Gala 2026)",
-    "Travel Tips",
-    "Celebrity Interviews",
-    "Theater Performances",
-    "Behind-the-Scenes",
-    "Pop Culture Commentary"
+    "Johnny Depp's Latest Movies and Behind-the-Scenes",
+    "NTe Release Date Speculation and Leaks",
+    "Rose Byrne's Fitness and Wellness Routine",
+    "Explaining FHA Loans for First-Time Homebuyers",
+    "Tornado Safety Tips: Watch vs Warning",
+    "Russian Superyacht Controversy and Updates",
+    "Stanley Tucci's Cooking and Travel Vlogs",
+    "Personal Injury Attorney Q&A and Advice",
+    "Spring Storm Preparedness and Safety",
+    "Home Decor Inspiration for Summer",
+    "Superyacht Tours and Luxury Lifestyle",
+    "Movie Reviews and Analysis of Latest Releases",
+    "Lawyer Reacts to Celebrity Lawsuits and Cases",
+    "Weather Alert Systems and Emergency Preparedness",
+    "Home Buying 101: Navigating Loans and Insurance"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights (Ban vs NZ)",
-      "topic": "Miraculous Comeback in Bangladesh vs New Zealand Cricket Match",
-      "hook": "You won't believe the shocking turnaround in the last over!",
+      "category": "Johnny Depp's Latest Movies and Behind-the-Scenes",
+      "topic": "Uncovering the Secrets of Johnny Depp's Iconic Pirate Costume",
+      "hook": "You won't believe the hidden detail in Johnny Depp's pirate boots!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News (Johnny Depp, Met Gala 2026)",
-      "topic": "Johnny Depp's Unexpected Appearance at Met Gala 2026",
-      "hook": "What was behind Johnny Depp's surprise visit to the Met Gala?",
+      "category": "NTe Release Date Speculation and Leaks",
+      "topic": "NTe Release Date Revealed: What to Expect from the Next-Gen Console",
+      "hook": "The wait is over: we've got the inside scoop on NTe's release date!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Rose Byrne's Fitness and Wellness Routine",
+      "topic": "Rose Byrne's Morning Yoga Routine for a Healthy Glow",
+      "hook": "Start your day like Rose Byrne: discover her favorite morning yoga poses!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Explaining FHA Loans for First-Time Homebuyers",
+      "topic": "FHA Loans: The Ultimate Guide to Affordable Home Financing",
+      "hook": "Don't let mortgage jargon confuse you: learn the ins and outs of FHA loans!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Tornado Safety Tips: Watch vs Warning",
+      "topic": "The Crucial Difference Between a Tornado Watch and Warning",
+      "hook": "When seconds count, knowing the difference between a watch and warning can save lives!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Tech Reviews (Qatar Airways, Ben Pasternak)",
-      "topic": "Ben Pasternak's Exclusive Review of Qatar Airways' New Business Class",
-      "hook": "Is Qatar Airways' business class really worth the hype? Let's find out!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel vlogs (Qatar Airways)",
-      "topic": "24 Hours in Doha with Qatar Airways",
-      "hook": "Join me on an epic adventure in Doha, courtesy of Qatar Airways!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Theater Reviews (Lost Boys Broadway)",
-      "topic": "Uncovering the Magic of Lost Boys on Broadway",
-      "hook": "Get ready to enter a world of wonder with the Lost Boys!",
+      "category": "Russian Superyacht Controversy and Updates",
+      "topic": "The Luxurious World of Russian Superyachts: A Look Inside the Controversy",
+      "hook": "Step aboard the opulent world of Russian superyachts, where luxury meets controversy!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Red Carpet Fashion (Met Gala 2026)",
-      "topic": "Top 5 Most Stunning Looks from Met Gala 2026",
-      "hook": "Which celebrity stole the show with their jaw-dropping Met Gala outfit?",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Influencer Spotlights (Evelyn Ha, Ben Pasternak)",
-      "topic": "The Rise of Evelyn Ha: How She Became a Social Media Sensation",
-      "hook": "What's the secret behind Evelyn Ha's incredible influencer success?",
+      "category": "Stanley Tucci's Cooking and Travel Vlogs",
+      "topic": "Stanley Tucci's Italian Food Tour: A Journey Through Tuscany",
+      "hook": "Join Stanley Tucci on a culinary journey through the rolling hills of Tuscany!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Sports Analysis (Casper Ruud, Ban vs NZ)",
-      "topic": "Casper Ruud's Winning Strategy in the Bangladesh vs New Zealand Match",
-      "hook": "How did Casper Ruud outmaneuver his opponents to claim victory?",
+      "category": "Personal Injury Attorney Q&A and Advice",
+      "topic": "What to Do After a Car Accident: Expert Advice from a Personal Injury Attorney",
+      "hook": "Don't let a car accident leave you in the dark: get expert advice from a personal injury attorney!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "calm",
       "target_duration": 50
     },
     {
-      "category": "Entertainment News",
-      "topic": "The Most Anticipated Movie Releases of 2026",
-      "hook": "Which upcoming movie is generating the most buzz?",
+      "category": "Spring Storm Preparedness and Safety",
+      "topic": "The Ultimate Spring Storm Survival Kit: Essential Items to Keep You Safe",
+      "hook": "Be prepared, not scared: build your ultimate spring storm survival kit!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Event Coverage (Met Gala 2026)",
-      "topic": "Behind-the-Scenes at Met Gala 2026: The Most Unforgettable Moments",
-      "hook": "Go behind the scenes of the most iconic event in fashion!",
+      "category": "Home Decor Inspiration for Summer",
+      "topic": "10 Summer Decor Trends to Refresh Your Home",
+      "hook": "Ditch the winter blues: get ready to refresh your home with these 10 summer decor trends!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Johnny Depp's Latest Movies and Behind-the-Scenes",
+      "topic": "The Making of Johnny Depp's Most Iconic Movie Roles",
+      "hook": "Step into the world of Johnny Depp's most iconic movie roles: what you didn't know!",
       "voice_style": "dramatic",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights (Ban vs NZ)",
-      "topic": "The Most Thrilling Moments from the Bangladesh vs New Zealand Series",
-      "hook": "Relive the most heart-stopping moments from the epic cricket series!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News (Johnny Depp, Met Gala 2026)",
-      "topic": "Johnny Depp's Met Gala 2026 After-Party Antics",
-      "hook": "What did Johnny Depp get up to after the Met Gala?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "NTe Release Date Speculation and Leaks",
+      "topic": "NTe Console Leaks: What the Latest Rumors Reveal",
+      "hook": "The latest NTe console leaks are here: what do they mean for gamers?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Tech Reviews (Qatar Airways, Ben Pasternak)",
-      "topic": "Ben Pasternak's Hands-On Review of Qatar Airways' Latest In-Flight Tech",
-      "hook": "Is Qatar Airways' new in-flight tech the future of air travel?",
-      "voice_style": "authoritative",
+      "category": "Rose Byrne's Fitness and Wellness Routine",
+      "topic": "Rose Byrne's Favorite Wellness Retreats for a Healthy Getaway",
+      "hook": "Escape to paradise with Rose Byrne: discover her favorite wellness retreats!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel vlogs (Qatar Airways)",
-      "topic": "Exploring the World's Best Airports with Qatar Airways",
-      "hook": "Join me on a journey to the most incredible airports around the globe!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Theater Reviews (Lost Boys Broadway)",
-      "topic": "Unpacking the Themes and Symbolism in Lost Boys on Broadway",
-      "hook": "Dive into the hidden meanings behind the Lost Boys' enchanting world!",
+      "category": "Explaining FHA Loans for First-Time Homebuyers",
+      "topic": "FHA Loan Credit Score Requirements: What You Need to Know",
+      "hook": "Don't let credit score confusion hold you back: learn the FHA loan credit score requirements!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Tornado Safety Tips: Watch vs Warning",
+      "topic": "Tornado Safety Myths Debunked: What You Need to Know",
+      "hook": "Separate fact from fiction: debunking common tornado safety myths!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Russian Superyacht Controversy and Updates",
+      "topic": "The Rise of Russian Superyacht Owners: Who's Who in the Luxury World",
+      "hook": "Meet the Russian billionaires behind the world's most luxurious superyachts!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Red Carpet Fashion (Met Gala 2026)",
-      "topic": "The Evolution of Met Gala Fashion: Then vs Now",
-      "hook": "How has Met Gala fashion changed over the years?",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Influencer Spotlights (Evelyn Ha, Ben Pasternak)",
-      "topic": "Ben Pasternak's Journey to Becoming a Tech Influencer",
-      "hook": "What drove Ben Pasternak to become one of the most influential tech voices?",
+      "category": "Stanley Tucci's Cooking and Travel Vlogs",
+      "topic": "Stanley Tucci's Favorite Italian Recipes for a Delicious Dinner",
+      "hook": "Join Stanley Tucci in the kitchen: cooking up a storm with his favorite Italian recipes!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Sports Analysis (Casper Ruud, Ban vs NZ)",
-      "topic": "Casper Ruud's Training Regimen: What Makes Him a Tennis Powerhouse",
-      "hook": "Uncover the secrets behind Casper Ruud's impressive athletic abilities!",
+      "category": "Personal Injury Attorney Q&A and Advice",
+      "topic": "What to Expect During a Personal Injury Lawsuit: A Step-by-Step Guide",
+      "hook": "Navigating the complex world of personal injury lawsuits: a step-by-step guide!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "calm",
       "target_duration": 50
     },
     {
-      "category": "Entertainment News",
-      "topic": "The Resurgence of 90s Trends in Modern Pop Culture",
-      "hook": "Why are 90s trends making a comeback in music, fashion, and film?",
+      "category": "Spring Storm Preparedness and Safety",
+      "topic": "Spring Storm Emergency Kit Essentials: Don't Get Caught Off Guard",
+      "hook": "Be prepared, not scared: the essential items to include in your spring storm emergency kit!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Event Coverage (Met Gala 2026)",
-      "topic": "Met Gala 2026: The Best and Worst Dressed Celebrities",
-      "hook": "Who stunned and who struggled on the Met Gala red carpet?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
+      "category": "Home Decor Inspiration for Summer",
+      "topic": "Summer Decor Trends to Boost Your Home's Curb Appeal",
+      "hook": "Give your home a summer makeover: boost your curb appeal with these trending decor ideas!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights (Ban vs NZ)",
-      "topic": "The Epic Bangladesh vs New Zealand Cricket Match: A Photographic Recap",
-      "hook": "Relive the thrilling moments from the Bangladesh vs New Zealand series in pictures!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Johnny Depp's Latest Movies and Behind-the-Scenes",
+      "topic": "Johnny Depp's Most Challenging Movie Roles: What You Didn't Know",
+      "hook": "The untold stories behind Johnny Depp's most challenging movie roles: what you didn't know!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
@@ -230,39 +235,34 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
