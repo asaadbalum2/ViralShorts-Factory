@@ -1,267 +1,267 @@
 {
-  "generated_at": "2026-04-28T07:53:27.654182",
-  "valid_until": "2026-04-28T23:59:27.654189",
+  "generated_at": "2026-04-29T07:38:23.605793",
+  "valid_until": "2026-04-29T23:59:23.605802",
   "categories": [
-    "Johnny Depp's Latest Movies and Behind-the-Scenes",
-    "NTe Release Date Speculation and Leaks",
-    "Rose Byrne's Fitness and Wellness Routine",
-    "Explaining FHA Loans for First-Time Homebuyers",
-    "Tornado Safety Tips: Watch vs Warning",
-    "Russian Superyacht Controversy and Updates",
-    "Stanley Tucci's Cooking and Travel Vlogs",
-    "Personal Injury Attorney Q&A and Advice",
-    "Spring Storm Preparedness and Safety",
-    "Home Decor Inspiration for Summer",
-    "Superyacht Tours and Luxury Lifestyle",
-    "Movie Reviews and Analysis of Latest Releases",
-    "Lawyer Reacts to Celebrity Lawsuits and Cases",
-    "Weather Alert Systems and Emergency Preparedness",
-    "Home Buying 101: Navigating Loans and Insurance"
+    "California Politics Explained",
+    "Voter Rights Advocacy",
+    "Debate Analysis",
+    "Personal Injury Stories",
+    "Auto Accident Prevention Tips",
+    "Legal Advice for Car Crashes",
+    "Actor Erik Per Sullivan Updates",
+    "Divorce Law in Alpine",
+    "Fast Food Reviews of Carls Jr",
+    "Indigo Aesthetic Inspiration",
+    "News Updates on Arizona Lawsuits",
+    "Governor Race Candidate Profiles",
+    "Short Form Court Case Analysis",
+    "Law Firm Services for Accident Victims",
+    "Current Event Discussion and Debate"
   ],
   "concepts": [
     {
-      "category": "Johnny Depp's Latest Movies and Behind-the-Scenes",
-      "topic": "Uncovering the Secrets of Johnny Depp's Iconic Pirate Costume",
-      "hook": "You won't believe the hidden detail in Johnny Depp's pirate boots!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "California Politics Explained",
+      "topic": "Understanding Proposition 22",
+      "hook": "You won't believe what's really going on with gig workers' rights in California!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "NTe Release Date Speculation and Leaks",
-      "topic": "NTe Release Date Revealed: What to Expect from the Next-Gen Console",
-      "hook": "The wait is over: we've got the inside scoop on NTe's release date!",
-      "voice_style": "authoritative",
+      "category": "Voter Rights Advocacy",
+      "topic": "The Impact of Voter ID Laws on Marginalized Communities",
+      "hook": "What if your right to vote was taken away from you?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Rose Byrne's Fitness and Wellness Routine",
-      "topic": "Rose Byrne's Morning Yoga Routine for a Healthy Glow",
-      "hook": "Start your day like Rose Byrne: discover her favorite morning yoga poses!",
+      "category": "Debate Analysis",
+      "topic": "Fact-Checking the Latest Presidential Debate",
+      "hook": "Separating fact from fiction: what really happened in the debate?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Personal Injury Stories",
+      "topic": "My Near-Death Experience: A Cautionary Tale of Distracted Driving",
+      "hook": "I never thought it would happen to me, but it did... and it changed my life forever",
       "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Auto Accident Prevention Tips",
+      "topic": "5 Simple Habits to Reduce Your Risk of a Car Crash",
+      "hook": "Are you unknowingly increasing your risk of a car accident?",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Explaining FHA Loans for First-Time Homebuyers",
-      "topic": "FHA Loans: The Ultimate Guide to Affordable Home Financing",
-      "hook": "Don't let mortgage jargon confuse you: learn the ins and outs of FHA loans!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Tornado Safety Tips: Watch vs Warning",
-      "topic": "The Crucial Difference Between a Tornado Watch and Warning",
-      "hook": "When seconds count, knowing the difference between a watch and warning can save lives!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Legal Advice for Car Crashes",
+      "topic": "The Top 3 Mistakes to Avoid After a Car Accident",
+      "hook": "Don't let a car accident turn into a financial disaster: know your rights!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Russian Superyacht Controversy and Updates",
-      "topic": "The Luxurious World of Russian Superyachts: A Look Inside the Controversy",
-      "hook": "Step aboard the opulent world of Russian superyachts, where luxury meets controversy!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Stanley Tucci's Cooking and Travel Vlogs",
-      "topic": "Stanley Tucci's Italian Food Tour: A Journey Through Tuscany",
-      "hook": "Join Stanley Tucci on a culinary journey through the rolling hills of Tuscany!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Injury Attorney Q&A and Advice",
-      "topic": "What to Do After a Car Accident: Expert Advice from a Personal Injury Attorney",
-      "hook": "Don't let a car accident leave you in the dark: get expert advice from a personal injury attorney!",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 50
-    },
-    {
-      "category": "Spring Storm Preparedness and Safety",
-      "topic": "The Ultimate Spring Storm Survival Kit: Essential Items to Keep You Safe",
-      "hook": "Be prepared, not scared: build your ultimate spring storm survival kit!",
+      "category": "Actor Erik Per Sullivan Updates",
+      "topic": "What Happened to the Malcolm in the Middle Star?",
+      "hook": "You won't believe what Erik Per Sullivan is up to now!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 42
     },
     {
-      "category": "Home Decor Inspiration for Summer",
-      "topic": "10 Summer Decor Trends to Refresh Your Home",
-      "hook": "Ditch the winter blues: get ready to refresh your home with these 10 summer decor trends!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Johnny Depp's Latest Movies and Behind-the-Scenes",
-      "topic": "The Making of Johnny Depp's Most Iconic Movie Roles",
-      "hook": "Step into the world of Johnny Depp's most iconic movie roles: what you didn't know!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "NTe Release Date Speculation and Leaks",
-      "topic": "NTe Console Leaks: What the Latest Rumors Reveal",
-      "hook": "The latest NTe console leaks are here: what do they mean for gamers?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Rose Byrne's Fitness and Wellness Routine",
-      "topic": "Rose Byrne's Favorite Wellness Retreats for a Healthy Getaway",
-      "hook": "Escape to paradise with Rose Byrne: discover her favorite wellness retreats!",
+      "category": "Divorce Law in Alpine",
+      "topic": "The Unique Challenges of Divorce in Small Towns",
+      "hook": "Getting divorced in a small town can be a whole different story: here's why",
       "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Fast Food Reviews of Carls Jr",
+      "topic": "The Truth About Carls Jr's Famous Star Burger",
+      "hook": "I tried the iconic Star Burger: is it worth the hype?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Indigo Aesthetic Inspiration",
+      "topic": "Creating a Dreamy Indigo Home Decor",
+      "hook": "Get ready to fall in love with the mystical world of indigo!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "California Politics Explained",
+      "topic": "The Impact of Climate Change on California's Coastline",
+      "hook": "The future of California's coastline is at risk: what can we do to save it?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Explaining FHA Loans for First-Time Homebuyers",
-      "topic": "FHA Loan Credit Score Requirements: What You Need to Know",
-      "hook": "Don't let credit score confusion hold you back: learn the FHA loan credit score requirements!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Tornado Safety Tips: Watch vs Warning",
-      "topic": "Tornado Safety Myths Debunked: What You Need to Know",
-      "hook": "Separate fact from fiction: debunking common tornado safety myths!",
+      "category": "Voter Rights Advocacy",
+      "topic": "The Fight for Voting Rights in Rural Areas",
+      "hook": "The battle for voting rights is far from over: meet the people fighting for their voices to be heard",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 42
     },
     {
-      "category": "Russian Superyacht Controversy and Updates",
-      "topic": "The Rise of Russian Superyacht Owners: Who's Who in the Luxury World",
-      "hook": "Meet the Russian billionaires behind the world's most luxurious superyachts!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Stanley Tucci's Cooking and Travel Vlogs",
-      "topic": "Stanley Tucci's Favorite Italian Recipes for a Delicious Dinner",
-      "hook": "Join Stanley Tucci in the kitchen: cooking up a storm with his favorite Italian recipes!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Injury Attorney Q&A and Advice",
-      "topic": "What to Expect During a Personal Injury Lawsuit: A Step-by-Step Guide",
-      "hook": "Navigating the complex world of personal injury lawsuits: a step-by-step guide!",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 50
-    },
-    {
-      "category": "Spring Storm Preparedness and Safety",
-      "topic": "Spring Storm Emergency Kit Essentials: Don't Get Caught Off Guard",
-      "hook": "Be prepared, not scared: the essential items to include in your spring storm emergency kit!",
+      "category": "Debate Analysis",
+      "topic": "Unpacking the Most Heated Moments of the Latest Debate",
+      "hook": "The debate got heated: but what did it really mean for the candidates?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Home Decor Inspiration for Summer",
-      "topic": "Summer Decor Trends to Boost Your Home's Curb Appeal",
-      "hook": "Give your home a summer makeover: boost your curb appeal with these trending decor ideas!",
+      "category": "Personal Injury Stories",
+      "topic": "Overcoming the Emotional Trauma of a Car Accident",
+      "hook": "The unseen scars of a car accident: my journey to healing",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Auto Accident Prevention Tips",
+      "topic": "The Most Common Causes of Car Accidents (And How to Avoid Them)",
+      "hook": "Are you at risk of a car accident? Know the top causes and take control!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Johnny Depp's Latest Movies and Behind-the-Scenes",
-      "topic": "Johnny Depp's Most Challenging Movie Roles: What You Didn't Know",
-      "hook": "The untold stories behind Johnny Depp's most challenging movie roles: what you didn't know!",
-      "voice_style": "dramatic",
+      "category": "Legal Advice for Car Crashes",
+      "topic": "How to Deal with Insurance Companies After a Car Accident",
+      "hook": "Don't let insurance companies take advantage of you: know your rights!",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Actor Erik Per Sullivan Updates",
+      "topic": "Erik Per Sullivan's Most Memorable Roles (Besides Malcolm in the Middle)",
+      "hook": "You won't believe the other iconic roles Erik Per Sullivan has played!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Divorce Law in Alpine",
+      "topic": "The Unique Challenges of Divorce for Small Business Owners",
+      "hook": "Getting divorced as a small business owner? Here's what you need to know",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Fast Food Reviews of Carls Jr",
+      "topic": "The Best (And Worst) Menu Items at Carls Jr",
+      "hook": "I tried everything on the Carls Jr menu: here's the verdict!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Indigo Aesthetic Inspiration",
+      "topic": "Indigo Fashion: How to Incorporate the Trend into Your Wardrobe",
+      "hook": "Get ready to fall in love with the mystical world of indigo fashion!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "California Politics Explained",
+      "topic": "The Future of Renewable Energy in California",
+      "hook": "California is leading the way in renewable energy: but what's next?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     }
   ],
