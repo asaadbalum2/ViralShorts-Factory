@@ -1,191 +1,183 @@
 {
-  "generated_at": "2026-04-29T07:38:23.605793",
-  "valid_until": "2026-04-29T23:59:23.605802",
+  "generated_at": "2026-04-30T07:41:58.322192",
+  "valid_until": "2026-04-30T23:59:58.322201",
   "categories": [
-    "California Politics Explained",
-    "Voter Rights Advocacy",
-    "Debate Analysis",
-    "Personal Injury Stories",
-    "Auto Accident Prevention Tips",
-    "Legal Advice for Car Crashes",
-    "Actor Erik Per Sullivan Updates",
-    "Divorce Law in Alpine",
-    "Fast Food Reviews of Carls Jr",
-    "Indigo Aesthetic Inspiration",
-    "News Updates on Arizona Lawsuits",
-    "Governor Race Candidate Profiles",
-    "Short Form Court Case Analysis",
-    "Law Firm Services for Accident Victims",
-    "Current Event Discussion and Debate"
+    "Fast Food Challenges",
+    "Personal Injury Attorney FAQs",
+    "Hotel Room Tours",
+    "Hospital Safety Tips",
+    "Mortgage Lender Explainers",
+    "Banking Hacks",
+    "Tennis Highlight Reels",
+    "Riot Footage Analysis",
+    "Foodie Reviews of Fast Food",
+    "Tennis Match Predictions",
+    "Law Firm Commercials",
+    "Hotel Vlog Reviews",
+    "Banks with Best Mortgage Rates",
+    "Current Event News Updates",
+    "Sports Injury Recovery Stories"
   ],
   "concepts": [
     {
-      "category": "California Politics Explained",
-      "topic": "Understanding Proposition 22",
-      "hook": "You won't believe what's really going on with gig workers' rights in California!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Voter Rights Advocacy",
-      "topic": "The Impact of Voter ID Laws on Marginalized Communities",
-      "hook": "What if your right to vote was taken away from you?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Debate Analysis",
-      "topic": "Fact-Checking the Latest Presidential Debate",
-      "hook": "Separating fact from fiction: what really happened in the debate?",
+      "category": "Fast Food Challenges",
+      "topic": "Eating a Giant Burger in 5 Minutes",
+      "hook": "Can I finish this massive burger before time runs out?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Personal Injury Stories",
-      "topic": "My Near-Death Experience: A Cautionary Tale of Distracted Driving",
-      "hook": "I never thought it would happen to me, but it did... and it changed my life forever",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Auto Accident Prevention Tips",
-      "topic": "5 Simple Habits to Reduce Your Risk of a Car Crash",
-      "hook": "Are you unknowingly increasing your risk of a car accident?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Legal Advice for Car Crashes",
-      "topic": "The Top 3 Mistakes to Avoid After a Car Accident",
-      "hook": "Don't let a car accident turn into a financial disaster: know your rights!",
+      "category": "Personal Injury Attorney FAQs",
+      "topic": "What to Do After a Car Accident",
+      "hook": "You've been in a car accident, now what?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Actor Erik Per Sullivan Updates",
-      "topic": "What Happened to the Malcolm in the Middle Star?",
-      "hook": "You won't believe what Erik Per Sullivan is up to now!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Hotel Room Tours",
+      "topic": "Inside a $10,000 per Night Luxury Suite",
+      "hook": "Ever wondered what a $10,000 per night hotel room looks like?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
     },
     {
-      "category": "Divorce Law in Alpine",
-      "topic": "The Unique Challenges of Divorce in Small Towns",
-      "hook": "Getting divorced in a small town can be a whole different story: here's why",
+      "category": "Hospital Safety Tips",
+      "topic": "How to Prevent Infections in the Hospital",
+      "hook": "The shocking truth about hospital infections and how to stay safe",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Fast Food Reviews of Carls Jr",
-      "topic": "The Truth About Carls Jr's Famous Star Burger",
-      "hook": "I tried the iconic Star Burger: is it worth the hype?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Indigo Aesthetic Inspiration",
-      "topic": "Creating a Dreamy Indigo Home Decor",
-      "hook": "Get ready to fall in love with the mystical world of indigo!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "California Politics Explained",
-      "topic": "The Impact of Climate Change on California's Coastline",
-      "hook": "The future of California's coastline is at risk: what can we do to save it?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Voter Rights Advocacy",
-      "topic": "The Fight for Voting Rights in Rural Areas",
-      "hook": "The battle for voting rights is far from over: meet the people fighting for their voices to be heard",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Debate Analysis",
-      "topic": "Unpacking the Most Heated Moments of the Latest Debate",
-      "hook": "The debate got heated: but what did it really mean for the candidates?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Personal Injury Stories",
-      "topic": "Overcoming the Emotional Trauma of a Car Accident",
-      "hook": "The unseen scars of a car accident: my journey to healing",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Auto Accident Prevention Tips",
-      "topic": "The Most Common Causes of Car Accidents (And How to Avoid Them)",
-      "hook": "Are you at risk of a car accident? Know the top causes and take control!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Legal Advice for Car Crashes",
-      "topic": "How to Deal with Insurance Companies After a Car Accident",
-      "hook": "Don't let insurance companies take advantage of you: know your rights!",
+      "category": "Mortgage Lender Explainers",
+      "topic": "Understanding the Benefits of a 15-Year Mortgage",
+      "hook": "Could a 15-year mortgage save you thousands of dollars?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 42
+      "target_duration": 40
     },
     {
-      "category": "Actor Erik Per Sullivan Updates",
-      "topic": "Erik Per Sullivan's Most Memorable Roles (Besides Malcolm in the Middle)",
-      "hook": "You won't believe the other iconic roles Erik Per Sullivan has played!",
+      "category": "Banking Hacks",
+      "topic": "How to Avoid Overdraft Fees",
+      "hook": "Tired of being charged overdraft fees? Here's the solution",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Highlight Reels",
+      "topic": "The Most Epic Tennis Comebacks of All Time",
+      "hook": "You won't believe these incredible tennis comebacks",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Riot Footage Analysis",
+      "topic": "What Triggers Social Unrest and Rioting",
+      "hook": "The shocking reasons behind social unrest and rioting",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Foodie Reviews of Fast Food",
+      "topic": "Taste Testing the New Burger King Menu",
+      "hook": "Is the new Burger King menu a game-changer or a disappointment?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Match Predictions",
+      "topic": "Who Will Win the Upcoming Grand Slam Tournament",
+      "hook": "My shocking prediction for the upcoming Grand Slam tournament",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Fast Food Challenges",
+      "topic": "Eating a Spicy Burrito in Under 10 Minutes",
+      "hook": "Can I handle the heat of this spicy burrito challenge?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Injury Attorney FAQs",
+      "topic": "What to Expect in a Personal Injury Lawsuit",
+      "hook": "The inside scoop on what to expect in a personal injury lawsuit",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Hotel Room Tours",
+      "topic": "Exploring a Haunted Hotel Room",
+      "hook": "I spent the night in a haunted hotel room and here's what happened",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Hospital Safety Tips",
+      "topic": "How to Prevent Medication Errors",
+      "hook": "The alarming truth about medication errors and how to stay safe",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Mortgage Lender Explainers",
+      "topic": "Understanding the Benefits of a Fixed-Rate Mortgage",
+      "hook": "Is a fixed-rate mortgage the right choice for you?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Banking Hacks",
+      "topic": "How to Save Money with Budgeting Apps",
+      "hook": "The secret to saving money using budgeting apps",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Divorce Law in Alpine",
-      "topic": "The Unique Challenges of Divorce for Small Business Owners",
-      "hook": "Getting divorced as a small business owner? Here's what you need to know",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Tennis Highlight Reels",
+      "topic": "The Most Dominant Tennis Players of All Time",
+      "hook": "You won't believe the dominance of these tennis legends",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Riot Footage Analysis",
+      "topic": "The Psychology Behind Rioting and Social Unrest",
+      "hook": "What drives people to riot and engage in social unrest?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Fast Food Reviews of Carls Jr",
-      "topic": "The Best (And Worst) Menu Items at Carls Jr",
-      "hook": "I tried everything on the Carls Jr menu: here's the verdict!",
+      "category": "Foodie Reviews of Fast Food",
+      "topic": "Taste Testing the New McDonald's Menu",
+      "hook": "Is the new McDonald's menu a hit or a miss?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Indigo Aesthetic Inspiration",
-      "topic": "Indigo Fashion: How to Incorporate the Trend into Your Wardrobe",
-      "hook": "Get ready to fall in love with the mystical world of indigo fashion!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "California Politics Explained",
-      "topic": "The Future of Renewable Energy in California",
-      "hook": "California is leading the way in renewable energy: but what's next?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
       "target_duration": 45
+    },
+    {
+      "category": "Tennis Match Predictions",
+      "topic": "My Prediction for the Upcoming Tennis Tournament",
+      "hook": "My bold prediction for the upcoming tennis tournament",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
@@ -195,73 +187,73 @@
       "music_mood": "chill"
     },
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
       "music_mood": "upbeat"
     }
   ],
