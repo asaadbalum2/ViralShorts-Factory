@@ -1,259 +1,259 @@
 {
-  "generated_at": "2026-04-30T07:41:58.322192",
-  "valid_until": "2026-04-30T23:59:58.322201",
+  "generated_at": "2026-05-01T07:41:34.637810",
+  "valid_until": "2026-05-01T23:59:34.637819",
   "categories": [
-    "Fast Food Challenges",
-    "Personal Injury Attorney FAQs",
-    "Hotel Room Tours",
-    "Hospital Safety Tips",
-    "Mortgage Lender Explainers",
-    "Banking Hacks",
-    "Tennis Highlight Reels",
-    "Riot Footage Analysis",
-    "Foodie Reviews of Fast Food",
-    "Tennis Match Predictions",
-    "Law Firm Commercials",
-    "Hotel Vlog Reviews",
-    "Banks with Best Mortgage Rates",
-    "Current Event News Updates",
-    "Sports Injury Recovery Stories"
+    "Cryptocurrency Explainers",
+    "Labour Day Vibes",
+    "Tax Filing Hacks",
+    "Phishing Scam Alerts",
+    "Latest iPhone Rumors",
+    "USC Campus Life",
+    "Lucky Lottery Winners",
+    "Olivia Rodrigo Fan Moments",
+    "Barcelona Jersey Fashion",
+    "Short-Form Crypto Trading",
+    "May Day Celebrations",
+    "New iPhone Feature Leaks",
+    "Phishing Prevention Tips",
+    "Last-Minute Tax Tips",
+    "College Life Hacks for USC Students"
   ],
   "concepts": [
     {
-      "category": "Fast Food Challenges",
-      "topic": "Eating a Giant Burger in 5 Minutes",
-      "hook": "Can I finish this massive burger before time runs out?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Cryptocurrency Explainers",
+      "topic": "What are Ethereum Gas Fees and how to potentially reduce them?",
+      "hook": "Ever tried to send crypto and got hit with a 'gas fee' that felt like a highway robbery? Here's why!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Personal Injury Attorney FAQs",
-      "topic": "What to Do After a Car Accident",
-      "hook": "You've been in a car accident, now what?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Cryptocurrency Explainers",
+      "topic": "Proof-of-Work vs. Proof-of-Stake: The core difference explained simply.",
+      "hook": "Mining vs. Staking: Which one is powering your favorite crypto? You need to know this!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 40
     },
     {
-      "category": "Hotel Room Tours",
-      "topic": "Inside a $10,000 per Night Luxury Suite",
-      "hook": "Ever wondered what a $10,000 per night hotel room looks like?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Labour Day Vibes",
+      "topic": "3 genius Labour Day BBQ hacks for a stress-free backyard party.",
+      "hook": "Your Labour Day BBQ is about to get an upgrade \u2013 no sweat, just deliciousness!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Labour Day Vibes",
+      "topic": "The surprising, radical history behind why we celebrate Labour Day.",
+      "hook": "Think Labour Day is just about BBQs? You won't BELIEVE its fight-for-your-rights origins!",
+      "voice_style": "Mysterious",
+      "music_mood": "Inspirational",
       "target_duration": 50
     },
     {
-      "category": "Hospital Safety Tips",
-      "topic": "How to Prevent Infections in the Hospital",
-      "hook": "The shocking truth about hospital infections and how to stay safe",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Mortgage Lender Explainers",
-      "topic": "Understanding the Benefits of a 15-Year Mortgage",
-      "hook": "Could a 15-year mortgage save you thousands of dollars?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Tax Filing Hacks",
+      "topic": "The single most overlooked tax deduction for recent graduates.",
+      "hook": "STOP! Are you missing out on this HUGE tax deduction that could save young professionals hundreds?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Banking Hacks",
-      "topic": "How to Avoid Overdraft Fees",
-      "hook": "Tired of being charged overdraft fees? Here's the solution",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Highlight Reels",
-      "topic": "The Most Epic Tennis Comebacks of All Time",
-      "hook": "You won't believe these incredible tennis comebacks",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Tax Filing Hacks",
+      "topic": "Simple steps to organize your tax documents throughout the year, not just at tax season.",
+      "hook": "Tax season stress? Not this year! Here's how to beat the scramble NOW with minimal effort.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
       "target_duration": 50
     },
     {
-      "category": "Riot Footage Analysis",
-      "topic": "What Triggers Social Unrest and Rioting",
-      "hook": "The shocking reasons behind social unrest and rioting",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Phishing Scam Alerts",
+      "topic": "How to identify a sophisticated 'fake invoice' email phishing scam.",
+      "hook": "Think you're safe from phishing? This invoice scam looks SO real, it's fooled experts!",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Foodie Reviews of Fast Food",
-      "topic": "Taste Testing the New Burger King Menu",
-      "hook": "Is the new Burger King menu a game-changer or a disappointment?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Match Predictions",
-      "topic": "Who Will Win the Upcoming Grand Slam Tournament",
-      "hook": "My shocking prediction for the upcoming Grand Slam tournament",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Phishing Scam Alerts",
+      "topic": "The new 'urgent password reset' text message scam and what to do if you get one.",
+      "hook": "Got an urgent text to reset your password? DO NOT click that link! It's a new scam.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 40
     },
     {
-      "category": "Fast Food Challenges",
-      "topic": "Eating a Spicy Burrito in Under 10 Minutes",
-      "hook": "Can I handle the heat of this spicy burrito challenge?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Latest iPhone Rumors",
+      "topic": "The wildest new camera features rumored for the next iPhone generation.",
+      "hook": "Is your current iPhone camera about to become OBSOLETE? The next model's camera rumors are wild!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Personal Injury Attorney FAQs",
-      "topic": "What to Expect in a Personal Injury Lawsuit",
-      "hook": "The inside scoop on what to expect in a personal injury lawsuit",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Latest iPhone Rumors",
+      "topic": "Will the next iPhone finally ditch the Lightning port for USB-C across all models?",
+      "hook": "The iPhone charging port: Is THIS the year we finally say goodbye to Lightning for good?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "USC Campus Life",
+      "topic": "Must-know shortcuts and secret study spots only true USC Trojans know.",
+      "hook": "New to USC? Here are the campus hacks nobody tells you on orientation day!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Hotel Room Tours",
-      "topic": "Exploring a Haunted Hotel Room",
-      "hook": "I spent the night in a haunted hotel room and here's what happened",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "USC Campus Life",
+      "topic": "The best late-night food spots around USC that aren't the dining hall.",
+      "hook": "Stuck studying late at USC? Your hunger pangs are about to meet their delicious match!",
+      "voice_style": "Energetic",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Lucky Lottery Winners",
+      "topic": "The craziest things lottery winners bought (and regretted) after hitting it big.",
+      "hook": "Millions in your bank account: Dream come true or a financial nightmare? You won't believe these stories!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 50
     },
     {
-      "category": "Hospital Safety Tips",
-      "topic": "How to Prevent Medication Errors",
-      "hook": "The alarming truth about medication errors and how to stay safe",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Mortgage Lender Explainers",
-      "topic": "Understanding the Benefits of a Fixed-Rate Mortgage",
-      "hook": "Is a fixed-rate mortgage the right choice for you?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Lucky Lottery Winners",
+      "topic": "Top 3 smart financial moves *every* lottery winner should make immediately.",
+      "hook": "Just won the lottery? Congrats! Now, DON'T mess it up \u2013 do THIS first to secure your future.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Banking Hacks",
-      "topic": "How to Save Money with Budgeting Apps",
-      "hook": "The secret to saving money using budgeting apps",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Olivia Rodrigo Fan Moments",
+      "topic": "Decoding the hidden meanings and easter eggs in Olivia Rodrigo's new single lyrics.",
+      "hook": "Olivia Rodrigo just dropped a new track, and you missed these INSANE hidden messages! Let's break it down.",
+      "voice_style": "Energetic",
+      "music_mood": "Dramatic",
       "target_duration": 40
     },
     {
-      "category": "Tennis Highlight Reels",
-      "topic": "The Most Dominant Tennis Players of All Time",
-      "hook": "You won't believe the dominance of these tennis legends",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Olivia Rodrigo Fan Moments",
+      "topic": "The most emotional and viral fan reactions from Olivia Rodrigo's latest concert tour stops.",
+      "hook": "Get ready for all the feels! These Olivia Rodrigo concert moments will give you chills and maybe a tear.",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Barcelona Jersey Fashion",
+      "topic": "Styling the new Barcelona home jersey for trendy streetwear looks beyond game day.",
+      "hook": "Your Barcelona jersey isn't just for game day anymore. Level up your street style with these tips!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Barcelona Jersey Fashion",
+      "topic": "The rarest vintage Barcelona jerseys and their surprising resale value today.",
+      "hook": "Got an old Barcelona jersey collecting dust in your closet? It could be worth a FORTUNE!",
+      "voice_style": "Mysterious",
+      "music_mood": "Inspirational",
       "target_duration": 50
     },
     {
-      "category": "Riot Footage Analysis",
-      "topic": "The Psychology Behind Rioting and Social Unrest",
-      "hook": "What drives people to riot and engage in social unrest?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Foodie Reviews of Fast Food",
-      "topic": "Taste Testing the New McDonald's Menu",
-      "hook": "Is the new McDonald's menu a hit or a miss?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Match Predictions",
-      "topic": "My Prediction for the Upcoming Tennis Tournament",
-      "hook": "My bold prediction for the upcoming tennis tournament",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Short-Form Crypto Trading",
+      "topic": "Quick tips for setting effective stop-loss orders on volatile crypto assets.",
+      "hook": "Trading crypto without a stop-loss is like driving without brakes! Here's how to protect your portfolio.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 40
+    },
+    {
+      "category": "Short-Form Crypto Trading",
+      "topic": "Understanding the 'Fear and Greed Index' for rapid crypto market sentiment checks.",
+      "hook": "Is the crypto market in panic or pure euphoria? This simple index tells you instantly what's happening!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     }
   ],
