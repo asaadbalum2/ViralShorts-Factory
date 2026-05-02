@@ -1,259 +1,259 @@
 {
-  "generated_at": "2026-05-01T07:41:34.637810",
-  "valid_until": "2026-05-01T23:59:34.637819",
+  "generated_at": "2026-05-02T07:11:41.858497",
+  "valid_until": "2026-05-02T23:59:41.858503",
   "categories": [
-    "Cryptocurrency Explainers",
-    "Labour Day Vibes",
-    "Tax Filing Hacks",
-    "Phishing Scam Alerts",
-    "Latest iPhone Rumors",
-    "USC Campus Life",
-    "Lucky Lottery Winners",
-    "Olivia Rodrigo Fan Moments",
-    "Barcelona Jersey Fashion",
-    "Short-Form Crypto Trading",
-    "May Day Celebrations",
-    "New iPhone Feature Leaks",
-    "Phishing Prevention Tips",
-    "Last-Minute Tax Tips",
-    "College Life Hacks for USC Students"
+    "Rick and Morty fan theories",
+    "Upcoming meteor shower viewing guides",
+    "Emmanuel Macron news updates",
+    "Internet trends and memes",
+    "British Royal Family gossip",
+    "Lizzo music and dance challenges",
+    "Space and astronomy explainers",
+    "Animated sci-fi parodies",
+    "French politics and culture",
+    "Music festival vlogs featuring Lizzo",
+    "Royal wedding and baby predictions",
+    "Sci-fi comedy sketches inspired by Rick and Morty",
+    "Internet safety and cybersecurity tips",
+    "Shower meteor time-lapses and photography",
+    "French and British cultural comparisons"
   ],
   "concepts": [
     {
-      "category": "Cryptocurrency Explainers",
-      "topic": "What are Ethereum Gas Fees and how to potentially reduce them?",
-      "hook": "Ever tried to send crypto and got hit with a 'gas fee' that felt like a highway robbery? Here's why!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Rick and Morty fan theories",
+      "topic": "The Council of Ricks' Hidden Agenda",
+      "hook": "What if I told you the Council of Ricks is not what it seems?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Cryptocurrency Explainers",
-      "topic": "Proof-of-Work vs. Proof-of-Stake: The core difference explained simply.",
-      "hook": "Mining vs. Staking: Which one is powering your favorite crypto? You need to know this!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Upcoming meteor shower viewing guides",
+      "topic": "How to Witness the Perseid Meteor Shower",
+      "hook": "Get ready for the most epic light show in the sky this year!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Labour Day Vibes",
-      "topic": "3 genius Labour Day BBQ hacks for a stress-free backyard party.",
-      "hook": "Your Labour Day BBQ is about to get an upgrade \u2013 no sweat, just deliciousness!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Emmanuel Macron news updates",
+      "topic": "Macron's Climate Change Initiatives",
+      "hook": "Can Macron's new climate plan save the world from disaster?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Labour Day Vibes",
-      "topic": "The surprising, radical history behind why we celebrate Labour Day.",
-      "hook": "Think Labour Day is just about BBQs? You won't BELIEVE its fight-for-your-rights origins!",
-      "voice_style": "Mysterious",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Tax Filing Hacks",
-      "topic": "The single most overlooked tax deduction for recent graduates.",
-      "hook": "STOP! Are you missing out on this HUGE tax deduction that could save young professionals hundreds?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Internet trends and memes",
+      "topic": "The Rise of Vtuber Culture",
+      "hook": "You won't believe the latest internet sensation taking over the world!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Tax Filing Hacks",
-      "topic": "Simple steps to organize your tax documents throughout the year, not just at tax season.",
-      "hook": "Tax season stress? Not this year! Here's how to beat the scramble NOW with minimal effort.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Phishing Scam Alerts",
-      "topic": "How to identify a sophisticated 'fake invoice' email phishing scam.",
-      "hook": "Think you're safe from phishing? This invoice scam looks SO real, it's fooled experts!",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
+      "category": "British Royal Family gossip",
+      "topic": "The Secret Life of Prince Harry",
+      "hook": "What's really going on behind the palace doors with Prince Harry?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Phishing Scam Alerts",
-      "topic": "The new 'urgent password reset' text message scam and what to do if you get one.",
-      "hook": "Got an urgent text to reset your password? DO NOT click that link! It's a new scam.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Lizzo music and dance challenges",
+      "topic": "Lizzo's 'Good as Hell' Dance Challenge",
+      "hook": "Can you keep up with Lizzo's epic dance moves?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Latest iPhone Rumors",
-      "topic": "The wildest new camera features rumored for the next iPhone generation.",
-      "hook": "Is your current iPhone camera about to become OBSOLETE? The next model's camera rumors are wild!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Space and astronomy explainers",
+      "topic": "The Science Behind Black Holes",
+      "hook": "What happens when you enter a black hole?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Latest iPhone Rumors",
-      "topic": "Will the next iPhone finally ditch the Lightning port for USB-C across all models?",
-      "hook": "The iPhone charging port: Is THIS the year we finally say goodbye to Lightning for good?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Animated sci-fi parodies",
+      "topic": "Rick and Morty in Space Jam",
+      "hook": "What if Rick and Morty joined the Looney Tunes in Space Jam?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "USC Campus Life",
-      "topic": "Must-know shortcuts and secret study spots only true USC Trojans know.",
-      "hook": "New to USC? Here are the campus hacks nobody tells you on orientation day!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "French politics and culture",
+      "topic": "The History of French Fashion",
+      "hook": "Discover the secrets behind France's fashion capital",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "USC Campus Life",
-      "topic": "The best late-night food spots around USC that aren't the dining hall.",
-      "hook": "Stuck studying late at USC? Your hunger pangs are about to meet their delicious match!",
-      "voice_style": "Energetic",
-      "music_mood": "Chill",
+      "category": "Music festival vlogs featuring Lizzo",
+      "topic": "Lizzo's Coachella Performance",
+      "hook": "Relive the energy of Lizzo's iconic Coachella performance!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Rick and Morty fan theories",
+      "topic": "The Meaning Behind the Rick and Morty Portal Gun",
+      "hook": "What if the portal gun is more than just a tool for adventure?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Lucky Lottery Winners",
-      "topic": "The craziest things lottery winners bought (and regretted) after hitting it big.",
-      "hook": "Millions in your bank account: Dream come true or a financial nightmare? You won't believe these stories!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Lucky Lottery Winners",
-      "topic": "Top 3 smart financial moves *every* lottery winner should make immediately.",
-      "hook": "Just won the lottery? Congrats! Now, DON'T mess it up \u2013 do THIS first to secure your future.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Olivia Rodrigo Fan Moments",
-      "topic": "Decoding the hidden meanings and easter eggs in Olivia Rodrigo's new single lyrics.",
-      "hook": "Olivia Rodrigo just dropped a new track, and you missed these INSANE hidden messages! Let's break it down.",
-      "voice_style": "Energetic",
-      "music_mood": "Dramatic",
+      "category": "Upcoming meteor shower viewing guides",
+      "topic": "The Best Spots to Watch the Geminid Meteor Shower",
+      "hook": "Find out where to witness the most spectacular meteor shower of the year!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Olivia Rodrigo Fan Moments",
-      "topic": "The most emotional and viral fan reactions from Olivia Rodrigo's latest concert tour stops.",
-      "hook": "Get ready for all the feels! These Olivia Rodrigo concert moments will give you chills and maybe a tear.",
-      "voice_style": "Dramatic",
-      "music_mood": "Inspirational",
+      "category": "Emmanuel Macron news updates",
+      "topic": "Macron's Economic Reforms",
+      "hook": "Will Macron's new economic plan save France from financial crisis?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Barcelona Jersey Fashion",
-      "topic": "Styling the new Barcelona home jersey for trendy streetwear looks beyond game day.",
-      "hook": "Your Barcelona jersey isn't just for game day anymore. Level up your street style with these tips!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Barcelona Jersey Fashion",
-      "topic": "The rarest vintage Barcelona jerseys and their surprising resale value today.",
-      "hook": "Got an old Barcelona jersey collecting dust in your closet? It could be worth a FORTUNE!",
-      "voice_style": "Mysterious",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Short-Form Crypto Trading",
-      "topic": "Quick tips for setting effective stop-loss orders on volatile crypto assets.",
-      "hook": "Trading crypto without a stop-loss is like driving without brakes! Here's how to protect your portfolio.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Internet trends and memes",
+      "topic": "The Evolution of TikTok Challenges",
+      "hook": "From Renegade to Toosie Slide, what's next for TikTok?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Short-Form Crypto Trading",
-      "topic": "Understanding the 'Fear and Greed Index' for rapid crypto market sentiment checks.",
-      "hook": "Is the crypto market in panic or pure euphoria? This simple index tells you instantly what's happening!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "British Royal Family gossip",
+      "topic": "The Royal Family's Secret Traditions",
+      "hook": "You won't believe the secret traditions the royal family keeps hidden!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Lizzo music and dance challenges",
+      "topic": "Lizzo's 'Juice' Dance Challenge",
+      "hook": "Can you squeeze the best moves out of Lizzo's 'Juice'?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Space and astronomy explainers",
+      "topic": "The Mystery of Fast Radio Bursts",
+      "hook": "What are the mysterious signals coming from space trying to tell us?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Animated sci-fi parodies",
+      "topic": "Star Wars in the Style of Rick and Morty",
+      "hook": "What if Star Wars met the dark humor of Rick and Morty?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "French politics and culture",
+      "topic": "The Significance of Bastille Day",
+      "hook": "Discover the rich history behind France's most iconic celebration!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Music festival vlogs featuring Lizzo",
+      "topic": "Lizzo's Lollapalooza Performance",
+      "hook": "Relive the high-energy performance of Lizzo at Lollapalooza!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     }
   ],
