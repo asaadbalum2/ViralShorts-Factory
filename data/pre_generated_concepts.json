@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-05-02T07:11:41.858497",
-  "valid_until": "2026-05-02T23:59:41.858503",
+  "generated_at": "2026-05-03T07:29:50.477827",
+  "valid_until": "2026-05-03T23:59:50.477837",
   "categories": [
-    "Rick and Morty fan theories",
-    "Upcoming meteor shower viewing guides",
-    "Emmanuel Macron news updates",
-    "Internet trends and memes",
-    "British Royal Family gossip",
-    "Lizzo music and dance challenges",
-    "Space and astronomy explainers",
-    "Animated sci-fi parodies",
-    "French politics and culture",
-    "Music festival vlogs featuring Lizzo",
-    "Royal wedding and baby predictions",
-    "Sci-fi comedy sketches inspired by Rick and Morty",
-    "Internet safety and cybersecurity tips",
-    "Shower meteor time-lapses and photography",
-    "French and British cultural comparisons"
+    "Space Exploration Highlights",
+    "Wedding Proposal Ideas",
+    "Wildlife Conservation",
+    "Fast Food Reviews",
+    "Soccer Match Previews",
+    "Launch Event Coverage",
+    "Ring Design Inspiration",
+    "Docu-Series Recommendations",
+    "Restaurant Closures",
+    "True Crime Stories",
+    "Science and Tech Updates",
+    "Sports Rivalries",
+    "Nature Documentaries",
+    "Space Technology Innovations",
+    "Sports Live Stream Guides"
   ],
   "concepts": [
     {
-      "category": "Rick and Morty fan theories",
-      "topic": "The Council of Ricks' Hidden Agenda",
-      "hook": "What if I told you the Council of Ricks is not what it seems?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Upcoming meteor shower viewing guides",
-      "topic": "How to Witness the Perseid Meteor Shower",
-      "hook": "Get ready for the most epic light show in the sky this year!",
+      "category": "Space Exploration Highlights",
+      "topic": "The recent discovery of phosphine on Venus and its implications for life.",
+      "hook": "Did scientists just find a shocking sign of life... on VENUS?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Emmanuel Macron news updates",
-      "topic": "Macron's Climate Change Initiatives",
-      "hook": "Can Macron's new climate plan save the world from disaster?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Internet trends and memes",
-      "topic": "The Rise of Vtuber Culture",
-      "hook": "You won't believe the latest internet sensation taking over the world!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "British Royal Family gossip",
-      "topic": "The Secret Life of Prince Harry",
-      "hook": "What's really going on behind the palace doors with Prince Harry?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Lizzo music and dance challenges",
-      "topic": "Lizzo's 'Good as Hell' Dance Challenge",
-      "hook": "Can you keep up with Lizzo's epic dance moves?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Space and astronomy explainers",
-      "topic": "The Science Behind Black Holes",
-      "hook": "What happens when you enter a black hole?",
-      "voice_style": "authoritative",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Animated sci-fi parodies",
-      "topic": "Rick and Morty in Space Jam",
-      "hook": "What if Rick and Morty joined the Looney Tunes in Space Jam?",
-      "voice_style": "friendly",
+      "category": "Space Exploration Highlights",
+      "topic": "The Webb Telescope's latest, most detailed image of a distant galaxy cluster and its significance.",
+      "hook": "Prepare to have your mind blown: The Webb Telescope just showed us the universe... like NEVER before.",
+      "voice_style": "inspirational",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 48
     },
     {
-      "category": "French politics and culture",
-      "topic": "The History of French Fashion",
-      "hook": "Discover the secrets behind France's fashion capital",
+      "category": "Wedding Proposal Ideas",
+      "topic": "An epic 'scavenger hunt adventure' proposal, ending at a deeply meaningful location.",
+      "hook": "Tired of boring proposals? Here's how to turn 'will you marry me?' into an epic quest!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Wedding Proposal Ideas",
+      "topic": "Five creative 'at-home' proposal ideas perfect for introverted couples.",
+      "hook": "Think at-home proposals are basic? Think again! These 5 ideas are surprisingly romantic and personal.",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 47
     },
     {
-      "category": "Music festival vlogs featuring Lizzo",
-      "topic": "Lizzo's Coachella Performance",
-      "hook": "Relive the energy of Lizzo's iconic Coachella performance!",
+      "category": "Wildlife Conservation",
+      "topic": "The incredible comeback story of the California Condor, saved from the brink of extinction.",
+      "hook": "From the brink of extinction to soaring high: How this majestic bird made an impossible comeback!",
+      "voice_style": "inspirational",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Wildlife Conservation",
+      "topic": "Innovative drone technology being used to track and protect rhinos from poachers in Africa.",
+      "hook": "Forget traditional patrols! Drones are now the rhinos' silent guardians against illegal poaching. Find out how!",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Fast Food Reviews",
+      "topic": "Review of McDonald's new limited-time 'Spicy McChicken Deluxe' vs. the classic.",
+      "hook": "McDonald's new Spicy McChicken Deluxe just dropped! Is it a flavor bomb or a total bust?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Fast Food Reviews",
+      "topic": "Taste test and comparison: Taco Bell's Nacho Fries vs. Del Taco's Crinkle Cut Fries.",
+      "hook": "Nacho Fries vs. Crinkle Cuts: We're settling the ultimate fast-food fry battle once and for all!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Soccer Match Previews",
+      "topic": "Tactical breakdown of the upcoming 'El Cl\u00e1sico' match: Real Madrid vs. Barcelona.",
+      "hook": "El Cl\u00e1sico is HERE! Get ready for the biggest rivalry in football \u2013 here's what to watch for.",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Rick and Morty fan theories",
-      "topic": "The Meaning Behind the Rick and Morty Portal Gun",
-      "hook": "What if the portal gun is more than just a tool for adventure?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Upcoming meteor shower viewing guides",
-      "topic": "The Best Spots to Watch the Geminid Meteor Shower",
-      "hook": "Find out where to witness the most spectacular meteor shower of the year!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Emmanuel Macron news updates",
-      "topic": "Macron's Economic Reforms",
-      "hook": "Will Macron's new economic plan save France from financial crisis?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Internet trends and memes",
-      "topic": "The Evolution of TikTok Challenges",
-      "hook": "From Renegade to Toosie Slide, what's next for TikTok?",
+      "category": "Soccer Match Previews",
+      "topic": "Player spotlight: Analyzing Erling Haaland's key role in Manchester City's Champions League chances.",
+      "hook": "Is Erling Haaland the missing piece for Man City's Champions League dream? Let's dive into his impact.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Launch Event Coverage",
+      "topic": "First impressions and quick review of the newly launched iPhone 16 Pro.",
+      "hook": "The iPhone 16 Pro just dropped! Is it worth the hype, or just another incremental update?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Launch Event Coverage",
+      "topic": "Coverage of the latest 'Adidas x Ivy Park' fashion collection launch.",
+      "hook": "Beyonc\u00e9's Ivy Park x Adidas just unveiled its newest collection! Here's your first look at what's hot (and what's not).",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Ring Design Inspiration",
+      "topic": "Exploring ethical lab-grown diamonds and their unique design possibilities.",
+      "hook": "Sparkle guilt-free! Discover stunning, sustainable ring designs featuring lab-grown diamonds.",
+      "voice_style": "inspirational",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Ring Design Inspiration",
+      "topic": "The resurgence of vintage Art Deco and Victorian era engagement ring styles.",
+      "hook": "Move over, modern! These timeless Art Deco and Victorian rings are making a HUGE comeback.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Docu-Series Recommendations",
+      "topic": "Five essential true-crime docu-series you need to watch RIGHT NOW.",
+      "hook": "Obsessed with true crime? These 5 docu-series will keep you on the edge of your seat (and questioning everything).",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "British Royal Family gossip",
-      "topic": "The Royal Family's Secret Traditions",
-      "hook": "You won't believe the secret traditions the royal family keeps hidden!",
+      "category": "Docu-Series Recommendations",
+      "topic": "Hidden gem nature docu-series that aren't 'Planet Earth'.",
+      "hook": "Think you've seen all the amazing nature docs? Think again! These hidden gems are mind-blowing.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Restaurant Closures",
+      "topic": "The heartbreaking story behind the sudden closure of 'Mama Rosa's Pizzeria' after 50 years.",
+      "hook": "After 50 years, the beloved Mama Rosa's Pizzeria is closing its doors forever. Here's why.",
       "voice_style": "dramatic",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 49
     },
     {
-      "category": "Lizzo music and dance challenges",
-      "topic": "Lizzo's 'Juice' Dance Challenge",
-      "hook": "Can you squeeze the best moves out of Lizzo's 'Juice'?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Space and astronomy explainers",
-      "topic": "The Mystery of Fast Radio Bursts",
-      "hook": "What are the mysterious signals coming from space trying to tell us?",
+      "category": "Restaurant Closures",
+      "topic": "Why major chain 'Cheesy Delights' is suddenly shutting down 50+ locations nationwide.",
+      "hook": "Did your favorite Cheesy Delights just vanish? We're breaking down the shocking reasons behind their nationwide closures.",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Animated sci-fi parodies",
-      "topic": "Star Wars in the Style of Rick and Morty",
-      "hook": "What if Star Wars met the dark humor of Rick and Morty?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
+      "category": "True Crime Stories",
+      "topic": "The perplexing case of the 'D.B. Cooper' skyjacking \u2013 still unsolved after decades.",
+      "hook": "He jumped out of a plane with $200,000 and vanished. The mystery of D.B. Cooper continues to haunt investigators.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 47
     },
     {
-      "category": "French politics and culture",
-      "topic": "The Significance of Bastille Day",
-      "hook": "Discover the rich history behind France's most iconic celebration!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Music festival vlogs featuring Lizzo",
-      "topic": "Lizzo's Lollapalooza Performance",
-      "hook": "Relive the high-energy performance of Lizzo at Lollapalooza!",
-      "voice_style": "energetic",
+      "category": "True Crime Stories",
+      "topic": "The lesser-known details surrounding the JonBen\u00e9t Ramsey case and alternative theories.",
+      "hook": "You think you know the JonBen\u00e9t Ramsey case? Think again. These shocking details might change everything.",
+      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
