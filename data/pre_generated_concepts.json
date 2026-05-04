@@ -1,239 +1,242 @@
 {
-  "generated_at": "2026-05-03T07:29:50.477827",
-  "valid_until": "2026-05-03T23:59:50.477837",
+  "generated_at": "2026-05-04T08:05:40.246646",
+  "valid_until": "2026-05-04T23:59:40.246655",
   "categories": [
-    "Space Exploration Highlights",
-    "Wedding Proposal Ideas",
-    "Wildlife Conservation",
-    "Fast Food Reviews",
-    "Soccer Match Previews",
-    "Launch Event Coverage",
-    "Ring Design Inspiration",
-    "Docu-Series Recommendations",
-    "Restaurant Closures",
-    "True Crime Stories",
-    "Science and Tech Updates",
-    "Sports Rivalries",
-    "Nature Documentaries",
-    "Space Technology Innovations",
-    "Sports Live Stream Guides"
+    "Cryptocurrency Explainers",
+    "HBO Max Show Reviews",
+    "Disney+ Must-Watch Lists",
+    "Golf Highlights featuring Scottie Scheffler",
+    "Sprint Fitness Challenges",
+    "Champions League Match Previews",
+    "Star Wars Day Celebrations",
+    "Lottery Result Reactions",
+    "Cadillac Car Reviews",
+    "Cam Young Golf Tips",
+    "Best Binge-Worthy Shows",
+    "Streaming Service Comparisons",
+    "Sports News Updates",
+    "Trading Tips and Tricks",
+    "May the 4th Star Wars Memes"
   ],
   "concepts": [
     {
-      "category": "Space Exploration Highlights",
-      "topic": "The recent discovery of phosphine on Venus and its implications for life.",
-      "hook": "Did scientists just find a shocking sign of life... on VENUS?",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Space Exploration Highlights",
-      "topic": "The Webb Telescope's latest, most detailed image of a distant galaxy cluster and its significance.",
-      "hook": "Prepare to have your mind blown: The Webb Telescope just showed us the universe... like NEVER before.",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Wedding Proposal Ideas",
-      "topic": "An epic 'scavenger hunt adventure' proposal, ending at a deeply meaningful location.",
-      "hook": "Tired of boring proposals? Here's how to turn 'will you marry me?' into an epic quest!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Wedding Proposal Ideas",
-      "topic": "Five creative 'at-home' proposal ideas perfect for introverted couples.",
-      "hook": "Think at-home proposals are basic? Think again! These 5 ideas are surprisingly romantic and personal.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Wildlife Conservation",
-      "topic": "The incredible comeback story of the California Condor, saved from the brink of extinction.",
-      "hook": "From the brink of extinction to soaring high: How this majestic bird made an impossible comeback!",
-      "voice_style": "inspirational",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Wildlife Conservation",
-      "topic": "Innovative drone technology being used to track and protect rhinos from poachers in Africa.",
-      "hook": "Forget traditional patrols! Drones are now the rhinos' silent guardians against illegal poaching. Find out how!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Fast Food Reviews",
-      "topic": "Review of McDonald's new limited-time 'Spicy McChicken Deluxe' vs. the classic.",
-      "hook": "McDonald's new Spicy McChicken Deluxe just dropped! Is it a flavor bomb or a total bust?",
+      "category": "Cryptocurrency Explainers",
+      "topic": "How to Buy Dogecoin on Binance",
+      "hook": "You won't believe how easy it is to get started with Dogecoin!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Fast Food Reviews",
-      "topic": "Taste test and comparison: Taco Bell's Nacho Fries vs. Del Taco's Crinkle Cut Fries.",
-      "hook": "Nacho Fries vs. Crinkle Cuts: We're settling the ultimate fast-food fry battle once and for all!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Soccer Match Previews",
-      "topic": "Tactical breakdown of the upcoming 'El Cl\u00e1sico' match: Real Madrid vs. Barcelona.",
-      "hook": "El Cl\u00e1sico is HERE! Get ready for the biggest rivalry in football \u2013 here's what to watch for.",
-      "voice_style": "authoritative",
+      "category": "HBO Max Show Reviews",
+      "topic": "Euphoria Season 2 Episode 1 Breakdown",
+      "hook": "The wait is over, but is Euphoria still worth the hype?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Soccer Match Previews",
-      "topic": "Player spotlight: Analyzing Erling Haaland's key role in Manchester City's Champions League chances.",
-      "hook": "Is Erling Haaland the missing piece for Man City's Champions League dream? Let's dive into his impact.",
-      "voice_style": "energetic",
+      "category": "Disney+ Must-Watch Lists",
+      "topic": "Top 5 Underrated Disney+ Original Movies",
+      "hook": "You're missing out on these hidden gems!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Golf Highlights featuring Scottie Scheffler",
+      "topic": "Scottie Scheffler's Most Impressive Shots of 2022",
+      "hook": "Get ready to be amazed by Scottie Scheffler's golfing skills!",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 41
     },
     {
-      "category": "Launch Event Coverage",
-      "topic": "First impressions and quick review of the newly launched iPhone 16 Pro.",
-      "hook": "The iPhone 16 Pro just dropped! Is it worth the hype, or just another incremental update?",
+      "category": "Sprint Fitness Challenges",
+      "topic": "20-Minute HIIT Workout for Beginners",
+      "hook": "Can you handle the ultimate 20-minute fitness challenge?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 47
-    },
-    {
-      "category": "Launch Event Coverage",
-      "topic": "Coverage of the latest 'Adidas x Ivy Park' fashion collection launch.",
-      "hook": "Beyonc\u00e9's Ivy Park x Adidas just unveiled its newest collection! Here's your first look at what's hot (and what's not).",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 44
     },
     {
-      "category": "Ring Design Inspiration",
-      "topic": "Exploring ethical lab-grown diamonds and their unique design possibilities.",
-      "hook": "Sparkle guilt-free! Discover stunning, sustainable ring designs featuring lab-grown diamonds.",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Ring Design Inspiration",
-      "topic": "The resurgence of vintage Art Deco and Victorian era engagement ring styles.",
-      "hook": "Move over, modern! These timeless Art Deco and Victorian rings are making a HUGE comeback.",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
+      "category": "Champions League Match Previews",
+      "topic": "Liverpool vs. Real Madrid: A Clash of the Titans",
+      "hook": "The stage is set for an epic showdown, but who will come out on top?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 46
     },
     {
-      "category": "Docu-Series Recommendations",
-      "topic": "Five essential true-crime docu-series you need to watch RIGHT NOW.",
-      "hook": "Obsessed with true crime? These 5 docu-series will keep you on the edge of your seat (and questioning everything).",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Star Wars Day Celebrations",
+      "topic": " DIY Star Wars Costume Ideas for May the 4th",
+      "hook": "May the 4th be with you, but are you ready to join the dark side?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Docu-Series Recommendations",
-      "topic": "Hidden gem nature docu-series that aren't 'Planet Earth'.",
-      "hook": "Think you've seen all the amazing nature docs? Think again! These hidden gems are mind-blowing.",
-      "voice_style": "friendly",
+      "category": "Lottery Result Reactions",
+      "topic": "Largest Jackpot Winners in History",
+      "hook": "Imagine winning the lottery, but what would you do with the cash?",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
       "target_duration": 43
     },
     {
-      "category": "Restaurant Closures",
-      "topic": "The heartbreaking story behind the sudden closure of 'Mama Rosa's Pizzeria' after 50 years.",
-      "hook": "After 50 years, the beloved Mama Rosa's Pizzeria is closing its doors forever. Here's why.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Restaurant Closures",
-      "topic": "Why major chain 'Cheesy Delights' is suddenly shutting down 50+ locations nationwide.",
-      "hook": "Did your favorite Cheesy Delights just vanish? We're breaking down the shocking reasons behind their nationwide closures.",
+      "category": "Cadillac Car Reviews",
+      "topic": "2022 Cadillac Escalade: Is it Worth the Price Tag?",
+      "hook": "Is the 2022 Cadillac Escalade the ultimate luxury SUV?",
       "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "True Crime Stories",
-      "topic": "The perplexing case of the 'D.B. Cooper' skyjacking \u2013 still unsolved after decades.",
-      "hook": "He jumped out of a plane with $200,000 and vanished. The mystery of D.B. Cooper continues to haunt investigators.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 47
+      "category": "Cam Young Golf Tips",
+      "topic": "Mastering the Art of Chipping with Cam Young",
+      "hook": "Want to improve your short game? Cam Young has got you covered!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 41
     },
     {
-      "category": "True Crime Stories",
-      "topic": "The lesser-known details surrounding the JonBen\u00e9t Ramsey case and alternative theories.",
-      "hook": "You think you know the JonBen\u00e9t Ramsey case? Think again. These shocking details might change everything.",
+      "category": "Cryptocurrency Explainers",
+      "topic": "What is a Crypto Wallet and How to Use it",
+      "hook": "Don't let crypto confusion hold you back, learn about wallets now!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "HBO Max Show Reviews",
+      "topic": "The Sex Lives of College Girls: A Honest Review",
+      "hook": "Is The Sex Lives of College Girls the new Girls?",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Disney+ Must-Watch Lists",
+      "topic": "Top 10 Disney+ Animated Movies for Kids",
+      "hook": "Looking for a movie night with the kids? We've got you covered!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Golf Highlights featuring Scottie Scheffler",
+      "topic": "Scottie Scheffler's Rise to Fame: A Golfing Journey",
+      "hook": "From amateur to pro, witness Scottie Scheffler's incredible golfing journey!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 44
+    },
+    {
+      "category": "Sprint Fitness Challenges",
+      "topic": "7-Day Burpee Challenge for Beginners",
+      "hook": "Can you handle the ultimate burpee challenge?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Champions League Match Previews",
+      "topic": "Manchester City vs. Bayern Munich: A Battle of Tactics",
+      "hook": "The stage is set for a tactical showdown, but who will outsmart the other?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Star Wars Day Celebrations",
+      "topic": "Star Wars Trivia: Test Your Knowledge",
+      "hook": "May the 4th be with you, but how well do you know the Star Wars universe?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Lottery Result Reactions",
+      "topic": "Unbelievable Lottery Winner Stories",
+      "hook": "What would you do if you won the lottery? These winners will inspire you!",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
       "target_duration": 42
+    },
+    {
+      "category": "Cadillac Car Reviews",
+      "topic": "2022 Cadillac CT5: A Luxurious Ride",
+      "hook": "Is the 2022 Cadillac CT5 the ultimate luxury sedan?",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Cam Young Golf Tips",
+      "topic": "How to Improve Your Driving Distance with Cam Young",
+      "hook": "Want to hit the ball farther? Cam Young shares his secrets!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Cryptocurrency Explainers",
+      "topic": "Understanding Blockchain Technology",
+      "hook": "The future is here, but do you understand the blockchain?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
@@ -243,18 +246,23 @@
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
