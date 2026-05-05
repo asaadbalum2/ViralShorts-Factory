@@ -1,188 +1,180 @@
 {
-  "generated_at": "2026-05-04T08:05:40.246646",
-  "valid_until": "2026-05-04T23:59:40.246655",
+  "generated_at": "2026-05-05T07:32:26.995851",
+  "valid_until": "2026-05-05T23:59:26.995861",
   "categories": [
-    "Cryptocurrency Explainers",
-    "HBO Max Show Reviews",
-    "Disney+ Must-Watch Lists",
-    "Golf Highlights featuring Scottie Scheffler",
-    "Sprint Fitness Challenges",
-    "Champions League Match Previews",
-    "Star Wars Day Celebrations",
-    "Lottery Result Reactions",
-    "Cadillac Car Reviews",
-    "Cam Young Golf Tips",
-    "Best Binge-Worthy Shows",
-    "Streaming Service Comparisons",
-    "Sports News Updates",
-    "Trading Tips and Tricks",
-    "May the 4th Star Wars Memes"
+    "Summer weather updates",
+    "Free things to do in San Diego",
+    "Seattle outdoor activities",
+    "Music presale alerts",
+    "Olivia Rodrigo fan content",
+    "Chris Brown music challenges",
+    "Brady Ebert sports analysis",
+    "Nathan Lane comedy sketches",
+    "OK Boomer meme compilations",
+    "San Diego travel vlogs",
+    "Seattle food reviews",
+    "Free music streaming playlists",
+    "Current event explainers",
+    "Social media trend reactions",
+    "Spring fashion hauls"
   ],
   "concepts": [
     {
-      "category": "Cryptocurrency Explainers",
-      "topic": "How to Buy Dogecoin on Binance",
-      "hook": "You won't believe how easy it is to get started with Dogecoin!",
+      "category": "Summer weather updates",
+      "topic": "Southern California's August Heatwave survival guide",
+      "hook": "Thinking 'June Gloom' is over? Think again, SoCal! But this August heatwave? I've got your secret weapon to stay cool.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer weather updates",
+      "topic": "Unexpected desert monsoon storms in Arizona/Nevada",
+      "hook": "Did you just see that cloud? Hold onto your pool floats, because the desert is about to get WET with this monsoon surprise!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Free things to do in San Diego",
+      "topic": "Exploring Balboa Park's FREE Botanical Building & Lily Pond",
+      "hook": "Don't break the bank in SD! I just found paradise in Balboa Park that costs exactly zero dollars, and it's stunning.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Free things to do in San Diego",
+      "topic": "Self-guided walking tour of Old Town San Diego State Historic Park",
+      "hook": "Want to step back in time without opening your wallet? San Diego's oldest neighborhood is calling, and it's totally free to explore!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Seattle outdoor activities",
+      "topic": "Hiking the coastal trails of Discovery Park in Seattle",
+      "hook": "Think Seattle is just rain and coffee? I just hiked to *this* lighthouse, and it's right in the city!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Seattle outdoor activities",
+      "topic": "Kayaking on Lake Union with skyline and houseboat views",
+      "hook": "Forget the Space Needle line! I found the BEST way to see Seattle's skyline, and you can rent a paddle for it.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Music presale alerts",
+      "topic": "Hacks for securing Taylor Swift's Eras Tour international dates",
+      "hook": "Did you miss the last Eras Tour drop? Stop scrolling! I just cracked the code for the next wave of international tickets.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Music presale alerts",
+      "topic": "Navigating Verified Fan queues and credit card presale tips for high-demand concerts",
+      "hook": "Your concert dreams are about to become reality... IF you know these presale hacks. Trust me, you need this.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "HBO Max Show Reviews",
-      "topic": "Euphoria Season 2 Episode 1 Breakdown",
-      "hook": "The wait is over, but is Euphoria still worth the hype?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Olivia Rodrigo fan content",
+      "topic": "Unpacking the lyrical Easter eggs in Olivia Rodrigo's 'Vampire' and 'bad idea right?'",
+      "hook": "You *thought* you knew Olivia's lyrics? I just found something in 'Vampire' that changes EVERYTHING.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Olivia Rodrigo fan content",
+      "topic": "DIY 'GUTS Tour' outfit inspiration inspired by her music videos",
+      "hook": "Going to the GUTS Tour? Don't even THINK about buying an outfit until you see these DIY ideas inspired by Olivia's iconic looks.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Disney+ Must-Watch Lists",
-      "topic": "Top 5 Underrated Disney+ Original Movies",
-      "hook": "You're missing out on these hidden gems!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Golf Highlights featuring Scottie Scheffler",
-      "topic": "Scottie Scheffler's Most Impressive Shots of 2022",
-      "hook": "Get ready to be amazed by Scottie Scheffler's golfing skills!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Sprint Fitness Challenges",
-      "topic": "20-Minute HIIT Workout for Beginners",
-      "hook": "Can you handle the ultimate 20-minute fitness challenge?",
+      "category": "Chris Brown music challenges",
+      "topic": "Breaking down the dance moves for Chris Brown's 'Under the Influence' challenge",
+      "hook": "Think you can hit these moves? Let's see if you can keep up with the 'Under the Influence' challenge!",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 44
+      "target_duration": 40
     },
     {
-      "category": "Champions League Match Previews",
-      "topic": "Liverpool vs. Real Madrid: A Clash of the Titans",
-      "hook": "The stage is set for an epic showdown, but who will come out on top?",
+      "category": "Chris Brown music challenges",
+      "topic": "A cappella vocal challenge covering Chris Brown's 'With You'",
+      "hook": "Can you match these vocal runs? This Chris Brown 'With You' challenge isn't for the faint of heart.",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Brady Ebert sports analysis",
+      "topic": "Controversial referee call analysis in last night's NBA Finals Game 7 overtime",
+      "hook": "The buzzer just sounded, but the controversy? It's just getting started. Let's rewatch that FINAL play and break it down.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Brady Ebert sports analysis",
+      "topic": "Why the Jacksonville Jaguars are poised for a surprise playoff run this NFL season",
+      "hook": "Everyone's sleeping on them, but I just found the undeniable proof that THIS NFL team is about to shock the league.",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Nathan Lane comedy sketches",
+      "topic": "Nathan Lane as an overly dramatic, Broadway-esque waiter describing daily specials",
+      "hook": "You think *your* waiter is dramatic? Darling, you haven't seen anything yet. Allow me to present tonight's specials...",
       "voice_style": "dramatic",
       "music_mood": "dramatic",
-      "target_duration": 46
-    },
-    {
-      "category": "Star Wars Day Celebrations",
-      "topic": " DIY Star Wars Costume Ideas for May the 4th",
-      "hook": "May the 4th be with you, but are you ready to join the dark side?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Lottery Result Reactions",
-      "topic": "Largest Jackpot Winners in History",
-      "hook": "Imagine winning the lottery, but what would you do with the cash?",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 43
-    },
-    {
-      "category": "Cadillac Car Reviews",
-      "topic": "2022 Cadillac Escalade: Is it Worth the Price Tag?",
-      "hook": "Is the 2022 Cadillac Escalade the ultimate luxury SUV?",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Cam Young Golf Tips",
-      "topic": "Mastering the Art of Chipping with Cam Young",
-      "hook": "Want to improve your short game? Cam Young has got you covered!",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Cryptocurrency Explainers",
-      "topic": "What is a Crypto Wallet and How to Use it",
-      "hook": "Don't let crypto confusion hold you back, learn about wallets now!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "HBO Max Show Reviews",
-      "topic": "The Sex Lives of College Girls: A Honest Review",
-      "hook": "Is The Sex Lives of College Girls the new Girls?",
+      "category": "Nathan Lane comedy sketches",
+      "topic": "Nathan Lane's character (from 'The Birdcage') giving hilarious, slightly unhinged life advice",
+      "hook": "Feeling lost? Don't fret, my dear! Uncle Albert is here to guide you through life's little... predicaments. And darling, he knows them all!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Disney+ Must-Watch Lists",
-      "topic": "Top 10 Disney+ Animated Movies for Kids",
-      "hook": "Looking for a movie night with the kids? We've got you covered!",
-      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 50
     },
     {
-      "category": "Golf Highlights featuring Scottie Scheffler",
-      "topic": "Scottie Scheffler's Rise to Fame: A Golfing Journey",
-      "hook": "From amateur to pro, witness Scottie Scheffler's incredible golfing journey!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "Sprint Fitness Challenges",
-      "topic": "7-Day Burpee Challenge for Beginners",
-      "hook": "Can you handle the ultimate burpee challenge?",
+      "category": "OK Boomer meme compilations",
+      "topic": "Compiling viral moments of Boomers misunderstanding modern tech",
+      "hook": "Did your grandma just try to print a screenshot? You're not alone. Get ready for some serious Boomer tech fails!",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Champions League Match Previews",
-      "topic": "Manchester City vs. Bayern Munich: A Battle of Tactics",
-      "hook": "The stage is set for a tactical showdown, but who will outsmart the other?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Star Wars Day Celebrations",
-      "topic": "Star Wars Trivia: Test Your Knowledge",
-      "hook": "May the 4th be with you, but how well do you know the Star Wars universe?",
+      "category": "OK Boomer meme compilations",
+      "topic": "Hilarious clashes between Gen Z slang and Boomer comprehension",
+      "hook": "My grandpa just asked if 'rizz' was a new brand of cheese. This is gonna be good. Prepare for the ultimate slang battle!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 41
+      "target_duration": 40
     },
     {
-      "category": "Lottery Result Reactions",
-      "topic": "Unbelievable Lottery Winner Stories",
-      "hook": "What would you do if you won the lottery? These winners will inspire you!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Cadillac Car Reviews",
-      "topic": "2022 Cadillac CT5: A Luxurious Ride",
-      "hook": "Is the 2022 Cadillac CT5 the ultimate luxury sedan?",
-      "voice_style": "authoritative",
+      "category": "San Diego travel vlogs",
+      "topic": "Discovering the best authentic taco truck in Chula Vista (specific location)",
+      "hook": "Forget the tourist traps! I just found San Diego's BEST kept secret for tacos, and you won't believe where this food truck is hiding.",
+      "voice_style": "energetic",
       "music_mood": "chill",
-      "target_duration": 44
+      "target_duration": 50
     },
     {
-      "category": "Cam Young Golf Tips",
-      "topic": "How to Improve Your Driving Distance with Cam Young",
-      "hook": "Want to hit the ball farther? Cam Young shares his secrets!",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Cryptocurrency Explainers",
-      "topic": "Understanding Blockchain Technology",
-      "hook": "The future is here, but do you understand the blockchain?",
+      "category": "San Diego travel vlogs",
+      "topic": "A quick guide to a day trip exploring Julian, CA for apple pie and gold rush history",
+      "hook": "Tired of the beach? Pack your bags! I'm taking you on a day trip from San Diego that tastes like apple pie and history.",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
@@ -190,79 +182,79 @@
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
