@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-05-05T07:32:26.995851",
-  "valid_until": "2026-05-05T23:59:26.995861",
+  "generated_at": "2026-05-06T07:54:36.522886",
+  "valid_until": "2026-05-06T23:59:36.522894",
   "categories": [
-    "Summer weather updates",
-    "Free things to do in San Diego",
-    "Seattle outdoor activities",
-    "Music presale alerts",
-    "Olivia Rodrigo fan content",
-    "Chris Brown music challenges",
-    "Brady Ebert sports analysis",
-    "Nathan Lane comedy sketches",
-    "OK Boomer meme compilations",
-    "San Diego travel vlogs",
-    "Seattle food reviews",
-    "Free music streaming playlists",
-    "Current event explainers",
-    "Social media trend reactions",
-    "Spring fashion hauls"
+    "Sports Highlights",
+    "Tech News",
+    "Travel Vlogs",
+    "Comedy Skits",
+    "Product Reviews",
+    "AI Technology",
+    "Seasonal Fashion",
+    "Lifestyle Hacks",
+    "Current Events",
+    "Sports Analysis",
+    "Viral Challenges",
+    "Entertainment News",
+    "Fitness Motivation",
+    "Tech Reviews",
+    "Gaming News"
   ],
   "concepts": [
     {
-      "category": "Summer weather updates",
-      "topic": "Southern California's August Heatwave survival guide",
-      "hook": "Thinking 'June Gloom' is over? Think again, SoCal! But this August heatwave? I've got your secret weapon to stay cool.",
+      "category": "Sports Highlights",
+      "topic": "NBA Record Breakers",
+      "hook": "You won't believe which basketball legend just shattered a 20-year record!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Summer weather updates",
-      "topic": "Unexpected desert monsoon storms in Arizona/Nevada",
-      "hook": "Did you just see that cloud? Hold onto your pool floats, because the desert is about to get WET with this monsoon surprise!",
+      "category": "Tech News",
+      "topic": "Foldable Phone Review",
+      "hook": "Is the future of smartphones foldable? We put the latest model to the test!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Travel Vlogs",
+      "topic": "Hidden Gems in Tokyo",
+      "hook": "Discover the secret Tokyo that only locals know about!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Comedy Skits",
+      "topic": "When Food Delivery Goes Wrong",
+      "hook": "Have you ever had a food delivery disaster? This might be worse!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Free things to do in San Diego",
-      "topic": "Exploring Balboa Park's FREE Botanical Building & Lily Pond",
-      "hook": "Don't break the bank in SD! I just found paradise in Balboa Park that costs exactly zero dollars, and it's stunning.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Free things to do in San Diego",
-      "topic": "Self-guided walking tour of Old Town San Diego State Historic Park",
-      "hook": "Want to step back in time without opening your wallet? San Diego's oldest neighborhood is calling, and it's totally free to explore!",
-      "voice_style": "energetic",
+      "category": "Product Reviews",
+      "topic": "Wireless Earbuds Review",
+      "hook": "Are these affordable earbuds the perfect AirPods alternative?",
+      "voice_style": "calm",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Seattle outdoor activities",
-      "topic": "Hiking the coastal trails of Discovery Park in Seattle",
-      "hook": "Think Seattle is just rain and coffee? I just hiked to *this* lighthouse, and it's right in the city!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Seattle outdoor activities",
-      "topic": "Kayaking on Lake Union with skyline and houseboat views",
-      "hook": "Forget the Space Needle line! I found the BEST way to see Seattle's skyline, and you can rent a paddle for it.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Music presale alerts",
-      "topic": "Hacks for securing Taylor Swift's Eras Tour international dates",
-      "hook": "Did you miss the last Eras Tour drop? Stop scrolling! I just cracked the code for the next wave of international tickets.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Music presale alerts",
-      "topic": "Navigating Verified Fan queues and credit card presale tips for high-demand concerts",
-      "hook": "Your concert dreams are about to become reality... IF you know these presale hacks. Trust me, you need this.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Olivia Rodrigo fan content",
-      "topic": "Unpacking the lyrical Easter eggs in Olivia Rodrigo's 'Vampire' and 'bad idea right?'",
-      "hook": "You *thought* you knew Olivia's lyrics? I just found something in 'Vampire' that changes EVERYTHING.",
+      "category": "AI Technology",
+      "topic": "AI Art Generation",
+      "hook": "Can AI really create better art than humans? The results are astonishing!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Olivia Rodrigo fan content",
-      "topic": "DIY 'GUTS Tour' outfit inspiration inspired by her music videos",
-      "hook": "Going to the GUTS Tour? Don't even THINK about buying an outfit until you see these DIY ideas inspired by Olivia's iconic looks.",
-      "voice_style": "energetic",
+      "category": "Seasonal Fashion",
+      "topic": "Summer Swimwear Trends",
+      "hook": "Get ready to sizzle this summer with the hottest swimwear trends!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Lifestyle Hacks",
+      "topic": "Productivity Tips for Students",
+      "hook": "Unlock your full potential with these game-changing study hacks!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Chris Brown music challenges",
-      "topic": "Breaking down the dance moves for Chris Brown's 'Under the Influence' challenge",
-      "hook": "Think you can hit these moves? Let's see if you can keep up with the 'Under the Influence' challenge!",
-      "voice_style": "energetic",
+      "category": "Current Events",
+      "topic": "Sustainable Living",
+      "hook": "The shocking truth about single-use plastics and how you can make a difference!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "Champions League Predictions",
+      "hook": "Who will be crowned the ultimate Champions League winner? Our expert analysis reveals all!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Chris Brown music challenges",
-      "topic": "A cappella vocal challenge covering Chris Brown's 'With You'",
-      "hook": "Can you match these vocal runs? This Chris Brown 'With You' challenge isn't for the faint of heart.",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Brady Ebert sports analysis",
-      "topic": "Controversial referee call analysis in last night's NBA Finals Game 7 overtime",
-      "hook": "The buzzer just sounded, but the controversy? It's just getting started. Let's rewatch that FINAL play and break it down.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Brady Ebert sports analysis",
-      "topic": "Why the Jacksonville Jaguars are poised for a surprise playoff run this NFL season",
-      "hook": "Everyone's sleeping on them, but I just found the undeniable proof that THIS NFL team is about to shock the league.",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Nathan Lane comedy sketches",
-      "topic": "Nathan Lane as an overly dramatic, Broadway-esque waiter describing daily specials",
-      "hook": "You think *your* waiter is dramatic? Darling, you haven't seen anything yet. Allow me to present tonight's specials...",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Nathan Lane comedy sketches",
-      "topic": "Nathan Lane's character (from 'The Birdcage') giving hilarious, slightly unhinged life advice",
-      "hook": "Feeling lost? Don't fret, my dear! Uncle Albert is here to guide you through life's little... predicaments. And darling, he knows them all!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "OK Boomer meme compilations",
-      "topic": "Compiling viral moments of Boomers misunderstanding modern tech",
-      "hook": "Did your grandma just try to print a screenshot? You're not alone. Get ready for some serious Boomer tech fails!",
+      "category": "Tech News",
+      "topic": "Gaming Console Showdown",
+      "hook": "PS5 vs Xbox Series X: Which console reigns supreme?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "OK Boomer meme compilations",
-      "topic": "Hilarious clashes between Gen Z slang and Boomer comprehension",
-      "hook": "My grandpa just asked if 'rizz' was a new brand of cheese. This is gonna be good. Prepare for the ultimate slang battle!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "San Diego travel vlogs",
-      "topic": "Discovering the best authentic taco truck in Chula Vista (specific location)",
-      "hook": "Forget the tourist traps! I just found San Diego's BEST kept secret for tacos, and you won't believe where this food truck is hiding.",
-      "voice_style": "energetic",
+      "category": "Travel Vlogs",
+      "topic": "Exploring Ha Long Bay",
+      "hook": "Witness the breathtaking beauty of Vietnam's stunning Ha Long Bay!",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "San Diego travel vlogs",
-      "topic": "A quick guide to a day trip exploring Julian, CA for apple pie and gold rush history",
-      "hook": "Tired of the beach? Pack your bags! I'm taking you on a day trip from San Diego that tastes like apple pie and history.",
+      "category": "Comedy Skits",
+      "topic": "Funny Job Interview",
+      "hook": "What happens when a job interview goes hilariously wrong?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Product Reviews",
+      "topic": "Smartwatch Review",
+      "hook": "Is this budget smartwatch the perfect fitness tracker for beginners?",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "AI Technology",
+      "topic": "AI-Powered Self-Driving Cars",
+      "hook": "The future of transportation is here: AI-powered self-driving cars!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Seasonal Fashion",
+      "topic": "Winter Coat Trends",
+      "hook": "Stay warm and stylish with the hottest winter coat trends!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Lifestyle Hacks",
+      "topic": "Morning Routine Tips",
+      "hook": "Transform your mornings with these simple yet powerful habits!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events",
+      "topic": "Climate Change Awareness",
+      "hook": "The alarming facts about climate change and how you can be part of the solution!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Analysis",
+      "topic": "NFL Season Predictions",
+      "hook": "Who will be the ultimate NFL champion? Our expert analysis has the answers!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "Crazy Football Goals",
+      "hook": "You won't believe these insane football goals that will leave you speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech News",
+      "topic": "5G Network Explained",
+      "hook": "What does the future of 5G mean for you? We break it down!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
