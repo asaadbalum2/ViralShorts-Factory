@@ -1,97 +1,266 @@
 {
-  "generated_at": "2026-05-07T08:03:09.815460",
-  "valid_until": "2026-05-07T23:59:09.815467",
+  "generated_at": "2026-05-08T07:06:15.988670",
+  "valid_until": "2026-05-08T23:59:15.988678",
   "categories": [
-    "Sports Highlights",
-    "Celebrity News",
+    "Entertainment News",
+    "Anime Recap",
     "Gaming News",
-    "Weather Updates",
-    "Tornado Footage",
-    "Viral Challenges",
-    "Comedy Sketches",
-    "Sports Analysis",
-    " settlement and lawsuit explanations",
-    "Storm Chasing",
-    "Dance Challenges",
-    "Esports Updates",
-    "Trending Music",
-    "Basketball Reactions",
-    "Disaster Relief Efforts"
+    "Foodie Trends",
+    "Music Drama",
+    "Tree Care and Maintenance",
+    "Health Insurance Explainers",
+    "Restaurant Reviews",
+    "Action Movie Trailers",
+    "Jewelry and Fashion",
+    "California Living",
+    "Retro Game Remakes",
+    "Musician Feuds",
+    "Spring Gardening Tips",
+    "Movie vs Game Comparisons"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Entertainment News",
+      "topic": "BTS's Record-Breaking Music Video",
+      "hook": "You won't believe which BTS music video just broke the internet!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Anime Recap",
+      "topic": "Naruto's Most Epic Fight Scenes",
+      "hook": "Get ready for a blast from the past as we count down Naruto's most epic battles!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming News",
+      "topic": "The Latest PlayStation 5 Updates",
+      "hook": "What's new with the PS5? We've got the inside scoop on the latest updates and releases!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Foodie Trends",
+      "topic": "The Rise of Plant-Based Desserts",
+      "hook": "Sweet treats without the guilt? We're diving into the world of plant-based desserts!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Drama",
+      "topic": "The Feud Between Taylor Swift and Kanye West",
+      "hook": "It's the celebrity feud that never ends - what's really going on between Taylor and Kanye?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Tree Care and Maintenance",
+      "topic": "How to Prune Your Trees for Maximum Growth",
+      "hook": "Want to take your tree game to the next level? We're sharing the secrets to perfect pruning!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Health Insurance Explainers",
+      "topic": "Understanding Your Out-of-Pocket Costs",
+      "hook": "Don't let medical bills surprise you - here's what you need to know about out-of-pocket costs!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Restaurant Reviews",
+      "topic": "The Best Sushi Spots in Los Angeles",
+      "hook": "Sushi lovers, rejoice! We're counting down the top sushi spots in LA that you need to try!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Action Movie Trailers",
+      "topic": "The Latest Marvel Movie Teasers",
+      "hook": "The wait is almost over - get ready for the most epic Marvel movie trailers yet!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Jewelry and Fashion",
+      "topic": "The Resurgence of 90s Grunge Fashion",
+      "hook": "Grunge is back, baby! We're talking flannel shirts, high-waisted jeans, and all the nostalgic fashion trends!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Oscars' Most Shocking Moments",
+      "hook": "You won't believe what happened on the red carpet - we're counting down the most shocking Oscar moments!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Anime Recap",
+      "topic": "The Best Anime Shows of 2022",
+      "hook": "From Attack on Titan to Demon Slayer, we're counting down the best anime shows of the year!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming News",
+      "topic": "The Newest Fortnite Skins and Emotes",
+      "hook": "Get ready to level up your Fortnite game with the newest skins and emotes - we've got the scoop!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Foodie Trends",
+      "topic": "The Art of Making Sourdough Bread",
+      "hook": "Rise to the occasion and learn the art of making sourdough bread from scratch!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Music Drama",
+      "topic": "The Real Story Behind Beyonce's Lemonade",
+      "hook": "What's the tea on Beyonce's iconic album Lemonade? We're diving into the drama and inspiration behind it!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Tree Care and Maintenance",
+      "topic": "How to Identify and Treat Common Tree Diseases",
+      "hook": "Don't let your trees fall victim to disease - we're sharing the expert tips on how to identify and treat common tree ailments!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Health Insurance Explainers",
+      "topic": "Understanding Your Insurance Premiums",
+      "hook": "Don't let insurance premiums confuse you - we're breaking down what you need to know to make informed decisions!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Restaurant Reviews",
+      "topic": "The Best Brunch Spots in New York City",
+      "hook": "Sunday Funday, anyone? We're counting down the best brunch spots in the city that never sleeps!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Action Movie Trailers",
+      "topic": "The Most Anticipated Marvel Movies of 2024",
+      "hook": "The Marvel universe is expanding - get ready for the most epic movie trailers of the year!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Jewelry and Fashion",
+      "topic": "The Evolution of Luxury Watch Design",
+      "hook": "Timeless style meets innovative design - we're taking a closer look at the evolution of luxury watches!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Most Iconic Red Carpet Looks of All Time",
+      "hook": "From Old Hollywood to modern-day glamour, we're counting down the most iconic red carpet looks that stole the show!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     }
