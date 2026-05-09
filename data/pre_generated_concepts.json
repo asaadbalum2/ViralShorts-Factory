@@ -1,231 +1,233 @@
 {
-  "generated_at": "2026-05-08T07:06:15.988670",
-  "valid_until": "2026-05-08T23:59:15.988678",
+  "generated_at": "2026-05-09T07:25:01.259420",
+  "valid_until": "2026-05-09T23:59:01.259429",
   "categories": [
-    "Entertainment News",
-    "Anime Recap",
-    "Gaming News",
-    "Foodie Trends",
-    "Music Drama",
-    "Tree Care and Maintenance",
-    "Health Insurance Explainers",
-    "Restaurant Reviews",
-    "Action Movie Trailers",
-    "Jewelry and Fashion",
-    "California Living",
-    "Retro Game Remakes",
-    "Musician Feuds",
-    "Spring Gardening Tips",
-    "Movie vs Game Comparisons"
+    "Earthquake Survival Tips",
+    "Las Vegas Travel Vlogs",
+    "Comedian John Mulaney Impressions",
+    " Lottery Winning Strategies",
+    "Escape from Tarkov Game Highlights",
+    "New Movie Reviews on Streaming Platforms",
+    "Earthquake Near Me: Safety Precautions",
+    "Suvendu Adhikari Political Analysis",
+    "Vegas Nightlife Experiences",
+    "Earthquake Preparedness for Beginners",
+    "John Mulaney Stand-up Comedy Clips",
+    "Tarkov Gameplay Walkthroughs",
+    "Streaming Service Recommendations",
+    "Las Vegas Food Tours",
+    "Disaster Relief Efforts and Donations"
   ],
   "concepts": [
     {
-      "category": "Entertainment News",
-      "topic": "BTS's Record-Breaking Music Video",
-      "hook": "You won't believe which BTS music video just broke the internet!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Earthquake Survival Tips",
+      "topic": "What to do if an earthquake hits while you're driving",
+      "hook": "Ever wondered if you should slam on the brakes during an earthquake on the highway? The answer might surprise you!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Anime Recap",
-      "topic": "Naruto's Most Epic Fight Scenes",
-      "hook": "Get ready for a blast from the past as we count down Naruto's most epic battles!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Las Vegas Travel Vlogs",
+      "topic": "Top 3 free hidden gems on the Las Vegas Strip you didn't know about",
+      "hook": "Forget the expensive shows! I'm about to show you three FREE Vegas secrets that will blow your mind.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Gaming News",
-      "topic": "The Latest PlayStation 5 Updates",
-      "hook": "What's new with the PS5? We've got the inside scoop on the latest updates and releases!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Comedian John Mulaney Impressions",
+      "topic": "John Mulaney's reaction to finding an expired coupon at the grocery store",
+      "hook": "Picture John Mulaney, standing in the grocery aisle, discovering his 2-for-1 Capri Sun coupon just expired...",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Foodie Trends",
-      "topic": "The Rise of Plant-Based Desserts",
-      "hook": "Sweet treats without the guilt? We're diving into the world of plant-based desserts!",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Lottery Winning Strategies",
+      "topic": "Debunking the 'hot numbers' myth in lottery draws: does it really work?",
+      "hook": "Think picking numbers that won last week increases your odds? Think again! Let's expose the truth about 'hot' lottery numbers.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Escape from Tarkov Game Highlights",
+      "topic": "The craziest 1v5 clutch on Interchange you'll ever see (Feat. Scav Boss Killa)",
+      "hook": "You won't believe how I turned a desperate 1 HP situation into the most insane 1v5 wipe on Interchange!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "New Movie Reviews on Streaming Platforms",
+      "topic": "Is Netflix's new sci-fi thriller 'The Cosmic Echo' a masterpiece or a colossal flop?",
+      "hook": "Netflix just dropped 'The Cosmic Echo' and everyone's talking! But is this sci-fi flick a groundbreaking hit or a total waste of your Friday night?",
+      "voice_style": "Friendly",
+      "music_mood": "Mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Earthquake Near Me: Safety Precautions",
+      "topic": "Securing your heavy furniture *before* the next tremor hits: a step-by-step guide",
+      "hook": "Don't wait for disaster! This one simple step could prevent your bookshelf from becoming a deadly projectile during an earthquake.",
+      "voice_style": "Authoritative",
+      "music_mood": "Chill",
+      "target_duration": 43
+    },
+    {
+      "category": "Suvendu Adhikari Political Analysis",
+      "topic": "Adhikari's strategic shift in recent West Bengal local elections: what's his endgame?",
+      "hook": "Did Suvendu Adhikari just pull off his riskiest political move yet in West Bengal? Let's dissect his recent election strategy.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Vegas Nightlife Experiences",
+      "topic": "Behind the ropes: how to get into the hottest Vegas clubs without a huge wait (or a huge wallet)",
+      "hook": "Dreaming of VIP access in Vegas? I'm spilling the secrets to skipping lines and saving cash at the city's most exclusive nightclubs!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Earthquake Preparedness for Beginners",
+      "topic": "Setting up your emergency water supply: more than just bottled water for earthquake readiness",
+      "hook": "Think you have enough water for an earthquake? You're probably missing this crucial piece of the puzzle for true emergency hydration.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 49
+    },
+    {
+      "category": "Earthquake Survival Tips",
+      "topic": "The surprising truth about doorframes during an earthquake: are they safe or a trap?",
+      "hook": "Everyone says 'stand in a doorway' during an earthquake, but is that advice actually deadly? Let's uncover the truth.",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 44
+    },
+    {
+      "category": "Las Vegas Travel Vlogs",
+      "topic": "A first-timer's guide to navigating Harry Reid International Airport (LAS) like a pro",
+      "hook": "Just landed in Vegas for the first time? Don't get lost! I'll show you how to conquer Harry Reid Airport and start your adventure stress-free.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Music Drama",
-      "topic": "The Feud Between Taylor Swift and Kanye West",
-      "hook": "It's the celebrity feud that never ends - what's really going on between Taylor and Kanye?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Comedian John Mulaney Impressions",
+      "topic": "John Mulaney explaining cryptocurrency to his dog, Petunia",
+      "hook": "Imagine John Mulaney, in his distinctive cadence, trying to break down the complexities of Bitcoin to his oblivious French Bulldog...",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Tree Care and Maintenance",
-      "topic": "How to Prune Your Trees for Maximum Growth",
-      "hook": "Want to take your tree game to the next level? We're sharing the secrets to perfect pruning!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "category": "Lottery Winning Strategies",
+      "topic": "The dark side of syndicate lottery plays: what no one tells you about group wins",
+      "hook": "Joining a lottery syndicate sounds great, right? But I'm revealing the hidden pitfalls and heartbreaks of splitting that massive jackpot.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 48
     },
     {
-      "category": "Health Insurance Explainers",
-      "topic": "Understanding Your Out-of-Pocket Costs",
-      "hook": "Don't let medical bills surprise you - here's what you need to know about out-of-pocket costs!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "Escape from Tarkov Game Highlights",
+      "topic": "My most brutal Shoreline raid gone wrong: a lesson in spawn points and player paths",
+      "hook": "I thought I had Shoreline mastered, but this raid was an absolute nightmare! Learn from my mistakes and avoid these deadly spawn traps.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 49
     },
     {
-      "category": "Restaurant Reviews",
-      "topic": "The Best Sushi Spots in Los Angeles",
-      "hook": "Sushi lovers, rejoice! We're counting down the top sushi spots in LA that you need to try!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "New Movie Reviews on Streaming Platforms",
+      "topic": "Why 'Love in the Time of AI' on Hulu is the unexpected rom-com we desperately needed",
+      "hook": "Forget predictable romances! Hulu's 'Love in the Time of AI' just redefined the rom-com genre, and you NEED to see it.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 43
     },
     {
-      "category": "Action Movie Trailers",
-      "topic": "The Latest Marvel Movie Teasers",
-      "hook": "The wait is almost over - get ready for the most epic Marvel movie trailers yet!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
+      "category": "Earthquake Near Me: Safety Precautions",
+      "topic": "The essential 'Go-Bag' items you're probably forgetting for earthquake readiness",
+      "hook": "You have a 'Go-Bag' for emergencies, right? I bet you're forgetting these five crucial items that could save your life during an earthquake.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 46
     },
     {
-      "category": "Jewelry and Fashion",
-      "topic": "The Resurgence of 90s Grunge Fashion",
-      "hook": "Grunge is back, baby! We're talking flannel shirts, high-waisted jeans, and all the nostalgic fashion trends!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Suvendu Adhikari Political Analysis",
+      "topic": "The economic impact of Suvendu Adhikari's key policy proposals in Purba Medinipur",
+      "hook": "Beyond the headlines: how will Suvendu Adhikari's proposed economic policies truly affect the people of Purba Medinipur?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 50
     },
     {
-      "category": "Entertainment News",
-      "topic": "The Oscars' Most Shocking Moments",
-      "hook": "You won't believe what happened on the red carpet - we're counting down the most shocking Oscar moments!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Vegas Nightlife Experiences",
+      "topic": "The ultimate late-night food spots in Vegas when the clubs close: beyond fast food!",
+      "hook": "Club closed? Stomach rumbling? Don't settle for drive-thru! I'm revealing Vegas's best kept secrets for amazing late-night eats.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 47
     },
     {
-      "category": "Anime Recap",
-      "topic": "The Best Anime Shows of 2022",
-      "hook": "From Attack on Titan to Demon Slayer, we're counting down the best anime shows of the year!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming News",
-      "topic": "The Newest Fortnite Skins and Emotes",
-      "hook": "Get ready to level up your Fortnite game with the newest skins and emotes - we've got the scoop!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Foodie Trends",
-      "topic": "The Art of Making Sourdough Bread",
-      "hook": "Rise to the occasion and learn the art of making sourdough bread from scratch!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Drama",
-      "topic": "The Real Story Behind Beyonce's Lemonade",
-      "hook": "What's the tea on Beyonce's iconic album Lemonade? We're diving into the drama and inspiration behind it!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Tree Care and Maintenance",
-      "topic": "How to Identify and Treat Common Tree Diseases",
-      "hook": "Don't let your trees fall victim to disease - we're sharing the expert tips on how to identify and treat common tree ailments!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Health Insurance Explainers",
-      "topic": "Understanding Your Insurance Premiums",
-      "hook": "Don't let insurance premiums confuse you - we're breaking down what you need to know to make informed decisions!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Restaurant Reviews",
-      "topic": "The Best Brunch Spots in New York City",
-      "hook": "Sunday Funday, anyone? We're counting down the best brunch spots in the city that never sleeps!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Action Movie Trailers",
-      "topic": "The Most Anticipated Marvel Movies of 2024",
-      "hook": "The Marvel universe is expanding - get ready for the most epic movie trailers of the year!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Jewelry and Fashion",
-      "topic": "The Evolution of Luxury Watch Design",
-      "hook": "Timeless style meets innovative design - we're taking a closer look at the evolution of luxury watches!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Most Iconic Red Carpet Looks of All Time",
-      "hook": "From Old Hollywood to modern-day glamour, we're counting down the most iconic red carpet looks that stole the show!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Earthquake Preparedness for Beginners",
+      "topic": "The simple drill that could save your family during an earthquake: practice makes perfect",
+      "hook": "You practice fire drills, but do you practice earthquake drills? This quick, easy family exercise could be the difference between panic and survival.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
@@ -235,33 +237,23 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     }
   ],
