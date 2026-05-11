@@ -1,250 +1,250 @@
 {
-  "generated_at": "2026-05-10T07:44:33.621363",
-  "valid_until": "2026-05-10T23:59:33.621371",
+  "generated_at": "2026-05-11T08:42:17.510099",
+  "valid_until": "2026-05-11T23:59:17.510109",
   "categories": [
-    "Earthquake Preparedness",
-    "Riot Control and Safety",
-    "Rick and Morty Fan Edits",
-    "Viral Lottery Winner Stories",
-    "Ukraine Russia Conflict Explainers",
-    "Boxing Legends like Julio Cesar Chavez",
-    "Wildlife and Disease Prevention",
-    "Powerball Jackpot Reactions",
-    "San Andreas Fault Line Updates",
-    "Science Experiments Gone Wrong like Rick and Morty",
-    "Joel Rufus French Challenge",
-    "Los Angeles Hantavirus Outbreak News",
-    "War Survival and Tactics",
-    "Disaster Movie Recreations like San Andreas",
-    "Lottery Winning Strategies and Tips"
+    "Houston Storm Updates",
+    "Restaurant Reviews",
+    "Power Outage Hacks",
+    "Biopic Breakdowns",
+    "Law and Justice",
+    "Cricket Highlights",
+    "New HBO Max Releases",
+    "Crime Scene Investigations",
+    "Weather Safety Tips",
+    "Dining Out Vlogs",
+    "Box Office Analysis",
+    "Sports News",
+    "TV Show Recaps",
+    "Current Event Explainers",
+    "Emergency Preparedness"
   ],
   "concepts": [
     {
-      "category": "Earthquake Preparedness",
-      "topic": "The overlooked 'Go Bag' item that could save your life.",
-      "hook": "What's the ONE thing EVERYONE forgets in their earthquake emergency kit, and it's NOT water?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Houston Storm Updates",
+      "topic": "Houston's Quickest Power Restoration Zones After Recent Storm",
+      "hook": "Ever wonder why some Houston neighborhoods get their lights back on way faster than others after a storm?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Riot Control and Safety",
-      "topic": "How to safely de-escalate if caught in a volatile protest.",
-      "hook": "The crowd is turning hostile, sirens are wailing... do you know the three critical steps to get out alive?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
+      "category": "Restaurant Reviews",
+      "topic": "The Secret Tacos at Houston's Unmarked Food Truck Gem",
+      "hook": "I found a taco truck in Houston that doesn't even have a sign, and you NEED to see what's inside!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
     },
     {
-      "category": "Rick and Morty Fan Edits",
-      "topic": "Morty's most unhinged moments, perfectly synched.",
-      "hook": "You thought Rick was chaotic? Wait till you see Morty's top 5 absolute breakdown moments!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Power Outage Hacks",
+      "topic": "Emergency DIY Cooling Fan for Summer Power Outages",
+      "hook": "Stuck in a summer blackout and melting? This 2-minute hack will literally save your sanity!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Viral Lottery Winner Stories",
-      "topic": "The tragic tale of the lottery winner who lost it all in 5 years.",
-      "hook": "He won $30 million overnight, but five years later, he was living in a shed. Here's how it all went wrong...",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 47
+      "category": "Biopic Breakdowns",
+      "topic": "The HUGE Historical Mistake in the \"Oppenheimer\" Movie You Missed",
+      "hook": "Everyone raved about Oppenheimer, but did they gloss over this MASSIVE historical inaccuracy?",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 50
     },
     {
-      "category": "Ukraine Russia Conflict Explainers",
-      "topic": "The surprising history of Azovstal and its strategic importance.",
-      "hook": "Forget the headlines for a second. Why was the Azovstal steel plant such a brutal, pivotal point in the conflict?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Boxing Legends like Julio Cesar Chavez",
-      "topic": "Julio Cesar Chavez's legendary 87-0 streak: The fight that almost broke it.",
-      "hook": "Eighty-seven wins, zero losses... until ONE night against Meldrick Taylor almost ended the dream.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Wildlife and Disease Prevention",
-      "topic": "Why you should NEVER feed raccoons, no matter how cute they are.",
-      "hook": "Those adorable backyard raccoons? They're carrying a hidden danger you absolutely need to know about.",
-      "voice_style": "friendly",
-      "music_mood": "mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Powerball Jackpot Reactions",
-      "topic": "The most unhinged, joyous Powerball winner reactions caught on camera.",
-      "hook": "From screaming in a car to fainting on live TV: these Powerball winners LOST THEIR MINDS!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "San Andreas Fault Line Updates",
-      "topic": "The 'Creeping Segment' of the San Andreas: What it is and why it's weirdly good news.",
-      "hook": "While everyone's prepping for the Big One, there's a part of the San Andreas that's quietly moving... and that's actually a *good* thing.",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 44
-    },
-    {
-      "category": "Science Experiments Gone Wrong like Rick and Morty",
-      "topic": "The infamous 'Demon Core' incident: A real-life physics experiment catastrophe.",
-      "hook": "Imagine a science experiment so dangerous, it killed two scientists... twice. Welcome to the terrifying reality of the Demon Core.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Earthquake Preparedness",
-      "topic": "The 'Drop, Cover, and Hold On' myth vs. reality for specific situations.",
-      "hook": "Everyone says 'Drop, Cover, Hold On,' but what if you're in bed, or driving, or even worse, in an elevator during an earthquake?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 47
-    },
-    {
-      "category": "Riot Control and Safety",
-      "topic": "The critical importance of situational awareness in public spaces during unrest.",
-      "hook": "You're at a peaceful protest, then suddenly, chaos erupts. Your phone won't save you \u2013 but these three awareness tips will.",
-      "voice_style": "calm",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Rick and Morty Fan Edits",
-      "topic": "Rick's most philosophical and surprisingly profound quotes, remixed.",
-      "hook": "Beyond the burps and blasphemy, Rick Sanchez has dropped some seriously deep wisdom. Prepare for an existential crisis.",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 43
-    },
-    {
-      "category": "Viral Lottery Winner Stories",
-      "topic": "The janitor who accidentally won $20 million and kept his job.",
-      "hook": "He won millions from a forgotten ticket in his lunch bag, but the next day, he was back at work mopping floors. Why?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Law and Justice",
+      "topic": "The \"Fruit of the Poisonous Tree\" Doctrine Explained with a Real-Life Example",
+      "hook": "Heard 'fruit of the poisonous tree' on a crime show? Here's how it actually saved a guilty man!",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Ukraine Russia Conflict Explainers",
-      "topic": "The surprising global impact of Ukraine's grain exports.",
-      "hook": "You think the Ukraine conflict is just about territory? It's literally about what's on your dinner plate, globally.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 49
+      "category": "Cricket Highlights",
+      "topic": "When a Single Ball Decided the World Cup Final in the Last Over",
+      "hook": "You won't believe how THIS single delivery in the final over changed cricket history forever!",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 45
     },
     {
-      "category": "Boxing Legends like Julio Cesar Chavez",
-      "topic": "Muhammad Ali's 'phantom punch' vs. Sonny Liston: Was it a fix?",
-      "hook": "The most controversial knockout in boxing history: Did Ali *really* land that punch, or was Liston taking a dive?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 47
+      "category": "New HBO Max Releases",
+      "topic": "The Controversial Ending of \"The Idol\" Explained (and Why Everyone Hates It)",
+      "hook": "Did you finish 'The Idol' and feel...confused? Let's break down that wild, controversial ending!",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 50
     },
     {
-      "category": "Wildlife and Disease Prevention",
-      "topic": "Ticks are getting worse: Simple hacks to protect yourself and your pets this summer.",
-      "hook": "Summer's coming, and so are super-ticks! Don't let Lyme disease ruin your outdoor fun \u2013 here's how to fight back.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Crime Scene Investigations",
+      "topic": "How Luminol Reveals Secrets Decades After a Crime",
+      "hook": "Imagine a crime scene, perfectly clean... until a special liquid reveals blood from 30 years ago. How?!",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Powerball Jackpot Reactions",
-      "topic": "The most ridiculous things people bought immediately after winning big.",
-      "hook": "A private island? A solid gold toilet? These Powerball winners blew their cash on the most insane purchases imaginable.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
+      "category": "Weather Safety Tips",
+      "topic": "Why You Should NEVER Shelter Under an Overpass During a Tornado",
+      "hook": "Think an overpass is safe during a tornado? Think again. This common myth could get you killed!",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 40
     },
     {
-      "category": "San Andreas Fault Line Updates",
-      "topic": "The real science behind why California hasn't had 'The Big One' recently.",
-      "hook": "We're constantly told 'The Big One' is coming for California, so why hasn't it happened yet? The answer might surprise you.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 48
+      "category": "Dining Out Vlogs",
+      "topic": "Eating the World's Spiciest Ramen Challenge in Houston (My Honest Reaction!)",
+      "hook": "They said this ramen was 'face-meltingly hot.' My stomach (and dignity) are about to find out!",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 45
     },
     {
-      "category": "Science Experiments Gone Wrong like Rick and Morty",
-      "topic": "The Large Hadron Collider: What if it *actually* created a black hole?",
-      "hook": "The world's most powerful particle accelerator. What if scientists pushed it too far and accidentally ripped a hole in reality?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 49
+      "category": "Houston Storm Updates",
+      "topic": "Hidden Dangers of Post-Storm Debris Removal in Houston",
+      "hook": "Did you know that clearing storm debris incorrectly can be more dangerous than the storm itself?",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Restaurant Reviews",
+      "topic": "Is This Houston Brunch Spot's Ambiance Hiding Its Overpriced Menu?",
+      "hook": "This Houston brunch spot looks picture-perfect, but my wallet (and taste buds) have some *thoughts*.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Power Outage Hacks",
+      "topic": "The One Power Outage Item You ALWAYS Forget (and shouldn't!)",
+      "hook": "Everyone talks flashlights and batteries, but this ONE item could literally prevent a disaster during a blackout.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Biopic Breakdowns",
+      "topic": "How Austin Butler's \"Elvis\" Performance Changed Presley's Modern Legacy",
+      "hook": "Did Austin Butler actually *resurrect* Elvis for a new generation, or just create a new myth?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Law and Justice",
+      "topic": "The Little-Known Twist That Almost Freed the BTK Killer",
+      "hook": "You know the BTK killer, but you probably don't know the bizarre legal loophole that nearly set him free!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Cricket Highlights",
+      "topic": "The Unsung Hero Who Delivered the Most Unexpected Century in T20 History",
+      "hook": "Remember that time a no-name player came out of nowhere to smash the most insane century you've ever seen?",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "New HBO Max Releases",
+      "topic": "This Underrated HBO Max Sci-Fi Gem Will Blow Your Mind (Better Than Netflix!)",
+      "hook": "Forget scrolling Netflix! There's a new sci-fi series on HBO Max that's an absolute MUST-WATCH and no one's talking about it.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Crime Scene Investigations",
+      "topic": "The Tiny Fibers That Cracked the BTK Killer Case Wide Open",
+      "hook": "Everyone knows DNA, but it was these almost invisible fibers that ultimately snared one of history's most notorious killers.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Safety Tips",
+      "topic": "The 3 Emergency Supplies You Forget for Hurricane Season",
+      "hook": "You've got water and batteries, but I guarantee you're forgetting these three crucial items for hurricane season!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Dining Out Vlogs",
+      "topic": "Uncovering Houston's Best Value All-You-Can-Eat Sushi Spot",
+      "hook": "Sushi cravings hitting hard but your wallet's crying? I just found Houston's ultimate all-you-can-eat sushi steal!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
@@ -252,8 +252,8 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     }
   ],
