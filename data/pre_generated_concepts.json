@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-05-11T08:42:17.510099",
-  "valid_until": "2026-05-11T23:59:17.510109",
+  "generated_at": "2026-05-12T08:08:44.407829",
+  "valid_until": "2026-05-12T23:59:44.407837",
   "categories": [
-    "Houston Storm Updates",
-    "Restaurant Reviews",
-    "Power Outage Hacks",
-    "Biopic Breakdowns",
-    "Law and Justice",
-    "Cricket Highlights",
-    "New HBO Max Releases",
-    "Crime Scene Investigations",
-    "Weather Safety Tips",
-    "Dining Out Vlogs",
-    "Box Office Analysis",
-    "Sports News",
-    "TV Show Recaps",
-    "Current Event Explainers",
-    "Emergency Preparedness"
+    "Extreme Weather Updates",
+    "Sports Highlights",
+    "Gaming News",
+    "Financial Tech",
+    "Exam Results and Education",
+    "Cricket Match Analysis",
+    "Food and Restaurant Reviews",
+    "Internet and Telecom",
+    "Summer Forecasting",
+    "Baseball Player Profiles",
+    "Action Game Walkthroughs",
+    "Cryptocurrency Explainers",
+    "Restaurant Closure News",
+    "Esports Tournament Previews",
+    "Weather vs Sports Event Scheduling"
   ],
   "concepts": [
     {
-      "category": "Houston Storm Updates",
-      "topic": "Houston's Quickest Power Restoration Zones After Recent Storm",
-      "hook": "Ever wonder why some Houston neighborhoods get their lights back on way faster than others after a storm?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Extreme Weather Updates",
+      "topic": "Hurricane Season 2024: Top 5 Cities at Risk",
+      "hook": "Is your city on the list of the top 5 most vulnerable places to hurricanes this season?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Restaurant Reviews",
-      "topic": "The Secret Tacos at Houston's Unmarked Food Truck Gem",
-      "hook": "I found a taco truck in Houston that doesn't even have a sign, and you NEED to see what's inside!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Sports Highlights",
+      "topic": "The Rise of Novak Djokovic: 5 Most Epic Comebacks",
+      "hook": "You won't believe the incredible comeback that changed Novak Djokovic's career forever!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Power Outage Hacks",
-      "topic": "Emergency DIY Cooling Fan for Summer Power Outages",
-      "hook": "Stuck in a summer blackout and melting? This 2-minute hack will literally save your sanity!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Gaming News",
+      "topic": "Top 3 Gaming Laptops for Under $1000 in 2024",
+      "hook": "Get ready to level up your gaming experience without breaking the bank!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Tech",
+      "topic": "The Future of Contactless Payments: What You Need to Know",
+      "hook": "Are contactless payments the future of money, or a recipe for disaster?",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Biopic Breakdowns",
-      "topic": "The HUGE Historical Mistake in the \"Oppenheimer\" Movie You Missed",
-      "hook": "Everyone raved about Oppenheimer, but did they gloss over this MASSIVE historical inaccuracy?",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Law and Justice",
-      "topic": "The \"Fruit of the Poisonous Tree\" Doctrine Explained with a Real-Life Example",
-      "hook": "Heard 'fruit of the poisonous tree' on a crime show? Here's how it actually saved a guilty man!",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Exam Results and Education",
+      "topic": "Decoding the New SAT Scoring System: Tips and Tricks",
+      "hook": "Cracking the code to the perfect SAT score: here's what you need to know!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Cricket Highlights",
-      "topic": "When a Single Ball Decided the World Cup Final in the Last Over",
-      "hook": "You won't believe how THIS single delivery in the final over changed cricket history forever!",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New HBO Max Releases",
-      "topic": "The Controversial Ending of \"The Idol\" Explained (and Why Everyone Hates It)",
-      "hook": "Did you finish 'The Idol' and feel...confused? Let's break down that wild, controversial ending!",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Crime Scene Investigations",
-      "topic": "How Luminol Reveals Secrets Decades After a Crime",
-      "hook": "Imagine a crime scene, perfectly clean... until a special liquid reveals blood from 30 years ago. How?!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Safety Tips",
-      "topic": "Why You Should NEVER Shelter Under an Overpass During a Tornado",
-      "hook": "Think an overpass is safe during a tornado? Think again. This common myth could get you killed!",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
+      "category": "Cricket Match Analysis",
+      "topic": "Unpacking the Strategy Behind India's Winning Streak",
+      "hook": "What's the secret to India's unstoppable cricket team?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Dining Out Vlogs",
-      "topic": "Eating the World's Spiciest Ramen Challenge in Houston (My Honest Reaction!)",
-      "hook": "They said this ramen was 'face-meltingly hot.' My stomach (and dignity) are about to find out!",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
+      "category": "Food and Restaurant Reviews",
+      "topic": "The Best Kept Secret of NYC's Hidden Speakeasy Restaurants",
+      "hook": "Ever wondered what lies behind the secret doors of NYC's culinary underground?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Houston Storm Updates",
-      "topic": "Hidden Dangers of Post-Storm Debris Removal in Houston",
-      "hook": "Did you know that clearing storm debris incorrectly can be more dangerous than the storm itself?",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Restaurant Reviews",
-      "topic": "Is This Houston Brunch Spot's Ambiance Hiding Its Overpriced Menu?",
-      "hook": "This Houston brunch spot looks picture-perfect, but my wallet (and taste buds) have some *thoughts*.",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
+      "category": "Internet and Telecom",
+      "topic": "5G Network Rollout: Separating Fact from Fiction",
+      "hook": "Is the 5G revolution everything it's cracked up to be, or just hype?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Power Outage Hacks",
-      "topic": "The One Power Outage Item You ALWAYS Forget (and shouldn't!)",
-      "hook": "Everyone talks flashlights and batteries, but this ONE item could literally prevent a disaster during a blackout.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Summer Forecasting",
+      "topic": "The Hottest Summer Destinations for 2024: A Weather Forecast",
+      "hook": "Where will the heat wave hit the hardest this summer?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Biopic Breakdowns",
-      "topic": "How Austin Butler's \"Elvis\" Performance Changed Presley's Modern Legacy",
-      "hook": "Did Austin Butler actually *resurrect* Elvis for a new generation, or just create a new myth?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Baseball Player Profiles",
+      "topic": "The Rise of Shohei Ohtani: Japan's Baseball Sensation",
+      "hook": "From Japanese phenomenon to MLB superstar: the incredible story of Shohei Ohtani!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Extreme Weather Updates",
+      "topic": "Understanding the Science Behind Tornado Alley",
+      "hook": "What makes the Great Plains of the US the perfect breeding ground for deadly twisters?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Law and Justice",
-      "topic": "The Little-Known Twist That Almost Freed the BTK Killer",
-      "hook": "You know the BTK killer, but you probably don't know the bizarre legal loophole that nearly set him free!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Cricket Highlights",
-      "topic": "The Unsung Hero Who Delivered the Most Unexpected Century in T20 History",
-      "hook": "Remember that time a no-name player came out of nowhere to smash the most insane century you've ever seen?",
-      "voice_style": "Dramatic",
-      "music_mood": "Upbeat",
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Boxing Upsets of the Century",
+      "hook": "When underdogs rise to the challenge: relive the greatest boxing upsets of all time!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "New HBO Max Releases",
-      "topic": "This Underrated HBO Max Sci-Fi Gem Will Blow Your Mind (Better Than Netflix!)",
-      "hook": "Forget scrolling Netflix! There's a new sci-fi series on HBO Max that's an absolute MUST-WATCH and no one's talking about it.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Crime Scene Investigations",
-      "topic": "The Tiny Fibers That Cracked the BTK Killer Case Wide Open",
-      "hook": "Everyone knows DNA, but it was these almost invisible fibers that ultimately snared one of history's most notorious killers.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Gaming News",
+      "topic": "The Evolution of Fortnite: From Humble Beginnings to Gaming Phenomenon",
+      "hook": "How did a small indie game become a global gaming sensation?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Weather Safety Tips",
-      "topic": "The 3 Emergency Supplies You Forget for Hurricane Season",
-      "hook": "You've got water and batteries, but I guarantee you're forgetting these three crucial items for hurricane season!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Financial Tech",
+      "topic": "The Dark Side of Cryptocurrency: What You Need to Know",
+      "hook": "Is the world of cryptocurrency a wild west of opportunity, or a minefield of risk?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Dining Out Vlogs",
-      "topic": "Uncovering Houston's Best Value All-You-Can-Eat Sushi Spot",
-      "hook": "Sushi cravings hitting hard but your wallet's crying? I just found Houston's ultimate all-you-can-eat sushi steal!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Exam Results and Education",
+      "topic": "The Surprising Benefits of Learning a Second Language",
+      "hook": "Unlock a world of possibilities: how learning a second language can change your life!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Cricket Match Analysis",
+      "topic": "Unraveling the Mystery of the Cricket Ball Swing",
+      "hook": "What makes the cricket ball swing: science, magic, or a little bit of both?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Food and Restaurant Reviews",
+      "topic": "The Secret to Making the Perfect Neapolitan Pizza at Home",
+      "hook": "Can you really recreate the authentic taste of Naples in your own kitchen?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Internet and Telecom",
+      "topic": "The Future of Virtual Reality: What's Next for VR Technology",
+      "hook": "Step into a world beyond your wildest dreams: the future of virtual reality is here!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Forecasting",
+      "topic": "The Top 5 Most Scorching Heatwaves in US History",
+      "hook": "When the mercury rises: relive the most extreme heatwaves to hit the US!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Baseball Player Profiles",
+      "topic": "The Legacy of Babe Ruth: The Sultan of Swat's Enduring Impact",
+      "hook": "The man who changed the game: how Babe Ruth's legacy continues to inspire new generations!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
