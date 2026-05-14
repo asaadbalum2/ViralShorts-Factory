@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-05-13T08:15:42.965810",
-  "valid_until": "2026-05-13T23:59:42.965821",
+  "generated_at": "2026-05-14T08:08:03.994264",
+  "valid_until": "2026-05-14T23:59:03.994274",
   "categories": [
-    "Exam Results and Education News",
-    "Tech Reviews and Unboxings",
-    "US Election Updates",
-    "Personal Finance and Housing Tips",
-    "Generation Trends and Analysis",
-    "Real Estate Market News",
-    "Law and Accident Advice",
-    "Celebrity News and Gossip",
-    "Spring Home Decoration Ideas",
-    "Summer Travel Planning",
-    "Smart Home Technology",
-    "Accident and Injury Prevention",
-    "Financial Literacy for Young Adults",
-    "Home Buying and Selling Tips",
-    "Entertainment and Pop Culture News"
+    "Home Decor on a Budget",
+    "TV Tech Reviews",
+    "Real Estate Investing Tips",
+    "Gaming News and Updates",
+    "Movie Soundtrack Analysis",
+    "US Politics Explained",
+    "Personal Finance Advice",
+    "Smart Home Tours",
+    "Samsung Product Unboxing",
+    "Ubisoft Game Walkthroughs",
+    "Hans Zimmer Music Appreciation",
+    "Loan Options for First-Time Buyers",
+    "Super Mario Galaxy Movie Reviews",
+    "4K Smart TV Buying Guides",
+    "Global Economic Trends"
   ],
   "concepts": [
     {
-      "category": "Exam Results and Education News",
-      "topic": "Unconventional Majors with Surprisingly High Job Prospects",
-      "hook": "What if I told you that majoring in video game design could lead to a six-figure salary?",
+      "category": "Home Decor on a Budget",
+      "topic": "Upcycling Old Pallets into DIY Shelves",
+      "hook": "You won't believe what you can create with just a few bucks and some old pallets!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Tech Reviews and Unboxings",
-      "topic": "Hands-On Review of the Latest Foldable Smartphone",
-      "hook": "I just spent a week with the most expensive smartphone on the market, and here's what I think",
+      "category": "TV Tech Reviews",
+      "topic": "OLED vs QLED: The Ultimate TV Display Showdown",
+      "hook": "Is OLED really worth the extra cash? Let's find out!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "US Election Updates",
-      "topic": "The Impact of Social Media on Voting Behavior",
-      "hook": "Did you know that your social media feed could be influencing your voting decisions without you even realizing it?",
-      "voice_style": "mysterious",
+      "category": "Real Estate Investing Tips",
+      "topic": "The Top 5 Cities to Invest in Rental Properties This Year",
+      "hook": "Want to turn your savings into a fortune? Start by investing in these 5 cities!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Personal Finance and Housing Tips",
-      "topic": "How to Save $10,000 in Just 6 Months with a Simple Budgeting Hack",
-      "hook": "What if you could save enough money for a down payment on a house in less than a year?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Generation Trends and Analysis",
-      "topic": "The Rise of Eco-Friendly Fashion Among Gen Z Consumers",
-      "hook": "Why are young people willing to pay more for clothes that are better for the planet?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Real Estate Market News",
-      "topic": "The Top 5 Cities with the Fastest-Growing Housing Markets",
-      "hook": "If you're thinking of investing in real estate, you won't want to miss these booming markets",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Law and Accident Advice",
-      "topic": "What to Do Immediately After a Car Accident to Protect Your Rights",
-      "hook": "Don't let a car accident ruin your life - know your rights and take action",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Most Shocking Celebrity Comebacks of the Past Decade",
-      "hook": "You won't believe which stars have made the most epic comebacks in Hollywood",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Spring Home Decoration Ideas",
-      "topic": "10 Simple and Affordable Ways to Give Your Living Room a Spring Makeover",
-      "hook": "Get ready to fall in love with your home all over again with these easy spring decor ideas",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Travel Planning",
-      "topic": "The Top 5 Most Instagrammable Beach Destinations Around the World",
-      "hook": "Ready for a beach vacation like no other? Here are the most stunning destinations to add to your bucket list",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Exam Results and Education News",
-      "topic": "The Benefits of Taking a Gap Year Before College",
-      "hook": "What if taking a year off before college could actually improve your chances of success?",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Reviews and Unboxings",
-      "topic": "Unboxing the Latest Smartwatch with Built-in GPS and Heart Rate Monitoring",
-      "hook": "I just got my hands on the most advanced smartwatch on the market - here's what I think",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "US Election Updates",
-      "topic": "The Impact of Voter Suppression on Election Outcomes",
-      "hook": "What if the outcome of the election was influenced by more than just the votes?",
+      "category": "Gaming News and Updates",
+      "topic": "The Latest Leaks on the Next-Gen Xbox Console",
+      "hook": "Get ready to level up your gaming experience with the latest Xbox leaks!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Personal Finance and Housing Tips",
-      "topic": "How to Invest in Real Estate with Less Than $1,000",
-      "hook": "You don't need to be a millionaire to invest in real estate - here's how to get started",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Generation Trends and Analysis",
-      "topic": "The Rise of Remote Work and Its Impact on Mental Health",
-      "hook": "Is working from home really the key to happiness, or is it a recipe for disaster?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Movie Soundtrack Analysis",
+      "topic": "The Hidden Meaning Behind the Score of Inception",
+      "hook": "What if the music in your favorite movie is more than just background noise?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Real Estate Market News",
-      "topic": "The Top 5 Cities with the Most Affordable Housing Markets",
-      "hook": "If you're looking for a place to call home without breaking the bank, you won't want to miss these cities",
+      "category": "US Politics Explained",
+      "topic": "The Impact of the New Tax Reform on Middle-Class Americans",
+      "hook": "How will the latest tax changes affect your wallet? Let's break it down!",
       "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance Advice",
+      "topic": "The 50/30/20 Rule: A Simple Guide to Budgeting Your Money",
+      "hook": "Want to take control of your finances? Start with this simple yet powerful rule!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Smart Home Tours",
+      "topic": "A Sneak Peek into a $10 Million Smart Mansion",
+      "hook": "Step into the future of home automation and luxury living!",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Law and Accident Advice",
-      "topic": "What to Do If You're Involved in a Slip and Fall Accident",
-      "hook": "Don't let a slip and fall accident leave you feeling helpless - know your rights and take action",
-      "voice_style": "dramatic",
+      "category": "Samsung Product Unboxing",
+      "topic": "Unboxing the Latest Samsung Galaxy Fold",
+      "hook": "Is the newest Galaxy Fold worth the hefty price tag? Let's unbox and find out!",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Most Shocking Celebrity Feuds of the Past Year",
-      "hook": "You won't believe which stars have been at war with each other in the past year",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Ubisoft Game Walkthroughs",
+      "topic": "Completing the First Mission in Assassin's Creed Valhalla",
+      "hook": "Get ready to pillage and plunder your way through medieval England!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Spring Home Decoration Ideas",
-      "topic": "5 Simple DIY Projects to Give Your Home a Spring Refresh",
-      "hook": "Get ready to fall in love with your home all over again with these easy and budget-friendly DIY projects",
-      "voice_style": "friendly",
+      "category": "Home Decor on a Budget",
+      "topic": "Transforming a Small Bedroom into a Cozy Retreat",
+      "hook": "You don't need to break the bank to create a peaceful oasis in your home!",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Summer Travel Planning",
-      "topic": "The Top 5 Most Affordable European Cities to Visit This Summer",
-      "hook": "Ready for a European adventure without breaking the bank? Here are the top destinations to consider",
-      "voice_style": "calm",
+      "category": "TV Tech Reviews",
+      "topic": "A Comparison of the Top 4K TVs on the Market",
+      "hook": "Which 4K TV reigns supreme? We put the top models to the test!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Real Estate Investing Tips",
+      "topic": "The Pros and Cons of Investing in a Fixer-Upper Property",
+      "hook": "Can a fixer-upper be a goldmine or a money pit? Let's weigh the risks and rewards!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 50
+    },
+    {
+      "category": "Gaming News and Updates",
+      "topic": "The Latest Rumors on the Next Assassin's Creed Game",
+      "hook": "What's next for the Assassin's Creed series? We've got the inside scoop!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Movie Soundtrack Analysis",
+      "topic": "The Iconic Scores of Hans Zimmer: A Deeper Look",
+      "hook": "What makes Hans Zimmer's scores so unforgettable? Let's dive in!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "US Politics Explained",
+      "topic": "Understanding the Impact of Climate Change on US Policy",
+      "hook": "How is climate change shaping the future of US politics? Let's explore the facts!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance Advice",
+      "topic": "The Benefits of Investing in a Roth IRA for Retirement",
+      "hook": "Want to secure your financial future? Consider investing in a Roth IRA!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Smart Home Tours",
+      "topic": "A Tour of a Sustainable Smart Home in the Desert",
+      "hook": "Welcome to the future of eco-friendly living!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Samsung Product Unboxing",
+      "topic": "Unboxing the Latest Samsung Galaxy Watch",
+      "hook": "Get ready to experience the latest in wearable tech!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Ubisoft Game Walkthroughs",
+      "topic": "A Step-by-Step Guide to Completing the Heist Mission in Watch Dogs: Legion",
+      "hook": "Join the resistance and take down the corrupt system!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Decor on a Budget",
+      "topic": "Creating a Bohemian-Inspired Living Room on a Shoestring Budget",
+      "hook": "You don't need to break the bank to create a unique and eclectic space!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
