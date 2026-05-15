@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-05-14T08:08:03.994264",
-  "valid_until": "2026-05-14T23:59:03.994274",
+  "generated_at": "2026-05-15T08:22:19.003623",
+  "valid_until": "2026-05-15T23:59:19.003632",
   "categories": [
+    "Carnival Vloggers",
+    "Karuppu Recipe Challenges",
+    "Goddard Space Updates",
+    "Chapman University Life Hacks",
+    "Restaurant Reviews and Tours",
+    "Miranda Cosgrove Throwbacks",
+    "Home Price Analysis and Advice",
+    "Trump's Visit to China Explained",
+    "Summer Festival Fashion",
+    "Chinese Culture and Traditions",
+    "Space Exploration News",
     "Home Decor on a Budget",
-    "TV Tech Reviews",
-    "Real Estate Investing Tips",
-    "Gaming News and Updates",
-    "Movie Soundtrack Analysis",
-    "US Politics Explained",
-    "Personal Finance Advice",
-    "Smart Home Tours",
-    "Samsung Product Unboxing",
-    "Ubisoft Game Walkthroughs",
-    "Hans Zimmer Music Appreciation",
-    "Loan Options for First-Time Buyers",
-    "Super Mario Galaxy Movie Reviews",
-    "4K Smart TV Buying Guides",
-    "Global Economic Trends"
+    "Seasonal Food Recipes",
+    "University Student Vlogs",
+    "Global Economic News and Trends"
   ],
   "concepts": [
     {
-      "category": "Home Decor on a Budget",
-      "topic": "Upcycling Old Pallets into DIY Shelves",
-      "hook": "You won't believe what you can create with just a few bucks and some old pallets!",
+      "category": "Carnival Vloggers",
+      "topic": "The Secret Art of Winning Carnival Games",
+      "hook": "Ever wonder how those carnival pros always walk away with the giant stuffed animal? I'm spilling their secrets!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "TV Tech Reviews",
-      "topic": "OLED vs QLED: The Ultimate TV Display Showdown",
-      "hook": "Is OLED really worth the extra cash? Let's find out!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Real Estate Investing Tips",
-      "topic": "The Top 5 Cities to Invest in Rental Properties This Year",
-      "hook": "Want to turn your savings into a fortune? Start by investing in these 5 cities!",
+      "category": "Karuppu Recipe Challenges",
+      "topic": "Mastering Karuppu Kavuni Arisi (Black Rice) Puttu",
+      "hook": "Think black rice is just for desserts? Prepare to have your mind blown by this savory breakfast challenge!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Gaming News and Updates",
-      "topic": "The Latest Leaks on the Next-Gen Xbox Console",
-      "hook": "Get ready to level up your gaming experience with the latest Xbox leaks!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Soundtrack Analysis",
-      "topic": "The Hidden Meaning Behind the Score of Inception",
-      "hook": "What if the music in your favorite movie is more than just background noise?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "US Politics Explained",
-      "topic": "The Impact of the New Tax Reform on Middle-Class Americans",
-      "hook": "How will the latest tax changes affect your wallet? Let's break it down!",
-      "voice_style": "authoritative",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Personal Finance Advice",
-      "topic": "The 50/30/20 Rule: A Simple Guide to Budgeting Your Money",
-      "hook": "Want to take control of your finances? Start with this simple yet powerful rule!",
+      "category": "Goddard Space Updates",
+      "topic": "Webb Telescope's Latest Exoplanet Discovery: A Water World?",
+      "hook": "NASA just hinted at another Earth-like world. But is there actual water, or something even more bizarre?",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Chapman University Life Hacks",
+      "topic": "Navigating Chapman's Campus Parking Nightmare Like a Pro",
+      "hook": "Commuters, listen up! I cracked the code to finding parking at Chapman without losing your mind (or your tuition money).",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Restaurant Reviews and Tours",
+      "topic": "The Hidden Speakeasy Sushi Bar in Downtown LA",
+      "hook": "Forget reservations! I found a sushi spot so exclusive, you need a secret password just to get in. Wanna see inside?",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Miranda Cosgrove Throwbacks",
+      "topic": "The 'Sparks Fly' Music Video: Behind-the-Scenes Secrets",
+      "hook": "You think you know every detail about Miranda Cosgrove's iconic 'Sparks Fly' video? I'm about to drop some bombshells!",
+      "voice_style": "dramatic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Smart Home Tours",
-      "topic": "A Sneak Peek into a $10 Million Smart Mansion",
-      "hook": "Step into the future of home automation and luxury living!",
+      "category": "Home Price Analysis and Advice",
+      "topic": "The Unseen Costs of Renovating a Starter Home in 2024",
+      "hook": "Thinking about buying a fixer-upper? Don't even *think* about it until you hear these hidden costs no one talks about.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 47
+    },
+    {
+      "category": "Trump's Visit to China Explained",
+      "topic": "The 'Panda Diplomacy' Behind Trump's 2017 China Visit",
+      "hook": "Remember Trump's trip to China? It wasn't just trade deals \u2013 there was a surprising animal involved in the high-stakes diplomacy.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Festival Fashion",
+      "topic": "DIY Festival Glitzerati: Eco-Friendly Sparkle Trends",
+      "hook": "Ready to shine at your next festival without harming the planet? I'll show you how to DIY eco-glitter that actually works!",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Chinese Culture and Traditions",
+      "topic": "The Myth of the Jade Rabbit: Exploring Mid-Autumn Festival Legends",
+      "hook": "Everyone knows the moon has a man... but what about the rabbit? Uncover the true, enchanting legend of the Mid-Autumn Festival.",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Samsung Product Unboxing",
-      "topic": "Unboxing the Latest Samsung Galaxy Fold",
-      "hook": "Is the newest Galaxy Fold worth the hefty price tag? Let's unbox and find out!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Ubisoft Game Walkthroughs",
-      "topic": "Completing the First Mission in Assassin's Creed Valhalla",
-      "hook": "Get ready to pillage and plunder your way through medieval England!",
-      "voice_style": "dramatic",
+      "category": "Carnival Vloggers",
+      "topic": "The Scariest Roller Coaster Drop I've Ever Experienced",
+      "hook": "My heart is still pounding! You won't believe the stomach-lurching drop on this beast of a roller coaster. Watch if you dare!",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 46
     },
     {
-      "category": "Home Decor on a Budget",
-      "topic": "Transforming a Small Bedroom into a Cozy Retreat",
-      "hook": "You don't need to break the bank to create a peaceful oasis in your home!",
+      "category": "Karuppu Recipe Challenges",
+      "topic": "Can You Make Karuppu Kavuni Idiyappam Taste Good?",
+      "hook": "Black rice idiyappam \u2013 a culinary experiment, or a disaster waiting to happen? Let's find out if this challenging dish can be delicious!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Goddard Space Updates",
+      "topic": "Upcoming Missions to Jupiter's Icy Moon, Europa",
+      "hook": "NASA's next big target isn't Mars, it's a frozen moon with a secret ocean. Could alien life be hiding beneath the ice?",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 49
+    },
+    {
+      "category": "Chapman University Life Hacks",
+      "topic": "Maximizing Your Chapman Dining Hall Meal Plan",
+      "hook": "Tired of the same old dining hall food? I found the ultimate hacks to get gourmet meals on a student budget at Chapman!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Restaurant Reviews and Tours",
+      "topic": "The Most Instagrammable Dessert Shop in NYC Right Now",
+      "hook": "Your feed is about to get a serious upgrade! I found the dessert shop that breaks the internet and your sweet tooth in NYC.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Miranda Cosgrove Throwbacks",
+      "topic": "iCarly Bloopers That Never Made It to Air",
+      "hook": "Prepare for chaos! I dug up the funniest iCarly bloopers and behind-the-scenes moments you were never meant to see.",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Home Price Analysis and Advice",
+      "topic": "Why Remote Work is Reshaping Suburban Home Values",
+      "hook": "Your commute might be gone, but it's fundamentally changing the value of your suburban home. Here's why you need to know.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Trump's Visit to China Explained",
+      "topic": "Decoding the Gift Exchange: What Trump and Xi Really Exchanged",
+      "hook": "Beyond the headlines, the diplomatic gifts between Trump and Xi told a fascinating, hidden story. What did they really mean?",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Tech Reviews",
-      "topic": "A Comparison of the Top 4K TVs on the Market",
-      "hook": "Which 4K TV reigns supreme? We put the top models to the test!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Real Estate Investing Tips",
-      "topic": "The Pros and Cons of Investing in a Fixer-Upper Property",
-      "hook": "Can a fixer-upper be a goldmine or a money pit? Let's weigh the risks and rewards!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Gaming News and Updates",
-      "topic": "The Latest Rumors on the Next Assassin's Creed Game",
-      "hook": "What's next for the Assassin's Creed series? We've got the inside scoop!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Soundtrack Analysis",
-      "topic": "The Iconic Scores of Hans Zimmer: A Deeper Look",
-      "hook": "What makes Hans Zimmer's scores so unforgettable? Let's dive in!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "US Politics Explained",
-      "topic": "Understanding the Impact of Climate Change on US Policy",
-      "hook": "How is climate change shaping the future of US politics? Let's explore the facts!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance Advice",
-      "topic": "The Benefits of Investing in a Roth IRA for Retirement",
-      "hook": "Want to secure your financial future? Consider investing in a Roth IRA!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Smart Home Tours",
-      "topic": "A Tour of a Sustainable Smart Home in the Desert",
-      "hook": "Welcome to the future of eco-friendly living!",
+      "category": "Summer Festival Fashion",
+      "topic": "Sustainable Festival Outfits: Thrifting for Coachella Vibes",
+      "hook": "Want to look amazing at Coachella without breaking the bank or the planet? Thrift stores are your secret weapon for killer festival looks!",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Samsung Product Unboxing",
-      "topic": "Unboxing the Latest Samsung Galaxy Watch",
-      "hook": "Get ready to experience the latest in wearable tech!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Ubisoft Game Walkthroughs",
-      "topic": "A Step-by-Step Guide to Completing the Heist Mission in Watch Dogs: Legion",
-      "hook": "Join the resistance and take down the corrupt system!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Home Decor on a Budget",
-      "topic": "Creating a Bohemian-Inspired Living Room on a Shoestring Budget",
-      "hook": "You don't need to break the bank to create a unique and eclectic space!",
+      "category": "Chinese Culture and Traditions",
+      "topic": "The Art of Chinese Tea Ceremony: Beyond Just Drinking Tea",
+      "hook": "It's not just about a beverage. The Chinese tea ceremony is a ritual, a philosophy, and a secret to inner peace. Discover its beauty.",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 48
     }
   ],
   "voice_music_pairs": [
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
