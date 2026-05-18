@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-05-17T07:56:18.957751",
-  "valid_until": "2026-05-17T23:59:18.957763",
+  "generated_at": "2026-05-18T08:56:59.204706",
+  "valid_until": "2026-05-18T23:59:59.204717",
   "categories": [
-    "Gaming Highlights",
-    "Sports Analysis",
     "TV Show Recaps",
-    "K-Pop Dance Challenges",
-    "Healthcare News",
-    "Viral Challenge Videos",
-    "Esports Tournaments",
-    "Music Reactions",
+    "Travel Disasters",
     "Tech Reviews",
-    "Subnautica 2 Gameplay",
-    "TV Series Spoilers",
-    "Lawsuit and Settlement Updates",
-    "Football Match Predictions",
-    "Behind-the-Scenes Vlogs",
-    "Pop Culture News"
+    "Real Estate Tours",
+    "Scuba Diving Adventures",
+    "Actor Tributes",
+    "City Weather Updates",
+    "Book Reviews",
+    "Home Decor Inspiration",
+    "Summer Vacation Ideas",
+    "New Movie Releases",
+    "Electronics Unboxing",
+    "Wildlife Encounters",
+    "Apocalypse Survival Tips",
+    "Island Getaway Vlogs"
   ],
   "concepts": [
     {
-      "category": "Gaming Highlights",
-      "topic": "Apex Legends Heirloom Drop Reaction (first-ever)",
-      "hook": "Did you just see what my Apex pack did?! No, seriously, PAUSE. This is unreal!",
+      "category": "TV Show Recaps",
+      "topic": "The mind-bending ending of 'Dark' Season 3 explained in 45 seconds.",
+      "hook": "Did you actually understand the ending of Dark? Because I barely did, and I watched it twice!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Sports Analysis",
-      "topic": "The Secret Weapon in Women's Soccer: Tactical Corner Kicks",
-      "hook": "Everyone's talking about free kicks, but let me show you the *real* game-changer in women's football: tactical corners.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
+      "category": "TV Show Recaps",
+      "topic": "The most iconic 'gotcha' moments from 'Game of Thrones' Season 1 that shocked everyone.",
+      "hook": "Remember when Ned Stark... well, you know. The first big GOT shocker that changed TV forever!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "Loki Season 2 Finale: The God of Stories' Ultimate Sacrifice",
-      "hook": "We need to talk about the *real* ending of Loki Season 2. Was it a triumph, or the most tragic hero arc ever?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "category": "Travel Disasters",
+      "topic": "How my luggage ended up in a different continent (and what I did about it).",
+      "hook": "Imagine landing in Tokyo, but your suitcase is having a blast in Rome. Yep, that happened.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "K-Pop Dance Challenges",
-      "topic": "Mastering Le Sserafim's 'EASY' Chorus Dance Breakdown",
-      "hook": "Thought Le Sserafim's 'EASY' was easy? Let's break down that tricky chorus step-by-step and prove everyone wrong.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Travel Disasters",
+      "topic": "My nightmare encounter with a rogue street vendor in Marrakech that almost cost me everything.",
+      "hook": "I just wanted a souvenir, but instead I almost lost my wallet and my patience in Marrakech.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
     },
     {
-      "category": "Healthcare News",
-      "topic": "AI Diagnosing Rare Diseases Faster Than Doctors: Hype or Hope?",
-      "hook": "Imagine a future where AI diagnoses diseases doctors miss. Is this a medical miracle or a data privacy nightmare waiting to happen?",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Viral Challenge Videos",
-      "topic": "The 'Invisible Box' Challenge: My Attempt and Epic Fail",
-      "hook": "Remember the invisible box challenge? Yeah, I thought I could do it. Spoiler: I couldn't.",
+      "category": "Tech Reviews",
+      "topic": "Testing the new foldable phone's durability: Can it survive a toddler?",
+      "hook": "Everyone's testing drop resistance, but what about a toddler's pure, unadulterated chaos? Let's find out.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Esports Tournaments",
-      "topic": "The Unbelievable Clutch Play from Valorant Champions 2023 Grand Finals",
-      "hook": "Still thinking about that Valorant Champions Grand Finals clutch? Let's rewatch the single most impossible round of the tournament.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Music Reactions",
-      "topic": "First Listen: Billie Eilish's New Single 'What Was I Made For?' (Initial Thoughts)",
-      "hook": "Okay, Billie Eilish just dropped her new track and... I'm speechless. Let's react together to 'What Was I Made For?'",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 44
-    },
-    {
       "category": "Tech Reviews",
-      "topic": "Is the iPhone 15 Pro Max's Action Button Actually Useful? My 1-Week Test",
-      "hook": "Everyone's hyped about the iPhone 15 Pro Max's Action Button. But after a week, is it a game-changer or just a gimmick?",
+      "topic": "The smart home device that *actually* changed my daily routine (and one that was a total flop).",
+      "hook": "I've bought ALL the smart home gadgets. Only ONE actually works as advertised and improved my life.",
       "voice_style": "authoritative",
       "music_mood": "chill",
-      "target_duration": 49
-    },
-    {
-      "category": "Subnautica 2 Gameplay",
-      "topic": "Discovering the First New Alien Biome in Subnautica 2: The Bioluminescent Caves",
-      "hook": "Hold onto your seats. I just dove into what I *think* is the first undiscovered biome in Subnautica 2, and it's breathtaking.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Gaming Highlights",
-      "topic": "Baldur's Gate 3: Accidental TPK with a Goblin Barrel (Hilarious Fail)",
-      "hook": "So I tried to be clever with a goblin barrel in Baldur's Gate 3... and accidentally wiped my entire party. You HAVE to see this.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Sports Analysis",
-      "topic": "How Nikola Jokic's Non-Dominant Hand Assists Are Changing NBA Offense",
-      "hook": "Forget the fancy passes. Nikola Jokic's secret weapon isn't his strength, it's his unbelievable non-dominant hand passing. Here's why.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "The Last of Us Episode 3: Why Bill & Frank's Story Was Perfect (and Heartbreaking)",
-      "hook": "I know everyone's talking about the zombies, but Episode 3 of The Last of Us was a masterpiece for one reason: Bill and Frank. Let's recap.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 47
-    },
-    {
-      "category": "K-Pop Dance Challenges",
-      "topic": "My First Attempt at SEVENTEEN's 'Super' Sword Dance (and My Ankles!)",
-      "hook": "SEVENTEEN's 'Super' dance looks easy until you try that sword-fighting part. My first attempt was... humbling.",
-      "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Healthcare News",
-      "topic": "The Truth About Microplastics in Our Bloodstream: Should We Be Worried?",
-      "hook": "Scientists just confirmed microplastics are in human blood. But what does that *actually* mean for our health? Let's break down the fear.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 49
-    },
-    {
-      "category": "Viral Challenge Videos",
-      "topic": "Extreme Spicy Ramen Challenge: Can I Handle the Heat? (Spoiler: No)",
-      "hook": "They said this ramen was 'extreme spicy.' I said, 'Bring it on.' My taste buds said, 'You made a terrible mistake.'",
+      "category": "Real Estate Tours",
+      "topic": "A hidden micro-apartment in NYC with surprisingly clever storage solutions.",
+      "hook": "Could you live in a shoebox? This NYC micro-apartment says 'YES!' with shocking style and incredible storage.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Esports Tournaments",
-      "topic": "Decoding Faker's Genius: The Game-Winning Baron Steal at Worlds",
-      "hook": "Faker. Baron steal. Worlds. Need I say more? Let's dissect the most iconic moment from the League of Legends World Championship.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 46
+      "category": "Real Estate Tours",
+      "topic": "The most bizarrely themed guest bathroom I've ever seen in a suburban home.",
+      "hook": "I've seen a lot of bathrooms, but this one... this one needs to be seen to be believed. Prepare for kitsch!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Music Reactions",
-      "topic": "Gen Z Reacts to Classic Rock: Queen's 'Bohemian Rhapsody' for the First Time",
-      "hook": "Okay, I've never heard 'Bohemian Rhapsody' before. Prepare for a Gen Z's unfiltered first reaction to this classic rock anthem.",
+      "category": "Scuba Diving Adventures",
+      "topic": "My first encounter with a majestic manta ray in Komodo National Park.",
+      "hook": "Imagine a creature gliding effortlessly above you, wings spanning ten feet. My heart nearly stopped.",
+      "voice_style": "inspirational",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Scuba Diving Adventures",
+      "topic": "The eerie beauty of diving a sunken WWII ship in Truk Lagoon.",
+      "hook": "Sunken in time, silent and ghostly. This isn't just a dive, it's a journey into history's watery grave.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Actor Tributes",
+      "topic": "The unexpected comedic genius of Sir Patrick Stewart's lesser-known roles.",
+      "hook": "You know him as Picard, but did you know Sir Patrick Stewart is secretly hilarious? Prepare to be surprised!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 44
+      "target_duration": 40
     },
     {
-      "category": "Tech Reviews",
-      "topic": "The Most Underrated Smartwatch Feature: Gesture Control on the New Galaxy Watch",
-      "hook": "Forget heart rate monitors. The new Galaxy Watch has a hidden gesture control feature that's actually changing how I use it.",
+      "category": "Actor Tributes",
+      "topic": "Unpacking Anya Taylor-Joy's incredible range from 'The Queen's Gambit' to 'The Menu'.",
+      "hook": "From chess prodigy to culinary cult leader, how does Anya Taylor-Joy embody such vastly different characters?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "City Weather Updates",
+      "topic": "Surviving a surprise San Francisco fog-ocalypse in July.",
+      "hook": "It's July, it's San Francisco, and yes, it feels like winter. Here's how to survive the infamous 'Fogust' preview!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 47
+      "target_duration": 40
     },
     {
-      "category": "Subnautica 2 Gameplay",
-      "topic": "Subnautica 2 Glitch Hunting: Finding Infinite Resources with This Trick",
-      "hook": "Is this a feature or a massive bug? I think I just found an infinite resource glitch in Subnautica 2. You HAVE to see this before it's patched.",
+      "category": "City Weather Updates",
+      "topic": "The most dramatic thunderstorm to hit NYC in a decade (and what it looked like from my window).",
+      "hook": "One minute it was sunny, the next, Manhattan turned into a scene from an apocalypse movie. This was the NYC storm of the decade.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Book Reviews",
+      "topic": "Why 'Project Hail Mary' by Andy Weir is the most uplifting sci-fi book you'll ever read.",
+      "hook": "What if the fate of humanity rested on an amnesiac astronaut and his alien best friend? Pure genius and pure joy.",
       "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Book Reviews",
+      "topic": "The unexpected plot twist in 'The Silent Patient' that absolutely floored me.",
+      "hook": "I thought I had 'The Silent Patient' figured out. I was SO wrong. My jaw literally dropped at this twist.",
+      "voice_style": "dramatic",
       "music_mood": "mysterious",
-      "target_duration": 49
+      "target_duration": 40
+    },
+    {
+      "category": "Home Decor Inspiration",
+      "topic": "Transforming a boring rental apartment bathroom with peel-and-stick tiles and plants.",
+      "hook": "Landlord says no permanent changes? Watch me turn this drab rental bathroom into a jungle oasis for under $100.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Home Decor Inspiration",
+      "topic": "DIY minimalist bookshelf styling hacks for maximal impact on a budget.",
+      "hook": "Your bookshelf is begging for an upgrade. Here are 3 minimalist styling hacks that look expensive but cost next to nothing.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Vacation Ideas",
+      "topic": "An underrated European city for foodies: Lyon, France without the Paris crowds.",
+      "hook": "Skip the Eiffel Tower and taste true French gastronomy. This city is a foodie's dream, and you've probably overlooked it.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Vacation Ideas",
+      "topic": "Glamping in the desert: Luxury tents and stargazing in Moab, Utah.",
+      "hook": "Trade your sleeping bag for a king-sized bed under a canopy of stars. This is glamping like you've never seen it.",
+      "voice_style": "inspirational",
+      "music_mood": "chill",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
