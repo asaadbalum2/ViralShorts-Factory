@@ -1,260 +1,99 @@
 {
-  "generated_at": "2026-05-18T08:56:59.204706",
-  "valid_until": "2026-05-18T23:59:59.204717",
+  "generated_at": "2026-05-19T08:42:49.739590",
+  "valid_until": "2026-05-19T23:59:49.739597",
   "categories": [
-    "TV Show Recaps",
-    "Travel Disasters",
-    "Tech Reviews",
-    "Real Estate Tours",
-    "Scuba Diving Adventures",
-    "Actor Tributes",
-    "City Weather Updates",
-    "Book Reviews",
-    "Home Decor Inspiration",
+    "Gaming Highlights (God of War)",
+    "Sports Updates (Bianca Andreescu, Pak vs Ban)",
+    "Personal Injury Stories (Injury Attorney)",
+    "Travel Vlogs (Philippines)",
+    "Emerging Talent (Twisha Sharma)",
+    "News Updates (Ameren)",
+    "Law and Justice Explainers",
     "Summer Vacation Ideas",
-    "New Movie Releases",
-    "Electronics Unboxing",
-    "Wildlife Encounters",
-    "Apocalypse Survival Tips",
-    "Island Getaway Vlogs"
+    "Esports Tournament Recaps",
+    "Fitness Motivation (Inspired by Bianca Andreescu)",
+    "Current Event Analysis (Pak vs Ban)",
+    "Accident Prevention Tips (Injury Attorney)",
+    "Beautiful Destination Tours (Philippines)",
+    "New Game Releases (God of War)",
+    "Women in Sports (Bianca Andreescu, Twisha Sharma)"
   ],
-  "concepts": [
-    {
-      "category": "TV Show Recaps",
-      "topic": "The mind-bending ending of 'Dark' Season 3 explained in 45 seconds.",
-      "hook": "Did you actually understand the ending of Dark? Because I barely did, and I watched it twice!",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Recaps",
-      "topic": "The most iconic 'gotcha' moments from 'Game of Thrones' Season 1 that shocked everyone.",
-      "hook": "Remember when Ned Stark... well, you know. The first big GOT shocker that changed TV forever!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Disasters",
-      "topic": "How my luggage ended up in a different continent (and what I did about it).",
-      "hook": "Imagine landing in Tokyo, but your suitcase is having a blast in Rome. Yep, that happened.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel Disasters",
-      "topic": "My nightmare encounter with a rogue street vendor in Marrakech that almost cost me everything.",
-      "hook": "I just wanted a souvenir, but instead I almost lost my wallet and my patience in Marrakech.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech Reviews",
-      "topic": "Testing the new foldable phone's durability: Can it survive a toddler?",
-      "hook": "Everyone's testing drop resistance, but what about a toddler's pure, unadulterated chaos? Let's find out.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Reviews",
-      "topic": "The smart home device that *actually* changed my daily routine (and one that was a total flop).",
-      "hook": "I've bought ALL the smart home gadgets. Only ONE actually works as advertised and improved my life.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Real Estate Tours",
-      "topic": "A hidden micro-apartment in NYC with surprisingly clever storage solutions.",
-      "hook": "Could you live in a shoebox? This NYC micro-apartment says 'YES!' with shocking style and incredible storage.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Real Estate Tours",
-      "topic": "The most bizarrely themed guest bathroom I've ever seen in a suburban home.",
-      "hook": "I've seen a lot of bathrooms, but this one... this one needs to be seen to be believed. Prepare for kitsch!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Scuba Diving Adventures",
-      "topic": "My first encounter with a majestic manta ray in Komodo National Park.",
-      "hook": "Imagine a creature gliding effortlessly above you, wings spanning ten feet. My heart nearly stopped.",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Scuba Diving Adventures",
-      "topic": "The eerie beauty of diving a sunken WWII ship in Truk Lagoon.",
-      "hook": "Sunken in time, silent and ghostly. This isn't just a dive, it's a journey into history's watery grave.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Actor Tributes",
-      "topic": "The unexpected comedic genius of Sir Patrick Stewart's lesser-known roles.",
-      "hook": "You know him as Picard, but did you know Sir Patrick Stewart is secretly hilarious? Prepare to be surprised!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Actor Tributes",
-      "topic": "Unpacking Anya Taylor-Joy's incredible range from 'The Queen's Gambit' to 'The Menu'.",
-      "hook": "From chess prodigy to culinary cult leader, how does Anya Taylor-Joy embody such vastly different characters?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "City Weather Updates",
-      "topic": "Surviving a surprise San Francisco fog-ocalypse in July.",
-      "hook": "It's July, it's San Francisco, and yes, it feels like winter. Here's how to survive the infamous 'Fogust' preview!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "City Weather Updates",
-      "topic": "The most dramatic thunderstorm to hit NYC in a decade (and what it looked like from my window).",
-      "hook": "One minute it was sunny, the next, Manhattan turned into a scene from an apocalypse movie. This was the NYC storm of the decade.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Book Reviews",
-      "topic": "Why 'Project Hail Mary' by Andy Weir is the most uplifting sci-fi book you'll ever read.",
-      "hook": "What if the fate of humanity rested on an amnesiac astronaut and his alien best friend? Pure genius and pure joy.",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Book Reviews",
-      "topic": "The unexpected plot twist in 'The Silent Patient' that absolutely floored me.",
-      "hook": "I thought I had 'The Silent Patient' figured out. I was SO wrong. My jaw literally dropped at this twist.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Home Decor Inspiration",
-      "topic": "Transforming a boring rental apartment bathroom with peel-and-stick tiles and plants.",
-      "hook": "Landlord says no permanent changes? Watch me turn this drab rental bathroom into a jungle oasis for under $100.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Home Decor Inspiration",
-      "topic": "DIY minimalist bookshelf styling hacks for maximal impact on a budget.",
-      "hook": "Your bookshelf is begging for an upgrade. Here are 3 minimalist styling hacks that look expensive but cost next to nothing.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Vacation Ideas",
-      "topic": "An underrated European city for foodies: Lyon, France without the Paris crowds.",
-      "hook": "Skip the Eiffel Tower and taste true French gastronomy. This city is a foodie's dream, and you've probably overlooked it.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Vacation Ideas",
-      "topic": "Glamping in the desert: Luxury tents and stargazing in Moab, Utah.",
-      "hook": "Trade your sleeping bag for a king-sized bed under a canopy of stars. This is glamping like you've never seen it.",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
-      "target_duration": 50
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
