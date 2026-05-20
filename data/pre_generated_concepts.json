@@ -1,99 +1,99 @@
 {
-  "generated_at": "2026-05-19T08:42:49.739590",
-  "valid_until": "2026-05-19T23:59:49.739597",
+  "generated_at": "2026-05-20T08:40:09.638811",
+  "valid_until": "2026-05-20T23:59:09.638819",
   "categories": [
-    "Gaming Highlights (God of War)",
-    "Sports Updates (Bianca Andreescu, Pak vs Ban)",
-    "Personal Injury Stories (Injury Attorney)",
-    "Travel Vlogs (Philippines)",
-    "Emerging Talent (Twisha Sharma)",
-    "News Updates (Ameren)",
-    "Law and Justice Explainers",
-    "Summer Vacation Ideas",
-    "Esports Tournament Recaps",
-    "Fitness Motivation (Inspired by Bianca Andreescu)",
-    "Current Event Analysis (Pak vs Ban)",
-    "Accident Prevention Tips (Injury Attorney)",
-    "Beautiful Destination Tours (Philippines)",
-    "New Game Releases (God of War)",
-    "Women in Sports (Bianca Andreescu, Twisha Sharma)"
+    "Tech Reviews",
+    "Smart Home Tours",
+    "Immigration Reform",
+    " Celebrity News",
+    "New Movie Releases",
+    "Action TV Series",
+    "Investigative Journalism",
+    "Sci-Fi Fandom",
+    "Home Entertainment",
+    "Politics Explained",
+    "Amazon Hacks",
+    "TV Show Recaps",
+    "Social Justice",
+    "4K Video Content",
+    "Gaming News"
   ],
   "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-JennyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
