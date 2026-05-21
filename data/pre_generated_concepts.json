@@ -1,54 +1,203 @@
 {
-  "generated_at": "2026-05-20T08:40:09.638811",
-  "valid_until": "2026-05-20T23:59:09.638819",
+  "generated_at": "2026-05-21T08:45:36.978904",
+  "valid_until": "2026-05-21T23:59:36.978914",
   "categories": [
-    "Tech Reviews",
-    "Smart Home Tours",
-    "Immigration Reform",
-    " Celebrity News",
-    "New Movie Releases",
-    "Action TV Series",
-    "Investigative Journalism",
-    "Sci-Fi Fandom",
-    "Home Entertainment",
-    "Politics Explained",
-    "Amazon Hacks",
-    "TV Show Recaps",
-    "Social Justice",
-    "4K Video Content",
-    "Gaming News"
+    "Royal Family Updates",
+    "AI Technology Explainers",
+    "Winter Sports Highlights",
+    "Finance and Fintech News",
+    "Tennis Star Features",
+    "Snowfall Timelapses",
+    "Influencer Spotlight",
+    "Car Accident Prevention Tips",
+    "Law Firm Services",
+    "Google AI Studio Tutorials",
+    "E-commerce Payment Solutions",
+    "Cloud Computing Explainers",
+    "Current Event Analysis",
+    "Tech Industry News",
+    "Personal Injury Lawyer Advice"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Royal Family Updates",
+      "topic": "Queen's Jubilee Celebration Plans",
+      "hook": "You won't believe what's in store for the Queen's Jubilee!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "AI Technology Explainers",
+      "topic": "How AI is Revolutionizing Healthcare",
+      "hook": "The future of medicine is here, and it's more shocking than you think!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Winter Sports Highlights",
+      "topic": "Top 5 Skiing Runs in the Swiss Alps",
+      "hook": "Get ready to hit the slopes like never before!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Finance and Fintech News",
+      "topic": "The Rise of Cryptocurrency in 2024",
+      "hook": "Is this the end of traditional money as we know it?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Star Features",
+      "topic": "The Unstoppable Serena Williams",
+      "hook": "What's behind Serena's unstoppable tennis prowess?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Snowfall Timelapses",
+      "topic": "Magical Snowfall in New York City",
+      "hook": " Witness the city that never sleeps transform into a winter wonderland!",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Influencer Spotlight",
+      "topic": "The Rise of Sustainable Fashion Influencers",
+      "hook": "Meet the influencers changing the face of fashion forever!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Car Accident Prevention Tips",
+      "topic": "5 Common Mistakes That Can Save Your Life",
+      "hook": "Don't become a statistic: avoid these deadly driving mistakes!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Law Firm Services",
+      "topic": "What to Expect from a Free Consultation",
+      "hook": "You have the right to know: what really happens in a free consultation?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Google AI Studio Tutorials",
+      "topic": "Creating Stunning AI-Generated Art",
+      "hook": "Unleash your inner artist with the power of AI!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Royal Family Updates",
+      "topic": "Prince William's Charity Work",
+      "hook": "Discover the royal's secret passion that's changing lives!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "AI Technology Explainers",
+      "topic": "The Future of Self-Driving Cars",
+      "hook": "Are we ready to hand over the keys to AI?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Winter Sports Highlights",
+      "topic": "The Most Epic Snowboarding Fails",
+      "hook": "You won't believe these daredevils' most epic wipeouts!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Finance and Fintech News",
+      "topic": "The Impact of Brexit on Global Markets",
+      "hook": "The clock is ticking: what does Brexit mean for your money?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Star Features",
+      "topic": "The Rise of Novak Djokovic",
+      "hook": "What's behind the world's number one tennis player's unstoppable success?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Snowfall Timelapses",
+      "topic": "A Snowy Night in Tokyo",
+      "hook": "Experience the magical snowfall in one of the world's busiest cities!",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Influencer Spotlight",
+      "topic": "The Power of Wellness Influencers",
+      "hook": "Meet the influencers who are changing the way we think about health!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Car Accident Prevention Tips",
+      "topic": "Driving in the Rain: Safety Tips",
+      "hook": "Don't let the rain catch you off guard: stay safe on the roads!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Law Firm Services",
+      "topic": "Understanding Personal Injury Claims",
+      "hook": "You have the right to compensation: know your options!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Google AI Studio Tutorials",
+      "topic": "Building Your Own Chatbot",
+      "hook": "Talk to the future: create your own AI chatbot today!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Royal Family Updates",
+      "topic": "The Royal Family's Favorite Holiday Destinations",
+      "hook": "Where do the royals really go on vacation?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -56,44 +205,64 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
