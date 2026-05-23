@@ -1,53 +1,234 @@
 {
-  "generated_at": "2026-05-22T08:36:11.064057",
-  "valid_until": "2026-05-22T23:59:11.064065",
+  "generated_at": "2026-05-23T07:54:28.050262",
+  "valid_until": "2026-05-23T23:59:28.050273",
   "categories": [
-    "Car Accident Stories and Testimonials",
-    "Legal Advice for Accident Victims",
-    "Sports Highlights: Djed Spence",
-    "Tom Clancy's Jack Ryan: Ghost War Walkthroughs",
-    "The Last of Us Gameplay and Reviews",
-    "Accident Attorney Q&A",
-    "Search Engine Optimization Tips",
-    "Jpegmafia Music and Behind-the-Scenes",
-    "Spring Road Safety Tips",
-    "Lawyer Reacts to Court Cases",
-    "Action-Packed Gaming Montages",
-    "Personal Injury Claims Explained",
-    "Summer Driving Safety Precautions",
-    "Esports Updates and Analysis",
-    "Emerging Music Trends and Artist Features"
+    "Earthquake Updates",
+    "Hawaii Travel Vlogs",
+    "US News",
+    "Weather Forecasting",
+    "Celeb News",
+    "Ansel Elgort Fan Content",
+    "Justice System Explainers",
+    "Car Maintenance Tips",
+    "Disaster Preparedness",
+    "Summer Weather Safety",
+    "USGS Educational Content",
+    "Dallas Tourism",
+    "Earthquake Survival Tips",
+    "Engine Oil Reviews",
+    "Emergency Response Videos"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Earthquake Updates",
+      "topic": "What to do IMMEDIATELY after an earthquake (before the aftershocks!)",
+      "hook": "Did you just feel the ground shake? Don't panic, but DO this first to stay safe!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Earthquake Updates",
+      "topic": "Busting 3 common earthquake myths (no, a doorway isn't always safe!)",
+      "hook": "Think you know exactly what to do when the ground shakes? You might be wrong! Let's debunk some major earthquake myths.",
+      "voice_style": "Energetic",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Hawaii Travel Vlogs",
+      "topic": "The *one* hidden beach in Maui tourists NEVER find (shhh, it's a secret!)",
+      "hook": "Forget the crowded resorts! I'm about to reveal Maui's best-kept secret: a secluded beach tourists never discover.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Hawaii Travel Vlogs",
+      "topic": "Eating your way through Oahu: 3 must-try local dishes beyond poke!",
+      "hook": "You think Hawaiian food is just poke bowls? Think again! Your tastebuds are in for a treat with these Oahu essentials.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "US News",
+      "topic": "The surprising reason your grocery bill keeps climbing (it's not just inflation!)",
+      "hook": "Ever wonder why your grocery cart costs a fortune? The answer might shock you \u2013 and it's not *just* inflation.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "US News",
+      "topic": "Why remote work isn't going anywhere (and how it's changing US cities)",
+      "hook": "Is your office a ghost town? Here's why remote work is the new normal, and what it means for the future of our cities.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 44
+    },
+    {
+      "category": "Weather Forecasting",
+      "topic": "The 'heat dome' explained: Why this summer feels extra brutal and what it means",
+      "hook": "It's not just hot, it's a 'heat dome'! What does this extreme weather phenomenon even mean, and should you be worried?",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Weather Forecasting",
+      "topic": "How AI is revolutionizing hurricane predictions (and saving lives!)",
+      "hook": "Forget old weather maps! AI is changing how we track hurricanes, and the accuracy is so insane, it's saving lives.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 49
+    },
+    {
+      "category": "Celeb News",
+      "topic": "The shocking truth behind that viral celeb breakup (sources spill!)",
+      "hook": "Remember that A-list breakup that broke the internet? The REAL story is finally coming out, and it's wild.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 43
+    },
+    {
+      "category": "Celeb News",
+      "topic": "From indie to icon: How one celeb quietly built a billion-dollar empire",
+      "hook": "You know their face, but do you know how they secretly became a business mogul worth billions? It's a surprising journey.",
+      "voice_style": "Mysterious",
+      "music_mood": "Inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Ansel Elgort Fan Content",
+      "topic": "Ansel's unexpected role: The one movie you probably missed but NEED to see!",
+      "hook": "Think you've seen every Ansel Elgort movie? Guess again! This hidden gem is a must-watch for any true fan.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Ansel Elgort Fan Content",
+      "topic": "Deep dive into Ansel's music career: His BEST unreleased tracks!",
+      "hook": "Ansel Elgort: Actor, DJ... but have you heard his SECRET music vault? Prepare to be impressed by these unreleased bangers.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Justice System Explainers",
+      "topic": "Miranda Rights: What cops WON'T tell you about 'anything you say...'",
+      "hook": "Ever heard 'you have the right to remain silent'? Here's what those famous words *actually* mean for YOU, and what cops won't tell you.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Justice System Explainers",
+      "topic": "The surprising difference between civil and criminal cases (and why it matters!)",
+      "hook": "Law & Order got you confused? Let's break down civil vs. criminal cases, because the stakes and outcomes are totally different.",
+      "voice_style": "Calm",
+      "music_mood": "Mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Car Maintenance Tips",
+      "topic": "The EASY 5-minute hack to check your car's critical fluids (save big bucks!)",
+      "hook": "Don't pay a mechanic for this! I'll show you how to check your car's lifeblood in just 5 minutes and save yourself a fortune.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Car Maintenance Tips",
+      "topic": "Why your 'check engine' light might be a simple fix (before you panic!)",
+      "hook": "Check engine light just pop on? Don't freak out! It might be a super simple, cheap fix that you can do yourself.",
+      "voice_style": "Energetic",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Disaster Preparedness",
+      "topic": "Your 'go-bag' essentials: The 7 items you absolutely CANNOT forget!",
+      "hook": "What's in *your* disaster go-bag? If you don't have these 7 critical items, you're not ready for anything.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Disaster Preparedness",
+      "topic": "Decoding emergency alerts: What those siren sounds *actually* mean",
+      "hook": "You hear the emergency siren, but what exactly is it telling you? Let's decode those urgent warnings so you know what to do.",
+      "voice_style": "Calm",
+      "music_mood": "Mysterious",
+      "target_duration": 44
+    },
+    {
+      "category": "Summer Weather Safety",
+      "topic": "Sunscreen myths debunked: Are you applying it all wrong?",
+      "hook": "You think you're safe in the sun? Think again! You're probably making these 3 huge sunscreen mistakes without even knowing.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Weather Safety",
+      "topic": "Spotting the early signs of heatstroke (it's not just dizziness!)",
+      "hook": "Feeling a little off in the heat? Don't ignore it! These are the crucial early signs of heatstroke you need to watch for.",
+      "voice_style": "Calm",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
@@ -56,44 +237,24 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
