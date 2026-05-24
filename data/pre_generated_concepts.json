@@ -1,245 +1,215 @@
 {
-  "generated_at": "2026-05-23T07:54:28.050262",
-  "valid_until": "2026-05-23T23:59:28.050273",
+  "generated_at": "2026-05-24T08:03:53.727739",
+  "valid_until": "2026-05-24T23:59:53.727751",
   "categories": [
-    "Earthquake Updates",
-    "Hawaii Travel Vlogs",
-    "US News",
-    "Weather Forecasting",
-    "Celeb News",
-    "Ansel Elgort Fan Content",
-    "Justice System Explainers",
-    "Car Maintenance Tips",
-    "Disaster Preparedness",
-    "Summer Weather Safety",
-    "USGS Educational Content",
-    "Dallas Tourism",
-    "Earthquake Survival Tips",
-    "Engine Oil Reviews",
-    "Emergency Response Videos"
+    "Travel Hacks for Canada Restrictions",
+    "Gabriel Diallo Highlights",
+    "Dakota Johnson Fashion Inspiration",
+    "Chris Evans Fan Edits",
+    "Riot Control and Safety Tips",
+    "Last-Minute Tax Filing Advice",
+    "Desi Bling Fashion Trends",
+    "SJSU Campus Life Vlogs",
+    "Summer Travel Destinations",
+    "News Updates and Reactions",
+    " Celebrity Q&A Sessions",
+    "Tax Season Memes and Jokes",
+    "Canada Travel Vlogs",
+    "Spring Fashion Must-Haves",
+    "College Life Hacks and Tips"
   ],
   "concepts": [
     {
-      "category": "Earthquake Updates",
-      "topic": "What to do IMMEDIATELY after an earthquake (before the aftershocks!)",
-      "hook": "Did you just feel the ground shake? Don't panic, but DO this first to stay safe!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Travel Hacks for Canada Restrictions",
+      "topic": "Navigating the ArriveCAN app for faster entry into Canada.",
+      "hook": "Still stuck in line at Canadian customs? You're doing it wrong.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Earthquake Updates",
-      "topic": "Busting 3 common earthquake myths (no, a doorway isn't always safe!)",
-      "hook": "Think you know exactly what to do when the ground shakes? You might be wrong! Let's debunk some major earthquake myths.",
+      "category": "Travel Hacks for Canada Restrictions",
+      "topic": "Essential documents and packing items to avoid delays at the Canadian border.",
+      "hook": "Forgot THESE? Say goodbye to your spontaneous weekend trip to Canada.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Gabriel Diallo Highlights",
+      "topic": "Breakdown of Gabriel Diallo's signature powerful forehand technique.",
+      "hook": "How does Gabriel Diallo generate THAT much power in his forehand?",
       "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Gabriel Diallo Highlights",
+      "topic": "Unseen angles of Gabriel Diallo's clutch tie-break moments from the recent ATP Masters.",
+      "hook": "You thought you saw it all? Think again about Diallo's last match.",
+      "voice_style": "Dramatic",
       "music_mood": "Dramatic",
       "target_duration": 48
     },
     {
-      "category": "Hawaii Travel Vlogs",
-      "topic": "The *one* hidden beach in Maui tourists NEVER find (shhh, it's a secret!)",
-      "hook": "Forget the crowded resorts! I'm about to reveal Maui's best-kept secret: a secluded beach tourists never discover.",
+      "category": "Dakota Johnson Fashion Inspiration",
+      "topic": "Recreating Dakota Johnson's 'casual chic' coffee run outfits for under $50.",
+      "hook": "Dakota Johnson's effortlessly cool look? Totally affordable, actually.",
       "voice_style": "Friendly",
       "music_mood": "Chill",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Hawaii Travel Vlogs",
-      "topic": "Eating your way through Oahu: 3 must-try local dishes beyond poke!",
-      "hook": "You think Hawaiian food is just poke bowls? Think again! Your tastebuds are in for a treat with these Oahu essentials.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Dakota Johnson Fashion Inspiration",
+      "topic": "The secret behind Dakota Johnson's unique vintage-inspired red carpet style.",
+      "hook": "She always nails the vintage vibe, but how does Dakota do it?",
+      "voice_style": "Mysterious",
+      "music_mood": "Inspirational",
       "target_duration": 42
     },
     {
-      "category": "US News",
-      "topic": "The surprising reason your grocery bill keeps climbing (it's not just inflation!)",
-      "hook": "Ever wonder why your grocery cart costs a fortune? The answer might shock you \u2013 and it's not *just* inflation.",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
+      "category": "Chris Evans Fan Edits",
+      "topic": "Chris Evans' most heartwarming moments interacting with rescue dogs.",
+      "hook": "Prepare for your heart to melt: Chris Evans and his furry co-stars.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 47
     },
     {
-      "category": "US News",
-      "topic": "Why remote work isn't going anywhere (and how it's changing US cities)",
-      "hook": "Is your office a ghost town? Here's why remote work is the new normal, and what it means for the future of our cities.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 44
+      "category": "Chris Evans Fan Edits",
+      "topic": "A montage showcasing Chris Evans' underrated comedic timing and roles.",
+      "hook": "Captain America... but make it hilarious. The side of Chris Evans you NEED to see.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 43
     },
     {
-      "category": "Weather Forecasting",
-      "topic": "The 'heat dome' explained: Why this summer feels extra brutal and what it means",
-      "hook": "It's not just hot, it's a 'heat dome'! What does this extreme weather phenomenon even mean, and should you be worried?",
+      "category": "Riot Control and Safety Tips",
+      "topic": "Essential personal protective gear for attending a public protest safely.",
+      "hook": "Attending a protest? Don't leave home without these 3 things.",
       "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Riot Control and Safety Tips",
+      "topic": "Understanding crowd dynamics to avoid getting trapped or injured in a surge.",
+      "hook": "Feeling overwhelmed in a large crowd? This crucial tip could save you.",
+      "voice_style": "Calm",
+      "music_mood": "Mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Last-Minute Tax Filing Advice",
+      "topic": "3 common tax deductions people forget when filing taxes at the last minute.",
+      "hook": "Still scrambling? These 3 forgotten deductions could save your tax day.",
+      "voice_style": "Energetic",
       "music_mood": "Intense",
       "target_duration": 46
     },
     {
-      "category": "Weather Forecasting",
-      "topic": "How AI is revolutionizing hurricane predictions (and saving lives!)",
-      "hook": "Forget old weather maps! AI is changing how we track hurricanes, and the accuracy is so insane, it's saving lives.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "Celeb News",
-      "topic": "The shocking truth behind that viral celeb breakup (sources spill!)",
-      "hook": "Remember that A-list breakup that broke the internet? The REAL story is finally coming out, and it's wild.",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Celeb News",
-      "topic": "From indie to icon: How one celeb quietly built a billion-dollar empire",
-      "hook": "You know their face, but do you know how they secretly became a business mogul worth billions? It's a surprising journey.",
-      "voice_style": "Mysterious",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Ansel Elgort Fan Content",
-      "topic": "Ansel's unexpected role: The one movie you probably missed but NEED to see!",
-      "hook": "Think you've seen every Ansel Elgort movie? Guess again! This hidden gem is a must-watch for any true fan.",
-      "voice_style": "Friendly",
+      "category": "Last-Minute Tax Filing Advice",
+      "topic": "How to properly file for a tax extension without incurring penalties.",
+      "hook": "The deadline is looming, but you still have options. Don't panic!",
+      "voice_style": "Calm",
       "music_mood": "Chill",
       "target_duration": 41
     },
     {
-      "category": "Ansel Elgort Fan Content",
-      "topic": "Deep dive into Ansel's music career: His BEST unreleased tracks!",
-      "hook": "Ansel Elgort: Actor, DJ... but have you heard his SECRET music vault? Prepare to be impressed by these unreleased bangers.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Justice System Explainers",
-      "topic": "Miranda Rights: What cops WON'T tell you about 'anything you say...'",
-      "hook": "Ever heard 'you have the right to remain silent'? Here's what those famous words *actually* mean for YOU, and what cops won't tell you.",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Justice System Explainers",
-      "topic": "The surprising difference between civil and criminal cases (and why it matters!)",
-      "hook": "Law & Order got you confused? Let's break down civil vs. criminal cases, because the stakes and outcomes are totally different.",
-      "voice_style": "Calm",
-      "music_mood": "Mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "Car Maintenance Tips",
-      "topic": "The EASY 5-minute hack to check your car's critical fluids (save big bucks!)",
-      "hook": "Don't pay a mechanic for this! I'll show you how to check your car's lifeblood in just 5 minutes and save yourself a fortune.",
+      "category": "Desi Bling Fashion Trends",
+      "topic": "Mastering the art of layering traditional Desi jewelry for a modern, chic look.",
+      "hook": "Too much bling or just enough? Let's decode Desi jewelry layering.",
       "voice_style": "Friendly",
       "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Car Maintenance Tips",
-      "topic": "Why your 'check engine' light might be a simple fix (before you panic!)",
-      "hook": "Check engine light just pop on? Don't freak out! It might be a super simple, cheap fix that you can do yourself.",
-      "voice_style": "Energetic",
-      "music_mood": "Chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Disaster Preparedness",
-      "topic": "Your 'go-bag' essentials: The 7 items you absolutely CANNOT forget!",
-      "hook": "What's in *your* disaster go-bag? If you don't have these 7 critical items, you're not ready for anything.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Disaster Preparedness",
-      "topic": "Decoding emergency alerts: What those siren sounds *actually* mean",
-      "hook": "You hear the emergency siren, but what exactly is it telling you? Let's decode those urgent warnings so you know what to do.",
-      "voice_style": "Calm",
-      "music_mood": "Mysterious",
       "target_duration": 44
     },
     {
-      "category": "Summer Weather Safety",
-      "topic": "Sunscreen myths debunked: Are you applying it all wrong?",
-      "hook": "You think you're safe in the sun? Think again! You're probably making these 3 huge sunscreen mistakes without even knowing.",
+      "category": "Desi Bling Fashion Trends",
+      "topic": "Unexpected ways to incorporate 'juttis' into everyday Western outfits.",
+      "hook": "Your juttis aren't just for weddings anymore. Trust me on this.",
       "voice_style": "Energetic",
       "music_mood": "Upbeat",
-      "target_duration": 40
+      "target_duration": 48
     },
     {
-      "category": "Summer Weather Safety",
-      "topic": "Spotting the early signs of heatstroke (it's not just dizziness!)",
-      "hook": "Feeling a little off in the heat? Don't ignore it! These are the crucial early signs of heatstroke you need to watch for.",
-      "voice_style": "Calm",
+      "category": "SJSU Campus Life Vlogs",
+      "topic": "Discovering the best hidden study spots at SJSU with good Wi-Fi and outlets.",
+      "hook": "Tired of the library rush? Discover SJSU's secret study havens.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "SJSU Campus Life Vlogs",
+      "topic": "A 'day in the life' of an SJSU commuter student, including parking hacks.",
+      "hook": "SJSU commuter life: Surviving the parking wars and 8 AM classes.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Summer Travel Destinations",
+      "topic": "Off-the-beaten-path European cities for a budget-friendly summer adventure.",
+      "hook": "Forget Paris and Rome! These European gems won't break the bank this summer.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Summer Travel Destinations",
+      "topic": "Unique glamping experiences in North America for an adventurous summer getaway.",
+      "hook": "Tents are out, luxury wilderness is IN. Your summer adventure starts here.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
+      "target_duration": 49
+    },
+    {
+      "category": "News Updates and Reactions",
+      "topic": "My unfiltered reaction to the latest viral tech gadget launch (e.g., new smart device).",
+      "hook": "Is the hype REAL? My brutally honest reaction to [latest gadget].",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "News Updates and Reactions",
+      "topic": "Breaking down a recent local government policy announcement and its impact.",
+      "hook": "This new local policy just dropped, and here's what it means for YOU.",
+      "voice_style": "Authoritative",
       "music_mood": "Dramatic",
-      "target_duration": 48
+      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
@@ -247,14 +217,44 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
