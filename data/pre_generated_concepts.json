@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-05-25T09:11:00.210612",
-  "valid_until": "2026-05-25T23:59:00.210619",
+  "generated_at": "2026-05-26T08:49:19.747135",
+  "valid_until": "2026-05-26T23:59:19.747143",
   "categories": [
-    "Law and Order: Injury Lawyer Stories",
-    "Convenience Store Hacks: 7 Eleven Edition",
-    "Mortgage Mastery: Navigating Interest Rates",
-    "Cancer Care Awareness and Support",
-    "Comedy Revival: Stephen Colbert Public Access Return",
-    "Laugh Out Loud: Funny Moments",
-    "Health and Wellness: Franciscan Health Tips",
-    "Tech Updates: Latest iPhone Rumors",
-    "Personal Finance: Mortgage Interest Rate Explained",
-    "Medical Breakthroughs: Cancer Care Innovations",
-    "Public Access Show Revival",
-    "Store Wars: 7 Eleven vs Competitors",
-    "Interest Rate Impact: Mortgage and Loans",
-    "Healthcare Heroes: Franciscan Health Stories",
-    "Tech and Trends: iPhone Rumors and Releases"
+    "Gaming Updates: Bungie and Riot News",
+    "Netflix Top Picks: Latest Movie Reviews",
+    "Apple Insider: Latest iPhone Rumors",
+    "Winter Sports: Snowfall and Snowflake Fun",
+    "Music Festivals: Rockstar Performances",
+    "Health and Wellness: Understanding Kuru Disease",
+    "Top 10 Netflix Movies to Watch Now",
+    "Bungie Game Walkthroughs and Tips",
+    "Snowflake and Cloud Computing Explained",
+    "Riot Games Tournament Highlights",
+    "iPhone Rumors and Leaks Discussion",
+    "Rockstar Game Reviews and Previews",
+    "Netflix vs Other Streaming Services",
+    "Snowfall and Winter Adventure Vlogs",
+    "Tech News: Latest Innovations from Bungie and Riot"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Gaming Updates: Bungie and Riot News",
+      "topic": "Bungie's 'The Final Shape' Release Date Controversy",
+      "hook": "Did Bungie just drop a HUGE bombshell about 'The Final Shape' release date? You won't believe the drama!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming Updates: Bungie and Riot News",
+      "topic": "Riot Games' New 'Valorant' Agent Ability Leaks",
+      "hook": "Whoa! New Valorant agent abilities just leaked, and they're game-changing. Is this the next duelist or controller?",
+      "voice_style": "mysterious",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Netflix Top Picks: Latest Movie Reviews",
+      "topic": "Review of Zack Snyder's 'Rebel Moon - Part Two: The Scargiver'",
+      "hook": "Is 'Rebel Moon Part Two' the sci-fi epic we waited for, or another Snyder misfire? My honest, spoiler-free review is in!",
+      "voice_style": "friendly",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Netflix Top Picks: Latest Movie Reviews",
+      "topic": "Breaking Down the Twists in 'Damsel' starring Millie Bobby Brown",
+      "hook": "Millie Bobby Brown's 'Damsel' on Netflix had some SERIOUS twists! Let's talk about the ending everyone's debating.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Apple Insider: Latest iPhone Rumors",
+      "topic": "iPhone 16 Pro Camera Upgrades Leaked Features",
+      "hook": "Hold up, tech enthusiasts! New iPhone 16 Pro camera leaks suggest mind-blowing upgrades. Will your photos ever be the same?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Apple Insider: Latest iPhone Rumors",
+      "topic": "Will the iPhone SE 4 Finally Get an OLED Display?",
+      "hook": "The iPhone SE 4 is buzzing with rumors, but will it FINALLY get an OLED screen? This could be a game-changer for budget Apple fans!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 47
+    },
+    {
+      "category": "Winter Sports: Snowfall and Snowflake Fun",
+      "topic": "The Science Behind Perfect Powder Snowfall",
+      "hook": "Ever wondered what makes that perfect, fluffy powder snow? Get ready to become a snowfall expert!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Winter Sports: Snowfall and Snowflake Fun",
+      "topic": "Adrenaline-Pumping Backcountry Snowboarding Drone Shots",
+      "hook": "Prepare for extreme! These drone shots of untouched backcountry snowboarding will make your jaw drop!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Music Festivals: Rockstar Performances",
+      "topic": "Billie Eilish's Surprise Guest at Coachella 2024 Weekend One",
+      "hook": "Coachella just got a massive surprise! Billie Eilish brought out a LEGENDARY guest you won't believe!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Music Festivals: Rockstar Performances",
+      "topic": "The Most Unforgettable Mosh Pit Moments from Download Festival History",
+      "hook": "Strap in! We're diving into the craziest, most iconic mosh pit moments from Download Festival that went viral!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Health and Wellness: Understanding Kuru Disease",
+      "topic": "The Mysterious History and Discovery of Kuru Disease",
+      "hook": "Imagine a disease that made people laugh themselves to death. The haunting history of Kuru disease will chill you to the bone.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Health and Wellness: Understanding Kuru Disease",
+      "topic": "How Kuru Disease Unlocked Secrets of Prion Disorders",
+      "hook": "Kuru disease, a rare and tragic illness, actually revolutionized our understanding of brain-wasting prion disorders. Find out how!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Top 10 Netflix Movies to Watch Now",
+      "topic": "5 Underrated Netflix Movies You Probably Missed This Month",
+      "hook": "Forget the Top 10 list! I'm revealing 5 Netflix hidden gems you absolutely need to watch before they disappear!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Top 10 Netflix Movies to Watch Now",
+      "topic": "The Ultimate Sci-Fi Movie Marathon List on Netflix Right Now",
+      "hook": "Calling all sci-fi fanatics! Your weekend plans just got better with my ultimate Netflix sci-fi movie marathon list!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Bungie Game Walkthroughs and Tips",
+      "topic": "Mastering the New 'Destiny 2: The Final Shape' Raid Boss Encounter",
+      "hook": "Stuck on the new Final Shape raid boss in Destiny 2? I've got the INSANE strategy that guarantees a clear!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Bungie Game Walkthroughs and Tips",
+      "topic": "Top 3 Warlock Builds for PvP Domination in Destiny 2",
+      "hook": "Warlock mains, listen up! These 3 PvP builds will turn you into an unstoppable force in Destiny 2's Crucible!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Snowflake and Cloud Computing Explained",
+      "topic": "What is Snowflake Data Cloud and Why is it So Popular?",
+      "hook": "Heard of Snowflake but don't know what it is? Unlock the mystery of the data cloud everyone's talking about!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Snowflake and Cloud Computing Explained",
+      "topic": "Cloud Computing vs. Traditional Servers: The Real Difference",
+      "hook": "Cloud computing, traditional servers... what's the actual difference? Let's demystify it once and for all!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Riot Games Tournament Highlights",
+      "topic": "The Craziest Clutch Plays from Valorant Champions Tour Madrid",
+      "hook": "You won't believe these insane clutch plays from Valorant Champions Tour Madrid! Did you miss these game-changers?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Riot Games Tournament Highlights",
+      "topic": "League of Legends Worlds 2023: Top 5 Unforgettable Upsets",
+      "hook": "Rewind to League of Legends Worlds 2023! We're counting down the top 5 upsets that shocked the entire esports world!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
