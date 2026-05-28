@@ -1,188 +1,180 @@
 {
-  "generated_at": "2026-05-27T08:51:47.971203",
-  "valid_until": "2026-05-27T23:59:47.971211",
+  "generated_at": "2026-05-28T08:59:17.400181",
+  "valid_until": "2026-05-28T23:59:17.400188",
   "categories": [
-    "Ben Affleck Movie Reviews",
-    "Summer Weather Updates: Houston Forecast",
-    "Lawyer Reacts: Crazy Truck Accident Cases",
-    "Criminal Defense 101: Know Your Rights",
-    "Obsession Movie Breakdown: Box Office Hits",
-    "Financial Planning with T Rowe Price",
-    "Joe Biden News and Updates",
-    "Summer Road Safety Tips",
-    "Lawyer Advice: What to Do After a Truck Accident",
-    "Stock Market Updates with T Rowe Price",
-    "Ben Affleck's Most Iconic Roles",
-    "Storm Chasing: Houston Weather",
-    "Criminal Law Explained: Top Defense Strategies",
-    "Summer Movie Releases: What to Watch",
-    "Personal Finance 101: Investing with T Rowe Price"
+    "FORTNITE Gaming Highlights",
+    "Tech News: Latest iPhone Rumors",
+    "US News: Supreme Court of Ohio Updates",
+    "AI Explained: Artificial Intelligence News",
+    "Piper Rockelle Challenges",
+    "Netflix Movie Reviews",
+    "Travel Vlogs: Canada Adventures",
+    "Personal Injury Attorney FAQs",
+    "Gaming Setup Tours",
+    "Summer Travel Restrictions",
+    "AI vs Humans: Debate",
+    "Fortnite Dance Challenges",
+    "New iPhone Feature Speculation",
+    "Canada Travel Hacks",
+    "Social Media Influencer Piper Rockelle"
   ],
   "concepts": [
     {
-      "category": "Ben Affleck Movie Reviews",
-      "topic": "Analyzing the Success of Armageddon",
-      "hook": "You won't believe the secret to Armageddon's massive box office hit!",
+      "category": "FORTNITE Gaming Highlights",
+      "topic": "The CRAZIEST 1v5 Clutch in Fortnite History",
+      "hook": "You won't BELIEVE how this player turned a guaranteed loss into an impossible victory!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Weather Updates: Houston Forecast",
-      "topic": "Houston's Hottest Summer on Record",
-      "hook": "Get ready for the most sweltering summer Houston has ever seen!",
-      "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Lawyer Reacts: Crazy Truck Accident Cases",
-      "topic": "The Most Shocking Truck Accident Case of 2022",
-      "hook": "You won't believe the jaw-dropping details of this truck accident case!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Criminal Defense 101: Know Your Rights",
-      "topic": "Understanding Your Miranda Rights",
-      "hook": "Do you know what to say when the police ask you to talk?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Obsession Movie Breakdown: Box Office Hits",
-      "topic": "Unpacking the Psychology of Gone Girl",
-      "hook": "What makes Gone Girl's twisted plot so addictive?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial Planning with T Rowe Price",
-      "topic": "Maximizing Your 401(k) Contributions",
-      "hook": "Are you making the most of your retirement savings?",
-      "voice_style": "friendly",
+      "category": "Tech News: Latest iPhone Rumors",
+      "topic": "iPhone 16 Pro Max Camera Leaks: A Game Changer?",
+      "hook": "Hold up, is Apple about to drop the most insane camera tech ever on the iPhone 16 Pro Max?",
+      "voice_style": "enthusiastic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Joe Biden News and Updates",
-      "topic": "Breaking Down the Biden Administration's Climate Policy",
-      "hook": "How will the Biden administration's climate policy affect you?",
+      "category": "US News: Supreme Court of Ohio Updates",
+      "topic": "Ohio Supreme Court's Landmark Decision on Property Rights",
+      "hook": "Did you know a recent Ohio Supreme Court ruling could completely change how you own land?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "music_mood": "dramatic",
+      "target_duration": 45
     },
     {
-      "category": "Summer Road Safety Tips",
-      "topic": "Staying Safe on the Road During Summer Vacation",
-      "hook": "Don't let a car accident ruin your summer vacation!",
-      "voice_style": "energetic",
+      "category": "AI Explained: Artificial Intelligence News",
+      "topic": "AI Art Generators: Midjourney V6 vs. DALL-E 3 Showdown",
+      "hook": "Which AI art generator reigns supreme in 2024? I put Midjourney V6 and DALL-E 3 head-to-head!",
+      "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Lawyer Advice: What to Do After a Truck Accident",
-      "topic": "The Top 5 Mistakes to Avoid After a Truck Accident",
-      "hook": "What you do after a truck accident can make or break your case!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Updates with T Rowe Price",
-      "topic": "Navigating the Current Market Volatility",
-      "hook": "Is the stock market heading for a crash?",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Ben Affleck Movie Reviews",
-      "topic": "The Evolution of Ben Affleck's Acting Career",
-      "hook": "From Good Will Hunting to The Last Duel, how has Ben Affleck's acting style changed?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Weather Updates: Houston Forecast",
-      "topic": "The Impact of Climate Change on Houston's Weather",
-      "hook": "How is climate change affecting Houston's weather patterns?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Lawyer Reacts: Crazy Truck Accident Cases",
-      "topic": "The Most Bizarre Truck Accident Case of the Year",
-      "hook": "You won't believe the outrageous details of this truck accident case!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Criminal Defense 101: Know Your Rights",
-      "topic": "Understanding Your Right to Remain Silent",
-      "hook": "Do you know how to invoke your right to remain silent?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Obsession Movie Breakdown: Box Office Hits",
-      "topic": "The Psychological Thrills of The Silence of the Lambs",
-      "hook": "What makes The Silence of the Lambs a timeless psychological thriller?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial Planning with T Rowe Price",
-      "topic": "Creating a Budget for Your Dream Vacation",
-      "hook": "Ready to take your dream vacation without breaking the bank?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Joe Biden News and Updates",
-      "topic": "The Biden Administration's Plan for Student Loan Forgiveness",
-      "hook": "How will the Biden administration's student loan forgiveness plan affect you?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Summer Road Safety Tips",
-      "topic": "The Dangers of Driving at Night During Summer",
-      "hook": "Don't let nighttime driving put you at risk of an accident!",
+      "category": "Piper Rockelle Challenges",
+      "topic": "Recreating Piper Rockelle's Extreme Hide-and-Seek",
+      "hook": "Can I survive Piper Rockelle's most epic hide-and-seek challenge in real life?",
       "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 40
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "Lawyer Advice: What to Do After a Truck Accident",
-      "topic": "The Importance of Documenting Evidence After a Truck Accident",
-      "hook": "What you document after a truck accident can make or break your case!",
+      "category": "Netflix Movie Reviews",
+      "topic": "Is Netflix's New Sci-Fi Epic 'Rebel Moon Part 2' Worth Your Time?",
+      "hook": "Zack Snyder's 'Rebel Moon Part 2' just dropped, but is it a cinematic masterpiece or a cosmic flop?",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Vlogs: Canada Adventures",
+      "topic": "Conquering the Iconic Lake Louise Hike in Banff",
+      "hook": "I just hiked the most breathtaking trail in Banff \u2013 and you NEED to see these views!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Injury Attorney FAQs",
+      "topic": "What to Do IMMEDIATELY After a Car Accident",
+      "hook": "Just got into a fender bender? Here's the absolute first thing you MUST do to protect your rights!",
       "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming Setup Tours",
+      "topic": "My Ultimate Minimalist Gaming Battlestation Tour",
+      "hook": "Less is more! Check out my clean, clutter-free gaming setup that still dominates.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Travel Restrictions",
+      "topic": "Navigating Europe's New ETIAS Visa Waiver for Summer Travel",
+      "hook": "Planning a European summer? Don't get turned away \u2013 here's what you need to know about ETIAS!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "FORTNITE Gaming Highlights",
+      "topic": "Discovering the NEWEST Fortnite Map Exploit for Easy Wins",
+      "hook": "Fortnite just dropped a new update, and I found a SECRET map exploit for HUGE advantages!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Updates with T Rowe Price",
-      "topic": "The Impact of Inflation on Your Investments",
-      "hook": "How will inflation affect your retirement savings?",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "category": "Tech News: Latest iPhone Rumors",
+      "topic": "iOS 18 Rumors: Dynamic Island Gets a HUGE Upgrade?",
+      "hook": "Is the Dynamic Island about to become a game-changer with these rumored iOS 18 updates?",
+      "voice_style": "enthusiastic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "Ben Affleck Movie Reviews",
-      "topic": "Ben Affleck's Most Underrated Movies",
-      "hook": "You might be surprised by Ben Affleck's most underrated films!",
+      "category": "US News: Supreme Court of Ohio Updates",
+      "topic": "Upcoming Ohio Supreme Court Case to Watch: Environmental Law Battle",
+      "hook": "A massive environmental lawsuit is heading to the Ohio Supreme Court \u2013 here's why it matters to YOU.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "AI Explained: Artificial Intelligence News",
+      "topic": "AI in Healthcare: Is A.I. the Future of Drug Discovery?",
+      "hook": "Imagine diseases cured faster than ever. AI is revolutionizing drug discovery, and it's INSANE!",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Piper Rockelle Challenges",
+      "topic": "Trying Piper Rockelle's Favorite Snack Challenge for a Day",
+      "hook": "I ate only Piper Rockelle's favorite snacks for 24 hours \u2013 my stomach is NOT okay!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Netflix Movie Reviews",
+      "topic": "This Underrated Netflix Horror Gem You Missed Last Month",
+      "hook": "Forget the blockbusters! You completely missed this terrifying Netflix horror film last month, and it's a MUST-WATCH.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Vlogs: Canada Adventures",
+      "topic": "Eating My Way Through Old Montreal: Poutine, Bagels & More!",
+      "hook": "From iconic poutine to legendary bagels, join me on a food tour through the delicious streets of Old Montreal!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Injury Attorney FAQs",
+      "topic": "Can You Sue for a Slip and Fall Accident? Know Your Rights!",
+      "hook": "Tripped and fell somewhere public? Don't just brush it off \u2013 you might have a case!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming Setup Tours",
+      "topic": "Budget Battlestation Tour: Pro Performance Without Breaking the Bank",
+      "hook": "You don't need to spend thousands! My budget gaming setup performs like a beast, and here's how!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Travel Restrictions",
+      "topic": "Avoiding Flight Cancellations: Top Tips for Summer Travel",
+      "hook": "Summer travel is chaotic! Here are my top 3 hacks to avoid those soul-crushing flight cancellations this season.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
@@ -190,79 +182,79 @@
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
