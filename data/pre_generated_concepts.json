@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-05-28T08:59:17.400181",
-  "valid_until": "2026-05-28T23:59:17.400188",
+  "generated_at": "2026-05-29T08:55:34.946758",
+  "valid_until": "2026-05-29T23:59:34.946766",
   "categories": [
-    "FORTNITE Gaming Highlights",
-    "Tech News: Latest iPhone Rumors",
-    "US News: Supreme Court of Ohio Updates",
-    "AI Explained: Artificial Intelligence News",
-    "Piper Rockelle Challenges",
-    "Netflix Movie Reviews",
-    "Travel Vlogs: Canada Adventures",
-    "Personal Injury Attorney FAQs",
-    "Gaming Setup Tours",
+    "Travel Hacks for Canada Bound",
+    "Exposing Influencer Marketing Secrets",
+    "Mormon Church Explained",
+    "Understanding Cryptocurrency Trading",
+    "Latest iPhone Rumors and Leaks",
+    "Life of Erika Kirk",
+    "Temu Fine Jewelry Reviews",
+    "Sive Stock Market Updates",
     "Summer Travel Restrictions",
-    "AI vs Humans: Debate",
-    "Fortnite Dance Challenges",
-    "New iPhone Feature Speculation",
-    "Canada Travel Hacks",
-    "Social Media Influencer Piper Rockelle"
+    "Influencer Marketing Fails",
+    "Bitcoin and Crypto News",
+    "Canada Trip Planning",
+    "Mormon Community Stories",
+    "New iPhone Feature Speculations",
+    "Influencer Marketing Tips and Tricks"
   ],
   "concepts": [
     {
-      "category": "FORTNITE Gaming Highlights",
-      "topic": "The CRAZIEST 1v5 Clutch in Fortnite History",
-      "hook": "You won't BELIEVE how this player turned a guaranteed loss into an impossible victory!",
+      "category": "Travel Hacks for Canada Bound",
+      "topic": "Secret Border Crossings for Faster Entry",
+      "hook": "You won't believe the hidden border crossing that saved me 5 hours of waiting!",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech News: Latest iPhone Rumors",
-      "topic": "iPhone 16 Pro Max Camera Leaks: A Game Changer?",
-      "hook": "Hold up, is Apple about to drop the most insane camera tech ever on the iPhone 16 Pro Max?",
-      "voice_style": "enthusiastic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "US News: Supreme Court of Ohio Updates",
-      "topic": "Ohio Supreme Court's Landmark Decision on Property Rights",
-      "hook": "Did you know a recent Ohio Supreme Court ruling could completely change how you own land?",
+      "category": "Exposing Influencer Marketing Secrets",
+      "topic": "How Influencers Fake Their Lifestyle",
+      "hook": "I used to be an influencer, and I'm exposing the shocking truth about fake lifestyles!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "AI Explained: Artificial Intelligence News",
-      "topic": "AI Art Generators: Midjourney V6 vs. DALL-E 3 Showdown",
-      "hook": "Which AI art generator reigns supreme in 2024? I put Midjourney V6 and DALL-E 3 head-to-head!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Piper Rockelle Challenges",
-      "topic": "Recreating Piper Rockelle's Extreme Hide-and-Seek",
-      "hook": "Can I survive Piper Rockelle's most epic hide-and-seek challenge in real life?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Netflix Movie Reviews",
-      "topic": "Is Netflix's New Sci-Fi Epic 'Rebel Moon Part 2' Worth Your Time?",
-      "hook": "Zack Snyder's 'Rebel Moon Part 2' just dropped, but is it a cinematic masterpiece or a cosmic flop?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs: Canada Adventures",
-      "topic": "Conquering the Iconic Lake Louise Hike in Banff",
-      "hook": "I just hiked the most breathtaking trail in Banff \u2013 and you NEED to see these views!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Injury Attorney FAQs",
-      "topic": "What to Do IMMEDIATELY After a Car Accident",
-      "hook": "Just got into a fender bender? Here's the absolute first thing you MUST do to protect your rights!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Setup Tours",
-      "topic": "My Ultimate Minimalist Gaming Battlestation Tour",
-      "hook": "Less is more! Check out my clean, clutter-free gaming setup that still dominates.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Travel Restrictions",
-      "topic": "Navigating Europe's New ETIAS Visa Waiver for Summer Travel",
-      "hook": "Planning a European summer? Don't get turned away \u2013 here's what you need to know about ETIAS!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "FORTNITE Gaming Highlights",
-      "topic": "Discovering the NEWEST Fortnite Map Exploit for Easy Wins",
-      "hook": "Fortnite just dropped a new update, and I found a SECRET map exploit for HUGE advantages!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech News: Latest iPhone Rumors",
-      "topic": "iOS 18 Rumors: Dynamic Island Gets a HUGE Upgrade?",
-      "hook": "Is the Dynamic Island about to become a game-changer with these rumored iOS 18 updates?",
-      "voice_style": "enthusiastic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "US News: Supreme Court of Ohio Updates",
-      "topic": "Upcoming Ohio Supreme Court Case to Watch: Environmental Law Battle",
-      "hook": "A massive environmental lawsuit is heading to the Ohio Supreme Court \u2013 here's why it matters to YOU.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "AI Explained: Artificial Intelligence News",
-      "topic": "AI in Healthcare: Is A.I. the Future of Drug Discovery?",
-      "hook": "Imagine diseases cured faster than ever. AI is revolutionizing drug discovery, and it's INSANE!",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Piper Rockelle Challenges",
-      "topic": "Trying Piper Rockelle's Favorite Snack Challenge for a Day",
-      "hook": "I ate only Piper Rockelle's favorite snacks for 24 hours \u2013 my stomach is NOT okay!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Netflix Movie Reviews",
-      "topic": "This Underrated Netflix Horror Gem You Missed Last Month",
-      "hook": "Forget the blockbusters! You completely missed this terrifying Netflix horror film last month, and it's a MUST-WATCH.",
+      "category": "Mormon Church Explained",
+      "topic": "The Real Story Behind Mormon Polygamy",
+      "hook": "What I discovered about Mormon polygamy will change everything you thought you knew!",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "music_mood": "mysterious",
+      "target_duration": 50
     },
     {
-      "category": "Travel Vlogs: Canada Adventures",
-      "topic": "Eating My Way Through Old Montreal: Poutine, Bagels & More!",
-      "hook": "From iconic poutine to legendary bagels, join me on a food tour through the delicious streets of Old Montreal!",
+      "category": "Understanding Cryptocurrency Trading",
+      "topic": "The Top 3 Crypto Trading Mistakes Beginners Make",
+      "hook": "Don't lose your shirt in crypto trading! Avoid these 3 rookie mistakes!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Personal Injury Attorney FAQs",
-      "topic": "Can You Sue for a Slip and Fall Accident? Know Your Rights!",
-      "hook": "Tripped and fell somewhere public? Don't just brush it off \u2013 you might have a case!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "category": "Latest iPhone Rumors and Leaks",
+      "topic": "The Shocking New Feature Coming to iPhone 15",
+      "hook": "You won't believe the game-changing feature Apple is adding to the iPhone 15!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
     },
     {
-      "category": "Gaming Setup Tours",
-      "topic": "Budget Battlestation Tour: Pro Performance Without Breaking the Bank",
-      "hook": "You don't need to spend thousands! My budget gaming setup performs like a beast, and here's how!",
+      "category": "Life of Erika Kirk",
+      "topic": "My Morning Routine as a Digital Nomad",
+      "hook": "Wake up and smell the coffee! Here's how I start my day as a digital nomad!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
+      "category": "Temu Fine Jewelry Reviews",
+      "topic": "Is Temu Jewelry Really Worth the Hype?",
+      "hook": "I spent $100 on Temu jewelry, and here's the surprising truth about its quality!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sive Stock Market Updates",
+      "topic": "The Top 5 Stocks to Watch This Quarter",
+      "hook": "Make informed investment decisions with these 5 stocks that are about to take off!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
       "category": "Summer Travel Restrictions",
-      "topic": "Avoiding Flight Cancellations: Top Tips for Summer Travel",
-      "hook": "Summer travel is chaotic! Here are my top 3 hacks to avoid those soul-crushing flight cancellations this season.",
+      "topic": "The Latest COVID-19 Travel Rules You Need to Know",
+      "hook": "Don't get caught off guard! Here are the latest summer travel restrictions you need to know!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Influencer Marketing Fails",
+      "topic": "The Most Epic Influencer Marketing Failures",
+      "hook": "You won't believe the cringe-worthy influencer marketing fails that will make you laugh!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Hacks for Canada Bound",
+      "topic": "How to Save Money on Accommodation in Canada",
+      "hook": "Sleep like a king without breaking the bank! Here's how to save money on accommodation in Canada!",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Exposing Influencer Marketing Secrets",
+      "topic": "The Dark Side of Influencer Marketing",
+      "hook": "What influencers don't want you to know! The dark side of influencer marketing exposed!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Mormon Church Explained",
+      "topic": "The History of Mormonism and Its Founder",
+      "hook": "Uncover the fascinating history of Mormonism and its founder, Joseph Smith!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Understanding Cryptocurrency Trading",
+      "topic": "A Beginner's Guide to Trading Cryptocurrency",
+      "hook": "New to crypto trading? Start here! A beginner's guide to getting started!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Latest iPhone Rumors and Leaks",
+      "topic": "The Latest iPhone 15 Rumors and Leaks",
+      "hook": "Get ready for the latest iPhone 15 rumors and leaks that will blow your mind!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Life of Erika Kirk",
+      "topic": "My Favorite Travel Destinations So Far",
+      "hook": "Where have I been? My top travel destinations that you need to add to your bucket list!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Temu Fine Jewelry Reviews",
+      "topic": "Temu vs. Traditional Fine Jewelry: Which is Better?",
+      "hook": "Is Temu fine jewelry really better than traditional fine jewelry? Let's compare!",
+      "voice_style": "calm",
       "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Sive Stock Market Updates",
+      "topic": "The Impact of Inflation on the Stock Market",
+      "hook": "How will inflation affect your investments? Here's what you need to know!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Travel Restrictions",
+      "topic": "The Best Summer Destinations with Minimal Travel Restrictions",
+      "hook": "Where can you travel this summer without restrictions? Here are the top destinations!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Influencer Marketing Fails",
+      "topic": "The Most Cringe-Worthy Influencer Marketing Campaigns",
+      "hook": "You won't believe the cringe-worthy influencer marketing campaigns that failed miserably!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Hacks for Canada Bound",
+      "topic": "How to Navigate Canada's Public Transportation System",
+      "hook": "Get around Canada like a pro! Here's how to navigate the public transportation system!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
