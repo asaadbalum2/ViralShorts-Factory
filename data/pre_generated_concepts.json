@@ -1,98 +1,98 @@
 {
-  "generated_at": "2026-05-30T08:02:19.509825",
-  "valid_until": "2026-05-30T23:59:19.509834",
+  "generated_at": "2026-05-31T08:26:28.420432",
+  "valid_until": "2026-05-31T23:59:28.420439",
   "categories": [
-    "NFL Game Highlights and Reactions",
-    "Influencer Marketing Tips and Tricks",
-    "Latest iPhone Rumors and Leaks",
-    "Cryptocurrency Trading for Beginners",
-    "Lottery Winner Stories and Reactions",
-    "Summer Road Trip Essentials with Wisconsin Department of Transportation",
-    "Criminal Defense Lawyer Explainers",
-    "Comedy Skits about Matthew Petracca and the Comey Seashells Case",
-    "iPhone vs Android Debates",
-    "NFL Schedule This Week Breakdowns",
-    "Influencer Marketing Fails and Lessons Learned",
-    "Beginner's Guide to Cryptocurrency Investing",
-    "NFL Player Profiles and Interviews",
-    "Lottery Jackpot Winners' Stories of Success",
-    "Tech News and Rumors, Including Latest iPhone Releases"
+    "Tech Unboxing",
+    "Personal Injury Law Explainers",
+    "Travel Vlogs with AlaskaAir",
+    "Smart Home Tours featuring Samsung OLED 4K S90F",
+    "Blockchain Technology Simplified",
+    "Insurance Hacks with Allstate",
+    "Matthew Brown Fan Content",
+    "New iPhone Reviews and Comparisons",
+    "Summer Vacation Planning",
+    "Lawyer Reacts to Viral Cases",
+    "4K TV Gaming Setups",
+    "Bitcoin and Crypto Updates",
+    "Airline Reviews and Comparisons",
+    "Smartphone Photography Tips",
+    "Injury Prevention and Safety Tips"
   ],
   "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     }
   ],
