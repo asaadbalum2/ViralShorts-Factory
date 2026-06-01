@@ -1,44 +1,250 @@
 {
-  "generated_at": "2026-05-31T08:26:28.420432",
-  "valid_until": "2026-05-31T23:59:28.420439",
+  "generated_at": "2026-06-01T10:38:09.814791",
+  "valid_until": "2026-06-01T23:59:09.814799",
   "categories": [
-    "Tech Unboxing",
-    "Personal Injury Law Explainers",
-    "Travel Vlogs with AlaskaAir",
-    "Smart Home Tours featuring Samsung OLED 4K S90F",
-    "Blockchain Technology Simplified",
-    "Insurance Hacks with Allstate",
-    "Matthew Brown Fan Content",
-    "New iPhone Reviews and Comparisons",
-    "Summer Vacation Planning",
-    "Lawyer Reacts to Viral Cases",
-    "4K TV Gaming Setups",
-    "Bitcoin and Crypto Updates",
-    "Airline Reviews and Comparisons",
-    "Smartphone Photography Tips",
-    "Injury Prevention and Safety Tips"
+    "Sports Highlights",
+    "Music News",
+    "Financial Literacy",
+    "Law and Order",
+    "Education Technology",
+    "Emergency Alerts",
+    "Motor Sports",
+    "Celebrity News",
+    "Current Events",
+    "Summer Safety Tips",
+    "Career Development",
+    "Entertainment News",
+    "Personal Finance",
+    "Legal Advice",
+    "Pop Culture Trends"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Sports Highlights",
+      "topic": "Most Unbelievable Basketball Shots of the Year",
+      "hook": "You won't believe the shot that won the championship!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Music News",
+      "topic": "The Rise of Hyperpop: What You Need to Know",
+      "hook": "The music genre that's taking over the internet right now!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Financial Literacy",
+      "topic": "How to Invest in Cryptocurrency for Beginners",
+      "hook": "Want to turn $100 into $10,000? Here's how!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Law and Order",
+      "topic": "The Most Shocking Court Cases of the Decade",
+      "hook": "The verdict that will leave you speechless!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Education Technology",
+      "topic": "The Future of Learning: AI-Powered Tutoring",
+      "hook": "The AI that can teach you anything in just minutes!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Emergency Alerts",
+      "topic": "What to Do in Case of a Wildfire Emergency",
+      "hook": "The one thing you must do to survive a wildfire!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Motor Sports",
+      "topic": "The Fastest Cars in the World: Top 5 Countdown",
+      "hook": "The car that can go from 0-60 in just 2 seconds!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Most Shocking Celebrity Feuds of the Year",
+      "hook": "The feud that will change everything you thought you knew!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Current Events",
+      "topic": "The Impact of Social Media on Mental Health",
+      "hook": "The hidden danger of social media that you need to know!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent Heat Stroke During Outdoor Activities",
+      "hook": "The one thing you must do to stay safe in the heat!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Comebacks in Sports History",
+      "hook": "The comeback that will give you chills!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Music News",
+      "topic": "The Evolution of Music Festivals: Then vs Now",
+      "hook": "The music festival that started it all!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Literacy",
+      "topic": "How to Create a Budget That Actually Works",
+      "hook": "The secret to saving $1,000 in just one month!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Law and Order",
+      "topic": "The Most Famous Court Cases That Changed History",
+      "hook": "The case that changed the course of history!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Education Technology",
+      "topic": "The Benefits of Online Learning for Students",
+      "hook": "The one thing that can increase your grades by 50%!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Emergency Alerts",
+      "topic": "What to Do in Case of a Hurricane Emergency",
+      "hook": "The one thing you must do to stay safe during a hurricane!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Motor Sports",
+      "topic": "The Most Extreme Racing Tracks in the World",
+      "hook": "The track that will push your driving skills to the limit!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "The Most Surprising Celebrity Transformations",
+      "hook": "The celebrity that underwent a shocking transformation!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events",
+      "topic": "The Impact of Climate Change on Our Planet",
+      "hook": "The one thing you can do to save the planet!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent Sunburn and Heat Exhaustion",
+      "hook": "The one thing you must do to stay safe in the sun!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
@@ -47,53 +253,8 @@
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
