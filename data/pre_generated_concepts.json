@@ -1,238 +1,243 @@
 {
-  "generated_at": "2026-06-02T09:49:03.535610",
-  "valid_until": "2026-06-02T23:59:03.535619",
+  "generated_at": "2026-06-03T10:20:06.666605",
+  "valid_until": "2026-06-03T23:59:06.666611",
   "categories": [
-    "Entertainment News: TV Shows like General Hospital",
-    "Sports Highlights: Tennis with Sorana C\u00eerstea",
-    "Influencer Spotlights: Mirra Andreeva's Lifestyle",
-    "Event Coverage: Israel Parade",
-    "Environmental News: Trump Ocean Monitoring Dismantling",
-    "Fitness Inspiration: Jay Silva's Workout Routines",
-    "Stock Market Updates: AVGO Stock Analysis",
-    "Trading Tips: Using TradingView for Beginners",
-    "Summer Fashion Trends",
-    "Current Event Analysis: Politics and Economy",
-    "Social Media Challenges: Dance and Comedy",
-    "Pop Culture News: Celebrity Updates",
-    "Financial Literacy: Investing in Stocks",
-    "Behind-the-Scenes: TV and Film Production",
-    "Motivational Stories: Overcoming Challenges"
+    "Entertainment News",
+    "Celebrity Interviews",
+    "Film Reviews",
+    "Education Reform",
+    "Comedy Skits",
+    "Gas Price Updates",
+    "Music Performances",
+    "Summer Road Trip Tips",
+    "Influencer Takeovers",
+    "Movie Director Profiles",
+    "Rising Star Features",
+    "Summer Concert Series",
+    "Fuel Efficiency Hacks",
+    "Pop Culture Analysis",
+    "Back to School Prep"
   ],
   "concepts": [
     {
-      "category": "Entertainment News: TV Shows like General Hospital",
-      "topic": "General Hospital's Shocking Plot Twist",
-      "hook": "You won't believe what just happened on General Hospital!",
+      "category": "Entertainment News",
+      "topic": "Taylor Swift's Record-Breaking Album Sales",
+      "hook": "You won't believe which song just broke the internet!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Interviews",
+      "topic": "Exclusive Chat with Chris Hemsworth on Thor's Legacy",
+      "hook": "What secret did Chris Hemsworth just reveal about Thor's future?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Film Reviews",
+      "topic": "Unpacking the Cinematic Masterpiece of 'Inception'",
+      "hook": "The one thing you missed in 'Inception' that changes everything!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Education Reform",
+      "topic": "Revolutionizing STEM Education with AI",
+      "hook": "The shocking truth about how AI is changing the classroom!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits",
+      "topic": "The Funniest Moments in Movie History",
+      "hook": "These hilarious movie moments will leave you in stitches!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gas Price Updates",
+      "topic": "How to Save Money on Gas This Summer",
+      "hook": "The secret to saving big on gas prices this summer revealed!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights: Tennis with Sorana C\u00eerstea",
-      "topic": "Sorana C\u00eerstea's Incredible Comeback",
-      "hook": "Watch Sorana C\u00eerstea pull off the impossible on the tennis court!",
+      "category": "Music Performances",
+      "topic": "BTS's Most Iconic Music Videos",
+      "hook": "Get ready to dance to BTS's most electrifying performances!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Influencer Spotlights: Mirra Andreeva's Lifestyle",
-      "topic": "Mirra Andreeva's Morning Routine",
-      "hook": "Wake up like a millionaire with Mirra Andreeva's morning routine!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Summer Road Trip Tips",
+      "topic": "The Ultimate Road Trip Playlist",
+      "hook": "The one song you need to add to your road trip playlist now!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Event Coverage: Israel Parade",
-      "topic": "Israel Parade's Most Iconic Moments",
-      "hook": "Get ready for the most epic celebration of the year - the Israel Parade!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "category": "Influencer Takeovers",
+      "topic": "A Day in the Life of Chiara Ferragni",
+      "hook": "What does a typical day look like for fashion icon Chiara Ferragni?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Environmental News: Trump Ocean Monitoring Dismantling",
-      "topic": "The Alarming Consequences of Trump Ocean Monitoring Dismantling",
-      "hook": "The ocean is in danger - find out what's really going on!",
-      "voice_style": "mysterious",
+      "category": "Movie Director Profiles",
+      "topic": "The Visionary World of Quentin Tarantino",
+      "hook": "The one thing that inspires Quentin Tarantino's iconic films!",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Fitness Inspiration: Jay Silva's Workout Routines",
-      "topic": "Jay Silva's 5-Minute Fat-Burning Workout",
-      "hook": "Get fit in just 5 minutes a day with Jay Silva's secret workout!",
+      "category": "Entertainment News",
+      "topic": "The Rise of K-Pop: A Global Phenomenon",
+      "hook": "How K-Pop is taking over the world, one dance move at a time!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Stock Market Updates: AVGO Stock Analysis",
-      "topic": "AVGO Stock: Should You Buy or Sell?",
-      "hook": "Make informed investment decisions with our expert AVGO stock analysis!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Trading Tips: Using TradingView for Beginners",
-      "topic": "Mastering TradingView in 5 Easy Steps",
-      "hook": "Unlock the secrets of TradingView and start trading like a pro!",
+      "category": "Celebrity Interviews",
+      "topic": "In-Depth Conversation with Emma Stone on Her Latest Role",
+      "hook": "What Emma Stone revealed about her most challenging role yet!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Summer Fashion Trends",
-      "topic": "The Top 5 Summer Fashion Must-Haves",
-      "hook": "Stay ahead of the fashion game with these 5 essential summer pieces!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Current Event Analysis: Politics and Economy",
-      "topic": "The Impact of Economic Sanctions on Global Trade",
-      "hook": "The hidden truth about economic sanctions and their far-reaching consequences!",
+      "category": "Film Reviews",
+      "topic": "Decoding the Symbolism in 'The Matrix'",
+      "hook": "The hidden message in 'The Matrix' that will blow your mind!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Entertainment News: TV Shows like General Hospital",
-      "topic": "General Hospital's Most Iconic Couples",
-      "hook": "Relive the romance with General Hospital's most beloved couples!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights: Tennis with Sorana C\u00eerstea",
-      "topic": "Sorana C\u00eerstea's Most Epic Matches",
-      "hook": "Experience the thrill of Sorana C\u00eerstea's most unforgettable matches!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Influencer Spotlights: Mirra Andreeva's Lifestyle",
-      "topic": "Mirra Andreeva's Favorite Travel Destinations",
-      "hook": "Escape with Mirra Andreeva to the world's most breathtaking destinations!",
+      "category": "Education Reform",
+      "topic": "The Future of Learning: Personalized Education",
+      "hook": "The revolutionary new way of learning that's changing lives!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Event Coverage: Israel Parade",
-      "topic": "The History and Significance of the Israel Parade",
-      "hook": "Discover the fascinating story behind the Israel Parade!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Environmental News: Trump Ocean Monitoring Dismantling",
-      "topic": "The Devastating Effects of Ocean Pollution",
-      "hook": "The shocking truth about ocean pollution and its impact on our planet!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Fitness Inspiration: Jay Silva's Workout Routines",
-      "topic": "Jay Silva's Top 3 Exercise Tips for Beginners",
-      "hook": "Get fit with Jay Silva's expert advice for beginners!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Stock Market Updates: AVGO Stock Analysis",
-      "topic": "The Future of AVGO Stock: Trends and Predictions",
-      "hook": "Stay ahead of the market with our expert analysis of AVGO stock trends!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Trading Tips: Using TradingView for Beginners",
-      "topic": "TradingView for Beginners: A Step-by-Step Guide",
-      "hook": "Master TradingView with our easy-to-follow guide for beginners!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Fashion Trends",
-      "topic": "The Rise of Sustainable Fashion: Trends and Tips",
-      "hook": "Join the sustainable fashion revolution with these eco-friendly trends and tips!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Current Event Analysis: Politics and Economy",
-      "topic": "The Impact of Global Events on the Economy",
-      "hook": "How global events are shaping the economy and what it means for you!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Entertainment News: TV Shows like General Hospital",
-      "topic": "General Hospital's Most Shocking Plot Twists",
-      "hook": "You won't believe these jaw-dropping plot twists from General Hospital!",
+      "category": "Comedy Skits",
+      "topic": "Parodying the Most Ridiculous Movie Plots",
+      "hook": "The most hilarious movie plot parodies that will make you laugh!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gas Price Updates",
+      "topic": "The Impact of Electric Vehicles on Gas Prices",
+      "hook": "How electric vehicles are changing the gas price game!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
+    },
+    {
+      "category": "Music Performances",
+      "topic": "The Evolution of Billie Eilish's Music Style",
+      "hook": "The surprising way Billie Eilish's music has changed over time!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Road Trip Tips",
+      "topic": "The Best Road Trip Snacks for a Healthy Journey",
+      "hook": "The one road trip snack you need to ditch for a healthier you!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Influencer Takeovers",
+      "topic": "A Sneak Peek into David Beckham's Fitness Routine",
+      "hook": "The secret to David Beckham's chiseled physique revealed!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Movie Director Profiles",
+      "topic": "The Cinematic Genius of Martin Scorsese",
+      "hook": "The one film that made Martin Scorsese a legendary director!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Most Anticipated Movies of the Year",
+      "hook": "The one movie that's going to break all box office records this year!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-AU-WilliamNeural",
@@ -240,29 +245,24 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
