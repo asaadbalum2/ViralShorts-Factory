@@ -1,266 +1,89 @@
 {
-  "generated_at": "2026-06-04T09:11:41.480938",
-  "valid_until": "2026-06-04T23:59:41.480947",
+  "generated_at": "2026-06-05T08:55:12.706788",
+  "valid_until": "2026-06-05T23:59:12.706797",
   "categories": [
-    "Travel Hacks: Airline Secrets",
-    "Verizon vs Other Carriers: Phone Showdowns",
-    "Jennifer Lawrence Comedy Sketches",
-    "Joe Rogan Podcast Recaps",
-    "Gaudy Fashion: Embracing Gauche Style",
-    "Island Getaways: Saint Kitts Travel Vlogs",
-    "90s Music Revival: Michael Jackson Billboard Hot 100",
-    "Jake Gyllenhaal Movie Reviews",
-    "Summer Vacation Planning: Airline Deals",
-    "Phone Plan Comparisons: Verizon and Beyond",
-    "Saint Kitts Culture: Hidden Gems",
-    "Jennifer Lawrence Movie Mashups",
-    "Joe Rogan's Most Controversial Guests",
-    "Gauche Fashion Inspiration: Celebrity Style",
-    "Michael Jackson Dance Challenges"
+    "Crypto Market Updates",
+    "Cooking Beef Recipes",
+    "Personal Finance Tips",
+    "Golf Highlights and Analysis",
+    "Senate Hearing Breakdowns",
+    "Retirement Savings Advice",
+    "Bitcoin vs Ethereum Debates",
+    "Privacy Coin Explainers",
+    "Stock Market News and Trends",
+    "Financial Literacy for Beginners",
+    "Summer Grilling Inspiration",
+    "Congressional Bill Explanations",
+    "Investing in ETFs for Beginners",
+    "Crypto Crash Survival Guides",
+    "ZCash and Blockchain Technology"
   ],
-  "concepts": [
-    {
-      "category": "Travel Hacks: Airline Secrets",
-      "topic": "How to Get Upgraded to First Class for Free",
-      "hook": "You won't believe the one simple trick to get luxury treatment on your next flight!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Verizon vs Other Carriers: Phone Showdowns",
-      "topic": "Verizon vs AT&T: Which Network Reigns Supreme?",
-      "hook": "The ultimate showdown: which carrier will come out on top in our speed test?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Jennifer Lawrence Comedy Sketches",
-      "topic": "Jennifer Lawrence's Funniest Interview Moments",
-      "hook": "You'll die laughing at these hilarious moments from Jennifer Lawrence's interviews!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Joe Rogan Podcast Recaps",
-      "topic": "The Craziest Things Said on The Joe Rogan Experience",
-      "hook": "From aliens to conspiracies, we're counting down the wildest moments from The Joe Rogan Experience!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaudy Fashion: Embracing Gauche Style",
-      "topic": "The Most Iconic Fashion Disasters in History",
-      "hook": "These fashion fails are so bad, they're good - and we're obsessed!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Island Getaways: Saint Kitts Travel Vlogs",
-      "topic": "Exploring the Hidden Beaches of Saint Kitts",
-      "hook": "Escape to a tropical paradise and discover the secret beaches of Saint Kitts!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "90s Music Revival: Michael Jackson Billboard Hot 100",
-      "topic": "The Top 5 Michael Jackson Songs That Still Slap",
-      "hook": "Get ready to moonwalk your way back to the 90s with these iconic Michael Jackson tracks!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Jake Gyllenhaal Movie Reviews",
-      "topic": "Ranking Jake Gyllenhaal's Best Movies",
-      "hook": "From Nightcrawler to Prisoners, we're counting down Jake Gyllenhaal's most unforgettable roles!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Vacation Planning: Airline Deals",
-      "topic": "How to Score Cheap Flights for Your Summer Vacation",
-      "hook": "Don't break the bank on your summer getaway - use these insider tips to find the cheapest flights!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Phone Plan Comparisons: Verizon and Beyond",
-      "topic": "The Best Phone Plans for Heavy Data Users",
-      "hook": "Don't get caught with a surprise bill - we're comparing the best phone plans for data-hungry users!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Hacks: Airline Secrets",
-      "topic": "The Secret to Beating Jet Lag for Good",
-      "hook": "Tired of feeling exhausted after a long flight? Try these science-backed tips to beat jet lag!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Verizon vs Other Carriers: Phone Showdowns",
-      "topic": "T-Mobile vs Verizon: Which Carrier Has the Best Coverage?",
-      "hook": "The ultimate test: which carrier has the strongest signal in the most remote areas?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Jennifer Lawrence Comedy Sketches",
-      "topic": "Jennifer Lawrence's Best Impressions and Parodies",
-      "hook": "You won't believe Jennifer Lawrence's spot-on impressions of her celebrity friends!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Joe Rogan Podcast Recaps",
-      "topic": "The Most Mind-Blowing Guest Reveals on The Joe Rogan Experience",
-      "hook": "From shocking confessions to paranormal encounters, we're highlighting the most jaw-dropping moments from The Joe Rogan Experience!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaudy Fashion: Embracing Gauche Style",
-      "topic": "The Evolution of Fashion Disasters: From 80s to Now",
-      "hook": "Buckle up for a wild ride through the most iconic fashion fails of the past four decades!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Island Getaways: Saint Kitts Travel Vlogs",
-      "topic": "Discovering the Best Local Spots in Saint Kitts",
-      "hook": "Experience the authentic side of Saint Kitts and uncover its best-kept secrets!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "90s Music Revival: Michael Jackson Billboard Hot 100",
-      "topic": "Uncovering the Hidden Gems of Michael Jackson's Discography",
-      "hook": "Get ready to rediscover the King of Pop's most underrated tracks!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Jake Gyllenhaal Movie Reviews",
-      "topic": "Analyzing Jake Gyllenhaal's Most Challenging Roles",
-      "hook": "From Brokeback Mountain to Nightcrawler, we're diving into Jake Gyllenhaal's most complex characters!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Vacation Planning: Airline Deals",
-      "topic": "The Best Time to Book Your Summer Flights for Maximum Savings",
-      "hook": "Don't miss out on the cheapest flights - use our expert tips to book your summer vacation at the right time!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Phone Plan Comparisons: Verizon and Beyond",
-      "topic": "The Top 5 Phone Plans for International Travelers",
-      "hook": "Don't get caught with surprise roaming charges - we're comparing the best phone plans for global travelers!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Hacks: Airline Secrets",
-      "topic": "How to Get the Best Seats on the Plane Without Paying Extra",
-      "hook": "Use these insider tips to snag the best seats on the plane without breaking the bank!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaudy Fashion: Embracing Gauche Style",
-      "topic": "The Most Iconic Fashion Trends of the 80s and 90s",
-      "hook": "From neon to oversized, we're revisiting the most iconic fashion trends of the 80s and 90s!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -268,9 +91,9 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
