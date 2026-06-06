@@ -1,99 +1,268 @@
 {
-  "generated_at": "2026-06-05T08:55:12.706788",
-  "valid_until": "2026-06-05T23:59:12.706797",
+  "generated_at": "2026-06-06T08:06:06.591623",
+  "valid_until": "2026-06-06T23:59:06.591631",
   "categories": [
-    "Crypto Market Updates",
-    "Cooking Beef Recipes",
-    "Personal Finance Tips",
-    "Golf Highlights and Analysis",
-    "Senate Hearing Breakdowns",
-    "Retirement Savings Advice",
-    "Bitcoin vs Ethereum Debates",
-    "Privacy Coin Explainers",
-    "Stock Market News and Trends",
-    "Financial Literacy for Beginners",
-    "Summer Grilling Inspiration",
-    "Congressional Bill Explanations",
-    "Investing in ETFs for Beginners",
-    "Crypto Crash Survival Guides",
-    "ZCash and Blockchain Technology"
+    "US Israel Conflict Explainers",
+    "Jamaican Culture Showcase",
+    "AMOC Extreme Weather Updates",
+    "Portugal Sports Highlights",
+    "Wrestling Legends like Hulk Hogan",
+    "Comedian Patton Oswalt Comedy Skits",
+    "Martin De La Torre Music Performances",
+    "Samara Weaving Movie Reviews",
+    "Geopolitics News Analysis",
+    "Summer Vacation Destinations like Jamaica",
+    "Extreme Weather Survival Tips",
+    "Sports Analysis and Predictions",
+    "Comedy News Recap",
+    "New Movie Trailers and Teasers",
+    "International Relations and Diplomacy"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "US Israel Conflict Explainers",
+      "topic": "The Impact of US Diplomacy on Israeli-Palestinian Relations",
+      "hook": "What if the US held the key to unlocking peace in the Middle East?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Jamaican Culture Showcase",
+      "topic": "The Art of Jamaican Reggae Music and Dance",
+      "hook": "Get ready to groove to the rhythm of the Caribbean!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "AMOC Extreme Weather Updates",
+      "topic": "Uncovering the Science Behind Category 5 Hurricanes",
+      "hook": "Can scientists predict the next massive hurricane?",
+      "voice_style": "calm",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Portugal Sports Highlights",
+      "topic": "The Rise of Cristiano Ronaldo: A Portuguese Soccer Legend",
+      "hook": "What makes Cristiano Ronaldo the greatest soccer player of all time?",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Wrestling Legends like Hulk Hogan",
+      "topic": "The Birth of Hulkamania: A Look Back at Hulk Hogan's Career",
+      "hook": "Brother, let me tell you something - the Hulkster is back!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedian Patton Oswalt Comedy Skits",
+      "topic": "Patton Oswalt's Take on Pop Culture and Social Media",
+      "hook": "What if your favorite comedian roasted your social media habits?",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Martin De La Torre Music Performances",
+      "topic": "The Soulful Voice of Martin De La Torre: A Musical Journey",
+      "hook": "Close your eyes and let the music of Martin De La Torre transport you",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Samara Weaving Movie Reviews",
+      "topic": "Reviewing Samara Weaving's Breakout Role in 'Hollywood'",
+      "hook": "What makes Samara Weaving the next big thing in Hollywood?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Geopolitics News Analysis",
+      "topic": "The Implications of Rising Tensions Between the US and China",
+      "hook": "Is a global economic war looming on the horizon?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Vacation Destinations like Jamaica",
+      "topic": "Discovering the Hidden Gems of Jamaica's Negril Beach",
+      "hook": "Are you ready to escape to a tropical paradise?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "US Israel Conflict Explainers",
+      "topic": "Unpacking the History of the Israeli-Palestinian Conflict",
+      "hook": "What's the real story behind the Middle East's most enduring conflict?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Jamaican Culture Showcase",
+      "topic": "The Vibrant World of Jamaican Street Art and Graffiti",
+      "hook": "Get ready to experience the bold and colorful side of Jamaica!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "AMOC Extreme Weather Updates",
+      "topic": "The Science Behind the Devastating Effects of Climate Change",
+      "hook": "Can we still save the planet from the ravages of climate change?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Portugal Sports Highlights",
+      "topic": "The Thrilling World of Portuguese Surfing Competitions",
+      "hook": "Catch the wave and ride the thrill of Portugal's surf culture!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Wrestling Legends like Hulk Hogan",
+      "topic": "The Epic Rivalries of Professional Wrestling's Golden Era",
+      "hook": "What if the greatest wrestling legends clashed in the ring one last time?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedian Patton Oswalt Comedy Skits",
+      "topic": "Patton Oswalt's Hilarious Take on Modern Technology",
+      "hook": "What if your favorite comedian roasted your smartphone habits?",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Martin De La Torre Music Performances",
+      "topic": "The Emotional Ballads of Martin De La Torre: A Musical Journey",
+      "hook": "Let the soulful voice of Martin De La Torre touch your heart",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Samara Weaving Movie Reviews",
+      "topic": "Reviewing Samara Weaving's Performance in 'Ready or Not'",
+      "hook": "What makes Samara Weaving the queen of thriller movies?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Geopolitics News Analysis",
+      "topic": "The Future of Global Politics: A Look at Emerging World Leaders",
+      "hook": "Who are the leaders that will shape the world's future?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Vacation Destinations like Jamaica",
+      "topic": "Exploring the Natural Wonders of Jamaica's Dunn's River Falls",
+      "hook": "Are you ready to experience the breathtaking beauty of Jamaica?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "US Israel Conflict Explainers",
+      "topic": "The Role of the US in the Israeli-Palestinian Peace Process",
+      "hook": "Can the US broker a lasting peace in the Middle East?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
