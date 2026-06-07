@@ -1,87 +1,87 @@
 {
   "title_patterns": [
-    "The {number} {adjective} {topic} Trick Nobody Told You",
-    "I Tried {challenge} For {duration} (Results SHOCKED Me)",
-    "{Adjective} {Topic} Hack You NEED to Know NOW",
-    "Why {common belief} Is DEAD WRONG About {topic}",
-    "{Topic} Finally EXPLAINED (You Won't Believe It)",
-    "The SECRET To {desirable outcome} In {short time}",
-    "Is This The EASIEST Way To {achieve goal}?",
-    "Never Do {action} Again After This {lesson}",
-    "This {topic} Will CHANGE Your Life Forever",
-    "The ONLY {topic} Guide You'll Ever Need"
+    "{Number} {Topic} SECRETS They Don't Want You To Know",
+    "The TRUTH About {Topic} (You WON'T Believe It)",
+    "I Tried {Method} For {Time} - Here's What Happened",
+    "STOP Doing {Bad Habit} RIGHT NOW ({Number} Reasons Why)",
+    "{Common Misconception} IS A LIE. Here's Why.",
+    "This {Object/Concept} Will CHANGE Your Life",
+    "You're Using {Product/Service} WRONG (Fix It!)",
+    "The ULTIMATE Guide To {Achieving Goal} In {Timeframe}",
+    "{Number} Things {Experts/People} NEVER Tell You About {Topic}",
+    "My Honest Review: {Product/Experience} - Is It Worth It?"
   ],
   "hook_patterns": [
-    "Wait. Stop scrolling. Did you know...?",
-    "This is a warning. You're about to see...",
-    "I bet you can't guess what happens next.",
-    "What if I told you everything you know about {topic} is a lie?",
-    "You're making a huge mistake if you're still {action}.",
-    "Seriously, you need to see this before {consequence}.",
-    "Nobody told you this about {topic}, but it's crucial.",
-    "My mind is blown. Here's why.",
-    "This sound means {something urgent/important happening}.",
-    "If you only learn one thing today, make it this."
+    "Wait, STOP scrolling for a second.",
+    "Did you know {shocking fact}?",
+    "I'm about to show you something that will blow your mind.",
+    "If you're still doing {outdated method}, you're wasting your time.",
+    "What if I told you {controversial statement}?",
+    "This is the fastest way to {desired outcome}, period.",
+    "You've been lied to about {common belief}.",
+    "Before you scroll, look at this...",
+    "Can you spot the {error/secret} in this video?",
+    "Okay, seriously, you NEED to see this."
   ],
   "engagement_baits": [
-    "What's your biggest {topic} mistake? Tell me below!",
-    "Agree or disagree? Let me know in the comments!",
-    "Which {option1} or {option2} would YOU choose? Comment!",
-    "\ud83e\udd2f Mind blown? Share this with a friend who needs it!",
-    "Save this for when you need {solution}!",
-    "Is this fact or fiction? Comment your guess!",
-    "If you knew this, you're a genius! If not, hit like!",
-    "What's the #1 thing you've learned from this? Share it!"
+    "What's YOUR take on {controversial topic}? Let me know below!",
+    "Hit like if you agree, or comment what I missed!",
+    "Which of these {tips/options} would you try first? \ud83d\udc47",
+    "SAVE this for later when you need {solution}!",
+    "SHARE this with a friend who {needs this information}!",
+    "What's the craziest {experience/fact} you know about {topic}?",
+    "Did I get it right? Correct me in the comments!",
+    "Only {percentage} of people can solve this. Are you one of them? Comment your answer!"
   ],
   "psychological_triggers": [
     "Curiosity",
-    "Scarcity",
-    "Urgency",
     "FOMO",
+    "Novelty",
+    "Urgency",
     "Social Proof",
+    "Scarcity",
     "Authority",
-    "Reciprocity",
-    "Novelty"
+    "Reciprocity"
   ],
   "scroll_stop_openers": [
-    "The secret they don't want you to know about {topic}.",
-    "You've been doing {action} wrong your whole life.",
-    "This one simple trick will completely change how you {action}.",
-    "I accidentally discovered {surprising fact/method} and it changed everything.",
-    "Don't even THINK about {action} until you see this.",
-    "If you ignore this, you'll regret it later. Trust me.",
-    "Can you believe this is actually possible? Watch this.",
-    "Here's why {common belief} is holding you back from {goal}."
+    "You won't believe what happened next when I {action}...",
+    "This is the ONLY way to truly {achieve goal}.",
+    "Most people get {common activity} completely wrong.",
+    "What if everything you thought about {topic} was false?",
+    "Prepare to have your mind changed about {subject}.",
+    "If you struggle with {problem}, this is for you.",
+    "Seriously, this one trick changed everything for me.",
+    "Don't even think about scrolling until you see this ending."
   ],
   "proven_categories": [
-    "Psychology",
     "Money",
     "Productivity",
+    "Psychology",
     "Health",
-    "Relationships",
-    "Learning",
+    "Fitness",
+    "Education",
     "Entertainment",
-    "Hacks"
+    "Tutorials"
   ],
   "retention_tricks": [
-    "Fast Pacing: Quick cuts, no dead air, constant visual changes (0.5-1.5s per shot).",
-    "Narrative Arc: Introduce a problem/question early, build tension, deliver a clear resolution/answer.",
-    "On-Screen Text: Use dynamic text to reinforce key points, add humor, and engage viewers with sound off.",
-    "Suspense/Tease: Hint at a reveal or payoff coming up ('Wait for the end!', 'The twist is incredible!').",
-    "Sound Design: Engaging background music, strategic sound effects for emphasis, satisfying audio cues.",
-    "Direct Address: Look directly at the camera, speak conversationally, creating a personal connection."
+    "Dynamic Editing: Fast cuts, zooms, on-screen text, sound effects to keep visual and auditory stimulation high.",
+    "Open Loop: Introduce a question or mystery at the start and only fully resolve it towards the end.",
+    "Pattern Interrupts: Unexpected visual or auditory changes, a quick cutaway, or a sudden change in tone to re-engage.",
+    "On-Screen Text: Subtitles or key takeaways displayed on screen to reinforce points and cater to sound-off viewing.",
+    "Story Arc: A mini-story with a beginning, middle, and satisfying (or surprising) end, even for short-form.",
+    "Cliffhanger Transitions: Hint at the next piece of information or a future reveal before a short break or cut."
   ],
   "cta_formulas": [
-    "Follow for more {topic} hacks!",
-    "Comment '{keyword}' if you want {solution}!",
-    "Hit the like button if this helped you!",
-    "Share this with someone who needs {benefit}!",
-    "Subscribe for weekly {topic} insights!",
-    "Save this post to remember {key takeaway}!"
+    "Follow for more {value/tips}!",
+    "Hit the link in bio for {more resources/exclusive content}.",
+    "Subscribe to my channel for the full {topic} breakdown!",
+    "What's your biggest {struggle/question} about {topic}? Comment below!",
+    "Tag a friend who needs to see this {advice/product}!",
+    "Don't miss out on {next video/offer} - turn on notifications!"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-05-31T08:36:24.298286",
+  "last_ai_update": "2026-06-07T08:47:16.022781",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-05-31T08:36:24.298299"
+  "last_saved": "2026-06-07T08:47:16.022792"
 }
