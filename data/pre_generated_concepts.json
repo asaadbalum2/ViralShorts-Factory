@@ -1,259 +1,98 @@
 {
-  "generated_at": "2026-06-08T10:04:41.033797",
-  "valid_until": "2026-06-08T23:59:41.033803",
+  "generated_at": "2026-06-09T08:46:14.745846",
+  "valid_until": "2026-06-09T23:59:14.745853",
   "categories": [
-    "Sports News",
-    "TV Show Updates",
-    "Travel Vlogs",
-    "Tech Explainers",
-    "White House News",
-    "UFC Fight Previews",
-    "Summer Weather Updates",
-    "Actor Interviews",
-    "Airline Reviews",
-    "5G Technology",
-    "Law and Politics",
-    "Tennis Highlights",
-    "China Travel Guides",
-    "Cancel Culture Discussions",
-    "Emerging Tech Trends"
+    "Sports Highlights",
+    "News Updates",
+    "Lottery Winner Reactions",
+    "Foodie Reviews",
+    "Lawsuit Explainers",
+    "Travel Vlogs Japan",
+    "Wildlife Encounters",
+    "Summer Recipes",
+    "Baseball Analysis",
+    " Political Commentary",
+    "Cultural Exchange Australia",
+    "Mexico Travel Guides",
+    "Ice Cream Reviews",
+    "Grocery Store Hacks Trader Joe's",
+    "International Soccer Matches"
   ],
-  "concepts": [
-    {
-      "category": "Sports News",
-      "topic": "NBA Finals Predictions",
-      "hook": "Can the Lakers make a comeback this season?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Updates",
-      "topic": "Stranger Things Season 5 Spoilers",
-      "hook": "You won't believe what happens to Eleven in the new season!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Exploring Hidden Beaches in Bali",
-      "hook": "Discover the secret beach that only locals know about!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Tech Explainers",
-      "topic": "How 5G is Revolutionizing Gaming",
-      "hook": "Say goodbye to lag and hello to seamless gaming!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "White House News",
-      "topic": "New Climate Change Policies",
-      "hook": "The latest plan to save the planet, but is it too little too late?",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "UFC Fight Previews",
-      "topic": "McGregor vs. Diaz Rematch",
-      "hook": "The ultimate showdown: who will come out on top?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Weather Updates",
-      "topic": "Hurricane Season Predictions",
-      "hook": "Are you prepared for the worst?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Actor Interviews",
-      "topic": "Chris Hemsworth on His Latest Role",
-      "hook": "What drove him to take on this challenging character?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Airline Reviews",
-      "topic": "The Best and Worst Airlines for Long-Haul Flights",
-      "hook": "Which airline will get you to your destination in style and comfort?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "5G Technology",
-      "topic": "The Future of Smart Homes",
-      "hook": "How 5G will change the way you live and interact with your home!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports News",
-      "topic": "The Rise of Women's Soccer",
-      "hook": "Meet the players who are redefining the sport!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Updates",
-      "topic": "The Walking Dead Final Season",
-      "hook": "The epic conclusion: who will survive?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Discovering Street Food in Tokyo",
-      "hook": "Get ready for a culinary adventure like no other!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Tech Explainers",
-      "topic": "The Impact of AI on Healthcare",
-      "hook": "How artificial intelligence is saving lives!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "White House News",
-      "topic": "New Economic Growth Plans",
-      "hook": "What does the future hold for the economy?",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "UFC Fight Previews",
-      "topic": "Khabib Nurmagomedov's Next Fight",
-      "hook": "The undefeated champion's next title defense!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Weather Updates",
-      "topic": "Heatwave Safety Tips",
-      "hook": "Stay safe and cool during the hottest summer on record!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Actor Interviews",
-      "topic": "Leonardo DiCaprio on Environmental Activism",
-      "hook": "The actor's passion for saving the planet!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Airline Reviews",
-      "topic": "The Best Airlines for In-Flight Entertainment",
-      "hook": "Which airline has the best movies, TV shows, and games?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "5G Technology",
-      "topic": "The Future of Autonomous Vehicles",
-      "hook": "How 5G will revolutionize the way we travel!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     }
   ],
