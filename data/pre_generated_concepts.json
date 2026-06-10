@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-06-09T08:46:14.745846",
-  "valid_until": "2026-06-09T23:59:14.745853",
+  "generated_at": "2026-06-10T09:04:25.730674",
+  "valid_until": "2026-06-10T23:59:25.730683",
   "categories": [
-    "Sports Highlights",
-    "News Updates",
-    "Lottery Winner Reactions",
-    "Foodie Reviews",
-    "Lawsuit Explainers",
-    "Travel Vlogs Japan",
-    "Wildlife Encounters",
-    "Summer Recipes",
-    "Baseball Analysis",
-    " Political Commentary",
-    "Cultural Exchange Australia",
-    "Mexico Travel Guides",
-    "Ice Cream Reviews",
-    "Grocery Store Hacks Trader Joe's",
-    "International Soccer Matches"
+    "Natural Disaster Updates",
+    "Weather Alerts",
+    "Insurance Explainers",
+    "Hawaii Travel Warnings",
+    "Power Outage Survival Tips",
+    "Severe Thunderstorm Safety",
+    "Minneapolis Local News",
+    "Supreme Court Analysis",
+    "Earthquake Preparedness",
+    "Storm Chasing",
+    "News Recap",
+    "Weather Forecasting",
+    "Disaster Relief Efforts",
+    "Home Safety Tips",
+    "Judge Samuel Alito News"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Natural Disaster Updates",
+      "topic": "The 'Ring of Fire' and recent uptick in seismic activity.",
+      "hook": "Is the Pacific Ring of Fire waking up? What you NEED to know about the recent earthquake swarm!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Natural Disaster Updates",
+      "topic": "How AI is revolutionizing early tornado detection.",
+      "hook": "Forget old radar! This new AI tech could save thousands from future tornadoes. But how does it work?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Weather Alerts",
+      "topic": "The 'Pineapple Express' and its impact on the West Coast.",
+      "hook": "The 'Pineapple Express' is BACK! What this atmospheric river means for your week, and why it's SO dangerous.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Alerts",
+      "topic": "Decoding severe thunderstorm watch vs. warning.",
+      "hook": "Do you REALLY know the difference between a 'Watch' and a 'Warning'? Getting this wrong could cost you!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Insurance Explainers",
+      "topic": "Why your standard home insurance might NOT cover flood damage.",
+      "hook": "Think your home insurance covers EVERYTHING? It probably doesn't cover THIS common disaster, and you need a separate policy!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Insurance Explainers",
+      "topic": "The 'Act of God' clause and what it actually means for your claims.",
+      "hook": "Ever heard 'Act of God' and wondered what it means for your insurance claim? Prepare to be surprised!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Hawaii Travel Warnings",
+      "topic": "The hidden dangers of 'vog' (volcanic smog) for tourists.",
+      "hook": "Planning a trip to Hawaii? You've heard of lava, but have you heard of 'vog'? This unseen danger could ruin your vacation.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Hawaii Travel Warnings",
+      "topic": "Why swimming near certain beaches in Hawaii is currently dangerous due to ocean conditions.",
+      "hook": "Those crystal clear Hawaiian waters can be deadly. Here's which beaches to AVOID right now, and why.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Power Outage Survival Tips",
+      "topic": "DIY emergency lighting solutions without candles or flashlights.",
+      "hook": "Power out and no flashlights? Don't panic! I'm showing you 3 GENIUS hacks for light using things you already have!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Power Outage Survival Tips",
+      "topic": "How to keep your phone charged during a long-term outage.",
+      "hook": "Your phone is at 5% and the power's out for days! What's the secret to keeping it charged WITHOUT a generator?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Severe Thunderstorm Safety",
+      "topic": "The '30/30 Rule' for lightning safety, explained.",
+      "hook": "Lightning strikes are silent killers. Do you know the '30/30 Rule'? It could save your life in a thunderstorm!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Severe Thunderstorm Safety",
+      "topic": "What to do if you're caught in a severe thunderstorm in your car.",
+      "hook": "Stuck in your car during a monstrous thunderstorm? Don't pull over randomly! Here's the SAFEST place to be.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Minneapolis Local News",
+      "topic": "The resurgence of small independent bookstores in Minneapolis.",
+      "hook": "Forget Amazon! Minneapolis's indie bookstores are having a major comeback. Are you visiting these hidden gems?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Minneapolis Local News",
+      "topic": "The city's innovative new bike lane project sparking debate.",
+      "hook": "Minneapolis's latest bike lane project is causing a stir! Is it genius urban planning or a traffic nightmare waiting to happen?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Supreme Court Analysis",
+      "topic": "The upcoming landmark case on digital privacy rights.",
+      "hook": "Your texts, your emails, your data! The Supreme Court is about to decide if they're truly yours. This case changes EVERYTHING.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Supreme Court Analysis",
+      "topic": "How a 'shadow docket' ruling affects everyday Americans.",
+      "hook": "Ever heard of the Supreme Court's 'shadow docket'? It's making HUGE decisions that affect YOUR life, and you barely know about it!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Earthquake Preparedness",
+      "topic": "The 'Drop, Cover, Hold On' myth vs. reality for different building types.",
+      "hook": "Drop, Cover, Hold On: Is this classic advice actually DANGEROUS in some buildings? The truth about earthquake safety is shocking.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Earthquake Preparedness",
+      "topic": "Building an essential 'Go Bag' for unexpected evacuation.",
+      "hook": "Earthquake hits, power's out, and you have 5 minutes to leave! Do you have your 'Go Bag' ready? What's inside?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Storm Chasing",
+      "topic": "The incredible technology storm chasers use to predict tornado paths.",
+      "hook": "How do storm chasers know exactly where a tornado will strike next? It's not magic, it's mind-blowing tech!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Storm Chasing",
+      "topic": "The psychology of why people become storm chasers despite the danger.",
+      "hook": "Why would anyone run TOWARDS a supercell? Unpacking the thrilling, terrifying psychology of a storm chaser.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
