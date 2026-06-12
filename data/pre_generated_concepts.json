@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-06-11T09:50:18.396721",
-  "valid_until": "2026-06-11T23:59:18.396730",
+  "generated_at": "2026-06-12T09:42:44.412176",
+  "valid_until": "2026-06-12T23:59:44.412184",
   "categories": [
-    "Event Highlights and Recaps",
-    "Ugo Humbert Tennis Analysis",
-    "Influencer Marketing Tips and Tricks",
-    "Cryptocurrency Trading for Beginners",
-    "IPO Explainers and Updates",
-    "Phishing Scam Awareness and Safety",
-    "Latest iPhone Rumors and Leaks",
-    "HBO Max Show Reviews and Recommendations",
-    "Summer Event Planning and Ideas",
-    "Social Media Influencer Takeovers",
-    "Financial Literacy and Investing",
-    "Tech News and Gadget Reviews",
-    "Sports News and Athlete Profiles",
-    "Online Safety and Security Tips",
-    "Entertainment and Pop Culture News"
+    "Crime News Recap",
+    "Gas Station Hacks",
+    "Emerging Actress Takeovers",
+    "Furniture Shopping on a Budget",
+    "Summer Travel Tips",
+    "Bitcoin and Crypto Explainers",
+    "New iPhone Features",
+    "Legendary Actor Interviews",
+    "True Crime Storytimes",
+    "Retail Store Closures",
+    "Vaccine Awareness",
+    "ATM and Banking Innovations",
+    "Summer Road Trip Essentials",
+    "Celebrity News and Gossip",
+    "Tech and Gadget Reviews"
   ],
   "concepts": [
     {
-      "category": "Event Highlights and Recaps",
-      "topic": "Top 5 Moments from Coachella 2023",
-      "hook": "You won't believe what happened at Coachella this year!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Crime News Recap",
+      "topic": "The Latest on the Missing Heirloom Case",
+      "hook": "You won't believe what just happened in the shocking case of the missing family heirloom!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Ugo Humbert Tennis Analysis",
-      "topic": "Ugo Humbert's Winning Strategy at the French Open",
-      "hook": "What makes Ugo Humbert a top contender in the tennis world?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Gas Station Hacks",
+      "topic": "How to Get Free Gas Station Food",
+      "hook": "I just discovered a secret hack to get free food at your local gas station - and it's ridiculously easy!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Influencer Marketing Tips and Tricks",
-      "topic": "5 Ways to Grow Your Instagram Following Overnight",
-      "hook": "Want to wake up to a thousand new followers tomorrow?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
+      "category": "Emerging Actress Takeovers",
+      "topic": "The Rise of Actress Emma Roberts",
+      "hook": "From childhood star to Hollywood powerhouse, Emma Roberts is taking over the silver screen - and we're obsessed!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
     },
     {
-      "category": "Cryptocurrency Trading for Beginners",
-      "topic": "A Beginner's Guide to Investing in Bitcoin",
-      "hook": "Are you ready to dip your toes into the world of cryptocurrency?",
+      "category": "Furniture Shopping on a Budget",
+      "topic": "Thrifting for Luxury Furniture on a Shoestring Budget",
+      "hook": "You won't believe the high-end furniture I scored at my local thrift store for pennies on the dollar!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "IPO Explainers and Updates",
-      "topic": "What to Expect from the Upcoming Tesla Stock Split",
-      "hook": "Get ready for the biggest stock split of the year!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Phishing Scam Awareness and Safety",
-      "topic": "How to Spot a Phishing Email in Your Inbox",
-      "hook": "Don't fall victim to these sneaky phishing scams!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Latest iPhone Rumors and Leaks",
-      "topic": "What to Expect from the iPhone 15 Release",
-      "hook": "The latest iPhone leaks will blow your mind!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "HBO Max Show Reviews and Recommendations",
-      "topic": "Why You Need to Watch 'The Last of Us' on HBO Max",
-      "hook": "The best show you're not watching is on HBO Max!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Event Planning and Ideas",
-      "topic": "10 Unique Summer Party Themes to Try This Year",
-      "hook": "Ready to throw the most epic summer party ever?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Social Media Influencer Takeovers",
-      "topic": "A Day in the Life of a Social Media Influencer",
-      "hook": "What really goes on behind the scenes of a social media influencer's life?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Event Highlights and Recaps",
-      "topic": "The Most Shocking Moments from the Oscars 2023",
-      "hook": "You won't believe what happened at the Oscars this year!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Ugo Humbert Tennis Analysis",
-      "topic": "Ugo Humbert's Most Impressive Tennis Comebacks",
-      "hook": "Can Ugo Humbert make an epic comeback at the next tournament?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Influencer Marketing Tips and Tricks",
-      "topic": "The Top 3 Influencer Marketing Platforms to Use in 2023",
-      "hook": "Want to take your influencer marketing game to the next level?",
-      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Cryptocurrency Trading for Beginners",
-      "topic": "A Beginner's Guide to Investing in Ethereum",
-      "hook": "Are you ready to dive into the world of cryptocurrency?",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "IPO Explainers and Updates",
-      "topic": "What to Expect from the Upcoming Airbnb IPO",
-      "hook": "Get ready for the biggest IPO of the year!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Summer Travel Tips",
+      "topic": "The Secret to Scoring Cheap Flights This Summer",
+      "hook": "Tired of overpaying for flights? I just discovered the secret to scoring rock-bottom prices on your summer travels!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Phishing Scam Awareness and Safety",
-      "topic": "How to Protect Yourself from Phishing Scams on Social Media",
-      "hook": "Don't let phishing scams ruin your social media experience!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Latest iPhone Rumors and Leaks",
-      "topic": "What to Expect from the iPhone 15 Pro Release",
-      "hook": "The latest iPhone leaks will surprise you!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "HBO Max Show Reviews and Recommendations",
-      "topic": "Why You Need to Watch 'Succession' on HBO Max",
-      "hook": "The best show you're not watching is on HBO Max!",
+      "category": "Bitcoin and Crypto Explainers",
+      "topic": "A Beginner's Guide to NFTs",
+      "hook": "What are NFTs and why are they taking the crypto world by storm? Let me break it down for you in 60 seconds!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Event Planning and Ideas",
-      "topic": "5 Unique Summer Wedding Ideas to Try This Year",
-      "hook": "Ready to make your summer wedding unforgettable?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Social Media Influencer Takeovers",
-      "topic": "A Behind-the-Scenes Look at a Social Media Influencer's Photoshoot",
-      "hook": "What really goes on behind the scenes of a social media influencer's photoshoot?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Event Highlights and Recaps",
-      "topic": "The Most Memorable Moments from the Grammy Awards 2023",
-      "hook": "You won't believe what happened at the Grammy Awards this year!",
+      "category": "New iPhone Features",
+      "topic": "The Top 5 Features of the New iPhone Update",
+      "hook": "Just dropped: the latest iPhone update is packed with game-changing features - here are the top 5 you need to know about!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Legendary Actor Interviews",
+      "topic": "An Exclusive Interview with Denzel Washington",
+      "hook": "I sat down with the one and only Denzel Washington to talk about his latest project - and what he had to say will blow your mind!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "True Crime Storytimes",
+      "topic": "The Chilling Case of the Poisoned Heiress",
+      "hook": "It's a case that will send chills down your spine: the shocking true story of the poisoned heiress and the family secrets that led to her downfall.",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Retail Store Closures",
+      "topic": "The Rise and Fall of Toys 'R' Us",
+      "hook": "What really happened to the beloved toy store chain Toys 'R' Us? Let's take a closer look at the shocking story behind its demise.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Crime News Recap",
+      "topic": "The Latest on the High-Profile Bank Heist",
+      "hook": "The daring bank heist that's got everyone talking: here's the latest update on the shocking crime that's left police baffled!",
       "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Gas Station Hacks",
+      "topic": "How to Save Money on Gas",
+      "hook": "Tired of overpaying at the pump? I've got the inside scoop on how to save big on gas - and it's easier than you think!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Emerging Actress Takeovers",
+      "topic": "The Rise of Actress Zendaya",
+      "hook": "From Disney darling to Hollywood superstar, Zendaya is taking over the entertainment industry - and we're loving every minute of it!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Furniture Shopping on a Budget",
+      "topic": "The Best Budget-Friendly Furniture Stores",
+      "hook": "You don't have to break the bank to furnish your dream home: here are the top budget-friendly furniture stores you need to know about!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Travel Tips",
+      "topic": "How to Pack Light for Your Summer Vacation",
+      "hook": "Ditch the heavy luggage and learn how to pack like a pro for your summer travels - with these easy tips and tricks!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Bitcoin and Crypto Explainers",
+      "topic": "A Beginner's Guide to Crypto Trading",
+      "hook": "Ready to dive into the world of crypto trading? Here's a beginner's guide to get you started - and help you avoid common pitfalls!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "New iPhone Features",
+      "topic": "The Top 5 iPhone Camera Features",
+      "hook": "Take your mobile photography to the next level with these top 5 iPhone camera features - and discover the secrets to stunning shots!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Legendary Actor Interviews",
+      "topic": "An Exclusive Interview with Meryl Streep",
+      "hook": "I sat down with the incomparable Meryl Streep to talk about her latest project - and what she had to say will inspire you to pursue your passions!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "True Crime Storytimes",
+      "topic": "The Bizarre Case of the Fake Heiress",
+      "hook": "It's a true crime story that will leave you speechless: the bizarre case of the fake heiress and the lies that led to her downfall.",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Retail Store Closures",
+      "topic": "The Demise of Sears and the Rise of E-Commerce",
+      "hook": "What really happened to the once-beloved retail giant Sears? Let's explore the shocking story behind its demise and the rise of e-commerce.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Travel Tips",
+      "topic": "The Best Summer Road Trip Routes",
+      "hook": "Hit the open road and explore the best summer road trip routes - with these insider tips and tricks to make your journey unforgettable!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
