@@ -1,213 +1,235 @@
 {
-  "generated_at": "2026-06-12T09:42:44.412176",
-  "valid_until": "2026-06-12T23:59:44.412184",
+  "generated_at": "2026-06-13T08:37:23.170230",
+  "valid_until": "2026-06-13T23:59:23.170241",
   "categories": [
-    "Crime News Recap",
-    "Gas Station Hacks",
-    "Emerging Actress Takeovers",
-    "Furniture Shopping on a Budget",
-    "Summer Travel Tips",
-    "Bitcoin and Crypto Explainers",
-    "New iPhone Features",
-    "Legendary Actor Interviews",
-    "True Crime Storytimes",
-    "Retail Store Closures",
-    "Vaccine Awareness",
-    "ATM and Banking Innovations",
-    "Summer Road Trip Essentials",
-    "Celebrity News and Gossip",
-    "Tech and Gadget Reviews"
+    "Sports Highlights",
+    "Viral Dance Challenges",
+    "Summer Health Tips",
+    "Fast and Furious Car Stunts",
+    "Music Festivals",
+    "Ind vs Afg Cricket Analysis",
+    "Judge Angel Kelley Park Ruling Explained",
+    "Giants Game Recap",
+    "Flu Season Preparation",
+    "Comedy Skits",
+    "Bryce Eldridge Challenge",
+    "Jung Hoo Lee Baseball Highlights",
+    "Rock Music Covers",
+    "The Strokes Music Reviews",
+    "Action Movie Reviews"
   ],
   "concepts": [
     {
-      "category": "Crime News Recap",
-      "topic": "The Latest on the Missing Heirloom Case",
-      "hook": "You won't believe what just happened in the shocking case of the missing family heirloom!",
-      "voice_style": "dramatic",
+      "category": "Sports Highlights",
+      "topic": "The most unbelievable last-second buzzer-beaters in basketball history",
+      "hook": "Did you see *that* shot?! Seriously, how did it go in?? Prepare for pure athletic madness!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Gas Station Hacks",
-      "topic": "How to Get Free Gas Station Food",
-      "hook": "I just discovered a secret hack to get free food at your local gas station - and it's ridiculously easy!",
+      "category": "Sports Highlights",
+      "topic": "Unforgettable 'Miracle Saves' across different sports that defy physics",
+      "hook": "Ever wonder what it feels like to snatch victory from the jaws of defeat with one insane, impossible move?",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Viral Dance Challenges",
+      "topic": "Breaking down the 'Cosmic Shuffle' challenge: steps and secret timing",
+      "hook": "Think you can't master the 'Cosmic Shuffle'? I'm about to show you the ONE move everyone misses!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Emerging Actress Takeovers",
-      "topic": "The Rise of Actress Emma Roberts",
-      "hook": "From childhood star to Hollywood powerhouse, Emma Roberts is taking over the silver screen - and we're obsessed!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Furniture Shopping on a Budget",
-      "topic": "Thrifting for Luxury Furniture on a Shoestring Budget",
-      "hook": "You won't believe the high-end furniture I scored at my local thrift store for pennies on the dollar!",
-      "voice_style": "calm",
+      "category": "Viral Dance Challenges",
+      "topic": "From 'Renegade' to 'Savage': The psychology of what makes a dance go viral",
+      "hook": "What makes a dance challenge EXPLODE? It's not just the steps, it's something deeper... and I'll reveal it.",
+      "voice_style": "mysterious",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Summer Travel Tips",
-      "topic": "The Secret to Scoring Cheap Flights This Summer",
-      "hook": "Tired of overpaying for flights? I just discovered the secret to scoring rock-bottom prices on your summer travels!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "category": "Summer Health Tips",
+      "topic": "Ultimate DIY natural remedies for mosquito bites that *actually* provide instant relief",
+      "hook": "Stop scratching! I've got three secret ingredients for instant mosquito bite relief that aren't calamine lotion.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Bitcoin and Crypto Explainers",
-      "topic": "A Beginner's Guide to NFTs",
-      "hook": "What are NFTs and why are they taking the crypto world by storm? Let me break it down for you in 60 seconds!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New iPhone Features",
-      "topic": "The Top 5 Features of the New iPhone Update",
-      "hook": "Just dropped: the latest iPhone update is packed with game-changing features - here are the top 5 you need to know about!",
+      "category": "Summer Health Tips",
+      "topic": "Beyond water: 3 surprising foods that hydrate you better than plain H2O",
+      "hook": "Are you still just drinking water to stay hydrated this summer? You're missing out big time on these secret hydrators!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Legendary Actor Interviews",
-      "topic": "An Exclusive Interview with Denzel Washington",
-      "hook": "I sat down with the one and only Denzel Washington to talk about his latest project - and what he had to say will blow your mind!",
+      "category": "Fast and Furious Car Stunts",
+      "topic": "How the 'Sky Bridge Jump' in F9 defied gravity (and how they *really* did it)",
+      "hook": "Was the 'Sky Bridge Jump' from F9 real, or just movie magic? Let's break down the impossible and reveal the trick!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Fast and Furious Car Stunts",
+      "topic": "The hidden genius behind the famous 'tank flip' stunt from Fast & Furious 6",
+      "hook": "Remember that tank scene? You won't believe the insane engineering trick that made that impossible car flip possible!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Music Festivals",
+      "topic": "The ultimate packing hacks for surviving a 3-day multi-genre music festival",
+      "hook": "Don't be *that* person who forgets essentials! I've got the festival packing list secrets no one tells you.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Festivals",
+      "topic": "Uncovering the best secret stages and hidden art installations at major festivals",
+      "hook": "Think you know Coachella? I'm revealing the underground stages and art installations even veterans miss!",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Ind vs Afg Cricket Analysis",
+      "topic": "The crucial overs: How Afghanistan nearly pulled off a shocking upset against India",
+      "hook": "Everyone's talking about the win, but how close was Afghanistan to a shocking upset? The numbers don't lie!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "True Crime Storytimes",
-      "topic": "The Chilling Case of the Poisoned Heiress",
-      "hook": "It's a case that will send chills down your spine: the shocking true story of the poisoned heiress and the family secrets that led to her downfall.",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Retail Store Closures",
-      "topic": "The Rise and Fall of Toys 'R' Us",
-      "hook": "What really happened to the beloved toy store chain Toys 'R' Us? Let's take a closer look at the shocking story behind its demise.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Crime News Recap",
-      "topic": "The Latest on the High-Profile Bank Heist",
-      "hook": "The daring bank heist that's got everyone talking: here's the latest update on the shocking crime that's left police baffled!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Gas Station Hacks",
-      "topic": "How to Save Money on Gas",
-      "hook": "Tired of overpaying at the pump? I've got the inside scoop on how to save big on gas - and it's easier than you think!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Emerging Actress Takeovers",
-      "topic": "The Rise of Actress Zendaya",
-      "hook": "From Disney darling to Hollywood superstar, Zendaya is taking over the entertainment industry - and we're loving every minute of it!",
+      "category": "Ind vs Afg Cricket Analysis",
+      "topic": "Player Spotlight: The unsung hero of India's last victory against Afghanistan",
+      "hook": "Forget the headlines! One player's silent brilliance was the real reason India dominated Afghanistan. Can you guess who?",
       "voice_style": "energetic",
       "music_mood": "inspirational",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Furniture Shopping on a Budget",
-      "topic": "The Best Budget-Friendly Furniture Stores",
-      "hook": "You don't have to break the bank to furnish your dream home: here are the top budget-friendly furniture stores you need to know about!",
+      "category": "Judge Angel Kelley Park Ruling Explained",
+      "topic": "Understanding your new park rights: What the Kelley ruling means for public gatherings",
+      "hook": "Can you picnic in the park anymore? Judge Kelley's new ruling just changed everything about public spaces!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Judge Angel Kelley Park Ruling Explained",
+      "topic": "The unexpected ripple effects of the Kelley Park decision on local community events",
+      "hook": "The Judge Angel Kelley Park ruling isn't just about one park. It's setting a precedent that could impact *your* town. Here's how.",
       "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Travel Tips",
-      "topic": "How to Pack Light for Your Summer Vacation",
-      "hook": "Ditch the heavy luggage and learn how to pack like a pro for your summer travels - with these easy tips and tricks!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Bitcoin and Crypto Explainers",
-      "topic": "A Beginner's Guide to Crypto Trading",
-      "hook": "Ready to dive into the world of crypto trading? Here's a beginner's guide to get you started - and help you avoid common pitfalls!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New iPhone Features",
-      "topic": "The Top 5 iPhone Camera Features",
-      "hook": "Take your mobile photography to the next level with these top 5 iPhone camera features - and discover the secrets to stunning shots!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Legendary Actor Interviews",
-      "topic": "An Exclusive Interview with Meryl Streep",
-      "hook": "I sat down with the incomparable Meryl Streep to talk about her latest project - and what she had to say will inspire you to pursue your passions!",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "True Crime Storytimes",
-      "topic": "The Bizarre Case of the Fake Heiress",
-      "hook": "It's a true crime story that will leave you speechless: the bizarre case of the fake heiress and the lies that led to her downfall.",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Retail Store Closures",
-      "topic": "The Demise of Sears and the Rise of E-Commerce",
-      "hook": "What really happened to the once-beloved retail giant Sears? Let's explore the shocking story behind its demise and the rise of e-commerce.",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Giants Game Recap",
+      "topic": "The Giants' late-game magic: How they snatched victory in the 9th inning",
+      "hook": "You went to bed early? You missed the most unbelievable 9th-inning comeback the Giants have had all season!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Summer Travel Tips",
-      "topic": "The Best Summer Road Trip Routes",
-      "hook": "Hit the open road and explore the best summer road trip routes - with these insider tips and tricks to make your journey unforgettable!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Giants Game Recap",
+      "topic": "The strategic blunder that almost cost the Giants their recent victory",
+      "hook": "The Giants won, but there was one moment of questionable strategy that nearly threw it all away. What was it?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
+    },
+    {
+      "category": "Flu Season Preparation",
+      "topic": "Debunked: 3 common flu myths you still believe (and what to do instead)",
+      "hook": "Think you know how to avoid the flu? You're probably falling for these ancient myths. Time to get real and stay healthy!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Flu Season Preparation",
+      "topic": "The ultimate immunity boost: Your overlooked flu season secret weapon",
+      "hook": "Forget everything you thought you knew about boosting immunity. This one simple habit could be your flu season game-changer!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits",
+      "topic": "When your 'smart' home devices develop a mind of their own at the worst times",
+      "hook": "Alexa just tried to order 50 pounds of cat food... and I don't even have a cat! Smart home fails are REAL.",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedy Skits",
+      "topic": "The awkwardness of trying to be 'hip' and understand Gen Z slang",
+      "hook": "My nephew just told me my 'rizz' was 'mid.' What even IS rizz?! The struggle to understand Gen Z slang is real.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
@@ -215,54 +237,24 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
