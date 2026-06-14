@@ -1,210 +1,205 @@
 {
-  "generated_at": "2026-06-13T08:37:23.170230",
-  "valid_until": "2026-06-13T23:59:23.170241",
+  "generated_at": "2026-06-14T08:53:52.185668",
+  "valid_until": "2026-06-14T23:59:52.185679",
   "categories": [
-    "Sports Highlights",
-    "Viral Dance Challenges",
-    "Summer Health Tips",
-    "Fast and Furious Car Stunts",
-    "Music Festivals",
-    "Ind vs Afg Cricket Analysis",
-    "Judge Angel Kelley Park Ruling Explained",
-    "Giants Game Recap",
-    "Flu Season Preparation",
-    "Comedy Skits",
-    "Bryce Eldridge Challenge",
-    "Jung Hoo Lee Baseball Highlights",
-    "Rock Music Covers",
-    "The Strokes Music Reviews",
-    "Action Movie Reviews"
+    "Food Safety Alerts",
+    "Insurance Explainers",
+    "K-Pop Dance Challenges",
+    "Latin Music Covers",
+    "Global Conflict Updates",
+    "Esports Highlights",
+    "Travel Vlogs Netherlands",
+    "Turkish Culture Showcase",
+    "Recipe Hacks",
+    "Food Recall Comedy Skits",
+    "Summer Festival Previews",
+    "Russian Language Lessons",
+    "LCK Fantasy League Tips",
+    "Celebrity Impersonations",
+    "International Cooking Recipes"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "The most unbelievable last-second buzzer-beaters in basketball history",
-      "hook": "Did you see *that* shot?! Seriously, how did it go in?? Prepare for pure athletic madness!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Food Safety Alerts",
+      "topic": "The 'Danger Zone' temperature for leftovers and why it's crucial.",
+      "hook": "Thinking your leftovers are safe after sitting out for hours? Think again! You might be inviting some unwelcome guests to your gut.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "Unforgettable 'Miracle Saves' across different sports that defy physics",
-      "hook": "Ever wonder what it feels like to snatch victory from the jaws of defeat with one insane, impossible move?",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "Breaking down the 'Cosmic Shuffle' challenge: steps and secret timing",
-      "hook": "Think you can't master the 'Cosmic Shuffle'? I'm about to show you the ONE move everyone misses!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Viral Dance Challenges",
-      "topic": "From 'Renegade' to 'Savage': The psychology of what makes a dance go viral",
-      "hook": "What makes a dance challenge EXPLODE? It's not just the steps, it's something deeper... and I'll reveal it.",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Health Tips",
-      "topic": "Ultimate DIY natural remedies for mosquito bites that *actually* provide instant relief",
-      "hook": "Stop scratching! I've got three secret ingredients for instant mosquito bite relief that aren't calamine lotion.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Health Tips",
-      "topic": "Beyond water: 3 surprising foods that hydrate you better than plain H2O",
-      "hook": "Are you still just drinking water to stay hydrated this summer? You're missing out big time on these secret hydrators!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fast and Furious Car Stunts",
-      "topic": "How the 'Sky Bridge Jump' in F9 defied gravity (and how they *really* did it)",
-      "hook": "Was the 'Sky Bridge Jump' from F9 real, or just movie magic? Let's break down the impossible and reveal the trick!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Insurance Explainers",
+      "topic": "What NOT to say after a car accident for your insurance claim.",
+      "hook": "Just had a fender bender? Your next words could cost you thousands in insurance claims. Here's what to NEVER say!",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
       "target_duration": 50
     },
     {
-      "category": "Fast and Furious Car Stunts",
-      "topic": "The hidden genius behind the famous 'tank flip' stunt from Fast & Furious 6",
-      "hook": "Remember that tank scene? You won't believe the insane engineering trick that made that impossible car flip possible!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "K-Pop Dance Challenges",
+      "topic": "Breaking down the viral SEVENTEEN 'Super' (\uc190\uc624\uacf5) chorus dance.",
+      "hook": "SEVENTEEN's 'Super' has one of the most powerful choreographies! Let's conquer that iconic chorus, move by move.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Latin Music Covers",
+      "topic": "A soulful acoustic cover of Karol G's 'Mientras Me Curo Del Cora'.",
+      "hook": "Karol G's 'Mientras Me Curo Del Cora' hits different. Wait 'til you hear this raw, acoustic take that will give you chills.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Conflict Updates",
+      "topic": "Understanding the ongoing humanitarian crisis in Sudan and its overlooked impact.",
+      "hook": "While the world watches elsewhere, a devastating crisis is silently unfolding in Sudan. Here's what you need to know about the forgotten conflict.",
+      "voice_style": "Dramatic",
+      "music_mood": "Dramatic",
       "target_duration": 50
     },
     {
-      "category": "Music Festivals",
-      "topic": "The ultimate packing hacks for surviving a 3-day multi-genre music festival",
-      "hook": "Don't be *that* person who forgets essentials! I've got the festival packing list secrets no one tells you.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Festivals",
-      "topic": "Uncovering the best secret stages and hidden art installations at major festivals",
-      "hook": "Think you know Coachella? I'm revealing the underground stages and art installations even veterans miss!",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
+      "category": "Esports Highlights",
+      "topic": "The craziest clutch play from the recent Valorant Champions Tour grand finals.",
+      "hook": "You won't believe this Valorant play! Down 1v5 in the final round, this pro pulled off the impossible. Get ready for jaw-dropping action!",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Ind vs Afg Cricket Analysis",
-      "topic": "The crucial overs: How Afghanistan nearly pulled off a shocking upset against India",
-      "hook": "Everyone's talking about the win, but how close was Afghanistan to a shocking upset? The numbers don't lie!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Travel Vlogs Netherlands",
+      "topic": "Uncovering Amsterdam's secret 'Hofjes' \u2013 hidden courtyards you can visit.",
+      "hook": "Forget the canals and tourist traps! I'm taking you to Amsterdam's secret 'Hofjes' \u2013 serene, hidden courtyards most visitors never find.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Turkish Culture Showcase",
+      "topic": "The mystical art of Turkish coffee fortune-telling and how it works.",
+      "hook": "Your future in a coffee cup? Dive into the mystical world of Turkish coffee fortune-telling, where grounds reveal your destiny!",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Recipe Hacks",
+      "topic": "The 2-ingredient viral 'crispy pasta' hack for an unbeatable texture.",
+      "hook": "Tired of soggy pasta? This 2-ingredient viral hack guarantees the crispiest, most satisfying pasta texture you've ever had! You HAVE to try this.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Food Recall Comedy Skits",
+      "topic": "A dramatic reenactment of discovering a salmonella recall after eating the product.",
+      "hook": "It was supposed to be a normal Tuesday night. Then, the recall notification hit. My fridge became a crime scene... and my stomach, a ticking time bomb!",
+      "voice_style": "Dramatic",
+      "music_mood": "Dramatic",
       "target_duration": 50
     },
     {
-      "category": "Ind vs Afg Cricket Analysis",
-      "topic": "Player Spotlight: The unsung hero of India's last victory against Afghanistan",
-      "hook": "Forget the headlines! One player's silent brilliance was the real reason India dominated Afghanistan. Can you guess who?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "Food Safety Alerts",
+      "topic": "Why you should NEVER wash raw chicken before cooking.",
+      "hook": "Everyone thinks washing raw chicken is clean, right? WRONG! You're actually making your kitchen a cross-contamination nightmare.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Judge Angel Kelley Park Ruling Explained",
-      "topic": "Understanding your new park rights: What the Kelley ruling means for public gatherings",
-      "hook": "Can you picnic in the park anymore? Judge Kelley's new ruling just changed everything about public spaces!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Insurance Explainers",
+      "topic": "Understanding the difference between collision and comprehensive car insurance.",
+      "hook": "Your car gets hit by a deer, then by another car. Who pays? Collision vs. Comprehensive: I'll make sense of it in under a minute!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "K-Pop Dance Challenges",
+      "topic": "Mastering the iconic TWICE 'Cheer Up' 'Shy Shy Shy' move in 3 steps.",
+      "hook": "Want to nail TWICE's iconic 'Shy Shy Shy' move? It's easier than you think! I'll break it down for you in just three simple steps.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Latin Music Covers",
+      "topic": "Reimagining Bad Bunny's 'Ojitos Lindos' as a chill Bossa Nova track.",
+      "hook": "Bad Bunny goes Bossa Nova?! You've NEVER heard 'Ojitos Lindos' like this before. Prepare for a smooth, unexpected twist!",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Judge Angel Kelley Park Ruling Explained",
-      "topic": "The unexpected ripple effects of the Kelley Park decision on local community events",
-      "hook": "The Judge Angel Kelley Park ruling isn't just about one park. It's setting a precedent that could impact *your* town. Here's how.",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
+      "category": "Global Conflict Updates",
+      "topic": "The role of social media in documenting and influencing modern conflicts.",
+      "hook": "From citizen journalism to propaganda, social media is redefining how we see \u2013 and engage with \u2013 global conflicts. Is it a blessing or a curse?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 50
     },
     {
-      "category": "Giants Game Recap",
-      "topic": "The Giants' late-game magic: How they snatched victory in the 9th inning",
-      "hook": "You went to bed early? You missed the most unbelievable 9th-inning comeback the Giants have had all season!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Giants Game Recap",
-      "topic": "The strategic blunder that almost cost the Giants their recent victory",
-      "hook": "The Giants won, but there was one moment of questionable strategy that nearly threw it all away. What was it?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Esports Highlights",
+      "topic": "Top 5 most 'broken' character picks from the recent League of Legends Worlds tournament.",
+      "hook": "These League of Legends pros pushed their champions to the ABSOLUTE limit! Prepare to be amazed by the most 'broken' picks from Worlds!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Flu Season Preparation",
-      "topic": "Debunked: 3 common flu myths you still believe (and what to do instead)",
-      "hook": "Think you know how to avoid the flu? You're probably falling for these ancient myths. Time to get real and stay healthy!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Travel Vlogs Netherlands",
+      "topic": "Cycling through Kinderdijk: Windmills and the picturesque Dutch countryside.",
+      "hook": "Ever wondered what it's truly like to cycle amongst iconic Dutch windmills? Join me on an unforgettable journey through the breathtaking Kinderdijk!",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
       "target_duration": 40
     },
     {
-      "category": "Flu Season Preparation",
-      "topic": "The ultimate immunity boost: Your overlooked flu season secret weapon",
-      "hook": "Forget everything you thought you knew about boosting immunity. This one simple habit could be your flu season game-changer!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Turkish Culture Showcase",
+      "topic": "Why Turkish breakfasts are the BEST and how to build your own feast.",
+      "hook": "Move over, avocado toast! Turkish breakfast is an absolute feast for the senses, and here's why you NEED to experience it.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits",
-      "topic": "When your 'smart' home devices develop a mind of their own at the worst times",
-      "hook": "Alexa just tried to order 50 pounds of cat food... and I don't even have a cat! Smart home fails are REAL.",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "category": "Recipe Hacks",
+      "topic": "How to make perfect 'cloud eggs' in under 5 minutes for a gourmet breakfast.",
+      "hook": "Cloud eggs look super fancy, but they're surprisingly easy! Get ready for the fluffiest, most Instagrammable eggs of your life in just minutes.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Comedy Skits",
-      "topic": "The awkwardness of trying to be 'hip' and understand Gen Z slang",
-      "hook": "My nephew just told me my 'rizz' was 'mid.' What even IS rizz?! The struggle to understand Gen Z slang is real.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "Food Recall Comedy Skits",
+      "topic": "Explaining the bizarre reasons behind obscure food recalls (e.g., 'undeclared walnuts' in mustard).",
+      "hook": "Undeclared walnuts in mustard?! Join me and my existential crisis puppet as we explore the most hilariously bizarre reasons for recent food recalls.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -212,49 +207,54 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
