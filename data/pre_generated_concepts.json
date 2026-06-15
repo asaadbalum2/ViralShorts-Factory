@@ -1,260 +1,276 @@
 {
-  "generated_at": "2026-06-14T08:53:52.185668",
-  "valid_until": "2026-06-14T23:59:52.185679",
+  "generated_at": "2026-06-15T11:29:28.949773",
+  "valid_until": "2026-06-15T23:59:28.949781",
   "categories": [
-    "Food Safety Alerts",
-    "Insurance Explainers",
-    "K-Pop Dance Challenges",
-    "Latin Music Covers",
-    "Global Conflict Updates",
-    "Esports Highlights",
-    "Travel Vlogs Netherlands",
-    "Turkish Culture Showcase",
-    "Recipe Hacks",
-    "Food Recall Comedy Skits",
-    "Summer Festival Previews",
-    "Russian Language Lessons",
-    "LCK Fantasy League Tips",
-    "Celebrity Impersonations",
-    "International Cooking Recipes"
+    "Juneteenth Explainers",
+    "Summer Vibes with Ice",
+    "Stock Market Updates",
+    "Inspiring Women like Sanchita Ugale",
+    "Global Summit Analysis",
+    "Strand Hacks and Hairstyles",
+    "Dancer Spotlights like Maria Timofeeva",
+    "Roku Hacks and Reviews",
+    "News from the G7 Summit 2026",
+    "Black History and Culture",
+    "Celebrating Freedom and Heritage",
+    "Ice Bucket Challenges",
+    "Financial News and Trends",
+    "Summer Fashion and Beauty",
+    "Global Economic Insights"
   ],
   "concepts": [
     {
-      "category": "Food Safety Alerts",
-      "topic": "The 'Danger Zone' temperature for leftovers and why it's crucial.",
-      "hook": "Thinking your leftovers are safe after sitting out for hours? Think again! You might be inviting some unwelcome guests to your gut.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Insurance Explainers",
-      "topic": "What NOT to say after a car accident for your insurance claim.",
-      "hook": "Just had a fender bender? Your next words could cost you thousands in insurance claims. Here's what to NEVER say!",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "K-Pop Dance Challenges",
-      "topic": "Breaking down the viral SEVENTEEN 'Super' (\uc190\uc624\uacf5) chorus dance.",
-      "hook": "SEVENTEEN's 'Super' has one of the most powerful choreographies! Let's conquer that iconic chorus, move by move.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Juneteenth Explainers",
+      "topic": "The History of Juneteenth and Its Significance Today",
+      "hook": "What if I told you there's a holiday that's been hidden in plain sight for over 150 years?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Latin Music Covers",
-      "topic": "A soulful acoustic cover of Karol G's 'Mientras Me Curo Del Cora'.",
-      "hook": "Karol G's 'Mientras Me Curo Del Cora' hits different. Wait 'til you hear this raw, acoustic take that will give you chills.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
+      "category": "Summer Vibes with Ice",
+      "topic": "Refreshing Summer Drinks Made with Ice",
+      "hook": "Beat the heat with these icy cold drinks that will make your summer unforgettable!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Global Conflict Updates",
-      "topic": "Understanding the ongoing humanitarian crisis in Sudan and its overlooked impact.",
-      "hook": "While the world watches elsewhere, a devastating crisis is silently unfolding in Sudan. Here's what you need to know about the forgotten conflict.",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Esports Highlights",
-      "topic": "The craziest clutch play from the recent Valorant Champions Tour grand finals.",
-      "hook": "You won't believe this Valorant play! Down 1v5 in the final round, this pro pulled off the impossible. Get ready for jaw-dropping action!",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs Netherlands",
-      "topic": "Uncovering Amsterdam's secret 'Hofjes' \u2013 hidden courtyards you can visit.",
-      "hook": "Forget the canals and tourist traps! I'm taking you to Amsterdam's secret 'Hofjes' \u2013 serene, hidden courtyards most visitors never find.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Stock Market Updates",
+      "topic": "How to Invest in the Stock Market as a Beginner",
+      "hook": "Ready to turn your savings into wealth? Start with these simple stock market investments!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Turkish Culture Showcase",
-      "topic": "The mystical art of Turkish coffee fortune-telling and how it works.",
-      "hook": "Your future in a coffee cup? Dive into the mystical world of Turkish coffee fortune-telling, where grounds reveal your destiny!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Inspiring Women like Sanchita Ugale",
+      "topic": "Sanchita Ugale's Journey to Success: Overcoming Obstacles and Achieving Goals",
+      "hook": "Meet the woman who defied all odds to achieve her dreams and inspire millions!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Recipe Hacks",
-      "topic": "The 2-ingredient viral 'crispy pasta' hack for an unbeatable texture.",
-      "hook": "Tired of soggy pasta? This 2-ingredient viral hack guarantees the crispiest, most satisfying pasta texture you've ever had! You HAVE to try this.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Global Summit Analysis",
+      "topic": "The Impact of the Global Summit on World Economy and Politics",
+      "hook": "What do world leaders have in store for us? Get the inside scoop on the global summit!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Food Recall Comedy Skits",
-      "topic": "A dramatic reenactment of discovering a salmonella recall after eating the product.",
-      "hook": "It was supposed to be a normal Tuesday night. Then, the recall notification hit. My fridge became a crime scene... and my stomach, a ticking time bomb!",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Food Safety Alerts",
-      "topic": "Why you should NEVER wash raw chicken before cooking.",
-      "hook": "Everyone thinks washing raw chicken is clean, right? WRONG! You're actually making your kitchen a cross-contamination nightmare.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Strand Hacks and Hairstyles",
+      "topic": "Easy Summer Hairstyles for Long Hair",
+      "hook": "Tired of bad hair days? Try these easy summer hairstyles to keep your locks looking great!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Insurance Explainers",
-      "topic": "Understanding the difference between collision and comprehensive car insurance.",
-      "hook": "Your car gets hit by a deer, then by another car. Who pays? Collision vs. Comprehensive: I'll make sense of it in under a minute!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Dancer Spotlights like Maria Timofeeva",
+      "topic": "Maria Timofeeva's Dance Journey: From Russia to the World Stage",
+      "hook": "Get ready to be mesmerized by the dance moves of Maria Timofeeva, the Russian sensation taking the world by storm!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "K-Pop Dance Challenges",
-      "topic": "Mastering the iconic TWICE 'Cheer Up' 'Shy Shy Shy' move in 3 steps.",
-      "hook": "Want to nail TWICE's iconic 'Shy Shy Shy' move? It's easier than you think! I'll break it down for you in just three simple steps.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Latin Music Covers",
-      "topic": "Reimagining Bad Bunny's 'Ojitos Lindos' as a chill Bossa Nova track.",
-      "hook": "Bad Bunny goes Bossa Nova?! You've NEVER heard 'Ojitos Lindos' like this before. Prepare for a smooth, unexpected twist!",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
+      "category": "Roku Hacks and Reviews",
+      "topic": "Hidden Roku Features You Need to Know About",
+      "hook": "Did you know your Roku has secret features that can take your streaming experience to the next level?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Global Conflict Updates",
-      "topic": "The role of social media in documenting and influencing modern conflicts.",
-      "hook": "From citizen journalism to propaganda, social media is redefining how we see \u2013 and engage with \u2013 global conflicts. Is it a blessing or a curse?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Esports Highlights",
-      "topic": "Top 5 most 'broken' character picks from the recent League of Legends Worlds tournament.",
-      "hook": "These League of Legends pros pushed their champions to the ABSOLUTE limit! Prepare to be amazed by the most 'broken' picks from Worlds!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs Netherlands",
-      "topic": "Cycling through Kinderdijk: Windmills and the picturesque Dutch countryside.",
-      "hook": "Ever wondered what it's truly like to cycle amongst iconic Dutch windmills? Join me on an unforgettable journey through the breathtaking Kinderdijk!",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
+      "category": "News from the G7 Summit 2026",
+      "topic": "G7 Summit 2026: What to Expect from the World's Most Powerful Leaders",
+      "hook": "The world's top leaders are gathering for the G7 Summit 2026 - here's what you need to know!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Turkish Culture Showcase",
-      "topic": "Why Turkish breakfasts are the BEST and how to build your own feast.",
-      "hook": "Move over, avocado toast! Turkish breakfast is an absolute feast for the senses, and here's why you NEED to experience it.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Black History and Culture",
+      "topic": "The Untold Story of African American Inventors and Innovators",
+      "hook": "You won't believe the incredible contributions African American inventors have made to modern society!",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Recipe Hacks",
-      "topic": "How to make perfect 'cloud eggs' in under 5 minutes for a gourmet breakfast.",
-      "hook": "Cloud eggs look super fancy, but they're surprisingly easy! Get ready for the fluffiest, most Instagrammable eggs of your life in just minutes.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Juneteenth Explainers",
+      "topic": "Juneteenth Traditions: How to Celebrate This Important Holiday",
+      "hook": "Want to know the best way to celebrate Juneteenth? Start with these time-honored traditions!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Food Recall Comedy Skits",
-      "topic": "Explaining the bizarre reasons behind obscure food recalls (e.g., 'undeclared walnuts' in mustard).",
-      "hook": "Undeclared walnuts in mustard?! Join me and my existential crisis puppet as we explore the most hilariously bizarre reasons for recent food recalls.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
+      "category": "Summer Vibes with Ice",
+      "topic": "Ice Cream Hacks to Make Your Summer Treats Even Better",
+      "hook": "Take your ice cream game to the next level with these genius hacks!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Stock Market Updates",
+      "topic": "The Impact of Inflation on Your Investments: What You Need to Know",
+      "hook": "Inflation is on the rise - here's how it can affect your investments and what you can do about it!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Inspiring Women like Sanchita Ugale",
+      "topic": "Sanchita Ugale's Top Tips for Achieving Success as a Woman in a Male-Dominated Field",
+      "hook": "Get ready to be inspired by Sanchita Ugale's story and learn how to overcome obstacles in your own career!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Summit Analysis",
+      "topic": "The Future of Global Politics: Trends to Watch from the Global Summit",
+      "hook": "What will the future of global politics look like? Get the inside scoop from the global summit!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Strand Hacks and Hairstyles",
+      "topic": "Quick and Easy Hairstyles for Short Hair",
+      "hook": "Short on time but want to look great? Try these quick and easy hairstyles for short hair!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Dancer Spotlights like Maria Timofeeva",
+      "topic": "The Most Iconic Dance Moves of All Time: A Tribute to Maria Timofeeva",
+      "hook": "Get ready to be mesmerized by the most iconic dance moves of all time, inspired by the incredible Maria Timofeeva!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Roku Hacks and Reviews",
+      "topic": "Roku vs. Other Streaming Devices: Which One is Right for You?",
+      "hook": "Confused about which streaming device to choose? Let's compare Roku with the rest and find the best fit for you!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "News from the G7 Summit 2026",
+      "topic": "G7 Summit 2026: The Biggest Challenges Facing World Leaders Today",
+      "hook": "The world's top leaders are gathering to tackle the biggest challenges of our time - here's what you need to know!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Black History and Culture",
+      "topic": "The Rich History of African American Music: From Blues to Hip-Hop",
+      "hook": "You won't believe the incredible impact African American music has had on the world - let's explore its rich history!",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Juneteenth Explainers",
+      "topic": "The Importance of Juneteenth in Modern American Society",
+      "hook": "Why is Juneteenth still relevant today? Let's explore its significance in modern American society!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Vibes with Ice",
+      "topic": "Cool and Refreshing Ice Treats to Beat the Summer Heat",
+      "hook": "Stay cool and refreshed this summer with these amazing ice treats that will become your new favorites!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
       "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
