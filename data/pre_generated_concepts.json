@@ -1,275 +1,98 @@
 {
-  "generated_at": "2026-06-15T11:29:28.949773",
-  "valid_until": "2026-06-15T23:59:28.949781",
+  "generated_at": "2026-06-16T10:25:25.739307",
+  "valid_until": "2026-06-16T23:59:25.739344",
   "categories": [
-    "Juneteenth Explainers",
-    "Summer Vibes with Ice",
-    "Stock Market Updates",
-    "Inspiring Women like Sanchita Ugale",
-    "Global Summit Analysis",
-    "Strand Hacks and Hairstyles",
-    "Dancer Spotlights like Maria Timofeeva",
-    "Roku Hacks and Reviews",
-    "News from the G7 Summit 2026",
-    "Black History and Culture",
-    "Celebrating Freedom and Heritage",
-    "Ice Bucket Challenges",
-    "Financial News and Trends",
-    "Summer Fashion and Beauty",
-    "Global Economic Insights"
+    "Sports Highlights",
+    "Politics and News",
+    "Golf Analysis",
+    "Tennis Updates",
+    "UFC Event Previews",
+    "Donald Trump News",
+    "Citizenship Advice",
+    "Current Events Explainers",
+    "Summer Sports Recaps",
+    "Social Media Challenges",
+    "Newsletter Reviews",
+    "White House News",
+    "Freedom and Rights Discussions",
+    "Athlete Profiles",
+    "June Event Calendars"
   ],
-  "concepts": [
-    {
-      "category": "Juneteenth Explainers",
-      "topic": "The History of Juneteenth and Its Significance Today",
-      "hook": "What if I told you there's a holiday that's been hidden in plain sight for over 150 years?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Vibes with Ice",
-      "topic": "Refreshing Summer Drinks Made with Ice",
-      "hook": "Beat the heat with these icy cold drinks that will make your summer unforgettable!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Stock Market Updates",
-      "topic": "How to Invest in the Stock Market as a Beginner",
-      "hook": "Ready to turn your savings into wealth? Start with these simple stock market investments!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Inspiring Women like Sanchita Ugale",
-      "topic": "Sanchita Ugale's Journey to Success: Overcoming Obstacles and Achieving Goals",
-      "hook": "Meet the woman who defied all odds to achieve her dreams and inspire millions!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Summit Analysis",
-      "topic": "The Impact of the Global Summit on World Economy and Politics",
-      "hook": "What do world leaders have in store for us? Get the inside scoop on the global summit!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Strand Hacks and Hairstyles",
-      "topic": "Easy Summer Hairstyles for Long Hair",
-      "hook": "Tired of bad hair days? Try these easy summer hairstyles to keep your locks looking great!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Dancer Spotlights like Maria Timofeeva",
-      "topic": "Maria Timofeeva's Dance Journey: From Russia to the World Stage",
-      "hook": "Get ready to be mesmerized by the dance moves of Maria Timofeeva, the Russian sensation taking the world by storm!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Roku Hacks and Reviews",
-      "topic": "Hidden Roku Features You Need to Know About",
-      "hook": "Did you know your Roku has secret features that can take your streaming experience to the next level?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "News from the G7 Summit 2026",
-      "topic": "G7 Summit 2026: What to Expect from the World's Most Powerful Leaders",
-      "hook": "The world's top leaders are gathering for the G7 Summit 2026 - here's what you need to know!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Black History and Culture",
-      "topic": "The Untold Story of African American Inventors and Innovators",
-      "hook": "You won't believe the incredible contributions African American inventors have made to modern society!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Juneteenth Explainers",
-      "topic": "Juneteenth Traditions: How to Celebrate This Important Holiday",
-      "hook": "Want to know the best way to celebrate Juneteenth? Start with these time-honored traditions!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Vibes with Ice",
-      "topic": "Ice Cream Hacks to Make Your Summer Treats Even Better",
-      "hook": "Take your ice cream game to the next level with these genius hacks!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Stock Market Updates",
-      "topic": "The Impact of Inflation on Your Investments: What You Need to Know",
-      "hook": "Inflation is on the rise - here's how it can affect your investments and what you can do about it!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Inspiring Women like Sanchita Ugale",
-      "topic": "Sanchita Ugale's Top Tips for Achieving Success as a Woman in a Male-Dominated Field",
-      "hook": "Get ready to be inspired by Sanchita Ugale's story and learn how to overcome obstacles in your own career!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Summit Analysis",
-      "topic": "The Future of Global Politics: Trends to Watch from the Global Summit",
-      "hook": "What will the future of global politics look like? Get the inside scoop from the global summit!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Strand Hacks and Hairstyles",
-      "topic": "Quick and Easy Hairstyles for Short Hair",
-      "hook": "Short on time but want to look great? Try these quick and easy hairstyles for short hair!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Dancer Spotlights like Maria Timofeeva",
-      "topic": "The Most Iconic Dance Moves of All Time: A Tribute to Maria Timofeeva",
-      "hook": "Get ready to be mesmerized by the most iconic dance moves of all time, inspired by the incredible Maria Timofeeva!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Roku Hacks and Reviews",
-      "topic": "Roku vs. Other Streaming Devices: Which One is Right for You?",
-      "hook": "Confused about which streaming device to choose? Let's compare Roku with the rest and find the best fit for you!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "News from the G7 Summit 2026",
-      "topic": "G7 Summit 2026: The Biggest Challenges Facing World Leaders Today",
-      "hook": "The world's top leaders are gathering to tackle the biggest challenges of our time - here's what you need to know!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Black History and Culture",
-      "topic": "The Rich History of African American Music: From Blues to Hip-Hop",
-      "hook": "You won't believe the incredible impact African American music has had on the world - let's explore its rich history!",
-      "voice_style": "mysterious",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Juneteenth Explainers",
-      "topic": "The Importance of Juneteenth in Modern American Society",
-      "hook": "Why is Juneteenth still relevant today? Let's explore its significance in modern American society!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Vibes with Ice",
-      "topic": "Cool and Refreshing Ice Treats to Beat the Summer Heat",
-      "hook": "Stay cool and refreshed this summer with these amazing ice treats that will become your new favorites!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     }
   ],
