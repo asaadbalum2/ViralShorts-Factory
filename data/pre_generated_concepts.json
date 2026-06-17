@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-06-16T10:25:25.739307",
-  "valid_until": "2026-06-16T23:59:25.739344",
+  "generated_at": "2026-06-17T10:14:28.661187",
+  "valid_until": "2026-06-17T23:59:28.661198",
   "categories": [
+    "Current Event Explainers",
     "Sports Highlights",
-    "Politics and News",
-    "Golf Analysis",
-    "Tennis Updates",
-    "UFC Event Previews",
-    "Donald Trump News",
-    "Citizenship Advice",
-    "Current Events Explainers",
-    "Summer Sports Recaps",
-    "Social Media Challenges",
-    "Newsletter Reviews",
-    "White House News",
-    "Freedom and Rights Discussions",
-    "Athlete Profiles",
-    "June Event Calendars"
+    "News Updates",
+    "Tech Security Tips",
+    "Law and Politics",
+    "Tennis Analysis",
+    "US City Guides",
+    "Government Policies",
+    "Summer Safety Tips",
+    "Data Protection Advice",
+    "Female Empowerment Stories",
+    "Congressional Updates",
+    "Online Sweepstakes",
+    "Legislative History",
+    "Cybersecurity Awareness"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Current Event Explainers",
+      "topic": "Understanding the Recent Twitter Algorithm Update",
+      "hook": "What's behind the mysterious Twitter feed shake-up?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "Top 5 NBA Dunks of the Season",
+      "hook": "Get ready to witness the most jaw-dropping dunks of the year!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "News Updates",
+      "topic": "The Impact of the New Climate Change Bill",
+      "hook": "How will the latest climate change bill affect your daily life?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Security Tips",
+      "topic": "How to Protect Yourself from Phishing Scams",
+      "hook": "Don't fall victim to these sneaky online scams!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Law and Politics",
+      "topic": "The Supreme Court's Latest Ruling on LGBTQ+ Rights",
+      "hook": "A historic milestone or a step backwards?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Analysis",
+      "topic": "The Secret to Novak Djokovic's Unbeatable Serve",
+      "hook": "Uncover the technique behind the world's best tennis serve!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "US City Guides",
+      "topic": "Exploring the Hidden Gems of New Orleans",
+      "hook": "Discover the secrets of the Big Easy!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Government Policies",
+      "topic": "The Pros and Cons of Universal Basic Income",
+      "hook": "Could a guaranteed income change the game for Americans?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent Heat-Related Illnesses",
+      "hook": "Don't let the heat wave catch you off guard!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Data Protection Advice",
+      "topic": "The Dangers of Using Public Wi-Fi",
+      "hook": "Are you unknowingly putting your personal data at risk?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Event Explainers",
+      "topic": "The Science Behind the Recent Wildfires",
+      "hook": "What's fueling the devastating wildfires across the globe?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Comebacks in Sports History",
+      "hook": "Witness the most unforgettable turnarounds in sports!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "News Updates",
+      "topic": "The Latest Developments in the Ongoing Pandemic",
+      "hook": "What's the current state of the pandemic and what's next?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Security Tips",
+      "topic": "The Importance of Using a VPN",
+      "hook": "Are you hiding in plain sight online?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Law and Politics",
+      "topic": "The Impact of the New Voting Laws",
+      "hook": "How will the latest voting laws affect your right to vote?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Tennis Analysis",
+      "topic": "The Rise of the Next Generation of Tennis Stars",
+      "hook": "Meet the young players taking the tennis world by storm!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "US City Guides",
+      "topic": "Discovering the Best Kept Secrets of San Francisco",
+      "hook": "Uncover the hidden gems of the City by the Bay!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Government Policies",
+      "topic": "The Benefits and Drawbacks of the New Tax Reform",
+      "hook": "How will the latest tax changes affect your wallet?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Stay Safe During a Thunderstorm",
+      "hook": "Don't get caught in the storm!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Data Protection Advice",
+      "topic": "The Dangers of Using Outdated Software",
+      "hook": "Is your outdated software putting you at risk of cyber attacks?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
