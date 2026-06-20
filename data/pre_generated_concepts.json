@@ -1,195 +1,200 @@
 {
-  "generated_at": "2026-06-19T10:00:08.686721",
-  "valid_until": "2026-06-19T23:59:08.686730",
+  "generated_at": "2026-06-20T08:32:21.298766",
+  "valid_until": "2026-06-20T23:59:21.298774",
   "categories": [
-    "Fitness Motivation at Planet Fitness",
-    "Crypto Explainers: XRP and Market Trends",
-    "Wordle Strategy and Puzzle Solvers",
-    "Severe Weather Updates: Tornado Warnings",
-    "Personal Finance Tips: Banking and Budgeting",
-    "Animal Rescue Stories from The Dodo",
-    "Gaming Highlights and Walkthroughs",
-    "Travel Vlogs: Exploring Cuba's New Economy",
-    "Summer Fitness Challenges",
-    "News Updates: Cuba's Free-Market Reforms",
-    "Banking Hacks for Savings and Investments",
-    "Relaxing Games for Stress Relief",
-    "Storm Chasing and Weather Adventures",
-    "XRP Price Predictions and Crypto News",
-    "Economic Impact of Free-Market Reforms on Cuba"
+    "Weather Updates",
+    "Sports Highlights",
+    "Gaming News",
+    "Puzzle Solutions",
+    "Entertainment News",
+    "Legal Advice",
+    "Action-Packed Trailers",
+    "Summer Safety Tips",
+    "International Sports",
+    "Flood Relief Efforts",
+    "Gaming Rumors",
+    "Word Game Challenges",
+    "Cricket Analysis",
+    "FIFA World Cup Updates",
+    "Emergency Preparedness"
   ],
   "concepts": [
     {
-      "category": "Fitness Motivation at Planet Fitness",
-      "topic": "Debunking the 'Lunk Alarm' myth and real Planet Fitness etiquette",
-      "hook": "Ever wondered what *really* sets off Planet Fitness's infamous Lunk Alarm? Prepare to be surprised!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Weather Updates",
+      "topic": "Heatwave Safety in Urban Areas",
+      "hook": "Are you prepared for the hottest summer on record?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Crypto Explainers: XRP and Market Trends",
-      "topic": "XRP's potential role in global cross-border payments post-SEC lawsuit verdict",
-      "hook": "Did XRP just unlock the future of global money transfers? Let's dive into the implications!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Wordle Strategy and Puzzle Solvers",
-      "topic": "The ultimate starting word strategy for consistent Wordle wins every single day",
-      "hook": "This one Wordle starting word will change your game forever, seriously. Don't play without it!",
+      "category": "Sports Highlights",
+      "topic": "Cristiano Ronaldo's Top 5 Career Goals",
+      "hook": "You won't believe the goal that changed his life forever!",
       "voice_style": "energetic",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Severe Weather Updates: Tornado Warnings",
-      "topic": "Understanding the difference between tornado 'wedges' and 'ropes' and their distinct danger levels",
-      "hook": "Not all tornadoes are created equal. Knowing the difference between a wedge and a rope could save your life.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 47
-    },
-    {
-      "category": "Personal Finance Tips: Banking and Budgeting",
-      "topic": "Maximizing your savings with high-yield savings accounts in 2024: A quick guide",
-      "hook": "Is your bank account actually *losing* you money? Let's fix that now with this simple strategy.",
-      "voice_style": "calm",
+      "category": "Gaming News",
+      "topic": "New PS5 Game Releases for 2024",
+      "hook": "Get ready to level up with these highly-anticipated games!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 42
+      "target_duration": 45
     },
     {
-      "category": "Animal Rescue Stories from The Dodo",
-      "topic": "The heartwarming journey of a three-legged dog finding its forever home after being abandoned",
-      "hook": "Left for dead with a broken leg, this little fighter just needed a second chance to find happiness.",
+      "category": "Puzzle Solutions",
+      "topic": "Solving the World's Hardest Rubik's Cube Puzzle",
+      "hook": "Can you handle the ultimate brain-teaser challenge?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Rise of K-Pop: A Global Phenomenon",
+      "hook": "What's behind the unstoppable rise of BTS and Blackpink?",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Legal Advice",
+      "topic": "Understanding Your Rights as a Tenant",
+      "hook": "Don't let landlord disputes leave you homeless!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Action-Packed Trailers",
+      "topic": "Marvel's Next Big Movie: The Eternals",
+      "hook": "Witness the battle for the future of humanity!",
       "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 49
-    },
-    {
-      "category": "Gaming Highlights and Walkthroughs",
-      "topic": "Discovering a hidden lore Easter egg in the new Elden Ring DLC (Shadow of the Erdtree)",
-      "hook": "Players missed this for months! The secret Elden Ring DLC Easter egg revealed, and it's HUGE.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "Travel Vlogs: Exploring Cuba's New Economy",
-      "topic": "Experiencing Havana's thriving 'paladar' (private restaurant) scene and its economic impact",
-      "hook": "Cuba's hidden culinary revolution is changing lives, one delicious plate at a time. Come explore!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Summer Fitness Challenges",
-      "topic": "The 30-day 'Beach Body Burst' no-equipment workout challenge you can do anywhere",
-      "hook": "No gym? No problem. Get summer-ready with this quick, intense routine you can do anywhere, anytime.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "News Updates: Cuba's Free-Market Reforms",
-      "topic": "The significant impact of new small business licenses on Cuban entrepreneurs",
-      "hook": "Cuba's economy is quietly undergoing a massive transformation. Here's how new licenses are empowering locals.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Fitness Motivation at Planet Fitness",
-      "topic": "Achieving your first personal record (PR) on the Planet Fitness Smith Machine for chest press",
-      "hook": "Think Planet Fitness isn't for serious lifters? Watch me hit a new PR on the Smith Machine for chest press!",
-      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Crypto Explainers: XRP and Market Trends",
-      "topic": "Understanding 'Whale Wallets' and their potential influence in the XRP ecosystem",
-      "hook": "What do the biggest XRP holders know that you don't? Let's peek into 'whale wallets' and market trends.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Wordle Strategy and Puzzle Solvers",
-      "topic": "How to effectively recover from a bad first or second guess in Wordle to still win",
-      "hook": "Stuck after your first Wordle guess? Don't despair, I've got the comeback strategy you need to win every time.",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Severe Weather Updates: Tornado Warnings",
-      "topic": "Debunking dangerous tornado shelter myths and sharing real, actionable safety protocols",
-      "hook": "Forget what you *think* you know about tornado safety. This critical advice could literally save your life.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 49
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent Waterborne Illnesses at the Beach",
+      "hook": "Don't let a day at the beach turn into a trip to the hospital!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "Personal Finance Tips: Banking and Budgeting",
-      "topic": "Mastering the 'zero-based budgeting' technique to save hundreds of dollars monthly",
-      "hook": "Want to find hundreds of 'missing' dollars every month? This budgeting trick is a game-changer you need to try.",
+      "category": "International Sports",
+      "topic": "The Rise of Cricket in India: A National Obsession",
+      "hook": "What makes cricket the most popular sport in India?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Flood Relief Efforts",
+      "topic": "Community-Led Initiatives to Combat Flooding",
+      "hook": "Meet the heroes who are making a difference in flood-ravaged areas!",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Updates",
+      "topic": "The Science Behind Thunderstorms",
+      "hook": "Uncover the secrets of the most electrifying weather phenomenon!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Greatest Comebacks in Sports History",
+      "hook": "You won't believe the most epic turnarounds in sports!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Animal Rescue Stories from The Dodo",
-      "topic": "The incredible bond formed between a rescue parrot and its new family after neglect",
-      "hook": "Abandoned and alone, this talking parrot just needed someone to listen. Prepare for happy tears!",
+      "category": "Gaming News",
+      "topic": "The Future of Virtual Reality Gaming",
+      "hook": "Step into a new world of immersive gaming experiences!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 46
+      "target_duration": 45
     },
     {
-      "category": "Gaming Highlights and Walkthroughs",
-      "topic": "Mastering the toughest boss in a new AAA game using an unexpected, overpowered strategy",
-      "hook": "Stuck on the Final Boss? This unexpected strategy breaks the fight wide open and guarantees a win!",
-      "voice_style": "energetic",
+      "category": "Puzzle Solutions",
+      "topic": "Cracking the Code: Solving the Caesar Cipher",
+      "hook": "Can you crack the ancient code that has puzzled scholars for centuries?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Impact of Social Media on Celebrity Culture",
+      "hook": "What's real and what's fake in the world of celebrity social media?",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Legal Advice",
+      "topic": "Understanding Your Rights as a Consumer",
+      "hook": "Don't let companies take advantage of you: know your rights!",
+      "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 43
+      "target_duration": 45
     },
     {
-      "category": "Travel Vlogs: Exploring Cuba's New Economy",
-      "topic": "The rise of independent Airbnb hosts in Havana and their direct economic impact",
-      "hook": "How everyday Cubans are building their own economy, one Airbnb guest at a time. It's truly inspiring!",
+      "category": "Action-Packed Trailers",
+      "topic": "The Next Big Superhero Movie: Wonder Woman",
+      "hook": "Witness the epic battle for justice and empowerment!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent and Treat Sunburn",
+      "hook": "Don't let sunburn ruin your summer vacation!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 47
+      "target_duration": 40
     },
     {
-      "category": "Summer Fitness Challenges",
-      "topic": "The '5-Minute Morning Mobility Challenge' for summer flexibility and injury prevention",
-      "hook": "Stiff in the morning? Unlock full body flexibility and prevent injuries in just 5 minutes with this challenge!",
-      "voice_style": "calm",
+      "category": "International Sports",
+      "topic": "The Art of Japanese Sumo Wrestling",
+      "hook": "Step into the ancient world of sumo wrestling and discover its secrets!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Flood Relief Efforts",
+      "topic": "Innovative Solutions for Flood-Resistant Housing",
+      "hook": "Discover the cutting-edge technology that's changing the face of flood relief!",
+      "voice_style": "inspirational",
       "music_mood": "inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "News Updates: Cuba's Free-Market Reforms",
-      "topic": "How new foreign investment laws are shaping Cuba's long-term economic future and global standing",
-      "hook": "The world is watching as Cuba opens its doors to new foreign investment. What does it mean for their future?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 46
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -197,64 +202,59 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
