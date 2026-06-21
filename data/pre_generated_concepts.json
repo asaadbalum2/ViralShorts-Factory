@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-06-20T08:32:21.298766",
-  "valid_until": "2026-06-20T23:59:21.298774",
+  "generated_at": "2026-06-21T09:08:21.589681",
+  "valid_until": "2026-06-21T23:59:21.589690",
   "categories": [
-    "Weather Updates",
     "Sports Highlights",
-    "Gaming News",
-    "Puzzle Solutions",
-    "Entertainment News",
-    "Legal Advice",
-    "Action-Packed Trailers",
-    "Summer Safety Tips",
-    "International Sports",
-    "Flood Relief Efforts",
-    "Gaming Rumors",
-    "Word Game Challenges",
-    "Cricket Analysis",
-    "FIFA World Cup Updates",
-    "Emergency Preparedness"
+    "Animated Movie Clips",
+    "Netflix Show Reviews",
+    "Financial Tips",
+    "Wildlife Encounters",
+    "International Soccer Analysis",
+    "Cricket Match Updates",
+    "Summer Vacation Vlogs",
+    "investment Strategies",
+    "Cartoon Movie Theories",
+    "International News Updates",
+    "Football Match Previews",
+    "New Movie Trailers",
+    "Financial Company Reviews",
+    "Animal Conservation"
   ],
   "concepts": [
     {
-      "category": "Weather Updates",
-      "topic": "Heatwave Safety in Urban Areas",
-      "hook": "Are you prepared for the hottest summer on record?",
-      "voice_style": "authoritative",
+      "category": "Sports Highlights",
+      "topic": "The Craziest Last-Second Buzzer Beaters in NBA Playoff History",
+      "hook": "You won't believe how these games ended! Relive the most insane buzzer-beaters that defied belief and shattered hearts.",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
       "category": "Sports Highlights",
-      "topic": "Cristiano Ronaldo's Top 5 Career Goals",
-      "hook": "You won't believe the goal that changed his life forever!",
-      "voice_style": "energetic",
+      "topic": "WTF Moments in Extreme Sports: Fails That Turned Into Wins",
+      "hook": "Ever seen a wipeout turn into a legendary trick? These extreme sports moments are so wild, you'll question reality!",
+      "voice_style": "dramatic",
       "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Animated Movie Clips",
+      "topic": "Hidden Easter Eggs in Spider-Man: Across the Spider-Verse You DEFINITELY Missed",
+      "hook": "Think you caught all the references in Spider-Verse 2? Prepare to have your mind blown by these blink-and-you'll-miss-it secrets!",
+      "voice_style": "friendly",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Animated Movie Clips",
+      "topic": "The Darkest Fan Theory About Disney's Inside Out That Changes Everything",
+      "hook": "What if Riley wasn't the only one with problems? This chilling theory about 'Inside Out' will make you rethink the entire movie.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 47
+    },
+    {
+      "category": "Netflix Show Reviews",
+      "topic": "Is 'Squid Game' Overrated or a Masterpiece? An Honest Deep Dive",
+      "hook": "Everyone's talked about 'Squid Game,' but does it really stand up to the hype? Let's break down if it's a genre-defining masterpiece or just another flash in the pan.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Gaming News",
-      "topic": "New PS5 Game Releases for 2024",
-      "hook": "Get ready to level up with these highly-anticipated games!",
+      "category": "Netflix Show Reviews",
+      "topic": "The Mind-Bending 'Dark' Series Finale: Explained (Finally!)",
+      "hook": "Still scratching your head over the 'Dark' finale? Don't worry, I'm here to untangle the timelines, paradoxes, and epic conclusion of Netflix's most complex show.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Financial Tips",
+      "topic": "Stop These 3 Money-Wasting Subscription Habits TODAY!",
+      "hook": "Are you secretly hemorrhaging cash every month? Discover the three hidden subscription traps that are draining your bank account without you even realizing it.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 44
+    },
+    {
+      "category": "Financial Tips",
+      "topic": "Your Daily Coffee Habit Is Costing You a Fortune: The Real Numbers",
+      "hook": "That morning latte might taste good, but what's it really costing you over a year? Prepare for a shocking financial reality check.",
+      "voice_style": "dramatic",
+      "music_mood": "chill",
+      "target_duration": 46
+    },
+    {
+      "category": "Wildlife Encounters",
+      "topic": "Shark vs. Orca: Who's the REAL Apex Predator of the Ocean?",
+      "hook": "Everyone fears the great white, but what happens when it meets an orca? Prepare for an epic showdown that redefines the food chain!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Wildlife Encounters",
+      "topic": "The Most Adorable (and Unexpected) Animal Friendships Caught on Camera",
+      "hook": "A cat befriending a bear? A dog raising tiger cubs? These heartwarming and bizarre animal friendships will melt your heart!",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "International Soccer Analysis",
+      "topic": "Messi's Genius vs. Ronaldo's Dominance: The GOAT Debate SOLVED?",
+      "hook": "We've argued for years, but what do the stats *really* say? I'm breaking down Messi and Ronaldo's careers to finally settle the greatest of all time debate!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "International Soccer Analysis",
+      "topic": "The Tactical Masterclass That Won Euro 2024: How They Did It",
+      "hook": "From underdog to champion \u2013 how did one team pull off the unthinkable at Euro 2024? Dive into the brilliant tactics that secured them the trophy!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Puzzle Solutions",
-      "topic": "Solving the World's Hardest Rubik's Cube Puzzle",
-      "hook": "Can you handle the ultimate brain-teaser challenge?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Rise of K-Pop: A Global Phenomenon",
-      "hook": "What's behind the unstoppable rise of BTS and Blackpink?",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Legal Advice",
-      "topic": "Understanding Your Rights as a Tenant",
-      "hook": "Don't let landlord disputes leave you homeless!",
-      "voice_style": "authoritative",
+      "category": "Cricket Match Updates",
+      "topic": "IPL's Unbelievable Last-Ball Thrillers: When Victory Hung By a Thread",
+      "hook": "Your heart won't be able to take it! Relive the most nail-biting, last-ball finishes in IPL history where winners were decided by a single hit.",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Action-Packed Trailers",
-      "topic": "Marvel's Next Big Movie: The Eternals",
-      "hook": "Witness the battle for the future of humanity!",
+      "category": "Cricket Match Updates",
+      "topic": "This Record-Breaking Test Century Changed Cricket Forever",
+      "hook": "Witness the innings that defied all odds and rewrote the record books! This isn't just a century, it's a legendary performance.",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "music_mood": "upbeat",
+      "target_duration": 47
     },
     {
-      "category": "Summer Safety Tips",
-      "topic": "How to Prevent Waterborne Illnesses at the Beach",
-      "hook": "Don't let a day at the beach turn into a trip to the hospital!",
+      "category": "Summer Vacation Vlogs",
+      "topic": "Europe on a Budget: How I Traveled for Pennies (No, Seriously!)",
+      "hook": "Dreaming of Europe but on a shoestring budget? I'll show you my secret hacks to explore breathtaking cities without breaking the bank!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "International Sports",
-      "topic": "The Rise of Cricket in India: A National Obsession",
-      "hook": "What makes cricket the most popular sport in India?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Flood Relief Efforts",
-      "topic": "Community-Led Initiatives to Combat Flooding",
-      "hook": "Meet the heroes who are making a difference in flood-ravaged areas!",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "The Science Behind Thunderstorms",
-      "hook": "Uncover the secrets of the most electrifying weather phenomenon!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Comebacks in Sports History",
-      "hook": "You won't believe the most epic turnarounds in sports!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming News",
-      "topic": "The Future of Virtual Reality Gaming",
-      "hook": "Step into a new world of immersive gaming experiences!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Puzzle Solutions",
-      "topic": "Cracking the Code: Solving the Caesar Cipher",
-      "hook": "Can you crack the ancient code that has puzzled scholars for centuries?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Impact of Social Media on Celebrity Culture",
-      "hook": "What's real and what's fake in the world of celebrity social media?",
-      "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Legal Advice",
-      "topic": "Understanding Your Rights as a Consumer",
-      "hook": "Don't let companies take advantage of you: know your rights!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Action-Packed Trailers",
-      "topic": "The Next Big Superhero Movie: Wonder Woman",
-      "hook": "Witness the epic battle for justice and empowerment!",
+      "category": "Summer Vacation Vlogs",
+      "topic": "My WORST Travel Nightmare: Stranded in Thailand with No Passport",
+      "hook": "Imagine being thousands of miles from home, alone, and your passport is GONE. This is the true story of my absolute worst travel nightmare.",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "music_mood": "mysterious",
+      "target_duration": 48
     },
     {
-      "category": "Summer Safety Tips",
-      "topic": "How to Prevent and Treat Sunburn",
-      "hook": "Don't let sunburn ruin your summer vacation!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Investment Strategies",
+      "topic": "Beginner's Guide to Crypto: Hype or the Future of Finance?",
+      "hook": "Everyone's talking crypto, but is it a get-rich-quick scheme or the real deal? Let's demystify Bitcoin, NFTs, and whether you should invest.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 46
+    },
+    {
+      "category": "Investment Strategies",
+      "topic": "Why Real Estate Will ALWAYS Beat Stocks (Or Will It?): The Great Debate",
+      "hook": "For generations, real estate has been the ultimate wealth builder. But in today's market, can it still outperform the stock market? Let's compare!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 44
+    },
+    {
+      "category": "Cartoon Movie Theories",
+      "topic": "The Secret Identity of Andy's Mom in Toy Story: A Shocking Theory!",
+      "hook": "What if Andy's mom isn't just a background character? This mind-blowing 'Toy Story' theory connects her to a beloved classic toy!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "International Sports",
-      "topic": "The Art of Japanese Sumo Wrestling",
-      "hook": "Step into the ancient world of sumo wrestling and discover its secrets!",
-      "voice_style": "energetic",
+      "category": "Cartoon Movie Theories",
+      "topic": "Was Goofy Always a Dog? Unpacking Disney's Most Confusing Character Lore",
+      "hook": "Mickey's a mouse, Donald's a duck... but what exactly IS Goofy? Prepare for a deep dive into Disney lore that challenges everything you thought you knew about this goofy character!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Flood Relief Efforts",
-      "topic": "Innovative Solutions for Flood-Resistant Housing",
-      "hook": "Discover the cutting-edge technology that's changing the face of flood relief!",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 43
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
