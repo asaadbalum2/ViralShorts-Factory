@@ -1,37 +1,193 @@
 {
-  "generated_at": "2026-06-23T08:43:12.614597",
-  "valid_until": "2026-06-23T23:59:12.614605",
+  "generated_at": "2026-06-24T08:39:25.351200",
+  "valid_until": "2026-06-24T23:59:25.351209",
   "categories": [
-    "Summer Weather Explainers",
-    "Tech Rumors and Leaks",
-    "Netflix Watch Parties",
-    "Global Market Updates",
-    "World Cup Highlights",
-    "K-Pop Dance Challenges",
-    "Smartphone Reviews",
-    "Government Policy Explainers",
-    "Sports Analysis",
-    "Weather Hacks for the Heat",
-    "iPhone vs Android Debates",
-    "International Soccer Previews",
-    "Music Challenges",
-    "Personal Finance Tips",
-    "Summer Entertainment News"
+    "Sports Highlights",
+    "Politics and Election News",
+    "Missing Person Alerts and Updates",
+    "Entertainment News and Celebrity Updates",
+    "World Cup and International Soccer",
+    "Baseball Game Recaps and Analysis",
+    "Current Event Explainers",
+    "Warning and Alert Systems",
+    "Qatar and Bosnia Travel and Culture",
+    "Mexico and Czechia Tourism",
+    "San Diego Padres Fan Content",
+    "Amber and Turquoise Alert Explanations",
+    "Jodie Foster Movie Reviews and Discussions",
+    "Primary Election Result Analysis",
+    "Summer Sports and Event Previews"
   ],
-  "concepts": [],
-  "voice_music_pairs": [
+  "concepts": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "category": "Sports Highlights",
+      "topic": "NBA Playoff Buzzer-Beater: Unbelievable Game 7 Finish",
+      "hook": "You won't believe how this NBA playoff game ended! Down by one, with 0.3 seconds left...",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
     },
     {
-      "voice": "en-US-JennyNeural",
+      "category": "Sports Highlights",
+      "topic": "College Lacrosse Championship: The Comeback No One Saw Coming",
+      "hook": "From 7 goals down with five minutes left, this team pulled off the impossible. How?",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Politics and Election News",
+      "topic": "Local Election Shockwave: How a Mayoral Race Impacts National Policy",
+      "hook": "Think local elections don't matter? This shocking mayoral upset just sent ripples across the nation.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Politics and Election News",
+      "topic": "Decoding Presidential Polls: The Hidden Truth Behind Recent Swings",
+      "hook": "Poll numbers are surging for a controversial candidate, but what do they *really* mean?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Missing Person Alerts and Updates",
+      "topic": "URGENT Alert: Have You Seen 22-year-old Maya Rodriguez?",
+      "hook": "Maya Rodriguez vanished from downtown last night. Her family is desperate. Let's help find her.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Missing Person Alerts and Updates",
+      "topic": "Cold Case Breakthrough: New Evidence in the Disappearance of John Smith (2010)",
+      "hook": "After a decade, new leads have emerged in the baffling disappearance of John Smith. Could this be it?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News and Celebrity Updates",
+      "topic": "The Iconic '90s Band Secretly Recording New Music?",
+      "hook": "Rumors are swirling! Is *The Neon Dream* secretly back in the studio after 25 years?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News and Celebrity Updates",
+      "topic": "Pop Star 'Lunar Echo's' Cryptic Instagram: New Album Clues?",
+      "hook": "Lunar Echo's latest Instagram post is baffling fans. Is she dropping clues for her next album?",
+      "voice_style": "friendly",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "World Cup and International Soccer",
+      "topic": "World Cup Underdog Story: How Iceland Stunned the Giants",
+      "hook": "Remember when tiny Iceland took on the world's best? Their 2018 World Cup run was pure magic.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "World Cup and International Soccer",
+      "topic": "Goal of the Tournament Contender: Analyzing Messi's Bicycle Kick",
+      "hook": "Was Messi's recent bicycle kick truly the Goal of the Tournament? Let's break down the physics and the artistry.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Baseball Game Recaps and Analysis",
+      "topic": "Last Night's Walk-Off Grand Slam: Yankees Clinch Division Title",
+      "hook": "The bases were loaded, two outs in the bottom of the ninth... then BAM! The Yankees won the division in insane fashion.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Baseball Game Recaps and Analysis",
+      "topic": "The Perfect Game That Almost Was: Inside Ohtani's Dominant Outing",
+      "hook": "Shohei Ohtani was just *one out away* from history last night. What happened in that final moment?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Current Event Explainers",
+      "topic": "What is the 'Great Resignation' and Why Are People Quitting?",
+      "hook": "Millions are quitting their jobs. Is it a trend, or a revolution? Let's explain the 'Great Resignation'.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Event Explainers",
+      "topic": "Understanding the Global Chip Shortage: Why Your New Phone Is Delayed",
+      "hook": "Your new car or phone might be delayed, but do you know why? It's all about the global chip shortage.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Warning and Alert Systems",
+      "topic": "Your Phone's Emergency Alerts: Are They Hacking Your Privacy?",
+      "hook": "That shrill sound on your phone... Is it truly for your safety, or is something else at play with emergency alerts?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Warning and Alert Systems",
+      "topic": "Tornado Warning! Immediate Steps to Protect Yourself and Your Family",
+      "hook": "The sirens are blaring, a tornado warning is active. Do you know exactly what to do RIGHT NOW to stay safe?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Qatar and Bosnia Travel and Culture",
+      "topic": "Beyond the Desert: Discovering Qatar's Unexpected Green Oases",
+      "hook": "Think Qatar is just sand and skyscrapers? You'd be surprised by its lush, hidden green spaces.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Qatar and Bosnia Travel and Culture",
+      "topic": "Sarajevo's War-Torn Past, Vibrant Present: A Cultural Deep Dive",
+      "hook": "Sarajevo: A city with an incredibly resilient spirit. From its painful past to its vibrant coffee culture today.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Mexico and Czechia Tourism",
+      "topic": "Prague's Best Kept Secret: The Magical Gardens of Wallenstein Palace",
+      "hook": "You've seen Prague Castle, but have you explored the secret, Baroque beauty of the Wallenstein Palace Gardens?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Mexico and Czechia Tourism",
+      "topic": "Mexico City Street Food Challenge: Finding the Ultimate Pastor Taco",
+      "hook": "Join me on a culinary quest through Mexico City to find the legendary, melt-in-your-mouth *taco al pastor*!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    }
+  ],
+  "voice_music_pairs": [
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
@@ -41,59 +197,64 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
