@@ -1,230 +1,205 @@
 {
-  "generated_at": "2026-06-24T08:39:25.351200",
-  "valid_until": "2026-06-24T23:59:25.351209",
+  "generated_at": "2026-06-25T08:35:31.472246",
+  "valid_until": "2026-06-25T23:59:31.472255",
   "categories": [
-    "Sports Highlights",
-    "Politics and Election News",
-    "Missing Person Alerts and Updates",
-    "Entertainment News and Celebrity Updates",
-    "World Cup and International Soccer",
-    "Baseball Game Recaps and Analysis",
-    "Current Event Explainers",
-    "Warning and Alert Systems",
-    "Qatar and Bosnia Travel and Culture",
-    "Mexico and Czechia Tourism",
-    "San Diego Padres Fan Content",
-    "Amber and Turquoise Alert Explanations",
-    "Jodie Foster Movie Reviews and Discussions",
-    "Primary Election Result Analysis",
-    "Summer Sports and Event Previews"
+    "Time Management Hacks for Busy Summers",
+    "Top 5 Marvel Studios Avengers Endgame Re-Release Theories",
+    "Fortnite Summer Skins and Challenges",
+    "Flight Hacks for Cheap Travel This Summer",
+    "Shipping and Logistics for E-Commerce Businesses",
+    "Car Insurance 101: Tips and Tricks",
+    "Movie Reviews of the Latest Summer Blockbusters",
+    "Hotel Room Tours and Travel Vlogs",
+    "Avengers Endgame Re-Release: What to Expect",
+    "Summer Travel Destinations and Flight Deals",
+    "Time-Saving Shipping Options for Online Shoppers",
+    "Fortnite Creative Map Tours and Tutorials",
+    "Marvel Studios News and Updates",
+    "Car Insurance for Road Trips and Summer Vacations",
+    "Last-Minute Flight and Hotel Booking Hacks"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "NBA Playoff Buzzer-Beater: Unbelievable Game 7 Finish",
-      "hook": "You won't believe how this NBA playoff game ended! Down by one, with 0.3 seconds left...",
+      "category": "Time Management Hacks for Busy Summers",
+      "topic": "The 'Pomodoro Summer' Technique for Productivity",
+      "hook": "Feeling like summer is stealing your productivity? What if I told you 25 minutes could change everything?",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Time Management Hacks for Busy Summers",
+      "topic": "Batching Errands: Reclaim Your Weekend with This Simple Strategy",
+      "hook": "Stop wasting precious summer hours on endless errands! There's a secret to getting it all done in one go.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Top 5 Marvel Studios Avengers Endgame Re-Release Theories",
+      "topic": "Theory: X-Men Tease in the Endgame Re-Release Post-Credits?",
+      "hook": "The Endgame re-release isn't just about longer cuts. What if Marvel's hiding the ultimate X-Men tease right at the end?",
+      "voice_style": "mysterious",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Sports Highlights",
-      "topic": "College Lacrosse Championship: The Comeback No One Saw Coming",
-      "hook": "From 7 goals down with five minutes left, this team pulled off the impossible. How?",
+      "category": "Top 5 Marvel Studios Avengers Endgame Re-Release Theories",
+      "topic": "The 'Doctor Doom' Setup Theory: A Deep Dive into Re-Release Clues",
+      "hook": "Forget Kang! One theory suggests the Endgame re-release might be subtly setting up a far more terrifying villain for Phase 6.",
       "voice_style": "dramatic",
-      "music_mood": "inspirational",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Fortnite Summer Skins and Challenges",
+      "topic": "Unlock the \"Sun-Kissed Slayer\" Skin: A Hidden Challenge Guide",
+      "hook": "Think you've seen all the summer skins? You're probably missing out on the exclusive 'Sun-Kissed Slayer' \u2013 here's how to get it!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Fortnite Summer Skins and Challenges",
+      "topic": "Ranking the Top 5 Most OP Summer Weapon Skins You NEED This Season",
+      "hook": "Your weapon skins are more than just cosmetic this summer! I'm revealing the top 5 skins that give you a hidden edge.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Flight Hacks for Cheap Travel This Summer",
+      "topic": "The Tuesday-Wednesday Myth: When is the *Actual* Best Day to Book Summer Flights?",
+      "hook": "Everyone says Tuesday, but that's ancient history! I'm exposing the real best day to snag those ridiculously cheap summer flights.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Politics and Election News",
-      "topic": "Local Election Shockwave: How a Mayoral Race Impacts National Policy",
-      "hook": "Think local elections don't matter? This shocking mayoral upset just sent ripples across the nation.",
-      "voice_style": "authoritative",
+      "category": "Flight Hacks for Cheap Travel This Summer",
+      "topic": "The Secret Incognito Mode Trick Airlines DON'T Want You To Know",
+      "hook": "Ever wondered why flight prices jump after you search? Airlines are tracking you! Here's how to beat them at their own game.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Politics and Election News",
-      "topic": "Decoding Presidential Polls: The Hidden Truth Behind Recent Swings",
-      "hook": "Poll numbers are surging for a controversial candidate, but what do they *really* mean?",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Missing Person Alerts and Updates",
-      "topic": "URGENT Alert: Have You Seen 22-year-old Maya Rodriguez?",
-      "hook": "Maya Rodriguez vanished from downtown last night. Her family is desperate. Let's help find her.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Missing Person Alerts and Updates",
-      "topic": "Cold Case Breakthrough: New Evidence in the Disappearance of John Smith (2010)",
-      "hook": "After a decade, new leads have emerged in the baffling disappearance of John Smith. Could this be it?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Entertainment News and Celebrity Updates",
-      "topic": "The Iconic '90s Band Secretly Recording New Music?",
-      "hook": "Rumors are swirling! Is *The Neon Dream* secretly back in the studio after 25 years?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Entertainment News and Celebrity Updates",
-      "topic": "Pop Star 'Lunar Echo's' Cryptic Instagram: New Album Clues?",
-      "hook": "Lunar Echo's latest Instagram post is baffling fans. Is she dropping clues for her next album?",
-      "voice_style": "friendly",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "World Cup and International Soccer",
-      "topic": "World Cup Underdog Story: How Iceland Stunned the Giants",
-      "hook": "Remember when tiny Iceland took on the world's best? Their 2018 World Cup run was pure magic.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "World Cup and International Soccer",
-      "topic": "Goal of the Tournament Contender: Analyzing Messi's Bicycle Kick",
-      "hook": "Was Messi's recent bicycle kick truly the Goal of the Tournament? Let's break down the physics and the artistry.",
+      "category": "Shipping and Logistics for E-Commerce Businesses",
+      "topic": "How Small E-Commerce Businesses Can Negotiate Better Shipping Rates (Even Without High Volume)",
+      "hook": "Think only big businesses get bulk shipping discounts? You're wrong! I'll show you how to negotiate lower rates, no matter your size.",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 50
+      "music_mood": "inspirational",
+      "target_duration": 48
     },
     {
-      "category": "Baseball Game Recaps and Analysis",
-      "topic": "Last Night's Walk-Off Grand Slam: Yankees Clinch Division Title",
-      "hook": "The bases were loaded, two outs in the bottom of the ninth... then BAM! The Yankees won the division in insane fashion.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Shipping and Logistics for E-Commerce Businesses",
+      "topic": "The 3 Packaging Materials That Will Save Your E-Commerce Business a Fortune",
+      "hook": "Your packaging costs are eating your profits! Discover the three game-changing materials that slash expenses without compromising safety.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
     },
     {
-      "category": "Baseball Game Recaps and Analysis",
-      "topic": "The Perfect Game That Almost Was: Inside Ohtani's Dominant Outing",
-      "hook": "Shohei Ohtani was just *one out away* from history last night. What happened in that final moment?",
-      "voice_style": "dramatic",
+      "category": "Car Insurance 101: Tips and Tricks",
+      "topic": "Deductible vs. Premium: Why Choosing the 'Wrong' One Could Cost You Thousands",
+      "hook": "You think you understand deductibles and premiums? One wrong choice here could be draining your bank account every single month.",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Current Event Explainers",
-      "topic": "What is the 'Great Resignation' and Why Are People Quitting?",
-      "hook": "Millions are quitting their jobs. Is it a trend, or a revolution? Let's explain the 'Great Resignation'.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Current Event Explainers",
-      "topic": "Understanding the Global Chip Shortage: Why Your New Phone Is Delayed",
-      "hook": "Your new car or phone might be delayed, but do you know why? It's all about the global chip shortage.",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
+      "category": "Car Insurance 101: Tips and Tricks",
+      "topic": "The Hidden Car Insurance Discounts You're NOT Asking Your Provider About",
+      "hook": "Are you leaving free money on the table with your car insurance? There are secret discounts your provider won't tell you about \u2013 but I will!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Warning and Alert Systems",
-      "topic": "Your Phone's Emergency Alerts: Are They Hacking Your Privacy?",
-      "hook": "That shrill sound on your phone... Is it truly for your safety, or is something else at play with emergency alerts?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Warning and Alert Systems",
-      "topic": "Tornado Warning! Immediate Steps to Protect Yourself and Your Family",
-      "hook": "The sirens are blaring, a tornado warning is active. Do you know exactly what to do RIGHT NOW to stay safe?",
-      "voice_style": "authoritative",
+      "category": "Movie Reviews of the Latest Summer Blockbusters",
+      "topic": "Review: \"Titanfall Uprising\" - Did It Live Up to the Hype or Fall Flat?",
+      "hook": "Everyone's talking about 'Titanfall Uprising', but is it a cinematic masterpiece or just another explosive disappointment? Let's dive in.",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 47
     },
     {
-      "category": "Qatar and Bosnia Travel and Culture",
-      "topic": "Beyond the Desert: Discovering Qatar's Unexpected Green Oases",
-      "hook": "Think Qatar is just sand and skyscrapers? You'd be surprised by its lush, hidden green spaces.",
-      "voice_style": "friendly",
+      "category": "Movie Reviews of the Latest Summer Blockbusters",
+      "topic": "Unexpected Gem: Why You NEED To See \"Whispers of the Coast\" This Summer",
+      "hook": "Forget the superheroes for a second. There's a quiet masterpiece playing this summer that critics are raving about, and you might have missed it!",
+      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 43
     },
     {
-      "category": "Qatar and Bosnia Travel and Culture",
-      "topic": "Sarajevo's War-Torn Past, Vibrant Present: A Cultural Deep Dive",
-      "hook": "Sarajevo: A city with an incredibly resilient spirit. From its painful past to its vibrant coffee culture today.",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Mexico and Czechia Tourism",
-      "topic": "Prague's Best Kept Secret: The Magical Gardens of Wallenstein Palace",
-      "hook": "You've seen Prague Castle, but have you explored the secret, Baroque beauty of the Wallenstein Palace Gardens?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Mexico and Czechia Tourism",
-      "topic": "Mexico City Street Food Challenge: Finding the Ultimate Pastor Taco",
-      "hook": "Join me on a culinary quest through Mexico City to find the legendary, melt-in-your-mouth *taco al pastor*!",
+      "category": "Hotel Room Tours and Travel Vlogs",
+      "topic": "Luxury on a Budget: My Incredible $100/Night Stay in Santorini",
+      "hook": "Think Santorini is only for the super-rich? I just found a hidden gem that gives you luxury vibes for less than a hundred bucks a night!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Hotel Room Tours and Travel Vlogs",
+      "topic": "The Quirky Boutique Hotel in Austin That Blew My Mind (and My Instagram)",
+      "hook": "Standard hotel rooms are boring! Get ready for a room tour of the most unique, photo-worthy boutique hotel I've ever stayed in.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 46
+    },
+    {
+      "category": "Avengers Endgame Re-Release: What to Expect",
+      "topic": "Full Breakdown: ALL 7 Minutes of NEW Footage in the Endgame Re-Release",
+      "hook": "They're re-releasing Endgame, but what exactly are we getting? I've got the scoop on every single second of new footage!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Avengers Endgame Re-Release: What to Expect",
+      "topic": "The MCU Multiverse Implications of the Endgame Re-Release's Post-Credit Scene",
+      "hook": "Don't just watch the re-release, understand it! The post-credit scene isn't just an easter egg, it's a blueprint for the entire Multiverse Saga.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 44
+    },
+    {
+      "category": "Summer Travel Destinations and Flight Deals",
+      "topic": "This European City Is Your Budget Summer Paradise (Flight Deals Included!)",
+      "hook": "Tired of overpriced summer destinations? I've found a stunning European city where your dollar stretches further, and flights are insanely cheap right now!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
+    },
+    {
+      "category": "Summer Travel Destinations and Flight Deals",
+      "topic": "The 'Sweet Spot' Booking Window for Peak Summer Flight Savings",
+      "hook": "Book too early, you pay too much. Book too late, you're grounded! There's a magical 'sweet spot' for summer flight deals \u2013 and I'll tell you exactly when it is.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
@@ -233,28 +208,53 @@
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
