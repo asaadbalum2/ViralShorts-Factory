@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-06-25T08:35:31.472246",
-  "valid_until": "2026-06-25T23:59:31.472255",
+  "generated_at": "2026-06-26T08:38:41.157278",
+  "valid_until": "2026-06-26T23:59:41.157287",
   "categories": [
-    "Time Management Hacks for Busy Summers",
-    "Top 5 Marvel Studios Avengers Endgame Re-Release Theories",
-    "Fortnite Summer Skins and Challenges",
-    "Flight Hacks for Cheap Travel This Summer",
-    "Shipping and Logistics for E-Commerce Businesses",
-    "Car Insurance 101: Tips and Tricks",
-    "Movie Reviews of the Latest Summer Blockbusters",
-    "Hotel Room Tours and Travel Vlogs",
-    "Avengers Endgame Re-Release: What to Expect",
-    "Summer Travel Destinations and Flight Deals",
-    "Time-Saving Shipping Options for Online Shoppers",
-    "Fortnite Creative Map Tours and Tutorials",
-    "Marvel Studios News and Updates",
-    "Car Insurance for Road Trips and Summer Vacations",
-    "Last-Minute Flight and Hotel Booking Hacks"
+    "News Updates",
+    "Google Play Store Hacks",
+    "Tomodachi Life Gameplays",
+    "Cloud Computing Explained",
+    "Fashion Hauls from H&M",
+    "Red Aesthetic Inspiration",
+    "Celebrity Birthdays",
+    "Mountain Dew Taste Tests",
+    "Summer Refreshment Ideas",
+    "5 Cent Deal Challenges",
+    "New York Times Headline Reactions",
+    "Cloud Gaming Reviews",
+    "Red Carpet Fashion",
+    "Life Simulation Game Walkthroughs",
+    "Budget Gaming Bundles"
   ],
   "concepts": [
     {
-      "category": "Time Management Hacks for Busy Summers",
-      "topic": "The 'Pomodoro Summer' Technique for Productivity",
-      "hook": "Feeling like summer is stealing your productivity? What if I told you 25 minutes could change everything?",
+      "category": "News Updates",
+      "topic": "The Breakthrough in Quantum Computing That Could Make Your Phone Obsolete",
+      "hook": "Did you hear about the new quantum leap? Your phone might be ancient history by next year!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Time Management Hacks for Busy Summers",
-      "topic": "Batching Errands: Reclaim Your Weekend with This Simple Strategy",
-      "hook": "Stop wasting precious summer hours on endless errands! There's a secret to getting it all done in one go.",
+      "category": "Google Play Store Hacks",
+      "topic": "Secret Trick to Get Paid Apps for Free (Legally!)",
+      "hook": "Want premium apps without paying? This Google Play Store hack is 100% legal and 100% FREE!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Top 5 Marvel Studios Avengers Endgame Re-Release Theories",
-      "topic": "Theory: X-Men Tease in the Endgame Re-Release Post-Credits?",
-      "hook": "The Endgame re-release isn't just about longer cuts. What if Marvel's hiding the ultimate X-Men tease right at the end?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Top 5 Marvel Studios Avengers Endgame Re-Release Theories",
-      "topic": "The 'Doctor Doom' Setup Theory: A Deep Dive into Re-Release Clues",
-      "hook": "Forget Kang! One theory suggests the Endgame re-release might be subtly setting up a far more terrifying villain for Phase 6.",
+      "category": "Tomodachi Life Gameplays",
+      "topic": "My Mii Married a Celebrity and Had a Secret Baby!",
+      "hook": "You won't BELIEVE who my Mii just married in Tomodachi Life, and the baby reveal is WILD!",
       "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Fortnite Summer Skins and Challenges",
-      "topic": "Unlock the \"Sun-Kissed Slayer\" Skin: A Hidden Challenge Guide",
-      "hook": "Think you've seen all the summer skins? You're probably missing out on the exclusive 'Sun-Kissed Slayer' \u2013 here's how to get it!",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 47
+      "target_duration": 50
     },
     {
-      "category": "Fortnite Summer Skins and Challenges",
-      "topic": "Ranking the Top 5 Most OP Summer Weapon Skins You NEED This Season",
-      "hook": "Your weapon skins are more than just cosmetic this summer! I'm revealing the top 5 skins that give you a hidden edge.",
+      "category": "Cloud Computing Explained",
+      "topic": "Is 'The Cloud' Just Someone Else's Computer? Debunking the Myth!",
+      "hook": "Everyone talks about 'The Cloud,' but what IS it really? Is it just some giant server in a basement? Let's find out!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Flight Hacks for Cheap Travel This Summer",
-      "topic": "The Tuesday-Wednesday Myth: When is the *Actual* Best Day to Book Summer Flights?",
-      "hook": "Everyone says Tuesday, but that's ancient history! I'm exposing the real best day to snag those ridiculously cheap summer flights.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Flight Hacks for Cheap Travel This Summer",
-      "topic": "The Secret Incognito Mode Trick Airlines DON'T Want You To Know",
-      "hook": "Ever wondered why flight prices jump after you search? Airlines are tracking you! Here's how to beat them at their own game.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Fashion Hauls from H&M",
+      "topic": "H&M Summer Haul: Finding Luxe Looks for Less Than $100!",
+      "hook": "My H&M summer haul is here, and I found designer-inspired pieces all under $100! You NEED to see these!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Shipping and Logistics for E-Commerce Businesses",
-      "topic": "How Small E-Commerce Businesses Can Negotiate Better Shipping Rates (Even Without High Volume)",
-      "hook": "Think only big businesses get bulk shipping discounts? You're wrong! I'll show you how to negotiate lower rates, no matter your size.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
+      "category": "Red Aesthetic Inspiration",
+      "topic": "Transform Your Room: 5 Must-Have Red Aesthetic Decor Items",
+      "hook": "Want a fiery, passionate vibe for your room? These 5 red aesthetic decor pieces will totally transform your space!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
     },
     {
-      "category": "Shipping and Logistics for E-Commerce Businesses",
-      "topic": "The 3 Packaging Materials That Will Save Your E-Commerce Business a Fortune",
-      "hook": "Your packaging costs are eating your profits! Discover the three game-changing materials that slash expenses without compromising safety.",
+      "category": "Celebrity Birthdays",
+      "topic": "Guess The Celeb: June Babies Edition!",
+      "hook": "Can you guess which A-list celebrity has a birthday in June? Prepare to be surprised!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Mountain Dew Taste Tests",
+      "topic": "Ranking Every Mountain Dew Flavor From Worst to Best (Including the Rare Ones!)",
+      "hook": "I'm taste-testing EVERY Mountain Dew flavor, even the super rare ones, to find out which one reigns supreme!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Refreshment Ideas",
+      "topic": "3-Ingredient Watermelon Slushie That Will Save Your Summer!",
+      "hook": "It's SO hot, but this 3-ingredient watermelon slushie recipe is about to be your new summer obsession!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "5 Cent Deal Challenges",
+      "topic": "Can I Buy a Full Meal for 5 Cents at Dollar Tree?",
+      "hook": "I'm attempting the impossible: buying a full meal for just 5 cents at Dollar Tree! Will I survive?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "News Updates",
+      "topic": "New TikTok Algorithm Change & How It'll Affect Your For You Page",
+      "hook": "Your FYP is about to change FOREVER. Here's what TikTok isn't telling you about their new algorithm!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Google Play Store Hacks",
+      "topic": "Boost Your Phone's Performance with This Hidden Play Store Setting",
+      "hook": "Is your Android phone slow? There's a secret setting in the Play Store that will speed it up instantly!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Tomodachi Life Gameplays",
+      "topic": "The Craziest Mii Island Drama: An Unforgettable Fight!",
+      "hook": "My Tomodachi Life island just exploded with drama! Two Miis just had the most epic fight ever!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Cloud Computing Explained",
+      "topic": "Why Your Next Gaming PC Might Be in the Cloud",
+      "hook": "Imagine playing ANY game, max settings, without an expensive PC. Cloud gaming is here, and it's wild!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Fashion Hauls from H&M",
+      "topic": "H&M Fall Transition: Styling Guide for Under $75",
+      "hook": "Fall fashion on a budget! I hit H&M and grabbed 3 must-have transition pieces for under $75.",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Car Insurance 101: Tips and Tricks",
-      "topic": "Deductible vs. Premium: Why Choosing the 'Wrong' One Could Cost You Thousands",
-      "hook": "You think you understand deductibles and premiums? One wrong choice here could be draining your bank account every single month.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Car Insurance 101: Tips and Tricks",
-      "topic": "The Hidden Car Insurance Discounts You're NOT Asking Your Provider About",
-      "hook": "Are you leaving free money on the table with your car insurance? There are secret discounts your provider won't tell you about \u2013 but I will!",
-      "voice_style": "friendly",
+      "category": "Red Aesthetic Inspiration",
+      "topic": "Red Fashion Inspo: How to Incorporate Bold Red into Your Everyday Look",
+      "hook": "Feeling bold? Red is the color of confidence! Here\u2019s how to effortlessly add stunning red to your everyday outfits.",
+      "voice_style": "inspirational",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Movie Reviews of the Latest Summer Blockbusters",
-      "topic": "Review: \"Titanfall Uprising\" - Did It Live Up to the Hype or Fall Flat?",
-      "hook": "Everyone's talking about 'Titanfall Uprising', but is it a cinematic masterpiece or just another explosive disappointment? Let's dive in.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 47
+      "category": "Celebrity Birthdays",
+      "topic": "Iconic Moments from [Current Month]'s Biggest Birthday Celebs",
+      "hook": "It's [Current Month], and these legends are celebrating! Let's relive their most iconic career moments.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 50
     },
     {
-      "category": "Movie Reviews of the Latest Summer Blockbusters",
-      "topic": "Unexpected Gem: Why You NEED To See \"Whispers of the Coast\" This Summer",
-      "hook": "Forget the superheroes for a second. There's a quiet masterpiece playing this summer that critics are raving about, and you might have missed it!",
+      "category": "Mountain Dew Taste Tests",
+      "topic": "Can You Tell the Difference? Mountain Dew Zero vs. Original",
+      "hook": "Is Mountain Dew Zero Sugar actually good? I'm doing a blind taste test to see if it holds up against the original!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Refreshment Ideas",
+      "topic": "DIY Lavender Lemonade: The Ultimate Chill Summer Drink",
+      "hook": "Forget basic lemonade! This DIY lavender lemonade recipe is the most refreshing, calming drink for a hot summer day.",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Hotel Room Tours and Travel Vlogs",
-      "topic": "Luxury on a Budget: My Incredible $100/Night Stay in Santorini",
-      "hook": "Think Santorini is only for the super-rich? I just found a hidden gem that gives you luxury vibes for less than a hundred bucks a night!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Hotel Room Tours and Travel Vlogs",
-      "topic": "The Quirky Boutique Hotel in Austin That Blew My Mind (and My Instagram)",
-      "hook": "Standard hotel rooms are boring! Get ready for a room tour of the most unique, photo-worthy boutique hotel I've ever stayed in.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 46
-    },
-    {
-      "category": "Avengers Endgame Re-Release: What to Expect",
-      "topic": "Full Breakdown: ALL 7 Minutes of NEW Footage in the Endgame Re-Release",
-      "hook": "They're re-releasing Endgame, but what exactly are we getting? I've got the scoop on every single second of new footage!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Avengers Endgame Re-Release: What to Expect",
-      "topic": "The MCU Multiverse Implications of the Endgame Re-Release's Post-Credit Scene",
-      "hook": "Don't just watch the re-release, understand it! The post-credit scene isn't just an easter egg, it's a blueprint for the entire Multiverse Saga.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 44
-    },
-    {
-      "category": "Summer Travel Destinations and Flight Deals",
-      "topic": "This European City Is Your Budget Summer Paradise (Flight Deals Included!)",
-      "hook": "Tired of overpriced summer destinations? I've found a stunning European city where your dollar stretches further, and flights are insanely cheap right now!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Summer Travel Destinations and Flight Deals",
-      "topic": "The 'Sweet Spot' Booking Window for Peak Summer Flight Savings",
-      "hook": "Book too early, you pay too much. Book too late, you're grounded! There's a magical 'sweet spot' for summer flight deals \u2013 and I'll tell you exactly when it is.",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
+      "category": "5 Cent Deal Challenges",
+      "topic": "Turning 5 Cents Into a Surprise Gift for My Friend!",
+      "hook": "I have only 5 cents! Can I turn it into an awesome, meaningful surprise gift for my best friend? Let's find out!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
