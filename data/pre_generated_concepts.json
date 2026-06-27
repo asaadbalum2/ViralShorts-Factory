@@ -1,180 +1,180 @@
 {
-  "generated_at": "2026-06-26T08:38:41.157278",
-  "valid_until": "2026-06-26T23:59:41.157287",
+  "generated_at": "2026-06-27T08:09:31.523558",
+  "valid_until": "2026-06-27T23:59:31.523564",
   "categories": [
+    "Summer Safety Tips",
+    "Reality TV Recaps",
+    "Wildfire Awareness",
+    "Refreshment Hacks",
+    "True Crime Stories",
+    "Sports Highlights",
+    "Weather Updates",
+    "Outdoor Survival",
+    "Heatwave Challenges",
+    "Food and Drink Reviews",
+    "Sports Analysis",
+    "Stay Cool Hacks",
     "News Updates",
-    "Google Play Store Hacks",
-    "Tomodachi Life Gameplays",
-    "Cloud Computing Explained",
-    "Fashion Hauls from H&M",
-    "Red Aesthetic Inspiration",
-    "Celebrity Birthdays",
-    "Mountain Dew Taste Tests",
-    "Summer Refreshment Ideas",
-    "5 Cent Deal Challenges",
-    "New York Times Headline Reactions",
-    "Cloud Gaming Reviews",
-    "Red Carpet Fashion",
-    "Life Simulation Game Walkthroughs",
-    "Budget Gaming Bundles"
+    "Emergency Preparedness",
+    "Summer Recipes"
   ],
   "concepts": [
     {
-      "category": "News Updates",
-      "topic": "The Breakthrough in Quantum Computing That Could Make Your Phone Obsolete",
-      "hook": "Did you hear about the new quantum leap? Your phone might be ancient history by next year!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Google Play Store Hacks",
-      "topic": "Secret Trick to Get Paid Apps for Free (Legally!)",
-      "hook": "Want premium apps without paying? This Google Play Store hack is 100% legal and 100% FREE!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tomodachi Life Gameplays",
-      "topic": "My Mii Married a Celebrity and Had a Secret Baby!",
-      "hook": "You won't BELIEVE who my Mii just married in Tomodachi Life, and the baby reveal is WILD!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Cloud Computing Explained",
-      "topic": "Is 'The Cloud' Just Someone Else's Computer? Debunking the Myth!",
-      "hook": "Everyone talks about 'The Cloud,' but what IS it really? Is it just some giant server in a basement? Let's find out!",
+      "category": "Summer Safety Tips",
+      "topic": "Pool Fence Safety",
+      "hook": "You won't believe the shocking truth about pool fences!",
       "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Fashion Hauls from H&M",
-      "topic": "H&M Summer Haul: Finding Luxe Looks for Less Than $100!",
-      "hook": "My H&M summer haul is here, and I found designer-inspired pieces all under $100! You NEED to see these!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Red Aesthetic Inspiration",
-      "topic": "Transform Your Room: 5 Must-Have Red Aesthetic Decor Items",
-      "hook": "Want a fiery, passionate vibe for your room? These 5 red aesthetic decor pieces will totally transform your space!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Birthdays",
-      "topic": "Guess The Celeb: June Babies Edition!",
-      "hook": "Can you guess which A-list celebrity has a birthday in June? Prepare to be surprised!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Mountain Dew Taste Tests",
-      "topic": "Ranking Every Mountain Dew Flavor From Worst to Best (Including the Rare Ones!)",
-      "hook": "I'm taste-testing EVERY Mountain Dew flavor, even the super rare ones, to find out which one reigns supreme!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Summer Refreshment Ideas",
-      "topic": "3-Ingredient Watermelon Slushie That Will Save Your Summer!",
-      "hook": "It's SO hot, but this 3-ingredient watermelon slushie recipe is about to be your new summer obsession!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "5 Cent Deal Challenges",
-      "topic": "Can I Buy a Full Meal for 5 Cents at Dollar Tree?",
-      "hook": "I'm attempting the impossible: buying a full meal for just 5 cents at Dollar Tree! Will I survive?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "News Updates",
-      "topic": "New TikTok Algorithm Change & How It'll Affect Your For You Page",
-      "hook": "Your FYP is about to change FOREVER. Here's what TikTok isn't telling you about their new algorithm!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Google Play Store Hacks",
-      "topic": "Boost Your Phone's Performance with This Hidden Play Store Setting",
-      "hook": "Is your Android phone slow? There's a secret setting in the Play Store that will speed it up instantly!",
-      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Tomodachi Life Gameplays",
-      "topic": "The Craziest Mii Island Drama: An Unforgettable Fight!",
-      "hook": "My Tomodachi Life island just exploded with drama! Two Miis just had the most epic fight ever!",
+      "category": "Reality TV Recaps",
+      "topic": "The Latest Bachelor Drama",
+      "hook": "The tea is scalding hot in this week's Bachelor recap!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Cloud Computing Explained",
-      "topic": "Why Your Next Gaming PC Might Be in the Cloud",
-      "hook": "Imagine playing ANY game, max settings, without an expensive PC. Cloud gaming is here, and it's wild!",
+      "category": "Wildfire Awareness",
+      "topic": "Defensible Space Techniques",
+      "hook": "Is your home a wildfire waiting to happen?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Refreshment Hacks",
+      "topic": "Infused Water Recipes",
+      "hook": "Quench your thirst with these 3 secret infused water recipes!",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The Mysterious Case of the Zodiac Killer",
+      "hook": "The cryptic codes that still haunt detectives to this day...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Comebacks in NBA History",
+      "hook": "You won't believe the incredible turnarounds in these NBA games!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Updates",
+      "topic": "Hurricane Season Preparedness",
+      "hook": "The one thing you're not doing to prepare for hurricane season!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Fashion Hauls from H&M",
-      "topic": "H&M Fall Transition: Styling Guide for Under $75",
-      "hook": "Fall fashion on a budget! I hit H&M and grabbed 3 must-have transition pieces for under $75.",
+      "category": "Outdoor Survival",
+      "topic": "Finding Food in the Wild",
+      "hook": "The secret to finding food in the most unlikely places!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Red Aesthetic Inspiration",
-      "topic": "Red Fashion Inspo: How to Incorporate Bold Red into Your Everyday Look",
-      "hook": "Feeling bold? Red is the color of confidence! Here\u2019s how to effortlessly add stunning red to your everyday outfits.",
-      "voice_style": "inspirational",
+      "category": "Heatwave Challenges",
+      "topic": "The Ice Bucket Challenge 2.0",
+      "hook": "Are you up for the ultimate heatwave challenge?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Celebrity Birthdays",
-      "topic": "Iconic Moments from [Current Month]'s Biggest Birthday Celebs",
-      "hook": "It's [Current Month], and these legends are celebrating! Let's relive their most iconic career moments.",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Mountain Dew Taste Tests",
-      "topic": "Can You Tell the Difference? Mountain Dew Zero vs. Original",
-      "hook": "Is Mountain Dew Zero Sugar actually good? I'm doing a blind taste test to see if it holds up against the original!",
+      "category": "Food and Drink Reviews",
+      "topic": "The Best Summer BBQ Sauces",
+      "hook": "The one BBQ sauce that will change your summer cookouts forever!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Summer Refreshment Ideas",
-      "topic": "DIY Lavender Lemonade: The Ultimate Chill Summer Drink",
-      "hook": "Forget basic lemonade! This DIY lavender lemonade recipe is the most refreshing, calming drink for a hot summer day.",
+      "category": "Summer Safety Tips",
+      "topic": "Beach Safety for Kids",
+      "hook": "The hidden dangers lurking at your favorite beach!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "5 Cent Deal Challenges",
-      "topic": "Turning 5 Cents Into a Surprise Gift for My Friend!",
-      "hook": "I have only 5 cents! Can I turn it into an awesome, meaningful surprise gift for my best friend? Let's find out!",
+      "category": "Reality TV Recaps",
+      "topic": "The Latest Survivor Twist",
+      "hook": "The shocking twist that no one saw coming on Survivor!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Wildfire Awareness",
+      "topic": "Fire-Resistant Plants",
+      "hook": "The plants that can save your home from wildfires!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Refreshment Hacks",
+      "topic": "DIY Popsicle Recipes",
+      "hook": "Beat the heat with these 3 easy DIY popsicle recipes!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "True Crime Stories",
+      "topic": "The Bizarre Case of the Poisoned Painter",
+      "hook": "The strange and twisted tale of a life turned toxic!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Most Unforgettable Moments in Tennis History",
+      "hook": "The rallies, the upsets, and the drama that will leave you speechless!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Updates",
+      "topic": "Understanding Storm Surges",
+      "hook": "The deadly threat that comes with every storm!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Outdoor Survival",
+      "topic": "Building a Shelter in the Wild",
+      "hook": "The ultimate guide to building a shelter that will keep you safe!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Heatwave Challenges",
+      "topic": "The Ultimate Heatwave Workout",
+      "hook": "Sweat, push, and survive the ultimate heatwave workout challenge!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Food and Drink Reviews",
+      "topic": "The Best Refreshing Summer Salads",
+      "hook": "The one salad that will quench your thirst and satisfy your cravings!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
@@ -182,79 +182,79 @@
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
