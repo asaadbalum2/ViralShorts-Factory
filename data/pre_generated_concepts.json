@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-06-27T08:09:31.523558",
-  "valid_until": "2026-06-27T23:59:31.523564",
+  "generated_at": "2026-06-28T08:32:32.162913",
+  "valid_until": "2026-06-28T23:59:32.162922",
   "categories": [
-    "Summer Safety Tips",
-    "Reality TV Recaps",
-    "Wildfire Awareness",
-    "Refreshment Hacks",
-    "True Crime Stories",
+    "Entertainment News",
     "Sports Highlights",
-    "Weather Updates",
-    "Outdoor Survival",
-    "Heatwave Challenges",
-    "Food and Drink Reviews",
-    "Sports Analysis",
-    "Stay Cool Hacks",
-    "News Updates",
-    "Emergency Preparedness",
-    "Summer Recipes"
+    "Travel Vlogs",
+    "Gaming Highlights",
+    "Storm Watch",
+    "Music News",
+    "Reality TV Recaps",
+    "Tournament Updates",
+    "Foodie Road Trips",
+    " Celebrity Gossip",
+    "Esports Analysis",
+    "Weather Alerts",
+    "Football Match Previews",
+    "Summer Fun Activities",
+    "Pop Culture Trends"
   ],
   "concepts": [
     {
-      "category": "Summer Safety Tips",
-      "topic": "Pool Fence Safety",
-      "hook": "You won't believe the shocking truth about pool fences!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Reality TV Recaps",
-      "topic": "The Latest Bachelor Drama",
-      "hook": "The tea is scalding hot in this week's Bachelor recap!",
+      "category": "Entertainment News",
+      "topic": "The surprising 'secret cameo' everyone missed in the latest blockbuster.",
+      "hook": "Did you blink? Because you probably missed the biggest surprise in 'Cosmic Quest'!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Wildfire Awareness",
-      "topic": "Defensible Space Techniques",
-      "hook": "Is your home a wildfire waiting to happen?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Refreshment Hacks",
-      "topic": "Infused Water Recipes",
-      "hook": "Quench your thirst with these 3 secret infused water recipes!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
-    },
-    {
-      "category": "True Crime Stories",
-      "topic": "The Mysterious Case of the Zodiac Killer",
-      "hook": "The cryptic codes that still haunt detectives to this day...",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
     },
     {
       "category": "Sports Highlights",
-      "topic": "The Most Epic Comebacks in NBA History",
-      "hook": "You won't believe the incredible turnarounds in these NBA games!",
+      "topic": "The most unbelievable last-second comeback in basketball history this season.",
+      "hook": "You won't believe how this team snatched victory from the jaws of defeat with 0.3 seconds left!",
       "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Travel Vlogs",
+      "topic": "Finding a secret, hidden waterfall in Iceland only locals know about.",
+      "hook": "Forget the Blue Lagoon! I found Iceland's BEST kept secret, and you won't find it on any map.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Highlights",
+      "topic": "The insane 1v5 clutch that broke Twitch during the 'Valorant Ascent Masters' tournament.",
+      "hook": "Hold up! Did you just witness the greatest 1v5 clutch in Valorant history?!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Weather Updates",
-      "topic": "Hurricane Season Preparedness",
-      "hook": "The one thing you're not doing to prepare for hurricane season!",
+      "category": "Storm Watch",
+      "topic": "Explaining how 'supercell' storms form and why they're so dangerous.",
+      "hook": "Ever wonder what makes a storm 'super'? Get ready, because this is how nature creates a monster.",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Outdoor Survival",
-      "topic": "Finding Food in the Wild",
-      "hook": "The secret to finding food in the most unlikely places!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Heatwave Challenges",
-      "topic": "The Ice Bucket Challenge 2.0",
-      "hook": "Are you up for the ultimate heatwave challenge?",
+      "category": "Music News",
+      "topic": "The secret message hidden in Taylor Swift's latest album cover.",
+      "hook": "Swifties, assemble! I just decoded a mind-blowing Easter egg on Taylor's new album art!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Food and Drink Reviews",
-      "topic": "The Best Summer BBQ Sauces",
-      "hook": "The one BBQ sauce that will change your summer cookouts forever!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Safety Tips",
-      "topic": "Beach Safety for Kids",
-      "hook": "The hidden dangers lurking at your favorite beach!",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
       "category": "Reality TV Recaps",
-      "topic": "The Latest Survivor Twist",
-      "hook": "The shocking twist that no one saw coming on Survivor!",
-      "voice_style": "energetic",
+      "topic": "The most awkward first date moments from 'Love Island Australia' Season 5.",
+      "hook": "Grab your popcorn! We're diving into the cringe-worthy chaos of Love Island's worst first dates!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Wildfire Awareness",
-      "topic": "Fire-Resistant Plants",
-      "hook": "The plants that can save your home from wildfires!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Refreshment Hacks",
-      "topic": "DIY Popsicle Recipes",
-      "hook": "Beat the heat with these 3 easy DIY popsicle recipes!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "True Crime Stories",
-      "topic": "The Bizarre Case of the Poisoned Painter",
-      "hook": "The strange and twisted tale of a life turned toxic!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Tournament Updates",
+      "topic": "The underdog team's shocking upset in the 'League of Legends World Championship' quarterfinals.",
+      "hook": "Nobody saw this coming! The biggest upset in LoL Worlds history just unfolded!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Most Unforgettable Moments in Tennis History",
-      "hook": "The rallies, the upsets, and the drama that will leave you speechless!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "Understanding Storm Surges",
-      "hook": "The deadly threat that comes with every storm!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Outdoor Survival",
-      "topic": "Building a Shelter in the Wild",
-      "hook": "The ultimate guide to building a shelter that will keep you safe!",
+      "category": "Foodie Road Trips",
+      "topic": "Discovering the most authentic, hidden street food taco stand in Tijuana.",
+      "hook": "Forget fancy restaurants! I just found the taco stand that will change your life in Tijuana.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Heatwave Challenges",
-      "topic": "The Ultimate Heatwave Workout",
-      "hook": "Sweat, push, and survive the ultimate heatwave workout challenge!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Celebrity Gossip",
+      "topic": "The unexpected celebrity couple breakup no one saw coming (and why!).",
+      "hook": "They were Hollywood's 'it' couple... until now. What *really* happened with Ben and Gigi?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Food and Drink Reviews",
-      "topic": "The Best Refreshing Summer Salads",
-      "hook": "The one salad that will quench your thirst and satisfy your cravings!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Entertainment News",
+      "topic": "The shocking CGI mistake in a major superhero movie that viewers are just noticing.",
+      "hook": "Pause that superhero flick! There's a glaring CGI error everyone is just now freaking out about!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The gymnast's gravity-defying move that scored a perfect 10 at the Olympics.",
+      "hook": "Did she just... defy physics?! This gymnast's routine is absolutely unreal!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Travel Vlogs",
+      "topic": "Exploring abandoned medieval castles in the Scottish Highlands.",
+      "hook": "Whispers of ancient kings and forgotten battles... Join me as we explore Scotland's haunted ruins.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming Highlights",
+      "topic": "The craziest 'speedrun gone wrong' moment that still ended in victory.",
+      "hook": "You've seen perfect speedruns, but what about the one where EVERYTHING went wrong... and they still won?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Storm Watch",
+      "topic": "Tracking the bizarre 'firenado' phenomenon in action.",
+      "hook": "Forget hurricanes! Have you ever seen a tornado made of FIRE? This is how it happens.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Music News",
+      "topic": "The underground artist whose viral TikTok song is about to explode globally.",
+      "hook": "Stop scrolling! This unheard track is about to be EVERYWHERE, and you heard it here first!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Reality TV Recaps",
+      "topic": "Analyzing the most iconic 'villain origin story' from 'The Bachelor' this season.",
+      "hook": "Every season has one... But THIS season's Bachelor villain just took 'unhinged' to a new level!",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Tournament Updates",
+      "topic": "The shocking 'technical glitch' that cost a team the championship in eSports.",
+      "hook": "A split-second lag, a broken dream. Did a single glitch just cost them the entire championship?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Foodie Road Trips",
+      "topic": "Hunting for the 'world's spiciest ramen' in Tokyo's hidden alleys.",
+      "hook": "My taste buds are officially terrified. We're on the hunt for Tokyo's legendary, tongue-numbing ramen!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Gossip",
+      "topic": "The A-lister's bizarre new fashion trend that's confusing the internet.",
+      "hook": "What IS that?! Kim K just stepped out in an outfit that has the entire internet scratching its head.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
