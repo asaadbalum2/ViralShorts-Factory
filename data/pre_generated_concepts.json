@@ -1,230 +1,215 @@
 {
-  "generated_at": "2026-06-28T08:32:32.162913",
-  "valid_until": "2026-06-28T23:59:32.162922",
+  "generated_at": "2026-06-29T10:08:54.052670",
+  "valid_until": "2026-06-29T23:59:54.052678",
   "categories": [
-    "Entertainment News",
-    "Sports Highlights",
-    "Travel Vlogs",
-    "Gaming Highlights",
-    "Storm Watch",
-    "Music News",
-    "Reality TV Recaps",
-    "Tournament Updates",
-    "Foodie Road Trips",
-    " Celebrity Gossip",
-    "Esports Analysis",
-    "Weather Alerts",
-    "Football Match Previews",
-    "Summer Fun Activities",
-    "Pop Culture Trends"
+    "Summer Sports Highlights",
+    "Celebrity Relationships",
+    "Space Exploration",
+    "NFL Offseason News",
+    "Food Delivery Hacks",
+    "Oil Price Updates",
+    "Music Award Show Recaps",
+    "Gaming Collectibles",
+    "Wearable Tech Reviews",
+    "Tennis Tournament Analysis",
+    "Delivery Service Alternatives",
+    "Crude Oil Market Trends",
+    "Award Show Fashion",
+    "Retro Tech Revivals",
+    "Gaming Watch Collections"
   ],
   "concepts": [
     {
-      "category": "Entertainment News",
-      "topic": "The surprising 'secret cameo' everyone missed in the latest blockbuster.",
-      "hook": "Did you blink? Because you probably missed the biggest surprise in 'Cosmic Quest'!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Summer Sports Highlights",
+      "topic": "The most insane frisbee golf trick shots that went viral this summer.",
+      "hook": "You WON'T believe what these frisbee golf pros pulled off this summer! Gravity? Never heard of her!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The most unbelievable last-second comeback in basketball history this season.",
-      "hook": "You won't believe how this team snatched victory from the jaws of defeat with 0.3 seconds left!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Summer Sports Highlights",
+      "topic": "The surprising dark horse team that dominated the beach volleyball circuit.",
+      "hook": "Everyone wrote them off, but this beach volleyball team just STUNNED the world! How did they do it?",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 48
     },
     {
-      "category": "Travel Vlogs",
-      "topic": "Finding a secret, hidden waterfall in Iceland only locals know about.",
-      "hook": "Forget the Blue Lagoon! I found Iceland's BEST kept secret, and you won't find it on any map.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Celebrity Relationships",
+      "topic": "Is the recent surge in 'Bennifer' sightings a sign of trouble or stronger than ever?",
+      "hook": "Are Bennifer 2.0 on the rocks or just playing coy? Decoding their latest public appearances!",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
       "target_duration": 40
     },
     {
-      "category": "Gaming Highlights",
-      "topic": "The insane 1v5 clutch that broke Twitch during the 'Valorant Ascent Masters' tournament.",
-      "hook": "Hold up! Did you just witness the greatest 1v5 clutch in Valorant history?!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Celebrity Relationships",
+      "topic": "The unexpected new Hollywood power couple nobody saw coming this awards season.",
+      "hook": "Hold up! Did [A-List Celebrity 1] and [A-List Celebrity 2] just make it official?! You'll never guess who!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Space Exploration",
+      "topic": "NASA's latest mission to uncover hidden oceans on Jupiter's moon Europa and alien life possibilities.",
+      "hook": "Forget Mars! NASA just found the ULTIMATE alien hunting ground... and it's on Europa!",
+      "voice_style": "Mysterious",
+      "music_mood": "Inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Space Exploration",
+      "topic": "The groundbreaking success of SpaceX's Starship SN11 test flight and its implications for human Mars colonization.",
+      "hook": "Did Starship just nail its most critical test yet? The future of Mars travel just got REAL!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 44
+    },
+    {
+      "category": "NFL Offseason News",
+      "topic": "The blockbuster trade involving a superstar wide receiver that just reshaped the AFC East.",
+      "hook": "BREAKING: This trade just sent shockwaves through the entire AFC East! Your favorite team might be impacted!",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 46
+    },
+    {
+      "category": "NFL Offseason News",
+      "topic": "Which undrafted rookie quarterback is already turning heads at training camp and vying for a starting spot.",
+      "hook": "Move over, vets! This rookie QB is already stealing the show at minicamp. Is he the next big thing?",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Food Delivery Hacks",
+      "topic": "The ultimate secret to getting free delivery on ALL major food delivery apps, every single time.",
+      "hook": "Stop paying for delivery! This secret trick works on Uber Eats, DoorDash, and ALL of them!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Food Delivery Hacks",
+      "topic": "Discovering the exact 'sweet spot' time of day for maximum discounts and lightning-fast delivery.",
+      "hook": "Want cheaper food AND faster delivery? There's a 'sweet spot' time, and I'll tell you when!",
+      "voice_style": "Authoritative",
+      "music_mood": "Upbeat",
+      "target_duration": 49
+    },
+    {
+      "category": "Oil Price Updates",
+      "topic": "The surprising geopolitical factor that caused an unexpected drop in global oil prices this week.",
+      "hook": "Gas prices down?! What just happened in the global oil market that no one saw coming?",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Oil Price Updates",
+      "topic": "Analyzing the new OPEC+ production cuts and their potential to skyrocket gas prices next quarter.",
+      "hook": "Brace yourselves! OPEC+'s latest move could drastically change your gas bill next month. Here's why!",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Music Award Show Recaps",
+      "topic": "The most iconic and jaw-dropping fashion moments from the recent MTV Video Music Awards red carpet.",
+      "hook": "From jaw-dropping to 'what were they thinking?!' The VMAs red carpet just delivered! Let's break it down!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Storm Watch",
-      "topic": "Explaining how 'supercell' storms form and why they're so dangerous.",
-      "hook": "Ever wonder what makes a storm 'super'? Get ready, because this is how nature creates a monster.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 40
+      "category": "Music Award Show Recaps",
+      "topic": "Unpacking the biggest snubs and shocking inclusions from the latest Grammy nominations list.",
+      "hook": "Did your favorite artist get ROBBED? Unpacking the biggest Grammy nomination shockers and surprises!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 47
     },
     {
-      "category": "Music News",
-      "topic": "The secret message hidden in Taylor Swift's latest album cover.",
-      "hook": "Swifties, assemble! I just decoded a mind-blowing Easter egg on Taylor's new album art!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Gaming Collectibles",
+      "topic": "Which specific retro Nintendo 64 games are now worth a fortune, and how to spot them.",
+      "hook": "Go check your attic! This N64 game could be worth THOUSANDS right now! Do you own it?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Gaming Collectibles",
+      "topic": "The incredibly rare Pok\u00e9mon TCG card that just shattered auction records, fetching millions.",
+      "hook": "A single Pok\u00e9mon card just sold for HOW MUCH?! You'll never guess which one broke the internet!",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 46
+    },
+    {
+      "category": "Wearable Tech Reviews",
+      "topic": "An in-depth look at whether the new Apple Watch Ultra 2 truly justifies its premium price for adventurers.",
+      "hook": "Extreme athlete or just extreme spender? We're putting the Apple Watch Ultra 2 to the ultimate test!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Wearable Tech Reviews",
+      "topic": "The hidden gem budget fitness tracker that's secretly outperforming top-tier expensive smartwatches.",
+      "hook": "STOP overpaying for fitness tech! This hidden gem delivers MORE for WAY less! You need to see this!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Tennis Tournament Analysis",
+      "topic": "The shocking early exit of a top seed at Wimbledon and how it's thrown the entire tournament into chaos.",
+      "hook": "Wimbledon just got WILD! Did anyone predict [Top Seed's] stunning early defeat?!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Reality TV Recaps",
-      "topic": "The most awkward first date moments from 'Love Island Australia' Season 5.",
-      "hook": "Grab your popcorn! We're diving into the cringe-worthy chaos of Love Island's worst first dates!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tournament Updates",
-      "topic": "The underdog team's shocking upset in the 'League of Legends World Championship' quarterfinals.",
-      "hook": "Nobody saw this coming! The biggest upset in LoL Worlds history just unfolded!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Foodie Road Trips",
-      "topic": "Discovering the most authentic, hidden street food taco stand in Tijuana.",
-      "hook": "Forget fancy restaurants! I just found the taco stand that will change your life in Tijuana.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Gossip",
-      "topic": "The unexpected celebrity couple breakup no one saw coming (and why!).",
-      "hook": "They were Hollywood's 'it' couple... until now. What *really* happened with Ben and Gigi?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The shocking CGI mistake in a major superhero movie that viewers are just noticing.",
-      "hook": "Pause that superhero flick! There's a glaring CGI error everyone is just now freaking out about!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The gymnast's gravity-defying move that scored a perfect 10 at the Olympics.",
-      "hook": "Did she just... defy physics?! This gymnast's routine is absolutely unreal!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Travel Vlogs",
-      "topic": "Exploring abandoned medieval castles in the Scottish Highlands.",
-      "hook": "Whispers of ancient kings and forgotten battles... Join me as we explore Scotland's haunted ruins.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming Highlights",
-      "topic": "The craziest 'speedrun gone wrong' moment that still ended in victory.",
-      "hook": "You've seen perfect speedruns, but what about the one where EVERYTHING went wrong... and they still won?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Storm Watch",
-      "topic": "Tracking the bizarre 'firenado' phenomenon in action.",
-      "hook": "Forget hurricanes! Have you ever seen a tornado made of FIRE? This is how it happens.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Music News",
-      "topic": "The underground artist whose viral TikTok song is about to explode globally.",
-      "hook": "Stop scrolling! This unheard track is about to be EVERYWHERE, and you heard it here first!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Reality TV Recaps",
-      "topic": "Analyzing the most iconic 'villain origin story' from 'The Bachelor' this season.",
-      "hook": "Every season has one... But THIS season's Bachelor villain just took 'unhinged' to a new level!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Tournament Updates",
-      "topic": "The shocking 'technical glitch' that cost a team the championship in eSports.",
-      "hook": "A split-second lag, a broken dream. Did a single glitch just cost them the entire championship?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Foodie Road Trips",
-      "topic": "Hunting for the 'world's spiciest ramen' in Tokyo's hidden alleys.",
-      "hook": "My taste buds are officially terrified. We're on the hunt for Tokyo's legendary, tongue-numbing ramen!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Gossip",
-      "topic": "The A-lister's bizarre new fashion trend that's confusing the internet.",
-      "hook": "What IS that?! Kim K just stepped out in an outfit that has the entire internet scratching its head.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
+      "category": "Tennis Tournament Analysis",
+      "topic": "Spotlight on the incredible teenage sensation who unexpectedly dominated the French Open qualifiers.",
+      "hook": "Remember the name! This young phenom just tore through the French Open qualifiers, stunning everyone!",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 47
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
@@ -233,18 +218,23 @@
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
@@ -252,9 +242,19 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
