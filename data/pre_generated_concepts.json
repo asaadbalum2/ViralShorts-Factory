@@ -1,250 +1,84 @@
 {
-  "generated_at": "2026-06-29T10:08:54.052670",
-  "valid_until": "2026-06-29T23:59:54.052678",
+  "generated_at": "2026-06-30T08:41:44.135450",
+  "valid_until": "2026-06-30T23:59:44.135458",
   "categories": [
-    "Summer Sports Highlights",
-    "Celebrity Relationships",
-    "Space Exploration",
-    "NFL Offseason News",
-    "Food Delivery Hacks",
-    "Oil Price Updates",
-    "Music Award Show Recaps",
-    "Gaming Collectibles",
-    "Wearable Tech Reviews",
-    "Tennis Tournament Analysis",
-    "Delivery Service Alternatives",
-    "Crude Oil Market Trends",
-    "Award Show Fashion",
-    "Retro Tech Revivals",
-    "Gaming Watch Collections"
+    "Earthquake Relief Efforts",
+    "Summer Savings Tips",
+    "Banking Hacks",
+    "Venezuela Travel Updates",
+    "Soccer Player Profiles",
+    "Haitian Culture Showcase",
+    "Water Damage Restoration",
+    "Kirk Franklin Music",
+    "Philadelphia Tourism",
+    "Hotel Room Tours",
+    "Financial Literacy",
+    "Disaster Preparedness",
+    "Home Repair DIY",
+    "Summer Travel Destinations",
+    "Personal Finance Challenges"
   ],
-  "concepts": [
-    {
-      "category": "Summer Sports Highlights",
-      "topic": "The most insane frisbee golf trick shots that went viral this summer.",
-      "hook": "You WON'T believe what these frisbee golf pros pulled off this summer! Gravity? Never heard of her!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Sports Highlights",
-      "topic": "The surprising dark horse team that dominated the beach volleyball circuit.",
-      "hook": "Everyone wrote them off, but this beach volleyball team just STUNNED the world! How did they do it?",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Celebrity Relationships",
-      "topic": "Is the recent surge in 'Bennifer' sightings a sign of trouble or stronger than ever?",
-      "hook": "Are Bennifer 2.0 on the rocks or just playing coy? Decoding their latest public appearances!",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity Relationships",
-      "topic": "The unexpected new Hollywood power couple nobody saw coming this awards season.",
-      "hook": "Hold up! Did [A-List Celebrity 1] and [A-List Celebrity 2] just make it official?! You'll never guess who!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Space Exploration",
-      "topic": "NASA's latest mission to uncover hidden oceans on Jupiter's moon Europa and alien life possibilities.",
-      "hook": "Forget Mars! NASA just found the ULTIMATE alien hunting ground... and it's on Europa!",
-      "voice_style": "Mysterious",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Space Exploration",
-      "topic": "The groundbreaking success of SpaceX's Starship SN11 test flight and its implications for human Mars colonization.",
-      "hook": "Did Starship just nail its most critical test yet? The future of Mars travel just got REAL!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 44
-    },
-    {
-      "category": "NFL Offseason News",
-      "topic": "The blockbuster trade involving a superstar wide receiver that just reshaped the AFC East.",
-      "hook": "BREAKING: This trade just sent shockwaves through the entire AFC East! Your favorite team might be impacted!",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
-      "target_duration": 46
-    },
-    {
-      "category": "NFL Offseason News",
-      "topic": "Which undrafted rookie quarterback is already turning heads at training camp and vying for a starting spot.",
-      "hook": "Move over, vets! This rookie QB is already stealing the show at minicamp. Is he the next big thing?",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Food Delivery Hacks",
-      "topic": "The ultimate secret to getting free delivery on ALL major food delivery apps, every single time.",
-      "hook": "Stop paying for delivery! This secret trick works on Uber Eats, DoorDash, and ALL of them!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Food Delivery Hacks",
-      "topic": "Discovering the exact 'sweet spot' time of day for maximum discounts and lightning-fast delivery.",
-      "hook": "Want cheaper food AND faster delivery? There's a 'sweet spot' time, and I'll tell you when!",
-      "voice_style": "Authoritative",
-      "music_mood": "Upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "Oil Price Updates",
-      "topic": "The surprising geopolitical factor that caused an unexpected drop in global oil prices this week.",
-      "hook": "Gas prices down?! What just happened in the global oil market that no one saw coming?",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 41
-    },
-    {
-      "category": "Oil Price Updates",
-      "topic": "Analyzing the new OPEC+ production cuts and their potential to skyrocket gas prices next quarter.",
-      "hook": "Brace yourselves! OPEC+'s latest move could drastically change your gas bill next month. Here's why!",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Music Award Show Recaps",
-      "topic": "The most iconic and jaw-dropping fashion moments from the recent MTV Video Music Awards red carpet.",
-      "hook": "From jaw-dropping to 'what were they thinking?!' The VMAs red carpet just delivered! Let's break it down!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Award Show Recaps",
-      "topic": "Unpacking the biggest snubs and shocking inclusions from the latest Grammy nominations list.",
-      "hook": "Did your favorite artist get ROBBED? Unpacking the biggest Grammy nomination shockers and surprises!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 47
-    },
-    {
-      "category": "Gaming Collectibles",
-      "topic": "Which specific retro Nintendo 64 games are now worth a fortune, and how to spot them.",
-      "hook": "Go check your attic! This N64 game could be worth THOUSANDS right now! Do you own it?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Gaming Collectibles",
-      "topic": "The incredibly rare Pok\u00e9mon TCG card that just shattered auction records, fetching millions.",
-      "hook": "A single Pok\u00e9mon card just sold for HOW MUCH?! You'll never guess which one broke the internet!",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 46
-    },
-    {
-      "category": "Wearable Tech Reviews",
-      "topic": "An in-depth look at whether the new Apple Watch Ultra 2 truly justifies its premium price for adventurers.",
-      "hook": "Extreme athlete or just extreme spender? We're putting the Apple Watch Ultra 2 to the ultimate test!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Wearable Tech Reviews",
-      "topic": "The hidden gem budget fitness tracker that's secretly outperforming top-tier expensive smartwatches.",
-      "hook": "STOP overpaying for fitness tech! This hidden gem delivers MORE for WAY less! You need to see this!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Tennis Tournament Analysis",
-      "topic": "The shocking early exit of a top seed at Wimbledon and how it's thrown the entire tournament into chaos.",
-      "hook": "Wimbledon just got WILD! Did anyone predict [Top Seed's] stunning early defeat?!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Tournament Analysis",
-      "topic": "Spotlight on the incredible teenage sensation who unexpectedly dominated the French Open qualifiers.",
-      "hook": "Remember the name! This young phenom just tore through the French Open qualifiers, stunning everyone!",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -252,9 +86,14 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
