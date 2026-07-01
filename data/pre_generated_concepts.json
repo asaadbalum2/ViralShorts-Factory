@@ -1,99 +1,99 @@
 {
-  "generated_at": "2026-06-30T08:41:44.135450",
-  "valid_until": "2026-06-30T23:59:44.135458",
+  "generated_at": "2026-07-01T08:58:20.525718",
+  "valid_until": "2026-07-01T23:59:20.525726",
   "categories": [
-    "Earthquake Relief Efforts",
-    "Summer Savings Tips",
-    "Banking Hacks",
-    "Venezuela Travel Updates",
-    "Soccer Player Profiles",
-    "Haitian Culture Showcase",
-    "Water Damage Restoration",
-    "Kirk Franklin Music",
-    "Philadelphia Tourism",
-    "Hotel Room Tours",
-    "Financial Literacy",
-    "Disaster Preparedness",
-    "Home Repair DIY",
-    "Summer Travel Destinations",
-    "Personal Finance Challenges"
+    "Emergency Room Challenges",
+    "Wildlife Encounters with Gators",
+    "iPhone 18 Pro Unboxing and Reviews",
+    "Summer Movie Reviews and Previews",
+    "Netflix Binge-Worthy Shows",
+    "Weather Update Alerts",
+    "Next Week's Forecast",
+    "Breaking News and Current Events",
+    "Summer Safety Tips",
+    "Animal Attack Survival Stories",
+    "New Tech Gadget Unboxing",
+    "Best Summer Movies on Netflix",
+    "Top 10 Emergency Department Stories",
+    "M\u00e9t\u00e9o Alerts and Warnings",
+    "Viral Challenge Videos in Hospitals"
   ],
   "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
