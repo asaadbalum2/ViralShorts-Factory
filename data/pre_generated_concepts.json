@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-07-01T08:58:20.525718",
-  "valid_until": "2026-07-01T23:59:20.525726",
+  "generated_at": "2026-07-02T08:28:31.135420",
+  "valid_until": "2026-07-02T23:59:31.135429",
   "categories": [
-    "Emergency Room Challenges",
-    "Wildlife Encounters with Gators",
-    "iPhone 18 Pro Unboxing and Reviews",
-    "Summer Movie Reviews and Previews",
-    "Netflix Binge-Worthy Shows",
-    "Weather Update Alerts",
-    "Next Week's Forecast",
-    "Breaking News and Current Events",
-    "Summer Safety Tips",
-    "Animal Attack Survival Stories",
-    "New Tech Gadget Unboxing",
-    "Best Summer Movies on Netflix",
-    "Top 10 Emergency Department Stories",
-    "M\u00e9t\u00e9o Alerts and Warnings",
-    "Viral Challenge Videos in Hospitals"
+    "Sports Highlights",
+    "Music Festivals",
+    "Rocket Launch Live Streams",
+    "Summer Vacation Vlogs",
+    "4th of July Fireworks",
+    "Fitness Challenges",
+    "NBA Draft Analysis",
+    "Music Collaborations",
+    "Space Exploration",
+    "Comedy Sketches",
+    " Celebrity Interviews",
+    "Influencer Takeovers",
+    "Behind the Scenes",
+    "Esports Tournament Highlights",
+    "Throwback Celebrity Moments"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Sports Highlights",
+      "topic": "Cristiano Ronaldo's Top 5 Bicycle Kicks",
+      "hook": "You won't believe the athleticism behind these goals!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Music Festivals",
+      "topic": "The Rise of Billie Eilish at Coachella",
+      "hook": "What happened when the bad guy took over the main stage?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Rocket Launch Live Streams",
+      "topic": "NASA's Artemis Mission to the Moon",
+      "hook": "We're going back to the moon, but this time it's different!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Vacation Vlogs",
+      "topic": "Exploring the Hidden Beaches of Bali",
+      "hook": "I stumbled upon a secret paradise and you won't believe where it is!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "4th of July Fireworks",
+      "topic": "The Most Epic Fireworks Display in the US",
+      "hook": "Get ready for the most explosive 4th of July celebration!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Fitness Challenges",
+      "topic": "The 30-Day Plank Challenge",
+      "hook": "Can you handle the plank challenge that's taking the fitness world by storm?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "NBA Draft Analysis",
+      "topic": "The Impact of the Top 3 Picks on the League",
+      "hook": "These three players are about to change the NBA forever!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Music Collaborations",
+      "topic": "The Unlikely Duo of Justin Bieber and Billie Eilish",
+      "hook": "What happens when two music giants come together for a song?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Space Exploration",
+      "topic": "The Search for Life on Mars",
+      "hook": "We're one step closer to finding the answer to humanity's biggest question!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Sketches",
+      "topic": "The Funniest Moments in Sports History",
+      "hook": "When athletes try to be funny, but it backfires hilariously!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "LeBron James' Most Dominant Playoff Performances",
+      "hook": "The King's most unforgettable moments in the playoffs will leave you speechless!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Music Festivals",
+      "topic": "The Electric Atmosphere of Tomorrowland",
+      "hook": "Imagine a world where music and magic come together!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Rocket Launch Live Streams",
+      "topic": "The Launch of the SpaceX Starship",
+      "hook": "Witness the future of space travel as it takes off!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Vacation Vlogs",
+      "topic": "Island-Hopping in Greece",
+      "hook": "Get ready for the ultimate Greek island adventure!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "4th of July Fireworks",
+      "topic": "The Best Fireworks Displays in the World",
+      "hook": "From New York to Tokyo, where will you watch the fireworks this year?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Fitness Challenges",
+      "topic": "The Burpee Challenge That's Sweeping the Nation",
+      "hook": "Are you ready to take on the fitness challenge that's got everyone talking?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "NBA Draft Analysis",
+      "topic": "The Sleeper Picks That Will Change the League",
+      "hook": "These under-the-radar players are about to make a big impact!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Music Collaborations",
+      "topic": "The Unforgettable Duet of Ariana Grande and Justin Bieber",
+      "hook": "When two music powerhouses come together, magic happens!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Space Exploration",
+      "topic": "The Mysterious Signal from a Distant Galaxy",
+      "hook": "We've received a signal from outer space, but what does it mean?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Sketches",
+      "topic": "The Funniest Moments in Sports Interviews",
+      "hook": "When athletes try to be funny, but it backfires hilariously!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
