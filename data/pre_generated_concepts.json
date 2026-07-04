@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-07-03T08:35:17.010367",
-  "valid_until": "2026-07-03T23:59:17.010376",
+  "generated_at": "2026-07-04T08:10:28.204903",
+  "valid_until": "2026-07-04T23:59:28.204912",
   "categories": [
-    "USA Soccer Highlights",
-    "Cloud Computing Explainers",
-    "Cartoon Network Nostalgia",
-    "Stock Market Updates",
-    "Mission Impossible Movie Clips",
-    "Madonna Music Challenges",
-    "Paul Gervase Comedy Skits",
-    "Donald Trump News Analysis",
-    "Park Signage Fails",
-    "World Cup Soccer Predictions",
-    "Summer Cloud Photography",
-    "Retro Cartoon Network Characters",
-    "Tech News and Trends",
-    "Soccer Trick Shots",
-    "Cloud Gaming Reviews"
+    "Summer Heat Hacks",
+    "4th of July Vlog Challenges",
+    "Bravo Show Recaps and Tea",
+    "Fitness Routines with Kelsey Rowing",
+    "Comedy Sketches about Washington DC Life",
+    "Vaccine Awareness and Myths Debunked",
+    "Flu Shot Preparation and Tips",
+    "Immunization Benefits Explained",
+    "Tanner Scott Fan Edits and Analysis",
+    "Jaidyn Alexis Behind-the-Scenes",
+    "Patriotic Dance Challenges",
+    "Beat the Heat with Refreshing Recipes",
+    "Stay Hydrated in the Summer Sun",
+    "Independence Day History Explained",
+    "Summer Safety Tips and Precautions"
   ],
   "concepts": [
     {
-      "category": "USA Soccer Highlights",
-      "topic": "Christian Pulisic's Top 5 Goals",
-      "hook": "You won't believe the shot that won the game!",
+      "category": "Summer Heat Hacks",
+      "topic": "DIY Cooling Scarf",
+      "hook": "What if I told you there's a way to stay cool without AC?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Cloud Computing Explainers",
-      "topic": "How AWS Changed the Game for Startups",
-      "hook": "The secret to scaling your business overnight is...",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "4th of July Vlog Challenges",
+      "topic": "Water Balloon Toss Fail",
+      "hook": "I tried to break the world record for most water balloons tossed and it ended in disaster!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Cartoon Network Nostalgia",
-      "topic": "The Evolution of Adventure Time",
-      "hook": "Remember when Finn and Jake first met?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Stock Market Updates",
-      "topic": "The Impact of Earnings Season on Tech Stocks",
-      "hook": "Which stocks will skyrocket this quarter?",
+      "category": "Bravo Show Recaps and Tea",
+      "topic": "Southern Charm Season Finale Recap",
+      "hook": "You won't believe the shocking twist that changed everything in Charleston!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
+      "target_duration": 50
     },
     {
-      "category": "Mission Impossible Movie Clips",
-      "topic": "Tom Cruise's Most Death-Defying Stunts",
-      "hook": "You won't believe what Tom Cruise did without a stunt double!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Madonna Music Challenges",
-      "topic": "Can You Dance Like Madonna in 'Vogue'?",
-      "hook": "Think you can strike a pose like the Queen of Pop?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Paul Gervase Comedy Skits",
-      "topic": "The Funny Side of Everyday Struggles",
-      "hook": "When you finally understand the wifi password...",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 44
-    },
-    {
-      "category": "Donald Trump News Analysis",
-      "topic": "The Economic Impact of Trump's Trade Policies",
-      "hook": "What you need to know about the latest trade war",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 46
-    },
-    {
-      "category": "Park Signage Fails",
-      "topic": "The Most Ridiculous Park Signs You've Ever Seen",
-      "hook": "You won't believe the warning signs they actually posted!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "World Cup Soccer Predictions",
-      "topic": "Which Underdog Team Will Make it to the Finals?",
-      "hook": "The dark horse that could win it all this year is...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "USA Soccer Highlights",
-      "topic": "The US Women's National Team's Road to Victory",
-      "hook": "How the USWNT became the most dominant team in the world",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Cloud Computing Explainers",
-      "topic": "A Beginner's Guide to Microsoft Azure",
-      "hook": "Take your business to the cloud in 5 easy steps",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Cartoon Network Nostalgia",
-      "topic": "The Best Episodes of The Powerpuff Girls",
-      "hook": "Which episodes still hold up today?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Stock Market Updates",
-      "topic": "The Rise of Sustainable Investing",
-      "hook": "How you can make a difference with your investments",
+      "category": "Fitness Routines with Kelsey Rowing",
+      "topic": "Full Body Rowing Workout",
+      "hook": "Get ready to sweat with this 10-minute rowing routine that will transform your body!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Mission Impossible Movie Clips",
-      "topic": "The Most Iconic Masks in Mission Impossible History",
-      "hook": "You won't believe the disguises Ethan Hunt has used",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Madonna Music Challenges",
-      "topic": "Can You Sing Like Madonna in 'Like a Prayer'?",
-      "hook": "Think you can hit the high notes like the Queen of Pop?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Comedy Sketches about Washington DC Life",
+      "topic": "Metro Etiquette Fail",
+      "hook": "Have you ever had to deal with a weirdo on the DC metro?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Paul Gervase Comedy Skits",
-      "topic": "The Humor in Everyday Technology Fails",
-      "hook": "When your phone autocorrects you into a hilarious conversation",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Donald Trump News Analysis",
-      "topic": "The Latest Developments in the Trump Administration",
-      "hook": "What you need to know about the current state of politics",
+      "category": "Vaccine Awareness and Myths Debunked",
+      "topic": "Debunking Common Vaccine Myths",
+      "hook": "What if everything you thought you knew about vaccines was wrong?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 46
+      "target_duration": 50
     },
     {
-      "category": "Park Signage Fails",
-      "topic": "The Most Amusing Warning Signs in National Parks",
-      "hook": "You won't believe the signs they posted to keep you safe",
+      "category": "Flu Shot Preparation and Tips",
+      "topic": "Flu Season Preparation Tips",
+      "hook": "It's that time of year again, are you prepared for flu season?",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "World Cup Soccer Predictions",
-      "topic": "Which Teams Will Make it to the Quarterfinals?",
-      "hook": "The ultimate guide to the World Cup knockout stage",
+      "category": "Immunization Benefits Explained",
+      "topic": "The Importance of Immunization for Children",
+      "hook": "Did you know that immunizations can save thousands of lives every year?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Tanner Scott Fan Edits and Analysis",
+      "topic": "Tanner Scott's Best Pitching Moments",
+      "hook": "Get ready to be amazed by the pitching skills of Tanner Scott!",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Jaidyn Alexis Behind-the-Scenes",
+      "topic": "Jaidyn Alexis Photoshoot BTS",
+      "hook": "Ever wondered what goes on behind the scenes of a photoshoot with Jaidyn Alexis?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Heat Hacks",
+      "topic": "Homemade Ice Packs",
+      "hook": "What if you could make your own ice packs at home and save money?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 48
+      "target_duration": 45
+    },
+    {
+      "category": "4th of July Vlog Challenges",
+      "topic": "Red, White, and Blue Food Challenge",
+      "hook": "I ate only red, white, and blue foods for a day and it was a disaster!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Bravo Show Recaps and Tea",
+      "topic": "Real Housewives of Atlanta Recap",
+      "hook": "You won't believe the drama that went down in Atlanta this week!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Fitness Routines with Kelsey Rowing",
+      "topic": "Rowing for Beginners",
+      "hook": "Get ready to learn the basics of rowing and transform your body!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Sketches about Washington DC Life",
+      "topic": "DC Tourist Trap",
+      "hook": "Have you ever fallen for a tourist trap in DC?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Vaccine Awareness and Myths Debunked",
+      "topic": "The Truth About Vaccine Side Effects",
+      "hook": "What if everything you thought you knew about vaccine side effects was wrong?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Flu Shot Preparation and Tips",
+      "topic": "Flu Shot vs Nasal Spray",
+      "hook": "Which is better, the flu shot or the nasal spray?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Immunization Benefits Explained",
+      "topic": "The Importance of Immunization for Adults",
+      "hook": "Did you know that immunizations are not just for kids?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Tanner Scott Fan Edits and Analysis",
+      "topic": "Tanner Scott's Pitching Technique",
+      "hook": "Get ready to learn the secrets of Tanner Scott's pitching technique!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Jaidyn Alexis Behind-the-Scenes",
+      "topic": "Jaidyn Alexis Morning Routine",
+      "hook": "Ever wondered what Jaidyn Alexis does in the morning?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Heat Hacks",
+      "topic": "Summer Salad Recipes",
+      "hook": "What if you could stay cool and eat healthy with these summer salad recipes?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
