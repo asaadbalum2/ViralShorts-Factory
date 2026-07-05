@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-07-04T08:10:28.204903",
-  "valid_until": "2026-07-04T23:59:28.204912",
+  "generated_at": "2026-07-05T08:25:55.059892",
+  "valid_until": "2026-07-05T23:59:55.059902",
   "categories": [
-    "Summer Heat Hacks",
-    "4th of July Vlog Challenges",
-    "Bravo Show Recaps and Tea",
-    "Fitness Routines with Kelsey Rowing",
-    "Comedy Sketches about Washington DC Life",
-    "Vaccine Awareness and Myths Debunked",
-    "Flu Shot Preparation and Tips",
-    "Immunization Benefits Explained",
-    "Tanner Scott Fan Edits and Analysis",
-    "Jaidyn Alexis Behind-the-Scenes",
-    "Patriotic Dance Challenges",
-    "Beat the Heat with Refreshing Recipes",
-    "Stay Hydrated in the Summer Sun",
-    "Independence Day History Explained",
-    "Summer Safety Tips and Precautions"
+    "Anime Recap",
+    "Public Transportation Hacks",
+    "Weather Updates",
+    "E-Sports Highlights",
+    "Movie Reviews",
+    "Actor Impersonations",
+    "Emergency Preparedness",
+    "Travel Vlogs",
+    "Gaming News",
+    "Fantasy World-building",
+    "Summer Safety Tips",
+    "Beach Activities",
+    "Storm Chasing",
+    "California Local News",
+    "TV Show Theories"
   ],
   "concepts": [
     {
-      "category": "Summer Heat Hacks",
-      "topic": "DIY Cooling Scarf",
-      "hook": "What if I told you there's a way to stay cool without AC?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Anime Recap",
+      "topic": "The true ending of Attack on Titan Season 4 Part 2 and Eren's complex motivations.",
+      "hook": "Did Attack on Titan's ending leave you scratching your head, or was it a genius twist you missed?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "4th of July Vlog Challenges",
-      "topic": "Water Balloon Toss Fail",
-      "hook": "I tried to break the world record for most water balloons tossed and it ended in disaster!",
+      "category": "Anime Recap",
+      "topic": "The most gut-wrenching moments from the Jujutsu Kaisen Shibuya Arc that changed everything.",
+      "hook": "The Shibuya Arc broke me, and I'm here to unpack the absolute chaos and heartbreaking sacrifices.",
+      "voice_style": "energetic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Public Transportation Hacks",
+      "topic": "Mastering the subtle art of getting a seat on a packed subway during peak rush hour.",
+      "hook": "Commuting nightmare? I'll show you the secret body language and strategy to snag a subway seat every time.",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Bravo Show Recaps and Tea",
-      "topic": "Southern Charm Season Finale Recap",
-      "hook": "You won't believe the shocking twist that changed everything in Charleston!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Public Transportation Hacks",
+      "topic": "Navigating Tokyo's intricate train system for first-time tourists without a JR Pass.",
+      "hook": "Tokyo's trains look like a spaghetti bowl, but I've got the hack for stress-free travel without a JR Pass.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Fitness Routines with Kelsey Rowing",
-      "topic": "Full Body Rowing Workout",
-      "hook": "Get ready to sweat with this 10-minute rowing routine that will transform your body!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Weather Updates",
+      "topic": "The rare and stunning phenomenon of 'thundersnow' and where it's most likely to happen next.",
+      "hook": "Snow and lightning? It's not a glitch in the matrix, it's thundersnow, and here's why it happens!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Comedy Sketches about Washington DC Life",
-      "topic": "Metro Etiquette Fail",
-      "hook": "Have you ever had to deal with a weirdo on the DC metro?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Weather Updates",
+      "topic": "Understanding and preparing for the next major heat dome event: What it means for you.",
+      "hook": "Another heat dome is brewing, and it's not just about staying cool \u2013 it's about understanding the danger and staying safe.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Vaccine Awareness and Myths Debunked",
-      "topic": "Debunking Common Vaccine Myths",
-      "hook": "What if everything you thought you knew about vaccines was wrong?",
-      "voice_style": "authoritative",
+      "category": "E-Sports Highlights",
+      "topic": "The most jaw-dropping Valorant clutch plays from the recent VCT Masters tournament.",
+      "hook": "You won't believe these Valorant clutch plays from VCT Masters \u2013 pure, unadulterated insanity!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "E-Sports Highlights",
+      "topic": "Dota 2 The International's legendary game-winning Aegis steal that nobody saw coming.",
+      "hook": "This Dota 2 Aegis steal at The International changed everything in milliseconds \u2013 an absolute masterclass!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Movie Reviews",
+      "topic": "Dune: Part Two - A spoiler-free analysis of its epic scale and cultural impact on sci-fi cinema.",
+      "hook": "Dune: Part Two isn't just a movie, it's an experience. But did it stick the landing for such an epic saga?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Movie Reviews",
+      "topic": "The hidden symbolism in Parasite's final act that you might have missed and changes everything.",
+      "hook": "Thought you understood Parasite's ending? Think again. There's a hidden layer of genius that changes everything.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Flu Shot Preparation and Tips",
-      "topic": "Flu Season Preparation Tips",
-      "hook": "It's that time of year again, are you prepared for flu season?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Immunization Benefits Explained",
-      "topic": "The Importance of Immunization for Children",
-      "hook": "Did you know that immunizations can save thousands of lives every year?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Tanner Scott Fan Edits and Analysis",
-      "topic": "Tanner Scott's Best Pitching Moments",
-      "hook": "Get ready to be amazed by the pitching skills of Tanner Scott!",
+      "category": "Actor Impersonations",
+      "topic": "What if Jack Nicholson and Christopher Walken co-hosted a chaotic cooking show?",
+      "hook": "Imagine Jack Nicholson trying to explain a recipe to Christopher Walken. Pure, unhinged culinary chaos.",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Jaidyn Alexis Behind-the-Scenes",
-      "topic": "Jaidyn Alexis Photoshoot BTS",
-      "hook": "Ever wondered what goes on behind the scenes of a photoshoot with Jaidyn Alexis?",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Heat Hacks",
-      "topic": "Homemade Ice Packs",
-      "hook": "What if you could make your own ice packs at home and save money?",
-      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "4th of July Vlog Challenges",
-      "topic": "Red, White, and Blue Food Challenge",
-      "hook": "I ate only red, white, and blue foods for a day and it was a disaster!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Bravo Show Recaps and Tea",
-      "topic": "Real Housewives of Atlanta Recap",
-      "hook": "You won't believe the drama that went down in Atlanta this week!",
+      "category": "Actor Impersonations",
+      "topic": "Benedict Cumberbatch giving a dramatic reading of mundane grocery store items.",
+      "hook": "You've never heard 'Cereal Flakes' sound so profoundly existential until Benedict Cumberbatch says it.",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Fitness Routines with Kelsey Rowing",
-      "topic": "Rowing for Beginners",
-      "hook": "Get ready to learn the basics of rowing and transform your body!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Sketches about Washington DC Life",
-      "topic": "DC Tourist Trap",
-      "hook": "Have you ever fallen for a tourist trap in DC?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Vaccine Awareness and Myths Debunked",
-      "topic": "The Truth About Vaccine Side Effects",
-      "hook": "What if everything you thought you knew about vaccine side effects was wrong?",
+      "category": "Emergency Preparedness",
+      "topic": "Essential 'go-bag' items you're probably forgetting for a sudden power outage.",
+      "hook": "Power's out, phone's dead, now what? Your go-bag is probably missing these critical, overlooked items.",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Emergency Preparedness",
+      "topic": "DIY emergency water filter using only common household items in a survival situation.",
+      "hook": "No clean water? I'll show you how to build a life-saving filter with just a few things from your kitchen or garage.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Flu Shot Preparation and Tips",
-      "topic": "Flu Shot vs Nasal Spray",
-      "hook": "Which is better, the flu shot or the nasal spray?",
+      "category": "Travel Vlogs",
+      "topic": "Discovering the hidden street art masterpieces in Lisbon's historic Alfama district.",
+      "hook": "Lisbon's Alfama is a labyrinth of history, but also a secret, vibrant gallery of incredible street art just waiting to be found.",
       "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Vlogs",
+      "topic": "A culinary tour of Istanbul's Grand Bazaar: The top 3 must-try street foods.",
+      "hook": "Don't just shop at Istanbul's Grand Bazaar, EAT your way through it! Here are my top 3 must-try street food gems.",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Immunization Benefits Explained",
-      "topic": "The Importance of Immunization for Adults",
-      "hook": "Did you know that immunizations are not just for kids?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Tanner Scott Fan Edits and Analysis",
-      "topic": "Tanner Scott's Pitching Technique",
-      "hook": "Get ready to learn the secrets of Tanner Scott's pitching technique!",
+      "category": "Gaming News",
+      "topic": "Deep dive into the Grand Theft Auto VI leaks: What they truly reveal about Vice City.",
+      "hook": "The GTA VI leaks are wild, but what do they actually tell us about the return to Vice City and the game's new mechanics?",
       "voice_style": "energetic",
       "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Gaming News",
+      "topic": "Is Starfield secretly teasing the setting for the next Elder Scrolls game in its lore?",
+      "hook": "Did Bethesda just drop a massive Elder Scrolls 6 hint hidden in plain sight within Starfield's vast universe?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Fantasy World-building",
+      "topic": "Crafting a unique and logical magical currency system for a high-fantasy empire.",
+      "hook": "Forget boring gold coins! Let's design a magical currency that makes sense and adds depth to a sprawling fantasy empire.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Jaidyn Alexis Behind-the-Scenes",
-      "topic": "Jaidyn Alexis Morning Routine",
-      "hook": "Ever wondered what Jaidyn Alexis does in the morning?",
+      "category": "Fantasy World-building",
+      "topic": "The unforeseen ecological impact of dragons on a medieval fantasy world.",
+      "hook": "Dragons are cool, but have you ever considered the actual environmental havoc they'd wreak in a medieval world?",
       "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Heat Hacks",
-      "topic": "Summer Salad Recipes",
-      "hook": "What if you could stay cool and eat healthy with these summer salad recipes?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
