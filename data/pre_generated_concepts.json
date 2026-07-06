@@ -1,215 +1,233 @@
 {
-  "generated_at": "2026-07-05T08:25:55.059892",
-  "valid_until": "2026-07-05T23:59:55.059902",
+  "generated_at": "2026-07-06T09:35:09.604510",
+  "valid_until": "2026-07-06T23:59:09.604518",
   "categories": [
-    "Anime Recap",
-    "Public Transportation Hacks",
-    "Weather Updates",
-    "E-Sports Highlights",
-    "Movie Reviews",
-    "Actor Impersonations",
-    "Emergency Preparedness",
-    "Travel Vlogs",
-    "Gaming News",
-    "Fantasy World-building",
-    "Summer Safety Tips",
-    "Beach Activities",
-    "Storm Chasing",
-    "California Local News",
-    "TV Show Theories"
+    "Summer Swimming Challenges",
+    "Movie Reviews with Michael B Jordan",
+    "TradingView Explainers",
+    "Zohran Mamdani Policy Updates",
+    "Flight Status Hacks",
+    "Event Vlogs",
+    "Six Blue Reservoir Travels",
+    "Financial Market Analysis",
+    "Summer Blockbuster Previews",
+    "Swimming Lessons for Beginners",
+    "Current Events with Zohran Mamdani",
+    "TradingView Tutorial for Beginners",
+    "Michael B Jordan Movie Reactions",
+    "\u516d\u84dd\u6c34\u5e93 Scenic Spots",
+    "Summer Event Calendar"
   ],
   "concepts": [
     {
-      "category": "Anime Recap",
-      "topic": "The true ending of Attack on Titan Season 4 Part 2 and Eren's complex motivations.",
-      "hook": "Did Attack on Titan's ending leave you scratching your head, or was it a genius twist you missed?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Anime Recap",
-      "topic": "The most gut-wrenching moments from the Jujutsu Kaisen Shibuya Arc that changed everything.",
-      "hook": "The Shibuya Arc broke me, and I'm here to unpack the absolute chaos and heartbreaking sacrifices.",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Public Transportation Hacks",
-      "topic": "Mastering the subtle art of getting a seat on a packed subway during peak rush hour.",
-      "hook": "Commuting nightmare? I'll show you the secret body language and strategy to snag a subway seat every time.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Public Transportation Hacks",
-      "topic": "Navigating Tokyo's intricate train system for first-time tourists without a JR Pass.",
-      "hook": "Tokyo's trains look like a spaghetti bowl, but I've got the hack for stress-free travel without a JR Pass.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "The rare and stunning phenomenon of 'thundersnow' and where it's most likely to happen next.",
-      "hook": "Snow and lightning? It's not a glitch in the matrix, it's thundersnow, and here's why it happens!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "Understanding and preparing for the next major heat dome event: What it means for you.",
-      "hook": "Another heat dome is brewing, and it's not just about staying cool \u2013 it's about understanding the danger and staying safe.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "E-Sports Highlights",
-      "topic": "The most jaw-dropping Valorant clutch plays from the recent VCT Masters tournament.",
-      "hook": "You won't believe these Valorant clutch plays from VCT Masters \u2013 pure, unadulterated insanity!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "E-Sports Highlights",
-      "topic": "Dota 2 The International's legendary game-winning Aegis steal that nobody saw coming.",
-      "hook": "This Dota 2 Aegis steal at The International changed everything in milliseconds \u2013 an absolute masterclass!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie Reviews",
-      "topic": "Dune: Part Two - A spoiler-free analysis of its epic scale and cultural impact on sci-fi cinema.",
-      "hook": "Dune: Part Two isn't just a movie, it's an experience. But did it stick the landing for such an epic saga?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Movie Reviews",
-      "topic": "The hidden symbolism in Parasite's final act that you might have missed and changes everything.",
-      "hook": "Thought you understood Parasite's ending? Think again. There's a hidden layer of genius that changes everything.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Actor Impersonations",
-      "topic": "What if Jack Nicholson and Christopher Walken co-hosted a chaotic cooking show?",
-      "hook": "Imagine Jack Nicholson trying to explain a recipe to Christopher Walken. Pure, unhinged culinary chaos.",
+      "category": "Summer Swimming Challenges",
+      "topic": "Attempt to Break the Record for Most Pool Noodle Jumps in a Minute",
+      "hook": "Can I really jump over 50 pool noodles in just 60 seconds?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Actor Impersonations",
-      "topic": "Benedict Cumberbatch giving a dramatic reading of mundane grocery store items.",
-      "hook": "You've never heard 'Cereal Flakes' sound so profoundly existential until Benedict Cumberbatch says it.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Emergency Preparedness",
-      "topic": "Essential 'go-bag' items you're probably forgetting for a sudden power outage.",
-      "hook": "Power's out, phone's dead, now what? Your go-bag is probably missing these critical, overlooked items.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Emergency Preparedness",
-      "topic": "DIY emergency water filter using only common household items in a survival situation.",
-      "hook": "No clean water? I'll show you how to build a life-saving filter with just a few things from your kitchen or garage.",
+      "category": "Movie Reviews with Michael B Jordan",
+      "topic": "What Michael B Jordan Thought of the Latest Marvel Movie",
+      "hook": "You won't believe what Michael B Jordan said about the new Spider-Man film!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "TradingView Explainers",
+      "topic": "How to Use the New TradingView Indicator for Day Trading",
+      "hook": "Want to know the secret to making consistent profits with TradingView's latest tool?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Travel Vlogs",
-      "topic": "Discovering the hidden street art masterpieces in Lisbon's historic Alfama district.",
-      "hook": "Lisbon's Alfama is a labyrinth of history, but also a secret, vibrant gallery of incredible street art just waiting to be found.",
-      "voice_style": "friendly",
+      "category": "Zohran Mamdani Policy Updates",
+      "topic": "Zohran Mamdani's Latest Proposal to Combat Climate Change",
+      "hook": "New York's Zohran Mamdani just proposed a game-changing climate bill - here's what you need to know",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Travel Vlogs",
-      "topic": "A culinary tour of Istanbul's Grand Bazaar: The top 3 must-try street foods.",
-      "hook": "Don't just shop at Istanbul's Grand Bazaar, EAT your way through it! Here are my top 3 must-try street food gems.",
-      "voice_style": "energetic",
+      "category": "Flight Status Hacks",
+      "topic": "How to Get Real-Time Flight Updates Using a Secret Airline Feature",
+      "hook": "Tired of flight delays? This airline hack will change everything",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Gaming News",
-      "topic": "Deep dive into the Grand Theft Auto VI leaks: What they truly reveal about Vice City.",
-      "hook": "The GTA VI leaks are wild, but what do they actually tell us about the return to Vice City and the game's new mechanics?",
+      "category": "Event Vlogs",
+      "topic": "Behind-the-Scenes at the Latest Music Festival",
+      "hook": "I spent the weekend at the hottest music festival of the summer - here's what really went down",
       "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Gaming News",
-      "topic": "Is Starfield secretly teasing the setting for the next Elder Scrolls game in its lore?",
-      "hook": "Did Bethesda just drop a massive Elder Scrolls 6 hint hidden in plain sight within Starfield's vast universe?",
+      "category": "Six Blue Reservoir Travels",
+      "topic": "Exploring the Hidden Gems of Six Blue Reservoir",
+      "hook": "You won't believe the stunning secret spots I discovered at Six Blue Reservoir",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Market Analysis",
+      "topic": "What the Latest Economic Indicators Mean for Your Investments",
+      "hook": "The latest economic numbers are in - here's what they mean for your wallet",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Fantasy World-building",
-      "topic": "Crafting a unique and logical magical currency system for a high-fantasy empire.",
-      "hook": "Forget boring gold coins! Let's design a magical currency that makes sense and adds depth to a sprawling fantasy empire.",
-      "voice_style": "authoritative",
+      "category": "Summer Blockbuster Previews",
+      "topic": "The Most Anticipated Summer Movie Releases",
+      "hook": "Get ready for the hottest summer movies of the year - here's your sneak peek",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Swimming Lessons for Beginners",
+      "topic": "How to Do the Perfect Freestyle Stroke for Beginners",
+      "hook": "Want to learn how to swim like a pro? Start with this one simple tip",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Fantasy World-building",
-      "topic": "The unforeseen ecological impact of dragons on a medieval fantasy world.",
-      "hook": "Dragons are cool, but have you ever considered the actual environmental havoc they'd wreak in a medieval world?",
-      "voice_style": "mysterious",
+      "category": "Summer Swimming Challenges",
+      "topic": "The World's Largest Inflatable Water Slide Challenge",
+      "hook": "I attempted to slide down the world's largest inflatable water slide - and it was insane",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Movie Reviews with Michael B Jordan",
+      "topic": "Michael B Jordan's Thoughts on the Latest Superhero Movie",
+      "hook": "Michael B Jordan just reviewed the newest superhero film - and his opinion is surprising",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
+    },
+    {
+      "category": "TradingView Explainers",
+      "topic": "How to Create a Custom TradingView Indicator",
+      "hook": "Take your trading to the next level with this powerful TradingView hack",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Zohran Mamdani Policy Updates",
+      "topic": "Zohran Mamdani's Plan to Improve Public Transportation",
+      "hook": "Zohran Mamdani just unveiled a plan to revolutionize public transportation - here's what it means for you",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Flight Status Hacks",
+      "topic": "How to Get the Best Seat on Your Next Flight",
+      "hook": "Want to score the best seat on your next flight? Try this simple trick",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Event Vlogs",
+      "topic": "Behind-the-Scenes at the Latest Fashion Show",
+      "hook": "I went backstage at the hottest fashion show of the season - and it was wild",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Six Blue Reservoir Travels",
+      "topic": "Hiking to the Most Scenic Spot at Six Blue Reservoir",
+      "hook": "I hiked to the most breathtaking spot at Six Blue Reservoir - and the views were stunning",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Market Analysis",
+      "topic": "The Impact of Interest Rate Changes on Your Investments",
+      "hook": "The latest interest rate changes could affect your investments - here's what you need to know",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Blockbuster Previews",
+      "topic": "The Most Anticipated Summer Movie Releases of the Year",
+      "hook": "Get ready for the biggest summer movies of the year - we've got the inside scoop",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Swimming Lessons for Beginners",
+      "topic": "How to Overcome Your Fear of Swimming",
+      "hook": "Want to learn how to swim but afraid of the water? Start with this one simple step",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Swimming Challenges",
+      "topic": "The World's Largest Pool Volleyball Challenge",
+      "hook": "I participated in the world's largest pool volleyball game - and it was chaos",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
@@ -218,43 +236,33 @@
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
