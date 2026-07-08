@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-07-07T08:49:09.608657",
-  "valid_until": "2026-07-07T23:59:09.608668",
+  "generated_at": "2026-07-08T07:53:57.115240",
+  "valid_until": "2026-07-08T23:59:57.115248",
   "categories": [
-    "Summer Vacation Vlogs",
-    "AI Explained",
+    "Esports Highlights: MSI 2026",
     "Bitcoin Price Updates",
-    "Climate Change Awareness",
-    "Hotel Reviews",
-    "Pool Hacks",
-    "New York City Summer Activities",
-    "Typhoon Watch",
-    "Sustainable Travel",
-    "Crypto News",
-    "AI in Daily Life",
-    "Extreme Weather Prep",
-    "Investing in Bitcoin",
-    "Climate Change Solutions",
-    "Future of Tech"
+    "Microsoft Tech News",
+    "OpenAI Explainers",
+    "Tesla Innovations",
+    "Typhoon Updates: \u53f0\u98ce",
+    "New York Weather Forecast",
+    "Gaming: T1 vs G2",
+    "Summer Weather Hacks",
+    "AI in Gaming",
+    "Crypto Investing 101",
+    "Electric Vehicle Reviews",
+    "Gaming Console Comparisons",
+    "Storm Chasing Adventures",
+    "AI-Powered Tech Reviews"
   ],
   "concepts": [
     {
-      "category": "Summer Vacation Vlogs",
-      "topic": "Exploring Hidden Beaches in Greece",
-      "hook": "Have you ever stumbled upon a beach that feels like a secret paradise?",
+      "category": "Esports Highlights: MSI 2026",
+      "topic": "T1's Incredible Baron Steal",
+      "hook": "You won't believe the game-changing play that turned the tide of the tournament!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "AI Explained",
-      "topic": "Understanding AI-Generated Art",
-      "hook": "Can machines really create masterpieces that rival human art?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Bitcoin Price Updates",
-      "topic": "Why Bitcoin's Value Surged Overnight",
-      "hook": "What's behind the sudden spike in Bitcoin's price, and should you invest now?",
-      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Climate Change Awareness",
-      "topic": "The Impact of Rising Sea Levels on Coastal Cities",
-      "hook": "Imagine waking up one day to find your hometown underwater - it's not as far-fetched as you think",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Hotel Reviews",
-      "topic": "Uncovering the World's Most Unique Hotel Rooms",
-      "hook": "Ever slept in a hotel room that's also a work of art?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Pool Hacks",
-      "topic": "Transforming Your Backyard Pool into a Luxurious Oasis",
-      "hook": "Who says you need a mansion to have a pool like a celebrity?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "New York City Summer Activities",
-      "topic": "Discovering NYC's Best Kept Secrets for a Summer Evening",
-      "hook": "What happens when the sun sets over the city that never sleeps?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Typhoon Watch",
-      "topic": "The Science Behind Predicting Typhoon Paths",
-      "hook": "Can we really predict the fury of nature, or are we just rolling the dice?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Sustainable Travel",
-      "topic": "How to Travel the World Without Leaving a Carbon Footprint",
-      "hook": "Want to see the world without destroying it? It's easier than you think",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Crypto News",
-      "topic": "The Rise of Ethereum: What You Need to Know",
-      "hook": "Is Ethereum the new Bitcoin, and should you be investing?",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Summer Vacation Vlogs",
-      "topic": "Island-Hopping in Croatia",
-      "hook": "Imagine sailing through crystal-clear waters to a new island every day",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "AI Explained",
-      "topic": "The Future of Work: Will AI Replace Human Jobs?",
-      "hook": "Will robots take your job, or will they create new ones?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
       "category": "Bitcoin Price Updates",
-      "topic": "The Impact of Global Events on Bitcoin's Price",
-      "hook": "How do global events like elections and wars affect Bitcoin's value?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Climate Change Awareness",
-      "topic": "The Devastating Consequences of Melting Glaciers",
-      "hook": "What happens when the ice that's held our planet together for millennia starts to melt?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Hotel Reviews",
-      "topic": "The World's Most Haunted Hotels",
-      "hook": "Would you dare to spend a night in a hotel where ghosts roam free?",
-      "voice_style": "mysterious",
+      "topic": "BTC's Sudden $1000 Surge",
+      "hook": "What's behind the mysterious spike that's got crypto investors buzzing?",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Pool Hacks",
-      "topic": "Turning Your Pool into a Giant Water Slide",
-      "hook": "Who needs a water park when you can have a giant water slide in your backyard?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Microsoft Tech News",
+      "topic": "Azure's AI-Powered Security Upgrade",
+      "hook": "Microsoft just unveiled a revolutionary new way to protect your data - here's how it works!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
     },
     {
-      "category": "New York City Summer Activities",
-      "topic": "The Best Rooftop Bars in NYC for Summer",
-      "hook": "What's the best way to beat the summer heat in NYC? With a cold drink and a view, of course",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "OpenAI Explainers",
+      "topic": "The Future of Language Models",
+      "hook": "Imagine a world where AI can understand you better than humans - it's closer than you think!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Tesla Innovations",
+      "topic": "The New Electric Truck That's Turning Heads",
+      "hook": "Elon Musk just revealed a game-changing new vehicle that's about to disrupt the entire auto industry!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Typhoon Watch",
-      "topic": "The Top 5 Most Typhoon-Prone Cities in the World",
-      "hook": "Are you living in a city that's a ticking time bomb for typhoons?",
+      "category": "Typhoon Updates: ",
+      "topic": "The Latest Tracking Update for Typhoon Mawar",
+      "hook": "A powerful storm is bearing down on the coast - here's the latest on its projected path!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sustainable Travel",
-      "topic": "Eco-Friendly Transportation Options for Travelers",
-      "hook": "Want to travel the world without harming the planet? Start with how you get there",
+      "category": "New York Weather Forecast",
+      "topic": "The Heatwave That's Gripping the City",
+      "hook": "Temperatures are soaring in the Big Apple - find out how long the heatwave is expected to last!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Gaming: T1 vs G2",
+      "topic": "The Rivalry That's Taking the Gaming World by Storm",
+      "hook": "Two of the biggest teams in esports are clashing in an epic showdown - who will come out on top?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Summer Weather Hacks",
+      "topic": "How to Stay Cool Without Breaking the Bank",
+      "hook": "Beat the heat without blowing your budget - these genius hacks will keep you cool all summer!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "AI in Gaming",
+      "topic": "The AI-Powered NPCs That Are Changing the Game",
+      "hook": "Imagine playing against opponents that can think and adapt like real humans - it's the future of gaming!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Esports Highlights: MSI 2026",
+      "topic": "The Most Epic Pentakill of the Tournament",
+      "hook": "One player's incredible feat is being hailed as the highlight of the tournament - watch it here!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Bitcoin Price Updates",
+      "topic": "The Unexpected Factor Influencing BTC's Price",
+      "hook": "You won't believe the surprising reason behind Bitcoin's recent price fluctuations!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Microsoft Tech News",
+      "topic": "The Next-Gen Windows Update You Need to Know About",
+      "hook": "Microsoft just announced a major update that will change the way you use your PC - here's what you need to know!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Crypto News",
-      "topic": "The Rise of Crypto-Based Social Media Platforms",
-      "hook": "Imagine a social media platform that rewards you in crypto for creating content",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 50
+      "category": "OpenAI Explainers",
+      "topic": "The Ethics of AI: What You Need to Know",
+      "hook": "As AI becomes more powerful, the questions around its use are getting tougher - let's explore the ethics of AI!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 48
     },
     {
-      "category": "Summer Vacation Vlogs",
-      "topic": "A Day in the Life of a Summer Camp Counselor",
-      "hook": "What's it like to spend your summer making memories with kids in the great outdoors?",
+      "category": "Tesla Innovations",
+      "topic": "The Revolutionary New Battery Tech",
+      "hook": "Elon Musk just revealed a breakthrough that could change the electric car industry forever - here's how it works!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Typhoon Updates: ",
+      "topic": "The Emergency Preparedness Tips You Need to Know",
+      "hook": "A typhoon is heading your way - make sure you're prepared with these essential tips!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "New York Weather Forecast",
+      "topic": "The Summer Storms That Are Sweeping the City",
+      "hook": "Severe weather is heading for the Big Apple - stay ahead of the storms with our forecast!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Gaming: T1 vs G2",
+      "topic": "The Mind-Blowing Strategies Behind the Teams' Success",
+      "hook": "What sets these two teams apart from the rest? Let's dive into the strategies that are making them dominate the gaming world!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Summer Weather Hacks",
+      "topic": "The DIY Cooling Solutions You Never Knew Existed",
+      "hook": "Stay cool without spending a fortune - these genius DIY hacks will keep you comfortable all summer!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "AI in Gaming",
+      "topic": "The Future of Game Development: How AI Is Changing the Game",
+      "hook": "AI is not just changing the way we play games - it's changing the way they're made. Let's explore the future of game development!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Esports Highlights: MSI 2026",
+      "topic": "The Unbelievable Comeback That Stole the Show",
+      "hook": "One team's incredible comeback has got everyone talking - relive the thrilling moment that will go down in history!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
       "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
