@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-07-08T07:53:57.115240",
-  "valid_until": "2026-07-08T23:59:57.115248",
+  "generated_at": "2026-07-09T08:51:18.077164",
+  "valid_until": "2026-07-09T23:59:18.077173",
   "categories": [
-    "Esports Highlights: MSI 2026",
-    "Bitcoin Price Updates",
-    "Microsoft Tech News",
-    "OpenAI Explainers",
-    "Tesla Innovations",
-    "Typhoon Updates: \u53f0\u98ce",
-    "New York Weather Forecast",
-    "Gaming: T1 vs G2",
-    "Summer Weather Hacks",
-    "AI in Gaming",
-    "Crypto Investing 101",
-    "Electric Vehicle Reviews",
-    "Gaming Console Comparisons",
-    "Storm Chasing Adventures",
-    "AI-Powered Tech Reviews"
+    "Gaming Highlights (Cyberpunk, Riot)",
+    "Mortgage Tips and News",
+    "Anime Updates (One Piece 1188, Gakuran)",
+    "War and Politics (Iran War, Epstein Files)",
+    "Tech News (Play Store updates)",
+    "Financial Advice for Homebuyers",
+    "Global Conflict Analysis",
+    "Cyberpunk 2077 Gameplay",
+    "Riot Game Strategies",
+    "Current Events Explained",
+    "Home Decorating on a Budget (post-purchase)",
+    "Summer Gaming Trends",
+    "News Recap and Analysis",
+    "Personal Finance for Young Adults",
+    "Global News and Politics"
   ],
   "concepts": [
     {
-      "category": "Esports Highlights: MSI 2026",
-      "topic": "T1's Incredible Baron Steal",
-      "hook": "You won't believe the game-changing play that turned the tide of the tournament!",
+      "category": "Gaming Highlights (Cyberpunk, Riot)",
+      "topic": "Cyberpunk 2077 - Best Netrunner Quickhacks for Boss Fights",
+      "hook": "V, are you struggling with Adam Smasher on Very Hard? You're probably using the WRONG quickhacks!",
       "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Bitcoin Price Updates",
-      "topic": "BTC's Sudden $1000 Surge",
-      "hook": "What's behind the mysterious spike that's got crypto investors buzzing?",
+      "category": "Mortgage Tips and News",
+      "topic": "Debunking the Housing Market Crash Predictions for 2024",
+      "hook": "Everyone's yelling 'crash!' but here's why the 2008 rerun is highly unlikely for 2024 homeowners.",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Microsoft Tech News",
-      "topic": "Azure's AI-Powered Security Upgrade",
-      "hook": "Microsoft just unveiled a revolutionary new way to protect your data - here's how it works!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "OpenAI Explainers",
-      "topic": "The Future of Language Models",
-      "hook": "Imagine a world where AI can understand you better than humans - it's closer than you think!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Tesla Innovations",
-      "topic": "The New Electric Truck That's Turning Heads",
-      "hook": "Elon Musk just revealed a game-changing new vehicle that's about to disrupt the entire auto industry!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Typhoon Updates: ",
-      "topic": "The Latest Tracking Update for Typhoon Mawar",
-      "hook": "A powerful storm is bearing down on the coast - here's the latest on its projected path!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "New York Weather Forecast",
-      "topic": "The Heatwave That's Gripping the City",
-      "hook": "Temperatures are soaring in the Big Apple - find out how long the heatwave is expected to last!",
-      "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 42
+      "target_duration": 45
     },
     {
-      "category": "Gaming: T1 vs G2",
-      "topic": "The Rivalry That's Taking the Gaming World by Storm",
-      "hook": "Two of the biggest teams in esports are clashing in an epic showdown - who will come out on top?",
+      "category": "Anime Updates (One Piece 1188, Gakuran)",
+      "topic": "One Piece Manga Chapter 1118 - Kuma's Final Stand Theories & Implications",
+      "hook": "Did Kuma just pull off the impossible in Chapter 1118? My mind is BLOWN by these theories and what they mean for the Straw Hats!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Summer Weather Hacks",
-      "topic": "How to Stay Cool Without Breaking the Bank",
-      "hook": "Beat the heat without blowing your budget - these genius hacks will keep you cool all summer!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "AI in Gaming",
-      "topic": "The AI-Powered NPCs That Are Changing the Game",
-      "hook": "Imagine playing against opponents that can think and adapt like real humans - it's the future of gaming!",
-      "voice_style": "mysterious",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Esports Highlights: MSI 2026",
-      "topic": "The Most Epic Pentakill of the Tournament",
-      "hook": "One player's incredible feat is being hailed as the highlight of the tournament - watch it here!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Bitcoin Price Updates",
-      "topic": "The Unexpected Factor Influencing BTC's Price",
-      "hook": "You won't believe the surprising reason behind Bitcoin's recent price fluctuations!",
-      "voice_style": "authoritative",
+      "category": "War and Politics (Iran War, Epstein Files)",
+      "topic": "The Unseen Fallout of the Latest Epstein Files Release",
+      "hook": "The Epstein Files dropped more names this week, but it's *who isn't talking* that's truly chilling. Here's the hidden story.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 42
+      "target_duration": 45
     },
     {
-      "category": "Microsoft Tech News",
-      "topic": "The Next-Gen Windows Update You Need to Know About",
-      "hook": "Microsoft just announced a major update that will change the way you use your PC - here's what you need to know!",
+      "category": "Tech News (Play Store updates)",
+      "topic": "Google Play Store's New App Privacy Dashboard Explained",
+      "hook": "Your phone just got a privacy upgrade you didn't even know you needed! Here's how to use the new Play Store feature.",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Advice for Homebuyers",
+      "topic": "How to Boost Your Credit Score 50+ Points in 6 Months for Mortgage Approval",
+      "hook": "Trying to get approved for a home loan but your credit score is holding you back? Here are 3 quick hacks that actually work!",
+      "voice_style": "energetic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "OpenAI Explainers",
-      "topic": "The Ethics of AI: What You Need to Know",
-      "hook": "As AI becomes more powerful, the questions around its use are getting tougher - let's explore the ethics of AI!",
+      "category": "Global Conflict Analysis",
+      "topic": "The Silent Battle: Who's Winning the South China Sea Tech Race?",
+      "hook": "It's not just ships anymore. The real struggle for the South China Sea is happening with satellites and AI. Here's what you need to know.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Cyberpunk 2077 Gameplay",
+      "topic": "Phantom Liberty: Unlocking the Secret Ending You Missed",
+      "hook": "Think you've seen every ending in Phantom Liberty? There's a hidden path even veteran V's are missing!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Riot Game Strategies",
+      "topic": "Valorant - Eco Round Pistol Buy Strategy to Win Big",
+      "hook": "Stop throwing your eco rounds! This pistol buy strategy will turn the tides even when you're broke.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events Explained",
+      "topic": "What the Recent Federal Reserve Interest Rate Hike Means for YOUR Savings & Loans",
+      "hook": "The Fed just hiked rates again. Good news for savers, right? Not so fast. Here's what you actually need to know.",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Tesla Innovations",
-      "topic": "The Revolutionary New Battery Tech",
-      "hook": "Elon Musk just revealed a breakthrough that could change the electric car industry forever - here's how it works!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Typhoon Updates: ",
-      "topic": "The Emergency Preparedness Tips You Need to Know",
-      "hook": "A typhoon is heading your way - make sure you're prepared with these essential tips!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "New York Weather Forecast",
-      "topic": "The Summer Storms That Are Sweeping the City",
-      "hook": "Severe weather is heading for the Big Apple - stay ahead of the storms with our forecast!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
+      "category": "Gaming Highlights (Cyberpunk, Riot)",
+      "topic": "League of Legends - Top 3 New Champion Counterpicks & Strategy",
+      "hook": "That new champ dominating your ranked games? Not for long! Here are the ONLY 3 picks you need to shut them down.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
     },
     {
-      "category": "Gaming: T1 vs G2",
-      "topic": "The Mind-Blowing Strategies Behind the Teams' Success",
-      "hook": "What sets these two teams apart from the rest? Let's dive into the strategies that are making them dominate the gaming world!",
+      "category": "Mortgage Tips and News",
+      "topic": "ARM vs. Fixed-Rate Mortgages in a High-Interest Environment: Which is Safer?",
+      "hook": "Is an Adjustable-Rate Mortgage a trap or a smart move right now? Let's break down the hidden risks AND rewards.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Anime Updates (One Piece 1188, Gakuran)",
+      "topic": "\"Gakuran\" - Is This the Next Big Shonen Manga You Need to Read?",
+      "hook": "Heard of 'Gakuran'? It's the obscure new manga that critics are calling a game-changer. Here's why you need to binge it NOW!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "War and Politics (Iran War, Epstein Files)",
+      "topic": "The Geopolitical Impact of Escalating Red Sea Tensions & Global Shipping",
+      "hook": "The Red Sea isn't just about shipping lanes anymore. We're on the brink of a major geopolitical shift, and here's why.",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
+      "target_duration": 45
     },
     {
-      "category": "Summer Weather Hacks",
-      "topic": "The DIY Cooling Solutions You Never Knew Existed",
-      "hook": "Stay cool without spending a fortune - these genius DIY hacks will keep you comfortable all summer!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "AI in Gaming",
-      "topic": "The Future of Game Development: How AI Is Changing the Game",
-      "hook": "AI is not just changing the way we play games - it's changing the way they're made. Let's explore the future of game development!",
+      "category": "Tech News (Play Store updates)",
+      "topic": "How AI-Powered App Recommendations are Changing Your Play Store Experience",
+      "hook": "Your Play Store just got smarter, or creepier? Discover how AI is tailoring your app feed and what it means for your privacy.",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Esports Highlights: MSI 2026",
-      "topic": "The Unbelievable Comeback That Stole the Show",
-      "hook": "One team's incredible comeback has got everyone talking - relive the thrilling moment that will go down in history!",
+      "category": "Financial Advice for Homebuyers",
+      "topic": "Negotiating Closing Costs: 3 Secrets That Can Save Homebuyers Thousands",
+      "hook": "Don't pay full price for closing costs! I'm revealing 3 insider secrets realtors don't want you to know.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Conflict Analysis",
+      "topic": "Ukraine Conflict: Why Winter is the New Battlefield & What It Means",
+      "hook": "The front lines are frozen, but the war in Ukraine is just heating up. Here's how winter reshapes everything.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Cyberpunk 2077 Gameplay",
+      "topic": "Cyberpunk 2077 Best Melee Build for One-Shotting Bosses & Enemies",
+      "hook": "Forget guns, V. This is the ONLY melee build you need to make even the toughest bosses in Night City disappear in one hit!",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 45
+    },
+    {
+      "category": "Riot Game Strategies",
+      "topic": "Teamfight Tactics (TFT) Set 11 - Top 3 Meta Comps You MUST Play",
+      "hook": "TFT Set 11 just dropped and the meta is wild! These 3 comps are dominating challenger ladder \u2013 don't miss out!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events Explained",
+      "topic": "The 'Great Resignation' is Over, But What's Next for the Global Job Market?",
+      "hook": "Remember the 'Great Resignation'? It's officially over, but the job market's next big shift is already here. Are you ready?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
