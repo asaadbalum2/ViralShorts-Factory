@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-07-10T08:48:12.259167",
-  "valid_until": "2026-07-10T23:59:12.259176",
+  "generated_at": "2026-07-11T07:24:57.843461",
+  "valid_until": "2026-07-11T23:59:57.843469",
   "categories": [
-    "Summer Movie Releases",
-    "NBA Player Highlights",
-    "Netflix Show Reviews",
-    "Weather Updates",
-    "Hurricane Season Preparations",
-    "Sports News",
-    "Celebrity Interviews",
-    "TV Show Theories",
-    "Gaming News",
-    "Fitness Motivation",
-    "Comedy Sketches",
-    "Storm Chasing",
-    "Basketball Analysis",
-    "Entertainment News",
-    "Extreme Weather Survival Tips"
+    "Morning Commute Hacks for Rush Hour",
+    "Cricket Highlights: Zim vs Ban Analysis",
+    "Kai Kamaka Fitness Challenges",
+    "Damian Pinas Soccer Skills",
+    "Cate Blanchett Movie Reviews",
+    "Avril Lavigne Music Covers",
+    "Chris Hemsworth Workout Routines",
+    "Olivia Dean Music Videos",
+    "Summer Traffic Survival Tips",
+    "Sports News Updates",
+    "Comedy Skits for Your Daily Dose",
+    "Daily Vlogs: Beating Rush Hour Stress",
+    "Top 10 Movie Recommendations with Cate Blanchett",
+    "Relaxing Music Playlists featuring Avril Lavigne and Olivia Dean",
+    "Fitness Motivation with Chris Hemsworth and Kai Kamaka"
   ],
   "concepts": [
     {
-      "category": "Summer Movie Releases",
-      "topic": "Top 5 Most Anticipated Superhero Movies of the Summer",
-      "hook": "Get ready for the most epic superhero showdowns of the summer!",
+      "category": "Morning Commute Hacks for Rush Hour",
+      "topic": "The 'Side Street Sneak' - Shaving Minutes off Your Daily Grind",
+      "hook": "Tired of highway gridlock? What if I told you there's a hidden side-street detour that could shave 10 minutes off your daily commute?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "NBA Player Highlights",
-      "topic": "Luka Doncic's Most Insane Game-Winning Shots",
-      "hook": "You won't believe the clutch gene of this NBA superstar!",
+      "category": "Cricket Highlights: Zim vs Ban Analysis",
+      "topic": "The Tactical Genius Behind Bangladesh's Powerplay Domination in the First T20I",
+      "hook": "Everyone saw the wickets fall, but do you know the precise tactical shift Bangladesh made to dismantle Zimbabwe's top order in the powerplay?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Kai Kamaka Fitness Challenges",
+      "topic": "Kai's 'Battle Rope Blitz' - A Full Body Blast in Under 5 Minutes",
+      "hook": "Think battle ropes are just for show? Kai Kamaka's latest challenge will have you questioning everything you thought you knew about quick, intense workouts!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Damian Pinas Soccer Skills",
+      "topic": "Mastering the 'Pinas Pirouette' - Dribble Away From Defenders",
+      "hook": "Want to leave defenders spinning? Damian Pinas reveals his signature 'Pirouette' move that creates instant space and breaks ankles!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Cate Blanchett Movie Reviews",
+      "topic": "Unpacking Cate Blanchett's Transformative Role in 'T\u00e1r'",
+      "hook": "Was 'T\u00e1r' just another role, or did Cate Blanchett deliver a career-defining performance that changed the game for method acting?",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Netflix Show Reviews",
-      "topic": "Why 'Stranger Things' Season 4 is a Game-Changer",
-      "hook": "The wait is over, but is the latest season of 'Stranger Things' worth the hype?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "The Most Extreme Weather Conditions Around the World",
-      "hook": "From scorching heat to freezing cold, witness the most extreme weather on Earth!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Hurricane Season Preparations",
-      "topic": "Top 10 Essential Items to Have in Your Hurricane Emergency Kit",
-      "hook": "Don't wait until it's too late, prepare for hurricane season with these must-haves!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports News",
-      "topic": "The Impact of the New NFL Rule Changes on the Upcoming Season",
-      "hook": "The rules have changed, but will it change the game?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Interviews",
-      "topic": "Exclusive Interview with Chris Hemsworth on his Latest Movie Role",
-      "hook": "Go behind the scenes with Hollywood's favorite superhero, Chris Hemsworth!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "TV Show Theories",
-      "topic": "The Mind-Blowing Theory Behind the 'Game of Thrones' Ending",
-      "hook": "You think you know the ending, but do you really?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming News",
-      "topic": "The Latest Leaks on the Next-Gen PlayStation Console",
-      "hook": "Get ready to level up your gaming experience with the latest PS5 rumors!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fitness Motivation",
-      "topic": "5-Minute Morning Workouts to Kickstart Your Day",
-      "hook": "Wake up, sweat, and conquer the day with these quick and effective workouts!",
-      "voice_style": "motivational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Movie Releases",
-      "topic": "The Most Anticipated Rom-Coms of the Summer",
-      "hook": "Who says romance is dead? Get ready to fall in love with these summer rom-coms!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Player Highlights",
-      "topic": "Steph Curry's Most Unbelievable Three-Pointers",
-      "hook": "The king of three-pointers is back, and he's more deadly than ever!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Netflix Show Reviews",
-      "topic": "Why 'The Umbrella Academy' is a Must-Watch for Superhero Fans",
-      "hook": "This dysfunctional superhero family will steal your heart and blow your mind!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "The Science Behind the Most Bizarre Weather Phenomena",
-      "hook": "From ball lightning to morning glories, explore the weirdest weather on Earth!",
-      "voice_style": "authoritative",
       "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Avril Lavigne Music Covers",
+      "topic": "Acoustic Pop-Punk: My Stripped-Down Version of Avril's 'Complicated'",
+      "hook": "You think you know 'Complicated'? Wait till you hear my raw, acoustic take that brings out a whole new layer of Avril's classic angst!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Hurricane Season Preparations",
-      "topic": "How to Create a Hurricane-Proof Emergency Plan for Your Family",
-      "hook": "Don't wait for disaster to strike, create a plan to keep your loved ones safe!",
+      "category": "Chris Hemsworth Workout Routines",
+      "topic": "Chris Hemsworth's 'Thor-Arm' Finisher: Building Biceps of the Gods",
+      "hook": "Want arms like Thor? Chris Hemsworth's secret weapon, his 'Arm Finisher' routine, is simpler than you think but brutal!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Olivia Dean Music Videos",
+      "topic": "The Hidden Easter Eggs and Storytelling in Olivia Dean's 'The Hardest Part'",
+      "hook": "Beyond the beautiful melody, did you catch the subtle cinematic genius and hidden messages woven into Olivia Dean's latest music video?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Traffic Survival Tips",
+      "topic": "Beat the Heat & Boredom: The Ultimate Summer Road Trip Entertainment Kit",
+      "hook": "Stuck in summer traffic? Don't just sit there! I've got the ultimate boredom-busting kit to make any standstill bearable!",
+      "voice_style": "upbeat",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News Updates",
+      "topic": "The Shocking Trade Deadline Rumor: NBA Superstar Headed West?",
+      "hook": "Is the NBA about to be shaken to its core? Whispers of a blockbuster trade sending an MVP candidate to the Western Conference are heating up!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Morning Commute Hacks for Rush Hour",
+      "topic": "The 'Coffee Shop Detour' - Turning Gridlock into a Productive Stop",
+      "hook": "Don't just sit in traffic, escape it! I'll show you how a strategic coffee shop pit stop can bypass a major bottleneck and save your sanity.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Cricket Highlights: Zim vs Ban Analysis",
+      "topic": "Zimbabwe's Fielding Blunders: The Costly Dropped Catches in the Second ODI",
+      "hook": "The scoreboard tells one story, but the truth is in the grass! Unpacking Zimbabwe's fielding woes that ultimately cost them the crucial Second ODI.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Kai Kamaka Fitness Challenges",
+      "topic": "Kai's 'No-Equipment Hotel Room Workout' for Travelers",
+      "hook": "Stuck in a hotel with no gym? Kai Kamaka shows you how to get a killer workout using just your body weight and a small space!",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Damian Pinas Soccer Skills",
+      "topic": "The 'Pinas Pass': How to Thread the Needle in Tight Spaces",
+      "hook": "Ever wonder how some players always find the perfect through-ball? Damian Pinas breaks down his 'threaded needle' passing technique!",
       "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Cate Blanchett Movie Reviews",
+      "topic": "Why Cate Blanchett's Performance in 'Elizabeth' Still Haunts Us Today",
+      "hook": "More than just a costume drama, Cate Blanchett's portrayal of Queen Elizabeth I redefined historical biopics. Let's dive deep into her masterful performance.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Avril Lavigne Music Covers",
+      "topic": "Punk Rock Meets Opera? My Unexpected Mashup of Avril's 'Sk8er Boi'",
+      "hook": "You've never heard 'Sk8er Boi' like this! Prepare for a wild mashup that takes Avril's iconic track into a genre you'd never expect.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Chris Hemsworth Workout Routines",
+      "topic": "Chris Hemsworth's 'God of Thunder' Core Workout for Shredded Abs",
+      "hook": "Think Thor only works his arms? Chris Hemsworth's secret to that god-like physique is his insane core routine. Get ready to feel the burn!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Olivia Dean Music Videos",
+      "topic": "Decoding the Aesthetic & Symbolism in Olivia Dean's 'Dive'",
+      "hook": "Olivia Dean's 'Dive' isn't just a song, it's a visual masterpiece. Let's unpack the stunning symbolism and vibrant aesthetics that tell its deeper story.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Traffic Survival Tips",
+      "topic": "The 'Audiobook Escape': How to Make Summer Traffic Fly By",
+      "hook": "Stuck in a summer traffic jam that won't move? Don't despair! I've got the ultimate brain hack to make those hours disappear: the perfect audiobook strategy.",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Sports News",
-      "topic": "The Impact of Social Media on Modern Sports Culture",
-      "hook": "From trash talk to fan engagement, how social media is changing the game!",
+      "category": "Sports News Updates",
+      "topic": "The Unseen Data: Why This Underdog Team is Dominating Their League",
+      "hook": "Everyone's surprised by their win streak, but the stats tell a different story. I'm revealing the hidden data points that show why this underdog team is a true contender!",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Interviews",
-      "topic": "Exclusive Interview with Taylor Swift on her Latest Album",
-      "hook": "Go behind the scenes with the global superstar, Taylor Swift!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "TV Show Theories",
-      "topic": "The Shocking Theory Behind the 'Westworld' Universe",
-      "hook": "You think you know the truth, but do you really?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming News",
-      "topic": "The Latest Updates on the Next-Gen Xbox Console",
-      "hook": "Get ready to level up your gaming experience with the latest Xbox rumors!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fitness Motivation",
-      "topic": "The Benefits of Morning Yoga for Mental Health",
-      "hook": "Start your day with a clear mind and a strong body, with the power of morning yoga!",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
-    },
-    {
-      "category": "Summer Movie Releases",
-      "topic": "The Most Anticipated Sci-Fi Movies of the Summer",
-      "hook": "Blast off into the unknown with these mind-blowing sci-fi movies!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
