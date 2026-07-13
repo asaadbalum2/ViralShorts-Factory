@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-07-12T07:41:00.958480",
-  "valid_until": "2026-07-12T23:59:00.958490",
+  "generated_at": "2026-07-13T08:32:25.312708",
+  "valid_until": "2026-07-13T23:59:25.312745",
   "categories": [
-    "Wildlife Encounters",
-    "US Politics",
-    "News Commentary",
-    "Summer Safety Tips",
-    "Social Media Platform Reviews",
-    "Accounting and Finance",
-    "Streaming Service Hacks",
-    "Outdoor Adventures",
-    "Bear Attack Survival",
-    " Politician Interviews",
-    "Truth Social vs Other Platforms",
-    "Netflix Worth the Cost?",
-    "Associated Press News Updates",
-    "Senate Updates with Chuck Grassley and Mitch McConnell",
-    "Xero Accounting Tutorials"
+    "iPhone 18 Pro Unboxing",
+    "Summer Sports Highlights",
+    "Yoga Challenges",
+    "Gaming Tournament Updates",
+    "Billboard Music News",
+    "RollingStone Exclusive Interviews",
+    "United Airlines Travel Hacks",
+    "Event Planning Tips",
+    "Sports Workout Routines",
+    "Apple iPhone 18 Pro Reviews",
+    "Gaming Walkthroughs",
+    "Yoga for Beginners",
+    "Current Events Recap",
+    "Summer Event Coverage",
+    "Gaming News and Updates"
   ],
   "concepts": [
     {
-      "category": "Wildlife Encounters",
-      "topic": "Octopus Intelligence",
-      "hook": "You won't believe what happened when I put an octopus in a puzzle cage!",
+      "category": "iPhone 18 Pro Unboxing",
+      "topic": "First Look at iPhone 18 Pro's New Camera Features",
+      "hook": "You won't believe the insane zoom capabilities of the new iPhone 18 Pro!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "US Politics",
-      "topic": "Green New Deal Analysis",
-      "hook": "The shocking truth about the Green New Deal that nobody's talking about",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "News Commentary",
-      "topic": "Social Media Regulation",
-      "hook": "The government's plan to regulate social media will change everything, but is it too late?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Summer Safety Tips",
-      "topic": "Beach Umbrella Safety",
-      "hook": "The hidden danger lurking in your beach umbrella that could ruin your summer",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Media Platform Reviews",
-      "topic": "TikTok vs Instagram Reels",
-      "hook": "The ultimate showdown: which short-form video platform reigns supreme?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Accounting and Finance",
-      "topic": "Cryptocurrency Taxation",
-      "hook": "The tax loophole that could save cryptocurrency investors thousands, but not for long",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Streaming Service Hacks",
-      "topic": "Netflix Secret Codes",
-      "hook": "Unlock the secret world of Netflix with these hidden codes you never knew existed",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Outdoor Adventures",
-      "topic": "Hiking the Appalachian Trail",
-      "hook": "What it's really like to hike the entire Appalachian Trail, from the good to the bad",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Bear Attack Survival",
-      "topic": "Grizzly Bear Defense",
-      "hook": "The one thing you must do to survive a grizzly bear attack, but most people don't know",
+      "category": "Summer Sports Highlights",
+      "topic": "Top 5 Most Epic Volleyball Spikes of the Season",
+      "hook": "Get ready for the most jaw-dropping volleyball spikes that will leave you speechless!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Politician Interviews",
-      "topic": "Interview with a Young Mayor",
-      "hook": "Meet the 25-year-old mayor who's changing the face of American politics, one town at a time",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Wildlife Encounters",
-      "topic": "Shark Cage Diving",
-      "hook": "I went shark cage diving and what happened next will haunt me forever",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
+      "category": "Yoga Challenges",
+      "topic": "Can You Master the Impossible 'Scorpion Pose' in 30 Days?",
+      "hook": "Take the ultimate yoga challenge and transform your body in just one month!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "US Politics",
-      "topic": "Voter Suppression Laws",
-      "hook": "The alarming trend of voter suppression laws that could change the course of American history",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "News Commentary",
-      "topic": "Climate Change Protests",
-      "hook": "The surprising reason why climate change protests are working, but not for the reason you think",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Summer Safety Tips",
-      "topic": "Pool Safety for Kids",
-      "hook": "The hidden pool safety hazard that's putting kids' lives at risk, and how to prevent it",
+      "category": "Gaming Tournament Updates",
+      "topic": "Exclusive Interview with the Winner of the Fortnite World Cup",
+      "hook": "What does it take to become a gaming champion? Hear from the winner themselves!",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Billboard Music News",
+      "topic": "The Rise of Hyperpop: How This New Genre is Taking Over the Music Scene",
+      "hook": "What's behind the sudden surge of hyperpop and which artists are leading the charge?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Social Media Platform Reviews",
-      "topic": "YouTube vs Twitch",
-      "hook": "The battle for live streaming supremacy: YouTube vs Twitch, which one comes out on top?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "RollingStone Exclusive Interviews",
+      "topic": "The Untold Story of The Beatles' Most Iconic Song",
+      "hook": "Uncover the fascinating story behind the creation of The Beatles' most beloved hit!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Accounting and Finance",
-      "topic": "Tax Benefits for Entrepreneurs",
-      "hook": "The tax benefits that entrepreneurs are missing out on, and how to claim them",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Streaming Service Hacks",
-      "topic": "Amazon Prime Perks",
-      "hook": "The secret Amazon Prime perks you never knew existed, but will change your life",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "United Airlines Travel Hacks",
+      "topic": "How to Score a Free First-Class Upgrade on Your Next Flight",
+      "hook": "Want to fly first class without breaking the bank? Here's the secret to getting upgraded for free!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Outdoor Adventures",
-      "topic": "Rock Climbing for Beginners",
-      "hook": "What it takes to become a rock climbing pro, and how to get started",
-      "voice_style": "friendly",
+      "category": "Event Planning Tips",
+      "topic": "The Ultimate Guide to Planning a Stress-Free Wedding in 6 Weeks",
+      "hook": "Can you really plan a dream wedding in just 6 weeks? Yes, and here's how!",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Bear Attack Survival",
-      "topic": "Black Bear Defense",
-      "hook": "The surprising way to defend yourself against a black bear attack, and why it works",
+      "category": "Sports Workout Routines",
+      "topic": "The Exact Workout Routine of an NFL Player: Get Ready to Sweat!",
+      "hook": "Want to train like a pro athlete? Follow this intense workout routine used by NFL players!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Apple iPhone 18 Pro Reviews",
+      "topic": "Is the iPhone 18 Pro Worth the Upgrade? Honest Review After 30 Days",
+      "hook": "Should you upgrade to the new iPhone 18 Pro? Find out the truth after 30 days of use!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Sports Highlights",
+      "topic": "The Most Thrilling Moments from the Recent Surfing Competition",
+      "hook": "Catch the biggest waves and most heart-stopping wipes from the latest surfing competition!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Politician Interviews",
-      "topic": "Interview with a Presidential Candidate",
-      "hook": "I sat down with a presidential candidate and what they said about the future of America will surprise you",
+      "category": "Yoga Challenges",
+      "topic": "Transform Your Body with This 10-Minute Morning Yoga Routine",
+      "hook": "Start your day with this quick and powerful yoga routine that will change your life!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 42
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming Tournament Updates",
+      "topic": "The Biggest Upsets in Esports History: What Went Wrong?",
+      "hook": "Relive the most shocking upsets in esports history and find out what led to these stunning defeats!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Billboard Music News",
+      "topic": "The Resurgence of 90s Music: Why Millennials Are Obsessed with Retro Sounds",
+      "hook": "What's behind the sudden nostalgia for 90s music and which artists are leading the revival?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "RollingStone Exclusive Interviews",
+      "topic": "The Real Story Behind the Creation of Nirvana's Iconic Album",
+      "hook": "Uncover the fascinating story behind the making of Nirvana's most iconic album!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "United Airlines Travel Hacks",
+      "topic": "How to Avoid Long Lines at the Airport with These Simple Tips",
+      "hook": "Tired of waiting in line at the airport? Learn the secrets to skipping the queues and flying stress-free!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Event Planning Tips",
+      "topic": "The Top 5 Wedding Decor Trends to Watch Out for This Year",
+      "hook": "Stay ahead of the curve with the latest wedding decor trends that will make your special day unforgettable!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Workout Routines",
+      "topic": "The Fitness Routine of a Professional Soccer Player: Get Ready to Train Like a Pro",
+      "hook": "Want to train like a soccer superstar? Follow this intense workout routine used by the pros!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Apple iPhone 18 Pro Reviews",
+      "topic": "iPhone 18 Pro vs. Samsung Galaxy: Which Flagship Phone Reigns Supreme?",
+      "hook": "Which smartphone is the ultimate champion? Find out in this epic showdown between iPhone 18 Pro and Samsung Galaxy!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "iPhone 18 Pro Unboxing",
+      "topic": "Unboxing the iPhone 18 Pro: What's Inside the Box?",
+      "hook": "What's inside the box of the brand-new iPhone 18 Pro? Let's unbox it and find out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming Tournament Updates",
+      "topic": "The Road to the Championship: Exclusive Interview with a Top Gamer",
+      "hook": "What does it take to become a gaming champion? Hear from a top gamer themselves!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
