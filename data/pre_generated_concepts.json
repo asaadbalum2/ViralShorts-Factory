@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-07-14T07:25:51.584765",
-  "valid_until": "2026-07-14T23:59:51.584774",
+  "generated_at": "2026-07-15T07:28:50.991415",
+  "valid_until": "2026-07-15T23:59:50.991424",
   "categories": [
-    "Summer Fashion Hacks with H&M",
-    "Heat Dome Explainers and Safety Tips",
-    "Tennis Highlights and Scores",
-    "Influencer Marketing Behind-the-Scenes",
-    "Netflix Movie Reviews and Recaps",
-    "Global News Updates (notizie del mondo)",
-    "Stock Market Analysis and Updates",
-    "Weather Forecasting (m\u00e9t\u00e9o demain)",
-    "Seasonal Style Inspiration",
-    "Current Event Commentary and Discussion",
-    "Social Media Trends and Challenges",
-    "Evergreen Productivity Hacks for Summer",
-    "Entertainment News and Gossip",
-    "Fitness and Wellness for Hot Weather",
-    "Personal Finance and Investing Tips"
+    "Space Exploration Challenges",
+    "Climate Change Awareness",
+    "Tomorrow's Weather Forecast",
+    "Netflix Movie Reviews",
+    "Disneyland Hacks and Tips",
+    "Cryptocurrency Trading Tips",
+    "Xero Accounting Tutorials",
+    "NBA Standings Analysis",
+    "Sustainable Living",
+    "Summer Vacation Ideas",
+    "New Movie Releases",
+    "Personal Finance for Millennials",
+    "Eco-Friendly Products",
+    "Social Media Challenges",
+    "Future Tech Innovations"
   ],
   "concepts": [
     {
-      "category": "Summer Fashion Hacks with H&M",
-      "topic": "Transforming an H&M oversized shirt into 3 different summer outfits",
-      "hook": "Don't just wear that oversized H&M shirt, TRANSFORM it! Here's how to get 3 completely different looks for your summer wardrobe.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Space Exploration Challenges",
+      "topic": "Overcoming Radiation Exposure in Deep Space",
+      "hook": "You won't believe the deadly threat astronauts face on their journey to Mars!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Heat Dome Explainers and Safety Tips",
-      "topic": "5 uncommon signs of heat stroke you might miss",
-      "hook": "Feeling a little off? It might be more than just the heat! These 5 subtle signs of heat stroke are often missed, and could save a life.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Climate Change Awareness",
+      "topic": "The Impact of Microplastics on Marine Life",
+      "hook": "What's lurking in your favorite seafood that could change everything?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Tennis Highlights and Scores",
-      "topic": "Biggest upsets from the first week of Wimbledon 2024",
-      "hook": "Wimbledon's first week was a rollercoaster! Did your favorite make it? Let's dive into the biggest shocks and unexpected wins that rocked the courts.",
-      "voice_style": "Dramatic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Influencer Marketing Behind-the-Scenes",
-      "topic": "Unboxing a *secret* brand PR package: What creators actually get",
-      "hook": "Ever wonder what's really inside those influencer PR packages? Today, I'm unboxing one from a brand you'll recognize, and you might be surprised by what's *not* in it!",
-      "voice_style": "Friendly",
-      "music_mood": "Mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Netflix Movie Reviews and Recaps",
-      "topic": "Is 'The Midnight Library' movie adaptation a hit or miss?",
-      "hook": "They finally adapted 'The Midnight Library' for Netflix! But does it capture the book's magic, or did they miss the mark? Let's break it down.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
+      "category": "Tomorrow's Weather Forecast",
+      "topic": "How AI Predicts Severe Storms",
+      "hook": "Can machines really predict the weather better than humans?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Global News Updates (notizie del mondo)",
-      "topic": "Why the recent G7 summit decisions matter for your wallet",
-      "hook": "The G7 leaders just wrapped up, but what they discussed could seriously impact your daily life and wallet. Here's the TLDR on the summit's biggest takeaways.",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
+      "category": "Netflix Movie Reviews",
+      "topic": "Unpacking the Symbolism in 'The Matrix'",
+      "hook": "You think you know 'The Matrix', but have you uncovered its deepest secrets?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Analysis and Updates",
-      "topic": "The AI stock that just crashed 15% overnight \u2013 buy the dip or run?",
-      "hook": "An AI giant just took a massive hit, dropping 15% overnight! Is this a golden opportunity to buy low, or a warning sign to stay away? Let's analyze.",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
+      "category": "Disneyland Hacks and Tips",
+      "topic": "Maximizing Your Time with a Strategic Park Plan",
+      "hook": "The secret to visiting every ride in Disneyland in just one day - revealed!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Weather Forecasting (m\u00e9t\u00e9o demain)",
-      "topic": "Decoding tomorrow's coastal fog: Why it happens and how long it lasts",
-      "hook": "Waking up to a blanket of fog tomorrow? Don't grab your umbrella just yet! I'll explain exactly why coastal fog forms, and when you can expect it to clear up.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Cryptocurrency Trading Tips",
+      "topic": "Identifying Trends with Technical Analysis",
+      "hook": "Want to predict the next Bitcoin surge? Look for these signs!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Seasonal Style Inspiration",
-      "topic": "Autumn Wardrobe Refresh: 3 essential pieces you NEED to transition from summer",
-      "hook": "Summer's great, but autumn style is calling! Don't get caught off guard. Here are my top 3 essential pieces to effortlessly transition your wardrobe for fall.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Xero Accounting Tutorials",
+      "topic": "Streamlining Invoicing for Small Businesses",
+      "hook": "Are you losing money due to inefficient invoicing? Fix it in 5 minutes!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Current Event Commentary and Discussion",
-      "topic": "The surprising truth behind the rise of 'quiet quitting' in major corporations",
-      "hook": "Quiet quitting isn't just a trend anymore; it's reshaping corporate America. But what's *really* driving this movement, and are companies finally listening?",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 50
+      "category": "NBA Standings Analysis",
+      "topic": "The Impact of Player Injuries on Team Performance",
+      "hook": "One injury that could change the course of the NBA season - and it's not who you think!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "Summer Fashion Hacks with H&M",
-      "topic": "DIY no-sew H&M swimsuit cover-up using a scarf",
-      "hook": "Forget expensive cover-ups! I'm showing you how to turn any H&M scarf into a chic, no-sew swimsuit cover-up in under 60 seconds. Seriously, it's that easy!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Sustainable Living",
+      "topic": "Reducing Food Waste with Meal Planning",
+      "hook": "The simple habit that can cut your environmental impact in half!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Heat Dome Explainers and Safety Tips",
-      "topic": "Emergency hydration hacks: What to drink when you're out of water and power",
-      "hook": "Power out? No bottled water? Don't panic! In extreme heat, knowing these emergency hydration hacks could be a lifesaver when resources are scarce.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Summer Vacation Ideas",
+      "topic": "Exploring Hidden Gems in the Greek Islands",
+      "hook": "Ditch the crowds and discover the secret paradise you never knew existed!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Tennis Highlights and Scores",
-      "topic": "The most controversial call of the French Open that everyone's still talking about",
-      "hook": "Still reeling from *that* call at the French Open? It sparked outrage and changed the game! Let's rewatch the moment and break down the controversy.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Space Exploration Challenges",
+      "topic": "The Psychological Effects of Long-Term Space Travel",
+      "hook": "What happens to the human mind when it's isolated in space for years?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Influencer Marketing Behind-the-Scenes",
-      "topic": "How I landed my first PAID brand deal (and the mistakes I made)",
-      "hook": "Getting that first paid brand deal felt impossible! Today, I'm spilling all the tea on how I finally did it, including the huge mistakes I made along the way.",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Netflix Movie Reviews and Recaps",
-      "topic": "Breaking down the shocking twist ending of Netflix's new thriller 'The Glitch'",
-      "hook": "Just finished 'The Glitch' on Netflix and your mind is BLOWN? Let's talk about that insane twist ending, and what it *really* means for the characters.",
-      "voice_style": "Energetic",
-      "music_mood": "Mysterious",
+      "category": "Climate Change Awareness",
+      "topic": "The Role of Individual Actions in Reducing Carbon Footprint",
+      "hook": "Can your daily choices really make a difference in the fight against climate change?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Global News Updates (notizie del mondo)",
-      "topic": "Why the conflict in [Specific Region, e.g., Sudan] is getting almost no media attention",
-      "hook": "While some conflicts dominate headlines, a humanitarian crisis is unfolding largely ignored. Why isn't anyone talking about what's happening in [Specific Region]?",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
+      "category": "Tomorrow's Weather Forecast",
+      "topic": "Understanding the Science Behind Weather Patterns",
+      "hook": "Ever wondered how meteorologists predict the weather? It's not magic!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Analysis and Updates",
-      "topic": "Beyond NVIDIA: 3 under-the-radar semiconductor stocks poised for growth",
-      "hook": "Everyone's talking NVIDIA, but the semiconductor sector has hidden gems! I'm revealing 3 lesser-known stocks that could be the next big winners.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
+      "category": "Netflix Movie Reviews",
+      "topic": "Decoding the Themes in 'Black Mirror'",
+      "hook": "What 'Black Mirror' is really telling us about our darkest selves...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Disneyland Hacks and Tips",
+      "topic": "Saving Money with Strategic Snacking",
+      "hook": "The $10 Disneyland hack that will save you hundreds on food!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Weather Forecasting (m\u00e9t\u00e9o demain)",
-      "topic": "The science behind tomorrow's rare 'fire rainbow' phenomenon",
-      "hook": "Get ready for a visual treat tomorrow! We're expecting a 'fire rainbow' \u2013 no, it's not actually fire! I'll explain the rare atmospheric conditions creating this stunning optical illusion.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
+      "category": "Cryptocurrency Trading Tips",
+      "topic": "Avoiding Common Mistakes for Beginners",
+      "hook": "Don't fall for these rookie cryptocurrency mistakes that can cost you everything!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Seasonal Style Inspiration",
-      "topic": "Capsule wardrobe challenge: 5 pieces, 7 fall outfits",
-      "hook": "Struggling with 'nothing to wear' this fall? I'm taking on the ultimate capsule wardrobe challenge: 5 versatile pieces, 7 completely different autumn outfits. You won't believe it!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
+      "category": "Xero Accounting Tutorials",
+      "topic": "Mastering Budgeting for Small Businesses",
+      "hook": "The budgeting secret that can turn any small business into a success story!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "Current Event Commentary and Discussion",
-      "topic": "The real reason concert tickets are so expensive now (it's not just bots!)",
-      "hook": "Trying to score concert tickets feels impossible and drains your bank account. But it's not just scalpers and bots. Let's uncover the true, complex reasons behind skyrocketing ticket prices.",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
+      "category": "NBA Standings Analysis",
+      "topic": "The Impact of Coaching Changes on Team Performance",
+      "hook": "How a simple coaching switch can turn a losing team into champions!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sustainable Living",
+      "topic": "The Benefits of Minimalist Living",
+      "hook": "The shocking way minimalist living can improve your mental health!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Vacation Ideas",
+      "topic": "Discovering Off-the-Beaten-Path Destinations in Europe",
+      "hook": "Escape the tourist traps and uncover the real Europe!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
