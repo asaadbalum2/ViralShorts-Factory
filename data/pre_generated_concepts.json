@@ -1,190 +1,241 @@
 {
-  "generated_at": "2026-07-15T07:28:50.991415",
-  "valid_until": "2026-07-15T23:59:50.991424",
+  "generated_at": "2026-07-16T07:35:45.944248",
+  "valid_until": "2026-07-16T23:59:45.944256",
   "categories": [
-    "Space Exploration Challenges",
-    "Climate Change Awareness",
-    "Tomorrow's Weather Forecast",
-    "Netflix Movie Reviews",
-    "Disneyland Hacks and Tips",
-    "Cryptocurrency Trading Tips",
-    "Xero Accounting Tutorials",
-    "NBA Standings Analysis",
-    "Sustainable Living",
-    "Summer Vacation Ideas",
-    "New Movie Releases",
-    "Personal Finance for Millennials",
-    "Eco-Friendly Products",
-    "Social Media Challenges",
-    "Future Tech Innovations"
+    "US Midterm Election Analysis",
+    "Powerball Jackpot Reactions",
+    "Jennifer Lawrence Movie Reviews",
+    "TSMC Stock Market Updates",
+    "Golf Tips with Bryson DeChambeau",
+    "Korean Culture with Hyunjung Lee",
+    "Plummer Home Improvement Hacks",
+    "Summer Sports Highlights",
+    "Comedy Skits with Hal Williams",
+    "Current Event Explainers",
+    "Viral Dance Challenges",
+    "Stock Market Trends",
+    "Lifestyle Hacks for Summer",
+    "Movie and TV Show Reviews",
+    "Sports News and Updates"
   ],
   "concepts": [
     {
-      "category": "Space Exploration Challenges",
-      "topic": "Overcoming Radiation Exposure in Deep Space",
-      "hook": "You won't believe the deadly threat astronauts face on their journey to Mars!",
+      "category": "US Midterm Election Analysis",
+      "topic": "The Impact of Young Voters on Election Outcomes",
+      "hook": "Could 18-25 year olds be the deciding factor in the next election?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Powerball Jackpot Reactions",
+      "topic": "The Largest Powerball Jackpot Winners in History",
+      "hook": "You won't believe the life-changing amounts these lucky winners took home!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Jennifer Lawrence Movie Reviews",
+      "topic": "A Deep Dive into Jennifer Lawrence's Performance in 'Silver Linings Playbook'",
+      "hook": "What makes Jennifer Lawrence's Oscar-winning performance so unforgettable?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "TSMC Stock Market Updates",
+      "topic": "How TSMC's Chip Production Impacts the Global Tech Industry",
+      "hook": "The little-known company that holds the key to the world's tech future",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Golf Tips with Bryson DeChambeau",
+      "topic": "Mastering the Art of Long-Distance Driving with Bryson DeChambeau",
+      "hook": "Want to hit the ball like a pro? Bryson DeChambeau shares his secrets!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Korean Culture with Hyunjung Lee",
+      "topic": "Exploring the Vibrant World of K-Pop Dance with Hyunjung Lee",
+      "hook": "Get ready to move your body to the rhythm of K-Pop!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Plummer Home Improvement Hacks",
+      "topic": "10-Minute DIY Fixes to Save You Thousands of Dollars",
+      "hook": "Don't call a plumber just yet! Try these quick and easy DIY fixes first",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Sports Highlights",
+      "topic": "The Most Epic Comebacks in Sports History",
+      "hook": "You won't believe the incredible turnarounds that left fans on the edge of their seats!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Climate Change Awareness",
-      "topic": "The Impact of Microplastics on Marine Life",
-      "hook": "What's lurking in your favorite seafood that could change everything?",
+      "category": "Comedy Skits with Hal Williams",
+      "topic": "The Funniest Impressions of Famous Politicians",
+      "hook": "Hal Williams is back with his hilarious takes on the world's most famous leaders!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Current Event Explainers",
+      "topic": "Understanding the Impact of Climate Change on Global Food Systems",
+      "hook": "The alarming truth about how climate change is affecting what's on your plate",
       "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "US Midterm Election Analysis",
+      "topic": "The Role of Social Media in Shaping Election Outcomes",
+      "hook": "Can social media really swing an election? Let's take a closer look",
+      "voice_style": "calm",
       "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Tomorrow's Weather Forecast",
-      "topic": "How AI Predicts Severe Storms",
-      "hook": "Can machines really predict the weather better than humans?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Netflix Movie Reviews",
-      "topic": "Unpacking the Symbolism in 'The Matrix'",
-      "hook": "You think you know 'The Matrix', but have you uncovered its deepest secrets?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Disneyland Hacks and Tips",
-      "topic": "Maximizing Your Time with a Strategic Park Plan",
-      "hook": "The secret to visiting every ride in Disneyland in just one day - revealed!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Cryptocurrency Trading Tips",
-      "topic": "Identifying Trends with Technical Analysis",
-      "hook": "Want to predict the next Bitcoin surge? Look for these signs!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Xero Accounting Tutorials",
-      "topic": "Streamlining Invoicing for Small Businesses",
-      "hook": "Are you losing money due to inefficient invoicing? Fix it in 5 minutes!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "NBA Standings Analysis",
-      "topic": "The Impact of Player Injuries on Team Performance",
-      "hook": "One injury that could change the course of the NBA season - and it's not who you think!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sustainable Living",
-      "topic": "Reducing Food Waste with Meal Planning",
-      "hook": "The simple habit that can cut your environmental impact in half!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Vacation Ideas",
-      "topic": "Exploring Hidden Gems in the Greek Islands",
-      "hook": "Ditch the crowds and discover the secret paradise you never knew existed!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Space Exploration Challenges",
-      "topic": "The Psychological Effects of Long-Term Space Travel",
-      "hook": "What happens to the human mind when it's isolated in space for years?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Climate Change Awareness",
-      "topic": "The Role of Individual Actions in Reducing Carbon Footprint",
-      "hook": "Can your daily choices really make a difference in the fight against climate change?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Tomorrow's Weather Forecast",
-      "topic": "Understanding the Science Behind Weather Patterns",
-      "hook": "Ever wondered how meteorologists predict the weather? It's not magic!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Netflix Movie Reviews",
-      "topic": "Decoding the Themes in 'Black Mirror'",
-      "hook": "What 'Black Mirror' is really telling us about our darkest selves...",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Disneyland Hacks and Tips",
-      "topic": "Saving Money with Strategic Snacking",
-      "hook": "The $10 Disneyland hack that will save you hundreds on food!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Cryptocurrency Trading Tips",
-      "topic": "Avoiding Common Mistakes for Beginners",
-      "hook": "Don't fall for these rookie cryptocurrency mistakes that can cost you everything!",
-      "voice_style": "authoritative",
+      "category": "Powerball Jackpot Reactions",
+      "topic": "What Happens When You Win the Powerball Jackpot?",
+      "hook": "From rags to riches: the shocking truth about life after winning the lottery",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Xero Accounting Tutorials",
-      "topic": "Mastering Budgeting for Small Businesses",
-      "hook": "The budgeting secret that can turn any small business into a success story!",
-      "voice_style": "calm",
+      "category": "Jennifer Lawrence Movie Reviews",
+      "topic": "Unpacking the Themes of Motherhood in 'Mother!'",
+      "hook": "Jennifer Lawrence's most thought-provoking performance yet - what does it say about motherhood?",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "TSMC Stock Market Updates",
+      "topic": "The Future of Chip Production: Trends to Watch",
+      "hook": "The chip shortage is just the beginning - what's next for the tech industry?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Golf Tips with Bryson DeChambeau",
+      "topic": "The Science Behind Bryson DeChambeau's Unconventional Swing",
+      "hook": "The secret to Bryson DeChambeau's record-breaking drives - it's not what you think!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "NBA Standings Analysis",
-      "topic": "The Impact of Coaching Changes on Team Performance",
-      "hook": "How a simple coaching switch can turn a losing team into champions!",
+      "category": "Korean Culture with Hyunjung Lee",
+      "topic": "A Beginner's Guide to Korean Cuisine with Hyunjung Lee",
+      "hook": "Get ready to indulge in the bold flavors of Korea - from spicy to sweet!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sustainable Living",
-      "topic": "The Benefits of Minimalist Living",
-      "hook": "The shocking way minimalist living can improve your mental health!",
+      "category": "Plummer Home Improvement Hacks",
+      "topic": "5 Simple DIY Projects to Increase Your Home's Value",
+      "hook": "Transform your space without breaking the bank - these DIY hacks will amaze you!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Sports Highlights",
+      "topic": "The Most Thrilling Finishes in Sports History",
+      "hook": "You won't believe the heart-stopping finishes that left fans on the edge of their seats!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits with Hal Williams",
+      "topic": "The Funniest Parodies of Famous Music Videos",
+      "hook": "Hal Williams is back with his hilarious takes on the most iconic music videos!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Summer Vacation Ideas",
-      "topic": "Discovering Off-the-Beaten-Path Destinations in Europe",
-      "hook": "Escape the tourist traps and uncover the real Europe!",
+      "category": "Current Event Explainers",
+      "topic": "Understanding the Impact of Artificial Intelligence on the Job Market",
+      "hook": "The future of work: how AI is changing the game and what it means for you",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "US Midterm Election Analysis",
+      "topic": "The Importance of Voter Turnout in Swing States",
+      "hook": "The surprising truth about which states will decide the next election",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Powerball Jackpot Reactions",
+      "topic": "The Unlikely Stories of Powerball Jackpot Winners",
+      "hook": "From janitors to CEOs - the incredible true stories of Powerball winners",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -192,69 +243,34 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
