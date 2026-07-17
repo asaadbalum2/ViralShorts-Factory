@@ -1,196 +1,188 @@
 {
-  "generated_at": "2026-07-16T07:35:45.944248",
-  "valid_until": "2026-07-16T23:59:45.944256",
+  "generated_at": "2026-07-17T07:33:14.653442",
+  "valid_until": "2026-07-17T23:59:14.653453",
   "categories": [
-    "US Midterm Election Analysis",
-    "Powerball Jackpot Reactions",
-    "Jennifer Lawrence Movie Reviews",
-    "TSMC Stock Market Updates",
-    "Golf Tips with Bryson DeChambeau",
-    "Korean Culture with Hyunjung Lee",
-    "Plummer Home Improvement Hacks",
-    "Summer Sports Highlights",
-    "Comedy Skits with Hal Williams",
-    "Current Event Explainers",
-    "Viral Dance Challenges",
-    "Stock Market Trends",
-    "Lifestyle Hacks for Summer",
-    "Movie and TV Show Reviews",
-    "Sports News and Updates"
+    "Flash Flood Safety Tips",
+    "Texas Travel Warnings",
+    "History's Most Devastating Floods",
+    "Veterans Benefits Explained",
+    "Robert Englund Horror Movie Clips",
+    "Kamar Williams Highlights",
+    "Money Saving Challenges",
+    "Gold Investment Advice",
+    "Flood Relief Efforts",
+    "R Language Programming Tutorials",
+    "Texas Flood Relief Donations",
+    "Veterans Sharing Their Stories",
+    "History of Texas Floods",
+    "Gold Price Predictions",
+    "Emergency Preparedness for Floods"
   ],
   "concepts": [
     {
-      "category": "US Midterm Election Analysis",
-      "topic": "The Impact of Young Voters on Election Outcomes",
-      "hook": "Could 18-25 year olds be the deciding factor in the next election?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Powerball Jackpot Reactions",
-      "topic": "The Largest Powerball Jackpot Winners in History",
-      "hook": "You won't believe the life-changing amounts these lucky winners took home!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Jennifer Lawrence Movie Reviews",
-      "topic": "A Deep Dive into Jennifer Lawrence's Performance in 'Silver Linings Playbook'",
-      "hook": "What makes Jennifer Lawrence's Oscar-winning performance so unforgettable?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "TSMC Stock Market Updates",
-      "topic": "How TSMC's Chip Production Impacts the Global Tech Industry",
-      "hook": "The little-known company that holds the key to the world's tech future",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Golf Tips with Bryson DeChambeau",
-      "topic": "Mastering the Art of Long-Distance Driving with Bryson DeChambeau",
-      "hook": "Want to hit the ball like a pro? Bryson DeChambeau shares his secrets!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Korean Culture with Hyunjung Lee",
-      "topic": "Exploring the Vibrant World of K-Pop Dance with Hyunjung Lee",
-      "hook": "Get ready to move your body to the rhythm of K-Pop!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Plummer Home Improvement Hacks",
-      "topic": "10-Minute DIY Fixes to Save You Thousands of Dollars",
-      "hook": "Don't call a plumber just yet! Try these quick and easy DIY fixes first",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Summer Sports Highlights",
-      "topic": "The Most Epic Comebacks in Sports History",
-      "hook": "You won't believe the incredible turnarounds that left fans on the edge of their seats!",
+      "category": "Flash Flood Safety Tips",
+      "topic": "How to Survive a Flash Flood in Your Vehicle",
+      "hook": "You're driving home from work when suddenly you're trapped in a wall of water!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits with Hal Williams",
-      "topic": "The Funniest Impressions of Famous Politicians",
-      "hook": "Hal Williams is back with his hilarious takes on the world's most famous leaders!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Texas Travel Warnings",
+      "topic": "The Most Flood-Prone Areas to Avoid in Texas",
+      "hook": "Don't get caught off guard in the Lone Star State!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Current Event Explainers",
-      "topic": "Understanding the Impact of Climate Change on Global Food Systems",
-      "hook": "The alarming truth about how climate change is affecting what's on your plate",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "US Midterm Election Analysis",
-      "topic": "The Role of Social Media in Shaping Election Outcomes",
-      "hook": "Can social media really swing an election? Let's take a closer look",
+      "category": "History's Most Devastating Floods",
+      "topic": "The Great Flood of 1927: A Disaster that Changed America",
+      "hook": "Imagine an entire city underwater, with no warning!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Powerball Jackpot Reactions",
-      "topic": "What Happens When You Win the Powerball Jackpot?",
-      "hook": "From rags to riches: the shocking truth about life after winning the lottery",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Jennifer Lawrence Movie Reviews",
-      "topic": "Unpacking the Themes of Motherhood in 'Mother!'",
-      "hook": "Jennifer Lawrence's most thought-provoking performance yet - what does it say about motherhood?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "TSMC Stock Market Updates",
-      "topic": "The Future of Chip Production: Trends to Watch",
-      "hook": "The chip shortage is just the beginning - what's next for the tech industry?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Veterans Benefits Explained",
+      "topic": "How to Claim Disability Benefits for Flood-Related Injuries",
+      "hook": "You served your country, now let your country serve you!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Golf Tips with Bryson DeChambeau",
-      "topic": "The Science Behind Bryson DeChambeau's Unconventional Swing",
-      "hook": "The secret to Bryson DeChambeau's record-breaking drives - it's not what you think!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Robert Englund Horror Movie Clips",
+      "topic": "The Top 5 Scariest Freddy Krueger Kills",
+      "hook": "One, two, Freddy's coming for you...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Korean Culture with Hyunjung Lee",
-      "topic": "A Beginner's Guide to Korean Cuisine with Hyunjung Lee",
-      "hook": "Get ready to indulge in the bold flavors of Korea - from spicy to sweet!",
+      "category": "Kamar Williams Highlights",
+      "topic": "The Most Epic Plays of Kamar Williams' College Football Career",
+      "hook": "Get ready for some jaw-dropping highlights!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Plummer Home Improvement Hacks",
-      "topic": "5 Simple DIY Projects to Increase Your Home's Value",
-      "hook": "Transform your space without breaking the bank - these DIY hacks will amaze you!",
+      "category": "Money Saving Challenges",
+      "topic": "The 30-Day No-Spend Challenge: Can You Handle It?",
+      "hook": "Are you brave enough to take the challenge?",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 50
+      "target_duration": 40
     },
     {
-      "category": "Summer Sports Highlights",
-      "topic": "The Most Thrilling Finishes in Sports History",
-      "hook": "You won't believe the heart-stopping finishes that left fans on the edge of their seats!",
-      "voice_style": "dramatic",
+      "category": "Gold Investment Advice",
+      "topic": "Why Gold is the Ultimate Safe-Haven Asset in Economic Downturns",
+      "hook": "Protect your wealth from the next market crash!",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits with Hal Williams",
-      "topic": "The Funniest Parodies of Famous Music Videos",
-      "hook": "Hal Williams is back with his hilarious takes on the most iconic music videos!",
-      "voice_style": "energetic",
+      "category": "Flood Relief Efforts",
+      "topic": "How to Volunteer for Flood Relief: A Step-by-Step Guide",
+      "hook": "Make a difference in the lives of flood victims today!",
+      "voice_style": "inspirational",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 50
     },
     {
-      "category": "Current Event Explainers",
-      "topic": "Understanding the Impact of Artificial Intelligence on the Job Market",
-      "hook": "The future of work: how AI is changing the game and what it means for you",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "US Midterm Election Analysis",
-      "topic": "The Importance of Voter Turnout in Swing States",
-      "hook": "The surprising truth about which states will decide the next election",
+      "category": "R Language Programming Tutorials",
+      "topic": "Introduction to R: Data Visualization for Beginners",
+      "hook": "Unlock the power of data visualization with R!",
       "voice_style": "calm",
-      "music_mood": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Flash Flood Safety Tips",
+      "topic": "The Importance of Having a Flood Emergency Kit",
+      "hook": "Don't wait until it's too late, prepare now!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Powerball Jackpot Reactions",
-      "topic": "The Unlikely Stories of Powerball Jackpot Winners",
-      "hook": "From janitors to CEOs - the incredible true stories of Powerball winners",
+      "category": "Texas Travel Warnings",
+      "topic": "The Dangers of Flash Flooding in Texas Hill Country",
+      "hook": "The beautiful hills of Texas can be deadly, beware!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "History's Most Devastating Floods",
+      "topic": "The Johnstown Flood of 1889: A Disaster that Shook America",
+      "hook": "Imagine a disaster that killed over 2,000 people in a matter of minutes!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Veterans Benefits Explained",
+      "topic": "How to Apply for Flood-Related Mental Health Benefits",
+      "hook": "You're not alone, get the help you deserve!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Robert Englund Horror Movie Clips",
+      "topic": "The Evolution of Freddy Krueger: From Nightmare to Icon",
+      "hook": "The nightmare on Elm Street just got a whole lot scarier!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Kamar Williams Highlights",
+      "topic": "Kamar Williams' Most Dominant Games: A Highlight Reel",
+      "hook": "Get ready to witness greatness on the field!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Money Saving Challenges",
+      "topic": "The 52-Week Savings Challenge: Can You Save $1,000?",
+      "hook": "Transform your financial future in just one year!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Gold Investment Advice",
+      "topic": "Why Gold is a Better Investment than Stocks in a Recession",
+      "hook": "Protect your wealth from market volatility!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Flood Relief Efforts",
+      "topic": "How to Donate to Flood Relief Efforts: A Guide",
+      "hook": "Every dollar counts, make a difference today!",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "R Language Programming Tutorials",
+      "topic": "Introduction to R: Data Manipulation for Beginners",
+      "hook": "Unlock the power of data manipulation with R!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Flash Flood Safety Tips",
+      "topic": "How to Stay Safe During a Flash Flood: Expert Advice",
+      "hook": "Stay one step ahead of the flood, stay alive!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
@@ -198,19 +190,14 @@
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
@@ -218,8 +205,23 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
@@ -229,48 +231,38 @@
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
