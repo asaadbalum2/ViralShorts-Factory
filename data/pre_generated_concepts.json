@@ -1,253 +1,210 @@
 {
-  "generated_at": "2026-07-17T07:33:14.653442",
-  "valid_until": "2026-07-17T23:59:14.653453",
+  "generated_at": "2026-07-18T07:14:01.113311",
+  "valid_until": "2026-07-18T23:59:01.113319",
   "categories": [
-    "Flash Flood Safety Tips",
-    "Texas Travel Warnings",
-    "History's Most Devastating Floods",
-    "Veterans Benefits Explained",
-    "Robert Englund Horror Movie Clips",
-    "Kamar Williams Highlights",
-    "Money Saving Challenges",
-    "Gold Investment Advice",
-    "Flood Relief Efforts",
-    "R Language Programming Tutorials",
-    "Texas Flood Relief Donations",
-    "Veterans Sharing Their Stories",
-    "History of Texas Floods",
-    "Gold Price Predictions",
-    "Emergency Preparedness for Floods"
+    "Surreal Survival Challenges Inspired by The Hunger Games",
+    "Uncovering Ancient Mysteries: Was the Trojan War Real?",
+    "FC Ju\u00e1rez vs Club Puebla Match Highlights and Analysis",
+    "Where Are They Now: Updates on Emily Willis and Other Child Stars",
+    "Wildlife Encounters: Idaho Bear Home Break-In and More",
+    "College Sports: Cal Raleigh and Other Emerging Athletes",
+    "Severe Weather Alerts: NYC Tornado Warning and Safety Tips",
+    "Sean Pedulla: Basketball Highlights and Interview",
+    "Summer Storm Safety Precautions and Emergency Preparedness",
+    "Dystopian Fiction: The Hunger Games and Beyond",
+    "Ancient History Explained: The Trojan War and Its Impact",
+    "Sports News and Updates: FC Ju\u00e1rez, Club Puebla, and More",
+    "Wildlife Conservation: Bear Safety and Coexisting with Nature",
+    "Emerging Athletes: Cal Raleigh, Sean Pedulla, and Other Rising Stars",
+    "Disaster Preparedness: Tornado Warnings, Emergency Kits, and More"
   ],
   "concepts": [
     {
-      "category": "Flash Flood Safety Tips",
-      "topic": "How to Survive a Flash Flood in Your Vehicle",
-      "hook": "You're driving home from work when suddenly you're trapped in a wall of water!",
+      "category": "Surreal Survival Challenges Inspired by The Hunger Games",
+      "topic": "Surviving a challenge where the arena is a giant, sentient board game",
+      "hook": "Imagine waking up, and the floor *is* the game board. Every step a new, deadly rule. Could you survive the 'Sentient Labyrinth'?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Texas Travel Warnings",
-      "topic": "The Most Flood-Prone Areas to Avoid in Texas",
-      "hook": "Don't get caught off guard in the Lone Star State!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "History's Most Devastating Floods",
-      "topic": "The Great Flood of 1927: A Disaster that Changed America",
-      "hook": "Imagine an entire city underwater, with no warning!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Veterans Benefits Explained",
-      "topic": "How to Claim Disability Benefits for Flood-Related Injuries",
-      "hook": "You served your country, now let your country serve you!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Robert Englund Horror Movie Clips",
-      "topic": "The Top 5 Scariest Freddy Krueger Kills",
-      "hook": "One, two, Freddy's coming for you...",
+      "category": "Uncovering Ancient Mysteries: Was the Trojan War Real?",
+      "topic": "The latest archaeological finds linking Troy's layers to Homer's epic",
+      "hook": "Did they *really* find proof of the Trojan Horse? New digs at Hisarlik are shaking up history!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Kamar Williams Highlights",
-      "topic": "The Most Epic Plays of Kamar Williams' College Football Career",
-      "hook": "Get ready for some jaw-dropping highlights!",
+      "category": "FC Ju\u00e1rez vs Club Puebla Match Highlights and Analysis",
+      "topic": "Top 3 game-changing moments from the last FC Ju\u00e1rez vs Club Puebla match",
+      "hook": "You won't believe the last-minute drama from Ju\u00e1rez vs Puebla! Was it a fluke, or pure strategy?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Money Saving Challenges",
-      "topic": "The 30-Day No-Spend Challenge: Can You Handle It?",
-      "hook": "Are you brave enough to take the challenge?",
-      "voice_style": "friendly",
+      "category": "Where Are They Now: Updates on Emily Willis and Other Child Stars",
+      "topic": "The career trajectory of Emily Willis post-childhood stardom: What's next for the former child star?",
+      "hook": "From child star to... what now? We're diving into Emily Willis's unexpected journey after the spotlight faded.",
+      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Gold Investment Advice",
-      "topic": "Why Gold is the Ultimate Safe-Haven Asset in Economic Downturns",
-      "hook": "Protect your wealth from the next market crash!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Flood Relief Efforts",
-      "topic": "How to Volunteer for Flood Relief: A Step-by-Step Guide",
-      "hook": "Make a difference in the lives of flood victims today!",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "R Language Programming Tutorials",
-      "topic": "Introduction to R: Data Visualization for Beginners",
-      "hook": "Unlock the power of data visualization with R!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Flash Flood Safety Tips",
-      "topic": "The Importance of Having a Flood Emergency Kit",
-      "hook": "Don't wait until it's too late, prepare now!",
+      "category": "Wildlife Encounters: Idaho Bear Home Break-In and More",
+      "topic": "Viral footage analysis: The Idaho bear's surprising method of entry and homeowner reactions",
+      "hook": "Forget knocking! This Idaho bear had a *very* direct approach to visiting a home. What would YOU do?",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Texas Travel Warnings",
-      "topic": "The Dangers of Flash Flooding in Texas Hill Country",
-      "hook": "The beautiful hills of Texas can be deadly, beware!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "History's Most Devastating Floods",
-      "topic": "The Johnstown Flood of 1889: A Disaster that Shook America",
-      "hook": "Imagine a disaster that killed over 2,000 people in a matter of minutes!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Veterans Benefits Explained",
-      "topic": "How to Apply for Flood-Related Mental Health Benefits",
-      "hook": "You're not alone, get the help you deserve!",
-      "voice_style": "friendly",
+      "category": "College Sports: Cal Raleigh and Other Emerging Athletes",
+      "topic": "Cal Raleigh's journey from college baseball to MLB standout: The moments that shaped his career",
+      "hook": "Before the big leagues, Cal Raleigh was making waves in college. See the clutch plays that predicted his MLB success!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Robert Englund Horror Movie Clips",
-      "topic": "The Evolution of Freddy Krueger: From Nightmare to Icon",
-      "hook": "The nightmare on Elm Street just got a whole lot scarier!",
+      "category": "Severe Weather Alerts: NYC Tornado Warning and Safety Tips",
+      "topic": "Unpacking the NYC tornado warning: How rare is it and what immediate steps to take",
+      "hook": "A tornado in NYC? It happened. Here's why you need to know what to do when the impossible becomes real.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Sean Pedulla: Basketball Highlights and Interview",
+      "topic": "Sean Pedulla's top 5 jaw-dropping plays from the last season and a sneak peek into his mindset",
+      "hook": "Sean Pedulla isn't just playing; he's creating art on the court! Witness the moves that defy gravity and hear his secret.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Storm Safety Precautions and Emergency Preparedness",
+      "topic": "Essential survival kit items for unexpected summer power outages",
+      "hook": "Summer storms can flip your power off in a flash! Is your emergency kit ready, or will you be scrambling?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Dystopian Fiction: The Hunger Games and Beyond",
+      "topic": "How 'The Hunger Games' predicted modern social media spectacle and reality TV",
+      "hook": "Could Katniss Everdeen's world be our future? 'The Hunger Games' wasn't just fiction; it was a chilling prophecy for reality TV.",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Surreal Survival Challenges Inspired by The Hunger Games",
+      "topic": "The 'Silent City' challenge: surviving an urban maze where any sound attracts a deadly threat",
+      "hook": "Shhh! One wrong step, one loud breath, and it's game over. Can you navigate the 'Silent City'?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Uncovering Ancient Mysteries: Was the Trojan War Real?",
+      "topic": "Debunking common myths about the Trojan War: What archaeology *actually* tells us vs. legend",
+      "hook": "The Trojan Horse, Achilles' heel... Are these true history or just epic stories? We're separating fact from fiction!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Kamar Williams Highlights",
-      "topic": "Kamar Williams' Most Dominant Games: A Highlight Reel",
-      "hook": "Get ready to witness greatness on the field!",
+      "category": "FC Ju\u00e1rez vs Club Puebla Match Highlights and Analysis",
+      "topic": "Tactical breakdown: How FC Ju\u00e1rez's defense stifled Club Puebla's key attackers",
+      "hook": "Puebla's attack went silent against Ju\u00e1rez! Was it pure luck or a genius defensive strategy? Let's break it down.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Money Saving Challenges",
-      "topic": "The 52-Week Savings Challenge: Can You Save $1,000?",
-      "hook": "Transform your financial future in just one year!",
+      "category": "Where Are They Now: Updates on Emily Willis and Other Child Stars",
+      "topic": "The challenges and triumphs of former child actors transitioning to adult careers in the spotlight",
+      "hook": "Life after child stardom isn't always glittering. We're exploring the real struggles and successes of young actors growing up in the spotlight.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Wildlife Encounters: Idaho Bear Home Break-In and More",
+      "topic": "Animal proofing your home: Lessons from a viral bear encounter and expert tips",
+      "hook": "That Idaho bear could be at *your* door! Learn the surprising ways animals get in and how to keep them out.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Gold Investment Advice",
-      "topic": "Why Gold is a Better Investment than Stocks in a Recession",
-      "hook": "Protect your wealth from market volatility!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "College Sports: Cal Raleigh and Other Emerging Athletes",
+      "topic": "Unsung heroes of college sports: Athletes poised to break out in the next season you haven't heard of yet",
+      "hook": "Forget the headlines! We're introducing you to the hidden gems of college sports ready to dominate next season.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Flood Relief Efforts",
-      "topic": "How to Donate to Flood Relief Efforts: A Guide",
-      "hook": "Every dollar counts, make a difference today!",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
+      "category": "Severe Weather Alerts: NYC Tornado Warning and Safety Tips",
+      "topic": "The science behind 'pop-up' tornadoes and why they're so dangerous in urban areas like NYC",
+      "hook": "One minute, clear skies. The next, a tornado in the city! What makes these 'pop-up' twisters so terrifying and hard to predict?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "R Language Programming Tutorials",
-      "topic": "Introduction to R: Data Manipulation for Beginners",
-      "hook": "Unlock the power of data manipulation with R!",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Sean Pedulla: Basketball Highlights and Interview",
+      "topic": "The evolution of Sean Pedulla's game: From a promising freshman to a team leader and offensive powerhouse",
+      "hook": "Remember Sean Pedulla as a freshman? See how his game transformed into the powerhouse we know today!",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Storm Safety Precautions and Emergency Preparedness",
+      "topic": "Protecting your home from lightning strikes and flash floods during intense summer storms",
+      "hook": "Lightning isn't just bright, it's destructive! Is your home truly safe from summer's worst? We've got the must-know tips.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Flash Flood Safety Tips",
-      "topic": "How to Stay Safe During a Flash Flood: Expert Advice",
-      "hook": "Stay one step ahead of the flood, stay alive!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Dystopian Fiction: The Hunger Games and Beyond",
+      "topic": "The philosophical implications of choice and rebellion in 'The Hunger Games' vs. 'Divergent'",
+      "hook": "Katniss or Tris? We're comparing the fierce choices of 'The Hunger Games' and 'Divergent' heroines and what they mean for freedom.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -255,14 +212,49 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
