@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-07-19T07:39:57.772496",
-  "valid_until": "2026-07-19T23:59:57.772509",
+  "generated_at": "2026-07-20T08:24:42.013731",
+  "valid_until": "2026-07-20T23:59:42.013739",
   "categories": [
-    "Cloud Computing Explainers",
-    "Seattle Traffic Updates: Tacoma Narrows Bridge Closure",
-    "Bitcoin and Crypto Investment Tips",
-    "Fidelity Funds Investment Strategies",
-    "Today's Weather Forecast",
-    "Tech News in 60 Seconds",
-    "Stock Market Analysis for Beginners",
-    "Breaking News Updates",
-    "Technology for Beginners",
-    "Cloud Storage Hacks",
-    "Summer Weather Safety Tips",
-    "Bitcoin Price Predictions",
-    "Stock Market Today: What to Expect",
-    "Fintech Innovations to Watch",
-    "Emerging Tech Trends to Invest In"
+    "Summer Movie Reviews",
+    "FIFA World Cup 2026 Highlights",
+    "Cycling Challenge Videos",
+    "NYT Strands Puzzle Solutions",
+    "Bitcoin Investment Explainers",
+    "Latest Tech News Updates",
+    "Weather Forecast Vlogs",
+    "Movie Trailer Reactions",
+    "Cycling Tips and Tricks",
+    "FIFA World Cup 2026 Predictions",
+    "Technology News Roundups",
+    "Summer Weather Hacks",
+    "Bitcoin Price Analysis",
+    "New Movie Releases",
+    "FIFA World Cup 2026 Team Profiles"
   ],
   "concepts": [
     {
-      "category": "Cloud Computing Explainers",
-      "topic": "The Secret Reason Your Netflix Never Buffers: CDN Explained",
-      "hook": "Ever wonder how Netflix delivers millions of movies instantly without a single buffer? It's not magic, it's a hidden cloud superpower you need to know about!",
+      "category": "Summer Movie Reviews",
+      "topic": "Unpacking the Surprise Twist in the Latest Marvel Movie",
+      "hook": "You won't believe the jaw-dropping plot reveal in the new Marvel blockbuster!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Cloud Computing Explainers",
-      "topic": "Is 'Serverless Computing' REALLY server-less? Debunking the buzzword",
-      "hook": "They say 'serverless' means no servers... but is that even possible in the cloud? Let's uncover the truth behind this booming tech term!",
-      "voice_style": "friendly",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Seattle Traffic Updates: Tacoma Narrows Bridge Closure",
-      "topic": "The ONE Alternative Route You Haven't Considered for the Tacoma Narrows Closure",
-      "hook": "Tacoma Narrows is shut down, and your usual detour is a nightmare. But what if I told you there's a secret path almost no one is talking about?",
+      "category": "FIFA World Cup 2026 Highlights",
+      "topic": "Top 5 Goals from the Group Stage That Will Leave You Speechless",
+      "hook": "These incredible FIFA World Cup 2026 goals will have you on the edge of your seat!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Seattle Traffic Updates: Tacoma Narrows Bridge Closure",
-      "topic": "Why Tacoma Narrows Bridge Closure is Causing SEA-TAC Airport Delays",
-      "hook": "Your flight out of SEA-TAC could be delayed, not by weather, but by the Tacoma Narrows Bridge closure. Here's the surprising connection you need to know!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Bitcoin and Crypto Investment Tips",
-      "topic": "3 Altcoins Set to Explode After Bitcoin's Halving (and Why)",
-      "hook": "Bitcoin just had its halving event. Are you ready for the ripple effect? I'm revealing three altcoins poised for massive gains right now!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Bitcoin and Crypto Investment Tips",
-      "topic": "The 'Dollar-Cost Averaging' Strategy That Saved My Crypto Portfolio During the Bear Market",
-      "hook": "Crypto markets are wild, but this one simple strategy kept my portfolio afloat when everyone else was losing their minds. You can do it too!",
+      "category": "Cycling Challenge Videos",
+      "topic": "Attempting to Ride the World's Steepest Hill on a Unicycle",
+      "hook": "Can I conquer the impossible cycling challenge and ride up the world's steepest hill on one wheel?",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "NYT Strands Puzzle Solutions",
+      "topic": "Cracking the Code: Step-by-Step Solution to the Latest NYT Strands Puzzle",
+      "hook": "Get ready to unravel the mystery of the NYT Strands puzzle with our easy-to-follow solution!",
+      "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Fidelity Funds Investment Strategies",
-      "topic": "Fidelity's ZERO-FEE Funds: The Catch You NEED to Know Before Investing",
-      "hook": "Zero fees sound incredible, right? But with Fidelity's popular funds, there's always a hidden detail you absolutely MUST check before you invest!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Fidelity Funds Investment Strategies",
-      "topic": "Comparing Fidelity's Growth Funds vs. Value Funds for Long-Term Retirement Planning",
-      "hook": "Are you picking the right Fidelity fund for your retirement? Growth or Value? Let's break down which strategy is truly for your long-term wealth!",
+      "category": "Bitcoin Investment Explainers",
+      "topic": "The Pros and Cons of Investing in Bitcoin for Beginners",
+      "hook": "Should you take the plunge and invest in Bitcoin? Let's weigh the risks and rewards!",
       "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "mysterious",
+      "target_duration": 40
     },
     {
-      "category": "Today's Weather Forecast",
-      "topic": "Is This 'Polar Vortex Jr.' Bringing Snow to Unexpected Regions This Weekend?",
-      "hook": "Brace yourselves! The forecast just updated, and a 'Polar Vortex Jr.' might be bringing an arctic chill and even snow to places that rarely see it!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Today's Weather Forecast",
-      "topic": "The Surprising Reason Your Allergies Are WORSE This Spring, Despite Less Rain",
-      "hook": "Your eyes are itching, your nose is running, but it hasn't rained much! Why are your allergies going wild this spring? The answer might surprise you!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech News in 60 Seconds",
-      "topic": "Apple's Secret AI Chip Project: Is It Bigger Than OpenAI's Latest Model?",
-      "hook": "Everyone's talking about OpenAI, but Apple's been quietly developing an AI chip that could change everything. Here's what we know in 60 seconds!",
+      "category": "Latest Tech News Updates",
+      "topic": "The Impact of AI on the Future of Smartphone Technology",
+      "hook": "The future of smartphones is here, and it's more artificial than you think!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Tech News in 60 Seconds",
-      "topic": "Microsoft Just Patented What Could Be The End of Password Authentication",
-      "hook": "Tired of passwords? Microsoft just filed a patent that could literally make them obsolete. Could this be the end of login headaches for good?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "Weather Forecast Vlogs",
+      "topic": "Chasing the Perfect Storm: A Weather Vlog from the Eye of the Hurricane",
+      "hook": "Join me as I embark on a thrilling adventure to capture the raw power of a hurricane!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Stock Market Analysis for Beginners",
-      "topic": "The 'Golden Cross' Pattern: How to Spot It and What It Means for Your Trades",
-      "hook": "Ever heard of the 'Golden Cross'? This simple chart pattern can signal big moves for stocks, and you can learn to spot it right now!",
+      "category": "Movie Trailer Reactions",
+      "topic": "Reacting to the Latest Star Wars Trailer: What to Expect from the New Film",
+      "hook": "The new Star Wars trailer has dropped, and I'm breaking down all the hidden clues and surprises!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Analysis for Beginners",
-      "topic": "Why Dividend Stocks Are a Beginner Investor's Secret Weapon During Inflation",
-      "hook": "Inflation is eating into your savings, but what if I told you there's a beginner-friendly stock strategy that actually PAYS you to fight back?",
+      "category": "Cycling Tips and Tricks",
+      "topic": "Mastering the Art of Cornering on a Road Bike: Tips and Techniques",
+      "hook": "Take your cycling skills to the next level with these expert cornering tips and tricks!",
       "voice_style": "authoritative",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "FIFA World Cup 2026 Predictions",
+      "topic": "Who Will Win the FIFA World Cup 2026? Our Expert Predictions and Analysis",
+      "hook": "The FIFA World Cup 2026 is just around the corner, and we're making our bold predictions for the winner!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Breaking News Updates",
-      "topic": "Emergency Alert in [Major City]: Here's What Authorities Are Advising RIGHT NOW",
-      "hook": "BREAKING: An urgent emergency alert has just gone out in [insert a specific major city, e.g., 'Los Angeles']. Here's everything you need to know to stay safe!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking News Updates",
-      "topic": "New Details Emerge in [Specific High-Profile Event]: Is a Cover-Up Being Exposed?",
-      "hook": "Just when you thought you knew the whole story, explosive new evidence has surfaced in [insert a specific high-profile event, e.g., 'the recent corporate scandal']. And it points to something much bigger...",
+      "category": "Summer Movie Reviews",
+      "topic": "The Hidden Messages and Symbolism in the Latest Sci-Fi Blockbuster",
+      "hook": "Uncover the secret meanings and hidden messages in the latest sci-fi movie that will blow your mind!",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Technology for Beginners",
-      "topic": "Decoding 'Smart Home Hubs': Which One is Actually For YOU, Not Just Tech Geeks?",
-      "hook": "Smart home gadgets are cool, but how do you get them to all talk to each other? Let's demystify 'smart home hubs' for beginners and find the right one for you!",
+      "category": "FIFA World Cup 2026 Highlights",
+      "topic": "The Most Iconic Moments in FIFA World Cup History That Still Give Us Chills",
+      "hook": "Relive the most unforgettable moments in FIFA World Cup history that will leave you breathless!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Cycling Challenge Videos",
+      "topic": "24-Hour Cycling Challenge: How Far Can I Ride in a Day?",
+      "hook": "Join me as I push my limits and attempt to ride as far as possible in just 24 hours!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Technology for Beginners",
-      "topic": "Your Old Laptop Is Slow Because of THIS One Setting You Can Change Today",
-      "hook": "Is your laptop crawling? Don't buy a new one yet! There's one simple setting hiding in plain sight that could speed it up instantly, and I'll show you how!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Cloud Storage Hacks",
-      "topic": "The Hidden Feature in Google Photos That Gives You UNLIMITED Space (If You Know This Trick)",
-      "hook": "Running out of phone storage because of photos? There's a secret Google Photos trick that could give you unlimited space, for free, if you know where to look!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Cloud Storage Hacks",
-      "topic": "How to Encrypt Your Most Sensitive Cloud Files, Even From the Provider",
-      "hook": "Think your cloud files are truly private? Think again. I'll show you how to truly encrypt your most sensitive data, protecting it even from the cloud company itself!",
+      "category": "NYT Strands Puzzle Solutions",
+      "topic": "Solving the NYT Strands Puzzle with a Unique and Unconventional Method",
+      "hook": "Think outside the box and discover a revolutionary new way to solve the NYT Strands puzzle!",
       "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Bitcoin Investment Explainers",
+      "topic": "The Impact of Bitcoin on the Global Economy: Separating Fact from Fiction",
+      "hook": "Get the inside scoop on how Bitcoin is changing the global economy and what it means for your wallet!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Latest Tech News Updates",
+      "topic": "The Future of Virtual Reality: What to Expect from the Next Generation of VR Tech",
+      "hook": "Step into the future of virtual reality and discover the groundbreaking tech that's changing the game!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Forecast Vlogs",
+      "topic": "Storm Chasing in Tornado Alley: A Heart-Pumping Adventure",
+      "hook": "Join me on a heart-stopping journey as we chase down tornadoes in the most extreme weather conditions!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Movie Trailer Reactions",
+      "topic": "Breaking Down the Latest Marvel Trailer: Easter Eggs and Plot Reveals",
+      "hook": "Uncover the hidden secrets and surprises in the latest Marvel trailer that you might have missed!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Cycling Tips and Tricks",
+      "topic": "How to Improve Your Cycling Efficiency and Reduce Fatigue",
+      "hook": "Transform your cycling performance with these expert tips and tricks to boost your efficiency and reduce fatigue!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "FIFA World Cup 2026 Predictions",
+      "topic": "The Dark Horses of the FIFA World Cup 2026: Who Could Be the Surprise Winners?",
+      "hook": "Discover the underdog teams that could shake up the FIFA World Cup 2026 and make a surprising run for the title!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Movie Reviews",
+      "topic": "The Social Commentary and Themes in the Latest Blockbuster Movie",
+      "hook": "Uncover the thought-provoking social commentary and themes in the latest movie that will make you think twice!",
+      "voice_style": "mysterious",
       "music_mood": "mysterious",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
