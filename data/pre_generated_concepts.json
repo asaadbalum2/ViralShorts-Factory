@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-07-20T08:24:42.013731",
-  "valid_until": "2026-07-20T23:59:42.013739",
+  "generated_at": "2026-07-21T07:54:22.660034",
+  "valid_until": "2026-07-21T23:59:22.660042",
   "categories": [
-    "Summer Movie Reviews",
-    "FIFA World Cup 2026 Highlights",
-    "Cycling Challenge Videos",
-    "NYT Strands Puzzle Solutions",
-    "Bitcoin Investment Explainers",
-    "Latest Tech News Updates",
-    "Weather Forecast Vlogs",
-    "Movie Trailer Reactions",
-    "Cycling Tips and Tricks",
-    "FIFA World Cup 2026 Predictions",
-    "Technology News Roundups",
-    "Summer Weather Hacks",
-    "Bitcoin Price Analysis",
-    "New Movie Releases",
-    "FIFA World Cup 2026 Team Profiles"
+    "Health Updates: Polio Awareness",
+    "Music Challenges: d4vd Dance Moves",
+    "Politics Uncovered: Thom Tillis Latest",
+    "Foodie Frenzy: In-N-Out Burger Hacks",
+    "True Crime: Marcello Hernandez Case",
+    "Beauty Trends: Vini Jr Chin Surgery Inspiration",
+    "Immigration News: Public Charge Rule Explained",
+    "Entertainment News: Sadie Sink Interviews",
+    "Summer Vibes: Seasonal Fun",
+    "Dance Challenges: Viral Move Breakdowns",
+    "News Recap: Weekly Current Events",
+    "Food Reviews: In-N-Out vs Other Burgers",
+    "Health Tips: Staying Safe from Polio",
+    "Political Analysis: Thom Tillis Policies",
+    "Get Ready with Me: Summer Beauty Routines"
   ],
   "concepts": [
     {
-      "category": "Summer Movie Reviews",
-      "topic": "Unpacking the Surprise Twist in the Latest Marvel Movie",
-      "hook": "You won't believe the jaw-dropping plot reveal in the new Marvel blockbuster!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Health Updates: Polio Awareness",
+      "topic": "The Rise of Polio in War-Torn Countries",
+      "hook": "Did you know that polio is making a comeback in some parts of the world?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "FIFA World Cup 2026 Highlights",
-      "topic": "Top 5 Goals from the Group Stage That Will Leave You Speechless",
-      "hook": "These incredible FIFA World Cup 2026 goals will have you on the edge of your seat!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Music Challenges: d4vd Dance Moves",
+      "topic": "Mastering the Viral 'Here With Me' Dance Challenge",
+      "hook": "Get ready to bust a move with the latest d4vd dance challenge that's sweeping the nation!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Cycling Challenge Videos",
-      "topic": "Attempting to Ride the World's Steepest Hill on a Unicycle",
-      "hook": "Can I conquer the impossible cycling challenge and ride up the world's steepest hill on one wheel?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "NYT Strands Puzzle Solutions",
-      "topic": "Cracking the Code: Step-by-Step Solution to the Latest NYT Strands Puzzle",
-      "hook": "Get ready to unravel the mystery of the NYT Strands puzzle with our easy-to-follow solution!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Bitcoin Investment Explainers",
-      "topic": "The Pros and Cons of Investing in Bitcoin for Beginners",
-      "hook": "Should you take the plunge and invest in Bitcoin? Let's weigh the risks and rewards!",
+      "category": "Politics Uncovered: Thom Tillis Latest",
+      "topic": "Unpacking Thom Tillis' Stance on Immigration Reform",
+      "hook": "What's really behind Senator Thom Tillis' latest stance on immigration reform?",
       "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Latest Tech News Updates",
-      "topic": "The Impact of AI on the Future of Smartphone Technology",
-      "hook": "The future of smartphones is here, and it's more artificial than you think!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Forecast Vlogs",
-      "topic": "Chasing the Perfect Storm: A Weather Vlog from the Eye of the Hurricane",
-      "hook": "Join me as I embark on a thrilling adventure to capture the raw power of a hurricane!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Movie Trailer Reactions",
-      "topic": "Reacting to the Latest Star Wars Trailer: What to Expect from the New Film",
-      "hook": "The new Star Wars trailer has dropped, and I'm breaking down all the hidden clues and surprises!",
+      "category": "Foodie Frenzy: In-N-Out Burger Hacks",
+      "topic": "The Secret Menu Item You Never Knew Existed at In-N-Out",
+      "hook": "In-N-Out fans, are you ready to level up your burger game with a secret menu item?",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Cycling Tips and Tricks",
-      "topic": "Mastering the Art of Cornering on a Road Bike: Tips and Techniques",
-      "hook": "Take your cycling skills to the next level with these expert cornering tips and tricks!",
-      "voice_style": "authoritative",
       "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "FIFA World Cup 2026 Predictions",
-      "topic": "Who Will Win the FIFA World Cup 2026? Our Expert Predictions and Analysis",
-      "hook": "The FIFA World Cup 2026 is just around the corner, and we're making our bold predictions for the winner!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Summer Movie Reviews",
-      "topic": "The Hidden Messages and Symbolism in the Latest Sci-Fi Blockbuster",
-      "hook": "Uncover the secret meanings and hidden messages in the latest sci-fi movie that will blow your mind!",
+      "category": "True Crime: Marcello Hernandez Case",
+      "topic": "The Haunting Disappearance of Marcello Hernandez: What We Know So Far",
+      "hook": "The case that's left a community on edge: what really happened to Marcello Hernandez?",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "FIFA World Cup 2026 Highlights",
-      "topic": "The Most Iconic Moments in FIFA World Cup History That Still Give Us Chills",
-      "hook": "Relive the most unforgettable moments in FIFA World Cup history that will leave you breathless!",
-      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Cycling Challenge Videos",
-      "topic": "24-Hour Cycling Challenge: How Far Can I Ride in a Day?",
-      "hook": "Join me as I push my limits and attempt to ride as far as possible in just 24 hours!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "NYT Strands Puzzle Solutions",
-      "topic": "Solving the NYT Strands Puzzle with a Unique and Unconventional Method",
-      "hook": "Think outside the box and discover a revolutionary new way to solve the NYT Strands puzzle!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
+      "category": "Beauty Trends: Vini Jr Chin Surgery Inspiration",
+      "topic": "The Rise of Chin Surgery Among Young Celebrities: Is it Worth the Hype?",
+      "hook": "Vini Jr's stunning transformation has left fans wondering: is chin surgery the key to perfection?",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Bitcoin Investment Explainers",
-      "topic": "The Impact of Bitcoin on the Global Economy: Separating Fact from Fiction",
-      "hook": "Get the inside scoop on how Bitcoin is changing the global economy and what it means for your wallet!",
+      "category": "Immigration News: Public Charge Rule Explained",
+      "topic": "How the Public Charge Rule is Affecting Families Across the US",
+      "hook": "The little-known rule that's changing lives: what you need to know about the public charge rule",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Entertainment News: Sadie Sink Interviews",
+      "topic": "Sadie Sink Opens Up About Her Struggle with Social Media",
+      "hook": "Sadie Sink gets real about the dark side of social media: you won't believe what she has to say",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Vibes: Seasonal Fun",
+      "topic": "The Ultimate Summer Road Trip Playlist to Get You in the Mood",
+      "hook": "Road trip ready! Get the inside scoop on the hottest summer playlist",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Dance Challenges: Viral Move Breakdowns",
+      "topic": "The Evolution of the Renegade Dance Challenge: From TikTok to the World",
+      "hook": "From 0 to 100: how the Renegade dance challenge took over the world",
       "voice_style": "calm",
-      "music_mood": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Health Updates: Polio Awareness",
+      "topic": "The Importance of Vaccination in the Fight Against Polio",
+      "hook": "The simple act that could save a life: why vaccination is key in the fight against polio",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Latest Tech News Updates",
-      "topic": "The Future of Virtual Reality: What to Expect from the Next Generation of VR Tech",
-      "hook": "Step into the future of virtual reality and discover the groundbreaking tech that's changing the game!",
+      "category": "Music Challenges: d4vd Dance Moves",
+      "topic": "The Best d4vd Dance Challenges to Try at Home",
+      "hook": "Get moving with the hottest d4vd dance challenges that are taking the internet by storm",
       "voice_style": "energetic",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Politics Uncovered: Thom Tillis Latest",
+      "topic": "Thom Tillis' Stance on Climate Change: What You Need to Know",
+      "hook": "The senator's surprising stance on climate change: what it means for the future",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Foodie Frenzy: In-N-Out Burger Hacks",
+      "topic": "In-N-Out Burger's Secret Menu Items You Never Knew About",
+      "hook": "In-N-Out fans, rejoice! We're spilling the beans on the secret menu items you need to try",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Weather Forecast Vlogs",
-      "topic": "Storm Chasing in Tornado Alley: A Heart-Pumping Adventure",
-      "hook": "Join me on a heart-stopping journey as we chase down tornadoes in the most extreme weather conditions!",
-      "voice_style": "dramatic",
+      "category": "True Crime: Marcello Hernandez Case",
+      "topic": "New Evidence in the Marcello Hernandez Case: What Does it Mean?",
+      "hook": "Breaking news in the Marcello Hernandez case: what the latest evidence reveals",
+      "voice_style": "mysterious",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Movie Trailer Reactions",
-      "topic": "Breaking Down the Latest Marvel Trailer: Easter Eggs and Plot Reveals",
-      "hook": "Uncover the hidden secrets and surprises in the latest Marvel trailer that you might have missed!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Cycling Tips and Tricks",
-      "topic": "How to Improve Your Cycling Efficiency and Reduce Fatigue",
-      "hook": "Transform your cycling performance with these expert tips and tricks to boost your efficiency and reduce fatigue!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
+      "category": "Beauty Trends: Vini Jr Chin Surgery Inspiration",
+      "topic": "The Pros and Cons of Chin Surgery: Is it Right for You?",
+      "hook": "The ultimate guide to chin surgery: weighing the pros and cons of this popular procedure",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "FIFA World Cup 2026 Predictions",
-      "topic": "The Dark Horses of the FIFA World Cup 2026: Who Could Be the Surprise Winners?",
-      "hook": "Discover the underdog teams that could shake up the FIFA World Cup 2026 and make a surprising run for the title!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Immigration News: Public Charge Rule Explained",
+      "topic": "How the Public Charge Rule is Affecting Refugee Families",
+      "hook": "The hidden impact of the public charge rule: how it's changing lives for refugee families",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Summer Movie Reviews",
-      "topic": "The Social Commentary and Themes in the Latest Blockbuster Movie",
-      "hook": "Uncover the thought-provoking social commentary and themes in the latest movie that will make you think twice!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Entertainment News: Sadie Sink Interviews",
+      "topic": "Sadie Sink's Favorite TV Shows and Movies: What's on Her Watchlist?",
+      "hook": "What's Sadie Sink binge-watching? We've got the inside scoop on her favorite shows and movies",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Vibes: Seasonal Fun",
+      "topic": "The Best Summer Festivals to Attend This Year",
+      "hook": "Get ready to soak up the sun: the ultimate guide to the best summer festivals",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Dance Challenges: Viral Move Breakdowns",
+      "topic": "The Science Behind the Viral 'Toosie Slide' Dance Challenge",
+      "hook": "What makes a dance challenge go viral? We're breaking down the science behind the 'Toosie Slide'",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Health Updates: Polio Awareness",
+      "topic": "The Impact of Polio on Mental Health: A Survivor's Story",
+      "hook": "The often-overlooked aspect of polio: how it affects mental health and what we can do to help",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
