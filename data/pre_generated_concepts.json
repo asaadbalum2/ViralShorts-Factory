@@ -1,258 +1,215 @@
 {
-  "generated_at": "2026-07-21T07:54:22.660034",
-  "valid_until": "2026-07-21T23:59:22.660042",
+  "generated_at": "2026-07-22T07:54:32.049402",
+  "valid_until": "2026-07-22T23:59:32.049412",
   "categories": [
-    "Health Updates: Polio Awareness",
-    "Music Challenges: d4vd Dance Moves",
-    "Politics Uncovered: Thom Tillis Latest",
-    "Foodie Frenzy: In-N-Out Burger Hacks",
-    "True Crime: Marcello Hernandez Case",
-    "Beauty Trends: Vini Jr Chin Surgery Inspiration",
-    "Immigration News: Public Charge Rule Explained",
-    "Entertainment News: Sadie Sink Interviews",
-    "Summer Vibes: Seasonal Fun",
-    "Dance Challenges: Viral Move Breakdowns",
-    "News Recap: Weekly Current Events",
-    "Food Reviews: In-N-Out vs Other Burgers",
-    "Health Tips: Staying Safe from Polio",
-    "Political Analysis: Thom Tillis Policies",
-    "Get Ready with Me: Summer Beauty Routines"
+    "Congressional Updates",
+    "Movie Reviews",
+    "Emergency Preparedness",
+    "Wildlife Encounters",
+    "Weather Updates",
+    "Celebrity News",
+    "Late Night Talk Shows",
+    "Plastic Surgery Trends",
+    "Summer Safety Tips",
+    "News Recap",
+    "Entertainment News",
+    "Community Updates",
+    "Power Outage Hacks",
+    "Louisiana Local News",
+    "Behind the Scenes"
   ],
   "concepts": [
     {
-      "category": "Health Updates: Polio Awareness",
-      "topic": "The Rise of Polio in War-Torn Countries",
-      "hook": "Did you know that polio is making a comeback in some parts of the world?",
+      "category": "Congressional Updates",
+      "topic": "New Bill to Reduce Student Loan Debt",
+      "hook": "Breaking: Will your student loans be forgiven?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Music Challenges: d4vd Dance Moves",
-      "topic": "Mastering the Viral 'Here With Me' Dance Challenge",
-      "hook": "Get ready to bust a move with the latest d4vd dance challenge that's sweeping the nation!",
+      "category": "Movie Reviews",
+      "topic": "Review of the Latest Marvel Movie",
+      "hook": "Just watched the most epic superhero battle!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Politics Uncovered: Thom Tillis Latest",
-      "topic": "Unpacking Thom Tillis' Stance on Immigration Reform",
-      "hook": "What's really behind Senator Thom Tillis' latest stance on immigration reform?",
+      "category": "Emergency Preparedness",
+      "topic": "Earthquake Survival Tips",
+      "hook": "What to do when the ground starts shaking?",
       "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "music_mood": "dramatic",
+      "target_duration": 42
     },
     {
-      "category": "Foodie Frenzy: In-N-Out Burger Hacks",
-      "topic": "The Secret Menu Item You Never Knew Existed at In-N-Out",
-      "hook": "In-N-Out fans, are you ready to level up your burger game with a secret menu item?",
+      "category": "Wildlife Encounters",
+      "topic": "Rare Sighting of the Snow Leopard",
+      "hook": "You won't believe what I just spotted in the wild!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "True Crime: Marcello Hernandez Case",
-      "topic": "The Haunting Disappearance of Marcello Hernandez: What We Know So Far",
-      "hook": "The case that's left a community on edge: what really happened to Marcello Hernandez?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Beauty Trends: Vini Jr Chin Surgery Inspiration",
-      "topic": "The Rise of Chin Surgery Among Young Celebrities: Is it Worth the Hype?",
-      "hook": "Vini Jr's stunning transformation has left fans wondering: is chin surgery the key to perfection?",
+      "category": "Weather Updates",
+      "topic": "Hurricane Season Forecast",
+      "hook": "Get ready for the storm of the century!",
       "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Immigration News: Public Charge Rule Explained",
-      "topic": "How the Public Charge Rule is Affecting Families Across the US",
-      "hook": "The little-known rule that's changing lives: what you need to know about the public charge rule",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Entertainment News: Sadie Sink Interviews",
-      "topic": "Sadie Sink Opens Up About Her Struggle with Social Media",
-      "hook": "Sadie Sink gets real about the dark side of social media: you won't believe what she has to say",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Vibes: Seasonal Fun",
-      "topic": "The Ultimate Summer Road Trip Playlist to Get You in the Mood",
-      "hook": "Road trip ready! Get the inside scoop on the hottest summer playlist",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Dance Challenges: Viral Move Breakdowns",
-      "topic": "The Evolution of the Renegade Dance Challenge: From TikTok to the World",
-      "hook": "From 0 to 100: how the Renegade dance challenge took over the world",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Health Updates: Polio Awareness",
-      "topic": "The Importance of Vaccination in the Fight Against Polio",
-      "hook": "The simple act that could save a life: why vaccination is key in the fight against polio",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Music Challenges: d4vd Dance Moves",
-      "topic": "The Best d4vd Dance Challenges to Try at Home",
-      "hook": "Get moving with the hottest d4vd dance challenges that are taking the internet by storm",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Politics Uncovered: Thom Tillis Latest",
-      "topic": "Thom Tillis' Stance on Climate Change: What You Need to Know",
-      "hook": "The senator's surprising stance on climate change: what it means for the future",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Foodie Frenzy: In-N-Out Burger Hacks",
-      "topic": "In-N-Out Burger's Secret Menu Items You Never Knew About",
-      "hook": "In-N-Out fans, rejoice! We're spilling the beans on the secret menu items you need to try",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime: Marcello Hernandez Case",
-      "topic": "New Evidence in the Marcello Hernandez Case: What Does it Mean?",
-      "hook": "Breaking news in the Marcello Hernandez case: what the latest evidence reveals",
-      "voice_style": "mysterious",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Beauty Trends: Vini Jr Chin Surgery Inspiration",
-      "topic": "The Pros and Cons of Chin Surgery: Is it Right for You?",
-      "hook": "The ultimate guide to chin surgery: weighing the pros and cons of this popular procedure",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Immigration News: Public Charge Rule Explained",
-      "topic": "How the Public Charge Rule is Affecting Refugee Families",
-      "hook": "The hidden impact of the public charge rule: how it's changing lives for refugee families",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Entertainment News: Sadie Sink Interviews",
-      "topic": "Sadie Sink's Favorite TV Shows and Movies: What's on Her Watchlist?",
-      "hook": "What's Sadie Sink binge-watching? We've got the inside scoop on her favorite shows and movies",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Vibes: Seasonal Fun",
-      "topic": "The Best Summer Festivals to Attend This Year",
-      "hook": "Get ready to soak up the sun: the ultimate guide to the best summer festivals",
+      "category": "Celebrity News",
+      "topic": "BTS's Latest World Tour",
+      "hook": "What's behind the K-pop sensation's global success?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Dance Challenges: Viral Move Breakdowns",
-      "topic": "The Science Behind the Viral 'Toosie Slide' Dance Challenge",
-      "hook": "What makes a dance challenge go viral? We're breaking down the science behind the 'Toosie Slide'",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "category": "Late Night Talk Shows",
+      "topic": "Jimmy Fallon's Funniest Moments",
+      "hook": "Laughter is the best medicine, and we have the prescription!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
     },
     {
-      "category": "Health Updates: Polio Awareness",
-      "topic": "The Impact of Polio on Mental Health: A Survivor's Story",
-      "hook": "The often-overlooked aspect of polio: how it affects mental health and what we can do to help",
+      "category": "Plastic Surgery Trends",
+      "topic": "The Rise of Non-Invasive Procedures",
+      "hook": "Say goodbye to scalpels and hello to high-tech beauty!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent Heatstroke",
+      "hook": "Don't let the heat wave catch you off guard!",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "News Recap",
+      "topic": "Weekly News Roundup",
+      "hook": "Stay informed in just 60 seconds!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Congressional Updates",
+      "topic": "New Climate Change Legislation",
+      "hook": "What does the future hold for our planet?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Movie Reviews",
+      "topic": "Review of the Latest Pixar Film",
+      "hook": "Get ready to be transported to a magical world!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Emergency Preparedness",
+      "topic": "Surviving a Power Outage",
+      "hook": "When the lights go out, will you be ready?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Wildlife Encounters",
+      "topic": "Up Close and Personal with Sharks",
+      "hook": "Diving into the unknown with the ocean's top predators!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Updates",
+      "topic": "Understanding the Science of Tornadoes",
+      "hook": "Uncovering the mystery behind these powerful storms!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Celebrity News",
+      "topic": "Taylor Swift's Latest Album Release",
+      "hook": "What secrets is the songstress revealing in her new music?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Late Night Talk Shows",
+      "topic": "The Best of Saturday Night Live",
+      "hook": "Laughter is contagious, and we've got the cure!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Plastic Surgery Trends",
+      "topic": "The Benefits of Microneedling",
+      "hook": "Revolutionizing skincare with the latest technology!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
+    },
+    {
+      "category": "Summer Safety Tips",
+      "topic": "How to Prevent Swimming Accidents",
+      "hook": "Stay safe in the water this summer!",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "News Recap",
+      "topic": "Monthly Economic Update",
+      "hook": "What's driving the market trends?",
+      "voice_style": "mysterious",
+      "music_mood": "upbeat",
+      "target_duration": 48
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
@@ -260,9 +217,44 @@
       "music_mood": "inspirational"
     },
     {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
