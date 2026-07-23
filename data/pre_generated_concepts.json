@@ -1,225 +1,243 @@
 {
-  "generated_at": "2026-07-22T07:54:32.049402",
-  "valid_until": "2026-07-22T23:59:32.049412",
+  "generated_at": "2026-07-23T07:56:48.467229",
+  "valid_until": "2026-07-23T23:59:48.467236",
   "categories": [
-    "Congressional Updates",
-    "Movie Reviews",
-    "Emergency Preparedness",
-    "Wildlife Encounters",
-    "Weather Updates",
-    "Celebrity News",
-    "Late Night Talk Shows",
-    "Plastic Surgery Trends",
-    "Summer Safety Tips",
-    "News Recap",
+    "Gaming News",
+    "Restaurant Closures",
+    "War Updates",
+    "Astronomy Discoveries",
+    "Sports Highlights",
     "Entertainment News",
-    "Community Updates",
-    "Power Outage Hacks",
-    "Louisiana Local News",
-    "Behind the Scenes"
+    "Lawsuit Explainers",
+    "Crater Exploration",
+    "Summer Food Hacks",
+    "Viral Dance Challenges",
+    "Movie Star Interviews",
+    "Esports Tournaments",
+    "Space Exploration",
+    "Foodie Reviews",
+    "Global Conflict Analysis"
   ],
   "concepts": [
     {
-      "category": "Congressional Updates",
-      "topic": "New Bill to Reduce Student Loan Debt",
-      "hook": "Breaking: Will your student loans be forgiven?",
+      "category": "Gaming News",
+      "topic": "New Fortnite Season Leaks",
+      "hook": "You won't believe what's coming to Fortnite next!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Restaurant Closures",
+      "topic": "Why Did Your Favorite Childhood Restaurant Close?",
+      "hook": "The shocking reason behind the closure of a beloved restaurant chain",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "War Updates",
+      "topic": "Recent Developments in Ukraine",
+      "hook": "Breaking: The latest update from the front lines",
       "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Astronomy Discoveries",
+      "topic": "New Exoplanet Discovery",
+      "hook": "Scientists just found a planet that could change everything!",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Movie Reviews",
-      "topic": "Review of the Latest Marvel Movie",
-      "hook": "Just watched the most epic superhero battle!",
-      "voice_style": "energetic",
+      "category": "Sports Highlights",
+      "topic": "Craziest Football Finishes",
+      "hook": "You won't believe these insane football finishes!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Latest on the Johnny Depp vs Amber Heard Trial",
+      "hook": "The shocking truth about the trial that's got everyone talking",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Lawsuit Explainers",
+      "topic": "Explaining the Epic Games vs Apple Lawsuit",
+      "hook": "What you need to know about the lawsuit that's changing the gaming industry",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Crater Exploration",
+      "topic": "Exploring the Largest Crater on Mars",
+      "hook": "Join me on a journey to the biggest crater in our solar system",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Food Hacks",
+      "topic": "10 Summer Salads to Try This Year",
+      "hook": "Beat the heat with these refreshing summer salads!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Emergency Preparedness",
-      "topic": "Earthquake Survival Tips",
-      "hook": "What to do when the ground starts shaking?",
+      "category": "Viral Dance Challenges",
+      "topic": "The New Dance Challenge Taking Over TikTok",
+      "hook": "Can you master the latest dance challenge that's got everyone talking?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming News",
+      "topic": "PS5 vs Xbox Series X: Which Console Reigns Supreme?",
+      "hook": "The ultimate showdown: which console is the best?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Restaurant Closures",
+      "topic": "The Rise and Fall of McDonald's Competitors",
+      "hook": "What happened to the restaurants that tried to take down McDonald's?",
       "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "Wildlife Encounters",
-      "topic": "Rare Sighting of the Snow Leopard",
-      "hook": "You won't believe what I just spotted in the wild!",
-      "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 48
+      "target_duration": 40
     },
     {
-      "category": "Weather Updates",
-      "topic": "Hurricane Season Forecast",
-      "hook": "Get ready for the storm of the century!",
+      "category": "War Updates",
+      "topic": "The Humanitarian Crisis in Yemen",
+      "hook": "The heartbreaking reality of the war in Yemen",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Astronomy Discoveries",
+      "topic": "The Search for Life on Mars",
+      "hook": "Are we alone in the universe? Scientists may have the answer",
+      "voice_style": "mysterious",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "The Greatest Upsets in Sports History",
+      "hook": "You won't believe these shocking upsets in sports history!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "BTS's Latest World Tour",
-      "hook": "What's behind the K-pop sensation's global success?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Late Night Talk Shows",
-      "topic": "Jimmy Fallon's Funniest Moments",
-      "hook": "Laughter is the best medicine, and we have the prescription!",
+      "category": "Entertainment News",
+      "topic": "The Latest on the Marvel Cinematic Universe",
+      "hook": "What's next for the MCU? We've got the inside scoop",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Plastic Surgery Trends",
-      "topic": "The Rise of Non-Invasive Procedures",
-      "hook": "Say goodbye to scalpels and hello to high-tech beauty!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Safety Tips",
-      "topic": "How to Prevent Heatstroke",
-      "hook": "Don't let the heat wave catch you off guard!",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "News Recap",
-      "topic": "Weekly News Roundup",
-      "hook": "Stay informed in just 60 seconds!",
+      "category": "Lawsuit Explainers",
+      "topic": "The TikTok vs Instagram Lawsuit",
+      "hook": "The social media lawsuit that's got everyone talking",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Congressional Updates",
-      "topic": "New Climate Change Legislation",
-      "hook": "What does the future hold for our planet?",
+      "category": "Crater Exploration",
+      "topic": "The Most Mysterious Craters on Earth",
+      "hook": "Uncovering the secrets of the most mysterious craters on our planet",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Movie Reviews",
-      "topic": "Review of the Latest Pixar Film",
-      "hook": "Get ready to be transported to a magical world!",
-      "voice_style": "friendly",
       "music_mood": "inspirational",
-      "target_duration": 42
+      "target_duration": 50
     },
     {
-      "category": "Emergency Preparedness",
-      "topic": "Surviving a Power Outage",
-      "hook": "When the lights go out, will you be ready?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Wildlife Encounters",
-      "topic": "Up Close and Personal with Sharks",
-      "hook": "Diving into the unknown with the ocean's top predators!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Updates",
-      "topic": "Understanding the Science of Tornadoes",
-      "hook": "Uncovering the mystery behind these powerful storms!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "Taylor Swift's Latest Album Release",
-      "hook": "What secrets is the songstress revealing in her new music?",
+      "category": "Summer Food Hacks",
+      "topic": "5 Refreshing Summer Drinks to Try This Year",
+      "hook": "Stay hydrated with these refreshing summer drinks!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Late Night Talk Shows",
-      "topic": "The Best of Saturday Night Live",
-      "hook": "Laughter is contagious, and we've got the cure!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Plastic Surgery Trends",
-      "topic": "The Benefits of Microneedling",
-      "hook": "Revolutionizing skincare with the latest technology!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Viral Dance Challenges",
+      "topic": "The Evolution of Dance Challenges on TikTok",
+      "hook": "From Renegade to Toosie Slide, how dance challenges took over TikTok",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Summer Safety Tips",
-      "topic": "How to Prevent Swimming Accidents",
-      "hook": "Stay safe in the water this summer!",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 42
-    },
-    {
-      "category": "News Recap",
-      "topic": "Monthly Economic Update",
-      "hook": "What's driving the market trends?",
+      "category": "Gaming News",
+      "topic": "The Future of Virtual Reality Gaming",
+      "hook": "Get ready to experience gaming like never before",
       "voice_style": "mysterious",
-      "music_mood": "upbeat",
-      "target_duration": 48
+      "music_mood": "inspirational",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
@@ -227,34 +245,24 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
