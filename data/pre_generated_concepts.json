@@ -1,260 +1,268 @@
 {
-  "generated_at": "2026-07-24T07:53:43.751243",
-  "valid_until": "2026-07-24T23:59:43.751253",
+  "generated_at": "2026-07-25T07:32:24.477301",
+  "valid_until": "2026-07-25T23:59:24.477308",
   "categories": [
-    "Daycare Hacks for Parents",
-    "72 Hour Life Challenges",
-    "Smartphone Reviews and Comparisons",
-    "Weather's Impact on Sleep Quality",
-    "Education News and Updates",
-    "Uncovering the Epstein Files",
-    "Weather-Themed Gift Ideas",
-    "Personal Finance Tips and Tricks",
-    "Back to School Preparation",
-    "Summer Weather Safety",
-    "Phone Accessories for the Latest Models",
-    "News Updates on Education Reform",
-    "Financial Literacy for Young Adults",
-    "Sleep Hacks for Better Rest",
-    "Staying Ahead in the Ever-Changing Smartphone Market"
+    "Hurricane Updates",
+    "Gaming News",
+    "Sports Highlights",
+    "Celebrity Interviews",
+    "Cafe Reviews",
+    "Travel Vlogs",
+    "Politics and Scandals",
+    "Summer Vacation Ideas",
+    "Gaming Walkthroughs",
+    "NFL Previews",
+    "New Movie Releases",
+    "Storm Chasing",
+    "Fantasy Football Tips",
+    "Influencer Takeovers",
+    "New Game Releases"
   ],
   "concepts": [
     {
-      "category": "Daycare Hacks for Parents",
-      "topic": "5 Morning Routine Hacks to Save Time",
-      "hook": "Are you tired of chaotic mornings?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Hurricane Updates",
+      "topic": "Hurricane Ian's Unexpected Turn",
+      "hook": "Breaking: Hurricane Ian just made a shocking shift in direction, putting millions at risk!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "72 Hour Life Challenges",
-      "topic": "Surviving 72 Hours with No Smartphone",
-      "hook": "What if you had to give up your phone for 3 days?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Gaming News",
+      "topic": "PS5 vs Xbox Series X: The Ultimate Showdown",
+      "hook": "It's time to settle the debate: which next-gen console reigns supreme?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Smartphone Reviews and Comparisons",
-      "topic": "iPhone vs Samsung: Which is Better for Gaming?",
-      "hook": "Get ready for the ultimate smartphone showdown!",
+      "category": "Sports Highlights",
+      "topic": "Tom Brady's Most Epic Comebacks",
+      "hook": "You won't believe the top 3 most unforgettable comebacks of Tom Brady's career!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Celebrity Interviews",
+      "topic": "-exclusive with Dwayne 'The Rock' Johnson",
+      "hook": "We sat down with The Rock to talk about his latest blockbuster film and you won't believe what he said!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Cafe Reviews",
+      "topic": "The Hidden Gem Cafe in Tokyo",
+      "hook": "Tucked away in a quiet alley, this Tokyo cafe serves the most unique and delicious coffee you've ever tasted!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Travel Vlogs",
+      "topic": "Exploring the Ancient City of Petra",
+      "hook": "Join me as I venture into the breathtaking ancient city of Petra and uncover its secrets!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Weather's Impact on Sleep Quality",
-      "topic": "How Humidity Affects Your Sleep Patterns",
-      "hook": "Did you know that humidity can ruin your sleep?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Politics and Scandals",
+      "topic": "The Latest White House Scandal",
+      "hook": "Breaking: a shocking new scandal rocks the White House, but what's really going on?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Education News and Updates",
-      "topic": "New Trends in Online Learning for 2024",
-      "hook": "Are you ready for the future of education?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Summer Vacation Ideas",
+      "topic": "The Best Kept Secret Beach in Bali",
+      "hook": "Escape to a tropical paradise: I'm revealing the best hidden beach in Bali that few tourists know about!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Uncovering the Epstein Files",
-      "topic": "Unraveling the Mystery of Epstein's Private Island",
-      "hook": "What secrets lie behind the gates of Pedophile Island?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Gaming Walkthroughs",
+      "topic": "Beating Dark Souls in Under 2 Hours",
+      "hook": "Think you can't beat Dark Souls in under 2 hours? Watch as I show you the ultimate speedrun strategy!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Weather-Themed Gift Ideas",
-      "topic": "10 Unique Gift Ideas for Weather Enthusiasts",
-      "hook": "Know someone who loves the weather?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance Tips and Tricks",
-      "topic": "5 Budgeting Apps to Help You Save Money",
-      "hook": "Take control of your finances with these 5 apps!",
+      "category": "NFL Previews",
+      "topic": "The Top 5 NFL Teams to Watch This Season",
+      "hook": "Get ready for kickoff: I'm counting down the top 5 NFL teams that will dominate the league this season!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Back to School Preparation",
-      "topic": "10 Essential School Supplies for the New Semester",
-      "hook": "Are you ready for the new school year?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Summer Weather Safety",
-      "topic": "How to Stay Safe During a Heatwave",
-      "hook": "Don't let the heat wave catch you off guard!",
+      "category": "Hurricane Updates",
+      "topic": "The Science Behind Hurricane Formation",
+      "hook": "Ever wondered how hurricanes form? Let's dive into the fascinating science behind these powerful storms!",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Daycare Hacks for Parents",
-      "topic": "DIY Sensory Toys for Kids",
-      "hook": "Transform everyday items into fun sensory toys!",
+      "category": "Gaming News",
+      "topic": "The Future of Virtual Reality Gaming",
+      "hook": "Step into the future: I'm exploring the latest advancements in VR gaming and what it means for the industry!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "72 Hour Life Challenges",
-      "topic": "Surviving 72 Hours with No Electricity",
-      "hook": "Can you survive for 3 days without power?",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Boxing Upsets of All Time",
+      "hook": "You won't believe the top 3 biggest upsets in boxing history - these fights will leave you speechless!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Smartphone Reviews and Comparisons",
-      "topic": "Google Pixel vs OnePlus: Camera Comparison",
-      "hook": "Which smartphone has the best camera?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Celebrity Interviews",
+      "topic": "Talking Mental Health with Ariana Grande",
+      "hook": "Ariana Grande opens up about her mental health journey and the importance of self-care in the spotlight!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Weather's Impact on Sleep Quality",
-      "topic": "The Science Behind Why You Sleep Better on Rainy Days",
-      "hook": "Ever wondered why you sleep better on rainy days?",
-      "voice_style": "calm",
+      "category": "Cafe Reviews",
+      "topic": "The Cozy Cafe in the Swiss Alps",
+      "hook": "Get ready to cozy up: I'm reviewing the most charming cafe in the Swiss Alps, complete with breathtaking views!",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Education News and Updates",
-      "topic": "The Rise of Virtual Reality in Education",
-      "hook": "Get ready to revolutionize the way you learn!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Uncovering the Epstein Files",
-      "topic": "The Dark Side of Epstein's Philanthropy",
-      "hook": "What lies behind Epstein's charitable donations?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Travel Vlogs",
+      "topic": "Discovering the Hidden Waterfalls of Iceland",
+      "hook": "Join me on an epic adventure: I'm exploring the stunning hidden waterfalls of Iceland that few tourists know about!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Weather-Themed Gift Ideas",
-      "topic": "Gift Ideas for the Storm Chaser in Your Life",
-      "hook": "Know someone who loves extreme weather?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Politics and Scandals",
+      "topic": "Uncovering the Truth Behind the Latest Government Leak",
+      "hook": "Breaking: a shocking new government leak has been exposed, but what does it really mean for the country?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Personal Finance Tips and Tricks",
-      "topic": "10 Ways to Save Money on Your Daily Commute",
-      "hook": "Save money on your daily commute with these 10 tips!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Summer Vacation Ideas",
+      "topic": "The Ultimate Road Trip Across the American West",
+      "hook": "Hit the open road: I'm sharing the ultimate road trip itinerary across the breathtaking American West!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Back to School Preparation",
-      "topic": "How to Create a Productive Study Space",
-      "hook": "Transform your study space for academic success!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Gaming Walkthroughs",
+      "topic": "Completing The Last of Us in One Sitting",
+      "hook": "Think you can't beat The Last of Us in one sitting? Watch as I show you the ultimate strategy to conquer the game in a single playthrough!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "NFL Previews",
+      "topic": "The Top 5 NFL Rookies to Watch This Season",
+      "hook": "Get ready for kickoff: I'm counting down the top 5 NFL rookies that will make a huge impact on the league this season!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Summer Weather Safety",
-      "topic": "How to Protect Your Skin from Sun Damage",
-      "hook": "Don't let the sun damage your skin!",
+      "category": "Hurricane Updates",
+      "topic": "The Most Devastating Hurricane in US History",
+      "hook": "Remembering the worst: I'm looking back at the most devastating hurricane to ever hit the US and what we can learn from it!",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
       "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
