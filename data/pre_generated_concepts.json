@@ -1,258 +1,274 @@
 {
-  "generated_at": "2026-07-26T07:55:23.234554",
-  "valid_until": "2026-07-26T23:59:23.234564",
+  "generated_at": "2026-07-27T08:54:49.692545",
+  "valid_until": "2026-07-27T23:59:49.692555",
   "categories": [
-    "Summer Heat Hacks",
-    "iPhone 18 Pro Max Reviews",
-    "Weather Updates and Safety Tips",
-    "Robert Downey Jr. Movie Clips",
-    "Election Analysis and Discussions",
-    "Powerball Winning Strategies",
-    "Tech Gadget Unboxing",
-    "Summer Movie Reviews: Avatar",
-    "Jennifer Connelly Throwbacks",
-    "Phone Upgrade Tips and Tricks",
-    "Climate Change Awareness",
-    "Entertainment News and Gossip",
-    "Summer Safety Precautions",
-    "Apple iPhone Upgrade Program Explained",
-    "Lottery Winner Stories and Advice"
+    "Travel Hacks with Alaska Air",
+    "Tech Troubleshooting for Spectrum Outage",
+    "Behind the Scenes with Stunt Doubles",
+    "Book Reviews of \u6771\u91ce\u572d\u543e Novels",
+    "Unboxing the S27 Ultra",
+    "Stargazing and Meteor Showers",
+    "Summer Fashion with H&M",
+    "Airline Reviews and Comparisons",
+    "Comedy Skits about Internet Outages",
+    "Action-Packed Stunt Videos",
+    "Author Interviews and Book Club Discussions",
+    "Smartphone Reviews and Comparisons",
+    "DIY Fashion on a Budget with H&M",
+    "Astronomy and Space Exploration",
+    "Viral Dance Challenges with Airline Themes"
   ],
   "concepts": [
     {
-      "category": "Summer Heat Hacks",
-      "topic": "DIY Portable Mini-AC from a Cooler",
-      "hook": "Melting in your apartment? This $20 hack turns any cooler into a personal AC that actually works!",
+      "category": "Travel Hacks with Alaska Air",
+      "topic": "How to Get Upgraded to First Class for Free",
+      "hook": "Want to fly like a celebrity without breaking the bank?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "iPhone 18 Pro Max Reviews",
-      "topic": "iPhone 18 Pro Max's Rumored 'Invisible Camera' Tech Leak Analysis",
-      "hook": "Is the iPhone 18 Pro Max finally ditching the notch with an 'invisible camera'? I've got the leaked schematics!",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Weather Updates and Safety Tips",
-      "topic": "Emergency-Proof Your Smart Home for Unexpected Power Outages",
-      "hook": "A sudden blackout can turn your smart home into a dumb brick. Here's how to keep critical devices running!",
+      "category": "Tech Troubleshooting for Spectrum Outage",
+      "topic": "Fixing Wi-Fi Dropouts in 3 Simple Steps",
+      "hook": "Tired of buffering wheels and lost connections?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Robert Downey Jr. Movie Clips",
-      "topic": "Robert Downey Jr.'s Most Underrated Dramatic Scenes You Missed",
-      "hook": "Think RDJ is all Iron Man charm? You won't believe these powerful dramatic performances you probably never saw.",
-      "voice_style": "dramatic",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Election Analysis and Discussions",
-      "topic": "The 'Dark Horse' Candidate Nobody's Talking About (Yet)",
-      "hook": "Everyone's focused on the frontrunners, but there's a 'dark horse' candidate quietly gaining momentum. Could they shock everyone?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Powerball Winning Strategies",
-      "topic": "The 'Lucky Number' Powerball Strategy That Actually Uses Math",
-      "hook": "Stop picking birthdays! There's a mathematical approach to Powerball numbers that statistically increases your odds. Intrigued?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 46
-    },
-    {
-      "category": "Tech Gadget Unboxing",
-      "topic": "Unboxing the 'Smart Mug' That Keeps Your Coffee Perfect (or is it a Gimmick?)",
-      "hook": "This 'smart mug' promises perfectly warm coffee all day. Is it a revolutionary gadget or just an expensive cup holder?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Summer Movie Reviews: Avatar",
-      "topic": "Re-evaluating 'Avatar: Way of Water' One Year Later: Still Revolutionary?",
-      "hook": "A year ago, 'Avatar: Way of Water' blew us away. But does the magic hold up, or was it just another pretty picture?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 49
-    },
-    {
-      "category": "Jennifer Connelly Throwbacks",
-      "topic": "Jennifer Connelly's Most Iconic 90s Fashion Moments You Need To See",
-      "hook": "Before she was an Oscar winner, Jennifer Connelly was a 90s style icon. Her fashion choices were absolutely legendary!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Phone Upgrade Tips and Tricks",
-      "topic": "How to Transfer *Everything* to Your New Phone in Under 10 Minutes",
-      "hook": "Getting a new phone is exciting, until you remember transferring data. I'll show you how to do it all in less than 10 minutes!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 41
-    },
-    {
-      "category": "Summer Heat Hacks",
-      "topic": "Keep Outdoor Plants Alive During Heatwaves with This Irrigation Trick",
-      "hook": "Your beautiful outdoor plants don't stand a chance in extreme heat without this simple, budget-friendly irrigation trick!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 46
-    },
-    {
-      "category": "iPhone 18 Pro Max Reviews",
-      "topic": "iPhone 18 Pro Max Battery Life Test: Does it *Actually* Last 3 Days?",
-      "hook": "The iPhone 18 Pro Max claims revolutionary battery life. I put it to the ultimate 72-hour test. The results will shock you!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Weather Updates and Safety Tips",
-      "topic": "Decoding the *Real* Meaning of an 'Extreme Heat Warning'",
-      "hook": "An 'Extreme Heat Warning' isn't just about feeling hot. Here's what those alerts *really* mean for your safety and how to react.",
-      "voice_style": "authoritative",
+      "category": "Behind the Scenes with Stunt Doubles",
+      "topic": "The Secret Lives of Hollywood's Unsung Heroes",
+      "hook": "You think you know your favorite actors, but do you know their secrets?",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Book Reviews of \u6771\u91ce\u572d\u543e Novels",
+      "topic": "Unpacking the Cultural Significance of 'Journey to the West'",
+      "hook": "Get ready to embark on a legendary adventure that will change your perspective forever",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Robert Downey Jr. Movie Clips",
-      "topic": "The *Real* Story Behind RDJ's Iconic Improv in 'Iron Man'",
-      "hook": "Tony Stark's best lines weren't in the script. Discover the untold story of RDJ's legendary improvisations that shaped Iron Man!",
+      "category": "Unboxing the S27 Ultra",
+      "topic": "Unleashing the Power of Samsung's Latest Flagship",
+      "hook": "What makes this phone the most anticipated device of the year?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Election Analysis and Discussions",
-      "topic": "Can AI Influence Voter Turnout More Than Social Media in the Next Election?",
-      "hook": "We've seen social media's impact on elections, but what if AI becomes the next big influencer for voter turnout? The implications are huge.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Powerball Winning Strategies",
-      "topic": "Why Buying 100 Powerball Tickets Is *Worse* Than Buying One (Sometimes)",
-      "hook": "More tickets, more chances, right? Not always! I'll explain why buying *too many* Powerball tickets can actually be a losing strategy.",
+      "category": "Stargazing and Meteor Showers",
+      "topic": "The Best Spots to Witness the Perseid Meteor Shower",
+      "hook": "Where will you be when the night sky comes alive?",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 43
+      "target_duration": 45
     },
     {
-      "category": "Tech Gadget Unboxing",
-      "topic": "Unboxing the Latest 'Foldable Drone' That Fits in Your Pocket",
-      "hook": "A drone that folds into your pocket? Sounds like sci-fi, but this new gadget promises pro-level footage from anywhere!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Summer Movie Reviews: Avatar",
-      "topic": "5 Easter Eggs You MISSED in the Original Avatar's Re-Release",
-      "hook": "Thought you knew everything about Pandora? The recent Avatar re-release quietly added hidden details that even superfans missed!",
+      "category": "Summer Fashion with H&M",
+      "topic": "5 Essential Pieces to Elevate Your Warm-Weather Style",
+      "hook": "Ready to turn up the heat with the hottest summer trends?",
       "voice_style": "friendly",
-      "music_mood": "mysterious",
-      "target_duration": 42
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Jennifer Connelly Throwbacks",
-      "topic": "The Hidden Meaning Behind Jennifer Connelly's 'Labyrinth' Performance",
-      "hook": "Jennifer Connelly's role in 'Labyrinth' wasn't just a fantasy adventure; her performance holds a deeper, transformative meaning you likely missed.",
+      "category": "Airline Reviews and Comparisons",
+      "topic": "Which Airline Has the Best In-Flight Entertainment?",
+      "hook": "Buckle up and find out which airline takes the crown",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits about Internet Outages",
+      "topic": "When the Wi-Fi is Down, Chaos Ensues",
+      "hook": "What happens when the internet stops working, and sanity goes out the window?",
       "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 47
+      "music_mood": "intense",
+      "target_duration": 40
     },
     {
-      "category": "Phone Upgrade Tips and Tricks",
-      "topic": "The Secret Trade-In Trick to Get $200 More for Your Old Phone",
-      "hook": "Don't just trade in your old phone. I found a secret method to maximize your old device's value and get an extra $200 for your upgrade!",
+      "category": "Action-Packed Stunt Videos",
+      "topic": "Performing a Backflip on a Moving Truck",
+      "hook": " Witness the most death-defying stunt of the year",
       "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Hacks with Alaska Air",
+      "topic": "How to Use Travel Points to Book a Free Flight",
+      "hook": "Want to travel for free, but don't know where to start?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Troubleshooting for Spectrum Outage",
+      "topic": "Resolving the 'No Internet' Error in 5 Easy Steps",
+      "hook": "Don't let a simple error ruin your day, fix it in minutes",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Behind the Scenes with Stunt Doubles",
+      "topic": "The Art of Creating Illusions in Hollywood",
+      "hook": "Ever wondered how movie magic happens?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Book Reviews of \u6771\u91ce\u572d\u543e Novels",
+      "topic": "Unraveling the Symbolism in 'Dream of the Red Chamber'",
+      "hook": "Step into a world of ancient wisdom and timeless tales",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
+    },
+    {
+      "category": "Unboxing the S27 Ultra",
+      "topic": "A Deep Dive into the Phone's Advanced Camera System",
+      "hook": "Discover the revolutionary technology that's changing mobile photography",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Stargazing and Meteor Showers",
+      "topic": "The Science Behind Shooting Stars and Meteorites",
+      "hook": "Explore the mysteries of the universe, one meteor at a time",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Fashion with H&M",
+      "topic": "Sustainable Fashion: How to Shop Eco-Friendly this Summer",
+      "hook": "Make a statement with your style, while saving the planet",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Airline Reviews and Comparisons",
+      "topic": "The Best Airlines for Long-Haul Flights: A Comparison",
+      "hook": "Which airline will make your next long-haul flight a breeze?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits about Internet Outages",
+      "topic": "The Struggle is Real: When the Internet is Down",
+      "hook": "Laugh out loud at the absurdity of life without Wi-Fi",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Action-Packed Stunt Videos",
+      "topic": "Extreme Parkour: Jumping Over Obstacles in the City",
+      "hook": " Witness the most heart-stopping parkour stunts in the urban jungle",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Hacks with Alaska Air",
+      "topic": "Maximizing Your Carry-On Luggage Space",
+      "hook": "Pack like a pro and make the most of your luggage allowance",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Troubleshooting for Spectrum Outage",
+      "topic": "Troubleshooting Common Issues with Your Wi-Fi Router",
+      "hook": "Don't let a faulty router ruin your day, fix it in minutes",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "chill"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     }
