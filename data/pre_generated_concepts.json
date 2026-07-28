@@ -1,276 +1,268 @@
 {
-  "generated_at": "2026-07-27T08:54:49.692545",
-  "valid_until": "2026-07-27T23:59:49.692555",
+  "generated_at": "2026-07-28T08:00:04.167722",
+  "valid_until": "2026-07-28T23:59:04.167731",
   "categories": [
-    "Travel Hacks with Alaska Air",
-    "Tech Troubleshooting for Spectrum Outage",
-    "Behind the Scenes with Stunt Doubles",
-    "Book Reviews of \u6771\u91ce\u572d\u543e Novels",
-    "Unboxing the S27 Ultra",
-    "Stargazing and Meteor Showers",
-    "Summer Fashion with H&M",
-    "Airline Reviews and Comparisons",
-    "Comedy Skits about Internet Outages",
-    "Action-Packed Stunt Videos",
-    "Author Interviews and Book Club Discussions",
-    "Smartphone Reviews and Comparisons",
-    "DIY Fashion on a Budget with H&M",
-    "Astronomy and Space Exploration",
-    "Viral Dance Challenges with Airline Themes"
+    "Earthquake Survival Tips",
+    "Japan Travel Vlogs",
+    "News Updates in 60 Seconds",
+    "Mars Exploration Mysteries",
+    "Summer Fair Food Reviews",
+    "NYT Crossword Puzzle Solvers",
+    "Politician Reactions to Current Events",
+    "Celebrity Summer Fashion Trends",
+    "NASA's Latest Mars Rover Discoveries",
+    "Disaster Relief Efforts",
+    "Summer Festival Hacks",
+    "US Political Analysis",
+    "Natural Disaster Preparedness",
+    "Kaia Gerber Summer Style Inspiration",
+    "Science and Technology News"
   ],
   "concepts": [
     {
-      "category": "Travel Hacks with Alaska Air",
-      "topic": "How to Get Upgraded to First Class for Free",
-      "hook": "Want to fly like a celebrity without breaking the bank?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Earthquake Survival Tips",
+      "topic": "Using Everyday Items as Emergency Tools",
+      "hook": "What if your household items could save your life?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Tech Troubleshooting for Spectrum Outage",
-      "topic": "Fixing Wi-Fi Dropouts in 3 Simple Steps",
-      "hook": "Tired of buffering wheels and lost connections?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Japan Travel Vlogs",
+      "topic": "Exploring Hidden Gems in Tokyo's Shimokitazawa",
+      "hook": "Discover the secret neighborhood that only locals know!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Behind the Scenes with Stunt Doubles",
-      "topic": "The Secret Lives of Hollywood's Unsung Heroes",
-      "hook": "You think you know your favorite actors, but do you know their secrets?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "News Updates in 60 Seconds",
+      "topic": "Weekly Recap of Global Environmental News",
+      "hook": "The planet is changing, here's what you need to know!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Book Reviews of \u6771\u91ce\u572d\u543e Novels",
-      "topic": "Unpacking the Cultural Significance of 'Journey to the West'",
-      "hook": "Get ready to embark on a legendary adventure that will change your perspective forever",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Mars Exploration Mysteries",
+      "topic": "Uncovering the Secrets of Mars' Ancient Rivers",
+      "hook": "What ancient secrets lie hidden beneath the Martian surface?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Unboxing the S27 Ultra",
-      "topic": "Unleashing the Power of Samsung's Latest Flagship",
-      "hook": "What makes this phone the most anticipated device of the year?",
-      "voice_style": "energetic",
+      "category": "Summer Fair Food Reviews",
+      "topic": "Ranking the Top 5 Most Unique Fair Foods",
+      "hook": "Get ready for a taste adventure like no other!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Stargazing and Meteor Showers",
-      "topic": "The Best Spots to Witness the Perseid Meteor Shower",
-      "hook": "Where will you be when the night sky comes alive?",
+      "category": "NYT Crossword Puzzle Solvers",
+      "topic": "Solving the Toughest Crossword Puzzle of the Month",
+      "hook": "Can we crack the code of the most challenging puzzle?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Summer Fashion with H&M",
-      "topic": "5 Essential Pieces to Elevate Your Warm-Weather Style",
-      "hook": "Ready to turn up the heat with the hottest summer trends?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Airline Reviews and Comparisons",
-      "topic": "Which Airline Has the Best In-Flight Entertainment?",
-      "hook": "Buckle up and find out which airline takes the crown",
+      "category": "Politician Reactions to Current Events",
+      "topic": "Analyzing the Latest Statements from World Leaders",
+      "hook": "What do the latest announcements mean for our future?",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits about Internet Outages",
-      "topic": "When the Wi-Fi is Down, Chaos Ensues",
-      "hook": "What happens when the internet stops working, and sanity goes out the window?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Action-Packed Stunt Videos",
-      "topic": "Performing a Backflip on a Moving Truck",
-      "hook": " Witness the most death-defying stunt of the year",
+      "category": "Celebrity Summer Fashion Trends",
+      "topic": "Stealing Style Tips from Hollywood's Hottest Summer Looks",
+      "hook": "Who's rocking the hottest summer fashion trends?",
       "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Hacks with Alaska Air",
-      "topic": "How to Use Travel Points to Book a Free Flight",
-      "hook": "Want to travel for free, but don't know where to start?",
-      "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech Troubleshooting for Spectrum Outage",
-      "topic": "Resolving the 'No Internet' Error in 5 Easy Steps",
-      "hook": "Don't let a simple error ruin your day, fix it in minutes",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Behind the Scenes with Stunt Doubles",
-      "topic": "The Art of Creating Illusions in Hollywood",
-      "hook": "Ever wondered how movie magic happens?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Book Reviews of \u6771\u91ce\u572d\u543e Novels",
-      "topic": "Unraveling the Symbolism in 'Dream of the Red Chamber'",
-      "hook": "Step into a world of ancient wisdom and timeless tales",
-      "voice_style": "calm",
+      "category": "NASA's Latest Mars Rover Discoveries",
+      "topic": "Uncovering the Latest Findings on Martian Geology",
+      "hook": "What new discoveries are changing our understanding of Mars?",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Unboxing the S27 Ultra",
-      "topic": "A Deep Dive into the Phone's Advanced Camera System",
-      "hook": "Discover the revolutionary technology that's changing mobile photography",
+      "category": "Disaster Relief Efforts",
+      "topic": "Community-Led Initiatives for Disaster Recovery",
+      "hook": "Meet the heroes who are changing the face of disaster relief!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Earthquake Survival Tips",
+      "topic": "Creating a Personal Emergency Kit",
+      "hook": "Are you prepared for the unexpected?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Japan Travel Vlogs",
+      "topic": "Visiting the Famous Tsukiji Fish Market at Dawn",
+      "hook": "Experience the world's largest fish market like a local!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "News Updates in 60 Seconds",
+      "topic": "Daily Briefing on Global Health News",
+      "hook": "Stay informed about the latest health updates from around the world!",
       "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Mars Exploration Mysteries",
+      "topic": "The Mysterious Case of Mars' Missing Atmosphere",
+      "hook": "What happened to Mars' atmosphere, and can we find out?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Fair Food Reviews",
+      "topic": "Trying the Weirdest and Most Exotic Fair Foods",
+      "hook": "How far will we go for the sake of culinary adventure?",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Stargazing and Meteor Showers",
-      "topic": "The Science Behind Shooting Stars and Meteorites",
-      "hook": "Explore the mysteries of the universe, one meteor at a time",
-      "voice_style": "friendly",
+      "category": "NYT Crossword Puzzle Solvers",
+      "topic": "Cracking the Code of Crossword Puzzle Themes",
+      "hook": "What secrets lie hidden in the patterns of puzzle themes?",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Summer Fashion with H&M",
-      "topic": "Sustainable Fashion: How to Shop Eco-Friendly this Summer",
-      "hook": "Make a statement with your style, while saving the planet",
+      "category": "Politician Reactions to Current Events",
+      "topic": "Decoding the Language of Diplomacy in International Relations",
+      "hook": "What do the words of world leaders really mean?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Summer Fashion Trends",
+      "topic": "Summer Style Inspiration from Hollywood's Top Stars",
+      "hook": "Get ready to steal the summer style secrets of the stars!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NASA's Latest Mars Rover Discoveries",
+      "topic": "Unraveling the Mysteries of Martian Rock Formations",
+      "hook": "What do the latest discoveries reveal about Mars' geological past?",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Airline Reviews and Comparisons",
-      "topic": "The Best Airlines for Long-Haul Flights: A Comparison",
-      "hook": "Which airline will make your next long-haul flight a breeze?",
+      "category": "Disaster Relief Efforts",
+      "topic": "Innovative Technologies for Disaster Response and Recovery",
+      "hook": "How technology is revolutionizing disaster relief efforts!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Comedy Skits about Internet Outages",
-      "topic": "The Struggle is Real: When the Internet is Down",
-      "hook": "Laugh out loud at the absurdity of life without Wi-Fi",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Action-Packed Stunt Videos",
-      "topic": "Extreme Parkour: Jumping Over Obstacles in the City",
-      "hook": " Witness the most heart-stopping parkour stunts in the urban jungle",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Earthquake Survival Tips",
+      "topic": "Earthquake-Proofing Your Home and Family",
+      "hook": "Is your home and family prepared for the next earthquake?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
-    },
-    {
-      "category": "Travel Hacks with Alaska Air",
-      "topic": "Maximizing Your Carry-On Luggage Space",
-      "hook": "Pack like a pro and make the most of your luggage allowance",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech Troubleshooting for Spectrum Outage",
-      "topic": "Troubleshooting Common Issues with Your Wi-Fi Router",
-      "hook": "Don't let a faulty router ruin your day, fix it in minutes",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
