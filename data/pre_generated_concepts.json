@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-07-29T08:04:50.321511",
-  "valid_until": "2026-07-29T23:59:50.321517",
+  "generated_at": "2026-07-30T07:54:36.322336",
+  "valid_until": "2026-07-30T23:59:36.322347",
   "categories": [
-    "Brain Health Hacks inspired by Rutgers University Nutrition Cognitive Study",
-    "Football Analysis with Adam Walton and Danny Welbeck",
-    "Music Festival Vlogs like Outside Lands 2026",
-    "K-Pop Dance Challenges featuring BTS Grammy wins",
-    "Jared Leto Impersonations and Celebrity Parodies",
-    "Comedy Skits with Rosie O'Donnell as inspiration",
-    "Summer Fitness Motivation with Olympic Athletes",
-    "Healthy Eating Tips for Cognitive Function",
-    "Sports News and Updates with Martin Landaluce",
-    "Grammy Awards Predictions and Discussions",
+    "Sports Highlights and Analysis",
+    "Celebrity News and Gossip featuring Bianca Censori",
+    "Space and Rocket Launch Coverage",
+    "Tech Reviews of Google Pixel 11 Pro",
+    "Stock Market Updates and Dow Jones News",
+    "Health and Wellness Tips for Avoiding Parasite Outbreaks",
+    "Wine and Beverage Reviews",
+    "Music Festival Vlogs from Outside Lands 2026",
+    "Summer Sports and Fitness Challenges",
+    "News Updates and Current Events",
     "Viral Dance Challenges to Popular Songs",
-    "Summer Festival Fashion and Beauty Trends",
-    "Mental Health Awareness and Self-Care Tips",
-    "Celebrity Interviews and Behind-the-Scenes",
-    "Esports and Gaming Highlights with Pro Athletes like Adam Walton"
+    "Comedy Skits about Everyday Life",
+    "Gaming Highlights and Walkthroughs",
+    "Travel and Adventure Vlogs to Summer Destinations",
+    "Food and Drink Recipes for Summer Parties"
   ],
   "concepts": [
     {
-      "category": "Brain Health Hacks inspired by Rutgers University Nutrition Cognitive Study",
-      "topic": "5 Morning Habits to Boost Focus",
-      "hook": "What if your morning coffee could be replaced with a brain-boosting hack?",
+      "category": "Sports Highlights and Analysis",
+      "topic": "NBA Finals Game 7 Comeback",
+      "hook": "You won't believe the insane 4th quarter turnaround that changed the course of history!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Football Analysis with Adam Walton and Danny Welbeck",
-      "topic": "Tactical Breakdown of Manchester United's Comeback",
-      "hook": "How did Manchester United turn the game around in just 10 minutes?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Festival Vlogs like Outside Lands 2026",
-      "topic": "Exploring the Art Installations at Outside Lands",
-      "hook": "Get ready to immerse yourself in the most Instagrammable festival art",
+      "category": "Celebrity News and Gossip featuring Bianca Censori",
+      "topic": "Bianca Censori's Secret Fashion Collab",
+      "hook": "We've got the scoop on Bianca's latest high-end fashion partnership that's about to break the internet!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "K-Pop Dance Challenges featuring BTS Grammy wins",
-      "topic": "Can You Keep Up with BTS's 'Butter' Choreography?",
-      "hook": "Think you can dance like BTS? Let's put your skills to the test",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Jared Leto Impersonations and Celebrity Parodies",
-      "topic": "Jared Leto's Most Iconic Met Gala Looks Recreated",
-      "hook": "What happens when you give a comedian an unlimited fashion budget?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Skits with Rosie O'Donnell as inspiration",
-      "topic": "The Struggle is Real: Adulting 101",
-      "hook": "Warning: this skit may make you laugh out loud and cry a little",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Fitness Motivation with Olympic Athletes",
-      "topic": "Olympian-Approved Workout Routines for Beginners",
-      "hook": "Transform your body in just 4 weeks with these expert tips",
+      "category": "Space and Rocket Launch Coverage",
+      "topic": "NASA's Perseverance Mars Rover Discovery",
+      "hook": "Get ready for a groundbreaking revelation from the Red Planet that will leave you starstruck!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 40
+      "target_duration": 48
     },
     {
-      "category": "Healthy Eating Tips for Cognitive Function",
-      "topic": "Brain-Boosting Foods to Add to Your Breakfast",
-      "hook": "What if your breakfast could give you a mental edge?",
+      "category": "Tech Reviews of Google Pixel 11 Pro",
+      "topic": "Pixel 11 Pro Camera Showdown",
+      "hook": "Can the Pixel 11 Pro really take down the competition with its revolutionary camera tech?",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Stock Market Updates and Dow Jones News",
+      "topic": "Market Volatility Alert: What You Need to Know",
+      "hook": "The Dow Jones just took a wild turn - here's how to protect your portfolio from the chaos!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports News and Updates with Martin Landaluce",
-      "topic": "The Rise of Women's Football: A Game-Changing Moment",
-      "hook": "This could be the most pivotal moment in women's football history",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Grammy Awards Predictions and Discussions",
-      "topic": "Who Will Take Home the Grammy for Best New Artist?",
-      "hook": "The ultimate showdown: who will be crowned the best new artist?",
-      "voice_style": "dramatic",
+      "category": "Health and Wellness Tips for Avoiding Parasite Outbreaks",
+      "topic": "The Hidden Dangers of Tap Water",
+      "hook": "You won't believe the shocking truth about what's lurking in your drinking water!",
+      "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 45
+      "target_duration": 46
     },
     {
-      "category": "Brain Health Hacks inspired by Rutgers University Nutrition Cognitive Study",
-      "topic": "The Science Behind How Meditation Changes Your Brain",
-      "hook": "What happens to your brain when you meditate for just 10 minutes a day?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Football Analysis with Adam Walton and Danny Welbeck",
-      "topic": "The Impact of VAR on the Beautiful Game",
-      "hook": "Is VAR ruining the game or saving it?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Music Festival Vlogs like Outside Lands 2026",
-      "topic": "The Best Food and Drinks to Try at Outside Lands",
-      "hook": "Get ready for a culinary adventure like no other",
+      "category": "Wine and Beverage Reviews",
+      "topic": "Rare Wine Tasting: 1961 Petrus",
+      "hook": "We're uncorking a $10,000 bottle of wine - is it worth the hefty price tag?",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "music_mood": "chill",
+      "target_duration": 41
     },
     {
-      "category": "K-Pop Dance Challenges featuring BTS Grammy wins",
-      "topic": "BTS's Most Iconic Music Video Dance Routines",
-      "hook": "Which BTS dance routine is the most iconic of all time?",
+      "category": "Music Festival Vlogs from Outside Lands 2026",
+      "topic": "Outside Lands 2026: Best Performances",
+      "hook": "Relive the magic of Outside Lands with our top 3 performances that stole the show!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 43
     },
     {
-      "category": "Jared Leto Impersonations and Celebrity Parodies",
-      "topic": "Celebrity Impressions: Jared Leto Edition",
-      "hook": "Can you guess which celebrity Jared Leto is impersonating?",
+      "category": "Summer Sports and Fitness Challenges",
+      "topic": "30-Day Beach Body Challenge",
+      "hook": "Get ready to sweat with our intense 30-day workout plan to get you beach-ready in no time!",
       "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "music_mood": "intense",
+      "target_duration": 49
     },
     {
-      "category": "Comedy Skits with Rosie O'Donnell as inspiration",
-      "topic": "The Funniest Moments in Awards Show History",
-      "hook": "What happens when celebrities let loose on live TV?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Fitness Motivation with Olympic Athletes",
-      "topic": "The Ultimate 4-Week Summer Body Workout Plan",
-      "hook": "Transform your body in just 4 weeks with this proven plan",
+      "category": "News Updates and Current Events",
+      "topic": "Breaking News: Latest Developments",
+      "hook": "We've got the latest updates on the developing story that's got everyone talking!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Healthy Eating Tips for Cognitive Function",
-      "topic": "The Top 5 Brain-Boosting Snacks to Eat on the Go",
-      "hook": "What if your snacks could give you a mental edge?",
+      "category": "Space and Rocket Launch Coverage",
+      "topic": "SpaceX Starship Update: What's Next",
+      "hook": "Elon Musk just revealed the future of space travel - and it's more ambitious than you think!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Celebrity News and Gossip featuring Bianca Censori",
+      "topic": "Bianca Censori's Secret Talent Revealed",
+      "hook": "You won't believe the hidden talent that Bianca's been keeping under wraps until now!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Tech Reviews of Google Pixel 11 Pro",
+      "topic": "Pixel 11 Pro vs. iPhone: The Ultimate Showdown",
+      "hook": "It's time to settle the score - which smartphone reigns supreme?",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports News and Updates with Martin Landaluce",
-      "topic": "The Most Shocking Moments in Sports History",
-      "hook": "What are the most jaw-dropping moments in sports history?",
+      "category": "Sports Highlights and Analysis",
+      "topic": "NFL Draft: Biggest Steals and Surprises",
+      "hook": "We're breaking down the most shocking picks from the NFL draft that will change the game!",
       "voice_style": "authoritative",
       "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Health and Wellness Tips for Avoiding Parasite Outbreaks",
+      "topic": "The Alarming Rise of Antibiotic Resistance",
+      "hook": "The truth about the deadly superbug threat that's spreading fast - and what you can do to protect yourself!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Wine and Beverage Reviews",
+      "topic": "Craft Beer Tasting: Top IPAs",
+      "hook": "We're hopping into the world of craft beer to find the best IPAs that will quench your thirst!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Grammy Awards Predictions and Discussions",
-      "topic": "The Most Memorable Grammy Performances of All Time",
-      "hook": "Which Grammy performance will go down in history as the most iconic?",
+      "category": "Music Festival Vlogs from Outside Lands 2026",
+      "topic": "Outside Lands 2026: Best Food and Drinks",
+      "hook": "From gourmet grub to artisanal drinks, we're exploring the best of Outside Lands' culinary scene!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Summer Sports and Fitness Challenges",
+      "topic": "Olympic Athlete Workout Challenge",
+      "hook": "Think you can keep up with the world's top athletes? Take on our Olympic-inspired workout challenge!",
       "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 49
+    },
+    {
+      "category": "News Updates and Current Events",
+      "topic": "Climate Change: The Latest Breakthroughs",
+      "hook": "Groundbreaking innovations are changing the game in the fight against climate change - here's what you need to know!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Brain Health Hacks inspired by Rutgers University Nutrition Cognitive Study",
-      "topic": "The Benefits of Journaling for Mental Clarity",
-      "hook": "What if writing down your thoughts could change your life?",
+      "category": "Stock Market Updates and Dow Jones News",
+      "topic": "Investing in the Future: Top Tech Stocks",
+      "hook": "Which tech stocks are poised to take over the market? We're revealing our top picks for the future!",
       "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
+      "music_mood": "dramatic",
+      "target_duration": 42
+    },
+    {
+      "category": "Space and Rocket Launch Coverage",
+      "topic": "The Search for Life Beyond Earth",
+      "hook": "The latest discoveries that bring us one step closer to finding life beyond our planet!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 48
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
