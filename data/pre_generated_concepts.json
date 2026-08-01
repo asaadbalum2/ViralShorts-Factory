@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-07-31T08:16:16.734718",
-  "valid_until": "2026-07-31T23:59:16.734725",
+  "generated_at": "2026-08-01T07:41:47.010141",
+  "valid_until": "2026-08-01T23:59:47.010153",
   "categories": [
-    "K-Pop Tour Vlogs",
-    "Stock Market Analysis",
-    "Personal Finance Tips",
-    "Retro Gaming Soundtracks",
-    "Spiderman Fan Edits",
-    "Apple iPhone Reviews",
-    "Summer Concert Highlights",
-    "Loans and Credit Explained",
-    "Kawaii Fashion Inspiration",
-    "North West Kimokawaii Tour Behind-The-Scenes",
-    "Minimax H3 Gaming Strategies",
-    "Tech News Updates",
-    "Music Festival Fashion",
-    "Summer Gaming Soundtrack Playlists",
-    "Molly Santana x North West Kimokawaii Tour Challenges"
+    "Tennis Highlights and Analysis",
+    "Stock Market Updates and Advice",
+    "New Home Tours and Decor Inspiration",
+    "iPhone Rumor Roundups and Tech News",
+    "Meteor Shower Live Streams and Astronomy Facts",
+    "Throwback Wesley Snipes Movie Clips and Interviews",
+    "Valeria Marquez Dance and Fitness Challenges",
+    "Fundraiser Campaigns and Charity Events",
+    "Summer Home Improvement and DIY Projects",
+    "Sports News and Scores Today",
+    "Tech Gadget Reviews and Unboxings",
+    "Home Organization and Decluttering Tips",
+    "Astronomy and Space Exploration Documentaries",
+    "Financial Literacy and Investing 101",
+    "Entertainment News and Celebrity Interviews"
   ],
   "concepts": [
     {
-      "category": "K-Pop Tour Vlogs",
-      "topic": "BTS's Most Epic Stage Effects",
-      "hook": "You won't believe the technology behind BTS's mind-blowing stage effects!",
+      "category": "Tennis Highlights and Analysis",
+      "topic": "The Unstoppable Serve of Novak Djokovic",
+      "hook": "Can anyone stop the world's number one tennis player's 130mph serve?",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Stock Market Analysis",
-      "topic": "The Impact of Inflation on Tech Stocks",
-      "hook": "Is your portfolio ready for the looming inflation storm?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance Tips",
-      "topic": "5 Budgeting Apps for Millennials",
-      "hook": "Ditch the spreadsheet and start saving with these game-changing budgeting apps!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Retro Gaming Soundtracks",
-      "topic": "The Nostalgic Music of Classic Nintendo Games",
-      "hook": "Get ready for a blast from the past with the iconic soundtracks of Nintendo's greatest games!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Spiderman Fan Edits",
-      "topic": "A Deep Dive into the Spider-Verse",
-      "hook": "What if Spiderman existed in a world where superheroes were a thing of legend?",
-      "voice_style": "mysterious",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Apple iPhone Reviews",
-      "topic": "iPhone 14 Pro vs Samsung S22: Which is the Better Flagship?",
-      "hook": "The ultimate showdown: can Apple's latest flagship take down the Android king?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Summer Concert Highlights",
-      "topic": "The Most Electrifying Performances of Lollapalooza 2022",
-      "hook": "Relive the magic of Lollapalooza with the most unforgettable performances of the summer!",
+      "category": "Stock Market Updates and Advice",
+      "topic": "The Rise of ESG Investing: What You Need to Know",
+      "hook": "Are you missing out on the sustainable investing revolution?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "New Home Tours and Decor Inspiration",
+      "topic": "A Sustainable Tiny Home in the Woods",
+      "hook": "Step inside the ultimate eco-friendly tiny home that will make you want to downsize",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "iPhone Rumor Roundups and Tech News",
+      "topic": "The Latest iPhone 15 Rumors: What to Expect",
+      "hook": "Will the new iPhone have a foldable screen? We've got the latest scoop",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Loans and Credit Explained",
-      "topic": "The Pros and Cons of Consolidating Credit Card Debt",
-      "hook": "Are you drowning in credit card debt? Here's what you need to know about consolidation!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Kawaii Fashion Inspiration",
-      "topic": "10 Adorable Outfit Ideas for a Tokyo Street Style",
-      "hook": "Get ready to take your wardrobe to the next level with the cutest kawaii fashion trends from Tokyo!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "North West Kimokawaii Tour Behind-The-Scenes",
-      "topic": "The Making of the Cutest Cosplay Music Video Ever",
-      "hook": "Go behind the scenes of the most adorable music video shoot of the year and meet the talented team behind it!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "K-Pop Tour Vlogs",
-      "topic": "Blackpink's World Tour: A Look at the Group's Favorite Moments",
-      "hook": "What happens when K-pop's biggest stars take the world by storm? Let's find out!",
+      "category": "Meteor Shower Live Streams and Astronomy Facts",
+      "topic": "The Perseid Meteor Shower: When and Where to Watch",
+      "hook": "Get ready for the most spectacular meteor shower of the year: here's how to catch it",
       "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Stock Market Analysis",
-      "topic": "The Impact of ESG Investing on Portfolio Performance",
-      "hook": "Is your investment portfolio aligned with your values? Here's what you need to know about ESG investing!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Personal Finance Tips",
-      "topic": "How to Save $1,000 in Just 30 Days",
-      "hook": "Ready to kickstart your savings journey? Here's a challenge to help you save $1,000 in no time!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Retro Gaming Soundtracks",
-      "topic": "The Evolution of Video Game Music: From 8-Bit to Orchestra",
-      "hook": "Join us on a journey through the history of video game music and discover the iconic soundtracks that defined a generation!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Spiderman Fan Edits",
-      "topic": "Spiderman: Into the Spider-Verse - A Deep Dive into the Animation Process",
-      "hook": "Ever wondered how the Spider-Verse was brought to life? Let's dive into the amazing animation process behind the film!",
-      "voice_style": "mysterious",
+      "category": "Throwback Wesley Snipes Movie Clips and Interviews",
+      "topic": "The Making of Blade: A Look Back with Wesley Snipes",
+      "hook": "What did Wesley Snipes reveal about the iconic vampire hunter in this rare interview?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Apple iPhone Reviews",
-      "topic": "iPhone 14 vs iPhone 13: Is the Upgrade Worth It?",
-      "hook": "Should you upgrade to the latest iPhone or stick with your trusty old device? Let's compare the two and find out!",
+      "category": "Valeria Marquez Dance and Fitness Challenges",
+      "topic": "Valeria Marquez's 5-Minute Morning Dance Routine",
+      "hook": "Start your day with energy: follow Valeria Marquez's quick and fun dance routine",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Fundraiser Campaigns and Charity Events",
+      "topic": "Supporting Mental Health Awareness: A Charity Walk",
+      "hook": "Join the movement: how you can participate in the mental health awareness charity walk",
       "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Home Improvement and DIY Projects",
+      "topic": "Transform Your Backyard with a DIY Pergola",
+      "hook": "Create the ultimate outdoor oasis: a step-by-step guide to building a pergola",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports News and Scores Today",
+      "topic": "The Top 5 NBA Players to Watch This Season",
+      "hook": "Who will dominate the court this season? Get the inside scoop on the top NBA players",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Tennis Highlights and Analysis",
+      "topic": "The Rise of Emma Raducanu: What Makes Her a Tennis Sensation",
+      "hook": "How did Emma Raducanu go from unknown to Grand Slam champion? We analyze her game",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Stock Market Updates and Advice",
+      "topic": "The Impact of Inflation on Your Investment Portfolio",
+      "hook": "Will inflation ruin your investment strategy? Here's what you need to know",
+      "voice_style": "calm",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Summer Concert Highlights",
-      "topic": "The Best Music Festivals to Attend This Summer",
-      "hook": "Ready to soak up the sun and enjoy some amazing live music? Here are the top music festivals to attend this summer!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Loans and Credit Explained",
-      "topic": "The Benefits and Risks of Using a Credit Card for Everyday Purchases",
-      "hook": "Are credit cards a convenient way to pay for everyday items or a recipe for disaster? Let's weigh the pros and cons!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Kawaii Fashion Inspiration",
-      "topic": "The Art of Mixing and Matching Patterns for a Unique Kawaii Look",
-      "hook": "Ready to take your kawaii fashion game to the next level? Here's how to mix and match patterns like a pro!",
+      "category": "New Home Tours and Decor Inspiration",
+      "topic": "A Luxurious Modern Farmhouse in the Countryside",
+      "hook": "Escape to the countryside: take a tour of this stunning modern farmhouse",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "North West Kimokawaii Tour Behind-The-Scenes",
-      "topic": "The Making of a Kimokawaii Music Video: From Concept to Completion",
-      "hook": "Ever wondered how a kimokawaii music video is made? Join us on a behind-the-scenes journey to find out!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "K-Pop Tour Vlogs",
-      "topic": "The Most Memorable K-Pop Concert Moments of the Year",
-      "hook": "Relive the magic of the most unforgettable K-pop concert moments of the year!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
+      "category": "iPhone Rumor Roundups and Tech News",
+      "topic": "The Future of Apple: What to Expect from the Next iPhone",
+      "hook": "Will Apple's next iPhone revolutionize the tech industry? We've got the inside scoop",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Meteor Shower Live Streams and Astronomy Facts",
+      "topic": "The Science Behind Shooting Stars: A Look at Meteorites",
+      "hook": "What happens when a meteorite enters Earth's atmosphere? Let's explore the science",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Throwback Wesley Snipes Movie Clips and Interviews",
+      "topic": "Wesley Snipes on the Set of White Men Can't Jump",
+      "hook": "What did Wesley Snipes reveal about his iconic basketball movie in this rare interview?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Valeria Marquez Dance and Fitness Challenges",
+      "topic": "Valeria Marquez's Intense Ab Workout Challenge",
+      "hook": "Get ready to sweat: follow Valeria Marquez's intense ab workout challenge",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Fundraiser Campaigns and Charity Events",
+      "topic": "Supporting Children's Education: A Charity Run",
+      "hook": "Join the movement: how you can participate in the charity run for children's education",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Home Improvement and DIY Projects",
+      "topic": "Upcycling Old Furniture: A Step-by-Step Guide",
+      "hook": "Give new life to old furniture: a beginner's guide to upcycling",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports News and Scores Today",
+      "topic": "The Top 3 Football Players to Watch This Season",
+      "hook": "Who will lead their team to victory this season? Get the inside scoop on the top football players",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Tennis Highlights and Analysis",
+      "topic": "The Dominance of the Big Three in Men's Tennis",
+      "hook": "Will anyone be able to break the dominance of Djokovic, Nadal, and Federer? We analyze the stats",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
