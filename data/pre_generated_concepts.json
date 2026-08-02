@@ -1,268 +1,268 @@
 {
-  "generated_at": "2026-08-01T07:41:47.010141",
-  "valid_until": "2026-08-01T23:59:47.010153",
+  "generated_at": "2026-08-02T07:49:14.077001",
+  "valid_until": "2026-08-02T23:59:14.077010",
   "categories": [
-    "Tennis Highlights and Analysis",
-    "Stock Market Updates and Advice",
-    "New Home Tours and Decor Inspiration",
-    "iPhone Rumor Roundups and Tech News",
-    "Meteor Shower Live Streams and Astronomy Facts",
-    "Throwback Wesley Snipes Movie Clips and Interviews",
-    "Valeria Marquez Dance and Fitness Challenges",
-    "Fundraiser Campaigns and Charity Events",
-    "Summer Home Improvement and DIY Projects",
-    "Sports News and Scores Today",
-    "Tech Gadget Reviews and Unboxings",
-    "Home Organization and Decluttering Tips",
-    "Astronomy and Space Exploration Documentaries",
-    "Financial Literacy and Investing 101",
-    "Entertainment News and Celebrity Interviews"
+    "Sports Highlights",
+    " Celebrity News and Gossip",
+    "Environmental Awareness",
+    "Spiderman Movie Rumors",
+    "Lottery and Gaming",
+    "Summer Health Tips",
+    "Air Quality Safety",
+    "Entertainment News",
+    "Movie Reviews and Previews",
+    "Fitness with Kelsey Plum",
+    "Chet Holmgren NBA Updates",
+    "Zendaya Net Worth and Lifestyle",
+    "Avengers Movie Theories",
+    "Spiderman Franchise Updates",
+    "Summer Movie Releases with Florence Pugh"
   ],
   "concepts": [
     {
-      "category": "Tennis Highlights and Analysis",
-      "topic": "The Unstoppable Serve of Novak Djokovic",
-      "hook": "Can anyone stop the world's number one tennis player's 130mph serve?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Stock Market Updates and Advice",
-      "topic": "The Rise of ESG Investing: What You Need to Know",
-      "hook": "Are you missing out on the sustainable investing revolution?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "New Home Tours and Decor Inspiration",
-      "topic": "A Sustainable Tiny Home in the Woods",
-      "hook": "Step inside the ultimate eco-friendly tiny home that will make you want to downsize",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "iPhone Rumor Roundups and Tech News",
-      "topic": "The Latest iPhone 15 Rumors: What to Expect",
-      "hook": "Will the new iPhone have a foldable screen? We've got the latest scoop",
+      "category": "Sports Highlights",
+      "topic": "NBA's Most Thrilling buzzer-beaters of 2022",
+      "hook": "You won't believe the shot that won it all!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Meteor Shower Live Streams and Astronomy Facts",
-      "topic": "The Perseid Meteor Shower: When and Where to Watch",
-      "hook": "Get ready for the most spectacular meteor shower of the year: here's how to catch it",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Throwback Wesley Snipes Movie Clips and Interviews",
-      "topic": "The Making of Blade: A Look Back with Wesley Snipes",
-      "hook": "What did Wesley Snipes reveal about the iconic vampire hunter in this rare interview?",
+      "category": "Celebrity News and Gossip",
+      "topic": "Uncovering Hidden Talents of A-List Celebrities",
+      "hook": "Did you know your favorite celebrity is secretly a master chef?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Environmental Awareness",
+      "topic": "The Devastating Impact of Single-Use Plastics on Marine Life",
+      "hook": "What you're about to see will make you never use a plastic straw again",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Spiderman Movie Rumors",
+      "topic": "Spider-Man 4: The Web-Slinger's Next Villain Revealed",
+      "hook": "Get ready for the most epic battle in Spider-Man history!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Valeria Marquez Dance and Fitness Challenges",
-      "topic": "Valeria Marquez's 5-Minute Morning Dance Routine",
-      "hook": "Start your day with energy: follow Valeria Marquez's quick and fun dance routine",
+      "category": "Lottery and Gaming",
+      "topic": "The Mathematics Behind Winning the Jackpot",
+      "hook": "Want to know the secret to winning the lottery?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Summer Health Tips",
+      "topic": "Beating the Heat: How to Stay Hydrated This Summer",
+      "hook": "Don't let dehydration ruin your summer vibes!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Fundraiser Campaigns and Charity Events",
-      "topic": "Supporting Mental Health Awareness: A Charity Walk",
-      "hook": "Join the movement: how you can participate in the mental health awareness charity walk",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Home Improvement and DIY Projects",
-      "topic": "Transform Your Backyard with a DIY Pergola",
-      "hook": "Create the ultimate outdoor oasis: a step-by-step guide to building a pergola",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports News and Scores Today",
-      "topic": "The Top 5 NBA Players to Watch This Season",
-      "hook": "Who will dominate the court this season? Get the inside scoop on the top NBA players",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Tennis Highlights and Analysis",
-      "topic": "The Rise of Emma Raducanu: What Makes Her a Tennis Sensation",
-      "hook": "How did Emma Raducanu go from unknown to Grand Slam champion? We analyze her game",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Stock Market Updates and Advice",
-      "topic": "The Impact of Inflation on Your Investment Portfolio",
-      "hook": "Will inflation ruin your investment strategy? Here's what you need to know",
-      "voice_style": "calm",
+      "category": "Air Quality Safety",
+      "topic": "The Hidden Dangers of Indoor Air Pollution",
+      "hook": "The air you breathe at home might be killing you",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "New Home Tours and Decor Inspiration",
-      "topic": "A Luxurious Modern Farmhouse in the Countryside",
-      "hook": "Escape to the countryside: take a tour of this stunning modern farmhouse",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "iPhone Rumor Roundups and Tech News",
-      "topic": "The Future of Apple: What to Expect from the Next iPhone",
-      "hook": "Will Apple's next iPhone revolutionize the tech industry? We've got the inside scoop",
+      "category": "Entertainment News",
+      "topic": "The Most Anticipated Movies of 2024",
+      "hook": "Get ready for the biggest movie releases of the year!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Meteor Shower Live Streams and Astronomy Facts",
-      "topic": "The Science Behind Shooting Stars: A Look at Meteorites",
-      "hook": "What happens when a meteorite enters Earth's atmosphere? Let's explore the science",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "Movie Reviews and Previews",
+      "topic": "Unpacking the Plot Twists of the Latest Blockbuster",
+      "hook": "You won't believe the ending of this movie!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
     },
     {
-      "category": "Throwback Wesley Snipes Movie Clips and Interviews",
-      "topic": "Wesley Snipes on the Set of White Men Can't Jump",
-      "hook": "What did Wesley Snipes reveal about his iconic basketball movie in this rare interview?",
+      "category": "Fitness with Kelsey Plum",
+      "topic": "Kelsey Plum's 5-Minute Morning Workout Routine",
+      "hook": "Start your day with a slam dunk!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity News and Gossip",
+      "topic": "The Most Shocking Celebrity Break-Ups of the Decade",
+      "hook": "You won't believe which A-list couple is calling it quits!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Valeria Marquez Dance and Fitness Challenges",
-      "topic": "Valeria Marquez's Intense Ab Workout Challenge",
-      "hook": "Get ready to sweat: follow Valeria Marquez's intense ab workout challenge",
+      "category": "Environmental Awareness",
+      "topic": "The Impact of Climate Change on Global Food Supplies",
+      "hook": "The future of food is at risk, and it's up to us to save it",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Spiderman Movie Rumors",
+      "topic": "The Next Spider-Man Movie: What We Know So Far",
+      "hook": "Get ready for the most epic Spider-Man adventure yet!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Lottery and Gaming",
+      "topic": "The Biggest Lottery Winners of All Time",
+      "hook": "These lucky winners will make you want to buy a ticket!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Health Tips",
+      "topic": "The Dangers of Sunscreen: What You Need to Know",
+      "hook": "The one thing you're doing wrong when applying sunscreen",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Air Quality Safety",
+      "topic": "The Alarming Rise of Air Pollution in Major Cities",
+      "hook": "The air you breathe might be killing you, and it's getting worse",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "The Most Surprising Celebrity Comebacks of the Year",
+      "hook": "You won't believe which celebrity is making a comeback!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Movie Reviews and Previews",
+      "topic": "The Most Anticipated Movie Sequels of 2024",
+      "hook": "Get ready for the next installment of your favorite franchise!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Fitness with Kelsey Plum",
+      "topic": "Kelsey Plum's Top 5 Exercise Tips for a Stronger Core",
+      "hook": "Get ready to sweat with Kelsey Plum's core workout!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Fundraiser Campaigns and Charity Events",
-      "topic": "Supporting Children's Education: A Charity Run",
-      "hook": "Join the movement: how you can participate in the charity run for children's education",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Comebacks in Sports History",
+      "hook": "You won't believe the greatest comeback of all time!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Summer Home Improvement and DIY Projects",
-      "topic": "Upcycling Old Furniture: A Step-by-Step Guide",
-      "hook": "Give new life to old furniture: a beginner's guide to upcycling",
+      "category": "Celebrity News and Gossip",
+      "topic": "The Most Expensive Celebrity Homes of the Year",
+      "hook": "Take a tour of the most luxurious celebrity mansions!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports News and Scores Today",
-      "topic": "The Top 3 Football Players to Watch This Season",
-      "hook": "Who will lead their team to victory this season? Get the inside scoop on the top football players",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Tennis Highlights and Analysis",
-      "topic": "The Dominance of the Big Three in Men's Tennis",
-      "hook": "Will anyone be able to break the dominance of Djokovic, Nadal, and Federer? We analyze the stats",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
