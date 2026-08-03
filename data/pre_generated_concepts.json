@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-08-02T07:49:14.077001",
-  "valid_until": "2026-08-02T23:59:14.077010",
+  "generated_at": "2026-08-03T08:48:22.389382",
+  "valid_until": "2026-08-03T23:59:22.389391",
   "categories": [
-    "Sports Highlights",
-    " Celebrity News and Gossip",
-    "Environmental Awareness",
-    "Spiderman Movie Rumors",
-    "Lottery and Gaming",
-    "Summer Health Tips",
-    "Air Quality Safety",
-    "Entertainment News",
-    "Movie Reviews and Previews",
-    "Fitness with Kelsey Plum",
-    "Chet Holmgren NBA Updates",
-    "Zendaya Net Worth and Lifestyle",
-    "Avengers Movie Theories",
-    "Spiderman Franchise Updates",
-    "Summer Movie Releases with Florence Pugh"
+    "Netflix Movie Reviews",
+    "Gaming Highlights - Minimax H3",
+    "Wildlife Hunters - Hunter",
+    "Architecture - World's Tallest Buildings",
+    "Stock Market Updates",
+    "Mysterious Landmarks - Nazca Lines",
+    "Luxury Shopping - Harrods",
+    "iPhone Rumors and Leaks",
+    "Summer Blockbuster Previews",
+    "Financial News Today",
+    "Travel Vlogs - Exploring New Cities",
+    "Top 10 Lists - Netflix Top Movies",
+    "Investing Tips and Advice",
+    "Technology News and Rumors",
+    "Urban Exploration - Abandoned Skyscrapers"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "NBA's Most Thrilling buzzer-beaters of 2022",
-      "hook": "You won't believe the shot that won it all!",
+      "category": "Netflix Movie Reviews",
+      "topic": "Unpacking the Twist in 'Kaleidoscope' Series",
+      "hook": "You won't believe the mind-blowing twist in the newest Netflix series!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News and Gossip",
-      "topic": "Uncovering Hidden Talents of A-List Celebrities",
-      "hook": "Did you know your favorite celebrity is secretly a master chef?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Environmental Awareness",
-      "topic": "The Devastating Impact of Single-Use Plastics on Marine Life",
-      "hook": "What you're about to see will make you never use a plastic straw again",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Spiderman Movie Rumors",
-      "topic": "Spider-Man 4: The Web-Slinger's Next Villain Revealed",
-      "hook": "Get ready for the most epic battle in Spider-Man history!",
-      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Lottery and Gaming",
-      "topic": "The Mathematics Behind Winning the Jackpot",
-      "hook": "Want to know the secret to winning the lottery?",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Health Tips",
-      "topic": "Beating the Heat: How to Stay Hydrated This Summer",
-      "hook": "Don't let dehydration ruin your summer vibes!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Air Quality Safety",
-      "topic": "The Hidden Dangers of Indoor Air Pollution",
-      "hook": "The air you breathe at home might be killing you",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Most Anticipated Movies of 2024",
-      "hook": "Get ready for the biggest movie releases of the year!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Movie Reviews and Previews",
-      "topic": "Unpacking the Plot Twists of the Latest Blockbuster",
-      "hook": "You won't believe the ending of this movie!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Fitness with Kelsey Plum",
-      "topic": "Kelsey Plum's 5-Minute Morning Workout Routine",
-      "hook": "Start your day with a slam dunk!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Most Shocking Celebrity Break-Ups of the Decade",
-      "hook": "You won't believe which A-list couple is calling it quits!",
+      "category": "Gaming Highlights - Minimax H3",
+      "topic": "Achieving the Impossible: Beating Minimax H3 on Hard Mode",
+      "hook": "Watch as I attempt the unthinkable in Minimax H3!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Environmental Awareness",
-      "topic": "The Impact of Climate Change on Global Food Supplies",
-      "hook": "The future of food is at risk, and it's up to us to save it",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Spiderman Movie Rumors",
-      "topic": "The Next Spider-Man Movie: What We Know So Far",
-      "hook": "Get ready for the most epic Spider-Man adventure yet!",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Lottery and Gaming",
-      "topic": "The Biggest Lottery Winners of All Time",
-      "hook": "These lucky winners will make you want to buy a ticket!",
+      "category": "Wildlife Hunters - Hunter",
+      "topic": "Tracking the Elusive Snow Leopard in the Himalayas",
+      "hook": "Join me on a perilous journey to find the ghost of the mountains!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Architecture - World's Tallest Buildings",
+      "topic": "The Engineering Marvel of the Burj Khalifa",
+      "hook": "How did they build a skyscraper that touches the clouds?",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Summer Health Tips",
-      "topic": "The Dangers of Sunscreen: What You Need to Know",
-      "hook": "The one thing you're doing wrong when applying sunscreen",
+      "category": "Stock Market Updates",
+      "topic": "The Impact of Inflation on Your Investment Portfolio",
+      "hook": "Is your money safe? Let's break down the latest market trends!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Air Quality Safety",
-      "topic": "The Alarming Rise of Air Pollution in Major Cities",
-      "hook": "The air you breathe might be killing you, and it's getting worse",
+      "category": "Mysterious Landmarks - Nazca Lines",
+      "topic": "Decoding the Secrets of the Nazca Lines in Peru",
+      "hook": "Unraveling the mysteries of these ancient geoglyphs!",
       "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Entertainment News",
-      "topic": "The Most Surprising Celebrity Comebacks of the Year",
-      "hook": "You won't believe which celebrity is making a comeback!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Movie Reviews and Previews",
-      "topic": "The Most Anticipated Movie Sequels of 2024",
-      "hook": "Get ready for the next installment of your favorite franchise!",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Fitness with Kelsey Plum",
-      "topic": "Kelsey Plum's Top 5 Exercise Tips for a Stronger Core",
-      "hook": "Get ready to sweat with Kelsey Plum's core workout!",
+      "category": "Luxury Shopping - Harrods",
+      "topic": "A Day in the Life of a Harrods Personal Shopper",
+      "hook": "Ever wondered what it's like to shop like royalty?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports Highlights",
-      "topic": "The Most Epic Comebacks in Sports History",
-      "hook": "You won't believe the greatest comeback of all time!",
-      "voice_style": "dramatic",
+      "category": "iPhone Rumors and Leaks",
+      "topic": "The Latest iPhone 15 Rumors: What to Expect",
+      "hook": "Get ready for the most epic iPhone upgrade yet!",
+      "voice_style": "energetic",
       "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Blockbuster Previews",
+      "topic": "The Most Anticipated Movies of the Summer",
+      "hook": "Which movie will reign supreme at the box office this summer?",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Financial News Today",
+      "topic": "The Rise of Cryptocurrency: A New Era for Investors",
+      "hook": "Is cryptocurrency the future of money?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Netflix Movie Reviews",
+      "topic": "A Deep Dive into the Symbolism of 'The Witcher' Season 2",
+      "hook": "Uncovering the hidden meanings behind 'The Witcher' series!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming Highlights - Minimax H3",
+      "topic": "The Ultimate Minimax H3 Speedrun Challenge",
+      "hook": "Can I beat Minimax H3 in under an hour?",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Wildlife Hunters - Hunter",
+      "topic": "The Great Migration: Witnessing the Wildest Animal Migration",
+      "hook": "Join me on an unforgettable journey to witness the great migration!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Celebrity News and Gossip",
-      "topic": "The Most Expensive Celebrity Homes of the Year",
-      "hook": "Take a tour of the most luxurious celebrity mansions!",
+      "category": "Architecture - World's Tallest Buildings",
+      "topic": "The Innovative Design of the Shanghai Tower",
+      "hook": "How did they build a skyscraper that defies gravity?",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Stock Market Updates",
+      "topic": "The Impact of Interest Rates on Your Savings",
+      "hook": "Will the latest interest rate hike affect your finances?",
+      "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Mysterious Landmarks - Nazca Lines",
+      "topic": "Uncovering the Secrets of the Nazca Line Geoglyphs",
+      "hook": "What do these ancient drawings really mean?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Luxury Shopping - Harrods",
+      "topic": "A Tour of the Most Exclusive Departments in Harrods",
+      "hook": "Step into the world of luxury and opulence!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "iPhone Rumors and Leaks",
+      "topic": "The Latest Leaks on the iPhone 15 Pro Camera",
+      "hook": "Get ready for the most advanced camera phone yet!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Blockbuster Previews",
+      "topic": "The Most Anticipated Superhero Movies of the Summer",
+      "hook": "Which superhero will save the box office this summer?",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Financial News Today",
+      "topic": "The Future of Fintech: How Technology is Changing Finance",
+      "hook": "Is fintech the future of banking?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
