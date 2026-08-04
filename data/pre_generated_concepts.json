@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-08-03T08:48:22.389382",
-  "valid_until": "2026-08-03T23:59:22.389391",
+  "generated_at": "2026-08-04T08:00:52.152164",
+  "valid_until": "2026-08-04T23:59:52.152172",
   "categories": [
-    "Netflix Movie Reviews",
-    "Gaming Highlights - Minimax H3",
-    "Wildlife Hunters - Hunter",
-    "Architecture - World's Tallest Buildings",
-    "Stock Market Updates",
-    "Mysterious Landmarks - Nazca Lines",
-    "Luxury Shopping - Harrods",
-    "iPhone Rumors and Leaks",
-    "Summer Blockbuster Previews",
-    "Financial News Today",
-    "Travel Vlogs - Exploring New Cities",
-    "Top 10 Lists - Netflix Top Movies",
-    "Investing Tips and Advice",
-    "Technology News and Rumors",
-    "Urban Exploration - Abandoned Skyscrapers"
+    "Gaming News",
+    "AI Technology",
+    "Daily News Updates",
+    "Photography Tips",
+    "Wildlife Encounters",
+    "Finance Hacks",
+    "Image Search Tutorials",
+    "Indian Politics",
+    "Summer Gaming Deals",
+    "Tech Trends",
+    "Photography Challenges",
+    "Spider Facts",
+    "Banking Essentials",
+    "Google Tricks",
+    "New York City Vlogs"
   ],
   "concepts": [
     {
-      "category": "Netflix Movie Reviews",
-      "topic": "Unpacking the Twist in 'Kaleidoscope' Series",
-      "hook": "You won't believe the mind-blowing twist in the newest Netflix series!",
+      "category": "Gaming News",
+      "topic": "New PS5 Exclusive Games",
+      "hook": "You won't believe the games Sony just announced!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Gaming Highlights - Minimax H3",
-      "topic": "Achieving the Impossible: Beating Minimax H3 on Hard Mode",
-      "hook": "Watch as I attempt the unthinkable in Minimax H3!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "category": "AI Technology",
+      "topic": "AI-Generated Art",
+      "hook": "Is this the end of human artists?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Wildlife Hunters - Hunter",
-      "topic": "Tracking the Elusive Snow Leopard in the Himalayas",
-      "hook": "Join me on a perilous journey to find the ghost of the mountains!",
+      "category": "Daily News Updates",
+      "topic": "Breaking News: Economic Shift",
+      "hook": "The global economy is about to drastically change!",
       "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Architecture - World's Tallest Buildings",
-      "topic": "The Engineering Marvel of the Burj Khalifa",
-      "hook": "How did they build a skyscraper that touches the clouds?",
+      "category": "Photography Tips",
+      "topic": "Capturing Stunning Nighttime Photos",
+      "hook": "Transform your nighttime photos with this one simple trick!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Updates",
-      "topic": "The Impact of Inflation on Your Investment Portfolio",
-      "hook": "Is your money safe? Let's break down the latest market trends!",
+      "category": "Wildlife Encounters",
+      "topic": "Rare Animal Sightings",
+      "hook": "You've never seen animals like this before!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Mysterious Landmarks - Nazca Lines",
-      "topic": "Decoding the Secrets of the Nazca Lines in Peru",
-      "hook": "Unraveling the mysteries of these ancient geoglyphs!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Luxury Shopping - Harrods",
-      "topic": "A Day in the Life of a Harrods Personal Shopper",
-      "hook": "Ever wondered what it's like to shop like royalty?",
+      "category": "Finance Hacks",
+      "topic": "Saving Money on Everyday Items",
+      "hook": "Stop wasting money on these common items!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "iPhone Rumors and Leaks",
-      "topic": "The Latest iPhone 15 Rumors: What to Expect",
-      "hook": "Get ready for the most epic iPhone upgrade yet!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Summer Blockbuster Previews",
-      "topic": "The Most Anticipated Movies of the Summer",
-      "hook": "Which movie will reign supreme at the box office this summer?",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial News Today",
-      "topic": "The Rise of Cryptocurrency: A New Era for Investors",
-      "hook": "Is cryptocurrency the future of money?",
+      "category": "Image Search Tutorials",
+      "topic": "Advanced Google Image Search",
+      "hook": "Uncover hidden images with these secret search tips!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Netflix Movie Reviews",
-      "topic": "A Deep Dive into the Symbolism of 'The Witcher' Season 2",
-      "hook": "Uncovering the hidden meanings behind 'The Witcher' series!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Highlights - Minimax H3",
-      "topic": "The Ultimate Minimax H3 Speedrun Challenge",
-      "hook": "Can I beat Minimax H3 in under an hour?",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Wildlife Hunters - Hunter",
-      "topic": "The Great Migration: Witnessing the Wildest Animal Migration",
-      "hook": "Join me on an unforgettable journey to witness the great migration!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Architecture - World's Tallest Buildings",
-      "topic": "The Innovative Design of the Shanghai Tower",
-      "hook": "How did they build a skyscraper that defies gravity?",
+      "category": "Indian Politics",
+      "topic": "Upcoming Election Analysis",
+      "hook": "The future of India's government hangs in the balance!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Summer Gaming Deals",
+      "topic": "Best Summer Gaming Sales",
+      "hook": "Don't miss out on these sizzling summer gaming deals!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech Trends",
+      "topic": "The Rise of Foldable Phones",
+      "hook": "The future of smartphones is about to unfold!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Gaming News",
+      "topic": "New Xbox Series X Games",
+      "hook": "Microsoft just revealed the most epic lineup of games!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "AI Technology",
+      "topic": "AI-Powered Healthcare",
+      "hook": "The AI revolution is transforming the medical field!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Daily News Updates",
+      "topic": "Global Climate Change Updates",
+      "hook": "The latest climate change discoveries will shock you!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Photography Tips",
+      "topic": "Mastering Portrait Photography",
+      "hook": "Unlock the secrets to taking stunning portrait photos!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Updates",
-      "topic": "The Impact of Interest Rates on Your Savings",
-      "hook": "Will the latest interest rate hike affect your finances?",
+      "category": "Wildlife Encounters",
+      "topic": "Incredible Shark Encounters",
+      "hook": "Get up close and personal with these majestic creatures!",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Mysterious Landmarks - Nazca Lines",
-      "topic": "Uncovering the Secrets of the Nazca Line Geoglyphs",
-      "hook": "What do these ancient drawings really mean?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Finance Hacks",
+      "topic": "Investing in Cryptocurrency",
+      "hook": "Don't miss out on the cryptocurrency revolution!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Image Search Tutorials",
+      "topic": "Advanced Image Recognition",
+      "hook": "Unlock the power of image recognition with these tips!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Luxury Shopping - Harrods",
-      "topic": "A Tour of the Most Exclusive Departments in Harrods",
-      "hook": "Step into the world of luxury and opulence!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "iPhone Rumors and Leaks",
-      "topic": "The Latest Leaks on the iPhone 15 Pro Camera",
-      "hook": "Get ready for the most advanced camera phone yet!",
-      "voice_style": "energetic",
+      "category": "Indian Politics",
+      "topic": "Analysis of Recent Policy Changes",
+      "hook": "How will these policy changes impact your life?",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Summer Blockbuster Previews",
-      "topic": "The Most Anticipated Superhero Movies of the Summer",
-      "hook": "Which superhero will save the box office this summer?",
-      "voice_style": "dramatic",
+      "category": "Summer Gaming Deals",
+      "topic": "Best Gaming Subscription Services",
+      "hook": "Get the most out of your gaming experience with these deals!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Financial News Today",
-      "topic": "The Future of Fintech: How Technology is Changing Finance",
-      "hook": "Is fintech the future of banking?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "category": "Tech Trends",
+      "topic": "The Future of Virtual Reality",
+      "hook": "Step into the future of virtual reality!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
