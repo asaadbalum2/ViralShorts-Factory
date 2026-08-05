@@ -1,190 +1,198 @@
 {
-  "generated_at": "2026-08-04T08:00:52.152164",
-  "valid_until": "2026-08-04T23:59:52.152172",
+  "generated_at": "2026-08-05T08:02:14.813137",
+  "valid_until": "2026-08-05T23:59:14.813147",
   "categories": [
-    "Gaming News",
-    "AI Technology",
-    "Daily News Updates",
-    "Photography Tips",
-    "Wildlife Encounters",
-    "Finance Hacks",
-    "Image Search Tutorials",
-    "Indian Politics",
-    "Summer Gaming Deals",
-    "Tech Trends",
-    "Photography Challenges",
-    "Spider Facts",
-    "Banking Essentials",
-    "Google Tricks",
-    "New York City Vlogs"
+    "Summer Festival Vlogs",
+    "Coaching and Motivation",
+    "Weather Update Videos",
+    "Soccer Highlights and News",
+    "Tech and AI Explainers",
+    "Health and Wellness Alerts",
+    "News Recap and Analysis",
+    "Music Festival and Concert Coverage",
+    "Emergency Preparedness Tips",
+    "Travel and Adventure Vlogs",
+    "Sports News and Updates",
+    "Event Postponement Announcements",
+    "Science and Fungus Outbreak Explanations",
+    "Concert and Event Reviews",
+    "Storm Chasing and Extreme Weather"
   ],
   "concepts": [
     {
-      "category": "Gaming News",
-      "topic": "New PS5 Exclusive Games",
-      "hook": "You won't believe the games Sony just announced!",
+      "category": "Summer Festival Vlogs",
+      "topic": "Exploring the Hidden Stages of Coachella",
+      "hook": "You won't believe what's hiding behind the main stage at Coachella...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "AI Technology",
-      "topic": "AI-Generated Art",
-      "hook": "Is this the end of human artists?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Coaching and Motivation",
+      "topic": "The 5am Morning Routine of Highly Successful Entrepreneurs",
+      "hook": "What do billionaires do at 5am that you don't?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Daily News Updates",
-      "topic": "Breaking News: Economic Shift",
-      "hook": "The global economy is about to drastically change!",
-      "voice_style": "authoritative",
+      "category": "Weather Update Videos",
+      "topic": "The Science Behind Super Cell Storms",
+      "hook": " Witness the raw power of nature's deadliest storms...",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Photography Tips",
-      "topic": "Capturing Stunning Nighttime Photos",
-      "hook": "Transform your nighttime photos with this one simple trick!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Soccer Highlights and News",
+      "topic": "The Most Iconic Goals in World Cup History",
+      "hook": "Relive the moments that changed the game forever...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Wildlife Encounters",
-      "topic": "Rare Animal Sightings",
-      "hook": "You've never seen animals like this before!",
+      "category": "Tech and AI Explainers",
+      "topic": "The Future of Autonomous Vehicles",
+      "hook": "Imagine a world where cars drive themselves, is it closer than you think?",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Finance Hacks",
-      "topic": "Saving Money on Everyday Items",
-      "hook": "Stop wasting money on these common items!",
+      "category": "Health and Wellness Alerts",
+      "topic": "The Alarming Rise of Antibiotic Resistance",
+      "hook": "The silent killer lurking in every hospital, what you need to know...",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "News Recap and Analysis",
+      "topic": "Decoding the Latest Economic Trends",
+      "hook": "What's really going on with the economy, and how will it affect you?",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Music Festival and Concert Coverage",
+      "topic": "Behind the Scenes of Lollapalooza",
+      "hook": "Ever wondered what it takes to put on the world's biggest music festival?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Image Search Tutorials",
-      "topic": "Advanced Google Image Search",
-      "hook": "Uncover hidden images with these secret search tips!",
+      "category": "Emergency Preparedness Tips",
+      "topic": "Earthquake Survival 101",
+      "hook": "The 30 seconds that could save your life, do you know what to do?",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "music_mood": "intense",
+      "target_duration": 40
     },
     {
-      "category": "Indian Politics",
-      "topic": "Upcoming Election Analysis",
-      "hook": "The future of India's government hangs in the balance!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Travel and Adventure Vlogs",
+      "topic": "Discovering the Hidden Beaches of Bali",
+      "hook": "Uncover the secret beaches that only locals know about...",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Summer Gaming Deals",
-      "topic": "Best Summer Gaming Sales",
-      "hook": "Don't miss out on these sizzling summer gaming deals!",
+      "category": "Summer Festival Vlogs",
+      "topic": "The Best Foodie Spots at Bonnaroo",
+      "hook": "Get ready for a culinary adventure like no other, at the heart of Bonnaroo...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Tech Trends",
-      "topic": "The Rise of Foldable Phones",
-      "hook": "The future of smartphones is about to unfold!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Gaming News",
-      "topic": "New Xbox Series X Games",
-      "hook": "Microsoft just revealed the most epic lineup of games!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "AI Technology",
-      "topic": "AI-Powered Healthcare",
-      "hook": "The AI revolution is transforming the medical field!",
-      "voice_style": "authoritative",
+      "category": "Coaching and Motivation",
+      "topic": "Overcoming Self-Doubt with Mindfulness",
+      "hook": "The one simple trick to quiet your inner critic and unlock your potential...",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Daily News Updates",
-      "topic": "Global Climate Change Updates",
-      "hook": "The latest climate change discoveries will shock you!",
+      "category": "Weather Update Videos",
+      "topic": "The Anatomy of a Tornado",
+      "hook": "Unraveling the mystery of nature's most destructive force...",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Photography Tips",
-      "topic": "Mastering Portrait Photography",
-      "hook": "Unlock the secrets to taking stunning portrait photos!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Wildlife Encounters",
-      "topic": "Incredible Shark Encounters",
-      "hook": "Get up close and personal with these majestic creatures!",
+      "category": "Soccer Highlights and News",
+      "topic": "The Rise of the Next Generation of Soccer Stars",
+      "hook": "Meet the young players who are changing the game, and the future of soccer...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech and AI Explainers",
+      "topic": "The Ethics of Facial Recognition Technology",
+      "hook": "The hidden dangers of facial recognition, and what you need to know...",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Health and Wellness Alerts",
+      "topic": "The Emerging Threat of Cyberchondria",
+      "hook": "The digital epidemic that's making us sicker, and how to protect yourself...",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "News Recap and Analysis",
+      "topic": "Understanding the Impact of Social Media on Politics",
+      "hook": "The secret influence of social media on your vote, revealed...",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Music Festival and Concert Coverage",
+      "topic": "The Story Behind the Iconic Glastonbury Festival",
+      "hook": "Uncover the history and magic of the world's most iconic music festival...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Emergency Preparedness Tips",
+      "topic": "Wildfire Safety and Prevention",
+      "hook": "The crucial steps to protect your home and family from the devastating effects of wildfires...",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Finance Hacks",
-      "topic": "Investing in Cryptocurrency",
-      "hook": "Don't miss out on the cryptocurrency revolution!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Image Search Tutorials",
-      "topic": "Advanced Image Recognition",
-      "hook": "Unlock the power of image recognition with these tips!",
-      "voice_style": "friendly",
+      "category": "Travel and Adventure Vlogs",
+      "topic": "Exploring the Ancient Ruins of Machu Picchu",
+      "hook": "Step into the mystical world of the Incas, and uncover the secrets of the ancient city...",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Indian Politics",
-      "topic": "Analysis of Recent Policy Changes",
-      "hook": "How will these policy changes impact your life?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Gaming Deals",
-      "topic": "Best Gaming Subscription Services",
-      "hook": "Get the most out of your gaming experience with these deals!",
+      "category": "Summer Festival Vlogs",
+      "topic": "The Best Kept Secrets of Electric Daisy Carnival",
+      "hook": "Get ready to experience the ultimate festival like never before, with the insider's guide to EDC...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech Trends",
-      "topic": "The Future of Virtual Reality",
-      "hook": "Step into the future of virtual reality!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -192,29 +200,59 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -223,38 +261,8 @@
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
