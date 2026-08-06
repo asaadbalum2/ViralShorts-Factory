@@ -1,237 +1,222 @@
 {
-  "generated_at": "2026-08-05T08:02:14.813137",
-  "valid_until": "2026-08-05T23:59:14.813147",
+  "generated_at": "2026-08-06T08:00:49.142378",
+  "valid_until": "2026-08-06T23:59:49.142388",
   "categories": [
-    "Summer Festival Vlogs",
-    "Coaching and Motivation",
-    "Weather Update Videos",
-    "Soccer Highlights and News",
-    "Tech and AI Explainers",
-    "Health and Wellness Alerts",
-    "News Recap and Analysis",
-    "Music Festival and Concert Coverage",
-    "Emergency Preparedness Tips",
-    "Travel and Adventure Vlogs",
-    "Sports News and Updates",
-    "Event Postponement Announcements",
-    "Science and Fungus Outbreak Explanations",
-    "Concert and Event Reviews",
-    "Storm Chasing and Extreme Weather"
+    "Music News and Reactions",
+    "Sports Fandom and Tifo Displays",
+    "Financial Betting and Kalshi Explainers",
+    "Health and Safety Alerts like Measles Outbreaks",
+    "Theme Park and Travel Vlogs",
+    "Gaming News and Ubisoft Updates",
+    "90s Nostalgia and Rider Strong Throwbacks",
+    "Environmental Awareness with Mark Ruffalo",
+    "Weather Updates and Tucson Forecast",
+    "Drake Music Analysis and Reviews",
+    "Viral Dance Challenges",
+    "Summer Vacation and Travel Inspiration",
+    "Esports and Gaming Highlights",
+    "Behind-the-Scenes of Movie and Game Productions",
+    "Comedy Skits and Parodies on Current Events"
   ],
   "concepts": [
     {
-      "category": "Summer Festival Vlogs",
-      "topic": "Exploring the Hidden Stages of Coachella",
-      "hook": "You won't believe what's hiding behind the main stage at Coachella...",
+      "category": "Music News and Reactions",
+      "topic": "Billie Eilish's Latest Album Review",
+      "hook": "You won't believe what Billie Eilish just revealed about her songwriting process!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Coaching and Motivation",
-      "topic": "The 5am Morning Routine of Highly Successful Entrepreneurs",
-      "hook": "What do billionaires do at 5am that you don't?",
-      "voice_style": "authoritative",
+      "category": "Sports Fandom and Tifo Displays",
+      "topic": "The Art of Creating Epic Tifo Displays in Soccer Stadiums",
+      "hook": "Ever wondered how these massive, elaborate fan displays are made?",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Weather Update Videos",
-      "topic": "The Science Behind Super Cell Storms",
-      "hook": " Witness the raw power of nature's deadliest storms...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Financial Betting and Kalshi Explainers",
+      "topic": "A Beginner's Guide to Understanding Kalshi's Betting Platform",
+      "hook": "Want to make informed bets but don't know where to start? Let's break it down!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Soccer Highlights and News",
-      "topic": "The Most Iconic Goals in World Cup History",
-      "hook": "Relive the moments that changed the game forever...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Tech and AI Explainers",
-      "topic": "The Future of Autonomous Vehicles",
-      "hook": "Imagine a world where cars drive themselves, is it closer than you think?",
+      "category": "Health and Safety Alerts like Measles Outbreaks",
+      "topic": "The Importance of Vaccination in Preventing Measles Outbreaks",
+      "hook": "The alarming rise of measles cases: what you need to know to protect yourself and your loved ones!",
       "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Health and Wellness Alerts",
-      "topic": "The Alarming Rise of Antibiotic Resistance",
-      "hook": "The silent killer lurking in every hospital, what you need to know...",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "News Recap and Analysis",
-      "topic": "Decoding the Latest Economic Trends",
-      "hook": "What's really going on with the economy, and how will it affect you?",
+      "category": "Theme Park and Travel Vlogs",
+      "topic": "Exploring the Hidden Gems of Disneyland",
+      "hook": "Discover the secret spots in Disneyland that will make your visit truly unforgettable!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Music Festival and Concert Coverage",
-      "topic": "Behind the Scenes of Lollapalooza",
-      "hook": "Ever wondered what it takes to put on the world's biggest music festival?",
+      "category": "Gaming News and Ubisoft Updates",
+      "topic": "What to Expect from Ubisoft's Next Assassin's Creed Release",
+      "hook": "Leaked details about the upcoming Assassin's Creed game are blowing minds!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Emergency Preparedness Tips",
-      "topic": "Earthquake Survival 101",
-      "hook": "The 30 seconds that could save your life, do you know what to do?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel and Adventure Vlogs",
-      "topic": "Discovering the Hidden Beaches of Bali",
-      "hook": "Uncover the secret beaches that only locals know about...",
+      "category": "90s Nostalgia and Rider Strong Throwbacks",
+      "topic": "Revisiting the Iconic TV Show 'Boy Meets World'",
+      "hook": "Who else grew up with Cory Matthews as their ultimate TV best friend?",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Festival Vlogs",
-      "topic": "The Best Foodie Spots at Bonnaroo",
-      "hook": "Get ready for a culinary adventure like no other, at the heart of Bonnaroo...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Coaching and Motivation",
-      "topic": "Overcoming Self-Doubt with Mindfulness",
-      "hook": "The one simple trick to quiet your inner critic and unlock your potential...",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Update Videos",
-      "topic": "The Anatomy of a Tornado",
-      "hook": "Unraveling the mystery of nature's most destructive force...",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Soccer Highlights and News",
-      "topic": "The Rise of the Next Generation of Soccer Stars",
-      "hook": "Meet the young players who are changing the game, and the future of soccer...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech and AI Explainers",
-      "topic": "The Ethics of Facial Recognition Technology",
-      "hook": "The hidden dangers of facial recognition, and what you need to know...",
+      "category": "Environmental Awareness with Mark Ruffalo",
+      "topic": "The Critical Issue of Water Pollution with Mark Ruffalo",
+      "hook": "Mark Ruffalo reveals the shocking truth about the water you drink every day!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Health and Wellness Alerts",
-      "topic": "The Emerging Threat of Cyberchondria",
-      "hook": "The digital epidemic that's making us sicker, and how to protect yourself...",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "News Recap and Analysis",
-      "topic": "Understanding the Impact of Social Media on Politics",
-      "hook": "The secret influence of social media on your vote, revealed...",
+      "category": "Weather Updates and Tucson Forecast",
+      "topic": "Understanding the Impact of Climate Change on Tucson's Weather",
+      "hook": "Why Tucson's weather forecast is about to get a whole lot more unpredictable!",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Music Festival and Concert Coverage",
-      "topic": "The Story Behind the Iconic Glastonbury Festival",
-      "hook": "Uncover the history and magic of the world's most iconic music festival...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Emergency Preparedness Tips",
-      "topic": "Wildfire Safety and Prevention",
-      "hook": "The crucial steps to protect your home and family from the devastating effects of wildfires...",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel and Adventure Vlogs",
-      "topic": "Exploring the Ancient Ruins of Machu Picchu",
-      "hook": "Step into the mystical world of the Incas, and uncover the secrets of the ancient city...",
+      "category": "Drake Music Analysis and Reviews",
+      "topic": "Decoding the Hidden Messages in Drake's Latest Album",
+      "hook": "What does Drake's new album really say about his life, and what are the hidden messages you might have missed?",
       "voice_style": "mysterious",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Music News and Reactions",
+      "topic": "The Rise of Hyperpop and Its Influence on Mainstream Music",
+      "hook": "The new sound taking over your playlists: what is hyperpop, and why should you care?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Fandom and Tifo Displays",
+      "topic": "The Creative Process Behind Designing NFL Team Logos",
+      "hook": "Ever wondered how your favorite NFL team's logo was designed? Let's dive into the story!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Financial Betting and Kalshi Explainers",
+      "topic": "How to Make Smart Bets Using Kalshi's Predictive Analytics Tools",
+      "hook": "Maximize your betting strategy with these insider tips on using predictive analytics!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Health and Safety Alerts like Measles Outbreaks",
+      "topic": "The Importance of Mental Health During the COVID-19 Pandemic",
+      "hook": "Don't overlook your mental health: here's how to prioritize it during these challenging times!",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Theme Park and Travel Vlogs",
+      "topic": "A Day in the Life of a Disneyland Character Actor",
+      "hook": "What's it like to bring magic to life every day? Let's find out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming News and Ubisoft Updates",
+      "topic": "Ubisoft's Foray into Cloud Gaming: What It Means for Gamers",
+      "hook": "The future of gaming is here: how Ubisoft's cloud gaming will change the way you play!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "90s Nostalgia and Rider Strong Throwbacks",
+      "topic": "Remembering the Best 90s TV Show Theme Songs",
+      "hook": "Get ready for a blast from the past: the most iconic 90s TV theme songs that still get you singing!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Environmental Awareness with Mark Ruffalo",
+      "topic": "Mark Ruffalo on the Urgent Need for Renewable Energy Sources",
+      "hook": "Mark Ruffalo sounds the alarm on why we must switch to renewable energy now!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Weather Updates and Tucson Forecast",
+      "topic": "Understanding the Monsoon Season in Tucson",
+      "hook": "Tucson, get ready! Here's what you need to know about the upcoming monsoon season!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Summer Festival Vlogs",
-      "topic": "The Best Kept Secrets of Electric Daisy Carnival",
-      "hook": "Get ready to experience the ultimate festival like never before, with the insider's guide to EDC...",
-      "voice_style": "energetic",
+      "category": "Drake Music Analysis and Reviews",
+      "topic": "The Evolution of Drake's Music Style Over the Years",
+      "hook": "From 'So Far Gone' to now: tracing the evolution of Drake's sound and its impact on hip-hop!",
+      "voice_style": "mysterious",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Music News and Reactions",
+      "topic": "The Impact of Social Media on Music Discovery and Artist Promotion",
+      "hook": "How social media is revolutionizing the way we find new music and support our favorite artists!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
@@ -240,29 +225,44 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
