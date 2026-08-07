@@ -1,267 +1,275 @@
 {
-  "generated_at": "2026-08-06T08:00:49.142378",
-  "valid_until": "2026-08-06T23:59:49.142388",
+  "generated_at": "2026-08-07T06:47:04.369088",
+  "valid_until": "2026-08-07T23:59:04.369096",
   "categories": [
-    "Music News and Reactions",
-    "Sports Fandom and Tifo Displays",
-    "Financial Betting and Kalshi Explainers",
-    "Health and Safety Alerts like Measles Outbreaks",
-    "Theme Park and Travel Vlogs",
-    "Gaming News and Ubisoft Updates",
-    "90s Nostalgia and Rider Strong Throwbacks",
-    "Environmental Awareness with Mark Ruffalo",
-    "Weather Updates and Tucson Forecast",
-    "Drake Music Analysis and Reviews",
-    "Viral Dance Challenges",
-    "Summer Vacation and Travel Inspiration",
-    "Esports and Gaming Highlights",
-    "Behind-the-Scenes of Movie and Game Productions",
-    "Comedy Skits and Parodies on Current Events"
+    "Jonathan Majors Movie Reviews",
+    "Food Hacks: Whopper Burger King Challenges",
+    "Raising Kanan Fan Theories",
+    "Zendaya Pregnancy Rumor Updates",
+    "Chuck Timely Comedy Skits",
+    "Olivia Rodrigo Tour Vlogs",
+    "Barbara Palvin Fashion Inspiration",
+    "Economy Explained: Personal Finance Tips",
+    "Summer Foodie Trends: Burger King Edition",
+    "Celebrity Pregnancy Announcements",
+    "TV Show Recaps: Raising Kanan",
+    "Music Festival Highlights: Olivia Rodrigo",
+    "Jonathan Majors Workout Routines",
+    "Zendaya's Best Red Carpet Looks",
+    "Recession-Proof Living: Budgeting Hacks"
   ],
   "concepts": [
     {
-      "category": "Music News and Reactions",
-      "topic": "Billie Eilish's Latest Album Review",
-      "hook": "You won't believe what Billie Eilish just revealed about her songwriting process!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Fandom and Tifo Displays",
-      "topic": "The Art of Creating Epic Tifo Displays in Soccer Stadiums",
-      "hook": "Ever wondered how these massive, elaborate fan displays are made?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial Betting and Kalshi Explainers",
-      "topic": "A Beginner's Guide to Understanding Kalshi's Betting Platform",
-      "hook": "Want to make informed bets but don't know where to start? Let's break it down!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Health and Safety Alerts like Measles Outbreaks",
-      "topic": "The Importance of Vaccination in Preventing Measles Outbreaks",
-      "hook": "The alarming rise of measles cases: what you need to know to protect yourself and your loved ones!",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Theme Park and Travel Vlogs",
-      "topic": "Exploring the Hidden Gems of Disneyland",
-      "hook": "Discover the secret spots in Disneyland that will make your visit truly unforgettable!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming News and Ubisoft Updates",
-      "topic": "What to Expect from Ubisoft's Next Assassin's Creed Release",
-      "hook": "Leaked details about the upcoming Assassin's Creed game are blowing minds!",
-      "voice_style": "energetic",
+      "category": "Jonathan Majors Movie Reviews",
+      "topic": "Unpacking the Twist in The Last Black Man in San Francisco",
+      "hook": "You won't believe the shocking twist in Jonathan Majors' latest film!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "90s Nostalgia and Rider Strong Throwbacks",
-      "topic": "Revisiting the Iconic TV Show 'Boy Meets World'",
-      "hook": "Who else grew up with Cory Matthews as their ultimate TV best friend?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Food Hacks: Whopper Burger King Challenges",
+      "topic": "I Tried the Whopper with 10 Different Toppings",
+      "hook": "What happens when you add 10 crazy toppings to a Whopper?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Environmental Awareness with Mark Ruffalo",
-      "topic": "The Critical Issue of Water Pollution with Mark Ruffalo",
-      "hook": "Mark Ruffalo reveals the shocking truth about the water you drink every day!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Weather Updates and Tucson Forecast",
-      "topic": "Understanding the Impact of Climate Change on Tucson's Weather",
-      "hook": "Why Tucson's weather forecast is about to get a whole lot more unpredictable!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Drake Music Analysis and Reviews",
-      "topic": "Decoding the Hidden Messages in Drake's Latest Album",
-      "hook": "What does Drake's new album really say about his life, and what are the hidden messages you might have missed?",
+      "category": "Raising Kanan Fan Theories",
+      "topic": "The Real Reason Kanan Stark's Mom is Hiding a Dark Secret",
+      "hook": "You won't believe the dark secret Kanan's mom is hiding!",
       "voice_style": "mysterious",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Music News and Reactions",
-      "topic": "The Rise of Hyperpop and Its Influence on Mainstream Music",
-      "hook": "The new sound taking over your playlists: what is hyperpop, and why should you care?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Fandom and Tifo Displays",
-      "topic": "The Creative Process Behind Designing NFL Team Logos",
-      "hook": "Ever wondered how your favorite NFL team's logo was designed? Let's dive into the story!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial Betting and Kalshi Explainers",
-      "topic": "How to Make Smart Bets Using Kalshi's Predictive Analytics Tools",
-      "hook": "Maximize your betting strategy with these insider tips on using predictive analytics!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Health and Safety Alerts like Measles Outbreaks",
-      "topic": "The Importance of Mental Health During the COVID-19 Pandemic",
-      "hook": "Don't overlook your mental health: here's how to prioritize it during these challenging times!",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Theme Park and Travel Vlogs",
-      "topic": "A Day in the Life of a Disneyland Character Actor",
-      "hook": "What's it like to bring magic to life every day? Let's find out!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming News and Ubisoft Updates",
-      "topic": "Ubisoft's Foray into Cloud Gaming: What It Means for Gamers",
-      "hook": "The future of gaming is here: how Ubisoft's cloud gaming will change the way you play!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "90s Nostalgia and Rider Strong Throwbacks",
-      "topic": "Remembering the Best 90s TV Show Theme Songs",
-      "hook": "Get ready for a blast from the past: the most iconic 90s TV theme songs that still get you singing!",
+      "category": "Zendaya Pregnancy Rumor Updates",
+      "topic": "Zendaya's Latest Outfit Sparks Pregnancy Rumors Again",
+      "hook": "Is Zendaya really pregnant? Let's break down the clues!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Environmental Awareness with Mark Ruffalo",
-      "topic": "Mark Ruffalo on the Urgent Need for Renewable Energy Sources",
-      "hook": "Mark Ruffalo sounds the alarm on why we must switch to renewable energy now!",
+      "category": "Chuck Timely Comedy Skits",
+      "topic": "When You Finally Understand a Chuck Joke After 5 Minutes",
+      "hook": "Have you ever been lost in a Chuck joke?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Weather Updates and Tucson Forecast",
-      "topic": "Understanding the Monsoon Season in Tucson",
-      "hook": "Tucson, get ready! Here's what you need to know about the upcoming monsoon season!",
-      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Drake Music Analysis and Reviews",
-      "topic": "The Evolution of Drake's Music Style Over the Years",
-      "hook": "From 'So Far Gone' to now: tracing the evolution of Drake's sound and its impact on hip-hop!",
+      "category": "Olivia Rodrigo Tour Vlogs",
+      "topic": "Olivia Rodrigo's Tour Bus Secrets Revealed",
+      "hook": "What really goes down on Olivia Rodrigo's tour bus?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Barbara Palvin Fashion Inspiration",
+      "topic": "Stealing Barbara Palvin's Summer Fashion Secrets",
+      "hook": "Get ready to steal Barbara Palvin's summer style!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Economy Explained: Personal Finance Tips",
+      "topic": "5 Simple Ways to Save $1000 in a Month",
+      "hook": "Want to save $1000 in a month? Here's how!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Foodie Trends: Burger King Edition",
+      "topic": "Burger King's New Impossible Whopper Review",
+      "hook": "Is Burger King's new Impossible Whopper worth the hype?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Pregnancy Announcements",
+      "topic": "The Most Shocking Celebrity Pregnancy Announcements of 2023",
+      "hook": "You won't believe which celebrities announced their pregnancies this year!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Jonathan Majors Movie Reviews",
+      "topic": "The Real Reason Jonathan Majors' Latest Movie is a Must-See",
+      "hook": "What makes Jonathan Majors' latest movie a game-changer?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Food Hacks: Whopper Burger King Challenges",
+      "topic": "The Ultimate Whopper Challenge: Can I Finish it in 10 Minutes?",
+      "hook": "Can I devour a Whopper in under 10 minutes?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Raising Kanan Fan Theories",
+      "topic": "The Hidden Meaning Behind Kanan Stark's Favorite Song",
+      "hook": "What does Kanan Stark's favorite song really mean?",
       "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Zendaya Pregnancy Rumor Updates",
+      "topic": "Zendaya's Body Language Says it All: Is She Really Pregnant?",
+      "hook": "Can we decode Zendaya's body language to confirm the pregnancy rumors?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Chuck Timely Comedy Skits",
+      "topic": "When Chuck's Jokes Become Too Real",
+      "hook": "Have you ever felt like Chuck's jokes are too relatable?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Olivia Rodrigo Tour Vlogs",
+      "topic": "Olivia Rodrigo's Pre-Show Routine Revealed",
+      "hook": "What does Olivia Rodrigo do before a show?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Music News and Reactions",
-      "topic": "The Impact of Social Media on Music Discovery and Artist Promotion",
-      "hook": "How social media is revolutionizing the way we find new music and support our favorite artists!",
+      "category": "Barbara Palvin Fashion Inspiration",
+      "topic": "Barbara Palvin's Top 5 Fashion Essentials for Summer",
+      "hook": "Get ready to steal Barbara Palvin's top summer fashion picks!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Economy Explained: Personal Finance Tips",
+      "topic": "The 50/30/20 Rule: Does it Really Work for Saving Money?",
+      "hook": "Will the 50/30/20 rule really help you save money?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Summer Foodie Trends: Burger King Edition",
+      "topic": "Burger King's New Menu Item You Need to Try This Summer",
+      "hook": "What's the must-try Burger King menu item of the summer?",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Pregnancy Announcements",
+      "topic": "The Most Creative Celebrity Pregnancy Announcements of All Time",
+      "hook": "You won't believe these creative celebrity pregnancy announcements!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Jonathan Majors Movie Reviews",
+      "topic": "Jonathan Majors' Best Movie Roles Ranked",
+      "hook": "What are Jonathan Majors' most iconic movie roles?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Food Hacks: Whopper Burger King Challenges",
+      "topic": "The Whopper Challenge: Can I Eat a Whopper with My Feet?",
+      "hook": "Can I really eat a Whopper with my feet?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     }
   ],
