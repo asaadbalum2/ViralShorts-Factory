@@ -1,241 +1,223 @@
 {
-  "generated_at": "2026-08-07T06:47:04.369088",
-  "valid_until": "2026-08-07T23:59:04.369096",
+  "generated_at": "2026-08-08T06:06:49.344337",
+  "valid_until": "2026-08-08T23:59:49.344345",
   "categories": [
-    "Jonathan Majors Movie Reviews",
-    "Food Hacks: Whopper Burger King Challenges",
-    "Raising Kanan Fan Theories",
-    "Zendaya Pregnancy Rumor Updates",
-    "Chuck Timely Comedy Skits",
-    "Olivia Rodrigo Tour Vlogs",
-    "Barbara Palvin Fashion Inspiration",
-    "Economy Explained: Personal Finance Tips",
-    "Summer Foodie Trends: Burger King Edition",
-    "Celebrity Pregnancy Announcements",
-    "TV Show Recaps: Raising Kanan",
-    "Music Festival Highlights: Olivia Rodrigo",
-    "Jonathan Majors Workout Routines",
-    "Zendaya's Best Red Carpet Looks",
-    "Recession-Proof Living: Budgeting Hacks"
+    "Sports Highlights",
+    "Emergency Response Videos",
+    "Hollywood News and Gossip",
+    "World Cup Analysis",
+    "Baseball Updates",
+    "Actor Interviews",
+    "Travel Vlogs Mexico",
+    "Soccer Match Previews",
+    "Movie Reviews and Ratings",
+    "Emergency Medical Situations",
+    "Actor Behind-The-Scenes",
+    "Sports Team Standings",
+    "International Football News",
+    "Entertainment News Updates",
+    "Action Movie Clips"
   ],
   "concepts": [
     {
-      "category": "Jonathan Majors Movie Reviews",
-      "topic": "Unpacking the Twist in The Last Black Man in San Francisco",
-      "hook": "You won't believe the shocking twist in Jonathan Majors' latest film!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Sports Highlights",
+      "topic": "Cristiano Ronaldo's Top 5 Goals in the Champions League",
+      "hook": "You won't believe the insane shot that tops our list!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Food Hacks: Whopper Burger King Challenges",
-      "topic": "I Tried the Whopper with 10 Different Toppings",
-      "hook": "What happens when you add 10 crazy toppings to a Whopper?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Emergency Response Videos",
+      "topic": "Heroic Rescue of a Family Trapped in a Burning Building",
+      "hook": "Watch as firefighters risk everything to save a family of four!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Raising Kanan Fan Theories",
-      "topic": "The Real Reason Kanan Stark's Mom is Hiding a Dark Secret",
-      "hook": "You won't believe the dark secret Kanan's mom is hiding!",
+      "category": "Hollywood News and Gossip",
+      "topic": "The Shocking Reason Why Jennifer Lawrence Quit Acting for a Year",
+      "hook": "The Oscar-winning actress reveals the truth behind her sudden hiatus!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "World Cup Analysis",
+      "topic": "Why Brazil's New Formation Could Lead to World Cup Glory",
+      "hook": "We break down the tactics behind Brazil's surprising new strategy!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Baseball Updates",
+      "topic": "The Rise of the Yankees' New Star Pitcher, Gerrit Cole",
+      "hook": "From injury to dominance, we explore Cole's incredible journey!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Actor Interviews",
+      "topic": "Leonardo DiCaprio on His Most Challenging Role to Date",
+      "hook": "The Academy Award winner opens up about his toughest acting experience!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel Vlogs Mexico",
+      "topic": "Exploring the Hidden Beaches of Tulum, Mexico",
+      "hook": "Join us on a journey to discover the most stunning beaches you've never heard of!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Soccer Match Previews",
+      "topic": "Manchester United vs. Liverpool: The Rivalry Renewed",
+      "hook": "We analyze the key matchups and predictions for this epic clash!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Movie Reviews and Ratings",
+      "topic": "The Surprising Reason Why 'The Shawshank Redemption' Still Tops the Charts",
+      "hook": "We delve into the timeless themes that make this classic film a perpetual favorite!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 41
+    },
+    {
+      "category": "Emergency Medical Situations",
+      "topic": "The Miracle Recovery of a Patient Who Was Clinically Dead for 20 Minutes",
+      "hook": "Witness the astonishing story of a patient who defied all medical odds!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Zendaya Pregnancy Rumor Updates",
-      "topic": "Zendaya's Latest Outfit Sparks Pregnancy Rumors Again",
-      "hook": "Is Zendaya really pregnant? Let's break down the clues!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Chuck Timely Comedy Skits",
-      "topic": "When You Finally Understand a Chuck Joke After 5 Minutes",
-      "hook": "Have you ever been lost in a Chuck joke?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Olivia Rodrigo Tour Vlogs",
-      "topic": "Olivia Rodrigo's Tour Bus Secrets Revealed",
-      "hook": "What really goes down on Olivia Rodrigo's tour bus?",
+      "category": "Sports Highlights",
+      "topic": "The Most Unbelievable Comebacks in NBA History",
+      "hook": "You won't believe the incredible turnarounds that will leave you speechless!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Barbara Palvin Fashion Inspiration",
-      "topic": "Stealing Barbara Palvin's Summer Fashion Secrets",
-      "hook": "Get ready to steal Barbara Palvin's summer style!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Economy Explained: Personal Finance Tips",
-      "topic": "5 Simple Ways to Save $1000 in a Month",
-      "hook": "Want to save $1000 in a month? Here's how!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Summer Foodie Trends: Burger King Edition",
-      "topic": "Burger King's New Impossible Whopper Review",
-      "hook": "Is Burger King's new Impossible Whopper worth the hype?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity Pregnancy Announcements",
-      "topic": "The Most Shocking Celebrity Pregnancy Announcements of 2023",
-      "hook": "You won't believe which celebrities announced their pregnancies this year!",
+      "category": "Emergency Response Videos",
+      "topic": "Dramatic Footage of a Plane Making an Emergency Landing on a Highway",
+      "hook": "Watch as passengers narrowly escape disaster in this heart-stopping video!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 42
     },
     {
-      "category": "Jonathan Majors Movie Reviews",
-      "topic": "The Real Reason Jonathan Majors' Latest Movie is a Must-See",
-      "hook": "What makes Jonathan Majors' latest movie a game-changer?",
+      "category": "Hollywood News and Gossip",
+      "topic": "The Secret Romance Between Two of Hollywood's Biggest Stars",
+      "hook": "We reveal the shocking details behind this clandestine celebrity relationship!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 43
+    },
+    {
+      "category": "World Cup Analysis",
+      "topic": "The Tactical Genius Behind Germany's World Cup Success",
+      "hook": "We dissect the strategic decisions that led to Germany's triumph!",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 40
+      "target_duration": 49
     },
     {
-      "category": "Food Hacks: Whopper Burger King Challenges",
-      "topic": "The Ultimate Whopper Challenge: Can I Finish it in 10 Minutes?",
-      "hook": "Can I devour a Whopper in under 10 minutes?",
+      "category": "Baseball Updates",
+      "topic": "The Resurgence of the Chicago Cubs: What's Behind Their Sudden Success?",
+      "hook": "We examine the key factors contributing to the Cubs' impressive turnaround!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 41
     },
     {
-      "category": "Raising Kanan Fan Theories",
-      "topic": "The Hidden Meaning Behind Kanan Stark's Favorite Song",
-      "hook": "What does Kanan Stark's favorite song really mean?",
+      "category": "Actor Interviews",
+      "topic": "Denzel Washington on His Iconic Roles and Career Highlights",
+      "hook": "The legendary actor reflects on his most memorable performances!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Travel Vlogs Mexico",
+      "topic": "Discovering the Vibrant Culture of Mexico City",
+      "hook": "Join us on a thrilling adventure through the streets of Mexico's capital!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Soccer Match Previews",
+      "topic": "Barcelona vs. Real Madrid: The El Cl\u00e1sico Rivalry Renewed",
+      "hook": "We analyze the key matchups and predictions for this epic showdown!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Movie Reviews and Ratings",
+      "topic": "The Hidden Meaning Behind the Ending of 'Inception'",
+      "hook": "We dive into the mind-bending themes and plot twists that make this film a masterpiece!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Emergency Medical Situations",
+      "topic": "The Miraculous Recovery of a Patient Who Survived a Fatal Brain Injury",
+      "hook": "Witness the astonishing story of a patient who beat the odds and regained consciousness!",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Zendaya Pregnancy Rumor Updates",
-      "topic": "Zendaya's Body Language Says it All: Is She Really Pregnant?",
-      "hook": "Can we decode Zendaya's body language to confirm the pregnancy rumors?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Chuck Timely Comedy Skits",
-      "topic": "When Chuck's Jokes Become Too Real",
-      "hook": "Have you ever felt like Chuck's jokes are too relatable?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Olivia Rodrigo Tour Vlogs",
-      "topic": "Olivia Rodrigo's Pre-Show Routine Revealed",
-      "hook": "What does Olivia Rodrigo do before a show?",
+      "category": "Sports Highlights",
+      "topic": "The Greatest Upsets in Sports History",
+      "hook": "You won't believe the shocking victories that will leave you stunned!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
-    },
-    {
-      "category": "Barbara Palvin Fashion Inspiration",
-      "topic": "Barbara Palvin's Top 5 Fashion Essentials for Summer",
-      "hook": "Get ready to steal Barbara Palvin's top summer fashion picks!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Economy Explained: Personal Finance Tips",
-      "topic": "The 50/30/20 Rule: Does it Really Work for Saving Money?",
-      "hook": "Will the 50/30/20 rule really help you save money?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Summer Foodie Trends: Burger King Edition",
-      "topic": "Burger King's New Menu Item You Need to Try This Summer",
-      "hook": "What's the must-try Burger King menu item of the summer?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity Pregnancy Announcements",
-      "topic": "The Most Creative Celebrity Pregnancy Announcements of All Time",
-      "hook": "You won't believe these creative celebrity pregnancy announcements!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Jonathan Majors Movie Reviews",
-      "topic": "Jonathan Majors' Best Movie Roles Ranked",
-      "hook": "What are Jonathan Majors' most iconic movie roles?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Food Hacks: Whopper Burger King Challenges",
-      "topic": "The Whopper Challenge: Can I Eat a Whopper with My Feet?",
-      "hook": "Can I really eat a Whopper with my feet?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -243,34 +225,44 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
