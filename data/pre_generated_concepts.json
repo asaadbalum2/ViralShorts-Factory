@@ -1,213 +1,44 @@
 {
-  "generated_at": "2026-08-08T06:06:49.344337",
-  "valid_until": "2026-08-08T23:59:49.344345",
+  "generated_at": "2026-08-09T06:08:19.292710",
+  "valid_until": "2026-08-09T23:59:19.292717",
   "categories": [
-    "Sports Highlights",
-    "Emergency Response Videos",
-    "Hollywood News and Gossip",
-    "World Cup Analysis",
-    "Baseball Updates",
-    "Actor Interviews",
-    "Travel Vlogs Mexico",
-    "Soccer Match Previews",
-    "Movie Reviews and Ratings",
-    "Emergency Medical Situations",
-    "Actor Behind-The-Scenes",
-    "Sports Team Standings",
-    "International Football News",
-    "Entertainment News Updates",
-    "Action Movie Clips"
+    "NFL Football Highlights",
+    "Travel Emergency Stories",
+    "Election Analysis",
+    "Extreme Weather Updates",
+    "Fireworks and Celebration Videos",
+    "Boxing and Combat Sports",
+    "Celebrity News and Interviews",
+    "Social Media Challenges",
+    "Summer Vacation Vlogs",
+    "News Recap and Discussion",
+    "Sports Analysis and Debate",
+    "Influencer Takeovers",
+    "Current Event Explainers",
+    "Meme and Trend Reaction Videos",
+    "Behind-the-Scenes and Exclusive Content"
   ],
-  "concepts": [
-    {
-      "category": "Sports Highlights",
-      "topic": "Cristiano Ronaldo's Top 5 Goals in the Champions League",
-      "hook": "You won't believe the insane shot that tops our list!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Emergency Response Videos",
-      "topic": "Heroic Rescue of a Family Trapped in a Burning Building",
-      "hook": "Watch as firefighters risk everything to save a family of four!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Hollywood News and Gossip",
-      "topic": "The Shocking Reason Why Jennifer Lawrence Quit Acting for a Year",
-      "hook": "The Oscar-winning actress reveals the truth behind her sudden hiatus!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "World Cup Analysis",
-      "topic": "Why Brazil's New Formation Could Lead to World Cup Glory",
-      "hook": "We break down the tactics behind Brazil's surprising new strategy!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Baseball Updates",
-      "topic": "The Rise of the Yankees' New Star Pitcher, Gerrit Cole",
-      "hook": "From injury to dominance, we explore Cole's incredible journey!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Actor Interviews",
-      "topic": "Leonardo DiCaprio on His Most Challenging Role to Date",
-      "hook": "The Academy Award winner opens up about his toughest acting experience!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs Mexico",
-      "topic": "Exploring the Hidden Beaches of Tulum, Mexico",
-      "hook": "Join us on a journey to discover the most stunning beaches you've never heard of!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Soccer Match Previews",
-      "topic": "Manchester United vs. Liverpool: The Rivalry Renewed",
-      "hook": "We analyze the key matchups and predictions for this epic clash!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Movie Reviews and Ratings",
-      "topic": "The Surprising Reason Why 'The Shawshank Redemption' Still Tops the Charts",
-      "hook": "We delve into the timeless themes that make this classic film a perpetual favorite!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 41
-    },
-    {
-      "category": "Emergency Medical Situations",
-      "topic": "The Miracle Recovery of a Patient Who Was Clinically Dead for 20 Minutes",
-      "hook": "Witness the astonishing story of a patient who defied all medical odds!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Most Unbelievable Comebacks in NBA History",
-      "hook": "You won't believe the incredible turnarounds that will leave you speechless!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Emergency Response Videos",
-      "topic": "Dramatic Footage of a Plane Making an Emergency Landing on a Highway",
-      "hook": "Watch as passengers narrowly escape disaster in this heart-stopping video!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Hollywood News and Gossip",
-      "topic": "The Secret Romance Between Two of Hollywood's Biggest Stars",
-      "hook": "We reveal the shocking details behind this clandestine celebrity relationship!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "World Cup Analysis",
-      "topic": "The Tactical Genius Behind Germany's World Cup Success",
-      "hook": "We dissect the strategic decisions that led to Germany's triumph!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 49
-    },
-    {
-      "category": "Baseball Updates",
-      "topic": "The Resurgence of the Chicago Cubs: What's Behind Their Sudden Success?",
-      "hook": "We examine the key factors contributing to the Cubs' impressive turnaround!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Actor Interviews",
-      "topic": "Denzel Washington on His Iconic Roles and Career Highlights",
-      "hook": "The legendary actor reflects on his most memorable performances!",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "Travel Vlogs Mexico",
-      "topic": "Discovering the Vibrant Culture of Mexico City",
-      "hook": "Join us on a thrilling adventure through the streets of Mexico's capital!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 44
-    },
-    {
-      "category": "Soccer Match Previews",
-      "topic": "Barcelona vs. Real Madrid: The El Cl\u00e1sico Rivalry Renewed",
-      "hook": "We analyze the key matchups and predictions for this epic showdown!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Movie Reviews and Ratings",
-      "topic": "The Hidden Meaning Behind the Ending of 'Inception'",
-      "hook": "We dive into the mind-bending themes and plot twists that make this film a masterpiece!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Emergency Medical Situations",
-      "topic": "The Miraculous Recovery of a Patient Who Survived a Fatal Brain Injury",
-      "hook": "Witness the astonishing story of a patient who beat the odds and regained consciousness!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "The Greatest Upsets in Sports History",
-      "hook": "You won't believe the shocking victories that will leave you stunned!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -216,52 +47,52 @@
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "chill"
     }
   ],
