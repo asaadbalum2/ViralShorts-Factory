@@ -1,98 +1,259 @@
 {
-  "generated_at": "2026-08-09T06:08:19.292710",
-  "valid_until": "2026-08-09T23:59:19.292717",
+  "generated_at": "2026-08-10T06:51:30.706738",
+  "valid_until": "2026-08-10T23:59:30.706746",
   "categories": [
-    "NFL Football Highlights",
-    "Travel Emergency Stories",
-    "Election Analysis",
-    "Extreme Weather Updates",
-    "Fireworks and Celebration Videos",
-    "Boxing and Combat Sports",
-    "Celebrity News and Interviews",
-    "Social Media Challenges",
-    "Summer Vacation Vlogs",
-    "News Recap and Discussion",
-    "Sports Analysis and Debate",
-    "Influencer Takeovers",
-    "Current Event Explainers",
-    "Meme and Trend Reaction Videos",
-    "Behind-the-Scenes and Exclusive Content"
+    "TV Show Recaps",
+    "Local News Updates",
+    "Boating Accident Analysis",
+    "Sports News",
+    "Missing Person Alerts",
+    "Comedy Sketches",
+    "NFL Preseason Highlights",
+    "New York City Tourist Spots",
+    "Bay Area Community News",
+    "Emergency Response Tips",
+    "TV Host Parodies",
+    "Northern California Travel Guides",
+    "Football Fan Reactions",
+    "Water Safety Tips",
+    "California News Updates"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Comedy Sketches",
+      "topic": "Funny Job Interview Moments",
+      "hook": "You won't believe what happened in this real job interview!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "New York City Tourist Spots",
+      "topic": "Hidden Gems in Central Park",
+      "hook": "Discover the secret spots in Central Park that only locals know!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News",
+      "topic": "LeBron James' Most Epic Dunks",
+      "hook": "Get ready to witness the most jaw-dropping dunks by the King himself!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Latest Plot Twist in Stranger Things",
+      "hook": "What just happened in Hawkins? Let's break down the latest episode!",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Local News Updates",
+      "topic": "Community Comes Together to Support Local Businesses",
+      "hook": "See how one community is rallying around its local shops and restaurants!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Boating Accident Analysis",
+      "topic": "What Caused the Recent Sinking of a Cruise Ship?",
+      "hook": "Investigating the shocking incident that left passengers stranded at sea!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "NFL Preseason Highlights",
+      "topic": "Rookie Players to Watch This Season",
+      "hook": "Meet the newbies who are taking the NFL by storm!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Missing Person Alerts",
+      "topic": "The Search for a Missing Hiker in the Mountains",
+      "hook": "Join the desperate search for a hiker who vanished on a solo trek!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Bay Area Community News",
+      "topic": "New Initiative to Reduce Homelessness in San Francisco",
+      "hook": "Find out how the Bay Area is tackling its toughest social issue!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Emergency Response Tips",
+      "topic": "What to Do in Case of a Wildfire Evacuation",
+      "hook": "Don't wait until it's too late! Learn how to stay safe in a wildfire emergency!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Comedy Sketches",
+      "topic": "Funny Moments from Bad Movie Auditions",
+      "hook": "You won't believe the cringe-worthy moments from these disastrous auditions!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News",
+      "topic": "The Rise of a New Tennis Superstar",
+      "hook": "Meet the young athlete who's taking the tennis world by storm!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "TV Show Recaps",
+      "topic": "The Shocking Finale of Game of Thrones",
+      "hook": "Relive the most epic conclusion to a series in TV history!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Local News Updates",
+      "topic": "New Community Center Opens in Underserved Neighborhood",
+      "hook": "See how a new community center is bringing hope and opportunity to a deserving neighborhood!",
+      "voice_style": "calm",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Boating Accident Analysis",
+      "topic": "Investigating the Causes of a Recent Ferry Accident",
+      "hook": "Uncovering the truth behind a tragic maritime disaster!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "NFL Preseason Highlights",
+      "topic": "Top Quarterbacks to Watch This Season",
+      "hook": "Get ready for the ultimate showdown between the NFL's top gunslingers!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Missing Person Alerts",
+      "topic": "The Search for a Missing Child in a Crowded City",
+      "hook": "Join the desperate search for a child who vanished in a busy metropolis!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "New York City Tourist Spots",
+      "topic": "Exploring the Street Art of the Lower East Side",
+      "hook": "Discover the vibrant street art scene that's taking over the Lower East Side!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Emergency Response Tips",
+      "topic": "How to Prepare for a Natural Disaster",
+      "hook": "Don't wait until it's too late! Learn how to prepare for the unexpected!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Bay Area Community News",
+      "topic": "New Initiative to Support Local Artists",
+      "hook": "Find out how the Bay Area is nurturing its thriving arts scene!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     }
   ],
