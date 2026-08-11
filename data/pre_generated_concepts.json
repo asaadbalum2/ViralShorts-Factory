@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-08-10T06:51:30.706738",
-  "valid_until": "2026-08-10T23:59:30.706746",
+  "generated_at": "2026-08-11T06:28:08.999839",
+  "valid_until": "2026-08-11T23:59:08.999846",
   "categories": [
-    "TV Show Recaps",
-    "Local News Updates",
-    "Boating Accident Analysis",
-    "Sports News",
-    "Missing Person Alerts",
-    "Comedy Sketches",
-    "NFL Preseason Highlights",
-    "New York City Tourist Spots",
-    "Bay Area Community News",
-    "Emergency Response Tips",
-    "TV Host Parodies",
-    "Northern California Travel Guides",
-    "Football Fan Reactions",
-    "Water Safety Tips",
-    "California News Updates"
+    "Sports Highlights",
+    "Home Decor Inspiration",
+    "Baseball Analysis",
+    "Los Angeles Lifestyle",
+    " Celebrity News",
+    "Real Estate Market Updates",
+    "Shohei Ohtani Tribute Videos",
+    "MLB Game Recaps",
+    "LA Dodgers Fan Content",
+    "Los Angeles Angels Updates",
+    "Sports Injury Reports",
+    "Home Buying Tips",
+    "Entertainment News",
+    "Angels vs Dodgers Rivalry",
+    "Summer Sports Recap"
   ],
   "concepts": [
     {
-      "category": "Comedy Sketches",
-      "topic": "Funny Job Interview Moments",
-      "hook": "You won't believe what happened in this real job interview!",
+      "category": "Sports Highlights",
+      "topic": "Crazy Comeback Wins in MLB History",
+      "hook": "You won't believe what happened in the bottom of the 9th!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "New York City Tourist Spots",
-      "topic": "Hidden Gems in Central Park",
-      "hook": "Discover the secret spots in Central Park that only locals know!",
+      "category": "Home Decor Inspiration",
+      "topic": "10-Minute Decor Hacks for a Luxurious Living Room",
+      "hook": "Transform your space in just a few minutes, starting with this one trick!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Sports News",
-      "topic": "LeBron James' Most Epic Dunks",
-      "hook": "Get ready to witness the most jaw-dropping dunks by the King himself!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Baseball Analysis",
+      "topic": "Decoding the Pitching Strategy of the LA Dodgers",
+      "hook": "What makes the Dodgers' pitching so unbeatable? Let's dive into the secrets!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Latest Plot Twist in Stranger Things",
-      "hook": "What just happened in Hawkins? Let's break down the latest episode!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Local News Updates",
-      "topic": "Community Comes Together to Support Local Businesses",
-      "hook": "See how one community is rallying around its local shops and restaurants!",
+      "category": "Los Angeles Lifestyle",
+      "topic": "Exploring the Hidden Gems of Venice Beach",
+      "hook": "Discover the secret spots that only locals know about in this iconic LA neighborhood!",
       "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Boating Accident Analysis",
-      "topic": "What Caused the Recent Sinking of a Cruise Ship?",
-      "hook": "Investigating the shocking incident that left passengers stranded at sea!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "NFL Preseason Highlights",
-      "topic": "Rookie Players to Watch This Season",
-      "hook": "Meet the newbies who are taking the NFL by storm!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Missing Person Alerts",
-      "topic": "The Search for a Missing Hiker in the Mountains",
-      "hook": "Join the desperate search for a hiker who vanished on a solo trek!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Celebrity News",
+      "topic": "The Most Surprising Celebrity Sports Fans",
+      "hook": "You won't believe which A-listers are die-hard fans of these teams!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Bay Area Community News",
-      "topic": "New Initiative to Reduce Homelessness in San Francisco",
-      "hook": "Find out how the Bay Area is tackling its toughest social issue!",
+      "category": "Real Estate Market Updates",
+      "topic": "The Hottest Neighborhoods to Invest in LA Right Now",
+      "hook": "Don't miss out on these up-and-coming areas that are about to explode in value!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Shohei Ohtani Tribute Videos",
+      "topic": "Shohei Ohtani's Most Jaw-Dropping Home Runs",
+      "hook": "Watch as we count down the most epic homers from the Angels' superstar!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "MLB Game Recaps",
+      "topic": "The Wildest Walk-Off Wins of the Season",
+      "hook": "Relive the most thrilling finishes to MLB games that left everyone speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "LA Dodgers Fan Content",
+      "topic": "The Best Dodgers-themed Food and Drinks for Game Day",
+      "hook": "Take your game-day party to the next level with these delicious and creative ideas!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Emergency Response Tips",
-      "topic": "What to Do in Case of a Wildfire Evacuation",
-      "hook": "Don't wait until it's too late! Learn how to stay safe in a wildfire emergency!",
+      "category": "Los Angeles Angels Updates",
+      "topic": "The Angels' Top Prospects to Watch This Season",
+      "hook": "Get ready to meet the future stars of the team that will take the field by storm!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Comedy Sketches",
-      "topic": "Funny Moments from Bad Movie Auditions",
-      "hook": "You won't believe the cringe-worthy moments from these disastrous auditions!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports News",
-      "topic": "The Rise of a New Tennis Superstar",
-      "hook": "Meet the young athlete who's taking the tennis world by storm!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Sports Highlights",
+      "topic": "The Most Epic Moments in LA Sports History",
+      "hook": " Witness the most unforgettable moments that made LA sports fans go wild!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "TV Show Recaps",
-      "topic": "The Shocking Finale of Game of Thrones",
-      "hook": "Relive the most epic conclusion to a series in TV history!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Home Decor Inspiration",
+      "topic": "5-Minute DIY Decor Projects for a Stylish Bedroom",
+      "hook": "Give your bedroom a luxurious makeover with these quick and easy hacks!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Baseball Analysis",
+      "topic": "The Art of Pitching: A Deep Dive into the Mechanics",
+      "hook": "Uncover the secrets behind the most effective pitching techniques in baseball!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Local News Updates",
-      "topic": "New Community Center Opens in Underserved Neighborhood",
-      "hook": "See how a new community center is bringing hope and opportunity to a deserving neighborhood!",
+      "category": "Los Angeles Lifestyle",
+      "topic": "A Day in the Life of a LA Social Media Influencer",
+      "hook": "Join us as we follow a popular influencer and explore the city's hottest spots!",
       "voice_style": "calm",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Boating Accident Analysis",
-      "topic": "Investigating the Causes of a Recent Ferry Accident",
-      "hook": "Uncovering the truth behind a tragic maritime disaster!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "NFL Preseason Highlights",
-      "topic": "Top Quarterbacks to Watch This Season",
-      "hook": "Get ready for the ultimate showdown between the NFL's top gunslingers!",
+      "category": "Celebrity News",
+      "topic": "Celebrities Who Are Also Passionate About Sports",
+      "hook": "Find out which stars are secretly sports enthusiasts and why!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Missing Person Alerts",
-      "topic": "The Search for a Missing Child in a Crowded City",
-      "hook": "Join the desperate search for a child who vanished in a busy metropolis!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "New York City Tourist Spots",
-      "topic": "Exploring the Street Art of the Lower East Side",
-      "hook": "Discover the vibrant street art scene that's taking over the Lower East Side!",
+      "category": "Real Estate Market Updates",
+      "topic": "The Impact of the LA Real Estate Market on Local Businesses",
+      "hook": "How is the booming real estate market affecting small businesses and entrepreneurs in LA?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Shohei Ohtani Tribute Videos",
+      "topic": "Shohei Ohtani's Journey to Becoming a Baseball Superstar",
+      "hook": "From Japan to the MLB, witness the incredible rise of this baseball phenom!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "MLB Game Recaps",
+      "topic": "The Most Unforgettable Rivalries in Baseball History",
+      "hook": "Relive the most iconic and intense rivalries that defined the sport!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "LA Dodgers Fan Content",
+      "topic": "The Ultimate Guide to Attending a Dodgers Game at Dodger Stadium",
+      "hook": "Get the inside scoop on how to make the most of your game-day experience at this iconic stadium!",
       "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Emergency Response Tips",
-      "topic": "How to Prepare for a Natural Disaster",
-      "hook": "Don't wait until it's too late! Learn how to prepare for the unexpected!",
+      "category": "Los Angeles Angels Updates",
+      "topic": "The Angels' Offseason Moves and What They Mean for the Team",
+      "hook": "Breaking down the biggest trades and signings and how they'll impact the team's chances this season!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
-    },
-    {
-      "category": "Bay Area Community News",
-      "topic": "New Initiative to Support Local Artists",
-      "hook": "Find out how the Bay Area is nurturing its thriving arts scene!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
