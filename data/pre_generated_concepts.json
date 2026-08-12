@@ -1,225 +1,230 @@
 {
-  "generated_at": "2026-08-11T06:28:08.999839",
-  "valid_until": "2026-08-11T23:59:08.999846",
+  "generated_at": "2026-08-12T06:53:21.996451",
+  "valid_until": "2026-08-12T23:59:21.996460",
   "categories": [
+    "Earthquake Updates",
+    "California News",
+    "Daycare Hacks",
     "Sports Highlights",
-    "Home Decor Inspiration",
-    "Baseball Analysis",
-    "Los Angeles Lifestyle",
-    " Celebrity News",
-    "Real Estate Market Updates",
-    "Shohei Ohtani Tribute Videos",
-    "MLB Game Recaps",
-    "LA Dodgers Fan Content",
-    "Los Angeles Angels Updates",
-    "Sports Injury Reports",
-    "Home Buying Tips",
-    "Entertainment News",
-    "Angels vs Dodgers Rivalry",
-    "Summer Sports Recap"
+    "Raiders Analysis",
+    "Tallulah Willis Fans",
+    "Travel Booking Tips",
+    "Jose Mourinho Reactions",
+    "Disaster Preparedness",
+    "Parenting Challenges",
+    "NFL News",
+    "California Living",
+    "Earthquake Safety",
+    "Sports News",
+    "Booking Travel on a Budget"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights",
-      "topic": "Crazy Comeback Wins in MLB History",
-      "hook": "You won't believe what happened in the bottom of the 9th!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Home Decor Inspiration",
-      "topic": "10-Minute Decor Hacks for a Luxurious Living Room",
-      "hook": "Transform your space in just a few minutes, starting with this one trick!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Baseball Analysis",
-      "topic": "Decoding the Pitching Strategy of the LA Dodgers",
-      "hook": "What makes the Dodgers' pitching so unbeatable? Let's dive into the secrets!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Los Angeles Lifestyle",
-      "topic": "Exploring the Hidden Gems of Venice Beach",
-      "hook": "Discover the secret spots that only locals know about in this iconic LA neighborhood!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity News",
-      "topic": "The Most Surprising Celebrity Sports Fans",
-      "hook": "You won't believe which A-listers are die-hard fans of these teams!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Real Estate Market Updates",
-      "topic": "The Hottest Neighborhoods to Invest in LA Right Now",
-      "hook": "Don't miss out on these up-and-coming areas that are about to explode in value!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Shohei Ohtani Tribute Videos",
-      "topic": "Shohei Ohtani's Most Jaw-Dropping Home Runs",
-      "hook": "Watch as we count down the most epic homers from the Angels' superstar!",
+      "category": "Earthquake Updates",
+      "topic": "Recent Seismic Activity in Los Angeles",
+      "hook": "You won't believe the alarming earthquake trend happening right now in LA!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "MLB Game Recaps",
-      "topic": "The Wildest Walk-Off Wins of the Season",
-      "hook": "Relive the most thrilling finishes to MLB games that left everyone speechless!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "California News",
+      "topic": "New Laws Impacting Housing Market",
+      "hook": "California just passed a law that will change the way you buy a home forever!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "LA Dodgers Fan Content",
-      "topic": "The Best Dodgers-themed Food and Drinks for Game Day",
-      "hook": "Take your game-day party to the next level with these delicious and creative ideas!",
+      "category": "Daycare Hacks",
+      "topic": "DIY Sensory Play for Toddlers",
+      "hook": "Transform your living room into a sensory playground with these 3 simple hacks!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Los Angeles Angels Updates",
-      "topic": "The Angels' Top Prospects to Watch This Season",
-      "hook": "Get ready to meet the future stars of the team that will take the field by storm!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
       "category": "Sports Highlights",
-      "topic": "The Most Epic Moments in LA Sports History",
-      "hook": " Witness the most unforgettable moments that made LA sports fans go wild!",
+      "topic": "Most Epic Basketball Comebacks",
+      "hook": "The most unbelievable basketball comeback you've ever seen is just 30 seconds away!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Raiders Analysis",
+      "topic": "Quarterback Performance Review",
+      "hook": "Is the Raiders' new QB the real deal? Let's dive into the shocking stats!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Tallulah Willis Fans",
+      "topic": "Tallulah's Best Fashion Moments",
+      "hook": "Tallulah Willis just wore the most iconic outfit to the latest red carpet event - you won't believe what it is!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Travel Booking Tips",
+      "topic": "How to Score Cheap Flights",
+      "hook": "Want to know the secret to booking flights for 50% off? It's easier than you think!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Jose Mourinho Reactions",
+      "topic": "Funniest Mourinho Interview Moments",
+      "hook": "Jose Mourinho just gave the most hilarious interview of his career - watch it here!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Home Decor Inspiration",
-      "topic": "5-Minute DIY Decor Projects for a Stylish Bedroom",
-      "hook": "Give your bedroom a luxurious makeover with these quick and easy hacks!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Baseball Analysis",
-      "topic": "The Art of Pitching: A Deep Dive into the Mechanics",
-      "hook": "Uncover the secrets behind the most effective pitching techniques in baseball!",
+      "category": "Disaster Preparedness",
+      "topic": "Emergency Kit Essentials",
+      "hook": "Don't get caught off guard - the one thing you need in your emergency kit will surprise you!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "mysterious",
+      "target_duration": 48
     },
     {
-      "category": "Los Angeles Lifestyle",
-      "topic": "A Day in the Life of a LA Social Media Influencer",
-      "hook": "Join us as we follow a popular influencer and explore the city's hottest spots!",
+      "category": "Parenting Challenges",
+      "topic": "Dealing with Toddler Tantrums",
+      "hook": "The hidden reason behind your toddler's tantrums will change the way you parent forever!",
       "voice_style": "calm",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Earthquake Updates",
+      "topic": "Earthquake-Resistant Home Designs",
+      "hook": "The #1 home design feature that can save your life during an earthquake - is your home equipped?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Celebrity News",
-      "topic": "Celebrities Who Are Also Passionate About Sports",
-      "hook": "Find out which stars are secretly sports enthusiasts and why!",
+      "category": "California News",
+      "topic": "New Sustainable Energy Initiatives",
+      "hook": "California just launched a revolutionary new program to reduce carbon emissions - here's what it means for you!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Daycare Hacks",
+      "topic": "Easy and Healthy Snack Ideas",
+      "hook": "The 5-ingredient snack that will become your toddler's new favorite - and it's ridiculously healthy!",
       "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports Highlights",
+      "topic": "Greatest Football Upsets",
+      "hook": "The biggest football upset of the century is still hard to believe - relive the shocking moment!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Raiders Analysis",
+      "topic": "Team's Off-Season Moves",
+      "hook": "The Raiders just made a shocking off-season move that will change the course of their season - find out what it is!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Tallulah Willis Fans",
+      "topic": "Tallulah's Mental Health Journey",
+      "hook": "Tallulah Willis opens up about her mental health struggles in a powerful new interview - a must-watch!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Travel Booking Tips",
+      "topic": "How to Avoid Airline Fees",
+      "hook": "The sneaky airline fees you never knew you were paying - and how to avoid them from now on!",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Real Estate Market Updates",
-      "topic": "The Impact of the LA Real Estate Market on Local Businesses",
-      "hook": "How is the booming real estate market affecting small businesses and entrepreneurs in LA?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Shohei Ohtani Tribute Videos",
-      "topic": "Shohei Ohtani's Journey to Becoming a Baseball Superstar",
-      "hook": "From Japan to the MLB, witness the incredible rise of this baseball phenom!",
+      "category": "Jose Mourinho Reactions",
+      "topic": "Mourinho's Most Memorable Rants",
+      "hook": "The most epic Jose Mourinho rant of all time - you won't believe what he said!",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "MLB Game Recaps",
-      "topic": "The Most Unforgettable Rivalries in Baseball History",
-      "hook": "Relive the most iconic and intense rivalries that defined the sport!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "LA Dodgers Fan Content",
-      "topic": "The Ultimate Guide to Attending a Dodgers Game at Dodger Stadium",
-      "hook": "Get the inside scoop on how to make the most of your game-day experience at this iconic stadium!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Los Angeles Angels Updates",
-      "topic": "The Angels' Offseason Moves and What They Mean for the Team",
-      "hook": "Breaking down the biggest trades and signings and how they'll impact the team's chances this season!",
+      "category": "Disaster Preparedness",
+      "topic": "Emergency Communication Plans",
+      "hook": "The one thing you need to do today to ensure your family's safety in a disaster - don't wait!",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Parenting Challenges",
+      "topic": "Building Resilience in Children",
+      "hook": "The shocking way you may be unintentionally undermining your child's resilience - and how to fix it!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -228,33 +233,28 @@
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
