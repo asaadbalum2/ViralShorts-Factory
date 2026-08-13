@@ -1,260 +1,99 @@
 {
-  "generated_at": "2026-08-12T06:53:21.996451",
-  "valid_until": "2026-08-12T23:59:21.996460",
+  "generated_at": "2026-08-13T06:56:27.834209",
+  "valid_until": "2026-08-13T23:59:27.834217",
   "categories": [
-    "Earthquake Updates",
-    "California News",
-    "Daycare Hacks",
+    "Weather Updates",
+    "Celebrity Encounters",
     "Sports Highlights",
-    "Raiders Analysis",
-    "Tallulah Willis Fans",
-    "Travel Booking Tips",
-    "Jose Mourinho Reactions",
-    "Disaster Preparedness",
-    "Parenting Challenges",
-    "NFL News",
-    "California Living",
-    "Earthquake Safety",
-    "Sports News",
-    "Booking Travel on a Budget"
+    "Music News",
+    "Travel Warnings",
+    "Storm Chasing",
+    "Baseball Schedules",
+    "Aviation Incidents",
+    "Entertainment News",
+    "Sports Analysis",
+    "Tropical Storm Tracking",
+    "Las Vegas Travel Guides",
+    "Meeting The Stars",
+    "Sports Team Previews",
+    "Emergency Preparedness"
   ],
-  "concepts": [
-    {
-      "category": "Earthquake Updates",
-      "topic": "Recent Seismic Activity in Los Angeles",
-      "hook": "You won't believe the alarming earthquake trend happening right now in LA!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "California News",
-      "topic": "New Laws Impacting Housing Market",
-      "hook": "California just passed a law that will change the way you buy a home forever!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Daycare Hacks",
-      "topic": "DIY Sensory Play for Toddlers",
-      "hook": "Transform your living room into a sensory playground with these 3 simple hacks!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "Most Epic Basketball Comebacks",
-      "hook": "The most unbelievable basketball comeback you've ever seen is just 30 seconds away!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Raiders Analysis",
-      "topic": "Quarterback Performance Review",
-      "hook": "Is the Raiders' new QB the real deal? Let's dive into the shocking stats!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Tallulah Willis Fans",
-      "topic": "Tallulah's Best Fashion Moments",
-      "hook": "Tallulah Willis just wore the most iconic outfit to the latest red carpet event - you won't believe what it is!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel Booking Tips",
-      "topic": "How to Score Cheap Flights",
-      "hook": "Want to know the secret to booking flights for 50% off? It's easier than you think!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Jose Mourinho Reactions",
-      "topic": "Funniest Mourinho Interview Moments",
-      "hook": "Jose Mourinho just gave the most hilarious interview of his career - watch it here!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Disaster Preparedness",
-      "topic": "Emergency Kit Essentials",
-      "hook": "Don't get caught off guard - the one thing you need in your emergency kit will surprise you!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Parenting Challenges",
-      "topic": "Dealing with Toddler Tantrums",
-      "hook": "The hidden reason behind your toddler's tantrums will change the way you parent forever!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Earthquake Updates",
-      "topic": "Earthquake-Resistant Home Designs",
-      "hook": "The #1 home design feature that can save your life during an earthquake - is your home equipped?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "California News",
-      "topic": "New Sustainable Energy Initiatives",
-      "hook": "California just launched a revolutionary new program to reduce carbon emissions - here's what it means for you!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Daycare Hacks",
-      "topic": "Easy and Healthy Snack Ideas",
-      "hook": "The 5-ingredient snack that will become your toddler's new favorite - and it's ridiculously healthy!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Highlights",
-      "topic": "Greatest Football Upsets",
-      "hook": "The biggest football upset of the century is still hard to believe - relive the shocking moment!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Raiders Analysis",
-      "topic": "Team's Off-Season Moves",
-      "hook": "The Raiders just made a shocking off-season move that will change the course of their season - find out what it is!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Tallulah Willis Fans",
-      "topic": "Tallulah's Mental Health Journey",
-      "hook": "Tallulah Willis opens up about her mental health struggles in a powerful new interview - a must-watch!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Travel Booking Tips",
-      "topic": "How to Avoid Airline Fees",
-      "hook": "The sneaky airline fees you never knew you were paying - and how to avoid them from now on!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Jose Mourinho Reactions",
-      "topic": "Mourinho's Most Memorable Rants",
-      "hook": "The most epic Jose Mourinho rant of all time - you won't believe what he said!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Disaster Preparedness",
-      "topic": "Emergency Communication Plans",
-      "hook": "The one thing you need to do today to ensure your family's safety in a disaster - don't wait!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Parenting Challenges",
-      "topic": "Building Resilience in Children",
-      "hook": "The shocking way you may be unintentionally undermining your child's resilience - and how to fix it!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
