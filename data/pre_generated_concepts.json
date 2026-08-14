@@ -1,38 +1,217 @@
 {
-  "generated_at": "2026-08-13T06:56:27.834209",
-  "valid_until": "2026-08-13T23:59:27.834217",
+  "generated_at": "2026-08-14T06:53:57.199908",
+  "valid_until": "2026-08-14T23:59:57.199913",
   "categories": [
-    "Weather Updates",
-    "Celebrity Encounters",
-    "Sports Highlights",
-    "Music News",
-    "Travel Warnings",
-    "Storm Chasing",
-    "Baseball Schedules",
-    "Aviation Incidents",
-    "Entertainment News",
-    "Sports Analysis",
-    "Tropical Storm Tracking",
-    "Las Vegas Travel Guides",
-    "Meeting The Stars",
-    "Sports Team Previews",
-    "Emergency Preparedness"
+    "Daycare Hacks and Tips",
+    "Sports News and Highlights",
+    "Bollywood Movie Updates",
+    "Car Reviews and Tech",
+    "Celebrity Lawsuits and Drama",
+    "MLB Game Reactions",
+    "Mindfulness and Wellness",
+    "Kyrie Irving Updates",
+    "Parenting Challenges and Solutions",
+    "New Movie Trailers",
+    "Selena Gomez Fan Content",
+    "Baseball Analysis and Predictions",
+    "Mindful Moments with Selena Gomez",
+    "Automotive Technology Explained",
+    "Viral Dance Challenges"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Daycare Hacks and Tips",
+      "topic": "5 Simple Ways to Soothe a Crying Baby",
+      "hook": "Are you tired of feeling helpless when your baby cries?",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports News and Highlights",
+      "topic": "The Most Epic Comebacks in Sports History",
+      "hook": "You won't believe the incredible turnarounds that left fans speechless!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Bollywood Movie Updates",
+      "topic": "Behind-the-Scenes of Shah Rukh Khan's Latest Film",
+      "hook": "Get ready for a sneak peek into the magic of Bollywood's biggest star!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Car Reviews and Tech",
+      "topic": "The Future of Electric Cars: A Review of the Latest Models",
+      "hook": "Are electric cars the future of transportation? Let's take a closer look!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Celebrity Lawsuits and Drama",
+      "topic": "The Most Shocking Celebrity Feuds of the Decade",
+      "hook": "You won't believe the juicy details behind these infamous celebrity clashes!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "MLB Game Reactions",
+      "topic": "The Wildest Walk-Off Home Runs in MLB History",
+      "hook": "Get ready for a thrilling look at the most unforgettable walk-off home runs!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Mindfulness and Wellness",
+      "topic": "5 Morning Meditation Techniques to Boost Your Mood",
+      "hook": "Start your day with a clear mind and a happy heart using these simple meditation techniques!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Kyrie Irving Updates",
+      "topic": "The Latest on Kyrie Irving's NBA Career: What's Next?",
+      "hook": "Will Kyrie Irving make a comeback to the NBA? Let's dive into the latest rumors and updates!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Parenting Challenges and Solutions",
+      "topic": "How to Handle Tantrums in Public: Expert Advice",
+      "hook": "Are you tired of feeling embarrassed by your child's public tantrums? We've got you covered!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "New Movie Trailers",
+      "topic": "The Most Anticipated Movie Releases of the Year",
+      "hook": "Get ready for a sneak peek at the most highly anticipated movies of the year!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Daycare Hacks and Tips",
+      "topic": "DIY Sensory Toys for Kids: A Fun and Easy Guide",
+      "hook": "Unlock your child's creativity with these easy-to-make sensory toys!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Sports News and Highlights",
+      "topic": "The Greatest Upsets in Sports History",
+      "hook": "You won't believe the shocking upsets that changed the game forever!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Bollywood Movie Updates",
+      "topic": "The Making of Bollywood's Biggest Blockbusters",
+      "hook": "Go behind the scenes of the most epic Bollywood movies ever made!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Car Reviews and Tech",
+      "topic": "The Latest Advances in Autonomous Vehicle Technology",
+      "hook": "Are self-driving cars the future of transportation? Let's take a closer look!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Lawsuits and Drama",
+      "topic": "The Most Explosive Celebrity Breakups of the Decade",
+      "hook": "You won't believe the juicy details behind these shocking celebrity breakups!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "MLB Game Reactions",
+      "topic": "The Most Iconic MLB Moments of All Time",
+      "hook": "Get ready for a thrilling look at the most unforgettable moments in MLB history!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Mindfulness and Wellness",
+      "topic": "The Benefits of Mindful Eating: How to Improve Your Relationship with Food",
+      "hook": "Transform your eating habits with the powerful practice of mindful eating!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Kyrie Irving Updates",
+      "topic": "Kyrie Irving's Off-Court Ventures: What You Need to Know",
+      "hook": "What's Kyrie Irving been up to off the court? Let's dive into his latest ventures!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Parenting Challenges and Solutions",
+      "topic": "How to Encourage Independence in Your Child",
+      "hook": "Want to raise a confident and independent child? We've got expert advice!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "New Movie Trailers",
+      "topic": "The Most Highly Anticipated Movie Sequels of the Year",
+      "hook": "Get ready for a sneak peek at the most anticipated movie sequels of the year!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Daycare Hacks and Tips",
+      "topic": "10 Creative Ways to Keep Kids Entertained on a Rainy Day",
+      "hook": "Rainy days got you down? We've got fun and creative solutions to keep kids entertained!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    }
+  ],
   "voice_music_pairs": [
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
@@ -41,58 +220,48 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     }
   ],
