@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-08-15T05:51:32.214345",
-  "valid_until": "2026-08-15T23:59:32.214353",
+  "generated_at": "2026-08-16T05:54:14.294254",
+  "valid_until": "2026-08-16T23:59:14.294263",
   "categories": [
-    "Summer Movie Reviews with Jonathan Majors and Christopher Evans",
-    "UFC Highlights featuring Jalin Turner",
-    "Star Wars Theories about Kylo Ren",
-    "Storm Chasing with Storm Casting",
-    "Behind the Scenes with Director Shawn Levy",
-    "Cricket Analysis of Ban vs Aus",
-    "Riverdale Fan Edits with Charles Melton",
-    "Action Movie Clips",
-    "Summer Sports Recap",
-    "New Movie Trailers",
-    "Viral Dance Challenges",
-    "Comic-Con Updates",
-    "Summer Fashion Trends",
-    "Gaming News and Updates",
-    "Entertainment News and Gossip"
+    "Sports Highlights",
+    "Weather Updates",
+    "Boxing News",
+    "Female Empowerment",
+    "Disney Nostalgia",
+    "Combat Sports Analysis",
+    "Cricket Match Reactions",
+    "Entertainment News",
+    "Severe Weather Safety Tips",
+    "Female Boxing",
+    "Movie Star Interviews",
+    "Retro Theme Park Attractions",
+    "Natural Disaster Relief Efforts",
+    "Summer Storm Safety",
+    "Action Movie Stars"
   ],
   "concepts": [
     {
-      "category": "Summer Movie Reviews with Jonathan Majors and Christopher Evans",
-      "topic": "Unpacking the Cinematic Universe of Top Gun: Maverick",
-      "hook": "Is Tom Cruise still the king of action movies?",
+      "category": "Sports Highlights",
+      "topic": "NBA Finals: The Unbelievable Buzzer-Beater from Half-Court",
+      "hook": "Did you REALLY just see that?! Relive the shot that defied gravity and clinched the championship!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "UFC Highlights featuring Jalin Turner",
-      "topic": "The Rise of Jalin Turner: A Knockout Artist",
-      "hook": "Can Jalin Turner become the next big thing in the UFC?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Weather Updates",
+      "topic": "Mystery of the Green Sky Before a Storm in the Midwest",
+      "hook": "Ever seen the sky turn an apocalyptic shade of green? We're diving into the science behind this eerie pre-storm phenomenon!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Star Wars Theories about Kylo Ren",
-      "topic": "Unmasking the Tragic Figure of Kylo Ren",
-      "hook": "What drove Ben Solo to the dark side?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Storm Chasing with Storm Casting",
-      "topic": "Chasing the Elusive Supercell Storm",
-      "hook": "Witness the raw power of nature's fury",
-      "voice_style": "authoritative",
+      "category": "Boxing News",
+      "topic": "Tyson Fury vs. Oleksandr Usyk: Unified Heavyweight Showdown Date CONFIRMED?",
+      "hook": "Hold your breath, boxing fans! Is the fight we've all been waiting for FINALLY getting a date? The whispers are getting LOUD!",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Behind the Scenes with Director Shawn Levy",
-      "topic": "The Making of Free Guy: An Interview with Shawn Levy",
-      "hook": "What inspired the creation of Free Guy?",
-      "voice_style": "friendly",
+      "category": "Female Empowerment",
+      "topic": "From Sidelines to CEO: The Woman Who Conquered Wall Street's Old Boys' Club",
+      "hook": "They told her 'no,' they told her 'you can't.' She built an empire. Meet the finance titan who changed the game.",
+      "voice_style": "inspirational",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Cricket Analysis of Ban vs Aus",
-      "topic": "The Art of Spin Bowling: A Key to Victory",
-      "hook": "Can Bangladesh outspin Australia in the upcoming series?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Disney Nostalgia",
+      "topic": "The Lost Ride: Uncovering Secrets of Disney World's Abandoned River Country",
+      "hook": "Remember Disney's first water park? What REALLY happened to River Country? The secrets are darker than you think.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Riverdale Fan Edits with Charles Melton",
-      "topic": "The Unseen Romance of Reggie and Veronica",
-      "hook": "What if Reggie and Veronica ended up together?",
+      "category": "Combat Sports Analysis",
+      "topic": "Israel Adesanya's Signature Feint: How 'The Last Stylebender' Tricks His Opponents",
+      "hook": "He moves, you blink, it's over. We're breaking down the subtle genius behind Adesanya's untouchable feints.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Cricket Match Reactions",
+      "topic": "World Cup Qualifier Shocker: Namibia's Unbelievable Last-Over Victory Against Sri Lanka",
+      "hook": "You will NOT believe the scenes! Namibia just pulled off the impossible in a World Cup qualifier, stunning everyone in the final over!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Entertainment News",
+      "topic": "Shocking Casting: Zendaya as the Next James Bond Villain?",
+      "hook": "Could the internet be right? Rumors are swirling that Zendaya is eyed for the next 007 villain! Imagine the chaos!",
       "voice_style": "dramatic",
       "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Severe Weather Safety Tips",
+      "topic": "Flash Flood Survival: 3 Crucial Steps You NEED to Know NOW",
+      "hook": "The water rises fast, often without warning. Don't be caught off guard \u2013 these 3 flash flood safety tips could save your life.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Action Movie Clips",
-      "topic": "The Most Epic Fight Scenes in Movie History",
-      "hook": "Get ready for the most adrenaline-fueled fight scenes ever",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Female Boxing",
+      "topic": "Claressa Shields' Untouchable Legacy: Why She's the GOAT of Women's Boxing",
+      "hook": "Unbeaten, undisputed, unparalleled. Is Claressa Shields the greatest boxer, male or female, of all time? We make the case.",
+      "voice_style": "inspirational",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Summer Sports Recap",
-      "topic": "The Top 5 Sports Moments of the Summer",
-      "hook": "Relive the most unforgettable sports moments of the summer",
-      "voice_style": "friendly",
+      "category": "Sports Highlights",
+      "topic": "Olympic Gymnastics: Simone Biles' Gravity-Defying Return Vault",
+      "hook": "After the pressure, the doubts, she returned with THIS. Witness Simone Biles' breathtaking, record-breaking vault that stunned the world.",
+      "voice_style": "dramatic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "New Movie Trailers",
-      "topic": "The Most Anticipated Movies of the Fall Season",
-      "hook": "Which movie are you most excited to see this fall?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Summer Movie Reviews with Jonathan Majors and Christopher Evans",
-      "topic": "A Deep Dive into the World of The Gray Man",
-      "hook": "Is The Gray Man the spy thriller we've been waiting for?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "UFC Highlights featuring Jalin Turner",
-      "topic": "The Evolution of Jalin Turner's Fighting Style",
-      "hook": "How has Jalin Turner improved his skills in the octagon?",
+      "category": "Weather Updates",
+      "topic": "Global Heat Dome Alert: Is THIS Summer Going to Be the Hottest EVER?",
+      "hook": "Brace yourselves! Experts are predicting a never-before-seen heat dome. Is your region on the verge of its hottest summer?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Star Wars Theories about Kylo Ren",
-      "topic": "The Complexity of Kylo Ren's Character",
-      "hook": "What makes Kylo Ren one of the most intriguing villains in Star Wars?",
+      "category": "Boxing News",
+      "topic": "The Controversial Split Decision: Was Canelo vs. GGG 1 RIGGED?",
+      "hook": "A fight for the ages, a decision that still haunts. Was the first Canelo-GGG bout a robbery? We revisit the infamous scorecard.",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Female Empowerment",
+      "topic": "Breaking the Sound Barrier: The First Female Conductor to Lead a Major Symphony Orchestra",
+      "hook": "For centuries, it was a male domain. Until SHE stepped onto the podium. Discover the trailblazer who shattered the glass baton.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Storm Chasing with Storm Casting",
-      "topic": "The Science Behind Storm Chasing",
-      "hook": "What drives storm chasers to pursue the most extreme weather conditions?",
+      "category": "Disney Nostalgia",
+      "topic": "Aladdin's Forgotten Deleted Scenes: Jafar's Original Fate Was Much Darker",
+      "hook": "You think you know Aladdin? We're digging into the vault to reveal Jafar's truly chilling original ending that Disney scrapped!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Combat Sports Analysis",
+      "topic": "The 'Superman Punch': Unpacking Georges St-Pierre's Iconic Takedown Setup",
+      "hook": "It looks like a wild strike, but it's pure genius. We're dissecting GSP's iconic Superman Punch and why it worked every time.",
       "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Behind the Scenes with Director Shawn Levy",
-      "topic": "The Making of The Adam Project: A Time Travel Adventure",
-      "hook": "How did Shawn Levy bring the time-traveling story to life?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Cricket Analysis of Ban vs Aus",
-      "topic": "The Importance of Fielding in Cricket",
-      "hook": "Can Bangladesh's fielding skills give them an edge over Australia?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Riverdale Fan Edits with Charles Melton",
-      "topic": "The Alternate Storyline of Riverdale",
-      "hook": "What if the characters of Riverdale lived in a different universe?",
+      "category": "Cricket Match Reactions",
+      "topic": "Ashes Thriller: Jonny Bairstow's Controversial Run-Out and Fan Outrage",
+      "hook": "Was it fair play or was it a disgrace? Relive the moment Jonny Bairstow's run-out ignited the Ashes and divided the cricket world!",
       "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Action Movie Clips",
-      "topic": "The Most Iconic Car Chases in Movie History",
-      "hook": "Get ready for the most heart-pumping car chases ever filmed",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Summer Sports Recap",
-      "topic": "The Most Surprising Upsets of the Summer Sports Season",
-      "hook": "Which underdog teams pulled off the biggest upsets of the summer?",
+      "category": "Entertainment News",
+      "topic": "The Viral Moment: Harry Styles Stops Concert to Help a Fan Propose",
+      "hook": "Forget the songs, Harry Styles just delivered the most heartwarming concert moment EVER! You won't believe what happened on stage!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "New Movie Trailers",
-      "topic": "The Most Highly Anticipated Sequels of the Year",
-      "hook": "Which sequels are you most excited to see this year?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Summer Movie Reviews with Jonathan Majors and Christopher Evans",
-      "topic": "A Review of the Summer's Biggest Blockbusters",
-      "hook": "Which summer blockbuster reigns supreme?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Severe Weather Safety Tips",
+      "topic": "Tornado Alley Readiness: The 5 Essential Items for Your Emergency Kit",
+      "hook": "Living in Tornado Alley? Don't wait for the siren! These 5 essential items in your emergency kit could be lifesavers.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
+    },
+    {
+      "category": "Female Boxing",
+      "topic": "Mikaela Mayer's Rise: From Olympic Dream to World Champion Undisputed",
+      "hook": "She traded Olympic gold for professional glory. Witness the incredible journey of Mikaela Mayer as she dominates the super featherweight division!",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
