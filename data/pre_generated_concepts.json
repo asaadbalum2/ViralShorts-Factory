@@ -1,268 +1,260 @@
 {
-  "generated_at": "2026-08-17T06:00:19.771133",
-  "valid_until": "2026-08-17T23:59:19.771141",
+  "generated_at": "2026-08-18T05:56:57.172328",
+  "valid_until": "2026-08-18T23:59:57.172338",
   "categories": [
-    "Parenting Hacks with a Pediatrician",
-    "Manav Suthar Dance Challenges",
-    "Gilberto Mora Fitness Routines",
-    "Postpartum Self-Care Tips",
-    "\u725b\u6765 Chinese Culture Explanations",
-    "Friday Night Lights Sports Highlights",
-    "Klitschko Boxing Lessons",
-    "Amanda Bynes Comeback Stories",
-    "Summer Baby Health Advice",
-    "Back to School Seasonal Prep",
-    "Chinese Language Lessons with \u725b\u6765",
-    "Sports Motivation with Friday Night Lights",
-    "Post-Baby Body Fitness Inspiration",
-    "Viral Dance Challenges like Manav Suthar",
-    "Healthy Pregnancy Tips from a Pediatrician"
+    "Sports Highlights & Predictions",
+    "Celebrity & Pop Culture Commentary",
+    "TV Show Deep Dives & Recaps",
+    "Travel Destination Spotlights",
+    "Creator Economy & Streaming Platform News",
+    "Reality TV Drama & Analysis",
+    "Quick Fitness & Movement Challenges",
+    "DIY & Home Organization Hacks",
+    "Rapid Recipes & Food Trends",
+    "Summer-to-Fall Fashion & Beauty",
+    "Explainers & Edutainment",
+    "Tech Gadget Reviews & AI News",
+    "Humorous Skits & Relatable Content",
+    "Pet & Animal Viral Moments",
+    "Local Event & Community Spotlights"
   ],
   "concepts": [
     {
-      "category": "Parenting Hacks with a Pediatrician",
-      "topic": "5 Ways to Soothe a Crying Baby",
-      "hook": "Is your baby crying non-stop? You won't believe the #1 reason why!",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
+      "category": "Sports Highlights & Predictions",
+      "topic": "The NBA's Most Shocking Potential Trade Deadline Move",
+      "hook": "Could THIS team really trade their franchise player before the deadline?",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Manav Suthar Dance Challenges",
-      "topic": "Dancing to Bollywood Hits with a Twist",
-      "hook": "Get ready to groove! Can you handle this epic dance challenge?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Sports Highlights & Predictions",
+      "topic": "Why [Specific Rookie NFL Player] Will Be the League's Breakout Star",
+      "hook": "Everyone's talking about the top picks, but this rookie is about to shock the NFL.",
+      "voice_style": "Authoritative",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Gilberto Mora Fitness Routines",
-      "topic": "5-Minute Morning Workout for Busy People",
-      "hook": "No time for the gym? This 5-minute routine will get you fit in no time!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Postpartum Self-Care Tips",
-      "topic": "Healing Your Body After Childbirth",
-      "hook": "New mom? Don't neglect your own healing! Here's what you need to know.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "\u725b\u6765 Chinese Culture Explanations",
-      "topic": "The Meaning Behind Chinese New Year Traditions",
-      "hook": "Ever wondered why red envelopes are a big deal in China? Let's dive in!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Celebrity & Pop Culture Commentary",
+      "topic": "Unpacking the Real Reason Behind That Huge Celebrity Feud",
+      "hook": "Did you REALLY think it was about that Instagram comment? I've got the inside scoop.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
       "target_duration": 50
     },
     {
-      "category": "Friday Night Lights Sports Highlights",
-      "topic": "Most Epic Football Comebacks in History",
-      "hook": "You won't believe these mind-blowing football comebacks! Which one is your favorite?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Klitschko Boxing Lessons",
-      "topic": "Mastering the Art of Punching Technique",
-      "hook": "Want to throw a punch like a pro? Klitschko's got tips for you!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "category": "Celebrity & Pop Culture Commentary",
+      "topic": "The Next Viral Sound & Artist You NEED to Know",
+      "hook": "Forget what's trending now \u2013 I'm telling you who's about to DOMINATE your feed.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Amanda Bynes Comeback Stories",
-      "topic": "Overcoming Mental Health Struggles in Hollywood",
-      "hook": "Amanda Bynes' inspiring comeback story will leave you speechless!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "TV Show Deep Dives & Recaps",
+      "topic": "Decoding the Cryptic Final Scene of [Popular Sci-Fi Show] Season 2",
+      "hook": "That ending left you scratching your head, right? What if I told you it wasn't a cliffhanger, but a clue?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "TV Show Deep Dives & Recaps",
+      "topic": "The Hidden Meaning Behind [Specific Character]'s Iconic Quote in [Fantasy Show]",
+      "hook": "You've heard this line a hundred times, but you've never truly understood its power until now.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Travel Destination Spotlights",
+      "topic": "Rome's Secret Pasta Spot Only Locals Know",
+      "hook": "Forget the tourist traps \u2013 I found the BEST Cacio e Pepe in Rome, and it's hidden down THIS alley.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Summer Baby Health Advice",
-      "topic": "Keeping Your Baby Safe in the Summer Heat",
-      "hook": "Summer is here! Don't let the heat harm your little one - here's what you need to know.",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Travel Destination Spotlights",
+      "topic": "How to Do a Luxury Weekend Trip to Banff on a Budget",
+      "hook": "Dreaming of Banff's stunning views but dreading the cost? I just unlocked the ultimate budget hack.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Creator Economy & Streaming Platform News",
+      "topic": "Unpacking YouTube's Controversial New Ad Policy for Shorts",
+      "hook": "Did YouTube just change how you get paid for Shorts? Here's what you NEED to know, NOW.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Creator Economy & Streaming Platform News",
+      "topic": "The Rise of Niche Micro-Communities: What's Next for Creators?",
+      "hook": "Big platforms are out, tiny communities are in. Is this the future of the creator economy?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Reality TV Drama & Analysis",
+      "topic": "The Unseen Edit That Changed Everything in [Specific Reality Show Episode]",
+      "hook": "You thought you saw the whole story, but one crucial moment was left on the cutting room floor, and it changes EVERYTHING.",
+      "voice_style": "Dramatic",
+      "music_mood": "Dramatic",
+      "target_duration": 46
+    },
+    {
+      "category": "Reality TV Drama & Analysis",
+      "topic": "My Unpopular Opinion on Why [Controversial Reality Star] Was Actually Right",
+      "hook": "Everyone hates them, but I'm here to tell you why this 'villain' was the only one making sense.",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 41
+    },
+    {
+      "category": "Quick Fitness & Movement Challenges",
+      "topic": "The 7-Minute 'Posture Reset' Routine You Can Do Anywhere",
+      "hook": "Slouching at your desk all day? This 7-minute routine will literally reset your posture and boost your energy.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Back to School Seasonal Prep",
-      "topic": "10 Essential School Supplies You Can't Miss",
-      "hook": "Back to school season is here! Are you ready with these must-have supplies?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Quick Fitness & Movement Challenges",
+      "topic": "The 'Wall Sit Challenge' for Iron Core & Legs",
+      "hook": "Think you have strong legs? Try this wall sit challenge \u2013 it's harder than it looks, but the results are insane.",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 44
+    },
+    {
+      "category": "DIY & Home Organization Hacks",
+      "topic": "Transform Your Messy Drawers with One Simple Dollar Store Hack",
+      "hook": "Is your junk drawer overflowing? Grab THIS one item from the dollar store and create instant organization.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "DIY & Home Organization Hacks",
+      "topic": "The Viral 'Laundry Strip' Hack: Does it REALLY Work?",
+      "hook": "Everyone's buzzing about these laundry strips, but are they just another fad? I put them to the test.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Rapid Recipes & Food Trends",
+      "topic": "10-Minute 'Better-Than-Takeout' Pad Thai Recipe",
+      "hook": "Craving Pad Thai but don't want to order out? This 10-minute recipe is so good, you won't believe it's homemade.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Parenting Hacks with a Pediatrician",
-      "topic": "Toddler Tantrum Hacks Every Parent Needs",
-      "hook": "Tired of toddler tantrums? These hacks will change your life!",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
+      "category": "Rapid Recipes & Food Trends",
+      "topic": "The Truth About 'Healthy' Viral Smoothie Bowls: Are They Worth It?",
+      "hook": "Your feed is full of gorgeous smoothie bowls, but are they actually healthy or just a sugar bomb in disguise?",
+      "voice_style": "Authoritative",
+      "music_mood": "Chill",
+      "target_duration": 47
+    },
+    {
+      "category": "Summer-to-Fall Fashion & Beauty",
+      "topic": "3 Transitional Outfit Hacks to Wear Your Summer Dresses in Fall",
+      "hook": "Don't pack away those summer dresses yet! Here are three genius hacks to wear them straight into fall.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Manav Suthar Dance Challenges",
-      "topic": "Dancing to Hip-Hop with a Bollywood Twist",
-      "hook": "Get ready to groove! Can you handle this fusion dance challenge?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Gilberto Mora Fitness Routines",
-      "topic": "Quick Workout Routines for Busy Moms",
-      "hook": "No time for the gym? These quick workouts will get you fit in no time!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Postpartum Self-Care Tips",
-      "topic": "The Importance of Mental Health After Childbirth",
-      "hook": "New mom? Don't neglect your mental health! Here's what you need to know.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "\u725b\u6765 Chinese Culture Explanations",
-      "topic": "The Significance of Chinese Zodiac Animals",
-      "hook": "Ever wondered what your Chinese zodiac animal says about you? Let's find out!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Friday Night Lights Sports Highlights",
-      "topic": "Most Thrilling Sports Finishes in History",
-      "hook": "You won't believe these heart-stopping sports finishes! Which one is your favorite?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Klitschko Boxing Lessons",
-      "topic": "Defense Techniques for Boxing Beginners",
-      "hook": "Want to learn boxing defense like a pro? Klitschko's got tips for you!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Amanda Bynes Comeback Stories",
-      "topic": "From Child Star to Comeback Queen",
-      "hook": "Amanda Bynes' inspiring journey from child star to comeback queen will leave you speechless!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Summer Baby Health Advice",
-      "topic": "Protecting Your Baby's Skin from the Sun",
-      "hook": "Summer is here! Don't let the sun harm your baby's skin - here's what you need to know.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Back to School Seasonal Prep",
-      "topic": "Creating a Back to School Morning Routine",
-      "hook": "Back to school season is here! Create a morning routine that works for you and your kids.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Parenting Hacks with a Pediatrician",
-      "topic": "Establishing a Bedtime Routine for Toddlers",
-      "hook": "Tired of bedtime battles? These hacks will help you establish a bedtime routine that works!",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 40
+      "category": "Summer-to-Fall Fashion & Beauty",
+      "topic": "The 'Pumpkin Spice Latte' Makeup Look That's Actually Chic",
+      "hook": "Forget basic fall makeup. I'm showing you how to get that cozy, warm pumpkin spice vibe without looking like a literal latte.",
+      "voice_style": "Energetic",
+      "music_mood": "Chill",
+      "target_duration": 43
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
