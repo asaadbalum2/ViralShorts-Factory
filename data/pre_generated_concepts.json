@@ -1,259 +1,98 @@
 {
-  "generated_at": "2026-08-19T05:56:44.801415",
-  "valid_until": "2026-08-19T23:59:44.801425",
+  "generated_at": "2026-08-20T05:57:10.843852",
+  "valid_until": "2026-08-20T23:59:10.843859",
   "categories": [
-    "Breaking News & Real-Time Alerts",
-    "Pop Culture & Celebrity Buzz",
-    "Fandom Deep Dives & Theorycrafting",
-    "Sports Updates & Athlete Spotlights",
-    "True Crime & Unsolved Mysteries",
-    "Economic Insights & Consumer Finance",
-    "Logistics & Supply Chain Trends",
-    "Automotive & Vehicle Maintenance Tips",
-    "Nostalgia & Throwback Content",
-    "Educational Explainer Videos",
-    "Seasonal Activities & End-of-Summer Fun",
-    "Back-to-School Hacks & Prep",
-    "Quick & Easy Recipe Ideas",
-    "Life Hacks & Productivity Boosters",
-    "Comedy Skits & Viral Challenges"
+    "Breaking News & Viral Updates",
+    "Next-Gen Gaming & PS6 Exclusives",
+    "NFL Season Highlights & Player Spotlights",
+    "True Crime Deep Dives & Case Updates",
+    "Historical Moments & 19th Amendment Legacy",
+    "Celebrity Buzz & Pop Culture Reactions",
+    "Emergency Prep & Life Hacks for Outages",
+    "Relatable Humor & Daily Struggles",
+    "Tech & Gadget Reviews (Beyond Gaming)",
+    "\"On This Day\" Historical Reminders",
+    "Local Community News & Alerts",
+    "Legal & Social Justice Explainers",
+    "Athlete Training & Wellness Journeys",
+    "Stand-Up Comedy & Viral Skits",
+    "Gaming & Console Accessory Guides"
   ],
-  "concepts": [
-    {
-      "category": "Breaking News & Real-Time Alerts",
-      "topic": "The Sudden Global Outage of 'QuantumLink' Social Media Platform",
-      "hook": "Did your QuantumLink just vanish? You're not alone! A mysterious global outage is gripping millions, and the silence is deafening...",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking News & Real-Time Alerts",
-      "topic": "Unexpected Volcanic Activity Near Populated Areas in the Pacific Ring of Fire",
-      "hook": "Red Alert! Seismologists are tracking unprecedented tremors near Mount Cinder, prompting urgent evacuation discussions for nearby communities. What's happening?",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Pop Culture & Celebrity Buzz",
-      "topic": "The Cryptic Disappearance of Pop Star 'Seraphina Nova's' Entire Social Media Presence",
-      "hook": "Where did all of Seraphina Nova's posts go? Fans are in a frenzy after her entire digital footprint seemingly vanished overnight! Is it a publicity stunt or something more?",
-      "voice_style": "Energetic",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Pop Culture & Celebrity Buzz",
-      "topic": "The Viral 'Dream Weaver' AI Filter Taking Over Hollywood for Movie Roles",
-      "hook": "Forget deepfakes, Hollywood's new obsession is the 'Dream Weaver' AI \u2013 and it's making your favorite stars look... different. Is this the future of cinema or a privacy nightmare?",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fandom Deep Dives & Theorycrafting",
-      "topic": "Is 'The Wanderer' in Eldoria Really the Forgotten Prince? A New Fan Theory Explodes",
-      "hook": "Eldoria fans, STOP SCROLLING! We just uncovered a theory so wild, it changes EVERYTHING about The Wanderer's true identity. Prepare to have your mind blown!",
-      "voice_style": "Energetic",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Fandom Deep Dives & Theorycrafting",
-      "topic": "The Secret Meaning Behind the 'Lunar Moth' Symbol in the Chronos Saga Lore",
-      "hook": "You thought you knew the Chronos Saga? One tiny symbol, the Lunar Moth, hides a devastating truth about the universe's origin that even hardcore fans missed.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Updates & Athlete Spotlights",
-      "topic": "The Unbelievable Rise of Rookie Skateboarder, Maya 'The Maverick' Lee, to X-Games Stardom",
-      "hook": "From backyard ramps to X-Games glory: How Maya Lee went from unknown amateur to skateboarding's next big superstar in just six months! Her story is pure inspiration.",
-      "voice_style": "Inspirational",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Updates & Athlete Spotlights",
-      "topic": "The VAR Controversy That Cost the Phoenix Foxes the Championship Title",
-      "hook": "Was it a foul or brilliant defense? The VAR decision that ended the Phoenix Foxes' championship dream is still sparking fury among fans and pundits. Let's break it down.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime & Unsolved Mysteries",
-      "topic": "The Baffling Disappearance of Amelia Reed's Yacht, The 'Sea Siren', and New Satellite Images",
-      "hook": "A luxury yacht, a calm sea, and a businesswoman vanishes without a trace. Years later, new satellite images just dropped that could finally solve the 'Sea Siren' mystery.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "True Crime & Unsolved Mysteries",
-      "topic": "The Real Story Behind the 'D.B. Cooper' Skyjacking Case and Newly Declassified Clues",
-      "hook": "Could the real D.B. Cooper still be out there? We're diving into newly declassified documents that might finally unmask America's most elusive skyjacker.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Economic Insights & Consumer Finance",
-      "topic": "The Unexpected Surge in 'Eco-Art' as a New Investment Class for Young Collectors",
-      "hook": "Forget crypto and stocks! Why environmental art made from recycled materials is becoming the hottest, fastest-growing alternative investment for young collectors. Should you buy in?",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Economic Insights & Consumer Finance",
-      "topic": "The Hidden Costs of 'Buy Now, Pay Later' Apps You Aren't Being Told",
-      "hook": "Think 'Buy Now, Pay Later' is always free? Think again. We're exposing the sneaky fees and debt traps these apps don't want you to know about before you click 'purchase'.",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Logistics & Supply Chain Trends",
-      "topic": "How the 'Red Sea Detours' Are Affecting Your Holiday Shopping Prices and Deliveries",
-      "hook": "Ever wonder why that gadget is suddenly more expensive? The Red Sea crisis isn't just about shipping lanes; it's about to hit your wallet hard this holiday season. Here's why.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Logistics & Supply Chain Trends",
-      "topic": "The Rise of AI-Powered 'Drone Swarms' Revolutionizing Last-Mile Delivery",
-      "hook": "Your next package might not be delivered by a truck, but by an autonomous drone swarm! See how AI is making hyper-local delivery faster and cheaper than ever before.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Automotive & Vehicle Maintenance Tips",
-      "topic": "The 'Check Engine' Light Myth: Why Ignoring It Could Kill Your Car's Engine",
-      "hook": "Your 'Check Engine' light just came on again? Don't just reset it! We're busting the biggest myth about this warning and revealing what it *really* means for your car's lifespan.",
-      "voice_style": "Authoritative",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Automotive & Vehicle Maintenance Tips",
-      "topic": "DIY Headlight Restoration: Make Your Old Headlights Look Brand New for Under $20",
-      "hook": "Are your headlights looking cloudy and old? Don't spend hundreds! I'll show you how to restore them to showroom shine in under 15 minutes for less than twenty bucks.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Nostalgia & Throwback Content",
-      "topic": "Remember Floppy Disks? The Unsung Hero of Early Computing and Their Secret Storage Capacity",
-      "hook": "Before USB drives, before the cloud, there was the floppy disk. Did you know these flimsy squares once held entire operating systems and were critical to computing history?",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Nostalgia & Throwback Content",
-      "topic": "The Lost Art of Pogs: Collecting, Slamming, and the Craze That Vanished in the 90s",
-      "hook": "If you grew up in the 90s, you probably had a stack of these. Remember Pogs? The cardboard disks that ruled playgrounds and then disappeared almost overnight!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Educational Explainer Videos",
-      "topic": "How Solar Flares Affect Earth's Internet & Power Grids: A Simplified Explanation",
-      "hook": "Imagine a world without internet or electricity... A massive solar flare could make that a reality! How do these space storms actually threaten our modern world?",
-      "voice_style": "Calm",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Educational Explainer Videos",
-      "topic": "The Truth About 'Deja Vu': Why Your Brain Feels Like It's Seen This Moment Before",
-      "hook": "Ever feel like you've lived this exact moment before? That weird, fleeting feeling of deja vu isn't a glitch in the matrix \u2013 your brain is actually playing a fascinating trick on you.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     }
   ],
