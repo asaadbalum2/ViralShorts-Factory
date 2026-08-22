@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-08-21T05:58:54.985708",
-  "valid_until": "2026-08-21T23:59:54.985717",
+  "generated_at": "2026-08-22T05:54:58.557805",
+  "valid_until": "2026-08-22T23:59:58.557817",
   "categories": [
-    "Eclipse Watch & Astronomy",
-    "Celebrity Buzz & Fandom Content",
-    "Stock Market & Finance Explained",
-    "Luxury & Niche Travel",
-    "True Story & Docuseries Reactions",
-    "Friendship Goals & Buddy Adventures",
-    "Pop Culture Comedy & Memes",
-    "Science & Nature Explanations",
-    "Behind-the-Scenes & Industry Insights",
-    "Fashion, Beauty & Celebrity Style",
-    "Travel Hacks & Packing Guides",
-    "Astrology & Spiritual Wellness",
-    "Late Summer & Early Fall Activities",
-    "Quick Takes & News Recaps",
-    "Creative Edits & Fan Art"
+    "Liga MX Match Highlights & Analysis",
+    "MLB Daily Recap & Player Spotlight",
+    "Tech Gadget Reviews & Unboxings (iPhone 18 Pro Focus)",
+    "Crypto Market Insights & Web3 Education",
+    "Earth Science & Disaster Preparedness Explainer Videos",
+    "Retro TV Show Deep Dives & Fan Theories",
+    "AI & Future Tech Innovations",
+    "Quick Finance & Investment Tips",
+    "Global News & Current Affairs Explained",
+    "Sports Betting & Fantasy Sports Strategy",
+    "Comedy Skits & Relatable Humor",
+    "Quick Cooking & Food Hacks",
+    "Fashion & Style Inspiration (Late Summer/Fall Prep)",
+    "Gaming Highlights & Esports News",
+    "Travel & Adventure Guides"
   ],
   "concepts": [
     {
-      "category": "Eclipse Watch & Astronomy",
-      "topic": "The Next Rare Total Solar Eclipse Locations",
-      "hook": "Missed the last total eclipse? Here's where you absolutely *need* to be for the next one, and why it's so special!",
+      "category": "Liga MX Match Highlights & Analysis",
+      "topic": "Chivas' Miraculous Comeback vs. America - Tactical Breakdown",
+      "hook": "Did you REALLY see what Chivas pulled off against America last night? It wasn't luck.",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Buzz & Fandom Content",
-      "topic": "Unseen Habits of A-List Celebrities on Set",
-      "hook": "You think you know your favorite stars? Wait till you hear what they *really* do between takes!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Stock Market & Finance Explained",
-      "topic": "Decoding 'Meme Stocks': Beyond the Hype",
-      "hook": "Remember GameStop? We're breaking down what *really* drives a 'meme stock' and if you should even look twice.",
-      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Luxury & Niche Travel",
-      "topic": "Glamping in Antarctica: An Expedition Like No Other",
-      "hook": "Forget Maldives. What if I told you the ultimate luxury adventure involves emperor penguins and icy domes?",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "True Story & Docuseries Reactions",
-      "topic": "The Real-Life Impact of 'Tiger King' on Conservation Efforts",
-      "hook": "Everyone watched 'Tiger King,' but did it actually help the tigers, or make things worse? The truth might shock you.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Friendship Goals & Buddy Adventures",
-      "topic": "Recreating Childhood Road Trips with Adult Twists",
-      "hook": "We found our old photo album and decided to recreate our most ridiculous childhood road trip. Spoiler: adulting makes it harder, and funnier.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Pop Culture Comedy & Memes",
-      "topic": "The Origin Story of the 'Distracted Boyfriend' Meme",
-      "hook": "Ever wonder who those people *really* are in the 'distracted boyfriend' meme? The photographer's story is wild!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Science & Nature Explanations",
-      "topic": "Why Some Animals Glow in the Dark (Bio-luminescence Explained)",
-      "hook": "Ocean depths are full of light! We're diving deep into the science of bio-luminescence and why some creatures glow.",
+      "category": "Liga MX Match Highlights & Analysis",
+      "topic": "The Unsung Hero of Tigres' Defense: Analyzing Guido Pizarro's Midfield Impact",
+      "hook": "Everyone talks Gignac, but who's the *real* architect of Tigres' impenetrable fortress?",
       "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "music_mood": "upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Behind-the-Scenes & Industry Insights",
-      "topic": "The Hidden World of Movie Prop Masters",
-      "hook": "That ancient relic in your favorite movie? It's probably made of foam. Welcome to the magic of movie prop departments!",
+      "category": "MLB Daily Recap & Player Spotlight",
+      "topic": "Ohtani's Monster Grand Slam & Why It Broke Statcast's Expectation Models",
+      "hook": "Ohtani didn't just hit a grand slam today, he shattered the sound barrier and Statcast's mind!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "MLB Daily Recap & Player Spotlight",
+      "topic": "The Orioles' Secret Weapon: Gunnar Henderson's Defensive Masterclass at Shortstop",
+      "hook": "Forget the dingers, how is Gunnar Henderson making plays like *that* look so effortless?",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Fashion, Beauty & Celebrity Style",
-      "topic": "Deconstructing Red Carpet 'Method Dressing' Trends",
-      "hook": "Is Zendaya just wearing pretty clothes, or is there a deeper meaning? Let's break down 'method dressing' on the red carpet.",
+      "category": "Tech Gadget Reviews & Unboxings (iPhone 18 Pro Focus)",
+      "topic": "iPhone 18 Pro's Holographic Display Leak: Is This Sci-Fi Feature Actually Real?",
+      "hook": "Holograms on your phone? The latest iPhone 18 Pro leak will absolutely blow your mind!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Tech Gadget Reviews & Unboxings (iPhone 18 Pro Focus)",
+      "topic": "iPhone 18 Pro Camera Zoom Test: Can It See a Satellite From Earth?",
+      "hook": "They say the iPhone 18 Pro camera is insane. Let's see if it can capture a squirrel from Mars... or at least the moon.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 43
     },
     {
-      "category": "Eclipse Watch & Astronomy",
-      "topic": "The Science Behind Eclipse Glasses: What Makes Them Safe?",
-      "hook": "Don't just grab any glasses for the eclipse! We're explaining the vital tech that protects your eyes and what to look for.",
+      "category": "Crypto Market Insights & Web3 Education",
+      "topic": "The Hidden Dangers of Memecoin Volatility: A Quick Explainer on Risk Management",
+      "hook": "Thinking of FOMOing into that hot new memecoin? Watch this FIRST, or you might regret it.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 46
+    },
+    {
+      "category": "Crypto Market Insights & Web3 Education",
+      "topic": "NFTs Are Dead? No, You're Just Looking at the Wrong Utility-Based Projects",
+      "hook": "Everyone says NFTs are over. They're wrong, and I'll show you why the future is actually brighter.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Earth Science & Disaster Preparedness Explainer Videos",
+      "topic": "Could a Supervolcano Erupt Today? The Unsettling Truth About Yellowstone",
+      "hook": "Underneath Yellowstone, a sleeping giant could wake up. Are we truly ready for a global climate shift?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Earth Science & Disaster Preparedness Explainer Videos",
+      "topic": "The Science Behind 'Tsunami Alley' & How to Prepare Your Coastal Home",
+      "hook": "Forget earthquakes, what if a massive wave hit your coast without warning? This region is especially vulnerable.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 44
+    },
+    {
+      "category": "Retro TV Show Deep Dives & Fan Theories",
+      "topic": "The ONE Clue You Missed in Friends' Season 1 About Ross & Rachel's Destiny",
+      "hook": "What if I told you Ross and Rachel were ALWAYS meant to be, and the show told us from season one? You won't believe it.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Retro TV Show Deep Dives & Fan Theories",
+      "topic": "Was 'The Sopranos' Infamous Ending Predicted in Season 3's Dream Sequences? My Theory",
+      "hook": "That infamous Sopranos cut to black? I think the show hinted at it YEARS before, and I have the evidence.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "AI & Future Tech Innovations",
+      "topic": "Your Next Doctor Could Be an AI: The Rise of Diagnostic Medical Bots",
+      "hook": "Imagine a doctor who never sleeps, never makes a mistake, and knows everything about your health. It's closer than you think.",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Celebrity Buzz & Fandom Content",
-      "topic": "Decoding Celebrity Instagram 'Soft Launches' of Relationships",
-      "hook": "Did you spot that hand in the corner? We're becoming Instagram detectives to uncover the art of the celebrity 'soft launch'.",
+      "category": "AI & Future Tech Innovations",
+      "topic": "Mind-Reading AI: How Brain-Computer Interfaces are Revolutionizing Communication",
+      "hook": "What if you could control a computer with just your thoughts? It's not sci-fi anymore, it's happening right now.",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Quick Finance & Investment Tips",
+      "topic": "The 'Latte Factor' Myth: Where Your Money *Really* Disappears (It's Not Coffee)",
+      "hook": "Stop blaming your coffee! Your money's vanishing act has a much bigger culprit, and it's probably in your budget.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Finance & Investment Tips",
+      "topic": "Investing in AI Stocks: Top 3 Undervalued Gems Poised for Growth in 2024",
+      "hook": "Everyone's buying NVDA. But these three AI stocks could be your next big win and they're flying under the radar.",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Stock Market & Finance Explained",
-      "topic": "The Psychology of FOMO (Fear of Missing Out) in Investing",
-      "hook": "Everyone's buying into *that* stock. Should you? We're diving into the psychology of FOMO and how it can destroy your portfolio.",
+      "category": "Global News & Current Affairs Explained",
+      "topic": "The Global Water Crisis: More Urgent Than You Think, and Impacting Everyone",
+      "hook": "You probably showered today. Billions of people can't, and the global water crisis is getting much, much worse.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Global News & Current Affairs Explained",
+      "topic": "Why Electric Car Sales Are Stalling (and What It Means for the Auto Industry)",
+      "hook": "Electric cars were supposed to take over. So why are they gathering dust on dealership lots? The truth might surprise you.",
       "voice_style": "calm",
       "music_mood": "mysterious",
-      "target_duration": 45
+      "target_duration": 43
     },
     {
-      "category": "Luxury & Niche Travel",
-      "topic": "Staying in the World's Most Remote Treehouse Hotels",
-      "hook": "Imagine waking up 100 feet in the air, surrounded by untouched wilderness. These aren't just hotels, they're experiences.",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "True Story & Docuseries Reactions",
-      "topic": "The Unbelievable Forensic Breakthroughs in 'Making a Murderer'",
-      "hook": "The evidence seemed clear, but then came the science. We're reacting to the forensic breakthroughs that shook 'Making a Murderer'.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Friendship Goals & Buddy Adventures",
-      "topic": "The Ultimate 'Friendship Dare' Challenge: Surviving a Wilderness Retreat",
-      "hook": "Can our friendship survive a weekend in the wild with no phones and only a map? We put our bond to the ultimate test.",
+      "category": "Sports Betting & Fantasy Sports Strategy",
+      "topic": "The 'Zig-Zag Theory' in NBA Playoffs Betting: Does This Popular Strategy Actually Work?",
+      "hook": "Want to bet on the NBA playoffs like a pro? You NEED to know the 'Zig-Zag' theory, but there's a catch.",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "music_mood": "intense",
+      "target_duration": 47
     },
     {
-      "category": "Pop Culture Comedy & Memes",
-      "topic": "If Historic Figures Had Modern Social Media Accounts (Comedy Skit)",
-      "hook": "What if Shakespeare had TikTok? Or Cleopatra was an Instagram influencer? Get ready for some historical hilarity!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Science & Nature Explanations",
-      "topic": "The Unseen Ecosystem in Your Backyard Pond (Micro-life)",
-      "hook": "Your backyard pond isn't just water. It's a bustling city of microscopic life doing incredible things!",
+      "category": "Sports Betting & Fantasy Sports Strategy",
+      "topic": "Fantasy Football Sleeper Picks for Quarterbacks in 2024 You Haven't Heard Of",
+      "hook": "Forget Mahomes and Allen. These three QBs will win you your fantasy league this year, and no one else is talking about them.",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Behind-the-Scenes & Industry Insights",
-      "topic": "The Unexpected Lives of Professional Stand-ins for Actors",
-      "hook": "They look like your favorite stars, but they're not. Meet the unsung heroes of Hollywood: the professional stand-ins.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Fashion, Beauty & Celebrity Style",
-      "topic": "Celebrity Hair Stylists Reveal Their Secret 'Emergency Fixes'",
-      "hook": "Bad hair day on the red carpet? Not on their watch! Top celebrity stylists spill their genius 'emergency fix' hacks.",
-      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 44
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
