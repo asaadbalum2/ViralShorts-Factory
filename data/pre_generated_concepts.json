@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-08-23T05:55:30.689856",
-  "valid_until": "2026-08-23T23:59:30.689867",
+  "generated_at": "2026-08-24T06:04:18.527390",
+  "valid_until": "2026-08-24T23:59:18.527396",
   "categories": [
-    "Global Football & Soccer Analysis",
-    "Cricket World Updates & Highlights",
-    "Celebrity Lifestyle & Red Carpet Fashion",
-    "Chef Reactions & Food Critiques",
-    "Film & Series Deep Dives",
-    "Rising Athlete Spotlights & Journeys",
-    "Quick & Easy Recipes & Meal Prep",
-    "Comedy Skits & Viral Memes",
-    "August-September Fashion & Style Hauls",
-    "Travel Bucket List & Mini-Vlogs",
-    "Behind-the-Scenes & Day-in-the-Life",
-    "Tech Gadget Reviews & Hacks",
-    "DIY Home & Organization Hacks",
-    "Productivity & Study Motivation",
-    "Trending Sounds & Dance Challenges"
+    "Football Season Highlights & Reactions",
+    "Pop Culture Crossovers & Mashups",
+    "Personal Finance & Banking News",
+    "Extreme Weather Alerts & Preparedness",
+    "College Sports Fan Culture",
+    "Viral Internet Humor & Memes",
+    "TV Show Character Spotlights & Analysis",
+    "Music Industry News & Artist Buzz",
+    "Regional Lifestyle & Climate Commentary",
+    "Record-Breaking Athletic Achievements",
+    "Quick News Takes & Current Events",
+    "Travel & Destination Insights (Weather Impact)",
+    "Short-Form Educational Content & Explainers",
+    "Sports Commentary & Predictions",
+    "Celebrity & Public Figure Spotlights"
   ],
   "concepts": [
     {
-      "category": "Global Football & Soccer Analysis",
-      "topic": "The Tactical Genius Behind Girona FC's La Liga Surge",
-      "hook": "Everyone's talking about Real Madrid, but how did a small Catalan club become La Liga's biggest surprise? It's a masterclass you missed!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Football Season Highlights & Reactions",
+      "topic": "Unpacking the physics and audacity behind the viral 'no-look' lateral touchdown.",
+      "hook": "Did you SEE that?! The most bonkers play of the season just dropped, and your jaw is about to hit the floor.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Global Football & Soccer Analysis",
-      "topic": "Why Xavi's Barcelona Exit Could Be Their Masterstroke",
-      "hook": "Xavi leaving Barca feels like a crisis, but what if this controversial decision is actually the secret to their future success?",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
+      "category": "Football Season Highlights & Reactions",
+      "topic": "The infamous 'phantom pass interference' call from Sunday's big game and its aftermath.",
+      "hook": "Seriously, ref? We're breaking down the call that's got every sideline screaming and Twitter ablaze.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "Cricket World Updates & Highlights",
-      "topic": "Breaking Down Rashid Khan's Impossible Match-Winning Spell",
-      "hook": "You saw the wickets, but did you catch the subtle genius behind Rashid Khan's most incredible match-winning spell? Let's rewatch!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 47
-    },
-    {
-      "category": "Cricket World Updates & Highlights",
-      "topic": "Predicting the T20 World Cup's Unsung Hero from the Netherlands",
-      "hook": "Forget the big names; there's a Dutch player quietly dominating, and they're about to become the T20 World Cup's breakout star. Here's why!",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
+      "category": "Pop Culture Crossovers & Mashups",
+      "topic": "Visualizing a hypothetical music video mashup of a modern K-Pop group and a legendary 70s rock band.",
+      "hook": "Imagine the impossible: BLACKPINK... and Led Zeppelin. How would that even *sound*?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Celebrity Lifestyle & Red Carpet Fashion",
-      "topic": "Decoding Timoth\u00e9e Chalamet's Met Gala 2024 'Quiet Luxury' Statement",
-      "hook": "Timoth\u00e9e Chalamet didn't just wear an outfit to the Met Gala; he whispered a revolution in 'quiet luxury.' What did you miss?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 40
+      "category": "Pop Culture Crossovers & Mashups",
+      "topic": "Picturing iconic superheroes (e.g., Marvel characters) navigating the red carpet and drama of a high-fashion event like the Met Gala.",
+      "hook": "Ever wondered what would happen if the Avengers showed up at the Met Gala? Your mind is about to be blown.",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 47
     },
     {
-      "category": "Celebrity Lifestyle & Red Carpet Fashion",
-      "topic": "The Top 5 Most Outrageous Celebrity Rider Demands Ever",
-      "hook": "Gold-plated toilets and specific M&M colors? You won't believe these celebrity rider demands that almost broke production!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Chef Reactions & Food Critiques",
-      "topic": "Chef Reacts to Gordon Ramsay's Controversial Scrambled Eggs Recipe",
-      "hook": "Gordon Ramsay claims his scrambled eggs are perfect, but is this viral recipe actually any good? A chef tests and critiques!",
-      "voice_style": "Authoritative",
-      "music_mood": "Chill",
-      "target_duration": 46
-    },
-    {
-      "category": "Chef Reactions & Food Critiques",
-      "topic": "Critiquing the 'World's Most Expensive Dessert' Plating",
-      "hook": "For $25,000, this dessert better be art. But from a chef's perspective, is it genius or an absolute plating disaster?",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Film & Series Deep Dives",
-      "topic": "The Hidden Symbolism in 'Dune: Part Two's' Sandworm Sequences",
-      "hook": "Beyond the spectacle, the sandworms in 'Dune: Part Two' are packed with mind-bending symbolism you definitely overlooked. Let's dive deep!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Personal Finance & Banking News",
+      "topic": "How new AI tools are automating customer service in major banks and what it means for you.",
+      "hook": "Is your bank talking to robots now? We're diving into the AI revolution quietly changing your money game.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 43
     },
     {
-      "category": "Film & Series Deep Dives",
-      "topic": "Why 'Succession's' Final Shot Is a Masterclass in Ambiguity",
-      "hook": "The 'Succession' finale left us reeling, but that final shot wasn't just an ending\u2014it was a philosophical statement. Here's what it *really* meant.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Rising Athlete Spotlights & Journeys",
-      "topic": "From Refugee Camp to Olympic Hopeful: The Story of Runner X",
-      "hook": "Imagine running for your life, then running for gold. This athlete's incredible journey from a refugee camp to the Olympics will leave you speechless.",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Rising Athlete Spotlights & Journeys",
-      "topic": "Is 17-Year-Old Skateboarder 'Sky Brown' Redefining the Sport?",
-      "hook": "She's not just breaking records; she's breaking barriers. Is teenage skateboard prodigy Sky Brown the face of action sports' future?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Personal Finance & Banking News",
+      "topic": "A quick guide to the top three micro-investing platforms making financial growth accessible for young investors.",
+      "hook": "Want to invest without breaking the bank? There's a new wave of apps that let you start with just a few dollars.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 46
     },
     {
-      "category": "Quick & Easy Recipes & Meal Prep",
-      "topic": "One-Pan Mediterranean Salmon & Veggies for Weeknight Dinners",
-      "hook": "Tired of endless dishes? This 20-minute, one-pan Mediterranean salmon recipe is your new weeknight dinner hero. Seriously, it's that easy!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Quick & Easy Recipes & Meal Prep",
-      "topic": "Healthy 3-Ingredient Dessert You Can Meal Prep for the Whole Week",
-      "hook": "Sweet tooth but hate guilt? This healthy, 3-ingredient dessert takes minutes to prep and satisfies cravings all week long!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits & Viral Memes",
-      "topic": "The Hilarious Internal Monologue of Trying to Assemble IKEA Furniture",
-      "hook": "You know that moment when IKEA instructions turn into hieroglyphs? This is every frustrated thought you've ever had trying to build that bookshelf!",
-      "voice_style": "Dramatic",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Comedy Skits & Viral Memes",
-      "topic": "Recreating The 'Distracted Boyfriend' Meme in Modern Zoom Meeting Scenarios",
-      "hook": "The iconic 'distracted boyfriend' meme gets a 2024 update! Watch as we perfectly recreate it with the chaos of modern remote work.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "August-September Fashion & Style Hauls",
-      "topic": "Ultimate Back-to-Office Capsule Wardrobe Haul (Post-Summer)",
-      "hook": "Summer's over, but your office style doesn't have to be boring! My August-September haul has the perfect capsule wardrobe for a chic return.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 47
-    },
-    {
-      "category": "August-September Fashion & Style Hauls",
-      "topic": "Transitional Festival Fashion: How to Stay Stylish at Fall Music Events",
-      "hook": "Festival season isn't over! My August-September haul shows you how to rock those late-summer and early-fall music events with killer transitional outfits.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Travel Bucket List & Mini-Vlogs",
-      "topic": "A Solo Female's Guide to Finding Authentic Street Food in Marrakech",
-      "hook": "Lost in the labyrinth of Marrakech's souks? I'm showing you my secret spots to find the most authentic, mind-blowing street food as a solo traveler!",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
+      "category": "Extreme Weather Alerts & Preparedness",
+      "topic": "Explaining how atmospheric rivers form and their impact on local flooding and water supply.",
+      "hook": "It's not just rain, it's a *river in the sky*! Understanding the wild weather phenomenon hitting the West Coast.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 49
     },
     {
-      "category": "Travel Bucket List & Mini-Vlogs",
-      "topic": "Exploring the Abandoned Railway Tunnels of Paris (Hidden Gem)",
-      "hook": "Forget the Eiffel Tower! We're diving deep into Paris's secret history, exploring the eerie, beautiful abandoned railway tunnels few tourists ever see.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Extreme Weather Alerts & Preparedness",
+      "topic": "Reviewing portable power stations, solar chargers, and emergency radios for staying prepared during outages.",
+      "hook": "Blackout? No problem! These 3 gadgets will keep you charged, lit, and connected when the power goes out.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
+    },
+    {
+      "category": "College Sports Fan Culture",
+      "topic": "A rapid-fire countdown of the most beloved and visually striking mascots in NCAA history.",
+      "hook": "Who's the GOAT of college mascots? We're ranking the legends, from Uga to The Oregon Duck!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "College Sports Fan Culture",
+      "topic": "Showcasing the most elaborate, quirky, and superstitious pre-game traditions among university sports fans.",
+      "hook": "You won't BELIEVE what these college fans do before kickoff! From face paint to epic tailgates, it's wild.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Viral Internet Humor & Memes",
+      "topic": "Tracking the journey of a specific popular TikTok sound from obscurity to global meme phenomenon.",
+      "hook": "How does a random sound become the soundtrack to EVERYONE'S TikTok? Let's decode the viral algorithm.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Viral Internet Humor & Memes",
+      "topic": "Breaking down the latest, most confusing, and hilarious Gen Z slang terms and their meme origins.",
+      "hook": "If you don't know what 'rizz' means, this video is your internet slang lifeline. Don't be 'cheugy'!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "TV Show Character Spotlights & Analysis",
+      "topic": "Deep dive into three underrated secondary characters from classic sitcoms.",
+      "hook": "Forget the main characters for a sec! We're giving props to the sidekicks who *really* made our favorite sitcoms shine.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "TV Show Character Spotlights & Analysis",
+      "topic": "Analyzing fan theories and subtle clues from the latest season of a fantasy show to predict the antagonist of the next arc.",
+      "hook": "Who's the *real* big bad coming next in 'House of the Dragon'? My theories will make your head spin.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Music Industry News & Artist Buzz",
+      "topic": "Exploring the surprising resurgence of vinyl records in the digital age and its impact on the music industry.",
+      "hook": "CDs are dead, but vinyl is BACK! Why are Gen Zers suddenly obsessed with spinning records?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 46
+    },
+    {
+      "category": "Music Industry News & Artist Buzz",
+      "topic": "Discussing the ethical and legal implications of AI-composed music and its potential to disrupt traditional artist royalties.",
+      "hook": "Can AI make a hit song? And who owns it if it does? The music industry is bracing for a tech storm.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Regional Lifestyle & Climate Commentary",
+      "topic": "Analyzing the pros and cons of relocating to a city like Phoenix, Arizona, specifically focusing on its extreme summer climate.",
+      "hook": "Is everyone really moving to Phoenix for the sun, or are they forgetting about the 120-degree summers?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 43
+    },
+    {
+      "category": "Regional Lifestyle & Climate Commentary",
+      "topic": "Detailing the highs and lows of working in climate-dependent seasonal industries, like ski instructing in Colorado.",
+      "hook": "Dreaming of a ski resort job? Be warned, it's not all powder and hot cocoa. We're talking real seasonal grind.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 47
+    },
+    {
+      "category": "Record-Breaking Athletic Achievements",
+      "topic": "Examining the training regimens, nutrition, and biomechanics of recent marathon world record holders.",
+      "hook": "How do you run 26.2 miles FASTER than anyone else in history? We're breaking down the science of speed.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 44
+    },
+    {
+      "category": "Record-Breaking Athletic Achievements",
+      "topic": "Highlighting viral clips of extraordinary gymnastic routines and explaining the strength and precision required.",
+      "hook": "Is that even POSSIBLE? Witnessing the physics-defying twists and turns of the world's top gymnasts.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 41
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
