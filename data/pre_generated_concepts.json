@@ -1,240 +1,195 @@
 {
-  "generated_at": "2026-08-26T05:59:59.892154",
-  "valid_until": "2026-08-26T23:59:59.892199",
+  "generated_at": "2026-08-27T16:39:56.660443",
+  "valid_until": "2026-08-27T23:59:56.660453",
   "categories": [
-    "Daily Fantasy & Sports Betting Strategy",
-    "Celebrity Buzz: Drew Starkey & Hot Takes",
-    "True Crime Chronicles: Escobar Files",
-    "Global Finance & D\u00f3lar Watch",
-    "Aerospace Insights: Boeing's Future",
-    "Comedy Skits & Viral Parodies",
-    "Movie/TV Scene Analysis & Reviews",
-    "Quick News Digests & Trending Headlines",
-    "Promo Code & Deal Hunting Hacks",
-    "Sports Analytics & Game Previews",
-    "Historical Deep Dives & Untold Truths",
-    "Industry Updates: Aviation & Markets",
-    "Actor Spotlights & Career Journeys",
-    "Personal Finance & Investment Quick Tips",
-    "Interactive Q&A: Explainers & Debates"
+    "Political Drama & White House Watch",
+    "Champions League Draw & Football Frenzy",
+    "NFL Hot Takes & Fantasy Football Insights",
+    "Hurricane Season Safety & Live Updates",
+    "Viral Personalities & Pop Culture Unpacks",
+    "Quick-Fire Life Hacks & Productivity Boosts",
+    "Autumn Style & Transition Fashion",
+    "Easy Weeknight Meals & Comfort Food Recipes",
+    "Relatable Comedy & Everyday Skits",
+    "Home Organization & DIY Glow-Ups",
+    "Money Management & Personal Finance Tips",
+    "Travel Inspiration & Weekend Getaways",
+    "Fitness Challenges & Wellness Routines",
+    "Pet Antics & Animal Adventures",
+    "Tech Trends & Gadget Reviews"
   ],
   "concepts": [
     {
-      "category": "Daily Fantasy & Sports Betting Strategy",
-      "topic": "The 'Reverse Correlation' DFS Strategy for NFL Quarterbacks",
-      "hook": "What if betting AGAINST your quarterback's best receiver is the secret to winning big in DFS?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Political Drama & White House Watch",
+      "topic": "The 'Whisper Campaign' Behind the Latest Executive Order",
+      "hook": "Behind every major White House move, there's a story you *don't* hear. This executive order? It has a shocking backstory.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Daily Fantasy & Sports Betting Strategy",
-      "topic": "NBA Player Props: Spotting Undervalued Assists Lines on Game Day",
-      "hook": "Ever wonder how sharp bettors consistently hit NBA assist props? It's all about THIS last-minute roster change.",
-      "voice_style": "authoritative",
+      "category": "Political Drama & White House Watch",
+      "topic": "The Unexpected Cabinet Reshuffle: Who's Up Next?",
+      "hook": "The White House just announced an unexpected cabinet reshuffle. But the real drama? It's about *who* is being pushed out and *why*.",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "Celebrity Buzz: Drew Starkey & Hot Takes",
-      "topic": "Unpopular Opinion: Drew Starkey's Best Performance Isn't Outer Banks",
-      "hook": "Everyone loves Rafe, but I'm here to tell you Drew Starkey's most captivating role was in a movie you probably missed.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Champions League Draw & Football Frenzy",
+      "topic": "UCL Group of Death Analysis: Can Anyone Survive Group F?",
+      "hook": "The Champions League draw is out, and Group F isn't just a 'group of death' \u2013 it's a graveyard! Who has a prayer of making it out alive?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Champions League Draw & Football Frenzy",
+      "topic": "The Underdog Story: Why Sporting CP Could Shock Europe This Season",
+      "hook": "Everyone's talking about the giants, but I'm telling you, Sporting CP is the dark horse no one sees coming. Prepare for a major upset!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 42
     },
     {
-      "category": "Celebrity Buzz: Drew Starkey & Hot Takes",
-      "topic": "Drew Starkey's Social Media Clues Hinting at a Mystery Project",
-      "hook": "Did Drew Starkey just subtly confirm his next HUGE role through a series of cryptic Instagram likes? Let's decode this.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "category": "NFL Hot Takes & Fantasy Football Insights",
+      "topic": "Why Your Star QB is a Fantasy Bust Waiting to Happen This Season",
+      "hook": "You just drafted your superstar quarterback in fantasy, feeling great, right? Wrong. He's about to absolutely tank your season, and here's why.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 47
     },
     {
-      "category": "True Crime Chronicles: Escobar Files",
-      "topic": "Pablo Escobar's Secret Zoo: The Untold Story of His Exotic Animals",
-      "hook": "Beyond the mansions and drug money, Escobar built a private safari. But what happened to the animals when he fell?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "True Crime Chronicles: Escobar Files",
-      "topic": "The Mystery of Pablo Escobar's Hidden Tunnels Beneath Medell\u00edn",
-      "hook": "Reports say Escobar had an entire network of secret tunnels. Were they for escape, hiding money, or something far more sinister?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 44
-    },
-    {
-      "category": "Global Finance & D\u00f3lar Watch",
-      "topic": "How Argentina's 'Blue Dollar' Market Works and Why It Matters to Global Investors",
-      "hook": "Imagine having two different prices for the same currency. In Argentina, the 'blue dollar' isn't just a curiosity; it's a financial lifeline.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Global Finance & D\u00f3lar Watch",
-      "topic": "The Hidden Impact of US Dollar Fluctuation on Your Favorite Tech Gadgets",
-      "hook": "Why did that new phone suddenly get more expensive, even without a price hike? The US dollar has a secret influence on global tech pricing.",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "NFL Hot Takes & Fantasy Football Insights",
+      "topic": "Waiver Wire Gold: The Undrafted Running Back You NEED to Pick Up NOW",
+      "hook": "Stop scrolling! There's an undrafted running back on your waiver wire right now who's about to explode. Pick him up before your league-mates do!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 43
     },
     {
-      "category": "Aerospace Insights: Boeing's Future",
-      "topic": "Boeing's Starliner: Can It Catch Up to SpaceX in the Commercial Space Race?",
-      "hook": "For years, Boeing's Starliner has faced delays. Can this sleeping giant finally compete with SpaceX's dominance, or is it too late?",
+      "category": "Hurricane Season Safety & Live Updates",
+      "topic": "The Hidden Dangers of Post-Hurricane Generator Use You're Ignoring",
+      "hook": "You've got your generator ready for hurricane season, but did you know it could be a silent killer? Don't make this common, deadly mistake!",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 47
+      "music_mood": "dramatic",
+      "target_duration": 46
     },
     {
-      "category": "Aerospace Insights: Boeing's Future",
-      "topic": "The Next Generation of Air Force One: What Boeing is Secretly Developing",
-      "hook": "Forget the current Air Force One. Boeing is already working on the next presidential jet, and its features are straight out of a sci-fi movie.",
+      "category": "Hurricane Season Safety & Live Updates",
+      "topic": "Hurricane Categories Explained: Why a Cat 3 Can Be Worse Than a Cat 5 (Sometimes)",
+      "hook": "Everyone fears a Category 5, but what if I told you a Category 3 hurricane could actually be more devastating? The truth will shock you.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Viral Personalities & Pop Culture Unpacks",
+      "topic": "The Rise and Sudden Fall of 'Meme Lord Mike': What Went Wrong?",
+      "hook": "Remember Meme Lord Mike? He was everywhere last year. Now? Radio silence. What happened to the internet's favorite personality?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 41
     },
     {
-      "category": "Comedy Skits & Viral Parodies",
-      "topic": "Parody: 'Productivity Guru' Explains Life Hacks to a Goldfish",
-      "hook": "My productivity guru said if I just 'manifest' hard enough, my goldfish will learn calculus. It's not going well.",
+      "category": "Viral Personalities & Pop Culture Unpacks",
+      "topic": "The Great TikTok Dance-Off Controversy: Is Originality Dead?",
+      "hook": "Another week, another viral dance challenge... but this one has sparked a massive debate. Is anyone actually creating anything original anymore, or is it all just copy-paste?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits & Viral Parodies",
-      "topic": "Recreating Iconic Movie Scenes with Household Pets (and questionable CGI)",
-      "hook": "What if 'The Lion King' was filmed entirely in my living room with my cat as Simba? Prepare for some Oscar-worthy (and terrible) acting.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 46
-    },
-    {
-      "category": "Movie/TV Scene Analysis & Reviews",
-      "topic": "The Genius of 'Succession's' Opening Credits: A Hidden Narrative",
-      "hook": "You skip the opening credits? You're missing out on the entire story of 'Succession' already laid out in plain sight.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Movie/TV Scene Analysis & Reviews",
-      "topic": "Decoding the 'Spider-Man: Across the Spider-Verse' Ending: A Deeper Look at Canon Events",
-      "hook": "Everyone's buzzing about the cliffhanger, but there's a key detail in the final moments of 'Across the Spider-Verse' that changes *everything* about canon events.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Quick News Digests & Trending Headlines",
-      "topic": "Is That Viral 'Lost City' Discovery in the Amazon Real or an Elaborate Hoax?",
-      "hook": "A 'lost city' discovered deep in the Amazon is flooding your feeds. But what's the real story behind this incredible claim?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
       "target_duration": 44
     },
     {
-      "category": "Quick News Digests & Trending Headlines",
-      "topic": "The Unexpected Reason Your Local Gas Prices Just Spiked (It's Not Oil Futures)",
-      "hook": "Gas prices just jumped overnight, and everyone's blaming oil. But the real culprit is a regional refinery issue you haven't heard about.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Quick-Fire Life Hacks & Productivity Boosts",
+      "topic": "The '5-Minute Rule' That Will Instantly Stop Procrastination",
+      "hook": "You're stuck procrastinating on that one task, aren't you? What if I told you there's a simple, 5-minute rule that will instantly get you started?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick-Fire Life Hacks & Productivity Boosts",
+      "topic": "Beyond the To-Do List: The 'Anti-To-Do List' Hack for Busy Brains",
+      "hook": "Your to-do list is stressing you out, right? Forget it! The real secret to productivity isn't what you *add*, but what you *cross off* before you even start.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Autumn Style & Transition Fashion",
+      "topic": "How to Style ONE Oversized Cardigan 5 Ways for Fall",
+      "hook": "That one oversized cardigan you bought? It's not just for lounging. I'm showing you 5 unexpected ways to style it for maximum autumn chic!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Autumn Style & Transition Fashion",
+      "topic": "Summer Dress to Fall Chic: The Secret to Layering Your Maxis",
+      "hook": "Don't put away those summer maxi dresses yet! With just two key pieces, I'll show you how to effortlessly transition them into your autumn wardrobe.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Promo Code & Deal Hunting Hacks",
-      "topic": "The 'Hidden Cart' Trick: How to Unlock Secret Discounts on Retailer Websites",
-      "hook": "Ever notice a price drop after leaving items in your cart? This 'hidden cart' strategy guarantees you never pay full price again.",
+      "category": "Easy Weeknight Meals & Comfort Food Recipes",
+      "topic": "One-Pan Creamy Tomato Pasta: Dinner in 15 Minutes FLAT",
+      "hook": "Forget complicated recipes! This creamy, dreamy tomato pasta cooks entirely in one pan, and it's on your table in just 15 minutes. You won't believe how easy it is!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Promo Code & Deal Hunting Hacks",
-      "topic": "How to Get Legitimate Influencer-Level Discount Codes Without Being an Influencer",
-      "hook": "Want those exclusive influencer promo codes without needing a million followers? There's a secret backdoor method the brands don't want you to know.",
+      "category": "Easy Weeknight Meals & Comfort Food Recipes",
+      "topic": "The 'Secret Ingredient' Chicken Noodle Soup for Colds and Hangovers",
+      "hook": "Feeling under the weather or just need a hug in a bowl? My grandma's chicken noodle soup has a secret ingredient that cures everything. You *have* to try this!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 49
+      "target_duration": 45
     },
     {
-      "category": "Sports Analytics & Game Previews",
-      "topic": "The 'Second Half Slump': Advanced Data Reveals Why Teams Collapse After Halftime",
-      "hook": "Your favorite team dominates the first half, then falls apart. New analytics reveal a common, hidden factor behind second-half collapses.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Relatable Comedy & Everyday Skits",
+      "topic": "The Awkward Dance of Saying Goodbye (When Everyone Just Stands There)",
+      "hook": "You know that moment: you've said goodbye, you're trying to leave, but everyone just keeps standing there, creating the most awkward exit ever. Right?",
+      "voice_style": "dramatic",
+      "music_mood": "chill",
+      "target_duration": 43
+    },
+    {
+      "category": "Relatable Comedy & Everyday Skits",
+      "topic": "When Autocorrect Betrays You During a Serious Conversation",
+      "hook": "Just when you're trying to sound super serious and professional, your phone decides to change 'concerns' to 'corns'. The pure, unadulterated chaos!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 47
     },
     {
-      "category": "Sports Analytics & Game Previews",
-      "topic": "Unmasking the 'Pace Differential': Why This NBA Stat Predicts Playoff Upsets",
-      "hook": "Forget points per game. This obscure NBA stat, 'pace differential,' is the secret weapon that predicts which underdog will shock the playoffs.",
+      "category": "Home Organization & DIY Glow-Ups",
+      "topic": "Under-Sink Chaos No More: The Ultimate Bathroom Cabinet Declutter",
+      "hook": "Is your bathroom under-sink cabinet a black hole of half-empty bottles? I'm showing you a genius way to organize it for good, in less than 20 minutes!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 43
+      "target_duration": 49
+    },
+    {
+      "category": "Home Organization & DIY Glow-Ups",
+      "topic": "DIY Command Center: Transform Your Fridge Into a Family Hub for Under $20",
+      "hook": "Your fridge is more than just food storage! With a few simple items under $20, I'll show you how to transform it into the ultimate family command center.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 41
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -242,19 +197,64 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
