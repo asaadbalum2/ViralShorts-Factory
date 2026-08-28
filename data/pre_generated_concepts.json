@@ -1,229 +1,219 @@
 {
-  "generated_at": "2026-08-27T16:39:56.660443",
-  "valid_until": "2026-08-27T23:59:56.660453",
+  "generated_at": "2026-08-28T17:38:44.956528",
+  "valid_until": "2026-08-28T23:59:44.956539",
   "categories": [
-    "Political Drama & White House Watch",
-    "Champions League Draw & Football Frenzy",
-    "NFL Hot Takes & Fantasy Football Insights",
-    "Hurricane Season Safety & Live Updates",
-    "Viral Personalities & Pop Culture Unpacks",
-    "Quick-Fire Life Hacks & Productivity Boosts",
-    "Autumn Style & Transition Fashion",
-    "Easy Weeknight Meals & Comfort Food Recipes",
-    "Relatable Comedy & Everyday Skits",
-    "Home Organization & DIY Glow-Ups",
-    "Money Management & Personal Finance Tips",
-    "Travel Inspiration & Weekend Getaways",
-    "Fitness Challenges & Wellness Routines",
-    "Pet Antics & Animal Adventures",
-    "Tech Trends & Gadget Reviews"
+    "Global Sports Highlights & Rivalry Reactions",
+    "Athlete Spotlight & Comeback Stories",
+    "TV Series & Movie Production Insights (e.g., Landman S3)",
+    "Political Commentary & Satire",
+    "AI Art & Creative Tech Trends",
+    "Late Summer/Early Fall Quick Recipes",
+    "Get Ready With Me (GRWM) & Daily Routines",
+    "Fall Fashion & Beauty Transitions",
+    "DIY & Home Improvement Hacks",
+    "Educational 'Explainers' & Fun Facts",
+    "Mental Wellness & Self-Care Tips",
+    "Pet & Animal Antics",
+    "Travel Vlogs & Weekend Getaways",
+    "Short-Form Comedy Skits & Relatable Moments",
+    "Gaming Updates & Esport Snippets"
   ],
   "concepts": [
     {
-      "category": "Political Drama & White House Watch",
-      "topic": "The 'Whisper Campaign' Behind the Latest Executive Order",
-      "hook": "Behind every major White House move, there's a story you *don't* hear. This executive order? It has a shocking backstory.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Global Sports Highlights & Rivalry Reactions",
+      "topic": "The Jaw-Dropping Final Seconds of the Manchester Derby",
+      "hook": "Did you see that?! My heart is still POUNDING after the Manchester Derby's insane finish!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Political Drama & White House Watch",
-      "topic": "The Unexpected Cabinet Reshuffle: Who's Up Next?",
-      "hook": "The White House just announced an unexpected cabinet reshuffle. But the real drama? It's about *who* is being pushed out and *why*.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Athlete Spotlight & Comeback Stories",
+      "topic": "From Career-Ending Injury to Olympic Gold: Sarah's Miraculous Return",
+      "hook": "They said her career was over. But Sarah refused to believe them. This is her incredible comeback story.",
+      "voice_style": "inspirational",
+      "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "Champions League Draw & Football Frenzy",
-      "topic": "UCL Group of Death Analysis: Can Anyone Survive Group F?",
-      "hook": "The Champions League draw is out, and Group F isn't just a 'group of death' \u2013 it's a graveyard! Who has a prayer of making it out alive?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Champions League Draw & Football Frenzy",
-      "topic": "The Underdog Story: Why Sporting CP Could Shock Europe This Season",
-      "hook": "Everyone's talking about the giants, but I'm telling you, Sporting CP is the dark horse no one sees coming. Prepare for a major upset!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "NFL Hot Takes & Fantasy Football Insights",
-      "topic": "Why Your Star QB is a Fantasy Bust Waiting to Happen This Season",
-      "hook": "You just drafted your superstar quarterback in fantasy, feeling great, right? Wrong. He's about to absolutely tank your season, and here's why.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "TV Series & Movie Production Insights (e.g., Landman S3)",
+      "topic": "Decoding the Real-Life Oil Tycoons Behind Landman Season 3's New Villains",
+      "hook": "Landman fans, buckle up! We're diving deep into the real-world inspirations for those terrifying new characters in S3.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 47
     },
     {
-      "category": "NFL Hot Takes & Fantasy Football Insights",
-      "topic": "Waiver Wire Gold: The Undrafted Running Back You NEED to Pick Up NOW",
-      "hook": "Stop scrolling! There's an undrafted running back on your waiver wire right now who's about to explode. Pick him up before your league-mates do!",
+      "category": "Political Commentary & Satire",
+      "topic": "The 'Oops!' Moment: Analyzing That Viral Political Gaffe Heard 'Round the World",
+      "hook": "Remember that politician's speech blooper everyone's talking about? Let's break down the sheer awkwardness and hidden meaning!",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "AI Art & Creative Tech Trends",
+      "topic": "I Tried 5 Different AI Art Generators with the SAME Prompt \u2013 Here Are the Wild Results!",
+      "hook": "Can AI truly create original art? I put five top generators to the test with one crazy prompt, and the results will shock you!",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Late Summer/Early Fall Quick Recipes",
+      "topic": "3-Ingredient No-Bake Peach Cobbler for Those Last Warm Evenings",
+      "hook": "Still craving summer but feeling fall vibes? This 3-ingredient no-bake peach cobbler is your ultimate late-season treat!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Get Ready With Me (GRWM) & Daily Routines",
+      "topic": "My 5-Minute 'Fake Awake' GRWM for Unexpected Early Morning Meetings",
+      "hook": "Overslept for that vital Zoom call? Don't panic! This 5-minute GRWM will make you look wide awake, even if you're not!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 43
     },
     {
-      "category": "Hurricane Season Safety & Live Updates",
-      "topic": "The Hidden Dangers of Post-Hurricane Generator Use You're Ignoring",
-      "hook": "You've got your generator ready for hurricane season, but did you know it could be a silent killer? Don't make this common, deadly mistake!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 46
+      "category": "Fall Fashion & Beauty Transitions",
+      "topic": "Top 3 Affordable Early Fall Layering Essentials from Target!",
+      "hook": "Autumn is calling! Don't break the bank transitioning your wardrobe \u2013 here are my top 3 affordable layering essentials from Target!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 44
     },
     {
-      "category": "Hurricane Season Safety & Live Updates",
-      "topic": "Hurricane Categories Explained: Why a Cat 3 Can Be Worse Than a Cat 5 (Sometimes)",
-      "hook": "Everyone fears a Category 5, but what if I told you a Category 3 hurricane could actually be more devastating? The truth will shock you.",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
+      "category": "DIY & Home Improvement Hacks",
+      "topic": "The Ultimate Renter-Friendly Peel-and-Stick Kitchen Backsplash Tutorial",
+      "hook": "Tired of your boring rental kitchen? Transform it in an hour with this renter-friendly peel-and-stick backsplash hack!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 49
     },
     {
-      "category": "Viral Personalities & Pop Culture Unpacks",
-      "topic": "The Rise and Sudden Fall of 'Meme Lord Mike': What Went Wrong?",
-      "hook": "Remember Meme Lord Mike? He was everywhere last year. Now? Radio silence. What happened to the internet's favorite personality?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 41
+      "category": "Educational 'Explainers' & Fun Facts",
+      "topic": "The Surprising Science Behind Why We Yawn (It's Not Just Tiredness!)",
+      "hook": "Ever wonder why you yawn? It's not just boredom or sleepiness! Get ready for the mind-blowing science behind this daily reflex.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 46
     },
     {
-      "category": "Viral Personalities & Pop Culture Unpacks",
-      "topic": "The Great TikTok Dance-Off Controversy: Is Originality Dead?",
-      "hook": "Another week, another viral dance challenge... but this one has sparked a massive debate. Is anyone actually creating anything original anymore, or is it all just copy-paste?",
+      "category": "Global Sports Highlights & Rivalry Reactions",
+      "topic": "Underdog Upset: How Iceland Shocked the World Cup Giants (Again!)",
+      "hook": "Nobody gave them a chance, but Iceland just pulled off the impossible! Relive the moments that stunned the football world.",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "TV Series & Movie Production Insights (e.g., Landman S3)",
+      "topic": "Behind the Scenes of *That* Iconic Car Chase in 'Rogue Agents': Stunt Coordinator Reveals All",
+      "hook": "Remember that insane car chase from 'Rogue Agents'? We talked to the stunt coordinator to uncover the secrets of how it was filmed!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Late Summer/Early Fall Quick Recipes",
+      "topic": "One-Pan Maple-Glazed Salmon & Roasted Veggies for a Cozy Weeknight",
+      "hook": "Looking for a delicious, easy dinner that screams fall? This one-pan maple-glazed salmon and veggies recipe is your new go-to!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Political Commentary & Satire",
+      "topic": "Breaking Down the Viral 'AI-Generated Policy' Meme: Is It Funny or Terrifying?",
+      "hook": "That AI-generated political policy meme is everywhere! But is it just a laugh, or does it hint at a darker future?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Fall Fashion & Beauty Transitions",
+      "topic": "My Top 5 Drugstore Beauty Swaps for a Flawless Autumn Glow",
+      "hook": "Don't splurge on expensive fall beauty! I'm showing you my top 5 drugstore swaps for that perfect autumnal glow, on a budget!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "DIY & Home Improvement Hacks",
+      "topic": "Repurposing Old Books into Chic, Hidden Wall Storage",
+      "hook": "Got old books gathering dust? Turn them into a clever, hidden wall storage unit that will fool everyone!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 44
     },
     {
-      "category": "Quick-Fire Life Hacks & Productivity Boosts",
-      "topic": "The '5-Minute Rule' That Will Instantly Stop Procrastination",
-      "hook": "You're stuck procrastinating on that one task, aren't you? What if I told you there's a simple, 5-minute rule that will instantly get you started?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Quick-Fire Life Hacks & Productivity Boosts",
-      "topic": "Beyond the To-Do List: The 'Anti-To-Do List' Hack for Busy Brains",
-      "hook": "Your to-do list is stressing you out, right? Forget it! The real secret to productivity isn't what you *add*, but what you *cross off* before you even start.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Autumn Style & Transition Fashion",
-      "topic": "How to Style ONE Oversized Cardigan 5 Ways for Fall",
-      "hook": "That one oversized cardigan you bought? It's not just for lounging. I'm showing you 5 unexpected ways to style it for maximum autumn chic!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Autumn Style & Transition Fashion",
-      "topic": "Summer Dress to Fall Chic: The Secret to Layering Your Maxis",
-      "hook": "Don't put away those summer maxi dresses yet! With just two key pieces, I'll show you how to effortlessly transition them into your autumn wardrobe.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Easy Weeknight Meals & Comfort Food Recipes",
-      "topic": "One-Pan Creamy Tomato Pasta: Dinner in 15 Minutes FLAT",
-      "hook": "Forget complicated recipes! This creamy, dreamy tomato pasta cooks entirely in one pan, and it's on your table in just 15 minutes. You won't believe how easy it is!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Easy Weeknight Meals & Comfort Food Recipes",
-      "topic": "The 'Secret Ingredient' Chicken Noodle Soup for Colds and Hangovers",
-      "hook": "Feeling under the weather or just need a hug in a bowl? My grandma's chicken noodle soup has a secret ingredient that cures everything. You *have* to try this!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Relatable Comedy & Everyday Skits",
-      "topic": "The Awkward Dance of Saying Goodbye (When Everyone Just Stands There)",
-      "hook": "You know that moment: you've said goodbye, you're trying to leave, but everyone just keeps standing there, creating the most awkward exit ever. Right?",
+      "category": "Athlete Spotlight & Comeback Stories",
+      "topic": "The Untold Grit: How a Local Gymnast Fought Back from Paralysis to Inspire Millions",
+      "hook": "She was told she'd never walk again. This local gymnast's journey from paralysis to national inspiration will move you to tears.",
       "voice_style": "dramatic",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Relatable Comedy & Everyday Skits",
-      "topic": "When Autocorrect Betrays You During a Serious Conversation",
-      "hook": "Just when you're trying to sound super serious and professional, your phone decides to change 'concerns' to 'corns'. The pure, unadulterated chaos!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 47
-    },
-    {
-      "category": "Home Organization & DIY Glow-Ups",
-      "topic": "Under-Sink Chaos No More: The Ultimate Bathroom Cabinet Declutter",
-      "hook": "Is your bathroom under-sink cabinet a black hole of half-empty bottles? I'm showing you a genius way to organize it for good, in less than 20 minutes!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "inspirational",
       "target_duration": 49
     },
     {
-      "category": "Home Organization & DIY Glow-Ups",
-      "topic": "DIY Command Center: Transform Your Fridge Into a Family Hub for Under $20",
-      "hook": "Your fridge is more than just food storage! With a few simple items under $20, I'll show you how to transform it into the ultimate family command center.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Get Ready With Me (GRWM) & Daily Routines",
+      "topic": "My Relaxing 'Digital Detox' Evening Routine for Better Sleep",
+      "hook": "Struggling to switch off at night? My calming 'digital detox' evening routine is the secret to finally getting restful sleep!",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 41
+    },
+    {
+      "category": "Educational 'Explainers' & Fun Facts",
+      "topic": "The Mind-Blowing Origin of the 'High Five' \u2013 It's Not What You Think!",
+      "hook": "You give them everyday, but do you know the surprising, iconic origin story of the 'high five'? Prepare to be amazed!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "AI Art & Creative Tech Trends",
+      "topic": "Using AI to Create Your Dream Home Interior \u2013 A Design Experiment!",
+      "hook": "Ever wonder what your dream home would look like? I'm using AI to design my perfect interior, and the results are stunning!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
@@ -232,29 +222,39 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
