@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-08-29T11:45:35.161414",
-  "valid_until": "2026-08-29T23:59:35.161423",
+  "generated_at": "2026-08-30T10:36:59.695229",
+  "valid_until": "2026-08-30T23:59:59.695239",
   "categories": [
-    "College Football Hype & Hot Takes",
-    "Global Soccer Showdowns",
-    "Streaming Hacks & Cord-Cutting Guides",
-    "Daily Market Pulse & Finance Bites",
-    "Canadian News & Cultural Commentary",
-    "Quick Meal Prep & Food Hacks",
-    "Viral Beauty Routines & Reviews",
-    "DIY Home Renovation & Organization",
-    "Relatable Life Comedy & Skits",
-    "Productivity & Study Power-Ups",
-    "Travel Bucket List & Destination Spotlights",
-    "\"Did You Know?\" Edutainment",
-    "Fitness Challenges & Workout Tips",
-    "Gaming Deep Dives & Stream Highlights",
-    "Mindset & Wellness Boosters"
+    "Sports Highlights & Fan Reactions",
+    "Political News & Legal Analysis",
+    "Financial Market Insights",
+    "Celebrity Gossip & Entertainment News",
+    "Controversial Current Events Explained",
+    "Quick & Easy Recipes",
+    "Comedy Skits & Memes",
+    "Life Hacks & DIY Tutorials",
+    "Fashion & Beauty Hauls/Tips",
+    "Travel Vlogs & Destination Spotlights",
+    "Educational \"Did You Know?\" Facts",
+    "Gaming News & Streamer Highlights",
+    "AI & Future Tech Exploration",
+    "Mindset & Self-Care Routines",
+    "Heartwarming Pet Moments"
   ],
   "concepts": [
     {
-      "category": "College Football Hype & Hot Takes",
-      "topic": "Why this season's Cinderella team will shock everyone in the playoffs.",
-      "hook": "Forget the usual suspects! There's ONE dark horse team this college football season nobody's talking about... and they're about to shock the world.",
+      "category": "Sports Highlights & Fan Reactions",
+      "topic": "The wildest comeback in eSports history you didn't see coming.",
+      "hook": "Did you actually think it was over? Because *they* didn't!",
       "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Global Soccer Showdowns",
-      "topic": "The unsung hero goal that single-handedly changed a league title race this weekend.",
-      "hook": "You saw the highlights, but did you see *the* moment? This weekend's most crucial goal wasn't from a superstar, it was from THIS guy...",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Streaming Hacks & Cord-Cutting Guides",
-      "topic": "How to combine multiple streaming service watchlists into one master list.",
-      "hook": "Tired of jumping between Netflix, Hulu, and Max just to remember what you wanted to watch? What if I told you there's ONE app that syncs them ALL?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Daily Market Pulse & Finance Bites",
-      "topic": "The overlooked inflation indicator that could signal a market shift next quarter.",
-      "hook": "Everyone's watching CPI, but the *real* money move for next quarter depends on THIS obscure economic indicator. You need to know what it is.",
+      "category": "Political News & Legal Analysis",
+      "topic": "The obscure local ordinance that could fine you for *that* garden gnome.",
+      "hook": "Your garden gnome might be breaking the law. Seriously.",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Canadian News & Cultural Commentary",
-      "topic": "The surprising reason Tim Hortons' Timbits are a Canadian cultural phenomenon (beyond just taste).",
-      "hook": "Is a Timbit just a donut hole, or is it a symbol of national identity? The truth about Canada's beloved snack is deeper than you think.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick Meal Prep & Food Hacks",
-      "topic": "The 'no-chop' 15-minute sheet pan dinner recipe for busy weeknights.",
-      "hook": "Dinner in 15 minutes with ZERO chopping? It sounds like a dream, but this sheet pan hack is about to change your weeknights.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Viral Beauty Routines & Reviews",
-      "topic": "Debunking the 'ice facial' trend: Does it *really* shrink pores and reduce redness?",
-      "hook": "You've seen the ice facial trend everywhere, but is it a skincare miracle or just a chilly waste of time? I tried it for a week so you don't have to.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Renovation & Organization",
-      "topic": "How to create a functional 'cloffice' (closet office) in under 3 hours for under $100.",
-      "hook": "No space for a home office? Think again! I transformed this tiny closet into a fully functional 'cloffice' in just 3 hours, and you can too.",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Relatable Life Comedy & Skits",
-      "topic": "The internal monologue of trying to 'be productive' on a Sunday afternoon.",
-      "hook": "Me trying to decide between laundry, errands, or just staring at the ceiling for an hour on Sunday: 'Okay, deep breaths. We can do this... or can we?'",
-      "voice_style": "dramatic",
+      "category": "Financial Market Insights",
+      "topic": "Why the 'quiet quitting' trend is secretly impacting your 401k.",
+      "hook": "Quiet quitting isn't just about jobs... it's about your investments.",
+      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Productivity & Study Power-Ups",
-      "topic": "The 'anti-to-do list' method to actually get more done by doing less.",
-      "hook": "Your to-do list is making you *less* productive. What if I told you the secret to getting more done is creating an 'anti-to-do list'?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 50
+      "category": "Celebrity Gossip & Entertainment News",
+      "topic": "Unmasking the anonymous Twitter account spilling Hollywood's biggest secrets.",
+      "hook": "Who's behind the account that just exposed Hollywood's secret society?",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 42
     },
     {
-      "category": "College Football Hype & Hot Takes",
-      "topic": "My controversial pick for the most overrated coach heading into the new season.",
-      "hook": "Everyone loves this coach, but I'm calling it now: he's the most overrated coach in college football, and here's why his team will underperform.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Soccer Showdowns",
-      "topic": "Why a specific, lesser-known transfer could quietly be the biggest game-changer for a top club next season.",
-      "hook": "All the headlines are about the superstars, but THIS quiet transfer could actually be the biggest signing of the season. Here's why you missed it.",
+      "category": "Controversial Current Events Explained",
+      "topic": "The ethics of generative AI creating deepfake art and music.",
+      "hook": "Is AI stealing creativity, or just creating a new kind of art?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 40
+      "target_duration": 47
     },
     {
-      "category": "Streaming Hacks & Cord-Cutting Guides",
-      "topic": "The secret button on your smart TV remote that unlocks a world of free content.",
-      "hook": "You've been paying for streaming for years, but there's a hidden button on your smart TV remote that gives you access to thousands of FREE movies and shows. Did you know?",
+      "category": "Quick & Easy Recipes",
+      "topic": "Viral 'Butter Board' done wrong: How to avoid a kitchen disaster.",
+      "hook": "Everyone's making butter boards, but are you making *this* mistake?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Daily Market Pulse & Finance Bites",
-      "topic": "Breaking down the latest interest rate hike implications for mortgages and savings accounts.",
-      "hook": "Another interest rate hike just dropped. What does it *actually* mean for your mortgage payments and that high-yield savings account? Let's break it down.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Comedy Skits & Memes",
+      "topic": "POV: You're a boomer trying to understand Gen Z slang.",
+      "hook": "Slay? Rizz? What language are they speaking?!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "Canadian News & Cultural Commentary",
-      "topic": "The surprising rise of Indigenous art and fashion in mainstream Canadian culture.",
-      "hook": "From runways to galleries, Indigenous art and fashion are taking over Canada. But it's more than just a trend; it's a powerful cultural movement.",
+      "category": "Life Hacks & DIY Tutorials",
+      "topic": "Revive your dead houseplant with *one* surprising kitchen ingredient.",
+      "hook": "Don't throw out that wilting plant! This secret ingredient will save it.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Fashion & Beauty Hauls/Tips",
+      "topic": "The $7 drugstore mascara that outperforms luxury brands.",
+      "hook": "I spent $30 on mascara, and this $7 tube blew it out of the water.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Travel Vlogs & Destination Spotlights",
+      "topic": "Discovering Iceland's secret 'Blue Lagoon' alternative, without the crowds.",
+      "hook": "Think you know Iceland's hot springs? Think again.",
       "voice_style": "inspirational",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Sports Highlights & Fan Reactions",
+      "topic": "The most emotional fan reactions to a championship victory (or loss).",
+      "hook": "Grab your tissues: These fans felt *everything*.",
+      "voice_style": "dramatic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Quick Meal Prep & Food Hacks",
-      "topic": "The ultimate guide to making perfect, fluffy rice every single time without a rice cooker.",
-      "hook": "Stop buying pre-cooked rice! There's a fool-proof method to make perfect, fluffy rice on the stovetop every single time, and it's easier than you think.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Political News & Legal Analysis",
+      "topic": "Why the obscure 14th Amendment clause is suddenly back in the news.",
+      "hook": "The 14th Amendment isn't just about citizenship anymore, is it?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 47
+    },
+    {
+      "category": "Financial Market Insights",
+      "topic": "The overlooked \"micro-cap\" stocks poised for massive growth (or collapse).",
+      "hook": "Forget big tech: These tiny companies could be your next big win... or loss.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Gossip & Entertainment News",
+      "topic": "The bizarre demands in *that* diva's concert rider that went viral.",
+      "hook": "You won't BELIEVE what this superstar demands backstage!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Viral Beauty Routines & Reviews",
-      "topic": "My honest review of the 3-ingredient DIY hair mask promising salon results.",
-      "hook": "Can 3 kitchen ingredients *really* give you salon-worthy hair? I tried that viral DIY hair mask for a month, and my results are shocking.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Renovation & Organization",
-      "topic": "Budget-friendly renter-friendly hacks to upgrade your kitchen without losing your deposit.",
-      "hook": "Hate your rental kitchen but can't renovate? These renter-friendly hacks will totally transform it without touching a single wall or losing your deposit!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Relatable Life Comedy & Skits",
-      "topic": "The awkward dance of navigating social interactions when you just want to go home.",
-      "hook": "Me at a party trying to subtly exit after 15 minutes: 'Oh, you're leaving? *Gasp* What a coincidence! So am I... to go to bed.'",
-      "voice_style": "dramatic",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Productivity & Study Power-Ups",
-      "topic": "How to leverage 'dopamine detox' to regain focus and beat procrastination.",
-      "hook": "Are you constantly distracted and struggling to focus? The 'dopamine detox' isn't just a trend; it's a powerful tool to reset your brain and conquer procrastination.",
+      "category": "Controversial Current Events Explained",
+      "topic": "Why schools are banning *certain* classic books in the curriculum.",
+      "hook": "Classic literature is being pulled from shelves. Here's why.",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Quick & Easy Recipes",
+      "topic": "Mastering the art of the perfect 2-minute microwave egg.",
+      "hook": "Tired of rubbery microwave eggs? I cracked the code.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Comedy Skits & Memes",
+      "topic": "If social media trends were actual historical events.",
+      "hook": "Imagine if the 'Grimace Shake' trend happened in Ancient Rome...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Life Hacks & DIY Tutorials",
+      "topic": "Transform your cluttered pantry into an organized dream with Dollar Store finds.",
+      "hook": "Pantry looking like a disaster zone? Dollar Store to the rescue!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Fashion & Beauty Hauls/Tips",
+      "topic": "How to spot and avoid 'fast fashion' scams on popular shopping apps.",
+      "hook": "That 'amazing' online deal? It might be a fast fashion trap.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Travel Vlogs & Destination Spotlights",
+      "topic": "The world's most dangerous airport runway and why planes still land there.",
+      "hook": "This airport runway is literally on a beach... and it's terrifying.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
