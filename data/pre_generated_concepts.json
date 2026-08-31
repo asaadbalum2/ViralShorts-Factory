@@ -1,259 +1,259 @@
 {
-  "generated_at": "2026-08-30T10:36:59.695229",
-  "valid_until": "2026-08-30T23:59:59.695239",
+  "generated_at": "2026-08-31T11:45:40.105974",
+  "valid_until": "2026-08-31T23:59:40.105985",
   "categories": [
-    "Sports Highlights & Fan Reactions",
-    "Political News & Legal Analysis",
-    "Financial Market Insights",
-    "Celebrity Gossip & Entertainment News",
-    "Controversial Current Events Explained",
-    "Quick & Easy Recipes",
-    "Comedy Skits & Memes",
-    "Life Hacks & DIY Tutorials",
-    "Fashion & Beauty Hauls/Tips",
-    "Travel Vlogs & Destination Spotlights",
-    "Educational \"Did You Know?\" Facts",
-    "Gaming News & Streamer Highlights",
-    "AI & Future Tech Exploration",
-    "Mindset & Self-Care Routines",
-    "Heartwarming Pet Moments"
+    "Daily News & Viral Updates",
+    "Weather & Climate Spotlights",
+    "Stock Market & Finance Insights",
+    "Viral Comedy & Skits",
+    "True Crime & Investigative Shorts",
+    "Celebrity & Royal Buzz",
+    "Sports Highlights & Analysis",
+    "Seasonal Fashion & Lifestyle",
+    "Global & Geopolitical Explainers",
+    "DIY & Life Hacks",
+    "Food Trends & Recipe Shorts",
+    "Educational 'Edutainment' Content",
+    "Travel & Destination Spotlights",
+    "Pet & Animal Adventures",
+    "Tech & Gaming Updates"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights & Fan Reactions",
-      "topic": "The wildest comeback in eSports history you didn't see coming.",
-      "hook": "Did you actually think it was over? Because *they* didn't!",
+      "category": "Daily News & Viral Updates",
+      "topic": "The 'Skibidi Toilet' Phenomenon Explained",
+      "hook": "Ever wondered why everyone's suddenly obsessed with singing toilets and camera heads?",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Political News & Legal Analysis",
-      "topic": "The obscure local ordinance that could fine you for *that* garden gnome.",
-      "hook": "Your garden gnome might be breaking the law. Seriously.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Daily News & Viral Updates",
+      "topic": "The Latest 'Main Character Energy' Trend on TikTok",
+      "hook": "Are you ready to claim your 'main character' moment? This trend is everywhere and it's not what you think!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Financial Market Insights",
-      "topic": "Why the 'quiet quitting' trend is secretly impacting your 401k.",
-      "hook": "Quiet quitting isn't just about jobs... it's about your investments.",
+      "category": "Weather & Climate Spotlights",
+      "topic": "Why 'Atmospheric Rivers' Are Becoming More Common",
+      "hook": "Massive rain, historic floods \u2013 what exactly is an 'atmospheric river' and why are they hitting harder now?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Weather & Climate Spotlights",
+      "topic": "The Science Behind Bioluminescent Algae Blooms",
+      "hook": "Imagine the ocean glowing electric blue! We're diving into the mesmerizing science behind nature's light show.",
       "voice_style": "calm",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Stock Market & Finance Insights",
+      "topic": "The True Cost of a Taylor Swift Concert Ticket Bubble",
+      "hook": "Is a Taylor Swift concert ticket an investment or just a massive expense? Let's talk economics!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 48
     },
     {
-      "category": "Celebrity Gossip & Entertainment News",
-      "topic": "Unmasking the anonymous Twitter account spilling Hollywood's biggest secrets.",
-      "hook": "Who's behind the account that just exposed Hollywood's secret society?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "category": "Stock Market & Finance Insights",
+      "topic": "Understanding the 'Magnificent Seven' Stocks",
+      "hook": "Forget the 'FAANG' stocks! What are the new 'Magnificent Seven' tech giants really doing to the market?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Controversial Current Events Explained",
-      "topic": "The ethics of generative AI creating deepfake art and music.",
-      "hook": "Is AI stealing creativity, or just creating a new kind of art?",
+      "category": "Viral Comedy & Skits",
+      "topic": "Attempting to Assemble IKEA Furniture Without Instructions",
+      "hook": "We've all been there: staring at a flat-pack box with no instructions. What could possibly go wrong?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Viral Comedy & Skits",
+      "topic": "Recreating Famous Movie Scenes with Everyday Household Objects",
+      "hook": "Think 'Star Wars' lightsabers made from pool noodles! We're bringing blockbuster magic to your living room.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "True Crime & Investigative Shorts",
+      "topic": "The Mystery of the Missing Malaysian Airlines Flight MH370",
+      "hook": "Nearly a decade later, the disappearance of MH370 remains one of aviation's greatest unsolved mysteries. What really happened?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 47
+      "target_duration": 50
     },
     {
-      "category": "Quick & Easy Recipes",
-      "topic": "Viral 'Butter Board' done wrong: How to avoid a kitchen disaster.",
-      "hook": "Everyone's making butter boards, but are you making *this* mistake?",
+      "category": "True Crime & Investigative Shorts",
+      "topic": "The Strange Case of the 'D.B. Cooper' Skyjacking",
+      "hook": "A man parachutes out of a plane with $200,000 and vanishes forever. The unsolved legend of D.B. Cooper.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Celebrity & Royal Buzz",
+      "topic": "The Unwritten Rules of Royal Family Fashion Protocol",
+      "hook": "Ever noticed royals always wear certain colours or avoid specific accessories? The hidden world of royal fashion rules!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits & Memes",
-      "topic": "POV: You're a boomer trying to understand Gen Z slang.",
-      "hook": "Slay? Rizz? What language are they speaking?!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Life Hacks & DIY Tutorials",
-      "topic": "Revive your dead houseplant with *one* surprising kitchen ingredient.",
-      "hook": "Don't throw out that wilting plant! This secret ingredient will save it.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Fashion & Beauty Hauls/Tips",
-      "topic": "The $7 drugstore mascara that outperforms luxury brands.",
-      "hook": "I spent $30 on mascara, and this $7 tube blew it out of the water.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Travel Vlogs & Destination Spotlights",
-      "topic": "Discovering Iceland's secret 'Blue Lagoon' alternative, without the crowds.",
-      "hook": "Think you know Iceland's hot springs? Think again.",
-      "voice_style": "inspirational",
       "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Sports Highlights & Fan Reactions",
-      "topic": "The most emotional fan reactions to a championship victory (or loss).",
-      "hook": "Grab your tissues: These fans felt *everything*.",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Political News & Legal Analysis",
-      "topic": "Why the obscure 14th Amendment clause is suddenly back in the news.",
-      "hook": "The 14th Amendment isn't just about citizenship anymore, is it?",
+      "category": "Celebrity & Royal Buzz",
+      "topic": "The Rise of 'Nepo Babies' in Hollywood: Is It Fair?",
+      "hook": "From Lily-Rose Depp to Kaia Gerber, are 'nepo babies' just a product of opportunity or do they earn their spot?",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 47
-    },
-    {
-      "category": "Financial Market Insights",
-      "topic": "The overlooked \"micro-cap\" stocks poised for massive growth (or collapse).",
-      "hook": "Forget big tech: These tiny companies could be your next big win... or loss.",
-      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Celebrity Gossip & Entertainment News",
-      "topic": "The bizarre demands in *that* diva's concert rider that went viral.",
-      "hook": "You won't BELIEVE what this superstar demands backstage!",
+      "category": "Sports Highlights & Analysis",
+      "topic": "The 'Curse of the Billy Goat' and Chicago Cubs History",
+      "hook": "Can a goat really doom a baseball team for 108 years? Unpacking one of sports' most famous superstitions.",
       "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Controversial Current Events Explained",
-      "topic": "Why schools are banning *certain* classic books in the curriculum.",
-      "hook": "Classic literature is being pulled from shelves. Here's why.",
-      "voice_style": "authoritative",
       "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Quick & Easy Recipes",
-      "topic": "Mastering the art of the perfect 2-minute microwave egg.",
-      "hook": "Tired of rubbery microwave eggs? I cracked the code.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Comedy Skits & Memes",
-      "topic": "If social media trends were actual historical events.",
-      "hook": "Imagine if the 'Grimace Shake' trend happened in Ancient Rome...",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Life Hacks & DIY Tutorials",
-      "topic": "Transform your cluttered pantry into an organized dream with Dollar Store finds.",
-      "hook": "Pantry looking like a disaster zone? Dollar Store to the rescue!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Sports Highlights & Analysis",
+      "topic": "How Data Analytics is Revolutionizing Football Strategy",
+      "hook": "It's not just about raw talent anymore! Discover how complex algorithms are shaping the beautiful game.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 42
     },
     {
-      "category": "Fashion & Beauty Hauls/Tips",
-      "topic": "How to spot and avoid 'fast fashion' scams on popular shopping apps.",
-      "hook": "That 'amazing' online deal? It might be a fast fashion trap.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 47
+      "category": "Seasonal Fashion & Lifestyle",
+      "topic": "Decoding the 'Quiet Luxury' Trend for Fall 2024",
+      "hook": "Say goodbye to flashy logos! We're breaking down how to achieve that effortless, high-end 'quiet luxury' look this fall.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "Travel Vlogs & Destination Spotlights",
-      "topic": "The world's most dangerous airport runway and why planes still land there.",
-      "hook": "This airport runway is literally on a beach... and it's terrifying.",
-      "voice_style": "dramatic",
+      "category": "Seasonal Fashion & Lifestyle",
+      "topic": "The Ultimate Guide to Styling Seasonal Beret Hats",
+      "hook": "From chic Parisian to cozy street style, the beret is back! Here's how to rock this classic accessory for any season.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Global & Geopolitical Explainers",
+      "topic": "Why 'Rare Earth Elements' Are Crucial for Modern Tech",
+      "hook": "Your phone, your EV, your gaming console \u2013 none would exist without these vital, strategically important minerals. But who controls them?",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 50
+    },
+    {
+      "category": "Global & Geopolitical Explainers",
+      "topic": "Understanding the Geopolitics of the Suez Canal",
+      "hook": "A single ship blocking this waterway caused billions in losses. Why is the Suez Canal so critical to global trade and power?",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "DIY & Life Hacks",
+      "topic": "Transforming Old Wine Bottles into Chic Home Decor",
+      "hook": "Don't toss those empty wine bottles! Turn them into stunning vases, lamps, or even unique art pieces with these hacks.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "DIY & Life Hacks",
+      "topic": "The 'KonMari' Method for Digital Decluttering",
+      "hook": "Does your phone or computer spark joy? We're applying Marie Kondo's famous method to your digital life for ultimate zen!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     }
   ],
