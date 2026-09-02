@@ -1,259 +1,259 @@
 {
-  "generated_at": "2026-09-01T10:21:17.771296",
-  "valid_until": "2026-09-01T23:59:17.771307",
+  "generated_at": "2026-09-02T09:49:52.172248",
+  "valid_until": "2026-09-02T23:59:52.172257",
   "categories": [
-    "MLB Game Highlights & Fan Reactions",
-    "Hurricane & Severe Weather Updates",
-    "Political News & Explainers",
-    "Gaming Tech & Streaming Setups",
-    "Trending Personalities & Celebrity News",
-    "Fall Fashion & Seasonal Style",
-    "Quick & Easy Fall Recipes",
-    "DIY Home Decor & Organization Hacks",
-    "Short-Form Comedy Skits & Viral Memes",
-    "Educational Quick Facts & Life Hacks",
-    "Travel Vlogs & Weekend Getaways",
-    "Pet Content & Animal Antics",
-    "Health, Wellness & Mental Health Tips",
-    "Personal Finance & Budgeting Advice",
-    "Pop Culture Commentary & Entertainment News"
+    "Health & Ingredient Deep Dives",
+    "Tech Gadget Reviews & Productivity Hacks",
+    "Daily News & Pop Culture Snaps",
+    "Climate & Weather Preparedness",
+    "Live Sports Updates & Fan Reactions",
+    "Youth Sports Journey & Life Lessons",
+    "Crypto & Investment Spotlights",
+    "Quick & Healthy Recipes (Diet-Focused)",
+    "Day in the Life Vlogs (Realistic & Aspirational)",
+    "Home Comfort & Cooling Hacks",
+    "Educational 'Explainers' (Science & Current Events)",
+    "Travel & Staycation Ideas",
+    "Relatable Comedy & POV Skits",
+    "Transitional Fashion & Styling",
+    "Personal Finance & Budgeting (Beyond Crypto)"
   ],
   "concepts": [
     {
-      "category": "MLB Game Highlights & Fan Reactions",
-      "topic": "The 'Phantom Tag' that sparked a major umpire review and fan outrage.",
-      "hook": "Did you just witness the *ghost* of a tag? MLB fans are losing it over THIS call!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Health & Ingredient Deep Dives",
+      "topic": "The REAL truth about 'sugar-free' alternatives.",
+      "hook": "Thinking 'sugar-free' is your health ticket? Think again! You need to know this.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "MLB Game Highlights & Fan Reactions",
-      "topic": "Unbelievable walk-off grand slam from a rookie, capturing stadium and dugout reactions.",
-      "hook": "Hold UP! This rookie just ended the game in the MOST insane way possible. You HAVE to see this!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "category": "Tech Gadget Reviews & Productivity Hacks",
+      "topic": "The smart ring that replaced my smartwatch (and saved my sanity).",
+      "hook": "My smartwatch was too much. This tiny ring changed everything about my notifications.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Daily News & Pop Culture Snaps",
+      "topic": "Why everyone's talking about the new 'AI influencer' scandal.",
+      "hook": "An AI influencer just went viral for all the WRONG reasons. What actually happened?",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Hurricane & Severe Weather Updates",
-      "topic": "Debunking common hurricane preparedness myths (e.g., taping windows).",
-      "hook": "Think taping your windows helps in a hurricane? Think again! You're making THIS mistake!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Climate & Weather Preparedness",
+      "topic": "Emergency backpack essentials you're forgetting for wildfire season.",
+      "hook": "Wildfire season is here. Is your emergency bag missing THESE critical items that could save you?",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Live Sports Updates & Fan Reactions",
+      "topic": "The impossible buzzer-beater shot that shocked the NBA playoffs last night.",
+      "hook": "Did you see that?! The most insane buzzer-beater of the playoffs just happened, and NO ONE saw it coming!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Youth Sports Journey & Life Lessons",
+      "topic": "How losing the championship taught my team more than winning ever could.",
+      "hook": "We lost the championship game, and it was the BEST thing that ever happened to us. Here's why.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Hurricane & Severe Weather Updates",
-      "topic": "The science behind 'bomb cyclones' and why they're becoming more frequent.",
-      "hook": "Ever heard of a 'Bomb Cyclone'? It sounds terrifying because it IS. Here's why they're exploding more often.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Crypto & Investment Spotlights",
+      "topic": "Is 'Proof of Stake' the future, or just another crypto buzzword?",
+      "hook": "Everyone's hyping Proof of Stake. But is it actually worth your investment, or just hot air?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Quick & Healthy Recipes (Diet-Focused)",
+      "topic": "5-minute high-protein breakfast hack for busy intermittent fasters.",
+      "hook": "Intermittent fasting and no time for breakfast? This 5-minute meal is a game-changer you need!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Day in the Life Vlogs (Realistic & Aspirational)",
+      "topic": "A realistic day in my life as a full-time student + side hustle owner.",
+      "hook": "Think my life is glamorous? Here's the REAL truth about balancing school and a business.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Home Comfort & Cooling Hacks",
+      "topic": "The $10 DIY window hack that dropped my AC bill by 20%.",
+      "hook": "My AC bill was INSANE. This $10 window hack changed everything and saved me hundreds.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Health & Ingredient Deep Dives",
+      "topic": "Is 'seed oil' really the enemy, or just misunderstood in your diet?",
+      "hook": "Seed oils: health villain or innocent bystander? Let's dive deep into the controversy.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Political News & Explainers",
-      "topic": "Explaining the filibuster and its impact on current legislation.",
-      "hook": "The 'filibuster' is blocking what?! Here's why this ancient rule is making modern headlines.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
+      "category": "Tech Gadget Reviews & Productivity Hacks",
+      "topic": "The ONE app I use to manage all my digital subscriptions and save money.",
+      "hook": "Subscription overload? This app is my secret weapon for managing everything and cutting costs.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Daily News & Pop Culture Snaps",
+      "topic": "Why everyone's suddenly obsessed with 'cottagecore' aesthetics again.",
+      "hook": "From TikTok trends to real life, why is 'cottagecore' making a HUGE comeback right now?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Political News & Explainers",
-      "topic": "Decoding the latest Supreme Court ruling on a specific, trending case.",
-      "hook": "The Supreme Court just dropped a bomb on [specific recent issue]. What does it mean for YOU?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Climate & Weather Preparedness",
+      "topic": "Hurricane season is here: 3 essential supplies you haven't thought of.",
+      "hook": "Hurricane season: You have water and batteries, but do you have THESE 3 surprising essentials?",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Live Sports Updates & Fan Reactions",
+      "topic": "The post-game locker room drama that's rocking the NFL.",
+      "hook": "The game was over, but the REAL drama just started in the locker room! You won't believe this.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Youth Sports Journey & Life Lessons",
+      "topic": "My coach's brutal honest feedback that turned me into a better athlete AND person.",
+      "hook": "My coach told me something I never wanted to hear. It changed my life and my game forever.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Gaming Tech & Streaming Setups",
-      "topic": "Budget-friendly streaming setup for under $300 that looks professional.",
-      "hook": "Want to stream like a pro but your wallet's crying? I built an EPIC setup for under $300!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Crypto & Investment Spotlights",
+      "topic": "Beyond Bitcoin: Exploring the next big altcoin for beginners.",
+      "hook": "Think Bitcoin's old news? I'm looking at THIS altcoin for explosive growth for new investors.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 50
     },
     {
-      "category": "Gaming Tech & Streaming Setups",
-      "topic": "The TRUTH about ray tracing and if it's worth the GPU upgrade.",
-      "hook": "Ray Tracing: Is it just a fancy buzzword or does it REALLY change your game? Let's find out!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
+      "category": "Quick & Healthy Recipes (Diet-Focused)",
+      "topic": "High-fiber, low-carb pasta alternative that actually tastes good.",
+      "hook": "Craving pasta but staying low-carb? This alternative tastes shockingly good, I promise!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Trending Personalities & Celebrity News",
-      "topic": "The unexpected celebrity cameo in a recent blockbuster that no one saw coming.",
-      "hook": "Did you blink and miss THIS shock cameo in [movie name]? Fans are going wild!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Day in the Life Vlogs (Realistic & Aspirational)",
+      "topic": "My 'reset routine' for turning a chaotic Monday into a productive week.",
+      "hook": "Monday meltdown? Here's my exact routine to reset and conquer the week, even when it's tough.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 50
     },
     {
-      "category": "Trending Personalities & Celebrity News",
-      "topic": "Analyzing why a specific celebrity's recent fashion choice broke the internet.",
-      "hook": "Okay, we HAVE to talk about [Celebrity Name]'s outfit. It just sent the internet into a FRENZY!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Fashion & Seasonal Style",
-      "topic": "Styling 'shackets' for five different fall occasions.",
-      "hook": "Still confused by the 'shacket'? I'll show you 5 ways to slay this fall essential!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Fashion & Seasonal Style",
-      "topic": "The one trending fall color you NEED in your wardrobe right now.",
-      "hook": "Forget basic black! THIS is the ONE color dominating fall fashion, and you need it!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick & Easy Fall Recipes",
-      "topic": "3-ingredient pumpkin spice latte that's better than store-bought.",
-      "hook": "Don't pay $7 for a PSL! My 3-ingredient recipe is BETTER and ridiculously easy.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick & Easy Fall Recipes",
-      "topic": "Viral 'apple pie taco' recipe that takes less than 15 minutes.",
-      "hook": "Apple pie... in a TACO?! This viral dessert hack is mind-blowingly delicious and ready in minutes!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Decor & Organization Hacks",
-      "topic": "IKEA Kallax hack for creating a chic entryway bench with storage.",
-      "hook": "Your boring IKEA Kallax is about to become a LUXURY entryway bench! Watch this!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Decor & Organization Hacks",
-      "topic": "Clever laundry room organization using tension rods and Dollar Store finds.",
-      "hook": "Is your laundry room a disaster zone? These Dollar Store hacks will change your life!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Short-Form Comedy Skits & Viral Memes",
-      "topic": "Relatable skit about attempting to adult after a long weekend.",
-      "hook": "Me trying to adult on a Tuesday after a 3-day weekend: *visible struggle intensifies*",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Short-Form Comedy Skits & Viral Memes",
-      "topic": "Parody of a popular 'life hack' video that goes hilariously wrong.",
-      "hook": "They said 'just add water!' They LIED. My attempt at this viral hack was a total trainwreck.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Educational Quick Facts & Life Hacks",
-      "topic": "3 brain hacks to remember names better instantly.",
-      "hook": "Ever forget someone's name 2 seconds after meeting them? Not anymore! Try these 3 brain hacks!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Educational Quick Facts & Life Hacks",
-      "topic": "The surprising reason why your phone battery drains faster in the cold.",
-      "hook": "Why does your phone die faster when it's freezing? The science behind your frosty battery dilemma!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Home Comfort & Cooling Hacks",
+      "topic": "How to make your bedroom feel like a luxury hotel with smart lighting.",
+      "hook": "Want that luxury hotel vibe in your bedroom? It's all about THIS one thing that costs less than you think.",
+      "voice_style": "Aspirational",
+      "music_mood": "Chill",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     }
   ],
