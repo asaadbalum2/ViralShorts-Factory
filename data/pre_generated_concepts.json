@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-03T10:01:47.570864",
-  "valid_until": "2026-09-03T23:59:47.570873",
+  "generated_at": "2026-09-04T09:51:57.814352",
+  "valid_until": "2026-09-04T23:59:57.814361",
   "categories": [
-    "Sports Hot Takes & Fan Debates (NFL, WNBA, WWE)",
-    "Back-to-School Relatability & Life Hacks",
-    "Extreme Weather Survival & Safety Tips",
-    "Financial Wellness & Tax Season Prep (IRS Focus)",
-    "NFL Game Day Traditions & Predictions",
-    "Wrestling Fandom & Event Reactions (WWE)",
-    "Pro Athlete Journeys & Performance Mindset (Golf, WNBA)",
-    "Trending Personalities & Pop Culture Breakdown",
-    "Parenting & Student Life Humor",
-    "Quick Meals & Snack Ideas (Game Day/Busy Week)",
-    "Home Comfort & Energy Saving Tips",
-    "Climate Action & Environmental News",
-    "Fall Fashion & Seasonal Style Guides",
-    "Pet Wellness & Seasonal Care",
-    "Streaming Service & Tech Reviews (Where to Watch Guides)"
+    "Global Politics & Economics Explained",
+    "Investment Strategies & Market Insights",
+    "College Football Game Recaps & Predictions",
+    "NBA Player & Team Analysis",
+    "Sports Betting Tips & Odds Breakdown",
+    "Local News & Community Spotlights",
+    "Personal Finance & Wealth Building",
+    "Quick & Easy Recipes",
+    "Fall Fashion & Style Guides",
+    "Productivity Hacks & Life Organization",
+    "Short-Form Educational Content (Edutainment)",
+    "Travel & Adventure Vlogs",
+    "Tech Innovations & Gadget Reviews",
+    "Viral Challenges & Trending Sounds",
+    "Mental Wellness & Self-Care Routines"
   ],
   "concepts": [
     {
-      "category": "Sports Hot Takes & Fan Debates (NFL, WNBA, WWE)",
-      "topic": "Is Brock Purdy's 'Mr. Irrelevant' narrative truly warranted, or just a media darling story?",
-      "hook": "Okay, let's settle this: Is Brock Purdy actually elite, or is the 'Mr. Irrelevant' story just too good for the media to ignore?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Back-to-School Relatability & Life Hacks",
-      "topic": "The ultimate 'invisible' snack hack for surviving long, boring lecture halls without getting caught.",
-      "hook": "Confession: I survived my longest lectures thanks to this stealth snack strategy. You NEED this if you're going back to school.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Extreme Weather Survival & Safety Tips",
-      "topic": "What to actually do if you're caught in a flash flood while driving \u2013 the critical 5-second decision.",
-      "hook": "Your car is NOT a boat. If you see rising water during a flash flood, here's the ONE thing you absolutely must do immediately.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Financial Wellness & Tax Season Prep (IRS Focus)",
-      "topic": "Are you accidentally triggering an IRS audit with common side hustle income reporting mistakes?",
-      "hook": "Heads up, side hustlers! The IRS is watching. Here are three common mistakes that scream 'audit me!' with your tax filings.",
+      "category": "Global Politics & Economics Explained",
+      "topic": "The Real Impact of India's Digital Currency Pilot on Global Trade",
+      "hook": "Did you know India's digital rupee pilot could radically change how *you* pay for international goods?",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
-      "target_duration": 47
+      "target_duration": 45
     },
     {
-      "category": "NFL Game Day Traditions & Predictions",
-      "topic": "My absurdly specific Super Bowl LIX prediction involving a forgotten mascot and why it WILL happen.",
-      "hook": "Forget analytics! My Super Bowl LIX prediction involves a zodiac alignment, a forgotten mascot, and it's 100% happening. Hear me out!",
+      "category": "Global Politics & Economics Explained",
+      "topic": "Why the European Energy Crisis Still Matters to Your Gas Bill",
+      "hook": "Think the European energy crisis is over? Think again \u2013 and it affects your wallet more than you realize.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Investment Strategies & Market Insights",
+      "topic": "The Hidden Risks & Rewards of Investing in Renewable Energy Startups",
+      "hook": "Everyone's talking green energy, but are you aware of the *real* volatility in these cutting-edge stocks?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Wrestling Fandom & Event Reactions (WWE)",
-      "topic": "The most underrated WWE comeback story we all forgot about, overshadowing even Edge's return.",
-      "hook": "Everyone talks about Edge, but remember [specific wrestler]\u2019s return from that career-ending injury? That was the TRUE shocker. Let's revisit!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Pro Athlete Journeys & Performance Mindset (Golf, WNBA)",
-      "topic": "The specific mental secret WNBA MVPs use to block out pressure and sink game-winning shots.",
-      "hook": "It's not just skill. The best WNBA players have this one mental hack to sink that buzzer-beater shot. Are you using it in your life?",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Trending Personalities & Pop Culture Breakdown",
-      "topic": "The subtle reason everyone is suddenly obsessed with [Celebrity X]'s latest 'quiet luxury' aesthetic shift.",
-      "hook": "Did you notice? [Celebrity X]'s recent style change isn't just fashion; it's a calculated move. Here's why everyone's suddenly obsessed.",
-      "voice_style": "mysterious",
+      "category": "Investment Strategies & Market Insights",
+      "topic": "Why Warren Buffett's Latest Move on Oil Stocks is Worth Watching",
+      "hook": "Buffett just quietly made a big play in an unexpected sector. What does it mean for *your* portfolio?",
+      "voice_style": "authoritative",
       "music_mood": "chill",
+      "target_duration": 47
+    },
+    {
+      "category": "College Football Game Recaps & Predictions",
+      "topic": "How an Underdog Upset Could Redefine the Playoff Picture This Week",
+      "hook": "One shocking upset this weekend just blew the CFP rankings wide open. Who's in, and who's out now?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Parenting & Student Life Humor",
-      "topic": "My kid's utterly bizarre homework excuse that actually made me laugh (and almost believe it).",
-      "hook": "You think YOUR kid's excuses are wild? Mine blamed a rogue squirrel for eating his math homework. Seriously, you won't believe it.",
+      "category": "College Football Game Recaps & Predictions",
+      "topic": "The Unseen Statistics That Will Determine the Rivalry Game Winner",
+      "hook": "Everyone's predicting a blowout, but *these* three stats say this rivalry game is going down to the wire.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 43
+      "target_duration": 45
     },
     {
-      "category": "Quick Meals & Snack Ideas (Game Day/Busy Week)",
-      "topic": "3-ingredient 'emergency' game day dip you can literally make in 90 seconds flat.",
-      "hook": "Game day started 5 minutes ago and you forgot snacks? This 3-ingredient dip will save your party. No really, 90 seconds, watch this!",
+      "category": "NBA Player & Team Analysis",
+      "topic": "The Unstoppable New Pick-and-Roll Combo Dominating the League",
+      "hook": "A new dynamic duo is forming, and their pick-and-roll game is *literally* indefensible. Who are they?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Back-to-School Relatability & Life Hacks",
-      "topic": "How to actually wake up for 8 AM classes without needing 10 different alarm clocks.",
-      "hook": "Stop hitting snooze! I found the weirdest, most effective way to actually get out of bed for that dreaded 8 AM class. It's a game changer.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "NBA Player & Team Analysis",
+      "topic": "How One Player's Defensive Struggles are Tanking a Contender's Season",
+      "hook": "This MVP candidate's defensive lapses are a silent killer, slowly sinking his team's championship hopes.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Sports Betting Tips & Odds Breakdown",
+      "topic": "Uncovering Value Bets in NFL Divisional Round Underdog Spreads",
+      "hook": "Think the favorites are a lock? I'm breaking down *why* these two underdogs are the smart money plays this weekend.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Financial Wellness & Tax Season Prep (IRS Focus)",
-      "topic": "The ONE crucial tax deduction every student loan borrower consistently misses out on.",
-      "hook": "If you have student loans, you're probably leaving free money on the table. This is the deduction the IRS doesn't want you to forget!",
+      "category": "Sports Betting Tips & Odds Breakdown",
+      "topic": "The Data-Driven Strategy for Betting on College Basketball Totals",
+      "hook": "Stop guessing on game totals! I'm revealing the *single stat* that helps me consistently hit O/U bets in college hoops.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Local News & Community Spotlights",
+      "topic": "The Secret History Behind Our Town's Oldest Bookstore",
+      "hook": "Did you know our quaint little bookstore once hosted a famous author, and there's a hidden secret inside?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Local News & Community Spotlights",
+      "topic": "How a Local Community Garden is Fighting Food Deserts in Our City",
+      "hook": "From an abandoned lot to a thriving oasis \u2013 see how one garden is changing lives right here in our neighborhood.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance & Wealth Building",
+      "topic": "The Bare Minimum Budgeting Strategy That Actually Works for Busy People",
+      "hook": "Hate budgeting? What if I told you there's a way to save money with *less* than 15 minutes of effort a month?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Personal Finance & Wealth Building",
+      "topic": "Why You Should Reconsider Your High-Yield Savings Account Strategy",
+      "hook": "Your high-yield savings account isn't working as hard as it could be. I'm showing you a better way to make your money grow.",
       "voice_style": "authoritative",
       "music_mood": "chill",
       "target_duration": 48
     },
     {
-      "category": "NFL Game Day Traditions & Predictions",
-      "topic": "My bizarre pre-game ritual that superstitiously guarantees my team wins every single time.",
-      "hook": "My team wins every Sunday, and it's not luck. It's because of my extremely specific, slightly superstitious pre-game ritual. Wanna know what it is?",
+      "category": "Quick & Easy Recipes",
+      "topic": "5-Minute Spicy Garlic Noodles for Instant Cravings",
+      "hook": "Craving takeout but don't want to wait? These spicy garlic noodles are ready in *five minutes*, no joke.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Sports Hot Takes & Fan Debates (NFL, WNBA, WWE)",
-      "topic": "Why the WNBA All-Star Game is secretly more competitive and entertaining than the NBA's.",
-      "hook": "Unpopular opinion: The WNBA All-Star game blows the NBA's out of the water. Here's why it's not even close in terms of actual competition.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Quick & Easy Recipes",
+      "topic": "One-Pan Lemon Herb Salmon and Asparagus Dinner",
+      "hook": "Imagine a gourmet dinner that only needs *one pan* and 20 minutes. Salmon perfection, coming right up!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Pro Athlete Journeys & Performance Mindset (Golf, WNBA)",
-      "topic": "The surprising, unconventional diet hack that completely transformed a struggling pro golfer's career.",
-      "hook": "He was on the verge of quitting, then he changed ONE thing in his diet, and his golf game completely flipped. You won't believe what it was.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Extreme Weather Survival & Safety Tips",
-      "topic": "The hidden danger of 'sheltering in place' during a tornado if you're in the wrong type of building.",
-      "hook": "Everyone says 'shelter in place' for a tornado, but if you're in [specific type of building], you might be making a deadly mistake. Here's the critical difference.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Parenting & Student Life Humor",
-      "topic": "The absolute chaos of trying to pack a school lunch that isn't instantly traded for junk food.",
-      "hook": "Is it just my kid, or is packing a school lunch an extreme sport? I swear, every sandwich is a negotiation to avoid a 'trade deal.'",
-      "voice_style": "friendly",
+      "category": "Fall Fashion & Style Guides",
+      "topic": "The Essential Fall Jacket You Need to Elevate Any Outfit",
+      "hook": "Forget basic blazers! This *one* jacket will instantly transform your fall wardrobe, effortlessly.",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Quick Meals & Snack Ideas (Game Day/Busy Week)",
-      "topic": "My secret 5-minute microwave pasta hack for busy weeknights (college student approved!).",
-      "hook": "You're telling me you're STILL boiling water? This 5-minute microwave pasta hack is a busy weeknight game-changer. College students, listen up!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Trending Personalities & Pop Culture Breakdown",
-      "topic": "The overlooked tiny detail in [Viral TikToker]'s latest video that explains their entire virality.",
-      "hook": "Everyone's talking about [Viral TikToker]'s new video, but did you catch that one tiny detail? That's the secret sauce to their virality. I'll break it down.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
+      "category": "Fall Fashion & Style Guides",
+      "topic": "Mastering Layering: How to Stay Warm and Stylish This Autumn",
+      "hook": "Struggling with layers? I'm revealing the *secret formula* to looking chic and staying cozy all season long.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
-      "category": "Wrestling Fandom & Event Reactions (WWE)",
-      "topic": "The shocking WWE storyline that was almost perfect but got utterly ruined by one questionable booking decision.",
-      "hook": "Remember [specific WWE storyline]? It had us all hooked! But one questionable booking decision absolutely derailed it. Let's rage about what went wrong.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 46
+      "category": "Productivity Hacks & Life Organization",
+      "topic": "The \"Two-Minute Rule\" That Will Eradicate Your Procrastination Forever",
+      "hook": "Always putting things off? This *tiny* rule will trick your brain into getting everything done, instantly.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Productivity Hacks & Life Organization",
+      "topic": "Declutter Your Digital Life: A Minimalist Approach to Your Inbox",
+      "hook": "Is your email inbox a black hole? I'm showing you how to achieve *zero unread messages* by the end of the week.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 48
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
