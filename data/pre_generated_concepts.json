@@ -1,245 +1,210 @@
 {
-  "generated_at": "2026-09-04T09:51:57.814352",
-  "valid_until": "2026-09-04T23:59:57.814361",
+  "generated_at": "2026-09-05T09:16:49.327736",
+  "valid_until": "2026-09-05T23:59:49.327746",
   "categories": [
-    "Global Politics & Economics Explained",
-    "Investment Strategies & Market Insights",
-    "College Football Game Recaps & Predictions",
-    "NBA Player & Team Analysis",
-    "Sports Betting Tips & Odds Breakdown",
-    "Local News & Community Spotlights",
-    "Personal Finance & Wealth Building",
-    "Quick & Easy Recipes",
-    "Fall Fashion & Style Guides",
-    "Productivity Hacks & Life Organization",
-    "Short-Form Educational Content (Edutainment)",
-    "Travel & Adventure Vlogs",
-    "Tech Innovations & Gadget Reviews",
-    "Viral Challenges & Trending Sounds",
-    "Mental Wellness & Self-Care Routines"
+    "Financial News & Market Updates",
+    "Combat Sports & MMA Hype",
+    "Tech Leaks & Gadget Speculation",
+    "Sports Betting & Promos",
+    "Political News & Election Updates",
+    "Legal Insights & True Crime",
+    "Professional Sports Highlights",
+    "High School Sports & Local Interest",
+    "Consumer Electronics Reviews",
+    "Personal Finance & Investing",
+    "Crime & Law Commentary",
+    "Sports Betting Strategy",
+    "Gadget Unboxing",
+    "Midterm Election Analysis",
+    "Back-to-School Lifestyle"
   ],
   "concepts": [
     {
-      "category": "Global Politics & Economics Explained",
-      "topic": "The Real Impact of India's Digital Currency Pilot on Global Trade",
-      "hook": "Did you know India's digital rupee pilot could radically change how *you* pay for international goods?",
+      "category": "Financial News & Market Updates",
+      "topic": "NVIDIA Earnings Volatility",
+      "hook": "Everyone is watching NVIDIA today, but no one is talking about this one red flag in their quarterly report.",
       "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Global Politics & Economics Explained",
-      "topic": "Why the European Energy Crisis Still Matters to Your Gas Bill",
-      "hook": "Think the European energy crisis is over? Think again \u2013 and it affects your wallet more than you realize.",
+      "category": "Combat Sports & MMA Hype",
+      "topic": "Jon Jones vs. Stipe Miocic Weight Cut",
+      "hook": "Is Jon Jones actually making weight, or is this another massive controversy brewing before the fight?",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Investment Strategies & Market Insights",
-      "topic": "The Hidden Risks & Rewards of Investing in Renewable Energy Startups",
-      "hook": "Everyone's talking green energy, but are you aware of the *real* volatility in these cutting-edge stocks?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Investment Strategies & Market Insights",
-      "topic": "Why Warren Buffett's Latest Move on Oil Stocks is Worth Watching",
-      "hook": "Buffett just quietly made a big play in an unexpected sector. What does it mean for *your* portfolio?",
+      "category": "Tech Leaks & Gadget Speculation",
+      "topic": "iPhone 16 Pro Camera Sensor Leaks",
+      "hook": "Forget everything you know about iPhone photography\u2014the latest 16 Pro leaks just changed the game.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Sports Betting & Promos",
+      "topic": "NBA Player Prop Strategy",
+      "hook": "Stop betting on the favorites; this one specific player prop for tonight's Lakers game is a massive value play.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Political News & Election Updates",
+      "topic": "Swing State Polling Shifts",
+      "hook": "A massive polling shift just happened in Pennsylvania, and it changes everything for the upcoming election.",
       "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Legal Insights & True Crime",
+      "topic": "DNA Breakthrough in 90s Cold Case",
+      "hook": "New DNA evidence just surfaced in a 25-year-old cold case, and the suspect is someone no one suspected.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Professional Sports Highlights",
+      "topic": "Steph Curry's Impossible Range Shot",
+      "hook": "You had to see it to believe it\u2014Steph Curry just broke the laws of physics with this shot.",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "High School Sports & Local Interest",
+      "topic": "State Championship Winning Goal",
+      "hook": "The entire town stopped to watch this one goal that just changed local high school history forever.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Consumer Electronics Reviews",
+      "topic": "Sony vs. Bose Noise Canceling Comparison",
+      "hook": "I tested the top two noise-canceling headphones for 48 hours, and the winner is actually a total shock.",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 47
     },
     {
-      "category": "College Football Game Recaps & Predictions",
-      "topic": "How an Underdog Upset Could Redefine the Playoff Picture This Week",
-      "hook": "One shocking upset this weekend just blew the CFP rankings wide open. Who's in, and who's out now?",
+      "category": "Personal Finance & Investing",
+      "topic": "The Rule of 72 Explained",
+      "hook": "Want to know exactly when your money will double? This simple math trick is the secret to wealth.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Financial News & Market Updates",
+      "topic": "Bitcoin Halving Aftermath",
+      "hook": "The Bitcoin halving just happened, and the whales are doing something absolutely terrifying with their holdings.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Combat Sports & MMA Hype",
+      "topic": "McGregor's Return Speculation",
+      "hook": "The McGregor comeback is officially happening, but the division looks nothing like it used to.",
       "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 40
+      "target_duration": 41
     },
     {
-      "category": "College Football Game Recaps & Predictions",
-      "topic": "The Unseen Statistics That Will Determine the Rivalry Game Winner",
-      "hook": "Everyone's predicting a blowout, but *these* three stats say this rivalry game is going down to the wire.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "NBA Player & Team Analysis",
-      "topic": "The Unstoppable New Pick-and-Roll Combo Dominating the League",
-      "hook": "A new dynamic duo is forming, and their pick-and-roll game is *literally* indefensible. Who are they?",
+      "category": "Tech Leaks & Gadget Speculation",
+      "topic": "Samsung Fold 6 Hinge Design",
+      "hook": "Leaked images of the next Samsung Fold just arrived, and the hinge design looks completely different.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 44
     },
     {
-      "category": "NBA Player & Team Analysis",
-      "topic": "How One Player's Defensive Struggles are Tanking a Contender's Season",
-      "hook": "This MVP candidate's defensive lapses are a silent killer, slowly sinking his team's championship hopes.",
-      "voice_style": "dramatic",
+      "category": "Sports Betting & Promos",
+      "topic": "NFL Weekend Parlay Tips",
+      "hook": "If you're betting on NFL player props this Sunday, you need to see this one specific stat first.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Political News & Election Updates",
+      "topic": "Campaign Finance Loopholes",
+      "hook": "The rules of how politicians get funded just changed, and you won't believe where the new money is coming from.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "Sports Betting Tips & Odds Breakdown",
-      "topic": "Uncovering Value Bets in NFL Divisional Round Underdog Spreads",
-      "hook": "Think the favorites are a lock? I'm breaking down *why* these two underdogs are the smart money plays this weekend.",
+      "category": "Legal Insights & True Crime",
+      "topic": "Celebrity Lawsuit Loophole Analysis",
+      "hook": "The legal loophole used in this celebrity lawsuit is actually a masterclass in defense strategy.",
       "voice_style": "authoritative",
-      "music_mood": "intense",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Sports Betting Tips & Odds Breakdown",
-      "topic": "The Data-Driven Strategy for Betting on College Basketball Totals",
-      "hook": "Stop guessing on game totals! I'm revealing the *single stat* that helps me consistently hit O/U bets in college hoops.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Professional Sports Highlights",
+      "topic": "NFL Defensive Play of the Year",
+      "hook": "This isn't just a touchdown; it's the single greatest defensive play of the entire NFL season.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 42
     },
     {
-      "category": "Local News & Community Spotlights",
-      "topic": "The Secret History Behind Our Town's Oldest Bookstore",
-      "hook": "Did you know our quaint little bookstore once hosted a famous author, and there's a hidden secret inside?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "High School Sports & Local Interest",
+      "topic": "Local Star Quarterback Recruitment",
+      "hook": "This 17-year-old just broke a state record that's stood for thirty years, and the scouts are losing it.",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Local News & Community Spotlights",
-      "topic": "How a Local Community Garden is Fighting Food Deserts in Our City",
-      "hook": "From an abandoned lot to a thriving oasis \u2013 see how one garden is changing lives right here in our neighborhood.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance & Wealth Building",
-      "topic": "The Bare Minimum Budgeting Strategy That Actually Works for Busy People",
-      "hook": "Hate budgeting? What if I told you there's a way to save money with *less* than 15 minutes of effort a month?",
+      "category": "Consumer Electronics Reviews",
+      "topic": "Budget Gaming Mouse Value Test",
+      "hook": "Stop spending $100 on gaming mice\u2014this $25 budget option actually outperforms the pros.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 46
     },
     {
-      "category": "Personal Finance & Wealth Building",
-      "topic": "Why You Should Reconsider Your High-Yield Savings Account Strategy",
-      "hook": "Your high-yield savings account isn't working as hard as it could be. I'm showing you a better way to make your money grow.",
+      "category": "Personal Finance & Investing",
+      "topic": "High-Yield Savings vs. Index Funds",
+      "hook": "Stop leaving your emergency fund in a standard savings account; you're losing money every single day.",
       "voice_style": "authoritative",
       "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Quick & Easy Recipes",
-      "topic": "5-Minute Spicy Garlic Noodles for Instant Cravings",
-      "hook": "Craving takeout but don't want to wait? These spicy garlic noodles are ready in *five minutes*, no joke.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Quick & Easy Recipes",
-      "topic": "One-Pan Lemon Herb Salmon and Asparagus Dinner",
-      "hook": "Imagine a gourmet dinner that only needs *one pan* and 20 minutes. Salmon perfection, coming right up!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Fashion & Style Guides",
-      "topic": "The Essential Fall Jacket You Need to Elevate Any Outfit",
-      "hook": "Forget basic blazers! This *one* jacket will instantly transform your fall wardrobe, effortlessly.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall Fashion & Style Guides",
-      "topic": "Mastering Layering: How to Stay Warm and Stylish This Autumn",
-      "hook": "Struggling with layers? I'm revealing the *secret formula* to looking chic and staying cozy all season long.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Productivity Hacks & Life Organization",
-      "topic": "The \"Two-Minute Rule\" That Will Eradicate Your Procrastination Forever",
-      "hook": "Always putting things off? This *tiny* rule will trick your brain into getting everything done, instantly.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Productivity Hacks & Life Organization",
-      "topic": "Declutter Your Digital Life: A Minimalist Approach to Your Inbox",
-      "hook": "Is your email inbox a black hole? I'm showing you how to achieve *zero unread messages* by the end of the week.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 48
+      "target_duration": 49
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -247,14 +212,49 @@
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
