@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-05T09:16:49.327736",
-  "valid_until": "2026-09-05T23:59:49.327746",
+  "generated_at": "2026-09-06T09:36:15.244064",
+  "valid_until": "2026-09-06T23:59:15.244075",
   "categories": [
-    "Financial News & Market Updates",
-    "Combat Sports & MMA Hype",
-    "Tech Leaks & Gadget Speculation",
-    "Sports Betting & Promos",
-    "Political News & Election Updates",
-    "Legal Insights & True Crime",
-    "Professional Sports Highlights",
-    "High School Sports & Local Interest",
-    "Consumer Electronics Reviews",
-    "Personal Finance & Investing",
-    "Crime & Law Commentary",
-    "Sports Betting Strategy",
-    "Gadget Unboxing",
-    "Midterm Election Analysis",
-    "Back-to-School Lifestyle"
+    "Sports News & Highlights",
+    "Crypto Trading & Market Insights",
+    "Weather & Climate Explanations",
+    "Global Humanitarian News",
+    "Gaming Beta & Review Content",
+    "Disaster & Emergency Preparedness",
+    "Daily Puzzle & Brain Teaser Solutions",
+    "Financial Literacy & Investing",
+    "Current Events & News Summaries",
+    "Educational 'How-To' & Explainer Videos",
+    "Pop Culture & Entertainment Buzz",
+    "Viral Challenge & Meme Content",
+    "Quick Recipe & Food Hacks",
+    "Home & Lifestyle Organization",
+    "Fitness & Wellness Quick Tips"
   ],
   "concepts": [
     {
-      "category": "Financial News & Market Updates",
-      "topic": "NVIDIA Earnings Volatility",
-      "hook": "Everyone is watching NVIDIA today, but no one is talking about this one red flag in their quarterly report.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Sports News & Highlights",
+      "topic": "The College Football Playoff Upset That Shocked Everyone",
+      "hook": "Did you see *that* play? This underdog team just pulled off the impossible!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Combat Sports & MMA Hype",
-      "topic": "Jon Jones vs. Stipe Miocic Weight Cut",
-      "hook": "Is Jon Jones actually making weight, or is this another massive controversy brewing before the fight?",
+      "category": "Sports News & Highlights",
+      "topic": "The NBA's Most Controversial Foul Call Last Night",
+      "hook": "The referee blew the whistle, but did he blow the game? Let's break down the call everyone's talking about!",
       "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Tech Leaks & Gadget Speculation",
-      "topic": "iPhone 16 Pro Camera Sensor Leaks",
-      "hook": "Forget everything you know about iPhone photography\u2014the latest 16 Pro leaks just changed the game.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 48
     },
     {
-      "category": "Sports Betting & Promos",
-      "topic": "NBA Player Prop Strategy",
-      "hook": "Stop betting on the favorites; this one specific player prop for tonight's Lakers game is a massive value play.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Political News & Election Updates",
-      "topic": "Swing State Polling Shifts",
-      "hook": "A massive polling shift just happened in Pennsylvania, and it changes everything for the upcoming election.",
+      "category": "Crypto Trading & Market Insights",
+      "topic": "What is 'Halving' in Bitcoin and Why Does it Matter to Your Portfolio?",
+      "hook": "Bitcoin halving is coming, and no, it's not a haircut for your coins! Here\u2019s what it means for your crypto.",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Legal Insights & True Crime",
-      "topic": "DNA Breakthrough in 90s Cold Case",
-      "hook": "New DNA evidence just surfaced in a 25-year-old cold case, and the suspect is someone no one suspected.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Professional Sports Highlights",
-      "topic": "Steph Curry's Impossible Range Shot",
-      "hook": "You had to see it to believe it\u2014Steph Curry just broke the laws of physics with this shot.",
-      "voice_style": "energetic",
+      "category": "Crypto Trading & Market Insights",
+      "topic": "The Next Meme Coin Surge? Analyzing Recent Whale Activity",
+      "hook": "Think meme coins are dead? Whales are buying again, and you won't believe which one is getting attention.",
+      "voice_style": "mysterious",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Weather & Climate Explanations",
+      "topic": "The Mystery of 'Atmospheric Rivers' and California's Extreme Rains",
+      "hook": "Ever wonder why California gets hammered with rain some years? It's not just El Ni\u00f1o...",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Weather & Climate Explanations",
+      "topic": "How Shrinking Glaciers Are Changing Ski Seasons Forever",
+      "hook": "Your favorite ski resort might not look the same in 20 years. Here's why and what it means for winter sports.",
+      "voice_style": "calm",
+      "music_mood": "dramatic",
+      "target_duration": 44
+    },
+    {
+      "category": "Global Humanitarian News",
+      "topic": "The Silent Hunger Crisis in East Africa: What You Need to Know",
+      "hook": "While the world watches elsewhere, millions are facing starvation right now. Here's the crisis you're not hearing about.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Global Humanitarian News",
+      "topic": "Solar Power Bringing Clean Water to Remote Villages",
+      "hook": "Imagine clean water for the first time, powered entirely by the sun. See this incredible project changing lives.",
+      "voice_style": "inspirational",
       "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "High School Sports & Local Interest",
-      "topic": "State Championship Winning Goal",
-      "hook": "The entire town stopped to watch this one goal that just changed local high school history forever.",
+      "category": "Gaming Beta & Review Content",
+      "topic": "My First 24 Hours with the 'Stellaris: Overlord' Expansion Beta",
+      "hook": "I got early access to the new Stellaris expansion, and my galaxy is already in chaos! Was it worth the hype?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Consumer Electronics Reviews",
-      "topic": "Sony vs. Bose Noise Canceling Comparison",
-      "hook": "I tested the top two noise-canceling headphones for 48 hours, and the winner is actually a total shock.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Personal Finance & Investing",
-      "topic": "The Rule of 72 Explained",
-      "hook": "Want to know exactly when your money will double? This simple math trick is the secret to wealth.",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 43
-    },
-    {
-      "category": "Financial News & Market Updates",
-      "topic": "Bitcoin Halving Aftermath",
-      "hook": "The Bitcoin halving just happened, and the whales are doing something absolutely terrifying with their holdings.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
       "target_duration": 46
     },
     {
-      "category": "Combat Sports & MMA Hype",
-      "topic": "McGregor's Return Speculation",
-      "hook": "The McGregor comeback is officially happening, but the division looks nothing like it used to.",
-      "voice_style": "energetic",
+      "category": "Gaming Beta & Review Content",
+      "topic": "The Game Mechanic in 'Elden Ring: Shadow of the Erdtree' That Changes Everything",
+      "hook": "Forget dodging and parrying, this new Elden Ring mechanic is going to blow your mind and change how you play!",
+      "voice_style": "friendly",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Disaster & Emergency Preparedness",
+      "topic": "The One Item You Forget for Your Earthquake Go-Bag",
+      "hook": "You've got water, food, first aid... but you're probably missing THIS vital item for an earthquake!",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 41
     },
     {
-      "category": "Tech Leaks & Gadget Speculation",
-      "topic": "Samsung Fold 6 Hinge Design",
-      "hook": "Leaked images of the next Samsung Fold just arrived, and the hinge design looks completely different.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Sports Betting & Promos",
-      "topic": "NFL Weekend Parlay Tips",
-      "hook": "If you're betting on NFL player props this Sunday, you need to see this one specific stat first.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Political News & Election Updates",
-      "topic": "Campaign Finance Loopholes",
-      "hook": "The rules of how politicians get funded just changed, and you won't believe where the new money is coming from.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Disaster & Emergency Preparedness",
+      "topic": "Myth vs. Fact: Can You Really Drink Water from Your Hot Water Heater in an Emergency?",
+      "hook": "Emergency water sources: is your hot water heater a safe bet or a health risk? Let's clear up the confusion.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
       "target_duration": 48
     },
     {
-      "category": "Legal Insights & True Crime",
-      "topic": "Celebrity Lawsuit Loophole Analysis",
-      "hook": "The legal loophole used in this celebrity lawsuit is actually a masterclass in defense strategy.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Professional Sports Highlights",
-      "topic": "NFL Defensive Play of the Year",
-      "hook": "This isn't just a touchdown; it's the single greatest defensive play of the entire NFL season.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "High School Sports & Local Interest",
-      "topic": "Local Star Quarterback Recruitment",
-      "hook": "This 17-year-old just broke a state record that's stood for thirty years, and the scouts are losing it.",
+      "category": "Daily Puzzle & Brain Teaser Solutions",
+      "topic": "Can You Spot the Hidden Animal in This Impossible Illusion?",
+      "hook": "Only 1% of people can find the hidden animal here. Are you one of them? Let's find out!",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Consumer Electronics Reviews",
-      "topic": "Budget Gaming Mouse Value Test",
-      "hook": "Stop spending $100 on gaming mice\u2014this $25 budget option actually outperforms the pros.",
+      "category": "Daily Puzzle & Brain Teaser Solutions",
+      "topic": "The Viral River Crossing Riddle Solved in 60 Seconds",
+      "hook": "Everyone's stuck on this river crossing riddle. Let me show you the trick to solve it in a minute!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
+      "music_mood": "chill",
+      "target_duration": 45
     },
     {
-      "category": "Personal Finance & Investing",
-      "topic": "High-Yield Savings vs. Index Funds",
-      "hook": "Stop leaving your emergency fund in a standard savings account; you're losing money every single day.",
+      "category": "Financial Literacy & Investing",
+      "topic": "The Power of Compound Interest: Your Money's Secret Weapon",
+      "hook": "Want to make your money work harder than you do? This one principle can change everything for your financial future.",
       "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Financial Literacy & Investing",
+      "topic": "The Biggest Budgeting Mistake College Students Make",
+      "hook": "Fresh out of high school? This one budgeting mistake could sink your finances before they even start. Avoid it!",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Current Events & News Summaries",
+      "topic": "The Red Sea Crisis: Why Shipping Chaos is Affecting Your Wallet",
+      "hook": "Ever wonder why your groceries are costing more? It might have something to do with ships halfway across the world.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 47
+    },
+    {
+      "category": "Current Events & News Summaries",
+      "topic": "The Ethical Dilemma of AI-Generated Art: Who Owns the Creativity?",
+      "hook": "AI is creating stunning art, but who's the real artist? The answer is more complicated than you think.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 49
+    },
+    {
+      "category": "Educational 'How-To' & Explainer Videos",
+      "topic": "How to Speed-Read Any Article in Under 2 Minutes",
+      "hook": "Drowning in articles and emails? Learn to speed-read like a pro in less than a minute with these simple tricks!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Educational 'How-To' & Explainer Videos",
+      "topic": "The Science Behind Why We Get Brain Freeze",
+      "hook": "That agonizing pain after your ice cream? Here's the bizarre reason your brain does that, explained by science!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
