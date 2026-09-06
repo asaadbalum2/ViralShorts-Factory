@@ -1,87 +1,87 @@
 {
   "title_patterns": [
-    "The {number} {adjective} {noun} You Need To See",
-    "I Tried {viral_trend} For {number} Days - Here's What Happened",
-    "This {simple_trick} Will Instantly {desired_outcome}",
-    "Why Nobody Tells You About {secret_topic}",
-    "Can You Guess The {mystery_element} In This {situation}?",
-    "The {number} {topic} Myths You Still Believe",
-    "You're Doing {common_activity} Wrong (Here's How To Fix It)",
-    "This {unexpected_fact} Blew My Mind!",
-    "From {bad_state} to {good_state} in {time_frame} (My Journey)",
-    "{Emotional_word}: {Shocking_event} Changes Everything"
+    "{number} {topic} You Didn't Know",
+    "Why {topic} Changes Everything",
+    "The {secret/hack} to {desired outcome} NO ONE Tells You",
+    "Did You Know THIS About {topic}?",
+    "Why {common belief} is a LIE",
+    "I Tried {viral trend} So You Don't Have To",
+    "What Happens When You {action}?",
+    "The TRUTH About {controversial topic}",
+    "This {tool/method} Will {benefit} Instantly",
+    "STOP {negative action} and START {positive action}!"
   ],
   "hook_patterns": [
-    "Wait, STOP scrolling!",
-    "You won't BELIEVE this...",
-    "Is this happening to you right now?",
-    "My life changed when I learned this.",
-    "Prepare to have your mind blown.",
-    "I'm about to expose a secret.",
-    "What if I told you...",
-    "This is *not* what you expect.",
-    "Are you making this HUGE mistake?",
-    "Okay, but seriously, watch this."
+    "Stop scrolling! This is important.",
+    "You're about to discover something shocking.",
+    "What if I told you {contrary fact}?",
+    "Forget everything you know about {topic}.",
+    "This single trick will change your {life/day/skill}.",
+    "Ever wondered why {common phenomenon}?",
+    "The one thing you *must* know before {action}.",
+    "Don't make this mistake!",
+    "I'm about to blow your mind.",
+    "Can you handle the truth about {topic}?"
   ],
   "engagement_baits": [
-    "What's YOUR biggest {challenge/tip}?",
-    "Agree or disagree? Let me know below!",
+    "What's YOUR take on this? Let me know \ud83d\udc47",
+    "Agree or disagree? Comment below!",
+    "Which {option A} or {option B} would you choose? Why?",
     "Tag a friend who needs to see this!",
-    "Have you tried this? Share your results!",
-    "Which {option1} or {option2} do you prefer?",
-    "What topic should I cover next?",
-    "Save this for later \u2013 you'll thank me!",
-    "Is this actually true? Comment your thoughts!"
+    "Have you tried this? Share your experience!",
+    "What's the craziest {related thing} you've ever seen?",
+    "Save this for later if you found it useful!",
+    "If you could only pick one {item}, what would it be?"
   ],
   "psychological_triggers": [
     "Curiosity",
     "Urgency",
     "Scarcity",
-    "FOMO",
+    "Validation",
     "Authority",
     "Reciprocity",
-    "SocialProof",
-    "Aspiration"
+    "Social Proof",
+    "FOMO"
   ],
   "scroll_stop_openers": [
-    "If you only watch one video today, make it this one.",
-    "I'm about to show you something absolutely wild.",
-    "Everyone needs to hear this right now.",
-    "This tiny change will upgrade your life instantly.",
-    "You're probably missing out on this game-changer.",
-    "Can we talk about how insane this is?",
-    "I promise, you haven't seen anything like this before.",
-    "Here's the secret they don't want you to know."
+    "WARNING: This video will challenge your beliefs.",
+    "You're wasting {time/money} if you're not doing this.",
+    "The secret to {desired outcome} is simpler than you think.",
+    "Prepare to be amazed by {unexpected fact}.",
+    "This hack just saved me {amount}.",
+    "If you struggle with {problem}, listen up.",
+    "I bet you didn't know this about {topic}.",
+    "What I'm about to show you will change everything."
   ],
   "proven_categories": [
+    "Lifehacks",
     "Money",
-    "Hacks",
-    "Health",
-    "Psychology",
     "Relationships",
-    "Tech",
-    "Food",
-    "Travel"
+    "Health",
+    "Productivity",
+    "Technology",
+    "Comedy",
+    "Motivation"
   ],
   "retention_tricks": [
-    "Dynamic Visuals: Constant cuts, motion graphics, text overlays to keep eyes engaged.",
-    "Fast Pacing: Keep edits extremely quick; avoid lingering shots and dead air.",
-    "Problem/Solution Arc: Introduce a relatable problem immediately and promise a clear, concise solution by the end.",
-    "Anticipation Building: Hint at a reveal, a shocking truth, or a payoff that will happen later in the Short.",
-    "Auditory Engagement: Upbeat, trending music, clear voiceover, and sound effects to enhance the experience.",
-    "Direct Address: Talk directly to the viewer, breaking the fourth wall, and making it feel personal."
+    "Rapid Cuts: Quick, dynamic edits every 1-3 seconds to maintain visual interest.",
+    "Text Overlays: On-screen text highlighting key points or adding context.",
+    "Sound Design: Engaging sound effects, background music, or unexpected audio cues.",
+    "Pattern Interrupts: Sudden changes in music, visuals, or speech patterns.",
+    "Story Arc (Mini): Introduce a problem, offer a solution, show the result.",
+    "Intrigue/Question Loop: Pose a question early, promise the answer, deliver it near the end."
   ],
   "cta_formulas": [
-    "Subscribe for more {value_proposition}!",
-    "Follow for daily {topic_niche} tips!",
-    "Click the link in bio to learn more about {topic}.",
-    "Don't miss out \u2013 hit that {button_name}!",
-    "Like this video if {condition_met}!",
-    "Join our community for exclusive {benefits}!"
+    "Follow for more {topic} insights!",
+    "Subscribe for daily {niche} content!",
+    "What's your biggest takeaway? Comment below!",
+    "Share this with someone who needs {benefit}!",
+    "Hit that save button if this helped you!",
+    "Link in bio for the full {resource/tutorial}!"
   ],
   "ai_generated": true,
   "patterns_source": "AI_GENERATED",
-  "last_ai_update": "2026-08-30T10:59:38.554440",
+  "last_ai_update": "2026-09-06T10:01:04.730430",
   "generation_model": "gemini/groq",
-  "last_saved": "2026-08-30T10:59:38.554450"
+  "last_saved": "2026-09-06T10:01:04.730442"
 }
