@@ -1,235 +1,235 @@
 {
-  "generated_at": "2026-09-06T09:36:15.244064",
-  "valid_until": "2026-09-06T23:59:15.244075",
+  "generated_at": "2026-09-07T10:38:19.920732",
+  "valid_until": "2026-09-07T23:59:19.920742",
   "categories": [
-    "Sports News & Highlights",
-    "Crypto Trading & Market Insights",
-    "Weather & Climate Explanations",
-    "Global Humanitarian News",
-    "Gaming Beta & Review Content",
-    "Disaster & Emergency Preparedness",
-    "Daily Puzzle & Brain Teaser Solutions",
-    "Financial Literacy & Investing",
-    "Current Events & News Summaries",
-    "Educational 'How-To' & Explainer Videos",
-    "Pop Culture & Entertainment Buzz",
-    "Viral Challenge & Meme Content",
-    "Quick Recipe & Food Hacks",
-    "Home & Lifestyle Organization",
-    "Fitness & Wellness Quick Tips"
+    "Holiday Weekend Guides & Hacks",
+    "Pop Culture Explanations & Theories",
+    "Celebrity & Actor Spotlights",
+    "Tech Gadget Rumors & Previews",
+    "Cybersecurity & Digital Safety Tips",
+    "Current Events & News Analysis",
+    "Weather & Disaster Preparedness",
+    "Short-form Finance & Economy Updates",
+    "Food & Drink Trends & Recipes",
+    "Travel & Staycation Ideas",
+    "DIY & Home Improvement Projects",
+    "Educational \"Explainers\" (ELI5)",
+    "Lifestyle & Productivity Hacks",
+    "Entertainment Reviews & Recommendations",
+    "Community & Local Event Spotlights"
   ],
   "concepts": [
     {
-      "category": "Sports News & Highlights",
-      "topic": "The College Football Playoff Upset That Shocked Everyone",
-      "hook": "Did you see *that* play? This underdog team just pulled off the impossible!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Holiday Weekend Guides & Hacks",
+      "topic": "Last-Minute Memorial Day BBQ Hacks",
+      "hook": "Forget the grocery store chaos! Your Memorial Day BBQ is about to get a serious upgrade with these last-minute hacks.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports News & Highlights",
-      "topic": "The NBA's Most Controversial Foul Call Last Night",
-      "hook": "The referee blew the whistle, but did he blow the game? Let's break down the call everyone's talking about!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Crypto Trading & Market Insights",
-      "topic": "What is 'Halving' in Bitcoin and Why Does it Matter to Your Portfolio?",
-      "hook": "Bitcoin halving is coming, and no, it's not a haircut for your coins! Here\u2019s what it means for your crypto.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Crypto Trading & Market Insights",
-      "topic": "The Next Meme Coin Surge? Analyzing Recent Whale Activity",
-      "hook": "Think meme coins are dead? Whales are buying again, and you won't believe which one is getting attention.",
-      "voice_style": "mysterious",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Weather & Climate Explanations",
-      "topic": "The Mystery of 'Atmospheric Rivers' and California's Extreme Rains",
-      "hook": "Ever wonder why California gets hammered with rain some years? It's not just El Ni\u00f1o...",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Weather & Climate Explanations",
-      "topic": "How Shrinking Glaciers Are Changing Ski Seasons Forever",
-      "hook": "Your favorite ski resort might not look the same in 20 years. Here's why and what it means for winter sports.",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 44
-    },
-    {
-      "category": "Global Humanitarian News",
-      "topic": "The Silent Hunger Crisis in East Africa: What You Need to Know",
-      "hook": "While the world watches elsewhere, millions are facing starvation right now. Here's the crisis you're not hearing about.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Global Humanitarian News",
-      "topic": "Solar Power Bringing Clean Water to Remote Villages",
-      "hook": "Imagine clean water for the first time, powered entirely by the sun. See this incredible project changing lives.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
+      "category": "Holiday Weekend Guides & Hacks",
+      "topic": "Unlocking Secret Holiday Travel Deals",
+      "hook": "Think holiday travel is always expensive? You've been missing out on *this* secret window to find deals that actually work!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Gaming Beta & Review Content",
-      "topic": "My First 24 Hours with the 'Stellaris: Overlord' Expansion Beta",
-      "hook": "I got early access to the new Stellaris expansion, and my galaxy is already in chaos! Was it worth the hype?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Gaming Beta & Review Content",
-      "topic": "The Game Mechanic in 'Elden Ring: Shadow of the Erdtree' That Changes Everything",
-      "hook": "Forget dodging and parrying, this new Elden Ring mechanic is going to blow your mind and change how you play!",
-      "voice_style": "friendly",
-      "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Disaster & Emergency Preparedness",
-      "topic": "The One Item You Forget for Your Earthquake Go-Bag",
-      "hook": "You've got water, food, first aid... but you're probably missing THIS vital item for an earthquake!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 41
-    },
-    {
-      "category": "Disaster & Emergency Preparedness",
-      "topic": "Myth vs. Fact: Can You Really Drink Water from Your Hot Water Heater in an Emergency?",
-      "hook": "Emergency water sources: is your hot water heater a safe bet or a health risk? Let's clear up the confusion.",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Daily Puzzle & Brain Teaser Solutions",
-      "topic": "Can You Spot the Hidden Animal in This Impossible Illusion?",
-      "hook": "Only 1% of people can find the hidden animal here. Are you one of them? Let's find out!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Daily Puzzle & Brain Teaser Solutions",
-      "topic": "The Viral River Crossing Riddle Solved in 60 Seconds",
-      "hook": "Everyone's stuck on this river crossing riddle. Let me show you the trick to solve it in a minute!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Pop Culture Explanations & Theories",
+      "topic": "The 'Barbenheimer' Phenomenon Explained",
+      "hook": "Remember 'Barbenheimer'? It wasn't just a meme, it was a genius cultural moment. Here's exactly why it took over the world!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Financial Literacy & Investing",
-      "topic": "The Power of Compound Interest: Your Money's Secret Weapon",
-      "hook": "Want to make your money work harder than you do? This one principle can change everything for your financial future.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Pop Culture Explanations & Theories",
+      "topic": "Fan Theories: Who is the REAL Villain in Dune: Part Two?",
+      "hook": "Still reeling from *Dune: Part Two*? Let's dive deep into a fan theory that changes *everything* about who the true antagonist really is!",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
       "target_duration": 50
     },
     {
-      "category": "Financial Literacy & Investing",
-      "topic": "The Biggest Budgeting Mistake College Students Make",
-      "hook": "Fresh out of high school? This one budgeting mistake could sink your finances before they even start. Avoid it!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 44
+      "category": "Celebrity & Actor Spotlights",
+      "topic": "Zendaya's Unstoppable Rise: From Disney to Diva",
+      "hook": "From Disney Channel darling to Hollywood's most sought-after star... How did Zendaya become *the* Zendaya? Her journey is wild.",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
+      "target_duration": 45
     },
     {
-      "category": "Current Events & News Summaries",
-      "topic": "The Red Sea Crisis: Why Shipping Chaos is Affecting Your Wallet",
-      "hook": "Ever wonder why your groceries are costing more? It might have something to do with ships halfway across the world.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 47
+      "category": "Celebrity & Actor Spotlights",
+      "topic": "The Enigma of Keanu Reeves: More Than Just a Meme",
+      "hook": "Beyond 'You're Breathtaking!' there's a legend. Why is Keanu Reeves the internet's favorite human? It's deeper than you think.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
     },
     {
-      "category": "Current Events & News Summaries",
-      "topic": "The Ethical Dilemma of AI-Generated Art: Who Owns the Creativity?",
-      "hook": "AI is creating stunning art, but who's the real artist? The answer is more complicated than you think.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 49
+      "category": "Tech Gadget Rumors & Previews",
+      "topic": "The iPhone 16 Camera Leak: What You NEED to Know",
+      "hook": "STOP SCROLLING! We just got major leaks about the iPhone 16's camera, and it's wild \u2013 totally changing how you take photos.",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 45
     },
     {
-      "category": "Educational 'How-To' & Explainer Videos",
-      "topic": "How to Speed-Read Any Article in Under 2 Minutes",
-      "hook": "Drowning in articles and emails? Learn to speed-read like a pro in less than a minute with these simple tricks!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Tech Gadget Rumors & Previews",
+      "topic": "Foldable Phones: Hype or the Future? A Deep Dive",
+      "hook": "Are foldable phones the future, or just a really expensive gimmick? Let's break down the latest models and tell you if they're worth it.",
+      "voice_style": "Authoritative",
+      "music_mood": "Upbeat",
+      "target_duration": 50
     },
     {
-      "category": "Educational 'How-To' & Explainer Videos",
-      "topic": "The Science Behind Why We Get Brain Freeze",
-      "hook": "That agonizing pain after your ice cream? Here's the bizarre reason your brain does that, explained by science!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 46
+      "category": "Cybersecurity & Digital Safety Tips",
+      "topic": "The ONLY 3 Password Habits You Need to Stay Safe",
+      "hook": "You're probably still making these password mistakes. Here are the ONLY three habits you NEED to stay safe online, starting today.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Cybersecurity & Digital Safety Tips",
+      "topic": "Spotting AI Phishing Scams in Your Inbox",
+      "hook": "AI isn't just making art \u2013 it's making scams scarier. Can you spot an AI-generated phishing email before it's too late?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Current Events & News Analysis",
+      "topic": "Why the Global Chip Shortage STILL Matters",
+      "hook": "Remember the chip shortage? It's not over, and it's quietly shaping everything you buy from cars to coffee makers. Here's why.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events & News Analysis",
+      "topic": "The Future of Remote Work: Is the Office Dead?",
+      "hook": "Your boss wants you back in the office, but is the 9-to-5 commute truly making a comeback, or is remote work here to stay?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Weather & Disaster Preparedness",
+      "topic": "Hurricane Season Essentials: Beyond Water and Canned Food",
+      "hook": "Hurricane season is HERE. You've got water, but do you have *this* essential survival gear? Most people forget it!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather & Disaster Preparedness",
+      "topic": "How to Create an Emergency 'Go Bag' in Under 30 Minutes",
+      "hook": "Natural disaster strikes. Do you have a 'Go Bag'? You can build one in under 30 minutes, and it could save your life!",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Short-form Finance & Economy Updates",
+      "topic": "Understanding Inflation: Why Your Groceries Cost So Much",
+      "hook": "Why did your grocery bill just punch you in the face? Let's break down inflation in under a minute and what it means for YOU.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Short-form Finance & Economy Updates",
+      "topic": "Side Hustle Spotlight: AI Prompt Engineering",
+      "hook": "Want to make extra cash using ChatGPT? The hottest new side hustle is prompt engineering, and you can learn it now!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Food & Drink Trends & Recipes",
+      "topic": "The 'Girl Dinner' Trend: Is it Healthy or Just a Vibe?",
+      "hook": "Everyone's talking 'Girl Dinner,' but is it a genius hack or just a collection of snacks? A nutritionist weighs in!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Food & Drink Trends & Recipes",
+      "topic": "Viral 3-Ingredient Dessert You Can Make in 5 Minutes",
+      "hook": "Craving something sweet but have zero time? This viral 3-ingredient dessert is ready in literally 5 minutes and tastes gourmet!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel & Staycation Ideas",
+      "topic": "Hidden Gem Staycations: Recharging Without Leaving Your City",
+      "hook": "Stressed but can't travel? Here's how to have an epic staycation and recharge without even leaving your city \u2013 these spots are hidden gems!",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel & Staycation Ideas",
+      "topic": "Budget Travel Hacks: Flying for (Almost) Free",
+      "hook": "Imagine flying across the country for basically nothing. It's not a dream, it's a budget travel hack, and I'll show you how to do it!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
@@ -237,23 +237,23 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
       "music_mood": "chill"
     }
   ],
