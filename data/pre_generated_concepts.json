@@ -1,220 +1,215 @@
 {
-  "generated_at": "2026-09-07T10:38:19.920732",
-  "valid_until": "2026-09-07T23:59:19.920742",
+  "generated_at": "2026-09-08T09:59:38.694244",
+  "valid_until": "2026-09-08T23:59:38.694254",
   "categories": [
-    "Holiday Weekend Guides & Hacks",
-    "Pop Culture Explanations & Theories",
-    "Celebrity & Actor Spotlights",
-    "Tech Gadget Rumors & Previews",
-    "Cybersecurity & Digital Safety Tips",
-    "Current Events & News Analysis",
-    "Weather & Disaster Preparedness",
-    "Short-form Finance & Economy Updates",
-    "Food & Drink Trends & Recipes",
-    "Travel & Staycation Ideas",
-    "DIY & Home Improvement Projects",
-    "Educational \"Explainers\" (ELI5)",
-    "Lifestyle & Productivity Hacks",
-    "Entertainment Reviews & Recommendations",
-    "Community & Local Event Spotlights"
+    "Geopolitical News & Conflict Explanations",
+    "AI Innovations & Tech Future",
+    "Election 2026 & Political Pulse",
+    "Daily Mind Games & Puzzle Solves",
+    "Global Travel & Aviation Insights",
+    "Music Legends & Cultural Moments",
+    "Emerging Voices & Cultural Figures",
+    "Fall Lifestyle & Seasonal Trends",
+    "Personal Finance & Economic Outlook",
+    "Quick Explainer & \"Edutainment\" Shorts",
+    "Health & Wellness Hacks",
+    "Foodie Adventures & Recipe Demos",
+    "Comedy Skits & Relatable Humor",
+    "DIY & Home Improvement Ideas",
+    "Gaming & Esport Highlights"
   ],
   "concepts": [
     {
-      "category": "Holiday Weekend Guides & Hacks",
-      "topic": "Last-Minute Memorial Day BBQ Hacks",
-      "hook": "Forget the grocery store chaos! Your Memorial Day BBQ is about to get a serious upgrade with these last-minute hacks.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Geopolitical News & Conflict Explanations",
+      "topic": "The Arctic Race: Why nations are scrambling for the North Pole's resources and control.",
+      "hook": "Think the Arctic is just ice? Think again. A frozen gold rush is heating up global tensions, and it could change everything.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Holiday Weekend Guides & Hacks",
-      "topic": "Unlocking Secret Holiday Travel Deals",
-      "hook": "Think holiday travel is always expensive? You've been missing out on *this* secret window to find deals that actually work!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Pop Culture Explanations & Theories",
-      "topic": "The 'Barbenheimer' Phenomenon Explained",
-      "hook": "Remember 'Barbenheimer'? It wasn't just a meme, it was a genius cultural moment. Here's exactly why it took over the world!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Pop Culture Explanations & Theories",
-      "topic": "Fan Theories: Who is the REAL Villain in Dune: Part Two?",
-      "hook": "Still reeling from *Dune: Part Two*? Let's dive deep into a fan theory that changes *everything* about who the true antagonist really is!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Geopolitical News & Conflict Explanations",
+      "topic": "Taiwan Semiconductor's Global Impact: Why one island's chip production could ignite a worldwide crisis.",
+      "hook": "This tiny island produces 90% of the world's most advanced chips. If something happens there, your tech stops working, globally. Here's why.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Celebrity & Actor Spotlights",
-      "topic": "Zendaya's Unstoppable Rise: From Disney to Diva",
-      "hook": "From Disney Channel darling to Hollywood's most sought-after star... How did Zendaya become *the* Zendaya? Her journey is wild.",
-      "voice_style": "Dramatic",
-      "music_mood": "Inspirational",
-      "target_duration": 45
+      "category": "AI Innovations & Tech Future",
+      "topic": "Mind-Reading AI: The groundbreaking tech allowing AI to visualize your thoughts and its ethical implications.",
+      "hook": "Imagine an AI that sees what you're thinking, translating your brainwaves into images. It's no longer sci-fi, and the implications are HUGE.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 48
     },
     {
-      "category": "Celebrity & Actor Spotlights",
-      "topic": "The Enigma of Keanu Reeves: More Than Just a Meme",
-      "hook": "Beyond 'You're Breathtaking!' there's a legend. Why is Keanu Reeves the internet's favorite human? It's deeper than you think.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "AI Innovations & Tech Future",
+      "topic": "AI in Drug Discovery: How artificial intelligence is revolutionizing medicine by finding cures faster than ever before.",
+      "hook": "Forget years of lab work! AI is designing new drugs in *days*, not decades. Are we on the brink of an AI-powered health revolution?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Tech Gadget Rumors & Previews",
-      "topic": "The iPhone 16 Camera Leak: What You NEED to Know",
-      "hook": "STOP SCROLLING! We just got major leaks about the iPhone 16's camera, and it's wild \u2013 totally changing how you take photos.",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
-      "target_duration": 45
+      "category": "Election 2026 & Political Pulse",
+      "topic": "The Youth Vote Swings: How Gen Z's evolving political priorities could reshape Election 2026 outcomes.",
+      "hook": "Gen Z isn't just scrolling TikTok; they're organizing. Their next move could completely flip Election 2026, and here's how.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Tech Gadget Rumors & Previews",
-      "topic": "Foldable Phones: Hype or the Future? A Deep Dive",
-      "hook": "Are foldable phones the future, or just a really expensive gimmick? Let's break down the latest models and tell you if they're worth it.",
-      "voice_style": "Authoritative",
-      "music_mood": "Upbeat",
-      "target_duration": 50
+      "category": "Election 2026 & Political Pulse",
+      "topic": "The 'Invisible Primary': How dark money and early endorsements truly shape election narratives before campaigns even start.",
+      "hook": "Before you even see a ballot, the real election battle is already raging. Who's really pulling the strings in the 'invisible primary'?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 47
     },
     {
-      "category": "Cybersecurity & Digital Safety Tips",
-      "topic": "The ONLY 3 Password Habits You Need to Stay Safe",
-      "hook": "You're probably still making these password mistakes. Here are the ONLY three habits you NEED to stay safe online, starting today.",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Cybersecurity & Digital Safety Tips",
-      "topic": "Spotting AI Phishing Scams in Your Inbox",
-      "hook": "AI isn't just making art \u2013 it's making scams scarier. Can you spot an AI-generated phishing email before it's too late?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Daily Mind Games & Puzzle Solves",
+      "topic": "The 'Prisoner's Dilemma': A classic logic puzzle that reveals how we make choices under pressure and trust.",
+      "hook": "Would you betray your partner for a lighter sentence? This timeless dilemma shows why trusting your gut might be completely wrong.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Current Events & News Analysis",
-      "topic": "Why the Global Chip Shortage STILL Matters",
-      "hook": "Remember the chip shortage? It's not over, and it's quietly shaping everything you buy from cars to coffee makers. Here's why.",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
+      "category": "Daily Mind Games & Puzzle Solves",
+      "topic": "Unlocking the 'Impossible' Matchstick Puzzle: Can you solve this tricky visual brain teaser with just one move?",
+      "hook": "Only 1% of people can move just *one* matchstick to solve this 'impossible' equation. Are you one of them? Let's find out!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Current Events & News Analysis",
-      "topic": "The Future of Remote Work: Is the Office Dead?",
-      "hook": "Your boss wants you back in the office, but is the 9-to-5 commute truly making a comeback, or is remote work here to stay?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
+      "category": "Global Travel & Aviation Insights",
+      "topic": "The 7-Second Rule: Why pilots have just moments to react to bird strikes at takeoff and what happens next.",
+      "hook": "That sudden jolt on takeoff? It might be a bird strike. Pilots have *seconds* to decide a life-or-death maneuver. Here's why.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 43
     },
     {
-      "category": "Weather & Disaster Preparedness",
-      "topic": "Hurricane Season Essentials: Beyond Water and Canned Food",
-      "hook": "Hurricane season is HERE. You've got water, but do you have *this* essential survival gear? Most people forget it!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Global Travel & Aviation Insights",
+      "topic": "The World's Smallest 'Country': Visiting the unacknowledged micronation hidden in plain sight.",
+      "hook": "Forget passports! There's a 'country' in the middle of the ocean claiming sovereignty, with its own royal family and currency. Can you visit?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 49
+    },
+    {
+      "category": "Music Legends & Cultural Moments",
+      "topic": "The Lost Beatles Track: The story behind the unreleased song that almost changed music history.",
+      "hook": "What if the Beatles had one more hit, a song too wild even for them? The truth behind their lost, controversial track will shock you.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 46
+    },
+    {
+      "category": "Music Legends & Cultural Moments",
+      "topic": "The Birth of Hip-Hop: How a single Bronx block party sparked a global revolution in music and culture.",
+      "hook": "It wasn't a record deal or a studio. It was one DJ, two turntables, and a party in the Bronx that changed music forever. Here's how.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Emerging Voices & Cultural Figures",
+      "topic": "The Rise of 'Eco-Influencers': Meet the creators making sustainability trendy, not preachy, for a new generation.",
+      "hook": "Tired of doom-and-gloom climate news? These new influencers are making saving the planet look cool, fun, and totally doable.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 41
+    },
+    {
+      "category": "Emerging Voices & Cultural Figures",
+      "topic": "Gen Z's 'Quiet Luxury' Craze: Why young people are ditching flashy brands for understated elegance and quality.",
+      "hook": "Logos are OUT. Understated style is IN. Gen Z is redefining luxury, and it's not what you think. Here's the truth about 'quiet luxury'.",
+      "voice_style": "energetic",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Weather & Disaster Preparedness",
-      "topic": "How to Create an Emergency 'Go Bag' in Under 30 Minutes",
-      "hook": "Natural disaster strikes. Do you have a 'Go Bag'? You can build one in under 30 minutes, and it could save your life!",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
+      "category": "Fall Lifestyle & Seasonal Trends",
+      "topic": "The 'Dark Academia' Fall Aesthetic: How to master the moody, intellectual trend for autumn fashion and decor.",
+      "hook": "Sweaters, old books, and mysterious vibes. 'Dark Academia' is the ultimate fall aesthetic, and here's exactly how to nail it this season.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Short-form Finance & Economy Updates",
-      "topic": "Understanding Inflation: Why Your Groceries Cost So Much",
-      "hook": "Why did your grocery bill just punch you in the face? Let's break down inflation in under a minute and what it means for YOU.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
+      "category": "Fall Lifestyle & Seasonal Trends",
+      "topic": "Pumpkin Spice Beyond the Latte: Unexpected fall flavors and recipes you NEED to try this season.",
+      "hook": "Think pumpkin spice is just for coffee? You're missing out! These surprising fall twists will blow your mind and your tastebuds.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Short-form Finance & Economy Updates",
-      "topic": "Side Hustle Spotlight: AI Prompt Engineering",
-      "hook": "Want to make extra cash using ChatGPT? The hottest new side hustle is prompt engineering, and you can learn it now!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
+      "category": "Personal Finance & Economic Outlook",
+      "topic": "Understanding Inflation vs. Stagflation: Why one is scary, but the other could be catastrophic for your wallet.",
+      "hook": "Everyone talks about inflation, but have you heard of 'stagflation'? It's a silent economic killer that could hit your wallet hard. Here's why.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
     },
     {
-      "category": "Food & Drink Trends & Recipes",
-      "topic": "The 'Girl Dinner' Trend: Is it Healthy or Just a Vibe?",
-      "hook": "Everyone's talking 'Girl Dinner,' but is it a genius hack or just a collection of snacks? A nutritionist weighs in!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Personal Finance & Economic Outlook",
+      "topic": "The 'Latte Factor' Lie: Why cutting small expenses won't make you rich, and what actually will.",
+      "hook": "Are you still being told to skip your daily coffee to save money? That's probably a lie. Here's what *actually* impacts your wealth.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Quick Explainer & \"Edutainment\" Shorts",
+      "topic": "The 'Placebo Effect' Mystery: How your mind can heal your body, even when there's no real medicine.",
+      "hook": "Take a sugar pill, feel better? The 'placebo effect' isn't just fake medicine; it's a powerful mind-body phenomenon that baffles science.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Quick Explainer & \"Edutainment\" Shorts",
+      "topic": "Why We Say 'Break a Leg': The surprising, superstitious origin of this common good luck phrase.",
+      "hook": "Ever wonder why we tell actors to 'break a leg' before a show? The real reason is darker and way more superstitious than you think.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
-    },
-    {
-      "category": "Food & Drink Trends & Recipes",
-      "topic": "Viral 3-Ingredient Dessert You Can Make in 5 Minutes",
-      "hook": "Craving something sweet but have zero time? This viral 3-ingredient dessert is ready in literally 5 minutes and tastes gourmet!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel & Staycation Ideas",
-      "topic": "Hidden Gem Staycations: Recharging Without Leaving Your City",
-      "hook": "Stressed but can't travel? Here's how to have an epic staycation and recharge without even leaving your city \u2013 these spots are hidden gems!",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel & Staycation Ideas",
-      "topic": "Budget Travel Hacks: Flying for (Almost) Free",
-      "hook": "Imagine flying across the country for basically nothing. It's not a dream, it's a budget travel hack, and I'll show you how to do it!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -222,39 +217,44 @@
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
