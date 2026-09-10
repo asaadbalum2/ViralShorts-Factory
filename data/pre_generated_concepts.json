@@ -1,259 +1,259 @@
 {
-  "generated_at": "2026-09-09T10:04:59.106721",
-  "valid_until": "2026-09-09T23:59:59.106730",
+  "generated_at": "2026-09-10T09:58:27.410589",
+  "valid_until": "2026-09-10T23:59:27.410598",
   "categories": [
-    "Election Buzz & Political Takes",
-    "Cricket Fever: Match Highlights & Fan Reactions",
-    "NBA Trade Speculation & Player Watch",
-    "Hollywood's Hottest: Celebrity News & Style",
-    "Who's Trending Now? Viral Personalities & Stories",
-    "Fall Vibe Checks & Aesthetic Goals",
-    "Quick Takes: News Explained in 60 Seconds",
-    "Deep Dive Debates: Sports & Pop Culture Opinions",
-    "AI Art & Digital Creativity Showcases",
-    "Mind-Blowing Facts & 'Did You Know?' Moments",
-    "DIY & Home Renovation Hacks (Budget Edition)",
-    "Gamer's Guide: New Releases & Hot Tips",
-    "Wellness & Mental Health Mini-Guides",
-    "Foodie Challenges & Viral Recipe Recreations",
-    "Fashion Forward: Fall Trends & Outfit Inspo"
+    "Sports Highlights & Game Reactions",
+    "AI & Tech Innovation Demos",
+    "TV Show Fan Theories & Recaps",
+    "Celebrity Pop Culture Flashbacks & Updates",
+    "Fall Fashion & Styling Hacks",
+    "Quick & Easy Fall Recipes",
+    "DIY Home Decor & Craft Ideas",
+    "Educational & Productivity Tips",
+    "Relatable Comedy Skits",
+    "Pet Adventures & Cute Moments",
+    "Fitness & Wellness Challenges",
+    "Travel Vlogs & Destination Spotlights",
+    "Gaming Highlights & Esports Updates",
+    "Beauty & Skincare Mini-Tutorials",
+    "Motivational & Self-Improvement Snippets"
   ],
   "concepts": [
     {
-      "category": "Election Buzz & Political Takes",
-      "topic": "The unexpected surge of a third-party candidate in a key swing state and their unconventional campaign tactics.",
-      "hook": "Is this dark horse candidate about to flip a critical swing state? You won't believe the grassroots movement behind their sudden rise!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Sports Highlights & Game Reactions",
+      "topic": "The 'Impossible Goal' from a forgotten amateur football match",
+      "hook": "Ever seen a goal so absurd, you'd swear it was CGI? This one actually happened!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Cricket Fever: Match Highlights & Fan Reactions",
-      "topic": "The viral fan reaction meme from the last T20 World Cup final that perfectly captured the tension.",
-      "hook": "Remember THAT look? The internet broke when this fan's face became the meme of the T20 World Cup final!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Sports Highlights & Game Reactions",
+      "topic": "Unpacking the 'Curse of the Billy Goat' in baseball \u2013 did it really end?",
+      "hook": "Was it pure skill, or did a centuries-old curse finally break that night?",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "AI & Tech Innovation Demos",
+      "topic": "Demo of an AI tool that can generate hyper-realistic virtual fashion models.",
+      "hook": "Meet your new favorite influencer: she's entirely AI-generated and her style is flawless.",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
       "target_duration": 40
     },
     {
-      "category": "NBA Trade Speculation & Player Watch",
-      "topic": "Why the Lakers *must* trade for Zach LaVine, and the astronomical price they'd pay to get him.",
-      "hook": "The Lakers' next big move? Sources say Zach LaVine is their number one target, but the price tag is insane!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "AI & Tech Innovation Demos",
+      "topic": "Exploring bio-luminescent plants for sustainable home lighting.",
+      "hook": "What if your houseplants could light up your room without electricity?",
+      "voice_style": "Energetic",
+      "music_mood": "Mysterious",
+      "target_duration": 42
     },
     {
-      "category": "Hollywood's Hottest: Celebrity News & Style",
-      "topic": "The secret reason behind Zendaya's latest red carpet look and its hidden political message.",
-      "hook": "Zendaya's latest red carpet look wasn't just fashion, it was a secret political statement! Here's what you missed.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "category": "TV Show Fan Theories & Recaps",
+      "topic": "The hidden meaning behind the 'Man in Black' in Westworld Season 1.",
+      "hook": "Was the Man in Black truly a villain, or a misunderstood hero all along?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 47
     },
     {
-      "category": "Who's Trending Now? Viral Personalities & Stories",
-      "topic": "The heartwarming story of the 'Dog Walker of Hope' who reunited dozens of lost pets after a hurricane.",
-      "hook": "Meet the incredible 'Dog Walker of Hope' whose viral mission is melting hearts and reuniting families after the storm!",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
+      "category": "TV Show Fan Theories & Recaps",
+      "topic": "A deep dive into the 'Lost' finale's most debated unanswered questions.",
+      "hook": "Did 'Lost' really leave us hanging, or were the answers always in front of us?",
+      "voice_style": "Dramatic",
+      "music_mood": "Dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Celebrity Pop Culture Flashbacks & Updates",
+      "topic": "Unearthing Macaulay Culkin's forgotten music career post-Home Alone.",
+      "hook": "Before his podcast, Macaulay Culkin had a band called The Pizza Underground. Seriously.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Celebrity Pop Culture Flashbacks & Updates",
+      "topic": "The infamous 'Gwyneth Paltrow's head in a box' moment from the movie Se7en.",
+      "hook": "Remember the most shocking movie ending of the 90s? Let's talk about *that* box.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Fall Fashion & Styling Hacks",
+      "topic": "Transforming a basic button-down into 3 chic fall layering pieces.",
+      "hook": "Your basic button-down shirt is about to become your fall fashion secret weapon.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Fall Vibe Checks & Aesthetic Goals",
-      "topic": "DIY cozy fall decor on a budget: transform your living room for under $50 with these hacks.",
-      "hook": "Ready for the ultimate fall cozy vibe? I transformed my living room for under $50, and you can too!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Fall Fashion & Styling Hacks",
+      "topic": "DIY distressed denim for fall with a cozy flannel patch detail.",
+      "hook": "Don't buy new distressed jeans \u2013 I'll show you how to upgrade your old ones with a fall twist!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "One-pan roasted harvest vegetables with maple glaze.",
+      "hook": "Craving fall flavors without the kitchen chaos? This one-pan wonder is your answer!",
+      "voice_style": "Enthusiastic",
+      "music_mood": "Chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "No-bake pumpkin cheesecake parfaits in under 10 minutes.",
+      "hook": "Get your pumpkin fix with zero baking and maximum deliciousness!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Quick Takes: News Explained in 60 Seconds",
-      "topic": "Explaining the new global climate treaty and its potential impact on your daily life, simplified.",
-      "hook": "What's this new climate treaty mean for YOU? I'm breaking down the biggest global news in under 60 seconds.",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "category": "DIY Home Decor & Craft Ideas",
+      "topic": "Creating a minimalist floating shelf display for fall foliage.",
+      "hook": "Bring the beauty of autumn indoors with this super easy, elegant floating shelf hack.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "DIY Home Decor & Craft Ideas",
+      "topic": "Upcycling old wine bottles into spooky-chic fall potion bottles.",
+      "hook": "Don't toss those empty wine bottles! Turn them into the coolest, spookiest fall decor.",
+      "voice_style": "Energetic",
+      "music_mood": "Mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Educational & Productivity Tips",
+      "topic": "The 'Two-Minute Rule' for beating procrastination on big projects.",
+      "hook": "Can two minutes really change your entire workflow? You'll be shocked.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
       "target_duration": 40
     },
     {
-      "category": "Deep Dive Debates: Sports & Pop Culture Opinions",
-      "topic": "Is 'Succession' truly the greatest TV drama of all time, or is it secretly overrated by critics?",
-      "hook": "Unpopular opinion alert: Is 'Succession' actually overrated, or is it TV's undisputed GOAT? Let's settle this!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Educational & Productivity Tips",
+      "topic": "How to use 'mind-mapping' for brainstorming and organizing complex ideas.",
+      "hook": "Are your thoughts a tangled mess? Unlock your brain's full potential with this visual trick.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 46
     },
     {
-      "category": "AI Art & Digital Creativity Showcases",
-      "topic": "Using Midjourney to create hyper-realistic fantasy landscapes: a quick tutorial for beginners.",
-      "hook": "Ever wanted to create breathtaking fantasy landscapes? I'll show you how to do it with AI in less than a minute!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Relatable Comedy Skits",
+      "topic": "The internal struggle of trying to pick out a single apple at the grocery store.",
+      "hook": "Why is choosing one perfect apple an Olympic sport?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 43
     },
     {
-      "category": "Mind-Blowing Facts & 'Did You Know?' Moments",
-      "topic": "The bizarre history of why flamingos are pink \u2013 it's not what you think and involves their diet!",
-      "hook": "Did you know flamingos aren't born pink? The real reason for their iconic color will absolutely shock you!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Relatable Comedy Skits",
+      "topic": "The different personalities you encounter in a crowded coffee shop.",
+      "hook": "From the 'laptop warrior' to the 'espresso sipper' \u2013 which one are you?",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 47
+    },
+    {
+      "category": "Pet Adventures & Cute Moments",
+      "topic": "A rescue cat's first time seeing snow and its hilarious reaction.",
+      "hook": "This indoor cat's mind was blown by the fluffy white stuff outside!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Election Buzz & Political Takes",
-      "topic": "The latest polling data on Gen Z voter turnout and its potential to swing the upcoming election.",
-      "hook": "Gen Z is about to shake up the election! New data reveals massive youth voter turnout, but who are they voting for?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Cricket Fever: Match Highlights & Fan Reactions",
-      "topic": "The controversial DRS decision that cost a team the match and ignited a fan riot online, with expert analysis.",
-      "hook": "Was it rigged?! This controversial DRS call just cost a team the match, and fans are absolutely losing it online!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "NBA Trade Speculation & Player Watch",
-      "topic": "Why Kevin Durant's legacy is on the line with his current team's struggles and potential free agency.",
-      "hook": "Is KD's legacy crumbling? As his team struggles, analysts are asking: what's next for Kevin Durant?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Hollywood's Hottest: Celebrity News & Style",
-      "topic": "The surprising friendship between two rival A-list actresses spotted vacationing together in secret.",
-      "hook": "Wait, WHAT?! These two A-list rivals just broke the internet with their secret vacation together! Is it a truce or a prank?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Who's Trending Now? Viral Personalities & Stories",
-      "topic": "The rise of 'BookTok' and how this viral trend is genuinely reviving physical bookstores across the globe.",
-      "hook": "Move over, Netflix! BookTok is taking over, and it's literally saving physical bookstores. Here's how!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Vibe Checks & Aesthetic Goals",
-      "topic": "The ultimate fall aesthetic playlist and why these specific songs perfectly capture the season's mood.",
-      "hook": "Your fall vibe check starts NOW! I've curated the ultimate playlist to perfectly soundtrack your cozy autumn days.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Quick Takes: News Explained in 60 Seconds",
-      "topic": "The latest developments in the ongoing AI ethics debate and why its implications matter for everyone.",
-      "hook": "AI is getting smarter, but is it ethical? I'm breaking down the biggest AI ethics debate in just 60 seconds.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Deep Dive Debates: Sports & Pop Culture Opinions",
-      "topic": "Is superhero fatigue real, and will the next phase of the Marvel Cinematic Universe flop critically?",
-      "hook": "Is superhero fatigue officially here? Are we all secretly tired of capes and powers, and will the next Marvel phase even stand a chance?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "AI Art & Digital Creativity Showcases",
-      "topic": "Showcasing the most mind-bending AI art pieces that are challenging the very definition of 'art' itself.",
-      "hook": "Prepare to have your mind blown! These AI art pieces aren't just creative, they're redefining what 'art' even means!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Mind-Blowing Facts & 'Did You Know?' Moments",
-      "topic": "The untold story of how a common household item, the Post-it Note, was invented purely by accident.",
-      "hook": "Did you know your favorite kitchen gadget was invented by a complete accident? The untold story will amaze you!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
+      "category": "Pet Adventures & Cute Moments",
+      "topic": "The surprisingly complex morning routine of a spoiled miniature pig.",
+      "hook": "You think *your* morning is hectic? Meet Penelope, the pig with a pampered schedule.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 44
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     }
   ],
