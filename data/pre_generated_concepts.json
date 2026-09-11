@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-10T09:58:27.410589",
-  "valid_until": "2026-09-10T23:59:27.410598",
+  "generated_at": "2026-09-11T09:56:17.633680",
+  "valid_until": "2026-09-11T23:59:17.633689",
   "categories": [
-    "Sports Highlights & Game Reactions",
-    "AI & Tech Innovation Demos",
-    "TV Show Fan Theories & Recaps",
-    "Celebrity Pop Culture Flashbacks & Updates",
-    "Fall Fashion & Styling Hacks",
-    "Quick & Easy Fall Recipes",
-    "DIY Home Decor & Craft Ideas",
-    "Educational & Productivity Tips",
-    "Relatable Comedy Skits",
-    "Pet Adventures & Cute Moments",
-    "Fitness & Wellness Challenges",
+    "Global Football Hype & Analysis",
+    "NBA Buzz & Pro Basketball Insights",
+    "Gaming News & Esports Updates",
+    "Online Betting & Crypto Trends",
+    "Personal Finance & Retirement Planning",
+    "Public Health & Safety Awareness",
+    "Autumn Lifestyle & Cozy Content",
+    "Quick Recipes & Food Hacks",
+    "AI & Future Tech Spotlights",
+    "Productivity & Self-Improvement",
     "Travel Vlogs & Destination Spotlights",
-    "Gaming Highlights & Esports Updates",
-    "Beauty & Skincare Mini-Tutorials",
-    "Motivational & Self-Improvement Snippets"
+    "Fall Fashion & Beauty Trends",
+    "Relatable Comedy & Skits",
+    "Pop Culture & Fandom Deep Dives",
+    "Daily Vlogs & 'A Day in the Life'"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights & Game Reactions",
-      "topic": "The 'Impossible Goal' from a forgotten amateur football match",
-      "hook": "Ever seen a goal so absurd, you'd swear it was CGI? This one actually happened!",
+      "category": "Global Football Hype & Analysis",
+      "topic": "The Next Unseen Wonderkid: Top 3 Breakout Stars for the Upcoming Football Season",
+      "hook": "Forget the old guard! One unknown teenager is about to set the football world on fire next season. Here\u2019s who you need to watch before everyone else.",
       "voice_style": "Energetic",
       "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights & Game Reactions",
-      "topic": "Unpacking the 'Curse of the Billy Goat' in baseball \u2013 did it really end?",
-      "hook": "Was it pure skill, or did a centuries-old curse finally break that night?",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "AI & Tech Innovation Demos",
-      "topic": "Demo of an AI tool that can generate hyper-realistic virtual fashion models.",
-      "hook": "Meet your new favorite influencer: she's entirely AI-generated and her style is flawless.",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "AI & Tech Innovation Demos",
-      "topic": "Exploring bio-luminescent plants for sustainable home lighting.",
-      "hook": "What if your houseplants could light up your room without electricity?",
-      "voice_style": "Energetic",
-      "music_mood": "Mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "TV Show Fan Theories & Recaps",
-      "topic": "The hidden meaning behind the 'Man in Black' in Westworld Season 1.",
-      "hook": "Was the Man in Black truly a villain, or a misunderstood hero all along?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "TV Show Fan Theories & Recaps",
-      "topic": "A deep dive into the 'Lost' finale's most debated unanswered questions.",
-      "hook": "Did 'Lost' really leave us hanging, or were the answers always in front of us?",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Celebrity Pop Culture Flashbacks & Updates",
-      "topic": "Unearthing Macaulay Culkin's forgotten music career post-Home Alone.",
-      "hook": "Before his podcast, Macaulay Culkin had a band called The Pizza Underground. Seriously.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Celebrity Pop Culture Flashbacks & Updates",
-      "topic": "The infamous 'Gwyneth Paltrow's head in a box' moment from the movie Se7en.",
-      "hook": "Remember the most shocking movie ending of the 90s? Let's talk about *that* box.",
-      "voice_style": "Dramatic",
+      "category": "Global Football Hype & Analysis",
+      "topic": "The Tactical Achilles Heel: Exposing the Secret Weaknesses of Modern High-Pressing Teams",
+      "hook": "Everyone talks about 'gegenpressing', but what if I told you the secret to consistently beating it is deceptively simple? Stay tuned, your club could use this.",
+      "voice_style": "Authoritative",
       "music_mood": "Intense",
-      "target_duration": 46
-    },
-    {
-      "category": "Fall Fashion & Styling Hacks",
-      "topic": "Transforming a basic button-down into 3 chic fall layering pieces.",
-      "hook": "Your basic button-down shirt is about to become your fall fashion secret weapon.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall Fashion & Styling Hacks",
-      "topic": "DIY distressed denim for fall with a cozy flannel patch detail.",
-      "hook": "Don't buy new distressed jeans \u2013 I'll show you how to upgrade your old ones with a fall twist!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 44
-    },
-    {
-      "category": "Quick & Easy Fall Recipes",
-      "topic": "One-pan roasted harvest vegetables with maple glaze.",
-      "hook": "Craving fall flavors without the kitchen chaos? This one-pan wonder is your answer!",
-      "voice_style": "Enthusiastic",
-      "music_mood": "Chill",
-      "target_duration": 41
-    },
-    {
-      "category": "Quick & Easy Fall Recipes",
-      "topic": "No-bake pumpkin cheesecake parfaits in under 10 minutes.",
-      "hook": "Get your pumpkin fix with zero baking and maximum deliciousness!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "DIY Home Decor & Craft Ideas",
-      "topic": "Creating a minimalist floating shelf display for fall foliage.",
-      "hook": "Bring the beauty of autumn indoors with this super easy, elegant floating shelf hack.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "DIY Home Decor & Craft Ideas",
-      "topic": "Upcycling old wine bottles into spooky-chic fall potion bottles.",
-      "hook": "Don't toss those empty wine bottles! Turn them into the coolest, spookiest fall decor.",
-      "voice_style": "Energetic",
+      "category": "NBA Buzz & Pro Basketball Insights",
+      "topic": "The NBA's Stealth Contender: Unmasking the Dark Horse Team Quietly Building a Championship Roster",
+      "hook": "Experts are wrong. There\u2019s one dark horse NBA team quietly building a championship roster, and you\u2019re not hearing about them. Until now, that is.",
+      "voice_style": "Dramatic",
       "music_mood": "Mysterious",
-      "target_duration": 48
+      "target_duration": 45
     },
     {
-      "category": "Educational & Productivity Tips",
-      "topic": "The 'Two-Minute Rule' for beating procrastination on big projects.",
-      "hook": "Can two minutes really change your entire workflow? You'll be shocked.",
+      "category": "NBA Buzz & Pro Basketball Insights",
+      "topic": "Clutch Free Throws: The Unseen Statistic That Actually Determines Playoff Games More Than You Think",
+      "hook": "Think dunks win games? The real MVP stat for clutch moments is hiding in plain sight, and it\u2019s not what you expect. This changes everything.",
       "voice_style": "Authoritative",
       "music_mood": "Inspirational",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Educational & Productivity Tips",
-      "topic": "How to use 'mind-mapping' for brainstorming and organizing complex ideas.",
-      "hook": "Are your thoughts a tangled mess? Unlock your brain's full potential with this visual trick.",
+      "category": "Gaming News & Esports Updates",
+      "topic": "The 'Broken' Mechanic: How Players Are Secretly Abusing a Glitch in the Hottest New AAA Game",
+      "hook": "Are you losing in *Cyberfront 2077*? It\u2019s not you, it\u2019s this one completely overpowered mechanic everyone is secretly exploiting to dominate lobbies. You need to know this.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming News & Esports Updates",
+      "topic": "Esports' Hidden Fortunes: The Untapped Goldmine in Coaching and Analytics Roles Beyond Pro Gaming",
+      "hook": "Pro gamers make millions, but what if I told you the real hidden fortunes in esports aren't on the controller? The secret's out: these roles are exploding.",
+      "voice_style": "Mysterious",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Online Betting & Crypto Trends",
+      "topic": "Spotting the Signs: Why 'Altcoin Season' Might Be Closer Than You Think and How to Prepare",
+      "hook": "The crypto giants are quiet, but if you know these three secret indicators, you'll be ready for the next altcoin explosion. Are you watching closely enough?",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Online Betting & Crypto Trends",
+      "topic": "The Psychological Trap: How 'Hot Streaks' in Online Betting Make You Most Vulnerable to Losses",
+      "hook": "You just won five bets in a row. Feeling invincible? That's exactly when you're most vulnerable to making a huge mistake. Here's why you need to stop.",
       "voice_style": "Calm",
+      "music_mood": "Dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance & Retirement Planning",
+      "topic": "The 'Invisible Tax': How Hidden Fees and Inflation Are Silently Eroding Your Retirement Savings",
+      "hook": "You think you're saving for retirement, but there's a hidden cost silently eroding your nest egg year after year. Do you know what this 'invisible tax' is?",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance & Retirement Planning",
+      "topic": "The 15-Minute Daily Habit That Could Add Thousands to Your Net Worth (It's Not a Get-Rich-Quick Scheme)",
+      "hook": "What if I told you 15 minutes a day could completely transform your financial future? No, it\u2019s not a get-rich-quick scheme. It\u2019s smarter, and anyone can do it.",
+      "voice_style": "Inspirational",
       "music_mood": "Chill",
-      "target_duration": 46
+      "target_duration": 45
     },
     {
-      "category": "Relatable Comedy Skits",
-      "topic": "The internal struggle of trying to pick out a single apple at the grocery store.",
-      "hook": "Why is choosing one perfect apple an Olympic sport?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 43
+      "category": "Public Health & Safety Awareness",
+      "topic": "Beyond Listening: The Hidden Dangers of 'Smart' Home Devices and Your Personal Privacy",
+      "hook": "Your smart speaker is listening, but what else is it collecting that could jeopardize your health and privacy without you even knowing? The truth might shock you.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Relatable Comedy Skits",
-      "topic": "The different personalities you encounter in a crowded coffee shop.",
-      "hook": "From the 'laptop warrior' to the 'espresso sipper' \u2013 which one are you?",
+      "category": "Public Health & Safety Awareness",
+      "topic": "Debunking Dangerous Trends: The Top 3 Viral 'Health Hacks' That Are Actually Harming You",
+      "hook": "That viral health hack everyone's trying? It could be doing more harm than good. Let's separate fact from dangerous fiction and protect your well-being.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Lifestyle & Cozy Content",
+      "topic": "The Secret Ingredient for a Genuinely Gourmet Homemade Pumpkin Spice Latte (Better Than Any Coffee Shop)",
+      "hook": "Don't waste another dollar on a mediocre PSL. My secret ingredient will make your homemade pumpkin spice latte taste like pure autumn magic. You won't guess what it is!",
       "voice_style": "Friendly",
       "music_mood": "Chill",
-      "target_duration": 47
+      "target_duration": 45
     },
     {
-      "category": "Pet Adventures & Cute Moments",
-      "topic": "A rescue cat's first time seeing snow and its hilarious reaction.",
-      "hook": "This indoor cat's mind was blown by the fluffy white stuff outside!",
+      "category": "Autumn Lifestyle & Cozy Content",
+      "topic": "Elevating Cozy Nooks: Genius DIY Faux Fireplace Ambience Hacks for Any Space",
+      "hook": "No fireplace? No problem. I'm about to show you how to create the ultimate cozy autumn ambiance with zero actual fire, and it looks incredibly realistic. Get ready for hygge!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Recipes & Food Hacks",
+      "topic": "The 5-Minute Microwave Mug Cake That Actually Tastes Gourmet and Fudgy (Seriously!)",
+      "hook": "Forget sad, dry mug cakes. I\u2019m sharing the 5-minute microwave hack that creates a rich, fudgy, gourmet dessert \u2013 seriously, you won\u2019t believe how good this is.",
       "voice_style": "Energetic",
       "music_mood": "Upbeat",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Pet Adventures & Cute Moments",
-      "topic": "The surprisingly complex morning routine of a spoiled miniature pig.",
-      "hook": "You think *your* morning is hectic? Meet Penelope, the pig with a pampered schedule.",
+      "category": "Quick Recipes & Food Hacks",
+      "topic": "The 'Magical' Water Trick: How to Revive Stale Bread and Make It Fresh Again in Minutes",
+      "hook": "About to throw out that rock-hard baguette? Stop! This ancient water trick will bring stale bread back to life, making it perfectly soft and fresh. It\u2019s pure kitchen magic.",
       "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "AI & Future Tech Spotlights",
+      "topic": "The 'Secret' Language of Power Prompts: How to Turn Basic Text into AI Art Masterpieces",
+      "hook": "Your AI art isn't hitting right? There's a hidden language of 'power prompts' that instantly transform basic text into stunning visuals. I'll show you the syntax for success.",
+      "voice_style": "Energetic",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "AI & Future Tech Spotlights",
+      "topic": "Beyond Chatbots: How AI Is Quietly Revolutionizing Personal Health Monitoring and Early Disease Detection",
+      "hook": "Forget health trackers. AI is secretly transforming how we understand our bodies, predicting illnesses before symptoms even appear. The future of personalized health is here, and it's mind-blowing.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Self-Improvement",
+      "topic": "The Eisenhower Matrix Deconstructed: Stop Doing Tasks That Don't Matter and Boost Your Productivity",
+      "hook": "Feeling overwhelmed? You're probably doing tasks that don't matter. The Eisenhower Matrix isn't just a tool, it's a mental shortcut to massive productivity. Let's break it down.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Self-Improvement",
+      "topic": "The '2-Minute Rule': A Psychological Loophole to Instantly Beat Procrastination and Start Any Task",
+      "hook": "Can't start that big project? The '2-minute rule' isn't just a hack, it's a psychological loophole that tricks your brain into instant action. Try it once, and you'll be hooked.",
+      "voice_style": "Energetic",
       "music_mood": "Upbeat",
-      "target_duration": 44
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
