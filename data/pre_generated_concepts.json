@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-12T09:31:48.137308",
-  "valid_until": "2026-09-12T23:59:48.137317",
+  "generated_at": "2026-09-13T10:30:24.138870",
+  "valid_until": "2026-09-13T23:59:24.138880",
   "categories": [
-    "Global News Decoded (BRICS Edition)",
-    "Road Trip Diaries & I-81 Adventures",
-    "School Life Unfiltered",
-    "Social Media Growth & IG Reels Hacks",
-    "Crypto Market Minute & Trading Trends",
-    "Theme Park Budgeting & Disneyland Tips",
-    "Water Sports & Swim Lifestyle",
-    "New Jersey Local's Guide",
-    "Financial Literacy & Smart Money Moves",
-    "Current Events Explained Simply",
-    "Travel Hacks & Destination Guides",
-    "Infrastructure & Construction Vlogs",
-    "Student & Teacher Support/Wellness",
-    "Viral Challenges & Trending Sounds",
-    "Regional Food & Drink Spotlights"
+    "Sports Game Recaps & Analysis",
+    "Global Humanitarian News",
+    "Future Tech & Preparedness",
+    "Celebrity & Influencer Updates",
+    "Political Landscape & Current Affairs",
+    "Lottery Wins & Financial Aspirations",
+    "Autumn Lifestyle & Aesthetics",
+    "Quick Recipes & Food Hacks",
+    "DIY & Home Transformation",
+    "Pet Adorableness & Antics",
+    "Bite-sized Educational Content",
+    "Comedy Skits & Viral Sounds",
+    "Travel & Adventure Spots",
+    "Mental Wellness & Self-Care Journeys",
+    "Fashion Trends & Style Guides"
   ],
   "concepts": [
     {
-      "category": "Global News Decoded (BRICS Edition)",
-      "topic": "BRICS Expansion: Saudi Arabia & Iran's Strategic Moves",
-      "hook": "Did you know BRICS just got bigger? And two unexpected players are shaking up global energy and geopolitics!",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Global News Decoded (BRICS Edition)",
-      "topic": "The Myth of a Single BRICS Currency Explained",
-      "hook": "Everyone's talking about a BRICS currency replacing the dollar, but what's *really* happening behind the headlines?",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Road Trip Diaries & I-81 Adventures",
-      "topic": "Hidden Gems Off I-81 in Virginia's Shenandoah Valley",
-      "hook": "Stuck on I-81? Skip the truck stops! I found a secret waterfall just 10 minutes off the highway that you HAVE to see.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Road Trip Diaries & I-81 Adventures",
-      "topic": "The Ultimate Minimalist Packing Guide for a Week-Long Road Trip",
-      "hook": "My car used to be a disaster zone. Then I found *the* ultimate road trip packing hack that fits everything in ONE backpack!",
+      "category": "Sports Game Recaps & Analysis",
+      "topic": "The unbelievable last-second buzzer-beater that nobody saw coming in the Lakers-Celtics game.",
+      "hook": "Did you see *that*?! Last night's Lakers-Celtics game had a finish that's going down in history...",
       "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "School Life Unfiltered",
-      "topic": "Surviving Group Projects with the 'Slackers' Clause' Strategy",
-      "hook": "Group projects suck, right? Especially when you're doing all the work. Here's my secret weapon for fairness and getting an A.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "School Life Unfiltered",
-      "topic": "The Truth About College Dorm Meal Plans: A Cost-Benefit Analysis",
-      "hook": "Thinking about a college meal plan? Before you swipe your card, you NEED to hear this insider secret about saving hundreds.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Social Media Growth & IG Reels Hacks",
-      "topic": "The 'Hook-First' Strategy for Guaranteed Viral Instagram Reels",
-      "hook": "My Reels used to flop. Then I learned *the* one trick that changed everything: The 'Hook-First' rule that gets millions of views!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Social Media Growth & IG Reels Hacks",
-      "topic": "Instagram's New AI Editing Tools: Level Up Your Reels Instantly",
-      "hook": "Forget fancy software! Instagram just dropped *insane* AI editing tools right inside the app. My mind is blown, yours will be too!",
-      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Crypto Market Minute & Trading Trends",
-      "topic": "Understanding Bitcoin Halving Cycles and Their Impact on Your Portfolio",
-      "hook": "Bitcoin halving just happened! What does it mean for your wallet, and why are experts whispering 'bull run' louder than ever?",
+      "category": "Sports Game Recaps & Analysis",
+      "topic": "Why the new quarterback's unconventional play style is either genius or a disaster waiting to happen for the Broncos.",
+      "hook": "Forget everything you know about QB play. This guy? He's rewriting the rulebook... or is he?",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Crypto Market Minute & Trading Trends",
-      "topic": "DeFi Lending vs. Staking: Which is Riskier for Passive Crypto Income?",
-      "hook": "Want to earn passive income in crypto? Don't dive into DeFi lending or staking until you know *this* crucial risk difference.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Theme Park Budgeting & Disneyland Tips",
-      "topic": "Disneyland Food Hacks: Save $50+ a Day on Meals & Snacks",
-      "hook": "Spending a fortune on churros at Disneyland? Stop! I'm about to reveal how to save $50+ on food, daily, without feeling deprived.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Theme Park Budgeting & Disneyland Tips",
-      "topic": "Mastering Genie+ for Maximum Rides at Disneyland & DCA",
-      "hook": "Genie+ is confusing, but I cracked the code! Get on more rides, wait less, and conquer Disneyland like a pro with these steps.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Water Sports & Swim Lifestyle",
-      "topic": "Essential Gear for Beginner Paddleboarders (Don't Waste Money!)",
-      "hook": "Thinking of trying paddleboarding this summer? Don't buy the wrong gear! Here are the 3 things you ACTUALLY need to start.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Water Sports & Swim Lifestyle",
-      "topic": "Overcoming Open Water Swim Anxiety: From Panic to Powerful Strokes",
-      "hook": "Open water swims used to terrify me. Here's how I went from panic attacks to powerful, calm strokes in just a few weeks.",
+      "category": "Global Humanitarian News",
+      "topic": "The surprising impact of 3D-printed housing on a remote village recovering from a natural disaster.",
+      "hook": "Imagine losing everything, then waking up to a brand new, 3D-printed home. It's happening NOW.",
       "voice_style": "inspirational",
+      "music_mood": "uplifting",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Humanitarian News",
+      "topic": "The silent heroes: How a small group of volunteers is bringing clean water solutions to a drought-stricken region in East Africa.",
+      "hook": "While the world debates, these unsung heroes are quietly changing lives, one drop at a time. This is their story.",
+      "voice_style": "dramatic",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "New Jersey Local's Guide",
-      "topic": "The Top 3 Underrated Pizza Spots in Central NJ (NYC Comparison)",
-      "hook": "Forget NYC! New Jersey has the best pizza, hands down. And I'm about to spill the sauce on my top 3 central NJ spots you've never heard of.",
+      "category": "Future Tech & Preparedness",
+      "topic": "Inside the world's first fully autonomous smart city being built from scratch in Saudi Arabia.",
+      "hook": "No cars, no roads, just pure AI living. Is this the future, or a sci-fi nightmare?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Future Tech & Preparedness",
+      "topic": "The rise of personal air mobility: Are flying cars finally here, and how will they change your commute?",
+      "hook": "Your morning traffic jam? It might soon be a thing of the past. Get ready to look UP.",
+      "voice_style": "energetic",
+      "music_mood": "uplifting",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity & Influencer Updates",
+      "topic": "The unexpected celebrity cameo that broke the internet during the latest blockbuster premiere.",
+      "hook": "Everyone thought the cast was set... then *this* happened. You won't believe who walked the red carpet!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity & Influencer Updates",
+      "topic": "How a TikTok influencer's controversial take on a classic fashion trend sparked a global style debate.",
+      "hook": "Is it iconic, or a fashion crime? This influencer just ignited the biggest style war of the year.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "New Jersey Local's Guide",
-      "topic": "Unique Day Trips from North Jersey (Beyond the Shore Beaches)",
-      "hook": "Tired of the same old Jersey Shore trip? I found a hidden gem just an hour from North Jersey that's perfect for a unique day out.",
+      "category": "Political Landscape & Current Affairs",
+      "topic": "The unexpected bipartisan bill aiming to overhaul mental health support for veterans: a rare moment of unity.",
+      "hook": "In a world divided, something remarkable just happened in Washington. A cause everyone can agree on?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Political Landscape & Current Affairs",
+      "topic": "Why the upcoming local election for city council could dramatically change your daily life, from traffic to taxes.",
+      "hook": "Think national politics doesn't affect you? Your city council race could reshape your entire commute, and your wallet.",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial Literacy & Smart Money Moves",
-      "topic": "The 'Latte Factor' Fallacy: Real Savings vs. Misleading Advice",
-      "hook": "You've heard 'stop buying lattes!' But that's NOT how you build wealth. Here's the *real* latte factor nobody talks about.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Financial Literacy & Smart Money Moves",
-      "topic": "How to Read Your Credit Report Beyond Just the Score",
-      "hook": "Your credit score is just a number. But what's *inside* your credit report? I'm showing you what to look for that actually matters for your future.",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Current Events Explained Simply",
-      "topic": "The EU AI Act: What Europe's New Law Means for Tech & You",
-      "hook": "Europe just passed the world's first AI Act. Is it going to change how you use TikTok and ChatGPT? Let's break down the impact.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Lottery Wins & Financial Aspirations",
+      "topic": "The surprising choices of a lottery winner who used their jackpot to fund an animal rescue empire.",
+      "hook": "Most dream of yachts. This lottery winner? They're building an army of furry friends. Their story will melt your heart.",
+      "voice_style": "inspirational",
+      "music_mood": "uplifting",
       "target_duration": 45
     },
     {
-      "category": "Current Events Explained Simply",
-      "topic": "Beyond Oil: The Hidden Reasons Behind Fluctuating Gas Prices",
-      "hook": "Gas prices are up AGAIN! But it's not just about oil supply. There's a hidden, often overlooked reason your wallet is hurting right now.",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 40
+      "category": "Lottery Wins & Financial Aspirations",
+      "topic": "How a financial expert advises new lottery winners to avoid common pitfalls and make their millions last.",
+      "hook": "You just won big. Now what? Before you buy that island, here's what the pros say you MUST do.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Lifestyle & Aesthetics",
+      "topic": "The ultimate guide to finding the perfect pumpkin patch for your fall aesthetic photoshoots and family fun.",
+      "hook": "Forget basic pumpkins. I found *the* most Instagrammable pumpkin patch you need to visit this autumn.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Lifestyle & Aesthetics",
+      "topic": "5 cozy autumn beverage hacks to elevate your hot chocolate or spiced cider game this season.",
+      "hook": "Your basic pumpkin spice latte just got a major upgrade. Get ready for cozy, delicious autumn vibes!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Recipes & Food Hacks",
+      "topic": "The viral 3-ingredient dessert that takes less than 10 minutes to make and tastes gourmet.",
+      "hook": "No time? No problem! This 3-ingredient dessert is blowing up the internet, and you can make it in minutes.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Recipes & Food Hacks",
+      "topic": "A genius meal prep hack using one roast chicken for 5 different dinners throughout the week.",
+      "hook": "One chicken, five dinners? Stop wasting food and start meal prepping like a pro with this game-changing hack.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY & Home Transformation",
+      "topic": "Transforming an old, forgotten dresser into a stylish, modern entryway console with just paint and hardware.",
+      "hook": "Don't throw it out! I turned this curbside trash into a stunning entryway masterpiece for under $50.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY & Home Transformation",
+      "topic": "The surprising power of peel-and-stick wallpaper for renters to completely change a room without permanent damage.",
+      "hook": "Renters, listen up! You *can* have that accent wall of your dreams without losing your security deposit.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Pet Adorableness & Antics",
+      "topic": "The tiny kitten who befriended a massive Great Dane, proving unlikely friendships are the best.",
+      "hook": "Everyone thought they'd never get along. Then *this* happened. Prepare for the cutest duo you've ever seen!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Pet Adorableness & Antics",
+      "topic": "Dogs reacting hilariously to their owners' \"pretend to throw the ball\" prank compilation.",
+      "hook": "You know the trick. They *know* the trick. But their reactions? Absolutely priceless every single time.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
