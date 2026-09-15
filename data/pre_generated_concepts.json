@@ -1,258 +1,258 @@
 {
-  "generated_at": "2026-09-14T10:54:33.560890",
-  "valid_until": "2026-09-14T23:59:33.560900",
+  "generated_at": "2026-09-15T10:19:15.632143",
+  "valid_until": "2026-09-15T23:59:15.632152",
   "categories": [
-    "Weather & Disaster Preparedness",
-    "Financial & Crypto Market Updates",
-    "AI & Tech Innovation",
-    "Policy & Current Affairs Explained",
-    "Celebrity & Pop Culture News",
-    "Sustainable Living & Climate Action",
-    "Economic & Consumer Finance Tips",
-    "Fall Seasonal & Lifestyle Trends",
-    "Relatable Humor & Skits",
-    "Edutainment & Quick Explainer Videos",
-    "DIY & Home Hacks",
-    "Quick Recipes & Food Demos",
-    "Wellness & Mental Health Awareness",
-    "Gaming & Entertainment Highlights",
-    "Local Spotlights & Community Stories"
+    "Geopolitical Flashpoints & Analysis",
+    "Reality TV Recaps & Fan Theories",
+    "Daily Weather & Climate Insights",
+    "Mind-Bending Science Explained",
+    "Celebrity Real Estate & Lifestyle Unlocked",
+    "Global Migration Stories & Debates",
+    "Quick-Hit Fitness & Wellness Challenges",
+    "Stock Market Minute & Investment Tips",
+    "Autumn Aesthetic & Fall Trends",
+    "Future Tech & AI Innovations",
+    "DIY Life Hacks & Smart Solutions",
+    "Personal Finance & Budgeting",
+    "Travel Escapes & Destination Guides",
+    "Edutainment & 'Did You Know?' Facts",
+    "Pop Culture Commentary & Hot Takes"
   ],
   "concepts": [
     {
-      "category": "Weather & Disaster Preparedness",
-      "topic": "The 3 Secret Items You NEED in Your Emergency Kit (Most Forget #2)",
-      "hook": "Thinking your emergency kit is ready? Think again! You're probably missing THESE three items that could literally save your life.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Geopolitical Flashpoints & Analysis",
+      "topic": "The Red Sea Shipping Crisis's untold impact on your holiday shopping.",
+      "hook": "Think your online order is delayed? It might be stuck in a geopolitical traffic jam you won't believe.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Weather & Disaster Preparedness",
-      "topic": "Hurricane Season HACKS: Pro Tips to Protect Your Home FAST",
-      "hook": "Hurricane season is HERE! Don't wait until it's too late. I've got three QUICK hacks to secure your home that even the pros use.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Geopolitical Flashpoints & Analysis",
+      "topic": "Why the Arctic's melting ice isn't just about polar bears \u2013 it's a new global power play.",
+      "hook": "Forget the Suez Canal; the next great power struggle is happening at the top of the world, and nobody's talking about it.",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Reality TV Recaps & Fan Theories",
+      "topic": "The real reason *Love Is Blind* couples keep failing AFTER the altar.",
+      "hook": "Did you catch that subtle clue about *Love Is Blind*'s post-pod struggles? It's not what you think!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Reality TV Recaps & Fan Theories",
+      "topic": "Is *Selling Sunset*'s newest agent actually an undercover producer plant? My theory!",
+      "hook": "Okay, *Selling Sunset* fans, spill the tea: Is the new agent *too* perfect? I've got a theory that will blow your mind!",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Daily Weather & Climate Insights",
+      "topic": "The unexpected science behind why your city's snow melts faster than others.",
+      "hook": "Ever wonder why your neighbor's snow seems to vanish while yours sticks around? It's not magic, it's microclimates!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 47
+    },
+    {
+      "category": "Daily Weather & Climate Insights",
+      "topic": "How 'Atmospheric Rivers' are silently reshaping global water resources.",
+      "hook": "There's a literal river of water flying over your head right now, and it's changing our future. What is an atmospheric river?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Mind-Bending Science Explained",
+      "topic": "The 'Dark Forest' theory of the universe and why we haven't found aliens yet.",
+      "hook": "What if aliens are out there, but they're *hiding* from us? The 'Dark Forest' theory will make you rethink everything.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "Mind-Bending Science Explained",
+      "topic": "Quantum entanglement: how two particles can be connected across light-years instantly.",
+      "hook": "Imagine two coins, light-years apart, flipping simultaneously and always landing on the same side. That's quantum entanglement, and it's real.",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Celebrity Real Estate & Lifestyle Unlocked",
+      "topic": "Inside Taylor Swift's secret NYC townhouse, revealed!",
+      "hook": "Forget penthouses! Taylor Swift's quiet West Village townhouse has a hidden history you won't believe.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Real Estate & Lifestyle Unlocked",
+      "topic": "Why Beyonc\u00e9 and Jay-Z's Malibu mansion is more than just a house \u2013 it's an art piece.",
+      "hook": "You've seen the pictures, but do you know the insane history and design secrets behind Bey and Jay's $200M Malibu masterpiece?",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Global Migration Stories & Debates",
+      "topic": "The surprising economic boost undocumented workers bring to local economies.",
+      "hook": "Debates aside, new data reveals an often-overlooked truth: how undocumented workers are actually fueling parts of our economy.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Global Migration Stories & Debates",
+      "topic": "How climate change is creating a new wave of 'environmental refugees' nobody is prepared for.",
+      "hook": "Natural disasters are forcing entire communities to move, creating a new kind of refugee crisis we haven't even begun to address.",
+      "voice_style": "Dramatic",
+      "music_mood": "Dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Quick-Hit Fitness & Wellness Challenges",
+      "topic": "The '10-Minute Wall Sit' challenge for instant core and leg strength.",
+      "hook": "Think 10 minutes isn't enough for a workout? Try this wall sit challenge and prepare to feel the burn everywhere!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick-Hit Fitness & Wellness Challenges",
+      "topic": " 'Digital Detox Tuesdays': A simple habit to reclaim your mental clarity.",
+      "hook": "Feeling overwhelmed by screens? My 'Digital Detox Tuesday' challenge is surprisingly easy and powerfully effective.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Stock Market Minute & Investment Tips",
+      "topic": "Why 'Dollar-Cost Averaging' is your best friend during market volatility.",
+      "hook": "Watching the market rollercoaster? Stop stressing! This simple investing strategy could be your secret weapon.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Financial & Crypto Market Updates",
-      "topic": "Is the 'Next Bitcoin Killer' ACTUALLY Worth Investing In?",
-      "hook": "Everyone's talking about [Specific Altcoin Name] as the next Bitcoin. But is it a golden ticket or a ticking time bomb? Let's dive in!",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "category": "Stock Market Minute & Investment Tips",
+      "topic": "Understanding 'Meme Stocks' and if they're a gamble or a golden opportunity.",
+      "hook": "GameStop, AMC... Are 'meme stocks' just a joke, or is there a strategic way to play this wild market trend?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 48
     },
     {
-      "category": "Financial & Crypto Market Updates",
-      "topic": "Why THIS Unexpected Economic Indicator is Tanking Your Stocks (and How to React)",
-      "hook": "Did your portfolio just take a hit? It's not the news you think! I'm revealing the obscure indicator that's silently crushing your investments.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Autumn Aesthetic & Fall Trends",
+      "topic": "The *only* five fall fashion essentials you need to look chic without breaking the bank.",
+      "hook": "Sweaters, boots, scarves... overwhelming, right? I'm breaking down the *only* five fall fashion items you truly need this season.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "AI & Tech Innovation",
-      "topic": "The AI That Writes Your Emails Better Than You (and How to Use It FREE)",
-      "hook": "Tired of writing emails? What if AI could do it for you, perfectly, in seconds, for free? Spoiler: It can. Here's how!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Autumn Aesthetic & Fall Trends",
+      "topic": "DIY 'Cozy Autumn Nook' ideas that transform any corner into a fall haven.",
+      "hook": "Pumpkin spice everything! But how do you actually *feel* that autumn coziness? I'll show you how to create the perfect fall nook.",
+      "voice_style": "Energetic",
+      "music_mood": "Chill",
+      "target_duration": 43
     },
     {
-      "category": "AI & Tech Innovation",
-      "topic": "Mind-Blowing Neuralink Update: What Elon Musk's Brain Chip Can REALLY Do Now",
-      "hook": "Elon Musk's Neuralink just dropped a bombshell update! Forget what you thought you knew \u2013 the future of brain-computer interfaces is wilder than you imagine.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "Future Tech & AI Innovations",
+      "topic": "Brain-computer interfaces: Are they the next smartphone or a dystopian nightmare?",
+      "hook": "Imagine controlling your phone with your thoughts. Neuralink and other brain-computer interfaces are here, but at what cost?",
+      "voice_style": "Mysterious",
+      "music_mood": "Intense",
+      "target_duration": 49
     },
     {
-      "category": "Policy & Current Affairs Explained",
-      "topic": "The 'Hidden Clause' in the New [Specific Bill Name] Bill That Affects YOUR Wallet",
-      "hook": "A new bill just passed, and everyone's missing the *one* crucial detail that's going to hit your bank account. Let me explain it simply.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Policy & Current Affairs Explained",
-      "topic": "Why Gen Z is Leaving [Specific Social Media Platform] for THIS Obscure App",
-      "hook": "Is [Popular Social Media Platform] dead? Gen Z is quietly ditching it for a new app you've probably never heard of. What's the hype?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Pop Culture News",
-      "topic": "Decoding Taylor Swift's Secret Album Release Clues: Are We Getting ANOTHER Drop?",
-      "hook": "Swifties, listen up! Taylor Swift just dropped a series of cryptic clues that strongly suggest another surprise album is on its way. Let's break down the Easter eggs!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Pop Culture News",
-      "topic": "The Real Reason [Specific Celebrity] Just Canceled Their World Tour (It's Not What You Think)",
-      "hook": "[Specific Celebrity] just shocked the world by canceling their massive tour. But the headlines aren't telling you the full story. I've got the scoop.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Sustainable Living & Climate Action",
-      "topic": "The Unsung Hero of Your Kitchen: How Food Scraps Can Save You Money AND the Planet",
-      "hook": "Are you throwing away perfectly good food? Stop! I'm revealing how your kitchen scraps can become a goldmine for your garden AND your wallet.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Sustainable Living & Climate Action",
-      "topic": "Electric Cars: The SHOCKING Truth About Their 'Green' Impact You're Not Hearing",
-      "hook": "Everyone says electric cars are green. But what if I told you there's a shocking truth about their environmental impact that nobody's talking about? Let's get real.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Economic & Consumer Finance Tips",
-      "topic": "The ONLY Credit Card 'Hack' That Actually Works to Boost Your Score Fast",
-      "hook": "Forget everything you've heard about credit card hacks. There's ONLY ONE proven strategy to boost your credit score dramatically, and I'm sharing it now!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Economic & Consumer Finance Tips",
-      "topic": "Is Your 'High-Yield' Savings Account a Scam? How to Spot the Red Flags",
-      "hook": "Your bank advertises a 'high-yield' savings account, but are you actually losing money? I'll show you the red flags that mean you're being scammed!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Seasonal & Lifestyle Trends",
-      "topic": "Fall Fashion Mistakes You're Making That Make You Look... Basic",
-      "hook": "It's fall fashion time, but are you committing these cardinal sins that scream 'basic'? Stop right there! I'm showing you how to elevate your autumn style.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Seasonal & Lifestyle Trends",
-      "topic": "The Secret Ingredient for the ULTIMATE Pumpkin Spice Latte (Better Than Starbucks!)",
-      "hook": "Pumpkin Spice Latte season is here, but what if I told you your homemade version could be BETTER than Starbucks? I've got the secret ingredient you're missing!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Relatable Humor & Skits",
-      "topic": "When Your Friend Says 'Be There in 5' (But It's Actually 45)",
-      "hook": "Me: 'Be there in 5!' Also me, 40 minutes later, still trying to find matching socks. If this isn't your friend, it's YOU.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Relatable Humor & Skits",
-      "topic": "The Existential Crisis of Choosing a Streaming Show Tonight",
-      "hook": "It's 9 PM. You've scrolled for an hour. You have 1000 shows, but nothing to watch. The struggle is real. Can you relate?",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Edutainment & Quick Explainer Videos",
-      "topic": "The Mandela Effect: Why Your Brain Remembers Things That Never Happened",
-      "hook": "Remember the Monopoly Man with a monocle? What if I told you he never had one? Welcome to the mind-bending world of the Mandela Effect!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Edutainment & Quick Explainer Videos",
-      "topic": "Why Do Leaves Change Color in Fall? The Science You Never Knew!",
-      "hook": "The leaves are turning stunning colors, but why does it actually happen? It's not just the cold! Get ready for a quick science lesson that will blow your mind!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "category": "Future Tech & AI Innovations",
+      "topic": " 'AI Companions': The rise of virtual friends and what it means for human connection.",
+      "hook": "Lonely? AI bots are stepping in as friends, therapists, even romantic partners. Is this the future, or a troubling trend?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     }
