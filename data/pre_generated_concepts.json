@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-15T10:19:15.632143",
-  "valid_until": "2026-09-15T23:59:15.632152",
+  "generated_at": "2026-09-16T10:13:06.000770",
+  "valid_until": "2026-09-16T23:59:06.000780",
   "categories": [
-    "Geopolitical Flashpoints & Analysis",
-    "Reality TV Recaps & Fan Theories",
-    "Daily Weather & Climate Insights",
-    "Mind-Bending Science Explained",
-    "Celebrity Real Estate & Lifestyle Unlocked",
-    "Global Migration Stories & Debates",
-    "Quick-Hit Fitness & Wellness Challenges",
-    "Stock Market Minute & Investment Tips",
-    "Autumn Aesthetic & Fall Trends",
-    "Future Tech & AI Innovations",
-    "DIY Life Hacks & Smart Solutions",
-    "Personal Finance & Budgeting",
-    "Travel Escapes & Destination Guides",
-    "Edutainment & 'Did You Know?' Facts",
-    "Pop Culture Commentary & Hot Takes"
+    "Urgent News & Global Security Briefs",
+    "Weather Watch & Storm Preparedness",
+    "MLB Playoff Race & Wild Card Analysis",
+    "Jelly Roll Fan Content & Music Journey",
+    "Overcoming Adversity & Inspirational Stories",
+    "Legal System Explanations & Sovereign Citizen Commentary",
+    "Fall Fashion & Cozy Aesthetics",
+    "Quick & Easy Fall Recipes",
+    "DIY Home Hacks & Organizational Tips",
+    "Trending Challenges & Viral Sound Skits",
+    "Pet Shenanigans & Animal Welfare",
+    "Mental Wellness & Self-Care Routines",
+    "Simplified Geopolitics & Current Affairs",
+    "Sports Betting & Fantasy League Updates",
+    "Hyper-Local Community Buzz & Spotlights"
   ],
   "concepts": [
     {
-      "category": "Geopolitical Flashpoints & Analysis",
-      "topic": "The Red Sea Shipping Crisis's untold impact on your holiday shopping.",
-      "hook": "Think your online order is delayed? It might be stuck in a geopolitical traffic jam you won't believe.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Urgent News & Global Security Briefs",
+      "topic": "Unraveling the recent cyber attack on critical infrastructure in 'Country X'",
+      "hook": "Did you hear about the lights flickering across 'Country X' last night? It wasn't a power outage. This is bigger.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Geopolitical Flashpoints & Analysis",
-      "topic": "Why the Arctic's melting ice isn't just about polar bears \u2013 it's a new global power play.",
-      "hook": "Forget the Suez Canal; the next great power struggle is happening at the top of the world, and nobody's talking about it.",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
+      "category": "Urgent News & Global Security Briefs",
+      "topic": "The latest satellite imagery revealing unusual military buildup in a specific contested region",
+      "hook": "New satellite images just dropped, and what they reveal about 'Region Y' could change everything.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "Reality TV Recaps & Fan Theories",
-      "topic": "The real reason *Love Is Blind* couples keep failing AFTER the altar.",
-      "hook": "Did you catch that subtle clue about *Love Is Blind*'s post-pod struggles? It's not what you think!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Reality TV Recaps & Fan Theories",
-      "topic": "Is *Selling Sunset*'s newest agent actually an undercover producer plant? My theory!",
-      "hook": "Okay, *Selling Sunset* fans, spill the tea: Is the new agent *too* perfect? I've got a theory that will blow your mind!",
-      "voice_style": "Dramatic",
-      "music_mood": "Upbeat",
+      "category": "Weather Watch & Storm Preparedness",
+      "topic": "The surprising science behind 'Derechos' and how to prepare for inland hurricanes",
+      "hook": "Forget hurricanes at the coast! There's an inland monster forming you need to know about. It's called a Derecho.",
+      "voice_style": "energetic",
+      "music_mood": "dramatic",
       "target_duration": 42
     },
     {
-      "category": "Daily Weather & Climate Insights",
-      "topic": "The unexpected science behind why your city's snow melts faster than others.",
-      "hook": "Ever wonder why your neighbor's snow seems to vanish while yours sticks around? It's not magic, it's microclimates!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Daily Weather & Climate Insights",
-      "topic": "How 'Atmospheric Rivers' are silently reshaping global water resources.",
-      "hook": "There's a literal river of water flying over your head right now, and it's changing our future. What is an atmospheric river?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 49
-    },
-    {
-      "category": "Mind-Bending Science Explained",
-      "topic": "The 'Dark Forest' theory of the universe and why we haven't found aliens yet.",
-      "hook": "What if aliens are out there, but they're *hiding* from us? The 'Dark Forest' theory will make you rethink everything.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "Mind-Bending Science Explained",
-      "topic": "Quantum entanglement: how two particles can be connected across light-years instantly.",
-      "hook": "Imagine two coins, light-years apart, flipping simultaneously and always landing on the same side. That's quantum entanglement, and it's real.",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
-      "target_duration": 43
-    },
-    {
-      "category": "Celebrity Real Estate & Lifestyle Unlocked",
-      "topic": "Inside Taylor Swift's secret NYC townhouse, revealed!",
-      "hook": "Forget penthouses! Taylor Swift's quiet West Village townhouse has a hidden history you won't believe.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Weather Watch & Storm Preparedness",
+      "topic": "DIY emergency kit essentials for surviving a sudden blizzard power outage",
+      "hook": "Winter's coming, and if the power goes out, is your family ready? Most people forget these crucial items.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Celebrity Real Estate & Lifestyle Unlocked",
-      "topic": "Why Beyonc\u00e9 and Jay-Z's Malibu mansion is more than just a house \u2013 it's an art piece.",
-      "hook": "You've seen the pictures, but do you know the insane history and design secrets behind Bey and Jay's $200M Malibu masterpiece?",
-      "voice_style": "Dramatic",
-      "music_mood": "Upbeat",
+      "category": "MLB Playoff Race & Wild Card Analysis",
+      "topic": "The unexpected dark horse team making a late-season surge for the Wild Card spot",
+      "hook": "Everyone's talking about the Dodgers, but *this* underdog team just went on a 10-game winning streak. Are they the real threat?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "MLB Playoff Race & Wild Card Analysis",
+      "topic": "Analyzing the impact of a specific star player's injury on their team's playoff chances",
+      "hook": "He just got pulled from the game, and if 'Player Z' is out, does his team's World Series dream just vanish?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Jelly Roll Fan Content & Music Journey",
+      "topic": "Unreleased demo track snippets or early career insights of Jelly Roll",
+      "hook": "You think you know Jelly Roll? Wait till you hear *this* unearthed demo from his early days.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 46
+    },
+    {
+      "category": "Jelly Roll Fan Content & Music Journey",
+      "topic": "The real story behind a specific lyric or song from Jelly Roll's latest album",
+      "hook": "Everyone sings along to 'Song A', but do you know the *gut-wrenching* true story that inspired that one line?",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 49
+    },
+    {
+      "category": "Overcoming Adversity & Inspirational Stories",
+      "topic": "A person who turned a life-altering disability into a world-record-breaking achievement",
+      "hook": "Doctors told him he'd never walk again. Today, he just finished the toughest marathon on earth. How?",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
       "target_duration": 44
     },
     {
-      "category": "Global Migration Stories & Debates",
-      "topic": "The surprising economic boost undocumented workers bring to local economies.",
-      "hook": "Debates aside, new data reveals an often-overlooked truth: how undocumented workers are actually fueling parts of our economy.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Global Migration Stories & Debates",
-      "topic": "How climate change is creating a new wave of 'environmental refugees' nobody is prepared for.",
-      "hook": "Natural disasters are forcing entire communities to move, creating a new kind of refugee crisis we haven't even begun to address.",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
+      "category": "Overcoming Adversity & Inspirational Stories",
+      "topic": "The hidden challenges and ultimate triumph of a former inmate who started a successful charity",
+      "hook": "From prison cell to CEO of a thriving charity: His story isn't just about second chances, it's about rewriting destiny.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Quick-Hit Fitness & Wellness Challenges",
-      "topic": "The '10-Minute Wall Sit' challenge for instant core and leg strength.",
-      "hook": "Think 10 minutes isn't enough for a workout? Try this wall sit challenge and prepare to feel the burn everywhere!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
+      "category": "Legal System Explanations & Sovereign Citizen Commentary",
+      "topic": "Deconstructing the 'Maritime Law' claims often cited by sovereign citizens",
+      "hook": "Are we truly all 'at sea' under maritime law, even on land? Let's decode what sovereign citizens *actually* mean by this.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 47
     },
     {
-      "category": "Quick-Hit Fitness & Wellness Challenges",
-      "topic": " 'Digital Detox Tuesdays': A simple habit to reclaim your mental clarity.",
-      "hook": "Feeling overwhelmed by screens? My 'Digital Detox Tuesday' challenge is surprisingly easy and powerfully effective.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 42
+      "category": "Legal System Explanations & Sovereign Citizen Commentary",
+      "topic": "The legal difference between 'driving' and 'traveling' and why it matters in court",
+      "hook": "Driving vs. Traveling: Is it just semantics, or could understanding this legal distinction save you from a major fine?",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 41
     },
     {
-      "category": "Stock Market Minute & Investment Tips",
-      "topic": "Why 'Dollar-Cost Averaging' is your best friend during market volatility.",
-      "hook": "Watching the market rollercoaster? Stop stressing! This simple investing strategy could be your secret weapon.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
+      "category": "Fall Fashion & Cozy Aesthetics",
+      "topic": "The ultimate capsule wardrobe for a stylish yet warm autumn in different climates",
+      "hook": "Your fall wardrobe is about to get a major upgrade! I'm revealing the *only* 5 pieces you need for every cozy aesthetic.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Minute & Investment Tips",
-      "topic": "Understanding 'Meme Stocks' and if they're a gamble or a golden opportunity.",
-      "hook": "GameStop, AMC... Are 'meme stocks' just a joke, or is there a strategic way to play this wild market trend?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Autumn Aesthetic & Fall Trends",
-      "topic": "The *only* five fall fashion essentials you need to look chic without breaking the bank.",
-      "hook": "Sweaters, boots, scarves... overwhelming, right? I'm breaking down the *only* five fall fashion items you truly need this season.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Fall Fashion & Cozy Aesthetics",
+      "topic": "Upcycling last year's summer dresses into chic fall layering pieces",
+      "hook": "Don't pack away those summer dresses just yet! I'll show you how to transform them into *stunning* fall outfits.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Autumn Aesthetic & Fall Trends",
-      "topic": "DIY 'Cozy Autumn Nook' ideas that transform any corner into a fall haven.",
-      "hook": "Pumpkin spice everything! But how do you actually *feel* that autumn coziness? I'll show you how to create the perfect fall nook.",
-      "voice_style": "Energetic",
-      "music_mood": "Chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Future Tech & AI Innovations",
-      "topic": "Brain-computer interfaces: Are they the next smartphone or a dystopian nightmare?",
-      "hook": "Imagine controlling your phone with your thoughts. Neuralink and other brain-computer interfaces are here, but at what cost?",
-      "voice_style": "Mysterious",
-      "music_mood": "Intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Future Tech & AI Innovations",
-      "topic": " 'AI Companions': The rise of virtual friends and what it means for human connection.",
-      "hook": "Lonely? AI bots are stepping in as friends, therapists, even romantic partners. Is this the future, or a troubling trend?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "A 15-minute pumpkin spice latte recipe that tastes better than any coffee shop version",
+      "hook": "Tired of paying $7 for a PSL? I'm spilling the secret to a homemade pumpkin spice latte that's *way* better and takes 15 minutes.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 46
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "A 3-ingredient savory autumn soup perfect for busy weeknights",
+      "hook": "Dinner in 10 minutes? This 3-ingredient autumn soup recipe is about to become your cozy fall obsession.",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "DIY Home Hacks & Organizational Tips",
+      "topic": "Smart storage solutions for small apartment living, specifically for seasonal items",
+      "hook": "Living in a tiny space? These genius storage hacks will make your apartment feel twice as big, especially for fall decor!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "DIY Home Hacks & Organizational Tips",
+      "topic": "Upcycling old sweaters into practical and decorative home items (e.g., pillow covers, mug warmers)",
+      "hook": "Don't throw out those old sweaters! I'll show you how to turn them into *adorable* cozy home decor without sewing a stitch.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Trending Challenges & Viral Sound Skits",
+      "topic": "Recreating a popular viral sound skit with a humorous, unexpected twist related to everyday struggles",
+      "hook": "You know that sound about 'manifesting coffee'? I tried it, but my manifestation brought something... different.",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Trending Challenges & Viral Sound Skits",
+      "topic": "Participating in a new dance challenge with an instructional breakdown for beginners",
+      "hook": "See everyone doing the 'Starlight Shuffle'? Here's the *only* tutorial you need to nail it in 60 seconds.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
     }
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-US-AriaNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
