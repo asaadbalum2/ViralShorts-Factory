@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-09-17T10:18:23.950043",
-  "valid_until": "2026-09-17T23:59:23.950054",
+  "generated_at": "2026-09-18T09:59:16.717517",
+  "valid_until": "2026-09-18T23:59:16.717527",
   "categories": [
-    "Breaking News & Fast Commentary",
-    "Celebrity Scandal & Legal Updates",
-    "True Crime: Missing Persons & Unsolved Cases",
-    "Immigration Policy Explained (ICE & Beyond)",
-    "Extreme Weather & Climate Impact",
-    "Gaming Community Updates & Server Status",
-    "Global Soccer Highlights & Match Analysis",
-    "National Park Safety & Outdoor Survival",
-    "Local Politics & Education System News",
-    "Autumn Style & Layering Fashion",
-    "Fall Recipes & Cozy Comfort Food",
-    "Life Hacks & Productivity Boosters",
-    "Quick Explanations & 'Fact Checks'",
-    "Pet Adventures & Animal POV",
-    "Pre-Holiday Budgeting & Financial Planning"
+    "Breaking News & Rapid Reactions",
+    "Political Commentary & Satire",
+    "Financial & Real Estate Market Updates",
+    "Pet & Animal Adorableness",
+    "Global Sports Highlights & Analysis",
+    "Trending Personalities & Celebrity Scoop",
+    "Public Health & Medical Explainers",
+    "Local Crime & Community Updates",
+    "DIY Home & Lifestyle Hacks",
+    "Autumn Season & Fall Aesthetics",
+    "Relatable Humor & Viral Skits",
+    "Quick Recipes & Foodie Trends",
+    "Travel & Exploration Guides",
+    "Educational & 'Did You Know?' Shorts",
+    "True Crime & Mystery Deep Dives"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Breaking News & Rapid Reactions",
+      "topic": "Instant reaction to a new viral internet challenge (e.g., a harmless, funny one).",
+      "hook": "Did you see *this*? The internet just broke again, and trust me, you're going to want to try it!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Political Commentary & Satire",
+      "topic": "Satirical 'translation' of a politician's ambiguous public statement.",
+      "hook": "Alright, let's decode what they *really* meant when they said 'robust bipartisan dialogue'...",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Financial & Real Estate Market Updates",
+      "topic": "Why Gen Z is investing in vintage arcade machines as alternative assets.",
+      "hook": "Forget stocks and crypto \u2013 Gen Z is making bank on... Pac-Man?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Pet & Animal Adorableness",
+      "topic": "A compilation of cats failing hilariously at simple tasks (e.g., jumping, drinking water).",
+      "hook": "My cat thinks he's graceful. These clips prove otherwise, and you won't stop laughing!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Global Sports Highlights & Analysis",
+      "topic": "The surprising underdog team that's dominating a niche sport (e.g., ultimate frisbee, esports).",
+      "hook": "Everyone's talking about the big leagues, but *this* team in a sport you've never heard of is doing the impossible!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 47
+    },
+    {
+      "category": "Trending Personalities & Celebrity Scoop",
+      "topic": "Debunking a wild celebrity rumor with photographic evidence (or lack thereof).",
+      "hook": "Is [Celebrity Name] secretly living in an igloo? Let's check the receipts, folks!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Public Health & Medical Explainers",
+      "topic": "The truth about 'immunity-boosting' supplements and what actually works.",
+      "hook": "That 'super immunity pill' might be a super scam. Here's what science *actually* says.",
+      "voice_style": "authoritative",
+      "music_mood": "calm",
+      "target_duration": 44
+    },
+    {
+      "category": "Local Crime & Community Updates",
+      "topic": "Analyzing a bizarre, non-violent local 'mystery' (e.g., who keeps leaving rubber ducks on park benches?).",
+      "hook": "The mystery of the 'Rubber Duck Bandit' has gripped our town. Who is this elusive hero?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 46
+    },
+    {
+      "category": "DIY Home & Lifestyle Hacks",
+      "topic": "A 30-second kitchen gadget hack that will genuinely save time.",
+      "hook": "Stop peeling garlic the hard way! This little-known trick will blow your mind.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Autumn Season & Fall Aesthetics",
+      "topic": "Unique DIY fall decor using unexpected items (e.g., old books, pinecones, yarn).",
+      "hook": "Your fall decor doesn't need to break the bank! Look at what I made with stuff from my backyard!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 43
+    },
+    {
+      "category": "Breaking News & Rapid Reactions",
+      "topic": "Initial thoughts on a major tech company's unexpected product announcement.",
+      "hook": "Hold up! Did [Tech Giant] just drop *that* out of nowhere? My immediate reactions are in!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Political Commentary & Satire",
+      "topic": "A humorous 'how-to' guide for surviving family holiday dinners with opposing political views.",
+      "hook": "Thanksgiving is coming. Is your family ready for political fireworks? My survival guide starts now!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial & Real Estate Market Updates",
+      "topic": "The rising trend of 'tiny homes' in unexpected urban locations and their actual cost savings.",
+      "hook": "Can you really live large in a tiny home downtown? Let's break down the surprisingly complex finances.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Pet & Animal Adorableness",
+      "topic": "Showing how different animals react to their reflection for the first time.",
+      "hook": "Prepare for cuteness overload! Watch these animals discover they have a twin... or an enemy?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Global Sports Highlights & Analysis",
+      "topic": "The 'unwritten rules' of a specific sport that only true fans know.",
+      "hook": "Think you know baseball? If you don't know the 'rally cap' rule, you're missing out!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 46
+    },
+    {
+      "category": "Trending Personalities & Celebrity Scoop",
+      "topic": "An analysis of a celebrity's recent 'unfiltered' social media moment and its impact.",
+      "hook": "Did [Celebrity Name] just break the internet with *that* post? Let's talk about why it matters.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Public Health & Medical Explainers",
+      "topic": "Common myths about getting enough sleep and how to actually improve sleep quality.",
+      "hook": "You're probably doing sleep all wrong. Stop scrolling and learn how to actually rest!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 44
+    },
+    {
+      "category": "Local Crime & Community Updates",
+      "topic": "The story of a local community initiative that significantly reduced petty crime in a specific area.",
+      "hook": "Our town had a problem, but *this* simple idea changed everything. Prepare to be inspired!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "DIY Home & Lifestyle Hacks",
+      "topic": "Revamping old furniture with a single, unexpected material (e.g., contact paper, rope).",
+      "hook": "Don't throw out that old dresser! You won't believe what a roll of [material] can do!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Autumn Season & Fall Aesthetics",
+      "topic": "The best local hidden spots for fall foliage viewing that aren't crowded.",
+      "hook": "Everyone goes to the popular spots, but *these* secret locations will give you the perfect fall photo op without the crowds!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 43
+    }
+  ],
   "voice_music_pairs": [
     {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
