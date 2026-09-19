@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-18T09:59:16.717517",
-  "valid_until": "2026-09-18T23:59:16.717527",
+  "generated_at": "2026-09-19T09:41:03.920260",
+  "valid_until": "2026-09-19T23:59:03.920269",
   "categories": [
-    "Breaking News & Rapid Reactions",
-    "Political Commentary & Satire",
-    "Financial & Real Estate Market Updates",
-    "Pet & Animal Adorableness",
-    "Global Sports Highlights & Analysis",
-    "Trending Personalities & Celebrity Scoop",
-    "Public Health & Medical Explainers",
-    "Local Crime & Community Updates",
-    "DIY Home & Lifestyle Hacks",
-    "Autumn Season & Fall Aesthetics",
-    "Relatable Humor & Viral Skits",
-    "Quick Recipes & Foodie Trends",
-    "Travel & Exploration Guides",
-    "Educational & 'Did You Know?' Shorts",
-    "True Crime & Mystery Deep Dives"
+    "Financial Trends & Investing Insights",
+    "AI & Future Tech Unpacked",
+    "Home & DIY Revamp",
+    "Seasonal Weather & Style Guides",
+    "Fitness & Wellness Challenges",
+    "Legal & Safety Know-How",
+    "Current Affairs & News Bites",
+    "Local & Global Event Spotlights",
+    "Relatable Comedy & Viral Skits",
+    "Productivity Hacks & Life Organization",
+    "Quick Recipes & Foodie Finds",
+    "Travel Adventures & Destination Guides",
+    "Gaming Highlights & Pop Culture",
+    "Creative Arts & Satisfying Processes",
+    "Mindfulness & Mental Health Tips"
   ],
   "concepts": [
     {
-      "category": "Breaking News & Rapid Reactions",
-      "topic": "Instant reaction to a new viral internet challenge (e.g., a harmless, funny one).",
-      "hook": "Did you see *this*? The internet just broke again, and trust me, you're going to want to try it!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Financial Trends & Investing Insights",
+      "topic": "Micro-investing apps for beginners (e.g., Acorns, Robinhood simplified)",
+      "hook": "Think investing is just for Wall Street sharks? Think again! You can start with pocket change.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Political Commentary & Satire",
-      "topic": "Satirical 'translation' of a politician's ambiguous public statement.",
-      "hook": "Alright, let's decode what they *really* meant when they said 'robust bipartisan dialogue'...",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Financial & Real Estate Market Updates",
-      "topic": "Why Gen Z is investing in vintage arcade machines as alternative assets.",
-      "hook": "Forget stocks and crypto \u2013 Gen Z is making bank on... Pac-Man?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Pet & Animal Adorableness",
-      "topic": "A compilation of cats failing hilariously at simple tasks (e.g., jumping, drinking water).",
-      "hook": "My cat thinks he's graceful. These clips prove otherwise, and you won't stop laughing!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "AI & Future Tech Unpacked",
+      "topic": "AI-powered personalized learning platforms transforming education",
+      "hook": "What if your education was tailor-made just for YOU, adapting to your pace and style?",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
       "target_duration": 40
     },
     {
-      "category": "Global Sports Highlights & Analysis",
-      "topic": "The surprising underdog team that's dominating a niche sport (e.g., ultimate frisbee, esports).",
-      "hook": "Everyone's talking about the big leagues, but *this* team in a sport you've never heard of is doing the impossible!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 47
+      "category": "Home & DIY Revamp",
+      "topic": "Creative ways to organize a small, cluttered pantry space",
+      "hook": "Is your pantry a chaotic black hole where snacks go to die? Mine too! Until now...",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 50
     },
     {
-      "category": "Trending Personalities & Celebrity Scoop",
-      "topic": "Debunking a wild celebrity rumor with photographic evidence (or lack thereof).",
-      "hook": "Is [Celebrity Name] secretly living in an igloo? Let's check the receipts, folks!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 49
-    },
-    {
-      "category": "Public Health & Medical Explainers",
-      "topic": "The truth about 'immunity-boosting' supplements and what actually works.",
-      "hook": "That 'super immunity pill' might be a super scam. Here's what science *actually* says.",
-      "voice_style": "authoritative",
-      "music_mood": "calm",
-      "target_duration": 44
-    },
-    {
-      "category": "Local Crime & Community Updates",
-      "topic": "Analyzing a bizarre, non-violent local 'mystery' (e.g., who keeps leaving rubber ducks on park benches?).",
-      "hook": "The mystery of the 'Rubber Duck Bandit' has gripped our town. Who is this elusive hero?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "DIY Home & Lifestyle Hacks",
-      "topic": "A 30-second kitchen gadget hack that will genuinely save time.",
-      "hook": "Stop peeling garlic the hard way! This little-known trick will blow your mind.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Autumn Season & Fall Aesthetics",
-      "topic": "Unique DIY fall decor using unexpected items (e.g., old books, pinecones, yarn).",
-      "hook": "Your fall decor doesn't need to break the bank! Look at what I made with stuff from my backyard!",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Breaking News & Rapid Reactions",
-      "topic": "Initial thoughts on a major tech company's unexpected product announcement.",
-      "hook": "Hold up! Did [Tech Giant] just drop *that* out of nowhere? My immediate reactions are in!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Political Commentary & Satire",
-      "topic": "A humorous 'how-to' guide for surviving family holiday dinners with opposing political views.",
-      "hook": "Thanksgiving is coming. Is your family ready for political fireworks? My survival guide starts now!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Seasonal Weather & Style Guides",
+      "topic": "Must-have layering essentials for unpredictable spring weather",
+      "hook": "One minute sun, next minute rain... spring style dilemma, solved! Here's how to master layering.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Financial & Real Estate Market Updates",
-      "topic": "The rising trend of 'tiny homes' in unexpected urban locations and their actual cost savings.",
-      "hook": "Can you really live large in a tiny home downtown? Let's break down the surprisingly complex finances.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 48
+      "category": "Fitness & Wellness Challenges",
+      "topic": "The 'Hydration Hero' challenge: tracking water intake for better skin & energy",
+      "hook": "Feeling sluggish and your skin looking dull? The answer might be in your glass!",
+      "voice_style": "Inspirational",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Pet & Animal Adorableness",
-      "topic": "Showing how different animals react to their reflection for the first time.",
-      "hook": "Prepare for cuteness overload! Watch these animals discover they have a twin... or an enemy?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
+      "category": "Legal & Safety Know-How",
+      "topic": "Understanding your rights as a pedestrian or cyclist in traffic",
+      "hook": "Walking or biking around? Don't get caught unaware of YOUR road rights! Stay safe, stay informed.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 50
     },
     {
-      "category": "Global Sports Highlights & Analysis",
-      "topic": "The 'unwritten rules' of a specific sport that only true fans know.",
-      "hook": "Think you know baseball? If you don't know the 'rally cap' rule, you're missing out!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 46
+      "category": "Current Affairs & News Bites",
+      "topic": "The global push for sustainable food packaging solutions",
+      "hook": "Your takeout container might be saving the planet... or not! What's really happening in eco-packaging?",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Trending Personalities & Celebrity Scoop",
-      "topic": "An analysis of a celebrity's recent 'unfiltered' social media moment and its impact.",
-      "hook": "Did [Celebrity Name] just break the internet with *that* post? Let's talk about why it matters.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 49
+      "category": "Local & Global Event Spotlights",
+      "topic": "Uncovering hidden gem food festivals in unexpected cities",
+      "hook": "Forget boring tourist traps! These food festivals are the real deal, bursting with flavor you've never tried.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Public Health & Medical Explainers",
-      "topic": "Common myths about getting enough sleep and how to actually improve sleep quality.",
-      "hook": "You're probably doing sleep all wrong. Stop scrolling and learn how to actually rest!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 44
+      "category": "Relatable Comedy & Viral Skits",
+      "topic": "The internal monologue of trying to follow a complex recipe",
+      "hook": "'Just follow the instructions,' they said. 'It'll be easy,' they said. My kitchen says otherwise.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 50
     },
     {
-      "category": "Local Crime & Community Updates",
-      "topic": "The story of a local community initiative that significantly reduced petty crime in a specific area.",
-      "hook": "Our town had a problem, but *this* simple idea changed everything. Prepare to be inspired!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 47
+      "category": "Productivity Hacks & Life Organization",
+      "topic": "The 'Inbox Zero' method for email management",
+      "hook": "Is your email inbox giving you anxiety? Let's conquer it together with this simple 'Inbox Zero' trick!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
     },
     {
-      "category": "DIY Home & Lifestyle Hacks",
-      "topic": "Revamping old furniture with a single, unexpected material (e.g., contact paper, rope).",
-      "hook": "Don't throw out that old dresser! You won't believe what a roll of [material] can do!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
+      "category": "Financial Trends & Investing Insights",
+      "topic": "The concept of 'frugal minimalism' for saving money and reducing clutter",
+      "hook": "What if LESS stuff actually meant MORE money in your pocket AND less stress? Enter frugal minimalism.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 40
     },
     {
-      "category": "Autumn Season & Fall Aesthetics",
-      "topic": "The best local hidden spots for fall foliage viewing that aren't crowded.",
-      "hook": "Everyone goes to the popular spots, but *these* secret locations will give you the perfect fall photo op without the crowds!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
+      "category": "AI & Future Tech Unpacked",
+      "topic": "Exploring the potential and ethics of brain-computer interfaces (BCIs)",
+      "hook": "Control technology with just your thoughts? It's closer than you think, but at what cost?",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Home & DIY Revamp",
+      "topic": "DIY vertical garden ideas for small apartment balconies",
+      "hook": "Dreaming of a garden but stuck with a tiny balcony? Grow UP with these vertical garden hacks!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Weather & Style Guides",
+      "topic": "Smart fashion choices for staying cool in extreme summer heat",
+      "hook": "Heatwave hitting hard? Don't sweat your style choices! These fabrics and cuts are your summer saviors.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Fitness & Wellness Challenges",
+      "topic": "The 'Mindful Movement' challenge: incorporating micro-breaks into your day",
+      "hook": "Stuck at your desk all day? Your body is begging for this! Small movements, big wellness boost.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Legal & Safety Know-How",
+      "topic": "Essential cyber security tips for protecting your personal data online",
+      "hook": "Think your online data is safe? You might be a prime target without knowing it! Lock it down now.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Current Affairs & News Bites",
+      "topic": "The global impact of recent space tourism developments on Earth",
+      "hook": "Billionaires in space... but what does it mean for us down here? The hidden ripple effects of space tourism.",
+      "voice_style": "Energetic",
+      "music_mood": "Dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Local & Global Event Spotlights",
+      "topic": "The rise of 'eco-tourism' and ethical travel destinations",
+      "hook": "Want to travel the world without leaving a huge carbon footprint? Discover the magic of ethical eco-tourism!",
+      "voice_style": "Inspirational",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Relatable Comedy & Viral Skits",
+      "topic": "The awkward dance of small talk with strangers at social events",
+      "hook": "'So... do you come here often?' The universal struggle of social anxiety and forced conversations.",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Productivity Hacks & Life Organization",
+      "topic": "Using the 'Eisenhower Matrix' for prioritizing tasks and reducing overwhelm",
+      "hook": "Feeling overwhelmed by your never-ending to-do list? This simple trick changes everything!",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
