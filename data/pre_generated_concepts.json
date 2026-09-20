@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-19T09:41:03.920260",
-  "valid_until": "2026-09-19T23:59:03.920269",
+  "generated_at": "2026-09-20T09:59:44.466690",
+  "valid_until": "2026-09-20T23:59:44.466700",
   "categories": [
-    "Financial Trends & Investing Insights",
-    "AI & Future Tech Unpacked",
-    "Home & DIY Revamp",
-    "Seasonal Weather & Style Guides",
-    "Fitness & Wellness Challenges",
-    "Legal & Safety Know-How",
-    "Current Affairs & News Bites",
-    "Local & Global Event Spotlights",
-    "Relatable Comedy & Viral Skits",
-    "Productivity Hacks & Life Organization",
-    "Quick Recipes & Foodie Finds",
-    "Travel Adventures & Destination Guides",
-    "Gaming Highlights & Pop Culture",
-    "Creative Arts & Satisfying Processes",
-    "Mindfulness & Mental Health Tips"
+    "Global Wanderlust & Travel Guides",
+    "Urban Explorations & City Hacks (Austin/NYC)",
+    "Next-Gen Investing & Wealth Building (Fidelity ETF)",
+    "College Admissions & Student Success (ACT Prep)",
+    "Modern Parenting & Childcare Wisdom (Daycare)",
+    "Sports Business & Fan Culture",
+    "International Cuisine & Foodie Adventures (Japan/NYC/Austin)",
+    "Sustainable Travel & Nature Escapes (Kauai)",
+    "Autumn Aesthetics & Cozy Living",
+    "Edutainment in 60 Seconds",
+    "Cultural Spotlights",
+    "Work-Life Flow & Wellness",
+    "Quick Life Hacks & DIY",
+    "Relatable Skits & POV Comedy",
+    "Future Tech & Innovation"
   ],
   "concepts": [
     {
-      "category": "Financial Trends & Investing Insights",
-      "topic": "Micro-investing apps for beginners (e.g., Acorns, Robinhood simplified)",
-      "hook": "Think investing is just for Wall Street sharks? Think again! You can start with pocket change.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Global Wanderlust & Travel Guides",
+      "topic": "Discovering Kyoto's Bamboo Forest WITHOUT the Crowds (Arashiyama Secret Path)",
+      "hook": "Everyone goes to Arashiyama, but only a few know *this* secret path to experience Kyoto's Bamboo Forest in actual peace. I'll show you.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "AI & Future Tech Unpacked",
-      "topic": "AI-powered personalized learning platforms transforming education",
-      "hook": "What if your education was tailor-made just for YOU, adapting to your pace and style?",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
+      "category": "Urban Explorations & City Hacks (NYC)",
+      "topic": "NYC Subway Art Tour: Free Masterpieces You Miss Every Day",
+      "hook": "You ride the NYC subway every day, but do you know you're missing a free art gallery hidden in plain sight? Let's go explore!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Home & DIY Revamp",
-      "topic": "Creative ways to organize a small, cluttered pantry space",
-      "hook": "Is your pantry a chaotic black hole where snacks go to die? Mine too! Until now...",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Next-Gen Investing & Wealth Building (Fidelity ETF)",
+      "topic": "Investing in AI's Future: Fidelity ETFs for Beginners",
+      "hook": "AI is exploding, and you can invest in its future *right now* with Fidelity ETFs, even if you're a total beginner. Here's how.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Seasonal Weather & Style Guides",
-      "topic": "Must-have layering essentials for unpredictable spring weather",
-      "hook": "One minute sun, next minute rain... spring style dilemma, solved! Here's how to master layering.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "College Admissions & Student Success (ACT Prep)",
+      "topic": "ACT Science Section: The 'No Reading' Strategy That Works",
+      "hook": "Stuck on the ACT Science section? What if I told you to stop reading the passages? This counter-intuitive trick will save you time and boost your score.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fitness & Wellness Challenges",
-      "topic": "The 'Hydration Hero' challenge: tracking water intake for better skin & energy",
-      "hook": "Feeling sluggish and your skin looking dull? The answer might be in your glass!",
-      "voice_style": "Inspirational",
-      "music_mood": "Upbeat",
+      "category": "Modern Parenting & Childcare Wisdom (Daycare)",
+      "topic": "The 'Quiet Time' Hack: Keeping Toddlers Engaged Without Screens",
+      "hook": "Need a break but don't want screen time? This 'quiet time' strategy for toddlers is a game-changer for busy parents, and it works every time.",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Legal & Safety Know-How",
-      "topic": "Understanding your rights as a pedestrian or cyclist in traffic",
-      "hook": "Walking or biking around? Don't get caught unaware of YOUR road rights! Stay safe, stay informed.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Sports Business & Fan Culture",
+      "topic": "The Unseen Influence of Sports Agents on Team Roster Construction",
+      "hook": "Think GMs make all the calls? The true puppet masters behind your favorite team's roster might surprise you. Welcome to the world of super-agents.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Current Affairs & News Bites",
-      "topic": "The global push for sustainable food packaging solutions",
-      "hook": "Your takeout container might be saving the planet... or not! What's really happening in eco-packaging?",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
+      "category": "International Cuisine & Foodie Adventures (Japan)",
+      "topic": "Tokyo's Best Street Food Finds Under $5 (Beyond Ramen)",
+      "hook": "Forget expensive restaurants! Tokyo's culinary magic truly shines on the streets, and I found 3 incredible eats for under a fiver each.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Local & Global Event Spotlights",
-      "topic": "Uncovering hidden gem food festivals in unexpected cities",
-      "hook": "Forget boring tourist traps! These food festivals are the real deal, bursting with flavor you've never tried.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Relatable Comedy & Viral Skits",
-      "topic": "The internal monologue of trying to follow a complex recipe",
-      "hook": "'Just follow the instructions,' they said. 'It'll be easy,' they said. My kitchen says otherwise.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Sustainable Travel & Nature Escapes (Kauai)",
+      "topic": "Eco-Friendly Kauai: How to Support Local & Preserve Paradise",
+      "hook": "Kauai is paradise, but it needs our help to stay that way. Here's how to travel sustainably, support local businesses, and be a responsible visitor.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Productivity Hacks & Life Organization",
-      "topic": "The 'Inbox Zero' method for email management",
-      "hook": "Is your email inbox giving you anxiety? Let's conquer it together with this simple 'Inbox Zero' trick!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Financial Trends & Investing Insights",
-      "topic": "The concept of 'frugal minimalism' for saving money and reducing clutter",
-      "hook": "What if LESS stuff actually meant MORE money in your pocket AND less stress? Enter frugal minimalism.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
+      "category": "Autumn Aesthetics & Cozy Living",
+      "topic": "Transform Your Home: 3 Budget-Friendly Fall Decor Ideas",
+      "hook": "Want to make your home feel like a cozy autumn sanctuary without breaking the bank? These three decor hacks are shockingly easy and affordable.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "AI & Future Tech Unpacked",
-      "topic": "Exploring the potential and ethics of brain-computer interfaces (BCIs)",
-      "hook": "Control technology with just your thoughts? It's closer than you think, but at what cost?",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
+      "category": "Edutainment in 60 Seconds",
+      "topic": "The Neuroscience of Why Music Gets Stuck in Your Head",
+      "hook": "That annoying song on repeat in your brain? There's a scientific reason for it, and it's called an earworm. Let's dig in!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Wanderlust & Travel Guides",
+      "topic": "Packing Like a Pro: The Ultimate Carry-On Only Travel Hack for Europe",
+      "hook": "Checked baggage fees got you down? I just spent a month in Europe with *only* a carry-on, and I'm sharing my absolute best packing secrets.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Urban Explorations & City Hacks (Austin)",
+      "topic": "Austin's Hidden Speakeasies: How to Find the Secret Passwords",
+      "hook": "Austin's nightlife has a secret side: exclusive speakeasies with hidden entrances and passwords. I'm taking you inside to find them!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Next-Gen Investing & Wealth Building (Fidelity ETF)",
+      "topic": "Understanding ESG Investing: Do Good, Make Money with Fidelity",
+      "hook": "Want your investments to reflect your values? ESG investing isn't just a trend; it's a powerful way to do good and potentially make money. Fidelity can help.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Home & DIY Revamp",
-      "topic": "DIY vertical garden ideas for small apartment balconies",
-      "hook": "Dreaming of a garden but stuck with a tiny balcony? Grow UP with these vertical garden hacks!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "College Admissions & Student Success (ACT Prep)",
+      "topic": "The 'Perfect Score' Mindset: How to Overcome ACT Test Anxiety",
+      "hook": "Test anxiety crushing your ACT potential? It's not about being smarter; it's about mastering your mindset. Here's how to calm your nerves and ace it.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Seasonal Weather & Style Guides",
-      "topic": "Smart fashion choices for staying cool in extreme summer heat",
-      "hook": "Heatwave hitting hard? Don't sweat your style choices! These fabrics and cuts are your summer saviors.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Modern Parenting & Childcare Wisdom (Daycare)",
+      "topic": "Navigating Daycare Sickness: Boosting Your Child's Immunity",
+      "hook": "Is your child constantly sick from daycare? It's not just you. Let's talk about realistic strategies to boost their immunity and survive cold season.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Fitness & Wellness Challenges",
-      "topic": "The 'Mindful Movement' challenge: incorporating micro-breaks into your day",
-      "hook": "Stuck at your desk all day? Your body is begging for this! Small movements, big wellness boost.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Legal & Safety Know-How",
-      "topic": "Essential cyber security tips for protecting your personal data online",
-      "hook": "Think your online data is safe? You might be a prime target without knowing it! Lock it down now.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "Sports Business & Fan Culture",
+      "topic": "The Evolution of Fan Engagement: From Stadium to Metaverse",
+      "hook": "Remember going to games? Fandom is evolving faster than ever, from physical stadiums to digital arenas. Are you ready for the sports metaverse?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 50
     },
     {
-      "category": "Current Affairs & News Bites",
-      "topic": "The global impact of recent space tourism developments on Earth",
-      "hook": "Billionaires in space... but what does it mean for us down here? The hidden ripple effects of space tourism.",
-      "voice_style": "Energetic",
-      "music_mood": "Dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Local & Global Event Spotlights",
-      "topic": "The rise of 'eco-tourism' and ethical travel destinations",
-      "hook": "Want to travel the world without leaving a huge carbon footprint? Discover the magic of ethical eco-tourism!",
-      "voice_style": "Inspirational",
-      "music_mood": "Chill",
+      "category": "International Cuisine & Foodie Adventures (NYC)",
+      "topic": "NYC's Most Underrated Ethnic Enclaves for Authentic Food",
+      "hook": "Everyone goes to Little Italy, but NYC has *way* more authentic international food scenes you're missing. Prepare for a culinary journey!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Relatable Comedy & Viral Skits",
-      "topic": "The awkward dance of small talk with strangers at social events",
-      "hook": "'So... do you come here often?' The universal struggle of social anxiety and forced conversations.",
-      "voice_style": "Dramatic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
+      "category": "Sustainable Travel & Nature Escapes (Kauai)",
+      "topic": "Unveiling Kauai's Secret Tide Pools & How to Protect Them",
+      "hook": "Kauai's coast hides incredible tide pools, teeming with life. I'll show you where to find them, but more importantly, how to visit responsibly.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "Productivity Hacks & Life Organization",
-      "topic": "Using the 'Eisenhower Matrix' for prioritizing tasks and reducing overwhelm",
-      "hook": "Feeling overwhelmed by your never-ending to-do list? This simple trick changes everything!",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 40
+      "category": "Autumn Aesthetics & Cozy Living",
+      "topic": "Crafting the Perfect Fall Reading Nook: Essentials & Ambiance",
+      "hook": "Autumn is calling for cozy reading sessions. Let's create your ultimate fall reading nook with just a few essentials to maximize that hygge vibe.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Edutainment in 60 Seconds",
+      "topic": "The History of Daylight Saving Time: Why We Still Do It",
+      "hook": "That extra hour of sleep or lost hour of light... why do we even do Daylight Saving Time? The answer is more complex (and debated!) than you think.",
+      "voice_style": "friendly",
+      "music_mood": "mysterious",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
