@@ -1,260 +1,92 @@
 {
-  "generated_at": "2026-09-21T10:59:39.880461",
-  "valid_until": "2026-09-21T23:59:39.880470",
+  "generated_at": "2026-09-22T10:13:37.046192",
+  "valid_until": "2026-09-22T23:59:37.046197",
   "categories": [
-    "Quick Crypto Takes (BTC & XRP Updates)",
-    "Daily Puzzle Solves & Strands Strategies",
-    "Investing 101: Navigating Fidelity & Beyond",
-    "NFL Score Reactions & TheScore Bet Insights",
-    "Fast Food Challenges & Wendy's Menu Hacks",
-    "Doordash Driver Diaries & Customer Confessions",
-    "Fall Fashion & Cozy Autumn Aesthetics",
-    "Halloween DIY & Spooky Season Prep",
-    "Viral Life Hacks & Productivity Pointers",
-    "Relatable Sketch Comedy & Meme Recreations",
-    "Storytime: Unbelievable Real-Life Events",
-    "Budgeting & Personal Finance Glow-Ups",
-    "Quick Home Workouts & Wellness Routines",
-    "Short-Form Travel Vlogs & Local Discoveries",
-    "Tech & Gadget Reviews (Under 60 Secs)"
+    "ai_trends",
+    "productivity",
+    "psychology",
+    "money_hacks",
+    "health_tips",
+    "tech_news",
+    "life_hacks",
+    "motivation"
   ],
-  "concepts": [
-    {
-      "category": "Quick Crypto Takes (BTC & XRP Updates)",
-      "topic": "Bitcoin's unexpected Q4 price indicator and its historical accuracy.",
-      "hook": "Everyone's talking about the halving, but *this* obscure metric just flashed green for BTC's Q4, and it's been right 80% of the time.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick Crypto Takes (BTC & XRP Updates)",
-      "topic": "XRP's latest SEC filing detail and its immediate impact on price predictions.",
-      "hook": "Hold on to your hats, XRP holders! A tiny detail buried in the latest SEC filing just sent shockwaves through the community, and here's why.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Daily Puzzle Solves & Strands Strategies",
-      "topic": "Today's NYT Strands puzzle solved in under 60 seconds using my 'grid division' secret strategy.",
-      "hook": "Stuck on today's Strands? You're about to discover the one trick pro players use to find those elusive theme words in under a minute.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Daily Puzzle Solves & Strands Strategies",
-      "topic": "Cracking Wordle's impossible word: A new pattern recognition technique for frustrating puzzles.",
-      "hook": "Thought today's Wordle was unbeatable? I cracked the code with a pattern recognition technique you HAVEN'T seen before, and it works every time.",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Investing 101: Navigating Fidelity & Beyond",
-      "topic": "Maximizing Fidelity's free portfolio analysis tool for beginner investors to identify hidden fees.",
-      "hook": "You're probably leaving free money on the table if you're not using *this* overlooked Fidelity feature to expose hidden fees in your portfolio.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Investing 101: Navigating Fidelity & Beyond",
-      "topic": "The 'Set It and Forget It' ETF strategy for passive income, using specific low-cost Vanguard funds.",
-      "hook": "Want passive income without the stress? I'm revealing the 'set it and forget it' ETF portfolio using Vanguard funds that actually works for busy people.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "NFL Score Reactions & TheScore Bet Insights",
-      "topic": "Immediate reaction to last night's game-winning Hail Mary and its catastrophic betting implications for my 5-leg parlay.",
-      "hook": "Did you SEE that Hail Mary?! My jaw is still on the floor, and I'm breaking down how it just absolutely crushed my perfect 5-leg parlay.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "NFL Score Reactions & TheScore Bet Insights",
-      "topic": "Revealing my secret 'TheScore Bet' prop bet insights for Sunday's biggest underdog touchdown scorer.",
-      "hook": "Everyone's betting on the favorites, but *this* long-shot prop bet on TheScore Bet for an underdog touchdown could make you a legend this Sunday.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fast Food Challenges & Wendy's Menu Hacks",
-      "topic": "The 'Wendy's Secret Sauce' recreation challenge: did I nail it with only 3 ingredients?",
-      "hook": "I spent $50 trying to recreate Wendy's secret sauce at home... and one ingredient changed everything. Did I finally nail it?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fast Food Challenges & Wendy's Menu Hacks",
-      "topic": "Ranking every Wendy's Frosty flavor (including seasonal) from worst to best, with a surprise combo hack.",
-      "hook": "Chocolate vs. Vanilla Frosty? Please. You're missing out on a *third* secret flavor combination that blows them both away. I'm ranking them all!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Doordash Driver Diaries & Customer Confessions",
-      "topic": "My scariest Doordash delivery story: a midnight trip to a supposedly abandoned house.",
-      "hook": "My heart almost jumped out of my chest on *this* Doordash delivery \u2013 you won't believe what happened when I pulled up to a supposedly abandoned house at midnight.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Doordash Driver Diaries & Customer Confessions",
-      "topic": "Customers confessing their weirdest delivery instructions: 'Leave it in the bird bath'.",
-      "hook": "Why did someone ask for their pizza delivered upside down? I'm spilling the tea on the absolute WEIRDEST Doordash delivery instructions, like 'leave it in the bird bath'.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Fall Fashion & Cozy Autumn Aesthetics",
-      "topic": "The ultimate 'Pumpkin Patch Chic' outfit guide for under $100: thrift store edition.",
-      "hook": "Your Instagram-worthy pumpkin patch outfit doesn't need to break the bank \u2013 I'm showing you how to build a 'Pumpkin Patch Chic' look for under $100, all from thrift stores.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall Fashion & Cozy Autumn Aesthetics",
-      "topic": "5 cozy knitwear trends that are actually comfortable (and stylish) for working from home.",
-      "hook": "Say goodbye to itchy sweaters! These five knitwear trends prove you can be cozy AND look effortlessly chic this fall, even when working from home.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Halloween DIY & Spooky Season Prep",
-      "topic": "Easy last-minute DIY spooky decor: creating 'floating candles' from toilet paper rolls.",
-      "hook": "No time for elaborate decor? These three last-minute DIY Halloween decorations, like floating candles from toilet paper rolls, look like you spent a fortune.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Halloween DIY & Spooky Season Prep",
-      "topic": "Transforming a basic pumpkin into a viral glowing ghost projection with a mini projector.",
-      "hook": "Forget carving! I'm turning a plain pumpkin into a mesmerizing, glowing ghost projection using a mini projector that will haunt your neighbors (in a good way).",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Viral Life Hacks & Productivity Pointers",
-      "topic": "The '2-Minute Rule' to conquer procrastination forever and start any task immediately.",
-      "hook": "Still putting off that one task? The '2-Minute Rule' isn't just a hack; it's a productivity game-changer that will shock you with how easily you start things.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Viral Life Hacks & Productivity Pointers",
-      "topic": "Declutter your digital life in 15 minutes with this one AI-powered photo organizing app.",
-      "hook": "Your phone is probably overflowing with junk. I found an AI-powered app that declutters your entire digital life, especially photos, in just 15 minutes.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Relatable Sketch Comedy & Meme Recreations",
-      "topic": "Recreating the 'Is this loss?' meme with my extremely chaotic morning routine struggles.",
-      "hook": "Feeling like everything's going wrong today? I'm pretty sure my morning routine of spilled coffee and lost keys just became the new 'Is this loss?' meme.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Relatable Sketch Comedy & Meme Recreations",
-      "topic": "The internal monologue of trying (and failing) to follow a '5-minute craft' tutorial from TikTok.",
-      "hook": "Me trying to follow a '5-minute craft' tutorial vs. the reality: my internal monologue is a wild ride of frustration and glitter everywhere.",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
