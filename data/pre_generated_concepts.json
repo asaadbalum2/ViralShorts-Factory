@@ -1,37 +1,195 @@
 {
-  "generated_at": "2026-09-22T10:13:37.046192",
-  "valid_until": "2026-09-22T23:59:37.046197",
+  "generated_at": "2026-09-23T10:13:31.377126",
+  "valid_until": "2026-09-23T23:59:31.377136",
   "categories": [
-    "ai_trends",
-    "productivity",
-    "psychology",
-    "money_hacks",
-    "health_tips",
-    "tech_news",
-    "life_hacks",
-    "motivation"
+    "Parenting & Early Childhood Hacks",
+    "Fall Aesthetic & Cozy Living",
+    "Celeb Buzz & Entertainment Drama",
+    "Road Trips & Iconic Views",
+    "Fantasy Football & NFL Predictions",
+    "Global News Explainer Series",
+    "Streaming Freebies & Hidden Gems",
+    "Quick & Easy Fall Recipes",
+    "DIY Home & Organization Tips",
+    "Fashion & Autumn Style Guides",
+    "\"Did You Know?\" Factoids",
+    "Pet Shenanigans & Pawsome Advice",
+    "Relatable Comedy & POV Skits",
+    "Life Hacks & Productivity Boosters",
+    "Wellness & Self-Care Routines"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Parenting & Early Childhood Hacks",
+      "topic": "The genius toddler mealtime hack that saves your sanity (and floor!)",
+      "hook": "Is mealtime with your toddler a battlefield? What if I told you there's ONE simple trick to end the food fight chaos?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Parenting & Early Childhood Hacks",
+      "topic": "Dream feed explained: How to get your newborn sleeping longer *without* tears.",
+      "hook": "Your newborn's sleep schedule feels like a mystery, right? But what if you could add an extra hour or two of sleep for *everyone* tonight?",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Fall Aesthetic & Cozy Living",
+      "topic": "DIY essential oil diffuser hack for instant pumpkin spice magic.",
+      "hook": "Want your home to smell like a fall wonderland without toxic candles? You won't believe how easy this is!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Fall Aesthetic & Cozy Living",
+      "topic": "Transform your living room into a cozy haven with these 3 lighting tricks.",
+      "hook": "Is your living room feeling dark and dreary as the days get shorter? Don't buy new lamps \u2013 try *this* first!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Celeb Buzz & Entertainment Drama",
+      "topic": "The untold story behind [Specific Celeb Couple]'s *shocking* breakup.",
+      "hook": "Everyone thinks they know why [Celeb A] and [Celeb B] broke up, but what if the real reason was *never* reported?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Celeb Buzz & Entertainment Drama",
+      "topic": "Which highly anticipated movie sequel is *secretly* in development hell right now?",
+      "hook": "Remember that sequel everyone's been begging for? Well, a little bird told me it's facing *major* behind-the-scenes drama...",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Road Trips & Iconic Views",
+      "topic": "5 breathtaking hidden stops on California's Highway 1 you *must* visit.",
+      "hook": "Planning a Highway 1 road trip? Forget the crowded spots \u2013 I'm showing you the *secret* overlooks locals keep to themselves!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Road Trips & Iconic Views",
+      "topic": "How to see the Northern Lights on a budget trip to Iceland (no fancy tours needed!)",
+      "hook": "Dreaming of the Northern Lights but think it's too expensive? What if I told you how to chase the aurora for *half* the price?",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Fantasy Football & NFL Predictions",
+      "topic": "Week 7 waiver wire targets: The under-the-radar RBs who will win you your league.",
+      "hook": "Your fantasy team is struggling, but what if I told you there are THREE players on the waiver wire *right now* who could change your season?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Fantasy Football & NFL Predictions",
+      "topic": "My *bold* prediction for the NFC Wild Card race: A team no one expects will make it.",
+      "hook": "Everyone's talking about the usual suspects, but I'm looking into my crystal ball and seeing a SHOCKING team sneak into the NFC playoffs. Wanna know who?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Global News Explainer Series",
+      "topic": "Why your morning coffee is getting so expensive, explained in 60 seconds.",
+      "hook": "Feeling that pinch at the coffee shop? It's not just inflation \u2013 there's a wild global story behind those rising prices you need to hear.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Global News Explainer Series",
+      "topic": "The surprising country leading the world in plastic recycling (and why).",
+      "hook": "You think your recycling efforts matter? Wait until you hear about *this* country's mind-blowing approach to plastic waste \u2013 it's completely different!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Streaming Freebies & Hidden Gems",
+      "topic": "The *free* streaming app with thousands of cult classic movies and TV shows.",
+      "hook": "Tired of paying for every streaming service? What if I told you there's a *totally free* app packed with hidden cinematic treasures?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Streaming Freebies & Hidden Gems",
+      "topic": "Netflix's best-kept secret: A mind-bending documentary everyone's missing.",
+      "hook": "You've scrolled through Netflix a million times, but I guarantee you missed *this* game-changing documentary hiding in plain sight.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "5-minute gourmet pumpkin spice latte hack (better than *any* coffee shop!)",
+      "hook": "Paying five bucks for a basic pumpkin spice latte? Stop right now! I'm showing you how to make a barista-level PSL at home in literally five minutes.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "One-pan apple crumble: Your new favorite fall dessert with minimal cleanup.",
+      "hook": "Craving warm apple crumble but hate the mess? This one-pan recipe is so easy, you'll think it's magic \u2013 and cleanup is a breeze!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY Home & Organization Tips",
+      "topic": "The 15-minute digital declutter: Free up phone space and boost productivity.",
+      "hook": "Is your phone constantly screaming 'storage full'? What if you could declutter your digital life in just 15 minutes, for free?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "DIY Home & Organization Tips",
+      "topic": "Stylish DIY entryway shoe storage for under $30 (no more cluttered floors!)",
+      "hook": "Tired of tripping over shoes at your front door? You can build *this* sleek, space-saving organizer for less than the cost of a takeout meal!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion & Autumn Style Guides",
+      "topic": "Build your ultimate fall capsule wardrobe: 7 pieces, endless outfits.",
+      "hook": "Staring at a closet full of clothes but feeling like you have nothing to wear this fall? I'll show you how 7 pieces can create *dozens* of looks!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Fashion & Autumn Style Guides",
+      "topic": "How to style oversized chunky knits without looking frumpy (my top 3 tips).",
+      "hook": "Love chunky sweaters but feel like they swallow you whole? What if I told you the secret to looking effortlessly chic in oversized knits?",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    }
+  ],
   "voice_music_pairs": [
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
@@ -39,54 +197,64 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
