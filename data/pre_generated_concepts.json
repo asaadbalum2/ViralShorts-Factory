@@ -1,180 +1,180 @@
 {
-  "generated_at": "2026-09-25T10:26:37.682332",
-  "valid_until": "2026-09-25T23:59:37.682342",
+  "generated_at": "2026-09-26T10:05:57.049667",
+  "valid_until": "2026-09-26T23:59:57.049679",
   "categories": [
-    "Breaking News & Current Events Explained",
-    "Global Geopolitics & Regional Conflicts",
-    "Sports Highlights & Fan Reactions",
-    "Education & College Admissions Hacks",
-    "Legal & Political Deep Dives",
-    "Travel Vlogs & Cultural Spotlights",
-    "Weather & Disaster Preparedness",
-    "Athlete Spotlight & Performance Analysis",
-    "AI & Future Tech Innovations",
-    "Sustainable Living & Climate Action",
-    "Food Hacks & Viral Recipes",
-    "Fashion & Beauty Trends",
-    "Personal Finance & Investing Tips",
-    "Wellness & Mental Health Journeys",
-    "Pop Culture & Entertainment News"
+    "Political Explainers & Impact Analysis",
+    "Pro Sports Highlights & Athlete Spotlights",
+    "Concert & Music Scene Vlogs",
+    "90s/Early 00s Pop Culture & Celebrity Updates",
+    "Autumn Lifestyle & Activity Guides",
+    "Productivity & Time Management Hacks",
+    "Fall Fashion & Cozy Home Aesthetic",
+    "Current Events & News Summaries",
+    "Quick & Easy Fall Recipes",
+    "DIY & Home Improvement Short Tutorials",
+    "Edutainment: 'Did You Know?' Facts",
+    "Health & Wellness Mini-Routines",
+    "Relatable & Observational Comedy Skits",
+    "Travel & Weekend Getaway Ideas",
+    "Personal Finance & Economic Insight"
   ],
   "concepts": [
     {
-      "category": "Breaking News & Current Events Explained",
-      "topic": "Decoding TikTok's New Algorithm Shift for Creators",
-      "hook": "Did your TikTok views just tank overnight? You're not alone, and here's why the algorithm might be silently sabotaging your content!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking News & Current Events Explained",
-      "topic": "Why Your Favorite Snack Just Got More Expensive: The Red Sea Shipping Crisis Impact",
-      "hook": "Ever wonder why your grocery bill keeps climbing? The answer might surprise you, and it's happening thousands of miles away in a crucial shipping lane.",
+      "category": "Political Explainers & Impact Analysis",
+      "topic": "The unexpected local impact of a recent city council zoning vote on small businesses.",
+      "hook": "Did your favorite local coffee shop just get hit by a zoning change? This city council vote is officially in, and here's what it means for your neighborhood!",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Global Geopolitics & Regional Conflicts",
-      "topic": "Unpacking the South China Sea Disputes: Beyond the Headlines",
-      "hook": "Why are some of the world's biggest powers eyeing tiny islands and vast waters in the South China Sea? It's not just about land, it's about global power.",
+      "category": "Political Explainers & Impact Analysis",
+      "topic": "Why the electoral college is *still* a hot topic every election cycle and its historical roots.",
+      "hook": "Ever wondered why some votes just... count differently? Let's decode the enduring mystery of the Electoral College in under 50 seconds.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Pro Sports Highlights & Athlete Spotlights",
+      "topic": "The unexpected rookie NBA player who just broke multiple franchise records in his debut game.",
+      "hook": "Remember the name: Kai 'The Phoenix' Anderson. This rookie just rewrote the NBA record books and you won't believe how!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Pro Sports Highlights & Athlete Spotlights",
+      "topic": "Serena Williams' most iconic Grand Slam final moments, showcasing her incredible mental toughness.",
+      "hook": "You think *you've* had a tough day? Relive Serena Williams' most unbelievable comebacks and why she's arguably the GOAT.",
+      "voice_style": "inspirational",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Concert & Music Scene Vlogs",
+      "topic": "Behind-the-scenes at a local indie band's sold-out show, revealing pre-show rituals and stage energy.",
+      "hook": "Ever wonder what happens *before* the lights go down? I'm taking you backstage with 'The Midnight Riders' right before their biggest show yet!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Concert & Music Scene Vlogs",
+      "topic": "The resurgence of vinyl records at concerts: why fans are ditching streaming for physical music.",
+      "hook": "Is streaming dead? At last night's concert, everyone was clutching one thing: VINYL. Here's why the analog revolution is officially back.",
       "voice_style": "mysterious",
-      "music_mood": "intense",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Global Geopolitics & Regional Conflicts",
-      "topic": "The Butterfly Effect: How Taiwan's Elections Shape US-China Relations",
-      "hook": "A local election thousands of miles away, yet its outcome could send shockwaves through global superpowers. Here's how Taiwan's choices impact everyone.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights & Fan Reactions",
-      "topic": "Was That Foul REALLY a Foul? Dissecting the NBA Finals Game 7 Controversy",
-      "hook": "You thought you saw it all? The wildest, most controversial call of the NBA Finals just shattered dreams, and fans are RAGING! Let's break it down.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights & Fan Reactions",
-      "topic": "The Shocking Upset: How a Small College Team Toppled a Giant in March Madness",
-      "hook": "Nobody saw it coming! Witness the raw, emotional explosion as the ultimate underdog rewrites sports history in the most epic March Madness upset ever!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Education & College Admissions Hacks",
-      "topic": "The Secret SAT Essay Hack Admissions Officers DON'T Want You To Know",
-      "hook": "Struggling with the SAT essay? Forget everything you think you know, because THIS simple, overlooked hack could boost your score instantly!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Education & College Admissions Hacks",
-      "topic": "Turning Your 'Why I Want To Go Here' Essay Into an Admissions Magnet",
-      "hook": "Everyone writes about wanting to go to *that* dream school, but how do YOU make your essay unforgettable and stand out from thousands? It's simpler than you think.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Legal & Political Deep Dives",
-      "topic": "The Supreme Court's New Data Privacy Ruling: What It Means For YOUR Phone",
-      "hook": "Think your data is safe? A recent, game-changing Supreme Court decision just redefined digital privacy, and your smartphone might be more exposed than ever.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Legal & Political Deep Dives",
-      "topic": "Can a Politician Be Sued for 'Misinformation'? The Legal Precedent Explained",
-      "hook": "A controversial statement, a political firestorm, but is it actually ILLEGAL? Let's break down the legal tightrope politicians walk when spreading information.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Vlogs & Cultural Spotlights",
-      "topic": "Forget the Eiffel Tower: Paris's Secret Underground Catacombs Experience",
-      "hook": "You've seen the iconic landmarks, but what if I told you the *real* magic, and perhaps spookiness, of Paris lies 20 meters beneath your feet?",
+      "category": "90s/Early 00s Pop Culture & Celebrity Updates",
+      "topic": "What *really* happened with NSYNC's 'Bye Bye Bye' music video choreography and its hidden meanings.",
+      "hook": "We've all tried the 'Bye Bye Bye' dance, but did you know the real story behind Justin Timberlake's marionette moves? It's deeper than you think!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Travel Vlogs & Cultural Spotlights",
-      "topic": "Never Do THIS at a Japanese Onsen: Cultural Etiquette You NEED To Know",
-      "hook": "Planning a trip to Japan? Before you jump into that beautiful onsen, you absolutely NEED to hear these unspoken rules to avoid a major cultural blunder!",
+      "category": "90s/Early 00s Pop Culture & Celebrity Updates",
+      "topic": "The most scandalous fashion trends from the early 2000s that we all secretly loved (or still do).",
+      "hook": "Low-rise jeans, trucker hats, and frosted tips... The early 2000s fashion was WILD. But which trend should *actually* make a comeback?",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Weather & Disaster Preparedness",
-      "topic": "The Mystery of the Sky PUNCH: Explaining Fallstreak Holes",
-      "hook": "Ever looked up and seen a giant, perfectly round hole punched through the clouds? This isn't CGI, it's real, it's wild, and we'll tell you how it forms!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather & Disaster Preparedness",
-      "topic": "Are You Ready for a Solar Flare? Essential EMP Preparedness Gear",
-      "hook": "Forget hurricanes for a second. What if the sun itself unleashed chaos, taking out all electronics? You NEED these items if an EMP strikes.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Athlete Spotlight & Performance Analysis",
-      "topic": "Beyond the Gym: The Unconventional Training Secrets of Simone Biles",
-      "hook": "How does Simone Biles defy gravity with such grace and power? It's not just hours in the gym \u2013 her secret, unconventional training might shock you!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Athlete Spotlight & Performance Analysis",
-      "topic": "Cryotherapy or Cold Plunge? Which Recovery Method Reigns Supreme for Elite Athletes?",
-      "hook": "From ice baths to sub-zero chambers, elite athletes are pushing the limits of recovery. But which method actually works best, and why?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "AI & Future Tech Innovations",
-      "topic": "AI For Everyone: How Open-Source Models Are Democratizing Tech Innovation",
-      "hook": "Thought AI was just for tech giants? Think again! A quiet revolution is bringing cutting-edge AI right to your desktop, making you a creator!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "AI & Future Tech Innovations",
-      "topic": "Deepfakes and Democracy: The Scary Truth About AI-Generated Political Ads",
-      "hook": "What if you couldn't trust what you saw or heard from politicians? Deepfakes are here, and they're threatening the very fabric of our elections and truth itself.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Sustainable Living & Climate Action",
-      "topic": "The Zero-Waste Toothbrush Hack: Why Bamboo Is Only Half the Story",
-      "hook": "You switched to bamboo toothbrushes, right? Good! But what if I told you there's an even BETTER, truly zero-waste option hiding in plain sight that will blow your mind?",
+      "category": "Autumn Lifestyle & Activity Guides",
+      "topic": "3 unique fall picnic spots you haven't thought of, complete with gourmet snack recommendations.",
+      "hook": "Pumpkin patches are basic. Level up your fall aesthetic with these three secret picnic spots and the ultimate autumn snack board!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Sustainable Living & Climate Action",
-      "topic": "Sucking CO2 From the Sky: How Direct Air Capture Tech Actually Works",
-      "hook": "What if we could literally vacuum pollution out of the atmosphere? This futuristic technology is already a reality, and here's how these giant machines are fighting climate change.",
+      "category": "Autumn Lifestyle & Activity Guides",
+      "topic": "How to host the ultimate cozy game night indoors for a chilly autumn evening.",
+      "hook": "Don't let the cold keep you down! Transform your living room into the ultimate cozy game night haven with these easy steps.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Time Management Hacks",
+      "topic": "The '2-minute rule' explained: how to stop procrastinating on small tasks immediately.",
+      "hook": "Stop putting off tiny tasks! The '2-minute rule' will revolutionize your productivity, and it's ridiculously simple.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Time Management Hacks",
+      "topic": "How to use 'time blocking' to reclaim your evenings and beat burnout effectively.",
+      "hook": "Feeling swamped and tired of working late? 'Time blocking' isn't just for CEOs \u2013 it's your secret weapon to stress-free evenings.",
+      "voice_style": "inspirational",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Fashion & Cozy Home Aesthetic",
+      "topic": "Upcycling last year's sweaters into chic, new fall accessories (e.g., scarves, headbands).",
+      "hook": "Don't toss that old sweater! I'm showing you how to turn last season's knits into brand new, trendy fall accessories for FREE.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Fashion & Cozy Home Aesthetic",
+      "topic": "The essential elements for creating a perfect 'hygge' corner in your home for autumn comfort.",
+      "hook": "Want your home to feel like a warm hug? Master the Danish art of 'Hygge' this fall with these five must-have items for your cozy corner.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events & News Summaries",
+      "topic": "The unexpected global impact of the recent AI ethics summit and its future implications for technology.",
+      "hook": "Did you blink? The world just had a massive AI ethics summit, and the decisions made could change *everything* about your digital future.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events & News Summaries",
+      "topic": "Why the latest supply chain disruptions are affecting holiday shopping prices *right now*.",
+      "hook": "Heads up, holiday shoppers! That perfect gift might be harder to find this year, thanks to a surprising new twist in the global supply chain.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "A 3-ingredient pumpkin spice latte hack that's better than your favorite coffee shop's.",
+      "hook": "Forget the long lines and big prices! I'm showing you a 3-ingredient pumpkin spice latte hack that tastes like autumn magic.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick & Easy Fall Recipes",
+      "topic": "One-pan apple cinnamon pork chops for a quick and comforting weeknight dinner.",
+      "hook": "Dinner in under 30 minutes, AND it screams fall? This one-pan apple cinnamon pork chop recipe is about to become your new weeknight hero.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY & Home Improvement Short Tutorials",
+      "topic": "How to build a simple floating shelf in under an hour with basic household tools.",
+      "hook": "Got a blank wall and an hour to spare? Let's build a stylish floating shelf that looks way more expensive than it is!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY & Home Improvement Short Tutorials",
+      "topic": "Easy steps to weatherproof your windows for winter, saving on heating bills significantly.",
+      "hook": "Don't let your money fly out the window this winter! These simple weatherproofing hacks will seal in the warmth and slash your heating bill.",
       "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
@@ -182,79 +182,79 @@
   ],
   "voice_music_pairs": [
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-US-AriaNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
