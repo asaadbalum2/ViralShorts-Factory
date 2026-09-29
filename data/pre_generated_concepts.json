@@ -1,260 +1,99 @@
 {
-  "generated_at": "2026-09-28T11:54:20.690543",
-  "valid_until": "2026-09-28T23:59:20.690554",
+  "generated_at": "2026-09-29T11:30:12.803172",
+  "valid_until": "2026-09-29T23:59:12.803183",
   "categories": [
-    "NFL & Fantasy Football Analysis (Burns, Ekeler)",
-    "The Walking Dead: Dead City Theories & Recaps",
-    "Witcher 3 Remastered Lore & New Features",
-    "Quick Global News & Human Rights Explainers (Gershkovich)",
-    "Political Commentary & Satire (General 'Politician')",
-    "Unique Wildlife & Conservation Expeditions (Python Hunt)",
-    "Seasonal Life Hacks & Daylight Savings Reminders",
-    "Fall & Halloween Spooky Season Content",
-    "Gaming Community Challenges & Builds",
-    "Athlete Trade Rumors & Performance Updates",
-    "Extreme Jobs & Unique Lifestyles Vlogs",
-    "Pop Culture Breakdown & Entertainment News",
-    "Fact-Checking & Myth Busting (Current Events)",
-    "Nostalgic Gaming Retrospectives & Comparisons",
-    "Seasonal Wellness & Energy Management Tips"
+    "Global News & Explainers (e.g., Yemen updates)",
+    "Sports Analysis & Debates (e.g., NFL Power Rankings, Bal\u00f3n de Oro, Golf highlights)",
+    "Celebrity & Pop Culture Updates (e.g., Andrew Garfield, Adam Sandler projects)",
+    "Mystery, Discovery & Unexplained (e.g., 'Colossal' finds, 'Found' content)",
+    "Autumn & Fall Lifestyle (e.g., Cozy vibes, Pumpkin Spice everything)",
+    "Halloween Prep & Spooky Content (e.g., Costume ideas, Decor DIYs)",
+    "Quick Comedy Skits & Relatable Humor",
+    "DIY & Life Hacks",
+    "Food & Recipe Inspiration (e.g., Quick meals, seasonal treats)",
+    "Fashion & Beauty Quick Takes (e.g., OOTDs, GRWMs)",
+    "Educational & 'X Explained' in 60 seconds",
+    "Travel Mini-Vlogs & Destination Spotlights",
+    "Fitness & Wellness Tips",
+    "Pet Antics & Cute Animals",
+    "Tech Reviews & Gadget Spotlights"
   ],
-  "concepts": [
-    {
-      "category": "NFL & Fantasy Football Analysis (Burns, Ekeler)",
-      "topic": "Why Brian Burns' Holdout is a Fantasy Football Nightmare for Panthers Fans",
-      "hook": "Panthers fans, your fantasy draft just got a whole lot trickier. Brian Burns is holding out, and here's why it could ruin your season!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "The Walking Dead: Dead City Theories & Recaps",
-      "topic": "Maggie's Hidden Motive: Why She REALLY Needs Negan in Dead City",
-      "hook": "Did you catch that look? Maggie's reason for bringing Negan to Dead City goes WAY deeper than just her son. Here's my theory...",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Witcher 3 Remastered Lore & New Features",
-      "topic": "CDPR's Secret Plan: How Ray Tracing Changes Velen's Atmosphere in Witcher 3 Remastered",
-      "hook": "Forget enhanced textures! The real magic in Witcher 3 Remastered isn't just better graphics, it's how Ray Tracing reinvents Velen's dark, gritty atmosphere.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Quick Global News & Human Rights Explainers (Gershkovich)",
-      "topic": "The Real Reason Behind Evan Gershkovich's Detainment: What We Know",
-      "hook": "Why is an American journalist still imprisoned in Russia? Evan Gershkovich's case isn't just about espionage, it's a chilling message. Let's break it down.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Political Commentary & Satire (General 'Politician')",
-      "topic": "The 'Politician's Pledge': Unpacking Absurd Campaign Promises",
-      "hook": "They promised flying cars and free tacos! Let's dissect the most ridiculously over-the-top campaign pledges we've heard this election cycle and what they *really* mean.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Unique Wildlife & Conservation Expeditions (Python Hunt)",
-      "topic": "Inside the Everglades Python Hunt: Eco-Warriors vs. Invasive Predators",
-      "hook": "Imagine trekking through the swamp, hunting a creature that devours native wildlife whole. This isn't a movie, it's the real Everglades python hunt, and it's vital for conservation.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 47
-    },
-    {
-      "category": "Seasonal Life Hacks & Daylight Savings Reminders",
-      "topic": "Surviving Daylight Savings: 3 Hacks to Beat the 'Fall Back' Blues",
-      "hook": "The clock's about to jump back, and so will your energy levels if you're not prepared! Here are three genius hacks to conquer Daylight Savings and keep your sleep schedule intact.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall & Halloween Spooky Season Content",
-      "topic": "Unmasking the Real History of Jack-o'-Lanterns (It's Not Irish!)",
-      "hook": "Think Jack-o'-Lanterns are an Irish tradition? Think again! The true, slightly darker origin story of this Halloween icon might surprise you.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming Community Challenges & Builds",
-      "topic": "Starfield Ship Build Challenge: Recreating the Millennium Falcon (No Mods!)",
-      "hook": "Can you build the Millennium Falcon in Starfield without mods? The community's latest challenge is pushing ship designers to their limits. Here's a quick look at some epic attempts!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Athlete Trade Rumors & Performance Updates",
-      "topic": "The Unspoken Reason Why Deebo Samuel Trade Rumors Keep Surfacing",
-      "hook": "Deebo Samuel's name keeps popping up in trade talks. But it's not just about money or performance. There's a deeper team dynamic at play. Let's talk about it.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 49
-    },
-    {
-      "category": "NFL & Fantasy Football Analysis (Burns, Ekeler)",
-      "topic": "Austin Ekeler's Injury Impact: Who Benefits in Chargers' Backfield for Week 2?",
-      "hook": "Ekeler's out, but the Chargers' backfield isn't empty! Who's stepping up, and who should you be picking up for your fantasy team THIS WEEK?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "The Walking Dead: Dead City Theories & Recaps",
-      "topic": "The 'Croat's Secret Weapon' Theory: What's Hiding in the Sanctuary?",
-      "hook": "The Croat isn't just another villain with a big army. My theory? He's got a secret weapon in that sanctuary, something that could change everything for Negan and Maggie.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 46
-    },
-    {
-      "category": "Witcher 3 Remastered Lore & New Features",
-      "topic": "The Unseen Changes: How Remastered 'Quality of Life' Features Enhance Geralt's Journey",
-      "hook": "It's not just pretty graphics! Witcher 3's Remastered update snuck in some incredible quality-of-life changes that make playing Geralt smoother than ever. Did you spot them?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 44
-    },
-    {
-      "category": "Quick Global News & Human Rights Explainers (Gershkovich)",
-      "topic": "The Silent Crisis: Global Press Freedom Under Attack & Why it Matters to YOU",
-      "hook": "Evan Gershkovich is just one name. Across the globe, journalists are being silenced, and it's not just *their* freedom at stake \u2013 it's *yours* too. Here's why.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Political Commentary & Satire (General 'Politician')",
-      "topic": "The Art of the 'Non-Answer': How Politicians Dodge Tough Questions",
-      "hook": "Ever feel like politicians speak in riddles? That's because they've mastered the 'non-answer.' Let's break down their favorite techniques for dodging accountability.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Unique Wildlife & Conservation Expeditions (Python Hunt)",
-      "topic": "Beyond Pythons: The Unseen Ecological Domino Effect of Invasive Species",
-      "hook": "The Everglades python isn't just a big snake; it's a living ecological disaster. But what happens *after* they're removed? The conservation story is more complex than you think.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 49
-    },
-    {
-      "category": "Seasonal Life Hacks & Daylight Savings Reminders",
-      "topic": "Autumn Energy Boosters: 5 Ways to Fight the Fall Slump (Beyond Coffee!)",
-      "hook": "Feeling sluggish as the days get shorter? Don't reach for another coffee! Here are 5 unconventional hacks to boost your energy and embrace the autumn vibes.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 42
-    },
-    {
-      "category": "Fall & Halloween Spooky Season Content",
-      "topic": "The Creepiest Urban Legend from YOUR State (And How to Survive It)",
-      "hook": "Every state has *that* story. The one that makes your skin crawl. Let's dive into the creepiest urban legend from a random state and give you a survival guide!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Gaming Community Challenges & Builds",
-      "topic": "The 'No Fast Travel' Challenge in Tears of the Kingdom: Madness or Mastery?",
-      "hook": "Can you beat Tears of the Kingdom without fast travel? This insane community challenge is proving that Hyrule is even bigger and more beautiful than we thought. Is it worth the grind?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 46
-    },
-    {
-      "category": "Athlete Trade Rumors & Performance Updates",
-      "topic": "The Lakers' 'Last Dance' Dilemma: Why Anthony Davis Trade Rumors Are Heating Up",
-      "hook": "Is AD on the chopping block? The Lakers are at a crossroads, and whispers of an Anthony Davis trade are getting louder. What's driving this potential seismic shift?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
