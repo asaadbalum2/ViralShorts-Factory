@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-09-29T11:30:12.803172",
-  "valid_until": "2026-09-29T23:59:12.803183",
+  "generated_at": "2026-09-30T11:20:28.441447",
+  "valid_until": "2026-09-30T23:59:28.441458",
   "categories": [
-    "Global News & Explainers (e.g., Yemen updates)",
-    "Sports Analysis & Debates (e.g., NFL Power Rankings, Bal\u00f3n de Oro, Golf highlights)",
-    "Celebrity & Pop Culture Updates (e.g., Andrew Garfield, Adam Sandler projects)",
-    "Mystery, Discovery & Unexplained (e.g., 'Colossal' finds, 'Found' content)",
-    "Autumn & Fall Lifestyle (e.g., Cozy vibes, Pumpkin Spice everything)",
-    "Halloween Prep & Spooky Content (e.g., Costume ideas, Decor DIYs)",
-    "Quick Comedy Skits & Relatable Humor",
-    "DIY & Life Hacks",
-    "Food & Recipe Inspiration (e.g., Quick meals, seasonal treats)",
-    "Fashion & Beauty Quick Takes (e.g., OOTDs, GRWMs)",
-    "Educational & 'X Explained' in 60 seconds",
-    "Travel Mini-Vlogs & Destination Spotlights",
-    "Fitness & Wellness Tips",
-    "Pet Antics & Cute Animals",
-    "Tech Reviews & Gadget Spotlights"
+    "Cricket Mania & Rivalry Analysis",
+    "Pro Sports Daily & Player Spotlights",
+    "Global News & Geopolitical Explained",
+    "Climate & Extreme Weather Alerts",
+    "Youth Sports & Feel-Good Moments",
+    "Fall & Halloween Decor/DIY",
+    "Seasonal Recipe & Food Hacks",
+    "Tech Gadget Unboxings & Reviews",
+    "Life Hacks & Productivity Tips",
+    "Fashion & Beauty (Autumn/Winter Looks)",
+    "Comedy Skits & Trending Audio Challenges",
+    "Educational 'Learn X in 60 Seconds'",
+    "Personal Finance & Investment Updates",
+    "Pet Antics & Animal Rescues",
+    "Travel Guides & Weekend Getaways"
   ],
-  "concepts": [],
-  "voice_music_pairs": [
+  "concepts": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "category": "Cricket Mania & Rivalry Analysis",
+      "topic": "India vs. Pakistan T20 World Cup - The Unbreakable Rivalry",
+      "hook": "Is it just a game, or a clash of nations? When India meets Pakistan on the cricket field, history is made...",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 45
     },
     {
-      "voice": "en-US-GuyNeural",
+      "category": "Pro Sports Daily & Player Spotlights",
+      "topic": "LeBron James's Unprecedented Longevity Secrets Revealed",
+      "hook": "At 39, LeBron is still dominating. How does he do it? The King's shocking daily routine revealed!",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global News & Geopolitical Explained",
+      "topic": "The Suez Canal's Strategic Importance & Future Vulnerabilities",
+      "hook": "One stuck ship brought global trade to a halt. Why is the Suez Canal still so critical, and what threatens it next?",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Climate & Extreme Weather Alerts",
+      "topic": "Why '100-Year Floods' Are Becoming Annual & What It Means",
+      "hook": "We're hearing '100-year flood' almost every year now. What changed, and are we truly prepared for the new normal?",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Youth Sports & Feel-Good Moments",
+      "topic": "The Viral Moment a Losing Team Helped Their Opponent Win",
+      "hook": "In a world of fierce competition, this team did the unthinkable. Prepare for the most heartwarming sportsmanship you'll see today!",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall & Halloween Decor/DIY",
+      "topic": "Spooky DIY Floating Ghost Lanterns for Your Porch",
+      "hook": "Want to haunt your neighborhood this Halloween without breaking the bank? I'll show you how to make these super easy, floating specters!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Recipe & Food Hacks",
+      "topic": "The Secret to Perfect, Gooey Caramel Apples at Home",
+      "hook": "Forget those sticky, uneven store-bought caramel apples! I'm revealing the ONE trick to make them absolutely perfect every time.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Gadget Unboxings & Reviews",
+      "topic": "Unboxing the Viral AI-Powered Noise-Canceling Headphones",
+      "hook": "Are these the headphones that will change everything? We're unboxing the AI-powered noise-canceling headphones everyone's talking about!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Life Hacks & Productivity Tips",
+      "topic": "The '2-Minute Rule' That Will Instantly Stop Procrastination",
+      "hook": "Tired of putting things off? This simple 2-minute rule is a game-changer for procrastination, and it actually works!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion & Beauty (Autumn/Winter Looks)",
+      "topic": "Mastering Layering Without Looking Bulky This Fall",
+      "hook": "Layering for fall often ends up looking like a marshmallow! I'll show you the pro tricks to stay warm and chic, not chunky.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Cricket Mania & Rivalry Analysis",
+      "topic": "The IPL Auction's Craziest Buys: Flops vs. Superstars",
+      "hook": "Remember that player who went for millions, then vanished? We're diving into the IPL's biggest auction shockers and their untold stories!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Pro Sports Daily & Player Spotlights",
+      "topic": "Unsung Heroes of the NHL Playoffs Who Changed the Game",
+      "hook": "While superstars grab headlines, these unexpected players made critical plays that defined the Stanley Cup playoffs. Their stories will surprise you!",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global News & Geopolitical Explained",
+      "topic": "The Hidden Geopolitics Behind the Global Microchip Shortage",
+      "hook": "Your phone, car, even toaster... all are impacted by this crisis. But why is there a microchip shortage, and who really controls the supply?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Climate & Extreme Weather Alerts",
+      "topic": "Arctic Permafrost Melt: Ancient Viruses & Climate Time Bomb",
+      "hook": "What if ancient, unknown viruses were thawing out right now? The chilling truth about melting permafrost and what it means for our future.",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Youth Sports & Feel-Good Moments",
+      "topic": "How a Small Town's Youth Soccer Team United After Tragedy",
+      "hook": "After an unthinkable loss, this youth soccer team found strength and community in the most unexpected way. Get ready for goosebumps.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall & Halloween Decor/DIY",
+      "topic": "Upcycling Old Sweaters into Chic Pumpkin Decorations",
+      "hook": "Don't throw out those old sweaters! I'll show you how to transform them into adorable, cozy pumpkins perfect for your fall decor.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Recipe & Food Hacks",
+      "topic": "Batch-Cooking 3 Effortless Fall Soups for Quick Weeknight Meals",
+      "hook": "Tired of dinner dilemmas? I'm sharing three incredible, easy fall soup recipes you can batch cook for delicious, stress-free meals all week!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Tech Gadget Unboxings & Reviews",
+      "topic": "The Smart Ring That Tracks Everything: Is It a Health Game-Changer?",
+      "hook": "Could this tiny ring replace your smartwatch? We're putting the new smart health ring to the test to see if it's really worth the hype!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Life Hacks & Productivity Tips",
+      "topic": "How to Instantly Declutter Your Digital Life & Boost Focus",
+      "hook": "Your digital life is probably a mess, and it's draining your focus! Learn my simple, instant hacks to declutter your phone and computer today.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion & Beauty (Autumn/Winter Looks)",
+      "topic": "The Ultimate Guide to Finding Your Perfect Winter Coat Style",
+      "hook": "Stop buying the wrong winter coat! From puffers to wool, I'm breaking down how to find the perfect style that flatters *your* body and keeps you warm.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    }
+  ],
+  "voice_music_pairs": [
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
