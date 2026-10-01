@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-09-30T11:20:28.441447",
-  "valid_until": "2026-09-30T23:59:28.441458",
+  "generated_at": "2026-10-01T11:45:29.566515",
+  "valid_until": "2026-10-01T23:59:29.566525",
   "categories": [
-    "Cricket Mania & Rivalry Analysis",
-    "Pro Sports Daily & Player Spotlights",
-    "Global News & Geopolitical Explained",
-    "Climate & Extreme Weather Alerts",
-    "Youth Sports & Feel-Good Moments",
-    "Fall & Halloween Decor/DIY",
-    "Seasonal Recipe & Food Hacks",
-    "Tech Gadget Unboxings & Reviews",
-    "Life Hacks & Productivity Tips",
-    "Fashion & Beauty (Autumn/Winter Looks)",
+    "October Planning & Productivity Hacks",
+    "Fall Fashion & Autumn Aesthetics",
+    "Halloween DIY & Decor",
+    "Celebrity & Entertainment Buzz (e.g., Dominic West)",
+    "Sports Insights & Athlete Profiles (e.g., Rafael Jodar)",
+    "Local News & Community Updates (e.g., Harris County)",
+    "Public Safety & Emergency Alerts (Blue/Amber Alert)",
+    "Fast Food Reviews & Menu Hacks",
+    "Parenting Hacks & Toddler Moments",
+    "Budgeting & Frugal Living Tips",
+    "Wellness & Self-Care Routines",
+    "Educational Explainer Videos",
     "Comedy Skits & Trending Audio Challenges",
-    "Educational 'Learn X in 60 Seconds'",
-    "Personal Finance & Investment Updates",
-    "Pet Antics & Animal Rescues",
-    "Travel Guides & Weekend Getaways"
+    "Travel Guides & Fall Getaways",
+    "Tech Reviews & Gadget Updates"
   ],
   "concepts": [
     {
-      "category": "Cricket Mania & Rivalry Analysis",
-      "topic": "India vs. Pakistan T20 World Cup - The Unbreakable Rivalry",
-      "hook": "Is it just a game, or a clash of nations? When India meets Pakistan on the cricket field, history is made...",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "October Planning & Productivity Hacks",
+      "topic": "The Ultimate October Daily Planner for Maximizing Your Fall Productivity",
+      "hook": "Feeling overwhelmed by October's jam-packed to-do list, from Halloween to deadlines?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Pro Sports Daily & Player Spotlights",
-      "topic": "LeBron James's Unprecedented Longevity Secrets Revealed",
-      "hook": "At 39, LeBron is still dominating. How does he do it? The King's shocking daily routine revealed!",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
+      "category": "October Planning & Productivity Hacks",
+      "topic": "Fall Semester Study Schedule & Exam Prep Hacks for College Students",
+      "hook": "College students, drowning in midterms and group projects already?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Global News & Geopolitical Explained",
-      "topic": "The Suez Canal's Strategic Importance & Future Vulnerabilities",
-      "hook": "One stuck ship brought global trade to a halt. Why is the Suez Canal still so critical, and what threatens it next?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Fall Fashion & Autumn Aesthetics",
+      "topic": "Flattering Fall Layering Hacks & Outfit Ideas for Apple Body Types",
+      "hook": "Apple shapes, are you struggling with fall layering that actually flatters?",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Climate & Extreme Weather Alerts",
-      "topic": "Why '100-Year Floods' Are Becoming Annual & What It Means",
-      "hook": "We're hearing '100-year flood' almost every year now. What changed, and are we truly prepared for the new normal?",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
+      "category": "Fall Fashion & Autumn Aesthetics",
+      "topic": "DIY Pumpkin Spice Latte Scented Home Spray for Cozy Autumn Vibes",
+      "hook": "Want your home to smell like a cozy autumn cafe without burning a single candle?",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Youth Sports & Feel-Good Moments",
-      "topic": "The Viral Moment a Losing Team Helped Their Opponent Win",
-      "hook": "In a world of fierce competition, this team did the unthinkable. Prepare for the most heartwarming sportsmanship you'll see today!",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
+      "category": "Halloween DIY & Decor",
+      "topic": "Spooky Giant Spider Web Garland from Dollar Store Trash Bags",
+      "hook": "Transform your porch into a terrifying spider lair for less than five bucks!",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Fall & Halloween Decor/DIY",
-      "topic": "Spooky DIY Floating Ghost Lanterns for Your Porch",
-      "hook": "Want to haunt your neighborhood this Halloween without breaking the bank? I'll show you how to make these super easy, floating specters!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Halloween DIY & Decor",
+      "topic": "3 No-Carve Pumpkin Ideas for Last-Minute Kid-Friendly Halloween Decor",
+      "hook": "Out of time (or tools) for pumpkin carving this year?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Seasonal Recipe & Food Hacks",
-      "topic": "The Secret to Perfect, Gooey Caramel Apples at Home",
-      "hook": "Forget those sticky, uneven store-bought caramel apples! I'm revealing the ONE trick to make them absolutely perfect every time.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Celebrity & Entertainment Buzz (e.g., Dominic West)",
+      "topic": "Dominic West's 'Crown' Transformation & Real-Life Royal Drama Behind the Scenes",
+      "hook": "Did Dominic West *really* become King Charles in 'The Crown'?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Tech Gadget Unboxings & Reviews",
-      "topic": "Unboxing the Viral AI-Powered Noise-Canceling Headphones",
-      "hook": "Are these the headphones that will change everything? We're unboxing the AI-powered noise-canceling headphones everyone's talking about!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Celebrity & Entertainment Buzz (e.g., Dominic West)",
+      "topic": "Unpacking the Craziest TV Series Finale Cliffhangers of 2023 You Missed",
+      "hook": "That season finale? I'm still screaming! Let's talk about the wildest TV show endings.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Life Hacks & Productivity Tips",
-      "topic": "The '2-Minute Rule' That Will Instantly Stop Procrastination",
-      "hook": "Tired of putting things off? This simple 2-minute rule is a game-changer for procrastination, and it actually works!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Sports Insights & Athlete Profiles (e.g., Rafael Jodar)",
+      "topic": "Rafael Jodar's Unique Training Regimen: Secrets to His Tennis Peak Performance",
+      "hook": "What makes Rafael Jodar a tennis powerhouse, even against the odds?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Fashion & Beauty (Autumn/Winter Looks)",
-      "topic": "Mastering Layering Without Looking Bulky This Fall",
-      "hook": "Layering for fall often ends up looking like a marshmallow! I'll show you the pro tricks to stay warm and chic, not chunky.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Sports Insights & Athlete Profiles (e.g., Rafael Jodar)",
+      "topic": "The Underdog Story: Small-Town Swimmer's Journey to the Olympic Dream",
+      "hook": "Everyone loves an underdog story, especially when it's true and inspiring.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Cricket Mania & Rivalry Analysis",
-      "topic": "The IPL Auction's Craziest Buys: Flops vs. Superstars",
-      "hook": "Remember that player who went for millions, then vanished? We're diving into the IPL's biggest auction shockers and their untold stories!",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Local News & Community Updates (e.g., Harris County)",
+      "topic": "Harris County's New 'Green Spaces' Park Initiative: What it Means for You",
+      "hook": "Living in Harris County? Get ready for greener, more accessible neighborhoods!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Pro Sports Daily & Player Spotlights",
-      "topic": "Unsung Heroes of the NHL Playoffs Who Changed the Game",
-      "hook": "While superstars grab headlines, these unexpected players made critical plays that defined the Stanley Cup playoffs. Their stories will surprise you!",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
+      "category": "Local News & Community Updates (e.g., Harris County)",
+      "topic": "How to Donate & Volunteer for Your Local Food Bank This Fall in Harris County",
+      "hook": "The holidays are coming, and our community's most vulnerable need us now more than ever.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Global News & Geopolitical Explained",
-      "topic": "The Hidden Geopolitics Behind the Global Microchip Shortage",
-      "hook": "Your phone, car, even toaster... all are impacted by this crisis. But why is there a microchip shortage, and who really controls the supply?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Public Safety & Emergency Alerts (Blue/Amber Alert)",
+      "topic": "Crucial Steps: What to Do Immediately When You Receive an Amber Alert",
+      "hook": "Your phone just buzzed with an Amber Alert. Do you know what to do next to truly help?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Climate & Extreme Weather Alerts",
-      "topic": "Arctic Permafrost Melt: Ancient Viruses & Climate Time Bomb",
-      "hook": "What if ancient, unknown viruses were thawing out right now? The chilling truth about melting permafrost and what it means for our future.",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
+      "category": "Public Safety & Emergency Alerts (Blue/Amber Alert)",
+      "topic": "Understanding Blue Alerts: Honoring Fallen Officers and Community Safety Protocols",
+      "hook": "Ever wondered what a Blue Alert really means, beyond the headlines?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Youth Sports & Feel-Good Moments",
-      "topic": "How a Small Town's Youth Soccer Team United After Tragedy",
-      "hook": "After an unthinkable loss, this youth soccer team found strength and community in the most unexpected way. Get ready for goosebumps.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
+      "category": "Fast Food Reviews & Menu Hacks",
+      "topic": "McDonald's Secret Menu: The Halloween OREO McFlurry Hack You NEED to Try",
+      "hook": "You won't believe the McDonald's secret menu item for October. It's spooky good!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fall & Halloween Decor/DIY",
-      "topic": "Upcycling Old Sweaters into Chic Pumpkin Decorations",
-      "hook": "Don't throw out those old sweaters! I'll show you how to transform them into adorable, cozy pumpkins perfect for your fall decor.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Fast Food Reviews & Menu Hacks",
+      "topic": "The Ultimate Wendy's Chili Cheese Fries Customization Guide for Max Flavor",
+      "hook": "Think you know Wendy's Chili Cheese Fries? Think again! My hack takes them to a new level.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Seasonal Recipe & Food Hacks",
-      "topic": "Batch-Cooking 3 Effortless Fall Soups for Quick Weeknight Meals",
-      "hook": "Tired of dinner dilemmas? I'm sharing three incredible, easy fall soup recipes you can batch cook for delicious, stress-free meals all week!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Parenting Hacks & Toddler Moments",
+      "topic": "Toddler-Proofing Your Home for Fall & Halloween Decor Disasters",
+      "hook": "Your toddler just discovered the Halloween candy bowl... again. Let's toddler-proof!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Tech Gadget Unboxings & Reviews",
-      "topic": "The Smart Ring That Tracks Everything: Is It a Health Game-Changer?",
-      "hook": "Could this tiny ring replace your smartwatch? We're putting the new smart health ring to the test to see if it's really worth the hype!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Parenting Hacks & Toddler Moments",
+      "topic": "Quick Meltdown Management Techniques for Overtired Toddlers in Public",
+      "hook": "Is your toddler currently having an epic meltdown in aisle 5 of Target? I've got you.",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Life Hacks & Productivity Tips",
-      "topic": "How to Instantly Declutter Your Digital Life & Boost Focus",
-      "hook": "Your digital life is probably a mess, and it's draining your focus! Learn my simple, instant hacks to declutter your phone and computer today.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Budgeting & Frugal Living Tips",
+      "topic": "3 Awesome DIY Halloween Costumes You Can Make for Under $10",
+      "hook": "Don't spend a fortune on a Halloween costume this year! I'll show you how to DIY for cheap.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fashion & Beauty (Autumn/Winter Looks)",
-      "topic": "The Ultimate Guide to Finding Your Perfect Winter Coat Style",
-      "hook": "Stop buying the wrong winter coat! From puffers to wool, I'm breaking down how to find the perfect style that flatters *your* body and keeps you warm.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Budgeting & Frugal Living Tips",
+      "topic": "Mastering Grocery Store Price Matching for Huge Weekly Savings on Essentials",
+      "hook": "Are you leaving money on the table at the grocery store every single week?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
