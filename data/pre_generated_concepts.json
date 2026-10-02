@@ -1,249 +1,249 @@
 {
-  "generated_at": "2026-10-01T11:45:29.566515",
-  "valid_until": "2026-10-01T23:59:29.566525",
+  "generated_at": "2026-10-02T11:15:56.433364",
+  "valid_until": "2026-10-02T23:59:56.433375",
   "categories": [
-    "October Planning & Productivity Hacks",
-    "Fall Fashion & Autumn Aesthetics",
-    "Halloween DIY & Decor",
-    "Celebrity & Entertainment Buzz (e.g., Dominic West)",
-    "Sports Insights & Athlete Profiles (e.g., Rafael Jodar)",
-    "Local News & Community Updates (e.g., Harris County)",
-    "Public Safety & Emergency Alerts (Blue/Amber Alert)",
-    "Fast Food Reviews & Menu Hacks",
-    "Parenting Hacks & Toddler Moments",
-    "Budgeting & Frugal Living Tips",
-    "Wellness & Self-Care Routines",
-    "Educational Explainer Videos",
-    "Comedy Skits & Trending Audio Challenges",
-    "Travel Guides & Fall Getaways",
-    "Tech Reviews & Gadget Updates"
+    "Baseball Playoff Hype & Team Reactions",
+    "Global News & Geopolitical Analysis",
+    "Celebrity Scandals & Entertainment Buzz",
+    "International Sports Match-ups & Commentary",
+    "True Crime & Legal Drama Deep Dives",
+    "Halloween Costume & Makeup Tutorials",
+    "Autumn Aesthetic & Home Decor DIYs",
+    "Fall-Themed Recipes & Comfort Food",
+    "Explainer Videos (News & Complex Topics)",
+    "Comedy Skits & POV Trends",
+    "Day in the Life / Lifestyle Vlogs",
+    "Fashion Hauls & Fall Styling Tips",
+    "Productivity & Life Hacks",
+    "Pet Content (Spooky/Autumn Fun)",
+    "Gaming & Pop Culture Critiques"
   ],
   "concepts": [
     {
-      "category": "October Planning & Productivity Hacks",
-      "topic": "The Ultimate October Daily Planner for Maximizing Your Fall Productivity",
-      "hook": "Feeling overwhelmed by October's jam-packed to-do list, from Halloween to deadlines?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Baseball Playoff Hype & Team Reactions",
+      "topic": "Predicting the unexpected NLCS MVP dark horse candidate.",
+      "hook": "Everyone's talking about the obvious sluggers, but I've found the player who is secretly the NLCS MVP in the making. You won't believe who it is!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "October Planning & Productivity Hacks",
-      "topic": "Fall Semester Study Schedule & Exam Prep Hacks for College Students",
-      "hook": "College students, drowning in midterms and group projects already?",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Baseball Playoff Hype & Team Reactions",
+      "topic": "Iconic fan reactions to a historic walk-off playoff grand slam.",
+      "hook": "The stadium ERUPTED! Relive the wildest, most heart-stopping fan reactions to *that* walk-off playoff grand slam that changed everything.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Global News & Geopolitical Analysis",
+      "topic": "The hidden geopolitical factors behind the recent surge in global food prices.",
+      "hook": "Your grocery bill is skyrocketing, but the real reason isn't just inflation. This deeper geopolitical shift is silently driving up food costs worldwide.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Global News & Geopolitical Analysis",
+      "topic": "The evolving implications of quantum computing for national security and international espionage.",
+      "hook": "Quantum computers aren't just for sci-fi anymore \u2013 they're about to change the game of national security forever. Here's what's coming.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Celebrity Scandals & Entertainment Buzz",
+      "topic": "Decoding the cryptic Instagram posts from that recent A-list breakup.",
+      "hook": "Did you catch the hidden messages? We're breaking down *that* celebrity's cryptic breakup posts and what they REALLY mean.",
+      "voice_style": "Friendly",
+      "music_mood": "Dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Scandals & Entertainment Buzz",
+      "topic": "The truth behind the leaked script for an unannounced major superhero sequel.",
+      "hook": "The internet is buzzing about a leaked script for a major superhero sequel... but is it real, or the ultimate fan prank? Let's investigate.",
+      "voice_style": "Mysterious",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Fall Fashion & Autumn Aesthetics",
-      "topic": "Flattering Fall Layering Hacks & Outfit Ideas for Apple Body Types",
-      "hook": "Apple shapes, are you struggling with fall layering that actually flatters?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "International Sports Match-ups & Commentary",
+      "topic": "Analyzing the tactical genius behind Japan's shocking rugby world cup upset.",
+      "hook": "How did Japan pull off *that* rugby upset against a giant? It wasn't luck, it was tactical brilliance. We're breaking down their master plan.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "International Sports Match-ups & Commentary",
+      "topic": "Why the upcoming El Cl\u00e1sico will be the most unpredictable in a decade.",
+      "hook": "Forget what you think you know about El Cl\u00e1sico. This year, with new players and shifting strategies, everything's about to change. Who will win?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "True Crime & Legal Drama Deep Dives",
+      "topic": "The unsolved mystery of the 'Zodiac Killer's final, unbroken cipher.'",
+      "hook": "Decades later, one chilling cipher from the Zodiac Killer remains unbroken. What if it's hiding the ultimate clue to his identity, just waiting to be cracked?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "True Crime & Legal Drama Deep Dives",
+      "topic": "The controversial plea deal that set a notorious serial fraudster free, sparking outrage.",
+      "hook": "A master con artist walked free, thanks to a plea deal nobody saw coming. Was it justice, or a massive mistake that let a dangerous criminal back on the streets?",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Halloween Costume & Makeup Tutorials",
+      "topic": "DIY 'Haunted Doll' makeup transformation (beginner-friendly for spooky vibes).",
+      "hook": "Wanna freak out your friends without breaking the bank or needing pro skills? This haunted doll makeup is easier than it looks and super spooky!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Fall Fashion & Autumn Aesthetics",
-      "topic": "DIY Pumpkin Spice Latte Scented Home Spray for Cozy Autumn Vibes",
-      "hook": "Want your home to smell like a cozy autumn cafe without burning a single candle?",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Halloween Costume & Makeup Tutorials",
+      "topic": "Last-minute 'Zombie Apocalypse Survivor' costume using only everyday clothes.",
+      "hook": "Panic! It's Halloween eve and you have no costume. Don't worry, I'll show you how to turn everyday clothes into a convincing zombie apocalypse survivor in minutes!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Autumn Aesthetic & Home Decor DIYs",
+      "topic": "Crafting miniature pumpkin spice latte candles for the perfect fall scent.",
+      "hook": "Forget basic store-bought candles! Let's make adorable, mini pumpkin spice latte candles that not only smell divine but look irresistibly cozy.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 47
+    },
+    {
+      "category": "Autumn Aesthetic & Home Decor DIYs",
+      "topic": "Transforming an old blanket into a cozy, no-sew fall throw.",
+      "hook": "Don't throw out that old blanket! I'll show you how to turn it into the coziest, no-sew fall throw you'll ever need for those chilly evenings.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Fall-Themed Recipes & Comfort Food",
+      "topic": "A secret ingredient apple cider donut recipe that tastes like autumn.",
+      "hook": "Forget basic apple cider donuts. My secret ingredient will make these the best, most flavorful, melt-in-your-mouth fall treats you've ever tasted!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Fall-Themed Recipes & Comfort Food",
+      "topic": "The ultimate creamy pumpkin mac and cheese recipe for cozy nights.",
+      "hook": "Mac and cheese... but make it fall! This creamy, decadent pumpkin mac and cheese is your new comfort food obsession. You NEED this recipe.",
+      "voice_style": "Energetic",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Halloween DIY & Decor",
-      "topic": "Spooky Giant Spider Web Garland from Dollar Store Trash Bags",
-      "hook": "Transform your porch into a terrifying spider lair for less than five bucks!",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "Explainer Videos (News & Complex Topics)",
+      "topic": "How AI-generated deepfakes are impacting the upcoming election cycle and voter trust.",
+      "hook": "Deepfakes are here, and they're about to change elections forever. Here's how this scary new technology is influencing voter perceptions and trust.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 49
     },
     {
-      "category": "Halloween DIY & Decor",
-      "topic": "3 No-Carve Pumpkin Ideas for Last-Minute Kid-Friendly Halloween Decor",
-      "hook": "Out of time (or tools) for pumpkin carving this year?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "category": "Explainer Videos (News & Complex Topics)",
+      "topic": "The science behind Seasonal Affective Disorder (SAD) and practical coping mechanisms.",
+      "hook": "The days are getting shorter, and you're feeling... off. Let's talk about the science behind Seasonal Affective Disorder and simple ways to beat the winter blues.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 46
     },
     {
-      "category": "Celebrity & Entertainment Buzz (e.g., Dominic West)",
-      "topic": "Dominic West's 'Crown' Transformation & Real-Life Royal Drama Behind the Scenes",
-      "hook": "Did Dominic West *really* become King Charles in 'The Crown'?",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
+      "category": "Comedy Skits & POV Trends",
+      "topic": "POV: You're desperately trying to explain viral TikTok trends to your Boomer boss.",
+      "hook": "Boss, it's not 'the Tic-Tac.' It's TikTok, and no, I can't fully explain why people are doing *that* dance, but it's important!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Celebrity & Entertainment Buzz (e.g., Dominic West)",
-      "topic": "Unpacking the Craziest TV Series Finale Cliffhangers of 2023 You Missed",
-      "hook": "That season finale? I'm still screaming! Let's talk about the wildest TV show endings.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Insights & Athlete Profiles (e.g., Rafael Jodar)",
-      "topic": "Rafael Jodar's Unique Training Regimen: Secrets to His Tennis Peak Performance",
-      "hook": "What makes Rafael Jodar a tennis powerhouse, even against the odds?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Insights & Athlete Profiles (e.g., Rafael Jodar)",
-      "topic": "The Underdog Story: Small-Town Swimmer's Journey to the Olympic Dream",
-      "hook": "Everyone loves an underdog story, especially when it's true and inspiring.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Local News & Community Updates (e.g., Harris County)",
-      "topic": "Harris County's New 'Green Spaces' Park Initiative: What it Means for You",
-      "hook": "Living in Harris County? Get ready for greener, more accessible neighborhoods!",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Local News & Community Updates (e.g., Harris County)",
-      "topic": "How to Donate & Volunteer for Your Local Food Bank This Fall in Harris County",
-      "hook": "The holidays are coming, and our community's most vulnerable need us now more than ever.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Public Safety & Emergency Alerts (Blue/Amber Alert)",
-      "topic": "Crucial Steps: What to Do Immediately When You Receive an Amber Alert",
-      "hook": "Your phone just buzzed with an Amber Alert. Do you know what to do next to truly help?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Public Safety & Emergency Alerts (Blue/Amber Alert)",
-      "topic": "Understanding Blue Alerts: Honoring Fallen Officers and Community Safety Protocols",
-      "hook": "Ever wondered what a Blue Alert really means, beyond the headlines?",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Fast Food Reviews & Menu Hacks",
-      "topic": "McDonald's Secret Menu: The Halloween OREO McFlurry Hack You NEED to Try",
-      "hook": "You won't believe the McDonald's secret menu item for October. It's spooky good!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fast Food Reviews & Menu Hacks",
-      "topic": "The Ultimate Wendy's Chili Cheese Fries Customization Guide for Max Flavor",
-      "hook": "Think you know Wendy's Chili Cheese Fries? Think again! My hack takes them to a new level.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Parenting Hacks & Toddler Moments",
-      "topic": "Toddler-Proofing Your Home for Fall & Halloween Decor Disasters",
-      "hook": "Your toddler just discovered the Halloween candy bowl... again. Let's toddler-proof!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Parenting Hacks & Toddler Moments",
-      "topic": "Quick Meltdown Management Techniques for Overtired Toddlers in Public",
-      "hook": "Is your toddler currently having an epic meltdown in aisle 5 of Target? I've got you.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Budgeting & Frugal Living Tips",
-      "topic": "3 Awesome DIY Halloween Costumes You Can Make for Under $10",
-      "hook": "Don't spend a fortune on a Halloween costume this year! I'll show you how to DIY for cheap.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Budgeting & Frugal Living Tips",
-      "topic": "Mastering Grocery Store Price Matching for Huge Weekly Savings on Essentials",
-      "hook": "Are you leaving money on the table at the grocery store every single week?",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
+      "category": "Comedy Skits & POV Trends",
+      "topic": "Relatable struggles of trying to assemble complex IKEA furniture solo.",
+      "hook": "It's just two pieces of wood and a screw, right? Me vs. IKEA furniture: a tragic comedy in three acts, where act one is just finding the instructions.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
@@ -252,9 +252,9 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
