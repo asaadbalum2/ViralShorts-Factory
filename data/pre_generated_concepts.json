@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-02T11:15:56.433364",
-  "valid_until": "2026-10-02T23:59:56.433375",
+  "generated_at": "2026-10-03T10:32:25.523225",
+  "valid_until": "2026-10-03T23:59:25.523235",
   "categories": [
-    "Baseball Playoff Hype & Team Reactions",
-    "Global News & Geopolitical Analysis",
-    "Celebrity Scandals & Entertainment Buzz",
-    "International Sports Match-ups & Commentary",
-    "True Crime & Legal Drama Deep Dives",
-    "Halloween Costume & Makeup Tutorials",
-    "Autumn Aesthetic & Home Decor DIYs",
-    "Fall-Themed Recipes & Comfort Food",
-    "Explainer Videos (News & Complex Topics)",
-    "Comedy Skits & POV Trends",
-    "Day in the Life / Lifestyle Vlogs",
-    "Fashion Hauls & Fall Styling Tips",
-    "Productivity & Life Hacks",
-    "Pet Content (Spooky/Autumn Fun)",
-    "Gaming & Pop Culture Critiques"
+    "Global Sports Highlights & Analysis (e.g., Beijing Open, Premier League, NY Giants)",
+    "Breaking News & Urgent Public Safety Alerts (e.g., 'Crash Axe' Incident, Eye Drop Recalls)",
+    "Streaming Show & Movie Reviews (e.g., Netflix New Releases)",
+    "Creator & Celebrity Buzz (e.g., Justine May updates, influencer drama)",
+    "Fall & Halloween Seasonal Content (decor, costumes, spooky recipes)",
+    "Life Hacks & Practical DIY Tutorials",
+    "Relatable Comedy & Short-form Skits",
+    "Quick Explainer Videos & Edutainment",
+    "Global Travel Vlogs & City Guides (e.g., Tokyo Weather travel tips)",
+    "Food & Recipe Demos (especially Fall/Comfort Food)",
+    "Fashion, Beauty & 'Get Ready With Me' (GRWM)",
+    "Mental Health & Wellness Tips",
+    "Pet & Animal Content (cute, funny, educational)",
+    "Gaming Highlights & E-sports Commentary",
+    "Product Reviews & Consumer Advice"
   ],
   "concepts": [
     {
-      "category": "Baseball Playoff Hype & Team Reactions",
-      "topic": "Predicting the unexpected NLCS MVP dark horse candidate.",
-      "hook": "Everyone's talking about the obvious sluggers, but I've found the player who is secretly the NLCS MVP in the making. You won't believe who it is!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Global Sports Highlights & Analysis (e.g., Beijing Open, Premier League, NY Giants)",
+      "topic": "Premier League's Most Shocking Goal-Line Save",
+      "hook": "You won't BELIEVE the save from yesterday's Premier League match. This defender literally denied destiny!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Baseball Playoff Hype & Team Reactions",
-      "topic": "Iconic fan reactions to a historic walk-off playoff grand slam.",
-      "hook": "The stadium ERUPTED! Relive the wildest, most heart-stopping fan reactions to *that* walk-off playoff grand slam that changed everything.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Global News & Geopolitical Analysis",
-      "topic": "The hidden geopolitical factors behind the recent surge in global food prices.",
-      "hook": "Your grocery bill is skyrocketing, but the real reason isn't just inflation. This deeper geopolitical shift is silently driving up food costs worldwide.",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Breaking News & Urgent Public Safety Alerts (e.g., 'Crash Axe' Incident, Eye Drop Recalls)",
+      "topic": "Urgent Eye Drop Recall: Check Your Medicine Cabinet NOW!",
+      "hook": "STOP! Before you use ANY eye drops, you need to hear this. A massive recall just dropped \u2013 is YOUR brand on the list?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Global News & Geopolitical Analysis",
-      "topic": "The evolving implications of quantum computing for national security and international espionage.",
-      "hook": "Quantum computers aren't just for sci-fi anymore \u2013 they're about to change the game of national security forever. Here's what's coming.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Celebrity Scandals & Entertainment Buzz",
-      "topic": "Decoding the cryptic Instagram posts from that recent A-list breakup.",
-      "hook": "Did you catch the hidden messages? We're breaking down *that* celebrity's cryptic breakup posts and what they REALLY mean.",
-      "voice_style": "Friendly",
-      "music_mood": "Dramatic",
+      "category": "Streaming Show & Movie Reviews (e.g., Netflix New Releases)",
+      "topic": "Netflix's New Horror Hit: Is It Worth The Hype?",
+      "hook": "Just binged Netflix's *The Fall of the House of Usher*... and my jaw is on the floor. Is it genuinely terrifying or just another jump scare fest?",
+      "voice_style": "friendly",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Celebrity Scandals & Entertainment Buzz",
-      "topic": "The truth behind the leaked script for an unannounced major superhero sequel.",
-      "hook": "The internet is buzzing about a leaked script for a major superhero sequel... but is it real, or the ultimate fan prank? Let's investigate.",
-      "voice_style": "Mysterious",
-      "music_mood": "Intense",
-      "target_duration": 45
+      "category": "Creator & Celebrity Buzz (e.g., Justine May updates, influencer drama)",
+      "topic": "Justine May's Cryptic Social Media Post Decoded",
+      "hook": "Justine May just dropped a cryptic post that sent the internet into a frenzy. Is it an apology, a comeback, or a desperate cry for attention?",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
     },
     {
-      "category": "International Sports Match-ups & Commentary",
-      "topic": "Analyzing the tactical genius behind Japan's shocking rugby world cup upset.",
-      "hook": "How did Japan pull off *that* rugby upset against a giant? It wasn't luck, it was tactical brilliance. We're breaking down their master plan.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "International Sports Match-ups & Commentary",
-      "topic": "Why the upcoming El Cl\u00e1sico will be the most unpredictable in a decade.",
-      "hook": "Forget what you think you know about El Cl\u00e1sico. This year, with new players and shifting strategies, everything's about to change. Who will win?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Fall & Halloween Seasonal Content (decor, costumes, spooky recipes)",
+      "topic": "DIY Spooky Halloween Porch Decor Under $30",
+      "hook": "Want the spookiest porch on the block without breaking the bank? I'm showing you how to transform your space for under $30!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "True Crime & Legal Drama Deep Dives",
-      "topic": "The unsolved mystery of the 'Zodiac Killer's final, unbroken cipher.'",
-      "hook": "Decades later, one chilling cipher from the Zodiac Killer remains unbroken. What if it's hiding the ultimate clue to his identity, just waiting to be cracked?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "True Crime & Legal Drama Deep Dives",
-      "topic": "The controversial plea deal that set a notorious serial fraudster free, sparking outrage.",
-      "hook": "A master con artist walked free, thanks to a plea deal nobody saw coming. Was it justice, or a massive mistake that let a dangerous criminal back on the streets?",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Halloween Costume & Makeup Tutorials",
-      "topic": "DIY 'Haunted Doll' makeup transformation (beginner-friendly for spooky vibes).",
-      "hook": "Wanna freak out your friends without breaking the bank or needing pro skills? This haunted doll makeup is easier than it looks and super spooky!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Life Hacks & Practical DIY Tutorials",
+      "topic": "The 1-Minute Secret to Unclogging Any Drain",
+      "hook": "Tired of slow drains? Forget expensive plumbers! This crazy 1-minute trick uses something you already have in your kitchen.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Halloween Costume & Makeup Tutorials",
-      "topic": "Last-minute 'Zombie Apocalypse Survivor' costume using only everyday clothes.",
-      "hook": "Panic! It's Halloween eve and you have no costume. Don't worry, I'll show you how to turn everyday clothes into a convincing zombie apocalypse survivor in minutes!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Relatable Comedy & Short-form Skits",
+      "topic": "Me Trying to Adult When My Brain Says 'Nope'",
+      "hook": "Is it just me, or does adulting feel like trying to solve a Rubik's Cube blindfolded? My brain checks out the moment responsibility kicks in!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Autumn Aesthetic & Home Decor DIYs",
-      "topic": "Crafting miniature pumpkin spice latte candles for the perfect fall scent.",
-      "hook": "Forget basic store-bought candles! Let's make adorable, mini pumpkin spice latte candles that not only smell divine but look irresistibly cozy.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Quick Explainer Videos & Edutainment",
+      "topic": "The Mind-Blowing Science Behind Autumn Leaf Colors",
+      "hook": "Ever wondered why leaves turn those gorgeous reds and golds in Fall? It's not just the cold! The real reason will blow your mind.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 47
     },
     {
-      "category": "Autumn Aesthetic & Home Decor DIYs",
-      "topic": "Transforming an old blanket into a cozy, no-sew fall throw.",
-      "hook": "Don't throw out that old blanket! I'll show you how to turn it into the coziest, no-sew fall throw you'll ever need for those chilly evenings.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
+      "category": "Global Travel Vlogs & City Guides (e.g., Tokyo Weather travel tips)",
+      "topic": "Tokyo Weather: Essential Packing Tips for Your Fall Trip",
+      "hook": "Planning a Fall trip to Tokyo? Don't get caught in a downpour! Here's exactly what to pack for unpredictable Tokyo weather.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 43
     },
     {
-      "category": "Fall-Themed Recipes & Comfort Food",
-      "topic": "A secret ingredient apple cider donut recipe that tastes like autumn.",
-      "hook": "Forget basic apple cider donuts. My secret ingredient will make these the best, most flavorful, melt-in-your-mouth fall treats you've ever tasted!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall-Themed Recipes & Comfort Food",
-      "topic": "The ultimate creamy pumpkin mac and cheese recipe for cozy nights.",
-      "hook": "Mac and cheese... but make it fall! This creamy, decadent pumpkin mac and cheese is your new comfort food obsession. You NEED this recipe.",
-      "voice_style": "Energetic",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Explainer Videos (News & Complex Topics)",
-      "topic": "How AI-generated deepfakes are impacting the upcoming election cycle and voter trust.",
-      "hook": "Deepfakes are here, and they're about to change elections forever. Here's how this scary new technology is influencing voter perceptions and trust.",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Food & Recipe Demos (especially Fall/Comfort Food)",
+      "topic": "The Easiest 3-Ingredient Crockpot Chili Recipe",
+      "hook": "Too busy for elaborate Fall dinners? This 3-ingredient crockpot chili practically cooks itself and tastes like pure comfort!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 49
     },
     {
-      "category": "Explainer Videos (News & Complex Topics)",
-      "topic": "The science behind Seasonal Affective Disorder (SAD) and practical coping mechanisms.",
-      "hook": "The days are getting shorter, and you're feeling... off. Let's talk about the science behind Seasonal Affective Disorder and simple ways to beat the winter blues.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
+      "category": "Global Sports Highlights & Analysis (e.g., Beijing Open, Premier League, NY Giants)",
+      "topic": "NY Giants' Secret Weapon No One's Talking About",
+      "hook": "Everyone's focused on the QB, but the NY Giants have a *secret weapon* that's silently dominating. You NEED to see this player's stats!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 46
     },
     {
-      "category": "Comedy Skits & POV Trends",
-      "topic": "POV: You're desperately trying to explain viral TikTok trends to your Boomer boss.",
-      "hook": "Boss, it's not 'the Tic-Tac.' It's TikTok, and no, I can't fully explain why people are doing *that* dance, but it's important!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
+      "category": "Breaking News & Urgent Public Safety Alerts (e.g., 'Crash Axe' Incident, Eye Drop Recalls)",
+      "topic": "Understanding the 'Crash Axe' Incident & Airplane Safety",
+      "hook": "The 'crash axe' incident sparked panic, but do you actually know what it means for airplane safety? Let's clear up the confusion.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
     },
     {
-      "category": "Comedy Skits & POV Trends",
-      "topic": "Relatable struggles of trying to assemble complex IKEA furniture solo.",
-      "hook": "It's just two pieces of wood and a screw, right? Me vs. IKEA furniture: a tragic comedy in three acts, where act one is just finding the instructions.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Streaming Show & Movie Reviews (e.g., Netflix New Releases)",
+      "topic": "The ONE Scene in Oppenheimer Everyone Missed",
+      "hook": "You thought you saw all of *Oppenheimer*? There's one pivotal scene that critics missed but is key to understanding the whole movie.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 44
+    },
+    {
+      "category": "Creator & Celebrity Buzz (e.g., Justine May updates, influencer drama)",
+      "topic": "Major Influencer Drama Just Exploded: The Real Tea",
+      "hook": "Grab your popcorn, because this influencer beef just went from simmer to full-blown explosion. I've got the real tea on what *actually* happened!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Fall & Halloween Seasonal Content (decor, costumes, spooky recipes)",
+      "topic": "The ONLY Pumpkin Spice Recipe You Need This Fall",
+      "hook": "Forget basic lattes! This unique pumpkin spice treat is SO much better and ridiculously easy. Your Fall just got a whole lot tastier.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Life Hacks & Practical DIY Tutorials",
+      "topic": "Revive Old Sneakers: The Toothpaste & Baking Soda Hack",
+      "hook": "Don't throw away those dingy sneakers! This simple hack using toothpaste and baking soda will make them look brand new in minutes.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Relatable Comedy & Short-form Skits",
+      "topic": "My Coffee Order vs. What I Actually Get",
+      "hook": "Ordering coffee should be simple, right? My barista apparently thinks my 'extra foam, light ice, oat milk latte' means 'black coffee, no cup.'",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Quick Explainer Videos & Edutainment",
+      "topic": "How to Read Clouds to Predict Weather Like a Pro",
+      "hook": "Your grandparents might have been onto something! Learn how to 'read' the clouds and predict weather patterns yourself with these simple tips.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Global Travel Vlogs & City Guides (e.g., Tokyo Weather travel tips)",
+      "topic": "Hidden Gem Cafe in Paris Locals Swear By",
+      "hook": "Forget the Eiffel Tower cafes! I found a hidden gem cafe in Paris that tourists never find, with the best croissant you'll ever taste.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
+    },
+    {
+      "category": "Food & Recipe Demos (especially Fall/Comfort Food)",
+      "topic": "The Secret Ingredient for the BEST Apple Crumble",
+      "hook": "Your apple crumble is good, but this one secret ingredient will elevate it to legendary status. Prepare for pure Fall dessert perfection!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
