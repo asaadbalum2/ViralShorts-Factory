@@ -1,235 +1,230 @@
 {
-  "generated_at": "2026-10-05T12:31:18.512575",
-  "valid_until": "2026-10-05T23:59:18.512586",
+  "generated_at": "2026-10-06T12:10:20.891021",
+  "valid_until": "2026-10-06T23:59:20.891032",
   "categories": [
-    "Government & Economic Explainers (Treasury, Senate)",
-    "Student Loan Solutions & Personal Finance",
-    "Health & Wellness Deep Dives (e.g., Cholesterol Management)",
-    "Pop Culture & Comedy Commentary (Chris Rock, Viral Moments)",
-    "Logistics & Supply Chain Unpacked (RXO, 'How It Works')",
-    "New Music Discovery & Artist Spotlights (Olivia Dean & more)",
-    "Autumn Lifestyle & Fall Aesthetics",
-    "DIY Home Hacks & Budget Upgrades",
-    "Quick & Healthy Meal Prep Ideas",
-    "Career Insights & Industry Trends (beyond logistics)",
-    "Civic Engagement & Policy Impact (United States focus)",
-    "Travel & Adventure Guides (Seasonal & Budget-Friendly)",
-    "Tech Explainers & Productivity Hacks",
-    "Myth-Busting & Fact-Checking (across trends)",
-    "Authentic Storytelling & 'Day in the Life' Vlogs"
+    "Gourmet & Gimmick Food Challenges",
+    "Public Health & Wellness Explanations",
+    "Real-time Weather & Disaster Preparedness",
+    "Pro Sports Highlights & Fan Reactions",
+    "Investing Insights & Personal Finance Hacks",
+    "Autumnal Aesthetics & Seasonal Decor",
+    "Halloween DIY & Costume Transformations",
+    "Viral Life Hacks & Quick Fixes",
+    "AI Art & Creative Tech Trends",
+    "Athlete Spotlights & Training Journeys",
+    "Edutainment & Quick Knowledge Bites",
+    "Mini Travel Guides & Cultural Deep Dives",
+    "Relatable Comedy Skits & Pop Culture Memes",
+    "Pet Adventures & Animal Content",
+    "Get Ready With Me (GRWM) & Fashion Hauls"
   ],
   "concepts": [
     {
-      "category": "Government & Economic Explainers (Treasury, Senate)",
-      "topic": "Why the Senate filibuster is *not* in the Constitution.",
-      "hook": "Did you know one of the most powerful, controversial tools in the U.S. Senate isn't actually mentioned *anywhere* in the Constitution?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Gourmet & Gimmick Food Challenges",
+      "topic": "Attempting the 'Ghost Pepper Ramen' 3-minute challenge",
+      "hook": "My tastebuds are about to enter another dimension... or just burn off completely! Can I conquer the infamous Ghost Pepper Ramen in under 3 minutes?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Government & Economic Explainers (Treasury, Senate)",
-      "topic": "How Treasury bond yields directly affect your mortgage rates.",
-      "hook": "Ever wonder why your potential mortgage rate seems to jump or dip when you hear about 'Treasury bond yields' on the news? It's not magic, it's economics.",
-      "voice_style": "Friendly",
-      "music_mood": "Informative",
+      "category": "Gourmet & Gimmick Food Challenges",
+      "topic": "Recreating a Michelin-star dish using only dollar store ingredients",
+      "hook": "Can a $1 sushi roll taste like a $100 omakase? I'm attempting to recreate a high-end gourmet dish with ingredients from the dollar store!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Public Health & Wellness Explanations",
+      "topic": "Debunking common myths about 'superfoods' and their actual benefits",
+      "hook": "That $12 'superfood' smoothie might not be doing what you think it is... Time to uncover the truth behind common health myths and save your wallet!",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Public Health & Wellness Explanations",
+      "topic": "The science behind why cold showers boost your immune system and mood",
+      "hook": "Chilly mornings got you dreading that shower? What if I told you a quick cold blast could actually make you healthier and happier? Let's dive into the science!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Real-time Weather & Disaster Preparedness",
+      "topic": "Quick guide to building a hurricane 'go-bag' in under 10 minutes",
+      "hook": "The storm's coming, but are YOU ready? I'm showing you how to build a life-saving 'go-bag' with essentials in under 10 minutes, no stress!",
+      "voice_style": "energetic",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Student Loan Solutions & Personal Finance",
-      "topic": "The 'SAVE' Plan loophole for high earners to lower payments.",
-      "hook": "Struggling with student loans even as a high earner? There's a little-known clause in the 'SAVE' plan that could drastically cut your payments!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Real-time Weather & Disaster Preparedness",
+      "topic": "How to interpret flash flood warnings on your phone and what they really mean",
+      "hook": "That emergency alert on your phone isn't just noise... it's telling you something critical. Do you know what a flash flood warning truly means for your safety?",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 44
+    },
+    {
+      "category": "Pro Sports Highlights & Fan Reactions",
+      "topic": "Analyzing the most improbable game-winning shot from last night's basketball game",
+      "hook": "Did you see that?!? The shot that defied gravity and broke the internet! Let's break down every angle of last night's most improbable game-winner.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Pro Sports Highlights & Fan Reactions",
+      "topic": "Fan predictions for the upcoming championship series, featuring wild theories",
+      "hook": "They said it couldn't be done, but these fans have a crystal ball. Are their championship predictions insane or genius? You won't believe what they're saying!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Investing Insights & Personal Finance Hacks",
+      "topic": "The 'latte factor' debunked: small expenses vs. big picture savings",
+      "hook": "Stop blaming your coffee! We're diving into what *really* sabotages your savings goals and why cutting out daily lattes won't make you rich.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 49
+    },
+    {
+      "category": "Investing Insights & Personal Finance Hacks",
+      "topic": "Beginner's guide to understanding cryptocurrency staking rewards",
+      "hook": "Want to earn passive income with your crypto without trading? Let's talk staking \u2013 the easy way to grow your digital assets while you sleep!",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 41
+    },
+    {
+      "category": "Autumnal Aesthetics & Seasonal Decor",
+      "topic": "Transforming your living room into a cozy fall retreat with under $50",
+      "hook": "Pumpkin spice and everything nice doesn't have to break the bank! Get ready for the coziest fall ever as I transform my living room for under $50.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Student Loan Solutions & Personal Finance",
-      "topic": "How to make your first $1000 investing with just $50.",
-      "hook": "Think investing is only for the rich? I'm showing you exactly how to turn a small $50 into your first $1000, even if you've never invested before.",
-      "voice_style": "Energetic",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Health & Wellness Deep Dives (e.g., Cholesterol Management)",
-      "topic": "The surprising truth about 'good' vs. 'bad' cholesterol and your diet.",
-      "hook": "Forget everything you *thought* you knew about 'good' and 'bad' cholesterol. The science has evolved, and your diet might be doing more harm than good.",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Autumnal Aesthetics & Seasonal Decor",
+      "topic": "DIY scented candles that smell *exactly* like your favorite fall drinks",
+      "hook": "Forget those expensive store-bought candles! I'm about to show you how to make your home smell like a pumpkin patch latte or spiced cider for pennies.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Health & Wellness Deep Dives (e.g., Cholesterol Management)",
-      "topic": "Why your sleep tracker might be secretly making your sleep worse ('orthosomnia').",
-      "hook": "Is your quest for perfect sleep metrics actually causing you *more* anxiety and worse rest? Let's talk about 'orthosomnia' and how to beat it.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 45
+      "category": "Halloween DIY & Costume Transformations",
+      "topic": "Extreme 'headless person' illusion costume tutorial",
+      "hook": "Want to freak out everyone at the Halloween party? This costume will literally make heads turn... or disappear! Get ready for the ultimate headless illusion!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 48
     },
     {
-      "category": "Pop Culture & Comedy Commentary (Chris Rock, Viral Moments)",
-      "topic": "Decoding the genius of Chris Rock's unscripted crowd work.",
-      "hook": "Chris Rock isn't just a stand-up legend; he's a crowd-work maestro. Ever wondered how he pulls off those hilarious, off-the-cuff moments? I'm breaking it down.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
+      "category": "Halloween DIY & Costume Transformations",
+      "topic": "Transforming everyday items into a spooky haunted house prop",
+      "hook": "That old laundry basket and some trash bags? They're about to become the scariest ghost on your block! I'll show you how to create a terrifying prop for pennies.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 42
     },
     {
-      "category": "Pop Culture & Comedy Commentary (Chris Rock, Viral Moments)",
-      "topic": "The 'Couch Guy' video: Unpacking internet detective culture.",
-      "hook": "Remember the 'Couch Guy' video that broke the internet? The mob justice, the 'clues'... but what if everyone got it completely wrong?",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 45
+      "category": "Viral Life Hacks & Quick Fixes",
+      "topic": "Testing the viral 'banana peel plant food' hack to see if it actually works",
+      "hook": "Is your banana peel a secret superpower for your plants, or just trash? We're putting this viral gardening hack to the ultimate test to see if it actually works!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 46
     },
     {
-      "category": "Logistics & Supply Chain Unpacked (RXO, 'How It Works')",
-      "topic": "The invisible journey of your online package, from click to doorstep.",
-      "hook": "You clicked 'buy now,' but what REALLY happens in the shadows of the supply chain the second you hit that button? Get ready for the epic journey.",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
-      "target_duration": 50
+      "category": "Viral Life Hacks & Quick Fixes",
+      "topic": "Genius trick to perfectly fold a fitted sheet in under 30 seconds",
+      "hook": "Hate wrestling with fitted sheets? Your laundry day just got a whole lot easier with this mind-blowing trick! I'll show you how to fold it perfectly in under 30 seconds.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 41
     },
     {
-      "category": "Logistics & Supply Chain Unpacked (RXO, 'How It Works')",
-      "topic": "Why shipping containers are the unsung heroes of global trade.",
-      "hook": "They're boring. They're everywhere. But without these metallic boxes, your entire modern life would grind to a halt. Let's appreciate the humble shipping container.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 40
+      "category": "AI Art & Creative Tech Trends",
+      "topic": "Turning your pet photos into fantastical AI-generated masterpieces",
+      "hook": "Ever wondered what your dog would look like as a medieval knight, or your cat as a space explorer? AI can show you! Watch me transform pet photos into incredible art.",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 47
     },
     {
-      "category": "New Music Discovery & Artist Spotlights (Olivia Dean & more)",
-      "topic": "Olivia Dean: The soulful British voice you NEED to hear this autumn.",
-      "hook": "Stop scrolling! If you're looking for your next chill-yet-captivating artist, get ready to fall in love with Olivia Dean. Her voice is pure magic.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
+      "category": "AI Art & Creative Tech Trends",
+      "topic": "Exploring the ethics of AI-generated music and its impact on artists",
+      "hook": "Is AI writing the next hit song, or just stealing human creativity? Let's dive into the fascinating, complex world of AI music and its impact on artists today.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 49
     },
     {
-      "category": "New Music Discovery & Artist Spotlights (Olivia Dean & more)",
-      "topic": "This indie artist is blending folk & electronic in a way you've never heard.",
-      "hook": "Tired of the same old playlists? I just found an indie artist who's smashing folk melodies with electronic beats, creating something totally unique. You won't regret this listen.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
+      "category": "Athlete Spotlights & Training Journeys",
+      "topic": "The incredible comeback story of an underdog Olympian after a career-ending injury",
+      "hook": "They said it was over. They said she'd never compete again. But this athlete proved everyone wrong, defying all odds after a career-ending injury!",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 44
     },
     {
-      "category": "Autumn Lifestyle & Fall Aesthetics",
-      "topic": "DIY cozy fall decor on a shoestring budget: 3 easy hacks.",
-      "hook": "Want that perfect cozy, autumnal vibe without emptying your wallet? I'm showing you three genius DIY decor hacks that scream 'fall' for almost free!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Autumn Lifestyle & Fall Aesthetics",
-      "topic": "Why 'Dark Academia' is the trending aesthetic taking over your fall mood board.",
-      "hook": "Sweaters, old books, a touch of mystery... why is 'Dark Academia' suddenly *the* aesthetic dominating everyone's fall mood boards? Let's dive into the allure.",
-      "voice_style": "Friendly",
-      "music_mood": "Mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "DIY Home Hacks & Budget Upgrades",
-      "topic": "Transform your bathroom in a weekend for under $100.",
-      "hook": "Think a bathroom glow-up costs a fortune? I'm proving you wrong! Watch me give my tiny bathroom a total refresh in one weekend, all for under a hundred bucks.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "DIY Home Hacks & Budget Upgrades",
-      "topic": "The 5 unexpected items that can instantly declutter any room.",
-      "hook": "Feeling overwhelmed by clutter? You probably already own the secret weapons to a tidy, organized home. No fancy storage required!",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Quick & Healthy Meal Prep Ideas",
-      "topic": "3 Sheet Pan Dinners for a Week of Stress-Free, Healthy Meals.",
-      "hook": "Hate cooking mid-week? These 3 sheet pan dinners will save your sanity, keep you healthy, and give you delicious leftovers for days. Dinner just got easy!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick & Healthy Meal Prep Ideas",
-      "topic": "The '5-Minute Mediterranean Snack' that actually keeps you full.",
-      "hook": "Craving a healthy snack that *actually* satisfies and isn't just air? Ditch the chips and try this incredible 5-minute Mediterranean magic trick!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Career Insights & Industry Trends (beyond logistics)",
-      "topic": "The surprising future of remote work: Is your job safe from AI?",
-      "hook": "Remote work is here to stay, but here's the twist: AI isn't coming for *all* jobs equally. Is your WFH role on the chopping block, or is it AI-proof?",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Career Insights & Industry Trends (beyond logistics)",
-      "topic": "How to network like a pro WITHOUT feeling awkward (even if you're an introvert).",
-      "hook": "Hate networking events? As an introvert, I get it. But I've cracked the code on building powerful connections without the cringe. Here's how.",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
-      "target_duration": 50
+      "category": "Athlete Spotlights & Training Journeys",
+      "topic": "A day in the life of a professional eSports gamer's intense training regimen",
+      "hook": "Think gaming is just sitting on a couch? This eSports pro's daily routine will completely change your mind about what it takes to be a top-tier athlete in the digital arena!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
@@ -237,24 +232,29 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
