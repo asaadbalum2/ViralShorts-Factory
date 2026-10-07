@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-06T12:10:20.891021",
-  "valid_until": "2026-10-06T23:59:20.891032",
+  "generated_at": "2026-10-07T11:56:28.003267",
+  "valid_until": "2026-10-07T23:59:28.003279",
   "categories": [
-    "Gourmet & Gimmick Food Challenges",
-    "Public Health & Wellness Explanations",
-    "Real-time Weather & Disaster Preparedness",
-    "Pro Sports Highlights & Fan Reactions",
-    "Investing Insights & Personal Finance Hacks",
-    "Autumnal Aesthetics & Seasonal Decor",
-    "Halloween DIY & Costume Transformations",
-    "Viral Life Hacks & Quick Fixes",
-    "AI Art & Creative Tech Trends",
-    "Athlete Spotlights & Training Journeys",
-    "Edutainment & Quick Knowledge Bites",
-    "Mini Travel Guides & Cultural Deep Dives",
-    "Relatable Comedy Skits & Pop Culture Memes",
-    "Pet Adventures & Animal Content",
-    "Get Ready With Me (GRWM) & Fashion Hauls"
+    "Quick News & Current Event Briefs",
+    "Weather & Seasonal Reminders (Daylight Savings, Fall Forecast)",
+    "Gaming News, Reviews & Playthroughs (New Releases & Subscriptions)",
+    "Financial & Market Insights (Business News Summaries)",
+    "Automotive & Industry Explainers (e.g., Diesel Tech, Vehicle Care)",
+    "Pop Culture & Nostalgia Deep Dives (Character/Show Spotlights)",
+    "Influencer & Creator Spotlights (Trending Personalities, Fan Content)",
+    "Life Hacks & Productivity Tips (Time Management, Everyday Solutions)",
+    "Educational Shorts (General 'What Is/How To' Explanations)",
+    "Meme & Viral Trend Breakdowns (Explaining Online Phenomena)",
+    "Sports Highlights & Athlete Profiles",
+    "Autumn/Fall Lifestyle & Aesthetics (Seasonal Content)",
+    "Tech Gadget Reviews & Comparisons",
+    "Short-Form Comedy & Skits (Topical Humor)",
+    "Career & Business Growth Tips"
   ],
   "concepts": [
     {
-      "category": "Gourmet & Gimmick Food Challenges",
-      "topic": "Attempting the 'Ghost Pepper Ramen' 3-minute challenge",
-      "hook": "My tastebuds are about to enter another dimension... or just burn off completely! Can I conquer the infamous Ghost Pepper Ramen in under 3 minutes?",
+      "category": "Quick News & Current Event Briefs",
+      "topic": "The Latest AI Breakthrough: Mind-Reading Tech",
+      "hook": "Could AI soon read your thoughts? A new breakthrough just blurred the line between science fiction and reality!",
       "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Gourmet & Gimmick Food Challenges",
-      "topic": "Recreating a Michelin-star dish using only dollar store ingredients",
-      "hook": "Can a $1 sushi roll taste like a $100 omakase? I'm attempting to recreate a high-end gourmet dish with ingredients from the dollar store!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Quick News & Current Event Briefs",
+      "topic": "Global Chip Shortage: Why Your Next Gadget Might Be Delayed",
+      "hook": "Ever wonder why everything's out of stock? The global chip shortage just took another unexpected turn.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "Public Health & Wellness Explanations",
-      "topic": "Debunking common myths about 'superfoods' and their actual benefits",
-      "hook": "That $12 'superfood' smoothie might not be doing what you think it is... Time to uncover the truth behind common health myths and save your wallet!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Public Health & Wellness Explanations",
-      "topic": "The science behind why cold showers boost your immune system and mood",
-      "hook": "Chilly mornings got you dreading that shower? What if I told you a quick cold blast could actually make you healthier and happier? Let's dive into the science!",
+      "category": "Weather & Seasonal Reminders (Daylight Savings, Fall Forecast)",
+      "topic": "The Science Behind 'Seasonal Affective Disorder' in Winter",
+      "hook": "Feeling more down as days get shorter? It's not just in your head\u2014there's a real scientific reason.",
       "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Real-time Weather & Disaster Preparedness",
-      "topic": "Quick guide to building a hurricane 'go-bag' in under 10 minutes",
-      "hook": "The storm's coming, but are YOU ready? I'm showing you how to build a life-saving 'go-bag' with essentials in under 10 minutes, no stress!",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Real-time Weather & Disaster Preparedness",
-      "topic": "How to interpret flash flood warnings on your phone and what they really mean",
-      "hook": "That emergency alert on your phone isn't just noise... it's telling you something critical. Do you know what a flash flood warning truly means for your safety?",
-      "voice_style": "authoritative",
+      "category": "Weather & Seasonal Reminders (Daylight Savings, Fall Forecast)",
+      "topic": "The True Cost of Daylight Saving Time (Beyond Sleep)",
+      "hook": "That one hour change? It's costing industries billions and impacting your health in ways you didn't know!",
+      "voice_style": "dramatic",
       "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Gaming News, Reviews & Playthroughs (New Releases & Subscriptions)",
+      "topic": "The Controversial Ending of 'Cyberpunk 2077' Explored",
+      "hook": "Did you actually understand the REAL ending of Cyberpunk 2077? Many players completely missed it.",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Gaming News, Reviews & Playthroughs (New Releases & Subscriptions)",
+      "topic": "Xbox Game Pass vs. PS Plus Premium: Which is King in 2024?",
+      "hook": "Paying too much for games? Let's break down which gaming subscription truly gives you more bang for your buck this year.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Financial & Market Insights (Business News Summaries)",
+      "topic": "The Looming Threat of 'Zombie Companies' in the Economy",
+      "hook": "What if thousands of companies are already dead, but no one knows it yet? Meet the 'Zombie Companies' affecting your future.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 46
+    },
+    {
+      "category": "Financial & Market Insights (Business News Summaries)",
+      "topic": "Why Gold Prices Are Soaring: Is It a Safe Haven or a Bubble?",
+      "hook": "Everyone's buying gold, but is it the ultimate safe investment or a ticking time bomb waiting to burst?",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Automotive & Industry Explainers (e.g., Diesel Tech, Vehicle Care)",
+      "topic": "Electric Car Charging: The Hidden Costs and Future Challenges",
+      "hook": "Thinking of going electric? You won't believe the real struggles and hidden costs of charging your EV.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Automotive & Industry Explainers (e.g., Diesel Tech, Vehicle Care)",
+      "topic": "The Truth About Premium Fuel: Does Your Car Really Need It?",
+      "hook": "Are you wasting money on premium gas for no reason? We're debunking the biggest fuel myth right now!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Pop Culture & Nostalgia Deep Dives (Character/Show Spotlights)",
+      "topic": "The Dark Fan Theories Surrounding Scooby-Doo's Velma",
+      "hook": "Velma from Scooby-Doo: Is she a secret super-villain, or something even crazier? Fan theories exposed!",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
       "target_duration": 44
     },
     {
-      "category": "Pro Sports Highlights & Fan Reactions",
-      "topic": "Analyzing the most improbable game-winning shot from last night's basketball game",
-      "hook": "Did you see that?!? The shot that defied gravity and broke the internet! Let's break down every angle of last night's most improbable game-winner.",
+      "category": "Pop Culture & Nostalgia Deep Dives (Character/Show Spotlights)",
+      "topic": "Lost Episodes & Unused Concepts from 'Friends' You Never Saw",
+      "hook": "Think you've seen every Friends episode? Get ready for the shocking storylines and lost concepts that almost made it!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Influencer & Creator Spotlights (Trending Personalities, Fan Content)",
+      "topic": "The Rise of VTubers: How Virtual Avatars Are Dominating Streaming",
+      "hook": "Forget real faces! Virtual YouTubers are taking over the internet, and their success secret might surprise you.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 46
     },
     {
-      "category": "Pro Sports Highlights & Fan Reactions",
-      "topic": "Fan predictions for the upcoming championship series, featuring wild theories",
-      "hook": "They said it couldn't be done, but these fans have a crystal ball. Are their championship predictions insane or genius? You won't believe what they're saying!",
+      "category": "Influencer & Creator Spotlights (Trending Personalities, Fan Content)",
+      "topic": "Analyzing MrBeast's Latest Mind-Blowing Stunt",
+      "hook": "How does MrBeast keep upping the ante? We're breaking down the insane strategy behind his latest viral video!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Life Hacks & Productivity Tips (Time Management, Everyday Solutions)",
+      "topic": "The 'Two-Minute Rule' That Will Revolutionize Your Procrastination",
+      "hook": "Can't get started on anything? This tiny two-minute rule will crush your procrastination habit instantly.",
       "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Life Hacks & Productivity Tips (Time Management, Everyday Solutions)",
+      "topic": "DIY Solution for Annoying Cable Clutter: The Binder Clip Hack",
+      "hook": "Tired of tangled cables? This genius binder clip hack will organize your desk in under 30 seconds!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Educational Shorts (General 'What Is/How To' Explanations)",
+      "topic": "Understanding Quantum Entanglement in 60 Seconds",
+      "hook": "Ever heard of 'spooky action at a distance'? We're breaking down quantum entanglement, simplified!",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Educational Shorts (General 'What Is/How To' Explanations)",
+      "topic": "The Ancient Roman Engineering Secret Behind Their Aqueducts",
+      "hook": "How did ancient Romans build aqueducts that still stand today without modern tech? The secret is shockingly simple.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Meme & Viral Trend Breakdowns (Explaining Online Phenomena)",
+      "topic": "The Evolution of the 'Distracted Boyfriend' Meme",
+      "hook": "You've seen it everywhere, but do you know the insane journey of the 'distracted boyfriend' meme and why it's still relevant?",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 43
     },
     {
-      "category": "Investing Insights & Personal Finance Hacks",
-      "topic": "The 'latte factor' debunked: small expenses vs. big picture savings",
-      "hook": "Stop blaming your coffee! We're diving into what *really* sabotages your savings goals and why cutting out daily lattes won't make you rich.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 49
-    },
-    {
-      "category": "Investing Insights & Personal Finance Hacks",
-      "topic": "Beginner's guide to understanding cryptocurrency staking rewards",
-      "hook": "Want to earn passive income with your crypto without trading? Let's talk staking \u2013 the easy way to grow your digital assets while you sleep!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 41
-    },
-    {
-      "category": "Autumnal Aesthetics & Seasonal Decor",
-      "topic": "Transforming your living room into a cozy fall retreat with under $50",
-      "hook": "Pumpkin spice and everything nice doesn't have to break the bank! Get ready for the coziest fall ever as I transform my living room for under $50.",
+      "category": "Meme & Viral Trend Breakdowns (Explaining Online Phenomena)",
+      "topic": "Deconstructing the 'NPC Streaming' Phenomenon",
+      "hook": "People are paying to watch streamers act like video game characters. What IS NPC streaming and why is it so huge?",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Autumnal Aesthetics & Seasonal Decor",
-      "topic": "DIY scented candles that smell *exactly* like your favorite fall drinks",
-      "hook": "Forget those expensive store-bought candles! I'm about to show you how to make your home smell like a pumpkin patch latte or spiced cider for pennies.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Halloween DIY & Costume Transformations",
-      "topic": "Extreme 'headless person' illusion costume tutorial",
-      "hook": "Want to freak out everyone at the Halloween party? This costume will literally make heads turn... or disappear! Get ready for the ultimate headless illusion!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Halloween DIY & Costume Transformations",
-      "topic": "Transforming everyday items into a spooky haunted house prop",
-      "hook": "That old laundry basket and some trash bags? They're about to become the scariest ghost on your block! I'll show you how to create a terrifying prop for pennies.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 42
-    },
-    {
-      "category": "Viral Life Hacks & Quick Fixes",
-      "topic": "Testing the viral 'banana peel plant food' hack to see if it actually works",
-      "hook": "Is your banana peel a secret superpower for your plants, or just trash? We're putting this viral gardening hack to the ultimate test to see if it actually works!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Viral Life Hacks & Quick Fixes",
-      "topic": "Genius trick to perfectly fold a fitted sheet in under 30 seconds",
-      "hook": "Hate wrestling with fitted sheets? Your laundry day just got a whole lot easier with this mind-blowing trick! I'll show you how to fold it perfectly in under 30 seconds.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "AI Art & Creative Tech Trends",
-      "topic": "Turning your pet photos into fantastical AI-generated masterpieces",
-      "hook": "Ever wondered what your dog would look like as a medieval knight, or your cat as a space explorer? AI can show you! Watch me transform pet photos into incredible art.",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "AI Art & Creative Tech Trends",
-      "topic": "Exploring the ethics of AI-generated music and its impact on artists",
-      "hook": "Is AI writing the next hit song, or just stealing human creativity? Let's dive into the fascinating, complex world of AI music and its impact on artists today.",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
-      "target_duration": 49
-    },
-    {
-      "category": "Athlete Spotlights & Training Journeys",
-      "topic": "The incredible comeback story of an underdog Olympian after a career-ending injury",
-      "hook": "They said it was over. They said she'd never compete again. But this athlete proved everyone wrong, defying all odds after a career-ending injury!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "Athlete Spotlights & Training Journeys",
-      "topic": "A day in the life of a professional eSports gamer's intense training regimen",
-      "hook": "Think gaming is just sitting on a couch? This eSports pro's daily routine will completely change your mind about what it takes to be a top-tier athlete in the digital arena!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
       "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
