@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-08T12:11:11.672916",
-  "valid_until": "2026-10-08T23:59:11.672927",
+  "generated_at": "2026-10-09T12:02:21.321519",
+  "valid_until": "2026-10-09T23:59:21.321529",
   "categories": [
-    "News & Current Events Explained",
-    "Personal Finance & Investment Tips",
-    "TV Show Reviews & Deep Dives",
-    "Sports News & Trade Rumors",
-    "Marathon & Running Fitness",
-    "Athlete Spotlights & Inspiration",
-    "Music & Podcast Discovery",
-    "Fall Lifestyle & Seasonal Trends",
-    "Quick & Healthy Recipes",
-    "DIY & Home Improvement Hacks",
-    "Tech Reviews & Gadget Guides",
-    "Productivity & Life Hacks",
-    "Comedy & Relatable Skits",
-    "Motivation & Wellness Journeys",
-    "Travel & Local Exploration Guides"
+    "Midterm Election Analysis & Predictions",
+    "Geopolitical Diplomacy & Global Impact",
+    "Political Satire & Commentary",
+    "Stock Market Updates & Investment Strategies",
+    "Personal Finance & Economic Outlook",
+    "Professional Tennis Highlights & Athlete Journeys",
+    "Sports News & Athlete Spotlights",
+    "Current Events Explainers & News Debunks",
+    "Fall & Halloween Trending",
+    "Viral Trends & Social Media Challenges",
+    "Educational & 'How-To' Videos",
+    "Daily Vlogs & 'Get Ready With Me' (GRWM)",
+    "Celebrity & Public Figure Updates",
+    "Food & Seasonal Recipes",
+    "Humor & Relatable Comedy"
   ],
   "concepts": [
     {
-      "category": "News & Current Events Explained",
-      "topic": "The global microchip shortage's unexpected impact on household appliances.",
-      "hook": "Did you know your new toaster might be caught in a global tech war?",
+      "category": "Midterm Election Analysis & Predictions",
+      "topic": "The Arizona Governor's Race: Why it's the most unpredictable election this cycle.",
+      "hook": "Forget swing states, Arizona's Governor race is a political tightrope act \u2013 but who's *really* going to stumble?",
       "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Personal Finance & Investment Tips",
-      "topic": "Understanding ESG (Environmental, Social, Governance) investing for beginners.",
-      "hook": "Want your investments to do good AND make money? ESG might be your secret weapon.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "TV Show Reviews & Deep Dives",
-      "topic": "Why 'Severance' is more than just sci-fi \u2013 exploring its philosophical themes.",
-      "hook": "Forget the office drama, 'Severance' just decoded your existential dread.",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports News & Trade Rumors",
-      "topic": "The potential blockbuster NBA trade that could reshape the Western Conference.",
-      "hook": "Rumor has it, an NBA superstar is about to shatter the Western Conference balance. Who is it?",
-      "voice_style": "Energetic",
       "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Marathon & Running Fitness",
-      "topic": "The hidden benefits of trail running for mental resilience and physical strength.",
-      "hook": "Tired of the treadmill? Trail running isn't just a workout, it's therapy for your brain.",
-      "voice_style": "Inspirational",
+      "category": "Geopolitical Diplomacy & Global Impact",
+      "topic": "Decoding the New India-EU Trade Deal: What it means for your wallet.",
+      "hook": "The EU just shook hands with India on a massive trade deal, but don't hit refresh on your shopping cart just yet \u2013 here's the hidden catch.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Political Satire & Commentary",
+      "topic": "If Political Debates Were Honest: A day in the life of a campaign manager's inner thoughts.",
+      "hook": "Ever wonder what politicians are *really* thinking during a debate? Spoiler: it's not always about policy.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Stock Market Updates & Investment Strategies",
+      "topic": "The Semiconductor Chip Shortage: Investing in the next big tech surge (or crash).",
+      "hook": "Your next phone might be delayed, but the semiconductor crisis could be your next huge investment opportunity... or a massive pitfall.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 47
+    },
+    {
+      "category": "Personal Finance & Economic Outlook",
+      "topic": "Quiet Quitting Your Budget: How to save without feeling deprived.",
+      "hook": "You've heard of quiet quitting your job, but have you tried quiet quitting your *spending*? I'm talking savings without the sacrifice.",
+      "voice_style": "Friendly",
       "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Athlete Spotlights & Inspiration",
-      "topic": "The comeback story of a lesser-known Paralympic athlete defying expectations.",
-      "hook": "He was told he'd never walk again, now he's shattering world records. Meet the athlete who redefines impossible.",
+      "category": "Professional Tennis Highlights & Athlete Journeys",
+      "topic": "Serena Williams' Lasting Legacy: Beyond the Grand Slams.",
+      "hook": "We all know Serena's records, but her impact off the court changed the game forever. Get ready to rethink 'greatest of all time'.",
       "voice_style": "Inspirational",
       "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Music & Podcast Discovery",
-      "topic": "Discovering the indie pop artist whose latest album is a perfect blend of nostalgia and fresh beats.",
-      "hook": "Stuck in a music rut? I just found your next obsession \u2013 and their latest album is pure gold.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall Lifestyle & Seasonal Trends",
-      "topic": "DIY cozy fall decor using items from your local dollar store.",
-      "hook": "Don't break the bank for fall vibes! I'm transforming dollar store finds into chic autumn decor.",
+      "category": "Sports News & Athlete Spotlights",
+      "topic": "The Rise of Esports Superstars: Are they the new traditional athletes?",
+      "hook": "Forget arenas, some of the highest-paid athletes are now gamers. Is Esports the future of professional sports, or just a passing phase?",
       "voice_style": "Energetic",
       "music_mood": "Upbeat",
-      "target_duration": 40
+      "target_duration": 43
     },
     {
-      "category": "Quick & Healthy Recipes",
-      "topic": "A 15-minute high-protein vegan meal prep for busy weekdays.",
-      "hook": "Too busy for healthy food? This 15-minute vegan meal prep will change your life!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "DIY & Home Improvement Hacks",
-      "topic": "Transforming an old dresser into a stylish bathroom vanity with a few simple steps.",
-      "hook": "Don't throw out that old dresser! I'm turning it into a gorgeous bathroom vanity for under $50.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "News & Current Events Explained",
-      "topic": "The ethical debate surrounding deepfake technology and its societal implications.",
-      "hook": "Is that video real? The rise of deepfakes is blurring reality, and here's why you should be concerned.",
+      "category": "Current Events Explainers & News Debunks",
+      "topic": "The 'Brain Fog' Phenomenon: Is it just stress, or something more?",
+      "hook": "Feeling forgetful? Struggling to focus? Is it just your daily grind, or is the 'brain fog' trend hiding a deeper truth?",
       "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 45
+      "music_mood": "Mysterious",
+      "target_duration": 46
     },
     {
-      "category": "Personal Finance & Investment Tips",
-      "topic": "The beginner's guide to understanding cryptocurrency volatility and risk management.",
-      "hook": "Heard about crypto but scared to jump in? Let's decode the volatility so you can invest smarter.",
+      "category": "Fall & Halloween Trending",
+      "topic": "DIY Spooky Season Decor Hacks: On a budget, but looking bougie.",
+      "hook": "Don't break the bank for your Halloween decor! These DIY hacks will make your house look haunted without draining your wallet.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Viral Trends & Social Media Challenges",
+      "topic": "The 'Tell Me Without Telling Me' Trend: Why it blew up (and what it reveals about us).",
+      "hook": "You've seen 'Tell me you're a... without telling me you're a...' all over your feed. But why is this seemingly simple trend so addictive?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Midterm Election Analysis & Predictions",
+      "topic": "The Power of Gen Z in the Midterms: Can they really swing key races?",
+      "hook": "Everyone's talking about the youth vote, but can Gen Z *actually* tip the scales in this midterm election? The numbers might surprise you.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Geopolitical Diplomacy & Global Impact",
+      "topic": "Arctic Scramble: Why the melting ice is causing new global tensions.",
+      "hook": "The Arctic ice is melting, and global powers are rushing to claim it. This isn't just about climate change; it's a new Cold War battlefield.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Political Satire & Commentary",
+      "topic": "The Unwritten Rules of Political Apologies: What they *really* mean.",
+      "hook": "Politician 'sincerely apologizes' again. But what are the hidden messages behind every carefully worded mea culpa? Let's decode.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Stock Market Updates & Investment Strategies",
+      "topic": "The NFT Art Market Crash: Is it dead, or just evolving?",
+      "hook": "Remember when NFTs were selling for millions? Now, many are worthless. Did the bubble burst, or is the next big thing hiding in plain sight?",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Personal Finance & Economic Outlook",
+      "topic": "Side Hustles That ACTUALLY Pay Off: Beyond DoorDash and surveys.",
+      "hook": "Tired of side hustle advice that barely covers your coffee? I'm spilling the tea on the *real* money-making gigs you haven't heard of.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Professional Tennis Highlights & Athlete Journeys",
+      "topic": "Carlos Alcaraz's Rise: How the teen phenom conquered the tennis world.",
+      "hook": "One year, he was a rising star. The next, he's world #1. How did Carlos Alcaraz become the youngest men's champion in decades?",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 46
+    },
+    {
+      "category": "Sports News & Athlete Spotlights",
+      "topic": "The Dark Side of Sports Betting: When passion turns problematic.",
+      "hook": "Every game, every bet. Sports betting is exploding, but what happens when the thrill becomes a dangerous addiction? The untold stories.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Current Events Explainers & News Debunks",
+      "topic": "The Truth About 'Quiet Firing': Is your boss trying to get rid of you?",
+      "hook": "You've heard of quiet quitting, but what about 'quiet firing'? Is your employer subtly trying to push you out the door? Let's find out.",
       "voice_style": "Calm",
       "music_mood": "Mysterious",
-      "target_duration": 50
+      "target_duration": 44
     },
     {
-      "category": "TV Show Reviews & Deep Dives",
-      "topic": "The subtle psychological horror elements missed by most viewers in 'Yellowjackets' Season 2.",
-      "hook": "Thought 'Yellowjackets' was just about survival? You missed the truly terrifying psychological clues hiding in plain sight.",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports News & Trade Rumors",
-      "topic": "The surprising NHL free agency signing that could make a dark horse contender.",
-      "hook": "Everyone's talking about the big names, but this underdog NHL signing just made a team a legitimate threat.",
+      "category": "Fall & Halloween Trending",
+      "topic": "Bizarre Fall Food Combos: Are these TikTok trends delicious or disgusting?",
+      "hook": "Pumpkin spice lasagna? Candy corn pizza? TikTok is going wild with these bizarre fall food combos, but are they genius or pure terror?",
       "voice_style": "Energetic",
       "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Marathon & Running Fitness",
-      "topic": "Debunking common running myths that are holding back your performance (e.g., 'stretch before you run').",
-      "hook": "Everything you thought you knew about running might be WRONG. Let's bust these myths holding you back!",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Athlete Spotlights & Inspiration",
-      "topic": "The daily routine and mental fortitude of an Olympic gymnast preparing for competition.",
-      "hook": "Ever wonder what it *really* takes to be an Olympian? We're diving into the intense daily grind of a top gymnast.",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Music & Podcast Discovery",
-      "topic": "Essential true crime podcasts that will keep you up at night (and teach you something).",
-      "hook": "Warning: these true crime podcasts are so gripping, you'll forget to sleep. But they're worth it.",
-      "voice_style": "Mysterious",
-      "music_mood": "Dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Fall Lifestyle & Seasonal Trends",
-      "topic": "The rise of 'dark academia' as a fall fashion and aesthetic trend.",
-      "hook": "Forget pumpkin spice, the hottest fall trend is all about vintage books, tweed, and mysterious vibes. Welcome to dark academia.",
-      "voice_style": "Mysterious",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Quick & Healthy Recipes",
-      "topic": "A viral 3-ingredient dessert hack that's surprisingly healthy and delicious.",
-      "hook": "Only THREE ingredients for this viral dessert? And it's actually healthy? You won't believe it.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "DIY & Home Improvement Hacks",
-      "topic": "Genius rental-friendly bathroom upgrades that won't cost your security deposit.",
-      "hook": "Hate your rental bathroom but can't renovate? These renter-friendly hacks will totally transform it without losing your deposit!",
+      "category": "Viral Trends & Social Media Challenges",
+      "topic": "The 'De-influencing' Movement: Why people are telling you *not* to buy things.",
+      "hook": "Influencers used to tell you what to buy. Now, a new wave is telling you what to SKIP. Is 'de-influencing' the future of social media?",
       "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "music_mood": "Chill",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
