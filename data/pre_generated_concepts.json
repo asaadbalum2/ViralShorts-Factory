@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-10T11:18:47.655501",
-  "valid_until": "2026-10-10T23:59:47.655509",
+  "generated_at": "2026-10-11T11:32:29.918607",
+  "valid_until": "2026-10-11T23:59:29.918616",
   "categories": [
-    "Celebrity News & Updates",
-    "Hurricane Season & Preparedness",
-    "Pro Golf Highlights & Analysis",
-    "Daily Puzzle Solutions & Hints",
-    "Pop Culture Deep Dives",
-    "Regional Weather & Forecasts",
-    "Emergency Safety Guides",
-    "Entertainment Industry Buzz",
-    "Iconic Style & Lifestyle",
-    "Sports Betting & Fantasy Picks",
-    "Breaking News Explainer Videos",
-    "Fall Vibes & Halloween Content",
-    "Behind-the-Scenes & Actor Spotlights",
-    "Regional Travel & Local Guides",
-    "Interactive Challenges & Brain Teasers"
+    "NFL Week 5 Recaps & Fantasy Football",
+    "Taylor Sheridan Universe Theories & Breakdowns",
+    "Powerball Dream Scenarios & Financial Fantasies",
+    "Athlete Spotlights: College Football to NFL (e.g., Ashton Jeanty)",
+    "Celebrity Pop Culture & News (e.g., Anna Faris)",
+    "European Soccer Match Previews & Highlights (e.g., Southampton vs Portsmouth)",
+    "Halloween Costume & Decor DIYs",
+    "Autumn Lifestyle & Cozy Fall Aesthetics",
+    "Historical & Religious Figure Deep Dives (e.g., Pope Leo)",
+    "Quick & Easy Fall-Themed Recipes",
+    "Relatable Comedy & Viral Skits",
+    "Personal Finance & Money Saving Tips",
+    "DIY Home Improvement & Seasonal Crafts",
+    "Pet Content: Fall & Halloween Editions",
+    "Fashion & Beauty: Autumn Trends & Get Ready With Me"
   ],
   "concepts": [
     {
-      "category": "Celebrity News & Updates",
-      "topic": "The REAL reason behind that unexpected celeb breakup.",
-      "hook": "Did you hear about *that* shock celebrity split? What if I told you the internet has it ALL wrong?",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
+      "category": "NFL Week 5 Recaps & Fantasy Football",
+      "topic": "Biggest Fantasy Busts of NFL Week 5",
+      "hook": "Did your fantasy team just get *wrecked* by Week 5? Let's talk about the biggest busts that tanked our Sundays!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Hurricane Season & Preparedness",
-      "topic": "The one *essential* item everyone forgets for hurricane kits.",
-      "hook": "Your hurricane prep kit is missing something HUGE. No, it's not water or batteries...",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "NFL Week 5 Recaps & Fantasy Football",
+      "topic": "Unexpected Week 5 Fantasy Football Heroes for Playoff Push",
+      "hook": "Who just single-handedly saved your Week 5 fantasy season? One player nobody saw coming is now a must-add!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Pro Golf Highlights & Analysis",
-      "topic": "Unpacking that insane last-hole comeback at the Open Championship.",
-      "hook": "You think you saw a clutch putt? Wait until you see how *this* golfer snatched victory from the jaws of defeat!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Taylor Sheridan Universe Theories & Breakdowns",
+      "topic": "'Yellowstone' Season 5 Part 2 Plot Leaks & Dutton Family Fate",
+      "hook": "Yellowstone fans, stop scrolling! We need to talk about the *real* fate of the Duttons in Season 5 Part 2 \u2013 the leaks are wild!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Taylor Sheridan Universe Theories & Breakdowns",
+      "topic": "'1923' Spinoff Connecting to 'Lawmen: Bass Reeves' Universe Theory",
+      "hook": "What if I told you the '1923' timeline actually *crosses over* with the 'Bass Reeves' story? Mind. Blown. Let's theorize!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "Daily Puzzle Solutions & Hints",
-      "topic": "Cracking today's Wordle in just three guesses: The secret strategy.",
-      "hook": "Stuck on today's Wordle? What if I told you there's a simple trick to solve it in HALF the time?",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Powerball Dream Scenarios & Financial Fantasies",
+      "topic": "If I Won Powerball: The Ultimate Sports Franchise Purchase & First Move",
+      "hook": "Okay, Powerball just hit, and I'm buying an entire sports team. Here's my first move, and it's NOT what you'd expect...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 42
     },
     {
-      "category": "Pop Culture Deep Dives",
-      "topic": "The hidden meaning behind the 'Barbenheimer' phenomenon.",
-      "hook": "'Barbenheimer' broke the internet, but was it just meme magic, or something deeper about our cultural psyche?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Powerball Dream Scenarios & Financial Fantasies",
+      "topic": "The *Actual* Smart Way to Spend $1 Billion Powerball Win (Beyond Yachts)",
+      "hook": "You just won a billion dollars Powerball. But what if you spent it... *smartly*? Not on mansions, not on yachts, but on THIS.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 47
     },
     {
-      "category": "Regional Weather & Forecasts",
-      "topic": "Is a 'Polar Vortex' headed for the Northeast this winter?",
-      "hook": "Northeast residents, listen up! The latest long-range models are hinting at a terrifyingly familiar winter visitor...",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 43
-    },
-    {
-      "category": "Emergency Safety Guides",
-      "topic": "The 'STOP-DROP-ROLL' update: Modern fire safety tips you NEED.",
-      "hook": "Remember 'stop, drop, and roll'? It's still good, but there's a *new* fire safety rule that could literally save your life.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
-      "target_duration": 46
-    },
-    {
-      "category": "Entertainment Industry Buzz",
-      "topic": "The 'Writers' Room Secret' that's changing TV show endings.",
-      "hook": "Ever wonder why so many TV shows are ending with a twist you didn't see coming? It's not just creative genius...",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Athlete Spotlights: College Football to NFL (e.g., Ashton Jeanty)",
+      "topic": "Ashton Jeanty's NFL Future: Is He The Next Christian McCaffrey?",
+      "hook": "Boise State's Ashton Jeanty is carving up defenses. Is he the next Christian McCaffrey in the NFL? Scouts are buzzing!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 44
     },
     {
-      "category": "Iconic Style & Lifestyle",
-      "topic": "Decoding Meghan Markle's minimalist power dressing.",
-      "hook": "Meghan Markle's wardrobe isn't just chic, it's a masterclass in power dressing without saying a word. Here's how she does it.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Athlete Spotlights: College Football to NFL (e.g., Ashton Jeanty)",
+      "topic": "Underrated College QB Poised for Huge NFL Draft Leap",
+      "hook": "Everyone's talking about Caleb Williams, but *this* underrated college QB is quietly rising up NFL draft boards. You NEED to know him.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Celebrity Pop Culture & News (e.g., Anna Faris)",
+      "topic": "Anna Faris's Post-Divorce Career Renaissance: A Surprising Comeback",
+      "hook": "Anna Faris has been through it, but her career after divorce is having a surprising renaissance. Let's talk about her quiet comeback.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 43
+    },
+    {
+      "category": "Celebrity Pop Culture & News (e.g., Anna Faris)",
+      "topic": "Shocking Hollywood Couple Breakup: The Subtle Clues We All Missed",
+      "hook": "Okay, did anyone else see the subtle clues leading up to *that* shocking Hollywood breakup? It wasn't out of nowhere...",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 49
     },
     {
-      "category": "Sports Betting & Fantasy Picks",
-      "topic": "Unveiling the 'Underdog Quarterback' for your fantasy football playoff push.",
-      "hook": "Everyone's chasing the top fantasy QBs, but I found the ultimate sleeper pick that could win you your league.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity News & Updates",
-      "topic": "The secret side hustle of a famous Hollywood actor.",
-      "hook": "Think you know your favorite actors? What if I told you one A-lister is secretly running a multi-million dollar business empire... unrelated to acting?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "European Soccer Match Previews & Highlights (e.g., Southampton vs Portsmouth)",
+      "topic": "Southampton vs Portsmouth: The South Coast Derby's Fiercest Moments",
+      "hook": "The South Coast Derby is legendary. Southampton vs Portsmouth is more than just a game... it's pure, intense rivalry. Relive the best moments!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Hurricane Season & Preparedness",
-      "topic": "Debunking common hurricane myths: tape on windows?",
-      "hook": "Taping your windows before a hurricane? Stop right there! You've been doing it wrong, and it could be dangerous.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "European Soccer Match Previews & Highlights (e.g., Southampton vs Portsmouth)",
+      "topic": "UCL Group Stage Upset Predictions: Who's Shocking Europe This Week?",
+      "hook": "Champions League is back! And I'm predicting *this* massive upset in the group stage that no one sees coming. Bold calls incoming!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Pro Golf Highlights & Analysis",
-      "topic": "The controversial 'gimme' putt that sparked a PGA tour debate.",
-      "hook": "A putt so short, it seemed like a given. But *this* 'gimme' just ignited a firestorm on the PGA tour. Was it fair play?",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
+      "category": "Halloween Costume & Decor DIYs",
+      "topic": "Last-Minute DIY Halloween Costume That Will Win Any Party",
+      "hook": "Stuck on a Halloween costume? I've got a last-minute DIY that's so clever and easy, you'll win every costume contest!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 48
     },
     {
-      "category": "Daily Puzzle Solutions & Hints",
-      "topic": "Mastering the New York Times 'Spelling Bee': Uncommon letter strategies.",
-      "hook": "Consistently missing the 'genius' level in Spelling Bee? You're probably overlooking *these* crucial letters.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 42
+      "category": "Halloween Costume & Decor DIYs",
+      "topic": "Spooky & Elegant Halloween Decor On a Tiny Budget",
+      "hook": "Who says Halloween decor has to be cheesy? I'm showing you how to get spooky AND elegant on a tiny budget. Your house will look amazing!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
     },
     {
-      "category": "Pop Culture Deep Dives",
-      "topic": "The 90s fashion trend making a surprising, divisive comeback.",
-      "hook": "Get ready for a fashion blast from the past, because *this* infamous 90s trend is back, and people have STRONG opinions about it!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Autumn Lifestyle & Cozy Fall Aesthetics",
+      "topic": "The Ultimate Cozy Fall Reading Nook Makeover for Autumn Vibes",
+      "hook": "It's finally fall! Let's create the coziest, most inviting reading nook you've ever seen, perfect for autumn vibes and a good book.",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 47
     },
     {
-      "category": "Regional Weather & Forecasts",
-      "topic": "Decoding 'Lake Effect Snow' for Great Lakes residents.",
-      "hook": "Great Lakes folks, ever wonder why your backyard gets pummeled with snow while the next town over is clear? It's all about *this* phenomenon...",
-      "voice_style": "Authoritative",
-      "music_mood": "Calm",
+      "category": "Autumn Lifestyle & Cozy Fall Aesthetics",
+      "topic": "My Morning Routine for Peak Autumn Zen & Productivity",
+      "hook": "Want to embrace the autumn zen? My morning routine is all about cozy vibes, pumpkin spice, and pure fall aesthetic for a productive day.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 43
     },
     {
-      "category": "Emergency Safety Guides",
-      "topic": "The 'Go-Bag' essential most people forget (and it's not food!).",
-      "hook": "You've got your emergency go-bag ready, right? But I guarantee you're forgetting one critical item that could make all the difference.",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
+      "category": "Historical & Religious Figure Deep Dives (e.g., Pope Leo)",
+      "topic": "Pope Leo's Most Controversial Decision You Never Knew About",
+      "hook": "Everyone knows about Pope Leo, but did you know about *this* incredibly controversial decision that shaped history and sparked centuries of debate?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Historical & Religious Figure Deep Dives (e.g., Pope Leo)",
+      "topic": "The Real Story of Joan of Arc's Unsung Heroic Acts That Defined Her",
+      "hook": "You think you know Joan of Arc? I'm diving into her unsung heroic acts that truly defied her era and cemented her legendary status.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 46
     },
     {
-      "category": "Entertainment Industry Buzz",
-      "topic": "The unexpected streaming platform war's impact on TV production budgets.",
-      "hook": "Streaming services are battling it out, but it's not just about subscribers. This war is secretly driving up show budgets like crazy!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Iconic Style & Lifestyle",
-      "topic": "The 'Quiet Luxury' trend: How to achieve it on a budget.",
-      "hook": "Everyone's talking 'quiet luxury,' but you don't need a designer budget to look effortlessly expensive. Here's how.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 49
-    },
-    {
-      "category": "Sports Betting & Fantasy Picks",
-      "topic": "The 'Against the Spread' NFL picks: Week 7's biggest upset potential.",
-      "hook": "Forget the obvious winners. This week, I've found three NFL games where the underdog is poised to shock everyone against the spread!",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
+      "category": "Quick & Easy Fall-Themed Recipes",
+      "topic": "5-Minute Gourmet Pumpkin Spice Latte You Can Make at Home",
+      "hook": "Why pay $7 for a PSL when you can make a gourmet pumpkin spice latte in just 5 minutes at home? Here's how!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Quick & Easy Fall-Themed Recipes",
+      "topic": "One-Pan Apple Sausage Bake for a Cozy & Easy Fall Dinner",
+      "hook": "Busy weeknight but craving cozy fall flavors? This one-pan apple sausage bake is an absolute game-changer for a delicious dinner!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 44
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
