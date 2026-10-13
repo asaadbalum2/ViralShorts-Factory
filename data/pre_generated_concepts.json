@@ -1,205 +1,190 @@
 {
-  "generated_at": "2026-10-12T13:25:07.203117",
-  "valid_until": "2026-10-12T23:59:07.203128",
+  "generated_at": "2026-10-13T12:53:28.544708",
+  "valid_until": "2026-10-13T23:59:28.544718",
   "categories": [
-    "Global Sports & Athlete Highlights",
-    "Royal Family & Celebrity Scoop",
-    "Geopolitical Updates & \"Explainers\"",
-    "\"Deep Think\" Philosophy & History Bites",
-    "Autumn Aesthetics & Halloween Prep",
-    "Film & TV Show Hot Takes/Theories",
-    "Fashion & Style Trends (Celebrity-Inspired)",
-    "Relatable Humor & Skits (Current Events Edition)",
-    "Productivity & Life Hacks (Quick Tips)",
-    "Food & Drink Tutorials (Comfort & Seasonal)",
-    "DIY & Home Decor Transformations",
-    "Behind-the-Scenes & \"Day in the Life\"",
-    "Travel & Exploration (Dream Destinations)",
-    "Mental Wellness & Self-Care Routines",
-    "Tech & AI News/Reviews (Future Focus)"
+    "Pop Culture & Reality TV Reactions",
+    "Personal Finance & Market Insights",
+    "Political Updates & Commentary",
+    "Sports Analysis & Fan Culture",
+    "Halloween Costumes & SFX Makeup",
+    "Fall Fashion & Styling Hauls",
+    "Celebrity News & Style Spotlights",
+    "Travel & Luxury Lifestyle Vlogs",
+    "Home Decor & Cozy Aesthetics",
+    "Edutainment & Life Hacks",
+    "Quick & Easy Fall Recipes",
+    "Relatable Comedy & Skits",
+    "Career & Professional Growth",
+    "Wellness & Mental Health Journeys",
+    "Tech & Innovation Bites"
   ],
   "concepts": [
     {
-      "category": "Global Sports & Athlete Highlights",
-      "topic": "The 'Hidden Strategy' Behind Naomi Osaka's French Open Withdrawal",
-      "hook": "Everyone thought it was just mental health, but what if Naomi Osaka's French Open withdrawal was a strategic masterclass?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Pop Culture & Reality TV Reactions",
+      "topic": "The wildest moment from the latest 'Love Is Blind' reunion",
+      "hook": "Did anyone else's jaw hit the floor during *that* moment at the 'Love Is Blind' reunion? Let's unpack it!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Global Sports & Athlete Highlights",
-      "topic": "The Forgotten Olympic Feat: Jesse Owens' 'Lost' Gold Medal Moment",
-      "hook": "You know Jesse Owens, but did you know about the 'lost' medal moment that solidified his legend?",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Royal Family & Celebrity Scoop",
-      "topic": "The Royal Family's Secret Message in Kate Middleton's Latest Outfit",
-      "hook": "Did Kate Middleton just send a subtle message to Meghan and Harry with her latest public appearance? We decode the fashion...",
-      "voice_style": "dramatic",
+      "category": "Pop Culture & Reality TV Reactions",
+      "topic": "Fan theories about the ending of 'Loki' Season 2",
+      "hook": "Okay, can we talk about the *real* ending of Loki Season 2? My mind is blown, but what if it's not what we think?",
+      "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Royal Family & Celebrity Scoop",
-      "topic": "Why 'Bennifer's' Resurgence is More Than Just Romance: A PR Masterclass?",
-      "hook": "JLo and Ben Affleck are back, but is their rekindled romance a genuine love story or a perfectly orchestrated PR coup?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Geopolitical Updates & \"Explainers\"",
-      "topic": "The 'Digital Iron Curtain': China's New Internet Regulations Explained",
-      "hook": "Is China building a 'Digital Iron Curtain'? We break down their shocking new internet regulations in under 60 seconds.",
+      "category": "Personal Finance & Market Insights",
+      "topic": "Demystifying high-yield savings accounts (HYSA) for beginners",
+      "hook": "Still keeping your savings in a regular bank account? You could be losing hundreds! Let's talk HYSA and why you need one.",
       "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Geopolitical Updates & \"Explainers\"",
-      "topic": "Why the Microchip Shortage is a Bigger Threat Than You Think (Beyond Your PS5)",
-      "hook": "Your new phone is delayed, but the global microchip shortage has far graver implications than just gadgets. Let me explain.",
-      "voice_style": "calm",
-      "music_mood": "dramatic",
-      "target_duration": 47
-    },
-    {
-      "category": "\"Deep Think\" Philosophy & History Bites",
-      "topic": "Did Ancient Greeks Predict AI with the Myth of Talos?",
-      "hook": "Long before ChatGPT, did the ancient Greeks imagine AI with the terrifying myth of Talos? The parallels are chilling.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "\"Deep Think\" Philosophy & History Bites",
-      "topic": "The Stoic Hack for Overcoming Procrastination (Ancient Wisdom, Modern Problem)",
-      "hook": "Feeling overwhelmed? The Stoics had a radical cure for procrastination that's still relevant today. It's not what you think.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Autumn Aesthetics & Halloween Prep",
-      "topic": "The 'Secret Ingredient' That Elevates Your Pumpkin Patch Photos Instantly",
-      "hook": "Your pumpkin patch photos are cute, but I know the one secret ingredient to make them absolutely *viral*.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Autumn Aesthetics & Halloween Prep",
-      "topic": "DIY Haunted House Hacks: Transform Your Home for Under $20",
-      "hook": "Want to turn your living room into a haunted mansion for under $20? I'm spilling my top 3 budget Halloween decor secrets.",
+      "category": "Personal Finance & Market Insights",
+      "topic": "The '3-envelope' cash budgeting method for impulse spending",
+      "hook": "Impulse buys destroying your budget? I found a cash envelope system that *actually* works for stopping unnecessary spending.",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 49
+      "target_duration": 45
     },
     {
-      "category": "Film & TV Show Hot Takes/Theories",
-      "topic": "The REAL Reason Ted Lasso Keeps Giving Speeches (It's Not What You Think)",
-      "hook": "Ted Lasso's speeches are iconic, but what if they're not just about inspiring the team? My theory will blow your mind.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Film & TV Show Hot Takes/Theories",
-      "topic": "Is WandaVision's Agatha Harkness Secretly Helping the Multiverse?",
-      "hook": "Everyone sees Agatha Harkness as a villain, but what if her actions in WandaVision were actually a twisted form of salvation for the MCU?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "Fashion & Style Trends (Celebrity-Inspired)",
-      "topic": "Bella Hadid's 'Vintage-Chic' Look Decoded: How to Achieve It on a Budget",
-      "hook": "Bella Hadid's vintage-inspired style is iconic, but you don't need a designer budget. I'm showing you the thrifting hacks.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Fashion & Style Trends (Celebrity-Inspired)",
-      "topic": "Why 'Quiet Luxury' is Dying (And What's Replacing It for Fall)",
-      "hook": "Move over 'Quiet Luxury'! This fall, celebrity stylists are ditching minimalism for something bolder. Are you ready?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 47
-    },
-    {
-      "category": "Relatable Humor & Skits (Current Events Edition)",
-      "topic": "My Brain Trying to Keep Up with AI News While Also Remembering My Groceries",
-      "hook": "Me trying to understand the latest AI breakthrough while simultaneously wondering if I bought milk... it's a daily struggle.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Relatable Humor & Skits (Current Events Edition)",
-      "topic": "The Universal Experience of Trying to Cancel a Free Trial in 2023",
-      "hook": "Why is canceling a 'free' trial harder than defusing a bomb? My reenactment of this modern-day saga is too real.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Productivity & Life Hacks (Quick Tips)",
-      "topic": "The '2-Minute Rule' That Revolutionized My Entire To-Do List",
-      "hook": "Stop procrastinating right now! The '2-Minute Rule' isn't just a hack; it's a complete paradigm shift for your productivity.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Productivity & Life Hacks (Quick Tips)",
-      "topic": "Delete This One App to Gain Hours of Focused Time Each Day",
-      "hook": "You think you need that app, but it's silently stealing hours from your day. Delete it now and reclaim your focus!",
+      "category": "Political Updates & Commentary",
+      "topic": "The hidden implications of the proposed new data privacy bill",
+      "hook": "Your phone knows *everything* about you, but a new bill could change how companies use that data... or make it worse. Here's what you need to know.",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Food & Drink Tutorials (Comfort & Seasonal)",
-      "topic": "The Secret to 'No-Fail' Gooey Caramel Apples for Fall",
-      "hook": "Tired of messy, hard caramel apples? I cracked the code to perfectly gooey, no-fail caramel apples every single time.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 46
-    },
-    {
-      "category": "Food & Drink Tutorials (Comfort & Seasonal)",
-      "topic": "My Cozy 3-Ingredient 'Autumn Spice' Hot Chocolate Hack",
-      "hook": "Forget basic hot chocolate! My 3-ingredient autumn spice hack will make you rethink your entire fall drink game. So easy!",
+      "category": "Political Updates & Commentary",
+      "topic": "Why local elections matter more than you think for everyday life",
+      "hook": "Everyone talks about the President, but the person who decides if your street gets fixed? Probably someone you've never heard of, and they're crucial.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 43
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis & Fan Culture",
+      "topic": "The unexpected impact of the new NBA foul rule changes on scoring",
+      "hook": "Did the NBA just ruin offense with their new foul rules, or are we just seeing the game evolve? Let's break down the impact on scoring.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis & Fan Culture",
+      "topic": "Why the 'Curse of the Billy Goat' still haunts Chicago Cubs fans",
+      "hook": "Even after 2016, there's a legend that still sends shivers down Cubs fans' spines. Is the Curse of the Billy Goat *really* gone?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Halloween Costumes & SFX Makeup",
+      "topic": "Easy DIY 'Zombie Bite' SFX makeup for beginners",
+      "hook": "Want to freak everyone out this Halloween without being a pro artist? This zombie bite SFX is shockingly easy, even for beginners!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Halloween Costumes & SFX Makeup",
+      "topic": "Transforming into a 'Haunted Doll' with thrift store finds",
+      "hook": "Forget expensive store-bought costumes! I'm showing you how to become the creepiest haunted doll using only thrift store treasures.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Fashion & Styling Hauls",
+      "topic": "Styling a single oversized blazer for five different fall occasions",
+      "hook": "One blazer, five outfits! I'm showing you how this oversized fall staple can take you from brunch to boss mode with just a few tweaks.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Fashion & Styling Hauls",
+      "topic": "The ultimate cozy loungewear haul under $50 for chilly evenings",
+      "hook": "Brrrr, it's getting cold! But staying cozy doesn't have to break the bank. My entire fall loungewear haul is under $50!",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News & Style Spotlights",
+      "topic": "Analyzing Taylor Swift's latest 'Easter Egg' outfit choices",
+      "hook": "Okay, Swifties, did you catch the subtle clues in Taylor's latest outfit? This isn't just fashion; it's a hidden message!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity News & Style Spotlights",
+      "topic": "The surprising story behind Timoth\u00e9e Chalamet's iconic red carpet look",
+      "hook": "Everyone's talking about Timoth\u00e9e Chalamet's red carpet look, but do you know the *real* inspiration and message behind that viral outfit?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel & Luxury Lifestyle Vlogs",
+      "topic": "Finding hidden speakeasy bars in New York City's West Village",
+      "hook": "Think you know NYC nightlife? I'm taking you to three hidden speakeasies in the West Village you've probably walked right past.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Travel & Luxury Lifestyle Vlogs",
+      "topic": "How to use credit card points for a 'free' first-class flight to Paris",
+      "hook": "First-class to Paris for practically free? Yes, it's possible! I'll show you my exact strategy for maximizing credit card points for luxury travel.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Home Decor & Cozy Aesthetics",
+      "topic": "DIY transforming a boring bookshelf into a built-in look",
+      "hook": "Your basic IKEA bookshelf is begging for an upgrade. I'm showing you how to make it look like a custom built-in for under $100!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Home Decor & Cozy Aesthetics",
+      "topic": "Creating a 'hygge' corner for ultimate fall relaxation and comfort",
+      "hook": "It's getting chilly outside, and my hygge corner is calling! Learn how to create your own ultimate cozy fall relaxation spot.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Edutainment & Life Hacks",
+      "topic": "The '2-minute rule' for beating procrastination instantly",
+      "hook": "Struggling to start tasks? This ridiculously simple '2-minute rule' will trick your brain into beating procrastination, every time.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Edutainment & Life Hacks",
+      "topic": "How to remove any sticky label residue without scrubbing or harsh chemicals",
+      "hook": "Peeling off that price tag and left with a sticky mess? Stop scrubbing! This one common household item makes it disappear instantly.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -207,44 +192,59 @@
       "music_mood": "dramatic"
     },
     {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -252,9 +252,9 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
