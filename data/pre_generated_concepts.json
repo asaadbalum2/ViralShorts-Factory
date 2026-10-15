@@ -1,250 +1,250 @@
 {
-  "generated_at": "2026-10-14T10:28:33.566377",
-  "valid_until": "2026-10-14T23:59:33.566386",
+  "generated_at": "2026-10-15T10:12:38.203217",
+  "valid_until": "2026-10-15T23:59:38.203228",
   "categories": [
-    "Autumn & Halloween Trends",
-    "Daily Brain Games & Puzzle Solutions",
-    "Pro Sports Highlights & Fan Culture",
-    "Energy & Home Efficiency Tips",
-    "Stock Market & Personal Finance Updates",
-    "Global Entertainment & Celebrity News",
-    "Local Weather & Seasonal Preparedness",
-    "Lottery & Luck Stories",
-    "Short-Form Learning & Edutainment",
-    "Cozy Fall Aesthetics & Lifestyle",
-    "Tech & Gadget Reviews (Utility Focus)",
-    "DIY & Craft Projects (Seasonal)",
-    "Wellness & Mental Health Hacks",
-    "Quick Recipes & Food Trends (Fall Edition)",
-    "Comedy & Relatable Skits"
+    "Celebrity News & Pop Culture Updates",
+    "Lottery Wins & Financial Dreams",
+    "Global News & Current Events Analysis",
+    "Weather & Seasonal Lifestyle",
+    "Viral Personalities & Human Interest Stories",
+    "Animal Content & Wildlife Conservation",
+    "Autumn Aesthetics & Fall Decor",
+    "Quick Recipes & Seasonal Food",
+    "DIY & Life Hacks",
+    "Comedy Skits & Viral Memes",
+    "Educational Minis & 'Edutainment'",
+    "Beauty, Fashion & Style Trends",
+    "Behind-the-Scenes & Day-in-the-Life",
+    "Motivational & Self-Improvement",
+    "Local Guides & Hidden Gems"
   ],
   "concepts": [
     {
-      "category": "Autumn & Halloween Trends",
-      "topic": "DIY 'Ghostface' Hot Chocolate Bombs for Halloween Parties",
-      "hook": "Forget basic hot cocoa! This Halloween, your drink is screaming.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Celebrity News & Pop Culture Updates",
+      "topic": "The real reason behind a famous pop duo's sudden 'social media blackout' before a new album drop.",
+      "hook": "Did you notice *they* suddenly vanished online? The truth behind their blackout is wilder than you think...",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Autumn & Halloween Trends",
-      "topic": "Viral 'Reverse Trick-or-Treating' Pranks (giving adults healthy snacks)",
-      "hook": "What happens when you give kids broccoli instead of candy on Halloween? Their parents' reactions are priceless!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Lottery Wins & Financial Dreams",
+      "topic": "The shockingly simple daily habit that led one average person to a multi-million dollar lottery win, and it's not buying more tickets.",
+      "hook": "Imagine waking up a millionaire, not by pure luck, but by doing *this* one unexpected thing every single day...",
+      "voice_style": "Inspirational",
+      "music_mood": "Upbeat",
+      "target_duration": 48
     },
     {
-      "category": "Daily Brain Games & Puzzle Solutions",
-      "topic": "The Impossible Matchstick Puzzle: Can You Solve It in 5 Seconds?",
-      "hook": "Only 1% of people can solve this matchstick puzzle in time. Are you a genius?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Daily Brain Games & Puzzle Solutions",
-      "topic": "Spot the Difference Optical Illusion: Explaining Cognitive Bias",
-      "hook": "Your eyes are playing tricks on you! Can you find all 7 differences before I reveal the secret?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Pro Sports Highlights & Fan Culture",
-      "topic": "The 'Impossible' Game-Winning Shot/Play That Broke the Internet Last Night",
-      "hook": "Did you see that?! The most unbelievable sports moment of the year just happened.",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Pro Sports Highlights & Fan Culture",
-      "topic": "Decoding the Hidden Fan Chants and Traditions of the Green Bay Packers 'Lambeau Leap'",
-      "hook": "Ever wonder why Packers fans jump into the stands? The truth behind the 'Lambeau Leap' is wild.",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Energy & Home Efficiency Tips",
-      "topic": "'Phantom Power': Devices Secretly Draining Electricity Even When Off",
-      "hook": "Your TV is secretly stealing your money, even when it's off! Here's how to stop the 'phantom power' drain.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Energy & Home Efficiency Tips",
-      "topic": "DIY Insulation Hacks Using Household Items for Drafty Windows/Doors",
-      "hook": "Stop losing heat and money! This one simple hack with cling wrap can slash your heating bill tonight.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Global News & Current Events Analysis",
+      "topic": "The surprising tech innovation quietly solving the global plastic waste crisis in one specific Scandinavian country.",
+      "hook": "Forget everything you thought you knew about recycling. *This* country found a revolutionary game-changer for plastic.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
       "target_duration": 50
     },
     {
-      "category": "Stock Market & Personal Finance Updates",
-      "topic": "The 'Latte Factor' Debunked: Small Expenses vs. Big Impact on Wealth",
-      "hook": "Is your daily coffee really making you poor? The 'latte factor' might be a bigger lie than you think.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "category": "Weather & Seasonal Lifestyle",
+      "topic": "The bizarre atmospheric phenomenon creating those viral 'sky glow' videos and whether it's safe to see.",
+      "hook": "Seen those crazy glowing skies all over your feed? We're breaking down the science behind this stunning spectacle!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 42
     },
     {
-      "category": "Stock Market & Personal Finance Updates",
-      "topic": "Understanding the Recent 'Meme Stock' Surge/Dip and Investing Lessons",
-      "hook": "Remember those crazy meme stock rallies? What happened next will shock you \u2013 and teach you a crucial investing lesson.",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "category": "Viral Personalities & Human Interest Stories",
+      "topic": "The inspiring untold story of the person behind the viral 'kindness challenge' on TikTok and their journey.",
+      "hook": "You've seen the challenge, but you haven't heard *their* full story. Prepare to be genuinely moved.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
+      "target_duration": 47
     },
     {
-      "category": "Global Entertainment & Celebrity News",
-      "topic": "Unpacking the 'Easter Eggs' and Hidden Meanings in a Viral Music Video",
-      "hook": "Did you catch all the hidden clues in Olivia Rodrigo's new video? It's a masterpiece of secrets!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Animal Content & Wildlife Conservation",
+      "topic": "The secret language of city squirrels: what their specific tail flicks and chattering *really* mean.",
+      "hook": "Think squirrels are just cute? Their tail movements are a complex code you're totally missing!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Global Entertainment & Celebrity News",
-      "topic": "The Surprising Pre-Fame Jobs of A-List Celebrities That Will Blow Your Mind",
-      "hook": "Before they were superstars, these celebs were doing WHAT? Their old jobs will absolutely shock you.",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "category": "Autumn Aesthetics & Fall Decor",
+      "topic": "The one 'fall scent' candle you should NEVER buy, according to top interior designers, and why it ruins your vibe.",
+      "hook": "Your cozy autumn vibe might be getting secretly sabotaged by *this* super common candle mistake.",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
+      "target_duration": 44
+    },
+    {
+      "category": "Quick Recipes & Seasonal Food",
+      "topic": "The 'secret ingredient' to perfectly crispy air fryer brussels sprouts that even haters will absolutely love.",
+      "hook": "Hate Brussels sprouts? Prepare to be converted! My air fryer hack makes them unbelievably irresistible.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "DIY & Life Hacks",
+      "topic": "The genius 'magnetic wall mount' hack for cluttered kitchen utensils using only dollar store items.",
+      "hook": "Your kitchen drawers are a disaster? *This* dollar store hack will magically transform your organization instantly!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Comedy Skits & Viral Memes",
+      "topic": "Recreating the 'side-eye Chloe' meme, but with a new, unexpected animal reacting to everyday human situations.",
+      "hook": "Remember side-eye Chloe? My pet's reaction to *this* everyday struggle is giving serious competition!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "Celebrity News & Pop Culture Updates",
+      "topic": "Unmasking the anonymous TikTok user who consistently leaks unreleased pop songs from major artists.",
+      "hook": "Everyone's buzzing about that leaked track... but who is the mastermind behind the music drop?",
+      "voice_style": "Mysterious",
+      "music_mood": "Intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Lottery Wins & Financial Dreams",
+      "topic": "Exposing the true 'lottery curse' \u2013 why some multi-million dollar winners actually end up worse off than before.",
+      "hook": "Winning millions sounds like a dream, right? For *these* people, it became an absolute nightmare.",
+      "voice_style": "Dramatic",
+      "music_mood": "Dramatic",
       "target_duration": 45
     },
     {
-      "category": "Local Weather & Seasonal Preparedness",
-      "topic": "Debunking Common Fall Weather Myths (e.g., 'leaves change color because of frost')",
-      "hook": "Think frost makes leaves change color? Think again! We're busting 3 huge fall weather myths.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "Global News & Current Events Analysis",
+      "topic": "Analyzing how a seemingly small political decision in a remote South American region could impact global coffee prices.",
+      "hook": "You won't believe how a tiny nation's new policy could hike your morning coffee bill next month.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 48
     },
     {
-      "category": "Local Weather & Seasonal Preparedness",
-      "topic": "Emergency Car Kit Essentials for Unexpected Early Winter Storms",
-      "hook": "Don't get caught unprepared! This one item in your car could save your life during an early winter storm.",
-      "voice_style": "calm",
-      "music_mood": "intense",
-      "target_duration": 50
+      "category": "Weather & Seasonal Lifestyle",
+      "topic": "How to 'weather-proof' your car for unexpected early winter conditions, beyond just checking tires.",
+      "hook": "Don't get caught off guard! *These* often-missed car prep tips will save you from early winter woes.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 47
     },
     {
-      "category": "Lottery & Luck Stories",
-      "topic": "The Bizarre 'Curse' of Lottery Winners and How Some Lost It All",
-      "hook": "Winning the lottery sounds like a dream, but for these people, it became a nightmare. The curse of instant wealth is real.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "category": "Viral Personalities & Human Interest Stories",
+      "topic": "Unmasking the identity of the mysterious 'Subway Musician' whose cryptic original songs are racking up millions of views.",
+      "hook": "Who *is* that masked musician enchanting commuters? We're diving deep to uncover their true identity.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 44
     },
     {
-      "category": "Lottery & Luck Stories",
-      "topic": "How One Person Accidentally Won the Lottery *Twice* Using the Same Numbers",
-      "hook": "Forget beginner's luck! This person won the lottery, then won again with the EXACT same numbers. What are the odds?!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Animal Content & Wildlife Conservation",
+      "topic": "How citizen scientists are using a new smartphone app to save critically endangered local bumblebee species.",
+      "hook": "Your phone could be a superhero for tiny creatures! Discover how a simple tap is making a huge difference.",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 46
+    },
+    {
+      "category": "Autumn Aesthetics & Fall Decor",
+      "topic": "DIY 'leaf pressing' art that actually lasts for years and won't crumble in a week.",
+      "hook": "Want to capture autumn's fleeting beauty forever? Forget brittle leaves, *this* preservation method actually works!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Quick Recipes & Seasonal Food",
+      "topic": "A 3-ingredient pumpkin spice latte hack that tastes better than the famous coffee shop version, and costs pennies.",
+      "hook": "Ditch the expensive coffee line! My 3-ingredient PSL hack is about to change your autumn mornings forever.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Short-Form Learning & Edutainment",
-      "topic": "The 'Mandela Effect' Explained with Viral Examples (e.g., movie quotes)",
-      "hook": "Did you just travel to another dimension? Your memory of these famous movie lines is probably wrong, thanks to the Mandela Effect.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "DIY & Life Hacks",
+      "topic": "A surprising 'aluminum foil ball' trick that cleans burnt pots without scrubbing or harsh chemicals.",
+      "hook": "Burnt-on mess in your pan? Before you scrub for hours, try *this* bizarre aluminum foil trick!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 43
     },
     {
-      "category": "Short-Form Learning & Edutainment",
-      "topic": "Why Humans Have a 'Fight or Flight' Response and Modern Manifestations",
-      "hook": "Ever wonder why your heart races before a presentation? It's your ancient brain trying to save you from a saber-toothed tiger!",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Cozy Fall Aesthetics & Lifestyle",
-      "topic": "'Cranberry Garnish Hack' for Aesthetic Fall Drinks",
-      "hook": "Elevate your fall drinks from basic to boujee with this simple cranberry garnish hack. Your guests will think you're a pro!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Cozy Fall Aesthetics & Lifestyle",
-      "topic": "Creating an 'Ultimate Fall Reading Nook' on a Budget with Thrift Store Finds",
-      "hook": "Transform any corner into a cozy fall oasis without breaking the bank! My thrift store haul made this reading nook dreamy.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 50
+      "category": "Comedy Skits & Viral Memes",
+      "topic": "The 'when your phone dies at 1%' internal monologue, exaggerated for comedic effect, covering every stage of panic.",
+      "hook": "That moment your phone hits 1% and you haven't saved anything... it's not just a low battery, it's a battle for survival.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 49
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -252,9 +252,9 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
