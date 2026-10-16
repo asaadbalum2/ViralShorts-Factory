@@ -1,235 +1,54 @@
 {
-  "generated_at": "2026-10-15T10:12:38.203217",
-  "valid_until": "2026-10-15T23:59:38.203228",
+  "generated_at": "2026-10-16T10:02:56.518873",
+  "valid_until": "2026-10-16T23:59:56.518881",
   "categories": [
-    "Celebrity News & Pop Culture Updates",
-    "Lottery Wins & Financial Dreams",
-    "Global News & Current Events Analysis",
-    "Weather & Seasonal Lifestyle",
-    "Viral Personalities & Human Interest Stories",
-    "Animal Content & Wildlife Conservation",
-    "Autumn Aesthetics & Fall Decor",
-    "Quick Recipes & Seasonal Food",
-    "DIY & Life Hacks",
-    "Comedy Skits & Viral Memes",
-    "Educational Minis & 'Edutainment'",
-    "Beauty, Fashion & Style Trends",
-    "Behind-the-Scenes & Day-in-the-Life",
-    "Motivational & Self-Improvement",
-    "Local Guides & Hidden Gems"
+    "Global Tennis Buzz & Highlights",
+    "Local Weather & Safety Alerts (Texas Focus)",
+    "Gaming News & PS Plus Reviews",
+    "Trending Personalities & Public Figure Updates",
+    "Autumn Fashion & Cozy Style",
+    "Halloween DIYs & Decor Inspiration",
+    "Fall Recipes & Comfort Food Hacks",
+    "Travel Vlogs & City Guides (e.g., Austin/San Antonio)",
+    "Tech Gadget Reviews & Gaming Setups",
+    "Productivity & Life Organization Tips",
+    "Educational & 'How-To' Tutorials",
+    "Pet Adventures & Cute Animal Moments",
+    "Comedy Skits & Viral Meme Recreations",
+    "Fitness & Wellness Routines",
+    "Daily Vlogs & 'What I Eat/Do in a Day'"
   ],
-  "concepts": [
-    {
-      "category": "Celebrity News & Pop Culture Updates",
-      "topic": "The real reason behind a famous pop duo's sudden 'social media blackout' before a new album drop.",
-      "hook": "Did you notice *they* suddenly vanished online? The truth behind their blackout is wilder than you think...",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Lottery Wins & Financial Dreams",
-      "topic": "The shockingly simple daily habit that led one average person to a multi-million dollar lottery win, and it's not buying more tickets.",
-      "hook": "Imagine waking up a millionaire, not by pure luck, but by doing *this* one unexpected thing every single day...",
-      "voice_style": "Inspirational",
-      "music_mood": "Upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Global News & Current Events Analysis",
-      "topic": "The surprising tech innovation quietly solving the global plastic waste crisis in one specific Scandinavian country.",
-      "hook": "Forget everything you thought you knew about recycling. *This* country found a revolutionary game-changer for plastic.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Weather & Seasonal Lifestyle",
-      "topic": "The bizarre atmospheric phenomenon creating those viral 'sky glow' videos and whether it's safe to see.",
-      "hook": "Seen those crazy glowing skies all over your feed? We're breaking down the science behind this stunning spectacle!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Viral Personalities & Human Interest Stories",
-      "topic": "The inspiring untold story of the person behind the viral 'kindness challenge' on TikTok and their journey.",
-      "hook": "You've seen the challenge, but you haven't heard *their* full story. Prepare to be genuinely moved.",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Animal Content & Wildlife Conservation",
-      "topic": "The secret language of city squirrels: what their specific tail flicks and chattering *really* mean.",
-      "hook": "Think squirrels are just cute? Their tail movements are a complex code you're totally missing!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Autumn Aesthetics & Fall Decor",
-      "topic": "The one 'fall scent' candle you should NEVER buy, according to top interior designers, and why it ruins your vibe.",
-      "hook": "Your cozy autumn vibe might be getting secretly sabotaged by *this* super common candle mistake.",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 44
-    },
-    {
-      "category": "Quick Recipes & Seasonal Food",
-      "topic": "The 'secret ingredient' to perfectly crispy air fryer brussels sprouts that even haters will absolutely love.",
-      "hook": "Hate Brussels sprouts? Prepare to be converted! My air fryer hack makes them unbelievably irresistible.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "DIY & Life Hacks",
-      "topic": "The genius 'magnetic wall mount' hack for cluttered kitchen utensils using only dollar store items.",
-      "hook": "Your kitchen drawers are a disaster? *This* dollar store hack will magically transform your organization instantly!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Comedy Skits & Viral Memes",
-      "topic": "Recreating the 'side-eye Chloe' meme, but with a new, unexpected animal reacting to everyday human situations.",
-      "hook": "Remember side-eye Chloe? My pet's reaction to *this* everyday struggle is giving serious competition!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Celebrity News & Pop Culture Updates",
-      "topic": "Unmasking the anonymous TikTok user who consistently leaks unreleased pop songs from major artists.",
-      "hook": "Everyone's buzzing about that leaked track... but who is the mastermind behind the music drop?",
-      "voice_style": "Mysterious",
-      "music_mood": "Intense",
-      "target_duration": 49
-    },
-    {
-      "category": "Lottery Wins & Financial Dreams",
-      "topic": "Exposing the true 'lottery curse' \u2013 why some multi-million dollar winners actually end up worse off than before.",
-      "hook": "Winning millions sounds like a dream, right? For *these* people, it became an absolute nightmare.",
-      "voice_style": "Dramatic",
-      "music_mood": "Dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Global News & Current Events Analysis",
-      "topic": "Analyzing how a seemingly small political decision in a remote South American region could impact global coffee prices.",
-      "hook": "You won't believe how a tiny nation's new policy could hike your morning coffee bill next month.",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Weather & Seasonal Lifestyle",
-      "topic": "How to 'weather-proof' your car for unexpected early winter conditions, beyond just checking tires.",
-      "hook": "Don't get caught off guard! *These* often-missed car prep tips will save you from early winter woes.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Viral Personalities & Human Interest Stories",
-      "topic": "Unmasking the identity of the mysterious 'Subway Musician' whose cryptic original songs are racking up millions of views.",
-      "hook": "Who *is* that masked musician enchanting commuters? We're diving deep to uncover their true identity.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 44
-    },
-    {
-      "category": "Animal Content & Wildlife Conservation",
-      "topic": "How citizen scientists are using a new smartphone app to save critically endangered local bumblebee species.",
-      "hook": "Your phone could be a superhero for tiny creatures! Discover how a simple tap is making a huge difference.",
-      "voice_style": "Friendly",
-      "music_mood": "Inspirational",
-      "target_duration": 46
-    },
-    {
-      "category": "Autumn Aesthetics & Fall Decor",
-      "topic": "DIY 'leaf pressing' art that actually lasts for years and won't crumble in a week.",
-      "hook": "Want to capture autumn's fleeting beauty forever? Forget brittle leaves, *this* preservation method actually works!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Quick Recipes & Seasonal Food",
-      "topic": "A 3-ingredient pumpkin spice latte hack that tastes better than the famous coffee shop version, and costs pennies.",
-      "hook": "Ditch the expensive coffee line! My 3-ingredient PSL hack is about to change your autumn mornings forever.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "DIY & Life Hacks",
-      "topic": "A surprising 'aluminum foil ball' trick that cleans burnt pots without scrubbing or harsh chemicals.",
-      "hook": "Burnt-on mess in your pan? Before you scrub for hours, try *this* bizarre aluminum foil trick!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 43
-    },
-    {
-      "category": "Comedy Skits & Viral Memes",
-      "topic": "The 'when your phone dies at 1%' internal monologue, exaggerated for comedic effect, covering every stage of panic.",
-      "hook": "That moment your phone hits 1% and you haven't saved anything... it's not just a low battery, it's a battle for survival.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 49
-    }
-  ],
+  "concepts": [],
   "voice_music_pairs": [
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
@@ -237,24 +56,44 @@
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
