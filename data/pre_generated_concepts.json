@@ -1,98 +1,259 @@
 {
-  "generated_at": "2026-10-16T10:02:56.518873",
-  "valid_until": "2026-10-16T23:59:56.518881",
+  "generated_at": "2026-10-17T09:36:11.758078",
+  "valid_until": "2026-10-17T23:59:11.758090",
   "categories": [
-    "Global Tennis Buzz & Highlights",
-    "Local Weather & Safety Alerts (Texas Focus)",
-    "Gaming News & PS Plus Reviews",
-    "Trending Personalities & Public Figure Updates",
-    "Autumn Fashion & Cozy Style",
-    "Halloween DIYs & Decor Inspiration",
-    "Fall Recipes & Comfort Food Hacks",
-    "Travel Vlogs & City Guides (e.g., Austin/San Antonio)",
-    "Tech Gadget Reviews & Gaming Setups",
-    "Productivity & Life Organization Tips",
-    "Educational & 'How-To' Tutorials",
-    "Pet Adventures & Cute Animal Moments",
-    "Comedy Skits & Viral Meme Recreations",
-    "Fitness & Wellness Routines",
-    "Daily Vlogs & 'What I Eat/Do in a Day'"
+    "Sports Talk & Highlights (Tennis, WNBA Fan Debates)",
+    "Pop Culture Fandom & Recast Reactions (Homelander, Movie/TV News)",
+    "Lottery Dreams & Financial 'What Ifs' (Mega Millions)",
+    "Weather Phenomena & Climate Awareness (Houston specific & broader)",
+    "Halloween Costume & Decor DIY",
+    "Autumn Aesthetic & Cozy Living",
+    "Quick Recipes & Food Hacks (Fall Comfort)",
+    "Life Hacks & Productivity Boosters",
+    "Relatable Skits & Everyday Humor",
+    "Educational 'Did You Know?' Facts",
+    "True Crime & Unsolved Mysteries",
+    "Fashion & Style Inspo (Fall Edition)",
+    "Pet Adventures & Cute Animal Content",
+    "Tech Reviews & Gadget Must-Haves",
+    "Fitness & Wellness Journeys"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Sports Talk & Highlights (Tennis, WNBA Fan Debates)",
+      "topic": "Why this WNBA player deserves MVP over the current favorite.",
+      "hook": "Everyone's talking about Player X for WNBA MVP, but what if I told you Player Y has a STATISTICAL edge no one's noticing?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Talk & Highlights (Tennis, WNBA Fan Debates)",
+      "topic": "The most underrated shot in professional tennis history and why.",
+      "hook": "Forget the serve and the forehand! There's ONE tennis shot from a classic match that changed the game, and you probably never even noticed it.",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Pop Culture Fandom & Recast Reactions (Homelander, Movie/TV News)",
+      "topic": "My controversial fan-cast for Homelander's evil but charismatic cousin.",
+      "hook": "Okay, hear me out: If Homelander had a cousin, and they needed to be just as terrifying but in a *different* way... my pick is gonna SHOCK you.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Pop Culture Fandom & Recast Reactions (Homelander, Movie/TV News)",
+      "topic": "Deconstructing the hidden symbolism in the new 'Dune: Part Two' trailer.",
+      "hook": "Did you CATCH that? The new Dune trailer isn't just epic visuals \u2013 it's packed with blink-and-you-miss-it symbolism that hints at a HUGE plot twist!",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Lottery Dreams & Financial 'What Ifs' (Mega Millions)",
+      "topic": "What to do immediately after winning Mega Millions *before* telling anyone.",
+      "hook": "You just won Mega Millions. Your first instinct? Scream it from the rooftops! Your *first smart move*? Something completely different that will SAVE your future.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Lottery Dreams & Financial 'What Ifs' (Mega Millions)",
+      "topic": "The ethical dilemma of sharing a lottery win with estranged family.",
+      "hook": "Imagine hitting the jackpot, and then *that* cousin you haven't spoken to in 10 years suddenly reappears. What would YOU do?",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Weather Phenomena & Climate Awareness (Houston specific & broader)",
+      "topic": "The untold story of Houston's 'urban heat island' effect and what's being done.",
+      "hook": "Houstonians, ever wonder why your neighborhood feels 10 degrees hotter than downtown? It's not just pavement; it's a hidden phenomenon, and we're looking at solutions.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Phenomena & Climate Awareness (Houston specific & broader)",
+      "topic": "The science behind 'supercell' thunderstorms and their rare beauty.",
+      "hook": "Forget regular lightning storms. Have you ever seen a supercell? These towering, rotating giants are nature's most dramatic show, and the science behind them is wild.",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Halloween Costume & Decor DIY",
+      "topic": "DIY 'ghostly glow' outdoor decor using household items.",
+      "hook": "Want your yard to look like a haunted mansion without breaking the bank? I'm showing you how to create floating, glowing ghosts with items you already have!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Halloween Costume & Decor DIY",
+      "topic": "The ultimate 'villain glow-up' Halloween costume using only makeup.",
+      "hook": "Tired of basic costumes? Let's transform you into a terrifyingly glamorous villain using *only* makeup, no elaborate outfit needed. Prepare for gasps!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Autumn Aesthetic & Cozy Living",
+      "topic": "Crafting your perfect 'fall reading nook' on a tiny budget.",
+      "hook": "Dreaming of that perfect cozy reading nook for fall but think you need a huge budget? Think again! I'll show you how to create one for under $30.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Autumn Aesthetic & Cozy Living",
+      "topic": "How to bake a stress-relieving 'autumn aroma' into your home naturally.",
+      "hook": "Forget candles! Want your home to *smell* like autumn leaves and spiced cider, all while boosting your mood? This simple trick uses ingredients from your pantry.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Recipes & Food Hacks (Fall Comfort)",
+      "topic": "5-minute 'single-serve pumpkin mug cake' for instant fall cravings.",
+      "hook": "You're craving pumpkin cake, but who has time for baking? I'm showing you how to whip up a decadent, single-serve pumpkin mug cake in under 5 minutes!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Recipes & Food Hacks (Fall Comfort)",
+      "topic": "The 'secret ingredient' that elevates any canned tomato soup into gourmet fall comfort.",
+      "hook": "Your canned tomato soup is fine, but it could be *amazing*. I'm about to reveal one secret ingredient that transforms it into a gourmet, fall-inspired masterpiece!",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Life Hacks & Productivity Boosters",
+      "topic": "The '3-2-1 Rule' for conquering your email inbox daily.",
+      "hook": "Is your email inbox a black hole of unread messages? Stop scrolling! I'm about to give you the '3-2-1 Rule' that will get you to inbox zero *every single day*.",
+      "voice_style": "Authoritative",
+      "music_mood": "Upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Life Hacks & Productivity Boosters",
+      "topic": "How to 'bulletproof' your morning routine against unexpected interruptions.",
+      "hook": "Your morning routine is sacred, until life happens. I'll show you a simple 'buffer strategy' to make sure even chaos can't derail your productive start!",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Relatable Skits & Everyday Humor",
+      "topic": "The internal monologue of trying to find matching socks in the morning.",
+      "hook": "It's 7 AM, you're late, and the laundry monster has struck again. My internal monologue trying to find matching socks is probably YOUR internal monologue too.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Relatable Skits & Everyday Humor",
+      "topic": "The awkwardness of running into someone you vaguely know in public.",
+      "hook": "Do you wave? Do you nod? Do you pretend to check your phone? That excruciating moment you see someone you *kind of* know in public is universally awkward.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Educational 'Did You Know?' Facts",
+      "topic": "The surprising reason we say 'break a leg' before a performance.",
+      "hook": "Ever told someone to 'break a leg' and wondered why that's a good luck wish? The origin is much darker and more theatrical than you'd ever guess!",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Educational 'Did You Know?' Facts",
+      "topic": "Why the human brain remembers songs better than almost anything else.",
+      "hook": "You can forget what you had for breakfast, but you can still sing along to a song from 20 years ago. Why does your brain prioritize musical memory so much?",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 50
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "dramatic"
     }
   ],
