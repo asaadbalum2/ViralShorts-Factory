@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-19T11:05:37.547161",
-  "valid_until": "2026-10-19T23:59:37.547172",
+  "generated_at": "2026-10-20T10:18:46.209628",
+  "valid_until": "2026-10-20T23:59:46.209637",
   "categories": [
-    "Tech Reviews & Gadget Hype (e.g., Apple iPhone Duo)",
-    "Celebrity & Pop Culture Updates (e.g., Harry & Meghan, Selena Gomez)",
-    "Financial & Stock Market Insights (e.g., AVGO, INTC stock trends)",
-    "Science & Environmental News (e.g., Kelvin Wave explanations)",
-    "Sports Highlights & Commentary (e.g., AFG vs ZIM analysis)",
-    "Halloween & Fall Lifestyle (DIY, decor, recipes, costumes)",
-    "Motivational & Self-Improvement (relatable struggles, success stories)",
-    "Short-form Comedy & Skits (relatable humor, trending sounds)",
-    "DIY, Crafts & Home Hacks (creative projects, organizational tips)",
-    "Food Trends & Quick Recipes (seasonal treats, viral dishes)",
-    "Beauty, Fashion & GRWM (get ready with me, style guides, makeup tutorials)",
-    "Travel & Adventure Vlogs (local gems, day trips, budget travel)",
-    "Gaming & Esports Highlights (new releases, pro plays, streaming clips)",
-    "Pet & Animal Content (cute moments, pet care tips, animal facts)",
-    "Life Upgrades & Dream Scenarios (e.g., 'What if I won the lottery?') "
+    "Pro Sports Hot Takes & Game Recaps",
+    "Space & Future Tech Updates",
+    "High-Intensity Fitness Challenges",
+    "Lucky Break & Money Stories",
+    "Viral News & Trending Digests",
+    "Fall Aesthetic & Cozy Lifestyle",
+    "Halloween Spooktaculars & DIY",
+    "Relatable Comedy Skits & POVs",
+    "Quick-Bite Learning & 'Did You Know?'",
+    "Food & Drink Hacks/Recipe Shorts",
+    "Product Reviews & Must-Haves",
+    "Travel Vlogs & Destination Spotlights",
+    "Motivation & Self-Improvement Tips",
+    "Gaming Highlights & Streamer Moments",
+    "Pet Shenanigans & Animal Antics"
   ],
   "concepts": [
     {
-      "category": "Tech Reviews & Gadget Hype (e.g., Apple iPhone Duo)",
-      "topic": "Why the new Apple Vision Pro's 'Persona' feature is both amazing and terrifying.",
-      "hook": "Apple Vision Pro's 'Persona' is here, and it's basically a digital twin... but what if it's *too* real?",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Pop Culture Updates (e.g., Harry & Meghan, Selena Gomez)",
-      "topic": "Decoding the viral 'Did I do that?' moment from Selena Gomez at the VMAs.",
-      "hook": "Selena Gomez's VMA reaction went viral, but what was *really* happening behind that iconic shrug?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial & Stock Market Insights (e.g., AVGO, INTC stock trends)",
-      "topic": "Is NVIDIA's stock rally sustainable, or are we heading for a correction?",
-      "hook": "NVIDIA stock just keeps climbing, but is this a gold rush or a ticking time bomb?",
+      "category": "Pro Sports Hot Takes & Game Recaps",
+      "topic": "Nikola Jokic is NOT the NBA MVP this year, and here's why.",
+      "hook": "Okay, unpopular opinion time: Everyone's saying Jokic for MVP, but they're missing something crucial...",
       "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Science & Environmental News (e.g., Kelvin Wave explanations)",
-      "topic": "How a 'Zombie Virus' from melting permafrost could re-emerge and its global implications.",
-      "hook": "Scientists just revived a 48,500-year-old 'zombie virus' from Siberian ice. Should we be panicking?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights & Commentary (e.g., AFG vs ZIM analysis)",
-      "topic": "The unprecedented rise of pickleball and why it's dominating tennis courts.",
-      "hook": "Pickleball is the fastest-growing sport in America, but is it a passing fad or the new king of the court?",
+      "category": "Pro Sports Hot Takes & Game Recaps",
+      "topic": "The Wildest NFL Playoff Upset That Shocked Everyone This Season.",
+      "hook": "Did you see THAT?! The craziest playoff upset just happened, and it completely redefined the championship race!",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "Halloween & Fall Lifestyle (DIY, decor, recipes, costumes)",
-      "topic": "DIY 'Haunted House in a Jar' decor for a spooky, budget-friendly centerpiece.",
-      "hook": "Want to transform your home for Halloween without breaking the bank? Try this DIY haunted jar!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Motivational & Self-Improvement (relatable struggles, success stories)",
-      "topic": "Overcoming imposter syndrome by reframing self-doubt as growth potential.",
-      "hook": "Feeling like a fraud, even when you've achieved so much? That's imposter syndrome, and here's how to flip the script.",
-      "voice_style": "inspirational",
+      "category": "Space & Future Tech Updates",
+      "topic": "Breakthrough in AI-powered 'designer' medicine could end chronic illness.",
+      "hook": "Imagine a future where doctors create medicine just for *your* DNA. That future is closer than you think...",
+      "voice_style": "mysterious",
       "music_mood": "inspirational",
       "target_duration": 50
     },
     {
-      "category": "Short-form Comedy & Skits (relatable humor, trending sounds)",
-      "topic": "The hilarious internal monologue of trying to follow a complex DIY tutorial.",
-      "hook": "My brain trying to follow a 'simple' 3-step DIY tutorial vs. what actually happens. Send help.",
+      "category": "Space & Future Tech Updates",
+      "topic": "New discovery of 'ocean worlds' in our galaxy hints at alien life.",
+      "hook": "Scientists just found a whole new class of planets with vast subsurface oceans. Is E.T. waving back?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "DIY, Crafts & Home Hacks (creative projects, organizational tips)",
-      "topic": "Transform old jeans into stylish, no-sew denim storage baskets.",
-      "hook": "Don't throw away those old jeans! I'll show you how to turn them into chic storage in minutes, no sewing required.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Food Trends & Quick Recipes (seasonal treats, viral dishes)",
-      "topic": "Recreating the viral 'Grinder Sandwich' from TikTok: The ultimate party sub.",
-      "hook": "The Grinder Sandwich exploded on TikTok for a reason. Get ready to make the best sandwich of your life.",
+      "category": "High-Intensity Fitness Challenges",
+      "topic": "The 7-Minute Full-Body HIIT Challenge You Can Do Anywhere.",
+      "hook": "No gym? No problem! I'm about to show you how to get a full-body burn in just seven minutes.",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "Tech Reviews & Gadget Hype (e.g., Apple iPhone Duo)",
-      "topic": "The real reason why your phone battery dies faster in cold weather and how to prevent it.",
-      "hook": "Ever wonder why your phone goes from 50% to dead instantly in the cold? It's not just you. Here's the science...",
-      "voice_style": "authoritative",
+      "category": "High-Intensity Fitness Challenges",
+      "topic": "Can I Survive the '100 Burpees a Day for 30 Days' Challenge? (Day 1 experience)",
+      "hook": "My legs are already burning, and it's only day one. I'm attempting the infamous 100 burpees a day challenge!",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Lucky Break & Money Stories",
+      "topic": "The Bitcoin fortune found in an old hard drive.",
+      "hook": "Imagine finding an old hard drive, plugging it in, and realizing you're sitting on millions in forgotten Bitcoin...",
+      "voice_style": "dramatic",
       "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Pop Culture Updates (e.g., Harry & Meghan, Selena Gomez)",
-      "topic": "Decoding Taylor Swift's subtle Easter eggs in her latest re-recorded album announcement.",
-      "hook": "Swifties, did you catch *that* hidden message in Taylor's latest post? Let's dive deep into her Easter eggs!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Financial & Stock Market Insights (e.g., AVGO, INTC stock trends)",
-      "topic": "Understanding the basics of cryptocurrency staking for passive income.",
-      "hook": "Want to earn passive income with your crypto without trading? Staking might be your secret weapon.",
-      "voice_style": "calm",
-      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Science & Environmental News (e.g., Kelvin Wave explanations)",
-      "topic": "Explaining the phenomenon of 'atmospheric rivers' and their impact on global weather patterns.",
-      "hook": "What exactly is an 'atmospheric river,' and why are they causing extreme floods and droughts around the world?",
+      "category": "Lucky Break & Money Stories",
+      "topic": "How a quirky invention from a garage sale item made someone rich overnight.",
+      "hook": "This guy bought a rusty old gadget at a garage sale, tinkered with it, and now he's a millionaire. Seriously.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Viral News & Trending Digests",
+      "topic": "The 'AI-generated deepfake' controversy that fooled millions online.",
+      "hook": "Did you see that wild video of the celebrity doing *that*? Turns out, it was 100% fake. And here's how you can tell.",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights & Commentary (e.g., AFG vs ZIM analysis)",
-      "topic": "The unprecedented GOAT debate between LeBron James and Michael Jordan: A statistical breakdown.",
-      "hook": "LeBron vs. MJ: The GOAT debate that never ends. We're breaking down the stats to crown the true legend.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Viral News & Trending Digests",
+      "topic": "The 'human-sized jellyfish' sighting mystery explained (or debunked).",
+      "hook": "Footage just dropped of a supposed 'human-sized jellyfish' off the coast of Australia, and the internet is losing it.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 50
     },
     {
-      "category": "Halloween & Fall Lifestyle (DIY, decor, recipes, costumes)",
-      "topic": "Budget-friendly 'Spooky Snack Board' ideas for your Halloween party.",
-      "hook": "Hosting a Halloween party? Forget complicated recipes! I'll show you how to build an epic, easy, and spooky snack board.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Fall Aesthetic & Cozy Lifestyle",
+      "topic": "My ultimate 'Pumpkin Spice & Chill' evening routine for peak autumn vibes.",
+      "hook": "Grab your coziest blanket, light that candle. It's time for my perfect fall evening wind-down routine.",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Motivational & Self-Improvement (relatable struggles, success stories)",
-      "topic": "The 5-second rule: How to overcome procrastination and start any task.",
-      "hook": "Stuck in a procrastination loop? The 5-second rule is about to change your life and get you moving, right now.",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "Fall Aesthetic & Cozy Lifestyle",
+      "topic": "DIY no-sew chunky knit blanket for under $30.",
+      "hook": "Want that super cozy, expensive-looking chunky knit blanket without spending a fortune? I'll show you how to make one!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Short-form Comedy & Skits (relatable humor, trending sounds)",
-      "topic": "Relatable struggles of trying to explain modern tech to your parents/grandparents.",
-      "hook": "Trying to teach my grandma how to use FaceTime is a full-blown Olympic sport. 'Is it on, honey?'",
+      "category": "Halloween Spooktaculars & DIY",
+      "topic": "Easy Last-Minute 'Zombie Apocalypse Survivor' Costume.",
+      "hook": "Halloween's tomorrow and you have no costume? Don't panic! I've got the easiest, coolest zombie survivor look for you.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "DIY, Crafts & Home Hacks (creative projects, organizational tips)",
-      "topic": "Clever small-space organization hacks using dollar store items.",
-      "hook": "Living in a tiny space? I'm showing you my favorite dollar store hacks to maximize every inch of storage!",
+      "category": "Halloween Spooktaculars & DIY",
+      "topic": "Creepy 'Bleeding Brain' Jell-O Shots Recipe for Your Party.",
+      "hook": "Warning: these 'bleeding brain' Jell-O shots are not for the faint of heart... or stomach. But they're terrifyingly delicious!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Relatable Comedy Skits & POVs",
+      "topic": "POV: You're trying to explain modern slang to your parents.",
+      "hook": "POV: You just told your mom something was 'rizz' and now she's Googling 'what is riz for kids'.",
       "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Relatable Comedy Skits & POVs",
+      "topic": "The internal monologue of trying to decide what to order for takeout.",
+      "hook": "Five apps open, scrolled for 30 minutes, still no idea what I want. This is my brain every single takeout night.",
+      "voice_style": "energetic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick-Bite Learning & 'Did You Know?'",
+      "topic": "The bizarre origin of the 'OK' gesture.",
+      "hook": "You use it almost every day, but do you know where the 'OK' sign actually comes from? It's not what you think!",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick-Bite Learning & 'Did You Know?'",
+      "topic": "3 mind-bending facts about dreams that will change how you sleep.",
+      "hook": "What if I told you your brain is doing incredible things while you sleep, things you'd never believe? Prepare to have your mind blown.",
+      "voice_style": "mysterious",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Food Trends & Quick Recipes (seasonal treats, viral dishes)",
-      "topic": "The secret to making perfect, fluffy Japanese souffle pancakes at home.",
-      "hook": "Those cloud-like Japanese souffle pancakes look impossible, right? Think again! I've cracked the code.",
+      "category": "Food & Drink Hacks/Recipe Shorts",
+      "topic": "The 'Lazy Person's' Gourmet 1-Pan Lemon Garlic Pasta.",
+      "hook": "Craving gourmet pasta but only have 15 minutes and one pan? This lemon garlic masterpiece is about to become your new obsession.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Food & Drink Hacks/Recipe Shorts",
+      "topic": "Viral 'Cloud Bread' recipe: Is it really as fluffy as it looks?",
+      "hook": "The internet is obsessed with 'Cloud Bread,' but can I, a terrible baker, actually make it look this good? Let's find out!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
       "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+0%",
+      "rate": "+8%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
