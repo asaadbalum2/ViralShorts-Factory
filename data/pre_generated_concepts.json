@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-20T10:18:46.209628",
-  "valid_until": "2026-10-20T23:59:46.209637",
+  "generated_at": "2026-10-21T10:28:42.555999",
+  "valid_until": "2026-10-21T23:59:42.556010",
   "categories": [
-    "Pro Sports Hot Takes & Game Recaps",
-    "Space & Future Tech Updates",
-    "High-Intensity Fitness Challenges",
-    "Lucky Break & Money Stories",
-    "Viral News & Trending Digests",
-    "Fall Aesthetic & Cozy Lifestyle",
-    "Halloween Spooktaculars & DIY",
-    "Relatable Comedy Skits & POVs",
-    "Quick-Bite Learning & 'Did You Know?'",
-    "Food & Drink Hacks/Recipe Shorts",
-    "Product Reviews & Must-Haves",
-    "Travel Vlogs & Destination Spotlights",
-    "Motivation & Self-Improvement Tips",
-    "Gaming Highlights & Streamer Moments",
-    "Pet Shenanigans & Animal Antics"
+    "Gaming News & First Looks (feat. PS Plus October 2026 Games)",
+    "Sports Buzz & Athlete Updates (feat. Saquon Barkley Injury & Miami Hurricanes Football)",
+    "Current Events & Political Commentary (feat. John Husted)",
+    "Celebrity & Pop Culture Gossip (feat. Olivier Martinez & The Rolling Stones)",
+    "POV Stories & Public Interaction Skits (feat. Traffic Stop Scenarios)",
+    "Retail & Shopping Hacks (feat. Stop & Shop Deals & Experiences)",
+    "Halloween & Spooky Season Content",
+    "Fall Recipes & Comfort Food Quick Bites",
+    "Legal Rights & Quick Facts (Inspired by Traffic Stops)",
+    "Comedy Skits & Relatable Humor",
+    "Music Trends & Viral Sound Challenges",
+    "DIY & Home Improvement Hacks",
+    "Life Hacks & Productivity Tips",
+    "Tech & Gadget Reviews",
+    "Wellness & Mental Health Minutes"
   ],
   "concepts": [
     {
-      "category": "Pro Sports Hot Takes & Game Recaps",
-      "topic": "Nikola Jokic is NOT the NBA MVP this year, and here's why.",
-      "hook": "Okay, unpopular opinion time: Everyone's saying Jokic for MVP, but they're missing something crucial...",
-      "voice_style": "authoritative",
+      "category": "Gaming News & First Looks (feat. PS Plus October 2026 Games)",
+      "topic": "Predicting the *SECRET* PS Plus October 2026 Headliner Game",
+      "hook": "Okay gamers, brace yourselves! I just uncovered a HUGE leak about the PS Plus October 2026 headliner that NO ONE is talking about!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Pro Sports Hot Takes & Game Recaps",
-      "topic": "The Wildest NFL Playoff Upset That Shocked Everyone This Season.",
-      "hook": "Did you see THAT?! The craziest playoff upset just happened, and it completely redefined the championship race!",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Space & Future Tech Updates",
-      "topic": "Breakthrough in AI-powered 'designer' medicine could end chronic illness.",
-      "hook": "Imagine a future where doctors create medicine just for *your* DNA. That future is closer than you think...",
-      "voice_style": "mysterious",
+      "category": "Sports Buzz & Athlete Updates (feat. Saquon Barkley Injury & Miami Hurricanes Football)",
+      "topic": "Saquon Barkley's SHOCKING Return Timeline: Is He Back SOONER Than Expected?",
+      "hook": "Did Saquon Barkley just defy medical science? Sources say his recovery could be way ahead of schedule \u2013 and here's why!",
+      "voice_style": "dramatic",
       "music_mood": "inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Space & Future Tech Updates",
-      "topic": "New discovery of 'ocean worlds' in our galaxy hints at alien life.",
-      "hook": "Scientists just found a whole new class of planets with vast subsurface oceans. Is E.T. waving back?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "High-Intensity Fitness Challenges",
-      "topic": "The 7-Minute Full-Body HIIT Challenge You Can Do Anywhere.",
-      "hook": "No gym? No problem! I'm about to show you how to get a full-body burn in just seven minutes.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
       "target_duration": 40
     },
     {
-      "category": "High-Intensity Fitness Challenges",
-      "topic": "Can I Survive the '100 Burpees a Day for 30 Days' Challenge? (Day 1 experience)",
-      "hook": "My legs are already burning, and it's only day one. I'm attempting the infamous 100 burpees a day challenge!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Lucky Break & Money Stories",
-      "topic": "The Bitcoin fortune found in an old hard drive.",
-      "hook": "Imagine finding an old hard drive, plugging it in, and realizing you're sitting on millions in forgotten Bitcoin...",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Lucky Break & Money Stories",
-      "topic": "How a quirky invention from a garage sale item made someone rich overnight.",
-      "hook": "This guy bought a rusty old gadget at a garage sale, tinkered with it, and now he's a millionaire. Seriously.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Viral News & Trending Digests",
-      "topic": "The 'AI-generated deepfake' controversy that fooled millions online.",
-      "hook": "Did you see that wild video of the celebrity doing *that*? Turns out, it was 100% fake. And here's how you can tell.",
+      "category": "Current Events & Political Commentary (feat. John Husted)",
+      "topic": "Unpacking John Husted's Latest Statement: What Does it REALLY Mean for Ohio?",
+      "hook": "John Husted just dropped a bombshell statement that has everyone talking. But what's the hidden agenda behind his words?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Viral News & Trending Digests",
-      "topic": "The 'human-sized jellyfish' sighting mystery explained (or debunked).",
-      "hook": "Footage just dropped of a supposed 'human-sized jellyfish' off the coast of Australia, and the internet is losing it.",
+      "category": "Celebrity & Pop Culture Gossip (feat. Olivier Martinez & The Rolling Stones)",
+      "topic": "Olivier Martinez's Mysterious Absence: Where Has the Star Been Hiding?",
+      "hook": "Olivier Martinez has vanished from the public eye. Is it a secret project, or something far more scandalous?",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "POV Stories & Public Interaction Skits (feat. Traffic Stop Scenarios)",
+      "topic": "POV: You're Pulled Over for a Broken Taillight... But It's a Test.",
+      "hook": "POV: The officer asks, 'Do you know why I pulled you over?' And you HAVE to get this right.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Fall Aesthetic & Cozy Lifestyle",
-      "topic": "My ultimate 'Pumpkin Spice & Chill' evening routine for peak autumn vibes.",
-      "hook": "Grab your coziest blanket, light that candle. It's time for my perfect fall evening wind-down routine.",
-      "voice_style": "calm",
+      "category": "Retail & Shopping Hacks (feat. Stop & Shop Deals & Experiences)",
+      "topic": "Stop & Shop Secret Deals: How to Stack Coupons for FREE Groceries!",
+      "hook": "Stop & Shop just updated their coupon policy, and I'm about to show you how to get practically free groceries with this one trick!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Halloween & Spooky Season Content",
+      "topic": "3 Last-Minute DIY Halloween Costumes That Will Win Any Party",
+      "hook": "Stuck without a costume? Don't freak out! These three DIY ideas are genius, cheap, and surprisingly spooky.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Recipes & Comfort Food Quick Bites",
+      "topic": "The Ultimate 5-Minute Pumpkin Spice Latte Recipe (Better Than Store-Bought!)",
+      "hook": "Forget those expensive coffee shops! I'm about to reveal the EASIEST, most delicious pumpkin spice latte recipe you can make in just 5 minutes.",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Fall Aesthetic & Cozy Lifestyle",
-      "topic": "DIY no-sew chunky knit blanket for under $30.",
-      "hook": "Want that super cozy, expensive-looking chunky knit blanket without spending a fortune? I'll show you how to make one!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Halloween Spooktaculars & DIY",
-      "topic": "Easy Last-Minute 'Zombie Apocalypse Survivor' Costume.",
-      "hook": "Halloween's tomorrow and you have no costume? Don't panic! I've got the easiest, coolest zombie survivor look for you.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Halloween Spooktaculars & DIY",
-      "topic": "Creepy 'Bleeding Brain' Jell-O Shots Recipe for Your Party.",
-      "hook": "Warning: these 'bleeding brain' Jell-O shots are not for the faint of heart... or stomach. But they're terrifyingly delicious!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Relatable Comedy Skits & POVs",
-      "topic": "POV: You're trying to explain modern slang to your parents.",
-      "hook": "POV: You just told your mom something was 'rizz' and now she's Googling 'what is riz for kids'.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Relatable Comedy Skits & POVs",
-      "topic": "The internal monologue of trying to decide what to order for takeout.",
-      "hook": "Five apps open, scrolled for 30 minutes, still no idea what I want. This is my brain every single takeout night.",
-      "voice_style": "energetic",
+      "category": "Legal Rights & Quick Facts (Inspired by Traffic Stops)",
+      "topic": "Your Rights When an Officer Asks to Search Your Car (Traffic Stop Edition)",
+      "hook": "An officer asks to search your car \u2013 do you know what to say? Your silence could be your superpower here.",
+      "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Quick-Bite Learning & 'Did You Know?'",
-      "topic": "The bizarre origin of the 'OK' gesture.",
-      "hook": "You use it almost every day, but do you know where the 'OK' sign actually comes from? It's not what you think!",
+      "category": "Comedy Skits & Relatable Humor",
+      "topic": "When Your GPS Takes You on an 'Adventure' (Relatable Driving Humor)",
+      "hook": "That moment your GPS says 'turn right' into a lake... You know the feeling, right?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming News & First Looks (feat. PS Plus October 2026 Games)",
+      "topic": "Analyzing the PS Plus October 2026 'Free' Games: Are They TRULY Worth It?",
+      "hook": "PS Plus October 2026 lineup just dropped, but before you download, let's break down if these 'free' games are actually a win or a waste of your time.",
       "voice_style": "authoritative",
       "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Buzz & Athlete Updates (feat. Saquon Barkley Injury & Miami Hurricanes Football)",
+      "topic": "Miami Hurricanes Football: Is This the Season They Finally Reclaim Glory? (Pre-season analysis)",
+      "hook": "Miami Hurricanes fans, hold onto your hats! Is this the year 'The U' finally returns to championship form? I've got the pre-season intel you need!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Current Events & Political Commentary (feat. John Husted)",
+      "topic": "John Husted's Political Future: A Deep Dive into His Next Move",
+      "hook": "Beyond the headlines, what's truly next for John Husted? We're diving deep into the political chess board and predicting his controversial next move.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Celebrity & Pop Culture Gossip (feat. Olivier Martinez & The Rolling Stones)",
+      "topic": "The Rolling Stones: Unreleased Tracks & Secret Tour Plans REVEALED?",
+      "hook": "Mick Jagger just hinted at something MASSIVE. Are The Rolling Stones dropping unreleased music, or is a secret tour finally on the horizon?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Quick-Bite Learning & 'Did You Know?'",
-      "topic": "3 mind-bending facts about dreams that will change how you sleep.",
-      "hook": "What if I told you your brain is doing incredible things while you sleep, things you'd never believe? Prepare to have your mind blown.",
+      "category": "POV Stories & Public Interaction Skits (feat. Traffic Stop Scenarios)",
+      "topic": "POV: You Accidentally Cut Off an Undercover Cop (Traffic Stop Edition)",
+      "hook": "POV: That moment you realize the beat-up sedan you just aggressively passed... has flashing lights. Uh oh.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Retail & Shopping Hacks (feat. Stop & Shop Deals & Experiences)",
+      "topic": "The BEST Stop & Shop Bakery Item You're NOT Buying (A Hidden Gem!)",
+      "hook": "You walk past it every time at Stop & Shop, but this one bakery item is an absolute game-changer. Trust me, your taste buds will thank me!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Halloween & Spooky Season Content",
+      "topic": "Real-Life Haunted Locations Near You: A Spooky Road Trip Guide",
+      "hook": "Do you dare visit these REAL haunted places? I'm giving you a spooky road trip guide to the most terrifying spots in your state!",
       "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Recipes & Comfort Food Quick Bites",
+      "topic": "Cozy Fall Dinner: One-Pan Apple Cider Glazed Chicken & Veggies",
+      "hook": "Picture this: tender chicken, roasted veggies, and a sweet apple cider glaze, all on ONE pan. This fall dinner is unbelievably easy and delicious!",
+      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Food & Drink Hacks/Recipe Shorts",
-      "topic": "The 'Lazy Person's' Gourmet 1-Pan Lemon Garlic Pasta.",
-      "hook": "Craving gourmet pasta but only have 15 minutes and one pan? This lemon garlic masterpiece is about to become your new obsession.",
+      "category": "Legal Rights & Quick Facts (Inspired by Traffic Stops)",
+      "topic": "The TRUTH About Refusing a Breathalyzer at a Traffic Stop",
+      "hook": "Refusing a breathalyzer test at a traffic stop. Good idea or terrible mistake? Let's break down your legal consequences RIGHT NOW.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Comedy Skits & Relatable Humor",
+      "topic": "When You Try to Be Productive on a Saturday (Relatable Struggles)",
+      "hook": "My Saturday morning plan: Conquer the world. My Saturday morning reality: Still in pajamas, staring at my phone. Can you relate?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
-    },
-    {
-      "category": "Food & Drink Hacks/Recipe Shorts",
-      "topic": "Viral 'Cloud Bread' recipe: Is it really as fluffy as it looks?",
-      "hook": "The internet is obsessed with 'Cloud Bread,' but can I, a terrible baker, actually make it look this good? Let's find out!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
+      "rate": "-3%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
