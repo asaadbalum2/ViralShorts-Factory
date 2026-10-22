@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-21T10:28:42.555999",
-  "valid_until": "2026-10-21T23:59:42.556010",
+  "generated_at": "2026-10-22T10:28:43.008227",
+  "valid_until": "2026-10-22T23:59:43.008235",
   "categories": [
-    "Gaming News & First Looks (feat. PS Plus October 2026 Games)",
-    "Sports Buzz & Athlete Updates (feat. Saquon Barkley Injury & Miami Hurricanes Football)",
-    "Current Events & Political Commentary (feat. John Husted)",
-    "Celebrity & Pop Culture Gossip (feat. Olivier Martinez & The Rolling Stones)",
-    "POV Stories & Public Interaction Skits (feat. Traffic Stop Scenarios)",
-    "Retail & Shopping Hacks (feat. Stop & Shop Deals & Experiences)",
-    "Halloween & Spooky Season Content",
-    "Fall Recipes & Comfort Food Quick Bites",
-    "Legal Rights & Quick Facts (Inspired by Traffic Stops)",
-    "Comedy Skits & Relatable Humor",
-    "Music Trends & Viral Sound Challenges",
-    "DIY & Home Improvement Hacks",
-    "Life Hacks & Productivity Tips",
-    "Tech & Gadget Reviews",
-    "Wellness & Mental Health Minutes"
+    "Breaking News & Reaction Videos",
+    "Market Watch: Futures & Oil Prices",
+    "TV Show Deep Dives & Fan Theories",
+    "Combat Sports & Athlete Highlights",
+    "Health & Wellness: Injury Recovery",
+    "Autumn Aesthetic & Cozy Living",
+    "Parenting & School Day Survival",
+    "Economic Impact & Smart Money Tips",
+    "Quick Explainers & Edutainment",
+    "Fall Fashion & Styling Hauls",
+    "Relatable Comedy & Trend Skits",
+    "Productivity & Organization Hacks",
+    "DIY Home & Seasonal Decor",
+    "Viral Recipes & Food Hacks",
+    "Tech & Gadget Reviews"
   ],
   "concepts": [
     {
-      "category": "Gaming News & First Looks (feat. PS Plus October 2026 Games)",
-      "topic": "Predicting the *SECRET* PS Plus October 2026 Headliner Game",
-      "hook": "Okay gamers, brace yourselves! I just uncovered a HUGE leak about the PS Plus October 2026 headliner that NO ONE is talking about!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Breaking News & Reaction Videos",
+      "topic": "Viral 'Karen' meltdown over a specific pumpkin spice latte shortage in a local cafe.",
+      "hook": "You won't BELIEVE what happened when *she* couldn't get her pumpkin spice latte this morning at a local cafe!",
+      "voice_style": "Energetic",
+      "music_mood": "Dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports Buzz & Athlete Updates (feat. Saquon Barkley Injury & Miami Hurricanes Football)",
-      "topic": "Saquon Barkley's SHOCKING Return Timeline: Is He Back SOONER Than Expected?",
-      "hook": "Did Saquon Barkley just defy medical science? Sources say his recovery could be way ahead of schedule \u2013 and here's why!",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
+      "category": "Breaking News & Reaction Videos",
+      "topic": "Drone footage reaction: Local hero saves a cat from a tree during a sudden flash flood.",
+      "hook": "This newly released drone footage just dropped, and my jaw is on the FLOOR. Witness true heroism in action!",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
       "target_duration": 40
     },
     {
-      "category": "Current Events & Political Commentary (feat. John Husted)",
-      "topic": "Unpacking John Husted's Latest Statement: What Does it REALLY Mean for Ohio?",
-      "hook": "John Husted just dropped a bombshell statement that has everyone talking. But what's the hidden agenda behind his words?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Pop Culture Gossip (feat. Olivier Martinez & The Rolling Stones)",
-      "topic": "Olivier Martinez's Mysterious Absence: Where Has the Star Been Hiding?",
-      "hook": "Olivier Martinez has vanished from the public eye. Is it a secret project, or something far more scandalous?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "POV Stories & Public Interaction Skits (feat. Traffic Stop Scenarios)",
-      "topic": "POV: You're Pulled Over for a Broken Taillight... But It's a Test.",
-      "hook": "POV: The officer asks, 'Do you know why I pulled you over?' And you HAVE to get this right.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "Market Watch: Futures & Oil Prices",
+      "topic": "Why the sudden dip in natural gas futures could mean cheaper heating bills this winter.",
+      "hook": "Heads up, homeowners! Your winter heating bill might be getting a surprise discount, and here's why that gas futures dip matters.",
+      "voice_style": "Authoritative",
+      "music_mood": "Chill",
       "target_duration": 50
     },
     {
-      "category": "Retail & Shopping Hacks (feat. Stop & Shop Deals & Experiences)",
-      "topic": "Stop & Shop Secret Deals: How to Stack Coupons for FREE Groceries!",
-      "hook": "Stop & Shop just updated their coupon policy, and I'm about to show you how to get practically free groceries with this one trick!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Halloween & Spooky Season Content",
-      "topic": "3 Last-Minute DIY Halloween Costumes That Will Win Any Party",
-      "hook": "Stuck without a costume? Don't freak out! These three DIY ideas are genius, cheap, and surprisingly spooky.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Market Watch: Futures & Oil Prices",
+      "topic": "The unexpected global event that sent coffee bean futures soaring overnight.",
+      "hook": "Your morning brew is about to get more expensive, and it all started with *this* unexpected headline overseas!",
+      "voice_style": "Mysterious",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Fall Recipes & Comfort Food Quick Bites",
-      "topic": "The Ultimate 5-Minute Pumpkin Spice Latte Recipe (Better Than Store-Bought!)",
-      "hook": "Forget those expensive coffee shops! I'm about to reveal the EASIEST, most delicious pumpkin spice latte recipe you can make in just 5 minutes.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "TV Show Deep Dives & Fan Theories",
+      "topic": "The secret coded message in the 'Squid Game: The Challenge' finale everyone missed.",
+      "hook": "Did you catch *that* subtle clue in the 'Squid Game Challenge' finale? It changes EVERYTHING we thought we knew!",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Legal Rights & Quick Facts (Inspired by Traffic Stops)",
-      "topic": "Your Rights When an Officer Asks to Search Your Car (Traffic Stop Edition)",
-      "hook": "An officer asks to search your car \u2013 do you know what to say? Your silence could be your superpower here.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "TV Show Deep Dives & Fan Theories",
+      "topic": "'House of the Dragon' Season 2: Is Daemon Targaryen secretly plotting against Rhaenyra?",
+      "hook": "Hold up, 'House of the Dragon' fans! I've uncovered a hidden theory about Daemon that will blow your mind about his true intentions.",
+      "voice_style": "Energetic",
+      "music_mood": "Dramatic",
       "target_duration": 50
     },
     {
-      "category": "Comedy Skits & Relatable Humor",
-      "topic": "When Your GPS Takes You on an 'Adventure' (Relatable Driving Humor)",
-      "hook": "That moment your GPS says 'turn right' into a lake... You know the feeling, right?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Combat Sports & Athlete Highlights",
+      "topic": "The never-before-seen training footage of a rising MMA star's unique grappling technique.",
+      "hook": "You've seen his KOs, but wait 'til you see the secret weapon that's making this MMA fighter absolutely unstoppable!",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
       "target_duration": 40
     },
     {
-      "category": "Gaming News & First Looks (feat. PS Plus October 2026 Games)",
-      "topic": "Analyzing the PS Plus October 2026 'Free' Games: Are They TRULY Worth It?",
-      "hook": "PS Plus October 2026 lineup just dropped, but before you download, let's break down if these 'free' games are actually a win or a waste of your time.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Buzz & Athlete Updates (feat. Saquon Barkley Injury & Miami Hurricanes Football)",
-      "topic": "Miami Hurricanes Football: Is This the Season They Finally Reclaim Glory? (Pre-season analysis)",
-      "hook": "Miami Hurricanes fans, hold onto your hats! Is this the year 'The U' finally returns to championship form? I've got the pre-season intel you need!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Current Events & Political Commentary (feat. John Husted)",
-      "topic": "John Husted's Political Future: A Deep Dive into His Next Move",
-      "hook": "Beyond the headlines, what's truly next for John Husted? We're diving deep into the political chess board and predicting his controversial next move.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Combat Sports & Athlete Highlights",
+      "topic": "Olympic gymnast's incredible comeback story after a career-ending Achilles injury.",
+      "hook": "They said her career was over after a devastating Achilles injury, but this Olympic gymnast just pulled off the most insane comeback!",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
       "target_duration": 50
     },
     {
-      "category": "Celebrity & Pop Culture Gossip (feat. Olivier Martinez & The Rolling Stones)",
-      "topic": "The Rolling Stones: Unreleased Tracks & Secret Tour Plans REVEALED?",
-      "hook": "Mick Jagger just hinted at something MASSIVE. Are The Rolling Stones dropping unreleased music, or is a secret tour finally on the horizon?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "POV Stories & Public Interaction Skits (feat. Traffic Stop Scenarios)",
-      "topic": "POV: You Accidentally Cut Off an Undercover Cop (Traffic Stop Edition)",
-      "hook": "POV: That moment you realize the beat-up sedan you just aggressively passed... has flashing lights. Uh oh.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Retail & Shopping Hacks (feat. Stop & Shop Deals & Experiences)",
-      "topic": "The BEST Stop & Shop Bakery Item You're NOT Buying (A Hidden Gem!)",
-      "hook": "You walk past it every time at Stop & Shop, but this one bakery item is an absolute game-changer. Trust me, your taste buds will thank me!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Halloween & Spooky Season Content",
-      "topic": "Real-Life Haunted Locations Near You: A Spooky Road Trip Guide",
-      "hook": "Do you dare visit these REAL haunted places? I'm giving you a spooky road trip guide to the most terrifying spots in your state!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "category": "Health & Wellness: Injury Recovery",
+      "topic": "My 3 essential dynamic stretches to prevent IT Band syndrome for long-distance runners.",
+      "hook": "Runners, listen up! If you're battling IT Band pain, these three dynamic stretches are about to change your life forever.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Fall Recipes & Comfort Food Quick Bites",
-      "topic": "Cozy Fall Dinner: One-Pan Apple Cider Glazed Chicken & Veggies",
-      "hook": "Picture this: tender chicken, roasted veggies, and a sweet apple cider glaze, all on ONE pan. This fall dinner is unbelievably easy and delicious!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Health & Wellness: Injury Recovery",
+      "topic": "The surprising dietary change that drastically sped up my ACL surgery recovery.",
+      "hook": "Recovering from an ACL tear? I cut *this one thing* from my diet, and my physical therapist was shocked by my rapid progress!",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Autumn Aesthetic & Cozy Living",
+      "topic": "DIY upcycled old sweater pumpkin decorations for under $10.",
+      "hook": "Don't throw away that old sweater! I'm showing you how to turn it into the cutest, budget-friendly fall decor for practically free.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Legal Rights & Quick Facts (Inspired by Traffic Stops)",
-      "topic": "The TRUTH About Refusing a Breathalyzer at a Traffic Stop",
-      "hook": "Refusing a breathalyzer test at a traffic stop. Good idea or terrible mistake? Let's break down your legal consequences RIGHT NOW.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Autumn Aesthetic & Cozy Living",
+      "topic": "The ultimate guide to creating a hygge-inspired fall reading nook in a small apartment.",
+      "hook": "Transform your tiny corner into a hygge paradise this fall! My small apartment reading nook hack is a cozy game-changer.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
       "target_duration": 50
     },
     {
-      "category": "Comedy Skits & Relatable Humor",
-      "topic": "When You Try to Be Productive on a Saturday (Relatable Struggles)",
-      "hook": "My Saturday morning plan: Conquer the world. My Saturday morning reality: Still in pajamas, staring at my phone. Can you relate?",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Parenting & School Day Survival",
+      "topic": "The 'lunchbox swap' hack that got my picky eater to actually finish their school lunch.",
+      "hook": "Picky eaters got you stressed? This genius 'lunchbox swap' trick finally got my kid to eat their veggies at school!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 40
+    },
+    {
+      "category": "Parenting & School Day Survival",
+      "topic": "My quick and easy 'homework station' setup that reduces after-school meltdowns.",
+      "hook": "After-school homework battles got you down? This simple, organized homework station setup transformed our evenings!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Economic Impact & Smart Money Tips",
+      "topic": "How the Fed's latest interest rate hike will impact your car loan payments and future purchases.",
+      "hook": "Just got a new car loan or thinking of buying? The Fed's latest move could cost you more than you think!",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Economic Impact & Smart Money Tips",
+      "topic": "The secret to getting free flights using credit card points from everyday spending.",
+      "hook": "Want to travel for free? Stop leaving money on the table! I'm revealing the easiest way to earn free flights with points.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Explainers & Edutainment",
+      "topic": "The scientific reason why leaves change colors in the fall (simplified for everyone).",
+      "hook": "Ever wondered *why* fall leaves are so vibrantly colorful? It's more than just magic, it's fascinating science!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Explainers & Edutainment",
+      "topic": "How virtual reality is being used to train surgeons for complex operations today.",
+      "hook": "Forget video games! VR is now training surgeons for life-saving, complex operations, and it's absolutely mind-blowing.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Fall Fashion & Styling Hauls",
+      "topic": "Shein Fall Haul: 5 trendy outerwear pieces under $40 that look high-end and luxurious.",
+      "hook": "Shein fall haul alert! I found 5 coats and jackets that look designer but cost less than your weekend brunch!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fall Fashion & Styling Hauls",
+      "topic": "How to style an oversized flannel shirt for different occasions: casual, chic, and edgy.",
+      "hook": "Your oversized flannel isn't just for lounging! Watch me style it 3 different ways for ultimate fall versatility, from casual to chic.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
