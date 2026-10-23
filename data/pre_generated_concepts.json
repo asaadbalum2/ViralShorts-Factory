@@ -1,215 +1,190 @@
 {
-  "generated_at": "2026-10-22T10:28:43.008227",
-  "valid_until": "2026-10-22T23:59:43.008235",
+  "generated_at": "2026-10-23T10:24:44.456068",
+  "valid_until": "2026-10-23T23:59:44.456078",
   "categories": [
-    "Breaking News & Reaction Videos",
-    "Market Watch: Futures & Oil Prices",
-    "TV Show Deep Dives & Fan Theories",
-    "Combat Sports & Athlete Highlights",
-    "Health & Wellness: Injury Recovery",
-    "Autumn Aesthetic & Cozy Living",
-    "Parenting & School Day Survival",
-    "Economic Impact & Smart Money Tips",
-    "Quick Explainers & Edutainment",
-    "Fall Fashion & Styling Hauls",
-    "Relatable Comedy & Trend Skits",
-    "Productivity & Organization Hacks",
-    "DIY Home & Seasonal Decor",
-    "Viral Recipes & Food Hacks",
-    "Tech & Gadget Reviews"
+    "Breaking News & Rapid Reactions",
+    "Celebrity & Athlete Lifestyle Updates",
+    "Travel Industry & Consumer Advocacy",
+    "Social Media Platform Trends & Creator Tips",
+    "Local Community & Public Service Announcements",
+    "Science, Tech & Health Explanations",
+    "Autumn Vibes & Halloween Extravaganza",
+    "Home Hacks & Lifestyle Optimization",
+    "Financial Literacy & Cost-Saving Strategies",
+    "Quick & Creative Recipes",
+    "Parenting & Education Insights",
+    "Fashion, Beauty & Personal Style",
+    "Comedy Skits & Satirical Commentary",
+    "Mindfulness & Wellness Journeys",
+    "Day in the Life & Authentic Vlogs"
   ],
   "concepts": [
     {
-      "category": "Breaking News & Reaction Videos",
-      "topic": "Viral 'Karen' meltdown over a specific pumpkin spice latte shortage in a local cafe.",
-      "hook": "You won't BELIEVE what happened when *she* couldn't get her pumpkin spice latte this morning at a local cafe!",
-      "voice_style": "Energetic",
-      "music_mood": "Dramatic",
+      "category": "Breaking News & Rapid Reactions",
+      "topic": "Sudden TikTok Ban Rumors in Europe and its Economic Impact on Creators",
+      "hook": "Did you hear the whispers? Europe might be on the verge of banning TikTok, and here's why creators should be panicking right now!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Breaking News & Reaction Videos",
-      "topic": "Drone footage reaction: Local hero saves a cat from a tree during a sudden flash flood.",
-      "hook": "This newly released drone footage just dropped, and my jaw is on the FLOOR. Witness true heroism in action!",
-      "voice_style": "Dramatic",
-      "music_mood": "Inspirational",
+      "category": "Breaking News & Rapid Reactions",
+      "topic": "Viral 'Invisible Bike Lane' Prank Sparks City-Wide Debate on Urban Planning",
+      "hook": "Someone just painted invisible bike lanes all over downtown, and the city council is having an absolute meltdown!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Market Watch: Futures & Oil Prices",
-      "topic": "Why the sudden dip in natural gas futures could mean cheaper heating bills this winter.",
-      "hook": "Heads up, homeowners! Your winter heating bill might be getting a surprise discount, and here's why that gas futures dip matters.",
-      "voice_style": "Authoritative",
-      "music_mood": "Chill",
-      "target_duration": 50
-    },
-    {
-      "category": "Market Watch: Futures & Oil Prices",
-      "topic": "The unexpected global event that sent coffee bean futures soaring overnight.",
-      "hook": "Your morning brew is about to get more expensive, and it all started with *this* unexpected headline overseas!",
-      "voice_style": "Mysterious",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Deep Dives & Fan Theories",
-      "topic": "The secret coded message in the 'Squid Game: The Challenge' finale everyone missed.",
-      "hook": "Did you catch *that* subtle clue in the 'Squid Game Challenge' finale? It changes EVERYTHING we thought we knew!",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "TV Show Deep Dives & Fan Theories",
-      "topic": "'House of the Dragon' Season 2: Is Daemon Targaryen secretly plotting against Rhaenyra?",
-      "hook": "Hold up, 'House of the Dragon' fans! I've uncovered a hidden theory about Daemon that will blow your mind about his true intentions.",
-      "voice_style": "Energetic",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Combat Sports & Athlete Highlights",
-      "topic": "The never-before-seen training footage of a rising MMA star's unique grappling technique.",
-      "hook": "You've seen his KOs, but wait 'til you see the secret weapon that's making this MMA fighter absolutely unstoppable!",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
+      "category": "Celebrity & Athlete Lifestyle Updates",
+      "topic": "Decoding Why Taylor Swift is Suddenly Obsessed with Vintage Vinyl Shopping",
+      "hook": "Taylor Swift's latest obsession isn't what you think, and it's sending the internet into a frenzy!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Combat Sports & Athlete Highlights",
-      "topic": "Olympic gymnast's incredible comeback story after a career-ending Achilles injury.",
-      "hook": "They said her career was over after a devastating Achilles injury, but this Olympic gymnast just pulled off the most insane comeback!",
-      "voice_style": "Dramatic",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Health & Wellness: Injury Recovery",
-      "topic": "My 3 essential dynamic stretches to prevent IT Band syndrome for long-distance runners.",
-      "hook": "Runners, listen up! If you're battling IT Band pain, these three dynamic stretches are about to change your life forever.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Celebrity & Athlete Lifestyle Updates",
+      "topic": "The Secret Morning Routine that Keeps NBA Star LeBron James Ageless",
+      "hook": "LeBron James doesn't just wake up looking 25. His secret morning routine will shock you!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Health & Wellness: Injury Recovery",
-      "topic": "The surprising dietary change that drastically sped up my ACL surgery recovery.",
-      "hook": "Recovering from an ACL tear? I cut *this one thing* from my diet, and my physical therapist was shocked by my rapid progress!",
-      "voice_style": "Calm",
-      "music_mood": "Inspirational",
+      "category": "Travel Industry & Consumer Advocacy",
+      "topic": "Uncovering Hidden Hotel Fees That Airlines Don't Want You to Know About",
+      "hook": "That cheap flight deal? It's a trap! I'm exposing the hidden hotel fees that could double your vacation cost.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Travel Industry & Consumer Advocacy",
+      "topic": "How to Get Free Flight Upgrades by Exploiting a Little-Known Airline Glitch",
+      "hook": "Want a first-class seat for economy price? There's a secret airline glitch that can make it happen, but it won't last long!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Autumn Aesthetic & Cozy Living",
-      "topic": "DIY upcycled old sweater pumpkin decorations for under $10.",
-      "hook": "Don't throw away that old sweater! I'm showing you how to turn it into the cutest, budget-friendly fall decor for practically free.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Social Media Platform Trends & Creator Tips",
+      "topic": "The 'Muted Palette' Aesthetic Taking Over Instagram Reels and How to Master It",
+      "hook": "Your reels aren't popping off? You're probably missing this new 'muted palette' aesthetic that's racking up millions of views!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Autumn Aesthetic & Cozy Living",
-      "topic": "The ultimate guide to creating a hygge-inspired fall reading nook in a small apartment.",
-      "hook": "Transform your tiny corner into a hygge paradise this fall! My small apartment reading nook hack is a cozy game-changer.",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
+      "category": "Social Media Platform Trends & Creator Tips",
+      "topic": "How to Avoid the Dreaded 'Shadowban' on TikTok After the Latest Algorithm Update",
+      "hook": "Is your TikTok engagement suddenly dead? You might be shadowbanned! Here's how to fix it after the latest algorithm change.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Parenting & School Day Survival",
-      "topic": "The 'lunchbox swap' hack that got my picky eater to actually finish their school lunch.",
-      "hook": "Picky eaters got you stressed? This genius 'lunchbox swap' trick finally got my kid to eat their veggies at school!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Local Community & Public Service Announcements",
+      "topic": "Uncovering the Truth About Our City's Mysterious New 'Adopt-a-Bench' Program",
+      "hook": "Our city just launched an 'Adopt-a-Bench' program, but the details are weirder than you think...",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Parenting & School Day Survival",
-      "topic": "My quick and easy 'homework station' setup that reduces after-school meltdowns.",
-      "hook": "After-school homework battles got you down? This simple, organized homework station setup transformed our evenings!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Local Community & Public Service Announcements",
+      "topic": "The Unexpected Upside of Our Town's New 'No Left Turn' Rule on Main Street",
+      "hook": "That new 'no left turn' rule everyone's complaining about? It actually just solved our biggest traffic nightmare, and here's how!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Economic Impact & Smart Money Tips",
-      "topic": "How the Fed's latest interest rate hike will impact your car loan payments and future purchases.",
-      "hook": "Just got a new car loan or thinking of buying? The Fed's latest move could cost you more than you think!",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Economic Impact & Smart Money Tips",
-      "topic": "The secret to getting free flights using credit card points from everyday spending.",
-      "hook": "Want to travel for free? Stop leaving money on the table! I'm revealing the easiest way to earn free flights with points.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick Explainers & Edutainment",
-      "topic": "The scientific reason why leaves change colors in the fall (simplified for everyone).",
-      "hook": "Ever wondered *why* fall leaves are so vibrantly colorful? It's more than just magic, it's fascinating science!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Science, Tech & Health Explanations",
+      "topic": "The Mind-Blowing Reason Why Your Brain Forgets Where You Put Your Keys",
+      "hook": "Ever walked into a room and forgotten why? Your brain isn't broken, it's actually doing something incredible!",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Quick Explainers & Edutainment",
-      "topic": "How virtual reality is being used to train surgeons for complex operations today.",
-      "hook": "Forget video games! VR is now training surgeons for life-saving, complex operations, and it's absolutely mind-blowing.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Fall Fashion & Styling Hauls",
-      "topic": "Shein Fall Haul: 5 trendy outerwear pieces under $40 that look high-end and luxurious.",
-      "hook": "Shein fall haul alert! I found 5 coats and jackets that look designer but cost less than your weekend brunch!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Science, Tech & Health Explanations",
+      "topic": "How Smart Toilets are Revolutionizing Health Monitoring Without You Even Knowing",
+      "hook": "Forget smartwatches \u2013 your toilet is about to become your most important health monitor. Yes, really!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Fall Fashion & Styling Hauls",
-      "topic": "How to style an oversized flannel shirt for different occasions: casual, chic, and edgy.",
-      "hook": "Your oversized flannel isn't just for lounging! Watch me style it 3 different ways for ultimate fall versatility, from casual to chic.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Autumn Vibes & Halloween Extravaganza",
+      "topic": "DIY 'Haunted Jar' Decor That Uses Science to Spook Your Guests",
+      "hook": "Want to freak out your Halloween guests with just a jar and some science? This DIY haunted project is next level!",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Autumn Vibes & Halloween Extravaganza",
+      "topic": "The Secret History of Pumpkin Spice Latte: More Than Just a Drink",
+      "hook": "Think you know pumpkin spice? Its origin story is way darker and more fascinating than you could ever imagine.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Home Hacks & Lifestyle Optimization",
+      "topic": "The Laundry Detergent Hack That Will Make Your Towels Feel Brand New Again",
+      "hook": "Are your towels crunchy and rough? Stop buying new ones! This laundry hack will make them feel impossibly soft.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Home Hacks & Lifestyle Optimization",
+      "topic": "Genius '$5 Desk Upgrade' That Boosts Productivity and Mood",
+      "hook": "Your messy desk is killing your productivity. But what if I told you a $5 item could completely transform your workspace?",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Literacy & Cost-Saving Strategies",
+      "topic": "The 'Coffee Shop Stock Market' Trick to Save Hundreds Each Month",
+      "hook": "Your daily coffee habit is secretly costing you a fortune. But what if it could actually make you money?",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 50
+    },
+    {
+      "category": "Financial Literacy & Cost-Saving Strategies",
+      "topic": "How to Haggle for a Better Internet Bill \u2013 My Proven Script",
+      "hook": "Paying too much for internet? I'm giving you my exact script to call your provider and slash your bill by up to 30%!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick & Creative Recipes",
+      "topic": "3-Ingredient 'Emergency Dessert' You Can Make in Under 5 Minutes",
+      "hook": "Midnight craving hitting hard? You're just 3 ingredients and 5 minutes away from the most surprisingly delicious dessert ever!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick & Creative Recipes",
+      "topic": "The Viral 'Avocado Toast Upgrade' That Tastes Like a Michelin Star Dish",
+      "hook": "Your avocado toast is boring. But this one simple addition will elevate it to gourmet status, seriously!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
@@ -218,43 +193,68 @@
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
