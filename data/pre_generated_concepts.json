@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-23T10:24:44.456068",
-  "valid_until": "2026-10-23T23:59:44.456078",
+  "generated_at": "2026-10-24T09:43:54.721227",
+  "valid_until": "2026-10-24T23:59:54.721236",
   "categories": [
-    "Breaking News & Rapid Reactions",
-    "Celebrity & Athlete Lifestyle Updates",
-    "Travel Industry & Consumer Advocacy",
-    "Social Media Platform Trends & Creator Tips",
-    "Local Community & Public Service Announcements",
-    "Science, Tech & Health Explanations",
-    "Autumn Vibes & Halloween Extravaganza",
-    "Home Hacks & Lifestyle Optimization",
-    "Financial Literacy & Cost-Saving Strategies",
-    "Quick & Creative Recipes",
-    "Parenting & Education Insights",
-    "Fashion, Beauty & Personal Style",
-    "Comedy Skits & Satirical Commentary",
-    "Mindfulness & Wellness Journeys",
-    "Day in the Life & Authentic Vlogs"
+    "Legal & Personal Safety Tips",
+    "Pro Sports Athlete Spotlights & Updates",
+    "App Reviews & Mobile Gaming",
+    "Local Community News & Law Enforcement",
+    "Weather & Disaster Preparedness",
+    "Tech Hacks & Digital Lifestyle",
+    "Sports Analysis & Fan Content",
+    "True Crime & Mystery Deep Dives",
+    "DIY & Home Improvement Hacks",
+    "Quick Recipe & Foodie Trends",
+    "Comedy & Relatable Skits",
+    "Educational Explainers (Edutainment)",
+    "Travel Guides & Hidden Gems",
+    "Personal Finance & Money Saving Tips",
+    "Wellness, Fitness & Mental Health Tips"
   ],
   "concepts": [
     {
-      "category": "Breaking News & Rapid Reactions",
-      "topic": "Sudden TikTok Ban Rumors in Europe and its Economic Impact on Creators",
-      "hook": "Did you hear the whispers? Europe might be on the verge of banning TikTok, and here's why creators should be panicking right now!",
-      "voice_style": "dramatic",
+      "category": "Legal & Personal Safety Tips",
+      "topic": "Your Rights at a DUI Checkpoint: What Officers CAN and CAN'T Do.",
+      "hook": "Ever wondered what to say if you're stopped at a DUI checkpoint? Your silence could be your strongest defense!",
+      "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Breaking News & Rapid Reactions",
-      "topic": "Viral 'Invisible Bike Lane' Prank Sparks City-Wide Debate on Urban Planning",
-      "hook": "Someone just painted invisible bike lanes all over downtown, and the city council is having an absolute meltdown!",
+      "category": "Legal & Personal Safety Tips",
+      "topic": "Red Flags: Spotting Romance Scammers on Dating Apps Before It's Too Late.",
+      "hook": "Think your online crush is too good to be true? They just might be. Here's how to spot a romance scammer before they break your heart and bank!",
+      "voice_style": "friendly",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Pro Sports Athlete Spotlights & Updates",
+      "topic": "From Benchwarmer to MVP: The Unsung Comeback Story of [Specific Athlete Name, e.g., 'Skylar Diggins-Smith'].",
+      "hook": "You know the headlines, but do you know the *real* story behind [Athlete's Name]'s impossible comeback after [specific challenge, e.g., 'maternity leave']?",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Pro Sports Athlete Spotlights & Updates",
+      "topic": "The Genius (or Flop?) of the [Team Name] acquiring [Player Name] Trade.",
+      "hook": "Remember when the [Team] traded away [Player A] for [Player B]? Here's why that move was either a stroke of genius or a colossal mistake!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "App Reviews & Mobile Gaming",
+      "topic": "Hidden Gem Alert: Why You NEED to Download '[Specific Indie Mobile Game Name, e.g., 'Vampire Survivors']' NOW!",
+      "hook": "Forget the big titles! This tiny indie game just dropped, and it's already consuming my life. Let me show you why you're missing out!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Celebrity & Athlete Lifestyle Updates",
-      "topic": "Decoding Why Taylor Swift is Suddenly Obsessed with Vintage Vinyl Shopping",
-      "hook": "Taylor Swift's latest obsession isn't what you think, and it's sending the internet into a frenzy!",
+      "category": "App Reviews & Mobile Gaming",
+      "topic": "Maximize Your Day: The BEST FREE Productivity App You're Not Using (and why it's better than Notion).",
+      "hook": "Feeling overwhelmed? This incredible, completely FREE app changed my entire workflow \u2013 and it's not what you think!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Celebrity & Athlete Lifestyle Updates",
-      "topic": "The Secret Morning Routine that Keeps NBA Star LeBron James Ageless",
-      "hook": "LeBron James doesn't just wake up looking 25. His secret morning routine will shock you!",
-      "voice_style": "authoritative",
+      "category": "Local Community News & Law Enforcement",
+      "topic": "[City Name]'s New Urban Garden Project: Green Spaces Transforming Our Neighborhood and Boosting Local Economy.",
+      "hook": "Our city just unveiled something amazing! Get ready to see how [City Name]'s new urban garden is changing lives and bringing neighbors together!",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Travel Industry & Consumer Advocacy",
-      "topic": "Uncovering Hidden Hotel Fees That Airlines Don't Want You to Know About",
-      "hook": "That cheap flight deal? It's a trap! I'm exposing the hidden hotel fees that could double your vacation cost.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "category": "Local Community News & Law Enforcement",
+      "topic": "Behind the Badge: How [Local Police Department]'s New 'Community Watch' Program is Reducing Crime by 30%.",
+      "hook": "Local crime rates are dropping! What's the secret? I'm diving into [Local Police Department]'s innovative new program that's making a real difference.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather & Disaster Preparedness",
+      "topic": "The ONLY 5 Things You NEED in Your Earthquake Grab-and-Go Bag (Most People Forget #3!).",
+      "hook": "An earthquake can strike anytime! Do you have the essentials ready? Here are the 5 non-negotiables for your emergency kit that could save your life.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather & Disaster Preparedness",
+      "topic": "Busting [Region Specific] Weather Myths: Is 'Hurricane Season' Really Over if There's No Storm on the Horizon?",
+      "hook": "Heard that old wives' tale about [local weather phenomenon]? Let's separate fact from fiction and prepare you for what's *really* coming in [Month]!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 50
     },
     {
-      "category": "Travel Industry & Consumer Advocacy",
-      "topic": "How to Get Free Flight Upgrades by Exploiting a Little-Known Airline Glitch",
-      "hook": "Want a first-class seat for economy price? There's a secret airline glitch that can make it happen, but it won't last long!",
+      "category": "Tech Hacks & Digital Lifestyle",
+      "topic": "Unlock Pro Photos: The Secret 'Underwater' Phone Camera Hack You Didn't Know Existed!",
+      "hook": "Want stunning photos without a fancy camera? This weird phone hack will make your shots look professional, no expensive gear needed!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Social Media Platform Trends & Creator Tips",
-      "topic": "The 'Muted Palette' Aesthetic Taking Over Instagram Reels and How to Master It",
-      "hook": "Your reels aren't popping off? You're probably missing this new 'muted palette' aesthetic that's racking up millions of views!",
+      "category": "Tech Hacks & Digital Lifestyle",
+      "topic": "Extend Your Phone Battery Life by 30%: The Hidden Settings Guide for iPhone and Android.",
+      "hook": "Is your phone dying before noon? Stop! These hidden settings will dramatically extend your battery life, and they're shockingly easy to change.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Social Media Platform Trends & Creator Tips",
-      "topic": "How to Avoid the Dreaded 'Shadowban' on TikTok After the Latest Algorithm Update",
-      "hook": "Is your TikTok engagement suddenly dead? You might be shadowbanned! Here's how to fix it after the latest algorithm change.",
-      "voice_style": "authoritative",
+      "category": "Sports Analysis & Fan Content",
+      "topic": "The Micro-Moment That Won (or Lost) the Game: [Specific Play from a Recent Game, e.g., 'Lakers' pick-and-roll in Q4'].",
+      "hook": "Everyone saw the final score, but did you catch the *one* tactical move in the third quarter that changed everything?",
+      "voice_style": "energetic",
       "music_mood": "intense",
-      "target_duration": 50
+      "target_duration": 45
     },
     {
-      "category": "Local Community & Public Service Announcements",
-      "topic": "Uncovering the Truth About Our City's Mysterious New 'Adopt-a-Bench' Program",
-      "hook": "Our city just launched an 'Adopt-a-Bench' program, but the details are weirder than you think...",
+      "category": "Sports Analysis & Fan Content",
+      "topic": "My Bold Prediction: [Player Name] Will Be the NBA's Next MVP Candidate in the Upcoming Season.",
+      "hook": "You heard it here first! I'm calling it: this unsung hero is about to explode and dominate the entire [Sport] season, and here's why!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "True Crime & Mystery Deep Dives",
+      "topic": "The Vanishing of the [Local Legend/Name] Family: An Unsolved [Region] Mystery from the 80s.",
+      "hook": "A quiet town, a normal night, then... nothing. The chilling true story of a family who disappeared without a trace, and the theories that haunt us.",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Local Community & Public Service Announcements",
-      "topic": "The Unexpected Upside of Our Town's New 'No Left Turn' Rule on Main Street",
-      "hook": "That new 'no left turn' rule everyone's complaining about? It actually just solved our biggest traffic nightmare, and here's how!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Science, Tech & Health Explanations",
-      "topic": "The Mind-Blowing Reason Why Your Brain Forgets Where You Put Your Keys",
-      "hook": "Ever walked into a room and forgotten why? Your brain isn't broken, it's actually doing something incredible!",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Science, Tech & Health Explanations",
-      "topic": "How Smart Toilets are Revolutionizing Health Monitoring Without You Even Knowing",
-      "hook": "Forget smartwatches \u2013 your toilet is about to become your most important health monitor. Yes, really!",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Autumn Vibes & Halloween Extravaganza",
-      "topic": "DIY 'Haunted Jar' Decor That Uses Science to Spook Your Guests",
-      "hook": "Want to freak out your Halloween guests with just a jar and some science? This DIY haunted project is next level!",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 40
-    },
-    {
-      "category": "Autumn Vibes & Halloween Extravaganza",
-      "topic": "The Secret History of Pumpkin Spice Latte: More Than Just a Drink",
-      "hook": "Think you know pumpkin spice? Its origin story is way darker and more fascinating than you could ever imagine.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Home Hacks & Lifestyle Optimization",
-      "topic": "The Laundry Detergent Hack That Will Make Your Towels Feel Brand New Again",
-      "hook": "Are your towels crunchy and rough? Stop buying new ones! This laundry hack will make them feel impossibly soft.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Home Hacks & Lifestyle Optimization",
-      "topic": "Genius '$5 Desk Upgrade' That Boosts Productivity and Mood",
-      "hook": "Your messy desk is killing your productivity. But what if I told you a $5 item could completely transform your workspace?",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Financial Literacy & Cost-Saving Strategies",
-      "topic": "The 'Coffee Shop Stock Market' Trick to Save Hundreds Each Month",
-      "hook": "Your daily coffee habit is secretly costing you a fortune. But what if it could actually make you money?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
       "target_duration": 50
     },
     {
-      "category": "Financial Literacy & Cost-Saving Strategies",
-      "topic": "How to Haggle for a Better Internet Bill \u2013 My Proven Script",
-      "hook": "Paying too much for internet? I'm giving you my exact script to call your provider and slash your bill by up to 30%!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
+      "category": "True Crime & Mystery Deep Dives",
+      "topic": "The Mind of a Digital Con Artist: How 'Catfishing' Scammers Manipulate Their Victims Through Psychology.",
+      "hook": "What makes a person create an entirely fake identity to deceive others? We're peeling back the layers on the psychology of digital con artists.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 50
     },
     {
-      "category": "Quick & Creative Recipes",
-      "topic": "3-Ingredient 'Emergency Dessert' You Can Make in Under 5 Minutes",
-      "hook": "Midnight craving hitting hard? You're just 3 ingredients and 5 minutes away from the most surprisingly delicious dessert ever!",
+      "category": "DIY & Home Improvement Hacks",
+      "topic": "Transform Your Bedroom in 15 Minutes: The Dollar Store Wall Art Hack (Looks Like $100!).",
+      "hook": "Tired of your boring walls? I'm showing you how to create stunning, expensive-looking wall art using only Dollar Store finds \u2013 in under 15 minutes!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Quick & Creative Recipes",
-      "topic": "The Viral 'Avocado Toast Upgrade' That Tastes Like a Michelin Star Dish",
-      "hook": "Your avocado toast is boring. But this one simple addition will elevate it to gourmet status, seriously!",
+      "category": "DIY & Home Improvement Hacks",
+      "topic": "The Secret Ingredient to Sparkling [Specific Item, e.g., 'Grout Lines'] You Already Have in Your Pantry!",
+      "hook": "Your [specific item] is probably dirtier than you think! Forget harsh chemicals \u2013 this common household item will make it sparkle like new, effortlessly!",
       "voice_style": "friendly",
-      "music_mood": "chill",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Recipe & Foodie Trends",
+      "topic": "Viral Feta Pasta, But Make It [Unique Twist, e.g., 'Spicy Thai Peanut']! Your New Weeknight Obsession.",
+      "hook": "You loved the viral feta pasta, but have you tried my [unique twist] version? It's a flavor explosion you won't believe, ready in 20 minutes!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
+    },
+    {
+      "category": "Quick Recipe & Foodie Trends",
+      "topic": "3-Ingredient 'Gourmet' Chocolate Lava Cakes in 10 Minutes! Impress Anyone with This Easy Dessert.",
+      "hook": "Want to impress without the stress? These rich, gooey chocolate lava cakes only need THREE ingredients and are ready in just 10 minutes!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
