@@ -1,224 +1,209 @@
 {
-  "generated_at": "2026-10-25T10:02:06.711011",
-  "valid_until": "2026-10-25T23:59:06.711022",
+  "generated_at": "2026-10-26T11:25:07.690794",
+  "valid_until": "2026-10-26T23:59:07.690805",
   "categories": [
-    "Global News & Current Affairs Explainers (Paris, Vanuatu, Deportation)",
-    "Sports Highlights & Analysis (Tennis, Cricket, NFL Flashbacks)",
-    "Gaming News & Previews (GTA VI Speculation & Updates)",
-    "Celebrity & Pop Culture Gossip (Rob Kardashian & Reality Updates)",
-    "Social Justice & Political Commentary",
-    "Halloween & Fall Festive Content (Costumes, DIYs, Spooky Recipes)",
-    "Quick Recipes & Food Hacks",
-    "Fitness & Wellness Challenges",
-    "Educational & 'How-To' Guides",
-    "Day in the Life & Lifestyle Vlogs",
-    "Travel & Adventure Vlogs",
-    "Comedy Skits & Memes",
-    "Tech Reviews & Gadget Spotlights",
-    "Pet Content (Cute, Funny, Training)",
-    "Personal Storytelling & Motivational Clips"
+    "Market Minute: Stocks & Crypto",
+    "Sports Apex: Awards & Highlights",
+    "Climate Chronicles & Weather Watch",
+    "Tech Wars & Gadget Reviews",
+    "Election Pulse: Voter Guides & News",
+    "Pop Culture & Influencer Insights",
+    "Web3 & Decentralized Future",
+    "Autumn Vibes & Seasonal Living",
+    "Last-Minute Halloween Haunts",
+    "Viral Challenges & Trend Hacks",
+    "Quick Explanations & Edutainment",
+    "Foodie Adventures & Recipe Remixes",
+    "Wellness & Mental Health Moments",
+    "Relatable Comedy & Meme Mastery",
+    "Fashion Forward & Style Guides"
   ],
   "concepts": [
     {
-      "category": "Global News & Current Affairs Explainers (Paris, Vanuatu, Deportation)",
-      "topic": "Why Paris's E-Scooter Ban is a HUGE Deal for Urban Planning",
-      "hook": "Did Paris just ban something you use every day? It's more than just scooters, it's about the future of cities!",
+      "category": "Market Minute: Stocks & Crypto",
+      "topic": "Will Dogecoin Hit $1 Before Elon Tweets Again?",
+      "hook": "Is Dogecoin about to make you rich... or just bark up the wrong tree? Here's the latest price prediction.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights & Analysis (Tennis, Cricket, NFL Flashbacks)",
-      "topic": "The Unbelievable Kyrgios-Nadal Wimbledon Showdown You Forgot About",
-      "hook": "Remember when a wildcard teenage Kyrgios broke Nadal's streak at Wimbledon? That match was pure chaos!",
-      "voice_style": "dramatic",
+      "category": "Market Minute: Stocks & Crypto",
+      "topic": "Why NVIDIA Stock Just Tanked (and if you should buy the dip)",
+      "hook": "NVIDIA just crashed, but here\u2019s why the panic might be your golden ticket. Let's break down the dip.",
+      "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Gaming News & Previews (GTA VI Speculation & Updates)",
-      "topic": "GTA VI Leak Deep Dive: Is That Beachfront Mansion Really Playable?",
-      "hook": "Stop scrolling! The latest GTA VI leaks just showed something HUGE about Vice City's map...",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 45
+      "category": "Sports Apex: Awards & Highlights",
+      "topic": "The GOAT Debate: Is LeBron's 2016 Block Still the Best Play Ever?",
+      "hook": "Was LeBron's chase-down block in 2016 the greatest play in NBA history? We're settling the GOAT debate.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 42
     },
     {
-      "category": "Celebrity & Pop Culture Gossip (Rob Kardashian & Reality Updates)",
-      "topic": "Decoding Rob Kardashian's Latest Cryptic Instagram Story Message",
-      "hook": "Rob Kardashian just posted something super weird on his story. What does it MEAN for the family?",
+      "category": "Sports Apex: Awards & Highlights",
+      "topic": "Unseen Moments from the World Series Celebration that Went Viral",
+      "hook": "You saw the trophy lift, but did you see the *real* chaos behind the scenes? These moments went viral.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Climate Chronicles & Weather Watch",
+      "topic": "The 'Blob' in the Pacific: How It's Changing Our Weather FOREVER",
+      "hook": "There's a giant, warm 'blob' in the Pacific, and it's silently rewriting our weather forecast for decades. What is it?",
       "voice_style": "mysterious",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 47
     },
     {
-      "category": "Social Justice & Political Commentary",
-      "topic": "The Silent Crisis: How Housing Insecurity Impacts Gen Z's Future",
-      "hook": "Are you struggling to afford rent? You're not alone, and here's why it's a systemic problem impacting our generation.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Halloween & Fall Festive Content (Costumes, DIYs, Spooky Recipes)",
-      "topic": "DIY Last-Minute Zombie Apocalypse Survivor Costume in 10 Mins",
-      "hook": "Your Halloween party is tonight and you have NO costume? I got you with this EPIC zombie survivor look!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick Recipes & Food Hacks",
-      "topic": "3-Ingredient Microwave Mug Brownie in 60 Seconds Flat",
-      "hook": "Craving chocolate NOW? Get a fudgy brownie in literally one minute with just 3 ingredients!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fitness & Wellness Challenges",
-      "topic": "The 7-Day Plank Challenge: Can You Hold for 3 Minutes?",
-      "hook": "Think you're strong? Try this 7-day plank challenge and see if you can hit a 3-minute hold!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Educational & 'How-To' Guides",
-      "topic": "Mastering TikTok's NEW AI Photo Editing Feature for Viral Pics",
-      "hook": "Did you know TikTok just dropped a crazy new AI photo editor? Here\u2019s how to use it for instant viral photos!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Day in the Life & Lifestyle Vlogs",
-      "topic": "A Day in My Life as a Viral Content Creator (Behind the Scenes)",
-      "hook": "Ever wonder what it's like to create viral videos all day? Come behind the scenes with me!",
-      "voice_style": "friendly",
+      "category": "Climate Chronicles & Weather Watch",
+      "topic": "City of the Future: How One City is Battling Rising Sea Levels with Floating Architecture",
+      "hook": "Imagine your city floating above the waves. One metropolis is making it a reality to defy rising sea levels.",
+      "voice_style": "inspirational",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Global News & Current Affairs Explainers (Paris, Vanuatu, Deportation)",
-      "topic": "The Vanuatu Cyclone Aftermath: Why We're Not Hearing More Global News",
-      "hook": "A massive cyclone just devastated Vanuatu, so why isn't it global news? Let's talk about the media blackout.",
+      "category": "Tech Wars & Gadget Reviews",
+      "topic": "iPhone 16 vs. Galaxy S25: The Hidden Feature That Will Decide The Winner",
+      "hook": "Forget cameras and processors. ONE hidden feature will decide the next smartphone war. Find out what it is!",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 43
+    },
+    {
+      "category": "Tech Wars & Gadget Reviews",
+      "topic": "I Tested the $100 AI Pet Sitter \u2013 Was It a Genius Buy or a Total Bust?",
+      "hook": "I spent a hundred bucks on an AI pet sitter. Did it save my couch, or just confuse my cat? You won't believe the results.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Election Pulse: Voter Guides & News",
+      "topic": "Debunking Viral Election Misinformation: The 'Fake Ballot' Hoax",
+      "hook": "Seeing that 'fake ballot' post everywhere? Here's the truth you NEED to know before you share. Don't fall for the hoax.",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Sports Highlights & Analysis (Tennis, Cricket, NFL Flashbacks)",
-      "topic": "Cricket's Craziest Catches: Physics-Defying Moments You Won't Believe",
-      "hook": "You think you've seen amazing catches? These cricket moments defy gravity and human possibility!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Gaming News & Previews (GTA VI Speculation & Updates)",
-      "topic": "Starfield's MOST Overlooked Easter Eggs and Hidden Lore Details",
-      "hook": "Played Starfield for hours? I guarantee you missed THESE incredible hidden details and Easter eggs!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Pop Culture Gossip (Rob Kardashian & Reality Updates)",
-      "topic": "Why Everyone's Talking About Taylor Swift's Eras Tour Merch Errors",
-      "hook": "Taylor Swift fans are freaking out over her Eras Tour merch fails. Is yours one of the faulty ones?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Social Justice & Political Commentary",
-      "topic": "The Push to Decriminalize Microdosing: A Mental Health Game Changer?",
-      "hook": "Could a small dose of certain substances actually help your mental health? Some politicians are pushing for it.",
+      "category": "Election Pulse: Voter Guides & News",
+      "topic": "What Actually Happens to Your Mail-In Ballot After You Send It? (Spoiler: It's Secure)",
+      "hook": "Ever wonder where your mail-in ballot *really* goes? I tracked one to show you the secure journey.",
       "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "mysterious",
+      "target_duration": 44
     },
     {
-      "category": "Halloween & Fall Festive Content (Costumes, DIYs, Spooky Recipes)",
-      "topic": "Spooky & Sweet: 3-Ingredient Pumpkin Spice Ghost Cookies",
-      "hook": "Forget basic cookies! These pumpkin spice ghosts are ridiculously easy, SO cute, and taste like fall!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Quick Recipes & Food Hacks",
-      "topic": "The Ultimate Egg Peeling Hack: Say Goodbye to Stubborn Shells!",
-      "hook": "Peeling a hard-boiled egg without tearing it? IMPOSSIBLE... until you try this insane hack!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fitness & Wellness Challenges",
-      "topic": "Desk Worker's Stretch Challenge: Beat Back Pain in 5 Minutes",
-      "hook": "Stuck at a desk all day? This 5-minute stretch routine will melt away your back pain instantly!",
+      "category": "Pop Culture & Influencer Insights",
+      "topic": "Why Everyone Is Suddenly Obsessed with 'Quiet Luxury' \u2013 And How to Get the Look",
+      "hook": "From TikTok to Hollywood, everyone's ditching bling for 'quiet luxury.' But what IS it, and how can you get in?",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 41
     },
     {
-      "category": "Educational & 'How-To' Guides",
-      "topic": "Maximize Your Phone Battery Life: 5 Settings You NEED to Change NOW",
-      "hook": "Is your phone battery dying too fast? Change these 5 settings RIGHT NOW to double your battery life!",
+      "category": "Pop Culture & Influencer Insights",
+      "topic": "The Dark Side of Being a Child Influencer: What Parents Aren't Telling You",
+      "hook": "Behind the adorable smiles and brand deals, what's the real cost of being a child influencer? The truth is shocking.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 49
+    },
+    {
+      "category": "Web3 & Decentralized Future",
+      "topic": "Your Digital Identity in Web3: Why It's More Than Just an Avatar",
+      "hook": "Forget profile pictures. Your Web3 digital identity is about to change everything you know about online presence.",
       "voice_style": "authoritative",
-      "music_mood": "upbeat",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Day in the Life & Lifestyle Vlogs",
-      "topic": "Revamping My Small Apartment for Max Productivity & Aesthetic on a Budget",
-      "hook": "My tiny apartment was a disaster. Watch me transform it into a productive oasis on a shoestring budget!",
+      "category": "Web3 & Decentralized Future",
+      "topic": "Play-to-Earn Gaming: Is This the End of Traditional Gaming?",
+      "hook": "Imagine earning real money just by playing video games. Is play-to-earn the future, or just a fleeting trend?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Autumn Vibes & Seasonal Living",
+      "topic": "The Secret Ingredient for the BEST Pumpkin Spice Latte at Home (No Starbucks Needed!)",
+      "hook": "Your homemade pumpkin spice latte is missing ONE secret ingredient that even Starbucks doesn't use. Get ready to level up!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Autumn Vibes & Seasonal Living",
+      "topic": "Cozy Fall Decor Hacks That Look Expensive But Cost Less Than $20",
+      "hook": "Want that 'rich autumn aesthetic' for under twenty bucks? I've got the decor hacks you NEED for a cozy home.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Last-Minute Halloween Haunts",
+      "topic": "DIY Creepy Cocktails: The One Ingredient That Makes Them GLOW in the Dark!",
+      "hook": "Want your Halloween cocktails to glow spookily in the dark? I've got the secret, non-toxic ingredient. Your party will be legendary!",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
+      "target_duration": 41
+    },
+    {
+      "category": "Last-Minute Halloween Haunts",
+      "topic": "How to Turn Your Bedroom into a Haunted Asylum in 15 Minutes",
+      "hook": "No time for a costume? Turn your *entire bedroom* into a haunted asylum in just 15 minutes. It's shockingly easy!",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 46
+    },
+    {
+      "category": "Viral Challenges & Trend Hacks",
+      "topic": "The 'Invisible Shelf' Trend: Is It Genius or a Disaster Waiting to Happen?",
+      "hook": "Everyone's trying the 'invisible shelf' hack, but is it a decor marvel or just a ticking time bomb for your wall? Let's find out.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Viral Challenges & Trend Hacks",
+      "topic": "I Tried the 'One-Minute Productivity Boost' Hack \u2013 Did It Work or Just Waste My Time?",
+      "hook": "Can one minute *really* make you more productive? I put the viral 'micro-boost' hack to the test. The results surprised me!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 47
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
@@ -227,34 +212,49 @@
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
