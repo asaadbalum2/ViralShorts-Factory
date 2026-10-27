@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-26T11:25:07.690794",
-  "valid_until": "2026-10-26T23:59:07.690805",
+  "generated_at": "2026-10-27T10:48:24.107286",
+  "valid_until": "2026-10-27T23:59:24.107297",
   "categories": [
-    "Market Minute: Stocks & Crypto",
-    "Sports Apex: Awards & Highlights",
-    "Climate Chronicles & Weather Watch",
-    "Tech Wars & Gadget Reviews",
-    "Election Pulse: Voter Guides & News",
-    "Pop Culture & Influencer Insights",
-    "Web3 & Decentralized Future",
-    "Autumn Vibes & Seasonal Living",
-    "Last-Minute Halloween Haunts",
-    "Viral Challenges & Trend Hacks",
-    "Quick Explanations & Edutainment",
-    "Foodie Adventures & Recipe Remixes",
-    "Wellness & Mental Health Moments",
-    "Relatable Comedy & Meme Mastery",
-    "Fashion Forward & Style Guides"
+    "Quick Tech Reviews & Gadget Hype",
+    "Sports Hot Takes & Game Recaps",
+    "Finance & Stock Market Snips",
+    "Current Events & Viral Story Breakdowns",
+    "Athlete Spotlight & Career Highlights",
+    "Late Fall & Cozy Aesthetic",
+    "Early Holiday Gift Guides",
+    "DIY & Life Hacks",
+    "Relatable Humor & Skits",
+    "Micro-Vlogs & Daily Glimpses",
+    "Quick Recipes & Food Hacks",
+    "Wellness & Mental Health Mini-Tips",
+    "Pet Antics & Animal Adventures",
+    "AI & Future Tech Explanations",
+    "Interactive Q&A Quickies"
   ],
   "concepts": [
     {
-      "category": "Market Minute: Stocks & Crypto",
-      "topic": "Will Dogecoin Hit $1 Before Elon Tweets Again?",
-      "hook": "Is Dogecoin about to make you rich... or just bark up the wrong tree? Here's the latest price prediction.",
+      "category": "Quick Tech Reviews & Gadget Hype",
+      "topic": "The new 'EchoMind' AI Home Hub that predicts your needs.",
+      "hook": "Did your smart home just read your mind? Mine did. This new AI hub is wild!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Market Minute: Stocks & Crypto",
-      "topic": "Why NVIDIA Stock Just Tanked (and if you should buy the dip)",
-      "hook": "NVIDIA just crashed, but here\u2019s why the panic might be your golden ticket. Let's break down the dip.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Quick Tech Reviews & Gadget Hype",
+      "topic": "Reviewing the 'PocketPlay' ultra-portable gaming projector.",
+      "hook": "Turn any wall into your personal IMAX gaming screen, anywhere. No, seriously, it fits in your pocket!",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 48
     },
     {
-      "category": "Sports Apex: Awards & Highlights",
-      "topic": "The GOAT Debate: Is LeBron's 2016 Block Still the Best Play Ever?",
-      "hook": "Was LeBron's chase-down block in 2016 the greatest play in NBA history? We're settling the GOAT debate.",
+      "category": "Sports Hot Takes & Game Recaps",
+      "topic": "The NFL's 'Phantom Foul' that cost the [Team A] the game last night: a referee conspiracy?",
+      "hook": "Was that REALLY a foul? Or did the refs just make history for all the wrong reasons in last night's game?",
       "voice_style": "dramatic",
-      "music_mood": "inspirational",
+      "music_mood": "intense",
       "target_duration": 42
     },
     {
-      "category": "Sports Apex: Awards & Highlights",
-      "topic": "Unseen Moments from the World Series Celebration that Went Viral",
-      "hook": "You saw the trophy lift, but did you see the *real* chaos behind the scenes? These moments went viral.",
-      "voice_style": "friendly",
+      "category": "Sports Hot Takes & Game Recaps",
+      "topic": "Why the [Underdog NBA Team] are secretly dark horses for the championship.",
+      "hook": "Everyone's sleeping on them, but THIS NBA team is about to shock the entire league and here's why.",
+      "voice_style": "authoritative",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Climate Chronicles & Weather Watch",
-      "topic": "The 'Blob' in the Pacific: How It's Changing Our Weather FOREVER",
-      "hook": "There's a giant, warm 'blob' in the Pacific, and it's silently rewriting our weather forecast for decades. What is it?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
       "target_duration": 47
     },
     {
-      "category": "Climate Chronicles & Weather Watch",
-      "topic": "City of the Future: How One City is Battling Rising Sea Levels with Floating Architecture",
-      "hook": "Imagine your city floating above the waves. One metropolis is making it a reality to defy rising sea levels.",
-      "voice_style": "inspirational",
+      "category": "Finance & Stock Market Snips",
+      "topic": "How fractional shares allow you to invest in big companies for under $100.",
+      "hook": "Want a piece of Apple or Amazon but don't have thousands? You can, and it's easier than you think.",
+      "voice_style": "friendly",
       "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Finance & Stock Market Snips",
+      "topic": "ESG investing: Making money while saving the planet? The rise of sustainable investments.",
+      "hook": "Your investments can actually *do* good. Is ESG investing the future, or just a trend?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Tech Wars & Gadget Reviews",
-      "topic": "iPhone 16 vs. Galaxy S25: The Hidden Feature That Will Decide The Winner",
-      "hook": "Forget cameras and processors. ONE hidden feature will decide the next smartphone war. Find out what it is!",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Tech Wars & Gadget Reviews",
-      "topic": "I Tested the $100 AI Pet Sitter \u2013 Was It a Genius Buy or a Total Bust?",
-      "hook": "I spent a hundred bucks on an AI pet sitter. Did it save my couch, or just confuse my cat? You won't believe the results.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Election Pulse: Voter Guides & News",
-      "topic": "Debunking Viral Election Misinformation: The 'Fake Ballot' Hoax",
-      "hook": "Seeing that 'fake ballot' post everywhere? Here's the truth you NEED to know before you share. Don't fall for the hoax.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Current Events & Viral Story Breakdowns",
+      "topic": "The shocking truth behind that viral 'Celebrity X' video \u2013 deepfake or real?",
+      "hook": "You won't believe what's happening with AI and viral videos. This one fooled everyone, but I dug deeper.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
       "target_duration": 48
     },
     {
-      "category": "Election Pulse: Voter Guides & News",
-      "topic": "What Actually Happens to Your Mail-In Ballot After You Send It? (Spoiler: It's Secure)",
-      "hook": "Ever wonder where your mail-in ballot *really* goes? I tracked one to show you the secure journey.",
-      "voice_style": "calm",
-      "music_mood": "mysterious",
+      "category": "Current Events & Viral Story Breakdowns",
+      "topic": "The 'Great [Town Name] Flamingo Takeover': Why hundreds of plastic birds are appearing overnight.",
+      "hook": "Forget petitions. This town found the most bizarre way to protest, and it's actually working!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Athlete Spotlight & Career Highlights",
+      "topic": "From career-ending injury to championship MVP: The incredible comeback of [Athlete Name].",
+      "hook": "They said his career was over. He said, 'Watch me.' This athlete's comeback story will inspire you.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 46
+    },
+    {
+      "category": "Athlete Spotlight & Career Highlights",
+      "topic": "[Athlete Name], the young phenom dominating the competitive [Niche Sport] scene.",
+      "hook": "You've never heard of this sport, but this kid is an absolute legend in it. Get ready to be amazed!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 44
     },
     {
-      "category": "Pop Culture & Influencer Insights",
-      "topic": "Why Everyone Is Suddenly Obsessed with 'Quiet Luxury' \u2013 And How to Get the Look",
-      "hook": "From TikTok to Hollywood, everyone's ditching bling for 'quiet luxury.' But what IS it, and how can you get in?",
-      "voice_style": "friendly",
+      "category": "Late Fall & Cozy Aesthetic",
+      "topic": "Transform your corner into the ultimate late-fall hygge reading haven.",
+      "hook": "Is your cozy meter broken? Let's fix it with this ultimate fall reading nook setup in under 5 minutes.",
+      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 41
-    },
-    {
-      "category": "Pop Culture & Influencer Insights",
-      "topic": "The Dark Side of Being a Child Influencer: What Parents Aren't Telling You",
-      "hook": "Behind the adorable smiles and brand deals, what's the real cost of being a child influencer? The truth is shocking.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
       "target_duration": 49
     },
     {
-      "category": "Web3 & Decentralized Future",
-      "topic": "Your Digital Identity in Web3: Why It's More Than Just an Avatar",
-      "hook": "Forget profile pictures. Your Web3 digital identity is about to change everything you know about online presence.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Late Fall & Cozy Aesthetic",
+      "topic": "The ultimate homemade spiced apple cider recipe for a cozy autumn evening.",
+      "hook": "Forget pumpkin spice. THIS is the scent of true fall comfort, and it's surprisingly easy to make.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Early Holiday Gift Guides",
+      "topic": "5 genius tech gadgets under $50 that *everyone* will actually want this holiday.",
+      "hook": "Stop buying boring gifts! These budget-friendly tech finds are game-changers for everyone on your list.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Web3 & Decentralized Future",
-      "topic": "Play-to-Earn Gaming: Is This the End of Traditional Gaming?",
-      "hook": "Imagine earning real money just by playing video games. Is play-to-earn the future, or just a fleeting trend?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Autumn Vibes & Seasonal Living",
-      "topic": "The Secret Ingredient for the BEST Pumpkin Spice Latte at Home (No Starbucks Needed!)",
-      "hook": "Your homemade pumpkin spice latte is missing ONE secret ingredient that even Starbucks doesn't use. Get ready to level up!",
+      "category": "Early Holiday Gift Guides",
+      "topic": "Eco-conscious gifting: 4 sustainable presents that don't cost the Earth.",
+      "hook": "Want to impress without the guilt? These sustainable gifts are chic, planet-friendly, and truly unique.",
       "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
+      "music_mood": "inspirational",
+      "target_duration": 47
     },
     {
-      "category": "Autumn Vibes & Seasonal Living",
-      "topic": "Cozy Fall Decor Hacks That Look Expensive But Cost Less Than $20",
-      "hook": "Want that 'rich autumn aesthetic' for under twenty bucks? I've got the decor hacks you NEED for a cozy home.",
+      "category": "DIY & Life Hacks",
+      "topic": "Instantly upgrade your old dresser with this peel-and-stick wallpaper hack.",
+      "hook": "Don't throw out that old furniture! Watch this 5-minute glow-up using a simple, budget-friendly hack.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 43
     },
     {
-      "category": "Last-Minute Halloween Haunts",
-      "topic": "DIY Creepy Cocktails: The One Ingredient That Makes Them GLOW in the Dark!",
-      "hook": "Want your Halloween cocktails to glow spookily in the dark? I've got the secret, non-toxic ingredient. Your party will be legendary!",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 41
-    },
-    {
-      "category": "Last-Minute Halloween Haunts",
-      "topic": "How to Turn Your Bedroom into a Haunted Asylum in 15 Minutes",
-      "hook": "No time for a costume? Turn your *entire bedroom* into a haunted asylum in just 15 minutes. It's shockingly easy!",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
+      "category": "DIY & Life Hacks",
+      "topic": "3 brilliant kitchen hacks to make your groceries last twice as long and reduce food waste.",
+      "hook": "Stop wasting food (and money)! These genius storage tricks will blow your mind and extend your groceries' life.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 46
     },
     {
-      "category": "Viral Challenges & Trend Hacks",
-      "topic": "The 'Invisible Shelf' Trend: Is It Genius or a Disaster Waiting to Happen?",
-      "hook": "Everyone's trying the 'invisible shelf' hack, but is it a decor marvel or just a ticking time bomb for your wall? Let's find out.",
-      "voice_style": "energetic",
+      "category": "Relatable Humor & Skits",
+      "topic": "WFH vs. My [Pet/Kid]: The never-ending battle for productivity and sanity.",
+      "hook": "My pet thinks 'work from home' means 'play with me 24/7.' Sound familiar? The struggle is real.",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Relatable Humor & Skits",
+      "topic": "When you replay that awkward grocery store interaction 500 times in your head.",
+      "hook": "Did I make eye contact for too long? Or not long enough? My brain at 3 AM replaying every social misstep.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
       "target_duration": 44
     },
     {
-      "category": "Viral Challenges & Trend Hacks",
-      "topic": "I Tried the 'One-Minute Productivity Boost' Hack \u2013 Did It Work or Just Waste My Time?",
-      "hook": "Can one minute *really* make you more productive? I put the viral 'micro-boost' hack to the test. The results surprised me!",
-      "voice_style": "friendly",
+      "category": "Micro-Vlogs & Daily Glimpses",
+      "topic": "My 5 AM productive morning routine for a calm and focused day.",
+      "hook": "Hate mornings? I found the secret to loving them (even at 5 AM) and starting your day right.",
+      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 47
+      "target_duration": 49
+    },
+    {
+      "category": "Micro-Vlogs & Daily Glimpses",
+      "topic": "A chaotic (but fun!) day in the life of a viral video creator.",
+      "hook": "You see the 60-second video, but here's what REALLY goes into making it. Get ready for some behind-the-scenes chaos!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
