@@ -1,215 +1,190 @@
 {
-  "generated_at": "2026-10-28T11:31:19.203980",
-  "valid_until": "2026-10-28T23:59:19.203990",
+  "generated_at": "2026-10-29T11:41:00.089492",
+  "valid_until": "2026-10-29T23:59:00.089504",
   "categories": [
-    "Stock Market Quick Takes",
-    "Sports Highlights & Analysis",
-    "Celebrity Gossip & Pop Culture",
-    "Science & Nature Explained",
-    "Life Hacks & Practical Tips",
-    "Future Tech & Space News",
-    "Daily News & Current Events",
-    "Fall Vibes & Halloween Spooks",
-    "Relatable Comedy & Skits",
-    "DIY & Home Renovation",
-    "Quick Recipes & Food Hacks",
-    "Fashion Trends & Style Tips",
-    "Travel Guides & Destination Spots",
-    "Personal Finance & Money Tips",
-    "\"Learn Something New\" Edutainment"
+    "Gaming News & Hype",
+    "Sports Analysis & Event Recaps",
+    "Geopolitical & Global News Explainers",
+    "Election & Political Commentary",
+    "Design, Aesthetics & Typography Trends",
+    "Fitness & Marathon Training",
+    "Cute & Wholesome Animal Content",
+    "Local Weather & Community Updates",
+    "Financial Market & Business Insights",
+    "Autumn & Holiday Season Lifestyle",
+    "Pop Culture & Entertainment",
+    "Educational Deep Dives & \"Did You Know?\"",
+    "Travel & City Exploration",
+    "Quick Life Hacks & DIY",
+    "Humor & Meme Culture"
   ],
   "concepts": [
     {
-      "category": "Stock Market Quick Takes",
-      "topic": "The Sudden Surge of AI Chip Stocks",
-      "hook": "Did you blink? Because AI chip stocks just added billions to their value, and here's why!",
+      "category": "Gaming News & Hype",
+      "topic": "The surprise reveal of 'Echoes of Aethelgard,' an indie RPG with a unique time-bending mechanic.",
+      "hook": "Did you just see that trailer? A new indie RPG just dropped a bomb, and it's NOT what you expect!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Stock Market Quick Takes",
-      "topic": "Understanding 'Bear Traps' in a Volatile Market",
-      "hook": "Think the market's crashing? It might just be a bear trap designed to trick you!",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Highlights & Analysis",
-      "topic": "The Controversial No-Call That Cost the Lakers the Game",
-      "hook": "Was it a foul, or just brilliant defense? This game-changing moment is dividing sports fans!",
-      "voice_style": "dramatic",
+      "category": "Gaming News & Hype",
+      "topic": "The rumored PlayStation 5 Pro specs leak and its potential impact on next-gen gaming.",
+      "hook": "Whispers are getting loud: The PS5 Pro might be packing a secret weapon that could change everything.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Sports Highlights & Analysis",
-      "topic": "Messi's Invisible Tactic: How He Still Dominates Without Sprinting",
-      "hook": "Everyone thinks Messi walks too much, but what if that's his secret weapon?",
-      "voice_style": "friendly",
+      "category": "Sports Analysis & Event Recaps",
+      "topic": "How a controversial offside call in the recent UEFA Champions League semi-final changed the game's outcome.",
+      "hook": "Was it truly offside? One whistle, one pixel, and a Champions League dream shattered forever.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis & Event Recaps",
+      "topic": "The improbable rise of a 17-year-old phenom in professional surfing's Challenger Series.",
+      "hook": "Remember the name Maya Rivas. At 17, she's not just riding waves, she's rewriting surfing history.",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Geopolitical & Global News Explainers",
+      "topic": "The immediate global implications of a recent rare earth minerals trade dispute between two major powers.",
+      "hook": "Why is everyone talking about rare earth minerals? Your smartphone's future might depend on it.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Geopolitical & Global News Explainers",
+      "topic": "Decoding the 'Belt and Road Initiative' and its impact on infrastructure in Sub-Saharan Africa.",
+      "hook": "What's really happening with China's 'Belt and Road' in Africa? It's more than just new roads.",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Election & Political Commentary",
+      "topic": "The effectiveness of micro-targeting in local election campaigns using neighborhood data.",
+      "hook": "Ever wonder how politicians know exactly what to say to *you*? It's not magic, it's micro-targeting.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Election & Political Commentary",
+      "topic": "Analyzing the proposed 'Universal Basic Income' pilot program in a specific US state.",
+      "hook": "What if the government just... gave you money? This state is about to find out.",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Celebrity Gossip & Pop Culture",
-      "topic": "Taylor Swift's Cryptic Post: Is a New Album Drop Imminent?",
-      "hook": "Swifties, gather 'round! Taylor just posted *this* and the internet is convinced a new album is coming!",
+      "category": "Design, Aesthetics & Typography Trends",
+      "topic": "The resurgence of 'Neo-Brutalism' in web design and its unexpected appeal.",
+      "hook": "Forget minimalist gradients! The internet is getting rough, raw, and surprisingly beautiful. Welcome to Neo-Brutalism.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Celebrity Gossip & Pop Culture",
-      "topic": "The TikTok Trend That Made Keanu Reeves a 'Girl Dad' Icon",
-      "hook": "How did a simple TikTok trend crown Keanu Reeves the internet's favorite 'Girl Dad'? You'll be surprised!",
+      "category": "Design, Aesthetics & Typography Trends",
+      "topic": "Why 'Kinetic Typography' is suddenly everywhere in viral video intros and branding.",
+      "hook": "Your favorite video intros are hiding a secret! It's not just words, it's a dance, and it's called Kinetic Typography.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Science & Nature Explained",
-      "topic": "The Real Reason Why Leaves Change Color in Fall",
-      "hook": "It's not just the cold! The stunning science behind fall's vibrant colors will blow your mind.",
+      "category": "Fitness & Marathon Training",
+      "topic": "The truth about 'carb-loading' myths and optimal pre-marathon nutrition strategies.",
+      "hook": "Pasta party before your marathon? Hold up! Your carb-loading strategy might be totally wrong.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fitness & Marathon Training",
+      "topic": "The surprising benefits of cold plunge therapy for post-marathon recovery.",
+      "hook": "I just ran 26.2 miles, and now I'm jumping into *ice water*? Here's why you should too.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Cute & Wholesome Animal Content",
+      "topic": "A golden retriever's viral quest to befriend every delivery driver on its route.",
+      "hook": "Meet Baxter: the world's most enthusiastic package inspector, and he just wants to be friends.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Cute & Wholesome Animal Content",
+      "topic": "The heartwarming story of a tiny orphaned owl being raised by a foster cat.",
+      "hook": "A fluffy cat... raising a baby owl? This isn't a fairy tale, it's real life and it's adorable.",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Science & Nature Explained",
-      "topic": "Why Octopuses Are Basically Aliens on Earth",
-      "hook": "Did you know octopuses have *three* hearts and can edit their own RNA? They're practically from another planet!",
+      "category": "Local Weather & Community Updates",
+      "topic": "How our city's unique microclimate causes extreme temperature swings within blocks.",
+      "hook": "Why is it sunny on my street, but hailing two blocks over? Our city has a weather secret.",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Life Hacks & Practical Tips",
-      "topic": "The 2-Minute Rule to Stop Procrastinating Instantly",
-      "hook": "Constantly putting things off? This incredibly simple 2-minute rule will change your life!",
+      "category": "Local Weather & Community Updates",
+      "topic": "The 'Paint the Town' initiative turning dull city walls into vibrant community murals.",
+      "hook": "Our grey walls are getting a glow-up! See how local artists are transforming our neighborhood, one brushstroke at a time.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Market & Business Insights",
+      "topic": "Why 'meme stocks' like GameStop still hold significant lessons for traditional investors.",
+      "hook": "Remember GameStop? It wasn't just a frenzy; it was a market earthquake with lessons for *every* investor.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Financial Market & Business Insights",
+      "topic": "The surprising boom of sustainable fashion rental services and their economic model.",
+      "hook": "Why buy when you can rent designer clothes? This booming business model is shaking up the fashion industry.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Life Hacks & Practical Tips",
-      "topic": "Genius Grocery Store Hacks That Cut Your Bill in Half",
-      "hook": "Stop throwing money away at the grocery store! These overlooked tips will slash your bill immediately.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Future Tech & Space News",
-      "topic": "Introducing 'Mind-Reading' AI: What It Means for Our Future",
-      "hook": "Scientists just created AI that can *literally* read your thoughts. Is this the future or a sci-fi nightmare?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Future Tech & Space News",
-      "topic": "NASA's Plan to Mine Asteroids for Trillions in Resources",
-      "hook": "Forget gold rushes, NASA is preparing for a *space* rush! Asteroids hold unimaginable wealth.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Daily News & Current Events",
-      "topic": "The Global Impact of the Latest UN Climate Summit Decisions",
-      "hook": "Another climate summit, another set of promises. But *these* new decisions could actually change everything.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Daily News & Current Events",
-      "topic": "Understanding the Escalating Water Crisis in the Southwestern US",
-      "hook": "It's not just a drought; it's a rapidly escalating water crisis threatening millions. Here's why you should care.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall Vibes & Halloween Spooks",
-      "topic": "DIY Potion Bottle Decor for a Spooky-Chic Halloween",
-      "hook": "Want to transform your home into a witch's lair without breaking the bank? These DIY potion bottles are spooktacular!",
+      "category": "Autumn & Holiday Season Lifestyle",
+      "topic": "Mastering the art of making a gourmet 'pumpkin spice latte' at home, better than the cafe.",
+      "hook": "Skip the line! I'm spilling the secrets to making the *perfect* pumpkin spice latte right in your kitchen.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Fall Vibes & Halloween Spooks",
-      "topic": "The Unsolved Mystery of the Dyatlov Pass Incident",
-      "hook": "Nine hikers vanished in the snow, only to be found mutilated and strangely dressed. What *really* happened at Dyatlov Pass?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Relatable Comedy & Skits",
-      "topic": "The Inner Monologue During a Bad Haircut",
-      "hook": "That moment when your stylist asks 'Do you like it?' but your brain is screaming 'NOOOOO!'",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Relatable Comedy & Skits",
-      "topic": "When You Try to Be Productive After Only 4 Hours of Sleep",
-      "hook": "Coffee isn't working, your brain feels like soup, and you're pretty sure you just put your keys in the fridge. We've all been there.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY & Home Renovation",
-      "topic": "Transforming a Tiny Laundry Nook into a Functional Oasis",
-      "hook": "Is your laundry area a disaster zone? Watch how we turned this cramped space into an organized, beautiful oasis!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY & Home Renovation",
-      "topic": "The Easiest IKEA Tarva Dresser Hack for a High-End Look",
-      "hook": "Don't just assemble that IKEA dresser\u2014transform it! This simple hack makes it look like a designer piece worth thousands.",
-      "voice_style": "friendly",
+      "category": "Autumn & Holiday Season Lifestyle",
+      "topic": "Unique 'hygge' inspired decor ideas for a cozy autumn living space on a budget.",
+      "hook": "Want that cozy, warm autumn feeling without breaking the bank? Get ready for some serious hygge hacks!",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
@@ -217,44 +192,69 @@
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
+      "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
