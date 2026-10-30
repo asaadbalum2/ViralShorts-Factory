@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-29T11:41:00.089492",
-  "valid_until": "2026-10-29T23:59:00.089504",
+  "generated_at": "2026-10-30T11:31:55.177230",
+  "valid_until": "2026-10-30T23:59:55.177241",
   "categories": [
-    "Gaming News & Hype",
-    "Sports Analysis & Event Recaps",
-    "Geopolitical & Global News Explainers",
-    "Election & Political Commentary",
-    "Design, Aesthetics & Typography Trends",
-    "Fitness & Marathon Training",
-    "Cute & Wholesome Animal Content",
-    "Local Weather & Community Updates",
-    "Financial Market & Business Insights",
-    "Autumn & Holiday Season Lifestyle",
-    "Pop Culture & Entertainment",
-    "Educational Deep Dives & \"Did You Know?\"",
-    "Travel & City Exploration",
-    "Quick Life Hacks & DIY",
-    "Humor & Meme Culture"
+    "Geopolitical Explainer Shorts (Ukraine Focus)",
+    "Market Pulse: Stock & Futures Updates (XOM, DJIA)",
+    "Crypto Deep Dives & Future Predictions (XRP Focus)",
+    "Halloween Hype & Spooky Season Shenanigans",
+    "Autumn Aesthetic & Cozy Lifestyle",
+    "Sports Star Spotlights & Play-by-Plays (Bryce Harper)",
+    "Global Culture & Travel Focus: Uganda",
+    "Nostalgia Nook: Music Icons & Throwbacks (Prince)",
+    "Weather Watch: Extreme & Weird Phenomena (Omaha Weather)",
+    "Life Hacks & DIY Solutions",
+    "Foodie Fast Fixes & Viral Recipes",
+    "Personal Finance & Investment Basics",
+    "Tech & Gadget Glimpses",
+    "Comedy Skits & Relatable Humor",
+    "Mindfulness & Wellness Mini-Guides"
   ],
   "concepts": [
     {
-      "category": "Gaming News & Hype",
-      "topic": "The surprise reveal of 'Echoes of Aethelgard,' an indie RPG with a unique time-bending mechanic.",
-      "hook": "Did you just see that trailer? A new indie RPG just dropped a bomb, and it's NOT what you expect!",
+      "category": "Geopolitical Explainer Shorts (Ukraine Focus)",
+      "topic": "The Strategic Importance of Bakhmut's Control for Russia & Ukraine",
+      "hook": "Why are both sides *still* fighting so fiercely over this seemingly small city?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Geopolitical Explainer Shorts (Ukraine Focus)",
+      "topic": "The West's Evolving Sanction Strategy: Impact on Russia's War Economy",
+      "hook": "Are Western sanctions *really* crippling Russia's war machine, or is there a loophole?",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Market Pulse: Stock & Futures Updates (XOM, DJIA)",
+      "topic": "ExxonMobil (XOM) Q3 Earnings: Beyond the Oil Price Headline",
+      "hook": "XOM just posted massive profits, but what's *really* driving their stock performance beyond crude oil?",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Gaming News & Hype",
-      "topic": "The rumored PlayStation 5 Pro specs leak and its potential impact on next-gen gaming.",
-      "hook": "Whispers are getting loud: The PS5 Pro might be packing a secret weapon that could change everything.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Market Pulse: Stock & Futures Updates (XOM, DJIA)",
+      "topic": "DJIA's Next Big Move: Why a 500-point swing could be imminent",
+      "hook": "The Dow Jones is teetering! Will it crash or soar next week? I'll tell you the key indicator.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Analysis & Event Recaps",
-      "topic": "How a controversial offside call in the recent UEFA Champions League semi-final changed the game's outcome.",
-      "hook": "Was it truly offside? One whistle, one pixel, and a Champions League dream shattered forever.",
+      "category": "Crypto Deep Dives & Future Predictions (XRP Focus)",
+      "topic": "XRP's SEC Lawsuit: The Ripple Effect on Altcoins and its Next Price Target",
+      "hook": "Is the SEC lawsuit finally over for XRP? And what does that mean for your crypto portfolio?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Crypto Deep Dives & Future Predictions (XRP Focus)",
+      "topic": "XRP Ledger's CBDC Potential: Why Governments are Watching Closely",
+      "hook": "Forget volatile prices for a second. Why are central banks secretly eyeing XRP's technology for their digital currencies?",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Halloween Hype & Spooky Season Shenanigans",
+      "topic": "Last-Minute DIY Spooky Treats That Will Gross Out Your Friends (in a good way!)",
+      "hook": "Don't have a Halloween treat ready? I'll show you three shockingly easy (and gross-looking) recipes!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Halloween Hype & Spooky Season Shenanigans",
+      "topic": "The True Origin of Jack-O'-Lanterns: It's NOT what you think!",
+      "hook": "You carve pumpkins every year, but do you know the *real* terrifying story behind the Jack-O'-Lantern?",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Aesthetic & Cozy Lifestyle",
+      "topic": "My Top 3 Secret Ingredients for the Ultimate Cozy Autumn Spice Latte (Better Than Any Cafe!)",
+      "hook": "Forget basic pumpkin spice! I'll reveal the three secret ingredients for *your* best autumn latte ever.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Aesthetic & Cozy Lifestyle",
+      "topic": "Transform Your Home: Budget-Friendly Autumn Decor Hacks Under $20",
+      "hook": "Want a super cozy autumn home without breaking the bank? I've got three decor hacks that cost less than your latte!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Star Spotlights & Play-by-Plays (Bryce Harper)",
+      "topic": "Bryce Harper's Unbelievable Playoff Bat Flip: Was it the Greatest Ever?",
+      "hook": "Remember Harper's legendary bat flip? We're breaking down *why* it wasn't just a flip, it was a statement!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Star Spotlights & Play-by-Plays (Bryce Harper)",
+      "topic": "Bryce Harper's Unsung Leadership: How He Elevates His Team Beyond the Home Runs",
+      "hook": "Everyone talks about Harper's power, but his *true* superpower is what he does for his team when he's not hitting dingers.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Culture & Travel Focus: Uganda",
+      "topic": "Gorilla Trekking in Bwindi: What You *Absolutely* Need to Know Before You Go",
+      "hook": "Dreaming of seeing gorillas in Uganda? I'll share the one vital tip nobody tells you about trekking in Bwindi!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Culture & Travel Focus: Uganda",
+      "topic": "Matoke & Rolex: Unpacking Uganda's Most Iconic Street Foods",
+      "hook": "Forget what you know about street food! We're diving into Uganda's legendary Matoke and the surprising 'Rolex' sandwich.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Nostalgia Nook: Music Icons & Throwbacks (Prince)",
+      "topic": "The Unreleased Vault: Prince's Secret Stash of Music & What We Might Still Hear",
+      "hook": "Did you know Prince left behind *thousands* of unreleased songs? The untold story of his legendary vault!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Nostalgia Nook: Music Icons & Throwbacks (Prince)",
+      "topic": "Prince's Iconic Purple Rain Performance: The Moment That Changed Music Forever",
+      "hook": "We're going back to 1984! The story behind Prince's *Purple Rain* and why it still gives us chills.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Weather Watch: Extreme & Weird Phenomena (Omaha Weather)",
+      "topic": "The Omaha Derecho of 2020: Rebuilding After an Inland Hurricane",
+      "hook": "Omaha was hit by an 'inland hurricane' in 2020! What *really* happens when a derecho tears through a city?",
       "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Sports Analysis & Event Recaps",
-      "topic": "The improbable rise of a 17-year-old phenom in professional surfing's Challenger Series.",
-      "hook": "Remember the name Maya Rivas. At 17, she's not just riding waves, she's rewriting surfing history.",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Geopolitical & Global News Explainers",
-      "topic": "The immediate global implications of a recent rare earth minerals trade dispute between two major powers.",
-      "hook": "Why is everyone talking about rare earth minerals? Your smartphone's future might depend on it.",
+      "category": "Weather Watch: Extreme & Weird Phenomena (Omaha Weather)",
+      "topic": "Tornado Alley Shifts: Why Omaha's Weather is Getting More Extreme",
+      "hook": "Is Omaha *really* seeing more tornadoes, or is it just our imagination? The science behind the shifting Tornado Alley.",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Geopolitical & Global News Explainers",
-      "topic": "Decoding the 'Belt and Road Initiative' and its impact on infrastructure in Sub-Saharan Africa.",
-      "hook": "What's really happening with China's 'Belt and Road' in Africa? It's more than just new roads.",
-      "voice_style": "calm",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Election & Political Commentary",
-      "topic": "The effectiveness of micro-targeting in local election campaigns using neighborhood data.",
-      "hook": "Ever wonder how politicians know exactly what to say to *you*? It's not magic, it's micro-targeting.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Election & Political Commentary",
-      "topic": "Analyzing the proposed 'Universal Basic Income' pilot program in a specific US state.",
-      "hook": "What if the government just... gave you money? This state is about to find out.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Design, Aesthetics & Typography Trends",
-      "topic": "The resurgence of 'Neo-Brutalism' in web design and its unexpected appeal.",
-      "hook": "Forget minimalist gradients! The internet is getting rough, raw, and surprisingly beautiful. Welcome to Neo-Brutalism.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Design, Aesthetics & Typography Trends",
-      "topic": "Why 'Kinetic Typography' is suddenly everywhere in viral video intros and branding.",
-      "hook": "Your favorite video intros are hiding a secret! It's not just words, it's a dance, and it's called Kinetic Typography.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Fitness & Marathon Training",
-      "topic": "The truth about 'carb-loading' myths and optimal pre-marathon nutrition strategies.",
-      "hook": "Pasta party before your marathon? Hold up! Your carb-loading strategy might be totally wrong.",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fitness & Marathon Training",
-      "topic": "The surprising benefits of cold plunge therapy for post-marathon recovery.",
-      "hook": "I just ran 26.2 miles, and now I'm jumping into *ice water*? Here's why you should too.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Cute & Wholesome Animal Content",
-      "topic": "A golden retriever's viral quest to befriend every delivery driver on its route.",
-      "hook": "Meet Baxter: the world's most enthusiastic package inspector, and he just wants to be friends.",
+      "category": "Life Hacks & DIY Solutions",
+      "topic": "The 3-Ingredient Hack to Make Your Old Sneakers Look Brand New",
+      "hook": "Don't throw out those dirty sneakers! I've got a 3-ingredient hack that'll make them sparkle like new.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Cute & Wholesome Animal Content",
-      "topic": "The heartwarming story of a tiny orphaned owl being raised by a foster cat.",
-      "hook": "A fluffy cat... raising a baby owl? This isn't a fairy tale, it's real life and it's adorable.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Local Weather & Community Updates",
-      "topic": "How our city's unique microclimate causes extreme temperature swings within blocks.",
-      "hook": "Why is it sunny on my street, but hailing two blocks over? Our city has a weather secret.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Local Weather & Community Updates",
-      "topic": "The 'Paint the Town' initiative turning dull city walls into vibrant community murals.",
-      "hook": "Our grey walls are getting a glow-up! See how local artists are transforming our neighborhood, one brushstroke at a time.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Financial Market & Business Insights",
-      "topic": "Why 'meme stocks' like GameStop still hold significant lessons for traditional investors.",
-      "hook": "Remember GameStop? It wasn't just a frenzy; it was a market earthquake with lessons for *every* investor.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Financial Market & Business Insights",
-      "topic": "The surprising boom of sustainable fashion rental services and their economic model.",
-      "hook": "Why buy when you can rent designer clothes? This booming business model is shaking up the fashion industry.",
+      "category": "Life Hacks & DIY Solutions",
+      "topic": "Banish Cable Clutter Forever: The Ultimate DIY Under-Desk Cable Management Solution",
+      "hook": "Your desk is a tangled mess of cables, right? I'll show you a super simple DIY to hide them all in under 10 minutes!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Autumn & Holiday Season Lifestyle",
-      "topic": "Mastering the art of making a gourmet 'pumpkin spice latte' at home, better than the cafe.",
-      "hook": "Skip the line! I'm spilling the secrets to making the *perfect* pumpkin spice latte right in your kitchen.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Autumn & Holiday Season Lifestyle",
-      "topic": "Unique 'hygge' inspired decor ideas for a cozy autumn living space on a budget.",
-      "hook": "Want that cozy, warm autumn feeling without breaking the bank? Get ready for some serious hygge hacks!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
