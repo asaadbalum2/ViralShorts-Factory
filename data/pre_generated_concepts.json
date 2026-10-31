@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-30T11:31:55.177230",
-  "valid_until": "2026-10-30T23:59:55.177241",
+  "generated_at": "2026-10-31T11:05:36.768883",
+  "valid_until": "2026-10-31T23:59:36.768893",
   "categories": [
-    "Geopolitical Explainer Shorts (Ukraine Focus)",
-    "Market Pulse: Stock & Futures Updates (XOM, DJIA)",
-    "Crypto Deep Dives & Future Predictions (XRP Focus)",
-    "Halloween Hype & Spooky Season Shenanigans",
-    "Autumn Aesthetic & Cozy Lifestyle",
-    "Sports Star Spotlights & Play-by-Plays (Bryce Harper)",
-    "Global Culture & Travel Focus: Uganda",
-    "Nostalgia Nook: Music Icons & Throwbacks (Prince)",
-    "Weather Watch: Extreme & Weird Phenomena (Omaha Weather)",
-    "Life Hacks & DIY Solutions",
-    "Foodie Fast Fixes & Viral Recipes",
-    "Personal Finance & Investment Basics",
-    "Tech & Gadget Glimpses",
-    "Comedy Skits & Relatable Humor",
-    "Mindfulness & Wellness Mini-Guides"
+    "Halloween & Spooky Season Content",
+    "NCAA Football & College Sports Updates",
+    "Crypto Market & Ethereum Price Analysis",
+    "Gaming News & Phantom Blade Zero Previews",
+    "Consumer Alerts & Product Recalls (e.g., Once Upon A Farm)",
+    "Legal Advice & Car Accident Attorney Tips",
+    "Mega Millions & Lottery Aspiration Content",
+    "Personal Finance & Investing Hacks",
+    "Relatable Humor & POV Skits",
+    "Seasonal DIY & Fall Decorating Ideas",
+    "Athlete Spotlights & Sports Journeys (e.g., Cedric Mullins)",
+    "Tech & Gadget Reviews",
+    "Community & Shared Experiences ('We' Focus)",
+    "Quick News & Current Events Summaries",
+    "True Crime & Mystery Explanations"
   ],
   "concepts": [
     {
-      "category": "Geopolitical Explainer Shorts (Ukraine Focus)",
-      "topic": "The Strategic Importance of Bakhmut's Control for Russia & Ukraine",
-      "hook": "Why are both sides *still* fighting so fiercely over this seemingly small city?",
-      "voice_style": "authoritative",
+      "category": "Halloween & Spooky Season Content",
+      "topic": "The Creepy True Story Behind Jack-O'-Lanterns",
+      "hook": "Forget what you think you know about Jack-O'-Lanterns... the real story is much darker and involves a trickster named Stingy Jack.",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Geopolitical Explainer Shorts (Ukraine Focus)",
-      "topic": "The West's Evolving Sanction Strategy: Impact on Russia's War Economy",
-      "hook": "Are Western sanctions *really* crippling Russia's war machine, or is there a loophole?",
-      "voice_style": "mysterious",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Market Pulse: Stock & Futures Updates (XOM, DJIA)",
-      "topic": "ExxonMobil (XOM) Q3 Earnings: Beyond the Oil Price Headline",
-      "hook": "XOM just posted massive profits, but what's *really* driving their stock performance beyond crude oil?",
+      "category": "Halloween & Spooky Season Content",
+      "topic": "DIY Haunted Mirror Prank for Spooky Season",
+      "hook": "Want to genuinely freak out your friends this Halloween without buying expensive props? This haunted mirror DIY will do the trick!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Market Pulse: Stock & Futures Updates (XOM, DJIA)",
-      "topic": "DJIA's Next Big Move: Why a 500-point swing could be imminent",
-      "hook": "The Dow Jones is teetering! Will it crash or soar next week? I'll tell you the key indicator.",
+      "category": "NCAA Football & College Sports Updates",
+      "topic": "Why This SEC Sleeper Team is Underrated for the Playoffs",
+      "hook": "Everyone's talking about the usual suspects, but there's ONE SEC team quietly building a resume that could shock the playoffs. Here's why.",
       "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Crypto Deep Dives & Future Predictions (XRP Focus)",
-      "topic": "XRP's SEC Lawsuit: The Ripple Effect on Altcoins and its Next Price Target",
-      "hook": "Is the SEC lawsuit finally over for XRP? And what does that mean for your crypto portfolio?",
+      "category": "NCAA Football & College Sports Updates",
+      "topic": "The Freshman QB Dominating Early Season Heisman Buzz",
+      "hook": "You won't believe which true freshman quarterback is already making waves for a potential Heisman trophy run this season! Their stats are insane.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Crypto Deep Dives & Future Predictions (XRP Focus)",
-      "topic": "XRP Ledger's CBDC Potential: Why Governments are Watching Closely",
-      "hook": "Forget volatile prices for a second. Why are central banks secretly eyeing XRP's technology for their digital currencies?",
-      "voice_style": "mysterious",
+      "category": "Crypto Market & Ethereum Price Analysis",
+      "topic": "Ethereum's Hidden Catalyst: The EIP-4844 Upgrade Impact",
+      "hook": "Think you know what's driving Ethereum's price? Most analysts are missing the true game-changer coming with EIP-4844 that could send it soaring.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 50
+    },
+    {
+      "category": "Crypto Market & Ethereum Price Analysis",
+      "topic": "Is Ethereum's Next Target $4,000? Key Resistance Levels Analyzed",
+      "hook": "Ethereum just hit a critical resistance level. Here\u2019s what analysts are saying about its next move to $4,000... or a potential pullback.",
+      "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Halloween Hype & Spooky Season Shenanigans",
-      "topic": "Last-Minute DIY Spooky Treats That Will Gross Out Your Friends (in a good way!)",
-      "hook": "Don't have a Halloween treat ready? I'll show you three shockingly easy (and gross-looking) recipes!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Gaming News & Phantom Blade Zero Previews",
+      "topic": "Phantom Blade Zero's 'S-Coin' Combat Mechanic Explained",
+      "hook": "Phantom Blade Zero's new trailer teased a mysterious 'S-Coin' system. What is it, and how will it revolutionize the game's combat?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Gaming News & Phantom Blade Zero Previews",
+      "topic": "Hidden Lore Details You Missed in the Phantom Blade Zero Showcase",
+      "hook": "Rewatched the Phantom Blade Zero trailer ten times? I guarantee you missed these crucial lore details that hint at a bigger, darker story.",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Halloween Hype & Spooky Season Shenanigans",
-      "topic": "The True Origin of Jack-O'-Lanterns: It's NOT what you think!",
-      "hook": "You carve pumpkins every year, but do you know the *real* terrifying story behind the Jack-O'-Lantern?",
+      "category": "Consumer Alerts & Product Recalls (e.g., Once Upon A Farm)",
+      "topic": "Urgent Recall: Once Upon A Farm Pouches & Potential Contamination",
+      "hook": "Parents, listen up! If you buy Once Upon A Farm pouches, there's a critical recall you need to know about RIGHT NOW for your kids' safety.",
       "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Consumer Alerts & Product Recalls (e.g., Once Upon A Farm)",
+      "topic": "Silent Danger: The Household Appliance Recall You Might Be Ignoring",
+      "hook": "There's a common household appliance sitting in your home right now that could be a fire hazard, and it's on a silent recall.",
+      "voice_style": "authoritative",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Autumn Aesthetic & Cozy Lifestyle",
-      "topic": "My Top 3 Secret Ingredients for the Ultimate Cozy Autumn Spice Latte (Better Than Any Cafe!)",
-      "hook": "Forget basic pumpkin spice! I'll reveal the three secret ingredients for *your* best autumn latte ever.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
+      "category": "Legal Advice & Car Accident Attorney Tips",
+      "topic": "DO NOT Say This After a Fender Bender!",
+      "hook": "Got into a minor car accident? The first words out of your mouth could cost you thousands in damages. Learn what NOT to say.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 40
     },
     {
-      "category": "Autumn Aesthetic & Cozy Lifestyle",
-      "topic": "Transform Your Home: Budget-Friendly Autumn Decor Hacks Under $20",
-      "hook": "Want a super cozy autumn home without breaking the bank? I've got three decor hacks that cost less than your latte!",
-      "voice_style": "energetic",
+      "category": "Legal Advice & Car Accident Attorney Tips",
+      "topic": "Your Dash Cam Footage: The Unexpected Evidence That Wins Car Accident Cases",
+      "hook": "Think your car accident case is cut and dry? The one piece of evidence you might not be considering could completely change everything.",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Sports Star Spotlights & Play-by-Plays (Bryce Harper)",
-      "topic": "Bryce Harper's Unbelievable Playoff Bat Flip: Was it the Greatest Ever?",
-      "hook": "Remember Harper's legendary bat flip? We're breaking down *why* it wasn't just a flip, it was a statement!",
+      "category": "Mega Millions & Lottery Aspiration Content",
+      "topic": "The First 24 Hours After Winning Mega Millions: What REALLY Happens",
+      "hook": "You just won Mega Millions. What's the very FIRST thing you should do, and what truly happens in those chaotic first 24 hours?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Mega Millions & Lottery Aspiration Content",
+      "topic": "Myth Busted: Why Lottery 'Hot Numbers' Are a Waste of Time",
+      "hook": "Everyone has their 'lucky' lottery numbers, but I'm here to tell you why playing 'hot numbers' is probably making you lose money. The math doesn't lie.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance & Investing Hacks",
+      "topic": "The 'Latte Factor' Fallacy: Why Your Daily Coffee Isn't Making You Poor",
+      "hook": "You've heard the 'latte factor' countless times, but I'm exposing why cutting your daily coffee isn't actually the secret to wealth. It's bigger than that.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Personal Finance & Investing Hacks",
+      "topic": "Micro-Investing Magic: Start Investing with Spare Change TODAY",
+      "hook": "Think you need thousands to start investing? Think again! I'll show you how to build a portfolio using just your spare change from everyday purchases.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Star Spotlights & Play-by-Plays (Bryce Harper)",
-      "topic": "Bryce Harper's Unsung Leadership: How He Elevates His Team Beyond the Home Runs",
-      "hook": "Everyone talks about Harper's power, but his *true* superpower is what he does for his team when he's not hitting dingers.",
+      "category": "Relatable Humor & POV Skits",
+      "topic": "POV: Trying to Debug Code After 3 Hours of Staring",
+      "hook": "POV: You've been staring at the same line of code for 3 hours, convinced it's wrong, only to find the problem was your own typo.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 40
+    },
+    {
+      "category": "Relatable Humor & POV Skits",
+      "topic": "POV: Your Brain During Small Talk at a Family Gathering",
+      "hook": "POV: You're trapped in small talk at a family gathering, and your brain is desperately trying to remember Aunt Carol's cat's name.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal DIY & Fall Decorating Ideas",
+      "topic": "No-Carve Pumpkin Decorating: Elegant & Easy Ideas",
+      "hook": "Tired of messy pumpkin carving? I'll show you three elegant, no-carve pumpkin decorating ideas that will elevate your fall decor instantly.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Seasonal DIY & Fall Decorating Ideas",
+      "topic": "Repurposing Summer Staples for Cozy Fall Vibes",
+      "hook": "Don't pack away those summer items just yet! I'll show you how to effortlessly transform them into cozy fall decor without buying anything new.",
       "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Culture & Travel Focus: Uganda",
-      "topic": "Gorilla Trekking in Bwindi: What You *Absolutely* Need to Know Before You Go",
-      "hook": "Dreaming of seeing gorillas in Uganda? I'll share the one vital tip nobody tells you about trekking in Bwindi!",
-      "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Global Culture & Travel Focus: Uganda",
-      "topic": "Matoke & Rolex: Unpacking Uganda's Most Iconic Street Foods",
-      "hook": "Forget what you know about street food! We're diving into Uganda's legendary Matoke and the surprising 'Rolex' sandwich.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Nostalgia Nook: Music Icons & Throwbacks (Prince)",
-      "topic": "The Unreleased Vault: Prince's Secret Stash of Music & What We Might Still Hear",
-      "hook": "Did you know Prince left behind *thousands* of unreleased songs? The untold story of his legendary vault!",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Nostalgia Nook: Music Icons & Throwbacks (Prince)",
-      "topic": "Prince's Iconic Purple Rain Performance: The Moment That Changed Music Forever",
-      "hook": "We're going back to 1984! The story behind Prince's *Purple Rain* and why it still gives us chills.",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Watch: Extreme & Weird Phenomena (Omaha Weather)",
-      "topic": "The Omaha Derecho of 2020: Rebuilding After an Inland Hurricane",
-      "hook": "Omaha was hit by an 'inland hurricane' in 2020! What *really* happens when a derecho tears through a city?",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Weather Watch: Extreme & Weird Phenomena (Omaha Weather)",
-      "topic": "Tornado Alley Shifts: Why Omaha's Weather is Getting More Extreme",
-      "hook": "Is Omaha *really* seeing more tornadoes, or is it just our imagination? The science behind the shifting Tornado Alley.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Life Hacks & DIY Solutions",
-      "topic": "The 3-Ingredient Hack to Make Your Old Sneakers Look Brand New",
-      "hook": "Don't throw out those dirty sneakers! I've got a 3-ingredient hack that'll make them sparkle like new.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Life Hacks & DIY Solutions",
-      "topic": "Banish Cable Clutter Forever: The Ultimate DIY Under-Desk Cable Management Solution",
-      "hook": "Your desk is a tangled mess of cables, right? I'll show you a super simple DIY to hide them all in under 10 minutes!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "rate": "+8%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+0%",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
