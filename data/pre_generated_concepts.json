@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-10-31T11:05:36.768883",
-  "valid_until": "2026-10-31T23:59:36.768893",
+  "generated_at": "2026-11-01T11:57:53.744308",
+  "valid_until": "2026-11-01T23:59:53.744318",
   "categories": [
-    "Halloween & Spooky Season Content",
-    "NCAA Football & College Sports Updates",
-    "Crypto Market & Ethereum Price Analysis",
-    "Gaming News & Phantom Blade Zero Previews",
-    "Consumer Alerts & Product Recalls (e.g., Once Upon A Farm)",
-    "Legal Advice & Car Accident Attorney Tips",
-    "Mega Millions & Lottery Aspiration Content",
-    "Personal Finance & Investing Hacks",
-    "Relatable Humor & POV Skits",
-    "Seasonal DIY & Fall Decorating Ideas",
-    "Athlete Spotlights & Sports Journeys (e.g., Cedric Mullins)",
-    "Tech & Gadget Reviews",
-    "Community & Shared Experiences ('We' Focus)",
-    "Quick News & Current Events Summaries",
-    "True Crime & Mystery Explanations"
+    "Election 2026: Early Voting & Analysis",
+    "Fantasy Sports & Betting Strategy",
+    "Global & Regional News Headlines",
+    "International Football Highlights & Commentary",
+    "Pop Culture & Nostalgia Rewinds",
+    "Audio Entertainment & Podcast Recommendations",
+    "November Seasonal Lifestyle & Cozy Aesthetic",
+    "Quick Recipes & Holiday Food Inspiration",
+    "DIY Home Projects & Creative Hacks",
+    "Productivity & Life Organization Tips",
+    "Comedy Skits & Viral Meme Trends",
+    "Educational \"Edutainment\" Shorts",
+    "Travel Dreams & Destination Spotlights",
+    "Gaming Reviews & Esport Updates",
+    "Pet & Animal Adventures"
   ],
   "concepts": [
     {
-      "category": "Halloween & Spooky Season Content",
-      "topic": "The Creepy True Story Behind Jack-O'-Lanterns",
-      "hook": "Forget what you think you know about Jack-O'-Lanterns... the real story is much darker and involves a trickster named Stingy Jack.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Election 2026: Early Voting & Analysis",
+      "topic": "The 'Sleeper Issues' that could swing swing states in 2026",
+      "hook": "Forget the headlines! These THREE overlooked local issues are secretly shaping the 2026 election landscape...",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Halloween & Spooky Season Content",
-      "topic": "DIY Haunted Mirror Prank for Spooky Season",
-      "hook": "Want to genuinely freak out your friends this Halloween without buying expensive props? This haunted mirror DIY will do the trick!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "NCAA Football & College Sports Updates",
-      "topic": "Why This SEC Sleeper Team is Underrated for the Playoffs",
-      "hook": "Everyone's talking about the usual suspects, but there's ONE SEC team quietly building a resume that could shock the playoffs. Here's why.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "NCAA Football & College Sports Updates",
-      "topic": "The Freshman QB Dominating Early Season Heisman Buzz",
-      "hook": "You won't believe which true freshman quarterback is already making waves for a potential Heisman trophy run this season! Their stats are insane.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Election 2026: Early Voting & Analysis",
+      "topic": "Debunking common myths about early voting registration deadlines",
+      "hook": "Think early voting is complicated? You're probably falling for THIS common misconception about deadlines and eligibility...",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Crypto Market & Ethereum Price Analysis",
-      "topic": "Ethereum's Hidden Catalyst: The EIP-4844 Upgrade Impact",
-      "hook": "Think you know what's driving Ethereum's price? Most analysts are missing the true game-changer coming with EIP-4844 that could send it soaring.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Crypto Market & Ethereum Price Analysis",
-      "topic": "Is Ethereum's Next Target $4,000? Key Resistance Levels Analyzed",
-      "hook": "Ethereum just hit a critical resistance level. Here\u2019s what analysts are saying about its next move to $4,000... or a potential pullback.",
-      "voice_style": "calm",
-      "music_mood": "chill",
+      "category": "Fantasy Sports & Betting Strategy",
+      "topic": "Identifying 'Value Sleepers' in early season fantasy football drafts (pre-season data analysis)",
+      "hook": "Your league mates are missing out! I found three hidden gems ready to explode in your fantasy draft, based on pre-season data...",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Gaming News & Phantom Blade Zero Previews",
-      "topic": "Phantom Blade Zero's 'S-Coin' Combat Mechanic Explained",
-      "hook": "Phantom Blade Zero's new trailer teased a mysterious 'S-Coin' system. What is it, and how will it revolutionize the game's combat?",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Gaming News & Phantom Blade Zero Previews",
-      "topic": "Hidden Lore Details You Missed in the Phantom Blade Zero Showcase",
-      "hook": "Rewatched the Phantom Blade Zero trailer ten times? I guarantee you missed these crucial lore details that hint at a bigger, darker story.",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
+      "category": "Fantasy Sports & Betting Strategy",
+      "topic": "The statistical fallacy of betting solely on 'home field advantage' in specific NBA matchups",
+      "hook": "Everyone says home court matters, but the numbers reveal a shocking truth for your NBA betting strategy in certain situations...",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Consumer Alerts & Product Recalls (e.g., Once Upon A Farm)",
-      "topic": "Urgent Recall: Once Upon A Farm Pouches & Potential Contamination",
-      "hook": "Parents, listen up! If you buy Once Upon A Farm pouches, there's a critical recall you need to know about RIGHT NOW for your kids' safety.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Consumer Alerts & Product Recalls (e.g., Once Upon A Farm)",
-      "topic": "Silent Danger: The Household Appliance Recall You Might Be Ignoring",
-      "hook": "There's a common household appliance sitting in your home right now that could be a fire hazard, and it's on a silent recall.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Global & Regional News Headlines",
+      "topic": "The unexpected environmental impact of recent deep-sea mining proposals in the Pacific",
+      "hook": "Beneath the waves, a silent battle is brewing that could change our planet forever. Are you ready for the deep-sea mining truth?",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 45
     },
     {
-      "category": "Legal Advice & Car Accident Attorney Tips",
-      "topic": "DO NOT Say This After a Fender Bender!",
-      "hook": "Got into a minor car accident? The first words out of your mouth could cost you thousands in damages. Learn what NOT to say.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Legal Advice & Car Accident Attorney Tips",
-      "topic": "Your Dash Cam Footage: The Unexpected Evidence That Wins Car Accident Cases",
-      "hook": "Think your car accident case is cut and dry? The one piece of evidence you might not be considering could completely change everything.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "category": "Global & Regional News Headlines",
+      "topic": "The rise of 'digital nomad visas' and their localized economic impact on Bali",
+      "hook": "Imagine working from a beach, legally. But what's the hidden cost for those already living in Bali as digital nomads flock there?",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Mega Millions & Lottery Aspiration Content",
-      "topic": "The First 24 Hours After Winning Mega Millions: What REALLY Happens",
-      "hook": "You just won Mega Millions. What's the very FIRST thing you should do, and what truly happens in those chaotic first 24 hours?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Mega Millions & Lottery Aspiration Content",
-      "topic": "Myth Busted: Why Lottery 'Hot Numbers' Are a Waste of Time",
-      "hook": "Everyone has their 'lucky' lottery numbers, but I'm here to tell you why playing 'hot numbers' is probably making you lose money. The math doesn't lie.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
+      "category": "International Football Highlights & Commentary",
+      "topic": "Tactical breakdown of Arsenal's inverted full-back strategy from their latest Champions League fixture",
+      "hook": "Did you REALLY understand Arsenal's secret weapon last Tuesday? Let's break down that tactical genius with clips...",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Personal Finance & Investing Hacks",
-      "topic": "The 'Latte Factor' Fallacy: Why Your Daily Coffee Isn't Making You Poor",
-      "hook": "You've heard the 'latte factor' countless times, but I'm exposing why cutting your daily coffee isn't actually the secret to wealth. It's bigger than that.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Personal Finance & Investing Hacks",
-      "topic": "Micro-Investing Magic: Start Investing with Spare Change TODAY",
-      "hook": "Think you need thousands to start investing? Think again! I'll show you how to build a portfolio using just your spare change from everyday purchases.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "International Football Highlights & Commentary",
+      "topic": "The surprising resurgence of a veteran striker in La Liga this season, defying critics",
+      "hook": "Everyone wrote him off, but this La Liga veteran just pulled off the comeback of the year. Here's how he did it...",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Relatable Humor & POV Skits",
-      "topic": "POV: Trying to Debug Code After 3 Hours of Staring",
-      "hook": "POV: You've been staring at the same line of code for 3 hours, convinced it's wrong, only to find the problem was your own typo.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Relatable Humor & POV Skits",
-      "topic": "POV: Your Brain During Small Talk at a Family Gathering",
-      "hook": "POV: You're trapped in small talk at a family gathering, and your brain is desperately trying to remember Aunt Carol's cat's name.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Pop Culture & Nostalgia Rewinds",
+      "topic": "The forgotten influence of early 2000s Cartoon Network shows on modern internet meme culture",
+      "hook": "Your favorite meme probably started here. Uncover the secret history of early 2000s Cartoon Network and internet culture...",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Seasonal DIY & Fall Decorating Ideas",
-      "topic": "No-Carve Pumpkin Decorating: Elegant & Easy Ideas",
-      "hook": "Tired of messy pumpkin carving? I'll show you three elegant, no-carve pumpkin decorating ideas that will elevate your fall decor instantly.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
+      "category": "Pop Culture & Nostalgia Rewinds",
+      "topic": "The 'lost endings' and fan theories of the cult classic 90s Nickelodeon show 'Are You Afraid of the Dark?'",
+      "hook": "What *really* happened in the final scene of 'Are You Afraid of the Dark?' Fans are still debating these wild theories...",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
     },
     {
-      "category": "Seasonal DIY & Fall Decorating Ideas",
-      "topic": "Repurposing Summer Staples for Cozy Fall Vibes",
-      "hook": "Don't pack away those summer items just yet! I'll show you how to effortlessly transform them into cozy fall decor without buying anything new.",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
+      "category": "Audio Entertainment & Podcast Recommendations",
+      "topic": "Underrated true crime podcasts that focus exclusively on historical cold cases from the 19th century",
+      "hook": "Tired of the same old true crime? These historical cold case podcasts will keep you up all night, no modern clich\u00e9s, just chilling history.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Audio Entertainment & Podcast Recommendations",
+      "topic": "Short-form audio dramas (under 20 minutes) perfect for a quick commute or coffee break",
+      "hook": "Only got 15 minutes? These bite-sized audio dramas pack more punch than a full TV episode, perfect for your commute.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "November Seasonal Lifestyle & Cozy Aesthetic",
+      "topic": "Creating an 'Indoor Hygge Nook' for ultimate November coziness on a budget",
+      "hook": "Don't just survive November, thrive in it! Transform any corner into your ultimate cozy escape with these budget Hygge secrets.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "November Seasonal Lifestyle & Cozy Aesthetic",
+      "topic": "DIY scented pinecones using natural essential oils for a toxic-free home fragrance",
+      "hook": "Forget expensive candles! Make your home smell like an enchanted forest with these simple, natural DIY pinecones and essential oils.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Recipes & Holiday Food Inspiration",
+      "topic": "5-minute microwave mug cake recipes for last-minute fall dessert cravings (pumpkin spice focus)",
+      "hook": "Craving dessert NOW? Skip the baking! This 5-minute pumpkin spice mug cake is pure magic in a microwave.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Quick Recipes & Holiday Food Inspiration",
+      "topic": "Healthy, make-ahead Thanksgiving side dishes that aren't mashed potatoes or green bean casserole",
+      "hook": "Tired of soggy green beans? These *healthy* Thanksgiving sides will steal the show, and you can make them *ahead* of time!",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY Home Projects & Creative Hacks",
+      "topic": "Upcycling old denim jeans into stylish, no-sew storage bins for home organization",
+      "hook": "Don't throw out those old jeans! Turn them into incredibly chic and functional storage bins with this easy, no-sew hack.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY Home Projects & Creative Hacks",
+      "topic": "Simple LED strip lighting ideas to elevate a gaming setup or small workspace for under $30",
+      "hook": "Level up your battle station! These cheap LED lighting tricks will transform your gaming setup from drab to fab, for under $30.",
+      "voice_style": "Friendly",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Life Organization Tips",
+      "topic": "The 'Two-Minute Rule' for tackling procrastination on small, nagging tasks instantly",
+      "hook": "Stop putting it off! This simple 'two-minute rule' will instantly crush your procrastination on nagging little tasks, guaranteed.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Life Organization Tips",
+      "topic": "Digital decluttering strategies for a more focused and intentional phone home screen setup",
+      "hook": "Is your phone screen a chaotic mess? Reclaim your focus with these game-changing digital decluttering hacks for your home screen.",
+      "voice_style": "Authoritative",
+      "music_mood": "Chill",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
       "voice": "en-GB-RyanNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
+      "rate": "+0%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
