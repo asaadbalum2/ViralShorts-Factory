@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-01T11:57:53.744308",
-  "valid_until": "2026-11-01T23:59:53.744318",
+  "generated_at": "2026-11-02T13:45:10.712714",
+  "valid_until": "2026-11-02T23:59:10.712726",
   "categories": [
-    "Election 2026: Early Voting & Analysis",
-    "Fantasy Sports & Betting Strategy",
-    "Global & Regional News Headlines",
-    "International Football Highlights & Commentary",
-    "Pop Culture & Nostalgia Rewinds",
-    "Audio Entertainment & Podcast Recommendations",
-    "November Seasonal Lifestyle & Cozy Aesthetic",
-    "Quick Recipes & Holiday Food Inspiration",
-    "DIY Home Projects & Creative Hacks",
+    "Weather Preparedness & Climate Impacts",
+    "Celebrity Buzz & Iconic Moments",
+    "Market Movers & Investment Insights",
+    "Esports & Gaming Event Recaps",
+    "Autumn Aesthetic & Cozy Home Decor",
+    "Holiday Recipe Hacks & Meal Prep",
+    "DIY & Craft Projects for Fall/Winter",
+    "Tech Gadget Reviews & Future Trends",
     "Productivity & Life Organization Tips",
-    "Comedy Skits & Viral Meme Trends",
-    "Educational \"Edutainment\" Shorts",
-    "Travel Dreams & Destination Spotlights",
-    "Gaming Reviews & Esport Updates",
-    "Pet & Animal Adventures"
+    "Local News & Community Support Stories",
+    "\"Did You Know?\" Edutainment (Science & History)",
+    "Mental Health & Wellness for Changing Seasons",
+    "Pop Culture Nostalgia & Throwbacks",
+    "Pet Adventures & Animal Content",
+    "Short-form Comedy & Relatable Skits"
   ],
   "concepts": [
     {
-      "category": "Election 2026: Early Voting & Analysis",
-      "topic": "The 'Sleeper Issues' that could swing swing states in 2026",
-      "hook": "Forget the headlines! These THREE overlooked local issues are secretly shaping the 2026 election landscape...",
+      "category": "Weather Preparedness & Climate Impacts",
+      "topic": "Emergency Kit Essentials for Unexpected Winter Power Outages",
+      "hook": "Did you know your phone charger could be your biggest enemy during a winter power outage? Here's what you REALLY need.",
       "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Election 2026: Early Voting & Analysis",
-      "topic": "Debunking common myths about early voting registration deadlines",
-      "hook": "Think early voting is complicated? You're probably falling for THIS common misconception about deadlines and eligibility...",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Fantasy Sports & Betting Strategy",
-      "topic": "Identifying 'Value Sleepers' in early season fantasy football drafts (pre-season data analysis)",
-      "hook": "Your league mates are missing out! I found three hidden gems ready to explode in your fantasy draft, based on pre-season data...",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Fantasy Sports & Betting Strategy",
-      "topic": "The statistical fallacy of betting solely on 'home field advantage' in specific NBA matchups",
-      "hook": "Everyone says home court matters, but the numbers reveal a shocking truth for your NBA betting strategy in certain situations...",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Global & Regional News Headlines",
-      "topic": "The unexpected environmental impact of recent deep-sea mining proposals in the Pacific",
-      "hook": "Beneath the waves, a silent battle is brewing that could change our planet forever. Are you ready for the deep-sea mining truth?",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Global & Regional News Headlines",
-      "topic": "The rise of 'digital nomad visas' and their localized economic impact on Bali",
-      "hook": "Imagine working from a beach, legally. But what's the hidden cost for those already living in Bali as digital nomads flock there?",
-      "voice_style": "Calm",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "International Football Highlights & Commentary",
-      "topic": "Tactical breakdown of Arsenal's inverted full-back strategy from their latest Champions League fixture",
-      "hook": "Did you REALLY understand Arsenal's secret weapon last Tuesday? Let's break down that tactical genius with clips...",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "International Football Highlights & Commentary",
-      "topic": "The surprising resurgence of a veteran striker in La Liga this season, defying critics",
-      "hook": "Everyone wrote him off, but this La Liga veteran just pulled off the comeback of the year. Here's how he did it...",
-      "voice_style": "Dramatic",
       "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Pop Culture & Nostalgia Rewinds",
-      "topic": "The forgotten influence of early 2000s Cartoon Network shows on modern internet meme culture",
-      "hook": "Your favorite meme probably started here. Uncover the secret history of early 2000s Cartoon Network and internet culture...",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Weather Preparedness & Climate Impacts",
+      "topic": "Debunking Common Myths About Local Climate Change & Extreme Weather Shifts",
+      "hook": "Thinking that unusually warm October day is 'just weather'? Think again. We're breaking down the local climate impacts you're missing.",
+      "voice_style": "Energetic",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Pop Culture & Nostalgia Rewinds",
-      "topic": "The 'lost endings' and fan theories of the cult classic 90s Nickelodeon show 'Are You Afraid of the Dark?'",
-      "hook": "What *really* happened in the final scene of 'Are You Afraid of the Dark?' Fans are still debating these wild theories...",
+      "category": "Celebrity Buzz & Iconic Moments",
+      "topic": "The Real Backstage Story Behind *That* Viral Red Carpet Fashion Fail",
+      "hook": "Everyone saw the dress disaster, but nobody knows the chaotic 5 minutes backstage that led to it. Until now.",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Buzz & Iconic Moments",
+      "topic": "Unexpected Celebrity Cameos That Broke the Internet This Month (You Missed Them!)",
+      "hook": "Your favorite actor just popped up in the wildest place, and you completely missed it! Get ready for some jaw-dropping moments.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Market Movers & Investment Insights",
+      "topic": "Why This Obscure Micro-Cap Stock Just Skyrocketed Overnight by 500%",
+      "hook": "Sleeping on penny stocks? One just made its early investors millionaires overnight, and you didn't hear a peep. Here's why.",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Market Movers & Investment Insights",
+      "topic": "The Stealthy Tech IPO That Could Redefine the Future of Urban Living",
+      "hook": "Forget AI. There's a stealth tech company about to go public that's changing *everything* about how we live in cities.",
       "voice_style": "Mysterious",
       "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Audio Entertainment & Podcast Recommendations",
-      "topic": "Underrated true crime podcasts that focus exclusively on historical cold cases from the 19th century",
-      "hook": "Tired of the same old true crime? These historical cold case podcasts will keep you up all night, no modern clich\u00e9s, just chilling history.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
+      "category": "Esports & Gaming Event Recaps",
+      "topic": "The Unbelievable Upset That Shook the Latest LoL Worlds Semifinals to Its Core",
+      "hook": "No one, and I mean NO ONE, saw this team coming. The crowd's reaction? Priceless. Relive the biggest shocker of LoL Worlds!",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
+      "target_duration": 40
     },
     {
-      "category": "Audio Entertainment & Podcast Recommendations",
-      "topic": "Short-form audio dramas (under 20 minutes) perfect for a quick commute or coffee break",
-      "hook": "Only got 15 minutes? These bite-sized audio dramas pack more punch than a full TV episode, perfect for your commute.",
+      "category": "Esports & Gaming Event Recaps",
+      "topic": "Top 5 Must-See, Insane Clutch Plays From the Fortnite Championship Finals",
+      "hook": "If you blinked, you missed the most insane clutch plays from the Fortnite Finals. Luckily, I've got all five legendary moments right here.",
       "voice_style": "Energetic",
       "music_mood": "Upbeat",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "November Seasonal Lifestyle & Cozy Aesthetic",
-      "topic": "Creating an 'Indoor Hygge Nook' for ultimate November coziness on a budget",
-      "hook": "Don't just survive November, thrive in it! Transform any corner into your ultimate cozy escape with these budget Hygge secrets.",
+      "category": "Autumn Aesthetic & Cozy Home Decor",
+      "topic": "Transforming Your Bedroom into a Hygge Haven for Fall in Under an Hour",
+      "hook": "Your bedroom is about to become your ultimate autumn escape. Seriously, you won't want to leave after these simple hygge hacks.",
       "voice_style": "Calm",
       "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "November Seasonal Lifestyle & Cozy Aesthetic",
-      "topic": "DIY scented pinecones using natural essential oils for a toxic-free home fragrance",
-      "hook": "Forget expensive candles! Make your home smell like an enchanted forest with these simple, natural DIY pinecones and essential oils.",
+      "category": "Autumn Aesthetic & Cozy Home Decor",
+      "topic": "DIY Rustic Fall Centerpieces Under $20 Using Nature's Treasures",
+      "hook": "Who needs expensive decor when you can create a stunning fall centerpiece for less than your pumpkin spice latte? Let's get crafting!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Holiday Recipe Hacks & Meal Prep",
+      "topic": "The 15-Minute Turkey Gravy Hack That Tastes Exactly Like Grandma's Secret Recipe",
+      "hook": "Stop stressing about lumpy gravy! This 15-minute secret will make your holiday meal legendary, no pan drippings required.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Holiday Recipe Hacks & Meal Prep",
+      "topic": "Freezer-Friendly Holiday Cookie Dough That Saves Your Sanity (and Time!)",
+      "hook": "Imagine holiday baking without the last-minute panic. This cookie dough hack is your new best friend for stress-free treats.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "DIY & Craft Projects for Fall/Winter",
+      "topic": "Upcycling Old Sweaters into Cozy, Designer-Quality Pet Beds for Winter",
+      "hook": "Don't throw away that old sweater! Your furry friend's new favorite, super cozy winter bed is just a few stitches away.",
       "voice_style": "Friendly",
       "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Quick Recipes & Holiday Food Inspiration",
-      "topic": "5-minute microwave mug cake recipes for last-minute fall dessert cravings (pumpkin spice focus)",
-      "hook": "Craving dessert NOW? Skip the baking! This 5-minute pumpkin spice mug cake is pure magic in a microwave.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "DIY & Craft Projects for Fall/Winter",
+      "topic": "Creating Enchanting Glowing Mason Jar Lanterns for a Magical Winter Patio",
+      "hook": "Transform boring mason jars into enchanting winter lanterns that will mesmerize your guests and light up your cold nights.",
+      "voice_style": "Mysterious",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "Quick Recipes & Holiday Food Inspiration",
-      "topic": "Healthy, make-ahead Thanksgiving side dishes that aren't mashed potatoes or green bean casserole",
-      "hook": "Tired of soggy green beans? These *healthy* Thanksgiving sides will steal the show, and you can make them *ahead* of time!",
+      "category": "Tech Gadget Reviews & Future Trends",
+      "topic": "Unboxing the 'Invisible' Smart Home Assistant That Anticipates Your Every Move",
+      "hook": "This new smart home gadget isn't just listening, it's anticipating your every move before you even think it. Is it genius or terrifying?",
+      "voice_style": "Mysterious",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech Gadget Reviews & Future Trends",
+      "topic": "Why Your Next Phone Might Not Have a Screen (The Rise of Tactile AI)",
+      "hook": "Screens are OUT. The future of mobile tech is here, and it's nothing like you've ever imagined. Prepare for tactile AI.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "Productivity & Life Organization Tips",
+      "topic": "The 'Zero Inbox' Email Strategy That Actually Works in 5 Minutes a Day",
+      "hook": "Is your inbox a digital black hole? I've got the 5-minute trick that will make 'zero inbox' your reality, effortlessly.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Productivity & Life Organization Tips",
+      "topic": "How to Master the 'Deep Work' Technique to Boost Focus by 300% (No Distractions)",
+      "hook": "Scrolling less, achieving more. This 'deep work' secret will unlock your brain's true focus potential and skyrocket your output.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Local News & Community Support Stories",
+      "topic": "The Anonymous 'Coffee Angel' Secretly Paying for Strangers' Drinks in Our Town",
+      "hook": "Someone in our town is secretly spreading joy, one cup of coffee at a time. Can we find the mysterious 'Coffee Angel'?",
       "voice_style": "Friendly",
       "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "DIY Home Projects & Creative Hacks",
-      "topic": "Upcycling old denim jeans into stylish, no-sew storage bins for home organization",
-      "hook": "Don't throw out those old jeans! Turn them into incredibly chic and functional storage bins with this easy, no-sew hack.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Projects & Creative Hacks",
-      "topic": "Simple LED strip lighting ideas to elevate a gaming setup or small workspace for under $30",
-      "hook": "Level up your battle station! These cheap LED lighting tricks will transform your gaming setup from drab to fab, for under $30.",
-      "voice_style": "Friendly",
-      "music_mood": "Intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Productivity & Life Organization Tips",
-      "topic": "The 'Two-Minute Rule' for tackling procrastination on small, nagging tasks instantly",
-      "hook": "Stop putting it off! This simple 'two-minute rule' will instantly crush your procrastination on nagging little tasks, guaranteed.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Productivity & Life Organization Tips",
-      "topic": "Digital decluttering strategies for a more focused and intentional phone home screen setup",
-      "hook": "Is your phone screen a chaotic mess? Reclaim your focus with these game-changing digital decluttering hacks for your home screen.",
-      "voice_style": "Authoritative",
-      "music_mood": "Chill",
+      "category": "Local News & Community Support Stories",
+      "topic": "Local Teenager's Grassroots Initiative to Collect 500 Winter Coats for the Homeless",
+      "hook": "While others are playing games, one local teen is making a massive difference, aiming to collect 500 winter coats for our homeless community.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
