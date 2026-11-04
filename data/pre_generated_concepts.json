@@ -1,182 +1,182 @@
 {
-  "generated_at": "2026-11-03T12:57:03.987260",
-  "valid_until": "2026-11-03T23:59:03.987270",
+  "generated_at": "2026-11-04T13:12:07.785263",
+  "valid_until": "2026-11-04T23:59:07.785274",
   "categories": [
-    "2026 Election Analysis & Candidate Spotlights",
-    "Voter Education & Provisional Ballot Explainers",
-    "Political Commentary & Satire (Midterms Focus)",
-    "Extreme Weather Updates & Preparedness Tips",
-    "Early Holiday Shopping & Black Friday Deal Predictions",
-    "Retail Inventory & Shop Stock Alerts",
-    "National Sandwich Day Recipes & Food Challenges",
-    "Seasonal Fashion & Winter Wardrobe Transitions",
-    "DIY Home Decor & Fall/Winter Crafting",
-    "Budget-Friendly Meal Prep & Kitchen Hacks",
-    "Personal Finance & Pre-Holiday Budgeting",
-    "Mental Wellness & Self-Care Routines",
-    "Tech Gadget Reviews & Holiday Wishlist Ideas",
-    "Pop Culture & Entertainment News Catch-Up",
-    "Local Community News & Human Interest Stories"
+    "Sports Injury Updates & Athlete Recovery",
+    "Stock Market & Tech Investing Quick Takes",
+    "Celebrity Throwbacks & \"Where Are They Now?\"",
+    "Restaurant Review & Food Hack Videos",
+    "Holiday Season Planning & Forecasts",
+    "Business Leader Spotlights & Industry Insights",
+    "Daily News & Trending Topics Recap",
+    "NFL Game Analysis & Fantasy Football Tips",
+    "Pro Tennis Highlights & Player Journeys",
+    "Personal Finance & Budgeting Hacks",
+    "Viral Food Challenges & Dining Experiences",
+    "Women in Leadership & Empowerment",
+    "Winter Weather & Seasonal Travel Prep",
+    "Pop Culture Deep Dives & Explainer Videos",
+    "Morning Show Style Lifestyle Segments"
   ],
   "concepts": [
     {
-      "category": "2026 Election Analysis & Candidate Spotlights",
-      "topic": "The unexpected dark horse candidate everyone's sleeping on for 2026.",
-      "hook": "Forget the frontrunners! There's a wildcard candidate for 2026 you NEED to know about right now...",
+      "category": "Sports Injury Updates & Athlete Recovery",
+      "topic": "The untold story behind Joel Embiid's meniscus tear recovery ahead of playoffs.",
+      "hook": "Did you know Embiid's meniscus tear *almost* ended his season for good? The recovery secret they didn't want you to see...",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Injury Updates & Athlete Recovery",
+      "topic": "How innovative cryotherapy is speeding up F1 driver recovery after high-G races and preventing chronic pain.",
+      "hook": "Imagine stepping out of a freezing chamber feeling brand new... but is this extreme F1 recovery hack actually safe?",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Stock Market & Tech Investing Quick Takes",
+      "topic": "Why NVIDIA's latest AI chip announcement *didn't* send its stock soaring as expected, and what that means for investors.",
+      "hook": "NVIDIA just dropped a bombshell AI chip... so why isn't the stock market reacting? The real reason will surprise you.",
+      "voice_style": "authoritative",
       "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "2026 Election Analysis & Candidate Spotlights",
-      "topic": "How state-level races in 2024 are quietly shaping the 2026 national landscape.",
-      "hook": "Think 2024 is just about *this* year? Wrong! The real chess game for 2026 is happening in these 3 unexpected states...",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Voter Education & Provisional Ballot Explainers",
-      "topic": "Demystifying the 'provisional ballot': when you get one and why it matters.",
-      "hook": "Got a provisional ballot? Don't panic! Here's exactly what it means for your vote to count.",
+      "category": "Stock Market & Tech Investing Quick Takes",
+      "topic": "The unexpected surge in 'green energy' penny stocks: Is it a trap or a hidden opportunity for early investors?",
+      "hook": "Penny stocks usually scream 'DANGER!', but this green energy trend could be different... or is it just another pump and dump?",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 50
     },
     {
-      "category": "Voter Education & Provisional Ballot Explainers",
-      "topic": "3 common voter registration myths debunked before the next election cycle.",
-      "hook": "You think you're registered? Think again! These 3 voter registration myths could stop you from voting.",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Political Commentary & Satire (Midterms Focus)",
-      "topic": "The most ridiculous soundbite from the last mid-term debate that broke the internet.",
-      "hook": "Remember that one debate clip from the midterms that made you say, 'Did they REALLY just say that?' Let's relive it.",
+      "category": "Celebrity Throwbacks & \"Where Are They Now?\"",
+      "topic": "Remember the child star from 'Home Alone'? Macaulay Culkin's surprising journey post-fame and current ventures.",
+      "hook": "The face that launched a thousand Christmas memes... but what REALLY happened to Macaulay Culkin after Kevin McCallister?",
       "voice_style": "dramatic",
-      "music_mood": "upbeat",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Political Commentary & Satire (Midterms Focus)",
-      "topic": "If politicians were reality TV stars during the midterms, who would win 'Most Dramatic Exit'?",
-      "hook": "Forget policy, let's talk drama! If the midterms were a reality show, these candidates would be nominated for 'Most Dramatic Exit'.",
+      "category": "Celebrity Throwbacks & \"Where Are They Now?\"",
+      "topic": "The pop-punk princess Avril Lavigne: Is she *really* making a comeback, or is the internet's clone theory true?",
+      "hook": "Conspiracy theory or epic comeback? Let's talk about Avril Lavigne... and the 'Melissa' theory that still haunts fans.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Restaurant Review & Food Hack Videos",
+      "topic": "Uncovering the *secret menu* items at your local Starbucks that baristas don't want you to know about.",
+      "hook": "Your Starbucks order is about to get a whole lot more interesting... I found the secret menu items they keep hidden!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Restaurant Review & Food Hack Videos",
+      "topic": "The viral TikTok hack for making a gourmet grilled cheese sandwich using only a coffee maker.",
+      "hook": "You won't BELIEVE the gourmet grilled cheese I made... with a coffee maker?! This viral hack actually works!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Extreme Weather Updates & Preparedness Tips",
-      "topic": "The 'microburst' phenomenon: why your local forecast might be missing it and how to prepare.",
-      "hook": "Your weather app isn't telling you everything. What's a microburst, and why is it going to hit your neighborhood like a localized tornado?",
+      "category": "Holiday Season Planning & Forecasts",
+      "topic": "Black Friday 2024: The *one* product category expected to sell out first (and how to snag it before anyone else).",
+      "hook": "Forget TVs! THIS is the item everyone's fighting for this Black Friday... and if you blink, you'll miss it.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Holiday Season Planning & Forecasts",
+      "topic": "Winter travel forecast 2024: Avoid the crowds and save a fortune with these unexpected, budget-friendly destinations.",
+      "hook": "Dreaming of a winter getaway but dreading the crowds and prices? I've got your secret, wallet-friendly spots!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 50
+    },
+    {
+      "category": "Business Leader Spotlights & Industry Insights",
+      "topic": "The rise of Sam Altman: How OpenAI's leader is shaping the future of AI and surviving boardroom drama.",
+      "hook": "He was fired, then rehired in 5 days. What's the real story behind Sam Altman's power and his vision for AI?",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Business Leader Spotlights & Industry Insights",
+      "topic": "Why the '4-day work week' movement is gaining traction in unexpected industries and what it means for your job.",
+      "hook": "Imagine Fridays off, every week! Is the 4-day work week a utopian dream or a coming reality for your industry?",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Daily News & Trending Topics Recap",
+      "topic": "The latest TikTok privacy lawsuit: What it means for your data, your favorite app, and the future of social media.",
+      "hook": "Your TikTok account could be at risk... and you won't believe why this massive privacy lawsuit matters to you.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Daily News & Trending Topics Recap",
+      "topic": "The viral 'AI girlfriend' phenomenon: Is it harmless fun, a technological leap, or a societal red flag?",
+      "hook": "People are dating AI... and it's getting weird. Is the 'AI girlfriend' trend cute or concerning?",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 40
+    },
+    {
+      "category": "NFL Game Analysis & Fantasy Football Tips",
+      "topic": "The *under-the-radar* WR sleeper pick who could win you your fantasy league this season if you draft them now.",
+      "hook": "Everyone's chasing the big names, but this WR could be your secret weapon! Don't tell your league mates...",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "NFL Game Analysis & Fantasy Football Tips",
+      "topic": "The surprising statistic that reveals why this Super Bowl contender is actually vulnerable despite their winning streak.",
+      "hook": "They look invincible, but one hidden stat reveals their Achilles' heel... and it could cost them the Super Bowl.",
       "voice_style": "authoritative",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Extreme Weather Updates & Preparedness Tips",
-      "topic": "Essential emergency kit items for unexpected winter power outages you haven't thought of.",
-      "hook": "Winter is coming, and so are potential power outages. You've got blankets, but do you have THIS for emergencies?",
+      "category": "Pro Tennis Highlights & Player Journeys",
+      "topic": "Carlos Alcaraz's secret training regimen that propelled him to world No. 1 so quickly and shattered records.",
+      "hook": "How did Alcaraz dominate tennis so fast? His training secrets are wild, and they're changing the game!",
+      "voice_style": "inspirational",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Pro Tennis Highlights & Player Journeys",
+      "topic": "The emotional comeback story of Serena Williams' final Grand Slam appearance and the legacy she left behind.",
+      "hook": "The greatest of all time... but her final bow was pure drama. Relive Serena's emotional last Grand Slam.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Personal Finance & Budgeting Hacks",
+      "topic": "The 'envelope system' for cash budgeting: A forgotten hack saving people thousands monthly in today's digital age.",
+      "hook": "Tired of your money disappearing? This old-school trick is making a huge comeback and saving people thousands!",
       "voice_style": "friendly",
       "music_mood": "chill",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Early Holiday Shopping & Black Friday Deal Predictions",
-      "topic": "Predicting the 3 'doorbuster' tech deals for Black Friday 2024 based on leaked intel.",
-      "hook": "Want to know the TOP 3 tech doorbusters for Black Friday before anyone else? My sources say...",
+      "category": "Personal Finance & Budgeting Hacks",
+      "topic": "How to score *free flights* using credit card points without going into debt: The ultimate travel hack.",
+      "hook": "Imagine flying anywhere for FREE! It's not a scam, it's a strategy. I'll show you how to get free flights without debt.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Early Holiday Shopping & Black Friday Deal Predictions",
-      "topic": "The early holiday toy trend that will sell out first, according to toy industry insiders.",
-      "hook": "Don't wait till December! This year's hottest holiday toy is already flying off shelves, and I know which one it is.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Retail Inventory & Shop Stock Alerts",
-      "topic": "PlayStation 5 restock alert: The specific retailers dropping consoles this week.",
-      "hook": "PS5 hunters, listen UP! I've got the scoop on exactly which retailers are restocking the PlayStation 5 this week.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Retail Inventory & Shop Stock Alerts",
-      "topic": "Limited edition sneaker drops coming this month and how to secure your pair.",
-      "hook": "Sneakerheads, your wallets are in danger! These ultra-limited edition drops are happening THIS month, here's how to snag 'em.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "National Sandwich Day Recipes & Food Challenges",
-      "topic": "The 'Impossible Sandwich Challenge': Can you recreate this viral 5-layer monstrosity?",
-      "hook": "National Sandwich Day is coming, and I'm issuing the ultimate challenge: The 5-Layer Impossible Sandwich. Can YOU build it?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "National Sandwich Day Recipes & Food Challenges",
-      "topic": "My secret ingredient for the ultimate gourmet grilled cheese (it's NOT butter!).",
-      "hook": "You think you know grilled cheese? Prepare to be amazed. My secret ingredient for the ULTIMATE gooey, crispy masterpiece is NOT butter.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Seasonal Fashion & Winter Wardrobe Transitions",
-      "topic": "The one 'ugly' winter trend from the 90s that's making a chic comeback.",
-      "hook": "Get ready to cringe and then buy! That one 'ugly' winter trend from the 90s is back, and fashionistas are OBSESSED.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Seasonal Fashion & Winter Wardrobe Transitions",
-      "topic": "How to master 'layering without bulk' for a stylish winter look.",
-      "hook": "Tired of looking like a marshmallow in winter? Here's how to layer like a pro without adding an ounce of bulk.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Decor & Fall/Winter Crafting",
-      "topic": "Dollar Store DIY: Transforming basic items into high-end fall centerpieces.",
-      "hook": "Don't spend a fortune on fall decor! I'm showing you how to turn Dollar Store finds into stunning, high-end centerpieces.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Home Decor & Fall/Winter Crafting",
-      "topic": "The viral 'cozy corner' hack for winter: no renovation needed!",
-      "hook": "Want that perfect cozy winter nook without renovating your entire house? This viral hack will transform any corner.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Budget-Friendly Meal Prep & Kitchen Hacks",
-      "topic": "5 meals for under $5 each that will last you all week.",
-      "hook": "Inflation got your grocery budget screaming? I'm showing you 5 delicious, healthy meals for under $5 each that last ALL week!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Budget-Friendly Meal Prep & Kitchen Hacks",
-      "topic": "The 'no-chop' meal prep shortcut for busy weeknights that saves hours.",
-      "hook": "Hate chopping? Me too! This no-chop meal prep hack will save you hours in the kitchen for busy weeknights.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
       "target_duration": 45
     }
   ],
@@ -184,77 +184,77 @@
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "+8%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
