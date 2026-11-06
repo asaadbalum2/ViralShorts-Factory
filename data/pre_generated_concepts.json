@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-05T13:25:46.631846",
-  "valid_until": "2026-11-05T23:59:46.631856",
+  "generated_at": "2026-11-06T13:09:06.593626",
+  "valid_until": "2026-11-06T23:59:06.593635",
   "categories": [
-    "Celebrity Scoop & Style Updates",
-    "Sports Analysis & Athlete Spotlights",
-    "Financial Market News & Investing Tips",
-    "Local Current Events & Community Impact",
-    "Trending Audio & Viral Voice Content",
-    "Autumn Lifestyle & Early Holiday Prep",
-    "Quick & Easy Meal Hacks",
-    "DIY Home Projects & Organization",
-    "Wellness Routines & Mental Health Awareness",
-    "Pop Culture Commentary & Theories",
-    "Fashion & Beauty Tutorials (Inspired by Stars)",
-    "Tech Reviews & Gadget Must-Haves",
-    "Relatable Comedy & POV Skits",
-    "Day in the Life & Productivity Hacks",
-    "Educational Micro-Content & 'Did You Know?'"
+    "Global Market & Investment Insights",
+    "Tech & Gaming Industry News",
+    "Political & Policy Debates",
+    "International Current Events & Geopolitics",
+    "Niche Music & Cultural Spotlights",
+    "Professional Sports & Athlete Features",
+    "Personal Finance & Economic Literacy",
+    "Holiday Prep & Seasonal Lifestyle",
+    "Quick Culinary & Food Trends",
+    "Educational 'Explainers' & Life Hacks",
+    "Travel & Cultural Exploration",
+    "Wellness, Fitness & Mental Health",
+    "Comedy & Relatable Skits",
+    "Beauty & Fashion Trends",
+    "DIY & Home Improvement Projects"
   ],
   "concepts": [
     {
-      "category": "Celebrity Scoop & Style Updates",
-      "topic": "Taylor Swift's Eras Tour Merch Resale Market Spike",
-      "hook": "Did you know Swifties are turning Eras Tour merch into a gold mine? The numbers are insane!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Global Market & Investment Insights",
+      "topic": "The Surprising Impact of Japan's Weak Yen on Your Daily Life",
+      "hook": "Ever wonder why your tech gadgets are getting pricier, even if they're not from Japan? The Yen might be the culprit.",
+      "voice_style": "Authoritative",
+      "music_mood": "Mysterious",
       "target_duration": 45
     },
     {
-      "category": "Celebrity Scoop & Style Updates",
-      "topic": "The Unexpected Return of 'Quiet Luxury' Trend by Zendaya",
-      "hook": "Zendaya just redefined 'quiet luxury' fashion on the red carpet, and it's not what you think. Is this the end of flashy logos?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
+      "category": "Global Market & Investment Insights",
+      "topic": "Are 'Magnificent Seven' Stocks a Bubble or the Future?",
+      "hook": "Nvidia, Apple, Microsoft... The 'Magnificent Seven' dominate markets. Is this the new tech boom, or are we heading for a bust?",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Tech & Gaming Industry News",
+      "topic": "Epic Games vs. Apple: The Metaverse Implications You Missed",
+      "hook": "The Epic Games vs. Apple battle just got a shocking twist, and it could completely change how you experience the metaverse.",
+      "voice_style": "Dramatic",
+      "music_mood": "Intense",
       "target_duration": 48
     },
     {
-      "category": "Sports Analysis & Athlete Spotlights",
-      "topic": "The Unseen Mental Fortitude of Simone Biles' Comeback",
-      "hook": "Everyone saw Simone Biles' historic vault, but what *really* fueled her mental comeback? It's more than just physical strength.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 40
-    },
-    {
-      "category": "Sports Analysis & Athlete Spotlights",
-      "topic": "Why the Denver Nuggets' Nikola Jokic is the NBA's Most Underrated Passer",
-      "hook": "Forget the dunks \u2013 Nikola Jokic just pulled off a pass that defied physics. How does he see those plays nobody else does?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 47
-    },
-    {
-      "category": "Financial Market News & Investing Tips",
-      "topic": "Understanding the Impact of AI on the Semiconductor Stock Market",
-      "hook": "AI is booming, but *which* semiconductor stocks are truly set to explode, and which are just hype? Don't get left behind.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Tech & Gaming Industry News",
+      "topic": "AI Game Dev: Is Your Favorite Indie Studio Using Bots?",
+      "hook": "From generating art to writing dialogue, AI is silently infiltrating game development. Is your favorite indie studio part of the revolution, or risking its soul?",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
       "target_duration": 42
     },
     {
-      "category": "Financial Market News & Investing Tips",
-      "topic": "The 'Dollar-Cost Averaging' Strategy for Beginners in a Volatile Market",
-      "hook": "Panic selling? Stop! This one simple investing strategy can save your portfolio in a choppy market and actually boost returns.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Political & Policy Debates",
+      "topic": "The 'Right to Repair' Movement: Why Tech Giants Are Terrified",
+      "hook": "Your broken iPhone, that faulty washing machine... What if you could fix them easily? The 'Right to Repair' movement is gaining traction, and big tech is NOT happy.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Political & Policy Debates",
+      "topic": "Universal Basic Income: Alaska's Unsung Success Story?",
+      "hook": "Imagine getting a regular check from the government, no strings attached. UBI sounds radical, but one US state has been doing it for decades with surprising results.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 47
+    },
+    {
+      "category": "International Current Events & Geopolitics",
+      "topic": "The Silent Race for Rare Earth Minerals: Who Controls Your Future Tech?",
+      "hook": "Your smartphone, your electric car \u2013 they all depend on rare earth minerals. There's a silent geopolitical battle raging for control, and the stakes couldn't be higher.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
       "target_duration": 40
     },
     {
-      "category": "Local Current Events & Community Impact",
-      "topic": "The Rise of Community Gardens in Urban Areas: A Local Success Story",
-      "hook": "Empty lot to vibrant harvest? See how one local initiative transformed our neighborhood, fostering community and fresh food access.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Local Current Events & Community Impact",
-      "topic": "How the New City Bike Lane Policy is Affecting Small Businesses",
-      "hook": "Our city just installed new bike lanes, but are they *helping* or *hurting* local businesses? We asked the owners directly.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 49
-    },
-    {
-      "category": "Trending Audio & Viral Voice Content",
-      "topic": "Deconstructing the 'Girl Dinner' Trend and Its Unexpected Origin",
-      "hook": "You've seen 'Girl Dinner,' but do you know the *real* story behind this viral food phenomenon? It's deeper than you think.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "International Current Events & Geopolitics",
+      "topic": "Sudan's Overlooked Humanitarian Crisis: Why Isn't It Front Page?",
+      "hook": "While the world focuses elsewhere, Sudan is facing one of the most severe humanitarian crises in recent history. Why is it getting so little attention?",
+      "voice_style": "Dramatic",
+      "music_mood": "Mysterious",
       "target_duration": 43
     },
     {
-      "category": "Trending Audio & Viral Voice Content",
-      "topic": "The Unexpected Power of the 'It's About Drive, It's About Power' Audio",
-      "hook": "That 'Rock' audio? It's not just a meme; it's secretly motivating millions. Here's why this viral sound is pure genius.",
-      "voice_style": "inspirational",
-      "music_mood": "intense",
+      "category": "Niche Music & Cultural Spotlights",
+      "topic": "The Electrifying World of Indonesian Dangdut Music",
+      "hook": "Forget K-Pop for a moment. Have you heard of Dangdut? This Indonesian genre is a vibrant mix of traditional and modern, and it's taking over stages.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Autumn Lifestyle & Early Holiday Prep",
-      "topic": "DIY Pumpkin Spice Syrup for Coffee Lovers (No Artificial Flavors!)",
-      "hook": "Ditch the store-bought syrup! This homemade pumpkin spice recipe will change your autumn coffee game forever, and it's so easy.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Niche Music & Cultural Spotlights",
+      "topic": "The Vinyl Revival: Is It Pure Nostalgia or Superior Sound?",
+      "hook": "Vinyl records are back, breaking sales records! But is the resurgence truly about superior audio quality, or are we just chasing a romanticized past?",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Autumn Lifestyle & Early Holiday Prep",
-      "topic": "The Ultimate Cozy Fall Reading Nook Makeover on a Budget",
-      "hook": "Want a Pinterest-worthy autumn reading nook without breaking the bank? I'll show you how to create ultimate coziness with thrift store finds.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Professional Sports & Athlete Features",
+      "topic": "Futsal: The Indoor Football Taking Over the World (Soon)",
+      "hook": "You think you know football? Get ready for Futsal, the fast-paced indoor version that's producing some of the world's most skilled players and might just eclipse its outdoor cousin.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 48
     },
     {
-      "category": "Quick & Easy Meal Hacks",
-      "topic": "The 10-Minute One-Pan Garlic Parmesan Pasta You Need to Try",
-      "hook": "You're 10 minutes away from the easiest, creamiest garlic parmesan pasta ever. Seriously, only ONE pan!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Quick & Easy Meal Hacks",
-      "topic": "Upgrade Your Instant Ramen with These Unexpected Pantry Staples",
-      "hook": "Tired of boring instant ramen? These 3 secret ingredients will transform it into a gourmet meal, no chef skills required.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Professional Sports & Athlete Features",
+      "topic": "Naomi Osaka's Resilient Return: Beyond the Tennis Court",
+      "hook": "After stepping away for mental health, Naomi Osaka is back! Her journey isn't just about winning Grand Slams, it's about courage, vulnerability, and resilience.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
       "target_duration": 44
     },
     {
-      "category": "DIY Home Projects & Organization",
-      "topic": "Customizing IKEA Kallax Shelves for a Built-In Look",
-      "hook": "Turn your basic IKEA Kallax unit into a high-end built-in. It's easier than you think and looks custom!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 47
-    },
-    {
-      "category": "DIY Home Projects & Organization",
-      "topic": "The Ultimate Under-Sink Kitchen Organization Hack for Small Spaces",
-      "hook": "Your chaotic under-sink cabinet is stressing you out. I found the genius solution you haven't seen yet \u2013 it's a game-changer!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Wellness Routines & Mental Health Awareness",
-      "topic": "The 5-Minute 'Emotional Check-In' Routine to Reduce Daily Stress",
-      "hook": "Feeling overwhelmed? This tiny daily habit can drastically improve your mental clarity in just 5 minutes. Try it tonight.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Wellness Routines & Mental Health Awareness",
-      "topic": "Debunking the Myth of 'Toxic Positivity' in Self-Care",
-      "hook": "Is your 'positive vibes only' mantra actually making things worse? Let's talk about the dangers of toxic positivity and how to avoid it.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Personal Finance & Economic Literacy",
+      "topic": "Geo-Arbitrage: Live Like Royalty on a Remote Work Salary",
+      "hook": "What if you could earn a US salary and live somewhere with a fraction of the cost of living? Welcome to geo-arbitrage, the ultimate financial hack for digital nomads.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Pop Culture Commentary & Theories",
-      "topic": "The Secret Meaning Behind Taylor Swift's 'Vault Tracks' Lyric Clues",
-      "hook": "Taylor Swift fans, pause! Are her 'Vault Tracks' lyrics actually hinting at a secret future project? The clues are all there.",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 49
+      "category": "Personal Finance & Economic Literacy",
+      "topic": "The Hidden Fees Eating Your Investment Returns",
+      "hook": "You're investing for your future, but are invisible fees quietly devouring your hard-earned gains? Discover the hidden charges costing you thousands!",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
+      "target_duration": 40
     },
     {
-      "category": "Pop Culture Commentary & Theories",
-      "topic": "Why 'Succession's' Ending Was Both Predictable and Revolutionary",
-      "hook": "The 'Succession' finale divided fans, but was its controversial ending actually perfect? I'm breaking down every shocking moment.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
+      "category": "Holiday Prep & Seasonal Lifestyle",
+      "topic": "Eco-Friendly Gift Wrapping: Ditch Single-Use Paper!",
+      "hook": "The holidays are coming, and so is a mountain of waste! Learn genius eco-friendly gift wrapping hacks that look stunning and save the planet.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Holiday Prep & Seasonal Lifestyle",
+      "topic": "Fall Fashion Hacks: Master Layering Without the Bulk",
+      "hook": "Autumn's chill is here, and layering is key! But how do you stay warm and stylish without looking like a puffy marshmallow? I've got the secrets.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Quick Culinary & Food Trends",
+      "topic": "The Viral 'Butter Board' Trend: Genius or Food Safety Nightmare?",
+      "hook": "Butter, herbs, bread... The 'butter board' is everywhere! Is this viral food trend a culinary masterpiece or a germ-spreading disaster waiting to happen?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Culinary & Food Trends",
+      "topic": "5 Unexpected Foods You MUST Try in Your Air Fryer",
+      "hook": "You think your air fryer is just for fries? Think again! I'm revealing 5 mind-blowing foods you didn't know you could make perfectly crispy in minutes.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Educational 'Explainers' & Life Hacks",
+      "topic": "The Pomodoro Technique: Instantly Double Your Productivity",
+      "hook": "Struggling to focus? The Pomodoro Technique promises to skyrocket your productivity in just 25-minute bursts. I'll show you how to master it today.",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 40
+    },
+    {
+      "category": "Educational 'Explainers' & Life Hacks",
+      "topic": "How to Spot Deepfakes: Protecting Yourself from AI Deception",
+      "hook": "That viral video, that shocking audio clip... Was it real, or a deepfake? As AI gets smarter, knowing how to spot these fakes is crucial for your safety.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
       "target_duration": 48
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
       "rate": "+5%",
       "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
       "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
