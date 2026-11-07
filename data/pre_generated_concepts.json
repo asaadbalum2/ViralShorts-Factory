@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-06T13:09:06.593626",
-  "valid_until": "2026-11-06T23:59:06.593635",
+  "generated_at": "2026-11-07T11:52:56.864768",
+  "valid_until": "2026-11-07T23:59:56.864775",
   "categories": [
-    "Global Market & Investment Insights",
-    "Tech & Gaming Industry News",
-    "Political & Policy Debates",
-    "International Current Events & Geopolitics",
-    "Niche Music & Cultural Spotlights",
-    "Professional Sports & Athlete Features",
-    "Personal Finance & Economic Literacy",
-    "Holiday Prep & Seasonal Lifestyle",
-    "Quick Culinary & Food Trends",
-    "Educational 'Explainers' & Life Hacks",
-    "Travel & Cultural Exploration",
-    "Wellness, Fitness & Mental Health",
-    "Comedy & Relatable Skits",
-    "Beauty & Fashion Trends",
-    "DIY & Home Improvement Projects"
+    "Sports Analysis & Fan Culture",
+    "Legal & True Crime Explainers",
+    "Celebrity & Influencer Lifestyle",
+    "Ethical & Societal Debates",
+    "Seasonal & Holiday Prep (Fall/Winter 2026)",
+    "Athlete Tributes & Sports History",
+    "High School & Youth Sports Spotlights",
+    "Golf Lifestyle & Travel",
+    "TV & Movie BTS/Reviews",
+    "Educational Deep Dives",
+    "Personal Finance & Career Hacks",
+    "Food & Drink Trends",
+    "Fashion & Beauty Trends",
+    "AI & Emerging Tech",
+    "Relatable Comedy & Skits"
   ],
   "concepts": [
     {
-      "category": "Global Market & Investment Insights",
-      "topic": "The Surprising Impact of Japan's Weak Yen on Your Daily Life",
-      "hook": "Ever wonder why your tech gadgets are getting pricier, even if they're not from Japan? The Yen might be the culprit.",
-      "voice_style": "Authoritative",
-      "music_mood": "Mysterious",
+      "category": "Sports Analysis & Fan Culture",
+      "topic": "Why the 'Curse of the Billy Goat' still haunts Chicago Cubs fans.",
+      "hook": "Did one stubborn goat really stop a baseball team from winning for over 100 years?",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Global Market & Investment Insights",
-      "topic": "Are 'Magnificent Seven' Stocks a Bubble or the Future?",
-      "hook": "Nvidia, Apple, Microsoft... The 'Magnificent Seven' dominate markets. Is this the new tech boom, or are we heading for a bust?",
-      "voice_style": "Energetic",
-      "music_mood": "Intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Tech & Gaming Industry News",
-      "topic": "Epic Games vs. Apple: The Metaverse Implications You Missed",
-      "hook": "The Epic Games vs. Apple battle just got a shocking twist, and it could completely change how you experience the metaverse.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Tech & Gaming Industry News",
-      "topic": "AI Game Dev: Is Your Favorite Indie Studio Using Bots?",
-      "hook": "From generating art to writing dialogue, AI is silently infiltrating game development. Is your favorite indie studio part of the revolution, or risking its soul?",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "Political & Policy Debates",
-      "topic": "The 'Right to Repair' Movement: Why Tech Giants Are Terrified",
-      "hook": "Your broken iPhone, that faulty washing machine... What if you could fix them easily? The 'Right to Repair' movement is gaining traction, and big tech is NOT happy.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Legal & True Crime Explainers",
+      "topic": "The 'Affluenza' defense: How privilege impacted a shocking drunk driving case.",
+      "hook": "Can someone be too rich to understand right from wrong? This case says yes.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Political & Policy Debates",
-      "topic": "Universal Basic Income: Alaska's Unsung Success Story?",
-      "hook": "Imagine getting a regular check from the government, no strings attached. UBI sounds radical, but one US state has been doing it for decades with surprising results.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 47
-    },
-    {
-      "category": "International Current Events & Geopolitics",
-      "topic": "The Silent Race for Rare Earth Minerals: Who Controls Your Future Tech?",
-      "hook": "Your smartphone, your electric car \u2013 they all depend on rare earth minerals. There's a silent geopolitical battle raging for control, and the stakes couldn't be higher.",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "International Current Events & Geopolitics",
-      "topic": "Sudan's Overlooked Humanitarian Crisis: Why Isn't It Front Page?",
-      "hook": "While the world focuses elsewhere, Sudan is facing one of the most severe humanitarian crises in recent history. Why is it getting so little attention?",
-      "voice_style": "Dramatic",
-      "music_mood": "Mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Niche Music & Cultural Spotlights",
-      "topic": "The Electrifying World of Indonesian Dangdut Music",
-      "hook": "Forget K-Pop for a moment. Have you heard of Dangdut? This Indonesian genre is a vibrant mix of traditional and modern, and it's taking over stages.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Celebrity & Influencer Lifestyle",
+      "topic": "The secret algorithm behind MrBeast's YouTube dominance and viral success.",
+      "hook": "Ever wonder how MrBeast ALWAYS goes viral? It's not just luck, it's a formula.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Niche Music & Cultural Spotlights",
-      "topic": "The Vinyl Revival: Is It Pure Nostalgia or Superior Sound?",
-      "hook": "Vinyl records are back, breaking sales records! But is the resurgence truly about superior audio quality, or are we just chasing a romanticized past?",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Professional Sports & Athlete Features",
-      "topic": "Futsal: The Indoor Football Taking Over the World (Soon)",
-      "hook": "You think you know football? Get ready for Futsal, the fast-paced indoor version that's producing some of the world's most skilled players and might just eclipse its outdoor cousin.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Professional Sports & Athlete Features",
-      "topic": "Naomi Osaka's Resilient Return: Beyond the Tennis Court",
-      "hook": "After stepping away for mental health, Naomi Osaka is back! Her journey isn't just about winning Grand Slams, it's about courage, vulnerability, and resilience.",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "Personal Finance & Economic Literacy",
-      "topic": "Geo-Arbitrage: Live Like Royalty on a Remote Work Salary",
-      "hook": "What if you could earn a US salary and live somewhere with a fraction of the cost of living? Welcome to geo-arbitrage, the ultimate financial hack for digital nomads.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Ethical & Societal Debates",
+      "topic": "Should AI-generated art be protected by copyright law?",
+      "hook": "If a robot paints a masterpiece, who owns it? The answer is more complex than you think.",
+      "voice_style": "calm",
+      "music_mood": "chill",
       "target_duration": 45
     },
     {
-      "category": "Personal Finance & Economic Literacy",
-      "topic": "The Hidden Fees Eating Your Investment Returns",
-      "hook": "You're investing for your future, but are invisible fees quietly devouring your hard-earned gains? Discover the hidden charges costing you thousands!",
-      "voice_style": "Authoritative",
-      "music_mood": "Dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Holiday Prep & Seasonal Lifestyle",
-      "topic": "Eco-Friendly Gift Wrapping: Ditch Single-Use Paper!",
-      "hook": "The holidays are coming, and so is a mountain of waste! Learn genius eco-friendly gift wrapping hacks that look stunning and save the planet.",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Holiday Prep & Seasonal Lifestyle",
-      "topic": "Fall Fashion Hacks: Master Layering Without the Bulk",
-      "hook": "Autumn's chill is here, and layering is key! But how do you stay warm and stylish without looking like a puffy marshmallow? I've got the secrets.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Quick Culinary & Food Trends",
-      "topic": "The Viral 'Butter Board' Trend: Genius or Food Safety Nightmare?",
-      "hook": "Butter, herbs, bread... The 'butter board' is everywhere! Is this viral food trend a culinary masterpiece or a germ-spreading disaster waiting to happen?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Quick Culinary & Food Trends",
-      "topic": "5 Unexpected Foods You MUST Try in Your Air Fryer",
-      "hook": "You think your air fryer is just for fries? Think again! I'm revealing 5 mind-blowing foods you didn't know you could make perfectly crispy in minutes.",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
+      "category": "Seasonal & Holiday Prep (Fall/Winter 2026)",
+      "topic": "3 unexpected DIY Thanksgiving decor hacks for a unique 2026 celebration.",
+      "hook": "Forget basic pumpkins! Here are my top 3 Thanksgiving decor secrets for 2026 that no one else is doing.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Educational 'Explainers' & Life Hacks",
-      "topic": "The Pomodoro Technique: Instantly Double Your Productivity",
-      "hook": "Struggling to focus? The Pomodoro Technique promises to skyrocket your productivity in just 25-minute bursts. I'll show you how to master it today.",
-      "voice_style": "Authoritative",
-      "music_mood": "Inspirational",
-      "target_duration": 40
+      "category": "Athlete Tributes & Sports History",
+      "topic": "The untold story of Jackie Robinson's impact beyond baseball.",
+      "hook": "Jackie Robinson broke more than just the color barrier \u2013 but did you know THIS about his fight off the field?",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
     },
     {
-      "category": "Educational 'Explainers' & Life Hacks",
-      "topic": "How to Spot Deepfakes: Protecting Yourself from AI Deception",
-      "hook": "That viral video, that shocking audio clip... Was it real, or a deepfake? As AI gets smarter, knowing how to spot these fakes is crucial for your safety.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 48
+      "category": "High School & Youth Sports Spotlights",
+      "topic": "The hidden mental toll of early sports specialization on young athletes.",
+      "hook": "Is playing one sport year-round actually *hurting* young athletes' minds and bodies?",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Golf Lifestyle & Travel",
+      "topic": "A beginner's guide to golfing in Scotland: How to play St Andrews on a budget.",
+      "hook": "Dream of golfing St Andrews but think it's impossible? Think again! I'll show you how to do it without breaking the bank.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "TV & Movie BTS/Reviews",
+      "topic": "The surprisingly dark fan theories about 'Willy Wonka & The Chocolate Factory'.",
+      "hook": "What if Willy Wonka wasn't so sweet after all? These fan theories will change how you see the classic film forever.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Educational Deep Dives",
+      "topic": "The physics of why a curveball curves and how pitchers master it.",
+      "hook": "How does a tiny baseball defy gravity and curve mid-air? It's not magic, it's pure physics.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Analysis & Fan Culture",
+      "topic": "The psychological warfare of fan chants in iconic soccer derbies.",
+      "hook": "Ever feel the stadium shake? It's not just noise, it's a meticulously crafted psychological attack on the opposing team.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Legal & True Crime Explainers",
+      "topic": "The strange legal loophole that allowed a serial imposter to escape conviction for years.",
+      "hook": "Could a single word in the law allow a criminal to walk free, repeatedly, despite clear evidence?",
+      "voice_style": "mysterious",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity & Influencer Lifestyle",
+      "topic": "The hidden cost of 'luxury brand deals' for struggling influencers.",
+      "hook": "That glamorous influencer trip? It might be costing them more than you think, leaving them in debt.",
+      "voice_style": "dramatic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Ethical & Societal Debates",
+      "topic": "Is it ethical to use deepfake technology for historical reenactments?",
+      "hook": "Imagine George Washington giving a TikTok speech. Is it cool or creepy to digitally resurrect historical figures?",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal & Holiday Prep (Fall/Winter 2026)",
+      "topic": "Future-proofing your home for winter 2026: Smart tech energy savers.",
+      "hook": "Don't just winterize \u2013 Futurize! These 2026 smart tech hacks will save you a fortune on your winter bills.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Athlete Tributes & Sports History",
+      "topic": "The forgotten Olympians who competed while secretly battling career-ending injuries.",
+      "hook": "Beyond the medals, some Olympians were fighting a brutal, secret battle you never saw.",
+      "voice_style": "dramatic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "High School & Youth Sports Spotlights",
+      "topic": "The rise of 'eSports scholarships' in colleges and what it means for high school gamers.",
+      "hook": "Forget football, your gaming skills could get you into college with a full ride! Here's how.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Golf Lifestyle & Travel",
+      "topic": "The most scenic (and challenging) golf courses you've never heard of for your next golf trip.",
+      "hook": "Tired of the same old fairways? Prepare for golf courses that will take your breath away... literally.",
+      "voice_style": "enthusiastic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "TV & Movie BTS/Reviews",
+      "topic": "The surprising real-life inspirations behind iconic movie monsters like the Xenomorph.",
+      "hook": "Think horror movie monsters are pure fiction? Think again. Their true origins will give you chills.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Educational Deep Dives",
+      "topic": "How ancient Roman concrete is still stronger than ours, and why we can't replicate it.",
+      "hook": "Our ancestors built better than us? The Roman concrete secret we still can't crack, thousands of years later.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
+      "rate": "-3%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
       "voice": "en-US-ChristopherNeural",
       "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
