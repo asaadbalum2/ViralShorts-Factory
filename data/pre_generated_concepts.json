@@ -1,99 +1,260 @@
 {
-  "generated_at": "2026-11-08T12:06:14.649371",
-  "valid_until": "2026-11-08T23:59:14.649381",
+  "generated_at": "2026-11-09T14:12:32.022460",
+  "valid_until": "2026-11-09T23:59:32.022470",
   "categories": [
-    "week 9 fantasy rankings",
-    "patrick mahomes",
-    "megan fox",
-    "early polar vortex disruption",
-    "new moon november 2026",
-    "little giant ladder recall",
-    "delta air lines route cancellations",
-    "heerenveen - feyenoord",
-    "fall fashion transition",
-    "cozy home aesthetics",
-    "holiday travel preparation",
-    "budget friendly meal prep",
-    "viral recipe hacks",
-    "gym routine motivation",
-    "tech gadget reviews"
+    "Edutainment Bytes (News & Explainers)",
+    "Pop Culture Rewind & Fandom (TV, Film, Celeb Gossip)",
+    "Sports Buzz & Athlete Motivation",
+    "Smart Shopping & Holiday Deals",
+    "Career Glow-Up & Entrepreneurship",
+    "Comedy Skits & Relatable Humor",
+    "Space & Future Tech Discoveries",
+    "Global Economics & Money Hacks",
+    "Book Nook & Storytelling Vibes",
+    "Autumn Cozy & Seasonal Lifestyle",
+    "Wellness & Mindset Moments",
+    "Travel Dreams & Exploration Guides",
+    "DIY & Creative Crafting",
+    "Gaming & Interactive Challenges",
+    "Fashion & Style Updates"
   ],
-  "concepts": [],
+  "concepts": [
+    {
+      "category": "Edutainment Bytes (News & Explainers)",
+      "topic": "The Astronomical Reason Behind Leap Years",
+      "hook": "Did you know February 29th isn't just an extra day, it's a cosmic correction that literally saves our calendar?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Edutainment Bytes (News & Explainers)",
+      "topic": "Quantum Entanglement Simplified: The Universe's Spooky Connection",
+      "hook": "Imagine two coins, miles apart, but if one lands heads, the other *instantly* flips to tails. That's kinda like quantum entanglement!",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Pop Culture Rewind & Fandom (TV, Film, Celeb Gossip)",
+      "topic": "Hidden 'Friends' Apartment Easter Eggs You Missed (Even After 100 Rewatches)",
+      "hook": "You've watched 'Friends' a hundred times, but I bet you never noticed *this* tiny detail in Monica's apartment that reveals a huge plot point.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Pop Culture Rewind & Fandom (TV, Film, Celeb Gossip)",
+      "topic": "The Cultural Impact of *One* Taylor Swift Lyric from 'Midnights' That Broke the Internet",
+      "hook": "One lyric from Taylor Swift's 'Midnights' shattered the internet. Here's why Swifties (and everyone else) lost their minds over it...",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Buzz & Athlete Motivation",
+      "topic": "The 'Mental Wall' Marathon Runners Master to Achieve Elite Performance",
+      "hook": "It's not just about miles; elite marathoners conquer *this* hidden psychological barrier that separates good from legendary.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Buzz & Athlete Motivation",
+      "topic": "The Improbable Upset: How the [Specific Underdog Team Name] Defied All Statistical Odds This Season",
+      "hook": "Statistically, they shouldn't have won a single game. But *this* underdog team just pulled off the most improbable upset of the decade. How?",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Smart Shopping & Holiday Deals",
+      "topic": "The Secret Calendar for Scoring Huge Deals on Big-Screen TVs (Don't Buy Now!)",
+      "hook": "Don't buy that new TV now! I'm revealing the *exact* week in the year you'll save hundreds \u2013 it's not Black Friday.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Smart Shopping & Holiday Deals",
+      "topic": "The $15 Viral Skincare Dupe That Actually Outperforms Its $150 Luxury Rival",
+      "hook": "Is this $15 drugstore cream *actually* better than the $150 luxury version? I put them to the ultimate blind test, and the results are shocking.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Career Glow-Up & Entrepreneurship",
+      "topic": "The Unspoken Soft Skill That Guarantees You a Promotion (It's Not What You Think)",
+      "hook": "Forget your resume; mastering *this* one underrated soft skill will fast-track your career and guarantee that promotion like nothing else.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Career Glow-Up & Entrepreneurship",
+      "topic": "My No-Hustle Side Hustle: How I Earned $10k from Reselling Vintage Posters in 3 Months",
+      "hook": "I generated $10,000 in three months with just a few hours a week. No, it's not dropshipping \u2013 it's *this* surprisingly lucrative niche.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits & Relatable Humor",
+      "topic": "The Internal Monologue When You're Trying to Ignore a Work Email on Your Day Off",
+      "hook": "That notification sound on your day off? It's not just an email, it's a full-blown mental battle between peace and productivity.",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Comedy Skits & Relatable Humor",
+      "topic": "POV: Trying to Explain a Niche Internet Meme to Your Confused Parents",
+      "hook": "Me: 'So, basically, it's a Shiba Inu dog, with bad grammar, and it's funny because it represents inner chaos...' Mom: *blank stare*.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Space & Future Tech Discoveries",
+      "topic": "The Fermi Paradox: Why Haven't We Found Aliens Yet? (The Terrifying Truth)",
+      "hook": "If the universe is so vast and ancient, where *is* everyone? The answer to why we haven't found aliens might actually terrify you.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Space & Future Tech Discoveries",
+      "topic": "Solid-State Batteries: The Game-Changing Tech That Could Revolutionize Electric Cars Forever",
+      "hook": "Imagine an electric car that charges in 10 minutes and goes 1000 miles on a single charge. It's not sci-fi anymore, thanks to *this* new battery.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Economics & Money Hacks",
+      "topic": "The Surprising Global Supply Chain Shock That Spiked Your Favorite Coffee Brand's Prices",
+      "hook": "Your morning coffee just got pricier. Blame *this* unexpected global economic ripple effect that's hitting your wallet directly.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Economics & Money Hacks",
+      "topic": "The Overlooked 'Two-Card Tango' Credit Card Hack for Maximizing Travel Points",
+      "hook": "Stop leaving thousands of travel points on the table! This overlooked credit card strategy is a game-changer for free flights and hotels.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Book Nook & Storytelling Vibes",
+      "topic": "Why 'The Great Gatsby' Isn't About Romance (It's About *This* Hidden Truth)",
+      "hook": "You think 'The Great Gatsby' is a tragic love story? Think again. The real profound message everyone misinterprets is *this*.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Book Nook & Storytelling Vibes",
+      "topic": "Decoding the Hidden Messages and Secret Codes in [Specific Author's] Best-Selling Novels",
+      "hook": "What if your favorite author hid secret messages in plain sight within their books? *This* writer does, and I'll show you how to find them.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Cozy & Seasonal Lifestyle",
+      "topic": "My Viral DIY Pumpkin Cream Cold Brew Recipe That Beats Starbucks and Saves Your Wallet",
+      "hook": "Forget the drive-thru! My viral Pumpkin Cream Cold Brew recipe tastes infinitely better than Starbucks and costs mere pennies to make.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Autumn Cozy & Seasonal Lifestyle",
+      "topic": "My Ultimate Autumn Evening Reset Routine for Maximum Coziness and Stress Relief",
+      "hook": "Sweater weather is here! Transform your evenings into peak cozy vibes and melt away stress with *these* simple, aesthetic rituals.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    }
+  ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     }
   ],
   "concepts_used": 0,
