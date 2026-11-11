@@ -1,220 +1,205 @@
 {
-  "generated_at": "2026-11-10T13:42:06.174894",
-  "valid_until": "2026-11-10T23:59:06.174903",
+  "generated_at": "2026-11-11T12:53:48.935128",
+  "valid_until": "2026-11-11T23:59:48.935138",
   "categories": [
-    "Global City Guides & Travel Hacks (Oviedo, South Korea)",
-    "K-Culture Spotlight (Music, Drama, Beauty, Food)",
-    "Hollywood Legend Deep Dives (Dustin Hoffman Focus)",
-    "Veterans Day Tributes & Hero Stories",
-    "Kardashian-Jenner Reality Updates & Family News",
-    "Weather & News Personality Insights (Dylan Dreyer)",
-    "Economic Outlook & Inflation Hacks (CPI Report)",
-    "Gas Price Saving & Road Trip Tips (Gas Buddy)",
-    "International Food Tours & Recipes (Spain, Korea)",
-    "Fall & Early Holiday Lifestyle & Decor",
-    "Quick News & Current Event Explainers",
-    "Personal Finance & Budgeting Tips",
-    "Viral Trends & Pop Culture Commentary",
-    "DIY & Smart Living Hacks",
-    "Inspirational & Community Spotlights"
+    "Veterans Day Tributes & Gratitude",
+    "Current Events & Geopolitical Updates",
+    "Breaking Discoveries & Ancient Mysteries",
+    "Public Health Alerts & Symptom Awareness",
+    "Financial Market Insights & News",
+    "Brand Activations & Holiday Deals",
+    "Pop Culture & Celebrity Watch",
+    "National Pride & Community Spotlights",
+    "Educational 'Edutainment' (Topical)",
+    "Short-Form News Explainers & Recaps",
+    "Historical Context & Significance",
+    "Inspirational Stories & Human Interest",
+    "Behind-the-Scenes (News & Events)",
+    "Viral Challenges & Trending Sounds (Topical)",
+    "Local Event Highlights & Coverage"
   ],
   "concepts": [
     {
-      "category": "Global City Guides & Travel Hacks (Oviedo, South Korea)",
-      "topic": "Oviedo's Secret Cider Escapes: Beyond the Tourist Sidrer\u00edas",
-      "hook": "Think you know Oviedo cider? What if I told you the BEST sidrer\u00edas are hidden down THIS alley, far from the tourist crowds?",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Veterans Day Tributes & Gratitude",
+      "topic": "The unsung heroes: Military Working Dogs and their handlers.",
+      "hook": "Did you know some of our bravest veterans have four paws? Their stories will move you.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Global City Guides & Travel Hacks (Oviedo, South Korea)",
-      "topic": "South Korea Visa-Free Travel Hack: Maximizing Your Jeju Island Adventure",
-      "hook": "Want to experience South Korea without a visa? There's ONE stunning island you NEED to know about, and it's a game-changer for international travelers!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Veterans Day Tributes & Gratitude",
+      "topic": "The powerful symbolism of the 'Missing Man' formation flyover.",
+      "hook": "Ever seen those planes fly in a V-shape with one gap? There's a powerful story there that honors our fallen.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 40
     },
     {
-      "category": "K-Culture Spotlight (Music, Drama, Beauty, Food)",
-      "topic": "The K-Drama Trope That Keeps Us Hooked: Enemies-to-Lovers Evolution",
-      "hook": "Admit it, you secretly LOVE when K-drama leads go from despising each other to *total* obsession. Here\u2019s why this trope never gets old!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Current Events & Geopolitical Updates",
+      "topic": "The new Arctic shipping routes and their geopolitical implications due to climate change.",
+      "hook": "The Arctic Ocean is melting, and it's creating a new geopolitical race you *need* to know about.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Current Events & Geopolitical Updates",
+      "topic": "Updates on the global water crisis: key affected regions and innovative solutions.",
+      "hook": "Imagine waking up, and there's no clean water. For millions, that's reality. Here's why and what's being done.",
+      "voice_style": "dramatic",
+      "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "K-Culture Spotlight (Music, Drama, Beauty, Food)",
-      "topic": "Unseen K-Pop Trainees: The Decades-Long Road to Debut Stardom",
-      "hook": "Before the stage lights and millions of fans, there are K-Pop trainees who spend *years* in the shadows. Their untold struggles will shock you.",
-      "voice_style": "Dramatic",
-      "music_mood": "Inspirational",
-      "target_duration": 50
+      "category": "Breaking Discoveries & Ancient Mysteries",
+      "topic": "NASA's latest discovery of exoplanets with potential biosignatures.",
+      "hook": "Scientists just found *another* planet that could host life. Are we alone? Maybe not for long.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 42
     },
     {
-      "category": "Hollywood Legend Deep Dives (Dustin Hoffman Focus)",
-      "topic": "Dustin Hoffman's Unexpected Method Acting Tactic for 'Tootsie'",
-      "hook": "Did you know Dustin Hoffman became a *real* woman for a day just to prepare for his iconic role in 'Tootsie'? The story behind it is wild.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
-      "target_duration": 45
+      "category": "Breaking Discoveries & Ancient Mysteries",
+      "topic": "New insights from the decipherment of a previously unreadable ancient scroll.",
+      "hook": "A scroll untouched for millennia just revealed a secret... and it changes everything we thought we knew.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 47
     },
     {
-      "category": "Hollywood Legend Deep Dives (Dustin Hoffman Focus)",
-      "topic": "The Improvised 'Midnight Cowboy' Scene That Made History",
-      "hook": "He wasn't supposed to say 'I'm walking here!' in 'Midnight Cowboy'. This iconic Dustin Hoffman moment was pure accident, and it changed cinema forever.",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Public Health Alerts & Symptom Awareness",
+      "topic": "The surprising link between chronic fatigue and overlooked vitamin deficiencies.",
+      "hook": "Always tired? Your exhaustion might not just be stress. It could be THIS missing nutrient.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Veterans Day Tributes & Hero Stories",
-      "topic": "The WASP Pilots: Unsung Female Heroes of WWII Air Transport Command",
-      "hook": "They flew combat planes, delivered vital aircraft, and were *denied* military status for decades. Meet the forgotten female heroes of WWII's WASP program.",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
-      "target_duration": 50
-    },
-    {
-      "category": "Veterans Day Tributes & Hero Stories",
-      "topic": "From Marine to Tech Innovator: A Modern Veteran's Journey of Impact",
-      "hook": "After serving his country with distinction, he built a multi-million dollar tech company from scratch. This modern veteran's transition story will inspire you.",
-      "voice_style": "Inspirational",
-      "music_mood": "Inspirational",
+      "category": "Public Health Alerts & Symptom Awareness",
+      "topic": "Early warning signs of a stroke that many people miss and how to act FAST.",
+      "hook": "You have 4.5 hours. Learn the FAST signs of stroke *right now* \u2013 it could save a life.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Kardashian-Jenner Reality Updates & Family News",
-      "topic": "Kim K's Next Big Business Move: Beyond SKIMS and SKKN",
-      "hook": "Everyone's talking about SKIMS, but Kim K is secretly building her *next* billion-dollar empire right under our noses. You won't believe what it is.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
+      "category": "Financial Market Insights & News",
+      "topic": "The rise of 'Green Bonds' and sustainable investing in the current market.",
+      "hook": "Want to grow your wealth AND save the planet? Green Bonds might be your next big move.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Financial Market Insights & News",
+      "topic": "How the Federal Reserve's interest rate hikes *actually* affect your mortgage and credit cards.",
+      "hook": "The Fed just moved rates again. Here's what that *really* means for your wallet this month.",
+      "voice_style": "authoritative",
+      "music_mood": "chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Brand Activations & Holiday Deals",
+      "topic": "How to score 'secret' pre-Black Friday deals using browser extensions and early bird tactics.",
+      "hook": "Don't wait for Black Friday! I'm revealing the hack to get insane deals *today*.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Kardashian-Jenner Reality Updates & Family News",
-      "topic": "The Truth Behind Kylie Jenner's Social Media Silence Post-Astroworld",
-      "hook": "After Astroworld, Kylie Jenner vanished from the public eye. We're diving into the *real* reasons behind her unprecedented and lengthy social media silence.",
-      "voice_style": "Mysterious",
-      "music_mood": "Mysterious",
+      "category": "Brand Activations & Holiday Deals",
+      "topic": "A local brand's innovative 'pay-it-forward' holiday coffee campaign benefiting the community.",
+      "hook": "This coffee shop is doing something amazing for the holidays... and you can be a part of it.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Weather & News Personality Insights (Dylan Dreyer)",
-      "topic": "Dylan Dreyer's Most Terrifying Live Weather Coverage Moment",
-      "hook": "Even seasoned meteorologist Dylan Dreyer has had moments that made her fear for her safety on air. Her story from Hurricane Sandy will give you chills.",
-      "voice_style": "Dramatic",
-      "music_mood": "Intense",
-      "target_duration": 50
+      "category": "Pop Culture & Celebrity Watch",
+      "topic": "The rise of 'quiet luxury' in celebrity fashion and its impact on mainstream trends.",
+      "hook": "Forget flashy logos! Celebrities are embracing a new, subtle wealth. Here's why you're seeing it everywhere.",
+      "voice_style": "energetic",
+      "music_mood": "chill",
+      "target_duration": 47
     },
     {
-      "category": "Weather & News Personality Insights (Dylan Dreyer)",
-      "topic": "The Children's Book Series Dylan Dreyer Writes in Her 'Spare' Time",
-      "hook": "You know Dylan Dreyer for the weather, but did you know she's a best-selling children's author? Wait till you hear about her secret passion project!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
+      "category": "Pop Culture & Celebrity Watch",
+      "topic": "The most compelling fan theory about the upcoming season of a popular streaming show's mystery.",
+      "hook": "This fan theory about [Popular Show] season finale is blowing my mind... and it just might be true.",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "National Pride & Community Spotlights",
+      "topic": "A small town's volunteer initiative to restore a historic landmark against all odds.",
+      "hook": "Meet the incredible community proving that one small town can make a HUGE difference.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
       "target_duration": 40
     },
     {
-      "category": "Economic Outlook & Inflation Hacks (CPI Report)",
-      "topic": "Deciphering the October CPI Report: Why Your Groceries Still Cost More",
-      "hook": "The latest CPI report is out, and it's telling us exactly *why* your grocery bill isn't shrinking. Here's the shocking breakdown of where your money went.",
-      "voice_style": "Authoritative",
-      "music_mood": "Intense",
+      "category": "National Pride & Community Spotlights",
+      "topic": "The annual migration of monarch butterflies and community efforts to protect their journey.",
+      "hook": "Millions of tiny wings are making an epic journey. This isn't just nature; it's a national treasure.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Educational 'Edutainment' (Topical)",
+      "topic": "The truth behind the 5-second rule and food safety science.",
+      "hook": "Dropped food? You *really* only have 5 seconds, right? The science says... think again.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Economic Outlook & Inflation Hacks (CPI Report)",
-      "topic": "3 Unconventional Hacks to Slash Your Energy Bill This Winter",
-      "hook": "Inflation making you dread winter heating bills? Forget the usual tips, these 3 unconventional hacks will actually SAVE you money on energy costs!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
+      "category": "Educational 'Edutainment' (Topical)",
+      "topic": "How generative AI models 'learn' and create new content from scratch.",
+      "hook": "Ever wonder how AI *actually* writes stories or paints pictures? It's not magic, it's this.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 40
     },
     {
-      "category": "Gas Price Saving & Road Trip Tips (Gas Buddy)",
-      "topic": "Gas Buddy's Hidden Predictive Feature That Guarantees Cheaper Gas",
-      "hook": "You're using Gas Buddy wrong if you're not checking THIS hidden feature. It predicts gas price drops before they happen, saving you big!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 45
+      "category": "Short-Form News Explainers & Recaps",
+      "topic": "The week's top 3 global geopolitical headlines explained in under 60 seconds.",
+      "hook": "Too busy for the news? Here are the 3 *most important* global stories you missed this week.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 47
     },
     {
-      "category": "Gas Price Saving & Road Trip Tips (Gas Buddy)",
-      "topic": "The Ultimate Interstate Exit Strategy: Fueling Up For Less On Road Trips",
-      "hook": "Planning a road trip? The secret to saving hundreds on gas is all about *where* and *when* you fill up. Hint: avoid the rest stops!",
-      "voice_style": "Authoritative",
-      "music_mood": "Chill",
-      "target_duration": 40
-    },
-    {
-      "category": "International Food Tours & Recipes (Spain, Korea)",
-      "topic": "Asturias' Secret Cider-Steamed Mussels Recipe (Beyond Paella)",
-      "hook": "Forget paella! In northern Spain, the real culinary magic happens with fresh mussels steamed in local cider. You NEED this simple, incredible recipe!",
-      "voice_style": "Friendly",
-      "music_mood": "Upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "International Food Tours & Recipes (Spain, Korea)",
-      "topic": "Mastering Kimchi at Home: Easiest Vegan Recipe & Fermentation Secrets",
-      "hook": "Ever wanted to make authentic kimchi but felt intimidated? I'm sharing the absolute easiest, vegan-friendly recipe and the ONE trick for perfect fermentation!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Fall & Early Holiday Lifestyle & Decor",
-      "topic": "DIY Luxe Fall Front Porch Decor Under $50 (That Lasts Through Thanksgiving)",
-      "hook": "Want a front porch that screams 'Fall Chic' without breaking the bank? I'm showing you how to create a luxury look for under $50 that lasts all season!",
-      "voice_style": "Friendly",
-      "music_mood": "Chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Fall & Early Holiday Lifestyle & Decor",
-      "topic": "Beyond Lattes: 3 Creative Pumpkin Spice Home Scents & Snacks",
-      "hook": "You love pumpkin spice lattes, but what about pumpkin spice EVERYTHING ELSE? Get ready for your home to smell and taste like pure autumn magic!",
-      "voice_style": "Energetic",
-      "music_mood": "Upbeat",
-      "target_duration": 40
+      "category": "Short-Form News Explainers & Recaps",
+      "topic": "The implications of a recent landmark court decision on consumer privacy rights.",
+      "hook": "A new court ruling just changed how companies can use your data. Here's what it means for YOU.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 43
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+0%",
+      "music_mood": "chill"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-MichelleNeural",
@@ -222,38 +207,53 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
       "music_mood": "dramatic"
     }
   ],
