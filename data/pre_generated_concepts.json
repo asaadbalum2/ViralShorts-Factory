@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-11T12:53:48.935128",
-  "valid_until": "2026-11-11T23:59:48.935138",
+  "generated_at": "2026-11-12T13:56:38.132239",
+  "valid_until": "2026-11-12T23:59:38.132248",
   "categories": [
-    "Veterans Day Tributes & Gratitude",
-    "Current Events & Geopolitical Updates",
-    "Breaking Discoveries & Ancient Mysteries",
-    "Public Health Alerts & Symptom Awareness",
-    "Financial Market Insights & News",
-    "Brand Activations & Holiday Deals",
-    "Pop Culture & Celebrity Watch",
-    "National Pride & Community Spotlights",
-    "Educational 'Edutainment' (Topical)",
-    "Short-Form News Explainers & Recaps",
-    "Historical Context & Significance",
-    "Inspirational Stories & Human Interest",
-    "Behind-the-Scenes (News & Events)",
-    "Viral Challenges & Trending Sounds (Topical)",
-    "Local Event Highlights & Coverage"
+    "Gaming Updates & Hype (GTA VI Focus)",
+    "Current Events & DC News Digests",
+    "Holiday Shopping Guides & Deals (GMA Style)",
+    "Daily Brain Games & Puzzles (Connections, etc.)",
+    "Celebrity & Pop Culture Buzz (Xochitl Gomez, Music Festivals)",
+    "Australia Focus: News, Travel & Culture",
+    "Seasonal Recipes & Holiday Cooking",
+    "Winter Fashion & Cozy Style Trends",
+    "DIY & Home Decor (Festive & Seasonal)",
+    "Mental Wellness & Stress Relief Tips",
+    "Viral Challenges & Trending Sounds",
+    "Tech Reviews & Gadget Must-Haves",
+    "Short Documentaries & Educational Snippets",
+    "Personal Finance & Holiday Budgeting",
+    "Pet Moments & Seasonal Pet Fun"
   ],
   "concepts": [
     {
-      "category": "Veterans Day Tributes & Gratitude",
-      "topic": "The unsung heroes: Military Working Dogs and their handlers.",
-      "hook": "Did you know some of our bravest veterans have four paws? Their stories will move you.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Veterans Day Tributes & Gratitude",
-      "topic": "The powerful symbolism of the 'Missing Man' formation flyover.",
-      "hook": "Ever seen those planes fly in a V-shape with one gap? There's a powerful story there that honors our fallen.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 40
-    },
-    {
-      "category": "Current Events & Geopolitical Updates",
-      "topic": "The new Arctic shipping routes and their geopolitical implications due to climate change.",
-      "hook": "The Arctic Ocean is melting, and it's creating a new geopolitical race you *need* to know about.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Current Events & Geopolitical Updates",
-      "topic": "Updates on the global water crisis: key affected regions and innovative solutions.",
-      "hook": "Imagine waking up, and there's no clean water. For millions, that's reality. Here's why and what's being done.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Breaking Discoveries & Ancient Mysteries",
-      "topic": "NASA's latest discovery of exoplanets with potential biosignatures.",
-      "hook": "Scientists just found *another* planet that could host life. Are we alone? Maybe not for long.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "Breaking Discoveries & Ancient Mysteries",
-      "topic": "New insights from the decipherment of a previously unreadable ancient scroll.",
-      "hook": "A scroll untouched for millennia just revealed a secret... and it changes everything we thought we knew.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Public Health Alerts & Symptom Awareness",
-      "topic": "The surprising link between chronic fatigue and overlooked vitamin deficiencies.",
-      "hook": "Always tired? Your exhaustion might not just be stress. It could be THIS missing nutrient.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Public Health Alerts & Symptom Awareness",
-      "topic": "Early warning signs of a stroke that many people miss and how to act FAST.",
-      "hook": "You have 4.5 hours. Learn the FAST signs of stroke *right now* \u2013 it could save a life.",
-      "voice_style": "authoritative",
+      "category": "Gaming Updates & Hype (GTA VI Focus)",
+      "topic": "Uncovering Hidden Details & Fan Theories from GTA VI Trailer 2 Speculation",
+      "hook": "Did you catch THAT in the new GTA VI trailer? Or was it just a dream? Let's dive deep into the Easter eggs and fan theories!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Financial Market Insights & News",
-      "topic": "The rise of 'Green Bonds' and sustainable investing in the current market.",
-      "hook": "Want to grow your wealth AND save the planet? Green Bonds might be your next big move.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "Financial Market Insights & News",
-      "topic": "How the Federal Reserve's interest rate hikes *actually* affect your mortgage and credit cards.",
-      "hook": "The Fed just moved rates again. Here's what that *really* means for your wallet this month.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Brand Activations & Holiday Deals",
-      "topic": "How to score 'secret' pre-Black Friday deals using browser extensions and early bird tactics.",
-      "hook": "Don't wait for Black Friday! I'm revealing the hack to get insane deals *today*.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Brand Activations & Holiday Deals",
-      "topic": "A local brand's innovative 'pay-it-forward' holiday coffee campaign benefiting the community.",
-      "hook": "This coffee shop is doing something amazing for the holidays... and you can be a part of it.",
+      "category": "Gaming Updates & Hype (GTA VI Focus)",
+      "topic": "Top 3 Features Fans are Begging For in GTA VI",
+      "hook": "Rockstar, are you listening?! These are the TOP 3 features EVERYONE is begging for in GTA VI \u2013 don't mess this up!",
       "voice_style": "friendly",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Pop Culture & Celebrity Watch",
-      "topic": "The rise of 'quiet luxury' in celebrity fashion and its impact on mainstream trends.",
-      "hook": "Forget flashy logos! Celebrities are embracing a new, subtle wealth. Here's why you're seeing it everywhere.",
-      "voice_style": "energetic",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Pop Culture & Celebrity Watch",
-      "topic": "The most compelling fan theory about the upcoming season of a popular streaming show's mystery.",
-      "hook": "This fan theory about [Popular Show] season finale is blowing my mind... and it just might be true.",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "National Pride & Community Spotlights",
-      "topic": "A small town's volunteer initiative to restore a historic landmark against all odds.",
-      "hook": "Meet the incredible community proving that one small town can make a HUGE difference.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "National Pride & Community Spotlights",
-      "topic": "The annual migration of monarch butterflies and community efforts to protect their journey.",
-      "hook": "Millions of tiny wings are making an epic journey. This isn't just nature; it's a national treasure.",
+      "category": "Current Events & DC News Digests",
+      "topic": "The Latest on Capitol Hill's Surprising New Policy Debate",
+      "hook": "Is Congress actually fighting over... which coffee is best? Not quite, but the latest DC drama is getting surprisingly spicy!",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 48
+    },
+    {
+      "category": "Current Events & DC News Digests",
+      "topic": "DC's Newest Interactive Museum Exhibit You CANNOT Miss This Weekend",
+      "hook": "Forget your plans! DC just dropped a new interactive exhibit that's going to blow your mind. You HAVE to see this before it's gone!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Holiday Shopping Guides & Deals (GMA Style)",
+      "topic": "Black Friday's Binge-Worthy Tech Deals You Can't Afford to Miss",
+      "hook": "Stop scrolling! Black Friday's hottest tech deals are HERE, and your wallet will thank me later. These savings are insane!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Holiday Shopping Guides & Deals (GMA Style)",
+      "topic": "Last-Minute Unique Stocking Stuffers Under $20 (That Aren't Candy!)",
+      "hook": "Stuck on stocking stuffers? I've got 5 brilliant ideas under $20 that aren't another candy cane \u2013 guaranteed smiles!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Daily Brain Games & Puzzles (Connections, etc.)",
+      "topic": "Can YOU Solve Today's Insane Connections Puzzle? (Expert Level)",
+      "hook": "Think you're a puzzle master? Today's Connections is designed to stump even the pros! Let's see if you can crack it.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Daily Brain Games & Puzzles (Connections, etc.)",
+      "topic": "My Secret Strategy to Conquer the 'Impossible' Daily Wordle Challenge",
+      "hook": "I just conquered the 'impossible' Wordle! Want to know my secret strategy to crack ANY 5-letter word? You won't believe it!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Celebrity & Pop Culture Buzz (Xochitl Gomez, Music Festivals)",
+      "topic": "Xochitl Gomez's NEXT Big Project: What We Know So Far & Fan Theories",
+      "hook": "Xochitl Gomez just teased something HUGE! Is she heading to the MCU again, or is it a whole new adventure? Let's break it down!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Celebrity & Pop Culture Buzz (Xochitl Gomez, Music Festivals)",
+      "topic": "Music Festival Style Guide: From Coachella to Glastonbury, What's Trending?",
+      "hook": "Planning your next festival outfit? From desert chic to muddy glam, here's what's actually trending this season. Don't miss out!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Australia Focus: News, Travel & Culture",
+      "topic": "Secret Beaches of Queensland: Your Next Untouched Aussie Adventure Awaits",
+      "hook": "Tired of crowded beaches? I'm revealing Queensland's best-kept secret spots for your ultimate, tranquil Aussie escape!",
       "voice_style": "calm",
       "music_mood": "inspirational",
-      "target_duration": 48
+      "target_duration": 49
     },
     {
-      "category": "Educational 'Edutainment' (Topical)",
-      "topic": "The truth behind the 5-second rule and food safety science.",
-      "hook": "Dropped food? You *really* only have 5 seconds, right? The science says... think again.",
+      "category": "Australia Focus: News, Travel & Culture",
+      "topic": "Why Everyone is Talking About Australia's New 'Quokka Selfie' Tourism Trend",
+      "hook": "Is Australia *really* encouraging 'Quokka selfies'? The latest Aussie tourism trend is cuter (and stranger) than fiction!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 41
     },
     {
-      "category": "Educational 'Edutainment' (Topical)",
-      "topic": "How generative AI models 'learn' and create new content from scratch.",
-      "hook": "Ever wonder how AI *actually* writes stories or paints pictures? It's not magic, it's this.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
+      "category": "Seasonal Recipes & Holiday Cooking",
+      "topic": "The ONLY 3-Ingredient Cranberry Sauce You'll Ever Need (Holiday Hack!)",
+      "hook": "Forgot the cranberry sauce? No stress! This 3-ingredient hack will save your holiday meal and blow everyone's mind!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Short-Form News Explainers & Recaps",
-      "topic": "The week's top 3 global geopolitical headlines explained in under 60 seconds.",
-      "hook": "Too busy for the news? Here are the 3 *most important* global stories you missed this week.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Seasonal Recipes & Holiday Cooking",
+      "topic": "Cozy Winter Soup: My Secret Ingredient for the Perfect Comfort Bowl",
+      "hook": "The chill is here! And so is my secret to the coziest, most comforting winter soup you'll ever taste. You HAVE to try this!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 46
+    },
+    {
+      "category": "Winter Fashion & Cozy Style Trends",
+      "topic": "Elevate Your Puffer Jacket: 5 Unexpected Ways to Style It This Winter",
+      "hook": "Think your puffer jacket is just for warmth? Think again! Here are 5 unexpected ways to make it *fashion* this winter.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Winter Fashion & Cozy Style Trends",
+      "topic": "The Ultimate Guide to Layering for Maximum Warmth & Style (No Bulk!)",
+      "hook": "Hate looking like a marshmallow in winter? I'll show you how to layer up for maximum warmth *without* the bulk. Game changer!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "DIY & Home Decor (Festive & Seasonal)",
+      "topic": "DIY Snowy Mason Jars: Instant Winter Wonderland Decor in 5 Mins",
+      "hook": "Transform your home into a winter wonderland in literally 5 minutes with this super easy, snowy mason jar DIY! No artistic skills needed!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "DIY & Home Decor (Festive & Seasonal)",
+      "topic": "Beyond Garland: Creative & Cheap Ways to Decorate Your Fireplace Mantel",
+      "hook": "Is your mantel looking a little... boring? Ditch the basic garland! I've got genius ideas for *epic* festive decor on a budget.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
       "target_duration": 47
     },
     {
-      "category": "Short-Form News Explainers & Recaps",
-      "topic": "The implications of a recent landmark court decision on consumer privacy rights.",
-      "hook": "A new court ruling just changed how companies can use your data. Here's what it means for YOU.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 43
+      "category": "Mental Wellness & Stress Relief Tips",
+      "topic": "The 60-Second De-Stress Hack: Instant Calm When You Need It Most",
+      "hook": "Feeling overwhelmed? I've got a 60-second hack that will melt your stress away, right now. You won't believe how simple it is!",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Mental Wellness & Stress Relief Tips",
+      "topic": "Beat Holiday Burnout: My Top 3 Tips for a Stress-Free Festive Season",
+      "hook": "The holidays are coming, and so is the stress! Here are my top 3 secrets to actually *enjoying* the season, not just surviving it.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
+      "rate": "+8%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-GB-RyanNeural",
       "rate": "+0%",
       "music_mood": "intense"
     },
     {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
       "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
+      "rate": "-3%",
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
