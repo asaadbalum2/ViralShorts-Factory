@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-12T13:56:38.132239",
-  "valid_until": "2026-11-12T23:59:38.132248",
+  "generated_at": "2026-11-13T13:21:02.455755",
+  "valid_until": "2026-11-13T23:59:02.455767",
   "categories": [
-    "Gaming Updates & Hype (GTA VI Focus)",
-    "Current Events & DC News Digests",
-    "Holiday Shopping Guides & Deals (GMA Style)",
-    "Daily Brain Games & Puzzles (Connections, etc.)",
-    "Celebrity & Pop Culture Buzz (Xochitl Gomez, Music Festivals)",
-    "Australia Focus: News, Travel & Culture",
-    "Seasonal Recipes & Holiday Cooking",
-    "Winter Fashion & Cozy Style Trends",
-    "DIY & Home Decor (Festive & Seasonal)",
-    "Mental Wellness & Stress Relief Tips",
-    "Viral Challenges & Trending Sounds",
-    "Tech Reviews & Gadget Must-Haves",
-    "Short Documentaries & Educational Snippets",
-    "Personal Finance & Holiday Budgeting",
-    "Pet Moments & Seasonal Pet Fun"
+    "Sports Match Highlights & Reactions",
+    "Celebrity Gossip & Entertainment News",
+    "Fashion & Beauty Trends (Celebrity-Inspired)",
+    "Geopolitical News Explained (Quick Takes)",
+    "Friday the 13th Spooky Content & Superstitions",
+    "Athlete Life & Inspirational Stories",
+    "Film & TV Show Critiques/Fan Theories",
+    "Current Event Satire & Meme Culture",
+    "Travel & Cultural Experiences (Event-Focused)",
+    "Public Figure Brand Analysis & Lifestyle",
+    "\"What If\" Scenarios & Speculative Content",
+    "Opinion & Commentary on Pop Culture",
+    "\"Day In The Life\" & Behind-The-Scenes",
+    "Creative Design & DIY Tutorials (Quick)",
+    "Wellness, Mindset & Self-Improvement (Inspired by public figures)"
   ],
   "concepts": [
     {
-      "category": "Gaming Updates & Hype (GTA VI Focus)",
-      "topic": "Uncovering Hidden Details & Fan Theories from GTA VI Trailer 2 Speculation",
-      "hook": "Did you catch THAT in the new GTA VI trailer? Or was it just a dream? Let's dive deep into the Easter eggs and fan theories!",
+      "category": "Sports Match Highlights & Reactions",
+      "topic": "The insane last-minute comeback in the recent championship basketball game.",
+      "hook": "Did you SEE that buzzer-beater?! You won't believe how this team pulled off the most epic comeback in championship history!",
       "voice_style": "energetic",
-      "music_mood": "intense",
+      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Gaming Updates & Hype (GTA VI Focus)",
-      "topic": "Top 3 Features Fans are Begging For in GTA VI",
-      "hook": "Rockstar, are you listening?! These are the TOP 3 features EVERYONE is begging for in GTA VI \u2013 don't mess this up!",
+      "category": "Celebrity Gossip & Entertainment News",
+      "topic": "Why *that* A-list couple's sudden split is sending shockwaves through Hollywood.",
+      "hook": "Hold up, did they *actually* break up?! Hollywood is reeling from this shocking celebrity split, and I've got the tea.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Fashion & Beauty Trends (Celebrity-Inspired)",
+      "topic": "Decoding Zendaya's Met Gala look: How to get the 'alien chic' vibe yourself.",
+      "hook": "Zendaya just broke the internet with her Met Gala fit, but can *you* pull off that 'alien chic' vibe? I'm breaking down her iconic look.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 48
+    },
+    {
+      "category": "Geopolitical News Explained (Quick Takes)",
+      "topic": "The Red Sea Crisis: Why attacks on shipping affect *your* wallet.",
+      "hook": "The Red Sea sounds far away, but what's happening there is impacting *your* grocery bill. Here's why in 45 seconds.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Friday the 13th Spooky Content & Superstitions",
+      "topic": "The terrifying true origins of common Friday the 13th superstitions.",
+      "hook": "Black cats, broken mirrors... ever wonder *why* Friday the 13th feels so spooky? Uncover the terrifying true origins of these superstitions.",
+      "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Athlete Life & Inspirational Stories",
+      "topic": "From injury sidelines to Olympic gold: The comeback story of a lesser-known gymnast.",
+      "hook": "Everyone counted her out after *that* injury, but she had other plans. This gymnast's incredible journey from sidelines to Olympic gold will inspire you.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 47
+    },
+    {
+      "category": "Film & TV Show Critiques/Fan Theories",
+      "topic": "Did the latest 'Black Mirror' episode actually predict the future?",
+      "hook": "Did you really understand the ending of the latest 'Black Mirror' season? I'm breaking down *that* mind-bending twist and if it predicted our future.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 42
+    },
+    {
+      "category": "Current Event Satire & Meme Culture",
+      "topic": "The internet's hilarious reaction to the 'AI-generated influencer' controversy.",
+      "hook": "AI influencers are taking over, and the internet's reactions are pure gold. You HAVE to see these memes about the latest AI controversy!",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Current Events & DC News Digests",
-      "topic": "The Latest on Capitol Hill's Surprising New Policy Debate",
-      "hook": "Is Congress actually fighting over... which coffee is best? Not quite, but the latest DC drama is getting surprisingly spicy!",
+      "category": "Travel & Cultural Experiences (Event-Focused)",
+      "topic": "Experiencing Carnival in Rio: More than just parades, it's a cultural explosion.",
+      "hook": "Forget what you think you know about Carnival! Rio de Janeiro during this festival is an absolute sensory overload \u2013 in the best way possible.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 49
+    },
+    {
+      "category": "Public Figure Brand Analysis & Lifestyle",
+      "topic": "How Rihanna built Fenty into a billion-dollar empire beyond music.",
+      "hook": "Rihanna's not just a music icon; she's a business genius. Here's how she transformed Fenty into a global billion-dollar powerhouse.",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Sports Match Highlights & Reactions",
+      "topic": "The wildest fan reactions caught on camera during the Super Bowl halftime show controversy.",
+      "hook": "The Super Bowl halftime show always stirs things up, but *these* fan reactions to the controversial performance were priceless! Did you see them?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Gossip & Entertainment News",
+      "topic": "Unpacking the 'Nepo Baby' debate: Who's thriving and who's struggling in Hollywood?",
+      "hook": "Is Hollywood *really* run by nepo babies? We're diving deep into the debate everyone's talking about, and you might be surprised by who's winning.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion & Beauty Trends (Celebrity-Inspired)",
+      "topic": "The return of Y2K fashion: How celebrities like Dua Lipa are making low-rise jeans cool again (somehow).",
+      "hook": "Low-rise jeans are BACK, thanks to Dua Lipa and others! But can *we* really go back to the early 2000s? I'm breaking down the Y2K comeback.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 43
+    },
+    {
+      "category": "Geopolitical News Explained (Quick Takes)",
+      "topic": "What's actually happening with the global chip shortage and why it impacts *every* piece of tech you own.",
+      "hook": "Your phone, your car, your toaster! The global chip shortage is affecting *everything*, and here's the quick rundown on why your tech is getting pricier.",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 48
     },
     {
-      "category": "Current Events & DC News Digests",
-      "topic": "DC's Newest Interactive Museum Exhibit You CANNOT Miss This Weekend",
-      "hook": "Forget your plans! DC just dropped a new interactive exhibit that's going to blow your mind. You HAVE to see this before it's gone!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Holiday Shopping Guides & Deals (GMA Style)",
-      "topic": "Black Friday's Binge-Worthy Tech Deals You Can't Afford to Miss",
-      "hook": "Stop scrolling! Black Friday's hottest tech deals are HERE, and your wallet will thank me later. These savings are insane!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Holiday Shopping Guides & Deals (GMA Style)",
-      "topic": "Last-Minute Unique Stocking Stuffers Under $20 (That Aren't Candy!)",
-      "hook": "Stuck on stocking stuffers? I've got 5 brilliant ideas under $20 that aren't another candy cane \u2013 guaranteed smiles!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Daily Brain Games & Puzzles (Connections, etc.)",
-      "topic": "Can YOU Solve Today's Insane Connections Puzzle? (Expert Level)",
-      "hook": "Think you're a puzzle master? Today's Connections is designed to stump even the pros! Let's see if you can crack it.",
+      "category": "Friday the 13th Spooky Content & Superstitions",
+      "topic": "The creepiest unexplained sightings near famous haunted landmarks.",
+      "hook": "Think haunted houses are just for movies? These real-life, unexplained sightings near famous spooky landmarks will make you think twice.",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Daily Brain Games & Puzzles (Connections, etc.)",
-      "topic": "My Secret Strategy to Conquer the 'Impossible' Daily Wordle Challenge",
-      "hook": "I just conquered the 'impossible' Wordle! Want to know my secret strategy to crack ANY 5-letter word? You won't believe it!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Celebrity & Pop Culture Buzz (Xochitl Gomez, Music Festivals)",
-      "topic": "Xochitl Gomez's NEXT Big Project: What We Know So Far & Fan Theories",
-      "hook": "Xochitl Gomez just teased something HUGE! Is she heading to the MCU again, or is it a whole new adventure? Let's break it down!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 46
     },
     {
-      "category": "Celebrity & Pop Culture Buzz (Xochitl Gomez, Music Festivals)",
-      "topic": "Music Festival Style Guide: From Coachella to Glastonbury, What's Trending?",
-      "hook": "Planning your next festival outfit? From desert chic to muddy glam, here's what's actually trending this season. Don't miss out!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Athlete Life & Inspirational Stories",
+      "topic": "The untold story of an Olympic gymnast's battle with mental health and triumphant return.",
+      "hook": "Behind the medals and smiles, some athletes face their toughest battles off the field. This Olympian's story of resilience and mental health triumph will move you.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
       "target_duration": 44
     },
     {
-      "category": "Australia Focus: News, Travel & Culture",
-      "topic": "Secret Beaches of Queensland: Your Next Untouched Aussie Adventure Awaits",
-      "hook": "Tired of crowded beaches? I'm revealing Queensland's best-kept secret spots for your ultimate, tranquil Aussie escape!",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 49
+      "category": "Film & TV Show Critiques/Fan Theories",
+      "topic": "Debunking *that* wild fan theory about the true identity of 'The Mandalorian's' Grogu.",
+      "hook": "Did Grogu *really* travel through time? We're diving deep into the wildest Mandalorian fan theories and separating fact from fiction about our favorite green guy.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 47
     },
     {
-      "category": "Australia Focus: News, Travel & Culture",
-      "topic": "Why Everyone is Talking About Australia's New 'Quokka Selfie' Tourism Trend",
-      "hook": "Is Australia *really* encouraging 'Quokka selfies'? The latest Aussie tourism trend is cuter (and stranger) than fiction!",
+      "category": "Current Event Satire & Meme Culture",
+      "topic": "The internet's reaction to the latest bizarre viral challenge sweeping TikTok.",
+      "hook": "Another day, another ridiculous viral challenge breaking the internet. You won't believe what people are doing now on TikTok, and the memes are gold!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 41
     },
     {
-      "category": "Seasonal Recipes & Holiday Cooking",
-      "topic": "The ONLY 3-Ingredient Cranberry Sauce You'll Ever Need (Holiday Hack!)",
-      "hook": "Forgot the cranberry sauce? No stress! This 3-ingredient hack will save your holiday meal and blow everyone's mind!",
+      "category": "Travel & Cultural Experiences (Event-Focused)",
+      "topic": "Cherry Blossom Festival in Japan: A guide to experiencing Hanami like a local.",
+      "hook": "Imagine a sea of pink petals! Japan's Cherry Blossom Festival is magical, but do you know how to celebrate 'Hanami' like a true local? Your guide starts now!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Seasonal Recipes & Holiday Cooking",
-      "topic": "Cozy Winter Soup: My Secret Ingredient for the Perfect Comfort Bowl",
-      "hook": "The chill is here! And so is my secret to the coziest, most comforting winter soup you'll ever taste. You HAVE to try this!",
-      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 46
+      "target_duration": 49
     },
     {
-      "category": "Winter Fashion & Cozy Style Trends",
-      "topic": "Elevate Your Puffer Jacket: 5 Unexpected Ways to Style It This Winter",
-      "hook": "Think your puffer jacket is just for warmth? Think again! Here are 5 unexpected ways to make it *fashion* this winter.",
+      "category": "Public Figure Brand Analysis & Lifestyle",
+      "topic": "Elon Musk's brand strategy: How he dominates headlines (and sometimes Twitter) with sheer chaos.",
+      "hook": "Love him or hate him, Elon Musk always has us talking. Is his 'chaos marketing' genius, or just, well, chaos? Let's break down his brand strategy.",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "Winter Fashion & Cozy Style Trends",
-      "topic": "The Ultimate Guide to Layering for Maximum Warmth & Style (No Bulk!)",
-      "hook": "Hate looking like a marshmallow in winter? I'll show you how to layer up for maximum warmth *without* the bulk. Game changer!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 48
-    },
-    {
-      "category": "DIY & Home Decor (Festive & Seasonal)",
-      "topic": "DIY Snowy Mason Jars: Instant Winter Wonderland Decor in 5 Mins",
-      "hook": "Transform your home into a winter wonderland in literally 5 minutes with this super easy, snowy mason jar DIY! No artistic skills needed!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "DIY & Home Decor (Festive & Seasonal)",
-      "topic": "Beyond Garland: Creative & Cheap Ways to Decorate Your Fireplace Mantel",
-      "hook": "Is your mantel looking a little... boring? Ditch the basic garland! I've got genius ideas for *epic* festive decor on a budget.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 47
-    },
-    {
-      "category": "Mental Wellness & Stress Relief Tips",
-      "topic": "The 60-Second De-Stress Hack: Instant Calm When You Need It Most",
-      "hook": "Feeling overwhelmed? I've got a 60-second hack that will melt your stress away, right now. You won't believe how simple it is!",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Mental Wellness & Stress Relief Tips",
-      "topic": "Beat Holiday Burnout: My Top 3 Tips for a Stress-Free Festive Season",
-      "hook": "The holidays are coming, and so is the stress! Here are my top 3 secrets to actually *enjoying* the season, not just surviving it.",
-      "voice_style": "friendly",
-      "music_mood": "inspirational",
+      "music_mood": "dramatic",
       "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "upbeat"
+      "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-JennyNeural",
       "rate": "+5%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
       "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "-3%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-DavisNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
