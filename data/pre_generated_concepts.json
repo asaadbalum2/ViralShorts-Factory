@@ -1,245 +1,230 @@
 {
-  "generated_at": "2026-11-13T13:21:02.455755",
-  "valid_until": "2026-11-13T23:59:02.455767",
+  "generated_at": "2026-11-14T12:25:21.075877",
+  "valid_until": "2026-11-14T23:59:21.075888",
   "categories": [
-    "Sports Match Highlights & Reactions",
-    "Celebrity Gossip & Entertainment News",
-    "Fashion & Beauty Trends (Celebrity-Inspired)",
-    "Geopolitical News Explained (Quick Takes)",
-    "Friday the 13th Spooky Content & Superstitions",
-    "Athlete Life & Inspirational Stories",
-    "Film & TV Show Critiques/Fan Theories",
-    "Current Event Satire & Meme Culture",
-    "Travel & Cultural Experiences (Event-Focused)",
-    "Public Figure Brand Analysis & Lifestyle",
-    "\"What If\" Scenarios & Speculative Content",
-    "Opinion & Commentary on Pop Culture",
-    "\"Day In The Life\" & Behind-The-Scenes",
-    "Creative Design & DIY Tutorials (Quick)",
-    "Wellness, Mindset & Self-Improvement (Inspired by public figures)"
+    "News & Current Affairs Explained (e.g., Caitlin Cunningham, Collin Gosselin stories)",
+    "Sports Highlights & Fan Reactions (e.g., Haiti vs USA, Thiago Agustin Tirante, pro game recaps)",
+    "High School Sports Spotlight (e.g., IHSAA & NC Football scores, local heroes)",
+    "Celebrity & Influencer Buzz (e.g., Lendeborg, Harper Murray updates, viral moments)",
+    "Inspirational Stories & Achievements (e.g., Collin Gosselin's win, personal triumphs)",
+    "Holiday Prep & Festive DIY (Thanksgiving, early Christmas decor, gift guides)",
+    "Seasonal Recipes & Quick Food Hacks (Autumn comfort food, easy holiday dishes)",
+    "Cozy Aesthetic & Lifestyle (Fall fashion, hygge vibes, warm drinks, home decor)",
+    "Relatable Comedy & Skits (Trending audio, everyday humor, seasonal takes)",
+    "Quick Life Hacks & Productivity Tips (Organizational, cleaning, time-saving)",
+    "Educational & 'Did You Know?' Content (Brief explainers on any topic, current events)",
+    "Travel & Exploration Mini-Vlogs (Local gems, weekend getaways, winter destinations)",
+    "Pet Adventures & Animal Content (Cute pets, funny moments, training tips)",
+    "Personal Finance & Budgeting Tips (Holiday spending, year-end financial advice)",
+    "Fashion & Style Updates (Fall/Winter '26 trends, outfit ideas, styling tips)"
   ],
   "concepts": [
     {
-      "category": "Sports Match Highlights & Reactions",
-      "topic": "The insane last-minute comeback in the recent championship basketball game.",
-      "hook": "Did you SEE that buzzer-beater?! You won't believe how this team pulled off the most epic comeback in championship history!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "News & Current Affairs Explained",
+      "topic": "Collin Gosselin's journey beyond reality TV and recent personal achievements",
+      "hook": "Remember Collin Gosselin from 'Jon & Kate Plus 8'? You won't BELIEVE what he's been up to since the cameras stopped rolling!",
+      "voice_style": "Friendly",
+      "music_mood": "Inspirational",
       "target_duration": 45
     },
     {
-      "category": "Celebrity Gossip & Entertainment News",
-      "topic": "Why *that* A-list couple's sudden split is sending shockwaves through Hollywood.",
-      "hook": "Hold up, did they *actually* break up?! Hollywood is reeling from this shocking celebrity split, and I've got the tea.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 40
-    },
-    {
-      "category": "Fashion & Beauty Trends (Celebrity-Inspired)",
-      "topic": "Decoding Zendaya's Met Gala look: How to get the 'alien chic' vibe yourself.",
-      "hook": "Zendaya just broke the internet with her Met Gala fit, but can *you* pull off that 'alien chic' vibe? I'm breaking down her iconic look.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "News & Current Affairs Explained",
+      "topic": "The mysterious details surrounding the 'Caitlin Cunningham' social media storm",
+      "hook": "Everyone's talking about Caitlin Cunningham, but do you *really* know the full story? We're diving deep into the viral buzz.",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
       "target_duration": 48
     },
     {
-      "category": "Geopolitical News Explained (Quick Takes)",
-      "topic": "The Red Sea Crisis: Why attacks on shipping affect *your* wallet.",
-      "hook": "The Red Sea sounds far away, but what's happening there is impacting *your* grocery bill. Here's why in 45 seconds.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "category": "Sports Highlights & Fan Reactions",
+      "topic": "Unforgettable fan reactions to the shocking Haiti vs USA soccer match upset",
+      "hook": "Haiti vs USA: The match nobody saw coming! Get ready for the wildest fan reactions that broke the internet!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Friday the 13th Spooky Content & Superstitions",
-      "topic": "The terrifying true origins of common Friday the 13th superstitions.",
-      "hook": "Black cats, broken mirrors... ever wonder *why* Friday the 13th feels so spooky? Uncover the terrifying true origins of these superstitions.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Athlete Life & Inspirational Stories",
-      "topic": "From injury sidelines to Olympic gold: The comeback story of a lesser-known gymnast.",
-      "hook": "Everyone counted her out after *that* injury, but she had other plans. This gymnast's incredible journey from sidelines to Olympic gold will inspire you.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Film & TV Show Critiques/Fan Theories",
-      "topic": "Did the latest 'Black Mirror' episode actually predict the future?",
-      "hook": "Did you really understand the ending of the latest 'Black Mirror' season? I'm breaking down *that* mind-bending twist and if it predicted our future.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Sports Highlights & Fan Reactions",
+      "topic": "Thiago Agustin Tirante's sudden rise in the tennis world and its impact",
+      "hook": "Who IS Thiago Agustin Tirante? This tennis prodigy just pulled off a HUGE upset, and the pros are speechless.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
       "target_duration": 42
     },
     {
-      "category": "Current Event Satire & Meme Culture",
-      "topic": "The internet's hilarious reaction to the 'AI-generated influencer' controversy.",
-      "hook": "AI influencers are taking over, and the internet's reactions are pure gold. You HAVE to see these memes about the latest AI controversy!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Travel & Cultural Experiences (Event-Focused)",
-      "topic": "Experiencing Carnival in Rio: More than just parades, it's a cultural explosion.",
-      "hook": "Forget what you think you know about Carnival! Rio de Janeiro during this festival is an absolute sensory overload \u2013 in the best way possible.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "Public Figure Brand Analysis & Lifestyle",
-      "topic": "How Rihanna built Fenty into a billion-dollar empire beyond music.",
-      "hook": "Rihanna's not just a music icon; she's a business genius. Here's how she transformed Fenty into a global billion-dollar powerhouse.",
-      "voice_style": "authoritative",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Sports Match Highlights & Reactions",
-      "topic": "The wildest fan reactions caught on camera during the Super Bowl halftime show controversy.",
-      "hook": "The Super Bowl halftime show always stirs things up, but *these* fan reactions to the controversial performance were priceless! Did you see them?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Celebrity Gossip & Entertainment News",
-      "topic": "Unpacking the 'Nepo Baby' debate: Who's thriving and who's struggling in Hollywood?",
-      "hook": "Is Hollywood *really* run by nepo babies? We're diving deep into the debate everyone's talking about, and you might be surprised by who's winning.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "High School Sports Spotlight",
+      "topic": "IHSAA Football: The unexpected playoff run of a small-town team making history",
+      "hook": "They were underdogs, but this IHSAA football team just made history! Their playoff journey is pure magic.",
+      "voice_style": "Inspirational",
+      "music_mood": "Upbeat",
       "target_duration": 45
     },
     {
-      "category": "Fashion & Beauty Trends (Celebrity-Inspired)",
-      "topic": "The return of Y2K fashion: How celebrities like Dua Lipa are making low-rise jeans cool again (somehow).",
-      "hook": "Low-rise jeans are BACK, thanks to Dua Lipa and others! But can *we* really go back to the early 2000s? I'm breaking down the Y2K comeback.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "High School Sports Spotlight",
+      "topic": "NC Football: Highlighting a local player's record-breaking season and viral plays",
+      "hook": "Forget the pros, this high school phenom from North Carolina just shattered a state record! You NEED to see these plays.",
+      "voice_style": "Energetic",
+      "music_mood": "Intense",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity & Influencer Buzz",
+      "topic": "The viral interaction between a rising star and Lendeborg, causing a social media frenzy",
+      "hook": "Did you see *that* Lendeborg moment? Their latest interaction is sending shockwaves through Hollywood!",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
       "target_duration": 43
     },
     {
-      "category": "Geopolitical News Explained (Quick Takes)",
-      "topic": "What's actually happening with the global chip shortage and why it impacts *every* piece of tech you own.",
-      "hook": "Your phone, your car, your toaster! The global chip shortage is affecting *everything*, and here's the quick rundown on why your tech is getting pricier.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 48
-    },
-    {
-      "category": "Friday the 13th Spooky Content & Superstitions",
-      "topic": "The creepiest unexplained sightings near famous haunted landmarks.",
-      "hook": "Think haunted houses are just for movies? These real-life, unexplained sightings near famous spooky landmarks will make you think twice.",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 46
-    },
-    {
-      "category": "Athlete Life & Inspirational Stories",
-      "topic": "The untold story of an Olympic gymnast's battle with mental health and triumphant return.",
-      "hook": "Behind the medals and smiles, some athletes face their toughest battles off the field. This Olympian's story of resilience and mental health triumph will move you.",
-      "voice_style": "inspirational",
-      "music_mood": "inspirational",
-      "target_duration": 44
-    },
-    {
-      "category": "Film & TV Show Critiques/Fan Theories",
-      "topic": "Debunking *that* wild fan theory about the true identity of 'The Mandalorian's' Grogu.",
-      "hook": "Did Grogu *really* travel through time? We're diving deep into the wildest Mandalorian fan theories and separating fact from fiction about our favorite green guy.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
+      "category": "Celebrity & Influencer Buzz",
+      "topic": "Harper Murray's latest social media update stirring rumors about her next big career move",
+      "hook": "Harper Murray just dropped a cryptic post, and fans are convinced something HUGE is coming. What's the buzz?",
+      "voice_style": "Mysterious",
+      "music_mood": "Chill",
       "target_duration": 47
     },
     {
-      "category": "Current Event Satire & Meme Culture",
-      "topic": "The internet's reaction to the latest bizarre viral challenge sweeping TikTok.",
-      "hook": "Another day, another ridiculous viral challenge breaking the internet. You won't believe what people are doing now on TikTok, and the memes are gold!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 41
+      "category": "Inspirational Stories & Achievements",
+      "topic": "How one person turned their personal setback into a community-wide triumph",
+      "hook": "They said it couldn't be done. But this incredible individual not only overcame their struggle, they inspired an entire town.",
+      "voice_style": "Inspirational",
+      "music_mood": "Inspirational",
+      "target_duration": 48
     },
     {
-      "category": "Travel & Cultural Experiences (Event-Focused)",
-      "topic": "Cherry Blossom Festival in Japan: A guide to experiencing Hanami like a local.",
-      "hook": "Imagine a sea of pink petals! Japan's Cherry Blossom Festival is magical, but do you know how to celebrate 'Hanami' like a true local? Your guide starts now!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 49
+      "category": "Inspirational Stories & Achievements",
+      "topic": "Unveiling the quiet achievements of an unsung local hero making a real difference",
+      "hook": "You've never heard their name, but this local hero is quietly changing lives. Prepare to be moved by their selfless work.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 46
     },
     {
-      "category": "Public Figure Brand Analysis & Lifestyle",
-      "topic": "Elon Musk's brand strategy: How he dominates headlines (and sometimes Twitter) with sheer chaos.",
-      "hook": "Love him or hate him, Elon Musk always has us talking. Is his 'chaos marketing' genius, or just, well, chaos? Let's break down his brand strategy.",
-      "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "category": "Holiday Prep & Festive DIY",
+      "topic": "Budget-friendly Thanksgiving centerpiece ideas using natural elements",
+      "hook": "Stressed about Thanksgiving decor? These gorgeous DIY centerpieces look expensive but cost next to nothing!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Holiday Prep & Festive DIY",
+      "topic": "Early Christmas gift guide for the person who 'has everything'",
+      "hook": "Christmas shopping stress? Don't panic! Our ultimate gift guide for those impossible-to-shop-for people is HERE.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Recipes & Quick Food Hacks",
+      "topic": "A viral 10-minute autumn comfort meal that tastes like hours of cooking",
+      "hook": "Craving fall comfort food but have no time? This 10-minute recipe is an absolute game-changer for cozy nights!",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 42
+    },
+    {
+      "category": "Seasonal Recipes & Quick Food Hacks",
+      "topic": "Genius Thanksgiving leftover hacks that will upgrade your post-holiday meals",
+      "hook": "Tired of plain Thanksgiving leftovers? You're doing it wrong! These hacks will transform your fridge into a gourmet feast.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Cozy Aesthetic & Lifestyle",
+      "topic": "How to create a hygge-inspired fall bedroom retreat on a small budget",
+      "hook": "Ready to make your bedroom the ultimate cozy fall sanctuary? We're showing you how to get that hygge vibe for less!",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
+      "target_duration": 43
+    },
+    {
+      "category": "Cozy Aesthetic & Lifestyle",
+      "topic": "Must-have fall fashion essentials that blend comfort with effortless style",
+      "hook": "Fall fashion doesn't have to sacrifice comfort! These are the essential pieces you need to look chic and feel cozy.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Relatable Comedy & Skits",
+      "topic": "The absurd reality of trying to organize a family Thanksgiving dinner",
+      "hook": "POV: You're trying to coordinate Thanksgiving dinner with 3 different families. May the odds be ever in your favor.",
+      "voice_style": "Dramatic",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Relatable Comedy & Skits",
+      "topic": "A skit depicting the hilarious misinterpretations of Gen Z slang by older generations",
+      "hook": "Trying to explain 'rizz' to your grandma? Get ready for the funniest generational gap moment you've ever seen.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Life Hacks & Productivity Tips",
+      "topic": "3 unexpected kitchen organization hacks that will save you time and space",
+      "hook": "Your kitchen is probably a mess! But don't worry, these 3 genius organization hacks will revolutionize your space (and your life).",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Quick Life Hacks & Productivity Tips",
+      "topic": "The ultimate 7-minute morning routine to boost productivity all day",
+      "hook": "Hit snooze too many times? This 7-minute morning routine isn't just easy, it's guaranteed to supercharge your entire day!",
+      "voice_style": "Authoritative",
+      "music_mood": "Inspirational",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-CA-LiamNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "upbeat"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-AriaNeural",
@@ -247,14 +232,29 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
+      "voice": "en-US-EricNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
