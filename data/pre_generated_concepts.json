@@ -1,258 +1,258 @@
 {
-  "generated_at": "2026-11-16T13:55:13.859369",
-  "valid_until": "2026-11-16T23:59:13.859380",
+  "generated_at": "2026-11-17T14:47:42.600283",
+  "valid_until": "2026-11-17T23:59:42.600289",
   "categories": [
-    "Sports Highlights & Athlete Insights",
-    "Financial Literacy & Investing Tips",
-    "Celebrity Pop Culture & Entertainment News",
-    "Holiday Shopping Guides & Product Deals",
-    "Quick Health & Wellness Tips",
-    "Market Analysis & Economic Updates",
-    "Relatable Humor & Skits",
-    "DIY & Home Improvement Hacks",
-    "Seasonal Recipe Demos & Food Inspiration",
-    "Product Reviews & Unboxings",
-    "Behind-the-Scenes & Day-in-the-Life",
-    "Educational Explainers (Current Events & Trends)",
-    "Motivational & Productivity Boosts",
-    "Tech Gadget Spotlights & How-Tos",
-    "Pet Content & Animal Facts"
+    "Celebrity & Entertainment Buzz",
+    "Gaming Deals & Console Reviews",
+    "Black Friday & Holiday Shopping Hacks",
+    "Stock Market & Investment Insights",
+    "AI & Future Tech Explainers",
+    "Global Sports Highlights & Reactions",
+    "Political & Current Affairs Updates",
+    "Quick News & Trend Recaps",
+    "Pop Culture & Media Deconstructions",
+    "Wellness & Mental Health Journeys",
+    "Seasonal Gift Guides & Product Spotlights",
+    "Fashion & Style Inspiration",
+    "Holiday Recipes & Entertaining Tips",
+    "Travel & Winter Getaway Planning",
+    "Life Hacks & Productivity Boosters"
   ],
   "concepts": [
     {
-      "category": "Sports Highlights & Athlete Insights",
-      "topic": "The Secret Training Regimen of a World Champion Swimmer",
-      "hook": "Ever wondered what it *really* takes to be the fastest human in water? Prepare to be amazed!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
+      "category": "Celebrity & Entertainment Buzz",
+      "topic": "The 'Quiet Quitting' trend hitting Hollywood stars and how it's changing movie production.",
+      "hook": "Did you know Hollywood's biggest stars are 'quiet quitting' and it's secretly changing your favorite movies?",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
       "target_duration": 45
     },
     {
-      "category": "Financial Literacy & Investing Tips",
-      "topic": "Debunking Common Myths About Investing in Penny Stocks",
-      "hook": "Everyone says penny stocks are a scam, but what if you're missing out on hidden gems? Let's get real.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
+      "category": "Gaming Deals & Console Reviews",
+      "topic": "The surprising hidden gem game on Xbox Game Pass that's better than most AAA titles.",
+      "hook": "Stop scrolling! This Game Pass sleeper hit is secretly outperforming every major release right now.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
       "target_duration": 40
     },
     {
-      "category": "Celebrity Pop Culture & Entertainment News",
-      "topic": "The Most Unexpected Celebrity Friendships You Never Knew Existed",
-      "hook": "Beyonc\u00e9 and who?! Get ready to have your mind blown by these Hollywood power duos!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Black Friday & Holiday Shopping Hacks",
+      "topic": "The exact 'price-tracking trick' retailers don't want you to know before Black Friday.",
+      "hook": "Retailers HATE this secret pricing trick! Master it before Black Friday and save hundreds!",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Stock Market & Investment Insights",
+      "topic": "The unexpected impact of celebrity endorsements on specific meme stocks.",
+      "hook": "When a pop star tweets, your portfolio could crash! The hidden link between celebrity gossip and meme stock volatility.",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 50
+    },
+    {
+      "category": "AI & Future Tech Explainers",
+      "topic": "How AI-powered 'deepfakes' are evolving beyond videos to impact audio and even text.",
+      "hook": "Deepfakes aren't just faces anymore. Your voice, your words, even *this* could be AI. The future is here, and it's terrifying.",
+      "voice_style": "Mysterious",
+      "music_mood": "Mysterious",
       "target_duration": 48
     },
     {
-      "category": "Holiday Shopping Guides & Product Deals",
-      "topic": "Top 5 Unique Gift Ideas Under $30 for the 'Person Who Has Everything'",
-      "hook": "Stuck on what to get *that* friend? Stop scrolling, I've got five game-changing ideas right here!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "category": "Global Sports Highlights & Reactions",
+      "topic": "The untold story behind that viral 'miracle save' in the recent Champions League match.",
+      "hook": "Everyone saw the miracle save, but nobody knows the secret training drill behind it. Until now.",
+      "voice_style": "Dramatic",
+      "music_mood": "Inspirational",
       "target_duration": 42
     },
     {
-      "category": "Quick Health & Wellness Tips",
-      "topic": "The 60-Second Breathing Technique to Instantly Reduce Stress",
-      "hook": "Feeling overwhelmed? This one simple breath can change your entire day, right now.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
-    },
-    {
-      "category": "Market Analysis & Economic Updates",
-      "topic": "Why Tech Stocks Are Volatile: Beyond the Headlines Explained",
-      "hook": "One day up, next day down! Why are tech stocks acting like a rollercoaster? Let's decode it.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Political & Current Affairs Updates",
+      "topic": "The underreported global effort to combat 'digital authoritarianism' in developing nations.",
+      "hook": "While you were scrolling, a silent war on digital freedom began in unexpected corners of the world. Here's what's really happening.",
+      "voice_style": "Authoritative",
+      "music_mood": "Dramatic",
       "target_duration": 47
     },
     {
-      "category": "Relatable Humor & Skits",
-      "topic": "The Inner Monologue of Trying to Assemble IKEA Furniture",
-      "hook": "Step 1: Open box. Step 2: Question all life choices. Sound familiar?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Quick News & Trend Recaps",
+      "topic": "Debunking the top 3 viral 'life hacks' that are actually dangerous or useless.",
+      "hook": "Seen that viral 'hack' everywhere? WARNING: These 3 trending tips are actually useless... or worse, dangerous!",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Pop Culture & Media Deconstructions",
+      "topic": "Why the 'chosen one' trope in fantasy movies is secretly losing its appeal.",
+      "hook": "Is the 'chosen one' trope finally dying? Your favorite fantasy movies might be subtly telling us goodbye to this classic hero.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
       "target_duration": 45
     },
     {
-      "category": "DIY & Home Improvement Hacks",
-      "topic": "Transform Your Old Mugs into Trendy Planters in Under 5 Minutes",
-      "hook": "Don't throw away those chipped mugs! Turn them into adorable plant pots with this super easy hack.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Seasonal Recipe Demos & Food Inspiration",
-      "topic": "Homemade No-Bake Mini Cheesecakes for Summer Potlucks",
-      "hook": "It's too hot for the oven! Whip up these creamy, dreamy mini cheesecakes in minutes, no baking required.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "Product Reviews & Unboxings",
-      "topic": "Is the Viral 'Cleaning Slime' Actually Worth Buying?",
-      "hook": "TikTok made me buy it! This sticky, gooey slime promises to clean everything, but does it *really* work?",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "Sports Highlights & Athlete Insights",
-      "topic": "The Unbelievable Comebacks in Sports History You Forgot About",
-      "hook": "Down by 20 with 2 minutes left? These teams defied gravity and logic!",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 44
-    },
-    {
-      "category": "Financial Literacy & Investing Tips",
-      "topic": "Automating Your Savings: The 'Set It and Forget It' Method for Growth",
-      "hook": "Want to save money without even thinking about it? This simple trick will change your financial game.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 41
-    },
-    {
-      "category": "Celebrity Pop Culture & Entertainment News",
-      "topic": "Decoding Taylor Swift's Latest Easter Eggs in Her Music Videos",
-      "hook": "Swifties, assemble! Did you catch *that* hidden message in her new video? Let's dive deep!",
-      "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Holiday Shopping Guides & Product Deals",
-      "topic": "How to Spot Fake Reviews and Avoid Shopping Scams Online",
-      "hook": "That 5-star product might be a total rip-off! Learn my secret weapon for spotting fake online reviews.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
+      "category": "Wellness & Mental Health Journeys",
+      "topic": "The 'micro-habit' strategy to combat screen fatigue and digital burnout.",
+      "hook": "Staring at screens all day? This 60-second 'micro-habit' could be your secret weapon against digital burnout and eye strain.",
+      "voice_style": "Calm",
+      "music_mood": "Chill",
       "target_duration": 40
     },
     {
-      "category": "Quick Health & Wellness Tips",
-      "topic": "The Surprising Benefits of Taking a 10-Minute Walk Every Day",
-      "hook": "Too busy for a workout? Just 10 minutes outside can boost your mood, focus, and creativity!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
+      "category": "Celebrity & Entertainment Buzz",
+      "topic": "The unexpected resurgence of 90s fashion trends on celebrity red carpets and why.",
+      "hook": "Suddenly, everyone's wearing *that* outfit from the 90s! Is it nostalgia, or a subtle protest against fast fashion?",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
     },
     {
-      "category": "Market Analysis & Economic Updates",
-      "topic": "The Impact of Interest Rate Hikes on Your Mortgage and Credit Cards",
-      "hook": "Your monthly payments just got more expensive! Here's exactly how interest rate hikes affect *your* wallet.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 49
+      "category": "Gaming Deals & Console Reviews",
+      "topic": "Why the Nintendo Switch OLED is still worth it, despite rumors of the next-gen console.",
+      "hook": "Next-gen Switch rumors got you waiting? Here's why the OLED is *still* the best portable console purchase you can make right now.",
+      "voice_style": "Friendly",
+      "music_mood": "Chill",
+      "target_duration": 45
     },
     {
-      "category": "Relatable Humor & Skits",
-      "topic": "That Moment You Realize You've Been Mute on a Video Call for 5 Minutes",
-      "hook": "Hello? Is this thing on? The universal cringe of talking to yourself on a virtual meeting!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 46
+      "category": "Black Friday & Holiday Shopping Hacks",
+      "topic": "The single best credit card strategy to maximize Black Friday cashback and rewards.",
+      "hook": "Forget coupons! This specific credit card strategy will actually earn you hundreds back on Black Friday purchases. Don't shop without it!",
+      "voice_style": "Authoritative",
+      "music_mood": "Intense",
+      "target_duration": 50
     },
     {
-      "category": "DIY & Home Improvement Hacks",
-      "topic": "Cheap & Easy DIY Accent Wall Ideas Using Painter's Tape",
-      "hook": "Bored of plain walls? Create a stunning accent wall masterpiece with just tape and paint!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "Seasonal Recipe Demos & Food Inspiration",
-      "topic": "Spooky Halloween Snack Ideas for Last-Minute Parties",
-      "hook": "Party tonight and nothing spooky to serve? These creepy, quick snacks will save your Halloween!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Stock Market & Investment Insights",
+      "topic": "The hidden risks of investing in 'green tech' startups that few analysts are talking about.",
+      "hook": "Everyone's hyping green tech, but there's a dark side to these investments nobody's telling you about. Are you falling into the trap?",
+      "voice_style": "Mysterious",
+      "music_mood": "Dramatic",
       "target_duration": 48
     },
     {
-      "category": "Product Reviews & Unboxings",
-      "topic": "Testing Out 3 Budget-Friendly Coffee Gadgets Under $25",
-      "hook": "Tired of expensive coffee runs? I found three cheap gadgets that'll make your home brew taste gourmet!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "AI & Future Tech Explainers",
+      "topic": "How AI is now designing new *materials* with properties never before seen, beyond just software.",
+      "hook": "AI isn't just writing code anymore. It's creating entirely new physical materials that could revolutionize everything from phones to space travel.",
+      "voice_style": "Energetic",
+      "music_mood": "Inspirational",
+      "target_duration": 42
+    },
+    {
+      "category": "Global Sports Highlights & Reactions",
+      "topic": "The rise of drone racing as a legitimate professional sport and its surprising athlete demands.",
+      "hook": "Forget F1, the fastest sport on Earth now involves joysticks and goggles! Discover the wild world of professional drone racing.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Political & Current Affairs Updates",
+      "topic": "The surprising reason behind the global resurgence of vinyl records, and its political undertones.",
+      "hook": "Vinyl is back, but it's not just nostalgia. There's a subtle political statement in every spin of a record you're missing.",
+      "voice_style": "Mysterious",
+      "music_mood": "Chill",
       "target_duration": 45
+    },
+    {
+      "category": "Quick News & Trend Recaps",
+      "topic": "Explaining the current TikTok trend of 'de-influencing' and why it's gaining traction.",
+      "hook": "Your feed is lying to you! The 'de-influencing' trend is blowing up, and it's calling out all your favorite creators.",
+      "voice_style": "Energetic",
+      "music_mood": "Upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Pop Culture & Media Deconstructions",
+      "topic": "The subtle ways video game soundtracks are now influencing mainstream pop music.",
+      "hook": "That catchy hook on the radio? It might have come straight from your favorite video game. The secret influence of gaming music is HUGE.",
+      "voice_style": "Friendly",
+      "music_mood": "Upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Wellness & Mental Health Journeys",
+      "topic": "How 'sensory gardens' are being used in urban areas to improve public mental health.",
+      "hook": "Feeling overwhelmed by city life? These hidden urban 'sensory gardens' are scientifically proven to calm your mind in minutes.",
+      "voice_style": "Calm",
+      "music_mood": "Inspirational",
+      "target_duration": 42
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-GuyNeural",
+      "voice": "en-US-DavisNeural",
       "rate": "+0%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
       "music_mood": "chill"
     },
     {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
       "voice": "en-US-GuyNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
       "music_mood": "intense"
     }
