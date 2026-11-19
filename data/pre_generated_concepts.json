@@ -1,215 +1,190 @@
 {
-  "generated_at": "2026-11-18T14:27:56.460447",
-  "valid_until": "2026-11-18T23:59:56.460458",
+  "generated_at": "2026-11-19T14:38:04.473493",
+  "valid_until": "2026-11-19T23:59:04.473503",
   "categories": [
-    "Thanksgiving & Holiday Hacks",
-    "Winter Wanderlust & Aurora Chasing",
-    "Tennis Finals & Athlete Insights",
-    "AI Breakthroughs & Tech Investment",
-    "Entrepreneur Empire Building",
-    "Iconic Actresses & Film Fashion",
-    "Culture Commentary & Debate",
-    "Seasonal Recipe Inspiration",
-    "Winter Style & Cozy Aesthetics",
-    "Viral Challenges & Trends",
-    "DIY & Crafty Creations (Holiday Edition)",
-    "Financial Wellness & 2027 Planning",
-    "Relatable Life Skits & POVs",
-    "Mindset & Wellness Boosters",
-    "Global Affairs & News Explainer"
+    "Thanksgiving Recipes & Food Prep",
+    "Celebrity News & Pop Culture Deep Dives",
+    "Stock Market & Personal Finance Insights",
+    "Investigative Journalism & Political Analysis",
+    "Holiday Gift Guides & Black Friday Deals",
+    "Stand-up Comedy & Viral Humour Clips",
+    "Rom-Coms & Iconic Movie Moments",
+    "DIY & Holiday Decor Hacks",
+    "Travel Planning & Holiday Destinations",
+    "Historical Events & Political History Explained",
+    "Behind-the-Scenes & Actor Spotlights",
+    "Current Events & News Updates",
+    "Family Comedy & Relatable Situations",
+    "Quick Market Explanations & Crypto Trends",
+    "Mindfulness & Stress Relief for the Holidays"
   ],
   "concepts": [
     {
-      "category": "Thanksgiving & Holiday Hacks",
-      "topic": "The Secret to a Perfectly Moist Turkey Every Time (No Brining!)",
-      "hook": "Your Thanksgiving turkey has been DRY for too long. What if I told you there's a 3-ingredient secret that isn't brining?",
+      "category": "Thanksgiving Recipes & Food Prep",
+      "topic": "The 'Secret Ingredient' for Ultra-Fluffy Mashed Potatoes (no cream cheese!)",
+      "hook": "Stop using butter and cream for your mashed potatoes. I found the REAL secret to restaurant-quality fluffiness!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Thanksgiving Recipes & Food Prep",
+      "topic": "15-Minute 'No-Cook' Cranberry Sauce Hack (seriously, no stove needed)",
+      "hook": "Tired of mushy, bland cranberry sauce? This 15-minute, no-cook hack will blow your mind and your tastebuds!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Thanksgiving & Holiday Hacks",
-      "topic": "Genius Leftover Makeovers: Beyond the Sandwich",
-      "hook": "Staring at a mountain of Thanksgiving leftovers? Don't even THINK about another turkey sandwich. You won't believe these gourmet upgrades!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Winter Wanderlust & Aurora Chasing",
-      "topic": "Budget-Friendly Aurora Borealis Hotspots You Haven't Heard Of",
-      "hook": "Dreaming of the Northern Lights but balking at Arctic prices? What if I told you there are hidden gems where you can see them on a budget?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Winter Wanderlust & Aurora Chasing",
-      "topic": "The Ultimate Winter Cabin Escape: Must-Have Amenities & Destinations",
-      "hook": "Forget crowded ski resorts. Have you ever wondered what makes a winter cabin escape truly magical? It's not what you think.",
-      "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Tennis Finals & Athlete Insights",
-      "topic": "The Unseen Mental Game: How Top Tennis Pros Handle Grand Slam Pressure",
-      "hook": "You see the powerful serves, but what happens in a top athlete's mind moments before a Grand Slam final? The secret isn't physical.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Tennis Finals & Athlete Insights",
-      "topic": "Behind the Racket: Gear Tech That Gives Tennis Champions an Edge",
-      "hook": "Think all tennis rackets are the same? You'd be shocked by the hidden tech giving pros that split-second advantage in finals.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "AI Breakthroughs & Tech Investment",
-      "topic": "The Next Big AI Investment: Beyond ChatGPT, The Invisible AI Revolution",
-      "hook": "Everyone's talking about generative AI, but the real investment goldmine is in the AI breakthroughs you haven't even *seen* yet. Are you ready?",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "AI Breakthroughs & Tech Investment",
-      "topic": "AI Ethics & The Future of Human Creativity: A Crucial Debate",
-      "hook": "If AI can create masterpieces, what happens to human artists? This isn't just a tech question, it's about our future. What do *you* think?",
-      "voice_style": "dramatic",
+      "category": "Celebrity News & Pop Culture Deep Dives",
+      "topic": "The *Real* Reason Behind Timoth\u00e9e Chalamet & Kylie Jenner's Sudden Silence",
+      "hook": "Did Timoth\u00e9e and Kylie *really* break up, or is there a way bigger, more calculated reason for their sudden quiet?",
+      "voice_style": "mysterious",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Entrepreneur Empire Building",
-      "topic": "The Silent Killer of Startups: Scaling Too Fast (and How to Avoid It)",
-      "hook": "You think scaling fast is always the goal? What if I told you it's actually the silent killer of countless promising startups? Don't make this mistake.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
+      "category": "Celebrity News & Pop Culture Deep Dives",
+      "topic": "Decoding Taylor Swift's 'Hidden Message' Everyone Missed in the New Album Art",
+      "hook": "Everyone's talking about Track 5, but I found an Easter egg in Taylor Swift's *album cover* that changes everything!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 48
     },
     {
-      "category": "Entrepreneur Empire Building",
-      "topic": "From Side Hustle to Million-Dollar Brand: The 3 Non-Obvious Steps",
-      "hook": "Got a side hustle stuck in neutral? Everyone talks about grinding, but I'm going to reveal the 3 non-obvious steps that turn passion into a fortune.",
-      "voice_style": "energetic",
+      "category": "Stock Market & Personal Finance Insights",
+      "topic": "Investing in ETFs for Beginners: The 'Set It and Forget It' Strategy",
+      "hook": "Want to invest in the stock market but terrified of picking stocks? This beginner-friendly ETF strategy is for you.",
+      "voice_style": "authoritative",
       "music_mood": "inspirational",
-      "target_duration": 40
+      "target_duration": 47
     },
     {
-      "category": "Iconic Actresses & Film Fashion",
-      "topic": "Audrey Hepburn's Little Black Dress: More Than Just a Gown",
-      "hook": "It's the most iconic dress in film history, but Audrey Hepburn's little black dress from *Breakfast at Tiffany's* hides a secret about female empowerment. Do you know it?",
-      "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 50
-    },
-    {
-      "category": "Iconic Actresses & Film Fashion",
-      "topic": "The Unsung Wardrobe Heroes: Film Costumes That Defined an Era",
-      "hook": "Think film fashion is just about pretty clothes? What if I told you certain costumes didn't just define characters, but entire generations? You'll be shocked.",
-      "voice_style": "dramatic",
-      "music_mood": "dramatic",
-      "target_duration": 45
-    },
-    {
-      "category": "Culture Commentary & Debate",
-      "topic": "The 'Main Character Syndrome' Trend: Narcissism or Empowered Self-Love?",
-      "hook": "Everyone's telling us to be the 'main character' of our lives. But is this genuine empowerment, or a new wave of narcissism? Let's debate.",
+      "category": "Stock Market & Personal Finance Insights",
+      "topic": "The 'Lazy Tax' You're Paying on Your Groceries (and How to Stop It)",
+      "hook": "You're probably overpaying for groceries every week, and it's not just inflation. You're paying a 'lazy tax'!",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
+      "music_mood": "chill",
+      "target_duration": 42
     },
     {
-      "category": "Culture Commentary & Debate",
-      "topic": "Is 'Cancel Culture' Silencing Important Voices or Holding Power Accountable?",
-      "hook": "One minute someone's a hero, the next they're 'canceled.' Is this a necessary tool for accountability, or a dangerous threat to free speech? This isn't black and white.",
+      "category": "Investigative Journalism & Political Analysis",
+      "topic": "The Unseen Lobbying Power Behind the Latest Tech Bill (and Who Benefits)",
+      "hook": "That new tech privacy bill everyone's celebrating? There's a hidden agenda and powerful lobbyists you're not being told about.",
+      "voice_style": "mysterious",
+      "music_mood": "intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Investigative Journalism & Political Analysis",
+      "topic": "Why the 'Democracy Is Dying' Narrative is More Complex Than You Think",
+      "hook": "You keep hearing democracy is in peril, but what does that *actually* mean, and is the situation more nuanced than fear-mongering suggests?",
       "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 50
     },
     {
-      "category": "Seasonal Recipe Inspiration",
-      "topic": "Spiced Pear & Cardamom Crumble: The Ultimate Winter Dessert",
-      "hook": "Forget apple pie this winter. What if I told you there's a dessert so cozy, so fragrant, it captures the entire spirit of the season in one bite? This spiced pear crumble is it.",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Seasonal Recipe Inspiration",
-      "topic": "One-Pot Creamy Butternut Squash Pasta: Weeknight Winter Comfort",
-      "hook": "You want gourmet winter comfort food but have no time? What if I told you this creamy butternut squash pasta comes together in one pot, in under 20 minutes?",
-      "voice_style": "friendly",
+      "category": "Holiday Gift Guides & Black Friday Deals",
+      "topic": "5 Tech Gifts Under $30 That Actually Don't Suck (Tested & Approved!)",
+      "hook": "Forget boring socks! I found 5 tech gifts under $30 that recipients will actually use and love. No junk here!",
+      "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 40
     },
     {
-      "category": "Winter Style & Cozy Aesthetics",
-      "topic": "The Art of Layering: How to Stay Chic & Warm Without the Bulk",
-      "hook": "Winter style often means bulky layers, right? What if I told you there's a secret to staying incredibly warm and effortlessly chic without looking like a marshmallow?",
-      "voice_style": "friendly",
-      "music_mood": "chill",
+      "category": "Holiday Gift Guides & Black Friday Deals",
+      "topic": "Black Friday Scams to AVOID: The 'Fake Discount' Trick Retailers Use",
+      "hook": "Don't fall for the Black Friday 'deal' trap! Retailers use this sneaky trick to make you think you're saving money when you're not.",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Winter Style & Cozy Aesthetics",
-      "topic": "DIY Cozy Home Aesthetics: Hygge on a Budget for Winter",
-      "hook": "Dreaming of a Pinterest-perfect cozy winter home but don't want to break the bank? What if I showed you how to achieve ultimate hygge on a shoestring budget?",
-      "voice_style": "calm",
-      "music_mood": "chill",
-      "target_duration": 40
+      "category": "Stand-up Comedy & Viral Humour Clips",
+      "topic": "The Existential Crisis of Holiday Party Small Talk (and My Escape Plan)",
+      "hook": "You know that moment at holiday parties when someone asks 'So, what do you *do*?' I've developed a foolproof escape plan.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 43
     },
     {
-      "category": "Viral Challenges & Trends",
-      "topic": "The 'Gratitude Jar' Challenge: Can 30 Days Really Change Your Outlook?",
-      "hook": "Everyone's doing 'gratitude journals,' but what if a simple jar could transform your entire mindset in just 30 days? I'm trying the 'Gratitude Jar' challenge.",
+      "category": "Stand-up Comedy & Viral Humour Clips",
+      "topic": "My Cat's Master Plan for World Domination (Revealed through Zoom calls!)",
+      "hook": "I've finally decoded my cat's sinister meows during my Zoom meetings, and folks, we're all in trouble. It's a master plan!",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 48
+    },
+    {
+      "category": "Rom-Coms & Iconic Movie Moments",
+      "topic": "The Unseen Meaning Behind the 'I'm Just a Girl' Scene in Notting Hill",
+      "hook": "Everyone quotes 'I'm just a girl, standing in front of a boy,' but do you know the *real* emotional weight behind that iconic line?",
+      "voice_style": "dramatic",
+      "music_mood": "chill",
+      "target_duration": 46
+    },
+    {
+      "category": "Rom-Coms & Iconic Movie Moments",
+      "topic": "If 'When Harry Met Sally' Happened in the Age of Dating Apps",
+      "hook": "What if Harry and Sally tried to navigate modern dating apps? Their iconic 'will they/won't they' would be WILD and hilarious.",
       "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "DIY & Holiday Decor Hacks",
+      "topic": "Dollar Store Christmas Village Hack (looks expensive, costs pennies!)",
+      "hook": "Don't spend a fortune on holiday decor! I'm showing you how to turn dollar store finds into a chic, expensive-looking Christmas village.",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 41
+    },
+    {
+      "category": "DIY & Holiday Decor Hacks",
+      "topic": "Repurposing Old Wine Bottles into Chic LED Holiday Lamps (5-minute craft!)",
+      "hook": "Got empty wine bottles piling up? Don't throw them out! Turn them into stunning, glowy holiday lamps in minutes with this easy hack.",
+      "voice_style": "calm",
+      "music_mood": "chill",
+      "target_duration": 47
+    },
+    {
+      "category": "Travel Planning & Holiday Destinations",
+      "topic": "How to Snag FREE Hotel Upgrades for Your Holiday Trip (Secret Tricks Revealed!)",
+      "hook": "Want a better hotel room for your holiday getaway without paying extra? I've got the secret techniques to score free upgrades every time.",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Viral Challenges & Trends",
-      "topic": "Decoding the 'Quiet Quitting' Trend: Laziness or Self-Preservation?",
-      "hook": "Quiet quitting: Is it Gen Z redefining work-life balance, or just a fancy term for doing the bare minimum? Let's unpack this viral trend.",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
+      "category": "Travel Planning & Holiday Destinations",
+      "topic": "The Underrated European City Perfect for a Magical, Crowd-Free Winter Getaway",
+      "hook": "Forget Paris and Rome! This hidden European gem is the perfect, crowd-free spot for a truly magical and enchanting winter holiday.",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 48
+    },
+    {
+      "category": "Historical Events & Political History Explained",
+      "topic": "The Cold War Event You've Never Heard Of: Operation Able Archer 83 (Near-WW3)",
+      "hook": "We almost had World War III in 1983 due to a top-secret exercise, and you've probably never heard a single thing about it.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
       "target_duration": 50
+    },
+    {
+      "category": "Historical Events & Political History Explained",
+      "topic": "The Strange History of Presidential Pardons (and the Weirdest Ones Ever)",
+      "hook": "Presidential pardons: more than just turkeys! We're diving into the weirdest, most scandalous, and frankly bizarre pardons in history.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
       "voice": "en-US-MichelleNeural",
-      "rate": "+5%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
       "rate": "+0%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
@@ -217,44 +192,69 @@
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
     },
     {
       "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
+      "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-ChristopherNeural",
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "-3%",
-      "music_mood": "chill"
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     }
   ],
   "concepts_used": 0,
