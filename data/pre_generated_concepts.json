@@ -1,260 +1,259 @@
 {
-  "generated_at": "2026-11-19T14:38:04.473493",
-  "valid_until": "2026-11-19T23:59:04.473503",
+  "generated_at": "2026-11-20T14:15:58.414707",
+  "valid_until": "2026-11-20T23:59:58.414738",
   "categories": [
-    "Thanksgiving Recipes & Food Prep",
-    "Celebrity News & Pop Culture Deep Dives",
-    "Stock Market & Personal Finance Insights",
-    "Investigative Journalism & Political Analysis",
-    "Holiday Gift Guides & Black Friday Deals",
-    "Stand-up Comedy & Viral Humour Clips",
-    "Rom-Coms & Iconic Movie Moments",
-    "DIY & Holiday Decor Hacks",
-    "Travel Planning & Holiday Destinations",
-    "Historical Events & Political History Explained",
-    "Behind-the-Scenes & Actor Spotlights",
-    "Current Events & News Updates",
-    "Family Comedy & Relatable Situations",
-    "Quick Market Explanations & Crypto Trends",
-    "Mindfulness & Stress Relief for the Holidays"
+    "Thanksgiving Cooking & Recipe Hacks",
+    "Holiday Decor & Hosting Glow-ups",
+    "Political Quick Takes & Campaign Buzz",
+    "Sports Highlights & Pro Athlete Focus",
+    "Future of Business & Tech Trends",
+    "Global News & World Event Breakdowns",
+    "Celebrity Lifestyle & Public Figure Updates",
+    "3x3 Basketball & Urban Sports Culture",
+    "Relatable Holiday Family Humor",
+    "Quick Gratitude & Mindfulness Moments",
+    "DIY Home & Life Upgrade Projects",
+    "Fashion & Style Inspiration",
+    "Travel & Global Explorations",
+    "Foodie Reviews & Unique Eats"
   ],
   "concepts": [
     {
-      "category": "Thanksgiving Recipes & Food Prep",
-      "topic": "The 'Secret Ingredient' for Ultra-Fluffy Mashed Potatoes (no cream cheese!)",
-      "hook": "Stop using butter and cream for your mashed potatoes. I found the REAL secret to restaurant-quality fluffiness!",
+      "category": "Thanksgiving Cooking & Recipe Hacks",
+      "topic": "The 'No-Fail' Crispy Turkey Skin Secret",
+      "hook": "Tired of rubbery turkey skin? This one bizarre ingredient will give you glass-crisp perfection, every single time.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Thanksgiving Recipes & Food Prep",
-      "topic": "15-Minute 'No-Cook' Cranberry Sauce Hack (seriously, no stove needed)",
-      "hook": "Tired of mushy, bland cranberry sauce? This 15-minute, no-cook hack will blow your mind and your tastebuds!",
+      "category": "Thanksgiving Cooking & Recipe Hacks",
+      "topic": "Leftover Mashed Potato Waffles: Brunch Edition",
+      "hook": "Don't just reheat those mashed potatoes! Transform them into the most surprisingly delicious Thanksgiving brunch you've ever had.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Celebrity News & Pop Culture Deep Dives",
-      "topic": "The *Real* Reason Behind Timoth\u00e9e Chalamet & Kylie Jenner's Sudden Silence",
-      "hook": "Did Timoth\u00e9e and Kylie *really* break up, or is there a way bigger, more calculated reason for their sudden quiet?",
-      "voice_style": "mysterious",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Celebrity News & Pop Culture Deep Dives",
-      "topic": "Decoding Taylor Swift's 'Hidden Message' Everyone Missed in the New Album Art",
-      "hook": "Everyone's talking about Track 5, but I found an Easter egg in Taylor Swift's *album cover* that changes everything!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
+      "category": "Holiday Decor & Hosting Glow-ups",
+      "topic": "DIY 'Cozy Hygge' Garland Under $15",
+      "hook": "Want to make your home feel instantly warm and inviting for the holidays without breaking the bank? This simple garland hack is pure hygge magic.",
+      "voice_style": "calm",
+      "music_mood": "inspirational",
       "target_duration": 48
     },
     {
-      "category": "Stock Market & Personal Finance Insights",
-      "topic": "Investing in ETFs for Beginners: The 'Set It and Forget It' Strategy",
-      "hook": "Want to invest in the stock market but terrified of picking stocks? This beginner-friendly ETF strategy is for you.",
+      "category": "Holiday Decor & Hosting Glow-ups",
+      "topic": "The 'Effortless Elegant' Holiday Table Setting Hack",
+      "hook": "Forget complicated centerpieces. I'm revealing the one secret trick to making your holiday table look like a magazine spread in minutes.",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 47
-    },
-    {
-      "category": "Stock Market & Personal Finance Insights",
-      "topic": "The 'Lazy Tax' You're Paying on Your Groceries (and How to Stop It)",
-      "hook": "You're probably overpaying for groceries every week, and it's not just inflation. You're paying a 'lazy tax'!",
-      "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 42
     },
     {
-      "category": "Investigative Journalism & Political Analysis",
-      "topic": "The Unseen Lobbying Power Behind the Latest Tech Bill (and Who Benefits)",
-      "hook": "That new tech privacy bill everyone's celebrating? There's a hidden agenda and powerful lobbyists you're not being told about.",
+      "category": "Political Quick Takes & Campaign Buzz",
+      "topic": "Why 'Swing Voters' Are Disappearing in Key Battlegrounds",
+      "hook": "Everyone talks about swing states, but what if the swing voter as we know it is becoming extinct? The data reveals a surprising truth.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 47
+    },
+    {
+      "category": "Political Quick Takes & Campaign Buzz",
+      "topic": "The Unexpected Rise of Micro-Targeted Digital Campaigns",
+      "hook": "Think political ads are just on TV? What campaigns are doing in your social media feed right now is far more sophisticated \u2013 and maybe a little unsettling.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 44
+    },
+    {
+      "category": "Sports Highlights & Pro Athlete Focus",
+      "topic": "The 'Unseen Angle' of That Game-Winning Buzzer-Beater",
+      "hook": "You saw the shot, but you missed the 3 seconds BEFORE it that *actually* won the game. This behind-the-scenes breakdown changes everything.",
+      "voice_style": "energetic",
+      "music_mood": "dramatic",
+      "target_duration": 49
+    },
+    {
+      "category": "Sports Highlights & Pro Athlete Focus",
+      "topic": "Why Athletes Are Investing in Sleep Coaches: The Hidden Edge",
+      "hook": "It's not just training and diet anymore. Pro athletes are now paying top dollar for 'sleep optimization' \u2013 and it's making them unstoppable.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 46
+    },
+    {
+      "category": "Future of Business & Tech Trends",
+      "topic": "The 'Ethical AI' Movement: More Than Just a Buzzword?",
+      "hook": "AI is taking over, but who's making sure it's fair? This new tech movement could decide the moral compass of our digital future.",
       "voice_style": "mysterious",
+      "music_mood": "mysterious",
+      "target_duration": 43
+    },
+    {
+      "category": "Future of Business & Tech Trends",
+      "topic": "From Remote Work to 'Distributed Teams': The Next Evolution",
+      "hook": "Remote work is old news. The future of business is 'distributed teams,' and it's not what you think. Get ready for a total workplace revolution.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Global News & World Event Breakdowns",
+      "topic": "The 'Rare Earth' Mineral Scramble: A New Cold War?",
+      "hook": "Forget oil. The real global power play is happening over 'rare earth' minerals, and it could spark the next major international conflict.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 48
+    },
+    {
+      "category": "Global News & World Event Breakdowns",
+      "topic": "Why Youth Climate Activism is Shifting Tactics Globally",
+      "hook": "Protests aren't enough anymore. Young climate activists around the world are adopting radical new strategies, and governments are scrambling to respond.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity Lifestyle & Public Figure Updates",
+      "topic": "The 'Quiet Luxury' Trend: How Celebs Are Redefining Status",
+      "hook": "Diamonds and flashy logos are out. The new celebrity status symbol is 'quiet luxury,' and it's all about what you *don't* see.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Celebrity Lifestyle & Public Figure Updates",
+      "topic": "Decoding the 'De-Influencing' Movement Among Gen Z Stars",
+      "hook": "Influencers telling you *not* to buy things? This surprising new trend among Gen Z celebrities is actually shaking up the entire beauty industry.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "3x3 Basketball & Urban Sports Culture",
+      "topic": "The 'Underground Court' That Launched an NBA Star",
+      "hook": "Every pro has to start somewhere, but this legendary, hidden 3x3 court in the city is where one NBA phenom truly honed his craft.",
+      "voice_style": "dramatic",
       "music_mood": "intense",
       "target_duration": 49
     },
     {
-      "category": "Investigative Journalism & Political Analysis",
-      "topic": "Why the 'Democracy Is Dying' Narrative is More Complex Than You Think",
-      "hook": "You keep hearing democracy is in peril, but what does that *actually* mean, and is the situation more nuanced than fear-mongering suggests?",
-      "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Holiday Gift Guides & Black Friday Deals",
-      "topic": "5 Tech Gifts Under $30 That Actually Don't Suck (Tested & Approved!)",
-      "hook": "Forget boring socks! I found 5 tech gifts under $30 that recipients will actually use and love. No junk here!",
+      "category": "3x3 Basketball & Urban Sports Culture",
+      "topic": "Why 'Streetball Rules' Are Changing Pro 3x3 Strategy",
+      "hook": "Forget everything you know about traditional basketball. The raw, gritty rules of streetball are now infiltrating pro 3x3, creating an entirely new game.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Holiday Gift Guides & Black Friday Deals",
-      "topic": "Black Friday Scams to AVOID: The 'Fake Discount' Trick Retailers Use",
-      "hook": "Don't fall for the Black Friday 'deal' trap! Retailers use this sneaky trick to make you think you're saving money when you're not.",
-      "voice_style": "authoritative",
-      "music_mood": "intense",
-      "target_duration": 45
-    },
-    {
-      "category": "Stand-up Comedy & Viral Humour Clips",
-      "topic": "The Existential Crisis of Holiday Party Small Talk (and My Escape Plan)",
-      "hook": "You know that moment at holiday parties when someone asks 'So, what do you *do*?' I've developed a foolproof escape plan.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 43
-    },
-    {
-      "category": "Stand-up Comedy & Viral Humour Clips",
-      "topic": "My Cat's Master Plan for World Domination (Revealed through Zoom calls!)",
-      "hook": "I've finally decoded my cat's sinister meows during my Zoom meetings, and folks, we're all in trouble. It's a master plan!",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "Rom-Coms & Iconic Movie Moments",
-      "topic": "The Unseen Meaning Behind the 'I'm Just a Girl' Scene in Notting Hill",
-      "hook": "Everyone quotes 'I'm just a girl, standing in front of a boy,' but do you know the *real* emotional weight behind that iconic line?",
-      "voice_style": "dramatic",
-      "music_mood": "chill",
       "target_duration": 46
     },
     {
-      "category": "Rom-Coms & Iconic Movie Moments",
-      "topic": "If 'When Harry Met Sally' Happened in the Age of Dating Apps",
-      "hook": "What if Harry and Sally tried to navigate modern dating apps? Their iconic 'will they/won't they' would be WILD and hilarious.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 44
-    },
-    {
-      "category": "DIY & Holiday Decor Hacks",
-      "topic": "Dollar Store Christmas Village Hack (looks expensive, costs pennies!)",
-      "hook": "Don't spend a fortune on holiday decor! I'm showing you how to turn dollar store finds into a chic, expensive-looking Christmas village.",
+      "category": "Relatable Holiday Family Humor",
+      "topic": "The 'Overly Enthusiastic Aunt' Holiday Gift Debacle",
+      "hook": "We all have that one aunt whose gifts are... 'unique'. Brace yourself for the most hilariously awkward holiday present exchange ever.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 41
     },
     {
-      "category": "DIY & Holiday Decor Hacks",
-      "topic": "Repurposing Old Wine Bottles into Chic LED Holiday Lamps (5-minute craft!)",
-      "hook": "Got empty wine bottles piling up? Don't throw them out! Turn them into stunning, glowy holiday lamps in minutes with this easy hack.",
+      "category": "Relatable Holiday Family Humor",
+      "topic": "The Great 'Who Gets the Last Slice' Dessert Stand-off",
+      "hook": "That moment when only one slice of pie is left. The tension is palpable. Who will crack first in the ultimate holiday dessert battle?",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 44
+    },
+    {
+      "category": "Quick Gratitude & Mindfulness Moments",
+      "topic": "The '3-Breath Reset' for Instant Calm Anywhere",
+      "hook": "Feeling overwhelmed? I'm going to show you a simple, 3-breath technique that can instantly re-center you, no matter where you are.",
       "voice_style": "calm",
       "music_mood": "chill",
-      "target_duration": 47
+      "target_duration": 40
     },
     {
-      "category": "Travel Planning & Holiday Destinations",
-      "topic": "How to Snag FREE Hotel Upgrades for Your Holiday Trip (Secret Tricks Revealed!)",
-      "hook": "Want a better hotel room for your holiday getaway without paying extra? I've got the secret techniques to score free upgrades every time.",
-      "voice_style": "friendly",
+      "category": "Quick Gratitude & Mindfulness Moments",
+      "topic": "The 'Gratitude Jar' Challenge: Unlocking Hidden Joy",
+      "hook": "Want to genuinely feel happier in just one week? Try this simple gratitude jar challenge \u2013 the results will surprise you.",
+      "voice_style": "inspirational",
       "music_mood": "inspirational",
       "target_duration": 45
-    },
-    {
-      "category": "Travel Planning & Holiday Destinations",
-      "topic": "The Underrated European City Perfect for a Magical, Crowd-Free Winter Getaway",
-      "hook": "Forget Paris and Rome! This hidden European gem is the perfect, crowd-free spot for a truly magical and enchanting winter holiday.",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 48
-    },
-    {
-      "category": "Historical Events & Political History Explained",
-      "topic": "The Cold War Event You've Never Heard Of: Operation Able Archer 83 (Near-WW3)",
-      "hook": "We almost had World War III in 1983 due to a top-secret exercise, and you've probably never heard a single thing about it.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Historical Events & Political History Explained",
-      "topic": "The Strange History of Presidential Pardons (and the Weirdest Ones Ever)",
-      "hook": "Presidential pardons: more than just turkeys! We're diving into the weirdest, most scandalous, and frankly bizarre pardons in history.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 46
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+8%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-EricNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "rate": "+5%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-CA-LiamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
+      "rate": "+0%",
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-DavisNeural",
       "rate": "-3%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-GuyNeural",
       "rate": "+5%",
-      "music_mood": "dramatic"
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "+0%",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+8%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     }
   ],
   "concepts_used": 0,
