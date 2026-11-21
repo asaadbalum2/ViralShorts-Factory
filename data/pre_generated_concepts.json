@@ -1,259 +1,260 @@
 {
-  "generated_at": "2026-11-20T14:15:58.414707",
-  "valid_until": "2026-11-20T23:59:58.414738",
+  "generated_at": "2026-11-21T13:39:36.124101",
+  "valid_until": "2026-11-21T23:59:36.124112",
   "categories": [
-    "Thanksgiving Cooking & Recipe Hacks",
-    "Holiday Decor & Hosting Glow-ups",
-    "Political Quick Takes & Campaign Buzz",
-    "Sports Highlights & Pro Athlete Focus",
-    "Future of Business & Tech Trends",
-    "Global News & World Event Breakdowns",
-    "Celebrity Lifestyle & Public Figure Updates",
-    "3x3 Basketball & Urban Sports Culture",
-    "Relatable Holiday Family Humor",
-    "Quick Gratitude & Mindfulness Moments",
-    "DIY Home & Life Upgrade Projects",
-    "Fashion & Style Inspiration",
-    "Travel & Global Explorations",
-    "Foodie Reviews & Unique Eats"
+    "Black Friday & Holiday Shopping Guides",
+    "Fast Food & Viral Snack Reviews",
+    "Netflix Series & Movie Breakdowns",
+    "Sports Match Reactions & Highlights",
+    "Celebrity & Pop Culture News",
+    "Holiday Music & Festive Vibes",
+    "Challenge & Goal Setting Videos",
+    "Gaming News & Tech Reviews",
+    "DIY & Home Decor (Holiday Edition)",
+    "Productivity & Life Hacks",
+    "Educational & 'Did You Know?' Snippets",
+    "Comedy Skits & Relatable Humor",
+    "Pet Content (Cute & Funny)",
+    "Fashion & Beauty Trends (Winter/Holiday Focus)",
+    "Wellness & Mental Health Tips"
   ],
   "concepts": [
     {
-      "category": "Thanksgiving Cooking & Recipe Hacks",
-      "topic": "The 'No-Fail' Crispy Turkey Skin Secret",
-      "hook": "Tired of rubbery turkey skin? This one bizarre ingredient will give you glass-crisp perfection, every single time.",
+      "category": "Black Friday & Holiday Shopping Guides",
+      "topic": "Hidden Black Friday tech deals you'd miss without insider tips",
+      "hook": "STOP! Before you hit 'add to cart' on Black Friday, you NEED to see these hidden tech deals that are NOT in the flyers...",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Thanksgiving Cooking & Recipe Hacks",
-      "topic": "Leftover Mashed Potato Waffles: Brunch Edition",
-      "hook": "Don't just reheat those mashed potatoes! Transform them into the most surprisingly delicious Thanksgiving brunch you've ever had.",
+      "category": "Black Friday & Holiday Shopping Guides",
+      "topic": "Last-minute unique holiday gift ideas for the 'person who has everything'",
+      "hook": "Stuck on that impossible gift for Aunt Carol? I found 3 gifts so unique, she won't already own them!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Holiday Decor & Hosting Glow-ups",
-      "topic": "DIY 'Cozy Hygge' Garland Under $15",
-      "hook": "Want to make your home feel instantly warm and inviting for the holidays without breaking the bank? This simple garland hack is pure hygge magic.",
-      "voice_style": "calm",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Holiday Decor & Hosting Glow-ups",
-      "topic": "The 'Effortless Elegant' Holiday Table Setting Hack",
-      "hook": "Forget complicated centerpieces. I'm revealing the one secret trick to making your holiday table look like a magazine spread in minutes.",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Political Quick Takes & Campaign Buzz",
-      "topic": "Why 'Swing Voters' Are Disappearing in Key Battlegrounds",
-      "hook": "Everyone talks about swing states, but what if the swing voter as we know it is becoming extinct? The data reveals a surprising truth.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 47
-    },
-    {
-      "category": "Political Quick Takes & Campaign Buzz",
-      "topic": "The Unexpected Rise of Micro-Targeted Digital Campaigns",
-      "hook": "Think political ads are just on TV? What campaigns are doing in your social media feed right now is far more sophisticated \u2013 and maybe a little unsettling.",
+      "category": "Fast Food & Viral Snack Reviews",
+      "topic": "Testing the new limited-edition McDonald's holiday pie vs. last year's fan favorite",
+      "hook": "Is McDonald's NEW holiday pie a festive FAIL or a flavor FIESTA? I'm taste-testing it head-to-head with a classic!",
       "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 44
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "Sports Highlights & Pro Athlete Focus",
-      "topic": "The 'Unseen Angle' of That Game-Winning Buzzer-Beater",
-      "hook": "You saw the shot, but you missed the 3 seconds BEFORE it that *actually* won the game. This behind-the-scenes breakdown changes everything.",
+      "category": "Fast Food & Viral Snack Reviews",
+      "topic": "Ranking the weirdest viral snacks from TikTok \u2013 worth the hype or just gross?",
+      "hook": "My stomach just survived TikTok's 3 weirdest viral snacks. Only one is worth your taste buds...",
       "voice_style": "energetic",
-      "music_mood": "dramatic",
-      "target_duration": 49
+      "music_mood": "intense",
+      "target_duration": 50
     },
     {
-      "category": "Sports Highlights & Pro Athlete Focus",
-      "topic": "Why Athletes Are Investing in Sleep Coaches: The Hidden Edge",
-      "hook": "It's not just training and diet anymore. Pro athletes are now paying top dollar for 'sleep optimization' \u2013 and it's making them unstoppable.",
-      "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 46
-    },
-    {
-      "category": "Future of Business & Tech Trends",
-      "topic": "The 'Ethical AI' Movement: More Than Just a Buzzword?",
-      "hook": "AI is taking over, but who's making sure it's fair? This new tech movement could decide the moral compass of our digital future.",
+      "category": "Netflix Series & Movie Breakdowns",
+      "topic": "Unraveling the plot twists and theories for the new psychological thriller on Netflix",
+      "hook": "Just finished *The Serpent's Coil* on Netflix and my brain is BROKEN. Let's talk about THAT ending and plot holes...",
       "voice_style": "mysterious",
-      "music_mood": "mysterious",
-      "target_duration": 43
-    },
-    {
-      "category": "Future of Business & Tech Trends",
-      "topic": "From Remote Work to 'Distributed Teams': The Next Evolution",
-      "hook": "Remote work is old news. The future of business is 'distributed teams,' and it's not what you think. Get ready for a total workplace revolution.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 47
-    },
-    {
-      "category": "Global News & World Event Breakdowns",
-      "topic": "The 'Rare Earth' Mineral Scramble: A New Cold War?",
-      "hook": "Forget oil. The real global power play is happening over 'rare earth' minerals, and it could spark the next major international conflict.",
-      "voice_style": "dramatic",
-      "music_mood": "intense",
-      "target_duration": 48
-    },
-    {
-      "category": "Global News & World Event Breakdowns",
-      "topic": "Why Youth Climate Activism is Shifting Tactics Globally",
-      "hook": "Protests aren't enough anymore. Young climate activists around the world are adopting radical new strategies, and governments are scrambling to respond.",
-      "voice_style": "authoritative",
       "music_mood": "dramatic",
       "target_duration": 45
     },
     {
-      "category": "Celebrity Lifestyle & Public Figure Updates",
-      "topic": "The 'Quiet Luxury' Trend: How Celebs Are Redefining Status",
-      "hook": "Diamonds and flashy logos are out. The new celebrity status symbol is 'quiet luxury,' and it's all about what you *don't* see.",
+      "category": "Netflix Series & Movie Breakdowns",
+      "topic": "Underrated holiday movies on Netflix you *have* to watch this season (beyond the obvious)",
+      "hook": "Tired of *Elf*? These 3 underrated Netflix holiday movies will give you all the cozy feels you need!",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Celebrity Lifestyle & Public Figure Updates",
-      "topic": "Decoding the 'De-Influencing' Movement Among Gen Z Stars",
-      "hook": "Influencers telling you *not* to buy things? This surprising new trend among Gen Z celebrities is actually shaking up the entire beauty industry.",
+      "category": "Sports Match Reactions & Highlights",
+      "topic": "Instant reaction to a game-winning buzzer-beater in a nail-biting NBA playoff game",
+      "hook": "Did you SEE that?! My jaw just dropped watching that insane buzzer-beater! Let's re-live the final seconds NOW.",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 42
-    },
-    {
-      "category": "3x3 Basketball & Urban Sports Culture",
-      "topic": "The 'Underground Court' That Launched an NBA Star",
-      "hook": "Every pro has to start somewhere, but this legendary, hidden 3x3 court in the city is where one NBA phenom truly honed his craft.",
-      "voice_style": "dramatic",
       "music_mood": "intense",
-      "target_duration": 49
+      "target_duration": 40
     },
     {
-      "category": "3x3 Basketball & Urban Sports Culture",
-      "topic": "Why 'Streetball Rules' Are Changing Pro 3x3 Strategy",
-      "hook": "Forget everything you know about traditional basketball. The raw, gritty rules of streetball are now infiltrating pro 3x3, creating an entirely new game.",
-      "voice_style": "energetic",
+      "category": "Sports Match Reactions & Highlights",
+      "topic": "Breakdown of the most controversial referee call in a recent football (soccer) derby match",
+      "hook": "Everyone's talking about THIS referee call. Was it a genius decision or the worst mistake of the season?",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Celebrity & Pop Culture News",
+      "topic": "Decoding a celebrity's cryptic social media post hinting at a surprise album drop",
+      "hook": "Did [Celebrity Name] just drop a HUGE hint about their new album? Let's dissect this cryptic post and its hidden meanings!",
+      "voice_style": "mysterious",
       "music_mood": "upbeat",
-      "target_duration": 46
+      "target_duration": 45
     },
     {
-      "category": "Relatable Holiday Family Humor",
-      "topic": "The 'Overly Enthusiastic Aunt' Holiday Gift Debacle",
-      "hook": "We all have that one aunt whose gifts are... 'unique'. Brace yourself for the most hilariously awkward holiday present exchange ever.",
+      "category": "Celebrity & Pop Culture News",
+      "topic": "The most unexpected celebrity couple of the year and their shocking public debut",
+      "hook": "Hold up! Are [Celeb A] and [Celeb B] ACTUALLY dating? My jaw hit the floor when I saw THESE photos...",
+      "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Holiday Music & Festive Vibes",
+      "topic": "Ranking the most overplayed vs. genuinely good holiday songs you can't skip",
+      "hook": "Mariah Carey again? Let's finally settle it: Is your favorite holiday song secretly the most annoying?",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 41
+      "target_duration": 45
     },
     {
-      "category": "Relatable Holiday Family Humor",
-      "topic": "The Great 'Who Gets the Last Slice' Dessert Stand-off",
-      "hook": "That moment when only one slice of pie is left. The tension is palpable. Who will crack first in the ultimate holiday dessert battle?",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 44
+      "category": "Holiday Music & Festive Vibes",
+      "topic": "Discovering new indie holiday music to add a fresh twist to your festive playlist",
+      "hook": "Your holiday playlist needs an upgrade. Ditch the classics and discover these hidden indie festive gems!",
+      "voice_style": "chill",
+      "music_mood": "chill",
+      "target_duration": 40
     },
     {
-      "category": "Quick Gratitude & Mindfulness Moments",
-      "topic": "The '3-Breath Reset' for Instant Calm Anywhere",
-      "hook": "Feeling overwhelmed? I'm going to show you a simple, 3-breath technique that can instantly re-center you, no matter where you are.",
+      "category": "Challenge & Goal Setting Videos",
+      "topic": "The 7-day 'No Spend' challenge before the holidays: can I actually do it?",
+      "hook": "Can I survive 7 days without spending ANY money right before holiday shopping chaos? Let's find out!",
+      "voice_style": "energetic",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Challenge & Goal Setting Videos",
+      "topic": "Setting achievable new year fitness goals with a realistic timeline for success",
+      "hook": "Don't set yourself up for failure! Here's how to actually stick to your New Year fitness goals this time.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 50
+    },
+    {
+      "category": "Gaming News & Tech Reviews",
+      "topic": "Reviewing the new handheld gaming console vs. the Steam Deck: A true contender?",
+      "hook": "Is this new handheld truly a Steam Deck killer? I've been testing it all week, and the results are SHOCKING.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Gaming News & Tech Reviews",
+      "topic": "Top 3 must-have PC gaming peripherals under $50 for holiday gifting",
+      "hook": "Gaming setup feel incomplete? These 3 peripherals under $50 will level up your game AND your holiday gifting!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "DIY & Home Decor (Holiday Edition)",
+      "topic": "Budget-friendly DIY rustic holiday centerpiece ideas using natural elements",
+      "hook": "Forget expensive decor! I'm showing you how to make a stunning rustic holiday centerpiece for under $10.",
       "voice_style": "calm",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Quick Gratitude & Mindfulness Moments",
-      "topic": "The 'Gratitude Jar' Challenge: Unlocking Hidden Joy",
-      "hook": "Want to genuinely feel happier in just one week? Try this simple gratitude jar challenge \u2013 the results will surprise you.",
-      "voice_style": "inspirational",
+      "category": "DIY & Home Decor (Holiday Edition)",
+      "topic": "Transforming a small apartment balcony into a cozy winter wonderland oasis",
+      "hook": "No yard? No problem! Watch me turn my tiny balcony into a magical winter wonderland, no snow required.",
+      "voice_style": "friendly",
       "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Productivity & Life Hacks",
+      "topic": "5 essential apps to organize your holiday shopping list and budget like a pro",
+      "hook": "Holiday chaos got you stressed? These 5 apps are about to become your secret weapon for stress-free shopping!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Productivity & Life Hacks",
+      "topic": "The '2-minute rule' for decluttering your home before unexpected holiday guests arrive",
+      "hook": "Guests arriving soon and your house is a disaster? This 2-minute rule will magically declutter ANY room!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
       "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-AU-WilliamNeural",
+      "voice": "en-US-ChristopherNeural",
       "rate": "+0%",
       "music_mood": "chill"
     },
     {
-      "voice": "en-GB-RyanNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-GuyNeural",
-      "rate": "+8%",
+      "rate": "+0%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+5%",
+      "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
+      "voice": "en-CA-LiamNeural",
       "rate": "+0%",
       "music_mood": "upbeat"
     },
     {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
+    },
+    {
       "voice": "en-GB-RyanNeural",
+      "rate": "+8%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "+5%",
       "music_mood": "dramatic"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
+      "rate": "+5%",
+      "music_mood": "upbeat"
     },
     {
       "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "intense"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-DavisNeural",
       "rate": "+5%",
-      "music_mood": "chill"
+      "music_mood": "upbeat"
     },
     {
-      "voice": "en-US-AriaNeural",
-      "rate": "+8%",
-      "music_mood": "inspirational"
+      "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "dramatic"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
