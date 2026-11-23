@@ -1,210 +1,235 @@
 {
-  "generated_at": "2026-11-22T13:31:59.687691",
-  "valid_until": "2026-11-22T23:59:59.687701",
+  "generated_at": "2026-11-23T16:21:06.006585",
+  "valid_until": "2026-11-23T23:59:06.006596",
   "categories": [
-    "Football (Soccer) Highlights & Fan Reactions",
-    "NFL & Sports Betting Insights",
-    "Global News & Geopolitical Snaps",
-    "Market Minute & Investment Hacks",
-    "Retirement & Boomer Lifestyle Trends",
-    "Viral Human Interest & Relationship Stories",
-    "Holiday Season Prep & Gift Guides",
-    "Quick Recipes & Food Hacks",
-    "DIY & Home Organization",
-    "Comedy Skits & Memes",
-    "Beauty & Fashion Hauls/Reviews",
-    "Tech Gadget Reviews & AI Trends",
-    "Travel Guides & Destination Inspiration",
-    "Motivational & Self-Improvement Clips",
-    "Educational 'Did You Know?' Facts"
+    "Celebrity & Pop Culture News",
+    "Global Affairs & News Explainers",
+    "Sports Highlights & Athlete Spotlights",
+    "Consumer Safety & Product Recall Alerts",
+    "Financial Markets & Investing Tips",
+    "Holiday Season Prep & Decor",
+    "Post-Black Friday/Cyber Monday Deals & Hauls",
+    "Festive Recipes & Comfort Food",
+    "Fashion & Beauty Trends",
+    "Life Hacks & DIY Projects",
+    "Comedy Skits & Relatable Humor",
+    "Wellness & Mental Health Journeys",
+    "Travel & Experience Vlogs",
+    "Tech Reviews & Gaming Highlights",
+    "Educational & 'How-To' Guides"
   ],
   "concepts": [
     {
-      "category": "Football (Soccer) Highlights & Fan Reactions",
-      "topic": "The craziest VAR decision that cost a team the championship.",
-      "hook": "Did you see *that*?! This VAR call just sent an entire stadium into a meltdown!",
+      "category": "Celebrity & Pop Culture News",
+      "topic": "Hidden clues in Taylor Swift's latest Instagram story hinting at a new re-record",
+      "hook": "Did Taylor Swift just subtly drop an Easter egg for a *new* re-record in her latest Instagram story? You won't believe what fans found!",
+      "voice_style": "energetic",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity & Pop Culture News",
+      "topic": "The surprising behind-the-scenes secret of a recent viral movie scene",
+      "hook": "Remember that viral movie scene everyone's talking about? The director just revealed the craziest behind-the-scenes secret!",
       "voice_style": "dramatic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Affairs & News Explainers",
+      "topic": "A breakthrough in sustainable energy technology that could revolutionize our future",
+      "hook": "Could THIS new climate tech finally solve our energy crisis? Scientists are buzzing!",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Global Affairs & News Explainers",
+      "topic": "Explaining the non-obvious reasons behind the sudden surge in global shipping costs",
+      "hook": "Why are global shipping costs suddenly skyrocketing? It's not just about fuel prices...",
+      "voice_style": "calm",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Sports Highlights & Athlete Spotlights",
+      "topic": "An unbelievable buzzer-beater in college basketball breaking a long-standing record",
+      "hook": "You won't believe the insane buzzer-beater that just broke a 20-year record in college hoops!",
+      "voice_style": "energetic",
       "music_mood": "intense",
       "target_duration": 45
     },
     {
-      "category": "Football (Soccer) Highlights & Fan Reactions",
-      "topic": "Top 3 craziest fan reactions to *that* last-second derby winner.",
-      "hook": "You won't believe how these fans lost their minds after the 90+5 minute winner!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "NFL & Sports Betting Insights",
-      "topic": "The NFL dark horse team no one is talking about (and why you should bet on them).",
-      "hook": "Forget the favorites, THIS team is secretly going to shock the NFL this season!",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 48
-    },
-    {
-      "category": "NFL & Sports Betting Insights",
-      "topic": "The biggest NFL prop bet mistake rookie bettors always make (and how to avoid it).",
-      "hook": "Stop losing money on this common NFL prop bet trap! I'll show you how.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 42
-    },
-    {
-      "category": "Global News & Geopolitical Snaps",
-      "topic": "Why the conflict in Sudan matters to *your* global supply chain.",
-      "hook": "Think the Sudan crisis doesn't affect you? Think again. Your morning coffee might depend on it.",
-      "voice_style": "authoritative",
+      "category": "Sports Highlights & Athlete Spotlights",
+      "topic": "The incredible rise of an unknown athlete to MVP frontrunner status and their secret to success",
+      "hook": "From underdog to MVP frontrunner: How this unknown athlete became the league's most dominant player overnight. His secret will shock you!",
+      "voice_style": "inspirational",
       "music_mood": "dramatic",
-      "target_duration": 47
+      "target_duration": 45
     },
     {
-      "category": "Global News & Geopolitical Snaps",
-      "topic": "The secret project China is funding in the Arctic (and why it's a big deal).",
-      "hook": "There's a hidden geopolitical chess game playing out in the Arctic, and China just made its move.",
+      "category": "Consumer Safety & Product Recall Alerts",
+      "topic": "Urgent recall alert for popular air fryer models due to a fire hazard",
+      "hook": "URGENT SAFETY ALERT! Is your popular air fryer hiding a fire hazard? Check THIS model number now!",
+      "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Consumer Safety & Product Recall Alerts",
+      "topic": "Potential data privacy risks with a trendy smart home device and how to check yours",
+      "hook": "That trendy smart home device you just bought? It might be secretly leaking your personal data! Here's how to check.",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
-      "target_duration": 46
+      "target_duration": 45
     },
     {
-      "category": "Market Minute & Investment Hacks",
-      "topic": "Is 'Meme Stock' Mania back? What you need to know about GME's latest surge.",
-      "hook": "GME is soaring again! But before you ape in, here's what Wall Street isn't telling you.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 43
-    },
-    {
-      "category": "Market Minute & Investment Hacks",
-      "topic": "The single best investment you can make with only $100 today.",
-      "hook": "Got a spare $100? Stop wasting it! This one investment can kickstart your wealth.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Retirement & Boomer Lifestyle Trends",
-      "topic": "How adventurous boomers are 'van-lifing' through Europe on a budget.",
-      "hook": "Retirement doesn't mean slowing down! These boomers are trading houses for wheels and seeing the world.",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 49
-    },
-    {
-      "category": "Retirement & Boomer Lifestyle Trends",
-      "topic": "The biggest Social Security mistake retirees make (and how to avoid losing thousands).",
-      "hook": "Are you leaving thousands on the table from your Social Security benefits? You might be!",
-      "voice_style": "authoritative",
-      "music_mood": "chill",
-      "target_duration": 44
-    },
-    {
-      "category": "Viral Human Interest & Relationship Stories",
-      "topic": "The Reddit post that reunited long-lost siblings after 50 years.",
-      "hook": "This viral Reddit story proves true love (and family!) can always find its way back.",
-      "voice_style": "dramatic",
-      "music_mood": "inspirational",
-      "target_duration": 48
-    },
-    {
-      "category": "Viral Human Interest & Relationship Stories",
-      "topic": "Why 'ghosting' isn't always bad: a surprising take on modern dating.",
-      "hook": "Everyone hates being ghosted, but what if I told you it could actually be a good thing sometimes?",
-      "voice_style": "friendly",
-      "music_mood": "mysterious",
-      "target_duration": 42
-    },
-    {
-      "category": "Holiday Season Prep & Gift Guides",
-      "topic": "The *one* gadget everyone wants this holiday that you haven't heard of yet.",
-      "hook": "Tired of boring gift guides? This viral gadget is the only thing on everyone's wishlist this year!",
+      "category": "Financial Markets & Investing Tips",
+      "topic": "Identifying an overlooked sector poised for significant growth in the crypto market",
+      "hook": "Could THIS overlooked sector be the next big crypto explosion? Don't miss out!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Holiday Season Prep & Gift Guides",
-      "topic": "Quickest DIY Christmas decor that looks expensive (but costs less than $10!).",
-      "hook": "Hosting a holiday party tonight and your home looks bare? Here's how to fake a festive masterpiece in 15 mins!",
-      "voice_style": "friendly",
+      "category": "Financial Markets & Investing Tips",
+      "topic": "A crucial, often overlooked investment strategy for optimizing your 401K",
+      "hook": "Your 401K is probably missing this one crucial investment strategy! Are you leaving money on the table?",
+      "voice_style": "authoritative",
       "music_mood": "chill",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Quick Recipes & Food Hacks",
-      "topic": "The viral 'Lazy Lasagna' hack that tastes gourmet in 30 minutes.",
-      "hook": "Forget hours in the kitchen! This 'Lazy Lasagna' will blow your mind and save your evening.",
+      "category": "Holiday Season Prep & Decor",
+      "topic": "Common mistakes to avoid when hanging outdoor holiday lights to prevent damage",
+      "hook": "Don't ruin your holiday lights this year! The one mistake *everyone* makes when hanging outdoor decor.",
+      "voice_style": "friendly",
+      "music_mood": "festive",
+      "target_duration": 45
+    },
+    {
+      "category": "Holiday Season Prep & Decor",
+      "topic": "Easy DIY hacks for professional-looking gift wrapping in under a minute",
+      "hook": "Tired of boring gift wrapping? I just found the secret to making every present look professionally styled in under 60 seconds!",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
+      "target_duration": 45
     },
     {
-      "category": "Quick Recipes & Food Hacks",
-      "topic": "The secret ingredient that will make your scrambled eggs perfectly fluffy every single time.",
-      "hook": "Your scrambled eggs are missing THIS! Once you try it, you'll never go back.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 43
-    },
-    {
-      "category": "DIY & Home Organization",
-      "topic": "Transform your tiny closet into a walk-in dream with these 3 dollar store items.",
-      "hook": "Is your closet a black hole of clutter? I'm showing you how to organize it like a pro for under $10!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 46
-    },
-    {
-      "category": "DIY & Home Organization",
-      "topic": "DIY 'Concrete Countertops' that look high-end for under $50.",
-      "hook": "Don't spend thousands on new countertops! I'll show you how to DIY a stunning concrete look for cheap!",
-      "voice_style": "inspirational",
-      "music_mood": "chill",
-      "target_duration": 49
-    },
-    {
-      "category": "Comedy Skits & Memes",
-      "topic": "The absolute chaos of trying to assemble IKEA furniture solo.",
-      "hook": "Just bought IKEA furniture? Prepare for a mental breakdown (and maybe a new relationship status with your tools).",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 41
-    },
-    {
-      "category": "Comedy Skits & Memes",
-      "topic": "If social media influencers acted like medieval lords and ladies.",
-      "hook": "Imagine your favorite influencer but they're reviewing the latest plague cures and noble feasts. It's glorious.",
+      "category": "Post-Black Friday/Cyber Monday Deals & Hauls",
+      "topic": "How to find hidden post-Cyber Monday liquidation deals for major electronics",
+      "hook": "I scored a Smart TV for $50 after Cyber Monday?! Here's how I found the hidden liquidation deals NO ONE is talking about!",
       "voice_style": "energetic",
-      "music_mood": "mysterious",
-      "target_duration": 47
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Post-Black Friday/Cyber Monday Deals & Hauls",
+      "topic": "Discovering hidden ongoing beauty sales at popular retailers after Cyber Monday",
+      "hook": "Did you miss the best beauty deals? Don't worry, these 3 retailers still have insane hidden sales happening right now!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Festive Recipes & Comfort Food",
+      "topic": "A secret ingredient to guarantee the juiciest holiday roast turkey or chicken",
+      "hook": "Forget dry turkey! This secret ingredient will make your holiday roast the juiciest you've ever tasted!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Festive Recipes & Comfort Food",
+      "topic": "A perfected, foolproof recipe for viral hot chocolate bombs for the holiday season",
+      "hook": "The viral hot chocolate bomb recipe everyone messed up last year? I've perfected it for foolproof festive perfection!",
+      "voice_style": "energetic",
+      "music_mood": "festive",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion & Beauty Trends",
+      "topic": "The emerging 'anti-trend' that's replacing 'Quiet Luxury' on TikTok and in fashion",
+      "hook": "Is 'Quiet Luxury' officially over? The new anti-trend that's taking over TikTok you NEED to know!",
+      "voice_style": "authoritative",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Fashion & Beauty Trends",
+      "topic": "A professional makeup artist's secret product for an instant 'no-makeup' glow and youthful look",
+      "hook": "The one makeup product pro artists are hoarding for a 'no-makeup' glow that makes you look 5 years younger instantly!",
+      "voice_style": "mysterious",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Life Hacks & DIY Projects",
+      "topic": "Genius DIY project: Transforming old glass jars into high-end home decor for under $5",
+      "hook": "Stop throwing away old glass jars! This genius DIY transforms them into stunning, high-end home decor for under $5!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Life Hacks & DIY Projects",
+      "topic": "A viral 'cable management' hack to organize an entire desk in minutes",
+      "hook": "Never struggle with tangled cables again! The viral 'cable management' hack that will organize your entire desk in 2 minutes flat!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-GB-RyanNeural",
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "inspirational"
+      "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-EricNeural",
-      "rate": "+8%",
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
       "music_mood": "intense"
     },
     {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
+      "voice": "en-GB-RyanNeural",
+      "rate": "+5%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+0%",
       "music_mood": "dramatic"
     },
     {
-      "voice": "en-US-MichelleNeural",
+      "voice": "en-US-AriaNeural",
       "rate": "+0%",
       "music_mood": "mysterious"
     },
     {
-      "voice": "en-US-AriaNeural",
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
       "rate": "+8%",
-      "music_mood": "inspirational"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-DavisNeural",
@@ -212,49 +237,24 @@
       "music_mood": "chill"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-GB-RyanNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+8%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "dramatic"
-    },
-    {
       "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-GuyNeural",
       "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
     },
     {
       "voice": "en-US-AriaNeural",
       "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "-3%",
-      "music_mood": "inspirational"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
+      "music_mood": "upbeat"
     }
   ],
   "concepts_used": 0,
