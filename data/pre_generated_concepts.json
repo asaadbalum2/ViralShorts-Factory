@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-25T15:56:04.872529",
-  "valid_until": "2026-11-25T23:59:04.872537",
+  "generated_at": "2026-11-26T15:37:21.319520",
+  "valid_until": "2026-11-26T23:59:21.319530",
   "categories": [
-    "Financial Literacy & Market Insights (e.g., SPCX, VIX, VOO, MU, SOXL explained)",
-    "Celestial Events & Astrophotography (e.g., November Beaver Moon Supermoon tips)",
-    "Holiday Gift Guides & Shopping Hacks (Post-Black Friday, Pre-Christmas)",
-    "Celebrity Lifestyle & Media Personalities (e.g., Jenna Bush Hager updates, family insights)",
-    "Sports Icon Legacies & Health Journeys (e.g., Chris Evert's impact, wellness)",
-    "Festive Recipes & Holiday Entertaining (Thanksgiving leftovers, early Christmas)",
-    "Winter Fashion & Beauty Trends (Holiday party looks, cold-weather skincare)",
-    "DIY Holiday Decor & Crafts (Christmas, seasonal home accents)",
-    "End-of-Year Reflections & Goal Setting (Preparing for 2027)",
-    "Travel Planning (Winter Escapes & Holiday Visits)",
-    "Wellness & Mental Health Tips (Seasonal Affective Disorder, Holiday Stress)",
-    "Educational Explainers (Complex topics made simple)",
-    "Personal Productivity & Time Management (Navigating busy seasons)",
-    "Comedy & Relatable Skits (Holiday dynamics, viral moments)",
-    "Tech Innovations & AI Updates (General evergreen)"
+    "Holiday Nostalgia & Comfort Content",
+    "Seasonal Cooking & Quick Recipes",
+    "Sports Betting & Game Predictions",
+    "Global News & Explainers",
+    "Trader Joe's Hauls & Reviews",
+    "Celebrity & Entertainment Buzz",
+    "Local Weather & Seasonal Tips",
+    "Food Reaction & Review Skits",
+    "Holiday DIY & Decor Ideas",
+    "Economic & Market Insights",
+    "Relatable Comedy & Memes",
+    "College Football Analysis & Fan Takes",
+    "Travel Planning & Winter Escapes",
+    "Pop Culture 'Deep Dives'",
+    "Budget & Smart Shopping Guides"
   ],
   "concepts": [
     {
-      "category": "Financial Literacy & Market Insights (e.g., SPCX, VIX, VOO, MU, SOXL explained)",
-      "topic": "The 'Santa Claus Rally' myth vs. reality for VOO investors ahead of 2024.",
-      "hook": "Is the 'Santa Claus Rally' just a fairytale, or can it actually boost your VOO portfolio before 2024? Let's uncover the truth!",
-      "voice_style": "authoritative",
+      "category": "Holiday Nostalgia & Comfort Content",
+      "topic": "Recreating a childhood holiday breakfast tradition.",
+      "hook": "Remember that magical smell of holiday mornings? I'm bringing it back, one bite at a time, with my grandma's secret waffle recipe!",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 45
+    },
+    {
+      "category": "Holiday Nostalgia & Comfort Content",
+      "topic": "Unboxing/reacting to vintage holiday ornaments inherited from grandparents.",
+      "hook": "These aren't just ornaments, they're time capsules! You won't BELIEVE the priceless family treasures I found in my grandma's old Christmas box.",
+      "voice_style": "dramatic",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Seasonal Cooking & Quick Recipes",
+      "topic": "3-ingredient pumpkin spice latte hack (better than Starbucks!).",
+      "hook": "Forget the drive-thru! I'm showing you how to make a pumpkin spice latte BETTER than Starbucks with just THREE ingredients in 60 seconds!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Seasonal Cooking & Quick Recipes",
+      "topic": "A no-bake summer berry cheesecake in under 15 minutes.",
+      "hook": "It's scorching outside, but your dessert game doesn't have to be! This no-bake, no-fuss summer berry cheesecake is your ultimate warm-weather savior.",
+      "voice_style": "friendly",
       "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Financial Literacy & Market Insights (e.g., SPCX, VIX, VOO, MU, SOXL explained)",
-      "topic": "Why the VIX (Fear Index) is signaling unusual market calm post-Q4 earnings outlook.",
-      "hook": "The 'fear index' (VIX) is acting *very* calm lately... Is it signaling smooth sailing or a hidden storm after holiday spending projections?",
+      "category": "Sports Betting & Game Predictions",
+      "topic": "NFL Week 3 underdog picks that could shock the league.",
+      "hook": "Everyone's betting on the favorites, but I've got three underdog picks for NFL Week 3 that are going to make you SERIOUS cash! Trust me on these.",
+      "voice_style": "energetic",
+      "music_mood": "intense",
+      "target_duration": 50
+    },
+    {
+      "category": "Sports Betting & Game Predictions",
+      "topic": "Analyzing a shocking upset in a recent college basketball game.",
+      "hook": "Did you SEE that final buzzer-beater last night?! We need to talk about the biggest college hoops upset of the season and what it means for the upcoming bracket.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
+    },
+    {
+      "category": "Global News & Explainers",
+      "topic": "Demystifying the global chip shortage and its impact on your new phone.",
+      "hook": "Why is your new phone still on backorder? I'm breaking down the global chip shortage in 45 seconds, and exactly what it means for your next tech purchase.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
+      "target_duration": 45
+    },
+    {
+      "category": "Global News & Explainers",
+      "topic": "The latest developments in renewable energy breakthroughs.",
+      "hook": "Forget fossil fuels! Here are three groundbreaking renewable energy innovations \u2013 from fusion power to advanced solar fabrics \u2013 that are changing the world right now.",
+      "voice_style": "inspirational",
+      "music_mood": "inspirational",
+      "target_duration": 45
+    },
+    {
+      "category": "Trader Joe's Hauls & Reviews",
+      "topic": "Reviewing TJ's new limited-edition fall snacks you MUST try.",
+      "hook": "Trader Joe's just dropped their new limited-edition fall snacks, and I'm telling you what's worth the hype, what's a hard pass, and what will sell out FAST!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 40
+    },
+    {
+      "category": "Trader Joe's Hauls & Reviews",
+      "topic": "Uncovering the best Trader Joe's frozen dinner hacks for busy weeknights.",
+      "hook": "Tired of boring frozen meals? I'm transforming these Trader Joe's staples into gourmet, 10-minute dinners for those crazy weeknights!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Celebrity & Entertainment Buzz",
+      "topic": "Decoding the viral mystery behind a cryptic celebrity Instagram post.",
+      "hook": "Did you see [Celebrity Name]'s latest Instagram? Everyone's confused, but I've got a theory about what that cryptic post *really* means for their next big project!",
       "voice_style": "mysterious",
-      "music_mood": "chill",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Celestial Events & Astrophotography (e.g., November Beaver Moon Supermoon tips)",
-      "topic": "Capturing the Geminid Meteor Shower's vibrant streaks with just your smartphone.",
-      "hook": "Forget fancy gear! I'm about to show you how to snap stunning Geminid Meteor Shower pics using ONLY your smartphone. You won't believe the results!",
-      "voice_style": "energetic",
-      "music_mood": "inspirational",
-      "target_duration": 45
-    },
-    {
-      "category": "Celestial Events & Astrophotography (e.g., November Beaver Moon Supermoon tips)",
-      "topic": "The unique astronomical science behind the upcoming 'Cold Moon' and its subtle effects.",
-      "hook": "Next month's 'Cold Moon' isn't just beautiful, it's got a secret gravitational pull you didn't know about. What does it mean for *you*?",
-      "voice_style": "mysterious",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Holiday Gift Guides & Shopping Hacks (Post-Black Friday, Pre-Christmas)",
-      "topic": "Last-minute luxury tech gifts that look expensive but are shockingly affordable post-Black Friday.",
-      "hook": "Post-Black Friday blues got your wallet feeling light? I found *three* luxury tech gifts that look expensive but are shockingly affordable for Christmas!",
-      "voice_style": "friendly",
+      "category": "Celebrity & Entertainment Buzz",
+      "topic": "Reacting to the biggest surprise album drop of the year.",
+      "hook": "STOP EVERYTHING! [Artist Name] just dropped a surprise album with ZERO warning, and I'm giving you my unfiltered first impressions of the must-listen tracks!",
+      "voice_style": "dramatic",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Holiday Gift Guides & Shopping Hacks (Post-Black Friday, Pre-Christmas)",
-      "topic": "Using obscure discount codes to get 50%+ off popular pre-Christmas items.",
-      "hook": "Stop paying full price! I'm revealing a secret 'coupon code' trick that's scoring me 50%+ off my Christmas list right now.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Lifestyle & Media Personalities (e.g., Jenna Bush Hager updates, family insights)",
-      "topic": "Jenna Bush Hager's surprisingly simple family tradition for holiday stress relief.",
-      "hook": "Ever wonder how Jenna Bush Hager juggles it all? Her secret family ritual for holiday peace is surprisingly simple... and you can do it too!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity Lifestyle & Media Personalities (e.g., Jenna Bush Hager updates, family insights)",
-      "topic": "The unexpected diet hack a famous talk show host uses to stay energized through long broadcasts.",
-      "hook": "This A-list talk show host's secret to endless energy isn't coffee, it's a bizarre food combo they swear by. You won't believe it!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Icon Legacies & Health Journeys (e.g., Chris Evert's impact, wellness)",
-      "topic": "Chris Evert's daily mindfulness routine for mental resilience post-tennis career.",
-      "hook": "Beyond the Grand Slams, Chris Evert found peace. Her simple daily mindfulness routine changed her life \u2013 and it can change yours.",
-      "voice_style": "inspirational",
-      "music_mood": "calm",
-      "target_duration": 45
-    },
-    {
-      "category": "Sports Icon Legacies & Health Journeys (e.g., Chris Evert's impact, wellness)",
-      "topic": "How an NBA legend's unique recovery methods redefine athlete longevity and wellness.",
-      "hook": "This NBA legend isn't just aging gracefully, they're reversing it! Their unconventional recovery techniques are rewriting sports medicine.",
+      "category": "Local Weather & Seasonal Tips",
+      "topic": "Preparing your home for an unexpected early winter storm.",
+      "hook": "The forecast just changed! An early winter storm is heading our way, and I'm giving you 5 essential, quick tips to prepare your home NOW before it hits.",
       "voice_style": "authoritative",
+      "music_mood": "intense",
+      "target_duration": 45
+    },
+    {
+      "category": "Local Weather & Seasonal Tips",
+      "topic": "Best strategies for dealing with extreme summer heat waves.",
+      "hook": "It's going to be a scorcher this week! Don't just survive, THRIVE with these 5 essential, science-backed tips to beat the extreme summer heat and stay cool.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 40
+    },
+    {
+      "category": "Food Reaction & Review Skits",
+      "topic": "Blind taste-testing obscure international candy bars.",
+      "hook": "Can I guess these WILD international candy flavors blindfolded? Prepare for some truly bizarre reactions as I try the world's strangest sweets!",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 50
+    },
+    {
+      "category": "Food Reaction & Review Skits",
+      "topic": "Recreating and reviewing a viral TikTok food trend (e.g., pasta chips).",
+      "hook": "Everyone's making these 'Pasta Chips' on TikTok, but are they actually any good? I'm trying this viral trend so you don't have to waste your time!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 45
+    },
+    {
+      "category": "Holiday DIY & Decor Ideas",
+      "topic": "Crafting 3 budget-friendly minimalist holiday centerpieces.",
+      "hook": "Don't break the bank for holiday decor! I'm showing you three elegant, minimalist centerpieces you can make for under $10 each, perfect for any table.",
+      "voice_style": "calm",
       "music_mood": "inspirational",
       "target_duration": 45
     },
     {
-      "category": "Festive Recipes & Holiday Entertaining (Thanksgiving leftovers, early Christmas)",
-      "topic": "Transforming leftover mashed potatoes into gourmet 'Crispy Potato Fritters' in minutes.",
-      "hook": "Don't trash those Thanksgiving mashed potatoes! I'm turning them into unbelievably crispy, gourmet fritters that will blow your mind.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Festive Recipes & Holiday Entertaining (Thanksgiving leftovers, early Christmas)",
-      "topic": "An 'early Christmas' cocktail recipe: Spiced Cranberry Gin Fizz with a secret ingredient.",
-      "hook": "Forget basic eggnog! My 'Spiced Cranberry Gin Fizz' is the ultimate early Christmas cocktail, and it has one secret ingredient for pure magic.",
+      "category": "Holiday DIY & Decor Ideas",
+      "topic": "Transforming old sweaters into festive no-sew holiday ornaments.",
+      "hook": "Got old sweaters you're about to toss? Don't! I'm turning forgotten knits into adorable, no-sew holiday ornaments you'll actually want to hang this season.",
       "voice_style": "friendly",
       "music_mood": "upbeat",
-      "target_duration": 45
+      "target_duration": 40
     },
     {
-      "category": "Winter Fashion & Beauty Trends (Holiday party looks, cold-weather skincare)",
-      "topic": "The 'Latte Makeup' trend adapted for a sophisticated holiday party glow.",
-      "hook": "Your 'Latte Makeup' isn't just for fall! I'm elevating it with one metallic twist for the ultimate sophisticated holiday party glow.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Winter Fashion & Beauty Trends (Holiday party looks, cold-weather skincare)",
-      "topic": "DIY hydrating winter mask using pantry staples for dry, cold-weather skin.",
-      "hook": "Is winter skin making you flaky? This DIY hydrating mask uses two things from your kitchen and costs almost nothing! Seriously, try it.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Holiday Decor & Crafts (Christmas, seasonal home accents)",
-      "topic": "Upcycling old sweaters into cozy, no-sew Christmas ornament covers.",
-      "hook": "Got old sweaters you're about to toss? Turn them into the coziest, cutest Christmas ornament covers WITHOUT a sewing machine!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "DIY Holiday Decor & Crafts (Christmas, seasonal home accents)",
-      "topic": "Creating an 'Everlasting Evergreen Garland' using dried citrus and pinecones.",
-      "hook": "Tired of garlands dying before Christmas? My 'Everlasting Evergreen Garland' uses dried citrus and pinecones for a stunning, fragrant display that lasts forever.",
-      "voice_style": "inspirational",
-      "music_mood": "calm",
-      "target_duration": 45
-    },
-    {
-      "category": "End-of-Year Reflections & Goal Setting (Preparing for 2027)",
-      "topic": "The 'Reverse Bucket List' method for celebrating 2023 accomplishments.",
-      "hook": "Forget what you *didn't* do in 2023! I'm using a 'Reverse Bucket List' to celebrate everything I *did* achieve, and you should too.",
-      "voice_style": "inspirational",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "End-of-Year Reflections & Goal Setting (Preparing for 2027)",
-      "topic": "Setting 'Anchor Habits' in 2024 to effortlessly build towards ambitious 2027 goals.",
-      "hook": "Trying to manifest big goals for 2027? Stop! Instead, set these two 'Anchor Habits' in 2024 and watch your future effortlessly unfold.",
+      "category": "Economic & Market Insights",
+      "topic": "Explaining the recent rise in interest rates and what it means for your mortgage.",
+      "hook": "Interest rates are climbing, and if you own a home or want to buy one, you NEED to hear exactly what this means for your mortgage payments and future plans.",
       "voice_style": "authoritative",
-      "music_mood": "inspirational",
-      "target_duration": 45
+      "music_mood": "mysterious",
+      "target_duration": 50
     },
     {
-      "category": "Travel Planning (Winter Escapes & Holiday Visits)",
-      "topic": "Hacking flight prices for last-minute Christmas travel to snowy European destinations.",
-      "hook": "Think last-minute Christmas flights are impossible? I found a secret trick to snag cheap tickets to snowy European escapes, even *now*.",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Travel Planning (Winter Escapes & Holiday Visits)",
-      "topic": "Budget-friendly 'Nordic Winter Wonderland' road trip itinerary for under $500.",
-      "hook": "Dreaming of a Nordic winter wonderland but on a budget? My $500 road trip itinerary delivers all the magic without the hefty price tag.",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
+      "category": "Economic & Market Insights",
+      "topic": "Breaking down the latest inflation numbers and how they impact grocery prices.",
+      "hook": "Why are your grocery bills skyrocketing every week? I'm explaining the latest inflation report and exactly how it's hitting your wallet at the supermarket.",
+      "voice_style": "authoritative",
+      "music_mood": "dramatic",
+      "target_duration": 50
     }
   ],
   "voice_music_pairs": [
     {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
       "voice": "en-US-GuyNeural",
       "rate": "-3%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+0%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-EricNeural",
-      "rate": "+5%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "mysterious"
+      "music_mood": "chill"
     },
     {
       "voice": "en-US-MichelleNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-JennyNeural",
-      "rate": "+8%",
       "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+8%",
-      "music_mood": "mysterious"
     },
     {
       "voice": "en-AU-WilliamNeural",
       "rate": "+5%",
-      "music_mood": "mysterious"
+      "music_mood": "intense"
     },
     {
       "voice": "en-US-ChristopherNeural",
-      "rate": "+5%",
-      "music_mood": "chill"
+      "rate": "-3%",
+      "music_mood": "dramatic"
     },
     {
-      "voice": "en-CA-LiamNeural",
-      "rate": "+8%",
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+5%",
       "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "+8%",
+      "music_mood": "intense"
     },
     {
       "voice": "en-GB-RyanNeural",
       "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-AU-WilliamNeural",
+      "rate": "-3%",
       "music_mood": "upbeat"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-AriaNeural",
+      "rate": "+5%",
+      "music_mood": "chill"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+5%",
+      "music_mood": "dramatic"
     }
   ],
   "concepts_used": 0,
