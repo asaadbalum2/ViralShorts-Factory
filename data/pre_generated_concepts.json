@@ -1,260 +1,260 @@
 {
-  "generated_at": "2026-11-26T15:37:21.319520",
-  "valid_until": "2026-11-26T23:59:21.319530",
+  "generated_at": "2026-11-27T15:28:31.578332",
+  "valid_until": "2026-11-27T23:59:31.578342",
   "categories": [
-    "Holiday Nostalgia & Comfort Content",
-    "Seasonal Cooking & Quick Recipes",
-    "Sports Betting & Game Predictions",
-    "Global News & Explainers",
-    "Trader Joe's Hauls & Reviews",
-    "Celebrity & Entertainment Buzz",
-    "Local Weather & Seasonal Tips",
-    "Food Reaction & Review Skits",
-    "Holiday DIY & Decor Ideas",
-    "Economic & Market Insights",
-    "Relatable Comedy & Memes",
-    "College Football Analysis & Fan Takes",
-    "Travel Planning & Winter Escapes",
-    "Pop Culture 'Deep Dives'",
-    "Budget & Smart Shopping Guides"
+    "Financial News & Investing (Stocks, Crypto, Market Updates)",
+    "Tech & Cybersecurity Explanations (Breaches, AI, Gadgets)",
+    "Gaming Updates & Reviews (New Releases, Esport Highlights)",
+    "Sports Highlights & Analysis (College, International Football, Betting Tips)",
+    "Celebrity Lifestyle & Pop Culture Commentary",
+    "Legal Explainers & True Crime (Current Cases, Rights)",
+    "Holiday Shopping Guides & Black Friday/Cyber Monday Hauls",
+    "Holiday Decorating & DIY Projects",
+    "Seasonal Food & Drink Recipes (Festive Meals, Baking)",
+    "Winter Travel & Vacation Planning",
+    "Wellness & Mental Health (Self-Care, Stress Management)",
+    "Fashion & Style (Winter Outfits, Holiday Looks)",
+    "Productivity & Life Hacks",
+    "Short-Form Comedy & Viral Skits",
+    "Educational 'How-To's & Quick Facts"
   ],
   "concepts": [
     {
-      "category": "Holiday Nostalgia & Comfort Content",
-      "topic": "Recreating a childhood holiday breakfast tradition.",
-      "hook": "Remember that magical smell of holiday mornings? I'm bringing it back, one bite at a time, with my grandma's secret waffle recipe!",
-      "voice_style": "friendly",
-      "music_mood": "chill",
-      "target_duration": 45
-    },
-    {
-      "category": "Holiday Nostalgia & Comfort Content",
-      "topic": "Unboxing/reacting to vintage holiday ornaments inherited from grandparents.",
-      "hook": "These aren't just ornaments, they're time capsules! You won't BELIEVE the priceless family treasures I found in my grandma's old Christmas box.",
-      "voice_style": "dramatic",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Seasonal Cooking & Quick Recipes",
-      "topic": "3-ingredient pumpkin spice latte hack (better than Starbucks!).",
-      "hook": "Forget the drive-thru! I'm showing you how to make a pumpkin spice latte BETTER than Starbucks with just THREE ingredients in 60 seconds!",
+      "category": "Financial News & Investing (Stocks, Crypto, Market Updates)",
+      "topic": "Why AMC/GME might actually surge again, and what retail investors need to know NOW.",
+      "hook": "Is Wall Street ignoring the next big meme stock surge? You NEED to see this chart.",
       "voice_style": "energetic",
       "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Seasonal Cooking & Quick Recipes",
-      "topic": "A no-bake summer berry cheesecake in under 15 minutes.",
-      "hook": "It's scorching outside, but your dessert game doesn't have to be! This no-bake, no-fuss summer berry cheesecake is your ultimate warm-weather savior.",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
       "target_duration": 45
     },
     {
-      "category": "Sports Betting & Game Predictions",
-      "topic": "NFL Week 3 underdog picks that could shock the league.",
-      "hook": "Everyone's betting on the favorites, but I've got three underdog picks for NFL Week 3 that are going to make you SERIOUS cash! Trust me on these.",
-      "voice_style": "energetic",
-      "music_mood": "intense",
-      "target_duration": 50
-    },
-    {
-      "category": "Sports Betting & Game Predictions",
-      "topic": "Analyzing a shocking upset in a recent college basketball game.",
-      "hook": "Did you SEE that final buzzer-beater last night?! We need to talk about the biggest college hoops upset of the season and what it means for the upcoming bracket.",
+      "category": "Financial News & Investing (Stocks, Crypto, Market Updates)",
+      "topic": "Three subtle signs indicating the crypto market is finally thawing and which altcoins could explode first.",
+      "hook": "Did you miss the last crypto boom? Don't miss these three HUGE signals that Winter is finally over.",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
-    },
-    {
-      "category": "Global News & Explainers",
-      "topic": "Demystifying the global chip shortage and its impact on your new phone.",
-      "hook": "Why is your new phone still on backorder? I'm breaking down the global chip shortage in 45 seconds, and exactly what it means for your next tech purchase.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 45
-    },
-    {
-      "category": "Global News & Explainers",
-      "topic": "The latest developments in renewable energy breakthroughs.",
-      "hook": "Forget fossil fuels! Here are three groundbreaking renewable energy innovations \u2013 from fusion power to advanced solar fabrics \u2013 that are changing the world right now.",
-      "voice_style": "inspirational",
       "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Trader Joe's Hauls & Reviews",
-      "topic": "Reviewing TJ's new limited-edition fall snacks you MUST try.",
-      "hook": "Trader Joe's just dropped their new limited-edition fall snacks, and I'm telling you what's worth the hype, what's a hard pass, and what will sell out FAST!",
-      "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Trader Joe's Hauls & Reviews",
-      "topic": "Uncovering the best Trader Joe's frozen dinner hacks for busy weeknights.",
-      "hook": "Tired of boring frozen meals? I'm transforming these Trader Joe's staples into gourmet, 10-minute dinners for those crazy weeknights!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Celebrity & Entertainment Buzz",
-      "topic": "Decoding the viral mystery behind a cryptic celebrity Instagram post.",
-      "hook": "Did you see [Celebrity Name]'s latest Instagram? Everyone's confused, but I've got a theory about what that cryptic post *really* means for their next big project!",
+      "category": "Tech & Cybersecurity Explanations (Breaches, AI, Gadgets)",
+      "topic": "The scary truth about how AI is already watching you, and how to tell if it's helping or harming.",
+      "hook": "That ad you just saw? AI knew you wanted it *before* you did. Is that cool, or creepy?",
       "voice_style": "mysterious",
       "music_mood": "mysterious",
+      "target_duration": 42
+    },
+    {
+      "category": "Tech & Cybersecurity Explanations (Breaches, AI, Gadgets)",
+      "topic": "The recent 'X' (formerly Twitter) data breach: what data was exposed, and your urgent steps to secure your account NOW.",
+      "hook": "Millions of 'X' users just had their data exposed. Were you one of them? Here's how to check immediately.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 47
+    },
+    {
+      "category": "Gaming Updates & Reviews (New Releases, Esport Highlights)",
+      "topic": "First impressions of 'Cyberpunk 2077: Phantom Liberty' - Is it the redemption arc we deserved or another letdown?",
+      "hook": "Remember Night City? I've been playing 'Phantom Liberty' and you NEED to hear about this bug... or feature?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Gaming Updates & Reviews (New Releases, Esport Highlights)",
+      "topic": "The underdog team that just dethroned the reigning champions at the Valorant Champions Tour \u2013 how they did it.",
+      "hook": "NO ONE saw this coming! The biggest upset in Valorant history just went down, and it's WILD.",
+      "voice_style": "dramatic",
+      "music_mood": "intense",
+      "target_duration": 49
+    },
+    {
+      "category": "Sports Highlights & Analysis (College, International Football, Betting Tips)",
+      "topic": "Why this year's Heisman race *actually* determines the College Football Playoff contenders, not just individual stats.",
+      "hook": "Forget the rankings! The Heisman race is hiding the *real* College Football Playoff contenders. Here's why.",
+      "voice_style": "authoritative",
+      "music_mood": "inspirational",
+      "target_duration": 43
+    },
+    {
+      "category": "Sports Highlights & Analysis (College, International Football, Betting Tips)",
+      "topic": "Kylian Mbapp\u00e9's potential move to Real Madrid: The astronomical cost, contract details, and why it could shatter transfer records.",
+      "hook": "Mbapp\u00e9 to Real Madrid? The rumors are back, and this time, it's not just whispers. Get ready for a record-breaking summer.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 47
+    },
+    {
+      "category": "Celebrity Lifestyle & Pop Culture Commentary",
+      "topic": "Taylor Swift's Eras Tour movie release breaks records \u2013 but what does it mean for the future of concert films and box office?",
+      "hook": "Taylor Swift just rewrote the rules of Hollywood. Is this the end of traditional movie releases as we know it?",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 44
+    },
+    {
+      "category": "Celebrity Lifestyle & Pop Culture Commentary",
+      "topic": "The 'quiet luxury' trend: Why celebrities are ditching flashy logos and what it means for your wardrobe.",
+      "hook": "Your favorite celebs aren't wearing giant logos anymore. Here's why 'quiet luxury' is taking over, and how you can get the look for less.",
+      "voice_style": "friendly",
+      "music_mood": "chill",
+      "target_duration": 41
+    },
+    {
+      "category": "Legal Explainers & True Crime (Current Cases, Rights)",
+      "topic": "The Johnny Depp vs. Amber Heard trial: The legal strategy that ultimately swayed the jury and what it means for defamation cases.",
+      "hook": "Remember the Depp-Heard trial? The *real* legal game-changer wasn't the evidence, it was THIS subtle tactic.",
+      "voice_style": "authoritative",
+      "music_mood": "mysterious",
       "target_duration": 45
     },
     {
-      "category": "Celebrity & Entertainment Buzz",
-      "topic": "Reacting to the biggest surprise album drop of the year.",
-      "hook": "STOP EVERYTHING! [Artist Name] just dropped a surprise album with ZERO warning, and I'm giving you my unfiltered first impressions of the must-listen tracks!",
-      "voice_style": "dramatic",
-      "music_mood": "upbeat",
-      "target_duration": 40
-    },
-    {
-      "category": "Local Weather & Seasonal Tips",
-      "topic": "Preparing your home for an unexpected early winter storm.",
-      "hook": "The forecast just changed! An early winter storm is heading our way, and I'm giving you 5 essential, quick tips to prepare your home NOW before it hits.",
+      "category": "Legal Explainers & True Crime (Current Cases, Rights)",
+      "topic": "Your right to record police officers: What you *can* and *cannot* do, and how to protect yourself legally.",
+      "hook": "Can you legally film a police officer? Most people get this wrong, and it could cost you. Here's the truth.",
       "voice_style": "authoritative",
       "music_mood": "intense",
-      "target_duration": 45
+      "target_duration": 48
     },
     {
-      "category": "Local Weather & Seasonal Tips",
-      "topic": "Best strategies for dealing with extreme summer heat waves.",
-      "hook": "It's going to be a scorcher this week! Don't just survive, THRIVE with these 5 essential, science-backed tips to beat the extreme summer heat and stay cool.",
+      "category": "Holiday Shopping Guides & Black Friday/Cyber Monday Hauls",
+      "topic": "The absolute BEST Black Friday tech deals for smart home gadgets and gaming consoles you *cannot* miss.",
+      "hook": "Black Friday is coming! Forget the lines, these are the ONLY tech deals you need to stalk for a smart home upgrade.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 42
+    },
+    {
+      "category": "Holiday Shopping Guides & Black Friday/Cyber Monday Hauls",
+      "topic": "Scoring designer brands for less on Cyber Monday: My secret strategy for finding luxury fashion steals.",
+      "hook": "Want designer clothes without the designer price tag? My Cyber Monday hack will get you luxury for less.",
       "voice_style": "friendly",
       "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Food Reaction & Review Skits",
-      "topic": "Blind taste-testing obscure international candy bars.",
-      "hook": "Can I guess these WILD international candy flavors blindfolded? Prepare for some truly bizarre reactions as I try the world's strangest sweets!",
+      "category": "Holiday Decorating & DIY Projects",
+      "topic": "How to make glitter-bomb ornaments that look expensive but cost almost nothing.",
+      "hook": "Tired of boring ornaments? Let's make these INSANE glitter-bomb baubles that'll wow everyone for under $5!",
+      "voice_style": "friendly",
+      "music_mood": "upbeat",
+      "target_duration": 46
+    },
+    {
+      "category": "Holiday Decorating & DIY Projects",
+      "topic": "Five unexpected places to put your holiday lights that will transform your home into a festive wonderland.",
+      "hook": "Stop putting lights on your tree! These 5 hidden spots will make your home the most festive on the block.",
       "voice_style": "energetic",
-      "music_mood": "upbeat",
-      "target_duration": 50
-    },
-    {
-      "category": "Food Reaction & Review Skits",
-      "topic": "Recreating and reviewing a viral TikTok food trend (e.g., pasta chips).",
-      "hook": "Everyone's making these 'Pasta Chips' on TikTok, but are they actually any good? I'm trying this viral trend so you don't have to waste your time!",
-      "voice_style": "friendly",
-      "music_mood": "upbeat",
-      "target_duration": 45
-    },
-    {
-      "category": "Holiday DIY & Decor Ideas",
-      "topic": "Crafting 3 budget-friendly minimalist holiday centerpieces.",
-      "hook": "Don't break the bank for holiday decor! I'm showing you three elegant, minimalist centerpieces you can make for under $10 each, perfect for any table.",
-      "voice_style": "calm",
       "music_mood": "inspirational",
-      "target_duration": 45
+      "target_duration": 43
     },
     {
-      "category": "Holiday DIY & Decor Ideas",
-      "topic": "Transforming old sweaters into festive no-sew holiday ornaments.",
-      "hook": "Got old sweaters you're about to toss? Don't! I'm turning forgotten knits into adorable, no-sew holiday ornaments you'll actually want to hang this season.",
+      "category": "Seasonal Food & Drink Recipes (Festive Meals, Baking)",
+      "topic": "The 'Cranberry Thyme Sparkler': A sophisticated holiday cocktail that's easy to make and tastes incredible.",
+      "hook": "Forget the basic eggnog! This Cranberry Thyme Sparkler is the *only* festive drink you need this holiday season.",
       "voice_style": "friendly",
-      "music_mood": "upbeat",
+      "music_mood": "chill",
       "target_duration": 40
     },
     {
-      "category": "Economic & Market Insights",
-      "topic": "Explaining the recent rise in interest rates and what it means for your mortgage.",
-      "hook": "Interest rates are climbing, and if you own a home or want to buy one, you NEED to hear exactly what this means for your mortgage payments and future plans.",
-      "voice_style": "authoritative",
-      "music_mood": "mysterious",
-      "target_duration": 50
+      "category": "Seasonal Food & Drink Recipes (Festive Meals, Baking)",
+      "topic": "Baking a stunning 3-ingredient chocolate peppermint bark that looks gourmet but takes 10 minutes.",
+      "hook": "Emergency dessert for your holiday party? This 3-ingredient chocolate peppermint bark is your secret weapon.",
+      "voice_style": "energetic",
+      "music_mood": "upbeat",
+      "target_duration": 45
     },
     {
-      "category": "Economic & Market Insights",
-      "topic": "Breaking down the latest inflation numbers and how they impact grocery prices.",
-      "hook": "Why are your grocery bills skyrocketing every week? I'm explaining the latest inflation report and exactly how it's hitting your wallet at the supermarket.",
+      "category": "Winter Travel & Vacation Planning",
+      "topic": "Three hidden gem European cities for a magical winter vacation that won't break the bank.",
+      "hook": "Dreaming of a snowy European getaway but your wallet is crying? These three cities are your budget-friendly magic trick.",
+      "voice_style": "friendly",
+      "music_mood": "inspirational",
+      "target_duration": 48
+    },
+    {
+      "category": "Winter Travel & Vacation Planning",
+      "topic": "The ultimate layering guide and essential items for staying warm in extreme winter temperatures without overpacking.",
+      "hook": "Packing for Iceland in January? Stop stuffing your suitcase! Here's the *only* layering system you need to stay toasty.",
       "voice_style": "authoritative",
-      "music_mood": "dramatic",
-      "target_duration": 50
+      "music_mood": "chill",
+      "target_duration": 47
     }
   ],
   "voice_music_pairs": [
     {
       "voice": "en-US-GuyNeural",
-      "rate": "-3%",
-      "music_mood": "chill"
-    },
-    {
-      "voice": "en-US-MichelleNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-AU-WilliamNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "-3%",
-      "music_mood": "dramatic"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
+      "rate": "+8%",
       "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+5%",
-      "music_mood": "inspirational"
     },
     {
       "voice": "en-US-EricNeural",
       "rate": "+8%",
-      "music_mood": "intense"
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
+      "rate": "-3%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "+8%",
+      "music_mood": "dramatic"
+    },
+    {
+      "voice": "en-US-JennyNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
     },
     {
       "voice": "en-GB-RyanNeural",
+      "rate": "+0%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-US-AriaNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
-      "voice": "en-US-JennyNeural",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "+0%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-MichelleNeural",
       "rate": "-3%",
       "music_mood": "inspirational"
     },
     {
       "voice": "en-AU-WilliamNeural",
+      "rate": "+5%",
+      "music_mood": "intense"
+    },
+    {
+      "voice": "en-CA-LiamNeural",
       "rate": "-3%",
-      "music_mood": "upbeat"
-    },
-    {
-      "voice": "en-US-GuyNeural",
-      "rate": "+5%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-DavisNeural",
-      "rate": "+0%",
-      "music_mood": "intense"
-    },
-    {
-      "voice": "en-US-ChristopherNeural",
-      "rate": "+0%",
-      "music_mood": "mysterious"
-    },
-    {
-      "voice": "en-US-AriaNeural",
-      "rate": "+5%",
       "music_mood": "chill"
     },
     {
       "voice": "en-US-JennyNeural",
-      "rate": "+5%",
-      "music_mood": "dramatic"
+      "rate": "+8%",
+      "music_mood": "mysterious"
+    },
+    {
+      "voice": "en-US-DavisNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-EricNeural",
+      "rate": "-3%",
+      "music_mood": "inspirational"
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "rate": "+8%",
+      "music_mood": "chill"
     }
   ],
   "concepts_used": 0,
